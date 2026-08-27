@@ -1,0 +1,2212 @@
+{
+  "schema_version": "2.0",
+  "chapter": 15,
+  "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+  "assigned_boss": "Chemical-Shift Seer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch15_q001",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "integration",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “integration”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "B",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "C",
+          "text": "The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "D",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "explanation": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q002",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "NMR spectroscopy",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “NMR spectroscopy”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "B",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "D",
+          "text": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "explanation": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q003",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "deshielding",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “deshielding”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "B",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "explanation": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q004",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "multiplicity",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “multiplicity”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "B",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "explanation": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q005",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "downfield",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “downfield”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "B",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "explanation": "The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q006",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "multiplicity",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin-spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "multiplicity"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "coupling constant"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "multiplicity",
+      "explanation": "The best match is multiplicity: The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q007",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "chemical shift",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "coupling constant — The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "B",
+          "text": "multiplicity — The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "C",
+          "text": "integration — The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "chemical shift — The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "chemical shift — The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "explanation": "chemical shift is correctly paired with: The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q008",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "multiplicity",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NMR spectroscopy — The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "B",
+          "text": "integration — The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "C",
+          "text": "multiplicity — The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "D",
+          "text": "shielding — The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "multiplicity — The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "explanation": "multiplicity is correctly paired with: The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q009",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "equivalent protons",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift — Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "B",
+          "text": "NMR spectroscopy — Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "C",
+          "text": "equivalent protons — Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "D",
+          "text": "downfield — Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "equivalent protons — Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "explanation": "equivalent protons is correctly paired with: Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q010",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical-Shift Seer",
+      "topic": "downfield",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The direction toward larger chemical-shift values in a conventional NMR spectrum. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "B",
+          "text": "deshielding"
+        },
+        {
+          "label": "C",
+          "text": "chemical shift"
+        },
+        {
+          "label": "D",
+          "text": "downfield"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "downfield",
+      "explanation": "This description identifies downfield. The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-seer.png"
+      ]
+    },
+    {
+      "id": "ch15_q011",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "NMR spectroscopy",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "options": [
+        {
+          "label": "A",
+          "text": "NMR spectroscopy"
+        },
+        {
+          "label": "B",
+          "text": "integration"
+        },
+        {
+          "label": "C",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "D",
+          "text": "spin-spin splitting"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "NMR spectroscopy",
+      "explanation": "The best match is NMR spectroscopy: A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q012",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "equivalent protons",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "options": [
+        {
+          "label": "A",
+          "text": "deshielding"
+        },
+        {
+          "label": "B",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "C",
+          "text": "multiplicity"
+        },
+        {
+          "label": "D",
+          "text": "integration"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "equivalent protons",
+      "explanation": "The best match is equivalent protons: Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q013",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "deshielding",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin-spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "chemical shift"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "equivalent protons"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "deshielding",
+      "explanation": "The best match is deshielding: An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q014",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "downfield",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift"
+        },
+        {
+          "label": "B",
+          "text": "downfield"
+        },
+        {
+          "label": "C",
+          "text": "coupling constant"
+        },
+        {
+          "label": "D",
+          "text": "integration"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "downfield",
+      "explanation": "The best match is downfield: The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q015",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "coupling constant",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “coupling constant”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "B",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "C",
+          "text": "The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "D",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The spacing between lines in a split NMR signal, measured in hertz.",
+      "explanation": "The spacing between lines in a split NMR signal, measured in hertz.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q016",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "coupling constant",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift — The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "B",
+          "text": "equivalent protons — The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "C",
+          "text": "coupling constant — The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "D",
+          "text": "multiplicity — The spacing between lines in a split NMR signal, measured in hertz."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "coupling constant — The spacing between lines in a split NMR signal, measured in hertz.",
+      "explanation": "coupling constant is correctly paired with: The spacing between lines in a split NMR signal, measured in hertz.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q017",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "coupling constant",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The spacing between lines in a split NMR signal, measured in hertz. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "multiplicity"
+        },
+        {
+          "label": "B",
+          "text": "integration"
+        },
+        {
+          "label": "C",
+          "text": "coupling constant"
+        },
+        {
+          "label": "D",
+          "text": "deshielding"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "coupling constant",
+      "explanation": "This description identifies coupling constant. The spacing between lines in a split NMR signal, measured in hertz.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q018",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "spin-spin splitting",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "downfield"
+        },
+        {
+          "label": "B",
+          "text": "NMR spectroscopy"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "spin-spin splitting"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "spin-spin splitting",
+      "explanation": "This description identifies spin-spin splitting. Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q019",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "integration",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "deshielding"
+        },
+        {
+          "label": "C",
+          "text": "shielding"
+        },
+        {
+          "label": "D",
+          "text": "downfield"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "integration",
+      "explanation": "This description identifies integration. The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q020",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sorcerer",
+      "topic": "coupling constant",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “coupling constant” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        },
+        {
+          "label": "B",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "D",
+          "text": "The spacing between lines in a split NMR signal, measured in hertz."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The spacing between lines in a split NMR signal, measured in hertz.",
+      "explanation": "The distinguishing description for coupling constant is: The spacing between lines in a split NMR signal, measured in hertz.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch15_q021",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "shielding",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift"
+        },
+        {
+          "label": "B",
+          "text": "shielding"
+        },
+        {
+          "label": "C",
+          "text": "multiplicity"
+        },
+        {
+          "label": "D",
+          "text": "integration"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "shielding",
+      "explanation": "The best match is shielding: Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q022",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "coupling constant",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The spacing between lines in a split NMR signal, measured in hertz.",
+      "options": [
+        {
+          "label": "A",
+          "text": "deshielding"
+        },
+        {
+          "label": "B",
+          "text": "downfield"
+        },
+        {
+          "label": "C",
+          "text": "coupling constant"
+        },
+        {
+          "label": "D",
+          "text": "chemical shift"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "coupling constant",
+      "explanation": "The best match is coupling constant: The spacing between lines in a split NMR signal, measured in hertz.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q023",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "equivalent protons",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “equivalent protons”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "C",
+          "text": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "D",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "explanation": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q024",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "spin-spin splitting",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "spin-spin splitting"
+        },
+        {
+          "label": "C",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "D",
+          "text": "NMR spectroscopy"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "spin-spin splitting",
+      "explanation": "The best match is spin-spin splitting: Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q025",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "NMR spectroscopy",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: A technique that probes nuclei in a magnetic field by measuring their radiofrequency response. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "downfield"
+        },
+        {
+          "label": "B",
+          "text": "multiplicity"
+        },
+        {
+          "label": "C",
+          "text": "coupling constant"
+        },
+        {
+          "label": "D",
+          "text": "NMR spectroscopy"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "NMR spectroscopy",
+      "explanation": "This description identifies NMR spectroscopy. A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q026",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "multiplicity",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin-spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "multiplicity"
+        },
+        {
+          "label": "C",
+          "text": "chemical shift"
+        },
+        {
+          "label": "D",
+          "text": "downfield"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "multiplicity",
+      "explanation": "This description identifies multiplicity. The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q027",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "integration",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "equivalent protons — The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "B",
+          "text": "downfield — The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "C",
+          "text": "shielding — The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "D",
+          "text": "integration — The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "integration — The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "explanation": "integration is correctly paired with: The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q028",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "downfield",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "equivalent protons — The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "B",
+          "text": "integration — The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "C",
+          "text": "downfield — The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "D",
+          "text": "NMR spectroscopy — The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "downfield — The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "explanation": "downfield is correctly paired with: The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q029",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "spin-spin splitting",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “spin-spin splitting” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "B",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "C",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "D",
+          "text": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "explanation": "The distinguishing description for spin-spin splitting is: Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q030",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Integration Illusionist",
+      "topic": "chemical shift",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “chemical shift” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "B",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "explanation": "The distinguishing description for chemical shift is: The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "integration-illusionist.png"
+      ]
+    },
+    {
+      "id": "ch15_q031",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "chemical shift",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "options": [
+        {
+          "label": "A",
+          "text": "downfield"
+        },
+        {
+          "label": "B",
+          "text": "chemical shift"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "multiplicity"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "chemical shift",
+      "explanation": "The best match is chemical shift: The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q032",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "integration",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin-spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "multiplicity"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "integration",
+      "explanation": "The best match is integration: The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q033",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "spin-spin splitting",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “spin-spin splitting”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "B",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "explanation": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q034",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "shielding",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "multiplicity — Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "B",
+          "text": "integration — Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "shielding — Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "D",
+          "text": "coupling constant — Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "shielding — Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "explanation": "shielding is correctly paired with: Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q035",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "NMR spectroscopy",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift — A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        },
+        {
+          "label": "B",
+          "text": "NMR spectroscopy — A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        },
+        {
+          "label": "C",
+          "text": "multiplicity — A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        },
+        {
+          "label": "D",
+          "text": "equivalent protons — A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NMR spectroscopy — A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "explanation": "NMR spectroscopy is correctly paired with: A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q036",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "spin-spin splitting",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "deshielding — Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "B",
+          "text": "chemical shift — Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "C",
+          "text": "NMR spectroscopy — Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "D",
+          "text": "spin-spin splitting — Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "spin-spin splitting — Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "explanation": "spin-spin splitting is correctly paired with: Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q037",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "equivalent protons",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "downfield"
+        },
+        {
+          "label": "B",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "shielding"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "equivalent protons",
+      "explanation": "This description identifies equivalent protons. Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q038",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "integration",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “integration” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "B",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "C",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "D",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "explanation": "The distinguishing description for integration is: The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q039",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "multiplicity",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “multiplicity” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "D",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "explanation": "The distinguishing description for multiplicity is: The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q040",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Conjurer",
+      "topic": "deshielding",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “deshielding” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        },
+        {
+          "label": "B",
+          "text": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "C",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "D",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "explanation": "The distinguishing description for deshielding is: An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "coupling-conjurer.png"
+      ]
+    },
+    {
+      "id": "ch15_q041",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "chemical shift",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “chemical shift”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "B",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "C",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "D",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "explanation": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q042",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "shielding",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “shielding”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "B",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "C",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "D",
+          "text": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "explanation": "Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q043",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "chemical shift",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift"
+        },
+        {
+          "label": "B",
+          "text": "deshielding"
+        },
+        {
+          "label": "C",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "D",
+          "text": "multiplicity"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "chemical shift",
+      "explanation": "This description identifies chemical shift. The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q044",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "shielding",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Electronic protection that reduces the effective magnetic field experienced by a nucleus. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "deshielding"
+        },
+        {
+          "label": "C",
+          "text": "shielding"
+        },
+        {
+          "label": "D",
+          "text": "multiplicity"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "shielding",
+      "explanation": "This description identifies shielding. Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q045",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "deshielding",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "deshielding — An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "B",
+          "text": "coupling constant — An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "C",
+          "text": "shielding — An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "D",
+          "text": "NMR spectroscopy — An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "deshielding — An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "explanation": "deshielding is correctly paired with: An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q046",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "deshielding",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: An effect that increases the effective field at a nucleus and commonly moves its signal downfield. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "coupling constant"
+        },
+        {
+          "label": "B",
+          "text": "equivalent protons"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "downfield"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "deshielding",
+      "explanation": "This description identifies deshielding. An effect that increases the effective field at a nucleus and commonly moves its signal downfield.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q047",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "equivalent protons",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “equivalent protons” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "C",
+          "text": "An effect that increases the effective field at a nucleus and commonly moves its signal downfield."
+        },
+        {
+          "label": "D",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "explanation": "The distinguishing description for equivalent protons is: Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q048",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "downfield",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “downfield” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The direction toward larger chemical-shift values in a conventional NMR spectrum."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogens that experience the same chemical environment and generally contribute to the same NMR signal."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        },
+        {
+          "label": "D",
+          "text": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "explanation": "The distinguishing description for downfield is: The direction toward larger chemical-shift values in a conventional NMR spectrum.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q049",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "shielding",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “shielding” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The relative area under an NMR signal, often proportional to the number of equivalent nuclei producing it."
+        },
+        {
+          "label": "B",
+          "text": "The spacing between lines in a split NMR signal, measured in hertz."
+        },
+        {
+          "label": "C",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        },
+        {
+          "label": "D",
+          "text": "The position of an NMR signal relative to a reference, reflecting the nucleus’s electronic environment."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "explanation": "The distinguishing description for shielding is: Electronic protection that reduces the effective magnetic field experienced by a nucleus.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch15_q050",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "NMR Oracle",
+      "topic": "NMR spectroscopy",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “NMR spectroscopy” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The pattern of lines within an NMR signal, such as singlet, doublet, triplet, or quartet."
+        },
+        {
+          "label": "B",
+          "text": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response."
+        },
+        {
+          "label": "C",
+          "text": "Signal subdivision caused by magnetic coupling between nonequivalent neighboring nuclei."
+        },
+        {
+          "label": "D",
+          "text": "Electronic protection that reduces the effective magnetic field experienced by a nucleus."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "explanation": "The distinguishing description for NMR spectroscopy is: A technique that probes nuclei in a magnetic field by measuring their radiofrequency response.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "nmr-oracle.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chemical-Shift Seer",
+    "Splitting Sorcerer",
+    "Integration Illusionist",
+    "Coupling Conjurer",
+    "NMR Oracle"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chemical-Shift Seer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chemical-shift-seer.png"
+        ]
+      },
+      {
+        "boss": "Splitting Sorcerer",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "splitting-sorcerer.png"
+        ]
+      },
+      {
+        "boss": "Integration Illusionist",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "integration-illusionist.png"
+        ]
+      },
+      {
+        "boss": "Coupling Conjurer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "coupling-conjurer.png"
+        ]
+      },
+      {
+        "boss": "NMR Oracle",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "nmr-oracle.png"
+        ]
+      }
+    ]
+  }
+}

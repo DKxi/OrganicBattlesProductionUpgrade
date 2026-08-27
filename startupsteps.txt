@@ -1,0 +1,18 @@
+uv init
+uv venv
+.venv\Scripts\activate
+uv add pip
+
+pip install -r requirements.txt
+uvicorn app:app --reload
+
+
+
+If you already ran it before:
+
+
+cd ..                 (to get out of organicbattlesv2)
+.venv\Scripts\activate
+cd .\OrganicBattlesV2\
+pip install -r requirements.txt
+uvicorn app:app --reload
