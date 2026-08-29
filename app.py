@@ -1,5 +1,4 @@
-from __future__ import annotations
-
+import sys
 import random
 import time
 import uuid
@@ -18,13 +17,20 @@ except ModuleNotFoundError:  # Python 3.10 and earlier
     import tomli as tomllib
 from email.message import EmailMessage
 from pathlib import Path
-from typing import Literal
+from typing import Literal, Union, Optional
 
-from fastapi import Cookie, FastAPI, Header, HTTPException, Response
+from fastapi import Cookie, FastAPI, Header, HTTPException, Response, Depends, BackgroundTasks, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
+from sqlalchemy.orm import Session as DBSession
+
+from database import get_db, engine, Base
+from models import User, VerificationCode, AuthSession, GameSession
 
 ROOT = Path(__file__).parent
 logger = logging.getLogger("organic_battles.assets")
@@ -53,49 +59,16 @@ def config_value(environment_name: str, *secret_path: str, default=None):
     return current if current is not None else default
 
 
-DATABASE_PATH = Path(os.getenv("DATABASE_PATH", str(ROOT / "organic_battles.sqlite3")))
 CODE_TTL_SECONDS = int(os.getenv("VERIFICATION_CODE_TTL_SECONDS", "900"))
 USERNAME_RE = re.compile(r"^[A-Za-z0-9_]{3,24}$")
 EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 
 
-def db():
-    connection = sqlite3.connect(DATABASE_PATH)
-    connection.row_factory = sqlite3.Row
-    connection.execute("PRAGMA foreign_keys = ON")
-    return connection
+# Automatically create database tables for SQLite / PostgreSQL
+Base.metadata.create_all(bind=engine)
 
 
-def init_db():
-    with db() as connection:
-        connection.executescript("""
-        CREATE TABLE IF NOT EXISTS users (
-            id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE COLLATE NOCASE,
-            username TEXT NOT NULL UNIQUE COLLATE NOCASE,
-            password_hash TEXT NOT NULL, verified INTEGER NOT NULL DEFAULT 0,
-            avatar_json TEXT, progress_json TEXT, created_at INTEGER NOT NULL
-        );
-        CREATE TABLE IF NOT EXISTS verification_codes (
-            id INTEGER PRIMARY KEY AUTOINCREMENT, user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-            code_hash TEXT NOT NULL, expires_at INTEGER NOT NULL, used INTEGER NOT NULL DEFAULT 0,
-            created_at INTEGER NOT NULL
-        );
-        CREATE TABLE IF NOT EXISTS auth_sessions (
-            token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-            expires_at INTEGER NOT NULL, created_at INTEGER NOT NULL
-        );
-        CREATE INDEX IF NOT EXISTS idx_codes_user ON verification_codes(user_id, created_at DESC);
-        """)
-        try:
-            connection.execute("ALTER TABLE users ADD COLUMN progress_json TEXT")
-        except sqlite3.OperationalError:
-            pass
-
-
-init_db()
-
-
-def hash_password(password: str, salt: bytes | None = None) -> str:
+def hash_password(password: str, salt: Optional[bytes] = None) -> str:
     salt = salt or secrets.token_bytes(16)
     digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 310000)
     return f"pbkdf2_sha256$310000${salt.hex()}${digest.hex()}"
@@ -120,41 +93,67 @@ def send_verification_email(email: str, username: str, code: str):
         # Local development mode: the code stays server-side and is never returned by an API.
         print(f"[Organic Battles] verification code for {email}: {code}")
         return
-    message = EmailMessage()
-    message["Subject"] = "Your Organic Battles confirmation code"
-    sender = config_value("SMTP_FROM", "gmail", "sender", default=config_value("SMTP_USERNAME", "gmail", "sender", default="no-reply@example.com"))
-    message["From"] = sender
-    message["To"] = email
-    message.set_content(f"Hi {username},\n\nYour Organic Battles confirmation code is: {code}\nIt expires in 15 minutes.\n\nIf you did not create this account, you can ignore this message.")
-    port = int(config_value("SMTP_PORT", "gmail", "smtp_port", default="587"))
-    with smtplib.SMTP(host, port, timeout=20) as server:
-        server.starttls()
-        username = config_value("SMTP_USERNAME", "gmail", "sender")
-        password = config_value("SMTP_PASSWORD", "gmail", "app_password")
-        if username and password:
-            # Gmail displays app passwords with spaces; SMTP expects the compact value.
-            server.login(username, str(password).replace(" ", ""))
-        server.send_message(message)
+    try:
+        message = EmailMessage()
+        message["Subject"] = "Your Organic Battles confirmation code"
+        sender = config_value("SMTP_FROM", "gmail", "sender", default=config_value("SMTP_USERNAME", "gmail", "sender", default="no-reply@example.com"))
+        message["From"] = sender
+        message["To"] = email
+        message.set_content(f"Hi {username},\n\nYour Organic Battles confirmation code is: {code}\nIt expires in 15 minutes.\n\nIf you did not create this account, you can ignore this message.")
+        port = int(config_value("SMTP_PORT", "gmail", "smtp_port", default="587"))
+        with smtplib.SMTP(host, port, timeout=20) as server:
+            server.starttls()
+            username = config_value("SMTP_USERNAME", "gmail", "sender")
+            password = config_value("SMTP_PASSWORD", "gmail", "app_password")
+            if username and password:
+                # Gmail displays app passwords with spaces; SMTP expects the compact value.
+                server.login(username, str(password).replace(" ", ""))
+            server.send_message(message)
+    except Exception as error:
+        logger.error(f"[Organic Battles] Failed to send verification email to {email}: {type(error).__name__}: {error}")
 
 
-def auth_user(authorization: str | None, session_token: str | None):
+def row_to_dict(user):
+    if not user:
+        return None
+    return {
+        "id": user.id,
+        "email": user.email,
+        "username": user.username,
+        "password_hash": user.password_hash,
+        "verified": user.verified,
+        "avatar_json": user.avatar_json,
+        "progress_json": user.progress_json,
+        "created_at": user.created_at,
+    }
+
+
+def auth_user(authorization: Optional[str], session_token: Optional[str], db: DBSession):
     raw = session_token
     if authorization and authorization.lower().startswith("bearer "):
         raw = authorization[7:].strip()
     if not raw:
         raise HTTPException(401, "Authentication required")
-    with db() as connection:
-        row = connection.execute("SELECT u.* FROM auth_sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires_at>?", (code_hash(raw), int(time.time()))).fetchone()
-    if not row:
+    user = db.query(User).join(AuthSession).filter(
+        AuthSession.token_hash == code_hash(raw),
+        AuthSession.expires_at > int(time.time())
+    ).first()
+    if not user:
         raise HTTPException(401, "Session expired or invalid")
-    return row
+    return row_to_dict(user)
 
 
-def issue_auth_session(user_id: str) -> str:
+def issue_auth_session(user_id: str, db: DBSession) -> str:
     token = secrets.token_urlsafe(40)
     now = int(time.time())
-    with db() as connection:
-        connection.execute("INSERT INTO auth_sessions(token_hash,user_id,expires_at,created_at) VALUES (?,?,?,?)", (code_hash(token), user_id, now + 60 * 60 * 24 * 30, now))
+    session = AuthSession(
+        token_hash=code_hash(token),
+        user_id=user_id,
+        expires_at=now + 60 * 60 * 24 * 30,
+        created_at=now
+    )
+    db.add(session)
+    db.commit()
     return token
 
 
@@ -183,37 +182,9 @@ def public_user(row):
     return {"id": row["id"], "email": row["email"], "username": row["username"], "verified": bool(row["verified"]), "avatar": saved_avatar}
 
 
-def save_game_progress(game: "Session"):
-    progress = {
-        "chapter": game.chapter, "boss_index": game.boss_index,
-        "player_hp": game.player_hp, "player_max_hp": game.player_max_hp, "boss_hp": game.boss_hp,
-        "active_question": list(game.active_question) if game.active_question else None,
-        "active_spell": game.active_spell, "turn_id": game.turn_id,
-        "cooldowns": game.cooldowns, "log": game.log[-20:], "completed": list(game.completed), "rewards": game.rewards,
-        "question_cursors": {f"{chapter}:{boss}": cursor for (chapter, boss), cursor in game.question_cursors.items()},
-    }
-    with db() as connection:
-        connection.execute("UPDATE users SET progress_json=? WHERE id=?", (json.dumps(progress), game.user_id))
-
-
-def restore_game_progress(game: "Session", progress_json: str | None):
-    if not progress_json:
-        return
-    try:
-        progress = json.loads(progress_json)
-        game.chapter = max(1, min(int(progress.get("chapter", game.chapter)), len(CHAPTERS)))
-        game.boss_index = max(0, min(int(progress.get("boss_index", game.boss_index)), len(CHAPTERS[game.chapter - 1]["bosses"]) - 1))
-        game.player_hp = int(progress.get("player_hp", game.player_hp)); game.player_max_hp = int(progress.get("player_max_hp", game.player_max_hp)); game.boss_hp = int(progress.get("boss_hp", game.boss_hp))
-        active_question = progress.get("active_question")
-        game.active_question = tuple(active_question) if active_question else None
-        game.active_spell = progress.get("active_spell"); game.turn_id = progress.get("turn_id")
-        game.cooldowns = {str(key): float(value) for key, value in progress.get("cooldowns", {}).items()}
-        game.log = progress.get("log", game.log); game.completed = set(progress.get("completed", [])); game.rewards = progress.get("rewards", [])
-        game.question_cursors = {}
-        for key, cursor in progress.get("question_cursors", {}).items():
-            chapter, boss = key.split(":", 1); game.question_cursors[(int(chapter), boss)] = int(cursor)
-    except (TypeError, ValueError, KeyError, json.JSONDecodeError) as error:
-        logger.warning("Could not restore saved game progress for user %s: %s", game.user_id, error)
+def save_game_progress(game: "Session", db: DBSession):
+    from session_repository import save_session
+    save_session(db, game)
 
 SPELLS = {
     "fire-spark": ("Fire Spark", "basic", 20, 1.5, "A quick flame projectile."),
@@ -433,7 +404,7 @@ class Session:
         self.id = str(uuid.uuid4())
         self.user_id = user_id
         self.username = username
-        self.avatar: Avatar | None = None
+        self.avatar: Optional[Avatar] = None
         self.finalized = False
         self.chapter = 1
         self.boss_index = 0
@@ -484,152 +455,219 @@ class Session:
                 "cooldowns": {key: max(0, round(value - time.time(), 1)) for key, value in self.cooldowns.items()}, "log": self.log[-5:],
                 "completed": list(self.completed), "rewards": self.rewards}
 
-sessions: dict[str, Session] = {}
+# In-memory dictionary is deleted! Active sessions are stored in the database.
+limiter = Limiter(key_func=get_remote_address, enabled="pytest" not in sys.modules)
 app = FastAPI(title="Organic Battles V2")
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
 
 
+@app.get("/health/live")
+def health_live():
+    return {"status": "alive"}
+
+
+@app.get("/health/ready")
+def health_ready(db: DBSession = Depends(get_db)):
+    try:
+        from sqlalchemy import text
+        db.execute(text("SELECT 1"))
+        return {"status": "ready"}
+    except Exception as error:
+        logger.error(f"[Organic Battles] Database healthcheck failed: {error}")
+        raise HTTPException(status_code=503, detail="Database connection failed")
+
+
 @app.post("/api/auth/signup")
-def signup(request: SignupRequest):
-    email = request.email.strip().lower()
-    username = request.username.strip()
+@limiter.limit("5/minute")
+def signup(request: Request, signup_data: SignupRequest, background_tasks: BackgroundTasks, db: DBSession = Depends(get_db)):
+    email = signup_data.email.strip().lower()
+    username = signup_data.username.strip()
     if not EMAIL_RE.fullmatch(email):
         raise HTTPException(422, "Enter a valid email address")
     if not USERNAME_RE.fullmatch(username):
         raise HTTPException(422, "Username must be 3-24 characters using letters, numbers, or underscores")
-    if len(request.password) < 8:
+    if len(signup_data.password) < 8:
         raise HTTPException(422, "Password must be at least 8 characters")
-    user_id, now = str(uuid.uuid4()), int(time.time())
-    try:
-        with db() as connection:
-            connection.execute("INSERT INTO users(id,email,username,password_hash,created_at) VALUES (?,?,?,?,?)", (user_id, email, username, hash_password(request.password), now))
-    except sqlite3.IntegrityError as error:
-        if "username" in str(error).lower():
-            raise HTTPException(409, "Username taken, choose a different one")
+    
+    # Check if username or email already exists
+    existing_username = db.query(User).filter(User.username == username).first()
+    if existing_username:
+        raise HTTPException(409, "Username taken, choose a different one")
+    existing_email = db.query(User).filter(User.email == email).first()
+    if existing_email:
         raise HTTPException(409, "An account with that email already exists")
+
+    user_id = str(uuid.uuid4())
+    now = int(time.time())
+    new_user = User(
+        id=user_id,
+        email=email,
+        username=username,
+        password_hash=hash_password(signup_data.password),
+        created_at=now
+    )
+    db.add(new_user)
+    
     code = f"{secrets.randbelow(1000000):06d}"
-    with db() as connection:
-        connection.execute("INSERT INTO verification_codes(user_id,code_hash,expires_at,created_at) VALUES (?,?,?,?)", (user_id, code_hash(code), now + CODE_TTL_SECONDS, now))
-    try:
-        send_verification_email(email, username, code)
-    except Exception as error:
-        print(f"[Organic Battles] SMTP delivery failed: {type(error).__name__}: {error}")
-        with db() as connection:
-            connection.execute("DELETE FROM users WHERE id=?", (user_id,))
-        raise HTTPException(503, "We could not send the confirmation email. Please try again.")
+    ver_code = VerificationCode(
+        user_id=user_id,
+        code_hash=code_hash(code),
+        expires_at=now + CODE_TTL_SECONDS,
+        created_at=now
+    )
+    db.add(ver_code)
+    db.commit()
+
+    background_tasks.add_task(send_verification_email, email, username, code)
     return {"status": "verification_required", "email": email, "username": username}
 
 
 @app.post("/api/auth/verify")
-def verify(request: VerifyRequest, response: Response):
-    code = request.code.strip()
+@limiter.limit("5/minute")
+def verify(request: Request, verify_data: VerifyRequest, response: Response, db: DBSession = Depends(get_db)):
+    code = verify_data.code.strip()
     if not re.fullmatch(r"\d{6}", code):
         raise HTTPException(400, "Enter the 6-digit confirmation code")
     now = int(time.time())
-    with db() as connection:
-        row = connection.execute("SELECT c.*,u.* FROM verification_codes c JOIN users u ON u.id=c.user_id WHERE c.code_hash=? AND c.used=0 ORDER BY c.created_at DESC LIMIT 1", (code_hash(code),)).fetchone()
-        if not row:
-            raise HTTPException(400, "Invalid confirmation code")
-        if row["expires_at"] < now:
-            raise HTTPException(400, "Confirmation code expired. Request a new code.")
-        connection.execute("UPDATE verification_codes SET used=1 WHERE id=?", (row["id"],))
-        connection.execute("UPDATE users SET verified=1 WHERE id=?", (row["user_id"],))
-    token = issue_auth_session(row["user_id"])
+    
+    row = db.query(VerificationCode, User).join(User).filter(
+        VerificationCode.code_hash == code_hash(code),
+        VerificationCode.used == 0
+    ).order_by(VerificationCode.created_at.desc()).first()
+
+    if not row:
+        raise HTTPException(400, "Invalid confirmation code")
+    
+    ver_code, user = row
+    if ver_code.expires_at < now:
+        raise HTTPException(400, "Confirmation code expired. Request a new code.")
+    
+    ver_code.used = 1
+    user.verified = 1
+    db.commit()
+
+    token = issue_auth_session(user.id, db)
     response.set_cookie("session_token", token, httponly=True, samesite="lax", secure=os.getenv("COOKIE_SECURE", "0") == "1", max_age=60 * 60 * 24 * 30)
-    with db() as connection:
-        user = connection.execute("SELECT * FROM users WHERE id=?", (row["user_id"],)).fetchone()
-    return {"token": token, "user": public_user(user)}
+    
+    return {"token": token, "user": public_user(row_to_dict(user))}
 
 
 @app.post("/api/auth/resend")
-def resend(email: str):
+@limiter.limit("5/minute")
+def resend(request: Request, email: str, background_tasks: BackgroundTasks, db: DBSession = Depends(get_db)):
     email = email.strip().lower()
     now = int(time.time())
-    with db() as connection:
-        user = connection.execute("SELECT * FROM users WHERE email=?", (email,)).fetchone()
-    if not user or user["verified"]:
+    user = db.query(User).filter(User.email == email).first()
+    if not user or user.verified:
         return {"status": "sent"}
+    
     code = f"{secrets.randbelow(1000000):06d}"
-    with db() as connection:
-        connection.execute("UPDATE verification_codes SET used=1 WHERE user_id=? AND used=0", (user["id"],))
-        connection.execute("INSERT INTO verification_codes(user_id,code_hash,expires_at,created_at) VALUES (?,?,?,?)", (user["id"], code_hash(code), now + CODE_TTL_SECONDS, now))
-    try:
-        send_verification_email(user["email"], user["username"], code)
-    except Exception as error:
-        print(f"[Organic Battles] SMTP resend failed: {type(error).__name__}: {error}")
-        raise HTTPException(503, "We could not send the confirmation email. Please try again.")
+    # Invalidate older codes
+    db.query(VerificationCode).filter(
+        VerificationCode.user_id == user.id,
+        VerificationCode.used == 0
+    ).update({"used": 1})
+
+    ver_code = VerificationCode(
+        user_id=user.id,
+        code_hash=code_hash(code),
+        expires_at=now + CODE_TTL_SECONDS,
+        created_at=now
+    )
+    db.add(ver_code)
+    db.commit()
+
+    background_tasks.add_task(send_verification_email, user.email, user.username, code)
     return {"status": "sent"}
 
 
 @app.post("/api/auth/login")
-def login(request: LoginRequest, response: Response):
-    with db() as connection:
-        user = connection.execute("SELECT * FROM users WHERE username=?", (request.username.strip(),)).fetchone()
-    if not user or not check_password(request.password, user["password_hash"]):
+@limiter.limit("10/minute")
+def login(request: Request, login_data: LoginRequest, response: Response, db: DBSession = Depends(get_db)):
+    user = db.query(User).filter(User.username == login_data.username.strip()).first()
+    if not user or not check_password(login_data.password, user.password_hash):
         raise HTTPException(401, "Incorrect username or password")
-    if not user["verified"]:
+    if not user.verified:
         raise HTTPException(403, "Please verify your email before entering the game")
-    token = issue_auth_session(user["id"])
+    token = issue_auth_session(user.id, db)
     response.set_cookie("session_token", token, httponly=True, samesite="lax", secure=os.getenv("COOKIE_SECURE", "0") == "1", max_age=60 * 60 * 24 * 30)
-    return {"token": token, "user": public_user(user)}
+    return {"token": token, "user": public_user(row_to_dict(user))}
 
 
 @app.get("/api/auth/me")
-def me(authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    return {"user": public_user(auth_user(authorization, session_token))}
+def me(authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    return {"user": public_user(auth_user(authorization, session_token, db))}
 
 
 @app.post("/api/auth/logout")
-def logout(response: Response, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
+def logout(response: Response, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
     raw = session_token or (authorization[7:].strip() if authorization and authorization.lower().startswith("bearer ") else None)
     if raw:
-        with db() as connection:
-            connection.execute("DELETE FROM auth_sessions WHERE token_hash=?", (code_hash(raw),))
+        db.query(AuthSession).filter(AuthSession.token_hash == code_hash(raw)).delete()
+        db.commit()
     response.delete_cookie("session_token")
     return {"status": "ok"}
 
-def get_session(session_id: str | None) -> Session:
-    if not session_id or session_id not in sessions: raise HTTPException(404, "Session not found")
-    return sessions[session_id]
+
+def get_session(session_id: Optional[str], db: DBSession) -> Session:
+    from session_repository import get_session_by_id
+    if not session_id:
+        raise HTTPException(404, "Session not found")
+    return get_session_by_id(db, session_id)
+
 
 @app.get("/")
 def index(): return FileResponse(ROOT / "templates" / "index.html")
 
+
 @app.get("/favicon.ico")
 def favicon(): return FileResponse(ROOT / "static" / "favicon.svg", media_type="image/svg+xml")
 
+
 @app.post("/api/game/new")
-def new_game(authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    user = auth_user(authorization, session_token)
-    s = Session(user["id"], user["username"])
-    if user["avatar_json"]:
-        s.avatar = Avatar.model_validate(json.loads(user["avatar_json"]))
-        s.finalized = True
-    restore_game_progress(s, user["progress_json"])
-    sessions[s.id] = s; return s.state()
+def new_game(authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    from session_repository import get_or_create_session
+    user = auth_user(authorization, session_token, db)
+    s = get_or_create_session(db, user["id"], user["username"])
+    return s.state()
+
 
 @app.get("/api/game/state")
-def game_state(session_id: str, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    user = auth_user(authorization, session_token); game = get_session(session_id)
+def game_state(session_id: str, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    game = get_session(session_id, db)
     if game.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     return game.state()
 
+
 @app.post("/api/avatar/finalize")
-def finalize_avatar(session_id: str, avatar: Avatar, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    s = get_session(session_id)
-    user = auth_user(authorization, session_token)
+def finalize_avatar(session_id: str, avatar: Avatar, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    s = get_session(session_id, db)
     if s.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     if avatar.character not in PLAYER_AVATAR_IDS: raise HTTPException(400, "Choose an available player avatar")
     was_finalized = s.finalized
+    if was_finalized:
+        raise HTTPException(409, "Avatar already finalized")
     s.avatar, s.finalized = avatar, True
-    with db() as connection:
-        connection.execute("UPDATE users SET avatar_json=? WHERE id=?", (avatar.model_dump_json(), user["id"]))
-    s.log.append("Avatar updated. Your ORGO journey continues." if was_finalized else "Avatar accepted. Your ORGO journey begins."); save_game_progress(s); return s.state()
+    
+    # Save to user database
+    db_user = db.query(User).filter(User.id == user["id"]).first()
+    if db_user:
+        db_user.avatar_json = avatar.model_dump_json()
+    
+    s.log.append("Avatar accepted. Your ORGO journey begins.")
+    save_game_progress(s, db)
+    return s.state()
+
 
 @app.post("/api/battle/select-spell")
-def select_spell(session_id: str, request: SpellRequest, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    s = get_session(session_id)
-    if s.user_id != auth_user(authorization, session_token)["id"]: raise HTTPException(403, "This game session belongs to another account")
+def select_spell(session_id: str, request: SpellRequest, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    s = get_session(session_id, db)
+    if s.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     if request.spell_id not in SPELLS: raise HTTPException(400, "Unknown spell")
     if not s.finalized: raise HTTPException(400, "Finalize your avatar first")
     if s.active_question: raise HTTPException(409, "Answer the active question")
@@ -644,13 +682,15 @@ def select_spell(session_id: str, request: SpellRequest, authorization: str | No
     if GAME_CONTENT_SOURCE != "json":
         available_questions = QUESTION_BANK_BY_BOSS.get((s.chapter, s.current_boss()[0]), QUESTION_BANK_BY_CHAPTER.get(s.chapter, QUESTIONS))
         q = random.choice(available_questions); choices = q[1][:]; random.shuffle(choices); s.active_question = (q[0], choices, q[2])
-    save_game_progress(s)
+    save_game_progress(s, db)
     return {"turn_id": s.turn_id, **s.state()}
 
+
 @app.post("/api/battle/answer")
-def answer(session_id: str, request: AnswerRequest, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    s = get_session(session_id)
-    if s.user_id != auth_user(authorization, session_token)["id"]: raise HTTPException(403, "This game session belongs to another account")
+def answer(session_id: str, request: AnswerRequest, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    s = get_session(session_id, db)
+    if s.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     if not s.active_question or not s.active_spell: raise HTTPException(409, "No active question")
     q, choices, correct = s.active_question; spell_id = s.active_spell; spell = SPELLS[spell_id]
     is_correct = request.answer == correct
@@ -674,36 +714,44 @@ def answer(session_id: str, request: AnswerRequest, authorization: str | None = 
     if defeated:
         boss_id = s.current_boss()[0]; s.completed.add(boss_id); reward = {1:"Resonance Slayer",2:"Mechanism Master",3:"Spectral Champion"}.get(s.chapter, f"Chapter {s.chapter} Champion") if s.boss_index == len(CHAPTERS[s.chapter-1]["bosses"])-1 else "Arcane Chemistry Shard"; s.rewards.append(reward); s.log.append(f"{s.current_boss()[1]} defeated! Reward unlocked: {reward}.")
     if defeat:
-        # Defeat is a checkpoint at the current boss. Preserve chapter,
-        # boss_index, completed bosses, and rewards; only reset this fight.
         s.boss_hp = s.current_boss()[2]
         s.player_hp = s.player_max_hp
         s.completed.discard(s.current_boss()[0])
         s.active_question = s.active_spell = s.turn_id = None
         s.log.append("Your aura fades. Retry this boss when ready.")
-    save_game_progress(s)
+    save_game_progress(s, db)
     result.update({"defeated": defeated, "defeat": defeat, **s.state()}); return result
 
+
 @app.post("/api/battle/retry")
-def retry(session_id: str, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    s = get_session(session_id)
-    if s.user_id != auth_user(authorization, session_token)["id"]: raise HTTPException(403, "This game session belongs to another account")
+def retry(session_id: str, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    s = get_session(session_id, db)
+    if s.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     s.player_hp = 150; s.boss_hp = s.current_boss()[2]; s.active_question = s.active_spell = None
-    s.log.append("Battle reset. Your completed progression remains safe."); save_game_progress(s); return s.state()
+    s.log.append("Battle reset. Your completed progression remains safe.")
+    save_game_progress(s, db)
+    return s.state()
+
 
 @app.post("/api/battle/next-turn")
-def next_turn(session_id: str, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    s = get_session(session_id)
-    if s.user_id != auth_user(authorization, session_token)["id"]: raise HTTPException(403, "This game session belongs to another account")
+def next_turn(session_id: str, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    s = get_session(session_id, db)
+    if s.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     if s.current_boss()[0] not in s.completed: raise HTTPException(409, "Defeat the current boss first")
     if s.boss_index < len(CHAPTERS[s.chapter-1]["bosses"])-1: s.boss_index += 1
     elif s.chapter < len(CHAPTERS): s.chapter += 1; s.boss_index = 0
     else: return {"victory": True, **s.state()}
     s.boss_hp = s.current_boss()[2]; s.player_hp = 150
-    s.log.append("New arena discovered: " + s.current_boss()[1]); save_game_progress(s); return s.state()
+    s.log.append("New arena discovered: " + s.current_boss()[1])
+    save_game_progress(s, db)
+    return s.state()
+
 
 @app.get("/api/progression")
-def progression(session_id: str, authorization: str | None = Header(default=None), session_token: str | None = Cookie(default=None)):
-    user = auth_user(authorization, session_token); game = get_session(session_id)
+def progression(session_id: str, authorization: Optional[str] = Header(default=None), session_token: Optional[str] = Cookie(default=None), db: DBSession = Depends(get_db)):
+    user = auth_user(authorization, session_token, db)
+    game = get_session(session_id, db)
     if game.user_id != user["id"]: raise HTTPException(403, "This game session belongs to another account")
     return game.state()
