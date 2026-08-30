@@ -4,7 +4,8 @@
 
 The core innovation of **Organic Battles** is not simply thematic gamification, but the formalization of a rigorous, bidirectional pedagogical pipeline:
 
-$$\text{Curricular Standard} \longrightarrow \text{Chemical Concept} \longrightarrow \text{Character Persona / Mythos} \longrightarrow \text{Spatial-Visual Metaphor} \longrightarrow \text{Ludological Encounter} \longrightarrow \text{Active Retrieval \& Schema Encoding}$$
+$$\text{Curricular Standard} \longrightarrow \text{Chemical Concept} \longrightarrow \text{Character Persona / Mythos} \longrightarrow \text{Spatial-Visual Metaphor} \longrightarrow \text{Ludological Encounter} \longrightarrow \text{Active Retrieval and Schema Encoding}$$
+
 
 In conventional educational software, fantasy themes are frequently applied as superficial "sugarcoating" (extrinsic badges, irrelevant fantasy enemies guarding math problems, or disconnected minigames). In **Organic Battles**, the boss character is engineered as an **authoritative conceptual model and cognitive anchor**. 
 
