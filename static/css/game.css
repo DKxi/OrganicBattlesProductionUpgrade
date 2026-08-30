@@ -314,4 +314,191 @@
   color: #38ef7d;
 }
 
+/* ==========================================================================
+   Movie End Titles Credits Overlay (Centered 65% Screen Modal)
+   ========================================================================== */
+.credits-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(2, 6, 11, 0.82);
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow: hidden;
+  user-select: none;
+}
+.credits-overlay.hidden {
+  display: none !important;
+}
+
+.credits-card {
+  position: relative;
+  width: 65vw;
+  height: 65vh;
+  max-width: 65vw;
+  max-height: 65vh;
+  border: 1px solid #2b6870;
+  border-radius: 22px;
+  background: radial-gradient(circle at center, #071624 0%, #030a12 85%, #010408 100%);
+  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.9), 0 0 35px rgba(54, 229, 208, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: creditsCardPop 0.25s ease-out;
+}
+
+@keyframes creditsCardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.credits-controls {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 520;
+  display: flex;
+  gap: 12px;
+}
+.credits-close-btn {
+  border: 1px solid #2b6870;
+  border-radius: 8px;
+  background: rgba(6, 20, 31, 0.9);
+  color: var(--cyan);
+  padding: 6px 14px;
+  font: 600 0.7rem 'DM Mono', monospace;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: 0.2s;
+}
+.credits-close-btn:hover {
+  background: var(--cyan);
+  color: #06111b;
+  box-shadow: 0 0 20px rgba(54, 229, 208, 0.4);
+}
+
+.credits-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%);
+}
+
+.credits-scroll-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px 100px;
+  animation: movieCreditsScroll 60s linear infinite;
+}
+
+.credits-scroll-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes movieCreditsScroll {
+  0% {
+    transform: translateY(65vh);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+.credits-title-block {
+  margin-bottom: 54px;
+}
+.credits-sigil {
+  font-size: 2.2rem;
+  color: var(--cyan);
+  filter: drop-shadow(0 0 16px rgba(54, 229, 208, 0.6));
+  margin-bottom: 10px;
+}
+.credits-main-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 0 25px rgba(54, 229, 208, 0.4);
+}
+.credits-subtitle {
+  font: 600 0.85rem 'DM Mono', monospace;
+  letter-spacing: 0.25em;
+  color: var(--cyan);
+  margin-top: 8px;
+}
+.credits-version {
+  font: 500 0.72rem 'DM Mono', monospace;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  margin-top: 6px;
+}
+
+.credits-section {
+  margin-bottom: 48px;
+  width: 100%;
+}
+.credits-dept {
+  font: 700 0.95rem 'DM Mono', monospace;
+  letter-spacing: 0.2em;
+  color: var(--cyan);
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(54, 229, 208, 0.25);
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+  display: inline-block;
+  min-width: 280px;
+}
+.credits-group {
+  margin-bottom: 18px;
+}
+.credits-role {
+  font: 500 0.75rem 'DM Mono', monospace;
+  letter-spacing: 0.12em;
+  color: #ff9f5a;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.credits-name {
+  font: 400 1.2rem 'Space Grotesk', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+.credits-text {
+  font: 400 0.95rem 'Space Grotesk', sans-serif;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.credits-closing {
+  margin-top: 40px;
+}
+.credits-closing p {
+  font: 700 1.1rem 'DM Mono', monospace;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin: 8px 0;
+}
+.credits-tagline {
+  color: var(--cyan) !important;
+  font-size: 0.85rem !important;
+}
+
+
 

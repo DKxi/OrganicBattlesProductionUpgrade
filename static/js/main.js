@@ -1110,6 +1110,25 @@ function bindAdminEvents() {
 }
 
 
+function openCreditsModal() {
+  const modal = $('#credits-modal');
+  const scrollContent = $('#credits-scroll-content');
+  if (!modal) return;
+
+  modal.classList.remove('hidden');
+
+  // Reset animation to start smoothly from bottom
+  if (scrollContent) {
+    scrollContent.style.animation = 'none';
+    void scrollContent.offsetHeight; // trigger reflow
+    scrollContent.style.animation = 'movieCreditsScroll 65s linear infinite';
+  }
+}
+
+function closeCreditsModal() {
+  $('#credits-modal')?.classList.add('hidden');
+}
+
 function bindDomEvents() {
   const startButton = $('#start');
   if (startButton) {
@@ -1117,6 +1136,22 @@ function bindDomEvents() {
       $('#boot')?.classList.add('hidden'); $('#auth-screen')?.classList.remove('hidden');
     });
   }
+
+  $('#open-credits-boot')?.addEventListener('click', openCreditsModal);
+  $('#close-credits-btn')?.addEventListener('click', closeCreditsModal);
+
+  $('#credits-modal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'credits-modal') {
+      closeCreditsModal();
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeCreditsModal();
+    }
+  });
+
 
   $('#keep-avatar')?.addEventListener('click', () => {
     $('#avatar-creator')?.classList.add('hidden'); $('#game-shell')?.classList.remove('hidden'); startPhaser(); render(session);
@@ -1181,3 +1216,4 @@ if (document.readyState === 'loading') {
 } else {
   bindDomEvents();
 }
+

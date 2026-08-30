@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Organic Battles V4P</title>
 
-  <link rel="stylesheet" href="/static/css/game.css?v=11">
+  <link rel="stylesheet" href="/static/css/game.css?v=13">
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
 </head>
@@ -17,8 +19,12 @@
     <h1>ORGANIC<br><span>BATTLES</span></h1>
     <p>Organic chemistry, reimagined as an arcane RPG.</p>
     <button id="start">ENTER THE LABYRINTH</button>
-    <button id="open-admin-boot" class="admin-access-link" type="button">⚙ ADMIN CONFIG</button>
+    <div class="boot-links" style="display: flex; gap: 12px; justify-content: center; margin-top: 14px; flex-wrap: wrap;">
+      <button id="open-credits-boot" class="admin-access-link" type="button">📜 CREDITS</button>
+      <button id="open-admin-boot" class="admin-access-link" type="button">⚙ ADMIN CONFIG</button>
+    </div>
   </div>
+
 
   <section id="auth-screen" class="hidden">
     <div class="auth-card">
@@ -207,8 +213,217 @@
       </form>
     </div>
   </div>
+
+  <!-- Cinematic Movie Credits Modal -->
+  <div id="credits-modal" class="credits-overlay hidden" aria-modal="true" role="dialog">
+    <div class="credits-card">
+      <div class="credits-controls">
+        <button id="close-credits-btn" class="credits-close-btn" type="button">✕ CLOSE</button>
+      </div>
+      <div class="credits-viewport" id="credits-viewport">
+        <div class="credits-scroll-content" id="credits-scroll-content">
+
+        <!-- Logo / Title -->
+        <div class="credits-title-block">
+          <div class="credits-sigil">◈</div>
+          <h1 class="credits-main-title">ORGANIC BATTLES</h1>
+          <div class="credits-subtitle">A CHEMISTRY-FANTASY ADVENTURE</div>
+          <div class="credits-version">VERSION 4P // PRODUCTION UPGRADE</div>
+        </div>
+
+        <!-- Section 1: Executive Direction & Game Production -->
+        <div class="credits-section">
+          <h2 class="credits-dept">EXECUTIVE & GAME PRODUCTION</h2>
+          <div class="credits-group">
+            <div class="credits-role">Executive Game Director</div>
+            <div class="credits-name">Alexander Brooks</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Lead Creative Director</div>
+            <div class="credits-name">Céleste Mercier</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Principal Systems Architect</div>
+            <div class="credits-name">Wei Zhang</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Technical Producer</div>
+            <div class="credits-name">Sarah Miller</div>
+          </div>
+        </div>
+
+        <!-- Section 2: Visual Arts & Graphics Game Department -->
+        <div class="credits-section">
+          <h2 class="credits-dept">GRAPHICS & VISUAL ARTS DEPARTMENT</h2>
+          <div class="credits-group">
+            <div class="credits-role">Art Director & World Visualizer</div>
+            <div class="credits-name">Antoine Laurent</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Principal Character Artist (Companion Avatars)</div>
+            <div class="credits-name">Mei-Ling Chen</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Lead Creature & Boss Designer (27 Chapter Bestiary)</div>
+            <div class="credits-name">Marcus Campbell</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Senior Alchemical Illustrator</div>
+            <div class="credits-name">Éléonore Moreau</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Environment & Arena Visual Artist</div>
+            <div class="credits-name">Jun-Jie Liu</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Visual Effects & Particle Shader Artist</div>
+            <div class="credits-name">Chloe Davis</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">2D Canvas & WebGL Animation Specialist</div>
+            <div class="credits-name">Julien Fontaine</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">UI/UX & Glassmorphism Design Lead</div>
+            <div class="credits-name">Xiao-Wei Huang</div>
+          </div>
+        </div>
+
+        <!-- Section 3: Audio & Sound Synthesis Department -->
+        <div class="credits-section">
+          <h2 class="credits-dept">AUDIO ENGINEERING & PROCEDURAL SYNTHESIS</h2>
+          <div class="credits-group">
+            <div class="credits-role">Lead Sound Designer & Synthesizer Engineer</div>
+            <div class="credits-name">Liam Walker</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Web Audio API Architect</div>
+            <div class="credits-name">Matthieu Renault</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Harmonic Fanfare & Combat Audio Specialist</div>
+            <div class="credits-name">Zhen-Hua Wu</div>
+          </div>
+        </div>
+
+        <!-- Section 4: Educational & Chemical Sciences Department -->
+        <div class="credits-section">
+          <h2 class="credits-dept">EDUCATIONAL & CHEMICAL SCIENCES DEPARTMENT</h2>
+          <div class="credits-group">
+            <div class="credits-role">Dean of Chemical Curriculum & Pedagogy</div>
+            <div class="credits-name">Dr. Olivia Bennett</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Organic Reaction Mechanisms Domain Lead</div>
+            <div class="credits-name">Prof. Adrien Delacroix</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Stereochemistry & 3D Chirality Specialist</div>
+            <div class="credits-name">Dr. Ying-Ying Zhao</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Spectroscopy & Structure Elucidation Advisor (NMR / IR / MS)</div>
+            <div class="credits-name">Dr. Benjamin Wright</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Aromaticity & Pericyclic Reactions Specialist</div>
+            <div class="credits-name">Valérie Bernard</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Carbonyl & Enolate Chemistry Specialist</div>
+            <div class="credits-name">Kai-Ming Sun</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Biomolecules & Polymers Curriculum Lead</div>
+            <div class="credits-name">Hannah Mitchell</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Cognitive Psychology & Dual-Coding Scientist</div>
+            <div class="credits-name">Dr. Théodore Marchand</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Chemistry Misconceptions Research Lead</div>
+            <div class="credits-name">Ru-Lin Feng</div>
+          </div>
+        </div>
+
+        <!-- Section 5: Software Engineering & Infrastructure -->
+        <div class="credits-section">
+          <h2 class="credits-dept">SOFTWARE ENGINEERING & CLOUD INFRASTRUCTURE</h2>
+          <div class="credits-group">
+            <div class="credits-role">Lead Backend Engineer (FastAPI & Pure Domain Combat)</div>
+            <div class="credits-name">Lucas Evans</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Frontend Application Architect (ES Modules & DOM Router)</div>
+            <div class="credits-name">Solène Leroy</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Database & ORM Repository Specialist (PostgreSQL / SQLite)</div>
+            <div class="credits-name">Hai-Bo Qian</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Security, Cryptography & Auth Middleware Engineer</div>
+            <div class="credits-name">Grace Taylor</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Observability, Health Probes & Rate Limiting Lead</div>
+            <div class="credits-name">Matthieu Dubois</div>
+          </div>
+        </div>
+
+        <!-- Section 6: Quality Assurance & Q/A Prep Department -->
+        <div class="credits-section">
+          <h2 class="credits-dept">QUALITY ASSURANCE & Q/A PREPARATION DEPARTMENT</h2>
+          <div class="credits-group">
+            <div class="credits-role">Director of Quality Assurance & Data Integrity</div>
+            <div class="credits-name">Emily Anderson</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Manifest Ingestion & 27 Chapters Ingestion Lead</div>
+            <div class="credits-name">Jing-Wen Tang</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Chemistry Trial Verification & Explanation Author</div>
+            <div class="credits-name">Camille Laurent</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Boss Strategy & Mathematical Difficulty Balancing QA</div>
+            <div class="credits-name">Ethan Vance</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Cross-Platform & Browser Compatibility QA</div>
+            <div class="credits-name">Lu-Ming Zhang</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Automated Test Automation Lead (Pytest & TestClient)</div>
+            <div class="credits-name">Aurélie Fontenot</div>
+          </div>
+          <div class="credits-group">
+            <div class="credits-role">Concurrency & Idempotency QA Specialist</div>
+            <div class="credits-name">Zhi-Yuan Chang</div>
+          </div>
+        </div>
+
+        <!-- Section 7: Special Thanks & Dedication -->
+        <div class="credits-section">
+          <h2 class="credits-dept">SPECIAL THANKS & DEDICATION</h2>
+          <div class="credits-group">
+            <div class="credits-text">To the passionate chemistry educators, open-source pioneers, and all alchemists entering the Labyrinth to conquer Organic Chemistry.</div>
+          </div>
+          <div class="credits-closing">
+            <div class="credits-sigil">◈</div>
+            <p>THANK YOU FOR PLAYING</p>
+            <p class="credits-tagline">ORGANIC BATTLES V4P</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
-<script type="module" src="/static/js/main.js?v=14"></script>
+<script type="module" src="/static/js/main.js?v=16"></script>
+
+
 
 </body>
 </html>
