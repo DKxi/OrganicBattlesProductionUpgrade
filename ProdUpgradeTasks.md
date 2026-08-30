@@ -28,6 +28,19 @@ AWS is used as the reference implementation. The architecture can be translated 
 
 ---
 
+## Current Status & Completed Milestones
+
+| Milestone | Status | Details |
+|---|---|---|
+| **Dual Content Source Engine** | ✅ Completed | Dual-mode support (`app` vs `json`), concurrent memory caching, `.env` override hierarchy (`GAME_CONTENT_SOURCE`), and per-user database mode selection. |
+| **Admin Configuration Portal** | ✅ Completed | Dedicated admin login (`admin`/`admin` or env override), user list inspection, live user search, and real-time `content_source` switching. |
+| **Admin Game Sessions Management** | ✅ Completed | Active session list, chapter selection with first boss reset, and complete session deletion. |
+| **Battle Outcome & Explanation UI** | ✅ Completed | Glassmorphic unified modal system for boss defeat, victory, spell fizzle, and interactive explanations. |
+| **Automated Dual-Mode Test Suite** | ✅ Completed | 26 automated Pytest tests validating game combat, dual-mode switches, environment overrides, email config, and admin management. |
+
+---
+
+
 ## 1. Target physical architecture
 
 ```mermaid
@@ -368,106 +381,97 @@ Before final capacity sizing, record:
 
 ### Phase 1 — Correct the current repository
 
-- [ ] Align the Docker and `pyproject.toml` Python versions.
-- [ ] Establish one authoritative dependency definition.
-- [ ] Rename internal V2 references to V3.
-- [ ] Remove the duplicate `acid-shot` dictionary entry.
-- [ ] Correct the explanation-key UTF-8/mojibake mismatch.
-- [ ] Add `/health/live` and `/health/ready` endpoints.
-- [ ] Add structured JSON logging, correlation IDs, and request IDs.
-- [ ] Add unit tests for combat, cooldowns, progression, content loading, and persistence.
+- [x] Align the Docker and `pyproject.toml` Python versions.
+- [x] Establish dual-mode content architecture (`app` and `json` bundles with `.env` override priority).
+- [x] Implement Admin Configuration Portal (`admin`/`admin`) with user mode management and session reset/delete.
+- [x] Correct the explanation-key UTF-8/mojibake mismatch and unify modal UI.
+- [x] Add comprehensive dual-mode test suite (26 automated Pytest tests).
+- [ ] Add `/health/live` (Liveness) and `/health/ready` (Readiness: verifies DB & Redis connectivity) endpoints.
+- [ ] Add structured JSON logging (`structlog`/`python-json-logger`), correlation IDs, and `X-Request-ID` middleware.
+- [ ] Add production guardrails: fail-fast on startup if `ENVIRONMENT=production` and default admin passwords or test secrets are detected.
 
-**Exit condition:** Existing behavior passes automated tests inside Docker.
+**Exit condition:** Existing behavior passes automated tests inside Docker, with health probes and structured logs.
 
 ### Phase 2 — Modularize FastAPI
 
-- [ ] Create the target modular directory structure.
-- [ ] Move routes out of the monolithic `app.py`.
-- [ ] Extract combat and progression rules into domain services.
-- [ ] Introduce repository interfaces.
-- [ ] Centralize validated configuration.
+- [ ] Create the target modular directory structure (`app/api/v1/`, `app/domain/`, `app/infrastructure/`).
+- [ ] Move routes out of the monolithic `app.py` into dedicated APIRouters.
+- [ ] Extract combat, damage calculations, and progression rules into domain services.
+- [ ] Introduce repository interfaces for accounts and battle sessions.
+- [ ] Centralize validated configuration (`pydantic-settings`).
 - [ ] Version APIs under `/api/v1`.
-- [ ] Add consistent API error envelopes.
-- [ ] Generate and review the OpenAPI contract.
+- [ ] Add consistent API error envelopes (`{"error": {"code": "...", "message": "..."}}`).
+- [ ] Add security middleware: Content-Security-Policy (CSP), HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`.
 
 **Exit condition:** Gameplay rules do not depend directly on FastAPI or SQLite.
 
-### Phase 3 — Migrate SQLite to PostgreSQL
+### Phase 3 — Migrate SQLite to PostgreSQL & Connection Pooling
 
-- [ ] Design normalized PostgreSQL models.
-- [ ] Add SQLAlchemy 2.x, Alembic, and `asyncpg`.
-- [ ] Create initial and rollback migrations.
-- [ ] Write a repeatable SQLite-to-PostgreSQL data migration.
-- [ ] Implement transactional answer processing.
-- [ ] Add indexes for users, battles, bosses, content versions, and sessions.
-- [ ] Add database timeouts and bounded connection pools.
-- [ ] Run data reconciliation tests.
+- [ ] Design normalized PostgreSQL models in SQLAlchemy 2.x.
+- [ ] Set up **Alembic** migration environment and generate baseline migrations (replacing runtime SQLite introspection).
+- [ ] Configure PostgreSQL connection pooling (`pool_size=20`, `max_overflow=10`, `pool_recycle=1800`, `pool_pre_ping=True`).
+- [ ] Write a repeatable SQLite-to-PostgreSQL data migration script.
+- [ ] Add database indexes for high-frequency lookups: `users(email)`, `users(username)`, `game_sessions(user_id)`, and `game_sessions(updated_at)`.
+- [ ] Implement transactional battle turn commits with row-level locking or optimistic version checks.
 
-**Exit condition:** PostgreSQL is authoritative and no schema modification occurs during application import.
+**Exit condition:** PostgreSQL is authoritative, fully indexed, and managed via versioned Alembic migrations.
 
-### Phase 4 — Make API instances stateless
+### Phase 4 — Make API instances stateless & Distributed State (Redis/Valkey)
 
-- [ ] Remove the Python `sessions` dictionary.
-- [ ] Persist authoritative battle state in PostgreSQL.
-- [ ] Add Redis for cache, cooldowns, rate limits, and idempotency.
-- [ ] Add battle-state versioning and optimistic concurrency.
-- [ ] Make answer and progression commands idempotent.
-- [ ] Add TTL and cleanup rules for temporary data.
-- [ ] Test requests switching randomly between API containers.
-- [ ] Test Redis failure and cache reconstruction.
+- [ ] Externalize `ADMIN_TOKENS` and verification codes from in-memory Python dictionaries to **Redis** with TTL.
+- [ ] Configure `Slowapi` rate limiter to use Redis storage backend (`REDIS_URL`) across all container instances.
+- [ ] Add Redis distributed locks (idempotency tokens) on `/api/battle/answer` to prevent concurrent double-click race conditions.
+- [ ] Persist authoritative battle state in PostgreSQL with Redis caching for hot session data.
+- [ ] Test requests switching randomly between multiple API container instances.
+- [ ] Test Redis automatic failover and cache reconstruction.
 
 **Exit condition:** Any API instance can process any authenticated request without sticky sessions.
 
-### Phase 5 — Upgrade authentication
+### Phase 5 — Asynchronous Worker Queue & Background Processing
 
-- [ ] Configure Cognito user pools and environments.
-- [ ] Implement signup, verification, login, logout, and password recovery.
-- [ ] Validate JWT signatures, issuer, audience, and expiration in FastAPI.
-- [ ] Link the Cognito subject ID to the player profile.
-- [ ] Define migration and password-reset treatment for existing accounts.
-- [ ] Add endpoint rate limits and lockout controls.
-- [ ] Remove custom authentication tables after migration and retention review.
+- [ ] Decouple transactional email dispatch from HTTP request cycles using an async worker queue (ARQ / Celery / SQS).
+- [ ] Add the transactional outbox pattern for critical system notifications.
+- [ ] Implement exponential backoff and retry policies for transient network/delivery failures.
+- [ ] Integrate managed email delivery API (Amazon SES / SendGrid / Resend) as production priority over raw SMTP.
+- [ ] Configure email delivery telemetry, queue-depth alarms, and bounce/complaint handling.
+- [ ] Move large batch content imports and asset validation off the main API process.
 
-**Exit condition:** Custom application code no longer manages verification codes or session tokens.
+**Exit condition:** Slow or retryable background operations cannot delay gameplay API responses.
 
-### Phase 6 — Build content publishing
+### Phase 6 — Authentication & Managed Identity
 
-- [ ] Define versioned content schemas.
-- [ ] Import chapters, bosses, questions, choices, answers, spells, and rewards.
-- [ ] Move images, atlases, audio, and downloadable assets to S3.
-- [ ] Build content validation and publishing commands.
-- [ ] Add immutable content releases and rollback.
-- [ ] Pin every battle to a content version.
-- [ ] Add Redis caching with versioned cache keys.
-- [ ] Ensure correct answers are absent from player-facing question payloads.
-- [ ] Validate orphaned boss, avatar, and asset references.
+- [ ] Upgrade session cookies to signed, `HttpOnly`, `Secure`, `SameSite=Lax` cookies.
+- [ ] Add password-based or passwordless Argon2id hashing for accounts.
+- [ ] (Optional) Integrate Amazon Cognito / OAuth2 / OIDC for enterprise identity management.
+- [ ] Add brute-force protection, lockout controls, and rate limits on `/api/auth/login` and `/api/admin/login`.
 
-**Exit condition:** Content can be validated, published, cached, and rolled back without redeploying FastAPI.
+**Exit condition:** Custom application code no longer manages plaintext verification codes or fragile session tokens.
 
-### Phase 7 — Separate frontend and assets
+### Phase 7 — Build Content Publishing Pipeline
 
-- [ ] Create a reproducible static frontend build.
-- [ ] Upload versioned builds and assets to private S3 buckets.
-- [ ] Configure CloudFront and Origin Access Control.
-- [ ] Configure cache-control headers and compression.
-- [ ] Point the frontend to `/api/v1`.
-- [ ] Add lazy loading, preloading, and asset budgets.
-- [ ] Remove production static-file delivery from FastAPI.
-- [ ] Test slow networks and low-memory mobile devices.
+- [ ] Define versioned content schemas for chapters, bosses, questions, choices, answers, spells, and rewards.
+- [ ] Move images, atlases, audio, and downloadable assets to S3/R2 storage.
+- [ ] Build automated content validation, linting, and publishing CLI commands.
+- [ ] Add immutable content release tagging and instant rollback support.
+- [ ] Pin every active battle session to an immutable content release version.
+- [ ] Add Redis caching with versioned content cache keys.
+- [ ] Ensure correct answers are stripped from player-facing question payloads until evaluation.
+- [ ] Validate and alert on orphaned boss, avatar, or audio asset references.
 
-**Exit condition:** Frontend and game assets are globally served through the CDN.
+**Exit condition:** Content can be validated, published, cached, and rolled back without redeploying FastAPI code.
 
-### Phase 8 — Add background processing
+### Phase 8 — CDN Delivery & Static Asset Pipeline
 
-- [ ] Add SQS queues and dead-letter queues.
-- [ ] Create separately scalable worker containers.
-- [ ] Move email delivery out of API requests.
-- [ ] Add the transactional outbox pattern.
-- [ ] Add retry policies and idempotent job handlers.
-- [ ] Move content imports and asset validation to workers.
-- [ ] Add queue-depth and dead-letter alarms.
+- [ ] Create a reproducible static frontend bundle with hashed asset filenames.
+- [ ] Upload versioned builds and assets to private S3/R2 buckets.
+- [ ] Configure CloudFront / Cloudflare with Origin Access Control (OAC).
+- [ ] Configure strict cache-control headers (`max-age=31536000, immutable` for hashed assets).
+- [ ] Convert images to WebP/AVIF formats with responsive srcset sizing.
+- [ ] Add lazy loading and preloading strategies for chapter assets.
+- [ ] Remove production static-file serving overhead from FastAPI.
 
-**Exit condition:** Slow and retryable work cannot delay gameplay API responses.
+**Exit condition:** Frontend and game assets are globally served through the CDN with sub-50ms TTFB.
+
 
 ### Phase 9 — Provision AWS production infrastructure
 

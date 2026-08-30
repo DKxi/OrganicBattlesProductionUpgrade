@@ -1,296 +1,529 @@
-# Organic Battles V3 Paid Version
+# Organic Battles — Technical Documentation & Architecture Reference
 
-Organic Battles is a browser-based educational role-playing game in which players answer organic chemistry questions to power spells, defeat chemistry-themed bosses, and progress through chapters.
+**Organic Battles** is a browser-based educational role-playing game (RPG) designed to reinforce organic chemistry concepts through boss battles. Players select custom alchemist avatars, cast chemistry spells, and answer randomized or chapter-aligned chemistry vocabulary trials to defeat bosses and progress through organic chemistry chapters.
 
-The application uses a browser game interface backed by a server-authoritative Python API. The browser renders the experience and submits player actions; the server validates authentication, selects questions, calculates damage, enforces cooldowns, controls progression, and saves player data.
+---
 
-> **Repository naming note:** The repository is named `OrganicBattlesV3PaidVersion`, but the current Python package metadata, FastAPI title, and some application text still identify the project as `Organic Battles V2` or `organicbattlesv2`. These internal names should be updated together when the V3 name is finalized.
-
-## Technology stack
-
-| Layer | Technology | Verified use |
-| --- | --- | --- |
-| Browser frontend | HTML, CSS, and JavaScript | Provides the user interface and communicates with the API. |
-| Game rendering | Phaser | Identified by the existing project documentation as the browser game engine for the arena, avatars, animations, and combat effects. The frontend files were not included in the reviewed source snapshot, so the exact Phaser version could not be verified. |
-| Backend framework | FastAPI 0.115.6 | Defines authentication, avatar, game-state, battle, progression, static-file, and index routes. |
-| Request validation | Pydantic | Defines and validates signup, login, verification, avatar, spell, and answer request models through FastAPI. |
-| ASGI server | Uvicorn 0.34.0 | Runs the FastAPI application and exposes it over HTTP. |
-| Persistent storage | SQLite | Stores users, verification codes, authentication sessions, selected avatars, and serialized progress. |
-| Runtime session storage | Process-local Python dictionary | Holds active `Session` objects and their session IDs while the server process is running. |
-| Game content | Python constants or manifest-driven JSON | Supports a small built-in content set and an optional JSON content mode. |
-| Configuration | Environment variables, `.env`, and `secrets.toml` | Loads database, cookie, content-source, verification, and SMTP settings. |
-| Email | SMTP with STARTTLS | Sends six-digit account-verification codes; local development can print codes to the server console. |
-| Tests | Pytest 8.3.4 and HTTPX 0.28.1 | Declared as dependencies for Python and API testing. Test files were not included in the reviewed snapshot, so test coverage is not confirmed. |
-| Deployment | Docker on `python:3.12-slim` | Installs `requirements.txt` and starts the application with Uvicorn. |
-
-The reviewed backend does **not** use Streamlit, Django, Flask, React, Angular, Next.js, an ORM, or a database-migration framework.
-
-## System architecture
+## 1. System Overview & Technology Stack
 
 ```mermaid
 flowchart TB
-    Player["Player"]
-
-    subgraph Client["Browser"]
-        Web["HTML · CSS · JavaScript"]
-        Phaser["Phaser Game UI"]
-        Web --- Phaser
+    subgraph Client["Client Browser (SPA)"]
+        UI["HTML5 UI & DOM Controls<br/>(main.js · avatars.js · game.css)"]
+        Phaser["Phaser 3 Game Arena<br/>(2D WebGL/Canvas · Avatars · Bosses)"]
+        AdminUI["Admin Configuration Portal<br/>(Users Tab · Sessions Tab · Modals)"]
+        UI <--> Phaser
+        UI --- AdminUI
     end
 
-    subgraph Runtime["Docker / Python Runtime"]
-        Uvicorn["Uvicorn ASGI Server"]
-        API["FastAPI Application"]
-        Services["Authentication · Content · Combat · Progression"]
-        Active["In-Memory Active Sessions"]
-        Uvicorn --> API
-        API --> Services
-        Services <--> Active
+    subgraph Server["FastAPI Backend (app.py)"]
+        Router["FastAPI ASGI Server (Uvicorn)"]
+        RateLimit["Slowapi Rate Limiting & Auth Middleware"]
+        AuthCtrl["Authentication Controller<br/>(PBKDF2-HMAC · Sessions · OTP)"]
+        CombatEngine["Combat & Turn Engine<br/>(Spells · Cooldowns · Grader · Explanations)"]
+        AdminCtrl["Admin Management Controller<br/>(Mode Switcher · Session Resetter/Deleter)"]
+        DualEngine["Dual Content Engine<br/>(Priority Resolver & Loader)"]
+
+        Router --> RateLimit --> AuthCtrl & CombatEngine & AdminCtrl
+        CombatEngine --> DualEngine
+        AdminCtrl --> DualEngine
     end
 
-    subgraph Data["Persistent Data and Files"]
-        SQLite[("SQLite")]
-        Content[("Built-in or JSON Content")]
-        Assets[("Frontend and Game Assets")]
+    subgraph Storage["Persistence & Memory"]
+        subgraph DB["SQLAlchemy ORM (SQLite3 / PostgreSQL)"]
+            UsersTable[("users")]
+            SessionsTable[("game_sessions")]
+            AuthTable[("auth_sessions")]
+            OTPTable[("verification_codes")]
+        end
+
+        subgraph MemoryBundles["In-Memory Content Cache"]
+            AppBundle[("APP_DATA<br/>(3 Chapters · 14 Bosses)")]
+            JsonBundle[("JSON_DATA<br/>(Manifest-Driven Banks)")]
+        end
     end
 
-    SMTP["SMTP Email Provider"]
+    subgraph External["External Services"]
+        SMTP["SMTP / Gmail Service<br/>(6-Digit Verification OTPs)"]
+    end
 
-    Player --> Web
-    Web <-->|"HTTPS · HTML · files · JSON"| Uvicorn
-    API -->|"Serve"| Assets
-    Services <-->|"Users · auth sessions · progress"| SQLite
-    Services -->|"Load"| Content
-    Services -->|"Verification email"| SMTP
+    Client <-->|"REST API / JSON / Cookies"| Router
+    AuthCtrl --> DB
+    AuthCtrl -->|"Send OTP"| SMTP
+    CombatEngine <-->|"Read / Save State"| SessionsTable
+    AdminCtrl <-->|"Manage Users & Sessions"| DB
+    DualEngine <-->|"Fast Memory Lookup"| MemoryBundles
 ```
 
-### Runtime responsibilities
 
-- **Browser and Phaser:** Render the interface, arena, characters, and effects; collect player actions; call the API.
-- **Uvicorn:** Listens for HTTP requests, invokes the FastAPI ASGI application, and returns files or JSON responses.
-- **FastAPI:** Serves the frontend, validates input, authenticates users, enforces session ownership, and exposes the game APIs.
-- **Game services in `app.py`:** Select questions, validate answers, apply spell and boss damage, enforce cooldowns, unlock rewards, and advance bosses and chapters.
-- **SQLite:** Persists account and progress data across process restarts.
-- **In-memory session dictionary:** Maps active game-session IDs to Python `Session` objects for the lifetime of one server process.
+### Core Technologies
 
-## Repository entry points
+| Layer | Technology | Version / Implementation | Description |
+|---|---|---|---|
+| **Backend Framework** | **FastAPI** | `0.115.6` | Async web API exposing authentication, combat, session, and administrative endpoints. |
+| **ASGI Server** | **Uvicorn** | `0.34.0` | Production ASGI server with reloading and multiprocessing support. |
+| **Database & ORM** | **SQLAlchemy** | `2.0+` | Relational ORM mapping `User`, `GameSession`, `VerificationCode`, and `AuthSession`. |
+| **Database Engine** | **SQLite3 / PostgreSQL** | Native / `psycopg2` | Default local SQLite (`organic_battles.sqlite3`) with PostgreSQL readiness. |
+| **Frontend Framework** | **Vanilla JS (ES6+)** | Native ES Modules | Modular JavaScript (`main.js`, `avatars.js`) without heavy frontend build frameworks. |
+| **Styling** | **Vanilla CSS3** | Custom RPG Theme | Glassmorphism, cyan/amber neon glowing accents, responsive layouts, modal overlays. |
+| **Game Engine** | **Phaser 3** | `3.60.0` (CDN) | 2D canvas/WebGL game arena with sprite rendering, background scaling, and battle arenas. |
+| **Rate Limiting** | **Slowapi** | `0.1.9` | In-memory token bucket rate limiting on sensitive authentication endpoints. |
+| **Test Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | 26 automated unit and integration tests across dual content modes and admin features. |
 
-| File | Purpose |
-| --- | --- |
-| `app.py` | Actual FastAPI application, database setup, authentication, content loading, gameplay rules, and API routes. |
-| `Dockerfile` | Production-style container entry point; runs `uvicorn app:app`. |
-| `requirements.txt` | Current runtime and test dependencies used by the Docker build. |
-| `pyproject.toml` | Project metadata, but currently incomplete and inconsistent with the Docker runtime. |
-| `main.py` | Placeholder that only prints a greeting; it is not the web application entry point. |
+---
 
-## Application behavior
+## 2. System Architecture & Flow Diagrams
 
-### Authentication and accounts
+### 2.1 Content Mode Priority & Resolution Flow
 
-- Signup validates a basic email format, a 3–24 character username, and a minimum password length of eight characters.
-- Passwords use PBKDF2-HMAC-SHA256 with a random 16-byte salt and 310,000 iterations.
-- New accounts receive a six-digit confirmation code with a default lifetime of 15 minutes.
-- Verification codes and authentication tokens are stored as hashes rather than plaintext.
-- Successful verification or login creates a 30-day authentication session.
-- Authentication supports an HttpOnly `session_token` cookie and a Bearer token.
-- Cookies use `SameSite=Lax`; the `Secure` flag is controlled by `COOKIE_SECURE`.
-- Avatar selections and serialized game progress are stored on the user record.
+Organic Battles supports both **Built-in App Content** (3 chapters, 14 bosses) and **Manifest-Driven JSON Content** (dynamic chapters and rich question banks). Both content bundles are loaded into memory on server boot to enable concurrent multi-mode access across different users.
 
-### Gameplay
+```mermaid
+flowchart TD
+    Req["Incoming Game Request"] --> CheckEnv{"Is GAME_CONTENT_SOURCE<br/>set in process environment / .env?"}
 
-- New games restore saved progress from SQLite when it is available.
-- The player starts with 150 HP.
-- Players must finalize one of seven allowed avatar IDs before selecting a spell.
-- The built-in mode defines nine effective spells with basic, medium, and strong damage tiers.
-- Selecting a spell creates one active question and starts a unique turn.
-- A correct answer damages the boss; the boss then has a 50% chance to counterattack.
-- An incorrect answer deals no boss damage and backfires on the player for the selected spell's power.
-- Spell cooldowns are enforced on the server.
-- Defeating a boss unlocks progression and a reward.
-- Player defeat resets the current fight while preserving completed progression and previously earned rewards.
-- Progress is saved after avatar finalization and battle-state changes.
+    CheckEnv -- Yes --> EnvPriority["Priority 1 (.env Override):<br/>Apply global mode (e.g. 'json' or 'app')"]
+    CheckEnv -- No --> CheckDB{"Is content_source set<br/>on User record in DB?"}
 
-### Built-in content mode
+    CheckDB -- Yes --> DBUser["Priority 2 (Database Setting):<br/>Apply user.content_source ('app' or 'json')"]
+    CheckDB -- No --> DefaultMode["Priority 3 (System Default):<br/>Apply default 'app' mode"]
 
-With `GAME_CONTENT_SOURCE=app`, the application uses content defined directly in `app.py`:
+    EnvPriority --> LoadBundle["Retrieve Bundle from Memory Cache<br/>(APP_DATA or JSON_DATA)"]
+    DBUser --> LoadBundle
+    DefaultMode --> LoadBundle
 
-- 3 chapters
-- 14 bosses: 4 in Chapter 1, 5 in Chapter 2, and 5 in Chapter 3
-- 6 shared built-in questions
-- 9 effective spell IDs
-- 7 allowed player-avatar IDs
-
-Built-in questions are reused across chapters and selected randomly. This mode is suitable for a compact demonstration but does not provide a large non-repeating question bank.
-
-### JSON content mode
-
-With `GAME_CONTENT_SOURCE=json`, the application reads `data/manifest.json` and the chapter files referenced by that manifest. The loader derives:
-
-- chapter and boss metadata;
-- boss health and image references;
-- questions, answer choices, correct answers, and explanations;
-- per-question and per-boss spell values; and
-- question banks grouped by chapter and boss.
-
-The number of JSON chapters is **manifest-driven**. The reviewed backend does not enforce or prove a fixed count of 27 chapters, so the exact count should be documented only after validating the repository's current `data/manifest.json`.
-
-JSON mode currently maps damage ranks to only these spell IDs:
-
-1. `fire-spark`
-2. `resonance-burst`
-3. `mechanism-storm`
-
-## API endpoints
-
-| Method | Endpoint | Purpose |
-| --- | --- | --- |
-| `POST` | `/api/auth/signup` | Create an unverified account and send a confirmation code. |
-| `POST` | `/api/auth/verify` | Verify a six-digit code and create an authenticated session. |
-| `POST` | `/api/auth/resend` | Invalidate prior unused codes and send a new code. |
-| `POST` | `/api/auth/login` | Authenticate a verified user. |
-| `GET` | `/api/auth/me` | Return the authenticated user's public profile. |
-| `POST` | `/api/auth/logout` | Delete the current authentication session and cookie. |
-| `POST` | `/api/game/new` | Create an in-memory game session and restore saved progress. |
-| `GET` | `/api/game/state` | Return authoritative game state for an owned session. |
-| `POST` | `/api/avatar/finalize` | Validate and persist the selected avatar. |
-| `POST` | `/api/battle/select-spell` | Validate a spell and create the active question and turn. |
-| `POST` | `/api/battle/answer` | Grade the answer and resolve player and boss damage. |
-| `POST` | `/api/battle/retry` | Reset the current battle without removing completed progression. |
-| `POST` | `/api/battle/next-turn` | Advance to the next boss or chapter after victory. |
-| `GET` | `/api/progression` | Return the authenticated player's current game state. |
-| `GET` | `/` | Serve `templates/index.html`. |
-| `GET` | `/favicon.ico` | Serve the SVG favicon. |
-
-FastAPI also exposes interactive API documentation at `/docs` and the OpenAPI schema at `/openapi.json` unless these defaults are changed.
-
-## Database model
-
-The application initializes SQLite directly when `app.py` is imported.
-
-| Table | Stored data |
-| --- | --- |
-| `users` | Identity, email, username, password hash, verification status, avatar JSON, progress JSON, and creation time. |
-| `verification_codes` | User reference, hashed code, expiration, used status, and creation time. |
-| `auth_sessions` | Hashed token, user reference, expiration, and creation time. |
-
-Foreign keys are enabled for each connection. There is no ORM or formal migration tool; a guarded `ALTER TABLE` statement currently handles the addition of `progress_json`.
-
-## Configuration
-
-Configuration precedence is:
-
-1. Process environment variables
-2. Local `.env` file
-3. Matching values in `secrets.toml` where supported
-4. Application defaults
-
-| Variable | Default | Purpose |
-| --- | --- | --- |
-| `DATABASE_PATH` | `organic_battles.sqlite3` beside `app.py` | SQLite database location. |
-| `GAME_CONTENT_SOURCE` | `app` | Select `app` or `json` content mode. |
-| `VERIFICATION_CODE_TTL_SECONDS` | `900` | Verification-code lifetime. |
-| `COOKIE_SECURE` | `0` | Set to `1` when the application is served over HTTPS. |
-| `SMTP_HOST` | unset | SMTP host; when unset, codes are printed to the server console. |
-| `SMTP_PORT` | `587` | SMTP port. |
-| `SMTP_USERNAME` | unset | SMTP login and fallback sender. |
-| `SMTP_PASSWORD` | unset | SMTP password or Gmail app password. |
-| `SMTP_FROM` | username or fallback | From address for verification messages. |
-| `PORT` | `8000` in the Docker command | HTTP port used by Uvicorn. |
-
-Never commit `.env`, `secrets.toml`, SMTP credentials, authentication tokens, or a production database file.
-
-## Run locally
-
-### Windows PowerShell
-
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-uvicorn app:app --reload
+    LoadBundle --> InitState["Initialize / Serve Game State with Chapter & Boss"]
 ```
 
-### macOS or Linux
+---
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-uvicorn app:app --reload
+### 2.2 Battle Turn & Damage Resolution Lifecycle
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Player as Player (Browser)
+    participant UI as main.js & Phaser
+    participant API as FastAPI (app.py)
+    participant DB as SQLite (GameSession)
+
+    Player->>UI: Selects Spell (e.g. 'fire-spark')
+    UI->>API: POST /api/battle/select-spell { spell_id: "fire-spark" }
+    API->>DB: Fetch GameSession & Verify Cooldowns
+    API-->>API: Pick Question from active Chapter/Boss bank
+    API->>DB: Save active_question_json, active_spell, turn_id
+    API-->>UI: Return Question Prompt + 4 Choices (Correct answer stripped)
+    UI->>Player: Display Vocabulary Trial Modal
+
+    Player->>UI: Selects Answer Choice
+    UI->>API: POST /api/battle/answer { answer: "Choice B" }
+    API->>DB: Fetch GameSession & Load Question Secret
+    API-->>API: Grade Answer against correct_answer
+
+    alt Correct Answer
+        API-->>API: Calculate Spell Damage & Apply to Boss HP
+        API-->>API: Roll 50% Boss Counterattack
+        API->>DB: Update boss_hp, player_hp, cooldowns, log
+        API-->>UI: Return Result (Hit damage, counterattack, victory flag)
+        UI->>Player: Trigger Cast Animation & Boss Hit FX
+    else Incorrect Answer (Fizzle)
+        API-->>API: Calculate Spell Self-Damage & Apply to Player HP
+        API->>DB: Update player_hp, clear active question, log fizzle
+        API-->>UI: Return Result (Fizzle, self-damage, correct answer, explanation)
+        UI->>Player: Open Explanation & Concept Review Modal
+    end
 ```
 
-Open <http://127.0.0.1:8000>. The application expects the referenced `templates`, `static`, `avatars`, `bosses`, and optional `data` files to exist in the repository.
+---
 
-To run JSON content mode in PowerShell:
+### 2.3 Admin Configuration & Session Management Flow
 
-```powershell
-$env:GAME_CONTENT_SOURCE = "json"
-uvicorn app:app --reload
+```mermaid
+flowchart LR
+    subgraph AdminPortal["Admin Console (/api/admin/*)"]
+        AdminLogin["Admin Login<br/>('admin' / 'admin')"]
+        TabNav["Admin Console Tabs"]
+        UsersTab["👤 User Accounts"]
+        SessionsTab["⚔ Game Sessions"]
+    end
+
+    subgraph UserActions["User Management"]
+        SearchUser["Search by User / Email"]
+        ToggleMode["Toggle Mode<br/>[APP] · [JSON] · [DEFAULT]"]
+        SaveMode["POST /api/admin/users/{id}/config"]
+    end
+
+    subgraph SessionActions["Session Management"]
+        ListSessions["GET /api/admin/sessions"]
+        ResetChapter["Select Chapter ➔ ⟲ RESET<br/>Sets Chapter X, Boss 1, Full HP"]
+        DeleteSession["🗑 DELETE SESSION<br/>Purges session & clears progress"]
+    end
+
+    AdminLogin --> TabNav
+    TabNav --> UsersTab & SessionsTab
+    UsersTab --> SearchUser --> ToggleMode --> SaveMode
+    SessionsTab --> ListSessions --> ResetChapter & DeleteSession
 ```
 
-To run JSON content mode in macOS or Linux:
+---
 
-```bash
-export GAME_CONTENT_SOURCE=json
-uvicorn app:app --reload
-```
-
-## Run with Docker
-
-```bash
-docker build -t organic-battles .
-docker run --rm -p 8000:8000 --env-file .env organic-battles
-```
-
-For persistent SQLite data in a container, mount a writable volume and set `DATABASE_PATH` to a path inside that volume. Without a persistent volume, database changes are lost when the container is replaced.
-
-## Testing
-
-Pytest and HTTPX are declared in `requirements.txt`:
-
-```bash
-pytest
-```
-
-The reviewed source snapshot did not include test files. Add tests for authentication, verification expiration, session ownership, content loading, cooldown enforcement, answer grading, defeat and retry, progression, and persistence before treating the paid version as production-ready.
-
-## Verified issues and recommended corrections
-
-These findings are based on the reviewed `app.py`, `requirements.txt`, `pyproject.toml`, `Dockerfile`, `main.py`, and prior README.
-
-### Configuration and metadata
-
-1. **Python versions conflict.** The Dockerfile uses Python 3.12, while `pyproject.toml` requires Python 3.14 or newer. Align both to one supported version.
-2. **Dependencies are split incorrectly.** Docker installs `requirements.txt`, but `pyproject.toml` declares only `pip`. Put runtime dependencies in one authoritative dependency definition or keep both files synchronized.
-3. **Project naming is stale.** The repository says V3 Paid Version, while `pyproject.toml`, the FastAPI title, and some source text still say V2.
-4. **`main.py` is not the application.** It is a placeholder; deployment correctly uses `app.py` through `uvicorn app:app`.
-
-### Content correctness
-
-1. **Five built-in explanation keys do not match their questions.** The explanation dictionary contains mojibake text such as `â€¦`, while the questions contain the Unicode ellipsis `…`. Those questions therefore fall back to the generic explanation. Normalize the source file to UTF-8 and make the keys match exactly.
-2. **`acid-shot` is declared twice.** Python silently keeps the second identical dictionary entry, so the effective spell count remains nine. Remove the duplicate source entry.
-3. **The JSON chapter count must come from the manifest.** Do not claim 27 chapters until `data/manifest.json` is checked in the current repository version.
-4. **JSON mode exposes only three rank-mapped spell IDs.** Confirm whether this is intentional before documenting all nine spells as available in JSON mode.
-
-### Production readiness
-
-1. **Active game sessions are process-local.** A restart removes their session IDs, and multiple workers or containers cannot share them. Saved progress remains in SQLite and can be restored by creating a new game session, but horizontal scaling requires Redis or a database-backed game-session repository.
-2. **SQLite requires persistent storage in containers.** A managed relational database is preferable when concurrent writes or horizontal scaling increase.
-3. **Add rate limiting and abuse controls.** Signup, login, verification, and resend endpoints currently have no application-level throttling or attempt limits.
-4. **Strengthen verification binding.** Verification currently looks up a user by the submitted six-digit code alone. Bind verification to an email or pending-account identifier and limit failed attempts.
-5. **Review browser security controls.** Production deployment should enforce HTTPS, `COOKIE_SECURE=1`, an explicit host policy, appropriate security headers, and CSRF protection for cookie-authenticated state-changing requests.
-6. **Use formal database migrations.** Replace import-time schema changes with a controlled migration process before production releases.
-7. **Add automated tests and CI.** Test dependencies are present, but test coverage was not verifiable from the reviewed files.
-
-## Deployment guidance
-
-The current Docker command starts a single Uvicorn process:
+## 3. Directory & Codebase Structure
 
 ```text
-uvicorn app:app --host 0.0.0.0 --port ${PORT:-8000}
+OrganicBattles/
+├── app.py                     # Main FastAPI application, routes, battle rules, content loaders
+├── database.py                # SQLAlchemy engine, session maker, get_db dependency
+├── models.py                  # Declarative SQLAlchemy models (User, GameSession, AuthSession, etc.)
+├── session_repository.py      # CRUD repository persisting GameSession and User progress
+├── Dockerfile                 # Container definition running uvicorn app:app
+├── requirements.txt           # Python dependencies (FastAPI, SQLAlchemy, Slowapi, Pytest, etc.)
+├── pyproject.toml             # Project metadata and test configuration
+├── secrets.toml               # Local-only secrets (Gmail SMTP App Password credentials)
+├── ProdUpgradeTasks.md        # Comprehensive production upgrade roadmap and task tracking
+├── templates/
+│   └── index.html             # Single-page application shell, auth cards, game UI, admin portal
+├── static/
+│   ├── css/
+│   │   └── game.css           # RPG theme styling, glassmorphism, animations, admin styles
+│   ├── js/
+│   │   ├── main.js            # Frontend application logic, API client, DOM bindings, battle flow
+│   │   └── avatars.js         # Avatar customization engine, raster art rendering, state animator
+│   └── assets/
+│       ├── battle-arena.png   # Phaser background battle arena texture
+│       └── bosses/            # Boss artwork images (.png/.svg)
+├── data/                      # Manifest-driven JSON game content
+│   ├── manifest.json          # Content manifest pointing to chapter files
+│   ├── chapter_01_foundations.json
+│   ├── chapter_02_reaction_mechanisms.json
+│   └── ...                    # Additional chapter files
+└── tests/
+    ├── test_game.py           # 24 dual-mode combat, session, and admin management tests
+    └── test_email_config.py   # 2 SMTP / Gmail configuration validation tests
 ```
 
-This is compatible with the current process-local active-session design. Do not add multiple Uvicorn workers or horizontally scale containers until active game sessions are moved to shared storage. In production, place the application behind an HTTPS-capable load balancer or reverse proxy, persist the database, provide secrets through the hosting platform, and add health checks and centralized logs.
+---
 
-## Scope of this README audit
+## 4. Dual Content Source Engine
 
-This README was validated against the source files available in the reviewed snapshot. The live private GitHub repository and the complete frontend, asset, JSON-content, and test directories were not accessible during this audit. Statements requiring those files are explicitly qualified rather than presented as verified facts.
+The game engine separates game mechanics from content data, allowing instant switching between two distinct content representations:
+
+### 4.1 Built-in App Mode (`app`)
+- **Structure**: Pre-coded Python data structures within [`app.py`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/app.py).
+- **Scope**: 3 Chapters, 14 Bosses (Chapter 1: 4 bosses; Chapter 2: 5 bosses; Chapter 3: 5 bosses).
+- **Question Pool**: Built-in organic chemistry trial questions mapped to general concepts.
+- **Spells**: Full 9-spell arsenal across Basic (20 DMG), Medium (30 DMG), and Strong (45 DMG) tiers.
+
+### 4.2 JSON Manifest Mode (`json`)
+- **Structure**: Manifest-driven filesystem loader reading [`data/manifest.json`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/data/manifest.json) and individual chapter JSON files.
+- **Scope**: Manifest-defined chapters with chapter-specific boss health, images, and targeted vocabulary questions with detailed chemical explanations.
+- **Rich Question Banks**: Grouped by chapter and boss for zero-repetition battle encounters.
+
+### 4.3 Content Source Resolution Hierarchy
+When an API request processes a game action, the effective mode is resolved in strict order:
+1. **Priority 1 (`.env` / Environment Variable)**: If `GAME_CONTENT_SOURCE` is defined in the operating system environment or `.env`, it unconditionally overrides all settings.
+2. **Priority 2 (`user.content_source` in Database)**: If no global override exists, the individual user's database setting (`"app"` or `"json"`) is used.
+3. **Priority 3 (System Default)**: If neither is set, the application defaults to `"app"`.
+
+---
+
+## 5. Admin Configuration & User Management Console
+
+The Admin Console is accessible via the **`⚙ ADMIN CONFIG`** buttons on the boot screen, authentication screen, and in-game header.
+
+### 5.1 Admin Authentication
+- **Default Credentials**: Username: `admin` | Password: `admin`
+- **Environment Overrides**:
+  - `ADMIN_USERNAME`: Custom admin username.
+  - `ADMIN_PASSWORD`: Custom admin password.
+  - `ADMIN_SESSION_TTL_HOURS`: Token lifetime (default: `24` hours).
+
+### 5.2 User Accounts Tab (`👤 USER CONFIGURATION`)
+- **Live Search**: Instant filtering by username, email, or user ID.
+- **Mode Switching**: One-click toggle between `[ APP ]`, `[ JSON ]`, and `[ DEFAULT ]`.
+- **Effective Mode Badge**: Visual pill indicating whether the active mode is driven by database setting or overridden by global `.env`.
+- **Apply Action**: Updates the user's mode and immediately updates their active game session.
+
+### 5.3 Game Sessions Tab (`⚔ GAME SESSIONS`)
+- **Session Introspection**: Inspect active sessions with real-time Player HP, Boss HP, Chapter name, Current Boss name, and Defeated Boss count.
+- **Reset to Chapter & First Boss**: Select any chapter from a dropdown and click **`⟲ RESET`** to set the player at Boss 1 of that chapter with full health and cleared active turn locks.
+- **Delete Session**: Click **`🗑 DELETE`** with a confirmation modal to remove the session record and wipe serialized progress, giving the user a clean slate on their next login.
+
+---
+
+## 6. Combat Engine, Spells & Chemistry Mechanics
+
+### 6.1 The 9-Spell Arsenal
+
+| Spell ID | Spell Name | Tier | Base Damage | Cooldown |
+|---|---|---|---|---|
+| `fire-spark` | Fire Spark | BASIC | 20 DMG | None |
+| `acid-shot` | Acid Shot | BASIC | 20 DMG | None |
+| `carbon-punch` | Carbon Punch | BASIC | 20 DMG | None |
+| `resonance-burst` | Resonance Burst | MEDIUM | 30 DMG | 1 Turn |
+| `nucleophile-strike` | Nucleophile Strike | MEDIUM | 30 DMG | 1 Turn |
+| `chiral-slash` | Chiral Slash | MEDIUM | 30 DMG | 1 Turn |
+| `mechanism-storm` | Mechanism Storm | STRONG | 45 DMG | 2 Turns |
+| `stereochemical-rift` | Stereochemical Rift | STRONG | 45 DMG | 2 Turns |
+| `spectral-obliteration` | Spectral Obliteration | STRONG | 45 DMG | 2 Turns |
+
+### 6.2 Battle Rules & Chemistry Feedback
+1. **Selecting a Spell**: Locks the spell, triggers a random vocabulary trial from the boss/chapter question bank, and assigns a unique `turn_id`.
+2. **Correct Answer**:
+   - Deals the selected spell's damage directly to the boss.
+   - Boss has a **50% probability** of retaliating with a counterattack (dealing 10–25 damage).
+3. **Incorrect Answer (Spell Fizzle)**:
+   - Deals **0 damage** to the boss.
+   - Spell backfires, dealing self-damage equal to the spell's damage tier to the player.
+   - Triggers the **Explanation & Concept Review Modal**, showing the correct answer and a full chemical breakdown.
+4. **Victory & Progression**:
+   - Defeating a boss unlocks the next boss in the chapter.
+   - Defeating the final boss of a chapter transitions the player to the next chapter.
+5. **Defeat & Retry**:
+   - If player HP hits 0, player can retry the current boss with full HP without losing chapter progression.
+
+---
+
+## 7. Complete API Endpoints Reference
+
+### 7.1 Authentication Endpoints
+
+| Method | Endpoint | Description | Request Body |
+|---|---|---|---|
+| `POST` | `/api/auth/signup` | Register new account and send 6-digit confirmation code. | `{"email": "...", "username": "...", "password": "..."}` |
+| `POST` | `/api/auth/verify` | Verify email OTP code and receive session token. | `{"code": "123456"}` |
+| `POST` | `/api/auth/login` | Authenticate existing user with email and password. | `{"email": "...", "password": "..."}` |
+| `GET` | `/api/auth/me` | Fetch public profile, active avatar, and effective mode. | Header: `Authorization: Bearer <token>` |
+| `POST` | `/api/auth/resend` | Invalidate previous code and send fresh OTP code. | Query: `?email=user@example.com` |
+| `POST` | `/api/auth/logout` | Terminate session and clear session cookies. | Header / Cookie |
+
+### 7.2 User Configuration & Content Mode Endpoints
+
+| Method | Endpoint | Description | Request Body |
+|---|---|---|---|
+| `POST` | `/api/user/mode` | Switch current user's mode (`app` or `json`). | `{"mode": "json"}` |
+| `POST` | `/api/user/content-source` | Update user's `content_source` column in database. | `{"content_source": "app"}` |
+
+### 7.3 Game & Avatar Endpoints
+
+| Method | Endpoint | Description | Request Body |
+|---|---|---|---|
+| `POST` | `/api/game/new` | Create or restore persistent game session. | Optional: `session_id` |
+| `GET` | `/api/game/state` | Fetch full authoritative battle state. | Query: `?session_id=<id>` |
+| `POST` | `/api/avatar/finalize` | Save selected alchemist avatar customization. | Avatar JSON payload |
+
+### 7.4 Battle & Combat Endpoints
+
+| Method | Endpoint | Description | Request Body |
+|---|---|---|---|
+| `POST` | `/api/battle/select-spell` | Select spell and receive vocabulary question trial. | `{"spell_id": "fire-spark"}` |
+| `POST` | `/api/battle/answer` | Submit answer choice, grade turn, apply damage. | `{"answer": "Nucleophile"}` |
+| `POST` | `/api/battle/retry` | Restart current boss fight after defeat. | `session_id` |
+| `POST` | `/api/battle/next-turn` | Advance to next boss or chapter upon victory. | `session_id` |
+
+### 7.5 Admin Console Endpoints
+
+| Method | Endpoint | Description | Headers / Payload |
+|---|---|---|---|
+| `POST` | `/api/admin/login` | Authenticate admin and receive admin token. | `{"username": "admin", "password": "admin"}` |
+| `GET` | `/api/admin/status` | Get system status, user/session counts, and .env state. | `Authorization: Bearer <admin_token>` |
+| `GET` | `/api/admin/users` | List all users with verified status and mode settings. | `Authorization: Bearer <admin_token>` |
+| `POST` | `/api/admin/users/{user_id}/config` | Update a specific user's `content_source`. | `{"content_source": "json"}` |
+| `GET` | `/api/admin/sessions` | List all active sessions with battle stats & chapters. | `Authorization: Bearer <admin_token>` |
+| `POST` | `/api/admin/sessions/{session_id}/reset` | Reset session to chosen chapter and first boss. | `{"chapter": 2}` |
+| `DELETE` | `/api/admin/sessions/{session_id}` | Delete session and reset user progress. | `Authorization: Bearer <admin_token>` |
+| `POST` | `/api/admin/logout` | Terminate administrator session. | Header / Cookie |
+
+---
+
+## 8. Database Schema
+
+The database uses SQLAlchemy with automatic table creation and schema validation on startup:
+
+```mermaid
+erDiagram
+    users ||--o{ game_sessions : "has one"
+    users ||--o{ auth_sessions : "has many"
+    users ||--o{ verification_codes : "has many"
+
+    users {
+        string id PK
+        string email UK
+        string username UK
+        string password_hash
+        integer verified
+        string avatar_json
+        string progress_json
+        string content_source "app | json | null"
+        integer created_at
+    }
+
+    game_sessions {
+        string id PK
+        string user_id FK
+        integer chapter
+        integer boss_index
+        integer player_hp
+        integer player_max_hp
+        integer boss_hp
+        string active_spell
+        string active_question_json
+        string cooldowns_json
+        string log_json
+        string completed_json
+        string content_source "app | json | null"
+        integer version
+        integer updated_at
+    }
+
+    auth_sessions {
+        string id PK
+        string token_hash UK
+        string user_id FK
+        integer expires_at
+        integer created_at
+    }
+
+    verification_codes {
+        string id PK
+        string user_id FK
+        string code_hash
+        integer expires_at
+        integer used
+        integer created_at
+    }
+```
+
+---
+
+## 9. Configuration & Environment Variables
+
+Configuration is resolved with the following priority:
+1. **Operating System / Process Environment** (`os.getenv`)
+2. **Local `.env` file**
+3. **`secrets.toml` file** (for local SMTP credentials)
+4. **Application Defaults**
+
+| Variable | Default Value | Description |
+|---|---|---|
+| `GAME_CONTENT_SOURCE` | *Unset* (defaults to `app`) | Priority 1 global override (`app` or `json`). |
+| `DATABASE_URL` | `sqlite:///./organic_battles.sqlite3` | SQLAlchemy database connection URI. |
+| `ADMIN_USERNAME` | `admin` | Username for Administrator Console login. |
+| `ADMIN_PASSWORD` | `admin` | Password for Administrator Console login. |
+| `ADMIN_SESSION_TTL_HOURS` | `24` | Admin session token lifetime in hours. |
+| `VERIFICATION_CODE_TTL_SECONDS` | `900` (15 mins) | Email verification OTP code validity duration. |
+| `COOKIE_SECURE` | `0` | Set to `1` in production to enforce `Secure; HttpOnly` cookies. |
+| `SMTP_HOST` | *Unset* (logs to console) | SMTP server host (e.g. `smtp.gmail.com`). |
+| `SMTP_PORT` | `587` | SMTP server port (STARTTLS). |
+| `SMTP_USERNAME` | *Unset* | SMTP authentication email address. |
+| `SMTP_PASSWORD` | *Unset* | SMTP authentication password or Gmail App Password. |
+| `SMTP_FROM` | `SMTP_USERNAME` | Sender email address. |
+
+---
+
+## 10. Local Setup & Execution Guide
+
+### 10.1 Prerequisites
+- **Python 3.9+** (Python 3.11 or 3.12 recommended)
+- **pip** and **virtualenv**
+
+### 10.2 Installation & Startup
+
+#### macOS / Linux
+```bash
+# 1. Clone repository and navigate to root directory
+cd "/path/to/OrganicBattles"
+
+# 2. Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Start Uvicorn development server
+uvicorn app:app --reload --host 127.0.0.1 --port 8000
+```
+
+#### Windows (PowerShell)
+```powershell
+# 1. Navigate to root directory
+cd "C:\path\to\OrganicBattles"
+
+# 2. Create and activate virtual environment
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Start Uvicorn development server
+uvicorn app:app --reload --host 127.0.0.1 --port 8000
+```
+
+Open your browser at **<http://127.0.0.1:8000>**.
+
+---
+
+### 10.3 Running in Specific Content Modes
+
+To force global **JSON Content Mode**:
+```bash
+# macOS / Linux
+GAME_CONTENT_SOURCE=json uvicorn app:app --reload
+
+# Windows PowerShell
+$env:GAME_CONTENT_SOURCE="json"; uvicorn app:app --reload
+```
+
+To force global **App Content Mode**:
+```bash
+# macOS / Linux
+GAME_CONTENT_SOURCE=app uvicorn app:app --reload
+
+# Windows PowerShell
+$env:GAME_CONTENT_SOURCE="app"; uvicorn app:app --reload
+```
+
+---
+
+### 10.4 Running Automated Tests
+
+Run the complete 26-test suite:
+```bash
+# Run all tests
+.venv/bin/pytest
+
+# Run tests with verbose output
+.venv/bin/pytest -v
+
+# Run tests under forced JSON mode
+GAME_CONTENT_SOURCE=json .venv/bin/pytest
+
+# Run tests under forced App mode
+GAME_CONTENT_SOURCE=app .venv/bin/pytest
+```
+
+---
+
+## 11. Containerization & Production Deployment
+
+### 11.1 Docker Build & Run
+```bash
+# Build Docker image
+docker build -t organic-battles .
+
+# Run container with persistent volume
+docker run --rm -p 8000:8000 \
+  -v $(pwd)/organic_battles.sqlite3:/app/organic_battles.sqlite3 \
+  -e COOKIE_SECURE=1 \
+  -e ADMIN_PASSWORD="your-strong-admin-password" \
+  organic-battles
+```
+
+### 11.2 Production Upgrade Roadmap
+For enterprise-scale multi-region deployment, reference [`ProdUpgradeTasks.md`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/ProdUpgradeTasks.md), which outlines:
+1. **PostgreSQL Migration**: Replacing SQLite with Aurora PostgreSQL and Alembic migrations.
+2. **Distributed Redis/Valkey**: Shared session tokens, turn idempotency locks, and distributed Slowapi rate limits.
+3. **Asynchronous Worker Queue**: Decoupling email delivery and content loading via Celery / ARQ / SQS.
+4. **CloudFront CDN / S3**: Offloading static assets, Phaser textures, and audio files with WebP/AVIF optimization.
+5. **Observability**: OpenTelemetry tracing, structured JSON logging, and Prometheus metrics.
