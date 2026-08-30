@@ -1,5 +1,7 @@
 const $ = (selector) => document.querySelector(selector);
 import { Avatar, CHARACTERS, createAvatarStage, setAvatarState, DEFAULT_AVATAR_CONFIG, PLAYER_AVATAR_OPTIONS, normalizeAvatarConfig } from './avatars.js?v=3';
+import { soundEngine } from './audio.js?v=1';
+
 
 let session = null;
 let game = null;
@@ -81,43 +83,72 @@ function showUsernameTakenModal() {
 function showAvatarOnboarding(existingAvatar = null) {
   $('#boot')?.classList.add('hidden'); $('#auth-screen')?.classList.add('hidden'); $('#avatar-creator')?.classList.remove('hidden');
   const returning = Boolean(existingAvatar?.character && CHARACTERS[existingAvatar.character]?.type === 'player');
-  selectedAvatar = returning ? existingAvatar.character : null;
+  const initialAvatar = returning ? existingAvatar.character : null;
+  selectedAvatar = initialAvatar;
   $('#avatar-screen-title').textContent = returning ? 'YOUR AVATAR' : 'PICK YOUR AVATAR';
   $('#avatar-screen-copy').textContent = returning ? 'You have already selected this avatar. Would you like to change it?' : 'Choose one field companion. Your selection will represent you on every battlefield.';
-  $('#keep-avatar')?.classList.toggle('hidden', !returning);
-  renderAvatarSelection(returning);
+  renderAvatarSelection(returning, initialAvatar);
 }
 
-function renderAvatarSelection(returning = false) {
+function renderAvatarSelection(returning = false, initialAvatar = null) {
   const gallery = $('#avatar-gallery');
   const status = $('#avatar-selection-status');
   const button = $('#accept-avatar');
+  const keepButton = $('#keep-avatar');
   if (!gallery || !status || !button) return;
+
   const options = Object.entries(CHARACTERS).filter(([, avatar]) => avatar.type === 'player');
-  if (!options.length) { status.textContent = 'No avatars are available right now.'; status.className = 'avatar-selection-status error'; button.disabled = true; return; }
+  if (!options.length) {
+    status.textContent = 'No avatars are available right now.';
+    status.className = 'avatar-selection-status error';
+    button.disabled = true;
+    return;
+  }
+
+  const updateButtonsAndStatus = () => {
+    gallery.querySelectorAll('.avatar-choice').forEach((item) => item.classList.toggle('selected', item.dataset.avatarId === selectedAvatar));
+    button.disabled = !selectedAvatar;
+
+    if (returning && initialAvatar) {
+      if (selectedAvatar === initialAvatar) {
+        keepButton?.classList.add('hidden');
+        button.textContent = 'CONTINUE TO BATTLEFIELD';
+        status.textContent = `${CHARACTERS[selectedAvatar].name} selected. Ready to enter the battlefield.`;
+      } else {
+        keepButton?.classList.remove('hidden');
+        if (keepButton) keepButton.textContent = 'KEEP CURRENT AVATAR';
+        button.textContent = 'CHANGE AVATAR & ENTER';
+        status.textContent = `Switching companion to ${CHARACTERS[selectedAvatar].name}. Click to confirm.`;
+      }
+    } else {
+      keepButton?.classList.add('hidden');
+      button.textContent = 'CONTINUE TO BATTLEFIELD';
+      status.textContent = selectedAvatar
+        ? `${CHARACTERS[selectedAvatar].name} selected. Ready to enter the battlefield.`
+        : 'Select an avatar to continue.';
+    }
+    status.className = 'avatar-selection-status success';
+  };
+
   gallery.innerHTML = options.map(([id, avatar]) => `<button type="button" class="avatar-choice" data-avatar-id="${id}" aria-label="Choose ${avatar.name}"><span class="avatar-choice-art"><img src="${avatar.asset}" alt="${avatar.name}" loading="lazy"></span><span class="avatar-choice-name">${avatar.name}</span></button>`).join('');
+
   gallery.querySelectorAll('.avatar-choice').forEach((choice) => {
     const image = choice.querySelector('img');
     image.addEventListener('error', () => { choice.classList.add('asset-error'); choice.disabled = true; image.remove(); status.textContent = 'One or more avatar assets could not be loaded. Try refreshing the page.'; status.className = 'avatar-selection-status error'; });
     choice.addEventListener('click', () => {
       selectedAvatar = choice.dataset.avatarId;
-      gallery.querySelectorAll('.avatar-choice').forEach((item) => item.classList.toggle('selected', item === choice));
-      button.disabled = false;
-      status.textContent = `${CHARACTERS[selectedAvatar].name} selected. Ready to enter the battlefield.`;
-      status.className = 'avatar-selection-status success';
+      updateButtonsAndStatus();
     });
   });
-  gallery.querySelectorAll('.avatar-choice').forEach((choice) => choice.classList.toggle('selected', choice.dataset.avatarId === selectedAvatar));
-  button.disabled = !selectedAvatar;
-  button.textContent = returning ? 'CHANGE AVATAR' : 'CONTINUE TO BATTLEFIELD';
-  status.textContent = returning && selectedAvatar ? `You have already selected ${CHARACTERS[selectedAvatar].name}. Would you like to change it?` : 'Select an avatar to continue.';
-  status.className = returning ? 'avatar-selection-status success' : 'avatar-selection-status';
+
+  updateButtonsAndStatus();
 }
 
 async function beginVerifiedGame() {
   session = await api('/api/game/new', {});
   showAvatarOnboarding(session.finalized ? session.avatar : null);
 }
+
 
 function bindAuthEvents() {
   $('#show-signup')?.addEventListener('click', () => { $('#login-form')?.classList.add('hidden'); $('#signup-form')?.classList.remove('hidden'); $('#auth-title').textContent = 'CREATE YOUR ACCOUNT'; authMessage(''); });
@@ -377,24 +408,70 @@ function animateBattleResult(result) {
   }, 1500);
 }
 
+let cooldownTimer = null;
+
 function renderSpells(s) {
   const spellsContainer = $('#spells');
   if (!spellsContainer) return;
+  if (cooldownTimer) {
+    clearInterval(cooldownTimer);
+    cooldownTimer = null;
+  }
 
   const orderedSpells = [...spells].sort(([leftId], [rightId]) => {
     const leftAvailable = Boolean(s.spell_damage && Object.keys(s.spell_damage).length && s.spell_damage[leftId]);
     const rightAvailable = Boolean(s.spell_damage && Object.keys(s.spell_damage).length && s.spell_damage[rightId]);
     return Number(rightAvailable) - Number(leftAvailable);
   });
+
+  const remaining = { ...(s.cooldowns || {}) };
+
+  const isDefeated = (s.player.hp <= 0);
+  const isVictory = (s.boss.hp <= 0);
+
+  const updateSpellButtons = () => {
+    orderedSpells.forEach(([id, name, type, damage]) => {
+      const btn = spellsContainer.querySelector(`[data-spell="${id}"]`);
+      if (!btn) return;
+      const cd = Math.max(0, Math.round((remaining[id] || 0) * 10) / 10);
+      const unavailable = Boolean(s.spell_damage && Object.keys(s.spell_damage).length && !s.spell_damage[id]);
+      const activeDamage = s.spell_damage?.[id] ? `${s.spell_damage[id]} DMG` : damage;
+      const meta = btn.querySelector('.spell-meta');
+      if (meta) {
+        meta.textContent = `${type} · ${unavailable ? 'NOT AVAILABLE' : cd > 0 ? cd.toFixed(1) + 's' : activeDamage}`;
+      }
+      btn.disabled = unavailable || cd > 0 || isDefeated || isVictory;
+    });
+  };
+
   spellsContainer.innerHTML = `<div class="control-panel"><div class="control-title">ARSENAL // SELECT A SPELL</div><div class="spell-grid">${orderedSpells.map(([id, name, type, damage]) => {
-    const cooldown = s.cooldowns?.[id] || 0;
+    const cd = Math.max(0, Math.round((remaining[id] || 0) * 10) / 10);
     const unavailable = Boolean(s.spell_damage && Object.keys(s.spell_damage).length && !s.spell_damage[id]);
     const activeDamage = s.spell_damage?.[id] ? `${s.spell_damage[id]} DMG` : damage;
-    return `<button class="spell" data-spell="${id}" ${cooldown || unavailable ? 'disabled' : ''}><div class="spell-name">${name}</div><div class="spell-meta">${type} · ${unavailable ? 'NOT AVAILABLE' : cooldown ? cooldown + 's' : activeDamage}</div></button>`;
+    return `<button class="spell" data-spell="${id}" ${cd > 0 || unavailable || isDefeated || isVictory ? 'disabled' : ''}><div class="spell-name">${name}</div><div class="spell-meta">${type} · ${unavailable ? 'NOT AVAILABLE' : cd > 0 ? cd.toFixed(1) + 's' : activeDamage}</div></button>`;
   }).join('')}</div></div>`;
+
+  const hasCooldowns = Object.values(remaining).some((v) => v > 0);
+  if (hasCooldowns && !isDefeated && !isVictory) {
+    cooldownTimer = setInterval(() => {
+      let anyLeft = false;
+      for (const k in remaining) {
+        if (remaining[k] > 0) {
+          remaining[k] = Math.max(0, remaining[k] - 0.2);
+          if (remaining[k] > 0) anyLeft = true;
+        }
+      }
+      updateSpellButtons();
+      if (!anyLeft) {
+        clearInterval(cooldownTimer);
+        cooldownTimer = null;
+      }
+    }, 200);
+  }
 
   document.querySelectorAll('[data-spell]').forEach((button) => {
     button.onclick = async () => {
+      if (isDefeated || isVictory) return;
       try {
         render(await api('/api/battle/select-spell', { session_id: session.session_id, spell_id: button.dataset.spell }));
       } catch (error) {
@@ -409,9 +486,25 @@ function renderSpells(s) {
   });
 }
 
+
 function renderQuestion(s) {
   const container = $('#question');
   if (!container) return;
+
+  if (s.player.hp <= 0) {
+    container.innerHTML = `<div class="control-panel"><div class="control-title">BATTLE STATUS // DEFEAT</div><div class="question">Your aura has faded. Regroup and retry the battle.</div><button id="retry-battle-btn" class="primary" style="margin-top:10px">RETRY BATTLE</button></div>`;
+    $('#retry-battle-btn').onclick = () => api('/api/battle/retry', { session_id: session.session_id }).then(render);
+    return;
+  }
+
+  if (s.boss.hp <= 0) {
+    container.innerHTML = `<div class="control-panel"><div class="control-title">BATTLE STATUS // VICTORY</div><div class="question">${s.boss.name} has been defeated!</div><button id="next-turn-btn" class="primary" style="margin-top:10px">PROCEED TO NEXT ARENA</button></div>`;
+    $('#next-turn-btn').onclick = () => api('/api/battle/next-turn', { session_id: session.session_id }).then((nextState) => {
+      if (nextState.victory) showBattleModal({ title: 'SPECTRAL CHAMPION', copy: 'All chapters complete.', action: 'CLOSE' });
+      else render(nextState);
+    });
+    return;
+  }
 
   const q = s.question;
   container.innerHTML = `<div class="control-panel">${q ? `<div class="control-title">VOCABULARY TRIAL // ONE ATTEMPT</div><div class="question">${q.prompt}</div><div class="answers">${q.choices.map((answer, index) => `<button class="answer" data-answer="${answer}"><span class="hint">${'ABCD'[index]}</span><br>${answer}</button>`).join('')}</div>` : `<div class="control-title">BATTLE STATUS</div><div class="question">${s.boss.name} awaits your next spell.</div><div class="hint">Choose a spell above to reveal a chemistry trial.</div>`}</div>`;
@@ -444,7 +537,43 @@ function showOutcome(r) {
         ? `DIRECT HIT — ${r.damage} damage. ${r.boss_hit ? 'Counterattack!' : 'Boss missed!'}`
         : `SPELL FIZZLE — correct answer: ${r.correct_answer}`;
 
-  if (!r.correct && !r.defeated) {
+  if (r.defeat) {
+    soundEngine.playDefeat();
+    if (!r.correct) {
+      window.lastExplanation = r;
+      ensureExplanationUi();
+      const headerButton = $('#view-explanation');
+      if (headerButton) {
+        headerButton.textContent = 'EXPLANATION';
+        headerButton.classList.add('available');
+      }
+    }
+    showBattleModal({
+      title: 'DEFEAT',
+      copy: `Your aura has faded. Regroup and try the battle again.${!r.correct ? ` (Correct answer: ${r.correct_answer})` : ''}`,
+      action: 'RETRY BATTLE',
+      onDone: () => api('/api/battle/retry', { session_id: session.session_id }).then(render),
+    });
+    return;
+  }
+
+  if (r.defeated) {
+    soundEngine.playVictory();
+    showBattleModal({
+      title: 'VICTORY',
+      copy: `${r.boss.name} defeated.`,
+      action: 'CONTINUE',
+      onDone: () => api('/api/battle/next-turn', { session_id: session.session_id }).then((nextState) => {
+        if (nextState.victory) showBattleModal({ title: 'SPECTRAL CHAMPION', copy: 'All chapters complete.', action: 'CLOSE' });
+        else render(nextState);
+      }),
+    });
+    return;
+  }
+
+  if (!r.correct) {
+    soundEngine.playSpellFizzle();
+    setTimeout(() => soundEngine.playPlayerHit(), 300);
     window.lastExplanation = r;
     ensureExplanationUi();
     const headerButton = $('#view-explanation');
@@ -461,17 +590,17 @@ function showOutcome(r) {
     return;
   }
 
-  if (r.defeat) {
-    showBattleModal({ title: 'DEFEAT', copy: 'Your aura fades. Regroup and try the battle again.', action: 'RETRY', onDone: () => api('/api/battle/retry', { session_id: session.session_id }).then(render) });
-  } else if (r.defeated) {
-    showBattleModal({ title: 'VICTORY', copy: `${r.boss.name} defeated.`, action: 'CONTINUE', onDone: () => api('/api/battle/next-turn', { session_id: session.session_id }).then((nextState) => {
-      if (nextState.victory) showBattleModal({ title: 'SPECTRAL CHAMPION', copy: 'All chapters complete.', action: 'CLOSE' });
-      else render(nextState);
-    }) });
+  soundEngine.playBossHit();
+  if (r.boss_hit) {
+    setTimeout(() => soundEngine.playPlayerHit(), 350);
   } else {
-    showBattleModal({ title: r.correct ? 'DIRECT HIT' : 'BATTLE UPDATE', copy: msg, action: 'BACK TO BATTLE' });
+    setTimeout(() => soundEngine.playBossMiss(), 350);
   }
+
+  showBattleModal({ title: 'DIRECT HIT', copy: msg, action: 'BACK TO BATTLE' });
 }
+
+
 
 function startPhaser() {
   if (game) return;
@@ -484,27 +613,17 @@ function startPhaser() {
     parent: 'phaser',
     width: 900,
     height: 520,
-    backgroundColor: '#0b1e2c',
+    transparent: true,
     scale: {
       mode: Phaser.Scale.RESIZE,
       autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     scene: {
-      preload() {
-        this.load.image('arena', '/static/assets/battle-arena.png');
-      },
-      create() {
-        this.arena = this.add.image(this.scale.width / 2, this.scale.height / 2, 'arena').setOrigin(0.5);
-        this.resizeArena();
-        this.scale.on('resize', () => this.resizeArena());
-      },
-      resizeArena() {
-        if (!this.arena) return;
-        this.arena.setPosition(this.scale.width / 2, this.scale.height / 2);
-        this.arena.setDisplaySize(this.scale.width, this.scale.height);
-      },
+      create() {},
     },
   });
+
+
 }
 
 function drawScene(s) {
@@ -663,7 +782,10 @@ function renderAdminUsers(filterText = '') {
           <span class="${effectiveBadge}">${effectiveLabel}</span>
         </td>
         <td>
-          <button type="button" class="admin-save-btn" data-save-user="${u.id}">APPLY</button>
+          <div style="display: flex; gap: 6px; align-items: center;">
+            <button type="button" class="admin-save-btn" data-save-user="${u.id}">APPLY</button>
+            <button type="button" class="admin-cred-btn" data-edit-cred="${u.id}" title="Edit Username or Password">🔑 CREDENTIALS</button>
+          </div>
         </td>
       </tr>
     `;
@@ -675,10 +797,16 @@ function renderAdminUsers(filterText = '') {
     const user = adminUsersData.find((u) => u.id === userId);
     if (!user) return;
 
+    const credBtn = row.querySelector('[data-edit-cred]');
+    if (credBtn) {
+      credBtn.onclick = () => openAdminCredentialsModal(user);
+    }
+
     let selectedMode = user.content_source;
 
     const modeBtns = row.querySelectorAll('[data-set-mode]');
     const saveBtn = row.querySelector('[data-save-user]');
+
 
     modeBtns.forEach((btn) => {
       btn.onclick = () => {
@@ -837,6 +965,32 @@ function renderAdminSessions(filterText = '') {
   });
 }
 
+function openAdminCredentialsModal(user) {
+  const modal = $('#admin-cred-modal');
+  if (!modal) return;
+
+  $('#admin-cred-user-id').value = user.id;
+  $('#admin-cred-email').value = user.email;
+  $('#admin-cred-username').value = user.username;
+  $('#admin-cred-password').value = '';
+  const status = $('#admin-cred-status');
+  if (status) {
+    status.textContent = '';
+    status.className = 'admin-modal-status';
+  }
+  const saveBtn = $('#admin-cred-save-btn');
+  if (saveBtn) {
+    saveBtn.disabled = false;
+    saveBtn.textContent = 'SAVE CREDENTIALS';
+  }
+
+  modal.classList.remove('hidden');
+}
+
+function closeAdminCredentialsModal() {
+  $('#admin-cred-modal')?.classList.add('hidden');
+}
+
 function bindAdminEvents() {
   $('#open-admin-boot')?.addEventListener('click', openAdminScreen);
   $('#open-admin-auth')?.addEventListener('click', openAdminScreen);
@@ -844,6 +998,62 @@ function bindAdminEvents() {
 
   $('#close-admin-login')?.addEventListener('click', closeAdminScreen);
   $('#close-admin-dash')?.addEventListener('click', closeAdminScreen);
+
+  $('#admin-cred-cancel-btn')?.addEventListener('click', closeAdminCredentialsModal);
+
+  $('#admin-cred-form')?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const userId = $('#admin-cred-user-id').value;
+    const username = $('#admin-cred-username').value.trim();
+    const password = $('#admin-cred-password').value.trim();
+    const status = $('#admin-cred-status');
+    const saveBtn = $('#admin-cred-save-btn');
+
+    if (!username) {
+      if (status) {
+        status.textContent = 'Username cannot be empty.';
+        status.className = 'admin-modal-status error';
+      }
+      return;
+    }
+
+    if (password && password.length < 8) {
+      if (status) {
+        status.textContent = 'Password must be at least 8 characters long.';
+        status.className = 'admin-modal-status error';
+      }
+      return;
+    }
+
+    saveBtn.disabled = true;
+    saveBtn.textContent = 'SAVING…';
+    if (status) {
+      status.textContent = 'Updating user credentials…';
+      status.className = 'admin-modal-status hint';
+    }
+
+    try {
+      const payload = { username };
+      if (password) {
+        payload.password = password;
+      }
+      const resp = await adminApi(`/api/admin/users/${userId}/credentials`, payload, 'POST');
+      const user = adminUsersData.find((u) => u.id === userId);
+      if (user) {
+        user.username = resp.username;
+      }
+      showAdminToast(`✓ ${resp.message}`);
+      closeAdminCredentialsModal();
+      renderAdminUsers($('#admin-user-search')?.value || '');
+    } catch (err) {
+      if (status) {
+        status.textContent = err.message;
+        status.className = 'admin-modal-status error';
+      }
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'SAVE CREDENTIALS';
+    }
+  });
 
   $('#admin-tab-users')?.addEventListener('click', () => switchAdminTab('users'));
   $('#admin-tab-sessions')?.addEventListener('click', () => switchAdminTab('sessions'));
@@ -899,6 +1109,7 @@ function bindAdminEvents() {
   });
 }
 
+
 function bindDomEvents() {
   const startButton = $('#start');
   if (startButton) {
@@ -915,15 +1126,47 @@ function bindDomEvents() {
   if (acceptButton) {
     acceptButton.addEventListener('click', async () => {
       if (!selectedAvatar) return;
-      acceptButton.disabled = true; acceptButton.textContent = 'ENTERING BATTLEFIELD…';
+      if (session.finalized && selectedAvatar === session.avatar?.character) {
+        $('#avatar-creator')?.classList.add('hidden');
+        $('#game-shell')?.classList.remove('hidden');
+        startPhaser();
+        render(session);
+        return;
+      }
+      acceptButton.disabled = true;
+      acceptButton.textContent = 'ENTERING BATTLEFIELD…';
       try {
         const avatar = { character: selectedAvatar, body: 'arc', config: { ...DEFAULT_AVATAR_CONFIG, baseCharacter: selectedAvatar } };
         session = await api('/api/avatar/finalize', { session_id: session.session_id, ...avatar });
-        $('#avatar-creator')?.classList.add('hidden'); $('#game-shell')?.classList.remove('hidden'); startPhaser(); render(session);
+        playerAvatar = null;
+        $('#avatar-creator')?.classList.add('hidden');
+        $('#game-shell')?.classList.remove('hidden');
+        startPhaser();
+        render(session);
       } catch (error) {
-        acceptButton.disabled = false; acceptButton.textContent = 'CONTINUE TO BATTLEFIELD';
-        const status = $('#avatar-selection-status'); if (status) { status.textContent = error.message; status.className = 'avatar-selection-status error'; }
+        acceptButton.disabled = false;
+        acceptButton.textContent = 'CONTINUE TO BATTLEFIELD';
+        const status = $('#avatar-selection-status');
+        if (status) {
+          status.textContent = error.message;
+          status.className = 'avatar-selection-status error';
+        }
       }
+    });
+  }
+
+
+  const muteButton = $('#mute');
+  if (muteButton) {
+    const updateMuteUi = () => {
+      const isMuted = soundEngine.isMuted();
+      muteButton.textContent = isMuted ? '🔇 AUDIO' : '🔊 AUDIO';
+      muteButton.classList.toggle('muted', isMuted);
+    };
+    updateMuteUi();
+    muteButton.addEventListener('click', () => {
+      soundEngine.toggleMute();
+      updateMuteUi();
     });
   }
 
@@ -931,6 +1174,7 @@ function bindDomEvents() {
   bindAuthEvents();
   bindAdminEvents();
 }
+
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', bindDomEvents);

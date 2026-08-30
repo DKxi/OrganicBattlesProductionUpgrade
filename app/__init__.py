@@ -1,6 +1,6 @@
 """
-Organic Battles - Backward-Compatible Entrypoint Adapter
-Re-exports the modular FastAPI application from app.main.
+Organic Battles - Modular Backend Package
+Re-exports the application instance and domain symbols.
 """
 import smtplib
 from app.main import app, create_app
@@ -9,10 +9,11 @@ from app.api.deps import APP_DATA, JSON_DATA, get_content_bundle, limiter
 from app.domain.content.resolver import resolve_content_source
 from app.domain.content.loader import APP_CHAPTERS, APP_QUESTIONS, APP_EXPLANATIONS
 from app.domain.combat.spells import SPELL_CATALOG, SPELL_LIST
-from app.infrastructure.database.models import User, GameSession, AuthSession, VerificationCode
-from app.infrastructure.database.engine import get_db, ensure_db_schema, engine, SessionLocal
 from app.infrastructure.identity.crypto import code_hash, hash_password, verify_password
 from app.infrastructure.messaging.smtp import send_verification_code_email as send_verification_email
+from app.infrastructure.database.models import User, GameSession, AuthSession, VerificationCode
+from app.infrastructure.database.engine import get_db, ensure_db_schema, engine, SessionLocal
+from app.domain.progression.entities import Avatar, Session
 
 # Legacy global content references for test fixtures
 CHAPTERS = APP_DATA.chapters
@@ -38,6 +39,10 @@ def sync_global_content_views() -> None:
     SPELL_DAMAGE_BY_QUESTION = active_bundle.spell_damage_by_question
     SPELL_DAMAGE_BY_BOSS = active_bundle.spell_damage_by_boss
     BOSS_IMAGES = active_bundle.boss_images
+
+
+sync_global_content_views()
+
 
 
 __all__ = [

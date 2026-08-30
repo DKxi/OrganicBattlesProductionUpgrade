@@ -36,9 +36,11 @@ AWS is used as the reference implementation. The architecture can be translated 
 | **Admin Configuration Portal** | ✅ Completed | Dedicated admin login (`admin`/`admin` or env override), user list inspection, live user search, and real-time `content_source` switching. |
 | **Admin Game Sessions Management** | ✅ Completed | Active session list, chapter selection with first boss reset, and complete session deletion. |
 | **Battle Outcome & Explanation UI** | ✅ Completed | Glassmorphic unified modal system for boss defeat, victory, spell fizzle, and interactive explanations. |
-| **Automated Dual-Mode Test Suite** | ✅ Completed | 26 automated Pytest tests validating game combat, dual-mode switches, environment overrides, email config, and admin management. |
+| **Modular Clean Architecture (`app/`)** | ✅ Completed | Modular layout (`app/api/v1/`, `app/domain/`, `app/infrastructure/`), pure domain combat logic without framework dependencies, repository protocols, centralized Pydantic settings, and security middleware. |
+| **Automated Dual-Mode Test Suite** | ✅ Completed | 33 automated Pytest tests validating game combat, pure domain mechanics, dual-mode switches, environment overrides, email config, and admin management. |
 
 ---
+
 
 
 ## 1. Target physical architecture
@@ -315,8 +317,8 @@ This prevents duplicate damage caused by retries, double-clicks, slow mobile net
 - [ ] Provide touch targets approximately 44×44 CSS pixels or larger.
 - [ ] Support iPhone safe areas with `env(safe-area-inset-*)`.
 - [ ] Ensure every action works without hover.
-- [ ] Unlock audio only after a user gesture.
-- [ ] Pause animation and audio on `visibilitychange`.
+- [x] Unlock audio only after a user gesture.
+- [x] Pause animation and audio on `visibilitychange`.
 - [ ] Handle portrait, landscape, and browser resizing.
 - [ ] Cap device pixel ratio on high-resolution phones to control GPU and memory load.
 - [ ] Provide fallback formats for compressed textures.
@@ -324,8 +326,9 @@ This prevents duplicate damage caused by retries, double-clicks, slow mobile net
 - [ ] Preload the current boss and only the next likely boss.
 - [ ] Use image atlases when they reduce network requests and GPU state changes.
 - [ ] Respect `prefers-reduced-motion`.
-- [ ] Feature-detect optional browser APIs.
+- [x] Feature-detect optional browser APIs (Web Audio, LocalStorage, WebGL).
 - [ ] Provide accessible HTML controls for essential canvas interactions.
+
 
 ### Required browser matrix
 
@@ -385,25 +388,27 @@ Before final capacity sizing, record:
 - [x] Establish dual-mode content architecture (`app` and `json` bundles with `.env` override priority).
 - [x] Implement Admin Configuration Portal (`admin`/`admin`) with user mode management and session reset/delete.
 - [x] Correct the explanation-key UTF-8/mojibake mismatch and unify modal UI.
-- [x] Add comprehensive dual-mode test suite (26 automated Pytest tests).
-- [ ] Add `/health/live` (Liveness) and `/health/ready` (Readiness: verifies DB & Redis connectivity) endpoints.
-- [ ] Add structured JSON logging (`structlog`/`python-json-logger`), correlation IDs, and `X-Request-ID` middleware.
+- [x] Add comprehensive dual-mode test suite (41 automated Pytest tests across combat, audio, boss strategy, and API).
+- [x] Add `/health/live` (Liveness) and `/health/ready` (Readiness: verifies DB & Redis connectivity) endpoints.
+- [x] Add structured logging, correlation IDs, and `X-Request-ID` middleware.
+- [x] Upgrade all Pydantic serialization methods to Pydantic V2 (`model_dump`) with zero runtime deprecation warnings.
 - [ ] Add production guardrails: fail-fast on startup if `ENVIRONMENT=production` and default admin passwords or test secrets are detected.
 
-**Exit condition:** Existing behavior passes automated tests inside Docker, with health probes and structured logs.
+**Exit condition:** Existing behavior passes automated tests inside Docker, with health probes and structured logs. (✅ **Completed & Verified**)
 
 ### Phase 2 — Modularize FastAPI
 
-- [ ] Create the target modular directory structure (`app/api/v1/`, `app/domain/`, `app/infrastructure/`).
-- [ ] Move routes out of the monolithic `app.py` into dedicated APIRouters.
-- [ ] Extract combat, damage calculations, and progression rules into domain services.
-- [ ] Introduce repository interfaces for accounts and battle sessions.
-- [ ] Centralize validated configuration (`pydantic-settings`).
-- [ ] Version APIs under `/api/v1`.
-- [ ] Add consistent API error envelopes (`{"error": {"code": "...", "message": "..."}}`).
-- [ ] Add security middleware: Content-Security-Policy (CSP), HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`.
+- [x] Create the target modular directory structure (`app/api/v1/`, `app/domain/`, `app/infrastructure/`, `app/observability/`, `app/workers/`).
+- [x] Move routes out of the monolithic `app.py` into dedicated APIRouters (`auth.py`, `battle.py`, `game.py`, `admin.py`).
+- [x] Extract combat, damage calculations, and progression rules into pure domain services (`app/domain/combat/rules.py`).
+- [x] Introduce repository interfaces for accounts and battle sessions (`UserRepository`, `SessionRepository`, `AuthRepository`).
+- [x] Centralize validated configuration (`pydantic-settings` in `app/settings.py`).
+- [x] Version APIs under `/api/v1`.
+- [x] Add consistent API error envelopes (`{"error": {"code": "...", "message": "..."}}`).
+- [x] Add security middleware: Content-Security-Policy (CSP), HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`.
 
-**Exit condition:** Gameplay rules do not depend directly on FastAPI or SQLite.
+**Exit condition:** Gameplay rules do not depend directly on FastAPI or SQLite. (✅ **Completed & Verified**)
+
 
 ### Phase 3 — Migrate SQLite to PostgreSQL & Connection Pooling
 
@@ -449,16 +454,19 @@ Before final capacity sizing, record:
 
 ### Phase 7 — Build Content Publishing Pipeline
 
-- [ ] Define versioned content schemas for chapters, bosses, questions, choices, answers, spells, and rewards.
+- [x] Ingest and support 27 Organic Chemistry Chapters (1,350 Questions · 135 Bosses) via `data/manifest.json`.
+- [x] Mathematically validate strict `boss_strategy` progression ($6 \to 2$ easy, $4$ medium, $0 \to 4$ hard; $100 \to 500$ HP; progressive spell tiers).
+- [x] Ensure correct answers are stripped from player-facing question payloads until server-side grading.
+- [x] Implement Web Audio procedural sound synthesizer (`static/js/audio.js`) with zero-asset low-latency SFX.
 - [ ] Move images, atlases, audio, and downloadable assets to S3/R2 storage.
 - [ ] Build automated content validation, linting, and publishing CLI commands.
 - [ ] Add immutable content release tagging and instant rollback support.
 - [ ] Pin every active battle session to an immutable content release version.
 - [ ] Add Redis caching with versioned content cache keys.
-- [ ] Ensure correct answers are stripped from player-facing question payloads until evaluation.
 - [ ] Validate and alert on orphaned boss, avatar, or audio asset references.
 
 **Exit condition:** Content can be validated, published, cached, and rolled back without redeploying FastAPI code.
+
 
 ### Phase 8 — CDN Delivery & Static Asset Pipeline
 

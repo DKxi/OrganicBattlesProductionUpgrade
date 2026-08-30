@@ -69,10 +69,13 @@ def test_new_game_defaults(client_instance, auth_headers):
     expected_boss = app_mod.CHAPTERS[0]['bosses'][0][1]
     assert s['boss']['name'] == expected_boss
 
-def test_avatar_is_permanent(client_instance, auth_headers):
+def test_avatar_selection_and_update(client_instance, auth_headers):
     s = start(client_instance, auth_headers); sid = s['session_id']
     assert client_instance.post('/api/avatar/finalize', params={'session_id':sid}, json=avatar(), headers=auth_headers).status_code == 200
-    assert client_instance.post('/api/avatar/finalize', params={'session_id':sid}, json=avatar(), headers=auth_headers).status_code == 409
+    res = client_instance.post('/api/avatar/finalize', params={'session_id':sid}, json={**avatar(), 'character': 'player-catalysis-adept'}, headers=auth_headers)
+    assert res.status_code == 200
+    assert res.json()['avatar']['character'] == 'player-catalysis-adept'
+
 
 def test_avatar_v3_configuration_persists(client_instance, auth_headers):
     s = start(client_instance, auth_headers); sid = s['session_id']
@@ -291,41 +294,42 @@ def test_user_content_mode_database_switching(client_instance, auth_headers, mon
     import app as app_mod
     app_mod.sync_global_content_views()
 
-    # 1. Check default is app mode
+    # 1. Check default is json mode (data/chapters)
     me_res = client_instance.get("/api/auth/me", headers=auth_headers).json()
     assert me_res["user"]["content_source"] is None
-    assert me_res["user"]["effective_mode"] == "app"
+    assert me_res["user"]["effective_mode"] == "json"
 
-    # Start game, verify app boss
+    # Start game, verify json boss
     s = start(client_instance, auth_headers)
-    assert s["boss"]["name"] == "Hybridization Goblin"
-    assert s["mode"] == "app"
+    assert s["boss"]["name"] == "Orbital Ogre"
+    assert s["mode"] == "json"
 
-    # 2. Switch user to JSON mode in database
-    switch_res = client_instance.post("/api/user/mode", json={"mode": "json"}, headers=auth_headers)
+    # 2. Switch user to APP mode in database
+    switch_res = client_instance.post("/api/user/mode", json={"mode": "app"}, headers=auth_headers)
     assert switch_res.status_code == 200
     data = switch_res.json()
-    assert data["content_source"] == "json"
-    assert data["effective_mode"] == "json"
-    assert data["state"]["boss"]["name"] == "Orbital Ogre"
-    assert data["state"]["mode"] == "json"
+    assert data["content_source"] == "app"
+    assert data["effective_mode"] == "app"
+    assert data["state"]["boss"]["name"] == "Hybridization Goblin"
+    assert data["state"]["mode"] == "app"
 
-    # Verify user profile reflects json mode
+    # Verify user profile reflects app mode
     me_res2 = client_instance.get("/api/auth/me", headers=auth_headers).json()
-    assert me_res2["user"]["content_source"] == "json"
-    assert me_res2["user"]["effective_mode"] == "json"
+    assert me_res2["user"]["content_source"] == "app"
+    assert me_res2["user"]["effective_mode"] == "app"
 
-    # Verify game state reflects json mode
+    # Verify game state reflects app mode
     state_res = client_instance.get("/api/game/state", params={"session_id": s["session_id"]}, headers=auth_headers).json()
-    assert state_res["boss"]["name"] == "Orbital Ogre"
+    assert state_res["boss"]["name"] == "Hybridization Goblin"
 
-    # 3. Switch user back to App mode in database
-    switch_back = client_instance.post("/api/user/content-source", json={"content_source": "app"}, headers=auth_headers)
+    # 3. Switch user back to JSON mode in database
+    switch_back = client_instance.post("/api/user/content-source", json={"content_source": "json"}, headers=auth_headers)
     assert switch_back.status_code == 200
     data_back = switch_back.json()
-    assert data_back["content_source"] == "app"
-    assert data_back["effective_mode"] == "app"
-    assert data_back["state"]["boss"]["name"] == "Hybridization Goblin"
+    assert data_back["content_source"] == "json"
+    assert data_back["effective_mode"] == "json"
+    assert data_back["state"]["boss"]["name"] == "Orbital Ogre"
+
 
 
 def test_env_priority_overrides_database_user_setting(client_instance, auth_headers, monkeypatch):

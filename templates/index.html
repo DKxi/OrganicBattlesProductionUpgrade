@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Organic Battles V2</title>
-  <link rel="stylesheet" href="/static/css/game.css?v=9">
+  <title>Organic Battles V4P</title>
+
+  <link rel="stylesheet" href="/static/css/game.css?v=11">
+
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
 </head>
 <body>
@@ -62,7 +64,8 @@
 
   <div id="game-shell" class="hidden">
     <header>
-      <div class="brand">ORGANIC <span>BATTLES</span> <i>V2</i></div>
+      <div class="brand">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
+
       <div id="chapter-label"></div>
       <button id="open-admin-game" class="header-help" type="button">⚙ CONFIG</button>
       <button id="logout" class="header-help">LOG OUT</button>
@@ -178,7 +181,35 @@
       <div id="admin-feedback-toast" class="admin-toast hidden"></div>
     </div>
   </section>
+
+  <!-- Admin User Credentials Modal -->
+  <div id="admin-cred-modal" class="modal-backdrop hidden">
+    <div class="modal-card" style="max-width: 440px;">
+      <div class="eyebrow">ADMIN // USER CREDENTIALS</div>
+      <h2 id="admin-cred-title">EDIT CREDENTIALS</h2>
+      <p id="admin-cred-subtitle">Update player username or assign a new password.</p>
+      <form id="admin-cred-form">
+        <input type="hidden" id="admin-cred-user-id" value="">
+        <label>EMAIL ADDRESS (READONLY)
+          <input type="email" id="admin-cred-email" readonly disabled style="opacity: 0.65; cursor: not-allowed;">
+        </label>
+        <label style="margin-top: 10px;">USERNAME
+          <input type="text" id="admin-cred-username" required minlength="3" maxlength="24" placeholder="Enter username…">
+        </label>
+        <label style="margin-top: 10px;">NEW PASSWORD
+          <input type="password" id="admin-cred-password" minlength="8" placeholder="Leave blank to keep unchanged…">
+        </label>
+        <div id="admin-cred-status" class="admin-modal-status" style="min-height: 18px; margin-top: 10px; font-size: 0.75rem;"></div>
+        <div class="modal-actions" style="margin-top: 18px; display: flex; gap: 10px;">
+          <button type="submit" class="primary" id="admin-cred-save-btn">SAVE CREDENTIALS</button>
+          <button type="button" class="secondary" id="admin-cred-cancel-btn">CANCEL</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </main>
-<script type="module" src="/static/js/main.js?v=13"></script>
+<script type="module" src="/static/js/main.js?v=14"></script>
+
 </body>
 </html>
+

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-:root{--ink:#eaf7f5;--muted:#91aaa9;--cyan:#36e5d0;--violet:#a67cff;--orange:#ff9f5a;--panel:rgba(9,21,31,.86)}*{box-sizing:border-box}body{margin:0;background:#07111c;color:var(--ink);font-family:'Space Grotesk',sans-serif;min-height:100vh}button{font:inherit;color:inherit;cursor:pointer}#app{min-height:100vh;background:radial-gradient(circle at 50% 0,#143448 0,#07111c 52%);overflow:hidden}.hidden{display:none!important}.sigil{font-size:4rem;color:var(--cyan);text-shadow:0 0 30px var(--cyan);animation:pulse 2s infinite}.eyebrow,.panel-title{font:500 .7rem 'DM Mono',monospace;letter-spacing:.18em;color:var(--cyan)}#boot{min-height:100vh;display:grid;place-content:center;justify-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,rgba(7,17,28,.65),rgba(7,17,28,.95)),url('/static/assets/battle-arena.png') center/cover}h1{font-size:clamp(4rem,12vw,10rem);line-height:.82;letter-spacing:-.08em;margin:20px 0}h1 span{color:transparent;-webkit-text-stroke:2px var(--cyan)}#boot p{color:var(--muted);margin:0 0 34px}#start,.primary{border:1px solid var(--cyan);background:rgba(54,229,208,.12);padding:16px 24px;letter-spacing:.12em;font-size:.75rem;transition:.2s}#start:hover,.primary:hover{background:var(--cyan);color:#06111b;box-shadow:0 0 35px #36e5d077}header{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid #21404b;background:#071522dd;position:relative;z-index:4}.brand{font-weight:700;letter-spacing:.08em}.brand span{color:var(--cyan)}.brand i{font-style:normal;color:var(--orange);font-size:.7rem;margin-left:5px}.brand+div{font:500 .7rem 'DM Mono',monospace;color:var(--muted)}#mute{border:0;background:none;color:var(--muted);font:500 .65rem 'DM Mono',monospace}.game-shell{}#game-view{height:52vh;min-height:340px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;padding:14px;max-width:1500px;margin:auto}#phaser{border:1px solid #224650;border-radius:16px;overflow:hidden;background:#0b1e2c;min-height:340px}#side-panel{background:var(--panel);border:1px solid #224650;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:14px}.panel-title{padding-bottom:10px;border-bottom:1px solid #24414a}#log{font:400 .74rem/1.55 'DM Mono',monospace;color:#a8c5c0;overflow:auto}.log-line{padding:8px 0;border-bottom:1px solid #17323d}.avatar-card{display:flex;align-items:center;gap:12px}.avatar-name{font-weight:600}.avatar-sub{font:500 .62rem 'DM Mono',monospace;color:var(--muted)}#controls{max-width:1500px;margin:auto;padding:0 14px 20px;display:grid;grid-template-columns:minmax(300px,1fr) minmax(300px,1.3fr);gap:14px}.control-panel{background:var(--panel);border:1px solid #224650;border-radius:16px;padding:16px}.control-title{font-size:.75rem;color:var(--muted);margin-bottom:12px}.spell-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.spell{border:1px solid #2b515b;background:#0b202b;border-radius:10px;padding:10px;text-align:left;min-height:74px;transition:.2s}.spell:hover:not(:disabled){border-color:var(--cyan);transform:translateY(-2px)}.spell:disabled{opacity:.38;cursor:not-allowed}.spell-name{font-weight:600;font-size:.78rem}.spell-meta{font:500 .6rem 'DM Mono',monospace;color:var(--orange);margin-top:7px}.question{font-size:1rem;line-height:1.35;margin-bottom:14px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:8px}.answer{border:1px solid #2b515b;background:#0b202b;border-radius:10px;padding:12px;text-align:left;min-height:62px}.answer:hover{border-color:var(--violet);background:#18243e}.hint{font:500 .62rem 'DM Mono',monospace;color:var(--cyan)}@keyframes pulse{50%{transform:scale(1.08);filter:brightness(1.4)}}@media(max-width:800px){header{padding:0 14px}.brand{font-size:.8rem}#game-view{grid-template-columns:1fr;height:auto}#side-panel{min-height:160px}#controls{grid-template-columns:1fr}.spell-grid{grid-template-columns:repeat(3,1fr)}.spell{padding:8px}.spell-name{font-size:.68rem}}
+:root{--ink:#eaf7f5;--muted:#91aaa9;--cyan:#36e5d0;--violet:#a67cff;--orange:#ff9f5a;--panel:rgba(9,21,31,.86)}*{box-sizing:border-box}body{margin:0;background:#07111c;color:var(--ink);font-family:'Space Grotesk',sans-serif;min-height:100vh}button{font:inherit;color:inherit;cursor:pointer}#app{min-height:100vh;background:radial-gradient(circle at 50% 0,#143448 0,#07111c 52%);overflow:hidden}.hidden{display:none!important}.sigil{font-size:4rem;color:var(--cyan);text-shadow:0 0 30px var(--cyan);animation:pulse 2s infinite}.eyebrow,.panel-title{font:500 .7rem 'DM Mono',monospace;letter-spacing:.18em;color:var(--cyan)}#boot{min-height:100vh;display:grid;place-content:center;justify-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,rgba(7,17,28,.65),rgba(7,17,28,.95)),url('/static/assets/battle-arena.png') center/cover}h1{font-size:clamp(4rem,12vw,10rem);line-height:.82;letter-spacing:-.08em;margin:20px 0}h1 span{color:transparent;-webkit-text-stroke:2px var(--cyan)}#boot p{color:var(--muted);margin:0 0 34px}#start,.primary{border:1px solid var(--cyan);background:rgba(54,229,208,.12);padding:16px 24px;letter-spacing:.12em;font-size:.75rem;transition:.2s}#start:hover,.primary:hover{background:var(--cyan);color:#06111b;box-shadow:0 0 35px #36e5d077}header{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid #21404b;background:#071522dd;position:relative;z-index:4}.brand{font-weight:700;letter-spacing:.08em}.brand span{color:var(--cyan)}.brand i{font-style:normal;color:var(--orange);font-size:.7rem;margin-left:5px}.brand+div{font:500 .7rem 'DM Mono',monospace;color:var(--muted)}#mute{border:0;background:none;color:var(--muted);font:500 .65rem 'DM Mono',monospace}.game-shell{}#game-view{height:52vh;min-height:340px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;padding:14px;max-width:1500px;margin:auto}#phaser{border:1px solid #224650;border-radius:16px;overflow:hidden;background:radial-gradient(circle at 50% 35%,rgba(54,229,208,.15),rgba(7,17,28,.92)),url('/static/assets/battle-arena.png') center/cover no-repeat;min-height:340px;position:relative}#side-panel{background:var(--panel);border:1px solid #224650;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:14px}.panel-title{padding-bottom:10px;border-bottom:1px solid #24414a}#log{font:400 .74rem/1.55 'DM Mono',monospace;color:#a8c5c0;overflow:auto}.log-line{padding:8px 0;border-bottom:1px solid #17323d}.avatar-card{display:flex;align-items:center;gap:12px}.avatar-name{font-weight:600}.avatar-sub{font:500 .62rem 'DM Mono',monospace;color:var(--muted)}#controls{max-width:1500px;margin:auto;padding:0 14px 20px;display:grid;grid-template-columns:minmax(300px,1fr) minmax(300px,1.3fr);gap:14px}.control-panel{background:var(--panel);border:1px solid #224650;border-radius:16px;padding:16px}.control-title{font-size:.75rem;color:var(--muted);margin-bottom:12px}.spell-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.spell{border:1px solid #2b515b;background:#0b202b;border-radius:10px;padding:10px;text-align:left;min-height:74px;transition:.2s}.spell:hover:not(:disabled){border-color:var(--cyan);transform:translateY(-2px)}.spell:disabled{opacity:.38;cursor:not-allowed}.spell-name{font-weight:600;font-size:.78rem}.spell-meta{font:500 .6rem 'DM Mono',monospace;color:var(--orange);margin-top:7px}.question{font-size:1rem;line-height:1.35;margin-bottom:14px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:8px}.answer{border:1px solid #2b515b;background:#0b202b;border-radius:10px;padding:12px;text-align:left;min-height:62px}.answer:hover{border-color:var(--violet);background:#18243e}.hint{font:500 .62rem 'DM Mono',monospace;color:var(--cyan)}@keyframes pulse{50%{transform:scale(1.08);filter:brightness(1.4)}}@media(max-width:800px){header{padding:0 14px}.brand{font-size:.8rem}#game-view{grid-template-columns:1fr;height:auto}#side-panel{min-height:160px}#controls{grid-template-columns:1fr}.spell-grid{grid-template-columns:repeat(3,1fr)}.spell{padding:8px}.spell-name{font-size:.68rem}}
 
 /* Keep avatar finalization visually anchored to the left side of the opening screen. */
 #avatar-creator{min-height:100vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(32px,7vw,96px);padding-right:50vw;background:linear-gradient(90deg,rgba(7,17,28,.96) 0%,rgba(7,17,28,.78) 48%,rgba(7,17,28,.12) 100%),url('/static/assets/battle-arena.png') center/cover}
@@ -229,7 +229,12 @@
 .admin-save-btn:hover:not(:disabled){background:var(--cyan);color:#06111b}
 .admin-save-btn:disabled{opacity:.4;cursor:not-allowed}
 
+.admin-cred-btn{border:1px solid #7c5295;border-radius:6px;background:rgba(166,124,255,.1);color:#c4b5fd;padding:6px 12px;font:500 .64rem 'DM Mono',monospace;transition:.2s;margin-left:6px}
+.admin-cred-btn:hover:not(:disabled){background:#9a7cff;color:#06111b;box-shadow:0 0 15px rgba(154,124,255,.4)}
+.admin-cred-btn:disabled{opacity:.4;cursor:not-allowed}
+
 .admin-toast{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:#0b2c3a;border:1px solid var(--cyan);box-shadow:0 10px 30px rgba(0,0,0,.6);color:var(--cyan);padding:10px 22px;border-radius:999px;font:500 .75rem 'DM Mono',monospace;animation:slideUp .25s ease-out;z-index:10}
+
 @keyframes slideUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
 
 /* Tab Navigation & Session Table Styling */
@@ -256,4 +261,57 @@
 .hp-player{color:var(--cyan)}
 .hp-boss{color:var(--orange)}
 .session-actions-cell{display:flex;align-items:center;gap:8px}
+
+#admin-cred-modal, .modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 350;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(2, 8, 14, 0.85);
+  backdrop-filter: blur(8px);
+}
+#admin-cred-modal.hidden, .modal-backdrop.hidden {
+  display: none !important;
+}
+
+#admin-cred-modal .modal-card {
+  position: relative;
+  width: min(100%, 460px);
+  border: 1px solid #7c5295;
+  border-radius: 18px;
+  padding: 30px;
+  background: linear-gradient(145deg, #18112a, #0b0918);
+  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.85);
+}
+#admin-cred-modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #c4b5fd;
+  font: 500 0.68rem 'DM Mono', monospace;
+  letter-spacing: 0.1em;
+}
+#admin-cred-modal input {
+  border: 1px solid #3c2954;
+  border-radius: 8px;
+  background: #0d0918;
+  color: var(--ink);
+  padding: 10px 14px;
+  font: 400 0.95rem 'Space Grotesk', sans-serif;
+}
+#admin-cred-modal input:focus {
+  outline: 2px solid #9a7cff;
+}
+.admin-modal-status.hint {
+  color: var(--cyan);
+}
+.admin-modal-status.error {
+  color: #ff6c71;
+}
+.admin-modal-status.success {
+  color: #38ef7d;
+}
+
 

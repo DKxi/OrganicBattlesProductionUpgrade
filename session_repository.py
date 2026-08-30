@@ -2,12 +2,14 @@ import json
 import time
 from fastapi import HTTPException
 from sqlalchemy.orm import Session as DBSession
-from models import GameSession, User
+from app.infrastructure.database.models import GameSession, User
+from app.domain.progression.entities import Session, Avatar
+from app.domain.content.resolver import resolve_content_source
+from app.api.deps import get_content_bundle
 
-def get_session_by_id(db: DBSession, session_id: str) -> "Session":
+
+def get_session_by_id(db: DBSession, session_id: str) -> Session:
     """Retrieve an active Session from the database by session ID."""
-    from app import Session, Avatar
-
     db_record = db.query(GameSession).filter(GameSession.id == session_id).first()
     if not db_record:
         raise HTTPException(status_code=404, detail="Session not found")
@@ -33,13 +35,13 @@ def get_session_by_id(db: DBSession, session_id: str) -> "Session":
     else:
         s.active_question = None
 
-    s.cooldowns = json.loads(db_record.cooldowns_json)
-    s.log = json.loads(db_record.log_json)
-    s.completed = set(json.loads(db_record.completed_json))
-    s.rewards = json.loads(db_record.rewards_json)
+    s.cooldowns = json.loads(db_record.cooldowns_json) if db_record.cooldowns_json else {}
+    s.log = json.loads(db_record.log_json) if db_record.log_json else []
+    s.completed = set(json.loads(db_record.completed_json)) if db_record.completed_json else set()
+    s.rewards = json.loads(db_record.rewards_json) if db_record.rewards_json else []
 
     # Restore question cursors (tuple key conversion)
-    raw_cursors = json.loads(db_record.question_cursors_json)
+    raw_cursors = json.loads(db_record.question_cursors_json) if db_record.question_cursors_json else {}
     s.question_cursors = {}
     for key, val in raw_cursors.items():
         chapter_str, boss = key.split(":", 1)
@@ -47,8 +49,12 @@ def get_session_by_id(db: DBSession, session_id: str) -> "Session":
 
     # Restore avatar and finalized from user model
     if user_record.avatar_json:
-        s.avatar = Avatar.model_validate(json.loads(user_record.avatar_json))
-        s.finalized = True
+        try:
+            s.avatar = Avatar.model_validate(json.loads(user_record.avatar_json))
+            s.finalized = True
+        except Exception:
+            s.avatar = None
+            s.finalized = False
     else:
         s.avatar = None
         s.finalized = False
@@ -57,21 +63,19 @@ def get_session_by_id(db: DBSession, session_id: str) -> "Session":
     s._db_version = db_record.version
     return s
 
-def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Session":
-    """Get the active Session for a user, or create one if it doesn't exist."""
-    from app import Session, Avatar, resolve_content_source, get_content_bundle
 
+def get_or_create_session(db: DBSession, user_id: str, username: str) -> Session:
+    """Get the active Session for a user, or create one if it doesn't exist."""
     db_record = db.query(GameSession).filter(GameSession.user_id == user_id).first()
     if not db_record:
         import uuid
         session_id = str(uuid.uuid4())
-        
-        # Load legacy progress from User model
+
         user = db.query(User).filter(User.id == user_id).first()
         user_content_source = user.content_source if user else None
         effective_mode = resolve_content_source(user_content_source)
         bundle = get_content_bundle(effective_mode)
-        chapters = bundle["chapters"]
+        chapters = bundle.chapters
 
         chapter = 1
         boss_index = 0
@@ -86,7 +90,7 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
         completed_json = "[]"
         rewards_json = "[]"
         question_cursors_json = "{}"
-        
+
         if user and user.progress_json:
             try:
                 progress = json.loads(user.progress_json)
@@ -106,7 +110,7 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
                 question_cursors_json = json.dumps(progress.get("question_cursors", {}))
             except Exception:
                 pass
-                
+
         db_record = GameSession(
             id=session_id,
             user_id=user_id,
@@ -125,7 +129,7 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
             rewards_json=rewards_json,
             question_cursors_json=question_cursors_json,
             version=1,
-            updated_at=int(time.time())
+            updated_at=int(time.time()),
         )
         db.add(db_record)
         db.commit()
@@ -133,7 +137,8 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
 
     return get_session_by_id(db, db_record.id)
 
-def save_session(db: DBSession, s: "Session"):
+
+def save_session(db: DBSession, s: Session) -> None:
     """Persist the changes in a Session object back to the database, enforcing optimistic locks."""
     db_record = db.query(GameSession).filter(GameSession.id == s.id).first()
     if not db_record:
@@ -169,11 +174,18 @@ def save_session(db: DBSession, s: "Session"):
         if s.avatar:
             user_record.avatar_json = s.avatar.model_dump_json()
         progress = {
-            "chapter": s.chapter, "boss_index": s.boss_index,
-            "player_hp": s.player_hp, "player_max_hp": s.player_max_hp, "boss_hp": s.boss_hp,
+            "chapter": s.chapter,
+            "boss_index": s.boss_index,
+            "player_hp": s.player_hp,
+            "player_max_hp": s.player_max_hp,
+            "boss_hp": s.boss_hp,
             "active_question": list(s.active_question) if s.active_question else None,
-            "active_spell": s.active_spell, "turn_id": s.turn_id,
-            "cooldowns": s.cooldowns, "log": s.log[-20:], "completed": list(s.completed), "rewards": s.rewards,
+            "active_spell": s.active_spell,
+            "turn_id": s.turn_id,
+            "cooldowns": s.cooldowns,
+            "log": s.log[-20:],
+            "completed": list(s.completed),
+            "rewards": s.rewards,
             "question_cursors": {f"{chapter}:{boss}": cursor for (chapter, boss), cursor in s.question_cursors.items()},
         }
         user_record.progress_json = json.dumps(progress)
