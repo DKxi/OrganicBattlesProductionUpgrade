@@ -366,3 +366,98 @@ def test_user_mode_validation_errors(client_instance, auth_headers):
     res2 = client_instance.post("/api/user/mode", json={}, headers=auth_headers)
     assert res2.status_code == 400
 
+
+# --- Admin User Configuration Screen & Mode Switching Tests ---
+
+def test_admin_authentication_and_protection(client_instance):
+    # 1. Unauthenticated access fails
+    unauth_res = client_instance.get("/api/admin/status")
+    assert unauth_res.status_code == 401
+
+    # 2. Invalid login
+    res = client_instance.post("/api/admin/login", json={"username": "admin", "password": "wrongpassword"})
+    assert res.status_code == 401
+    assert "Incorrect admin username" in res.json()["detail"]
+
+    # 3. Valid login
+    login_res = client_instance.post("/api/admin/login", json={"username": "admin", "password": "admin"})
+    assert login_res.status_code == 200
+    admin_token = login_res.json()["token"]
+    assert login_res.json()["username"] == "admin"
+
+    admin_headers = {"Authorization": f"Bearer {admin_token}"}
+
+    # 4. Access admin status with auth
+    status_res = client_instance.get("/api/admin/status", headers=admin_headers)
+    assert status_res.status_code == 200
+    assert status_res.json()["status"] == "ok"
+
+    # 5. Admin logout
+    logout_res = client_instance.post("/api/admin/logout", headers=admin_headers)
+    assert logout_res.status_code == 200
+
+    # Token should now be invalid
+    after_logout = client_instance.get("/api/admin/status", headers=admin_headers)
+    assert after_logout.status_code == 401
+
+
+def test_admin_change_user_content_source(client_instance, auth_headers, monkeypatch):
+    # Ensure env override is unset
+    monkeypatch.delenv("GAME_CONTENT_SOURCE", raising=False)
+    import app as app_mod
+    app_mod.sync_global_content_views()
+
+    # Get current regular user id
+    me = client_instance.get("/api/auth/me", headers=auth_headers).json()["user"]
+    user_id = me["id"]
+
+    # Log in as admin
+    admin_login = client_instance.post("/api/admin/login", json={"username": "admin", "password": "admin"}).json()
+    admin_headers = {"Authorization": f"Bearer {admin_login['token']}"}
+
+    # Admin lists users
+    users_res = client_instance.get("/api/admin/users", headers=admin_headers)
+    assert users_res.status_code == 200
+    users = users_res.json()["users"]
+    target_user = next((u for u in users if u["id"] == user_id), None)
+    assert target_user is not None
+
+    # Admin changes user to "json" mode
+    update_res = client_instance.post(
+        f"/api/admin/users/{user_id}/config",
+        json={"content_source": "json"},
+        headers=admin_headers
+    )
+    assert update_res.status_code == 200
+    assert update_res.json()["content_source"] == "json"
+    assert update_res.json()["effective_mode"] == "json"
+
+    # User starts game and receives JSON boss
+    s = start(client_instance, auth_headers)
+    assert s["boss"]["name"] == "Orbital Ogre"
+    assert s["mode"] == "json"
+
+    # Admin changes user back to "app" mode
+    update_res2 = client_instance.post(
+        f"/api/admin/users/{user_id}/config",
+        json={"content_source": "app"},
+        headers=admin_headers
+    )
+    assert update_res2.status_code == 200
+    assert update_res2.json()["content_source"] == "app"
+    assert update_res2.json()["effective_mode"] == "app"
+
+    # User state reflects app boss
+    s2 = start(client_instance, auth_headers)
+    assert s2["boss"]["name"] == "Hybridization Goblin"
+    assert s2["mode"] == "app"
+
+    # Admin sends invalid content_source
+    bad_res = client_instance.post(
+        f"/api/admin/users/{user_id}/config",
+        json={"content_source": "invalid_mode"},
+        headers=admin_headers
+    )
+    assert bad_res.status_code == 400
+
+

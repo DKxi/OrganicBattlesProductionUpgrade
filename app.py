@@ -55,6 +55,8 @@ def config_value(environment_name: str, *secret_path: str, default=None):
     value = os.getenv(environment_name)
     if value is not None:
         return value
+    if not secret_path:
+        return default
     current = SECRETS
     for part in secret_path:
         if not isinstance(current, dict):
@@ -196,6 +198,16 @@ class VerifyRequest(BaseModel):
 class ModeSwitchRequest(BaseModel):
     mode: Optional[str] = None
     content_source: Optional[str] = None
+
+
+class AdminLoginRequest(BaseModel):
+    username: str
+    password: str
+
+
+class AdminUserConfigRequest(BaseModel):
+    content_source: Optional[str] = None
+
 
 
 def public_user(row):
@@ -821,6 +833,141 @@ def set_user_mode(
         "env_override": bool(os.getenv("GAME_CONTENT_SOURCE")),
         "state": s.state()
     }
+
+
+ADMIN_USERNAME = str(config_value("ADMIN_USERNAME", default="admin"))
+ADMIN_PASSWORD = str(config_value("ADMIN_PASSWORD", default="admin"))
+ADMIN_TOKENS: dict[str, float] = {}
+
+
+def auth_admin(authorization: Optional[str] = Header(default=None), admin_token: Optional[str] = Cookie(default=None), session_token: Optional[str] = Cookie(default=None)):
+    raw = None
+    if authorization and authorization.lower().startswith("bearer "):
+        raw = authorization[7:].strip()
+    elif admin_token:
+        raw = admin_token
+    elif session_token:
+        raw = session_token
+    if not raw:
+        raise HTTPException(401, "Admin authentication required")
+    thash = code_hash(raw)
+    now = time.time()
+    expires = ADMIN_TOKENS.get(thash)
+    if not expires or expires < now:
+        raise HTTPException(401, "Admin session expired or invalid")
+    return {"username": ADMIN_USERNAME, "is_admin": True}
+
+
+@app.post("/api/admin/login")
+@limiter.limit("10/minute")
+def admin_login(request: Request, login_data: AdminLoginRequest, response: Response):
+    if login_data.username != ADMIN_USERNAME or login_data.password != ADMIN_PASSWORD:
+        raise HTTPException(401, "Incorrect admin username or password")
+    token = secrets.token_urlsafe(40)
+    thash = code_hash(token)
+    ADMIN_TOKENS[thash] = time.time() + 60 * 60 * 24
+    response.set_cookie("admin_token", token, httponly=True, samesite="lax", secure=os.getenv("COOKIE_SECURE", "0") == "1", max_age=60 * 60 * 24)
+    return {"token": token, "username": ADMIN_USERNAME, "status": "ok"}
+
+
+@app.get("/api/admin/status")
+def admin_status(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    total_users = db.query(User).count()
+    total_sessions = db.query(GameSession).count()
+    return {
+        "status": "ok",
+        "admin_user": admin_info["username"],
+        "env_content_source": os.getenv("GAME_CONTENT_SOURCE"),
+        "default_mode": "app",
+        "total_users": total_users,
+        "total_sessions": total_sessions
+    }
+
+
+@app.get("/api/admin/users")
+def admin_get_users(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    users = db.query(User).order_by(User.created_at.desc()).all()
+    sessions = {s.user_id: s for s in db.query(GameSession).all()}
+    result = []
+    for u in users:
+        sess = sessions.get(u.id)
+        effective = resolve_content_source(u.content_source)
+        result.append({
+            "id": u.id,
+            "username": u.username,
+            "email": u.email,
+            "verified": bool(u.verified),
+            "content_source": u.content_source,
+            "effective_mode": effective,
+            "chapter": sess.chapter if sess else 1,
+            "boss_index": sess.boss_index if sess else 0,
+            "player_hp": sess.player_hp if sess else 150,
+            "created_at": u.created_at
+        })
+    return {"users": result, "total": len(result)}
+
+
+@app.post("/api/admin/users/{user_id}/config")
+def admin_update_user_config(
+    user_id: str,
+    config_data: AdminUserConfigRequest,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db)
+):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(404, "User not found")
+    
+    if config_data.content_source is not None:
+        target = config_data.content_source.strip().lower() if config_data.content_source else None
+        if target and target not in ("app", "json"):
+            raise HTTPException(400, "content_source must be 'app', 'json', or null")
+        user.content_source = target
+        
+        # Synchronize game session if present
+        game_session = db.query(GameSession).filter(GameSession.user_id == user.id).first()
+        if game_session:
+            game_session.content_source = target
+            game_session.active_question_json = None
+            game_session.active_spell = None
+            effective = resolve_content_source(target)
+            bundle = get_content_bundle(effective)
+            chapters = bundle["chapters"]
+            if game_session.chapter > len(chapters):
+                game_session.chapter = 1
+                game_session.boss_index = 0
+                game_session.boss_hp = chapters[0]["bosses"][0][2]
+            else:
+                bosses = chapters[game_session.chapter - 1]["bosses"]
+                if game_session.boss_index >= len(bosses):
+                    game_session.boss_index = 0
+                    game_session.boss_hp = bosses[0][2]
+                else:
+                    game_session.boss_hp = bosses[game_session.boss_index][2]
+
+    db.commit()
+    db.refresh(user)
+    
+    effective = resolve_content_source(user.content_source)
+    return {
+        "status": "ok",
+        "user_id": user.id,
+        "username": user.username,
+        "content_source": user.content_source,
+        "effective_mode": effective,
+        "env_override": bool(os.getenv("GAME_CONTENT_SOURCE")),
+    }
+
+
+@app.post("/api/admin/logout")
+def admin_logout(response: Response, authorization: Optional[str] = Header(default=None), admin_token: Optional[str] = Cookie(default=None)):
+    raw = admin_token or (authorization[7:].strip() if authorization and authorization.lower().startswith("bearer ") else None)
+    if raw:
+        thash = code_hash(raw)
+        ADMIN_TOKENS.pop(thash, None)
+    response.delete_cookie("admin_token")
+    return {"status": "ok"}
+
 
 
 def get_session(session_id: Optional[str], db: DBSession) -> Session:

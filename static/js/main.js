@@ -11,6 +11,10 @@ let pendingEmail = '';
 let pendingUsername = '';
 let selectedAvatar = null;
 
+let adminToken = localStorage.getItem('orgo_admin_token') || null;
+let adminUsersData = [];
+let adminStatusData = null;
+
 const api = async (path, body = {}) => {
   const payload = { ...body };
   const sessionId = payload.session_id;
@@ -35,6 +39,26 @@ const authApi = async (path, body = {}, method = 'POST') => {
   const response = await fetch(path, { method, credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: method === 'GET' ? undefined : JSON.stringify(body) });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) { const error = new Error(data.detail || 'Authentication action unavailable'); error.status = response.status; throw error; }
+  return data;
+};
+
+const adminApi = async (path, body = {}, method = 'POST') => {
+  const headers = { 'Content-Type': 'application/json' };
+  if (adminToken) {
+    headers['Authorization'] = `Bearer ${adminToken}`;
+  }
+  const response = await fetch(path, {
+    method,
+    credentials: 'same-origin',
+    headers,
+    body: method === 'GET' ? undefined : JSON.stringify(body)
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const error = new Error(data.detail || 'Admin action unavailable');
+    error.status = response.status;
+    throw error;
+  }
   return data;
 };
 
@@ -493,6 +517,244 @@ function drawScene(s) {
   scene.add.circle(width * 0.72, height * 0.48, Math.min(125, width * 0.18), chapterColor, 0.08).setStrokeStyle(2, chapterColor, 0.45).setData('dynamic', true);
 }
 
+// --- Admin Configuration Portal Logic ---
+
+function showAdminToast(message) {
+  const toast = $('#admin-feedback-toast');
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.remove('hidden');
+  clearTimeout(window._adminToastTimeout);
+  window._adminToastTimeout = setTimeout(() => {
+    toast.classList.add('hidden');
+  }, 3500);
+}
+
+function openAdminScreen() {
+  $('#admin-screen')?.classList.remove('hidden');
+  if (adminToken) {
+    loadAdminDashboard().catch(() => {
+      adminToken = null;
+      localStorage.removeItem('orgo_admin_token');
+      showAdminLogin();
+    });
+  } else {
+    showAdminLogin();
+  }
+}
+
+function closeAdminScreen() {
+  $('#admin-screen')?.classList.add('hidden');
+}
+
+function showAdminLogin() {
+  $('#admin-login-view')?.classList.remove('hidden');
+  $('#admin-dashboard-view')?.classList.add('hidden');
+  const status = $('#admin-login-status');
+  if (status) {
+    status.textContent = '';
+    status.className = '';
+  }
+}
+
+async function loadAdminDashboard() {
+  $('#admin-login-view')?.classList.add('hidden');
+  $('#admin-dashboard-view')?.classList.remove('hidden');
+
+  const [status, usersResp] = await Promise.all([
+    adminApi('/api/admin/status', {}, 'GET'),
+    adminApi('/api/admin/users', {}, 'GET'),
+  ]);
+
+  adminStatusData = status;
+  adminUsersData = usersResp.users || [];
+
+  renderAdminStatus();
+  renderAdminUsers($('#admin-user-search')?.value || '');
+}
+
+function renderAdminStatus() {
+  const banner = $('#admin-env-status');
+  if (!banner || !adminStatusData) return;
+
+  const envVal = adminStatusData.env_content_source;
+  if (envVal) {
+    banner.className = 'admin-status-banner override-active';
+    banner.innerHTML = `
+      <span>⚡ <strong>GLOBAL .ENV OVERRIDE ACTIVE</strong>: <code>GAME_CONTENT_SOURCE="${envVal}"</code> (All users will play in <strong>${envVal.toUpperCase()}</strong> mode until .env is cleared).</span>
+      <span class="status-badge active">PRIORITY 1 ACTIVE</span>
+    `;
+  } else {
+    banner.className = 'admin-status-banner';
+    banner.innerHTML = `
+      <span>✔ <strong>DYNAMIC HIERARCHY ACTIVE</strong>: Individual user database settings apply. Default mode: <code>APP</code>.</span>
+      <span class="status-badge normal">DATABASE CONTROL ACTIVE</span>
+    `;
+  }
+
+  const stats = $('#admin-stats-summary');
+  if (stats) {
+    stats.textContent = `Total Users: ${adminUsersData.length} | Sessions: ${adminStatusData.total_sessions || 0}`;
+  }
+}
+
+function renderAdminUsers(filterText = '') {
+  const tbody = $('#admin-user-tbody');
+  if (!tbody) return;
+
+  const query = filterText.toLowerCase().trim();
+  const filtered = adminUsersData.filter((u) => !query || u.username.toLowerCase().includes(query) || u.email.toLowerCase().includes(query) || u.id.toLowerCase().includes(query));
+
+  if (!filtered.length) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">No users found matching '${filterText}'.</td></tr>`;
+    return;
+  }
+
+  const envOverride = adminStatusData?.env_content_source;
+
+  tbody.innerHTML = filtered.map((u) => {
+    const isOverride = Boolean(envOverride && envOverride !== (u.content_source || 'app'));
+    const effectiveClass = u.effective_mode === 'json' ? 'mode-json' : 'mode-app';
+    const effectiveLabel = isOverride ? `${u.effective_mode.toUpperCase()} (via .env)` : u.effective_mode.toUpperCase();
+    const effectiveBadge = isOverride ? 'pill-effective overridden' : `pill-effective ${effectiveClass}`;
+
+    const dbMode = u.content_source || '';
+
+    return `
+      <tr data-user-id="${u.id}">
+        <td>
+          <div class="user-cell-name">${u.username}</div>
+          <div class="user-cell-id">${u.id.slice(0, 8)}…</div>
+        </td>
+        <td><span style="color: var(--muted);">${u.email}</span></td>
+        <td>
+          <span class="${u.verified ? 'badge-verified' : 'badge-unverified'}">
+            ${u.verified ? 'VERIFIED' : 'UNVERIFIED'}
+          </span>
+        </td>
+        <td>
+          <span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan);">
+            Ch ${u.chapter} // Boss ${u.boss_index + 1}
+          </span>
+        </td>
+        <td>
+          <div class="mode-toggle-group">
+            <button type="button" class="mode-toggle-btn ${dbMode === 'app' ? 'selected' : ''}" data-set-mode="app" title="Force App Mode for this user">APP</button>
+            <button type="button" class="mode-toggle-btn ${dbMode === 'json' ? 'selected-json' : ''}" data-set-mode="json" title="Force JSON Mode for this user">JSON</button>
+            <button type="button" class="mode-toggle-btn ${!dbMode ? 'selected-default' : ''}" data-set-mode="" title="Clear DB setting (use default)">DEFAULT</button>
+          </div>
+        </td>
+        <td>
+          <span class="${effectiveBadge}">${effectiveLabel}</span>
+        </td>
+        <td>
+          <button type="button" class="admin-save-btn" data-save-user="${u.id}">APPLY</button>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  // Bind toggle & save buttons
+  tbody.querySelectorAll('tr').forEach((row) => {
+    const userId = row.dataset.userId;
+    const user = adminUsersData.find((u) => u.id === userId);
+    if (!user) return;
+
+    let selectedMode = user.content_source;
+
+    const modeBtns = row.querySelectorAll('[data-set-mode]');
+    const saveBtn = row.querySelector('[data-save-user]');
+
+    modeBtns.forEach((btn) => {
+      btn.onclick = () => {
+        selectedMode = btn.dataset.setMode || null;
+        modeBtns.forEach((b) => {
+          b.className = 'mode-toggle-btn';
+        });
+        if (selectedMode === 'app') btn.className = 'mode-toggle-btn selected';
+        else if (selectedMode === 'json') btn.className = 'mode-toggle-btn selected-json';
+        else btn.className = 'mode-toggle-btn selected-default';
+      };
+    });
+
+    saveBtn.onclick = async () => {
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'SAVING…';
+      try {
+        const resp = await adminApi(`/api/admin/users/${userId}/config`, { content_source: selectedMode }, 'POST');
+        user.content_source = resp.content_source;
+        user.effective_mode = resp.effective_mode;
+        showAdminToast(`✓ User '${user.username}' set to ${resp.content_source ? resp.content_source.toUpperCase() : 'DEFAULT (APP)'}`);
+        renderAdminUsers($('#admin-user-search')?.value || '');
+      } catch (err) {
+        showBattleModal({
+          eyebrow: 'ADMIN // ERROR',
+          title: 'CONFIG UPDATE FAILED',
+          copy: err.message,
+          action: 'DISMISS',
+        });
+        saveBtn.disabled = false;
+        saveBtn.textContent = 'APPLY';
+      }
+    };
+  });
+}
+
+function bindAdminEvents() {
+  $('#open-admin-boot')?.addEventListener('click', openAdminScreen);
+  $('#open-admin-auth')?.addEventListener('click', openAdminScreen);
+  $('#open-admin-game')?.addEventListener('click', openAdminScreen);
+
+  $('#close-admin-login')?.addEventListener('click', closeAdminScreen);
+  $('#close-admin-dash')?.addEventListener('click', closeAdminScreen);
+
+  $('#admin-login-form')?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const username = formData.get('admin_username');
+    const password = formData.get('admin_password');
+    const status = $('#admin-login-status');
+    if (status) {
+      status.textContent = 'Verifying admin credentials…';
+      status.className = 'hint';
+    }
+    try {
+      const data = await adminApi('/api/admin/login', { username, password }, 'POST');
+      adminToken = data.token;
+      localStorage.setItem('orgo_admin_token', adminToken);
+      if (status) {
+        status.textContent = 'Access granted.';
+        status.className = 'success';
+      }
+      await loadAdminDashboard();
+    } catch (error) {
+      if (status) {
+        status.textContent = error.message;
+        status.className = 'error';
+      }
+    }
+  });
+
+  $('#admin-refresh-btn')?.addEventListener('click', () => {
+    loadAdminDashboard().catch((err) => {
+      showAdminToast(`Failed to refresh: ${err.message}`);
+    });
+  });
+
+  $('#admin-logout-btn')?.addEventListener('click', async () => {
+    try {
+      await adminApi('/api/admin/logout', {}, 'POST');
+    } catch (_) {}
+    adminToken = null;
+    localStorage.removeItem('orgo_admin_token');
+    showAdminLogin();
+  });
+
+  $('#admin-user-search')?.addEventListener('input', (event) => {
+    renderAdminUsers(event.target.value);
+  });
+}
+
 function bindDomEvents() {
   const startButton = $('#start');
   if (startButton) {
@@ -523,6 +785,7 @@ function bindDomEvents() {
 
   ensureExplanationUi();
   bindAuthEvents();
+  bindAdminEvents();
 }
 
 if (document.readyState === 'loading') {
