@@ -1,4 +1,4 @@
-﻿const $ = (selector) => document.querySelector(selector);
+const $ = (selector) => document.querySelector(selector);
 import { Avatar, CHARACTERS, createAvatarStage, setAvatarState, DEFAULT_AVATAR_CONFIG, PLAYER_AVATAR_OPTIONS, normalizeAvatarConfig } from './avatars.js?v=3';
 
 let session = null;
@@ -44,12 +44,12 @@ function authMessage(message, success = false) {
 }
 
 function showUsernameTakenModal() {
-  let modal = $('#username-taken-modal');
-  if (!modal) {
-    modal = document.createElement('div'); modal.id = 'username-taken-modal'; modal.className = 'auth-modal';
-    modal.innerHTML = '<div class="modal-card"><div class="eyebrow">ORGO // IDENTITY ALERT</div><h2>Username unavailable</h2><p>Username taken, choose a different one</p><button class="primary" id="username-taken-close">CHOOSE ANOTHER</button></div>';
-    $('#app').append(modal); $('#username-taken-close').onclick = () => modal.remove();
-  }
+  showBattleModal({
+    eyebrow: 'ORGO // IDENTITY ALERT',
+    title: 'USERNAME UNAVAILABLE',
+    copy: 'Username taken, choose a different one.',
+    action: 'CHOOSE ANOTHER',
+  });
 }
 
 function showAvatarOnboarding(existingAvatar = null) {
@@ -255,15 +255,17 @@ function showExplanation(result) {
   $('#explanation-modal').classList.remove('hidden');
 }
 
-function showBattleModal({ title, copy, action = 'CONTINUE', onDone }) {
+function showBattleModal({ eyebrow = 'ORGO // BATTLE REPORT', title, copy, action = 'CONTINUE', onDone }) {
   let modal = $('#battle-outcome-modal');
   if (!modal) {
     modal = document.createElement('div');
     modal.id = 'battle-outcome-modal';
     modal.className = 'hidden';
-    modal.innerHTML = `<div class="modal-card outcome-card"><div class="eyebrow">ORGO // BATTLE REPORT</div><h2 id="outcome-title"></h2><p id="outcome-copy" class="modal-question"></p><button id="outcome-action" class="primary"></button></div>`;
+    modal.innerHTML = `<div class="modal-card outcome-card"><div class="eyebrow" id="outcome-eyebrow">ORGO // BATTLE REPORT</div><h2 id="outcome-title"></h2><p id="outcome-copy" class="modal-question"></p><button id="outcome-action" class="primary"></button></div>`;
     $('#app').append(modal);
   }
+  const eyebrowEl = modal.querySelector('.eyebrow');
+  if (eyebrowEl) eyebrowEl.textContent = eyebrow;
   $('#outcome-title').textContent = title;
   $('#outcome-copy').textContent = copy;
   const button = $('#outcome-action');
@@ -271,6 +273,12 @@ function showBattleModal({ title, copy, action = 'CONTINUE', onDone }) {
   button.onclick = () => {
     modal.classList.add('hidden');
     if (onDone) onDone();
+  };
+  modal.onclick = (event) => {
+    if (event.target === modal) {
+      modal.classList.add('hidden');
+      if (onDone) onDone();
+    }
   };
   modal.classList.remove('hidden');
 }
@@ -364,7 +372,12 @@ function renderSpells(s) {
       try {
         render(await api('/api/battle/select-spell', { session_id: session.session_id, spell_id: button.dataset.spell }));
       } catch (error) {
-        alert(error.message);
+        showBattleModal({
+          eyebrow: 'ORGO // ACTION BLOCKED',
+          title: 'ACTION BLOCKED',
+          copy: error.message,
+          action: 'CONTINUE',
+        });
       }
     };
   });
@@ -384,7 +397,12 @@ function renderQuestion(s) {
         render(result);
         showOutcome(result);
       } catch (error) {
-        alert(error.message);
+        showBattleModal({
+          eyebrow: 'ORGO // ACTION BLOCKED',
+          title: 'ACTION BLOCKED',
+          copy: error.message,
+          action: 'CONTINUE',
+        });
       }
     };
   });

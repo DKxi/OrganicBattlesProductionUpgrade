@@ -11,6 +11,7 @@ class User(Base):
     username = Column(String, unique=True, nullable=False, index=True)
     password_hash = Column(String, nullable=False)
     verified = Column(Integer, nullable=False, default=0)
+    content_source = Column(String, nullable=True, default=None)
     avatar_json = Column(String, nullable=True)
     progress_json = Column(String, nullable=True)
     created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
@@ -49,6 +50,7 @@ class GameSession(Base):
 
     id = Column(String, primary_key=True)
     user_id = Column(String, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, unique=True)
+    content_source = Column(String, nullable=True, default=None)
     chapter = Column(Integer, nullable=False, default=1)
     boss_index = Column(Integer, nullable=False, default=0)
     player_hp = Column(Integer, nullable=False, default=150)

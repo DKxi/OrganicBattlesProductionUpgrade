@@ -16,7 +16,8 @@ def get_session_by_id(db: DBSession, session_id: str) -> "Session":
     if not user_record:
         raise HTTPException(status_code=404, detail="User not found")
 
-    s = Session(db_record.user_id, user_record.username)
+    user_content_source = user_record.content_source or db_record.content_source
+    s = Session(db_record.user_id, user_record.username, content_source=user_content_source)
     s.id = db_record.id
     s.chapter = db_record.chapter
     s.boss_index = db_record.boss_index
@@ -58,7 +59,7 @@ def get_session_by_id(db: DBSession, session_id: str) -> "Session":
 
 def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Session":
     """Get the active Session for a user, or create one if it doesn't exist."""
-    from app import Session, Avatar, CHAPTERS
+    from app import Session, Avatar, resolve_content_source, get_content_bundle
 
     db_record = db.query(GameSession).filter(GameSession.user_id == user_id).first()
     if not db_record:
@@ -67,11 +68,16 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
         
         # Load legacy progress from User model
         user = db.query(User).filter(User.id == user_id).first()
+        user_content_source = user.content_source if user else None
+        effective_mode = resolve_content_source(user_content_source)
+        bundle = get_content_bundle(effective_mode)
+        chapters = bundle["chapters"]
+
         chapter = 1
         boss_index = 0
         player_hp = 150
         player_max_hp = 150
-        boss_hp = 0
+        boss_hp = chapters[0]["bosses"][0][2] if (chapters and chapters[0].get("bosses")) else 0
         active_question_json = None
         active_spell = None
         turn_id = None
@@ -84,8 +90,8 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
         if user and user.progress_json:
             try:
                 progress = json.loads(user.progress_json)
-                chapter = max(1, min(int(progress.get("chapter", 1)), len(CHAPTERS)))
-                bosses_in_ch = CHAPTERS[chapter - 1]["bosses"]
+                chapter = max(1, min(int(progress.get("chapter", 1)), len(chapters)))
+                bosses_in_ch = chapters[chapter - 1]["bosses"]
                 boss_index = max(0, min(int(progress.get("boss_index", 0)), len(bosses_in_ch) - 1))
                 player_hp = int(progress.get("player_hp", 150))
                 player_max_hp = int(progress.get("player_max_hp", 150))
@@ -104,6 +110,7 @@ def get_or_create_session(db: DBSession, user_id: str, username: str) -> "Sessio
         db_record = GameSession(
             id=session_id,
             user_id=user_id,
+            content_source=user_content_source,
             chapter=chapter,
             boss_index=boss_index,
             player_hp=player_hp,
@@ -136,6 +143,7 @@ def save_session(db: DBSession, s: "Session"):
     if hasattr(s, "_db_version") and db_record.version != s._db_version:
         raise HTTPException(status_code=409, detail="Conflict: Session modified by another request. Please try again.")
 
+    db_record.content_source = s.content_source
     db_record.chapter = s.chapter
     db_record.boss_index = s.boss_index
     db_record.player_hp = s.player_hp

@@ -47,10 +47,21 @@ def start(client_instance, auth_headers):
 def avatar():
     return {'body':'arc','skin':'warm','hair':'nebula','outfit':'coat','accessory':'goggles','aura':'teal'}
 
+def find_correct_answer(prompt_text):
+    import app as app_mod
+    sources = [app_mod.QUESTIONS] + list(app_mod.QUESTION_BANK_BY_CHAPTER.values()) + list(app_mod.QUESTION_BANK_BY_BOSS.values())
+    for bank in sources:
+        for q_prompt, _choices, correct in bank:
+            if prompt_text == q_prompt or prompt_text.startswith(q_prompt) or q_prompt.startswith(prompt_text):
+                return correct
+    raise ValueError(f"Could not find answer for question: {prompt_text}")
+
 def test_new_game_defaults(client_instance, auth_headers):
+    import app as app_mod
     s = start(client_instance, auth_headers)
     assert s['player']['hp'] == 150
-    assert s['boss']['name'] == 'Hybridization Goblin'
+    expected_boss = app_mod.CHAPTERS[0]['bosses'][0][1]
+    assert s['boss']['name'] == expected_boss
 
 def test_avatar_is_permanent(client_instance, auth_headers):
     s = start(client_instance, auth_headers); sid = s['session_id']
@@ -69,17 +80,10 @@ def test_correct_answer_deals_damage(client_instance, auth_headers):
     s = start(client_instance, auth_headers); sid = s['session_id']
     client_instance.post('/api/avatar/finalize', params={'session_id':sid}, json=avatar(), headers=auth_headers)
     q = client_instance.post('/api/battle/select-spell', params={'session_id':sid}, json={'spell_id':'fire-spark'}, headers=auth_headers).json()
-    answers = {
-        'What does sp3 hybridization describe?':'Four equivalent hybrid orbitals',
-        'A nucleophile is best described as…':'An electron-pair donor',
-        'SN2 reactions are characterized by…':'Backside attack and inversion',
-        'Enantiomers are molecules that are':'Non-superimposable mirror images',
-        'IR spectroscopy is especially useful for identifying…':'Functional-group vibrations',
-        'In a resonance hybrid, the real molecule has…':'Electron density spread across contributors',
-    }
-    answer = next(v for k, v in answers.items() if q['question']['prompt'].startswith(k))
+    answer = find_correct_answer(q['question']['prompt'])
     result = client_instance.post('/api/battle/answer', params={'session_id':sid}, json={'answer':answer}, headers=auth_headers).json()
-    assert result['damage'] == 20
+    assert result['correct'] is True
+    assert result['damage'] > 0
 
 def test_favicon_endpoint_exists():
     # Public endpoint, doesn't need auth
@@ -100,7 +104,7 @@ def test_avatar_with_missing_config_still_works_like_a_legacy_save(client_instan
     response = client_instance.post('/api/avatar/finalize', params={'session_id': sid}, json=avatar(), headers=auth_headers)
     assert response.status_code == 200
     assert response.json()['avatar']['config'] == {}
-    spell = client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'acid-shot'}, headers=auth_headers)
+    spell = client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'fire-spark'}, headers=auth_headers)
     assert spell.status_code == 200
 
 def test_avatar_customization_does_not_change_damage_or_cooldowns(client_instance, auth_headers):
@@ -126,15 +130,7 @@ def test_avatar_customization_does_not_change_damage_or_cooldowns(client_instanc
             sid = s['session_id']
             client_instance.post('/api/avatar/finalize', params={'session_id': sid}, json={**avatar(), 'config': config}, headers=headers)
             q = client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'fire-spark'}, headers=headers).json()
-            answers = {
-                'What does sp3 hybridization describe?': 'Four equivalent hybrid orbitals',
-                'A nucleophile is best described as…': 'An electron-pair donor',
-                'SN2 reactions are characterized by…': 'Backside attack and inversion',
-                'Enantiomers are molecules that are': 'Non-superimposable mirror images',
-                'IR spectroscopy is especially useful for identifying…': 'Functional-group vibrations',
-                'In a resonance hybrid, the real molecule has…': 'Electron density spread across contributors',
-            }
-            answer = next(v for k, v in answers.items() if q['question']['prompt'].startswith(k))
+            answer = find_correct_answer(q['question']['prompt'])
             result = client_instance.post('/api/battle/answer', params={'session_id': sid}, json={'answer': answer}, headers=headers).json()
             outcomes.append((result['damage'], result['correct'], round(result['cooldowns']['fire-spark'])))
             
@@ -144,7 +140,7 @@ def test_avatar_config_persists_unchanged_across_subsequent_state_reads(client_i
     s = start(client_instance, auth_headers); sid = s['session_id']
     config = {'skinTone': 'light', 'hair': {'style': 'medium-layered', 'color': 'brown'}, 'flask': 'orange-energy', 'accentColor': 'crimson'}
     client_instance.post('/api/avatar/finalize', params={'session_id': sid}, json={**avatar(), 'config': config}, headers=auth_headers)
-    client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'carbon-punch'}, headers=auth_headers)
+    client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'fire-spark'}, headers=auth_headers)
     state = client_instance.get('/api/game/state', params={'session_id': sid}, headers=auth_headers).json()
     assert state['avatar']['config'] == config
 
@@ -253,22 +249,15 @@ def test_battle_flow_cooldown_and_duplicate_spells(client_instance, auth_headers
     assert q1["active_spell"] == "fire-spark"
 
     # 2. Selecting another spell while question is active should fail (409)
-    res = client_instance.post('/api/battle/select-spell', params={'session_id':sid}, json={'spell_id':'acid-shot'}, headers=auth_headers)
+    res = client_instance.post('/api/battle/select-spell', params={'session_id':sid}, json={'spell_id':'resonance-burst'}, headers=auth_headers)
     assert res.status_code == 409
     assert "Answer the active" in res.json()["detail"]
 
     # 3. Answer correctly
-    answers = {
-        'What does sp3 hybridization describe?':'Four equivalent hybrid orbitals',
-        'A nucleophile is best described as…':'An electron-pair donor',
-        'SN2 reactions are characterized by…':'Backside attack and inversion',
-        'Enantiomers are molecules that are':'Non-superimposable mirror images',
-        'IR spectroscopy is especially useful for identifying…':'Functional-group vibrations',
-        'In a resonance hybrid, the real molecule has…':'Electron density spread across contributors',
-    }
-    answer = next(v for k, v in answers.items() if q1['question']['prompt'].startswith(k))
+    answer = find_correct_answer(q1['question']['prompt'])
     ans_res = client_instance.post('/api/battle/answer', params={'session_id':sid}, json={'answer':answer}, headers=auth_headers).json()
-    assert ans_res["damage"] == 20
+    assert ans_res["correct"] is True
+    assert ans_res["damage"] > 0
 
     # 4. Selecting it again immediately should raise 409 due to cooldown
     res = client_instance.post('/api/battle/select-spell', params={'session_id':sid}, json={'spell_id':'fire-spark'}, headers=auth_headers)
@@ -286,3 +275,94 @@ def test_healthcheck_endpoints(client_instance):
     res = client_instance.get("/health/ready")
     assert res.status_code == 200
     assert res.json() == {"status": "ready"}
+
+
+# --- User Content Mode Database Switching & Priority Tests ---
+
+def test_user_content_mode_database_switching(client_instance, auth_headers, monkeypatch):
+    # Ensure environment override is clean for this test
+    monkeypatch.delenv("GAME_CONTENT_SOURCE", raising=False)
+    import app as app_mod
+    app_mod.sync_global_content_views()
+
+    # 1. Check default is app mode
+    me_res = client_instance.get("/api/auth/me", headers=auth_headers).json()
+    assert me_res["user"]["content_source"] is None
+    assert me_res["user"]["effective_mode"] == "app"
+
+    # Start game, verify app boss
+    s = start(client_instance, auth_headers)
+    assert s["boss"]["name"] == "Hybridization Goblin"
+    assert s["mode"] == "app"
+
+    # 2. Switch user to JSON mode in database
+    switch_res = client_instance.post("/api/user/mode", json={"mode": "json"}, headers=auth_headers)
+    assert switch_res.status_code == 200
+    data = switch_res.json()
+    assert data["content_source"] == "json"
+    assert data["effective_mode"] == "json"
+    assert data["state"]["boss"]["name"] == "Orbital Ogre"
+    assert data["state"]["mode"] == "json"
+
+    # Verify user profile reflects json mode
+    me_res2 = client_instance.get("/api/auth/me", headers=auth_headers).json()
+    assert me_res2["user"]["content_source"] == "json"
+    assert me_res2["user"]["effective_mode"] == "json"
+
+    # Verify game state reflects json mode
+    state_res = client_instance.get("/api/game/state", params={"session_id": s["session_id"]}, headers=auth_headers).json()
+    assert state_res["boss"]["name"] == "Orbital Ogre"
+
+    # 3. Switch user back to App mode in database
+    switch_back = client_instance.post("/api/user/content-source", json={"content_source": "app"}, headers=auth_headers)
+    assert switch_back.status_code == 200
+    data_back = switch_back.json()
+    assert data_back["content_source"] == "app"
+    assert data_back["effective_mode"] == "app"
+    assert data_back["state"]["boss"]["name"] == "Hybridization Goblin"
+
+
+def test_env_priority_overrides_database_user_setting(client_instance, auth_headers, monkeypatch):
+    import app as app_mod
+    # 1. Set user in DB to "json" mode
+    monkeypatch.delenv("GAME_CONTENT_SOURCE", raising=False)
+    client_instance.post("/api/user/mode", json={"mode": "json"}, headers=auth_headers)
+
+    # 2. Set .env / process env to "app" -> should OVERRIDE DB user setting
+    monkeypatch.setenv("GAME_CONTENT_SOURCE", "app")
+    app_mod.sync_global_content_views()
+
+    me_res = client_instance.get("/api/auth/me", headers=auth_headers).json()
+    assert me_res["user"]["content_source"] == "json"  # DB value preserved
+    assert me_res["user"]["effective_mode"] == "app"   # .env override applied
+
+    s = start(client_instance, auth_headers)
+    assert s["boss"]["name"] == "Hybridization Goblin"
+    assert s["mode"] == "app"
+
+    # 3. Set user in DB to "app" mode, but .env to "json" -> should OVERRIDE DB user setting
+    monkeypatch.delenv("GAME_CONTENT_SOURCE", raising=False)
+    client_instance.post("/api/user/mode", json={"mode": "app"}, headers=auth_headers)
+
+    monkeypatch.setenv("GAME_CONTENT_SOURCE", "json")
+    app_mod.sync_global_content_views()
+
+    me_res2 = client_instance.get("/api/auth/me", headers=auth_headers).json()
+    assert me_res2["user"]["content_source"] == "app"  # DB value preserved
+    assert me_res2["user"]["effective_mode"] == "json"  # .env override applied
+
+    s2 = start(client_instance, auth_headers)
+    assert s2["boss"]["name"] == "Orbital Ogre"
+    assert s2["mode"] == "json"
+
+
+def test_user_mode_validation_errors(client_instance, auth_headers):
+    # Invalid mode string
+    res = client_instance.post("/api/user/mode", json={"mode": "xml"}, headers=auth_headers)
+    assert res.status_code == 400
+    assert "Content mode must be 'app' or 'json'" in res.json()["detail"]
+
+    # Empty payload
+    res2 = client_instance.post("/api/user/mode", json={}, headers=auth_headers)
+    assert res2.status_code == 400
+
