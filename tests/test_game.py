@@ -49,7 +49,13 @@ def avatar():
 
 def find_correct_answer(prompt_text):
     import app as app_mod
-    sources = [app_mod.QUESTIONS] + list(app_mod.QUESTION_BANK_BY_CHAPTER.values()) + list(app_mod.QUESTION_BANK_BY_BOSS.values())
+    sources = []
+    if app_mod.APP_DATA.get("questions"):
+        sources.append(app_mod.APP_DATA["questions"])
+    if app_mod.JSON_DATA.get("questions"):
+        sources.append(app_mod.JSON_DATA["questions"])
+    sources.extend(list(app_mod.QUESTION_BANK_BY_CHAPTER.values()))
+    sources.extend(list(app_mod.QUESTION_BANK_BY_BOSS.values()))
     for bank in sources:
         for q_prompt, _choices, correct in bank:
             if prompt_text == q_prompt or prompt_text.startswith(q_prompt) or q_prompt.startswith(prompt_text):
@@ -459,5 +465,76 @@ def test_admin_change_user_content_source(client_instance, auth_headers, monkeyp
         headers=admin_headers
     )
     assert bad_res.status_code == 400
+
+
+def test_admin_sessions_management_and_reset(client_instance, auth_headers):
+    # 1. Start a game session for the user
+    s = start(client_instance, auth_headers)
+    sid = s["session_id"]
+    client_instance.post('/api/avatar/finalize', params={'session_id': sid}, json=avatar(), headers=auth_headers)
+
+    # Damage the boss and answer a question to dirty session state
+    q = client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'fire-spark'}, headers=auth_headers).json()
+    ans = find_correct_answer(q['question']['prompt'])
+    client_instance.post('/api/battle/answer', params={'session_id': sid}, json={'answer': ans}, headers=auth_headers)
+
+    # 2. Log in as admin
+    admin_login = client_instance.post("/api/admin/login", json={"username": "admin", "password": "admin"}).json()
+    admin_headers = {"Authorization": f"Bearer {admin_login['token']}"}
+
+    # 3. List sessions
+    sessions_res = client_instance.get("/api/admin/sessions", headers=admin_headers)
+    assert sessions_res.status_code == 200
+    sessions_list = sessions_res.json()["sessions"]
+    target_session = next((sess for sess in sessions_list if sess["session_id"] == sid), None)
+    assert target_session is not None
+    assert target_session["chapter"] == 1
+    assert len(target_session["available_chapters"]) >= 3
+
+    # 4. Reset session to Chapter 2
+    reset_res = client_instance.post(
+        f"/api/admin/sessions/{sid}/reset",
+        json={"chapter": 2},
+        headers=admin_headers
+    )
+    assert reset_res.status_code == 200
+    reset_data = reset_res.json()
+    assert reset_data["chapter"] == 2
+    assert reset_data["boss_index"] == 0
+    assert reset_data["player_hp"] == 150
+    assert reset_data["boss_hp"] > 0
+
+    # 5. User checks their game state and confirms Chapter 2, Boss 1
+    user_state = client_instance.get("/api/game/state", params={"session_id": sid}, headers=auth_headers).json()
+    assert user_state["chapter"] == 2
+    assert user_state["boss"]["name"] == reset_data["boss_name"]
+    assert user_state["question"] is None
+    assert user_state["active_spell"] is None
+
+
+def test_admin_sessions_delete(client_instance, auth_headers):
+    # 1. Start a game session for the user
+    s = start(client_instance, auth_headers)
+    sid = s["session_id"]
+
+    # 2. Log in as admin
+    admin_login = client_instance.post("/api/admin/login", json={"username": "admin", "password": "admin"}).json()
+    admin_headers = {"Authorization": f"Bearer {admin_login['token']}"}
+
+    # 3. Delete the session
+    del_res = client_instance.delete(f"/api/admin/sessions/{sid}", headers=admin_headers)
+    assert del_res.status_code == 200
+    assert del_res.json()["status"] == "ok"
+
+    # 4. Trying to fetch the deleted session fails with 404
+    state_res = client_instance.get("/api/game/state", params={"session_id": sid}, headers=auth_headers)
+    assert state_res.status_code == 404
+
+    # 5. User starting a new game gets a brand-new session
+    new_s = start(client_instance, auth_headers)
+    assert new_s["session_id"] != sid
+    assert new_s["chapter"] == 1
+    assert new_s["boss"]["hp"] > 0
+
 
 

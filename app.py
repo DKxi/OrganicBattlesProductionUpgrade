@@ -209,6 +209,11 @@ class AdminUserConfigRequest(BaseModel):
     content_source: Optional[str] = None
 
 
+class SessionResetRequest(BaseModel):
+    chapter: int = Field(..., ge=1, description="Target chapter to reset battle session to")
+
+
+
 
 def public_user(row):
     saved_avatar = None
@@ -967,6 +972,137 @@ def admin_logout(response: Response, authorization: Optional[str] = Header(defau
         ADMIN_TOKENS.pop(thash, None)
     response.delete_cookie("admin_token")
     return {"status": "ok"}
+
+
+@app.get("/api/admin/sessions")
+def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    game_sessions = db.query(GameSession).order_by(GameSession.updated_at.desc()).all()
+    users = {u.id: u for u in db.query(User).all()}
+    result = []
+    for s in game_sessions:
+        u = users.get(s.user_id)
+        effective = resolve_content_source(u.content_source if u else s.content_source)
+        bundle = get_content_bundle(effective)
+        chapters = bundle["chapters"]
+        ch_idx = max(0, min(s.chapter - 1, len(chapters) - 1))
+        ch_data = chapters[ch_idx]
+        bosses = ch_data["bosses"]
+        b_idx = max(0, min(s.boss_index, len(bosses) - 1))
+        boss = bosses[b_idx]
+        try:
+            completed_list = json.loads(s.completed_json)
+        except Exception:
+            completed_list = []
+        
+        result.append({
+            "session_id": s.id,
+            "user_id": s.user_id,
+            "username": u.username if u else "Unknown User",
+            "email": u.email if u else "Unknown",
+            "content_source": s.content_source,
+            "effective_mode": effective,
+            "chapter": s.chapter,
+            "chapter_name": ch_data["name"],
+            "boss_index": s.boss_index,
+            "boss_name": boss[1],
+            "boss_hp": s.boss_hp,
+            "boss_max_hp": boss[2],
+            "player_hp": s.player_hp,
+            "player_max_hp": s.player_max_hp,
+            "completed_count": len(completed_list),
+            "updated_at": s.updated_at,
+            "available_chapters": [{"id": ch["id"], "name": ch["name"]} for ch in chapters]
+        })
+    return {"sessions": result, "total": len(result)}
+
+
+@app.post("/api/admin/sessions/{session_id}/reset")
+def admin_reset_session(
+    session_id: str,
+    reset_data: SessionResetRequest,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db)
+):
+    game_session = db.query(GameSession).filter(GameSession.id == session_id).first()
+    if not game_session:
+        raise HTTPException(404, "Session not found")
+
+    user = db.query(User).filter(User.id == game_session.user_id).first()
+    effective = resolve_content_source(user.content_source if user else game_session.content_source)
+    bundle = get_content_bundle(effective)
+    chapters = bundle["chapters"]
+
+    if reset_data.chapter < 1 or reset_data.chapter > len(chapters):
+        raise HTTPException(400, f"Chapter must be between 1 and {len(chapters)}")
+
+    target_chapter = reset_data.chapter
+    first_boss = chapters[target_chapter - 1]["bosses"][0]
+
+    game_session.chapter = target_chapter
+    game_session.boss_index = 0
+    game_session.boss_hp = first_boss[2]
+    game_session.player_hp = game_session.player_max_hp
+    game_session.active_question_json = None
+    game_session.active_spell = None
+    game_session.turn_id = None
+    game_session.cooldowns_json = "{}"
+    game_session.log_json = json.dumps([f"Battle reset by Administrator to Chapter {target_chapter} ({first_boss[1]})."])
+    game_session.version += 1
+    game_session.updated_at = int(time.time())
+
+    if user:
+        try:
+            progress = json.loads(user.progress_json) if user.progress_json else {}
+        except Exception:
+            progress = {}
+        progress.update({
+            "chapter": target_chapter,
+            "boss_index": 0,
+            "boss_hp": first_boss[2],
+            "player_hp": game_session.player_max_hp,
+            "active_question": None,
+            "active_spell": None,
+            "turn_id": None,
+            "cooldowns": {},
+            "log": [f"Battle reset by Administrator to Chapter {target_chapter} ({first_boss[1]})."]
+        })
+        user.progress_json = json.dumps(progress)
+
+    db.commit()
+    db.refresh(game_session)
+
+    return {
+        "status": "ok",
+        "message": f"Session reset to Chapter {target_chapter} ({first_boss[1]})",
+        "session_id": game_session.id,
+        "chapter": game_session.chapter,
+        "boss_index": game_session.boss_index,
+        "boss_name": first_boss[1],
+        "boss_hp": game_session.boss_hp,
+        "player_hp": game_session.player_hp
+    }
+
+
+@app.delete("/api/admin/sessions/{session_id}")
+@app.post("/api/admin/sessions/{session_id}/delete")
+def admin_delete_session(
+    session_id: str,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db)
+):
+    game_session = db.query(GameSession).filter(GameSession.id == session_id).first()
+    if not game_session:
+        raise HTTPException(404, "Session not found")
+
+    user = db.query(User).filter(User.id == game_session.user_id).first()
+    if user:
+        user.progress_json = None
+
+    db.delete(game_session)
+    db.commit()
+
+    return {"status": "ok", "message": "Session deleted successfully", "session_id": session_id}
+
 
 
 

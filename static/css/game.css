@@ -231,3 +231,29 @@
 
 .admin-toast{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:#0b2c3a;border:1px solid var(--cyan);box-shadow:0 10px 30px rgba(0,0,0,.6);color:var(--cyan);padding:10px 22px;border-radius:999px;font:500 .75rem 'DM Mono',monospace;animation:slideUp .25s ease-out;z-index:10}
 @keyframes slideUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
+
+/* Tab Navigation & Session Table Styling */
+.admin-tab-nav{display:flex;gap:10px;margin-bottom:14px;border-bottom:1px solid #1a3c48;padding-bottom:12px}
+.admin-tab-btn{border:1px solid #234d5b;border-radius:8px;background:rgba(8,25,36,.7);color:var(--muted);padding:8px 18px;font:600 .72rem 'DM Mono',monospace;letter-spacing:.1em;transition:.2s}
+.admin-tab-btn:hover{border-color:var(--cyan);color:var(--ink);background:rgba(54,229,208,.08)}
+.admin-tab-btn.active{border-color:var(--cyan);color:#06111b;background:var(--cyan);box-shadow:0 0 20px rgba(54,229,208,.3)}
+
+.admin-tab-content{display:flex;flex-direction:column;flex:1;min-height:0}
+.admin-tab-content.hidden{display:none!important}
+
+.admin-chapter-select{border:1px solid #264a56;border-radius:6px;background:#081822;color:var(--ink);padding:6px 10px;font:500 .68rem 'DM Mono',monospace;max-width:180px}
+.admin-chapter-select:focus{outline:2px solid var(--cyan)}
+
+.btn-reset{border:1px solid #2b6870;border-radius:6px;background:rgba(54,229,208,.1);color:var(--cyan);padding:6px 12px;font:600 .64rem 'DM Mono',monospace;transition:.2s;white-space:nowrap}
+.btn-reset:hover:not(:disabled){background:var(--cyan);color:#06111b;box-shadow:0 0 15px rgba(54,229,208,.4)}
+.btn-reset:disabled{opacity:.4;cursor:not-allowed}
+
+.btn-danger{border:1px solid #803030;border-radius:6px;background:rgba(255,108,113,.12);color:#ff8e88;padding:6px 12px;font:600 .64rem 'DM Mono',monospace;transition:.2s;white-space:nowrap}
+.btn-danger:hover:not(:disabled){background:#ff6c71;color:#fff;border-color:#ff6c71;box-shadow:0 0 18px rgba(255,108,113,.4)}
+.btn-danger:disabled{opacity:.4;cursor:not-allowed}
+
+.session-hp-tag{font:500 .68rem 'DM Mono',monospace;display:flex;flex-direction:column;gap:3px}
+.hp-player{color:var(--cyan)}
+.hp-boss{color:var(--orange)}
+.session-actions-cell{display:flex;align-items:center;gap:8px}
+

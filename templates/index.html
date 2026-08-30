@@ -114,30 +114,65 @@
         </div>
       </header>
 
-      <div class="admin-status-banner" id="admin-env-status"></div>
-
-      <div class="admin-toolbar">
-        <input type="search" id="admin-user-search" placeholder="Search users by username or email…">
-        <div class="admin-stats" id="admin-stats-summary"></div>
+      <div class="admin-tab-nav">
+        <button id="admin-tab-users" class="admin-tab-btn active" type="button">👤 USER CONFIGURATION</button>
+        <button id="admin-tab-sessions" class="admin-tab-btn" type="button">⚔ GAME SESSIONS</button>
       </div>
 
-      <div class="admin-user-table-container">
-        <table class="admin-user-table">
-          <thead>
-            <tr>
-              <th>USER</th>
-              <th>EMAIL</th>
-              <th>STATUS</th>
-              <th>PROGRESS</th>
-              <th>DB CONTENT MODE</th>
-              <th>EFFECTIVE MODE</th>
-              <th>ACTIONS</th>
-            </tr>
-          </thead>
-          <tbody id="admin-user-tbody">
-            <!-- Populated dynamically via JS -->
-          </tbody>
-        </table>
+      <div class="admin-status-banner" id="admin-env-status"></div>
+
+      <!-- Users Tab View -->
+      <div id="admin-users-tab-content" class="admin-tab-content">
+        <div class="admin-toolbar">
+          <input type="search" id="admin-user-search" placeholder="Search users by username, email, or ID…">
+          <div class="admin-stats" id="admin-stats-summary"></div>
+        </div>
+
+        <div class="admin-user-table-container">
+          <table class="admin-user-table">
+            <thead>
+              <tr>
+                <th>USER</th>
+                <th>EMAIL</th>
+                <th>STATUS</th>
+                <th>PROGRESS</th>
+                <th>DB CONTENT MODE</th>
+                <th>EFFECTIVE MODE</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="admin-user-tbody">
+              <!-- Populated dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sessions Tab View -->
+      <div id="admin-sessions-tab-content" class="admin-tab-content hidden">
+        <div class="admin-toolbar">
+          <input type="search" id="admin-session-search" placeholder="Search sessions by username, boss, or chapter…">
+          <div class="admin-stats" id="admin-session-stats-summary"></div>
+        </div>
+
+        <div class="admin-user-table-container">
+          <table class="admin-user-table">
+            <thead>
+              <tr>
+                <th>USER</th>
+                <th>MODE</th>
+                <th>CURRENT BATTLE</th>
+                <th>HP STATUS</th>
+                <th>COMPLETED</th>
+                <th>RESET CHAPTER & BOSS</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="admin-sessions-tbody">
+              <!-- Populated dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div id="admin-feedback-toast" class="admin-toast hidden"></div>

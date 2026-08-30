@@ -13,7 +13,9 @@ let selectedAvatar = null;
 
 let adminToken = localStorage.getItem('orgo_admin_token') || null;
 let adminUsersData = [];
+let adminSessionsData = [];
 let adminStatusData = null;
+let currentAdminTab = 'users';
 
 const api = async (path, body = {}) => {
   const payload = { ...body };
@@ -51,7 +53,7 @@ const adminApi = async (path, body = {}, method = 'POST') => {
     method,
     credentials: 'same-origin',
     headers,
-    body: method === 'GET' ? undefined : JSON.stringify(body)
+    body: (method === 'GET' || method === 'DELETE') && Object.keys(body).length === 0 ? undefined : JSON.stringify(body)
   });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
@@ -561,16 +563,29 @@ async function loadAdminDashboard() {
   $('#admin-login-view')?.classList.add('hidden');
   $('#admin-dashboard-view')?.classList.remove('hidden');
 
-  const [status, usersResp] = await Promise.all([
+  const [status, usersResp, sessionsResp] = await Promise.all([
     adminApi('/api/admin/status', {}, 'GET'),
     adminApi('/api/admin/users', {}, 'GET'),
+    adminApi('/api/admin/sessions', {}, 'GET'),
   ]);
 
   adminStatusData = status;
   adminUsersData = usersResp.users || [];
+  adminSessionsData = sessionsResp.sessions || [];
 
   renderAdminStatus();
   renderAdminUsers($('#admin-user-search')?.value || '');
+  renderAdminSessions($('#admin-session-search')?.value || '');
+}
+
+function switchAdminTab(tabName) {
+  currentAdminTab = tabName;
+  const isUsers = tabName === 'users';
+  $('#admin-tab-users')?.classList.toggle('active', isUsers);
+  $('#admin-tab-sessions')?.classList.toggle('active', !isUsers);
+
+  $('#admin-users-tab-content')?.classList.toggle('hidden', !isUsers);
+  $('#admin-sessions-tab-content')?.classList.toggle('hidden', isUsers);
 }
 
 function renderAdminStatus() {
@@ -700,6 +715,128 @@ function renderAdminUsers(filterText = '') {
   });
 }
 
+function renderAdminSessions(filterText = '') {
+  const tbody = $('#admin-sessions-tbody');
+  if (!tbody) return;
+
+  const query = filterText.toLowerCase().trim();
+  const filtered = adminSessionsData.filter((s) => !query || s.username.toLowerCase().includes(query) || s.email.toLowerCase().includes(query) || s.boss_name.toLowerCase().includes(query) || String(s.chapter).includes(query));
+
+  const stats = $('#admin-session-stats-summary');
+  if (stats) {
+    stats.textContent = `Total Active Sessions: ${adminSessionsData.length}`;
+  }
+
+  if (!filtered.length) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">No game sessions found matching '${filterText}'.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = filtered.map((s) => {
+    const effectiveClass = s.effective_mode === 'json' ? 'mode-json' : 'mode-app';
+    const effectiveBadge = `pill-effective ${effectiveClass}`;
+    const chapters = s.available_chapters || [{ id: 1, name: 'Chapter 1' }];
+
+    const chapterOptions = chapters.map((ch) => `<option value="${ch.id}" ${ch.id === s.chapter ? 'selected' : ''}>Ch ${ch.id}: ${ch.name.slice(0, 18)}…</option>`).join('');
+
+    return `
+      <tr data-session-id="${s.session_id}">
+        <td>
+          <div class="user-cell-name">${s.username}</div>
+          <div class="user-cell-id">${s.session_id.slice(0, 8)}…</div>
+        </td>
+        <td>
+          <span class="${effectiveBadge}">${s.effective_mode.toUpperCase()}</span>
+        </td>
+        <td>
+          <div style="font-weight: 600; color: var(--ink);">Ch ${s.chapter}: ${s.chapter_name}</div>
+          <div style="font: 500 0.68rem 'DM Mono', monospace; color: var(--orange); margin-top: 3px;">
+            Boss ${s.boss_index + 1}: ${s.boss_name}
+          </div>
+        </td>
+        <td>
+          <div class="session-hp-tag">
+            <span class="hp-player">Player: ${s.player_hp}/${s.player_max_hp} HP</span>
+            <span class="hp-boss">Boss: ${s.boss_hp}/${s.boss_max_hp} HP</span>
+          </div>
+        </td>
+        <td>
+          <span class="badge-verified">${s.completed_count} Defeated</span>
+        </td>
+        <td>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <select class="admin-chapter-select" data-chapter-select>
+              ${chapterOptions}
+            </select>
+            <button type="button" class="btn-reset" data-reset-session="${s.session_id}">⟲ RESET</button>
+          </div>
+        </td>
+        <td>
+          <button type="button" class="btn-danger" data-delete-session="${s.session_id}">🗑 DELETE</button>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  // Bind Reset & Delete actions
+  tbody.querySelectorAll('tr').forEach((row) => {
+    const sessionId = row.dataset.sessionId;
+    const sessionObj = adminSessionsData.find((s) => s.session_id === sessionId);
+    if (!sessionObj) return;
+
+    const chapterSelect = row.querySelector('[data-chapter-select]');
+    const resetBtn = row.querySelector('[data-reset-session]');
+    const deleteBtn = row.querySelector('[data-delete-session]');
+
+    resetBtn.onclick = async () => {
+      const targetChapter = parseInt(chapterSelect.value, 10);
+      resetBtn.disabled = true;
+      resetBtn.textContent = 'RESETTING…';
+      try {
+        const resp = await adminApi(`/api/admin/sessions/${sessionId}/reset`, { chapter: targetChapter }, 'POST');
+        showAdminToast(`✓ ${resp.message}`);
+        await loadAdminDashboard();
+      } catch (err) {
+        showBattleModal({
+          eyebrow: 'ADMIN // ERROR',
+          title: 'SESSION RESET FAILED',
+          copy: err.message,
+          action: 'DISMISS',
+        });
+        resetBtn.disabled = false;
+        resetBtn.textContent = '⟲ RESET';
+      }
+    };
+
+    deleteBtn.onclick = () => {
+      showBattleModal({
+        eyebrow: 'ADMIN // CONFIRM DELETION',
+        title: 'DELETE SESSION?',
+        copy: `Are you sure you want to delete the active game session for user "${sessionObj.username}"? The user will receive a clean session upon their next login.`,
+        action: 'CONFIRM DELETE',
+        onDone: async () => {
+          deleteBtn.disabled = true;
+          deleteBtn.textContent = 'DELETING…';
+          try {
+            await adminApi(`/api/admin/sessions/${sessionId}`, {}, 'DELETE');
+            showAdminToast(`✓ Session for "${sessionObj.username}" deleted successfully.`);
+            await loadAdminDashboard();
+          } catch (err) {
+            showBattleModal({
+              eyebrow: 'ADMIN // ERROR',
+              title: 'SESSION DELETE FAILED',
+              copy: err.message,
+              action: 'DISMISS',
+            });
+            deleteBtn.disabled = false;
+            deleteBtn.textContent = '🗑 DELETE';
+          }
+        },
+      });
+    };
+  });
+}
+
 function bindAdminEvents() {
   $('#open-admin-boot')?.addEventListener('click', openAdminScreen);
   $('#open-admin-auth')?.addEventListener('click', openAdminScreen);
@@ -707,6 +844,9 @@ function bindAdminEvents() {
 
   $('#close-admin-login')?.addEventListener('click', closeAdminScreen);
   $('#close-admin-dash')?.addEventListener('click', closeAdminScreen);
+
+  $('#admin-tab-users')?.addEventListener('click', () => switchAdminTab('users'));
+  $('#admin-tab-sessions')?.addEventListener('click', () => switchAdminTab('sessions'));
 
   $('#admin-login-form')?.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -752,6 +892,10 @@ function bindAdminEvents() {
 
   $('#admin-user-search')?.addEventListener('input', (event) => {
     renderAdminUsers(event.target.value);
+  });
+
+  $('#admin-session-search')?.addEventListener('input', (event) => {
+    renderAdminSessions(event.target.value);
   });
 }
 
