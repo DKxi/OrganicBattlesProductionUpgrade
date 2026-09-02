@@ -37,6 +37,9 @@ class FinalizeAvatarRequest(BaseModel):
 
 def format_game_state(game_session: GameSession, user: User) -> Dict[str, Any]:
     effective = resolve_content_source(user.content_source if user else game_session.content_source)
+    track_id = effective.replace("track:", "")
+    track_cfg = get_track_config(settings.root_dir, track_id)
+    track_name = track_cfg.get("title", track_id.title()) if track_cfg else track_id.title()
     bundle = get_content_bundle(effective)
     chapters = bundle.chapters
 
@@ -145,6 +148,8 @@ def format_game_state(game_session: GameSession, user: User) -> Dict[str, Any]:
         "cooldowns": cooldowns,
         "log": log,
         "mode": effective,
+        "track_id": track_id,
+        "track_name": track_name,
         "spell_damage": spell_damage,
         "avatar": avatar,
         "finalized": avatar is not None,

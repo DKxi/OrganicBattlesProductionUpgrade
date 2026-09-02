@@ -183,6 +183,8 @@ def test_track_available_spells_and_incorrect_answer_explanation():
     track_res = client.post("/api/game/track", headers=headers, json={"session_id": sid, "track_id": "adv-vocab"})
     assert track_res.status_code == 200
     track_session = track_res.json()["session"]
+    assert track_session["track_id"] == "adv-vocab"
+    assert track_session["track_name"] == "Vocabulary & Core Concepts"
 
     # 1. Spells must only have the 3 rank spells active
     spell_damage = track_session["spell_damage"]

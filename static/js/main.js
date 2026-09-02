@@ -526,7 +526,13 @@ function renderQuestion(s) {
   }
 
   const q = s.question;
-  container.innerHTML = `<div class="control-panel">${q ? `<div class="control-title">VOCABULARY TRIAL // ONE ATTEMPT</div><div class="question">${q.prompt}</div><div class="answers">${q.choices.map((answer, index) => `<button class="answer" data-answer="${answer}"><span class="hint">${'ABCD'[index]}</span><br>${answer}</button>`).join('')}</div>` : `<div class="control-title">BATTLE STATUS</div><div class="question">${s.boss.name} awaits your next spell.</div><div class="hint">Choose a spell above to reveal a chemistry trial.</div>`}</div>`;
+  const trackName = (s.track_name || (() => {
+    const trackId = s.track_id || (s.mode && s.mode.startsWith('track:') ? s.mode.slice(6) : (selectedTrackId || 'default'));
+    const trackObj = (typeof TRACKS !== 'undefined' ? TRACKS : []).find((t) => t.id === trackId);
+    return trackObj?.title || 'Chemistry Trial';
+  })()).toUpperCase();
+
+  container.innerHTML = `<div class="control-panel">${q ? `<div class="control-title">${trackName} // ONE ATTEMPT</div><div class="question">${q.prompt}</div><div class="answers">${q.choices.map((answer, index) => `<button class="answer" data-answer="${answer}"><span class="hint">${'ABCD'[index]}</span><br>${answer}</button>`).join('')}</div>` : `<div class="control-title">BATTLE STATUS</div><div class="question">${s.boss.name} awaits your next spell.</div><div class="hint">Choose a spell above to reveal a chemistry trial.</div>`}</div>`;
 
   document.querySelectorAll('[data-answer]').forEach((button) => {
     button.onclick = async () => {
