@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 19,
+  "chapter_title": "Aldehydes and Ketones",
+  "assigned_boss": "Carbonyl Chimera",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch19_q001",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Carbonyl Nucleophilic Addition Polarization",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the fundamental electronic event when a nucleophile attacks the carbonyl group of an aldehyde or ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile donates electrons into the C-C σ bond."
+        },
+        {
+          "label": "B",
+          "text": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The carbonyl carbon is oxidized to a radical cation."
+        },
+        {
+          "label": "D",
+          "text": "Oxygen donates a lone pair to the nucleophile."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen.",
+      "explanation": "Nucleophiles attack the electrophilic π* orbital at the Bürgi-Dunitz angle (~107°), generating a tetrahedral alkoxide intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q002",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Acid-Catalyzed Acetal Formation Oxocarbenium Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the key resonance-stabilized intermediate in the acid-catalyzed conversion of a hemiacetal to an acetal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tetrahedral carbanion."
+        },
+        {
+          "label": "B",
+          "text": "An enol ether radical."
+        },
+        {
+          "label": "C",
+          "text": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal."
+        },
+        {
+          "label": "D",
+          "text": "A free carbocation with an empty octet on all atoms."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal.",
+      "explanation": "Protonation of the hemiacetal -OH allows loss of water, generating a resonance-stabilized oxocarbenium ion that is trapped by a second alcohol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q003",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Imine Formation Rate-Determining Dehydration",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the formation of an imine from cyclohexanone and primary amine exhibit a maximum rate at pH 4.5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pH 4.5 is the boiling point of the solvent."
+        },
+        {
+          "label": "B",
+          "text": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack."
+        },
+        {
+          "label": "C",
+          "text": "At higher pH, the imine decomposes to an alkane."
+        },
+        {
+          "label": "D",
+          "text": "At lower pH, the aldehyde is completely destroyed."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack.",
+      "explanation": "A delicate acid-base balance is required: too acidic protonates all amine (no nucleophile); too basic prevents protonation of -OH (no dehydration leaving group).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q004",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Enamine Formation Alpha-Deprotonation",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do secondary amines react with ketones to form enamines rather than imines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enamines are aromatic compounds."
+        },
+        {
+          "label": "B",
+          "text": "Secondary amines are too bulky to form C=N bonds."
+        },
+        {
+          "label": "C",
+          "text": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality."
+        },
+        {
+          "label": "D",
+          "text": "Secondary amines oxidize ketones to esters."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality.",
+      "explanation": "Lacking a second N-H proton, the intermediate must lose an α-proton to form the neutral C=C-N enamine system.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q005",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Wolff-Kishner Hydrazone Diimide Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the driving force and final product of the Wolff-Kishner reduction of hydrazones in hot base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-N bond by UV light."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of the hydrazone to an amide."
+        },
+        {
+          "label": "C",
+          "text": "Reduction of the hydrazone by potassium metal."
+        },
+        {
+          "label": "D",
+          "text": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane.",
+      "explanation": "The immense thermodynamic stability of elemental nitrogen gas (N≡N bond energy ~945 kJ/mol) drives the reduction to completion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q006",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Wittig Reaction Oxaphosphetane Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the structure of the cyclic intermediate in the Wittig reaction between an aldehyde and a phosphonium ylide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O)."
+        },
+        {
+          "label": "B",
+          "text": "A planar five-membered phospholane."
+        },
+        {
+          "label": "C",
+          "text": "A six-membered cyclic betaine diester."
+        },
+        {
+          "label": "D",
+          "text": "A three-membered epoxide ring."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O).",
+      "explanation": "The reaction proceeds via a 4-membered oxaphosphetane ring whose collapse is driven by the enormous strength of the P=O bond (~540 kJ/mol).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q007",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Baeyer-Villiger Migration Stereochemistry and Aptitude",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the stereochemical outcome at the migrating center during a Baeyer-Villiger oxidation of a chiral ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The migrating center is oxidized to an alcohol."
+        },
+        {
+          "label": "B",
+          "text": "The migrating center undergoes 100% inversion."
+        },
+        {
+          "label": "C",
+          "text": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The migrating center racemizes completely via a free carbocation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate.",
+      "explanation": "Migration occurs with complete retention because the alkyl group migrates with its bonding electron pair in a concerted frontside shift.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q008",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "Cyanohydrin Synthesis Reversibility",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is cyanohydrin formation from acetone and NaCN/H⁺ reversible upon addition of strong aqueous base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base oxidizes the nitrile to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide evaporates as nitrogen gas."
+        },
+        {
+          "label": "C",
+          "text": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group."
+        },
+        {
+          "label": "D",
+          "text": "The cyanohydrin undergoes a 1,2-alkyl shift."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group.",
+      "explanation": "Deprotonation of the -OH group triggers reform of the stable C=O π bond with expulsion of cyanide as a leaving group.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q009",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "NaBH₄ Hydride Transfer Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the curved-arrow description of the reduction of an aldehyde by sodium borohydride (NaBH₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Sodium transfers an electron to the carbonyl carbon."
+        },
+        {
+          "label": "C",
+          "text": "Free hydride ions (H⁻) float freely in solution before attacking."
+        },
+        {
+          "label": "D",
+          "text": "Boron attacks the carbonyl oxygen directly."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen.",
+      "explanation": "NaBH₄ transfers a hydride directly from the B-H bond into the carbonyl π* orbital in a concerted bimolecular step.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q010",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Carbonyl Chimera",
+      "topic": "DIBAL-H Low-Temperature Reduction Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does diisobutylaluminum hydride (DIBAL-H) at -78°C reduce esters cleanly to aldehydes without overreduction to alcohols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride."
+        },
+        {
+          "label": "B",
+          "text": "DIBAL-H cannot reduce aldehydes under any conditions."
+        },
+        {
+          "label": "C",
+          "text": "The ester is oxidized to a peracid."
+        },
+        {
+          "label": "D",
+          "text": "The alcohol byproduct inhibits the reaction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride.",
+      "explanation": "At -78°C, the tetrahedral intermediate is stable and cannot release the aldehyde into solution where excess hydride could reduce it.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carbonyl-chimera.png"
+      ]
+    },
+    {
+      "id": "ch19_q011",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Imine Formation Rate-Determining Dehydration",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the formation of an imine from cyclohexanone and primary amine exhibit a maximum rate at pH 4.5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pH 4.5 is the boiling point of the solvent."
+        },
+        {
+          "label": "B",
+          "text": "At lower pH, the aldehyde is completely destroyed."
+        },
+        {
+          "label": "C",
+          "text": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack."
+        },
+        {
+          "label": "D",
+          "text": "At higher pH, the imine decomposes to an alkane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack.",
+      "explanation": "A delicate acid-base balance is required: too acidic protonates all amine (no nucleophile); too basic prevents protonation of -OH (no dehydration leaving group).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q012",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Enamine Formation Alpha-Deprotonation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do secondary amines react with ketones to form enamines rather than imines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality."
+        },
+        {
+          "label": "B",
+          "text": "Secondary amines oxidize ketones to esters."
+        },
+        {
+          "label": "C",
+          "text": "Enamines are aromatic compounds."
+        },
+        {
+          "label": "D",
+          "text": "Secondary amines are too bulky to form C=N bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality.",
+      "explanation": "Lacking a second N-H proton, the intermediate must lose an α-proton to form the neutral C=C-N enamine system.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q013",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Wolff-Kishner Hydrazone Diimide Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the driving force and final product of the Wolff-Kishner reduction of hydrazones in hot base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C-N bond by UV light."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of the hydrazone to an amide."
+        },
+        {
+          "label": "D",
+          "text": "Reduction of the hydrazone by potassium metal."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane.",
+      "explanation": "The immense thermodynamic stability of elemental nitrogen gas (N≡N bond energy ~945 kJ/mol) drives the reduction to completion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q014",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Wittig Reaction Oxaphosphetane Intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the structure of the cyclic intermediate in the Wittig reaction between an aldehyde and a phosphonium ylide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A three-membered epoxide ring."
+        },
+        {
+          "label": "B",
+          "text": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O)."
+        },
+        {
+          "label": "C",
+          "text": "A six-membered cyclic betaine diester."
+        },
+        {
+          "label": "D",
+          "text": "A planar five-membered phospholane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O).",
+      "explanation": "The reaction proceeds via a 4-membered oxaphosphetane ring whose collapse is driven by the enormous strength of the P=O bond (~540 kJ/mol).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q015",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Baeyer-Villiger Migration Stereochemistry and Aptitude",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the stereochemical outcome at the migrating center during a Baeyer-Villiger oxidation of a chiral ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The migrating center undergoes 100% inversion."
+        },
+        {
+          "label": "B",
+          "text": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate."
+        },
+        {
+          "label": "C",
+          "text": "The migrating center racemizes completely via a free carbocation."
+        },
+        {
+          "label": "D",
+          "text": "The migrating center is oxidized to an alcohol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate.",
+      "explanation": "Migration occurs with complete retention because the alkyl group migrates with its bonding electron pair in a concerted frontside shift.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q016",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Cyanohydrin Synthesis Reversibility",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is cyanohydrin formation from acetone and NaCN/H⁺ reversible upon addition of strong aqueous base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base oxidizes the nitrile to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "The cyanohydrin undergoes a 1,2-alkyl shift."
+        },
+        {
+          "label": "C",
+          "text": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group."
+        },
+        {
+          "label": "D",
+          "text": "Cyanide evaporates as nitrogen gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group.",
+      "explanation": "Deprotonation of the -OH group triggers reform of the stable C=O π bond with expulsion of cyanide as a leaving group.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q017",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "NaBH₄ Hydride Transfer Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the curved-arrow description of the reduction of an aldehyde by sodium borohydride (NaBH₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Boron attacks the carbonyl oxygen directly."
+        },
+        {
+          "label": "B",
+          "text": "Sodium transfers an electron to the carbonyl carbon."
+        },
+        {
+          "label": "C",
+          "text": "Free hydride ions (H⁻) float freely in solution before attacking."
+        },
+        {
+          "label": "D",
+          "text": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen.",
+      "explanation": "NaBH₄ transfers a hydride directly from the B-H bond into the carbonyl π* orbital in a concerted bimolecular step.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q018",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "DIBAL-H Low-Temperature Reduction Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does diisobutylaluminum hydride (DIBAL-H) at -78°C reduce esters cleanly to aldehydes without overreduction to alcohols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DIBAL-H cannot reduce aldehydes under any conditions."
+        },
+        {
+          "label": "B",
+          "text": "The alcohol byproduct inhibits the reaction."
+        },
+        {
+          "label": "C",
+          "text": "The ester is oxidized to a peracid."
+        },
+        {
+          "label": "D",
+          "text": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride.",
+      "explanation": "At -78°C, the tetrahedral intermediate is stable and cannot release the aldehyde into solution where excess hydride could reduce it.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q019",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Carbonyl Nucleophilic Addition Polarization",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the fundamental electronic event when a nucleophile attacks the carbonyl group of an aldehyde or ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbonyl carbon is oxidized to a radical cation."
+        },
+        {
+          "label": "B",
+          "text": "Oxygen donates a lone pair to the nucleophile."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen."
+        },
+        {
+          "label": "D",
+          "text": "The nucleophile donates electrons into the C-C σ bond."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen.",
+      "explanation": "Nucleophiles attack the electrophilic π* orbital at the Bürgi-Dunitz angle (~107°), generating a tetrahedral alkoxide intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q020",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Acetal Aegis",
+      "topic": "Acid-Catalyzed Acetal Formation Oxocarbenium Intermediate",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key resonance-stabilized intermediate in the acid-catalyzed conversion of a hemiacetal to an acetal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free carbocation with an empty octet on all atoms."
+        },
+        {
+          "label": "B",
+          "text": "An enol ether radical."
+        },
+        {
+          "label": "C",
+          "text": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal."
+        },
+        {
+          "label": "D",
+          "text": "A tetrahedral carbanion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal.",
+      "explanation": "Protonation of the hemiacetal -OH allows loss of water, generating a resonance-stabilized oxocarbenium ion that is trapped by a second alcohol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetal-aegis.png"
+      ]
+    },
+    {
+      "id": "ch19_q021",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Wolff-Kishner Hydrazone Diimide Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the driving force and final product of the Wolff-Kishner reduction of hydrazones in hot base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane."
+        },
+        {
+          "label": "B",
+          "text": "Reduction of the hydrazone by potassium metal."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-N bond by UV light."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of the hydrazone to an amide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane.",
+      "explanation": "The immense thermodynamic stability of elemental nitrogen gas (N≡N bond energy ~945 kJ/mol) drives the reduction to completion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q022",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Wittig Reaction Oxaphosphetane Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the structure of the cyclic intermediate in the Wittig reaction between an aldehyde and a phosphonium ylide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A six-membered cyclic betaine diester."
+        },
+        {
+          "label": "B",
+          "text": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O)."
+        },
+        {
+          "label": "C",
+          "text": "A three-membered epoxide ring."
+        },
+        {
+          "label": "D",
+          "text": "A planar five-membered phospholane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O).",
+      "explanation": "The reaction proceeds via a 4-membered oxaphosphetane ring whose collapse is driven by the enormous strength of the P=O bond (~540 kJ/mol).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q023",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Baeyer-Villiger Migration Stereochemistry and Aptitude",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the stereochemical outcome at the migrating center during a Baeyer-Villiger oxidation of a chiral ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The migrating center is oxidized to an alcohol."
+        },
+        {
+          "label": "C",
+          "text": "The migrating center undergoes 100% inversion."
+        },
+        {
+          "label": "D",
+          "text": "The migrating center racemizes completely via a free carbocation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate.",
+      "explanation": "Migration occurs with complete retention because the alkyl group migrates with its bonding electron pair in a concerted frontside shift.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q024",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Cyanohydrin Synthesis Reversibility",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is cyanohydrin formation from acetone and NaCN/H⁺ reversible upon addition of strong aqueous base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base oxidizes the nitrile to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide evaporates as nitrogen gas."
+        },
+        {
+          "label": "C",
+          "text": "The cyanohydrin undergoes a 1,2-alkyl shift."
+        },
+        {
+          "label": "D",
+          "text": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group.",
+      "explanation": "Deprotonation of the -OH group triggers reform of the stable C=O π bond with expulsion of cyanide as a leaving group.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q025",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "NaBH₄ Hydride Transfer Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the curved-arrow description of the reduction of an aldehyde by sodium borohydride (NaBH₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sodium transfers an electron to the carbonyl carbon."
+        },
+        {
+          "label": "B",
+          "text": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Free hydride ions (H⁻) float freely in solution before attacking."
+        },
+        {
+          "label": "D",
+          "text": "Boron attacks the carbonyl oxygen directly."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen.",
+      "explanation": "NaBH₄ transfers a hydride directly from the B-H bond into the carbonyl π* orbital in a concerted bimolecular step.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q026",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "DIBAL-H Low-Temperature Reduction Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does diisobutylaluminum hydride (DIBAL-H) at -78°C reduce esters cleanly to aldehydes without overreduction to alcohols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride."
+        },
+        {
+          "label": "B",
+          "text": "The ester is oxidized to a peracid."
+        },
+        {
+          "label": "C",
+          "text": "DIBAL-H cannot reduce aldehydes under any conditions."
+        },
+        {
+          "label": "D",
+          "text": "The alcohol byproduct inhibits the reaction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride.",
+      "explanation": "At -78°C, the tetrahedral intermediate is stable and cannot release the aldehyde into solution where excess hydride could reduce it.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q027",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Carbonyl Nucleophilic Addition Polarization",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the fundamental electronic event when a nucleophile attacks the carbonyl group of an aldehyde or ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile donates electrons into the C-C σ bond."
+        },
+        {
+          "label": "B",
+          "text": "The carbonyl carbon is oxidized to a radical cation."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Oxygen donates a lone pair to the nucleophile."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen.",
+      "explanation": "Nucleophiles attack the electrophilic π* orbital at the Bürgi-Dunitz angle (~107°), generating a tetrahedral alkoxide intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q028",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Acid-Catalyzed Acetal Formation Oxocarbenium Intermediate",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key resonance-stabilized intermediate in the acid-catalyzed conversion of a hemiacetal to an acetal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An enol ether radical."
+        },
+        {
+          "label": "B",
+          "text": "A free carbocation with an empty octet on all atoms."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral carbanion."
+        },
+        {
+          "label": "D",
+          "text": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal.",
+      "explanation": "Protonation of the hemiacetal -OH allows loss of water, generating a resonance-stabilized oxocarbenium ion that is trapped by a second alcohol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q029",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Imine Formation Rate-Determining Dehydration",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the formation of an imine from cyclohexanone and primary amine exhibit a maximum rate at pH 4.5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At lower pH, the aldehyde is completely destroyed."
+        },
+        {
+          "label": "B",
+          "text": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack."
+        },
+        {
+          "label": "C",
+          "text": "pH 4.5 is the boiling point of the solvent."
+        },
+        {
+          "label": "D",
+          "text": "At higher pH, the imine decomposes to an alkane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack.",
+      "explanation": "A delicate acid-base balance is required: too acidic protonates all amine (no nucleophile); too basic prevents protonation of -OH (no dehydration leaving group).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q030",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Imine-Enamine Imp",
+      "topic": "Enamine Formation Alpha-Deprotonation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why do secondary amines react with ketones to form enamines rather than imines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enamines are aromatic compounds."
+        },
+        {
+          "label": "B",
+          "text": "Secondary amines oxidize ketones to esters."
+        },
+        {
+          "label": "C",
+          "text": "Secondary amines are too bulky to form C=N bonds."
+        },
+        {
+          "label": "D",
+          "text": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality.",
+      "explanation": "Lacking a second N-H proton, the intermediate must lose an α-proton to form the neutral C=C-N enamine system.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "imine-enamine-imp.png"
+      ]
+    },
+    {
+      "id": "ch19_q031",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Baeyer-Villiger Migration Stereochemistry and Aptitude",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the stereochemical outcome at the migrating center during a Baeyer-Villiger oxidation of a chiral ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The migrating center racemizes completely via a free carbocation."
+        },
+        {
+          "label": "B",
+          "text": "The migrating center is oxidized to an alcohol."
+        },
+        {
+          "label": "C",
+          "text": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The migrating center undergoes 100% inversion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate.",
+      "explanation": "Migration occurs with complete retention because the alkyl group migrates with its bonding electron pair in a concerted frontside shift.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q032",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Cyanohydrin Synthesis Reversibility",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is cyanohydrin formation from acetone and NaCN/H⁺ reversible upon addition of strong aqueous base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base oxidizes the nitrile to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "The cyanohydrin undergoes a 1,2-alkyl shift."
+        },
+        {
+          "label": "C",
+          "text": "Cyanide evaporates as nitrogen gas."
+        },
+        {
+          "label": "D",
+          "text": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group.",
+      "explanation": "Deprotonation of the -OH group triggers reform of the stable C=O π bond with expulsion of cyanide as a leaving group.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q033",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "NaBH₄ Hydride Transfer Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the curved-arrow description of the reduction of an aldehyde by sodium borohydride (NaBH₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sodium transfers an electron to the carbonyl carbon."
+        },
+        {
+          "label": "B",
+          "text": "Free hydride ions (H⁻) float freely in solution before attacking."
+        },
+        {
+          "label": "C",
+          "text": "Boron attacks the carbonyl oxygen directly."
+        },
+        {
+          "label": "D",
+          "text": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen.",
+      "explanation": "NaBH₄ transfers a hydride directly from the B-H bond into the carbonyl π* orbital in a concerted bimolecular step.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q034",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "DIBAL-H Low-Temperature Reduction Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does diisobutylaluminum hydride (DIBAL-H) at -78°C reduce esters cleanly to aldehydes without overreduction to alcohols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ester is oxidized to a peracid."
+        },
+        {
+          "label": "B",
+          "text": "DIBAL-H cannot reduce aldehydes under any conditions."
+        },
+        {
+          "label": "C",
+          "text": "The alcohol byproduct inhibits the reaction."
+        },
+        {
+          "label": "D",
+          "text": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride.",
+      "explanation": "At -78°C, the tetrahedral intermediate is stable and cannot release the aldehyde into solution where excess hydride could reduce it.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q035",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Carbonyl Nucleophilic Addition Polarization",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the fundamental electronic event when a nucleophile attacks the carbonyl group of an aldehyde or ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxygen donates a lone pair to the nucleophile."
+        },
+        {
+          "label": "B",
+          "text": "The carbonyl carbon is oxidized to a radical cation."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen."
+        },
+        {
+          "label": "D",
+          "text": "The nucleophile donates electrons into the C-C σ bond."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen.",
+      "explanation": "Nucleophiles attack the electrophilic π* orbital at the Bürgi-Dunitz angle (~107°), generating a tetrahedral alkoxide intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q036",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Acid-Catalyzed Acetal Formation Oxocarbenium Intermediate",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the key resonance-stabilized intermediate in the acid-catalyzed conversion of a hemiacetal to an acetal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tetrahedral carbanion."
+        },
+        {
+          "label": "B",
+          "text": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal."
+        },
+        {
+          "label": "C",
+          "text": "A free carbocation with an empty octet on all atoms."
+        },
+        {
+          "label": "D",
+          "text": "An enol ether radical."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal.",
+      "explanation": "Protonation of the hemiacetal -OH allows loss of water, generating a resonance-stabilized oxocarbenium ion that is trapped by a second alcohol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q037",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Imine Formation Rate-Determining Dehydration",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the formation of an imine from cyclohexanone and primary amine exhibit a maximum rate at pH 4.5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pH 4.5 is the boiling point of the solvent."
+        },
+        {
+          "label": "B",
+          "text": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack."
+        },
+        {
+          "label": "C",
+          "text": "At higher pH, the imine decomposes to an alkane."
+        },
+        {
+          "label": "D",
+          "text": "At lower pH, the aldehyde is completely destroyed."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack.",
+      "explanation": "A delicate acid-base balance is required: too acidic protonates all amine (no nucleophile); too basic prevents protonation of -OH (no dehydration leaving group).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q038",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Enamine Formation Alpha-Deprotonation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do secondary amines react with ketones to form enamines rather than imines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Secondary amines oxidize ketones to esters."
+        },
+        {
+          "label": "B",
+          "text": "Secondary amines are too bulky to form C=N bonds."
+        },
+        {
+          "label": "C",
+          "text": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality."
+        },
+        {
+          "label": "D",
+          "text": "Enamines are aromatic compounds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality.",
+      "explanation": "Lacking a second N-H proton, the intermediate must lose an α-proton to form the neutral C=C-N enamine system.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q039",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Wolff-Kishner Hydrazone Diimide Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the driving force and final product of the Wolff-Kishner reduction of hydrazones in hot base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of the hydrazone to an amide."
+        },
+        {
+          "label": "B",
+          "text": "Reduction of the hydrazone by potassium metal."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-N bond by UV light."
+        },
+        {
+          "label": "D",
+          "text": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane.",
+      "explanation": "The immense thermodynamic stability of elemental nitrogen gas (N≡N bond energy ~945 kJ/mol) drives the reduction to completion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q040",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Baeyer-Villiger Banshee",
+      "topic": "Wittig Reaction Oxaphosphetane Intermediate",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the structure of the cyclic intermediate in the Wittig reaction between an aldehyde and a phosphonium ylide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A six-membered cyclic betaine diester."
+        },
+        {
+          "label": "B",
+          "text": "A three-membered epoxide ring."
+        },
+        {
+          "label": "C",
+          "text": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O)."
+        },
+        {
+          "label": "D",
+          "text": "A planar five-membered phospholane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O).",
+      "explanation": "The reaction proceeds via a 4-membered oxaphosphetane ring whose collapse is driven by the enormous strength of the P=O bond (~540 kJ/mol).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "baeyer-villiger-banshee.png"
+      ]
+    },
+    {
+      "id": "ch19_q041",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "NaBH₄ Hydride Transfer Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the curved-arrow description of the reduction of an aldehyde by sodium borohydride (NaBH₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Boron attacks the carbonyl oxygen directly."
+        },
+        {
+          "label": "B",
+          "text": "Free hydride ions (H⁻) float freely in solution before attacking."
+        },
+        {
+          "label": "C",
+          "text": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Sodium transfers an electron to the carbonyl carbon."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A nucleophilic hydride ion is transferred from the B-H σ bond directly to the electrophilic carbonyl carbon, with simultaneous cleavage of the C=O π bond to oxygen.",
+      "explanation": "NaBH₄ transfers a hydride directly from the B-H bond into the carbonyl π* orbital in a concerted bimolecular step.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q042",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "DIBAL-H Low-Temperature Reduction Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does diisobutylaluminum hydride (DIBAL-H) at -78°C reduce esters cleanly to aldehydes without overreduction to alcohols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alcohol byproduct inhibits the reaction."
+        },
+        {
+          "label": "B",
+          "text": "The ester is oxidized to a peracid."
+        },
+        {
+          "label": "C",
+          "text": "DIBAL-H cannot reduce aldehydes under any conditions."
+        },
+        {
+          "label": "D",
+          "text": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The bulky tetrahedral hemiacetal aluminate intermediate is stable at -78°C and does not collapse to the aldehyde until aqueous workup destroys remaining hydride.",
+      "explanation": "At -78°C, the tetrahedral intermediate is stable and cannot release the aldehyde into solution where excess hydride could reduce it.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q043",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Carbonyl Nucleophilic Addition Polarization",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the fundamental electronic event when a nucleophile attacks the carbonyl group of an aldehyde or ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile donates electrons into the C-C σ bond."
+        },
+        {
+          "label": "B",
+          "text": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The carbonyl carbon is oxidized to a radical cation."
+        },
+        {
+          "label": "D",
+          "text": "Oxygen donates a lone pair to the nucleophile."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The nucleophile donates an electron pair into the empty π* antibonding orbital of the carbonyl carbon, breaking the C=O π bond and pushing electrons onto oxygen.",
+      "explanation": "Nucleophiles attack the electrophilic π* orbital at the Bürgi-Dunitz angle (~107°), generating a tetrahedral alkoxide intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q044",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Acid-Catalyzed Acetal Formation Oxocarbenium Intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key resonance-stabilized intermediate in the acid-catalyzed conversion of a hemiacetal to an acetal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal."
+        },
+        {
+          "label": "B",
+          "text": "A tetrahedral carbanion."
+        },
+        {
+          "label": "C",
+          "text": "A free carbocation with an empty octet on all atoms."
+        },
+        {
+          "label": "D",
+          "text": "An enol ether radical."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An oxocarbenium ion [R-CH=O⁺-R' ↔ R-C⁺H-O-R'] formed by protonation and loss of water from the hemiacetal.",
+      "explanation": "Protonation of the hemiacetal -OH allows loss of water, generating a resonance-stabilized oxocarbenium ion that is trapped by a second alcohol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q045",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Imine Formation Rate-Determining Dehydration",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does the formation of an imine from cyclohexanone and primary amine exhibit a maximum rate at pH 4.5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pH 4.5 is the boiling point of the solvent."
+        },
+        {
+          "label": "B",
+          "text": "At higher pH, the imine decomposes to an alkane."
+        },
+        {
+          "label": "C",
+          "text": "At lower pH, the aldehyde is completely destroyed."
+        },
+        {
+          "label": "D",
+          "text": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "At pH 4.5, there is sufficient acid to protonate the carbinolamine -OH for dehydration (RDS) while leaving enough unprotonated free amine nucleophile to initiate attack.",
+      "explanation": "A delicate acid-base balance is required: too acidic protonates all amine (no nucleophile); too basic prevents protonation of -OH (no dehydration leaving group).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q046",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Enamine Formation Alpha-Deprotonation",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do secondary amines react with ketones to form enamines rather than imines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality."
+        },
+        {
+          "label": "B",
+          "text": "Secondary amines are too bulky to form C=N bonds."
+        },
+        {
+          "label": "C",
+          "text": "Secondary amines oxidize ketones to esters."
+        },
+        {
+          "label": "D",
+          "text": "Enamines are aromatic compounds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because the carbinolamine intermediate lacks a proton on nitrogen; loss of a proton from the adjacent α-carbon is required to eliminate water and achieve neutrality.",
+      "explanation": "Lacking a second N-H proton, the intermediate must lose an α-proton to form the neutral C=C-N enamine system.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q047",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Wolff-Kishner Hydrazone Diimide Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the driving force and final product of the Wolff-Kishner reduction of hydrazones in hot base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of the hydrazone to an amide."
+        },
+        {
+          "label": "B",
+          "text": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane."
+        },
+        {
+          "label": "C",
+          "text": "Reduction of the hydrazone by potassium metal."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-N bond by UV light."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sequential deprotonation and tautomerization of the hydrazone intermediate drives irreversible elimination of exceptionally stable N₂ gas, yielding an alkane.",
+      "explanation": "The immense thermodynamic stability of elemental nitrogen gas (N≡N bond energy ~945 kJ/mol) drives the reduction to completion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q048",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Wittig Reaction Oxaphosphetane Intermediate",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the structure of the cyclic intermediate in the Wittig reaction between an aldehyde and a phosphonium ylide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar five-membered phospholane."
+        },
+        {
+          "label": "B",
+          "text": "A six-membered cyclic betaine diester."
+        },
+        {
+          "label": "C",
+          "text": "A three-membered epoxide ring."
+        },
+        {
+          "label": "D",
+          "text": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A four-membered cyclic oxaphosphetane intermediate formed by [2+2] cycloaddition, which rapidly collapses to form an alkene and triphenylphosphine oxide (Ph₃P=O).",
+      "explanation": "The reaction proceeds via a 4-membered oxaphosphetane ring whose collapse is driven by the enormous strength of the P=O bond (~540 kJ/mol).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q049",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Baeyer-Villiger Migration Stereochemistry and Aptitude",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the stereochemical outcome at the migrating center during a Baeyer-Villiger oxidation of a chiral ketone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The migrating center is oxidized to an alcohol."
+        },
+        {
+          "label": "B",
+          "text": "The migrating center racemizes completely via a free carbocation."
+        },
+        {
+          "label": "C",
+          "text": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The migrating center undergoes 100% inversion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The migrating group shifts to oxygen with complete retention of stereochemical configuration, proceeding through a concerted tetrahedral Criegee intermediate.",
+      "explanation": "Migration occurs with complete retention because the alkyl group migrates with its bonding electron pair in a concerted frontside shift.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    },
+    {
+      "id": "ch19_q050",
+      "chapter": 19,
+      "chapter_title": "Aldehydes and Ketones",
+      "boss": "Wittig Warlock",
+      "topic": "Cyanohydrin Synthesis Reversibility",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why is cyanohydrin formation from acetone and NaCN/H⁺ reversible upon addition of strong aqueous base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyanide evaporates as nitrogen gas."
+        },
+        {
+          "label": "B",
+          "text": "The cyanohydrin undergoes a 1,2-alkyl shift."
+        },
+        {
+          "label": "C",
+          "text": "Base oxidizes the nitrile to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base deprotonates the hydroxyl group, generating an alkoxide that expels cyanide ion (an acceptable leaving group) to regenerate the carbonyl group.",
+      "explanation": "Deprotonation of the -OH group triggers reform of the stable C=O π bond with expulsion of cyanide as a leaving group.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "wittig-warlock.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Carbonyl Chimera",
+    "Acetal Aegis",
+    "Imine-Enamine Imp",
+    "Baeyer-Villiger Banshee",
+    "Wittig Warlock"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Carbonyl Chimera",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "carbonyl-chimera.png"
+        ]
+      },
+      {
+        "boss": "Acetal Aegis",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "acetal-aegis.png"
+        ]
+      },
+      {
+        "boss": "Imine-Enamine Imp",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "imine-enamine-imp.png"
+        ]
+      },
+      {
+        "boss": "Baeyer-Villiger Banshee",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "baeyer-villiger-banshee.png"
+        ]
+      },
+      {
+        "boss": "Wittig Warlock",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "wittig-warlock.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 2,
+  "chapter_title": "Molecular Representations",
+  "assigned_boss": "Skeletal Sentry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch02_q001",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Resonance Contributor Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following resonance structures of the formamide anion [H-CO-NH⁻ ↔ H-C(O⁻)=NH] in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "O-anion < N-anion < Carbanion."
+        },
+        {
+          "label": "B",
+          "text": "All resonance contributors are equally stable."
+        },
+        {
+          "label": "C",
+          "text": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH]."
+        },
+        {
+          "label": "D",
+          "text": "Carbanion < O-anion < N-anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH].",
+      "explanation": "Full-octet contributors with negative charge on the most electronegative atom (oxygen) are the most stable contributors.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q002",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Carbocation Stability Ladder (Primary to Allylic)",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following carbocations in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl < tert-Butyl < Isopropyl < Ethyl < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < Allyl < Ethyl < Isopropyl < Benzyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺]."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl < Benzyl < Allyl < Isopropyl < Methyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺].",
+      "explanation": "Carbocation stability increases with hyperconjugation (1° < 2° < 3°) and resonance delocalization (allylic and benzylic).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q003",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Carbanion Stability Ladder",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbanions in order of increasing stability (least stable to most stable):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Ethyl < Isopropyl < tert-Butyl < Acetylide."
+        },
+        {
+          "label": "B",
+          "text": "All carbanions have identical stability."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp]."
+        },
+        {
+          "label": "D",
+          "text": "Acetylide < Vinyl < Methyl < Ethyl < Isopropyl < tert-Butyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp].",
+      "explanation": "Carbanions are destabilized by electron-donating alkyl groups (3° < 2° < 1° < methyl) and stabilized by increasing s-character (sp³ < sp² < sp).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q004",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Carbon Radical Stability Ladder",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following carbon-centered radicals in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical."
+        },
+        {
+          "label": "C",
+          "text": "Methyl < 3° < 2° < 1° < Allylic."
+        },
+        {
+          "label": "D",
+          "text": "3° < Methyl < 1° < 2° < Benzylic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical.",
+      "explanation": "Radicals are electron-deficient species stabilized by hyperconjugation (1° < 2° < 3°) and extensive resonance delocalization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q005",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Substituted Phenol Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following substituted phenols in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol < p-Methoxyphenol < p-Chlorophenol < p-Nitrophenol."
+        },
+        {
+          "label": "B",
+          "text": "p-Nitrophenol < p-Chlorophenol < Phenol < p-Methoxyphenol."
+        },
+        {
+          "label": "C",
+          "text": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15)."
+        },
+        {
+          "label": "D",
+          "text": "p-Chlorophenol < Phenol < p-Methoxyphenol < p-Nitrophenol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15).",
+      "explanation": "Electron-donating methoxy groups decrease acidity; electron-withdrawing chloro (inductive) and nitro (resonance) groups heavily increase acidity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q006",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Substituted Aniline Basicity Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following anilines in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Methoxyaniline < Aniline < p-Nitroaniline < Cyclohexylamine."
+        },
+        {
+          "label": "B",
+          "text": "Aniline < p-Nitroaniline < p-Methoxyaniline < Cyclohexylamine."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7)."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexylamine < p-Methoxyaniline < Aniline < p-Chloroaniline < p-Nitroaniline."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7).",
+      "explanation": "Aromatic conjugation reduces basicity vs aliphatic amines; electron-withdrawing groups further decrease basicity, while electron donors increase it.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q007",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Carboxylic Acid Alpha-Substitution Acidity Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following carboxylic acids in order of increasing acidity:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propanoic < 2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic."
+        },
+        {
+          "label": "B",
+          "text": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30)."
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic < Propanoic."
+        },
+        {
+          "label": "D",
+          "text": "3-Chloropropanoic < 2-Chloropropanoic < Propanoic < 2,2-Dichloropropanoic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30).",
+      "explanation": "Inductive electron withdrawal increases with proximity to the carboxyl group (C2 > C3) and with the number of halogen substituents.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q008",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Alkene Thermodynamic Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following isomeric butenes in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene)."
+        },
+        {
+          "label": "B",
+          "text": "2-Methylpropene < 1-Butene < cis-2-Butene < trans-2-Butene."
+        },
+        {
+          "label": "C",
+          "text": "1-Butene < trans-2-Butene < cis-2-Butene < 2-Methylpropene."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene < cis-2-Butene < 1-Butene < 2-Methylpropene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene).",
+      "explanation": "Alkene stability increases with substitution (monosubstituted < disubstituted); trans is more stable than cis due to reduced steric strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q009",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Acyl Derivative Reactivity Ladder Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the carboxylic acid derivatives in order of increasing reactivity toward nucleophilic acyl substitution:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid anhydrides < Acyl chlorides < Esters < Amides."
+        },
+        {
+          "label": "B",
+          "text": "Acyl chlorides < Acid anhydrides < Esters < Amides."
+        },
+        {
+          "label": "C",
+          "text": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides."
+        },
+        {
+          "label": "D",
+          "text": "Esters < Amides < Acyl chlorides < Acid anhydrides."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides.",
+      "explanation": "Reactivity increases as leaving group basicity decreases (NH₂⁻ < RO⁻ < RCOO⁻ < Cl⁻) and resonance donation decreases.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q010",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Nucleophilicity in Polar Protic Solvents Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the halide ions in order of increasing nucleophilicity in water/methanol (polar protic solvent):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl⁻ < Br⁻ < I⁻ < F⁻."
+        },
+        {
+          "label": "B",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻."
+        },
+        {
+          "label": "C",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "D",
+          "text": "F⁻ < I⁻ < Cl⁻ < Br⁻."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "F⁻ < Cl⁻ < Br⁻ < I⁻.",
+      "explanation": "In protic solvents, small F⁻ is tightly solvated by hydrogen bonds; large polarizable I⁻ is weakly solvated and far more nucleophilic.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q011",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Carbanion Stability Ladder",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbanions in order of increasing stability (least stable to most stable):",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp]."
+        },
+        {
+          "label": "B",
+          "text": "All carbanions have identical stability."
+        },
+        {
+          "label": "C",
+          "text": "Methyl < Ethyl < Isopropyl < tert-Butyl < Acetylide."
+        },
+        {
+          "label": "D",
+          "text": "Acetylide < Vinyl < Methyl < Ethyl < Isopropyl < tert-Butyl."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp].",
+      "explanation": "Carbanions are destabilized by electron-donating alkyl groups (3° < 2° < 1° < methyl) and stabilized by increasing s-character (sp³ < sp² < sp).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q012",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Carbon Radical Stability Ladder",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following carbon-centered radicals in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < 3° < 2° < 1° < Allylic."
+        },
+        {
+          "label": "B",
+          "text": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "3° < Methyl < 1° < 2° < Benzylic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical.",
+      "explanation": "Radicals are electron-deficient species stabilized by hyperconjugation (1° < 2° < 3°) and extensive resonance delocalization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q013",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Substituted Phenol Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following substituted phenols in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Chlorophenol < Phenol < p-Methoxyphenol < p-Nitrophenol."
+        },
+        {
+          "label": "B",
+          "text": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15)."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitrophenol < p-Chlorophenol < Phenol < p-Methoxyphenol."
+        },
+        {
+          "label": "D",
+          "text": "Phenol < p-Methoxyphenol < p-Chlorophenol < p-Nitrophenol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15).",
+      "explanation": "Electron-donating methoxy groups decrease acidity; electron-withdrawing chloro (inductive) and nitro (resonance) groups heavily increase acidity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q014",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Substituted Aniline Basicity Ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following anilines in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline < p-Nitroaniline < p-Methoxyaniline < Cyclohexylamine."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexylamine < p-Methoxyaniline < Aniline < p-Chloroaniline < p-Nitroaniline."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7)."
+        },
+        {
+          "label": "D",
+          "text": "p-Methoxyaniline < Aniline < p-Nitroaniline < Cyclohexylamine."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7).",
+      "explanation": "Aromatic conjugation reduces basicity vs aliphatic amines; electron-withdrawing groups further decrease basicity, while electron donors increase it.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q015",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Carboxylic Acid Alpha-Substitution Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carboxylic acids in order of increasing acidity:",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Chloropropanoic < 2-Chloropropanoic < Propanoic < 2,2-Dichloropropanoic."
+        },
+        {
+          "label": "B",
+          "text": "Propanoic < 2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic."
+        },
+        {
+          "label": "C",
+          "text": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30)."
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic < Propanoic."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30).",
+      "explanation": "Inductive electron withdrawal increases with proximity to the carboxyl group (C2 > C3) and with the number of halogen substituents.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q016",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Alkene Thermodynamic Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following isomeric butenes in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methylpropene < 1-Butene < cis-2-Butene < trans-2-Butene."
+        },
+        {
+          "label": "B",
+          "text": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene)."
+        },
+        {
+          "label": "C",
+          "text": "trans-2-Butene < cis-2-Butene < 1-Butene < 2-Methylpropene."
+        },
+        {
+          "label": "D",
+          "text": "1-Butene < trans-2-Butene < cis-2-Butene < 2-Methylpropene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene).",
+      "explanation": "Alkene stability increases with substitution (monosubstituted < disubstituted); trans is more stable than cis due to reduced steric strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q017",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Acyl Derivative Reactivity Ladder Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the carboxylic acid derivatives in order of increasing reactivity toward nucleophilic acyl substitution:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides."
+        },
+        {
+          "label": "B",
+          "text": "Esters < Amides < Acyl chlorides < Acid anhydrides."
+        },
+        {
+          "label": "C",
+          "text": "Acyl chlorides < Acid anhydrides < Esters < Amides."
+        },
+        {
+          "label": "D",
+          "text": "Acid anhydrides < Acyl chlorides < Esters < Amides."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides.",
+      "explanation": "Reactivity increases as leaving group basicity decreases (NH₂⁻ < RO⁻ < RCOO⁻ < Cl⁻) and resonance donation decreases.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q018",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Nucleophilicity in Polar Protic Solvents Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the halide ions in order of increasing nucleophilicity in water/methanol (polar protic solvent):",
+      "options": [
+        {
+          "label": "A",
+          "text": "F⁻ < I⁻ < Cl⁻ < Br⁻."
+        },
+        {
+          "label": "B",
+          "text": "Cl⁻ < Br⁻ < I⁻ < F⁻."
+        },
+        {
+          "label": "C",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "D",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "F⁻ < Cl⁻ < Br⁻ < I⁻.",
+      "explanation": "In protic solvents, small F⁻ is tightly solvated by hydrogen bonds; large polarizable I⁻ is weakly solvated and far more nucleophilic.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q019",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Resonance Contributor Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following resonance structures of the formamide anion [H-CO-NH⁻ ↔ H-C(O⁻)=NH] in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbanion < O-anion < N-anion."
+        },
+        {
+          "label": "B",
+          "text": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH]."
+        },
+        {
+          "label": "C",
+          "text": "O-anion < N-anion < Carbanion."
+        },
+        {
+          "label": "D",
+          "text": "All resonance contributors are equally stable."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH].",
+      "explanation": "Full-octet contributors with negative charge on the most electronegative atom (oxygen) are the most stable contributors.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q020",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Carbocation Stability Ladder (Primary to Allylic)",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbocations in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Allyl < Ethyl < Isopropyl < Benzyl."
+        },
+        {
+          "label": "B",
+          "text": "Benzyl < tert-Butyl < Isopropyl < Ethyl < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl < Benzyl < Allyl < Isopropyl < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺].",
+      "explanation": "Carbocation stability increases with hyperconjugation (1° < 2° < 3°) and resonance delocalization (allylic and benzylic).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q021",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Substituted Phenol Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following substituted phenols in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Nitrophenol < p-Chlorophenol < Phenol < p-Methoxyphenol."
+        },
+        {
+          "label": "B",
+          "text": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15)."
+        },
+        {
+          "label": "C",
+          "text": "Phenol < p-Methoxyphenol < p-Chlorophenol < p-Nitrophenol."
+        },
+        {
+          "label": "D",
+          "text": "p-Chlorophenol < Phenol < p-Methoxyphenol < p-Nitrophenol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15).",
+      "explanation": "Electron-donating methoxy groups decrease acidity; electron-withdrawing chloro (inductive) and nitro (resonance) groups heavily increase acidity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q022",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Substituted Aniline Basicity Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following anilines in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7)."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexylamine < p-Methoxyaniline < Aniline < p-Chloroaniline < p-Nitroaniline."
+        },
+        {
+          "label": "C",
+          "text": "Aniline < p-Nitroaniline < p-Methoxyaniline < Cyclohexylamine."
+        },
+        {
+          "label": "D",
+          "text": "p-Methoxyaniline < Aniline < p-Nitroaniline < Cyclohexylamine."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7).",
+      "explanation": "Aromatic conjugation reduces basicity vs aliphatic amines; electron-withdrawing groups further decrease basicity, while electron donors increase it.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q023",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Carboxylic Acid Alpha-Substitution Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carboxylic acids in order of increasing acidity:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30)."
+        },
+        {
+          "label": "B",
+          "text": "Propanoic < 2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic."
+        },
+        {
+          "label": "C",
+          "text": "3-Chloropropanoic < 2-Chloropropanoic < Propanoic < 2,2-Dichloropropanoic."
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic < Propanoic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30).",
+      "explanation": "Inductive electron withdrawal increases with proximity to the carboxyl group (C2 > C3) and with the number of halogen substituents.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q024",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Alkene Thermodynamic Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following isomeric butenes in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butene < trans-2-Butene < cis-2-Butene < 2-Methylpropene."
+        },
+        {
+          "label": "B",
+          "text": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene)."
+        },
+        {
+          "label": "C",
+          "text": "2-Methylpropene < 1-Butene < cis-2-Butene < trans-2-Butene."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene < cis-2-Butene < 1-Butene < 2-Methylpropene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene).",
+      "explanation": "Alkene stability increases with substitution (monosubstituted < disubstituted); trans is more stable than cis due to reduced steric strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q025",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Acyl Derivative Reactivity Ladder Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carboxylic acid derivatives in order of increasing reactivity toward nucleophilic acyl substitution:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl chlorides < Acid anhydrides < Esters < Amides."
+        },
+        {
+          "label": "B",
+          "text": "Esters < Amides < Acyl chlorides < Acid anhydrides."
+        },
+        {
+          "label": "C",
+          "text": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides."
+        },
+        {
+          "label": "D",
+          "text": "Acid anhydrides < Acyl chlorides < Esters < Amides."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides.",
+      "explanation": "Reactivity increases as leaving group basicity decreases (NH₂⁻ < RO⁻ < RCOO⁻ < Cl⁻) and resonance donation decreases.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q026",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Nucleophilicity in Polar Protic Solvents Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the halide ions in order of increasing nucleophilicity in water/methanol (polar protic solvent):",
+      "options": [
+        {
+          "label": "A",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < I⁻ < Cl⁻ < Br⁻."
+        },
+        {
+          "label": "C",
+          "text": "Cl⁻ < Br⁻ < I⁻ < F⁻."
+        },
+        {
+          "label": "D",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "F⁻ < Cl⁻ < Br⁻ < I⁻.",
+      "explanation": "In protic solvents, small F⁻ is tightly solvated by hydrogen bonds; large polarizable I⁻ is weakly solvated and far more nucleophilic.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q027",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Resonance Contributor Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following resonance structures of the formamide anion [H-CO-NH⁻ ↔ H-C(O⁻)=NH] in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH]."
+        },
+        {
+          "label": "B",
+          "text": "All resonance contributors are equally stable."
+        },
+        {
+          "label": "C",
+          "text": "Carbanion < O-anion < N-anion."
+        },
+        {
+          "label": "D",
+          "text": "O-anion < N-anion < Carbanion."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH].",
+      "explanation": "Full-octet contributors with negative charge on the most electronegative atom (oxygen) are the most stable contributors.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q028",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Carbocation Stability Ladder (Primary to Allylic)",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbocations in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl < tert-Butyl < Isopropyl < Ethyl < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl < Benzyl < Allyl < Isopropyl < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺]."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < Allyl < Ethyl < Isopropyl < Benzyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺].",
+      "explanation": "Carbocation stability increases with hyperconjugation (1° < 2° < 3°) and resonance delocalization (allylic and benzylic).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q029",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Carbanion Stability Ladder",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbanions in order of increasing stability (least stable to most stable):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Ethyl < Isopropyl < tert-Butyl < Acetylide."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp]."
+        },
+        {
+          "label": "C",
+          "text": "All carbanions have identical stability."
+        },
+        {
+          "label": "D",
+          "text": "Acetylide < Vinyl < Methyl < Ethyl < Isopropyl < tert-Butyl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp].",
+      "explanation": "Carbanions are destabilized by electron-donating alkyl groups (3° < 2° < 1° < methyl) and stabilized by increasing s-character (sp³ < sp² < sp).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q030",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Carbon Radical Stability Ladder",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following carbon-centered radicals in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical."
+        },
+        {
+          "label": "C",
+          "text": "3° < Methyl < 1° < 2° < Benzylic."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < 3° < 2° < 1° < Allylic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical.",
+      "explanation": "Radicals are electron-deficient species stabilized by hyperconjugation (1° < 2° < 3°) and extensive resonance delocalization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q031",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Carboxylic Acid Alpha-Substitution Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carboxylic acids in order of increasing acidity:",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic < Propanoic."
+        },
+        {
+          "label": "B",
+          "text": "Propanoic < 2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic."
+        },
+        {
+          "label": "C",
+          "text": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30)."
+        },
+        {
+          "label": "D",
+          "text": "3-Chloropropanoic < 2-Chloropropanoic < Propanoic < 2,2-Dichloropropanoic."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30).",
+      "explanation": "Inductive electron withdrawal increases with proximity to the carboxyl group (C2 > C3) and with the number of halogen substituents.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q032",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Alkene Thermodynamic Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following isomeric butenes in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butene < trans-2-Butene < cis-2-Butene < 2-Methylpropene."
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Butene < cis-2-Butene < 1-Butene < 2-Methylpropene."
+        },
+        {
+          "label": "C",
+          "text": "2-Methylpropene < 1-Butene < cis-2-Butene < trans-2-Butene."
+        },
+        {
+          "label": "D",
+          "text": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene).",
+      "explanation": "Alkene stability increases with substitution (monosubstituted < disubstituted); trans is more stable than cis due to reduced steric strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q033",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Acyl Derivative Reactivity Ladder Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the carboxylic acid derivatives in order of increasing reactivity toward nucleophilic acyl substitution:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid anhydrides < Acyl chlorides < Esters < Amides."
+        },
+        {
+          "label": "B",
+          "text": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides."
+        },
+        {
+          "label": "C",
+          "text": "Esters < Amides < Acyl chlorides < Acid anhydrides."
+        },
+        {
+          "label": "D",
+          "text": "Acyl chlorides < Acid anhydrides < Esters < Amides."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides.",
+      "explanation": "Reactivity increases as leaving group basicity decreases (NH₂⁻ < RO⁻ < RCOO⁻ < Cl⁻) and resonance donation decreases.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q034",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Nucleophilicity in Polar Protic Solvents Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the halide ions in order of increasing nucleophilicity in water/methanol (polar protic solvent):",
+      "options": [
+        {
+          "label": "A",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "C",
+          "text": "F⁻ < I⁻ < Cl⁻ < Br⁻."
+        },
+        {
+          "label": "D",
+          "text": "Cl⁻ < Br⁻ < I⁻ < F⁻."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "F⁻ < Cl⁻ < Br⁻ < I⁻.",
+      "explanation": "In protic solvents, small F⁻ is tightly solvated by hydrogen bonds; large polarizable I⁻ is weakly solvated and far more nucleophilic.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q035",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Resonance Contributor Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following resonance structures of the formamide anion [H-CO-NH⁻ ↔ H-C(O⁻)=NH] in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbanion < O-anion < N-anion."
+        },
+        {
+          "label": "B",
+          "text": "O-anion < N-anion < Carbanion."
+        },
+        {
+          "label": "C",
+          "text": "All resonance contributors are equally stable."
+        },
+        {
+          "label": "D",
+          "text": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH].",
+      "explanation": "Full-octet contributors with negative charge on the most electronegative atom (oxygen) are the most stable contributors.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q036",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Carbocation Stability Ladder (Primary to Allylic)",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following carbocations in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl < Benzyl < Allyl < Isopropyl < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺]."
+        },
+        {
+          "label": "C",
+          "text": "Benzyl < tert-Butyl < Isopropyl < Ethyl < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < Allyl < Ethyl < Isopropyl < Benzyl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺].",
+      "explanation": "Carbocation stability increases with hyperconjugation (1° < 2° < 3°) and resonance delocalization (allylic and benzylic).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q037",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Carbanion Stability Ladder",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbanions in order of increasing stability (least stable to most stable):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Ethyl < Isopropyl < tert-Butyl < Acetylide."
+        },
+        {
+          "label": "B",
+          "text": "All carbanions have identical stability."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp]."
+        },
+        {
+          "label": "D",
+          "text": "Acetylide < Vinyl < Methyl < Ethyl < Isopropyl < tert-Butyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp].",
+      "explanation": "Carbanions are destabilized by electron-donating alkyl groups (3° < 2° < 1° < methyl) and stabilized by increasing s-character (sp³ < sp² < sp).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q038",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Carbon Radical Stability Ladder",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbon-centered radicals in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "3° < Methyl < 1° < 2° < Benzylic."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < 3° < 2° < 1° < Allylic."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical.",
+      "explanation": "Radicals are electron-deficient species stabilized by hyperconjugation (1° < 2° < 3°) and extensive resonance delocalization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q039",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Substituted Phenol Acidity Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following substituted phenols in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol < p-Methoxyphenol < p-Chlorophenol < p-Nitrophenol."
+        },
+        {
+          "label": "B",
+          "text": "p-Chlorophenol < Phenol < p-Methoxyphenol < p-Nitrophenol."
+        },
+        {
+          "label": "C",
+          "text": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15)."
+        },
+        {
+          "label": "D",
+          "text": "p-Nitrophenol < p-Chlorophenol < Phenol < p-Methoxyphenol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15).",
+      "explanation": "Electron-donating methoxy groups decrease acidity; electron-withdrawing chloro (inductive) and nitro (resonance) groups heavily increase acidity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q040",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Substituted Aniline Basicity Ranking",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following anilines in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Methoxyaniline < Aniline < p-Nitroaniline < Cyclohexylamine."
+        },
+        {
+          "label": "B",
+          "text": "Aniline < p-Nitroaniline < p-Methoxyaniline < Cyclohexylamine."
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexylamine < p-Methoxyaniline < Aniline < p-Chloroaniline < p-Nitroaniline."
+        },
+        {
+          "label": "D",
+          "text": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7).",
+      "explanation": "Aromatic conjugation reduces basicity vs aliphatic amines; electron-withdrawing groups further decrease basicity, while electron donors increase it.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q041",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Acyl Derivative Reactivity Ladder Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carboxylic acid derivatives in order of increasing reactivity toward nucleophilic acyl substitution:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides."
+        },
+        {
+          "label": "B",
+          "text": "Esters < Amides < Acyl chlorides < Acid anhydrides."
+        },
+        {
+          "label": "C",
+          "text": "Acyl chlorides < Acid anhydrides < Esters < Amides."
+        },
+        {
+          "label": "D",
+          "text": "Acid anhydrides < Acyl chlorides < Esters < Amides."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Amides < Esters ≈ Carboxylic acids < Acid anhydrides < Acyl chlorides.",
+      "explanation": "Reactivity increases as leaving group basicity decreases (NH₂⁻ < RO⁻ < RCOO⁻ < Cl⁻) and resonance donation decreases.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q042",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Nucleophilicity in Polar Protic Solvents Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the halide ions in order of increasing nucleophilicity in water/methanol (polar protic solvent):",
+      "options": [
+        {
+          "label": "A",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "B",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻."
+        },
+        {
+          "label": "C",
+          "text": "Cl⁻ < Br⁻ < I⁻ < F⁻."
+        },
+        {
+          "label": "D",
+          "text": "F⁻ < I⁻ < Cl⁻ < Br⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "F⁻ < Cl⁻ < Br⁻ < I⁻.",
+      "explanation": "In protic solvents, small F⁻ is tightly solvated by hydrogen bonds; large polarizable I⁻ is weakly solvated and far more nucleophilic.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q043",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Resonance Contributor Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following resonance structures of the formamide anion [H-CO-NH⁻ ↔ H-C(O⁻)=NH] in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbanion < O-anion < N-anion."
+        },
+        {
+          "label": "B",
+          "text": "All resonance contributors are equally stable."
+        },
+        {
+          "label": "C",
+          "text": "O-anion < N-anion < Carbanion."
+        },
+        {
+          "label": "D",
+          "text": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Zwitterionic / open octet forms < Carbanion forms < N-anion form [H-CO-NH⁻] < O-anion form [H-C(O⁻)=NH].",
+      "explanation": "Full-octet contributors with negative charge on the most electronegative atom (oxygen) are the most stable contributors.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q044",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Carbocation Stability Ladder (Primary to Allylic)",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbocations in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺]."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < Allyl < Ethyl < Isopropyl < Benzyl."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl < Benzyl < Allyl < Isopropyl < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Benzyl < tert-Butyl < Isopropyl < Ethyl < Methyl."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methyl cation [CH₃⁺] < Ethyl cation [1°] < Isopropyl cation [2°] < Allyl cation [CH₂=CH-CH₂⁺] ≈ tert-Butyl cation [3°] < Benzyl cation [PhCH₂⁺].",
+      "explanation": "Carbocation stability increases with hyperconjugation (1° < 2° < 3°) and resonance delocalization (allylic and benzylic).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q045",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Carbanion Stability Ladder",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following carbanions in order of increasing stability (least stable to most stable):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetylide < Vinyl < Methyl < Ethyl < Isopropyl < tert-Butyl."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp]."
+        },
+        {
+          "label": "C",
+          "text": "All carbanions have identical stability."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < Ethyl < Isopropyl < tert-Butyl < Acetylide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "tert-Butyl carbanion [3° sp³] < Isopropyl carbanion [2° sp³] < Ethyl carbanion [1° sp³] < Methyl carbanion < Vinyl carbanion [sp²] < Acetylide carbanion [sp].",
+      "explanation": "Carbanions are destabilized by electron-donating alkyl groups (3° < 2° < 1° < methyl) and stabilized by increasing s-character (sp³ < sp² < sp).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q046",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Carbon Radical Stability Ladder",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbon-centered radicals in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical."
+        },
+        {
+          "label": "B",
+          "text": "3° < Methyl < 1° < 2° < Benzylic."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < 3° < 2° < 1° < Allylic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methyl radical [•CH₃] < Primary radical [1°] < Secondary radical [2°] < Tertiary radical [3°] < Allylic radical < Benzylic radical.",
+      "explanation": "Radicals are electron-deficient species stabilized by hyperconjugation (1° < 2° < 3°) and extensive resonance delocalization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q047",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Substituted Phenol Acidity Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following substituted phenols in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15)."
+        },
+        {
+          "label": "B",
+          "text": "Phenol < p-Methoxyphenol < p-Chlorophenol < p-Nitrophenol."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitrophenol < p-Chlorophenol < Phenol < p-Methoxyphenol."
+        },
+        {
+          "label": "D",
+          "text": "p-Chlorophenol < Phenol < p-Methoxyphenol < p-Nitrophenol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "p-Methoxyphenol (pKa 10.20) < Phenol (pKa 9.95) < p-Chlorophenol (pKa 9.38) < p-Nitrophenol (pKa 7.15).",
+      "explanation": "Electron-donating methoxy groups decrease acidity; electron-withdrawing chloro (inductive) and nitro (resonance) groups heavily increase acidity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q048",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Substituted Aniline Basicity Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following anilines in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Methoxyaniline < Aniline < p-Nitroaniline < Cyclohexylamine."
+        },
+        {
+          "label": "B",
+          "text": "Aniline < p-Nitroaniline < p-Methoxyaniline < Cyclohexylamine."
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexylamine < p-Methoxyaniline < Aniline < p-Chloroaniline < p-Nitroaniline."
+        },
+        {
+          "label": "D",
+          "text": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "p-Nitroaniline (pKaH 1.0) < p-Chloroaniline (pKaH 4.0) < Aniline (pKaH 4.6) < p-Methoxyaniline (pKaH 5.3) < Cyclohexylamine (pKaH 10.7).",
+      "explanation": "Aromatic conjugation reduces basicity vs aliphatic amines; electron-withdrawing groups further decrease basicity, while electron donors increase it.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q049",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Carboxylic Acid Alpha-Substitution Acidity Ranking",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carboxylic acids in order of increasing acidity:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propanoic < 2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic."
+        },
+        {
+          "label": "B",
+          "text": "3-Chloropropanoic < 2-Chloropropanoic < Propanoic < 2,2-Dichloropropanoic."
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dichloropropanoic < 2-Chloropropanoic < 3-Chloropropanoic < Propanoic."
+        },
+        {
+          "label": "D",
+          "text": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Propanoic acid (pKa 4.88) < 3-Chloropropanoic acid (pKa 4.08) < 2-Chloropropanoic acid (pKa 2.86) < 2,2-Dichloropropanoic acid (pKa 1.30).",
+      "explanation": "Inductive electron withdrawal increases with proximity to the carboxyl group (C2 > C3) and with the number of halogen substituents.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q050",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Alkene Thermodynamic Stability Ranking",
+      "difficulty": "hard",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following isomeric butenes in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene)."
+        },
+        {
+          "label": "B",
+          "text": "2-Methylpropene < 1-Butene < cis-2-Butene < trans-2-Butene."
+        },
+        {
+          "label": "C",
+          "text": "1-Butene < trans-2-Butene < cis-2-Butene < 2-Methylpropene."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene < cis-2-Butene < 1-Butene < 2-Methylpropene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Butene < cis-2-Butene < trans-2-Butene < 2-Methylpropene (isobutylene).",
+      "explanation": "Alkene stability increases with substitution (monosubstituted < disubstituted); trans is more stable than cis due to reduced steric strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Skeletal Sentry",
+    "Lone Pair Phantom",
+    "Resonance Reaver",
+    "Formal Charge Fiend",
+    "Delocalization Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Skeletal Sentry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "skeletal-sentry.png"
+        ]
+      },
+      {
+        "boss": "Lone Pair Phantom",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "lone-pair-phantom.png"
+        ]
+      },
+      {
+        "boss": "Resonance Reaver",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "resonance-reaver.png"
+        ]
+      },
+      {
+        "boss": "Formal Charge Fiend",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "formal-charge-fiend.png"
+        ]
+      },
+      {
+        "boss": "Delocalization Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "delocalization-overlord.png"
+        ]
+      }
+    ]
+  }
+}

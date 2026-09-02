@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 25,
+  "chapter_title": "Amino Acids, Peptides, and Proteins",
+  "assigned_boss": "Zwitterion Zealot",
+  "bosses": [
+    "Zwitterion Zealot",
+    "Strecker Striker",
+    "Edman Executioner",
+    "Merrifield Mage",
+    "Polypeptide Sovereign"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Zwitterion Zealot",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Strecker Striker",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Edman Executioner",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Merrifield Mage",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Polypeptide Sovereign",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch25_q001",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 25 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "B",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "C",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "D",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q002",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Step 2: Formulate the Plan for Chapter 25 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pick an arbitrary reagent from memory."
+        },
+        {
+          "label": "B",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "C",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "D",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q003",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 3: Verify the Solution for Chapter 25, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Ensure the product is colored red."
+        },
+        {
+          "label": "C",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "D",
+          "text": "Confirm that the answer has 100 letters."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q004",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Decision Tree Regioselectivity Choice",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In the algorithmic decision tree for Chapter 25 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "B",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "C",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "D",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q005",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Stereochemical Decision Tree Branching",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "When evaluating stereochemical outcomes in Chapter 25, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "B",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?"
+        },
+        {
+          "label": "C",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product soluble in oil?"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q006",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Mechanism Arrow Debugging Violation",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When auditing student-drawn mechanisms for Chapter 25, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protonating a basic oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "C",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "D",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q007",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 25 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The substrate is converted to an alkane."
+        },
+        {
+          "label": "B",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "C",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "D",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q008",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Functional Group Chemoselectivity Decision",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the chemoselectivity decision tree for Chapter 25, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids are reduced first."
+        },
+        {
+          "label": "C",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "D",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q009",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Competing Pathway Disambiguation",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 25, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "B",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "A primary halide treated with sodium cyanide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q010",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Zwitterion Zealot",
+      "topic": "Ch25 Algorithmic Synthesis Planning Verification",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In retrosynthetic planning for Chapter 25, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Verify that all reagents are colored white."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the reaction takes exactly one hour."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "zwitterion-zealot.png"
+      ]
+    },
+    {
+      "id": "ch25_q011",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 25 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "C",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "D",
+          "text": "Calculate the molar mass of the glassware."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q012",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 2: Formulate the Plan for Chapter 25 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "B",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "Pick an arbitrary reagent from memory."
+        },
+        {
+          "label": "D",
+          "text": "Combine all reactants in a single step."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q013",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Step 3: Verify the Solution for Chapter 25, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "C",
+          "text": "Ensure the product is colored red."
+        },
+        {
+          "label": "D",
+          "text": "Verify that no bonds were formed."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q014",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Decision Tree Regioselectivity Choice",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the algorithmic decision tree for Chapter 25 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "B",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "C",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?"
+        },
+        {
+          "label": "D",
+          "text": "Is the flask made of Pyrex?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q015",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Stereochemical Decision Tree Branching",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When evaluating stereochemical outcomes in Chapter 25, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "B",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?"
+        },
+        {
+          "label": "C",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product soluble in oil?"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q016",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When auditing student-drawn mechanisms for Chapter 25, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Protonating a basic oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Forming a stable carbocation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q017",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 25 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "B",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "C",
+          "text": "The substrate is converted to an alkane."
+        },
+        {
+          "label": "D",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q018",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Functional Group Chemoselectivity Decision",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the chemoselectivity decision tree for Chapter 25, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Amides are reduced first."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q019",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Competing Pathway Disambiguation",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 25, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "B",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "A primary halide treated with sodium cyanide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q020",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Strecker Striker",
+      "topic": "Ch25 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In retrosynthetic planning for Chapter 25, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "D",
+          "text": "Verify that all reagents are colored white."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "strecker-striker.png"
+      ]
+    },
+    {
+      "id": "ch25_q021",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 25 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "B",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "C",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Memorize the textbook page number."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q022",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Step 2: Formulate the Plan for Chapter 25 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "C",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "D",
+          "text": "Pick an arbitrary reagent from memory."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q023",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Step 3: Verify the Solution for Chapter 25, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "B",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the product is colored red."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q024",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Decision Tree Regioselectivity Choice",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the algorithmic decision tree for Chapter 25 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "B",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "C",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?"
+        },
+        {
+          "label": "D",
+          "text": "Are all reactants gases?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q025",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Stereochemical Decision Tree Branching",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When evaluating stereochemical outcomes in Chapter 25, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "B",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "C",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product soluble in oil?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q026",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "When auditing student-drawn mechanisms for Chapter 25, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Protonating a basic oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "D",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q027",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 25 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The substrate is converted to an alkane."
+        },
+        {
+          "label": "B",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "D",
+          "text": "The solvent boils away instantly."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q028",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Functional Group Chemoselectivity Decision",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the chemoselectivity decision tree for Chapter 25, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids are reduced first."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Esters are reduced faster than aldehydes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q029",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Competing Pathway Disambiguation",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 25, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "B",
+          "text": "A primary halide treated with sodium cyanide."
+        },
+        {
+          "label": "C",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q030",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Edman Executioner",
+      "topic": "Ch25 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In retrosynthetic planning for Chapter 25, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "B",
+          "text": "Verify that all reagents are colored white."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "D",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "edman-executioner.png"
+      ]
+    },
+    {
+      "id": "ch25_q031",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 25 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "B",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "C",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Guess the final answer immediately without reading."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q032",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Step 2: Formulate the Plan for Chapter 25 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "B",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "D",
+          "text": "Pick an arbitrary reagent from memory."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q033",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 3: Verify the Solution for Chapter 25, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ensure the product is colored red."
+        },
+        {
+          "label": "B",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "D",
+          "text": "Confirm that the answer has 100 letters."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q034",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Decision Tree Regioselectivity Choice",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the algorithmic decision tree for Chapter 25 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?"
+        },
+        {
+          "label": "B",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "C",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "D",
+          "text": "What is the room temperature in Celsius?"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q035",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Stereochemical Decision Tree Branching",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "When evaluating stereochemical outcomes in Chapter 25, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?"
+        },
+        {
+          "label": "B",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "C",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product soluble in oil?"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q036",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When auditing student-drawn mechanisms for Chapter 25, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "D",
+          "text": "Protonating a basic oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q037",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 25 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "C",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "D",
+          "text": "The substrate is converted to an alkane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q038",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Functional Group Chemoselectivity Decision",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the chemoselectivity decision tree for Chapter 25, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids are reduced first."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q039",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Competing Pathway Disambiguation",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 25, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "B",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "A primary halide treated with sodium cyanide."
+        },
+        {
+          "label": "D",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q040",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Merrifield Mage",
+      "topic": "Ch25 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "decision_tree_branching",
+      "question": "In retrosynthetic planning for Chapter 25, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "B",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "D",
+          "text": "Verify that all reagents are colored white."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "merrifield-mage.png"
+      ]
+    },
+    {
+      "id": "ch25_q041",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 25 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "B",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "C",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Calculate the molar mass of the glassware."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 25.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q042",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 2: Formulate the Plan for Chapter 25 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pick an arbitrary reagent from memory."
+        },
+        {
+          "label": "B",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "C",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Ignore stereochemistry completely."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 25.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q043",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 SkillBuilder Solution Verification",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Step 3: Verify the Solution for Chapter 25, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "C",
+          "text": "Ensure the product is colored red."
+        },
+        {
+          "label": "D",
+          "text": "Verify that no bonds were formed."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 25.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q044",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Decision Tree Regioselectivity Choice",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the algorithmic decision tree for Chapter 25 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "B",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "C",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?"
+        },
+        {
+          "label": "D",
+          "text": "What is the room temperature in Celsius?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 25?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q045",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Stereochemical Decision Tree Branching",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When evaluating stereochemical outcomes in Chapter 25, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the product soluble in oil?"
+        },
+        {
+          "label": "B",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?"
+        },
+        {
+          "label": "C",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product an aromatic ring?"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 25?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q046",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When auditing student-drawn mechanisms for Chapter 25, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25."
+        },
+        {
+          "label": "B",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "C",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "D",
+          "text": "Protonating a basic oxygen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 25.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q047",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 25 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "B",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "C",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "The substrate is converted to an alkane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 25.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q048",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Functional Group Chemoselectivity Decision",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the chemoselectivity decision tree for Chapter 25, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "B",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids are reduced first."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 25.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q049",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Competing Pathway Disambiguation",
+      "difficulty": "hard",
+      "question_type": "decision_tree_branching",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 25, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "B",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "C",
+          "text": "A primary halide treated with sodium cyanide."
+        },
+        {
+          "label": "D",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 25.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch25_q050",
+      "chapter": 25,
+      "chapter_title": "Amino Acids, Peptides, and Proteins",
+      "boss": "Polypeptide Sovereign",
+      "topic": "Ch25 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In retrosynthetic planning for Chapter 25, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that all reagents are colored white."
+        },
+        {
+          "label": "B",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "C",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the reaction takes exactly one hour."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 25.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polypeptide-sovereign.png"
+      ]
+    }
+  ]
+}

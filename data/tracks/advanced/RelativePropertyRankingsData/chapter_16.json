@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 16,
+  "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+  "assigned_boss": "Diene Demon",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch16_q001",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Acidity Ranking Ladder",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 16 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "C",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q002",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Carbocation Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 16 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "B",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "D",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q003",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Leaving Group Ability Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the common leaving groups in Chapter 16 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "C",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        },
+        {
+          "label": "D",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q004",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 16:",
+      "options": [
+        {
+          "label": "A",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "C",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "D",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q005",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Boiling Point Molecular Structure Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the constitutional isomers of Chapter 16 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "C",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "D",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q006",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Carbonyl Electrophilicity Ladder",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 16 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "B",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q007",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Radical Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 16 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q008",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Alkene Substitution Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the alkenes of Chapter 16 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "D",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q009",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 A-Value Steric Demand Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 16 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "B",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "C",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q010",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Ch16 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 16 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q011",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Leaving Group Ability Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the common leaving groups in Chapter 16 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "D",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q012",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 16:",
+      "options": [
+        {
+          "label": "A",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "B",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "C",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "D",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q013",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Boiling Point Molecular Structure Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the constitutional isomers of Chapter 16 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "B",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "C",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "D",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q014",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Carbonyl Electrophilicity Ladder",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 16 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "B",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "C",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q015",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Radical Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 16 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q016",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Alkene Substitution Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkenes of Chapter 16 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "B",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q017",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 A-Value Steric Demand Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 16 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "C",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        },
+        {
+          "label": "D",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q018",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 16 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "D",
+          "text": "All cycloalkanes have identical ring strain."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q019",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 16 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "D",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q020",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Ch16 Carbocation Stability Hierarchy",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 16 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q021",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Boiling Point Molecular Structure Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the constitutional isomers of Chapter 16 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "C",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "D",
+          "text": "All isomers have identical boiling points."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q022",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Carbonyl Electrophilicity Ladder",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 16 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "B",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q023",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Radical Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 16 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q024",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Alkene Substitution Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the alkenes of Chapter 16 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "B",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q025",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 A-Value Steric Demand Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 16 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        },
+        {
+          "label": "C",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "D",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q026",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 16 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "B",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q027",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 16 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "C",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "D",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q028",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Carbocation Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 16 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "B",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q029",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Leaving Group Ability Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the common leaving groups in Chapter 16 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        },
+        {
+          "label": "B",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "C",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "D",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q030",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Ch16 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 16:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "C",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "D",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q031",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Radical Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 16 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "B",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q032",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Alkene Substitution Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkenes of Chapter 16 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "B",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q033",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 A-Value Steric Demand Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 16 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "B",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        },
+        {
+          "label": "C",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q034",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 16 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q035",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 16 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "B",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "D",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q036",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Carbocation Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 16 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "C",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q037",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Leaving Group Ability Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the common leaving groups in Chapter 16 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q038",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 16:",
+      "options": [
+        {
+          "label": "A",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "C",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "D",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q039",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Boiling Point Molecular Structure Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the constitutional isomers of Chapter 16 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "B",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "D",
+          "text": "All isomers have identical boiling points."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q040",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Ch16 Carbonyl Electrophilicity Ladder",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 16 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "B",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "C",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q041",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 A-Value Steric Demand Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 16 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "B",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "C",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 16.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q042",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Ring Strain Energy Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 16 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        },
+        {
+          "label": "B",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 16.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q043",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 16 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "C",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 16.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q044",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Carbocation Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 16 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "B",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 16.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q045",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Leaving Group Ability Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the common leaving groups in Chapter 16 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 16.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q046",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 16:",
+      "options": [
+        {
+          "label": "A",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "B",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16."
+        },
+        {
+          "label": "C",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "D",
+          "text": "All halides have identical nucleophilicity."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 16.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q047",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Boiling Point Molecular Structure Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the constitutional isomers of Chapter 16 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "B",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "C",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "D",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 16.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q048",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Carbonyl Electrophilicity Ladder",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 16 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16."
+        },
+        {
+          "label": "B",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "C",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "D",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 16.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q049",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Radical Stability Hierarchy",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 16 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 16.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q050",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Ch16 Alkene Substitution Stability Ranking",
+      "difficulty": "hard",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkenes of Chapter 16 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "B",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16."
+        },
+        {
+          "label": "D",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 16.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Diene Demon",
+    "1,4-Addition Anomaly",
+    "Woodward-Hoffmann Wyrm",
+    "Endo-Exo Executor",
+    "Diels-Alder Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Diene Demon",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "diene-demon.png"
+        ]
+      },
+      {
+        "boss": "1,4-Addition Anomaly",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "14-addition-anomaly.png"
+        ]
+      },
+      {
+        "boss": "Woodward-Hoffmann Wyrm",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "woodward-hoffmann-wyrm.png"
+        ]
+      },
+      {
+        "boss": "Endo-Exo Executor",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "endo-exo-executor.png"
+        ]
+      },
+      {
+        "boss": "Diels-Alder Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "diels-alder-overlord.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 2,
+  "chapter_title": "Molecular Representations",
+  "assigned_boss": "Skeletal Sentry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch02_q001",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "1H NMR Chemical Shift of Aromatic Protons",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In what characteristic chemical shift range do aromatic ring protons on benzene derivatives resonate in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Between δ 0.8 and 1.5 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Between δ 9.0 and 10.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy)."
+        },
+        {
+          "label": "D",
+          "text": "Between δ 3.3 and 4.0 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy).",
+      "explanation": "Induced ring current creates an anisotropic magnetic field that reinforces B₀ outside the ring, shifting aromatic protons downfield to 6.5–8.5 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q002",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Aldehyde Proton 1H NMR Resonance",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "At what diagnostic chemical shift does the formyl proton (-CHO) of an aldehyde appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 1.0–2.0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 4.5–5.5 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet)."
+        },
+        {
+          "label": "D",
+          "text": "At δ 7.0–7.5 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet).",
+      "explanation": "Inductive electron withdrawal by oxygen combined with carbonyl magnetic anisotropy shifts the aldehyde proton far downfield to 9–10 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q003",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Carboxylic Acid Proton 1H NMR Resonance",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Where does the acidic hydroxyl proton (-COOH) of a carboxylic acid characteristically appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 3.5–4.5 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 7.0–8.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Far downfield at δ 10.0–12.5 ppm as a broad singlet."
+        },
+        {
+          "label": "D",
+          "text": "At δ 0.5–1.0 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Far downfield at δ 10.0–12.5 ppm as a broad singlet.",
+      "explanation": "Strong hydrogen bonding and powerful inductive deshielding shift the carboxylic acid O-H proton extremely far downfield to 10–12.5 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q004",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Ethyl Group Spin-Spin Splitting Pattern",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "What characteristic ¹H NMR multiplet pattern confirms the presence of an isolated ethyl group (-CH₂-CH₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two sharp singlets (3H and 2H)."
+        },
+        {
+          "label": "B",
+          "text": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield."
+        },
+        {
+          "label": "C",
+          "text": "A 6H doublet and a 1H septet."
+        },
+        {
+          "label": "D",
+          "text": "A 9H singlet."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield.",
+      "explanation": "According to the n+1 rule, CH₃ protons split CH₂ into a quartet (3+1=4); CH₂ protons split CH₃ into a triplet (2+1=3).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q005",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Isopropyl Group Diagnostic NMR Pattern",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What characteristic ¹H NMR splitting pattern identifies an isolated isopropyl group [-CH(CH₃)₂]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "B",
+          "text": "A 3H triplet and 2H quartet."
+        },
+        {
+          "label": "C",
+          "text": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz)."
+        },
+        {
+          "label": "D",
+          "text": "Two 3H singlets."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz).",
+      "explanation": "Six equivalent methyl protons split the single methine proton into a septet (6+1=7); the methine splits the methyls into a doublet (1+1=2).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q006",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "tert-Butyl Group Diagnostic NMR Singlet",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What ¹H NMR signal is the definitive diagnostic signature of an isolated tert-butyl group [-C(CH₃)₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9H multiplet."
+        },
+        {
+          "label": "B",
+          "text": "A 6H doublet and 3H singlet."
+        },
+        {
+          "label": "C",
+          "text": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm."
+        },
+        {
+          "label": "D",
+          "text": "A 9H triplet."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm.",
+      "explanation": "Nine chemically and magnetically equivalent protons with zero neighboring hydrogens produce an intense 9H singlet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q007",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "13C NMR Carbonyl Carbon Chemical Shifts",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In what chemical shift region do ketone and aldehyde carbonyl carbons resonate in broadband-decoupled ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 160–180 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Far downfield at δ 190–220 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 10–50 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 100–150 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Far downfield at δ 190–220 ppm.",
+      "explanation": "Ketone and aldehyde carbonyl carbons are severely deshielded by the polar C=O bond, resonating far downfield at 190–220 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q008",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Ester and Amide 13C Carbonyl Chemical Shifts",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In what chemical shift region do ester, amide, and carboxylic acid carbonyl carbons resonate in ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms)."
+        },
+        {
+          "label": "B",
+          "text": "At δ 20–40 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 110–130 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 200–220 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms).",
+      "explanation": "Heteroatom lone pair resonance donation shields the carbonyl carbon relative to ketones, shifting resonance upfield to 160–185 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q009",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "DEPT-90 vs DEPT-135 Spectrum Interpretation",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "How does a DEPT-90 NMR spectrum differ from a DEPT-135 NMR spectrum for an unknown hydrocarbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-90 is a proton NMR experiment."
+        },
+        {
+          "label": "B",
+          "text": "DEPT-90 detects quaternary carbons."
+        },
+        {
+          "label": "C",
+          "text": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks."
+        },
+        {
+          "label": "D",
+          "text": "DEPT-135 detects only aromatic rings."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks.",
+      "explanation": "DEPT-90 isolates CH carbons exclusively; comparing with DEPT-135 allows definitive assignment of CH₃, CH₂, and CH carbons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q010",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Mass Spectrometry Base Peak vs Molecular Ion",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In an electron-ionization mass spectrum, what is the definition of the 'base peak'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The smallest peak in the spectrum."
+        },
+        {
+          "label": "B",
+          "text": "The peak with the highest m/z value."
+        },
+        {
+          "label": "C",
+          "text": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion."
+        },
+        {
+          "label": "D",
+          "text": "The peak corresponding to unfragmented solvent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion.",
+      "explanation": "The base peak is the tallest peak (100% relative abundance), corresponding to the most thermodynamically stable fragment ion formed.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q011",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Carboxylic Acid Proton 1H NMR Resonance",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Where does the acidic hydroxyl proton (-COOH) of a carboxylic acid characteristically appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Far downfield at δ 10.0–12.5 ppm as a broad singlet."
+        },
+        {
+          "label": "B",
+          "text": "At δ 7.0–8.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 3.5–4.5 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 0.5–1.0 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Far downfield at δ 10.0–12.5 ppm as a broad singlet.",
+      "explanation": "Strong hydrogen bonding and powerful inductive deshielding shift the carboxylic acid O-H proton extremely far downfield to 10–12.5 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q012",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Ethyl Group Spin-Spin Splitting Pattern",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What characteristic ¹H NMR multiplet pattern confirms the presence of an isolated ethyl group (-CH₂-CH₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 6H doublet and a 1H septet."
+        },
+        {
+          "label": "B",
+          "text": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield."
+        },
+        {
+          "label": "C",
+          "text": "Two sharp singlets (3H and 2H)."
+        },
+        {
+          "label": "D",
+          "text": "A 9H singlet."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield.",
+      "explanation": "According to the n+1 rule, CH₃ protons split CH₂ into a quartet (3+1=4); CH₂ protons split CH₃ into a triplet (2+1=3).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q013",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Isopropyl Group Diagnostic NMR Pattern",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What characteristic ¹H NMR splitting pattern identifies an isolated isopropyl group [-CH(CH₃)₂]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two 3H singlets."
+        },
+        {
+          "label": "B",
+          "text": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz)."
+        },
+        {
+          "label": "C",
+          "text": "A 3H triplet and 2H quartet."
+        },
+        {
+          "label": "D",
+          "text": "A 9H singlet."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz).",
+      "explanation": "Six equivalent methyl protons split the single methine proton into a septet (6+1=7); the methine splits the methyls into a doublet (1+1=2).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q014",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "tert-Butyl Group Diagnostic NMR Singlet",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "What ¹H NMR signal is the definitive diagnostic signature of an isolated tert-butyl group [-C(CH₃)₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 6H doublet and 3H singlet."
+        },
+        {
+          "label": "B",
+          "text": "A 9H triplet."
+        },
+        {
+          "label": "C",
+          "text": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm."
+        },
+        {
+          "label": "D",
+          "text": "A 9H multiplet."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm.",
+      "explanation": "Nine chemically and magnetically equivalent protons with zero neighboring hydrogens produce an intense 9H singlet.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q015",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "13C NMR Carbonyl Carbon Chemical Shifts",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In what chemical shift region do ketone and aldehyde carbonyl carbons resonate in broadband-decoupled ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 100–150 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 160–180 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Far downfield at δ 190–220 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 10–50 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Far downfield at δ 190–220 ppm.",
+      "explanation": "Ketone and aldehyde carbonyl carbons are severely deshielded by the polar C=O bond, resonating far downfield at 190–220 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q016",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Ester and Amide 13C Carbonyl Chemical Shifts",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In what chemical shift region do ester, amide, and carboxylic acid carbonyl carbons resonate in ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 20–40 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms)."
+        },
+        {
+          "label": "C",
+          "text": "At δ 200–220 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 110–130 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms).",
+      "explanation": "Heteroatom lone pair resonance donation shields the carbonyl carbon relative to ketones, shifting resonance upfield to 160–185 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q017",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "DEPT-90 vs DEPT-135 Spectrum Interpretation",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How does a DEPT-90 NMR spectrum differ from a DEPT-135 NMR spectrum for an unknown hydrocarbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks."
+        },
+        {
+          "label": "B",
+          "text": "DEPT-135 detects only aromatic rings."
+        },
+        {
+          "label": "C",
+          "text": "DEPT-90 detects quaternary carbons."
+        },
+        {
+          "label": "D",
+          "text": "DEPT-90 is a proton NMR experiment."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks.",
+      "explanation": "DEPT-90 isolates CH carbons exclusively; comparing with DEPT-135 allows definitive assignment of CH₃, CH₂, and CH carbons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q018",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Mass Spectrometry Base Peak vs Molecular Ion",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "In an electron-ionization mass spectrum, what is the definition of the 'base peak'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The peak corresponding to unfragmented solvent."
+        },
+        {
+          "label": "B",
+          "text": "The smallest peak in the spectrum."
+        },
+        {
+          "label": "C",
+          "text": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion."
+        },
+        {
+          "label": "D",
+          "text": "The peak with the highest m/z value."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion.",
+      "explanation": "The base peak is the tallest peak (100% relative abundance), corresponding to the most thermodynamically stable fragment ion formed.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q019",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "1H NMR Chemical Shift of Aromatic Protons",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In what characteristic chemical shift range do aromatic ring protons on benzene derivatives resonate in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Between δ 3.3 and 4.0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy)."
+        },
+        {
+          "label": "C",
+          "text": "Between δ 0.8 and 1.5 ppm."
+        },
+        {
+          "label": "D",
+          "text": "Between δ 9.0 and 10.0 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy).",
+      "explanation": "Induced ring current creates an anisotropic magnetic field that reinforces B₀ outside the ring, shifting aromatic protons downfield to 6.5–8.5 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q020",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Aldehyde Proton 1H NMR Resonance",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "At what diagnostic chemical shift does the formyl proton (-CHO) of an aldehyde appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 4.5–5.5 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 1.0–2.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 7.0–7.5 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet).",
+      "explanation": "Inductive electron withdrawal by oxygen combined with carbonyl magnetic anisotropy shifts the aldehyde proton far downfield to 9–10 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q021",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Isopropyl Group Diagnostic NMR Pattern",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What characteristic ¹H NMR splitting pattern identifies an isolated isopropyl group [-CH(CH₃)₂]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 3H triplet and 2H quartet."
+        },
+        {
+          "label": "B",
+          "text": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz)."
+        },
+        {
+          "label": "C",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "D",
+          "text": "Two 3H singlets."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz).",
+      "explanation": "Six equivalent methyl protons split the single methine proton into a septet (6+1=7); the methine splits the methyls into a doublet (1+1=2).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q022",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "tert-Butyl Group Diagnostic NMR Singlet",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What ¹H NMR signal is the definitive diagnostic signature of an isolated tert-butyl group [-C(CH₃)₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm."
+        },
+        {
+          "label": "B",
+          "text": "A 9H triplet."
+        },
+        {
+          "label": "C",
+          "text": "A 6H doublet and 3H singlet."
+        },
+        {
+          "label": "D",
+          "text": "A 9H multiplet."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm.",
+      "explanation": "Nine chemically and magnetically equivalent protons with zero neighboring hydrogens produce an intense 9H singlet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q023",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "13C NMR Carbonyl Carbon Chemical Shifts",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In what chemical shift region do ketone and aldehyde carbonyl carbons resonate in broadband-decoupled ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Far downfield at δ 190–220 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 160–180 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 100–150 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 10–50 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Far downfield at δ 190–220 ppm.",
+      "explanation": "Ketone and aldehyde carbonyl carbons are severely deshielded by the polar C=O bond, resonating far downfield at 190–220 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q024",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Ester and Amide 13C Carbonyl Chemical Shifts",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "In what chemical shift region do ester, amide, and carboxylic acid carbonyl carbons resonate in ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 110–130 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms)."
+        },
+        {
+          "label": "C",
+          "text": "At δ 20–40 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 200–220 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms).",
+      "explanation": "Heteroatom lone pair resonance donation shields the carbonyl carbon relative to ketones, shifting resonance upfield to 160–185 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q025",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "DEPT-90 vs DEPT-135 Spectrum Interpretation",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How does a DEPT-90 NMR spectrum differ from a DEPT-135 NMR spectrum for an unknown hydrocarbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-90 detects quaternary carbons."
+        },
+        {
+          "label": "B",
+          "text": "DEPT-135 detects only aromatic rings."
+        },
+        {
+          "label": "C",
+          "text": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks."
+        },
+        {
+          "label": "D",
+          "text": "DEPT-90 is a proton NMR experiment."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks.",
+      "explanation": "DEPT-90 isolates CH carbons exclusively; comparing with DEPT-135 allows definitive assignment of CH₃, CH₂, and CH carbons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q026",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Mass Spectrometry Base Peak vs Molecular Ion",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In an electron-ionization mass spectrum, what is the definition of the 'base peak'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion."
+        },
+        {
+          "label": "B",
+          "text": "The peak corresponding to unfragmented solvent."
+        },
+        {
+          "label": "C",
+          "text": "The smallest peak in the spectrum."
+        },
+        {
+          "label": "D",
+          "text": "The peak with the highest m/z value."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion.",
+      "explanation": "The base peak is the tallest peak (100% relative abundance), corresponding to the most thermodynamically stable fragment ion formed.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q027",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "1H NMR Chemical Shift of Aromatic Protons",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "In what characteristic chemical shift range do aromatic ring protons on benzene derivatives resonate in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy)."
+        },
+        {
+          "label": "B",
+          "text": "Between δ 9.0 and 10.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Between δ 3.3 and 4.0 ppm."
+        },
+        {
+          "label": "D",
+          "text": "Between δ 0.8 and 1.5 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy).",
+      "explanation": "Induced ring current creates an anisotropic magnetic field that reinforces B₀ outside the ring, shifting aromatic protons downfield to 6.5–8.5 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q028",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Aldehyde Proton 1H NMR Resonance",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "At what diagnostic chemical shift does the formyl proton (-CHO) of an aldehyde appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 1.0–2.0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 7.0–7.5 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet)."
+        },
+        {
+          "label": "D",
+          "text": "At δ 4.5–5.5 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet).",
+      "explanation": "Inductive electron withdrawal by oxygen combined with carbonyl magnetic anisotropy shifts the aldehyde proton far downfield to 9–10 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q029",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Carboxylic Acid Proton 1H NMR Resonance",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Where does the acidic hydroxyl proton (-COOH) of a carboxylic acid characteristically appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 3.5–4.5 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Far downfield at δ 10.0–12.5 ppm as a broad singlet."
+        },
+        {
+          "label": "C",
+          "text": "At δ 7.0–8.0 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 0.5–1.0 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Far downfield at δ 10.0–12.5 ppm as a broad singlet.",
+      "explanation": "Strong hydrogen bonding and powerful inductive deshielding shift the carboxylic acid O-H proton extremely far downfield to 10–12.5 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q030",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Ethyl Group Spin-Spin Splitting Pattern",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "What characteristic ¹H NMR multiplet pattern confirms the presence of an isolated ethyl group (-CH₂-CH₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two sharp singlets (3H and 2H)."
+        },
+        {
+          "label": "B",
+          "text": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield."
+        },
+        {
+          "label": "C",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "D",
+          "text": "A 6H doublet and a 1H septet."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield.",
+      "explanation": "According to the n+1 rule, CH₃ protons split CH₂ into a quartet (3+1=4); CH₂ protons split CH₃ into a triplet (2+1=3).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q031",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "13C NMR Carbonyl Carbon Chemical Shifts",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In what chemical shift region do ketone and aldehyde carbonyl carbons resonate in broadband-decoupled ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 10–50 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 160–180 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Far downfield at δ 190–220 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 100–150 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Far downfield at δ 190–220 ppm.",
+      "explanation": "Ketone and aldehyde carbonyl carbons are severely deshielded by the polar C=O bond, resonating far downfield at 190–220 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q032",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Ester and Amide 13C Carbonyl Chemical Shifts",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In what chemical shift region do ester, amide, and carboxylic acid carbonyl carbons resonate in ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 110–130 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 200–220 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 20–40 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms).",
+      "explanation": "Heteroatom lone pair resonance donation shields the carbonyl carbon relative to ketones, shifting resonance upfield to 160–185 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q033",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "DEPT-90 vs DEPT-135 Spectrum Interpretation",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How does a DEPT-90 NMR spectrum differ from a DEPT-135 NMR spectrum for an unknown hydrocarbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-90 is a proton NMR experiment."
+        },
+        {
+          "label": "B",
+          "text": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks."
+        },
+        {
+          "label": "C",
+          "text": "DEPT-135 detects only aromatic rings."
+        },
+        {
+          "label": "D",
+          "text": "DEPT-90 detects quaternary carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks.",
+      "explanation": "DEPT-90 isolates CH carbons exclusively; comparing with DEPT-135 allows definitive assignment of CH₃, CH₂, and CH carbons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q034",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Mass Spectrometry Base Peak vs Molecular Ion",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In an electron-ionization mass spectrum, what is the definition of the 'base peak'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The peak with the highest m/z value."
+        },
+        {
+          "label": "B",
+          "text": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion."
+        },
+        {
+          "label": "C",
+          "text": "The peak corresponding to unfragmented solvent."
+        },
+        {
+          "label": "D",
+          "text": "The smallest peak in the spectrum."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion.",
+      "explanation": "The base peak is the tallest peak (100% relative abundance), corresponding to the most thermodynamically stable fragment ion formed.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q035",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "1H NMR Chemical Shift of Aromatic Protons",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In what characteristic chemical shift range do aromatic ring protons on benzene derivatives resonate in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Between δ 3.3 and 4.0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Between δ 0.8 and 1.5 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Between δ 9.0 and 10.0 ppm."
+        },
+        {
+          "label": "D",
+          "text": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy).",
+      "explanation": "Induced ring current creates an anisotropic magnetic field that reinforces B₀ outside the ring, shifting aromatic protons downfield to 6.5–8.5 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q036",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Aldehyde Proton 1H NMR Resonance",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "At what diagnostic chemical shift does the formyl proton (-CHO) of an aldehyde appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 7.0–7.5 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet)."
+        },
+        {
+          "label": "C",
+          "text": "At δ 1.0–2.0 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 4.5–5.5 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet).",
+      "explanation": "Inductive electron withdrawal by oxygen combined with carbonyl magnetic anisotropy shifts the aldehyde proton far downfield to 9–10 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q037",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Carboxylic Acid Proton 1H NMR Resonance",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Where does the acidic hydroxyl proton (-COOH) of a carboxylic acid characteristically appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 3.5–4.5 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 7.0–8.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Far downfield at δ 10.0–12.5 ppm as a broad singlet."
+        },
+        {
+          "label": "D",
+          "text": "At δ 0.5–1.0 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Far downfield at δ 10.0–12.5 ppm as a broad singlet.",
+      "explanation": "Strong hydrogen bonding and powerful inductive deshielding shift the carboxylic acid O-H proton extremely far downfield to 10–12.5 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q038",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Ethyl Group Spin-Spin Splitting Pattern",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What characteristic ¹H NMR multiplet pattern confirms the presence of an isolated ethyl group (-CH₂-CH₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "B",
+          "text": "A 6H doublet and a 1H septet."
+        },
+        {
+          "label": "C",
+          "text": "Two sharp singlets (3H and 2H)."
+        },
+        {
+          "label": "D",
+          "text": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield.",
+      "explanation": "According to the n+1 rule, CH₃ protons split CH₂ into a quartet (3+1=4); CH₂ protons split CH₃ into a triplet (2+1=3).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q039",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Isopropyl Group Diagnostic NMR Pattern",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "What characteristic ¹H NMR splitting pattern identifies an isolated isopropyl group [-CH(CH₃)₂]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "B",
+          "text": "Two 3H singlets."
+        },
+        {
+          "label": "C",
+          "text": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz)."
+        },
+        {
+          "label": "D",
+          "text": "A 3H triplet and 2H quartet."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz).",
+      "explanation": "Six equivalent methyl protons split the single methine proton into a septet (6+1=7); the methine splits the methyls into a doublet (1+1=2).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q040",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "tert-Butyl Group Diagnostic NMR Singlet",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What ¹H NMR signal is the definitive diagnostic signature of an isolated tert-butyl group [-C(CH₃)₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9H multiplet."
+        },
+        {
+          "label": "B",
+          "text": "A 6H doublet and 3H singlet."
+        },
+        {
+          "label": "C",
+          "text": "A 9H triplet."
+        },
+        {
+          "label": "D",
+          "text": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm.",
+      "explanation": "Nine chemically and magnetically equivalent protons with zero neighboring hydrogens produce an intense 9H singlet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q041",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "DEPT-90 vs DEPT-135 Spectrum Interpretation",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How does a DEPT-90 NMR spectrum differ from a DEPT-135 NMR spectrum for an unknown hydrocarbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks."
+        },
+        {
+          "label": "B",
+          "text": "DEPT-135 detects only aromatic rings."
+        },
+        {
+          "label": "C",
+          "text": "DEPT-90 detects quaternary carbons."
+        },
+        {
+          "label": "D",
+          "text": "DEPT-90 is a proton NMR experiment."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DEPT-90 displays ONLY CH (methine) carbons as positive peaks; DEPT-135 displays CH and CH₃ carbons as positive peaks and CH₂ carbons as negative (inverted) peaks.",
+      "explanation": "DEPT-90 isolates CH carbons exclusively; comparing with DEPT-135 allows definitive assignment of CH₃, CH₂, and CH carbons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q042",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Mass Spectrometry Base Peak vs Molecular Ion",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In an electron-ionization mass spectrum, what is the definition of the 'base peak'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion."
+        },
+        {
+          "label": "B",
+          "text": "The peak with the highest m/z value."
+        },
+        {
+          "label": "C",
+          "text": "The smallest peak in the spectrum."
+        },
+        {
+          "label": "D",
+          "text": "The peak corresponding to unfragmented solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The most intense peak in the mass spectrum, arbitrarily assigned an abundance of 100%, representing the most stable and abundant fragment ion.",
+      "explanation": "The base peak is the tallest peak (100% relative abundance), corresponding to the most thermodynamically stable fragment ion formed.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q043",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "1H NMR Chemical Shift of Aromatic Protons",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In what characteristic chemical shift range do aromatic ring protons on benzene derivatives resonate in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Between δ 3.3 and 4.0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Between δ 9.0 and 10.0 ppm."
+        },
+        {
+          "label": "C",
+          "text": "Between δ 0.8 and 1.5 ppm."
+        },
+        {
+          "label": "D",
+          "text": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Between δ 6.5 and 8.5 ppm (downfield, deshielded by aromatic ring current magnetic anisotropy).",
+      "explanation": "Induced ring current creates an anisotropic magnetic field that reinforces B₀ outside the ring, shifting aromatic protons downfield to 6.5–8.5 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q044",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Aldehyde Proton 1H NMR Resonance",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "At what diagnostic chemical shift does the formyl proton (-CHO) of an aldehyde appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet)."
+        },
+        {
+          "label": "B",
+          "text": "At δ 4.5–5.5 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 7.0–7.5 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 1.0–2.0 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "At δ 9.0–10.0 ppm (highly deshielded singlet or multiplet).",
+      "explanation": "Inductive electron withdrawal by oxygen combined with carbonyl magnetic anisotropy shifts the aldehyde proton far downfield to 9–10 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q045",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Carboxylic Acid Proton 1H NMR Resonance",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "Where does the acidic hydroxyl proton (-COOH) of a carboxylic acid characteristically appear in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 0.5–1.0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Far downfield at δ 10.0–12.5 ppm as a broad singlet."
+        },
+        {
+          "label": "C",
+          "text": "At δ 7.0–8.0 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 3.5–4.5 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Far downfield at δ 10.0–12.5 ppm as a broad singlet.",
+      "explanation": "Strong hydrogen bonding and powerful inductive deshielding shift the carboxylic acid O-H proton extremely far downfield to 10–12.5 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q046",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Ethyl Group Spin-Spin Splitting Pattern",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What characteristic ¹H NMR multiplet pattern confirms the presence of an isolated ethyl group (-CH₂-CH₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield."
+        },
+        {
+          "label": "B",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "C",
+          "text": "Two sharp singlets (3H and 2H)."
+        },
+        {
+          "label": "D",
+          "text": "A 6H doublet and a 1H septet."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A 3H triplet (J ~ 7 Hz) upfield coupled to a 2H quartet (J ~ 7 Hz) downfield.",
+      "explanation": "According to the n+1 rule, CH₃ protons split CH₂ into a quartet (3+1=4); CH₂ protons split CH₃ into a triplet (2+1=3).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q047",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Isopropyl Group Diagnostic NMR Pattern",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What characteristic ¹H NMR splitting pattern identifies an isolated isopropyl group [-CH(CH₃)₂]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz)."
+        },
+        {
+          "label": "B",
+          "text": "A 9H singlet."
+        },
+        {
+          "label": "C",
+          "text": "A 3H triplet and 2H quartet."
+        },
+        {
+          "label": "D",
+          "text": "Two 3H singlets."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A 6H doublet coupled to a 1H septet (7 peaks, J ~ 7 Hz).",
+      "explanation": "Six equivalent methyl protons split the single methine proton into a septet (6+1=7); the methine splits the methyls into a doublet (1+1=2).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q048",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "tert-Butyl Group Diagnostic NMR Singlet",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "What ¹H NMR signal is the definitive diagnostic signature of an isolated tert-butyl group [-C(CH₃)₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9H multiplet."
+        },
+        {
+          "label": "B",
+          "text": "A 6H doublet and 3H singlet."
+        },
+        {
+          "label": "C",
+          "text": "A 9H triplet."
+        },
+        {
+          "label": "D",
+          "text": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An intense, sharp 9H singlet at approximately δ 0.9–1.3 ppm.",
+      "explanation": "Nine chemically and magnetically equivalent protons with zero neighboring hydrogens produce an intense 9H singlet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q049",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "13C NMR Carbonyl Carbon Chemical Shifts",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In what chemical shift region do ketone and aldehyde carbonyl carbons resonate in broadband-decoupled ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 160–180 ppm."
+        },
+        {
+          "label": "B",
+          "text": "At δ 100–150 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 10–50 ppm."
+        },
+        {
+          "label": "D",
+          "text": "Far downfield at δ 190–220 ppm."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Far downfield at δ 190–220 ppm.",
+      "explanation": "Ketone and aldehyde carbonyl carbons are severely deshielded by the polar C=O bond, resonating far downfield at 190–220 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q050",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Ester and Amide 13C Carbonyl Chemical Shifts",
+      "difficulty": "hard",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In what chemical shift region do ester, amide, and carboxylic acid carbonyl carbons resonate in ¹³C NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms)."
+        },
+        {
+          "label": "B",
+          "text": "At δ 20–40 ppm."
+        },
+        {
+          "label": "C",
+          "text": "At δ 110–130 ppm."
+        },
+        {
+          "label": "D",
+          "text": "At δ 200–220 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "At δ 160–185 ppm (upfield of ketones/aldehydes due to resonance lone-pair donation from heteroatoms).",
+      "explanation": "Heteroatom lone pair resonance donation shields the carbonyl carbon relative to ketones, shifting resonance upfield to 160–185 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Skeletal Sentry",
+    "Lone Pair Phantom",
+    "Resonance Reaver",
+    "Formal Charge Fiend",
+    "Delocalization Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Skeletal Sentry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "skeletal-sentry.png"
+        ]
+      },
+      {
+        "boss": "Lone Pair Phantom",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "lone-pair-phantom.png"
+        ]
+      },
+      {
+        "boss": "Resonance Reaver",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "resonance-reaver.png"
+        ]
+      },
+      {
+        "boss": "Formal Charge Fiend",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "formal-charge-fiend.png"
+        ]
+      },
+      {
+        "boss": "Delocalization Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "delocalization-overlord.png"
+        ]
+      }
+    ]
+  }
+}

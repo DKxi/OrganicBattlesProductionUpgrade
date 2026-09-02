@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 1,
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "Valence Vanguard",
+  "bosses": [
+    "Valence Vanguard",
+    "Electronegativity Elemental",
+    "Hybridization Hydra",
+    "Dipole Dragon",
+    "Molecular Orbital Monarch"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Valence Vanguard",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Electronegativity Elemental",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Hybridization Hydra",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Dipole Dragon",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Molecular Orbital Monarch",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch01_q001",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "BDE Enthalpy Calculation for H2 + Cl2",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q002",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Gibbs Free Energy and Equilibrium Constant",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+        },
+        {
+          "label": "B",
+          "text": "Keq \u2248 0.01."
+        },
+        {
+          "label": "C",
+          "text": "Keq \u2248 1.0."
+        },
+        {
+          "label": "D",
+          "text": "Keq \u2248 10,000."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q003",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Entropy and Temperature Threshold",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Above T = 200 K."
+        },
+        {
+          "label": "B",
+          "text": "Above T = 800 K."
+        },
+        {
+          "label": "C",
+          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+        },
+        {
+          "label": "D",
+          "text": "The reaction is never exergonic at any temperature."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
+      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q004",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Arrhenius Activation Energy Rate Ratio",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "If Reaction A has Ea = 50 kJ/mol and Reaction B has Ea = 75 kJ/mol at 298 K, how much faster is Reaction A than Reaction B? (Assume equal A factors)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction A is 100 times faster."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions proceed at identical rates."
+        },
+        {
+          "label": "C",
+          "text": "Reaction A is 1.5 times faster."
+        },
+        {
+          "label": "D",
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q005",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Primary Kinetic Isotope Effect Magnitude",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "k_H / k_D = 1.0 (no difference)."
+        },
+        {
+          "label": "B",
+          "text": "k_H / k_D = 1000."
+        },
+        {
+          "label": "C",
+          "text": "k_H / k_D = 0.14 (deuterium reacts faster)."
+        },
+        {
+          "label": "D",
+          "text": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
+      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q006",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "BDE Enthalpy for Methane Monochlorination",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0 = -243 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0 = -50 kJ/mol."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0 = +101 kJ/mol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q007",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "First-Order Half-Life Calculation",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+        },
+        {
+          "label": "B",
+          "text": "t_1/2 = 1.0 minute."
+        },
+        {
+          "label": "C",
+          "text": "t_1/2 = 43.3 seconds."
+        },
+        {
+          "label": "D",
+          "text": "t_1/2 = 10.0 seconds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q008",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Secondary Kinetic Isotope Effect Hybridization",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-H bond."
+        },
+        {
+          "label": "B",
+          "text": "Zero change in coordination number."
+        },
+        {
+          "label": "C",
+          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+        },
+        {
+          "label": "D",
+          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q009",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Temperature Doubling Rule of Thumb Math",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the concentration of reactants doubles."
+        },
+        {
+          "label": "B",
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+        },
+        {
+          "label": "C",
+          "text": "Because the activation energy drops to zero."
+        },
+        {
+          "label": "D",
+          "text": "Because molecular velocity doubles every 10\u00b0C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q010",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Thermodynamic Equilibrium Ratio from Delta G",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ratio [B]/[A] = 2:1."
+        },
+        {
+          "label": "B",
+          "text": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A)."
+        },
+        {
+          "label": "C",
+          "text": "Ratio [B]/[A] = 1:1 (50% B, 50% A)."
+        },
+        {
+          "label": "D",
+          "text": "Ratio [B]/[A] = 100:1 (99% B, 1% A)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
+      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q011",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "BDE Enthalpy Calculation for H2 + Cl2",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q012",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Gibbs Free Energy and Equilibrium Constant",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+        },
+        {
+          "label": "B",
+          "text": "Keq \u2248 10,000."
+        },
+        {
+          "label": "C",
+          "text": "Keq \u2248 1.0."
+        },
+        {
+          "label": "D",
+          "text": "Keq \u2248 0.01."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q013",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Entropy and Temperature Threshold",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction is never exergonic at any temperature."
+        },
+        {
+          "label": "B",
+          "text": "Above T = 800 K."
+        },
+        {
+          "label": "C",
+          "text": "Above T = 200 K."
+        },
+        {
+          "label": "D",
+          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
+      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q014",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Arrhenius Activation Energy Rate Ratio",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "If Reaction A has Ea = 50 kJ/mol and Reaction B has Ea = 75 kJ/mol at 298 K, how much faster is Reaction A than Reaction B? (Assume equal A factors)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+        },
+        {
+          "label": "B",
+          "text": "Reaction A is 1.5 times faster."
+        },
+        {
+          "label": "C",
+          "text": "Reaction A is 100 times faster."
+        },
+        {
+          "label": "D",
+          "text": "Both reactions proceed at identical rates."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q015",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Primary Kinetic Isotope Effect Magnitude",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "k_H / k_D = 0.14 (deuterium reacts faster)."
+        },
+        {
+          "label": "B",
+          "text": "k_H / k_D = 1.0 (no difference)."
+        },
+        {
+          "label": "C",
+          "text": "k_H / k_D = 1000."
+        },
+        {
+          "label": "D",
+          "text": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
+      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q016",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "BDE Enthalpy for Methane Monochlorination",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0 = -50 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0 = -243 kJ/mol."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0 = +101 kJ/mol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q017",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "First-Order Half-Life Calculation",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+        },
+        {
+          "label": "B",
+          "text": "t_1/2 = 43.3 seconds."
+        },
+        {
+          "label": "C",
+          "text": "t_1/2 = 10.0 seconds."
+        },
+        {
+          "label": "D",
+          "text": "t_1/2 = 1.0 minute."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q018",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Secondary Kinetic Isotope Effect Hybridization",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero change in coordination number."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-H bond."
+        },
+        {
+          "label": "D",
+          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q019",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Temperature Doubling Rule of Thumb Math",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the concentration of reactants doubles."
+        },
+        {
+          "label": "B",
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+        },
+        {
+          "label": "C",
+          "text": "Because molecular velocity doubles every 10\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "Because the activation energy drops to zero."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q020",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Thermodynamic Equilibrium Ratio from Delta G",
+      "difficulty": "hard",
+      "question_type": "kinetic_isotope_effect",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ratio [B]/[A] = 1:1 (50% B, 50% A)."
+        },
+        {
+          "label": "B",
+          "text": "Ratio [B]/[A] = 100:1 (99% B, 1% A)."
+        },
+        {
+          "label": "C",
+          "text": "Ratio [B]/[A] = 2:1."
+        },
+        {
+          "label": "D",
+          "text": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
+      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q021",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "BDE Enthalpy Calculation for H2 + Cl2",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q022",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Gibbs Free Energy and Equilibrium Constant",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+        },
+        {
+          "label": "B",
+          "text": "Keq \u2248 1.0."
+        },
+        {
+          "label": "C",
+          "text": "Keq \u2248 0.01."
+        },
+        {
+          "label": "D",
+          "text": "Keq \u2248 10,000."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q023",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Entropy and Temperature Threshold",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Above T = 800 K."
+        },
+        {
+          "label": "B",
+          "text": "The reaction is never exergonic at any temperature."
+        },
+        {
+          "label": "C",
+          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+        },
+        {
+          "label": "D",
+          "text": "Above T = 200 K."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
+      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q024",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Arrhenius Activation Energy Rate Ratio",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "If Reaction A has Ea = 50 kJ/mol and Reaction B has Ea = 75 kJ/mol at 298 K, how much faster is Reaction A than Reaction B? (Assume equal A factors)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both reactions proceed at identical rates."
+        },
+        {
+          "label": "B",
+          "text": "Reaction A is 100 times faster."
+        },
+        {
+          "label": "C",
+          "text": "Reaction A is 1.5 times faster."
+        },
+        {
+          "label": "D",
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q025",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Primary Kinetic Isotope Effect Magnitude",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "k_H / k_D = 1000."
+        },
+        {
+          "label": "B",
+          "text": "k_H / k_D = 0.14 (deuterium reacts faster)."
+        },
+        {
+          "label": "C",
+          "text": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds)."
+        },
+        {
+          "label": "D",
+          "text": "k_H / k_D = 1.0 (no difference)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
+      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q026",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "BDE Enthalpy for Methane Monochlorination",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0 = +101 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0 = -50 kJ/mol."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0 = -243 kJ/mol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q027",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "First-Order Half-Life Calculation",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+        },
+        {
+          "label": "B",
+          "text": "t_1/2 = 43.3 seconds."
+        },
+        {
+          "label": "C",
+          "text": "t_1/2 = 1.0 minute."
+        },
+        {
+          "label": "D",
+          "text": "t_1/2 = 10.0 seconds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q028",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Secondary Kinetic Isotope Effect Hybridization",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero change in coordination number."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-H bond."
+        },
+        {
+          "label": "D",
+          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q029",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Temperature Doubling Rule of Thumb Math",
+      "difficulty": "hard",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the concentration of reactants doubles."
+        },
+        {
+          "label": "B",
+          "text": "Because the activation energy drops to zero."
+        },
+        {
+          "label": "C",
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+        },
+        {
+          "label": "D",
+          "text": "Because molecular velocity doubles every 10\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q030",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Thermodynamic Equilibrium Ratio from Delta G",
+      "difficulty": "hard",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A)."
+        },
+        {
+          "label": "B",
+          "text": "Ratio [B]/[A] = 100:1 (99% B, 1% A)."
+        },
+        {
+          "label": "C",
+          "text": "Ratio [B]/[A] = 2:1."
+        },
+        {
+          "label": "D",
+          "text": "Ratio [B]/[A] = 1:1 (50% B, 50% A)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
+      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q031",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "BDE Enthalpy Calculation for H2 + Cl2",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q032",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Gibbs Free Energy and Equilibrium Constant",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+        },
+        {
+          "label": "B",
+          "text": "Keq \u2248 10,000."
+        },
+        {
+          "label": "C",
+          "text": "Keq \u2248 1.0."
+        },
+        {
+          "label": "D",
+          "text": "Keq \u2248 0.01."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q033",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Entropy and Temperature Threshold",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+        },
+        {
+          "label": "B",
+          "text": "The reaction is never exergonic at any temperature."
+        },
+        {
+          "label": "C",
+          "text": "Above T = 200 K."
+        },
+        {
+          "label": "D",
+          "text": "Above T = 800 K."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
+      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q034",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Arrhenius Activation Energy Rate Ratio",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "If Reaction A has Ea = 50 kJ/mol and Reaction B has Ea = 75 kJ/mol at 298 K, how much faster is Reaction A than Reaction B? (Assume equal A factors)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions proceed at identical rates."
+        },
+        {
+          "label": "C",
+          "text": "Reaction A is 100 times faster."
+        },
+        {
+          "label": "D",
+          "text": "Reaction A is 1.5 times faster."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q035",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Primary Kinetic Isotope Effect Magnitude",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "k_H / k_D = 0.14 (deuterium reacts faster)."
+        },
+        {
+          "label": "B",
+          "text": "k_H / k_D = 1.0 (no difference)."
+        },
+        {
+          "label": "C",
+          "text": "k_H / k_D = 1000."
+        },
+        {
+          "label": "D",
+          "text": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
+      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q036",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "BDE Enthalpy for Methane Monochlorination",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0 = +101 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0 = -243 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0 = -50 kJ/mol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q037",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "First-Order Half-Life Calculation",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "t_1/2 = 43.3 seconds."
+        },
+        {
+          "label": "B",
+          "text": "t_1/2 = 1.0 minute."
+        },
+        {
+          "label": "C",
+          "text": "t_1/2 = 10.0 seconds."
+        },
+        {
+          "label": "D",
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q038",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Secondary Kinetic Isotope Effect Hybridization",
+      "difficulty": "hard",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-H bond."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+        },
+        {
+          "label": "C",
+          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+        },
+        {
+          "label": "D",
+          "text": "Zero change in coordination number."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q039",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Temperature Doubling Rule of Thumb Math",
+      "difficulty": "hard",
+      "question_type": "arrhenius_activation_energy",
+      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+        },
+        {
+          "label": "B",
+          "text": "Because molecular velocity doubles every 10\u00b0C."
+        },
+        {
+          "label": "C",
+          "text": "Because the concentration of reactants doubles."
+        },
+        {
+          "label": "D",
+          "text": "Because the activation energy drops to zero."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q040",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Thermodynamic Equilibrium Ratio from Delta G",
+      "difficulty": "hard",
+      "question_type": "kinetic_isotope_effect",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ratio [B]/[A] = 2:1."
+        },
+        {
+          "label": "B",
+          "text": "Ratio [B]/[A] = 1:1 (50% B, 50% A)."
+        },
+        {
+          "label": "C",
+          "text": "Ratio [B]/[A] = 100:1 (99% B, 1% A)."
+        },
+        {
+          "label": "D",
+          "text": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
+      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q041",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "BDE Enthalpy Calculation for H2 + Cl2",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q042",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Gibbs Free Energy and Equilibrium Constant",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keq \u2248 0.01."
+        },
+        {
+          "label": "B",
+          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+        },
+        {
+          "label": "C",
+          "text": "Keq \u2248 10,000."
+        },
+        {
+          "label": "D",
+          "text": "Keq \u2248 1.0."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q043",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Entropy and Temperature Threshold",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Above T = 200 K."
+        },
+        {
+          "label": "B",
+          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+        },
+        {
+          "label": "C",
+          "text": "The reaction is never exergonic at any temperature."
+        },
+        {
+          "label": "D",
+          "text": "Above T = 800 K."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
+      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q044",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Arrhenius Activation Energy Rate Ratio",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "If Reaction A has Ea = 50 kJ/mol and Reaction B has Ea = 75 kJ/mol at 298 K, how much faster is Reaction A than Reaction B? (Assume equal A factors)",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction A is 1.5 times faster."
+        },
+        {
+          "label": "B",
+          "text": "Reaction A is 100 times faster."
+        },
+        {
+          "label": "C",
+          "text": "Both reactions proceed at identical rates."
+        },
+        {
+          "label": "D",
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q045",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Primary Kinetic Isotope Effect Magnitude",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "k_H / k_D = 1.0 (no difference)."
+        },
+        {
+          "label": "B",
+          "text": "k_H / k_D = 0.14 (deuterium reacts faster)."
+        },
+        {
+          "label": "C",
+          "text": "k_H / k_D = 1000."
+        },
+        {
+          "label": "D",
+          "text": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
+      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q046",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "BDE Enthalpy for Methane Monochlorination",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0 = +101 kJ/mol."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0 = -243 kJ/mol."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0 = -50 kJ/mol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q047",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "First-Order Half-Life Calculation",
+      "difficulty": "hard",
+      "question_type": "arrhenius_activation_energy",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "t_1/2 = 1.0 minute."
+        },
+        {
+          "label": "B",
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+        },
+        {
+          "label": "C",
+          "text": "t_1/2 = 10.0 seconds."
+        },
+        {
+          "label": "D",
+          "text": "t_1/2 = 43.3 seconds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q048",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Secondary Kinetic Isotope Effect Hybridization",
+      "difficulty": "hard",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-H bond."
+        },
+        {
+          "label": "B",
+          "text": "Zero change in coordination number."
+        },
+        {
+          "label": "C",
+          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+        },
+        {
+          "label": "D",
+          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q049",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Temperature Doubling Rule of Thumb Math",
+      "difficulty": "hard",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because molecular velocity doubles every 10\u00b0C."
+        },
+        {
+          "label": "B",
+          "text": "Because the concentration of reactants doubles."
+        },
+        {
+          "label": "C",
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+        },
+        {
+          "label": "D",
+          "text": "Because the activation energy drops to zero."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q050",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Thermodynamic Equilibrium Ratio from Delta G",
+      "difficulty": "hard",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ratio [B]/[A] = 1:1 (50% B, 50% A)."
+        },
+        {
+          "label": "B",
+          "text": "Ratio [B]/[A] = 100:1 (99% B, 1% A)."
+        },
+        {
+          "label": "C",
+          "text": "Ratio [B]/[A] = 2:1."
+        },
+        {
+          "label": "D",
+          "text": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
+      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    }
+  ]
+}

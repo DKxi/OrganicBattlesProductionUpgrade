@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 22,
+  "chapter_title": "Amines",
+  "assigned_boss": "Amino Assassin",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch22_q001",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Amine Alkylation Runaway Polyalkylation Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the direct reaction of ammonia with 1-bromobutane yield a messy mixture of 1°, 2°, 3° amines and quaternary ammonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a carbocation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Ammonia is insoluble in organic solvents."
+        },
+        {
+          "label": "D",
+          "text": "Butylamine decomposes into butene and nitrogen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide.",
+      "explanation": "Alkyl groups increase nitrogen nucleophilicity by inductive donation, causing mono-alkylated amines to react faster than ammonia.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q002",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Gabriel Synthesis Clean Primary Amine Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does the Gabriel synthesis using potassium phthalimide prevent polyalkylation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phthalimide reacts via an E2 mechanism exclusively."
+        },
+        {
+          "label": "B",
+          "text": "The hydrazine cleavage step removes extra alkyl groups."
+        },
+        {
+          "label": "C",
+          "text": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "Phthalimide is an oxidizer that destroys secondary amines."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen.",
+      "explanation": "Phthalimide serves as a protected nitrogen synthon with exactly one nucleophilic lone pair, guaranteeing monoalkylation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q003",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Reductive Amination Iminium Reduction Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is sodium cyanoborohydride (NaBH₃CN) at pH 6 uniquely suited for reductive amination of ketones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaBH₃CN precipitates all unreacted amines."
+        },
+        {
+          "label": "B",
+          "text": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones."
+        },
+        {
+          "label": "C",
+          "text": "NaBH₃CN only reduces aromatic rings."
+        },
+        {
+          "label": "D",
+          "text": "NaBH₃CN is a powerful oxidizer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones.",
+      "explanation": "At pH 6, the iminium cation [R₂C=N⁺HR'] is protonated and far more electrophilic than the parent ketone, allowing selective reduction by mild NaBH₃CN.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q004",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Hofmann Elimination Quaternary Ammonium Sterics",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does thermal elimination of quaternary ammonium hydroxides (Hofmann elimination) yield the less substituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The less substituted alkene is thermodynamically more stable."
+        },
+        {
+          "label": "B",
+          "text": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary amines are weak leaving groups."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a planar carbocation intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen.",
+      "explanation": "Steric clash between the bulky trialkylammonium group and the base enforces deprotonation at the least hindered methyl position (Hofmann rule).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q005",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Arylamine Diazotization Nitrosonium Electrophile",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How is the active electrophile (NO⁺, nitrosonium ion) generated during diazotization of aniline with NaNO₂ and HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O)."
+        },
+        {
+          "label": "B",
+          "text": "Hydrochloric acid cleaves aniline into nitrogen gas."
+        },
+        {
+          "label": "C",
+          "text": "Sodium nitrite undergoes homolytic cleavage."
+        },
+        {
+          "label": "D",
+          "text": "Nitrite is oxidized by air to nitrate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O).",
+      "explanation": "Acid-promoted dehydration of nitrous acid generates the reactive nitrosonium electrophile (NO⁺) that is attacked by the amine nitrogen.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q006",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Azo Coupling EAS Arenium Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic classification of the coupling reaction between benzenediazonium chloride and 2-naphthol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diels-Alder cycloaddition."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic aromatic substitution (SNAr)."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring."
+        },
+        {
+          "label": "D",
+          "text": "Free radical coupling."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring.",
+      "explanation": "The diazonium ion (Ar-N₂⁺) is a weak electrophile that undergoes EAS exclusively with strongly activated aromatic rings (phenols and arylamines).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q007",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Schiemann Reaction Fluorination Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic pathway for the conversion of an aryldiazonium tetrafluoroborate salt to an aryl fluoride upon heating?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic radical fluorination by elemental F₂."
+        },
+        {
+          "label": "C",
+          "text": "Addition of BF₃ across the aromatic π bonds."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement of N₂ by fluoride in solution."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃.",
+      "explanation": "Thermal pyrolysis of the diazonium fluoroborate proceeds through an aryl cation intermediate that abstracts fluoride from the complex anion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q008",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Hypophosphorous Acid Deamination Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the role of hypophosphorous acid (H₃PO₂) in the synthetic deamination of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl."
+        },
+        {
+          "label": "B",
+          "text": "H₃PO₂ precipitates the diazonium salt as an explosive solid."
+        },
+        {
+          "label": "C",
+          "text": "H₃PO₂ converts the diazonium salt to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "H₃PO₂ oxidizes the diazonium salt to a nitro compound."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl.",
+      "explanation": "H₃PO₂ reduces the diazonium group to a C-H bond, enabling amino groups to be used as temporary directing/activating groups and then removed.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q009",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Amide Reduction to Amine Aluminate Intermediate",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does LiAlH₄ reduce amides to amines rather than alcohols (unlike esters)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines are oxidizers that prevent alcohol formation."
+        },
+        {
+          "label": "B",
+          "text": "Amides are converted to acyl chlorides in situ."
+        },
+        {
+          "label": "C",
+          "text": "The C-N bond is broken first by hydride."
+        },
+        {
+          "label": "D",
+          "text": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine.",
+      "explanation": "Oxygen has higher affinity for aluminum than nitrogen; the C-O bond is cleaved to form an iminium intermediate that is reduced to the amine.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q010",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Amine Protection as Acetamide for Bromination",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why must aniline be converted to acetanilide prior to monobromination with Br₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl."
+        },
+        {
+          "label": "B",
+          "text": "Aniline oxidizes Br₂ to bromate."
+        },
+        {
+          "label": "C",
+          "text": "Aniline is insoluble in bromine water."
+        },
+        {
+          "label": "D",
+          "text": "Aniline reacts with Br₂ to form nitrogen tribromide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl.",
+      "explanation": "Acetylation moderates nitrogen lone pair donation into the ring by competing resonance with the carbonyl, enabling clean monobromination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q011",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Reductive Amination Iminium Reduction Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is sodium cyanoborohydride (NaBH₃CN) at pH 6 uniquely suited for reductive amination of ketones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaBH₃CN only reduces aromatic rings."
+        },
+        {
+          "label": "B",
+          "text": "NaBH₃CN precipitates all unreacted amines."
+        },
+        {
+          "label": "C",
+          "text": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones."
+        },
+        {
+          "label": "D",
+          "text": "NaBH₃CN is a powerful oxidizer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones.",
+      "explanation": "At pH 6, the iminium cation [R₂C=N⁺HR'] is protonated and far more electrophilic than the parent ketone, allowing selective reduction by mild NaBH₃CN.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q012",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Hofmann Elimination Quaternary Ammonium Sterics",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does thermal elimination of quaternary ammonium hydroxides (Hofmann elimination) yield the less substituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a planar carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary amines are weak leaving groups."
+        },
+        {
+          "label": "D",
+          "text": "The less substituted alkene is thermodynamically more stable."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen.",
+      "explanation": "Steric clash between the bulky trialkylammonium group and the base enforces deprotonation at the least hindered methyl position (Hofmann rule).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q013",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Arylamine Diazotization Nitrosonium Electrophile",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How is the active electrophile (NO⁺, nitrosonium ion) generated during diazotization of aniline with NaNO₂ and HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrochloric acid cleaves aniline into nitrogen gas."
+        },
+        {
+          "label": "B",
+          "text": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O)."
+        },
+        {
+          "label": "C",
+          "text": "Sodium nitrite undergoes homolytic cleavage."
+        },
+        {
+          "label": "D",
+          "text": "Nitrite is oxidized by air to nitrate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O).",
+      "explanation": "Acid-promoted dehydration of nitrous acid generates the reactive nitrosonium electrophile (NO⁺) that is attacked by the amine nitrogen.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q014",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Azo Coupling EAS Arenium Intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic classification of the coupling reaction between benzenediazonium chloride and 2-naphthol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical coupling."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic aromatic substitution (SNAr)."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring."
+        },
+        {
+          "label": "D",
+          "text": "Diels-Alder cycloaddition."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring.",
+      "explanation": "The diazonium ion (Ar-N₂⁺) is a weak electrophile that undergoes EAS exclusively with strongly activated aromatic rings (phenols and arylamines).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q015",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Schiemann Reaction Fluorination Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic pathway for the conversion of an aryldiazonium tetrafluoroborate salt to an aryl fluoride upon heating?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic radical fluorination by elemental F₂."
+        },
+        {
+          "label": "B",
+          "text": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement of N₂ by fluoride in solution."
+        },
+        {
+          "label": "D",
+          "text": "Addition of BF₃ across the aromatic π bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃.",
+      "explanation": "Thermal pyrolysis of the diazonium fluoroborate proceeds through an aryl cation intermediate that abstracts fluoride from the complex anion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q016",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Hypophosphorous Acid Deamination Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the role of hypophosphorous acid (H₃PO₂) in the synthetic deamination of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₃PO₂ precipitates the diazonium salt as an explosive solid."
+        },
+        {
+          "label": "B",
+          "text": "H₃PO₂ oxidizes the diazonium salt to a nitro compound."
+        },
+        {
+          "label": "C",
+          "text": "H₃PO₂ converts the diazonium salt to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl.",
+      "explanation": "H₃PO₂ reduces the diazonium group to a C-H bond, enabling amino groups to be used as temporary directing/activating groups and then removed.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q017",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Amide Reduction to Amine Aluminate Intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does LiAlH₄ reduce amides to amines rather than alcohols (unlike esters)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines are oxidizers that prevent alcohol formation."
+        },
+        {
+          "label": "B",
+          "text": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine."
+        },
+        {
+          "label": "C",
+          "text": "Amides are converted to acyl chlorides in situ."
+        },
+        {
+          "label": "D",
+          "text": "The C-N bond is broken first by hydride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine.",
+      "explanation": "Oxygen has higher affinity for aluminum than nitrogen; the C-O bond is cleaved to form an iminium intermediate that is reduced to the amine.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q018",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Amine Protection as Acetamide for Bromination",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why must aniline be converted to acetanilide prior to monobromination with Br₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl."
+        },
+        {
+          "label": "B",
+          "text": "Aniline oxidizes Br₂ to bromate."
+        },
+        {
+          "label": "C",
+          "text": "Aniline is insoluble in bromine water."
+        },
+        {
+          "label": "D",
+          "text": "Aniline reacts with Br₂ to form nitrogen tribromide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl.",
+      "explanation": "Acetylation moderates nitrogen lone pair donation into the ring by competing resonance with the carbonyl, enabling clean monobromination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q019",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Amine Alkylation Runaway Polyalkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the direct reaction of ammonia with 1-bromobutane yield a messy mixture of 1°, 2°, 3° amines and quaternary ammonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia is insoluble in organic solvents."
+        },
+        {
+          "label": "B",
+          "text": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide."
+        },
+        {
+          "label": "C",
+          "text": "Butylamine decomposes into butene and nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a carbocation intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide.",
+      "explanation": "Alkyl groups increase nitrogen nucleophilicity by inductive donation, causing mono-alkylated amines to react faster than ammonia.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q020",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Gabriel Synthesis Clean Primary Amine Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the Gabriel synthesis using potassium phthalimide prevent polyalkylation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The hydrazine cleavage step removes extra alkyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Phthalimide is an oxidizer that destroys secondary amines."
+        },
+        {
+          "label": "C",
+          "text": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "Phthalimide reacts via an E2 mechanism exclusively."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen.",
+      "explanation": "Phthalimide serves as a protected nitrogen synthon with exactly one nucleophilic lone pair, guaranteeing monoalkylation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q021",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Arylamine Diazotization Nitrosonium Electrophile",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How is the active electrophile (NO⁺, nitrosonium ion) generated during diazotization of aniline with NaNO₂ and HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrochloric acid cleaves aniline into nitrogen gas."
+        },
+        {
+          "label": "B",
+          "text": "Nitrite is oxidized by air to nitrate."
+        },
+        {
+          "label": "C",
+          "text": "Sodium nitrite undergoes homolytic cleavage."
+        },
+        {
+          "label": "D",
+          "text": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O).",
+      "explanation": "Acid-promoted dehydration of nitrous acid generates the reactive nitrosonium electrophile (NO⁺) that is attacked by the amine nitrogen.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q022",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Azo Coupling EAS Arenium Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic classification of the coupling reaction between benzenediazonium chloride and 2-naphthol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical coupling."
+        },
+        {
+          "label": "B",
+          "text": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring."
+        },
+        {
+          "label": "C",
+          "text": "Diels-Alder cycloaddition."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic aromatic substitution (SNAr)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring.",
+      "explanation": "The diazonium ion (Ar-N₂⁺) is a weak electrophile that undergoes EAS exclusively with strongly activated aromatic rings (phenols and arylamines).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q023",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Schiemann Reaction Fluorination Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic pathway for the conversion of an aryldiazonium tetrafluoroborate salt to an aryl fluoride upon heating?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic radical fluorination by elemental F₂."
+        },
+        {
+          "label": "C",
+          "text": "Addition of BF₃ across the aromatic π bonds."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement of N₂ by fluoride in solution."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃.",
+      "explanation": "Thermal pyrolysis of the diazonium fluoroborate proceeds through an aryl cation intermediate that abstracts fluoride from the complex anion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q024",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Hypophosphorous Acid Deamination Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the role of hypophosphorous acid (H₃PO₂) in the synthetic deamination of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl."
+        },
+        {
+          "label": "B",
+          "text": "H₃PO₂ precipitates the diazonium salt as an explosive solid."
+        },
+        {
+          "label": "C",
+          "text": "H₃PO₂ oxidizes the diazonium salt to a nitro compound."
+        },
+        {
+          "label": "D",
+          "text": "H₃PO₂ converts the diazonium salt to a carboxylic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl.",
+      "explanation": "H₃PO₂ reduces the diazonium group to a C-H bond, enabling amino groups to be used as temporary directing/activating groups and then removed.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q025",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Amide Reduction to Amine Aluminate Intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does LiAlH₄ reduce amides to amines rather than alcohols (unlike esters)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines are oxidizers that prevent alcohol formation."
+        },
+        {
+          "label": "B",
+          "text": "The C-N bond is broken first by hydride."
+        },
+        {
+          "label": "C",
+          "text": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine."
+        },
+        {
+          "label": "D",
+          "text": "Amides are converted to acyl chlorides in situ."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine.",
+      "explanation": "Oxygen has higher affinity for aluminum than nitrogen; the C-O bond is cleaved to form an iminium intermediate that is reduced to the amine.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q026",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Amine Protection as Acetamide for Bromination",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why must aniline be converted to acetanilide prior to monobromination with Br₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline oxidizes Br₂ to bromate."
+        },
+        {
+          "label": "B",
+          "text": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl."
+        },
+        {
+          "label": "C",
+          "text": "Aniline is insoluble in bromine water."
+        },
+        {
+          "label": "D",
+          "text": "Aniline reacts with Br₂ to form nitrogen tribromide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl.",
+      "explanation": "Acetylation moderates nitrogen lone pair donation into the ring by competing resonance with the carbonyl, enabling clean monobromination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q027",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Amine Alkylation Runaway Polyalkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does the direct reaction of ammonia with 1-bromobutane yield a messy mixture of 1°, 2°, 3° amines and quaternary ammonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia is insoluble in organic solvents."
+        },
+        {
+          "label": "B",
+          "text": "Butylamine decomposes into butene and nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide.",
+      "explanation": "Alkyl groups increase nitrogen nucleophilicity by inductive donation, causing mono-alkylated amines to react faster than ammonia.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q028",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Gabriel Synthesis Clean Primary Amine Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the Gabriel synthesis using potassium phthalimide prevent polyalkylation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The hydrazine cleavage step removes extra alkyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Phthalimide reacts via an E2 mechanism exclusively."
+        },
+        {
+          "label": "C",
+          "text": "Phthalimide is an oxidizer that destroys secondary amines."
+        },
+        {
+          "label": "D",
+          "text": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen.",
+      "explanation": "Phthalimide serves as a protected nitrogen synthon with exactly one nucleophilic lone pair, guaranteeing monoalkylation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q029",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Reductive Amination Iminium Reduction Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is sodium cyanoborohydride (NaBH₃CN) at pH 6 uniquely suited for reductive amination of ketones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaBH₃CN only reduces aromatic rings."
+        },
+        {
+          "label": "B",
+          "text": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones."
+        },
+        {
+          "label": "C",
+          "text": "NaBH₃CN precipitates all unreacted amines."
+        },
+        {
+          "label": "D",
+          "text": "NaBH₃CN is a powerful oxidizer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones.",
+      "explanation": "At pH 6, the iminium cation [R₂C=N⁺HR'] is protonated and far more electrophilic than the parent ketone, allowing selective reduction by mild NaBH₃CN.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q030",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Hofmann Elimination Quaternary Ammonium Sterics",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does thermal elimination of quaternary ammonium hydroxides (Hofmann elimination) yield the less substituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The less substituted alkene is thermodynamically more stable."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary amines are weak leaving groups."
+        },
+        {
+          "label": "C",
+          "text": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a planar carbocation intermediate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen.",
+      "explanation": "Steric clash between the bulky trialkylammonium group and the base enforces deprotonation at the least hindered methyl position (Hofmann rule).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q031",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Schiemann Reaction Fluorination Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic pathway for the conversion of an aryldiazonium tetrafluoroborate salt to an aryl fluoride upon heating?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct SN2 displacement of N₂ by fluoride in solution."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic radical fluorination by elemental F₂."
+        },
+        {
+          "label": "C",
+          "text": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃."
+        },
+        {
+          "label": "D",
+          "text": "Addition of BF₃ across the aromatic π bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃.",
+      "explanation": "Thermal pyrolysis of the diazonium fluoroborate proceeds through an aryl cation intermediate that abstracts fluoride from the complex anion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q032",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Hypophosphorous Acid Deamination Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the role of hypophosphorous acid (H₃PO₂) in the synthetic deamination of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₃PO₂ oxidizes the diazonium salt to a nitro compound."
+        },
+        {
+          "label": "B",
+          "text": "H₃PO₂ precipitates the diazonium salt as an explosive solid."
+        },
+        {
+          "label": "C",
+          "text": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl."
+        },
+        {
+          "label": "D",
+          "text": "H₃PO₂ converts the diazonium salt to a carboxylic acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl.",
+      "explanation": "H₃PO₂ reduces the diazonium group to a C-H bond, enabling amino groups to be used as temporary directing/activating groups and then removed.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q033",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Amide Reduction to Amine Aluminate Intermediate",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does LiAlH₄ reduce amides to amines rather than alcohols (unlike esters)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines are oxidizers that prevent alcohol formation."
+        },
+        {
+          "label": "B",
+          "text": "Amides are converted to acyl chlorides in situ."
+        },
+        {
+          "label": "C",
+          "text": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine."
+        },
+        {
+          "label": "D",
+          "text": "The C-N bond is broken first by hydride."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine.",
+      "explanation": "Oxygen has higher affinity for aluminum than nitrogen; the C-O bond is cleaved to form an iminium intermediate that is reduced to the amine.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q034",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Amine Protection as Acetamide for Bromination",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why must aniline be converted to acetanilide prior to monobromination with Br₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline reacts with Br₂ to form nitrogen tribromide."
+        },
+        {
+          "label": "B",
+          "text": "Aniline is insoluble in bromine water."
+        },
+        {
+          "label": "C",
+          "text": "Aniline oxidizes Br₂ to bromate."
+        },
+        {
+          "label": "D",
+          "text": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl.",
+      "explanation": "Acetylation moderates nitrogen lone pair donation into the ring by competing resonance with the carbonyl, enabling clean monobromination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q035",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Amine Alkylation Runaway Polyalkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the direct reaction of ammonia with 1-bromobutane yield a messy mixture of 1°, 2°, 3° amines and quaternary ammonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia is insoluble in organic solvents."
+        },
+        {
+          "label": "B",
+          "text": "Butylamine decomposes into butene and nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide.",
+      "explanation": "Alkyl groups increase nitrogen nucleophilicity by inductive donation, causing mono-alkylated amines to react faster than ammonia.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q036",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Gabriel Synthesis Clean Primary Amine Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does the Gabriel synthesis using potassium phthalimide prevent polyalkylation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen."
+        },
+        {
+          "label": "B",
+          "text": "The hydrazine cleavage step removes extra alkyl groups."
+        },
+        {
+          "label": "C",
+          "text": "Phthalimide is an oxidizer that destroys secondary amines."
+        },
+        {
+          "label": "D",
+          "text": "Phthalimide reacts via an E2 mechanism exclusively."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen.",
+      "explanation": "Phthalimide serves as a protected nitrogen synthon with exactly one nucleophilic lone pair, guaranteeing monoalkylation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q037",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Reductive Amination Iminium Reduction Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is sodium cyanoborohydride (NaBH₃CN) at pH 6 uniquely suited for reductive amination of ketones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaBH₃CN precipitates all unreacted amines."
+        },
+        {
+          "label": "B",
+          "text": "NaBH₃CN is a powerful oxidizer."
+        },
+        {
+          "label": "C",
+          "text": "NaBH₃CN only reduces aromatic rings."
+        },
+        {
+          "label": "D",
+          "text": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones.",
+      "explanation": "At pH 6, the iminium cation [R₂C=N⁺HR'] is protonated and far more electrophilic than the parent ketone, allowing selective reduction by mild NaBH₃CN.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q038",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Hofmann Elimination Quaternary Ammonium Sterics",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does thermal elimination of quaternary ammonium hydroxides (Hofmann elimination) yield the less substituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary amines are weak leaving groups."
+        },
+        {
+          "label": "C",
+          "text": "The less substituted alkene is thermodynamically more stable."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a planar carbocation intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen.",
+      "explanation": "Steric clash between the bulky trialkylammonium group and the base enforces deprotonation at the least hindered methyl position (Hofmann rule).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q039",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Arylamine Diazotization Nitrosonium Electrophile",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How is the active electrophile (NO⁺, nitrosonium ion) generated during diazotization of aniline with NaNO₂ and HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrite is oxidized by air to nitrate."
+        },
+        {
+          "label": "B",
+          "text": "Hydrochloric acid cleaves aniline into nitrogen gas."
+        },
+        {
+          "label": "C",
+          "text": "Sodium nitrite undergoes homolytic cleavage."
+        },
+        {
+          "label": "D",
+          "text": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O).",
+      "explanation": "Acid-promoted dehydration of nitrous acid generates the reactive nitrosonium electrophile (NO⁺) that is attacked by the amine nitrogen.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q040",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Azo Coupling EAS Arenium Intermediate",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic classification of the coupling reaction between benzenediazonium chloride and 2-naphthol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical coupling."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic aromatic substitution (SNAr)."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring."
+        },
+        {
+          "label": "D",
+          "text": "Diels-Alder cycloaddition."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring.",
+      "explanation": "The diazonium ion (Ar-N₂⁺) is a weak electrophile that undergoes EAS exclusively with strongly activated aromatic rings (phenols and arylamines).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q041",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Amide Reduction to Amine Aluminate Intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does LiAlH₄ reduce amides to amines rather than alcohols (unlike esters)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines are oxidizers that prevent alcohol formation."
+        },
+        {
+          "label": "B",
+          "text": "The C-N bond is broken first by hydride."
+        },
+        {
+          "label": "C",
+          "text": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine."
+        },
+        {
+          "label": "D",
+          "text": "Amides are converted to acyl chlorides in situ."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The oxygen atom of the tetrahedral intermediate coordinates strongly to aluminum as a good aluminate leaving group, expelling O-Al to form an iminium ion that is reduced to amine.",
+      "explanation": "Oxygen has higher affinity for aluminum than nitrogen; the C-O bond is cleaved to form an iminium intermediate that is reduced to the amine.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q042",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Amine Protection as Acetamide for Bromination",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why must aniline be converted to acetanilide prior to monobromination with Br₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline is insoluble in bromine water."
+        },
+        {
+          "label": "B",
+          "text": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl."
+        },
+        {
+          "label": "C",
+          "text": "Aniline reacts with Br₂ to form nitrogen tribromide."
+        },
+        {
+          "label": "D",
+          "text": "Aniline oxidizes Br₂ to bromate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The free amino group is too strongly activating, causing uncontrollable tribromination (2,4,6-tribromoaniline); the acetamido group moderates activation via resonance into its own carbonyl.",
+      "explanation": "Acetylation moderates nitrogen lone pair donation into the ring by competing resonance with the carbonyl, enabling clean monobromination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q043",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Amine Alkylation Runaway Polyalkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does the direct reaction of ammonia with 1-bromobutane yield a messy mixture of 1°, 2°, 3° amines and quaternary ammonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia is insoluble in organic solvents."
+        },
+        {
+          "label": "B",
+          "text": "Butylamine decomposes into butene and nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The primary amine product (butylamine) is a stronger nucleophile than ammonia due to the electron-donating alkyl group, competing for remaining alkyl halide.",
+      "explanation": "Alkyl groups increase nitrogen nucleophilicity by inductive donation, causing mono-alkylated amines to react faster than ammonia.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q044",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Gabriel Synthesis Clean Primary Amine Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the Gabriel synthesis using potassium phthalimide prevent polyalkylation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phthalimide reacts via an E2 mechanism exclusively."
+        },
+        {
+          "label": "B",
+          "text": "Phthalimide is an oxidizer that destroys secondary amines."
+        },
+        {
+          "label": "C",
+          "text": "The hydrazine cleavage step removes extra alkyl groups."
+        },
+        {
+          "label": "D",
+          "text": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The phthalimide anion can only alkylate once because the resulting N-alkylphthalimide has no remaining acidic protons or basic nucleophilic sites on nitrogen.",
+      "explanation": "Phthalimide serves as a protected nitrogen synthon with exactly one nucleophilic lone pair, guaranteeing monoalkylation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q045",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Reductive Amination Iminium Reduction Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is sodium cyanoborohydride (NaBH₃CN) at pH 6 uniquely suited for reductive amination of ketones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones."
+        },
+        {
+          "label": "B",
+          "text": "NaBH₃CN only reduces aromatic rings."
+        },
+        {
+          "label": "C",
+          "text": "NaBH₃CN precipitates all unreacted amines."
+        },
+        {
+          "label": "D",
+          "text": "NaBH₃CN is a powerful oxidizer."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The electron-withdrawing cyano group attenuates hydride reactivity so that NaBH₃CN selectively reduces protonated iminium ions (formed at pH 6) while ignoring neutral ketones.",
+      "explanation": "At pH 6, the iminium cation [R₂C=N⁺HR'] is protonated and far more electrophilic than the parent ketone, allowing selective reduction by mild NaBH₃CN.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q046",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Hofmann Elimination Quaternary Ammonium Sterics",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does thermal elimination of quaternary ammonium hydroxides (Hofmann elimination) yield the less substituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary amines are weak leaving groups."
+        },
+        {
+          "label": "C",
+          "text": "The less substituted alkene is thermodynamically more stable."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a planar carbocation intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The bulky -N⁺(CH₃)₃ leaving group creates severe steric crowding in the transition state, forcing base to abstract the more accessible, less hindered β-hydrogen.",
+      "explanation": "Steric clash between the bulky trialkylammonium group and the base enforces deprotonation at the least hindered methyl position (Hofmann rule).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q047",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Arylamine Diazotization Nitrosonium Electrophile",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How is the active electrophile (NO⁺, nitrosonium ion) generated during diazotization of aniline with NaNO₂ and HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrite is oxidized by air to nitrate."
+        },
+        {
+          "label": "B",
+          "text": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O)."
+        },
+        {
+          "label": "C",
+          "text": "Hydrochloric acid cleaves aniline into nitrogen gas."
+        },
+        {
+          "label": "D",
+          "text": "Sodium nitrite undergoes homolytic cleavage."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitrite is protonated to nitrous acid (HONO), which is protonated again to H₂O⁺-NO and loses water to generate the electrophilic nitrosonium cation (⁺N=O).",
+      "explanation": "Acid-promoted dehydration of nitrous acid generates the reactive nitrosonium electrophile (NO⁺) that is attacked by the amine nitrogen.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q048",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Azo Coupling EAS Arenium Intermediate",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic classification of the coupling reaction between benzenediazonium chloride and 2-naphthol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diels-Alder cycloaddition."
+        },
+        {
+          "label": "B",
+          "text": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic aromatic substitution (SNAr)."
+        },
+        {
+          "label": "D",
+          "text": "Free radical coupling."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) where the diazonium cation acts as a weak electrophile attacking the highly activated, electron-rich naphthol ring.",
+      "explanation": "The diazonium ion (Ar-N₂⁺) is a weak electrophile that undergoes EAS exclusively with strongly activated aromatic rings (phenols and arylamines).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q049",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Schiemann Reaction Fluorination Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic pathway for the conversion of an aryldiazonium tetrafluoroborate salt to an aryl fluoride upon heating?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Addition of BF₃ across the aromatic π bonds."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic radical fluorination by elemental F₂."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement of N₂ by fluoride in solution."
+        },
+        {
+          "label": "D",
+          "text": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermal decomposition expels N₂ gas to generate an unstable aryl cation, which instantly captures fluoride from the BF₄⁻ counterion: Ar-N₂⁺ BF₄⁻ → Ar-F + N₂ + BF₃.",
+      "explanation": "Thermal pyrolysis of the diazonium fluoroborate proceeds through an aryl cation intermediate that abstracts fluoride from the complex anion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q050",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Hypophosphorous Acid Deamination Mechanism",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the role of hypophosphorous acid (H₃PO₂) in the synthetic deamination of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₃PO₂ precipitates the diazonium salt as an explosive solid."
+        },
+        {
+          "label": "B",
+          "text": "H₃PO₂ converts the diazonium salt to a carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "H₃PO₂ oxidizes the diazonium salt to a nitro compound."
+        },
+        {
+          "label": "D",
+          "text": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "H₃PO₂ acts as a mild hydride/radical reducing agent, replacing the diazonium group with hydrogen and releasing N₂ gas, H₃PO₃, and HCl.",
+      "explanation": "H₃PO₂ reduces the diazonium group to a C-H bond, enabling amino groups to be used as temporary directing/activating groups and then removed.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Amino Assassin",
+    "Inversion Imp",
+    "Gabriel Gargoyle",
+    "Hofmann Hunter",
+    "Diazonium Dragon"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Amino Assassin",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "amino-assassin.png"
+        ]
+      },
+      {
+        "boss": "Inversion Imp",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "inversion-imp.png"
+        ]
+      },
+      {
+        "boss": "Gabriel Gargoyle",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "gabriel-gargoyle.png"
+        ]
+      },
+      {
+        "boss": "Hofmann Hunter",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "hofmann-hunter.png"
+        ]
+      },
+      {
+        "boss": "Diazonium Dragon",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "diazonium-dragon.png"
+        ]
+      }
+    ]
+  }
+}

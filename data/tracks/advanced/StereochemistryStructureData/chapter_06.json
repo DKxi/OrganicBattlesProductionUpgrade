@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 6,
+  "chapter_title": "Chemical Reactivity and Mechanisms",
+  "assigned_boss": "Enthalpy Elemental",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch06_q001",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Reaction Coordinate Stereochemical Retention",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "In an elementary reaction step proceeding with 100% retention of stereochemistry, what is the spatial trajectory of the incoming group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The stereocenter is destroyed permanently."
+        },
+        {
+          "label": "B",
+          "text": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation."
+        },
+        {
+          "label": "C",
+          "text": "The incoming group attacks 180° opposite the leaving group."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a free planar carbocation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation.",
+      "explanation": "Frontside attack or concerted migration with retention preserves the 3D configuration of the stereocenter.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q002",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Carbocation Planar Symmetry and Racemization",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does nucleophilic capture of an unhindered secondary carbocation typically yield a racemic mixture?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The product undergoes spontaneous optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "The carbocation rapidly inverts like an umbrella."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group forces attack from one face only."
+        },
+        {
+          "label": "D",
+          "text": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from either enantiotopic face occurs with equal probability, yielding a 50:50 racemic mixture.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q003",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Transition State Stereoelectronic Control",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What does the term 'stereoelectronic control' mean in organic reaction mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The rule that all stereocenters must be (R) configured."
+        },
+        {
+          "label": "B",
+          "text": "The concept that only nonpolar molecules can react."
+        },
+        {
+          "label": "C",
+          "text": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy."
+        },
+        {
+          "label": "D",
+          "text": "The requirement that all reactions must be carried out at 0°C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy.",
+      "explanation": "Stereoelectronic factors dictate that optimal orbital overlap in the transition state governs the stereochemical pathway of the reaction.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q004",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Hammond Postulate Structural Correlation",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "How does the Hammond Postulate relate transition state geometry to intermediate structure in an endergonic step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles the starting materials."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles the solvent."
+        },
+        {
+          "label": "D",
+          "text": "The transition state is completely flat."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material.",
+      "explanation": "Endergonic steps have late transition states that structurally and energetically resemble the adjacent high-energy intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q005",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Energy Profiles of Diastereomeric Transition States",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why do two enantiomers react at different rates with a chiral reagent or enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers have different boiling points."
+        },
+        {
+          "label": "C",
+          "text": "Chiral reagents destroy one enantiomer by heat."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers have different molecular formulas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution.",
+      "explanation": "Interaction of chiral substrates with chiral reagents creates diastereomeric transition states with different activation barriers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q006",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Racemization via Keto-Enol Tautomerism",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does an optically active ketone with a chiral α-carbon [(R)-3-phenyl-2-butanone] lose its optical activity in acid or base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The phenyl group falls off as a radical."
+        },
+        {
+          "label": "B",
+          "text": "The ketone decomposes into benzene and acetone."
+        },
+        {
+          "label": "C",
+          "text": "The carbonyl group is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization.",
+      "explanation": "Enolization flattens the chiral α-carbon into an achiral sp² plane; reprotonation yields an equimolar racemic mixture.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q007",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Microscopic Reversibility in Stereochemistry",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What does microscopic reversibility imply about the stereochemical pathway of an enzyme-catalyzed reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The enzyme is destroyed after one turnover."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction must proceed with inversion if the forward reaction had retention."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction cannot occur in the same cell."
+        },
+        {
+          "label": "D",
+          "text": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order.",
+      "explanation": "The forward and reverse reaction paths share the exact same potential energy surface and stereochemical geometry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q008",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Kinetic Resolution Principle",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the maximum theoretical yield of a single pure enantiomer obtained from a classical kinetic resolution of a racemate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% yield."
+        },
+        {
+          "label": "B",
+          "text": "75% yield."
+        },
+        {
+          "label": "C",
+          "text": "25% yield."
+        },
+        {
+          "label": "D",
+          "text": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture.",
+      "explanation": "Kinetic resolution differentiates between two enantiomers, reacting with one fast while leaving the other (50% max recovery).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q009",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Conformational Control of Regiochemistry",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "In cyclohexyl systems, why does the Curtin-Hammett principle state that product distribution is NOT determined by ground-state conformer populations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair flips cannot occur during chemical reactions."
+        },
+        {
+          "label": "B",
+          "text": "Ground-state populations always dictate 100% of product ratio."
+        },
+        {
+          "label": "C",
+          "text": "All conformers have identical transition state energies."
+        },
+        {
+          "label": "D",
+          "text": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios.",
+      "explanation": "The Curtin-Hammett principle demonstrates that product ratios depend on transition state free energies when conformers equilibrate rapidly.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q010",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Asymmetric Induction (Cram's Rule / Felkin-Anh)",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What model predicts the diastereoselective nucleophilic addition to a chiral aldehyde carbonyl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory."
+        },
+        {
+          "label": "B",
+          "text": "The Markovnikov rule."
+        },
+        {
+          "label": "C",
+          "text": "The Zaitsev rule."
+        },
+        {
+          "label": "D",
+          "text": "The Hofmann elimination rule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory.",
+      "explanation": "The Felkin-Anh transition state model accounts for steric and stereoelectronic factors governing diastereoselective carbonyl addition.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q011",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Transition State Stereoelectronic Control",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does the term 'stereoelectronic control' mean in organic reaction mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy."
+        },
+        {
+          "label": "B",
+          "text": "The requirement that all reactions must be carried out at 0°C."
+        },
+        {
+          "label": "C",
+          "text": "The concept that only nonpolar molecules can react."
+        },
+        {
+          "label": "D",
+          "text": "The rule that all stereocenters must be (R) configured."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy.",
+      "explanation": "Stereoelectronic factors dictate that optimal orbital overlap in the transition state governs the stereochemical pathway of the reaction.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q012",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Hammond Postulate Structural Correlation",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "How does the Hammond Postulate relate transition state geometry to intermediate structure in an endergonic step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state resembles the starting materials."
+        },
+        {
+          "label": "B",
+          "text": "The transition state is completely flat."
+        },
+        {
+          "label": "C",
+          "text": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles the solvent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material.",
+      "explanation": "Endergonic steps have late transition states that structurally and energetically resemble the adjacent high-energy intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q013",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Energy Profiles of Diastereomeric Transition States",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why do two enantiomers react at different rates with a chiral reagent or enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chiral reagents destroy one enantiomer by heat."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers have different boiling points."
+        },
+        {
+          "label": "C",
+          "text": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers have different molecular formulas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution.",
+      "explanation": "Interaction of chiral substrates with chiral reagents creates diastereomeric transition states with different activation barriers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q014",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Racemization via Keto-Enol Tautomerism",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why does an optically active ketone with a chiral α-carbon [(R)-3-phenyl-2-butanone] lose its optical activity in acid or base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization."
+        },
+        {
+          "label": "B",
+          "text": "The carbonyl group is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "The ketone decomposes into benzene and acetone."
+        },
+        {
+          "label": "D",
+          "text": "The phenyl group falls off as a radical."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization.",
+      "explanation": "Enolization flattens the chiral α-carbon into an achiral sp² plane; reprotonation yields an equimolar racemic mixture.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q015",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Microscopic Reversibility in Stereochemistry",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does microscopic reversibility imply about the stereochemical pathway of an enzyme-catalyzed reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction must proceed with inversion if the forward reaction had retention."
+        },
+        {
+          "label": "B",
+          "text": "The enzyme is destroyed after one turnover."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction cannot occur in the same cell."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order.",
+      "explanation": "The forward and reverse reaction paths share the exact same potential energy surface and stereochemical geometry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q016",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Kinetic Resolution Principle",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the maximum theoretical yield of a single pure enantiomer obtained from a classical kinetic resolution of a racemate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "75% yield."
+        },
+        {
+          "label": "B",
+          "text": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture."
+        },
+        {
+          "label": "C",
+          "text": "25% yield."
+        },
+        {
+          "label": "D",
+          "text": "100% yield."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture.",
+      "explanation": "Kinetic resolution differentiates between two enantiomers, reacting with one fast while leaving the other (50% max recovery).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q017",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Conformational Control of Regiochemistry",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "In cyclohexyl systems, why does the Curtin-Hammett principle state that product distribution is NOT determined by ground-state conformer populations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ground-state populations always dictate 100% of product ratio."
+        },
+        {
+          "label": "B",
+          "text": "Chair flips cannot occur during chemical reactions."
+        },
+        {
+          "label": "C",
+          "text": "All conformers have identical transition state energies."
+        },
+        {
+          "label": "D",
+          "text": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios.",
+      "explanation": "The Curtin-Hammett principle demonstrates that product ratios depend on transition state free energies when conformers equilibrate rapidly.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q018",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Asymmetric Induction (Cram's Rule / Felkin-Anh)",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What model predicts the diastereoselective nucleophilic addition to a chiral aldehyde carbonyl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Markovnikov rule."
+        },
+        {
+          "label": "B",
+          "text": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory."
+        },
+        {
+          "label": "C",
+          "text": "The Zaitsev rule."
+        },
+        {
+          "label": "D",
+          "text": "The Hofmann elimination rule."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory.",
+      "explanation": "The Felkin-Anh transition state model accounts for steric and stereoelectronic factors governing diastereoselective carbonyl addition.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q019",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Reaction Coordinate Stereochemical Retention",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "In an elementary reaction step proceeding with 100% retention of stereochemistry, what is the spatial trajectory of the incoming group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a free planar carbocation."
+        },
+        {
+          "label": "B",
+          "text": "The incoming group attacks 180° opposite the leaving group."
+        },
+        {
+          "label": "C",
+          "text": "The stereocenter is destroyed permanently."
+        },
+        {
+          "label": "D",
+          "text": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation.",
+      "explanation": "Frontside attack or concerted migration with retention preserves the 3D configuration of the stereocenter.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q020",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Carbocation Planar Symmetry and Racemization",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does nucleophilic capture of an unhindered secondary carbocation typically yield a racemic mixture?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The leaving group forces attack from one face only."
+        },
+        {
+          "label": "B",
+          "text": "The carbocation rapidly inverts like an umbrella."
+        },
+        {
+          "label": "C",
+          "text": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces."
+        },
+        {
+          "label": "D",
+          "text": "The product undergoes spontaneous optical rotation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from either enantiotopic face occurs with equal probability, yielding a 50:50 racemic mixture.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q021",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Energy Profiles of Diastereomeric Transition States",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why do two enantiomers react at different rates with a chiral reagent or enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers have different molecular formulas."
+        },
+        {
+          "label": "B",
+          "text": "Chiral reagents destroy one enantiomer by heat."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers have different boiling points."
+        },
+        {
+          "label": "D",
+          "text": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution.",
+      "explanation": "Interaction of chiral substrates with chiral reagents creates diastereomeric transition states with different activation barriers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q022",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Racemization via Keto-Enol Tautomerism",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does an optically active ketone with a chiral α-carbon [(R)-3-phenyl-2-butanone] lose its optical activity in acid or base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The phenyl group falls off as a radical."
+        },
+        {
+          "label": "B",
+          "text": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization."
+        },
+        {
+          "label": "C",
+          "text": "The ketone decomposes into benzene and acetone."
+        },
+        {
+          "label": "D",
+          "text": "The carbonyl group is oxidized to a carboxylic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization.",
+      "explanation": "Enolization flattens the chiral α-carbon into an achiral sp² plane; reprotonation yields an equimolar racemic mixture.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q023",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Microscopic Reversibility in Stereochemistry",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What does microscopic reversibility imply about the stereochemical pathway of an enzyme-catalyzed reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction cannot occur in the same cell."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction must proceed with inversion if the forward reaction had retention."
+        },
+        {
+          "label": "D",
+          "text": "The enzyme is destroyed after one turnover."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order.",
+      "explanation": "The forward and reverse reaction paths share the exact same potential energy surface and stereochemical geometry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q024",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Kinetic Resolution Principle",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What is the maximum theoretical yield of a single pure enantiomer obtained from a classical kinetic resolution of a racemate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "75% yield."
+        },
+        {
+          "label": "B",
+          "text": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture."
+        },
+        {
+          "label": "C",
+          "text": "25% yield."
+        },
+        {
+          "label": "D",
+          "text": "100% yield."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture.",
+      "explanation": "Kinetic resolution differentiates between two enantiomers, reacting with one fast while leaving the other (50% max recovery).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q025",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Conformational Control of Regiochemistry",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "In cyclohexyl systems, why does the Curtin-Hammett principle state that product distribution is NOT determined by ground-state conformer populations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios."
+        },
+        {
+          "label": "B",
+          "text": "Chair flips cannot occur during chemical reactions."
+        },
+        {
+          "label": "C",
+          "text": "Ground-state populations always dictate 100% of product ratio."
+        },
+        {
+          "label": "D",
+          "text": "All conformers have identical transition state energies."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios.",
+      "explanation": "The Curtin-Hammett principle demonstrates that product ratios depend on transition state free energies when conformers equilibrate rapidly.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q026",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Asymmetric Induction (Cram's Rule / Felkin-Anh)",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What model predicts the diastereoselective nucleophilic addition to a chiral aldehyde carbonyl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Zaitsev rule."
+        },
+        {
+          "label": "B",
+          "text": "The Hofmann elimination rule."
+        },
+        {
+          "label": "C",
+          "text": "The Markovnikov rule."
+        },
+        {
+          "label": "D",
+          "text": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory.",
+      "explanation": "The Felkin-Anh transition state model accounts for steric and stereoelectronic factors governing diastereoselective carbonyl addition.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q027",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Reaction Coordinate Stereochemical Retention",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "In an elementary reaction step proceeding with 100% retention of stereochemistry, what is the spatial trajectory of the incoming group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The incoming group attacks 180° opposite the leaving group."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a free planar carbocation."
+        },
+        {
+          "label": "C",
+          "text": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation."
+        },
+        {
+          "label": "D",
+          "text": "The stereocenter is destroyed permanently."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation.",
+      "explanation": "Frontside attack or concerted migration with retention preserves the 3D configuration of the stereocenter.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q028",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Carbocation Planar Symmetry and Racemization",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does nucleophilic capture of an unhindered secondary carbocation typically yield a racemic mixture?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbocation rapidly inverts like an umbrella."
+        },
+        {
+          "label": "B",
+          "text": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces."
+        },
+        {
+          "label": "C",
+          "text": "The product undergoes spontaneous optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "The leaving group forces attack from one face only."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from either enantiotopic face occurs with equal probability, yielding a 50:50 racemic mixture.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q029",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Transition State Stereoelectronic Control",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What does the term 'stereoelectronic control' mean in organic reaction mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The concept that only nonpolar molecules can react."
+        },
+        {
+          "label": "B",
+          "text": "The rule that all stereocenters must be (R) configured."
+        },
+        {
+          "label": "C",
+          "text": "The requirement that all reactions must be carried out at 0°C."
+        },
+        {
+          "label": "D",
+          "text": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy.",
+      "explanation": "Stereoelectronic factors dictate that optimal orbital overlap in the transition state governs the stereochemical pathway of the reaction.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q030",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Hammond Postulate Structural Correlation",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "How does the Hammond Postulate relate transition state geometry to intermediate structure in an endergonic step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state resembles the solvent."
+        },
+        {
+          "label": "B",
+          "text": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles the starting materials."
+        },
+        {
+          "label": "D",
+          "text": "The transition state is completely flat."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material.",
+      "explanation": "Endergonic steps have late transition states that structurally and energetically resemble the adjacent high-energy intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q031",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Microscopic Reversibility in Stereochemistry",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does microscopic reversibility imply about the stereochemical pathway of an enzyme-catalyzed reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction cannot occur in the same cell."
+        },
+        {
+          "label": "B",
+          "text": "The enzyme is destroyed after one turnover."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction must proceed with inversion if the forward reaction had retention."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order.",
+      "explanation": "The forward and reverse reaction paths share the exact same potential energy surface and stereochemical geometry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q032",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Kinetic Resolution Principle",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the maximum theoretical yield of a single pure enantiomer obtained from a classical kinetic resolution of a racemate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "75% yield."
+        },
+        {
+          "label": "B",
+          "text": "100% yield."
+        },
+        {
+          "label": "C",
+          "text": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture."
+        },
+        {
+          "label": "D",
+          "text": "25% yield."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture.",
+      "explanation": "Kinetic resolution differentiates between two enantiomers, reacting with one fast while leaving the other (50% max recovery).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q033",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Conformational Control of Regiochemistry",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "In cyclohexyl systems, why does the Curtin-Hammett principle state that product distribution is NOT determined by ground-state conformer populations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All conformers have identical transition state energies."
+        },
+        {
+          "label": "B",
+          "text": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios."
+        },
+        {
+          "label": "C",
+          "text": "Chair flips cannot occur during chemical reactions."
+        },
+        {
+          "label": "D",
+          "text": "Ground-state populations always dictate 100% of product ratio."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios.",
+      "explanation": "The Curtin-Hammett principle demonstrates that product ratios depend on transition state free energies when conformers equilibrate rapidly.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q034",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Asymmetric Induction (Cram's Rule / Felkin-Anh)",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What model predicts the diastereoselective nucleophilic addition to a chiral aldehyde carbonyl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory."
+        },
+        {
+          "label": "B",
+          "text": "The Hofmann elimination rule."
+        },
+        {
+          "label": "C",
+          "text": "The Zaitsev rule."
+        },
+        {
+          "label": "D",
+          "text": "The Markovnikov rule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory.",
+      "explanation": "The Felkin-Anh transition state model accounts for steric and stereoelectronic factors governing diastereoselective carbonyl addition.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q035",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Reaction Coordinate Stereochemical Retention",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "In an elementary reaction step proceeding with 100% retention of stereochemistry, what is the spatial trajectory of the incoming group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The stereocenter is destroyed permanently."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a free planar carbocation."
+        },
+        {
+          "label": "C",
+          "text": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation."
+        },
+        {
+          "label": "D",
+          "text": "The incoming group attacks 180° opposite the leaving group."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation.",
+      "explanation": "Frontside attack or concerted migration with retention preserves the 3D configuration of the stereocenter.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q036",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Carbocation Planar Symmetry and Racemization",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why does nucleophilic capture of an unhindered secondary carbocation typically yield a racemic mixture?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbocation rapidly inverts like an umbrella."
+        },
+        {
+          "label": "B",
+          "text": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group forces attack from one face only."
+        },
+        {
+          "label": "D",
+          "text": "The product undergoes spontaneous optical rotation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from either enantiotopic face occurs with equal probability, yielding a 50:50 racemic mixture.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q037",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Transition State Stereoelectronic Control",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does the term 'stereoelectronic control' mean in organic reaction mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The requirement that all reactions must be carried out at 0°C."
+        },
+        {
+          "label": "B",
+          "text": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy."
+        },
+        {
+          "label": "C",
+          "text": "The rule that all stereocenters must be (R) configured."
+        },
+        {
+          "label": "D",
+          "text": "The concept that only nonpolar molecules can react."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy.",
+      "explanation": "Stereoelectronic factors dictate that optimal orbital overlap in the transition state governs the stereochemical pathway of the reaction.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q038",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Hammond Postulate Structural Correlation",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "How does the Hammond Postulate relate transition state geometry to intermediate structure in an endergonic step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state is completely flat."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles the solvent."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles the starting materials."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material.",
+      "explanation": "Endergonic steps have late transition states that structurally and energetically resemble the adjacent high-energy intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q039",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Energy Profiles of Diastereomeric Transition States",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why do two enantiomers react at different rates with a chiral reagent or enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers have different molecular formulas."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers have different boiling points."
+        },
+        {
+          "label": "D",
+          "text": "Chiral reagents destroy one enantiomer by heat."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution.",
+      "explanation": "Interaction of chiral substrates with chiral reagents creates diastereomeric transition states with different activation barriers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q040",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Racemization via Keto-Enol Tautomerism",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does an optically active ketone with a chiral α-carbon [(R)-3-phenyl-2-butanone] lose its optical activity in acid or base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbonyl group is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "The phenyl group falls off as a radical."
+        },
+        {
+          "label": "C",
+          "text": "The ketone decomposes into benzene and acetone."
+        },
+        {
+          "label": "D",
+          "text": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization.",
+      "explanation": "Enolization flattens the chiral α-carbon into an achiral sp² plane; reprotonation yields an equimolar racemic mixture.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q041",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Conformational Control of Regiochemistry",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "In cyclohexyl systems, why does the Curtin-Hammett principle state that product distribution is NOT determined by ground-state conformer populations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ground-state populations always dictate 100% of product ratio."
+        },
+        {
+          "label": "B",
+          "text": "Chair flips cannot occur during chemical reactions."
+        },
+        {
+          "label": "C",
+          "text": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios."
+        },
+        {
+          "label": "D",
+          "text": "All conformers have identical transition state energies."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "When conformational interconversion is much faster than the reaction, product ratio depends solely on the relative energies of the transition states (ΔΔG‡), not ground-state ratios.",
+      "explanation": "The Curtin-Hammett principle demonstrates that product ratios depend on transition state free energies when conformers equilibrate rapidly.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q042",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Asymmetric Induction (Cram's Rule / Felkin-Anh)",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What model predicts the diastereoselective nucleophilic addition to a chiral aldehyde carbonyl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Markovnikov rule."
+        },
+        {
+          "label": "B",
+          "text": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory."
+        },
+        {
+          "label": "C",
+          "text": "The Zaitsev rule."
+        },
+        {
+          "label": "D",
+          "text": "The Hofmann elimination rule."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The Felkin-Anh model, which places the largest α-substituent perpendicular to the carbonyl and directs nucleophilic attack at the Bürgi-Dunitz angle from the least hindered trajectory.",
+      "explanation": "The Felkin-Anh transition state model accounts for steric and stereoelectronic factors governing diastereoselective carbonyl addition.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q043",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Reaction Coordinate Stereochemical Retention",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "In an elementary reaction step proceeding with 100% retention of stereochemistry, what is the spatial trajectory of the incoming group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The stereocenter is destroyed permanently."
+        },
+        {
+          "label": "B",
+          "text": "The incoming group attacks 180° opposite the leaving group."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a free planar carbocation."
+        },
+        {
+          "label": "D",
+          "text": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The incoming group attacks from the exact same face from which the leaving group departs, preserving spatial orientation.",
+      "explanation": "Frontside attack or concerted migration with retention preserves the 3D configuration of the stereocenter.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q044",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Carbocation Planar Symmetry and Racemization",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does nucleophilic capture of an unhindered secondary carbocation typically yield a racemic mixture?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The leaving group forces attack from one face only."
+        },
+        {
+          "label": "B",
+          "text": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces."
+        },
+        {
+          "label": "C",
+          "text": "The product undergoes spontaneous optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "The carbocation rapidly inverts like an umbrella."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The carbocation carbon is sp² hybridized with a planar trigonal geometry and an unhybridized 2p orbital, allowing nucleophilic attack with equal probability from top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from either enantiotopic face occurs with equal probability, yielding a 50:50 racemic mixture.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q045",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Transition State Stereoelectronic Control",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What does the term 'stereoelectronic control' mean in organic reaction mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The concept that only nonpolar molecules can react."
+        },
+        {
+          "label": "B",
+          "text": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy."
+        },
+        {
+          "label": "C",
+          "text": "The requirement that all reactions must be carried out at 0°C."
+        },
+        {
+          "label": "D",
+          "text": "The rule that all stereocenters must be (R) configured."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The requirement that participating orbitals must achieve a specific geometric alignment (e.g., anti-periplanar or collinear) in the transition state to minimize activation energy.",
+      "explanation": "Stereoelectronic factors dictate that optimal orbital overlap in the transition state governs the stereochemical pathway of the reaction.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q046",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Hammond Postulate Structural Correlation",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "How does the Hammond Postulate relate transition state geometry to intermediate structure in an endergonic step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles the solvent."
+        },
+        {
+          "label": "C",
+          "text": "The transition state is completely flat."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles the starting materials."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The transition state occurs late and geometrically resembles the higher-energy intermediate or product more closely than the starting material.",
+      "explanation": "Endergonic steps have late transition states that structurally and energetically resemble the adjacent high-energy intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q047",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Energy Profiles of Diastereomeric Transition States",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Why do two enantiomers react at different rates with a chiral reagent or enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers have different molecular formulas."
+        },
+        {
+          "label": "B",
+          "text": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers have different boiling points."
+        },
+        {
+          "label": "D",
+          "text": "Chiral reagents destroy one enantiomer by heat."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The two transition states are diastereomeric, having different free energies of activation (ΔG₁‡ ≠ ΔG₂‡) and leading to kinetic resolution.",
+      "explanation": "Interaction of chiral substrates with chiral reagents creates diastereomeric transition states with different activation barriers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q048",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Racemization via Keto-Enol Tautomerism",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why does an optically active ketone with a chiral α-carbon [(R)-3-phenyl-2-butanone] lose its optical activity in acid or base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbonyl group is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "The ketone decomposes into benzene and acetone."
+        },
+        {
+          "label": "C",
+          "text": "The phenyl group falls off as a radical."
+        },
+        {
+          "label": "D",
+          "text": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Tautomerization forms an achiral, planar enol/enolate intermediate (sp² at α-carbon); reprotonation from top or bottom faces occurs with equal probability, causing racemization.",
+      "explanation": "Enolization flattens the chiral α-carbon into an achiral sp² plane; reprotonation yields an equimolar racemic mixture.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q049",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Microscopic Reversibility in Stereochemistry",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does microscopic reversibility imply about the stereochemical pathway of an enzyme-catalyzed reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction must proceed with inversion if the forward reaction had retention."
+        },
+        {
+          "label": "B",
+          "text": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme is destroyed after one turnover."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction cannot occur in the same cell."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The enzyme must catalyze the reverse reaction through the exact same stereochemical trajectory and transition states in reverse order.",
+      "explanation": "The forward and reverse reaction paths share the exact same potential energy surface and stereochemical geometry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q050",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Kinetic Resolution Principle",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "What is the maximum theoretical yield of a single pure enantiomer obtained from a classical kinetic resolution of a racemate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "75% yield."
+        },
+        {
+          "label": "B",
+          "text": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture."
+        },
+        {
+          "label": "C",
+          "text": "25% yield."
+        },
+        {
+          "label": "D",
+          "text": "100% yield."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "50% maximum theoretical yield, because the chiral catalyst selectively converts only one of the two enantiomers in the 50:50 mixture.",
+      "explanation": "Kinetic resolution differentiates between two enantiomers, reacting with one fast while leaving the other (50% max recovery).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Enthalpy Elemental",
+    "Entropy Spectre",
+    "Carbocation Colossus",
+    "Transition State Trickster",
+    "Gibbs Free Energy Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Enthalpy Elemental",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "enthalpy-elemental.png"
+        ]
+      },
+      {
+        "boss": "Entropy Spectre",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "entropy-spectre.png"
+        ]
+      },
+      {
+        "boss": "Carbocation Colossus",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "carbocation-colossus.png"
+        ]
+      },
+      {
+        "boss": "Transition State Trickster",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "transition-state-trickster.png"
+        ]
+      },
+      {
+        "boss": "Gibbs Free Energy Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "gibbs-free-energy-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 1,
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "Valence Vanguard",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch01_q001",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Multi-Step Conversion of Alkane to Alkyne",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What is the optimal multi-step synthetic sequence to convert 1-bromobutane into 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne)."
+        },
+        {
+          "label": "B",
+          "text": "1. Direct treatment with acetylene gas and NaOH."
+        },
+        {
+          "label": "C",
+          "text": "1. H₂SO₄ at 100°C → 2. NaBH₄."
+        },
+        {
+          "label": "D",
+          "text": "1. KMnO₄ oxidation → 2. PBr₃ → 3. H₂/Pd."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne).",
+      "explanation": "E2 elimination generates the alkene; halogenation yields the vicinal dibromide; double dehydrohalogenation with excess strong base generates the terminal alkyne.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q002",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "One-Carbon Homologation via Nitrile",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What synthetic sequence converts 1-bromopropane into butanoic acid with a one-carbon extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOH / H₂O → 2. PCC in CH₂Cl₂."
+        },
+        {
+          "label": "B",
+          "text": "1. t-BuOK → 2. O₃, then DMS."
+        },
+        {
+          "label": "C",
+          "text": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid)."
+        },
+        {
+          "label": "D",
+          "text": "1. Mg / Et₂O → 2. Formaldehyde → 3. H₂O."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid).",
+      "explanation": "Cyanide displacement adds one carbon via SN2; acidic hydrolysis converts the nitrile group to a carboxylic acid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q003",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Markovnikov to Anti-Markovnikov Bromide Inversion",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "What two-step sequence converts 2-bromopropane into 1-bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination)."
+        },
+        {
+          "label": "B",
+          "text": "1. NaI in acetone → 2. HBr at 100°C."
+        },
+        {
+          "label": "C",
+          "text": "1. H₂ / Pt → 2. Br₂ / FeBr₃."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOH in water → 2. PBr₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination).",
+      "explanation": "Bulky base E2 yields propene; radical hydrobromination with peroxides delivers the anti-Markovnikov primary bromide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q004",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Alkene to Trans-1,2-Diol Sequence",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What two-step sequence converts cyclohexene into trans-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening)."
+        },
+        {
+          "label": "B",
+          "text": "1. O₃, then DMS → 2. NaBH₄."
+        },
+        {
+          "label": "C",
+          "text": "1. OsO₄ / NMO in acetone."
+        },
+        {
+          "label": "D",
+          "text": "1. KMnO₄ / cold NaOH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening).",
+      "explanation": "Epoxidation followed by acid-catalyzed nucleophilic ring opening by water enforces anti-stereospecific dihydroxylation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q005",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Alkene to Cis-1,2-Diol Direct Route",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What single-step reagent converts cyclohexene into cis-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "B",
+          "text": "1. Br₂ / H₂O → 2. NaOH."
+        },
+        {
+          "label": "C",
+          "text": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation)."
+        },
+        {
+          "label": "D",
+          "text": "1. mCPBA → 2. H₃O⁺."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation).",
+      "explanation": "OsO₄ delivers two hydroxyl groups to the same face in a concerted syn-dihydroxylation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q006",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Retrosynthetic Disconnection of Tertiary Alcohol",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "In the retrosynthetic analysis of 2-methyl-2-hexanol, which precursor pairing represents a valid disconnection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexanal + Sodium borohydride."
+        },
+        {
+          "label": "B",
+          "text": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup."
+        },
+        {
+          "label": "C",
+          "text": "Pentanoic acid + Methanol."
+        },
+        {
+          "label": "D",
+          "text": "1-Hexanol + Formic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup.",
+      "explanation": "Disconnection at the C-C bond adjacent to the 3° alcohol reveals 2-pentanone and methyl Grignard reagent.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q007",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Synthesis of Ketone from Terminal Alkyne",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What single-step reaction converts 1-pentyne into 2-pentanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization."
+        },
+        {
+          "label": "B",
+          "text": "1. O₃ → 2. H₂O."
+        },
+        {
+          "label": "C",
+          "text": "H₂ / Lindlar catalyst."
+        },
+        {
+          "label": "D",
+          "text": "1. (Sia)₂BH → 2. H₂O₂ / NaOH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization.",
+      "explanation": "Markovnikov hydration of a terminal alkyne catalyzed by Hg²⁺ yields a methyl ketone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q008",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Synthesis of Aldehyde from Terminal Alkyne",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "What two-step sequence converts 1-pentyne into pentanal (aldehyde)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HgSO₄ / H₂SO₄ in H₂O."
+        },
+        {
+          "label": "B",
+          "text": "1. Na / liq. NH₃ → 2. mCPBA."
+        },
+        {
+          "label": "C",
+          "text": "1. Excess H₂ / Pt."
+        },
+        {
+          "label": "D",
+          "text": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation.",
+      "explanation": "Anti-Markovnikov hydroboration with bulky dialkylborane followed by alkaline oxidation yields the aldehyde.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q009",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Alkene to Homologated Ketone Sequence",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What three-step synthetic route converts 1-butene into 2-hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HBr → 2. Mg → 3. CO₂."
+        },
+        {
+          "label": "B",
+          "text": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone)."
+        },
+        {
+          "label": "C",
+          "text": "1. mCPBA → 2. MeLi → 3. H₂SO₄."
+        },
+        {
+          "label": "D",
+          "text": "1. O₃ → 2. NaBH₄ → 3. PCC."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone).",
+      "explanation": "Anti-Markovnikov bromination, acetylide C-C alkylation, and mercury-catalyzed alkyne hydration constructs the 6-carbon ketone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q010",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Aldehyde to Alkene via Wittig Reaction",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What one-step reagent converts benzaldehyde (PhCHO) into styrene (PhCH=CH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "B",
+          "text": "1. CH₃MgBr → 2. PCC."
+        },
+        {
+          "label": "C",
+          "text": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF."
+        },
+        {
+          "label": "D",
+          "text": "1. NaBH₄ → 2. TsCl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF.",
+      "explanation": "Wittig olefination replaces the carbonyl oxygen with a methylene group with complete regiocontrol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q011",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Markovnikov to Anti-Markovnikov Bromide Inversion",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What two-step sequence converts 2-bromopropane into 1-bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaI in acetone → 2. HBr at 100°C."
+        },
+        {
+          "label": "B",
+          "text": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination)."
+        },
+        {
+          "label": "C",
+          "text": "1. H₂ / Pt → 2. Br₂ / FeBr₃."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOH in water → 2. PBr₃."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination).",
+      "explanation": "Bulky base E2 yields propene; radical hydrobromination with peroxides delivers the anti-Markovnikov primary bromide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q012",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Alkene to Trans-1,2-Diol Sequence",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What two-step sequence converts cyclohexene into trans-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. OsO₄ / NMO in acetone."
+        },
+        {
+          "label": "B",
+          "text": "1. O₃, then DMS → 2. NaBH₄."
+        },
+        {
+          "label": "C",
+          "text": "1. KMnO₄ / cold NaOH."
+        },
+        {
+          "label": "D",
+          "text": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening).",
+      "explanation": "Epoxidation followed by acid-catalyzed nucleophilic ring opening by water enforces anti-stereospecific dihydroxylation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q013",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Alkene to Cis-1,2-Diol Direct Route",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "What single-step reagent converts cyclohexene into cis-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation)."
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA → 2. H₃O⁺."
+        },
+        {
+          "label": "C",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "D",
+          "text": "1. Br₂ / H₂O → 2. NaOH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation).",
+      "explanation": "OsO₄ delivers two hydroxyl groups to the same face in a concerted syn-dihydroxylation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q014",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Retrosynthetic Disconnection of Tertiary Alcohol",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "In the retrosynthetic analysis of 2-methyl-2-hexanol, which precursor pairing represents a valid disconnection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentanoic acid + Methanol."
+        },
+        {
+          "label": "B",
+          "text": "Hexanal + Sodium borohydride."
+        },
+        {
+          "label": "C",
+          "text": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup."
+        },
+        {
+          "label": "D",
+          "text": "1-Hexanol + Formic acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup.",
+      "explanation": "Disconnection at the C-C bond adjacent to the 3° alcohol reveals 2-pentanone and methyl Grignard reagent.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q015",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Synthesis of Ketone from Terminal Alkyne",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What single-step reaction converts 1-pentyne into 2-pentanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₂ / Lindlar catalyst."
+        },
+        {
+          "label": "B",
+          "text": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization."
+        },
+        {
+          "label": "C",
+          "text": "1. (Sia)₂BH → 2. H₂O₂ / NaOH."
+        },
+        {
+          "label": "D",
+          "text": "1. O₃ → 2. H₂O."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization.",
+      "explanation": "Markovnikov hydration of a terminal alkyne catalyzed by Hg²⁺ yields a methyl ketone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q016",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Synthesis of Aldehyde from Terminal Alkyne",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What two-step sequence converts 1-pentyne into pentanal (aldehyde)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation."
+        },
+        {
+          "label": "B",
+          "text": "1. Na / liq. NH₃ → 2. mCPBA."
+        },
+        {
+          "label": "C",
+          "text": "1. Excess H₂ / Pt."
+        },
+        {
+          "label": "D",
+          "text": "1. HgSO₄ / H₂SO₄ in H₂O."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation.",
+      "explanation": "Anti-Markovnikov hydroboration with bulky dialkylborane followed by alkaline oxidation yields the aldehyde.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q017",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Alkene to Homologated Ketone Sequence",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "What three-step synthetic route converts 1-butene into 2-hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HBr → 2. Mg → 3. CO₂."
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA → 2. MeLi → 3. H₂SO₄."
+        },
+        {
+          "label": "C",
+          "text": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone)."
+        },
+        {
+          "label": "D",
+          "text": "1. O₃ → 2. NaBH₄ → 3. PCC."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone).",
+      "explanation": "Anti-Markovnikov bromination, acetylide C-C alkylation, and mercury-catalyzed alkyne hydration constructs the 6-carbon ketone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q018",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Aldehyde to Alkene via Wittig Reaction",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What one-step reagent converts benzaldehyde (PhCHO) into styrene (PhCH=CH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. CH₃MgBr → 2. PCC."
+        },
+        {
+          "label": "B",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "C",
+          "text": "1. NaBH₄ → 2. TsCl."
+        },
+        {
+          "label": "D",
+          "text": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF.",
+      "explanation": "Wittig olefination replaces the carbonyl oxygen with a methylene group with complete regiocontrol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q019",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Multi-Step Conversion of Alkane to Alkyne",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What is the optimal multi-step synthetic sequence to convert 1-bromobutane into 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H₂SO₄ at 100°C → 2. NaBH₄."
+        },
+        {
+          "label": "B",
+          "text": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne)."
+        },
+        {
+          "label": "C",
+          "text": "1. KMnO₄ oxidation → 2. PBr₃ → 3. H₂/Pd."
+        },
+        {
+          "label": "D",
+          "text": "1. Direct treatment with acetylene gas and NaOH."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne).",
+      "explanation": "E2 elimination generates the alkene; halogenation yields the vicinal dibromide; double dehydrohalogenation with excess strong base generates the terminal alkyne.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q020",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "One-Carbon Homologation via Nitrile",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "What synthetic sequence converts 1-bromopropane into butanoic acid with a one-carbon extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid)."
+        },
+        {
+          "label": "B",
+          "text": "1. NaOH / H₂O → 2. PCC in CH₂Cl₂."
+        },
+        {
+          "label": "C",
+          "text": "1. Mg / Et₂O → 2. Formaldehyde → 3. H₂O."
+        },
+        {
+          "label": "D",
+          "text": "1. t-BuOK → 2. O₃, then DMS."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid).",
+      "explanation": "Cyanide displacement adds one carbon via SN2; acidic hydrolysis converts the nitrile group to a carboxylic acid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q021",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Alkene to Cis-1,2-Diol Direct Route",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What single-step reagent converts cyclohexene into cis-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. mCPBA → 2. H₃O⁺."
+        },
+        {
+          "label": "B",
+          "text": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation)."
+        },
+        {
+          "label": "C",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "D",
+          "text": "1. Br₂ / H₂O → 2. NaOH."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation).",
+      "explanation": "OsO₄ delivers two hydroxyl groups to the same face in a concerted syn-dihydroxylation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q022",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Retrosynthetic Disconnection of Tertiary Alcohol",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "In the retrosynthetic analysis of 2-methyl-2-hexanol, which precursor pairing represents a valid disconnection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup."
+        },
+        {
+          "label": "B",
+          "text": "Hexanal + Sodium borohydride."
+        },
+        {
+          "label": "C",
+          "text": "Pentanoic acid + Methanol."
+        },
+        {
+          "label": "D",
+          "text": "1-Hexanol + Formic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup.",
+      "explanation": "Disconnection at the C-C bond adjacent to the 3° alcohol reveals 2-pentanone and methyl Grignard reagent.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q023",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Synthesis of Ketone from Terminal Alkyne",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "What single-step reaction converts 1-pentyne into 2-pentanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization."
+        },
+        {
+          "label": "B",
+          "text": "1. O₃ → 2. H₂O."
+        },
+        {
+          "label": "C",
+          "text": "1. (Sia)₂BH → 2. H₂O₂ / NaOH."
+        },
+        {
+          "label": "D",
+          "text": "H₂ / Lindlar catalyst."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization.",
+      "explanation": "Markovnikov hydration of a terminal alkyne catalyzed by Hg²⁺ yields a methyl ketone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q024",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Synthesis of Aldehyde from Terminal Alkyne",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What two-step sequence converts 1-pentyne into pentanal (aldehyde)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation."
+        },
+        {
+          "label": "B",
+          "text": "1. Excess H₂ / Pt."
+        },
+        {
+          "label": "C",
+          "text": "1. HgSO₄ / H₂SO₄ in H₂O."
+        },
+        {
+          "label": "D",
+          "text": "1. Na / liq. NH₃ → 2. mCPBA."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation.",
+      "explanation": "Anti-Markovnikov hydroboration with bulky dialkylborane followed by alkaline oxidation yields the aldehyde.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q025",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Alkene to Homologated Ketone Sequence",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What three-step synthetic route converts 1-butene into 2-hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. mCPBA → 2. MeLi → 3. H₂SO₄."
+        },
+        {
+          "label": "B",
+          "text": "1. HBr → 2. Mg → 3. CO₂."
+        },
+        {
+          "label": "C",
+          "text": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone)."
+        },
+        {
+          "label": "D",
+          "text": "1. O₃ → 2. NaBH₄ → 3. PCC."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone).",
+      "explanation": "Anti-Markovnikov bromination, acetylide C-C alkylation, and mercury-catalyzed alkyne hydration constructs the 6-carbon ketone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q026",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Aldehyde to Alkene via Wittig Reaction",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "What one-step reagent converts benzaldehyde (PhCHO) into styrene (PhCH=CH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF."
+        },
+        {
+          "label": "B",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "C",
+          "text": "1. NaBH₄ → 2. TsCl."
+        },
+        {
+          "label": "D",
+          "text": "1. CH₃MgBr → 2. PCC."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF.",
+      "explanation": "Wittig olefination replaces the carbonyl oxygen with a methylene group with complete regiocontrol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q027",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Multi-Step Conversion of Alkane to Alkyne",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What is the optimal multi-step synthetic sequence to convert 1-bromobutane into 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne)."
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO₄ oxidation → 2. PBr₃ → 3. H₂/Pd."
+        },
+        {
+          "label": "C",
+          "text": "1. H₂SO₄ at 100°C → 2. NaBH₄."
+        },
+        {
+          "label": "D",
+          "text": "1. Direct treatment with acetylene gas and NaOH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne).",
+      "explanation": "E2 elimination generates the alkene; halogenation yields the vicinal dibromide; double dehydrohalogenation with excess strong base generates the terminal alkyne.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q028",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "One-Carbon Homologation via Nitrile",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What synthetic sequence converts 1-bromopropane into butanoic acid with a one-carbon extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Mg / Et₂O → 2. Formaldehyde → 3. H₂O."
+        },
+        {
+          "label": "B",
+          "text": "1. t-BuOK → 2. O₃, then DMS."
+        },
+        {
+          "label": "C",
+          "text": "1. NaOH / H₂O → 2. PCC in CH₂Cl₂."
+        },
+        {
+          "label": "D",
+          "text": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid).",
+      "explanation": "Cyanide displacement adds one carbon via SN2; acidic hydrolysis converts the nitrile group to a carboxylic acid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q029",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Markovnikov to Anti-Markovnikov Bromide Inversion",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "What two-step sequence converts 2-bromopropane into 1-bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination)."
+        },
+        {
+          "label": "B",
+          "text": "1. H₂ / Pt → 2. Br₂ / FeBr₃."
+        },
+        {
+          "label": "C",
+          "text": "1. NaI in acetone → 2. HBr at 100°C."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOH in water → 2. PBr₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination).",
+      "explanation": "Bulky base E2 yields propene; radical hydrobromination with peroxides delivers the anti-Markovnikov primary bromide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q030",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Alkene to Trans-1,2-Diol Sequence",
+      "difficulty": "hard",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What two-step sequence converts cyclohexene into trans-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. OsO₄ / NMO in acetone."
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening)."
+        },
+        {
+          "label": "C",
+          "text": "1. O₃, then DMS → 2. NaBH₄."
+        },
+        {
+          "label": "D",
+          "text": "1. KMnO₄ / cold NaOH."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening).",
+      "explanation": "Epoxidation followed by acid-catalyzed nucleophilic ring opening by water enforces anti-stereospecific dihydroxylation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q031",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Synthesis of Ketone from Terminal Alkyne",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What single-step reaction converts 1-pentyne into 2-pentanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O₃ → 2. H₂O."
+        },
+        {
+          "label": "B",
+          "text": "1. (Sia)₂BH → 2. H₂O₂ / NaOH."
+        },
+        {
+          "label": "C",
+          "text": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization."
+        },
+        {
+          "label": "D",
+          "text": "H₂ / Lindlar catalyst."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization.",
+      "explanation": "Markovnikov hydration of a terminal alkyne catalyzed by Hg²⁺ yields a methyl ketone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q032",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Synthesis of Aldehyde from Terminal Alkyne",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What two-step sequence converts 1-pentyne into pentanal (aldehyde)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation."
+        },
+        {
+          "label": "B",
+          "text": "1. Excess H₂ / Pt."
+        },
+        {
+          "label": "C",
+          "text": "1. Na / liq. NH₃ → 2. mCPBA."
+        },
+        {
+          "label": "D",
+          "text": "1. HgSO₄ / H₂SO₄ in H₂O."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation.",
+      "explanation": "Anti-Markovnikov hydroboration with bulky dialkylborane followed by alkaline oxidation yields the aldehyde.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q033",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Alkene to Homologated Ketone Sequence",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "What three-step synthetic route converts 1-butene into 2-hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone)."
+        },
+        {
+          "label": "B",
+          "text": "1. HBr → 2. Mg → 3. CO₂."
+        },
+        {
+          "label": "C",
+          "text": "1. mCPBA → 2. MeLi → 3. H₂SO₄."
+        },
+        {
+          "label": "D",
+          "text": "1. O₃ → 2. NaBH₄ → 3. PCC."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone).",
+      "explanation": "Anti-Markovnikov bromination, acetylide C-C alkylation, and mercury-catalyzed alkyne hydration constructs the 6-carbon ketone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q034",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Aldehyde to Alkene via Wittig Reaction",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What one-step reagent converts benzaldehyde (PhCHO) into styrene (PhCH=CH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaBH₄ → 2. TsCl."
+        },
+        {
+          "label": "B",
+          "text": "1. CH₃MgBr → 2. PCC."
+        },
+        {
+          "label": "C",
+          "text": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF."
+        },
+        {
+          "label": "D",
+          "text": "Concentrated sulfuric acid at 180°C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF.",
+      "explanation": "Wittig olefination replaces the carbonyl oxygen with a methylene group with complete regiocontrol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q035",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Multi-Step Conversion of Alkane to Alkyne",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "What is the optimal multi-step synthetic sequence to convert 1-bromobutane into 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO₄ oxidation → 2. PBr₃ → 3. H₂/Pd."
+        },
+        {
+          "label": "B",
+          "text": "1. H₂SO₄ at 100°C → 2. NaBH₄."
+        },
+        {
+          "label": "C",
+          "text": "1. Direct treatment with acetylene gas and NaOH."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne).",
+      "explanation": "E2 elimination generates the alkene; halogenation yields the vicinal dibromide; double dehydrohalogenation with excess strong base generates the terminal alkyne.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q036",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "One-Carbon Homologation via Nitrile",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What synthetic sequence converts 1-bromopropane into butanoic acid with a one-carbon extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOH / H₂O → 2. PCC in CH₂Cl₂."
+        },
+        {
+          "label": "B",
+          "text": "1. Mg / Et₂O → 2. Formaldehyde → 3. H₂O."
+        },
+        {
+          "label": "C",
+          "text": "1. t-BuOK → 2. O₃, then DMS."
+        },
+        {
+          "label": "D",
+          "text": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid).",
+      "explanation": "Cyanide displacement adds one carbon via SN2; acidic hydrolysis converts the nitrile group to a carboxylic acid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q037",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Markovnikov to Anti-Markovnikov Bromide Inversion",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What two-step sequence converts 2-bromopropane into 1-bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H₂ / Pt → 2. Br₂ / FeBr₃."
+        },
+        {
+          "label": "B",
+          "text": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination)."
+        },
+        {
+          "label": "C",
+          "text": "1. NaI in acetone → 2. HBr at 100°C."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOH in water → 2. PBr₃."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination).",
+      "explanation": "Bulky base E2 yields propene; radical hydrobromination with peroxides delivers the anti-Markovnikov primary bromide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q038",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Alkene to Trans-1,2-Diol Sequence",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "What two-step sequence converts cyclohexene into trans-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O₃, then DMS → 2. NaBH₄."
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO₄ / cold NaOH."
+        },
+        {
+          "label": "C",
+          "text": "1. OsO₄ / NMO in acetone."
+        },
+        {
+          "label": "D",
+          "text": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening).",
+      "explanation": "Epoxidation followed by acid-catalyzed nucleophilic ring opening by water enforces anti-stereospecific dihydroxylation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q039",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Alkene to Cis-1,2-Diol Direct Route",
+      "difficulty": "hard",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What single-step reagent converts cyclohexene into cis-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. mCPBA → 2. H₃O⁺."
+        },
+        {
+          "label": "B",
+          "text": "1. Br₂ / H₂O → 2. NaOH."
+        },
+        {
+          "label": "C",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "D",
+          "text": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation).",
+      "explanation": "OsO₄ delivers two hydroxyl groups to the same face in a concerted syn-dihydroxylation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q040",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Retrosynthetic Disconnection of Tertiary Alcohol",
+      "difficulty": "hard",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "In the retrosynthetic analysis of 2-methyl-2-hexanol, which precursor pairing represents a valid disconnection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentanoic acid + Methanol."
+        },
+        {
+          "label": "B",
+          "text": "Hexanal + Sodium borohydride."
+        },
+        {
+          "label": "C",
+          "text": "1-Hexanol + Formic acid."
+        },
+        {
+          "label": "D",
+          "text": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup.",
+      "explanation": "Disconnection at the C-C bond adjacent to the 3° alcohol reveals 2-pentanone and methyl Grignard reagent.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q041",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Alkene to Homologated Ketone Sequence",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What three-step synthetic route converts 1-butene into 2-hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone)."
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA → 2. MeLi → 3. H₂SO₄."
+        },
+        {
+          "label": "C",
+          "text": "1. HBr → 2. Mg → 3. CO₂."
+        },
+        {
+          "label": "D",
+          "text": "1. O₃ → 2. NaBH₄ → 3. PCC."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. HBr / ROOR, hν (anti-Markovnikov to 1-bromobutane) → 2. Sodium acetylide (NaC≡CH) in DMSO (alkynylation to 1-hexyne) → 3. H₂O, H₂SO₄, HgSO₄ (Markovnikov hydration to 2-hexanone).",
+      "explanation": "Anti-Markovnikov bromination, acetylide C-C alkylation, and mercury-catalyzed alkyne hydration constructs the 6-carbon ketone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q042",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Aldehyde to Alkene via Wittig Reaction",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What one-step reagent converts benzaldehyde (PhCHO) into styrene (PhCH=CH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "B",
+          "text": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF."
+        },
+        {
+          "label": "C",
+          "text": "1. NaBH₄ → 2. TsCl."
+        },
+        {
+          "label": "D",
+          "text": "1. CH₃MgBr → 2. PCC."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methylenetriphenylphosphorane (Ph₃P=CH₂, Wittig reagent) in anhydrous THF.",
+      "explanation": "Wittig olefination replaces the carbonyl oxygen with a methylene group with complete regiocontrol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q043",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Multi-Step Conversion of Alkane to Alkyne",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What is the optimal multi-step synthetic sequence to convert 1-bromobutane into 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H₂SO₄ at 100°C → 2. NaBH₄."
+        },
+        {
+          "label": "B",
+          "text": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne)."
+        },
+        {
+          "label": "C",
+          "text": "1. Direct treatment with acetylene gas and NaOH."
+        },
+        {
+          "label": "D",
+          "text": "1. KMnO₄ oxidation → 2. PBr₃ → 3. H₂/Pd."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. NaOEt / EtOH, heat (E2 elimination to 1-butene) → 2. Br₂ in CH₂Cl₂ (dibromination to 1,2-dibromobutane) → 3. Excess NaNH₂ in liq. NH₃, then H₂O quench (double elimination to 1-butyne).",
+      "explanation": "E2 elimination generates the alkene; halogenation yields the vicinal dibromide; double dehydrohalogenation with excess strong base generates the terminal alkyne.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q044",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "One-Carbon Homologation via Nitrile",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "What synthetic sequence converts 1-bromopropane into butanoic acid with a one-carbon extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid)."
+        },
+        {
+          "label": "B",
+          "text": "1. t-BuOK → 2. O₃, then DMS."
+        },
+        {
+          "label": "C",
+          "text": "1. Mg / Et₂O → 2. Formaldehyde → 3. H₂O."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOH / H₂O → 2. PCC in CH₂Cl₂."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. NaCN in DMSO (SN2 substitution to butanenitrile) → 2. Aqueous H₃O⁺, heat (acidic nitrile hydrolysis to butanoic acid).",
+      "explanation": "Cyanide displacement adds one carbon via SN2; acidic hydrolysis converts the nitrile group to a carboxylic acid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q045",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Markovnikov to Anti-Markovnikov Bromide Inversion",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "What two-step sequence converts 2-bromopropane into 1-bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaI in acetone → 2. HBr at 100°C."
+        },
+        {
+          "label": "B",
+          "text": "1. H₂ / Pt → 2. Br₂ / FeBr₃."
+        },
+        {
+          "label": "C",
+          "text": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination)."
+        },
+        {
+          "label": "D",
+          "text": "1. NaOH in water → 2. PBr₃."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. Potassium tert-butoxide (t-BuOK), 75°C (E2 elimination to propene) → 2. HBr with benzoyl peroxide (ROOR), hν (radical anti-Markovnikov hydrobromination).",
+      "explanation": "Bulky base E2 yields propene; radical hydrobromination with peroxides delivers the anti-Markovnikov primary bromide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q046",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Alkene to Trans-1,2-Diol Sequence",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What two-step sequence converts cyclohexene into trans-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO₄ / cold NaOH."
+        },
+        {
+          "label": "B",
+          "text": "1. OsO₄ / NMO in acetone."
+        },
+        {
+          "label": "C",
+          "text": "1. O₃, then DMS → 2. NaBH₄."
+        },
+        {
+          "label": "D",
+          "text": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. mCPBA in CH₂Cl₂ (epoxidation to cyclohexene oxide) → 2. Aqueous H₃O⁺ / H₂O (acid-catalyzed anti ring opening).",
+      "explanation": "Epoxidation followed by acid-catalyzed nucleophilic ring opening by water enforces anti-stereospecific dihydroxylation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q047",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Alkene to Cis-1,2-Diol Direct Route",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "What single-step reagent converts cyclohexene into cis-cyclohexane-1,2-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation)."
+        },
+        {
+          "label": "B",
+          "text": "Concentrated sulfuric acid at 180°C."
+        },
+        {
+          "label": "C",
+          "text": "1. Br₂ / H₂O → 2. NaOH."
+        },
+        {
+          "label": "D",
+          "text": "1. mCPBA → 2. H₃O⁺."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Osmium tetroxide with NMO in aqueous acetone (catalytic OsO₄ / NMO syn-dihydroxylation).",
+      "explanation": "OsO₄ delivers two hydroxyl groups to the same face in a concerted syn-dihydroxylation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q048",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Retrosynthetic Disconnection of Tertiary Alcohol",
+      "difficulty": "hard",
+      "question_type": "synthesis_sequence_selection",
+      "question": "In the retrosynthetic analysis of 2-methyl-2-hexanol, which precursor pairing represents a valid disconnection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Hexanol + Formic acid."
+        },
+        {
+          "label": "B",
+          "text": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup."
+        },
+        {
+          "label": "C",
+          "text": "Hexanal + Sodium borohydride."
+        },
+        {
+          "label": "D",
+          "text": "Pentanoic acid + Methanol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Pentanone + Methylmagnesium bromide (CH₃MgBr) followed by acidic workup.",
+      "explanation": "Disconnection at the C-C bond adjacent to the 3° alcohol reveals 2-pentanone and methyl Grignard reagent.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q049",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Synthesis of Ketone from Terminal Alkyne",
+      "difficulty": "hard",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "What single-step reaction converts 1-pentyne into 2-pentanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H₂ / Lindlar catalyst."
+        },
+        {
+          "label": "B",
+          "text": "1. O₃ → 2. H₂O."
+        },
+        {
+          "label": "C",
+          "text": "1. (Sia)₂BH → 2. H₂O₂ / NaOH."
+        },
+        {
+          "label": "D",
+          "text": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hydration with H₂O, catalytic H₂SO₄, and mercuric sulfate (HgSO₄) via Markovnikov enol tautomerization.",
+      "explanation": "Markovnikov hydration of a terminal alkyne catalyzed by Hg²⁺ yields a methyl ketone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q050",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Synthesis of Aldehyde from Terminal Alkyne",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "What two-step sequence converts 1-pentyne into pentanal (aldehyde)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Excess H₂ / Pt."
+        },
+        {
+          "label": "B",
+          "text": "1. HgSO₄ / H₂SO₄ in H₂O."
+        },
+        {
+          "label": "C",
+          "text": "1. Na / liq. NH₃ → 2. mCPBA."
+        },
+        {
+          "label": "D",
+          "text": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Disiamylborane [(Sia)₂BH] in THF (anti-Markovnikov hydroboration) → 2. Basic hydrogen peroxide (H₂O₂ / NaOH) oxidation.",
+      "explanation": "Anti-Markovnikov hydroboration with bulky dialkylborane followed by alkaline oxidation yields the aldehyde.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Valence Vanguard",
+    "Electronegativity Elemental",
+    "Hybridization Hydra",
+    "Dipole Dragon",
+    "Molecular Orbital Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Valence Vanguard",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "valence-vanguard.png"
+        ]
+      },
+      {
+        "boss": "Electronegativity Elemental",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "electronegativity-elemental.png"
+        ]
+      },
+      {
+        "boss": "Hybridization Hydra",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "hybridization-hydra.png"
+        ]
+      },
+      {
+        "boss": "Dipole Dragon",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "dipole-dragon.png"
+        ]
+      },
+      {
+        "boss": "Molecular Orbital Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "molecular-orbital-monarch.png"
+        ]
+      }
+    ]
+  }
+}

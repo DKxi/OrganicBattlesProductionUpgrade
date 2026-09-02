@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 1,
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "Valence Vanguard",
+  "bosses": [
+    "Valence Vanguard",
+    "Electronegativity Elemental",
+    "Hybridization Hydra",
+    "Dipole Dragon",
+    "Molecular Orbital Monarch"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Valence Vanguard",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Electronegativity Elemental",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Hybridization Hydra",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Dipole Dragon",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Molecular Orbital Monarch",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch01_q001",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Atomic Orbital Nodes and Energy Levels",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "How many radial and planar nodes are present in an unhybridized carbon 2p orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero nodes of any kind."
+        },
+        {
+          "label": "B",
+          "text": "Two spherical nodal surfaces."
+        },
+        {
+          "label": "C",
+          "text": "Three perpendicular nodal planes."
+        },
+        {
+          "label": "D",
+          "text": "One planar nodal plane passing through the nucleus and zero radial nodes."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One planar nodal plane passing through the nucleus and zero radial nodes.",
+      "explanation": "A 2p atomic orbital possesses exactly one planar nodal plane passing through the nucleus where electron density is zero.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q002",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Sigma vs Pi Bonding Molecular Orbitals",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What is the orbital symmetry characteristic of a C-C \u03c3 bonding molecular orbital compared to a \u03c0 orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both \u03c3 and \u03c0 orbitals have identical symmetry."
+        },
+        {
+          "label": "B",
+          "text": "The \u03c0 orbital is spherically symmetric like an s orbital."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis."
+        },
+        {
+          "label": "D",
+          "text": "The \u03c3 orbital has two perpendicular nodal planes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis.",
+      "explanation": "Sigma bonds feature cylindrical symmetry along the bond axis; pi bonds have electron density above and below a central nodal plane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q003",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Antibonding Sigma Star Orbital Topology",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the spatial topology and nodal structure of a C-C \u03c3* antibonding orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has all electron density concentrated directly between the nuclei."
+        },
+        {
+          "label": "B",
+          "text": "It has zero nodes between the atoms."
+        },
+        {
+          "label": "C",
+          "text": "It is a continuous torus of electron density."
+        },
+        {
+          "label": "D",
+          "text": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away.",
+      "explanation": "Antibonding \u03c3* orbitals have destructive interference between the nuclei, creating a perpendicular nodal plane and outward-directed lobes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q004",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "sp3 vs sp2 vs sp Orbital Energy and Size",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "Rank the hybrid atomic orbitals of carbon in order of increasing energy (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "sp\u00b3 < sp\u00b2 < sp."
+        },
+        {
+          "label": "B",
+          "text": "sp\u00b2 < sp < sp\u00b3."
+        },
+        {
+          "label": "C",
+          "text": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy)."
+        },
+        {
+          "label": "D",
+          "text": "All carbon hybrid orbitals have identical energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy).",
+      "explanation": "Greater s-character places electrons closer to the positively charged nucleus, lowering the orbital potential energy.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q005",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Frontier Molecular Orbitals (FMO) Definition",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In Frontier Molecular Orbital theory, what do the acronyms HOMO and LUMO represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hybrid Orbital Molecular Overlap and Linear Unhybridized Molecular Orbital."
+        },
+        {
+          "label": "B",
+          "text": "High Order Magnetic Orbital and Low Order Magnetic Orbital."
+        },
+        {
+          "label": "C",
+          "text": "Helical Octet Molecular Octupole and Linear Unpaired Molecular Orbital."
+        },
+        {
+          "label": "D",
+          "text": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor).",
+      "explanation": "The HOMO acts as the nucleophile/electron donor; the LUMO acts as the electrophile/electron acceptor in chemical reactions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q006",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Hydrogen Molecule Bonding MO Overlap",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What orbital interaction forms the ground-state H\u2082 molecule from two hydrogen 1s atomic orbitals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Out-of-phase destructive overlap yielding a \u03c3* orbital."
+        },
+        {
+          "label": "B",
+          "text": "Non-bonding electrostatic attraction without orbital mixing."
+        },
+        {
+          "label": "C",
+          "text": "Sideways p-orbital overlap."
+        },
+        {
+          "label": "D",
+          "text": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei.",
+      "explanation": "Constructive in-phase overlap of 1s orbitals concentrates electron density between nuclei, lowering the energy to form the \u03c3_1s MO.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q007",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Methane MO Symmetry (a1 and t2)",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "According to Molecular Orbital theory, how are the 8 valence electrons of methane (CH\u2084) distributed among MOs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eight electrons in four degenerate non-bonding orbitals."
+        },
+        {
+          "label": "B",
+          "text": "All 8 electrons are in eight separate, isolated single-bond orbitals."
+        },
+        {
+          "label": "C",
+          "text": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p)."
+        },
+        {
+          "label": "D",
+          "text": "All 8 electrons in a single giant spherical orbital."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p).",
+      "explanation": "Photoelectron spectroscopy confirms methane has two discrete valence ionization energies corresponding to a\u2081 and triply degenerate t\u2082 MOs.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q008",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Ethylene Pi System Frontier Orbitals",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "What are the quantum characteristics of the HOMO and LUMO in neutral ethylene (H\u2082C=CH\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HOMO is \u03c8\u2082 and the LUMO is \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "The HOMO has two nodes and the LUMO has zero nodes."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty)."
+        },
+        {
+          "label": "D",
+          "text": "Both HOMO and LUMO are completely filled with 4 electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty).",
+      "explanation": "Ethylene's 2\u03c0 system has \u03c8\u2081 (bonding, in-phase, filled) as HOMO and \u03c8\u2082 (antibonding, out-of-phase, vacant) as LUMO.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q009",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Carbonyl Group Polarized FMOs",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "How does the greater electronegativity of oxygen alter the frontier molecular orbitals of formaldehyde (H\u2082C=O)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon."
+        },
+        {
+          "label": "B",
+          "text": "Both carbon and oxygen have identical MO coefficients."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0* LUMO is localized 100% on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "The \u03c0 HOMO is localized exclusively on carbon."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon.",
+      "explanation": "Electronegative oxygen lowers orbital energy, polarizing the filled \u03c0 HOMO toward oxygen and the empty \u03c0* LUMO toward electrophilic carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q010",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "B\u00fcrgi-Dunitz Angle Orbital Overlap",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Why do nucleophiles attack carbonyl carbons at an angle of approximately 107\u00b0 (the B\u00fcrgi-Dunitz angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because attack at 90\u00b0 breaks the carbon-carbon single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Because nucleophiles only move in hexagonal paths."
+        },
+        {
+          "label": "C",
+          "text": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons."
+        },
+        {
+          "label": "D",
+          "text": "Because 107\u00b0 is the bond angle of water."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons.",
+      "explanation": "Attack at ~107\u00b0 provides optimal overlap with the outward-projecting \u03c0* LUMO lobe at the carbonyl carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q011",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Atomic Orbital Nodes and Energy Levels",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How many radial and planar nodes are present in an unhybridized carbon 2p orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero nodes of any kind."
+        },
+        {
+          "label": "B",
+          "text": "Two spherical nodal surfaces."
+        },
+        {
+          "label": "C",
+          "text": "Three perpendicular nodal planes."
+        },
+        {
+          "label": "D",
+          "text": "One planar nodal plane passing through the nucleus and zero radial nodes."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One planar nodal plane passing through the nucleus and zero radial nodes.",
+      "explanation": "A 2p atomic orbital possesses exactly one planar nodal plane passing through the nucleus where electron density is zero.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q012",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Sigma vs Pi Bonding Molecular Orbitals",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "What is the orbital symmetry characteristic of a C-C \u03c3 bonding molecular orbital compared to a \u03c0 orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both \u03c3 and \u03c0 orbitals have identical symmetry."
+        },
+        {
+          "label": "B",
+          "text": "The \u03c0 orbital is spherically symmetric like an s orbital."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c3 orbital has two perpendicular nodal planes."
+        },
+        {
+          "label": "D",
+          "text": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis.",
+      "explanation": "Sigma bonds feature cylindrical symmetry along the bond axis; pi bonds have electron density above and below a central nodal plane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q013",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Antibonding Sigma Star Orbital Topology",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the spatial topology and nodal structure of a C-C \u03c3* antibonding orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has zero nodes between the atoms."
+        },
+        {
+          "label": "B",
+          "text": "It has all electron density concentrated directly between the nuclei."
+        },
+        {
+          "label": "C",
+          "text": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away."
+        },
+        {
+          "label": "D",
+          "text": "It is a continuous torus of electron density."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away.",
+      "explanation": "Antibonding \u03c3* orbitals have destructive interference between the nuclei, creating a perpendicular nodal plane and outward-directed lobes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q014",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "sp3 vs sp2 vs sp Orbital Energy and Size",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Rank the hybrid atomic orbitals of carbon in order of increasing energy (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "sp\u00b2 < sp < sp\u00b3."
+        },
+        {
+          "label": "B",
+          "text": "All carbon hybrid orbitals have identical energy."
+        },
+        {
+          "label": "C",
+          "text": "sp\u00b3 < sp\u00b2 < sp."
+        },
+        {
+          "label": "D",
+          "text": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy).",
+      "explanation": "Greater s-character places electrons closer to the positively charged nucleus, lowering the orbital potential energy.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q015",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Frontier Molecular Orbitals (FMO) Definition",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In Frontier Molecular Orbital theory, what do the acronyms HOMO and LUMO represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor)."
+        },
+        {
+          "label": "B",
+          "text": "Hybrid Orbital Molecular Overlap and Linear Unhybridized Molecular Orbital."
+        },
+        {
+          "label": "C",
+          "text": "Helical Octet Molecular Octupole and Linear Unpaired Molecular Orbital."
+        },
+        {
+          "label": "D",
+          "text": "High Order Magnetic Orbital and Low Order Magnetic Orbital."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor).",
+      "explanation": "The HOMO acts as the nucleophile/electron donor; the LUMO acts as the electrophile/electron acceptor in chemical reactions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q016",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Hydrogen Molecule Bonding MO Overlap",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "What orbital interaction forms the ground-state H\u2082 molecule from two hydrogen 1s atomic orbitals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-bonding electrostatic attraction without orbital mixing."
+        },
+        {
+          "label": "B",
+          "text": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei."
+        },
+        {
+          "label": "C",
+          "text": "Sideways p-orbital overlap."
+        },
+        {
+          "label": "D",
+          "text": "Out-of-phase destructive overlap yielding a \u03c3* orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei.",
+      "explanation": "Constructive in-phase overlap of 1s orbitals concentrates electron density between nuclei, lowering the energy to form the \u03c3_1s MO.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q017",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Methane MO Symmetry (a1 and t2)",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "According to Molecular Orbital theory, how are the 8 valence electrons of methane (CH\u2084) distributed among MOs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All 8 electrons are in eight separate, isolated single-bond orbitals."
+        },
+        {
+          "label": "B",
+          "text": "All 8 electrons in a single giant spherical orbital."
+        },
+        {
+          "label": "C",
+          "text": "Eight electrons in four degenerate non-bonding orbitals."
+        },
+        {
+          "label": "D",
+          "text": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p).",
+      "explanation": "Photoelectron spectroscopy confirms methane has two discrete valence ionization energies corresponding to a\u2081 and triply degenerate t\u2082 MOs.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q018",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Ethylene Pi System Frontier Orbitals",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What are the quantum characteristics of the HOMO and LUMO in neutral ethylene (H\u2082C=CH\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HOMO is \u03c8\u2082 and the LUMO is \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "The HOMO has two nodes and the LUMO has zero nodes."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty)."
+        },
+        {
+          "label": "D",
+          "text": "Both HOMO and LUMO are completely filled with 4 electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty).",
+      "explanation": "Ethylene's 2\u03c0 system has \u03c8\u2081 (bonding, in-phase, filled) as HOMO and \u03c8\u2082 (antibonding, out-of-phase, vacant) as LUMO.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q019",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Carbonyl Group Polarized FMOs",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How does the greater electronegativity of oxygen alter the frontier molecular orbitals of formaldehyde (H\u2082C=O)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c0 HOMO is localized exclusively on carbon."
+        },
+        {
+          "label": "B",
+          "text": "Both carbon and oxygen have identical MO coefficients."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0* LUMO is localized 100% on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon.",
+      "explanation": "Electronegative oxygen lowers orbital energy, polarizing the filled \u03c0 HOMO toward oxygen and the empty \u03c0* LUMO toward electrophilic carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q020",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "B\u00fcrgi-Dunitz Angle Orbital Overlap",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "Why do nucleophiles attack carbonyl carbons at an angle of approximately 107\u00b0 (the B\u00fcrgi-Dunitz angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons."
+        },
+        {
+          "label": "B",
+          "text": "Because 107\u00b0 is the bond angle of water."
+        },
+        {
+          "label": "C",
+          "text": "Because attack at 90\u00b0 breaks the carbon-carbon single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Because nucleophiles only move in hexagonal paths."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons.",
+      "explanation": "Attack at ~107\u00b0 provides optimal overlap with the outward-projecting \u03c0* LUMO lobe at the carbonyl carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q021",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Atomic Orbital Nodes and Energy Levels",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "How many radial and planar nodes are present in an unhybridized carbon 2p orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One planar nodal plane passing through the nucleus and zero radial nodes."
+        },
+        {
+          "label": "B",
+          "text": "Zero nodes of any kind."
+        },
+        {
+          "label": "C",
+          "text": "Three perpendicular nodal planes."
+        },
+        {
+          "label": "D",
+          "text": "Two spherical nodal surfaces."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One planar nodal plane passing through the nucleus and zero radial nodes.",
+      "explanation": "A 2p atomic orbital possesses exactly one planar nodal plane passing through the nucleus where electron density is zero.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q022",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Sigma vs Pi Bonding Molecular Orbitals",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What is the orbital symmetry characteristic of a C-C \u03c3 bonding molecular orbital compared to a \u03c0 orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis."
+        },
+        {
+          "label": "B",
+          "text": "Both \u03c3 and \u03c0 orbitals have identical symmetry."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0 orbital is spherically symmetric like an s orbital."
+        },
+        {
+          "label": "D",
+          "text": "The \u03c3 orbital has two perpendicular nodal planes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis.",
+      "explanation": "Sigma bonds feature cylindrical symmetry along the bond axis; pi bonds have electron density above and below a central nodal plane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q023",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Antibonding Sigma Star Orbital Topology",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the spatial topology and nodal structure of a C-C \u03c3* antibonding orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has all electron density concentrated directly between the nuclei."
+        },
+        {
+          "label": "B",
+          "text": "It has zero nodes between the atoms."
+        },
+        {
+          "label": "C",
+          "text": "It is a continuous torus of electron density."
+        },
+        {
+          "label": "D",
+          "text": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away.",
+      "explanation": "Antibonding \u03c3* orbitals have destructive interference between the nuclei, creating a perpendicular nodal plane and outward-directed lobes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q024",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "sp3 vs sp2 vs sp Orbital Energy and Size",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "Rank the hybrid atomic orbitals of carbon in order of increasing energy (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "sp\u00b2 < sp < sp\u00b3."
+        },
+        {
+          "label": "B",
+          "text": "All carbon hybrid orbitals have identical energy."
+        },
+        {
+          "label": "C",
+          "text": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy)."
+        },
+        {
+          "label": "D",
+          "text": "sp\u00b3 < sp\u00b2 < sp."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy).",
+      "explanation": "Greater s-character places electrons closer to the positively charged nucleus, lowering the orbital potential energy.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q025",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Frontier Molecular Orbitals (FMO) Definition",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "In Frontier Molecular Orbital theory, what do the acronyms HOMO and LUMO represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "High Order Magnetic Orbital and Low Order Magnetic Orbital."
+        },
+        {
+          "label": "B",
+          "text": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor)."
+        },
+        {
+          "label": "C",
+          "text": "Hybrid Orbital Molecular Overlap and Linear Unhybridized Molecular Orbital."
+        },
+        {
+          "label": "D",
+          "text": "Helical Octet Molecular Octupole and Linear Unpaired Molecular Orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor).",
+      "explanation": "The HOMO acts as the nucleophile/electron donor; the LUMO acts as the electrophile/electron acceptor in chemical reactions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q026",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Hydrogen Molecule Bonding MO Overlap",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What orbital interaction forms the ground-state H\u2082 molecule from two hydrogen 1s atomic orbitals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Out-of-phase destructive overlap yielding a \u03c3* orbital."
+        },
+        {
+          "label": "B",
+          "text": "Non-bonding electrostatic attraction without orbital mixing."
+        },
+        {
+          "label": "C",
+          "text": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei."
+        },
+        {
+          "label": "D",
+          "text": "Sideways p-orbital overlap."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei.",
+      "explanation": "Constructive in-phase overlap of 1s orbitals concentrates electron density between nuclei, lowering the energy to form the \u03c3_1s MO.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q027",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Methane MO Symmetry (a1 and t2)",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "According to Molecular Orbital theory, how are the 8 valence electrons of methane (CH\u2084) distributed among MOs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All 8 electrons in a single giant spherical orbital."
+        },
+        {
+          "label": "B",
+          "text": "Eight electrons in four degenerate non-bonding orbitals."
+        },
+        {
+          "label": "C",
+          "text": "All 8 electrons are in eight separate, isolated single-bond orbitals."
+        },
+        {
+          "label": "D",
+          "text": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p).",
+      "explanation": "Photoelectron spectroscopy confirms methane has two discrete valence ionization energies corresponding to a\u2081 and triply degenerate t\u2082 MOs.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q028",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Ethylene Pi System Frontier Orbitals",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "What are the quantum characteristics of the HOMO and LUMO in neutral ethylene (H\u2082C=CH\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HOMO is \u03c8\u2082 and the LUMO is \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "The HOMO has two nodes and the LUMO has zero nodes."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty)."
+        },
+        {
+          "label": "D",
+          "text": "Both HOMO and LUMO are completely filled with 4 electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty).",
+      "explanation": "Ethylene's 2\u03c0 system has \u03c8\u2081 (bonding, in-phase, filled) as HOMO and \u03c8\u2082 (antibonding, out-of-phase, vacant) as LUMO.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q029",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Carbonyl Group Polarized FMOs",
+      "difficulty": "hard",
+      "question_type": "homo_lumo_identification",
+      "question": "How does the greater electronegativity of oxygen alter the frontier molecular orbitals of formaldehyde (H\u2082C=O)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c0 HOMO is localized exclusively on carbon."
+        },
+        {
+          "label": "B",
+          "text": "The \u03c0* LUMO is localized 100% on oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon."
+        },
+        {
+          "label": "D",
+          "text": "Both carbon and oxygen have identical MO coefficients."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon.",
+      "explanation": "Electronegative oxygen lowers orbital energy, polarizing the filled \u03c0 HOMO toward oxygen and the empty \u03c0* LUMO toward electrophilic carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q030",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "B\u00fcrgi-Dunitz Angle Orbital Overlap",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Why do nucleophiles attack carbonyl carbons at an angle of approximately 107\u00b0 (the B\u00fcrgi-Dunitz angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons."
+        },
+        {
+          "label": "B",
+          "text": "Because 107\u00b0 is the bond angle of water."
+        },
+        {
+          "label": "C",
+          "text": "Because attack at 90\u00b0 breaks the carbon-carbon single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Because nucleophiles only move in hexagonal paths."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons.",
+      "explanation": "Attack at ~107\u00b0 provides optimal overlap with the outward-projecting \u03c0* LUMO lobe at the carbonyl carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q031",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Atomic Orbital Nodes and Energy Levels",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How many radial and planar nodes are present in an unhybridized carbon 2p orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero nodes of any kind."
+        },
+        {
+          "label": "B",
+          "text": "One planar nodal plane passing through the nucleus and zero radial nodes."
+        },
+        {
+          "label": "C",
+          "text": "Three perpendicular nodal planes."
+        },
+        {
+          "label": "D",
+          "text": "Two spherical nodal surfaces."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One planar nodal plane passing through the nucleus and zero radial nodes.",
+      "explanation": "A 2p atomic orbital possesses exactly one planar nodal plane passing through the nucleus where electron density is zero.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q032",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Sigma vs Pi Bonding Molecular Orbitals",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "What is the orbital symmetry characteristic of a C-C \u03c3 bonding molecular orbital compared to a \u03c0 orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis."
+        },
+        {
+          "label": "B",
+          "text": "Both \u03c3 and \u03c0 orbitals have identical symmetry."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0 orbital is spherically symmetric like an s orbital."
+        },
+        {
+          "label": "D",
+          "text": "The \u03c3 orbital has two perpendicular nodal planes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis.",
+      "explanation": "Sigma bonds feature cylindrical symmetry along the bond axis; pi bonds have electron density above and below a central nodal plane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q033",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Antibonding Sigma Star Orbital Topology",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the spatial topology and nodal structure of a C-C \u03c3* antibonding orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away."
+        },
+        {
+          "label": "B",
+          "text": "It has all electron density concentrated directly between the nuclei."
+        },
+        {
+          "label": "C",
+          "text": "It is a continuous torus of electron density."
+        },
+        {
+          "label": "D",
+          "text": "It has zero nodes between the atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away.",
+      "explanation": "Antibonding \u03c3* orbitals have destructive interference between the nuclei, creating a perpendicular nodal plane and outward-directed lobes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q034",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "sp3 vs sp2 vs sp Orbital Energy and Size",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Rank the hybrid atomic orbitals of carbon in order of increasing energy (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "sp\u00b3 < sp\u00b2 < sp."
+        },
+        {
+          "label": "B",
+          "text": "All carbon hybrid orbitals have identical energy."
+        },
+        {
+          "label": "C",
+          "text": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy)."
+        },
+        {
+          "label": "D",
+          "text": "sp\u00b2 < sp < sp\u00b3."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy).",
+      "explanation": "Greater s-character places electrons closer to the positively charged nucleus, lowering the orbital potential energy.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q035",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Frontier Molecular Orbitals (FMO) Definition",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In Frontier Molecular Orbital theory, what do the acronyms HOMO and LUMO represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hybrid Orbital Molecular Overlap and Linear Unhybridized Molecular Orbital."
+        },
+        {
+          "label": "B",
+          "text": "High Order Magnetic Orbital and Low Order Magnetic Orbital."
+        },
+        {
+          "label": "C",
+          "text": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor)."
+        },
+        {
+          "label": "D",
+          "text": "Helical Octet Molecular Octupole and Linear Unpaired Molecular Orbital."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor).",
+      "explanation": "The HOMO acts as the nucleophile/electron donor; the LUMO acts as the electrophile/electron acceptor in chemical reactions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q036",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Hydrogen Molecule Bonding MO Overlap",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "What orbital interaction forms the ground-state H\u2082 molecule from two hydrogen 1s atomic orbitals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Out-of-phase destructive overlap yielding a \u03c3* orbital."
+        },
+        {
+          "label": "B",
+          "text": "Sideways p-orbital overlap."
+        },
+        {
+          "label": "C",
+          "text": "Non-bonding electrostatic attraction without orbital mixing."
+        },
+        {
+          "label": "D",
+          "text": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei.",
+      "explanation": "Constructive in-phase overlap of 1s orbitals concentrates electron density between nuclei, lowering the energy to form the \u03c3_1s MO.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q037",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Methane MO Symmetry (a1 and t2)",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "According to Molecular Orbital theory, how are the 8 valence electrons of methane (CH\u2084) distributed among MOs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All 8 electrons are in eight separate, isolated single-bond orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p)."
+        },
+        {
+          "label": "C",
+          "text": "Eight electrons in four degenerate non-bonding orbitals."
+        },
+        {
+          "label": "D",
+          "text": "All 8 electrons in a single giant spherical orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p).",
+      "explanation": "Photoelectron spectroscopy confirms methane has two discrete valence ionization energies corresponding to a\u2081 and triply degenerate t\u2082 MOs.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q038",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Ethylene Pi System Frontier Orbitals",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What are the quantum characteristics of the HOMO and LUMO in neutral ethylene (H\u2082C=CH\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty)."
+        },
+        {
+          "label": "B",
+          "text": "Both HOMO and LUMO are completely filled with 4 electrons."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO is \u03c8\u2082 and the LUMO is \u03c8\u2081."
+        },
+        {
+          "label": "D",
+          "text": "The HOMO has two nodes and the LUMO has zero nodes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty).",
+      "explanation": "Ethylene's 2\u03c0 system has \u03c8\u2081 (bonding, in-phase, filled) as HOMO and \u03c8\u2082 (antibonding, out-of-phase, vacant) as LUMO.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q039",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Carbonyl Group Polarized FMOs",
+      "difficulty": "hard",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How does the greater electronegativity of oxygen alter the frontier molecular orbitals of formaldehyde (H\u2082C=O)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c0* LUMO is localized 100% on oxygen."
+        },
+        {
+          "label": "B",
+          "text": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0 HOMO is localized exclusively on carbon."
+        },
+        {
+          "label": "D",
+          "text": "Both carbon and oxygen have identical MO coefficients."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon.",
+      "explanation": "Electronegative oxygen lowers orbital energy, polarizing the filled \u03c0 HOMO toward oxygen and the empty \u03c0* LUMO toward electrophilic carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q040",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "B\u00fcrgi-Dunitz Angle Orbital Overlap",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "Why do nucleophiles attack carbonyl carbons at an angle of approximately 107\u00b0 (the B\u00fcrgi-Dunitz angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because nucleophiles only move in hexagonal paths."
+        },
+        {
+          "label": "B",
+          "text": "Because 107\u00b0 is the bond angle of water."
+        },
+        {
+          "label": "C",
+          "text": "Because attack at 90\u00b0 breaks the carbon-carbon single bonds."
+        },
+        {
+          "label": "D",
+          "text": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons.",
+      "explanation": "Attack at ~107\u00b0 provides optimal overlap with the outward-projecting \u03c0* LUMO lobe at the carbonyl carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q041",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Atomic Orbital Nodes and Energy Levels",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "How many radial and planar nodes are present in an unhybridized carbon 2p orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Three perpendicular nodal planes."
+        },
+        {
+          "label": "B",
+          "text": "Two spherical nodal surfaces."
+        },
+        {
+          "label": "C",
+          "text": "One planar nodal plane passing through the nucleus and zero radial nodes."
+        },
+        {
+          "label": "D",
+          "text": "Zero nodes of any kind."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One planar nodal plane passing through the nucleus and zero radial nodes.",
+      "explanation": "A 2p atomic orbital possesses exactly one planar nodal plane passing through the nucleus where electron density is zero.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q042",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Sigma vs Pi Bonding Molecular Orbitals",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What is the orbital symmetry characteristic of a C-C \u03c3 bonding molecular orbital compared to a \u03c0 orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c0 orbital is spherically symmetric like an s orbital."
+        },
+        {
+          "label": "B",
+          "text": "The \u03c3 orbital has two perpendicular nodal planes."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis."
+        },
+        {
+          "label": "D",
+          "text": "Both \u03c3 and \u03c0 orbitals have identical symmetry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The \u03c3 orbital is cylindrically symmetric around the internuclear axis, whereas the \u03c0 orbital has a nodal plane containing the internuclear axis.",
+      "explanation": "Sigma bonds feature cylindrical symmetry along the bond axis; pi bonds have electron density above and below a central nodal plane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q043",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Antibonding Sigma Star Orbital Topology",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the spatial topology and nodal structure of a C-C \u03c3* antibonding orbital?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has zero nodes between the atoms."
+        },
+        {
+          "label": "B",
+          "text": "It has all electron density concentrated directly between the nuclei."
+        },
+        {
+          "label": "C",
+          "text": "It is a continuous torus of electron density."
+        },
+        {
+          "label": "D",
+          "text": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses a nodal plane perpendicular to the internuclear axis between the two carbon nuclei, with major lobes pointing outward 180\u00b0 away.",
+      "explanation": "Antibonding \u03c3* orbitals have destructive interference between the nuclei, creating a perpendicular nodal plane and outward-directed lobes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q044",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "sp3 vs sp2 vs sp Orbital Energy and Size",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "Rank the hybrid atomic orbitals of carbon in order of increasing energy (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "All carbon hybrid orbitals have identical energy."
+        },
+        {
+          "label": "B",
+          "text": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy)."
+        },
+        {
+          "label": "C",
+          "text": "sp\u00b2 < sp < sp\u00b3."
+        },
+        {
+          "label": "D",
+          "text": "sp\u00b3 < sp\u00b2 < sp."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "sp (50% s-character, lowest energy) < sp\u00b2 (33% s-character) < sp\u00b3 (25% s-character, highest energy).",
+      "explanation": "Greater s-character places electrons closer to the positively charged nucleus, lowering the orbital potential energy.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q045",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Frontier Molecular Orbitals (FMO) Definition",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "In Frontier Molecular Orbital theory, what do the acronyms HOMO and LUMO represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hybrid Orbital Molecular Overlap and Linear Unhybridized Molecular Orbital."
+        },
+        {
+          "label": "B",
+          "text": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor)."
+        },
+        {
+          "label": "C",
+          "text": "Helical Octet Molecular Octupole and Linear Unpaired Molecular Orbital."
+        },
+        {
+          "label": "D",
+          "text": "High Order Magnetic Orbital and Low Order Magnetic Orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Highest Occupied Molecular Orbital (HOMO, the electron donor) and Lowest Unoccupied Molecular Orbital (LUMO, the electron acceptor).",
+      "explanation": "The HOMO acts as the nucleophile/electron donor; the LUMO acts as the electrophile/electron acceptor in chemical reactions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q046",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Hydrogen Molecule Bonding MO Overlap",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What orbital interaction forms the ground-state H\u2082 molecule from two hydrogen 1s atomic orbitals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sideways p-orbital overlap."
+        },
+        {
+          "label": "B",
+          "text": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei."
+        },
+        {
+          "label": "C",
+          "text": "Non-bonding electrostatic attraction without orbital mixing."
+        },
+        {
+          "label": "D",
+          "text": "Out-of-phase destructive overlap yielding a \u03c3* orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "In-phase constructive overlap of two 1s atomic orbitals yielding a low-energy \u03c3 bonding molecular orbital with zero nodes between nuclei.",
+      "explanation": "Constructive in-phase overlap of 1s orbitals concentrates electron density between nuclei, lowering the energy to form the \u03c3_1s MO.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q047",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Methane MO Symmetry (a1 and t2)",
+      "difficulty": "hard",
+      "question_type": "orbital_phase_symmetry",
+      "question": "According to Molecular Orbital theory, how are the 8 valence electrons of methane (CH\u2084) distributed among MOs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All 8 electrons in a single giant spherical orbital."
+        },
+        {
+          "label": "B",
+          "text": "All 8 electrons are in eight separate, isolated single-bond orbitals."
+        },
+        {
+          "label": "C",
+          "text": "Eight electrons in four degenerate non-bonding orbitals."
+        },
+        {
+          "label": "D",
+          "text": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Two electrons in a non-degenerate, lowest-energy a\u2081 MO (from C 2s) and six electrons in three degenerate t\u2082 MOs (from C 2p).",
+      "explanation": "Photoelectron spectroscopy confirms methane has two discrete valence ionization energies corresponding to a\u2081 and triply degenerate t\u2082 MOs.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q048",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Ethylene Pi System Frontier Orbitals",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "What are the quantum characteristics of the HOMO and LUMO in neutral ethylene (H\u2082C=CH\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HOMO is \u03c8\u2082 and the LUMO is \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "Both HOMO and LUMO are completely filled with 4 electrons."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty)."
+        },
+        {
+          "label": "D",
+          "text": "The HOMO has two nodes and the LUMO has zero nodes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The HOMO is the \u03c0 bonding orbital (\u03c8\u2081, zero vertical nodes, 2 electrons); the LUMO is the \u03c0* antibonding orbital (\u03c8\u2082, one vertical node, empty).",
+      "explanation": "Ethylene's 2\u03c0 system has \u03c8\u2081 (bonding, in-phase, filled) as HOMO and \u03c8\u2082 (antibonding, out-of-phase, vacant) as LUMO.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q049",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Carbonyl Group Polarized FMOs",
+      "difficulty": "hard",
+      "question_type": "homo_lumo_identification",
+      "question": "How does the greater electronegativity of oxygen alter the frontier molecular orbitals of formaldehyde (H\u2082C=O)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The \u03c0 HOMO is localized exclusively on carbon."
+        },
+        {
+          "label": "B",
+          "text": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon."
+        },
+        {
+          "label": "C",
+          "text": "The \u03c0* LUMO is localized 100% on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Both carbon and oxygen have identical MO coefficients."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The \u03c0 HOMO has larger orbital coefficient on oxygen, while the \u03c0* LUMO has a larger orbital coefficient on carbon.",
+      "explanation": "Electronegative oxygen lowers orbital energy, polarizing the filled \u03c0 HOMO toward oxygen and the empty \u03c0* LUMO toward electrophilic carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q050",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "B\u00fcrgi-Dunitz Angle Orbital Overlap",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Why do nucleophiles attack carbonyl carbons at an angle of approximately 107\u00b0 (the B\u00fcrgi-Dunitz angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because 107\u00b0 is the bond angle of water."
+        },
+        {
+          "label": "B",
+          "text": "Because attack at 90\u00b0 breaks the carbon-carbon single bonds."
+        },
+        {
+          "label": "C",
+          "text": "Because nucleophiles only move in hexagonal paths."
+        },
+        {
+          "label": "D",
+          "text": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "To maximize constructive overlap with the large lobe of the \u03c0* LUMO while minimizing electrostatic repulsion from the filled \u03c0 and nonbonding oxygen electrons.",
+      "explanation": "Attack at ~107\u00b0 provides optimal overlap with the outward-projecting \u03c0* LUMO lobe at the carbonyl carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    }
+  ]
+}

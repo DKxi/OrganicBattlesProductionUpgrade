@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereoisomerism",
+  "assigned_boss": "Chirality Cerberus",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Chiral Center",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Chiral Center'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "C",
+          "text": "An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "In David Klein's Organic Chemistry, 'Chiral Center' is defined as: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry. The distractors represent definitions of 'Enantiomers', 'Diastereomers', and 'Meso Compound'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Enantiomers",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers"
+        },
+        {
+          "label": "B",
+          "text": "CIP Priority Rules"
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "Meso Compound"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Enantiomers",
+      "explanation": "The definition describes 'Enantiomers'. Specifically: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Diastereomers",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Diastereomers'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "B",
+          "text": "The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "C",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.",
+      "explanation": "In David Klein's Organic Chemistry, 'Diastereomers' is defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention. The distractors represent definitions of 'Meso Compound', 'CIP Priority Rules', and 'Optical Activity'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Meso Compound",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meso Compound"
+        },
+        {
+          "label": "B",
+          "text": "Racemic Mixture"
+        },
+        {
+          "label": "C",
+          "text": "CIP Priority Rules"
+        },
+        {
+          "label": "D",
+          "text": "Optical Activity"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Meso Compound",
+      "explanation": "The definition describes 'Meso Compound'. Specifically: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "CIP Priority Rules",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'CIP Priority Rules'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "B",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "C",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.",
+      "explanation": "In David Klein's Organic Chemistry, 'CIP Priority Rules' is defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors. The distractors represent definitions of 'Optical Activity', 'Racemic Mixture', and 'Enantiomeric Excess (ee)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Optical Activity",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection"
+        },
+        {
+          "label": "B",
+          "text": "Optical Activity"
+        },
+        {
+          "label": "C",
+          "text": "Enantiomeric Excess (ee)"
+        },
+        {
+          "label": "D",
+          "text": "Racemic Mixture"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Optical Activity",
+      "explanation": "The definition describes 'Optical Activity'. Specifically: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Racemic Mixture",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Racemic Mixture'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic Mixture is characterized by: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "Racemic Mixture is defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "C",
+          "text": "Racemic Mixture is defined as: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "D",
+          "text": "Racemic Mixture is defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Racemic Mixture is characterized by: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.",
+      "explanation": "Accurate concept recognition: Racemic Mixture specifically corresponds to 'An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Enantiomeric Excess (ee)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chiral Center — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomeric Excess (ee) — A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enantiomeric Excess (ee) — A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.",
+      "explanation": "The correctly matched pair is 'Enantiomeric Excess (ee) — A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Fischer Projection",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Fischer Projection'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection is defined as: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "B",
+          "text": "Fischer Projection is characterized by: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "C",
+          "text": "Fischer Projection is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "D",
+          "text": "Fischer Projection is defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Fischer Projection is characterized by: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.",
+      "explanation": "Accurate concept recognition: Fischer Projection specifically corresponds to 'A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "(E)/(Z) Nomenclature",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CIP Priority Rules — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "C",
+          "text": "(E)/(Z) Nomenclature — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "D",
+          "text": "Meso Compound — A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(E)/(Z) Nomenclature — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.",
+      "explanation": "The correctly matched pair is '(E)/(Z) Nomenclature — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Diastereomers",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Diastereomers'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "D",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.",
+      "explanation": "In David Klein's Organic Chemistry, 'Diastereomers' is defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention. The distractors represent definitions of 'CIP Priority Rules', 'Optical Activity', and 'Racemic Mixture'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Meso Compound",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Optical Activity"
+        },
+        {
+          "label": "B",
+          "text": "Enantiomeric Excess (ee)"
+        },
+        {
+          "label": "C",
+          "text": "Racemic Mixture"
+        },
+        {
+          "label": "D",
+          "text": "Meso Compound"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Meso Compound",
+      "explanation": "The definition describes 'Meso Compound'. Specifically: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "CIP Priority Rules",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'CIP Priority Rules'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "B",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "C",
+          "text": "A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.",
+      "explanation": "In David Klein's Organic Chemistry, 'CIP Priority Rules' is defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors. The distractors represent definitions of 'Racemic Mixture', 'Enantiomeric Excess (ee)', and 'Fischer Projection'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Optical Activity",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection"
+        },
+        {
+          "label": "B",
+          "text": "(E)/(Z) Nomenclature"
+        },
+        {
+          "label": "C",
+          "text": "Optical Activity"
+        },
+        {
+          "label": "D",
+          "text": "Enantiomeric Excess (ee)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Optical Activity",
+      "explanation": "The definition describes 'Optical Activity'. Specifically: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Racemic Mixture",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Racemic Mixture'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "B",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.",
+      "explanation": "In David Klein's Organic Chemistry, 'Racemic Mixture' is defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation. The distractors represent definitions of 'Chiral Center', 'Enantiomers', and 'Diastereomers'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Enantiomeric Excess (ee)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Enantiomeric Excess (ee)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomeric Excess (ee) is characterized by: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomeric Excess (ee) is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomeric Excess (ee) is defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomeric Excess (ee) is defined as: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiomeric Excess (ee) is characterized by: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.",
+      "explanation": "Accurate concept recognition: Enantiomeric Excess (ee) specifically corresponds to 'A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Fischer Projection",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "B",
+          "text": "CIP Priority Rules — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "Fischer Projection — A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "Meso Compound — A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Fischer Projection — A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.",
+      "explanation": "The correctly matched pair is 'Fischer Projection — A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "(E)/(Z) Nomenclature",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of '(E)/(Z) Nomenclature'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)/(Z) Nomenclature is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "B",
+          "text": "(E)/(Z) Nomenclature is defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "C",
+          "text": "(E)/(Z) Nomenclature is defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "(E)/(Z) Nomenclature is characterized by: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(E)/(Z) Nomenclature is characterized by: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.",
+      "explanation": "Accurate concept recognition: (E)/(Z) Nomenclature specifically corresponds to 'A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Chiral Center",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomeric Excess (ee) — The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "B",
+          "text": "Chiral Center — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Racemic Mixture — A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "D",
+          "text": "Optical Activity — An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chiral Center — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "The correctly matched pair is 'Chiral Center — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Enantiomers",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Enantiomers' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Enantiomers specifically denotes: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Enantiomers is properly defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Enantiomers is properly defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Enantiomers is properly defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, Enantiomers specifically denotes: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.",
+      "explanation": "Concept discrimination: Enantiomers is uniquely defined by: 'A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.'. The alternative statements erroneously attribute principles of 'Racemic Mixture', 'Enantiomeric Excess (ee)', or 'Fischer Projection' to 'Enantiomers'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "CIP Priority Rules",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'CIP Priority Rules'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "B",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "C",
+          "text": "A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "D",
+          "text": "A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.",
+      "explanation": "In David Klein's Organic Chemistry, 'CIP Priority Rules' is defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors. The distractors represent definitions of 'Enantiomeric Excess (ee)', 'Fischer Projection', and '(E)/(Z) Nomenclature'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Optical Activity",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Optical Activity"
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers"
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "Chiral Center"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Optical Activity",
+      "explanation": "The definition describes 'Optical Activity'. Specifically: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Racemic Mixture",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Racemic Mixture'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "D",
+          "text": "An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.",
+      "explanation": "In David Klein's Organic Chemistry, 'Racemic Mixture' is defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation. The distractors represent definitions of 'Enantiomers', 'Diastereomers', and 'Meso Compound'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Enantiomeric Excess (ee)",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomeric Excess (ee)"
+        },
+        {
+          "label": "B",
+          "text": "Meso Compound"
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers"
+        },
+        {
+          "label": "D",
+          "text": "CIP Priority Rules"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiomeric Excess (ee)",
+      "explanation": "The definition describes 'Enantiomeric Excess (ee)'. Specifically: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Fischer Projection",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Fischer Projection'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection is defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "B",
+          "text": "Fischer Projection is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "C",
+          "text": "Fischer Projection is characterized by: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "Fischer Projection is defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Fischer Projection is characterized by: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.",
+      "explanation": "Accurate concept recognition: Fischer Projection specifically corresponds to 'A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "(E)/(Z) Nomenclature",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)/(Z) Nomenclature — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "B",
+          "text": "Racemic Mixture — A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "C",
+          "text": "Optical Activity — An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "D",
+          "text": "CIP Priority Rules — The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(E)/(Z) Nomenclature — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.",
+      "explanation": "The correctly matched pair is '(E)/(Z) Nomenclature — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Chiral Center",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Chiral Center'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chiral Center is characterized by: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "Chiral Center is defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Chiral Center is defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "Chiral Center is defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chiral Center is characterized by: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "Accurate concept recognition: Chiral Center specifically corresponds to 'A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Enantiomers",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "B",
+          "text": "(E)/(Z) Nomenclature — A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomeric Excess (ee) — A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enantiomers — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.",
+      "explanation": "The correctly matched pair is 'Enantiomers — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Diastereomers",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Diastereomers' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Diastereomers specifically denotes: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Diastereomers is properly defined as: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Diastereomers is properly defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Diastereomers is properly defined as: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, Diastereomers specifically denotes: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.",
+      "explanation": "Concept discrimination: Diastereomers is uniquely defined by: 'Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.'. The alternative statements erroneously attribute principles of 'Chiral Center', 'Enantiomers', or 'Meso Compound' to 'Diastereomers'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Meso Compound",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Meso Compound' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Meso Compound is properly defined as: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Meso Compound specifically denotes: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Meso Compound is properly defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Meso Compound is properly defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Unlike related phenomena, Meso Compound specifically denotes: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.",
+      "explanation": "Concept discrimination: Meso Compound is uniquely defined by: 'An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.'. The alternative statements erroneously attribute principles of 'Enantiomers', 'Diastereomers', or 'CIP Priority Rules' to 'Meso Compound'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Racemic Mixture",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Racemic Mixture'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "D",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.",
+      "explanation": "In David Klein's Organic Chemistry, 'Racemic Mixture' is defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation. The distractors represent definitions of 'Diastereomers', 'Meso Compound', and 'CIP Priority Rules'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Enantiomeric Excess (ee)",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomeric Excess (ee)"
+        },
+        {
+          "label": "B",
+          "text": "CIP Priority Rules"
+        },
+        {
+          "label": "C",
+          "text": "Optical Activity"
+        },
+        {
+          "label": "D",
+          "text": "Meso Compound"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiomeric Excess (ee)",
+      "explanation": "The definition describes 'Enantiomeric Excess (ee)'. Specifically: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Fischer Projection",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Fischer Projection'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "B",
+          "text": "A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "C",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "D",
+          "text": "The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.",
+      "explanation": "In David Klein's Organic Chemistry, 'Fischer Projection' is defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away. The distractors represent definitions of 'CIP Priority Rules', 'Optical Activity', and 'Racemic Mixture'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "(E)/(Z) Nomenclature",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of '(E)/(Z) Nomenclature'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)/(Z) Nomenclature is defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "(E)/(Z) Nomenclature is defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "C",
+          "text": "(E)/(Z) Nomenclature is characterized by: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "D",
+          "text": "(E)/(Z) Nomenclature is defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(E)/(Z) Nomenclature is characterized by: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.",
+      "explanation": "Accurate concept recognition: (E)/(Z) Nomenclature specifically corresponds to 'A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Chiral Center",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection — A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "B",
+          "text": "(E)/(Z) Nomenclature — A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomeric Excess (ee) — A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "Chiral Center — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chiral Center — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "The correctly matched pair is 'Chiral Center — A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Enantiomers",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Enantiomers'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers is defined as: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers is defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers is characterized by: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enantiomers is characterized by: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.",
+      "explanation": "Accurate concept recognition: Enantiomers specifically corresponds to 'A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Diastereomers",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meso Compound — A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "CIP Priority Rules — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Diastereomers — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.",
+      "explanation": "The correctly matched pair is 'Diastereomers — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Meso Compound",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Meso Compound' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Meso Compound is properly defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Meso Compound is properly defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Meso Compound is properly defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Meso Compound specifically denotes: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Meso Compound specifically denotes: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.",
+      "explanation": "Concept discrimination: Meso Compound is uniquely defined by: 'An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.'. The alternative statements erroneously attribute principles of 'Diastereomers', 'CIP Priority Rules', or 'Optical Activity' to 'Meso Compound'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "CIP Priority Rules",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'CIP Priority Rules' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, CIP Priority Rules is properly defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, CIP Priority Rules is properly defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, CIP Priority Rules is properly defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, CIP Priority Rules specifically denotes: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, CIP Priority Rules specifically denotes: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.",
+      "explanation": "Concept discrimination: CIP Priority Rules is uniquely defined by: 'A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.'. The alternative statements erroneously attribute principles of 'Meso Compound', 'Optical Activity', or 'Racemic Mixture' to 'CIP Priority Rules'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Optical Activity",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Optical Activity' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Optical Activity is properly defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Optical Activity is properly defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Optical Activity is properly defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Optical Activity specifically denotes: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Optical Activity specifically denotes: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].",
+      "explanation": "Concept discrimination: Optical Activity is uniquely defined by: 'The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].'. The alternative statements erroneously attribute principles of 'CIP Priority Rules', 'Racemic Mixture', or 'Enantiomeric Excess (ee)' to 'Optical Activity'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Fischer Projection",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Stereoisomerism, what is the authoritative chemical definition of 'Fischer Projection'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "B",
+          "text": "A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "D",
+          "text": "An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away.",
+      "explanation": "In David Klein's Organic Chemistry, 'Fischer Projection' is defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away. The distractors represent definitions of 'Optical Activity', 'Racemic Mixture', and 'Enantiomeric Excess (ee)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "(E)/(Z) Nomenclature",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Stereoisomerism is defined as: \"A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer Projection"
+        },
+        {
+          "label": "B",
+          "text": "(E)/(Z) Nomenclature"
+        },
+        {
+          "label": "C",
+          "text": "Enantiomeric Excess (ee)"
+        },
+        {
+          "label": "D",
+          "text": "Racemic Mixture"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(E)/(Z) Nomenclature",
+      "explanation": "The definition describes '(E)/(Z) Nomenclature'. Specifically: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Chiral Center",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Chiral Center'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chiral Center is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        },
+        {
+          "label": "B",
+          "text": "Chiral Center is characterized by: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Chiral Center is defined as: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "D",
+          "text": "Chiral Center is defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chiral Center is characterized by: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "Accurate concept recognition: Chiral Center specifically corresponds to 'A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Enantiomers",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "B",
+          "text": "CIP Priority Rules — Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "C",
+          "text": "Meso Compound — A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiomers — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.",
+      "explanation": "The correctly matched pair is 'Enantiomers — A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Diastereomers",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Stereoisomerism, which of the following statements accurately characterizes the concept of 'Diastereomers'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers is defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers is defined as: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers is characterized by: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers is defined as: An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diastereomers is characterized by: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.",
+      "explanation": "Accurate concept recognition: Diastereomers specifically corresponds to 'Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Meso Compound",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Optical Activity — An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "CIP Priority Rules — The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "C",
+          "text": "Racemic Mixture — A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "D",
+          "text": "Meso Compound — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Meso Compound — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.",
+      "explanation": "The correctly matched pair is 'Meso Compound — An achiral molecule that contains two or more stereocenters but possesses an internal plane (or center) of symmetry, rendering it optically inactive.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "CIP Priority Rules",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'CIP Priority Rules' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, CIP Priority Rules specifically denotes: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, CIP Priority Rules is properly defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, CIP Priority Rules is properly defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, CIP Priority Rules is properly defined as: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, CIP Priority Rules specifically denotes: A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.",
+      "explanation": "Concept discrimination: CIP Priority Rules is uniquely defined by: 'A standardized set of rules assigning numerical priority (1 to 4) to stereocenter substituents based on atomic number to determine (R) or (S) stereodescriptors.'. The alternative statements erroneously attribute principles of 'Optical Activity', 'Racemic Mixture', or 'Enantiomeric Excess (ee)' to 'CIP Priority Rules'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Optical Activity",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Optical Activity' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Optical Activity is properly defined as: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Optical Activity specifically denotes: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α]."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Optical Activity is properly defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Optical Activity is properly defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Unlike related phenomena, Optical Activity specifically denotes: The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].",
+      "explanation": "Concept discrimination: Optical Activity is uniquely defined by: 'The physical property of a chiral substance to rotate the plane of polarization of plane-polarized light by a measurable angle [α].'. The alternative statements erroneously attribute principles of 'Racemic Mixture', 'Enantiomeric Excess (ee)', or 'Fischer Projection' to 'Optical Activity'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Racemic Mixture",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Racemic Mixture' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Racemic Mixture is properly defined as: A stereodescriptor system for alkenes where (Z) designates high-priority CIP groups on the same side of the double bond and (E) designates opposite sides."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Racemic Mixture is properly defined as: A 2D convention representing 3D chiral molecules where horizontal lines denote bonds projecting forward toward the viewer and vertical lines denote bonds receding away."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Racemic Mixture is properly defined as: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Racemic Mixture specifically denotes: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Racemic Mixture specifically denotes: An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.",
+      "explanation": "Concept discrimination: Racemic Mixture is uniquely defined by: 'An equimolar (1:1) mixture of two enantiomers that exhibits zero net optical rotation due to exact mutual cancellation.'. The alternative statements erroneously attribute principles of 'Enantiomeric Excess (ee)', 'Fischer Projection', or '(E)/(Z) Nomenclature' to 'Racemic Mixture'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Enantiomeric Excess (ee)",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Enantiomeric Excess (ee)' from other related principles in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Enantiomeric Excess (ee) is properly defined as: A pair of non-superimposable mirror-image stereoisomers that rotate plane-polarized light in equal and opposite directions but share identical physical properties in achiral environments."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Enantiomeric Excess (ee) is properly defined as: A tetrahedral (sp³) atom, typically carbon, covalently bonded to four distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Enantiomeric Excess (ee) is properly defined as: Stereoisomers that are not mirror images of each other and exhibit distinct physical and chemical properties such as melting points and chromatographic retention."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Enantiomeric Excess (ee) specifically denotes: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Enantiomeric Excess (ee) specifically denotes: A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.",
+      "explanation": "Concept discrimination: Enantiomeric Excess (ee) is uniquely defined by: 'A quantitative metric of optical purity representing the percentage excess of the major enantiomer over the minor enantiomer in a non-racemic mixture.'. The alternative statements erroneously attribute principles of 'Chiral Center', 'Enantiomers', or 'Diastereomers' to 'Enantiomeric Excess (ee)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chirality Cerberus",
+    "Cahn-Ingold-Prelog Captain",
+    "Enantiomer Enchanter",
+    "Diastereomer Duelist",
+    "Meso Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chirality Cerberus",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chirality-cerberus.png"
+        ]
+      },
+      {
+        "boss": "Cahn-Ingold-Prelog Captain",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cahn-ingold-prelog-captain.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enchanter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enchanter.png"
+        ]
+      },
+      {
+        "boss": "Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Meso Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "meso-monarch.png"
+        ]
+      }
+    ]
+  }
+}

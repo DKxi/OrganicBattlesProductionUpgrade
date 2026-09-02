@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 6,
+  "chapter_title": "Chemical Reactivity and Mechanisms",
+  "assigned_boss": "Enthalpy Elemental",
+  "bosses": [
+    "Enthalpy Elemental",
+    "Entropy Spectre",
+    "Carbocation Colossus",
+    "Transition State Trickster",
+    "Gibbs Free Energy Sovereign"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Enthalpy Elemental",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Entropy Spectre",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Carbocation Colossus",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Transition State Trickster",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Gibbs Free Energy Sovereign",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch06_q001",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Extraction Layer Partitioning",
+      "difficulty": "easy",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "In a liquid-liquid separation of Chapter 06 reaction products using dichloromethane (density 1.33 g/mL) and water (density 1.00 g/mL), which is the bottom layer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The aqueous layer is always on the bottom regardless of solvent."
+        },
+        {
+          "label": "B",
+          "text": "The layers mix completely and cannot separate."
+        },
+        {
+          "label": "C",
+          "text": "The organic layer floats on top."
+        },
+        {
+          "label": "D",
+          "text": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06.",
+      "explanation": "Halogenated solvents (CH\u2082Cl\u2082, CHCl\u2083) have densities > 1.0 g/mL and form the bottom layer in separatory funnels.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q002",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Silica Gel Chromatography Polarity Order",
+      "difficulty": "easy",
+      "question_type": "chromatography_rf_prediction",
+      "question": "On a normal-phase silica column in Chapter 06, what is the elution order of hydrocarbons, ketones, and carboxylic acids?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "All three compounds elute together."
+        },
+        {
+          "label": "C",
+          "text": "Ketones elute first \u2192 Hydrocarbons \u2192 Carboxylic acids."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids elute first \u2192 Ketones \u2192 Hydrocarbons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06.",
+      "explanation": "Nonpolar compounds have the weakest affinity for polar silica gel and elute first; polar compounds elute last.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q003",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Fractional Distillation Theoretical Plates",
+      "difficulty": "easy",
+      "question_type": "distillation_selection",
+      "question": "Why does fractional distillation achieve superior separation over simple distillation for Chapter 06 liquid mixtures with close boiling points (\u0394bp < 25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The column heats the mixture to 1000\u00b0C."
+        },
+        {
+          "label": "B",
+          "text": "The column destroys the higher-boiling component."
+        },
+        {
+          "label": "C",
+          "text": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "The column works only under high vacuum."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06.",
+      "explanation": "Fractionating columns increase internal surface area, allowing repeated micro-distillations that separate liquids with close boiling points.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q004",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Green Chemistry Atom Economy Calculation",
+      "difficulty": "easy",
+      "question_type": "green_chemistry_metrics",
+      "question": "What is the Atom Economy for a Chapter 06 catalytic addition reaction where 100% of reactant atoms are incorporated into the target product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "50% Atom Economy."
+        },
+        {
+          "label": "B",
+          "text": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "200% Atom Economy."
+        },
+        {
+          "label": "D",
+          "text": "0% Atom Economy."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06.",
+      "explanation": "Addition and pericyclic reactions incorporate all reactant atoms into the product, achieving ideal 100% atom economy.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q005",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Solvent Selection Green Metrics",
+      "difficulty": "easy",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "Which of the following solvents is classified as a 'preferred green solvent' for Chapter 06 laboratory protocols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbon tetrachloride (CCl\u2084)."
+        },
+        {
+          "label": "B",
+          "text": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Hexamethylphosphoramide (HMPA)."
+        },
+        {
+          "label": "D",
+          "text": "Benzene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06.",
+      "explanation": "Green chemistry replaces hazardous, carcinogenic, or ozone-depleting solvents with bio-derived, non-toxic alternatives (water, ethanol, 2-MeTHF).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q006",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Thin-Layer Chromatography Rf Calculation",
+      "difficulty": "easy",
+      "question_type": "chromatography_rf_prediction",
+      "question": "If a Chapter 06 compound migrates 4.0 cm on a TLC plate while the solvent front travels 8.0 cm, what is its Retention Factor (Rf)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rf = 4.0."
+        },
+        {
+          "label": "B",
+          "text": "Rf = 2.0."
+        },
+        {
+          "label": "C",
+          "text": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Rf = 0.25."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06.",
+      "explanation": "The Retention Factor Rf is the ratio of solute migration distance to solvent front migration distance (0 \u2264 Rf \u2264 1).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q007",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Recrystallization Seeding Technique",
+      "difficulty": "medium",
+      "question_type": "distillation_selection",
+      "question": "If a supersaturated Chapter 06 solution fails to crystallize upon cooling, what physical laboratory technique induces crystal nucleation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Freezing the solution into solid ice."
+        },
+        {
+          "label": "B",
+          "text": "Adding 1 liter of concentrated acid."
+        },
+        {
+          "label": "C",
+          "text": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Boiling the solvent away completely with a torch."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06.",
+      "explanation": "Scratching provides micro-glass particles as nucleation sites; seed crystals provide a pre-formed crystal lattice template.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q008",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Gas Chromatography (GC) Retention Time",
+      "difficulty": "medium",
+      "question_type": "green_chemistry_metrics",
+      "question": "In gas chromatography analysis of Chapter 06 volatile compounds on a nonpolar capillary column, what factor primarily dictates retention time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Color of the compound."
+        },
+        {
+          "label": "B",
+          "text": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Molecular optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "pH of the carrier gas."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06.",
+      "explanation": "On nonpolar GC stationary phases, elution order is determined primarily by boiling point and vapor pressure.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q009",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 Hazardous Byproduct Quenching",
+      "difficulty": "medium",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "What is the standard, safe laboratory protocol for quenching excess sodium hydride (NaH) or lithium aluminum hydride (LiAlH\u2084) after a Chapter 06 reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heating with an open Bunsen burner."
+        },
+        {
+          "label": "B",
+          "text": "Dumping the entire flask into pure water instantly."
+        },
+        {
+          "label": "C",
+          "text": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Pouring concentrated nitric acid into the flask."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06.",
+      "explanation": "Hydrides react violently with water; cautious quenching with a mild protic alcohol (isopropanol) safely mitigates rapid hydrogen gas release.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q010",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Ch06 E-Factor Industrial Waste Metric",
+      "difficulty": "medium",
+      "question_type": "chromatography_rf_prediction",
+      "question": "If producing 10 kg of a Chapter 06 pharmaceutical ingredient generates 250 kg of chemical waste, what is the process E-Factor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "E-Factor = 1.0."
+        },
+        {
+          "label": "C",
+          "text": "E-Factor = 2500."
+        },
+        {
+          "label": "D",
+          "text": "E-Factor = 0.04."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06.",
+      "explanation": "The environmental E-Factor is calculated as the ratio of total waste generated (in kg) to desired product mass (in kg).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q011",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Extraction Layer Partitioning",
+      "difficulty": "easy",
+      "question_type": "distillation_selection",
+      "question": "In a liquid-liquid separation of Chapter 06 reaction products using dichloromethane (density 1.33 g/mL) and water (density 1.00 g/mL), which is the bottom layer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The organic layer floats on top."
+        },
+        {
+          "label": "B",
+          "text": "The layers mix completely and cannot separate."
+        },
+        {
+          "label": "C",
+          "text": "The aqueous layer is always on the bottom regardless of solvent."
+        },
+        {
+          "label": "D",
+          "text": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06.",
+      "explanation": "Halogenated solvents (CH\u2082Cl\u2082, CHCl\u2083) have densities > 1.0 g/mL and form the bottom layer in separatory funnels.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q012",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Silica Gel Chromatography Polarity Order",
+      "difficulty": "easy",
+      "question_type": "green_chemistry_metrics",
+      "question": "On a normal-phase silica column in Chapter 06, what is the elution order of hydrocarbons, ketones, and carboxylic acids?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All three compounds elute together."
+        },
+        {
+          "label": "B",
+          "text": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids elute first \u2192 Ketones \u2192 Hydrocarbons."
+        },
+        {
+          "label": "D",
+          "text": "Ketones elute first \u2192 Hydrocarbons \u2192 Carboxylic acids."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06.",
+      "explanation": "Nonpolar compounds have the weakest affinity for polar silica gel and elute first; polar compounds elute last.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q013",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Fractional Distillation Theoretical Plates",
+      "difficulty": "easy",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "Why does fractional distillation achieve superior separation over simple distillation for Chapter 06 liquid mixtures with close boiling points (\u0394bp < 25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "The column heats the mixture to 1000\u00b0C."
+        },
+        {
+          "label": "C",
+          "text": "The column works only under high vacuum."
+        },
+        {
+          "label": "D",
+          "text": "The column destroys the higher-boiling component."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06.",
+      "explanation": "Fractionating columns increase internal surface area, allowing repeated micro-distillations that separate liquids with close boiling points.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q014",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Green Chemistry Atom Economy Calculation",
+      "difficulty": "easy",
+      "question_type": "chromatography_rf_prediction",
+      "question": "What is the Atom Economy for a Chapter 06 catalytic addition reaction where 100% of reactant atoms are incorporated into the target product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "50% Atom Economy."
+        },
+        {
+          "label": "C",
+          "text": "200% Atom Economy."
+        },
+        {
+          "label": "D",
+          "text": "0% Atom Economy."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06.",
+      "explanation": "Addition and pericyclic reactions incorporate all reactant atoms into the product, achieving ideal 100% atom economy.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q015",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Solvent Selection Green Metrics",
+      "difficulty": "easy",
+      "question_type": "distillation_selection",
+      "question": "Which of the following solvents is classified as a 'preferred green solvent' for Chapter 06 laboratory protocols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzene."
+        },
+        {
+          "label": "B",
+          "text": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Hexamethylphosphoramide (HMPA)."
+        },
+        {
+          "label": "D",
+          "text": "Carbon tetrachloride (CCl\u2084)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06.",
+      "explanation": "Green chemistry replaces hazardous, carcinogenic, or ozone-depleting solvents with bio-derived, non-toxic alternatives (water, ethanol, 2-MeTHF).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q016",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Thin-Layer Chromatography Rf Calculation",
+      "difficulty": "medium",
+      "question_type": "green_chemistry_metrics",
+      "question": "If a Chapter 06 compound migrates 4.0 cm on a TLC plate while the solvent front travels 8.0 cm, what is its Retention Factor (Rf)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Rf = 0.25."
+        },
+        {
+          "label": "C",
+          "text": "Rf = 2.0."
+        },
+        {
+          "label": "D",
+          "text": "Rf = 4.0."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06.",
+      "explanation": "The Retention Factor Rf is the ratio of solute migration distance to solvent front migration distance (0 \u2264 Rf \u2264 1).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q017",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Recrystallization Seeding Technique",
+      "difficulty": "medium",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "If a supersaturated Chapter 06 solution fails to crystallize upon cooling, what physical laboratory technique induces crystal nucleation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Boiling the solvent away completely with a torch."
+        },
+        {
+          "label": "B",
+          "text": "Adding 1 liter of concentrated acid."
+        },
+        {
+          "label": "C",
+          "text": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Freezing the solution into solid ice."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06.",
+      "explanation": "Scratching provides micro-glass particles as nucleation sites; seed crystals provide a pre-formed crystal lattice template.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q018",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Gas Chromatography (GC) Retention Time",
+      "difficulty": "medium",
+      "question_type": "chromatography_rf_prediction",
+      "question": "In gas chromatography analysis of Chapter 06 volatile compounds on a nonpolar capillary column, what factor primarily dictates retention time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Color of the compound."
+        },
+        {
+          "label": "B",
+          "text": "Molecular optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "pH of the carrier gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06.",
+      "explanation": "On nonpolar GC stationary phases, elution order is determined primarily by boiling point and vapor pressure.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q019",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 Hazardous Byproduct Quenching",
+      "difficulty": "medium",
+      "question_type": "distillation_selection",
+      "question": "What is the standard, safe laboratory protocol for quenching excess sodium hydride (NaH) or lithium aluminum hydride (LiAlH\u2084) after a Chapter 06 reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heating with an open Bunsen burner."
+        },
+        {
+          "label": "B",
+          "text": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Dumping the entire flask into pure water instantly."
+        },
+        {
+          "label": "D",
+          "text": "Pouring concentrated nitric acid into the flask."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06.",
+      "explanation": "Hydrides react violently with water; cautious quenching with a mild protic alcohol (isopropanol) safely mitigates rapid hydrogen gas release.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q020",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Ch06 E-Factor Industrial Waste Metric",
+      "difficulty": "hard",
+      "question_type": "green_chemistry_metrics",
+      "question": "If producing 10 kg of a Chapter 06 pharmaceutical ingredient generates 250 kg of chemical waste, what is the process E-Factor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E-Factor = 2500."
+        },
+        {
+          "label": "B",
+          "text": "E-Factor = 1.0."
+        },
+        {
+          "label": "C",
+          "text": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "E-Factor = 0.04."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06.",
+      "explanation": "The environmental E-Factor is calculated as the ratio of total waste generated (in kg) to desired product mass (in kg).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q021",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Extraction Layer Partitioning",
+      "difficulty": "easy",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "In a liquid-liquid separation of Chapter 06 reaction products using dichloromethane (density 1.33 g/mL) and water (density 1.00 g/mL), which is the bottom layer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The organic layer floats on top."
+        },
+        {
+          "label": "B",
+          "text": "The aqueous layer is always on the bottom regardless of solvent."
+        },
+        {
+          "label": "C",
+          "text": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "The layers mix completely and cannot separate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06.",
+      "explanation": "Halogenated solvents (CH\u2082Cl\u2082, CHCl\u2083) have densities > 1.0 g/mL and form the bottom layer in separatory funnels.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q022",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Silica Gel Chromatography Polarity Order",
+      "difficulty": "easy",
+      "question_type": "chromatography_rf_prediction",
+      "question": "On a normal-phase silica column in Chapter 06, what is the elution order of hydrocarbons, ketones, and carboxylic acids?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids elute first \u2192 Ketones \u2192 Hydrocarbons."
+        },
+        {
+          "label": "B",
+          "text": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "All three compounds elute together."
+        },
+        {
+          "label": "D",
+          "text": "Ketones elute first \u2192 Hydrocarbons \u2192 Carboxylic acids."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06.",
+      "explanation": "Nonpolar compounds have the weakest affinity for polar silica gel and elute first; polar compounds elute last.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q023",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Fractional Distillation Theoretical Plates",
+      "difficulty": "easy",
+      "question_type": "distillation_selection",
+      "question": "Why does fractional distillation achieve superior separation over simple distillation for Chapter 06 liquid mixtures with close boiling points (\u0394bp < 25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The column works only under high vacuum."
+        },
+        {
+          "label": "B",
+          "text": "The column destroys the higher-boiling component."
+        },
+        {
+          "label": "C",
+          "text": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "The column heats the mixture to 1000\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06.",
+      "explanation": "Fractionating columns increase internal surface area, allowing repeated micro-distillations that separate liquids with close boiling points.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q024",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Green Chemistry Atom Economy Calculation",
+      "difficulty": "easy",
+      "question_type": "green_chemistry_metrics",
+      "question": "What is the Atom Economy for a Chapter 06 catalytic addition reaction where 100% of reactant atoms are incorporated into the target product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "0% Atom Economy."
+        },
+        {
+          "label": "C",
+          "text": "200% Atom Economy."
+        },
+        {
+          "label": "D",
+          "text": "50% Atom Economy."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06.",
+      "explanation": "Addition and pericyclic reactions incorporate all reactant atoms into the product, achieving ideal 100% atom economy.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q025",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Solvent Selection Green Metrics",
+      "difficulty": "medium",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "Which of the following solvents is classified as a 'preferred green solvent' for Chapter 06 laboratory protocols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Benzene."
+        },
+        {
+          "label": "C",
+          "text": "Hexamethylphosphoramide (HMPA)."
+        },
+        {
+          "label": "D",
+          "text": "Carbon tetrachloride (CCl\u2084)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06.",
+      "explanation": "Green chemistry replaces hazardous, carcinogenic, or ozone-depleting solvents with bio-derived, non-toxic alternatives (water, ethanol, 2-MeTHF).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q026",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Thin-Layer Chromatography Rf Calculation",
+      "difficulty": "medium",
+      "question_type": "chromatography_rf_prediction",
+      "question": "If a Chapter 06 compound migrates 4.0 cm on a TLC plate while the solvent front travels 8.0 cm, what is its Retention Factor (Rf)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rf = 0.25."
+        },
+        {
+          "label": "B",
+          "text": "Rf = 2.0."
+        },
+        {
+          "label": "C",
+          "text": "Rf = 4.0."
+        },
+        {
+          "label": "D",
+          "text": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06.",
+      "explanation": "The Retention Factor Rf is the ratio of solute migration distance to solvent front migration distance (0 \u2264 Rf \u2264 1).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q027",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Recrystallization Seeding Technique",
+      "difficulty": "medium",
+      "question_type": "distillation_selection",
+      "question": "If a supersaturated Chapter 06 solution fails to crystallize upon cooling, what physical laboratory technique induces crystal nucleation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Freezing the solution into solid ice."
+        },
+        {
+          "label": "B",
+          "text": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Adding 1 liter of concentrated acid."
+        },
+        {
+          "label": "D",
+          "text": "Boiling the solvent away completely with a torch."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06.",
+      "explanation": "Scratching provides micro-glass particles as nucleation sites; seed crystals provide a pre-formed crystal lattice template.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q028",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Gas Chromatography (GC) Retention Time",
+      "difficulty": "medium",
+      "question_type": "green_chemistry_metrics",
+      "question": "In gas chromatography analysis of Chapter 06 volatile compounds on a nonpolar capillary column, what factor primarily dictates retention time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Molecular optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "pH of the carrier gas."
+        },
+        {
+          "label": "C",
+          "text": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Color of the compound."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06.",
+      "explanation": "On nonpolar GC stationary phases, elution order is determined primarily by boiling point and vapor pressure.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q029",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 Hazardous Byproduct Quenching",
+      "difficulty": "hard",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "What is the standard, safe laboratory protocol for quenching excess sodium hydride (NaH) or lithium aluminum hydride (LiAlH\u2084) after a Chapter 06 reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dumping the entire flask into pure water instantly."
+        },
+        {
+          "label": "B",
+          "text": "Heating with an open Bunsen burner."
+        },
+        {
+          "label": "C",
+          "text": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Pouring concentrated nitric acid into the flask."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06.",
+      "explanation": "Hydrides react violently with water; cautious quenching with a mild protic alcohol (isopropanol) safely mitigates rapid hydrogen gas release.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q030",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Ch06 E-Factor Industrial Waste Metric",
+      "difficulty": "hard",
+      "question_type": "chromatography_rf_prediction",
+      "question": "If producing 10 kg of a Chapter 06 pharmaceutical ingredient generates 250 kg of chemical waste, what is the process E-Factor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "E-Factor = 2500."
+        },
+        {
+          "label": "C",
+          "text": "E-Factor = 1.0."
+        },
+        {
+          "label": "D",
+          "text": "E-Factor = 0.04."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06.",
+      "explanation": "The environmental E-Factor is calculated as the ratio of total waste generated (in kg) to desired product mass (in kg).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q031",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Extraction Layer Partitioning",
+      "difficulty": "easy",
+      "question_type": "distillation_selection",
+      "question": "In a liquid-liquid separation of Chapter 06 reaction products using dichloromethane (density 1.33 g/mL) and water (density 1.00 g/mL), which is the bottom layer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "The aqueous layer is always on the bottom regardless of solvent."
+        },
+        {
+          "label": "C",
+          "text": "The layers mix completely and cannot separate."
+        },
+        {
+          "label": "D",
+          "text": "The organic layer floats on top."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06.",
+      "explanation": "Halogenated solvents (CH\u2082Cl\u2082, CHCl\u2083) have densities > 1.0 g/mL and form the bottom layer in separatory funnels.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q032",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Silica Gel Chromatography Polarity Order",
+      "difficulty": "easy",
+      "question_type": "green_chemistry_metrics",
+      "question": "On a normal-phase silica column in Chapter 06, what is the elution order of hydrocarbons, ketones, and carboxylic acids?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Ketones elute first \u2192 Hydrocarbons \u2192 Carboxylic acids."
+        },
+        {
+          "label": "C",
+          "text": "All three compounds elute together."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids elute first \u2192 Ketones \u2192 Hydrocarbons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06.",
+      "explanation": "Nonpolar compounds have the weakest affinity for polar silica gel and elute first; polar compounds elute last.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q033",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Fractional Distillation Theoretical Plates",
+      "difficulty": "easy",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "Why does fractional distillation achieve superior separation over simple distillation for Chapter 06 liquid mixtures with close boiling points (\u0394bp < 25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The column works only under high vacuum."
+        },
+        {
+          "label": "B",
+          "text": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "The column heats the mixture to 1000\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "The column destroys the higher-boiling component."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06.",
+      "explanation": "Fractionating columns increase internal surface area, allowing repeated micro-distillations that separate liquids with close boiling points.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q034",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Green Chemistry Atom Economy Calculation",
+      "difficulty": "medium",
+      "question_type": "chromatography_rf_prediction",
+      "question": "What is the Atom Economy for a Chapter 06 catalytic addition reaction where 100% of reactant atoms are incorporated into the target product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "200% Atom Economy."
+        },
+        {
+          "label": "C",
+          "text": "50% Atom Economy."
+        },
+        {
+          "label": "D",
+          "text": "0% Atom Economy."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06.",
+      "explanation": "Addition and pericyclic reactions incorporate all reactant atoms into the product, achieving ideal 100% atom economy.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q035",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Solvent Selection Green Metrics",
+      "difficulty": "medium",
+      "question_type": "distillation_selection",
+      "question": "Which of the following solvents is classified as a 'preferred green solvent' for Chapter 06 laboratory protocols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Hexamethylphosphoramide (HMPA)."
+        },
+        {
+          "label": "C",
+          "text": "Benzene."
+        },
+        {
+          "label": "D",
+          "text": "Carbon tetrachloride (CCl\u2084)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06.",
+      "explanation": "Green chemistry replaces hazardous, carcinogenic, or ozone-depleting solvents with bio-derived, non-toxic alternatives (water, ethanol, 2-MeTHF).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q036",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Thin-Layer Chromatography Rf Calculation",
+      "difficulty": "medium",
+      "question_type": "green_chemistry_metrics",
+      "question": "If a Chapter 06 compound migrates 4.0 cm on a TLC plate while the solvent front travels 8.0 cm, what is its Retention Factor (Rf)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Rf = 2.0."
+        },
+        {
+          "label": "C",
+          "text": "Rf = 4.0."
+        },
+        {
+          "label": "D",
+          "text": "Rf = 0.25."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06.",
+      "explanation": "The Retention Factor Rf is the ratio of solute migration distance to solvent front migration distance (0 \u2264 Rf \u2264 1).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q037",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Recrystallization Seeding Technique",
+      "difficulty": "medium",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "If a supersaturated Chapter 06 solution fails to crystallize upon cooling, what physical laboratory technique induces crystal nucleation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adding 1 liter of concentrated acid."
+        },
+        {
+          "label": "B",
+          "text": "Boiling the solvent away completely with a torch."
+        },
+        {
+          "label": "C",
+          "text": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Freezing the solution into solid ice."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06.",
+      "explanation": "Scratching provides micro-glass particles as nucleation sites; seed crystals provide a pre-formed crystal lattice template.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q038",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Gas Chromatography (GC) Retention Time",
+      "difficulty": "hard",
+      "question_type": "chromatography_rf_prediction",
+      "question": "In gas chromatography analysis of Chapter 06 volatile compounds on a nonpolar capillary column, what factor primarily dictates retention time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pH of the carrier gas."
+        },
+        {
+          "label": "B",
+          "text": "Color of the compound."
+        },
+        {
+          "label": "C",
+          "text": "Molecular optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06.",
+      "explanation": "On nonpolar GC stationary phases, elution order is determined primarily by boiling point and vapor pressure.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q039",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 Hazardous Byproduct Quenching",
+      "difficulty": "hard",
+      "question_type": "distillation_selection",
+      "question": "What is the standard, safe laboratory protocol for quenching excess sodium hydride (NaH) or lithium aluminum hydride (LiAlH\u2084) after a Chapter 06 reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Heating with an open Bunsen burner."
+        },
+        {
+          "label": "C",
+          "text": "Pouring concentrated nitric acid into the flask."
+        },
+        {
+          "label": "D",
+          "text": "Dumping the entire flask into pure water instantly."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06.",
+      "explanation": "Hydrides react violently with water; cautious quenching with a mild protic alcohol (isopropanol) safely mitigates rapid hydrogen gas release.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q040",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Ch06 E-Factor Industrial Waste Metric",
+      "difficulty": "hard",
+      "question_type": "green_chemistry_metrics",
+      "question": "If producing 10 kg of a Chapter 06 pharmaceutical ingredient generates 250 kg of chemical waste, what is the process E-Factor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E-Factor = 0.04."
+        },
+        {
+          "label": "B",
+          "text": "E-Factor = 1.0."
+        },
+        {
+          "label": "C",
+          "text": "E-Factor = 2500."
+        },
+        {
+          "label": "D",
+          "text": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06.",
+      "explanation": "The environmental E-Factor is calculated as the ratio of total waste generated (in kg) to desired product mass (in kg).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q041",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Extraction Layer Partitioning",
+      "difficulty": "easy",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "In a liquid-liquid separation of Chapter 06 reaction products using dichloromethane (density 1.33 g/mL) and water (density 1.00 g/mL), which is the bottom layer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "The organic layer floats on top."
+        },
+        {
+          "label": "C",
+          "text": "The layers mix completely and cannot separate."
+        },
+        {
+          "label": "D",
+          "text": "The aqueous layer is always on the bottom regardless of solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The dichloromethane (organic) layer is the bottom layer due to its higher density compared to water in Chapter 06.",
+      "explanation": "Halogenated solvents (CH\u2082Cl\u2082, CHCl\u2083) have densities > 1.0 g/mL and form the bottom layer in separatory funnels.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q042",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Silica Gel Chromatography Polarity Order",
+      "difficulty": "easy",
+      "question_type": "chromatography_rf_prediction",
+      "question": "On a normal-phase silica column in Chapter 06, what is the elution order of hydrocarbons, ketones, and carboxylic acids?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All three compounds elute together."
+        },
+        {
+          "label": "B",
+          "text": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids elute first \u2192 Ketones \u2192 Hydrocarbons."
+        },
+        {
+          "label": "D",
+          "text": "Ketones elute first \u2192 Hydrocarbons \u2192 Carboxylic acids."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydrocarbons (least polar, elute first) \u2192 Ketones (moderately polar) \u2192 Carboxylic acids (most polar, elute last) in Chapter 06.",
+      "explanation": "Nonpolar compounds have the weakest affinity for polar silica gel and elute first; polar compounds elute last.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q043",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Fractional Distillation Theoretical Plates",
+      "difficulty": "medium",
+      "question_type": "distillation_selection",
+      "question": "Why does fractional distillation achieve superior separation over simple distillation for Chapter 06 liquid mixtures with close boiling points (\u0394bp < 25\u00b0C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "The column works only under high vacuum."
+        },
+        {
+          "label": "C",
+          "text": "The column heats the mixture to 1000\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "The column destroys the higher-boiling component."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The fractionating column provides multiple sequential condensation-vaporization cycles (theoretical plates), progressively enriching the rising vapor in the lower-boiling component in Chapter 06.",
+      "explanation": "Fractionating columns increase internal surface area, allowing repeated micro-distillations that separate liquids with close boiling points.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q044",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Green Chemistry Atom Economy Calculation",
+      "difficulty": "medium",
+      "question_type": "green_chemistry_metrics",
+      "question": "What is the Atom Economy for a Chapter 06 catalytic addition reaction where 100% of reactant atoms are incorporated into the target product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "50% Atom Economy."
+        },
+        {
+          "label": "B",
+          "text": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06."
+        },
+        {
+          "label": "C",
+          "text": "200% Atom Economy."
+        },
+        {
+          "label": "D",
+          "text": "0% Atom Economy."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "100% Atom Economy, representing maximum sustainability with zero chemical byproduct generation in Chapter 06.",
+      "explanation": "Addition and pericyclic reactions incorporate all reactant atoms into the product, achieving ideal 100% atom economy.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q045",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Solvent Selection Green Metrics",
+      "difficulty": "medium",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "Which of the following solvents is classified as a 'preferred green solvent' for Chapter 06 laboratory protocols?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Hexamethylphosphoramide (HMPA)."
+        },
+        {
+          "label": "C",
+          "text": "Carbon tetrachloride (CCl\u2084)."
+        },
+        {
+          "label": "D",
+          "text": "Benzene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethanol, water, or 2-methyltetrahydrofuran (2-MeTHF), replacing toxic and non-renewable chlorinated solvents in Chapter 06.",
+      "explanation": "Green chemistry replaces hazardous, carcinogenic, or ozone-depleting solvents with bio-derived, non-toxic alternatives (water, ethanol, 2-MeTHF).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q046",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Thin-Layer Chromatography Rf Calculation",
+      "difficulty": "medium",
+      "question_type": "chromatography_rf_prediction",
+      "question": "If a Chapter 06 compound migrates 4.0 cm on a TLC plate while the solvent front travels 8.0 cm, what is its Retention Factor (Rf)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rf = 2.0."
+        },
+        {
+          "label": "B",
+          "text": "Rf = 0.25."
+        },
+        {
+          "label": "C",
+          "text": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Rf = 4.0."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Rf = 0.50 (Rf = distance traveled by compound / distance traveled by solvent front = 4.0 cm / 8.0 cm = 0.50) in Chapter 06.",
+      "explanation": "The Retention Factor Rf is the ratio of solute migration distance to solvent front migration distance (0 \u2264 Rf \u2264 1).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q047",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Recrystallization Seeding Technique",
+      "difficulty": "hard",
+      "question_type": "distillation_selection",
+      "question": "If a supersaturated Chapter 06 solution fails to crystallize upon cooling, what physical laboratory technique induces crystal nucleation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adding 1 liter of concentrated acid."
+        },
+        {
+          "label": "B",
+          "text": "Freezing the solution into solid ice."
+        },
+        {
+          "label": "C",
+          "text": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "Boiling the solvent away completely with a torch."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Scratching the inside glass wall with a glass stirring rod or adding a tiny 'seed crystal' of pure compound in Chapter 06.",
+      "explanation": "Scratching provides micro-glass particles as nucleation sites; seed crystals provide a pre-formed crystal lattice template.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q048",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Gas Chromatography (GC) Retention Time",
+      "difficulty": "hard",
+      "question_type": "green_chemistry_metrics",
+      "question": "In gas chromatography analysis of Chapter 06 volatile compounds on a nonpolar capillary column, what factor primarily dictates retention time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06."
+        },
+        {
+          "label": "B",
+          "text": "Molecular optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "Color of the compound."
+        },
+        {
+          "label": "D",
+          "text": "pH of the carrier gas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Boiling point: lower-boiling, more volatile compounds partition more into the carrier gas and elute first (shorter retention time) in Chapter 06.",
+      "explanation": "On nonpolar GC stationary phases, elution order is determined primarily by boiling point and vapor pressure.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q049",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 Hazardous Byproduct Quenching",
+      "difficulty": "hard",
+      "question_type": "acid_base_extraction_flowchart",
+      "question": "What is the standard, safe laboratory protocol for quenching excess sodium hydride (NaH) or lithium aluminum hydride (LiAlH\u2084) after a Chapter 06 reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pouring concentrated nitric acid into the flask."
+        },
+        {
+          "label": "B",
+          "text": "Dumping the entire flask into pure water instantly."
+        },
+        {
+          "label": "C",
+          "text": "Heating with an open Bunsen burner."
+        },
+        {
+          "label": "D",
+          "text": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Slow, dropwise addition of isopropanol or ethyl acetate followed by water under an inert atmosphere with vigorous cooling in Chapter 06.",
+      "explanation": "Hydrides react violently with water; cautious quenching with a mild protic alcohol (isopropanol) safely mitigates rapid hydrogen gas release.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q050",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Ch06 E-Factor Industrial Waste Metric",
+      "difficulty": "hard",
+      "question_type": "chromatography_rf_prediction",
+      "question": "If producing 10 kg of a Chapter 06 pharmaceutical ingredient generates 250 kg of chemical waste, what is the process E-Factor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E-Factor = 2500."
+        },
+        {
+          "label": "B",
+          "text": "E-Factor = 0.04."
+        },
+        {
+          "label": "C",
+          "text": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06."
+        },
+        {
+          "label": "D",
+          "text": "E-Factor = 1.0."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "E-Factor = 25 (E-Factor = total waste mass / product mass = 250 kg / 10 kg = 25) in Chapter 06.",
+      "explanation": "The environmental E-Factor is calculated as the ratio of total waste generated (in kg) to desired product mass (in kg).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    }
+  ]
+}

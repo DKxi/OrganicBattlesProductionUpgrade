@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 23,
+  "chapter_title": "Introduction to Organometallic Compounds",
+  "assigned_boss": "Gilman Guardian",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch23_q001",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Gilman Cuprate 1,4-Conjugate Addition Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic pathway explains the selective 1,4-addition of lithium dialkylcuprates (R₂CuLi) to conjugated enones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted [2+2] cycloaddition to form an oxetane."
+        },
+        {
+          "label": "B",
+          "text": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement at the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "Free radical abstraction of the carbonyl oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination.",
+      "explanation": "Organocuprates are soft organometallic reagents that undergo oxidative addition/migratory insertion selectively at the softer β-carbon of enones.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q002",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Simmons-Smith Carbenoid Concerted Addition",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the reactive organometallic species in the Simmons-Smith cyclopropanation using CH₂I₂ and Zn(Cu)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond."
+        },
+        {
+          "label": "B",
+          "text": "A methyl radical and zinc iodide."
+        },
+        {
+          "label": "C",
+          "text": "A cyclopropyl cation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Free singlet carbene in the gas phase."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond.",
+      "explanation": "The zinc carbenoid delivers methylene via a concerted butterfly transition state without generating free carbene intermediates.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q003",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Dihalocarbene Alpha-Elimination Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How is dichlorocarbene (:CCl₂) generated from chloroform (CHCl₃) and potassium tert-butoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C-Cl bond by UV light."
+        },
+        {
+          "label": "C",
+          "text": "Direct oxidation of chloroform by oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Concerted elimination of two chlorine atoms simultaneously."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion.",
+      "explanation": "Alpha-elimination involves loss of a proton and a halide from the same carbon atom, creating a neutral divalent carbon intermediate with a lone pair and empty p orbital.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q004",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Suzuki-Miyaura Catalytic Cycle Sequence",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the correct sequential order of elementary steps in the palladium-catalyzed Suzuki-Miyaura cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reductive elimination → Migratory insertion → Beta-elimination."
+        },
+        {
+          "label": "B",
+          "text": "Transmetalation → Oxidative addition → Reductive elimination."
+        },
+        {
+          "label": "C",
+          "text": "Radical initiation → Propagation → Termination."
+        },
+        {
+          "label": "D",
+          "text": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0).",
+      "explanation": "The Suzuki catalytic cycle comprises three core organometallic steps: oxidative addition, base-assisted transmetalation, and reductive elimination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q005",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Suzuki Coupling Base Role in Transmetalation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the crucial role of the base (e.g., Na₂CO₃ or NaOH) in the Suzuki-Miyaura coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base oxidizes Pd(0) to Pd(II)."
+        },
+        {
+          "label": "B",
+          "text": "Base precipitates palladium as a solid mirror."
+        },
+        {
+          "label": "C",
+          "text": "Base deprotonates the aryl halide."
+        },
+        {
+          "label": "D",
+          "text": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium.",
+      "explanation": "Neutral boronic acids undergo transmetalation very slowly; conversion to the negatively charged boronate complex dramatically accelerates transmetalation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q006",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Heck Reaction Migratory Insertion and Syn Beta-Elimination",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the Heck coupling of iodobenzene with methyl acrylate, what determines the trans alkene stereochemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Backside SN2 attack of palladium on the double bond."
+        },
+        {
+          "label": "B",
+          "text": "Radical coupling in solution."
+        },
+        {
+          "label": "C",
+          "text": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate."
+        },
+        {
+          "label": "D",
+          "text": "Anti-elimination of palladium hydride."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate.",
+      "explanation": "Both migratory insertion and β-hydride elimination are strictly syn processes; internal rotation to align Pd and H syn delivers the trans-alkene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q007",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Stille Coupling Organotin Transmetalation",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the fundamental transformation during the transmetalation step of a Stille cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Proton transfer from tin to palladium."
+        },
+        {
+          "label": "B",
+          "text": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-Pd bond by tin radicals."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of tin from Sn(II) to Sn(IV)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate.",
+      "explanation": "Transmetalation exchanges the carbon nucleophile from tin to palladium without requiring strong base.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q008",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Negishi Coupling Organozinc Advantage",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the Negishi coupling utilizing organozinc reagents (R-ZnX) exceptionally versatile in multi-step synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones)."
+        },
+        {
+          "label": "B",
+          "text": "Zinc reagents are radioactive tracers."
+        },
+        {
+          "label": "C",
+          "text": "Organozinc reagents never require transition metal catalysts."
+        },
+        {
+          "label": "D",
+          "text": "Organozinc reagents are completely insoluble in all solvents."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones).",
+      "explanation": "Organozinc compounds strike an ideal balance of functional group tolerance and transmetalation reactivity with palladium.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q009",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Grubbs Alkene Metathesis Metallacyclobutane",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What four-membered cyclic intermediate mediates carbon-carbon double bond rearrangement in Grubbs alkene metathesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A six-membered oxaruthenacycle."
+        },
+        {
+          "label": "B",
+          "text": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer."
+        },
+        {
+          "label": "C",
+          "text": "A four-membered dioxetane ring."
+        },
+        {
+          "label": "D",
+          "text": "A ruthenium cyclopentadienyl sandwich complex."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer.",
+      "explanation": "Ruthenium-catalyzed olefin metathesis operates via alternating [2+2] cycloaddition and retro-[2+2] cleavage through a 4-membered metallacyclobutane ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q010",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Gilman Guardian",
+      "topic": "Ring-Closing Metathesis (RCM) Entropy Drive",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is Ring-Closing Metathesis (RCM) of α,ω-dienes thermodynamically favored to form cyclic alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction releases elemental chlorine gas."
+        },
+        {
+          "label": "B",
+          "text": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0)."
+        },
+        {
+          "label": "C",
+          "text": "Cyclic alkenes are always more stable than linear dienes."
+        },
+        {
+          "label": "D",
+          "text": "Ruthenium is permanently consumed as a solid product."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0).",
+      "explanation": "Loss of volatile ethylene gas provides a huge entropic advantage (2 molecules produced from 1) and drives the equilibrium forward (Le Chatelier).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "gilman-guardian.png"
+      ]
+    },
+    {
+      "id": "ch23_q011",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Dihalocarbene Alpha-Elimination Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How is dichlorocarbene (:CCl₂) generated from chloroform (CHCl₃) and potassium tert-butoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted elimination of two chlorine atoms simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "Direct oxidation of chloroform by oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-Cl bond by UV light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion.",
+      "explanation": "Alpha-elimination involves loss of a proton and a halide from the same carbon atom, creating a neutral divalent carbon intermediate with a lone pair and empty p orbital.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q012",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Suzuki-Miyaura Catalytic Cycle Sequence",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the correct sequential order of elementary steps in the palladium-catalyzed Suzuki-Miyaura cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Transmetalation → Oxidative addition → Reductive elimination."
+        },
+        {
+          "label": "B",
+          "text": "Reductive elimination → Migratory insertion → Beta-elimination."
+        },
+        {
+          "label": "C",
+          "text": "Radical initiation → Propagation → Termination."
+        },
+        {
+          "label": "D",
+          "text": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0).",
+      "explanation": "The Suzuki catalytic cycle comprises three core organometallic steps: oxidative addition, base-assisted transmetalation, and reductive elimination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q013",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Suzuki Coupling Base Role in Transmetalation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the crucial role of the base (e.g., Na₂CO₃ or NaOH) in the Suzuki-Miyaura coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base precipitates palladium as a solid mirror."
+        },
+        {
+          "label": "B",
+          "text": "Base deprotonates the aryl halide."
+        },
+        {
+          "label": "C",
+          "text": "Base oxidizes Pd(0) to Pd(II)."
+        },
+        {
+          "label": "D",
+          "text": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium.",
+      "explanation": "Neutral boronic acids undergo transmetalation very slowly; conversion to the negatively charged boronate complex dramatically accelerates transmetalation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q014",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Heck Reaction Migratory Insertion and Syn Beta-Elimination",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "In the Heck coupling of iodobenzene with methyl acrylate, what determines the trans alkene stereochemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Radical coupling in solution."
+        },
+        {
+          "label": "B",
+          "text": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate."
+        },
+        {
+          "label": "C",
+          "text": "Backside SN2 attack of palladium on the double bond."
+        },
+        {
+          "label": "D",
+          "text": "Anti-elimination of palladium hydride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate.",
+      "explanation": "Both migratory insertion and β-hydride elimination are strictly syn processes; internal rotation to align Pd and H syn delivers the trans-alkene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q015",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Stille Coupling Organotin Transmetalation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the fundamental transformation during the transmetalation step of a Stille cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of tin from Sn(II) to Sn(IV)."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C-Pd bond by tin radicals."
+        },
+        {
+          "label": "C",
+          "text": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Proton transfer from tin to palladium."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate.",
+      "explanation": "Transmetalation exchanges the carbon nucleophile from tin to palladium without requiring strong base.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q016",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Negishi Coupling Organozinc Advantage",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is the Negishi coupling utilizing organozinc reagents (R-ZnX) exceptionally versatile in multi-step synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zinc reagents are radioactive tracers."
+        },
+        {
+          "label": "B",
+          "text": "Organozinc reagents are completely insoluble in all solvents."
+        },
+        {
+          "label": "C",
+          "text": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones)."
+        },
+        {
+          "label": "D",
+          "text": "Organozinc reagents never require transition metal catalysts."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones).",
+      "explanation": "Organozinc compounds strike an ideal balance of functional group tolerance and transmetalation reactivity with palladium.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q017",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Grubbs Alkene Metathesis Metallacyclobutane",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What four-membered cyclic intermediate mediates carbon-carbon double bond rearrangement in Grubbs alkene metathesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A six-membered oxaruthenacycle."
+        },
+        {
+          "label": "B",
+          "text": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer."
+        },
+        {
+          "label": "C",
+          "text": "A four-membered dioxetane ring."
+        },
+        {
+          "label": "D",
+          "text": "A ruthenium cyclopentadienyl sandwich complex."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer.",
+      "explanation": "Ruthenium-catalyzed olefin metathesis operates via alternating [2+2] cycloaddition and retro-[2+2] cleavage through a 4-membered metallacyclobutane ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q018",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Ring-Closing Metathesis (RCM) Entropy Drive",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is Ring-Closing Metathesis (RCM) of α,ω-dienes thermodynamically favored to form cyclic alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclic alkenes are always more stable than linear dienes."
+        },
+        {
+          "label": "B",
+          "text": "Ruthenium is permanently consumed as a solid product."
+        },
+        {
+          "label": "C",
+          "text": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0)."
+        },
+        {
+          "label": "D",
+          "text": "The reaction releases elemental chlorine gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0).",
+      "explanation": "Loss of volatile ethylene gas provides a huge entropic advantage (2 molecules produced from 1) and drives the equilibrium forward (Le Chatelier).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q019",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Gilman Cuprate 1,4-Conjugate Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic pathway explains the selective 1,4-addition of lithium dialkylcuprates (R₂CuLi) to conjugated enones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted [2+2] cycloaddition to form an oxetane."
+        },
+        {
+          "label": "B",
+          "text": "Free radical abstraction of the carbonyl oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement at the carbonyl carbon."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination.",
+      "explanation": "Organocuprates are soft organometallic reagents that undergo oxidative addition/migratory insertion selectively at the softer β-carbon of enones.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q020",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Carbenoid Cyclops",
+      "topic": "Simmons-Smith Carbenoid Concerted Addition",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the reactive organometallic species in the Simmons-Smith cyclopropanation using CH₂I₂ and Zn(Cu)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free singlet carbene in the gas phase."
+        },
+        {
+          "label": "B",
+          "text": "A cyclopropyl cation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A methyl radical and zinc iodide."
+        },
+        {
+          "label": "D",
+          "text": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond.",
+      "explanation": "The zinc carbenoid delivers methylene via a concerted butterfly transition state without generating free carbene intermediates.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbenoid-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch23_q021",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Suzuki Coupling Base Role in Transmetalation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the crucial role of the base (e.g., Na₂CO₃ or NaOH) in the Suzuki-Miyaura coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base precipitates palladium as a solid mirror."
+        },
+        {
+          "label": "B",
+          "text": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium."
+        },
+        {
+          "label": "C",
+          "text": "Base oxidizes Pd(0) to Pd(II)."
+        },
+        {
+          "label": "D",
+          "text": "Base deprotonates the aryl halide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium.",
+      "explanation": "Neutral boronic acids undergo transmetalation very slowly; conversion to the negatively charged boronate complex dramatically accelerates transmetalation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q022",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Heck Reaction Migratory Insertion and Syn Beta-Elimination",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the Heck coupling of iodobenzene with methyl acrylate, what determines the trans alkene stereochemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-elimination of palladium hydride."
+        },
+        {
+          "label": "B",
+          "text": "Radical coupling in solution."
+        },
+        {
+          "label": "C",
+          "text": "Backside SN2 attack of palladium on the double bond."
+        },
+        {
+          "label": "D",
+          "text": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate.",
+      "explanation": "Both migratory insertion and β-hydride elimination are strictly syn processes; internal rotation to align Pd and H syn delivers the trans-alkene.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q023",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Stille Coupling Organotin Transmetalation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the fundamental transformation during the transmetalation step of a Stille cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of tin from Sn(II) to Sn(IV)."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C-Pd bond by tin radicals."
+        },
+        {
+          "label": "C",
+          "text": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Proton transfer from tin to palladium."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate.",
+      "explanation": "Transmetalation exchanges the carbon nucleophile from tin to palladium without requiring strong base.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q024",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Negishi Coupling Organozinc Advantage",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is the Negishi coupling utilizing organozinc reagents (R-ZnX) exceptionally versatile in multi-step synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Organozinc reagents are completely insoluble in all solvents."
+        },
+        {
+          "label": "B",
+          "text": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones)."
+        },
+        {
+          "label": "C",
+          "text": "Organozinc reagents never require transition metal catalysts."
+        },
+        {
+          "label": "D",
+          "text": "Zinc reagents are radioactive tracers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones).",
+      "explanation": "Organozinc compounds strike an ideal balance of functional group tolerance and transmetalation reactivity with palladium.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q025",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Grubbs Alkene Metathesis Metallacyclobutane",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What four-membered cyclic intermediate mediates carbon-carbon double bond rearrangement in Grubbs alkene metathesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A four-membered dioxetane ring."
+        },
+        {
+          "label": "B",
+          "text": "A ruthenium cyclopentadienyl sandwich complex."
+        },
+        {
+          "label": "C",
+          "text": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer."
+        },
+        {
+          "label": "D",
+          "text": "A six-membered oxaruthenacycle."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer.",
+      "explanation": "Ruthenium-catalyzed olefin metathesis operates via alternating [2+2] cycloaddition and retro-[2+2] cleavage through a 4-membered metallacyclobutane ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q026",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Ring-Closing Metathesis (RCM) Entropy Drive",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is Ring-Closing Metathesis (RCM) of α,ω-dienes thermodynamically favored to form cyclic alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclic alkenes are always more stable than linear dienes."
+        },
+        {
+          "label": "B",
+          "text": "The reaction releases elemental chlorine gas."
+        },
+        {
+          "label": "C",
+          "text": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0)."
+        },
+        {
+          "label": "D",
+          "text": "Ruthenium is permanently consumed as a solid product."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0).",
+      "explanation": "Loss of volatile ethylene gas provides a huge entropic advantage (2 molecules produced from 1) and drives the equilibrium forward (Le Chatelier).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q027",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Gilman Cuprate 1,4-Conjugate Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What mechanistic pathway explains the selective 1,4-addition of lithium dialkylcuprates (R₂CuLi) to conjugated enones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination."
+        },
+        {
+          "label": "B",
+          "text": "Free radical abstraction of the carbonyl oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement at the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "Concerted [2+2] cycloaddition to form an oxetane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination.",
+      "explanation": "Organocuprates are soft organometallic reagents that undergo oxidative addition/migratory insertion selectively at the softer β-carbon of enones.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q028",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Simmons-Smith Carbenoid Concerted Addition",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the reactive organometallic species in the Simmons-Smith cyclopropanation using CH₂I₂ and Zn(Cu)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A methyl radical and zinc iodide."
+        },
+        {
+          "label": "B",
+          "text": "A cyclopropyl cation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond."
+        },
+        {
+          "label": "D",
+          "text": "Free singlet carbene in the gas phase."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond.",
+      "explanation": "The zinc carbenoid delivers methylene via a concerted butterfly transition state without generating free carbene intermediates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q029",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Dihalocarbene Alpha-Elimination Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How is dichlorocarbene (:CCl₂) generated from chloroform (CHCl₃) and potassium tert-butoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted elimination of two chlorine atoms simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-Cl bond by UV light."
+        },
+        {
+          "label": "D",
+          "text": "Direct oxidation of chloroform by oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion.",
+      "explanation": "Alpha-elimination involves loss of a proton and a halide from the same carbon atom, creating a neutral divalent carbon intermediate with a lone pair and empty p orbital.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q030",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Stille Specter",
+      "topic": "Suzuki-Miyaura Catalytic Cycle Sequence",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the correct sequential order of elementary steps in the palladium-catalyzed Suzuki-Miyaura cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0)."
+        },
+        {
+          "label": "B",
+          "text": "Reductive elimination → Migratory insertion → Beta-elimination."
+        },
+        {
+          "label": "C",
+          "text": "Transmetalation → Oxidative addition → Reductive elimination."
+        },
+        {
+          "label": "D",
+          "text": "Radical initiation → Propagation → Termination."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0).",
+      "explanation": "The Suzuki catalytic cycle comprises three core organometallic steps: oxidative addition, base-assisted transmetalation, and reductive elimination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "stille-specter.png"
+      ]
+    },
+    {
+      "id": "ch23_q031",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Stille Coupling Organotin Transmetalation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the fundamental transformation during the transmetalation step of a Stille cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C-Pd bond by tin radicals."
+        },
+        {
+          "label": "C",
+          "text": "Proton transfer from tin to palladium."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of tin from Sn(II) to Sn(IV)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate.",
+      "explanation": "Transmetalation exchanges the carbon nucleophile from tin to palladium without requiring strong base.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q032",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Negishi Coupling Organozinc Advantage",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is the Negishi coupling utilizing organozinc reagents (R-ZnX) exceptionally versatile in multi-step synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Organozinc reagents never require transition metal catalysts."
+        },
+        {
+          "label": "B",
+          "text": "Organozinc reagents are completely insoluble in all solvents."
+        },
+        {
+          "label": "C",
+          "text": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones)."
+        },
+        {
+          "label": "D",
+          "text": "Zinc reagents are radioactive tracers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones).",
+      "explanation": "Organozinc compounds strike an ideal balance of functional group tolerance and transmetalation reactivity with palladium.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q033",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Grubbs Alkene Metathesis Metallacyclobutane",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What four-membered cyclic intermediate mediates carbon-carbon double bond rearrangement in Grubbs alkene metathesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A four-membered dioxetane ring."
+        },
+        {
+          "label": "B",
+          "text": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer."
+        },
+        {
+          "label": "C",
+          "text": "A ruthenium cyclopentadienyl sandwich complex."
+        },
+        {
+          "label": "D",
+          "text": "A six-membered oxaruthenacycle."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer.",
+      "explanation": "Ruthenium-catalyzed olefin metathesis operates via alternating [2+2] cycloaddition and retro-[2+2] cleavage through a 4-membered metallacyclobutane ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q034",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Ring-Closing Metathesis (RCM) Entropy Drive",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is Ring-Closing Metathesis (RCM) of α,ω-dienes thermodynamically favored to form cyclic alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ruthenium is permanently consumed as a solid product."
+        },
+        {
+          "label": "B",
+          "text": "Cyclic alkenes are always more stable than linear dienes."
+        },
+        {
+          "label": "C",
+          "text": "The reaction releases elemental chlorine gas."
+        },
+        {
+          "label": "D",
+          "text": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0).",
+      "explanation": "Loss of volatile ethylene gas provides a huge entropic advantage (2 molecules produced from 1) and drives the equilibrium forward (Le Chatelier).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q035",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Gilman Cuprate 1,4-Conjugate Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What mechanistic pathway explains the selective 1,4-addition of lithium dialkylcuprates (R₂CuLi) to conjugated enones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination."
+        },
+        {
+          "label": "B",
+          "text": "Concerted [2+2] cycloaddition to form an oxetane."
+        },
+        {
+          "label": "C",
+          "text": "Free radical abstraction of the carbonyl oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement at the carbonyl carbon."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination.",
+      "explanation": "Organocuprates are soft organometallic reagents that undergo oxidative addition/migratory insertion selectively at the softer β-carbon of enones.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q036",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Simmons-Smith Carbenoid Concerted Addition",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the reactive organometallic species in the Simmons-Smith cyclopropanation using CH₂I₂ and Zn(Cu)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free singlet carbene in the gas phase."
+        },
+        {
+          "label": "B",
+          "text": "A cyclopropyl cation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A methyl radical and zinc iodide."
+        },
+        {
+          "label": "D",
+          "text": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond.",
+      "explanation": "The zinc carbenoid delivers methylene via a concerted butterfly transition state without generating free carbene intermediates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q037",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Dihalocarbene Alpha-Elimination Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How is dichlorocarbene (:CCl₂) generated from chloroform (CHCl₃) and potassium tert-butoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-Cl bond by UV light."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion."
+        },
+        {
+          "label": "C",
+          "text": "Direct oxidation of chloroform by oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Concerted elimination of two chlorine atoms simultaneously."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion.",
+      "explanation": "Alpha-elimination involves loss of a proton and a halide from the same carbon atom, creating a neutral divalent carbon intermediate with a lone pair and empty p orbital.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q038",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Suzuki-Miyaura Catalytic Cycle Sequence",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the correct sequential order of elementary steps in the palladium-catalyzed Suzuki-Miyaura cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0)."
+        },
+        {
+          "label": "B",
+          "text": "Transmetalation → Oxidative addition → Reductive elimination."
+        },
+        {
+          "label": "C",
+          "text": "Reductive elimination → Migratory insertion → Beta-elimination."
+        },
+        {
+          "label": "D",
+          "text": "Radical initiation → Propagation → Termination."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0).",
+      "explanation": "The Suzuki catalytic cycle comprises three core organometallic steps: oxidative addition, base-assisted transmetalation, and reductive elimination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q039",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Suzuki Coupling Base Role in Transmetalation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the crucial role of the base (e.g., Na₂CO₃ or NaOH) in the Suzuki-Miyaura coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base deprotonates the aryl halide."
+        },
+        {
+          "label": "B",
+          "text": "Base oxidizes Pd(0) to Pd(II)."
+        },
+        {
+          "label": "C",
+          "text": "Base precipitates palladium as a solid mirror."
+        },
+        {
+          "label": "D",
+          "text": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium.",
+      "explanation": "Neutral boronic acids undergo transmetalation very slowly; conversion to the negatively charged boronate complex dramatically accelerates transmetalation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q040",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Suzuki Sorcerer",
+      "topic": "Heck Reaction Migratory Insertion and Syn Beta-Elimination",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "In the Heck coupling of iodobenzene with methyl acrylate, what determines the trans alkene stereochemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-elimination of palladium hydride."
+        },
+        {
+          "label": "B",
+          "text": "Radical coupling in solution."
+        },
+        {
+          "label": "C",
+          "text": "Backside SN2 attack of palladium on the double bond."
+        },
+        {
+          "label": "D",
+          "text": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate.",
+      "explanation": "Both migratory insertion and β-hydride elimination are strictly syn processes; internal rotation to align Pd and H syn delivers the trans-alkene.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "suzuki-sorcerer.png"
+      ]
+    },
+    {
+      "id": "ch23_q041",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Grubbs Alkene Metathesis Metallacyclobutane",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What four-membered cyclic intermediate mediates carbon-carbon double bond rearrangement in Grubbs alkene metathesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A six-membered oxaruthenacycle."
+        },
+        {
+          "label": "B",
+          "text": "A ruthenium cyclopentadienyl sandwich complex."
+        },
+        {
+          "label": "C",
+          "text": "A four-membered dioxetane ring."
+        },
+        {
+          "label": "D",
+          "text": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A metallacyclobutane intermediate formed by reversible [2+2] cycloaddition between the ruthenium alkylidene catalyst [Ru=CHR] and an alkene monomer.",
+      "explanation": "Ruthenium-catalyzed olefin metathesis operates via alternating [2+2] cycloaddition and retro-[2+2] cleavage through a 4-membered metallacyclobutane ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q042",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Ring-Closing Metathesis (RCM) Entropy Drive",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is Ring-Closing Metathesis (RCM) of α,ω-dienes thermodynamically favored to form cyclic alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0)."
+        },
+        {
+          "label": "B",
+          "text": "Ruthenium is permanently consumed as a solid product."
+        },
+        {
+          "label": "C",
+          "text": "Cyclic alkenes are always more stable than linear dienes."
+        },
+        {
+          "label": "D",
+          "text": "The reaction releases elemental chlorine gas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The intramolecular cyclization expels a molecule of gaseous ethylene (CH₂=CH₂ ↑), which bubbles out of solution, providing an irreversible entropic driving force (ΔS° > 0).",
+      "explanation": "Loss of volatile ethylene gas provides a huge entropic advantage (2 molecules produced from 1) and drives the equilibrium forward (Le Chatelier).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q043",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Gilman Cuprate 1,4-Conjugate Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What mechanistic pathway explains the selective 1,4-addition of lithium dialkylcuprates (R₂CuLi) to conjugated enones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct SN2 displacement at the carbonyl carbon."
+        },
+        {
+          "label": "B",
+          "text": "Concerted [2+2] cycloaddition to form an oxetane."
+        },
+        {
+          "label": "C",
+          "text": "Free radical abstraction of the carbonyl oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Single-electron transfer and coordination of copper to the enone π system followed by migratory insertion at the β-carbon and reductive elimination.",
+      "explanation": "Organocuprates are soft organometallic reagents that undergo oxidative addition/migratory insertion selectively at the softer β-carbon of enones.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q044",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Simmons-Smith Carbenoid Concerted Addition",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the reactive organometallic species in the Simmons-Smith cyclopropanation using CH₂I₂ and Zn(Cu)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free singlet carbene in the gas phase."
+        },
+        {
+          "label": "B",
+          "text": "A cyclopropyl cation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond."
+        },
+        {
+          "label": "D",
+          "text": "A methyl radical and zinc iodide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Iodomethylzinc iodide (ICH₂ZnI), a zinc carbenoid that transfers a methylene (:CH₂) unit stereospecifically syn across the alkene π bond.",
+      "explanation": "The zinc carbenoid delivers methylene via a concerted butterfly transition state without generating free carbene intermediates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q045",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Dihalocarbene Alpha-Elimination Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "How is dichlorocarbene (:CCl₂) generated from chloroform (CHCl₃) and potassium tert-butoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted elimination of two chlorine atoms simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "Direct oxidation of chloroform by oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-Cl bond by UV light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Deprotonation of the acidic C-H bond by tert-butoxide yields the trichloromethanide anion (⁻:CCl₃), which undergoes α-elimination by expelling a chloride ion.",
+      "explanation": "Alpha-elimination involves loss of a proton and a halide from the same carbon atom, creating a neutral divalent carbon intermediate with a lone pair and empty p orbital.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q046",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Suzuki-Miyaura Catalytic Cycle Sequence",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the correct sequential order of elementary steps in the palladium-catalyzed Suzuki-Miyaura cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0)."
+        },
+        {
+          "label": "B",
+          "text": "Reductive elimination → Migratory insertion → Beta-elimination."
+        },
+        {
+          "label": "C",
+          "text": "Transmetalation → Oxidative addition → Reductive elimination."
+        },
+        {
+          "label": "D",
+          "text": "Radical initiation → Propagation → Termination."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Oxidative addition of Pd(0) into aryl halide → Transmetalation of organoboronic acid to Pd(II) → Reductive elimination of biaryl product regenerating Pd(0).",
+      "explanation": "The Suzuki catalytic cycle comprises three core organometallic steps: oxidative addition, base-assisted transmetalation, and reductive elimination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q047",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Suzuki Coupling Base Role in Transmetalation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the crucial role of the base (e.g., Na₂CO₃ or NaOH) in the Suzuki-Miyaura coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base precipitates palladium as a solid mirror."
+        },
+        {
+          "label": "B",
+          "text": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium."
+        },
+        {
+          "label": "C",
+          "text": "Base oxidizes Pd(0) to Pd(II)."
+        },
+        {
+          "label": "D",
+          "text": "Base deprotonates the aryl halide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Base coordinates to the boron atom of the boronic acid to form an anionic boronate complex [Ar-B(OH)₃⁻], which activates the organic group for transmetalation to palladium.",
+      "explanation": "Neutral boronic acids undergo transmetalation very slowly; conversion to the negatively charged boronate complex dramatically accelerates transmetalation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q048",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Heck Reaction Migratory Insertion and Syn Beta-Elimination",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "In the Heck coupling of iodobenzene with methyl acrylate, what determines the trans alkene stereochemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate."
+        },
+        {
+          "label": "B",
+          "text": "Backside SN2 attack of palladium on the double bond."
+        },
+        {
+          "label": "C",
+          "text": "Radical coupling in solution."
+        },
+        {
+          "label": "D",
+          "text": "Anti-elimination of palladium hydride."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Syn migratory insertion of the alkene into the Pd-Ar bond followed by C-C bond rotation and syn β-hydride elimination to form the thermodynamically favored trans-cinnamate.",
+      "explanation": "Both migratory insertion and β-hydride elimination are strictly syn processes; internal rotation to align Pd and H syn delivers the trans-alkene.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q049",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Stille Coupling Organotin Transmetalation",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the fundamental transformation during the transmetalation step of a Stille cross-coupling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-Pd bond by tin radicals."
+        },
+        {
+          "label": "B",
+          "text": "Proton transfer from tin to palladium."
+        },
+        {
+          "label": "C",
+          "text": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of tin from Sn(II) to Sn(IV)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Transfer of an organic group from an organostannane (R-SnBu₃) to a Pd(II) complex with displacement of a halide ligand to form an R-Pd-R' intermediate.",
+      "explanation": "Transmetalation exchanges the carbon nucleophile from tin to palladium without requiring strong base.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch23_q050",
+      "chapter": 23,
+      "chapter_title": "Introduction to Organometallic Compounds",
+      "boss": "Cross-Coupling Conqueror",
+      "topic": "Negishi Coupling Organozinc Advantage",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why is the Negishi coupling utilizing organozinc reagents (R-ZnX) exceptionally versatile in multi-step synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Organozinc reagents never require transition metal catalysts."
+        },
+        {
+          "label": "B",
+          "text": "Organozinc reagents are completely insoluble in all solvents."
+        },
+        {
+          "label": "C",
+          "text": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones)."
+        },
+        {
+          "label": "D",
+          "text": "Zinc reagents are radioactive tracers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Organozinc reagents are moderately reactive, undergoing rapid transmetalation with Pd(II) while tolerating diverse functional groups (esters, nitriles, ketones).",
+      "explanation": "Organozinc compounds strike an ideal balance of functional group tolerance and transmetalation reactivity with palladium.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "cross-coupling-conqueror.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Gilman Guardian",
+    "Carbenoid Cyclops",
+    "Stille Specter",
+    "Suzuki Sorcerer",
+    "Cross-Coupling Conqueror"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Gilman Guardian",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "gilman-guardian.png"
+        ]
+      },
+      {
+        "boss": "Carbenoid Cyclops",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "carbenoid-cyclops.png"
+        ]
+      },
+      {
+        "boss": "Stille Specter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "stille-specter.png"
+        ]
+      },
+      {
+        "boss": "Suzuki Sorcerer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "suzuki-sorcerer.png"
+        ]
+      },
+      {
+        "boss": "Cross-Coupling Conqueror",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "cross-coupling-conqueror.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 27,
+  "chapter_title": "Synthetic Polymers",
+  "assigned_boss": "Monomer Marauder",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch27_q001",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Styrene Radical Polymerization Propagation Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the driving force and curved-arrow flow during chain propagation in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The radical attacks the benzene ring carbons directly."
+        },
+        {
+          "label": "B",
+          "text": "Styrene polymerizes via a pericyclic [2+2] cycloaddition."
+        },
+        {
+          "label": "C",
+          "text": "The radical undergoes homolytic cleavage to phenyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical.",
+      "explanation": "Radical addition occurs regioselectively at the terminal methylene to generate the more stable, resonance-delocalized benzylic radical.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q002",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Isobutylene Cationic Polymerization Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does 2-methylpropene (isobutylene) undergo rapid cationic polymerization with BF₃/H₂O but fail under anionic conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isobutylene has no double bonds."
+        },
+        {
+          "label": "B",
+          "text": "BF₃ is a radical inhibitor."
+        },
+        {
+          "label": "C",
+          "text": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Isobutylene is an aromatic monomer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate.",
+      "explanation": "Electron-donating alkyl groups stabilize carbocation intermediates, making isobutylene an ideal monomer for cationic (acid-initiated) polymerization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q003",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Methyl Methacrylate Anionic Polymerization Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does methyl methacrylate (MMA) polymerize smoothly with n-butyllithium (BuLi) via an anionic mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BuLi oxidizes the ester to a radical cation."
+        },
+        {
+          "label": "B",
+          "text": "Anionic polymerization requires high-energy gamma rays."
+        },
+        {
+          "label": "C",
+          "text": "MMA is an acid that protonates butyllithium."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain.",
+      "explanation": "Electron-withdrawing ester carbonyl groups delocalize and stabilize the propagating carbanion as a resonance-stabilized enolate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q004",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Ziegler-Natta Coordination Polymerization Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does the heterogeneous TiCl₄ / AlEt₃ Ziegler-Natta catalyst produce 100% isotactic polypropylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst forms free radicals in solution."
+        },
+        {
+          "label": "B",
+          "text": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain."
+        },
+        {
+          "label": "C",
+          "text": "The catalyst dissolves the propylene into liquid crystals."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst heats the reaction to 500°C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain.",
+      "explanation": "Coordination of the monomer to the well-defined, asymmetric titanium coordination sphere dictates stereospecific facial insertion, forging pure isotactic polymer.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q005",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Nylon-6,6 Step-Growth Condensation Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the elementary mechanistic step in the industrial synthesis of Nylon-6,6 from adipic acid and hexamethylenediamine at 280°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water."
+        },
+        {
+          "label": "B",
+          "text": "Ring-opening metathesis of a cyclic lactam."
+        },
+        {
+          "label": "C",
+          "text": "Coordination insertion into a titanium catalyst."
+        },
+        {
+          "label": "D",
+          "text": "Radical chain addition across double bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water.",
+      "explanation": "Nylon-6,6 is formed by step-growth polyamidation between bifunctional diacids and diamines with continuous removal of water byproduct.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q006",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "PET Polyester Transesterification Condensation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What are the stoichiometric byproducts removed during the industrial melt polymerization of PET from dimethyl terephthalate and ethylene glycol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia gas."
+        },
+        {
+          "label": "B",
+          "text": "Ethylene gas and hydrochloric acid."
+        },
+        {
+          "label": "C",
+          "text": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester."
+        },
+        {
+          "label": "D",
+          "text": "Water and carbon dioxide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester.",
+      "explanation": "Transesterification between dimethyl terephthalate and ethylene glycol expels volatile methanol, which is distilled off under vacuum.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q007",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Kevlar Aramid High Tensile Strength Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What molecular and supramolecular interactions give Kevlar (poly-p-phenylene terephthalamide) its bullet-resistant strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Covalent diamond-like sp³ carbon networks."
+        },
+        {
+          "label": "B",
+          "text": "Ionic bonds between sodium and chloride."
+        },
+        {
+          "label": "C",
+          "text": "Flexible aliphatic coils that stretch like rubber bands."
+        },
+        {
+          "label": "D",
+          "text": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets.",
+      "explanation": "Rigid linear aromatic backbones stack into crystalline sheets locked together by regular, dense arrays of intermolecular N-H···O=C hydrogen bonds.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q008",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Lexan Polycarbonate Interfacial Synthesis",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the nucleophilic substitution mechanism in the synthesis of Lexan polycarbonate from bisphenol A and phosgene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage."
+        },
+        {
+          "label": "B",
+          "text": "Ring-closing metathesis with loss of ethylene."
+        },
+        {
+          "label": "C",
+          "text": "Free radical polymerization of bisphenol A double bonds."
+        },
+        {
+          "label": "D",
+          "text": "Coordination polymerization with titanium catalysts."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage.",
+      "explanation": "Interfacial polycondensation between bisphenol A phenoxide and phosgene expels chloride in repeated nucleophilic acyl substitution steps.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q009",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "Rubber Vulcanization Allylic Crosslinking Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the chemical role of elemental sulfur (S₈) and zinc oxide during the vulcanization of natural rubber?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur hydrogenates all double bonds to single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur dissolves the rubber into liquid latex."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur cleaves polyisoprene into monomeric isoprene units."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains.",
+      "explanation": "Thermal reaction with sulfur forms covalent polysulfide bridges between polyisoprene chains at allylic positions, preventing chain slippage (converting gummy latex to resilient rubber).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q010",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Monomer Marauder",
+      "topic": "PET Chemical Recycling (Glycolysis) Depolymerization",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the chemical mechanism of PET plastic bottle recycling via catalytic glycolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid leaching of dyes without breaking polymer bonds."
+        },
+        {
+          "label": "B",
+          "text": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer."
+        },
+        {
+          "label": "C",
+          "text": "Pyrolysis of PET to carbon black."
+        },
+        {
+          "label": "D",
+          "text": "Complete combustion of PET to CO₂ and water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer.",
+      "explanation": "Catalytic transesterification with excess ethylene glycol depolymerizes the PET polymer back to bis(2-hydroxyethyl) terephthalate (BHET) monomer for closed-loop polymerization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "monomer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch27_q011",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Methyl Methacrylate Anionic Polymerization Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does methyl methacrylate (MMA) polymerize smoothly with n-butyllithium (BuLi) via an anionic mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MMA is an acid that protonates butyllithium."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain."
+        },
+        {
+          "label": "C",
+          "text": "Anionic polymerization requires high-energy gamma rays."
+        },
+        {
+          "label": "D",
+          "text": "BuLi oxidizes the ester to a radical cation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain.",
+      "explanation": "Electron-withdrawing ester carbonyl groups delocalize and stabilize the propagating carbanion as a resonance-stabilized enolate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q012",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Ziegler-Natta Coordination Polymerization Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does the heterogeneous TiCl₄ / AlEt₃ Ziegler-Natta catalyst produce 100% isotactic polypropylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain."
+        },
+        {
+          "label": "B",
+          "text": "The catalyst forms free radicals in solution."
+        },
+        {
+          "label": "C",
+          "text": "The catalyst heats the reaction to 500°C."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst dissolves the propylene into liquid crystals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain.",
+      "explanation": "Coordination of the monomer to the well-defined, asymmetric titanium coordination sphere dictates stereospecific facial insertion, forging pure isotactic polymer.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q013",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Nylon-6,6 Step-Growth Condensation Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the elementary mechanistic step in the industrial synthesis of Nylon-6,6 from adipic acid and hexamethylenediamine at 280°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ring-opening metathesis of a cyclic lactam."
+        },
+        {
+          "label": "B",
+          "text": "Radical chain addition across double bonds."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water."
+        },
+        {
+          "label": "D",
+          "text": "Coordination insertion into a titanium catalyst."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water.",
+      "explanation": "Nylon-6,6 is formed by step-growth polyamidation between bifunctional diacids and diamines with continuous removal of water byproduct.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q014",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "PET Polyester Transesterification Condensation",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What are the stoichiometric byproducts removed during the industrial melt polymerization of PET from dimethyl terephthalate and ethylene glycol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester."
+        },
+        {
+          "label": "B",
+          "text": "Ammonia gas."
+        },
+        {
+          "label": "C",
+          "text": "Water and carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Ethylene gas and hydrochloric acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester.",
+      "explanation": "Transesterification between dimethyl terephthalate and ethylene glycol expels volatile methanol, which is distilled off under vacuum.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q015",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Kevlar Aramid High Tensile Strength Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What molecular and supramolecular interactions give Kevlar (poly-p-phenylene terephthalamide) its bullet-resistant strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ionic bonds between sodium and chloride."
+        },
+        {
+          "label": "B",
+          "text": "Flexible aliphatic coils that stretch like rubber bands."
+        },
+        {
+          "label": "C",
+          "text": "Covalent diamond-like sp³ carbon networks."
+        },
+        {
+          "label": "D",
+          "text": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets.",
+      "explanation": "Rigid linear aromatic backbones stack into crystalline sheets locked together by regular, dense arrays of intermolecular N-H···O=C hydrogen bonds.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q016",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Lexan Polycarbonate Interfacial Synthesis",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the nucleophilic substitution mechanism in the synthesis of Lexan polycarbonate from bisphenol A and phosgene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage."
+        },
+        {
+          "label": "B",
+          "text": "Coordination polymerization with titanium catalysts."
+        },
+        {
+          "label": "C",
+          "text": "Ring-closing metathesis with loss of ethylene."
+        },
+        {
+          "label": "D",
+          "text": "Free radical polymerization of bisphenol A double bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage.",
+      "explanation": "Interfacial polycondensation between bisphenol A phenoxide and phosgene expels chloride in repeated nucleophilic acyl substitution steps.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q017",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Rubber Vulcanization Allylic Crosslinking Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the chemical role of elemental sulfur (S₈) and zinc oxide during the vulcanization of natural rubber?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur hydrogenates all double bonds to single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur dissolves the rubber into liquid latex."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur cleaves polyisoprene into monomeric isoprene units."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains.",
+      "explanation": "Thermal reaction with sulfur forms covalent polysulfide bridges between polyisoprene chains at allylic positions, preventing chain slippage (converting gummy latex to resilient rubber).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q018",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "PET Chemical Recycling (Glycolysis) Depolymerization",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the chemical mechanism of PET plastic bottle recycling via catalytic glycolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid leaching of dyes without breaking polymer bonds."
+        },
+        {
+          "label": "B",
+          "text": "Complete combustion of PET to CO₂ and water."
+        },
+        {
+          "label": "C",
+          "text": "Pyrolysis of PET to carbon black."
+        },
+        {
+          "label": "D",
+          "text": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer.",
+      "explanation": "Catalytic transesterification with excess ethylene glycol depolymerizes the PET polymer back to bis(2-hydroxyethyl) terephthalate (BHET) monomer for closed-loop polymerization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q019",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Styrene Radical Polymerization Propagation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the driving force and curved-arrow flow during chain propagation in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The radical attacks the benzene ring carbons directly."
+        },
+        {
+          "label": "B",
+          "text": "Styrene polymerizes via a pericyclic [2+2] cycloaddition."
+        },
+        {
+          "label": "C",
+          "text": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical."
+        },
+        {
+          "label": "D",
+          "text": "The radical undergoes homolytic cleavage to phenyl radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical.",
+      "explanation": "Radical addition occurs regioselectively at the terminal methylene to generate the more stable, resonance-delocalized benzylic radical.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q020",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Ziegler-Natta Zealot",
+      "topic": "Isobutylene Cationic Polymerization Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does 2-methylpropene (isobutylene) undergo rapid cationic polymerization with BF₃/H₂O but fail under anionic conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isobutylene is an aromatic monomer."
+        },
+        {
+          "label": "B",
+          "text": "Isobutylene has no double bonds."
+        },
+        {
+          "label": "C",
+          "text": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate."
+        },
+        {
+          "label": "D",
+          "text": "BF₃ is a radical inhibitor."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate.",
+      "explanation": "Electron-donating alkyl groups stabilize carbocation intermediates, making isobutylene an ideal monomer for cationic (acid-initiated) polymerization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ziegler-natta-zealot.png"
+      ]
+    },
+    {
+      "id": "ch27_q021",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Nylon-6,6 Step-Growth Condensation Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the elementary mechanistic step in the industrial synthesis of Nylon-6,6 from adipic acid and hexamethylenediamine at 280°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water."
+        },
+        {
+          "label": "B",
+          "text": "Radical chain addition across double bonds."
+        },
+        {
+          "label": "C",
+          "text": "Coordination insertion into a titanium catalyst."
+        },
+        {
+          "label": "D",
+          "text": "Ring-opening metathesis of a cyclic lactam."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water.",
+      "explanation": "Nylon-6,6 is formed by step-growth polyamidation between bifunctional diacids and diamines with continuous removal of water byproduct.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q022",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "PET Polyester Transesterification Condensation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What are the stoichiometric byproducts removed during the industrial melt polymerization of PET from dimethyl terephthalate and ethylene glycol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia gas."
+        },
+        {
+          "label": "B",
+          "text": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester."
+        },
+        {
+          "label": "C",
+          "text": "Ethylene gas and hydrochloric acid."
+        },
+        {
+          "label": "D",
+          "text": "Water and carbon dioxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester.",
+      "explanation": "Transesterification between dimethyl terephthalate and ethylene glycol expels volatile methanol, which is distilled off under vacuum.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q023",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Kevlar Aramid High Tensile Strength Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What molecular and supramolecular interactions give Kevlar (poly-p-phenylene terephthalamide) its bullet-resistant strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets."
+        },
+        {
+          "label": "B",
+          "text": "Flexible aliphatic coils that stretch like rubber bands."
+        },
+        {
+          "label": "C",
+          "text": "Ionic bonds between sodium and chloride."
+        },
+        {
+          "label": "D",
+          "text": "Covalent diamond-like sp³ carbon networks."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets.",
+      "explanation": "Rigid linear aromatic backbones stack into crystalline sheets locked together by regular, dense arrays of intermolecular N-H···O=C hydrogen bonds.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q024",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Lexan Polycarbonate Interfacial Synthesis",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the nucleophilic substitution mechanism in the synthesis of Lexan polycarbonate from bisphenol A and phosgene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coordination polymerization with titanium catalysts."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage."
+        },
+        {
+          "label": "C",
+          "text": "Ring-closing metathesis with loss of ethylene."
+        },
+        {
+          "label": "D",
+          "text": "Free radical polymerization of bisphenol A double bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage.",
+      "explanation": "Interfacial polycondensation between bisphenol A phenoxide and phosgene expels chloride in repeated nucleophilic acyl substitution steps.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q025",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Rubber Vulcanization Allylic Crosslinking Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the chemical role of elemental sulfur (S₈) and zinc oxide during the vulcanization of natural rubber?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur hydrogenates all double bonds to single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur cleaves polyisoprene into monomeric isoprene units."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur dissolves the rubber into liquid latex."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains.",
+      "explanation": "Thermal reaction with sulfur forms covalent polysulfide bridges between polyisoprene chains at allylic positions, preventing chain slippage (converting gummy latex to resilient rubber).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q026",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "PET Chemical Recycling (Glycolysis) Depolymerization",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the chemical mechanism of PET plastic bottle recycling via catalytic glycolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer."
+        },
+        {
+          "label": "B",
+          "text": "Complete combustion of PET to CO₂ and water."
+        },
+        {
+          "label": "C",
+          "text": "Acid leaching of dyes without breaking polymer bonds."
+        },
+        {
+          "label": "D",
+          "text": "Pyrolysis of PET to carbon black."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer.",
+      "explanation": "Catalytic transesterification with excess ethylene glycol depolymerizes the PET polymer back to bis(2-hydroxyethyl) terephthalate (BHET) monomer for closed-loop polymerization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q027",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Styrene Radical Polymerization Propagation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the driving force and curved-arrow flow during chain propagation in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The radical undergoes homolytic cleavage to phenyl radicals."
+        },
+        {
+          "label": "B",
+          "text": "The radical attacks the benzene ring carbons directly."
+        },
+        {
+          "label": "C",
+          "text": "Styrene polymerizes via a pericyclic [2+2] cycloaddition."
+        },
+        {
+          "label": "D",
+          "text": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical.",
+      "explanation": "Radical addition occurs regioselectively at the terminal methylene to generate the more stable, resonance-delocalized benzylic radical.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q028",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Isobutylene Cationic Polymerization Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does 2-methylpropene (isobutylene) undergo rapid cationic polymerization with BF₃/H₂O but fail under anionic conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isobutylene is an aromatic monomer."
+        },
+        {
+          "label": "B",
+          "text": "Isobutylene has no double bonds."
+        },
+        {
+          "label": "C",
+          "text": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate."
+        },
+        {
+          "label": "D",
+          "text": "BF₃ is a radical inhibitor."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate.",
+      "explanation": "Electron-donating alkyl groups stabilize carbocation intermediates, making isobutylene an ideal monomer for cationic (acid-initiated) polymerization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q029",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Methyl Methacrylate Anionic Polymerization Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does methyl methacrylate (MMA) polymerize smoothly with n-butyllithium (BuLi) via an anionic mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MMA is an acid that protonates butyllithium."
+        },
+        {
+          "label": "B",
+          "text": "BuLi oxidizes the ester to a radical cation."
+        },
+        {
+          "label": "C",
+          "text": "Anionic polymerization requires high-energy gamma rays."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain.",
+      "explanation": "Electron-withdrawing ester carbonyl groups delocalize and stabilize the propagating carbanion as a resonance-stabilized enolate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q030",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Copolymer Colossus",
+      "topic": "Ziegler-Natta Coordination Polymerization Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How does the heterogeneous TiCl₄ / AlEt₃ Ziegler-Natta catalyst produce 100% isotactic polypropylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst heats the reaction to 500°C."
+        },
+        {
+          "label": "B",
+          "text": "The catalyst forms free radicals in solution."
+        },
+        {
+          "label": "C",
+          "text": "The catalyst dissolves the propylene into liquid crystals."
+        },
+        {
+          "label": "D",
+          "text": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain.",
+      "explanation": "Coordination of the monomer to the well-defined, asymmetric titanium coordination sphere dictates stereospecific facial insertion, forging pure isotactic polymer.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "copolymer-colossus.png"
+      ]
+    },
+    {
+      "id": "ch27_q031",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Kevlar Aramid High Tensile Strength Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What molecular and supramolecular interactions give Kevlar (poly-p-phenylene terephthalamide) its bullet-resistant strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ionic bonds between sodium and chloride."
+        },
+        {
+          "label": "B",
+          "text": "Covalent diamond-like sp³ carbon networks."
+        },
+        {
+          "label": "C",
+          "text": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets."
+        },
+        {
+          "label": "D",
+          "text": "Flexible aliphatic coils that stretch like rubber bands."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets.",
+      "explanation": "Rigid linear aromatic backbones stack into crystalline sheets locked together by regular, dense arrays of intermolecular N-H···O=C hydrogen bonds.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q032",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Lexan Polycarbonate Interfacial Synthesis",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the nucleophilic substitution mechanism in the synthesis of Lexan polycarbonate from bisphenol A and phosgene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ring-closing metathesis with loss of ethylene."
+        },
+        {
+          "label": "B",
+          "text": "Coordination polymerization with titanium catalysts."
+        },
+        {
+          "label": "C",
+          "text": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage."
+        },
+        {
+          "label": "D",
+          "text": "Free radical polymerization of bisphenol A double bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage.",
+      "explanation": "Interfacial polycondensation between bisphenol A phenoxide and phosgene expels chloride in repeated nucleophilic acyl substitution steps.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q033",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Rubber Vulcanization Allylic Crosslinking Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the chemical role of elemental sulfur (S₈) and zinc oxide during the vulcanization of natural rubber?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur hydrogenates all double bonds to single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur dissolves the rubber into liquid latex."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur cleaves polyisoprene into monomeric isoprene units."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains.",
+      "explanation": "Thermal reaction with sulfur forms covalent polysulfide bridges between polyisoprene chains at allylic positions, preventing chain slippage (converting gummy latex to resilient rubber).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q034",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "PET Chemical Recycling (Glycolysis) Depolymerization",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the chemical mechanism of PET plastic bottle recycling via catalytic glycolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer."
+        },
+        {
+          "label": "B",
+          "text": "Complete combustion of PET to CO₂ and water."
+        },
+        {
+          "label": "C",
+          "text": "Pyrolysis of PET to carbon black."
+        },
+        {
+          "label": "D",
+          "text": "Acid leaching of dyes without breaking polymer bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer.",
+      "explanation": "Catalytic transesterification with excess ethylene glycol depolymerizes the PET polymer back to bis(2-hydroxyethyl) terephthalate (BHET) monomer for closed-loop polymerization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q035",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Styrene Radical Polymerization Propagation Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the driving force and curved-arrow flow during chain propagation in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The radical undergoes homolytic cleavage to phenyl radicals."
+        },
+        {
+          "label": "B",
+          "text": "The radical attacks the benzene ring carbons directly."
+        },
+        {
+          "label": "C",
+          "text": "Styrene polymerizes via a pericyclic [2+2] cycloaddition."
+        },
+        {
+          "label": "D",
+          "text": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical.",
+      "explanation": "Radical addition occurs regioselectively at the terminal methylene to generate the more stable, resonance-delocalized benzylic radical.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q036",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Isobutylene Cationic Polymerization Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does 2-methylpropene (isobutylene) undergo rapid cationic polymerization with BF₃/H₂O but fail under anionic conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "BF₃ is a radical inhibitor."
+        },
+        {
+          "label": "C",
+          "text": "Isobutylene is an aromatic monomer."
+        },
+        {
+          "label": "D",
+          "text": "Isobutylene has no double bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate.",
+      "explanation": "Electron-donating alkyl groups stabilize carbocation intermediates, making isobutylene an ideal monomer for cationic (acid-initiated) polymerization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q037",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Methyl Methacrylate Anionic Polymerization Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does methyl methacrylate (MMA) polymerize smoothly with n-butyllithium (BuLi) via an anionic mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain."
+        },
+        {
+          "label": "B",
+          "text": "MMA is an acid that protonates butyllithium."
+        },
+        {
+          "label": "C",
+          "text": "Anionic polymerization requires high-energy gamma rays."
+        },
+        {
+          "label": "D",
+          "text": "BuLi oxidizes the ester to a radical cation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain.",
+      "explanation": "Electron-withdrawing ester carbonyl groups delocalize and stabilize the propagating carbanion as a resonance-stabilized enolate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q038",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Ziegler-Natta Coordination Polymerization Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How does the heterogeneous TiCl₄ / AlEt₃ Ziegler-Natta catalyst produce 100% isotactic polypropylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst heats the reaction to 500°C."
+        },
+        {
+          "label": "B",
+          "text": "The catalyst dissolves the propylene into liquid crystals."
+        },
+        {
+          "label": "C",
+          "text": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst forms free radicals in solution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain.",
+      "explanation": "Coordination of the monomer to the well-defined, asymmetric titanium coordination sphere dictates stereospecific facial insertion, forging pure isotactic polymer.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q039",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "Nylon-6,6 Step-Growth Condensation Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the elementary mechanistic step in the industrial synthesis of Nylon-6,6 from adipic acid and hexamethylenediamine at 280°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ring-opening metathesis of a cyclic lactam."
+        },
+        {
+          "label": "B",
+          "text": "Coordination insertion into a titanium catalyst."
+        },
+        {
+          "label": "C",
+          "text": "Radical chain addition across double bonds."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water.",
+      "explanation": "Nylon-6,6 is formed by step-growth polyamidation between bifunctional diacids and diamines with continuous removal of water byproduct.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q040",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Crosslink Commander",
+      "topic": "PET Polyester Transesterification Condensation",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What are the stoichiometric byproducts removed during the industrial melt polymerization of PET from dimethyl terephthalate and ethylene glycol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia gas."
+        },
+        {
+          "label": "B",
+          "text": "Water and carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester."
+        },
+        {
+          "label": "D",
+          "text": "Ethylene gas and hydrochloric acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester.",
+      "explanation": "Transesterification between dimethyl terephthalate and ethylene glycol expels volatile methanol, which is distilled off under vacuum.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "crosslink-commander.png"
+      ]
+    },
+    {
+      "id": "ch27_q041",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Rubber Vulcanization Allylic Crosslinking Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the chemical role of elemental sulfur (S₈) and zinc oxide during the vulcanization of natural rubber?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur dissolves the rubber into liquid latex."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur hydrogenates all double bonds to single bonds."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur cleaves polyisoprene into monomeric isoprene units."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sulfur radicals abstract allylic hydrogens from cis-1,4-polyisoprene chains, creating allylic radicals that couple with polysulfide chains to form covalent -Sₙ- crosslinks between chains.",
+      "explanation": "Thermal reaction with sulfur forms covalent polysulfide bridges between polyisoprene chains at allylic positions, preventing chain slippage (converting gummy latex to resilient rubber).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q042",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "PET Chemical Recycling (Glycolysis) Depolymerization",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the chemical mechanism of PET plastic bottle recycling via catalytic glycolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid leaching of dyes without breaking polymer bonds."
+        },
+        {
+          "label": "B",
+          "text": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer."
+        },
+        {
+          "label": "C",
+          "text": "Pyrolysis of PET to carbon black."
+        },
+        {
+          "label": "D",
+          "text": "Complete combustion of PET to CO₂ and water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Excess ethylene glycol in the presence of a zinc acetate catalyst undergoes transesterification with PET ester linkages, depolymerizing the long polyester back to pure BHET monomer.",
+      "explanation": "Catalytic transesterification with excess ethylene glycol depolymerizes the PET polymer back to bis(2-hydroxyethyl) terephthalate (BHET) monomer for closed-loop polymerization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q043",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Styrene Radical Polymerization Propagation Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the driving force and curved-arrow flow during chain propagation in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical."
+        },
+        {
+          "label": "B",
+          "text": "The radical attacks the benzene ring carbons directly."
+        },
+        {
+          "label": "C",
+          "text": "The radical undergoes homolytic cleavage to phenyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "Styrene polymerizes via a pericyclic [2+2] cycloaddition."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The propagating carbon radical attacks the terminal =CH₂ carbon of a styrene monomer, forming a new C-C σ bond and generating a new, resonance-stabilized benzylic radical.",
+      "explanation": "Radical addition occurs regioselectively at the terminal methylene to generate the more stable, resonance-delocalized benzylic radical.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q044",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Isobutylene Cationic Polymerization Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does 2-methylpropene (isobutylene) undergo rapid cationic polymerization with BF₃/H₂O but fail under anionic conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isobutylene has no double bonds."
+        },
+        {
+          "label": "B",
+          "text": "BF₃ is a radical inhibitor."
+        },
+        {
+          "label": "C",
+          "text": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Isobutylene is an aromatic monomer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation generates an exceptionally stable tertiary carbocation [(CH₃)₃C⁺] that propagates efficiently; isobutylene cannot form or stabilize a carbanion intermediate.",
+      "explanation": "Electron-donating alkyl groups stabilize carbocation intermediates, making isobutylene an ideal monomer for cationic (acid-initiated) polymerization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q045",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Methyl Methacrylate Anionic Polymerization Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does methyl methacrylate (MMA) polymerize smoothly with n-butyllithium (BuLi) via an anionic mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anionic polymerization requires high-energy gamma rays."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain."
+        },
+        {
+          "label": "C",
+          "text": "MMA is an acid that protonates butyllithium."
+        },
+        {
+          "label": "D",
+          "text": "BuLi oxidizes the ester to a radical cation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nucleophilic attack of the carbanion on the terminal alkene generates an ester-stabilized enolate carbanion [CH₂-C⁻(CH₃)COOCH₃] that propagates the anionic chain.",
+      "explanation": "Electron-withdrawing ester carbonyl groups delocalize and stabilize the propagating carbanion as a resonance-stabilized enolate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q046",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Ziegler-Natta Coordination Polymerization Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How does the heterogeneous TiCl₄ / AlEt₃ Ziegler-Natta catalyst produce 100% isotactic polypropylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst dissolves the propylene into liquid crystals."
+        },
+        {
+          "label": "B",
+          "text": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain."
+        },
+        {
+          "label": "C",
+          "text": "The catalyst heats the reaction to 500°C."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst forms free radicals in solution."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Propylene coordinates to a vacant d-orbital on the chiral titanium metal center, which directs stereospecific syn-migratory insertion into the growing titanium-alkyl polymer chain.",
+      "explanation": "Coordination of the monomer to the well-defined, asymmetric titanium coordination sphere dictates stereospecific facial insertion, forging pure isotactic polymer.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q047",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Nylon-6,6 Step-Growth Condensation Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the elementary mechanistic step in the industrial synthesis of Nylon-6,6 from adipic acid and hexamethylenediamine at 280°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coordination insertion into a titanium catalyst."
+        },
+        {
+          "label": "B",
+          "text": "Ring-opening metathesis of a cyclic lactam."
+        },
+        {
+          "label": "C",
+          "text": "Radical chain addition across double bonds."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic acyl substitution: the primary amine attacks the carboxylic acid carbonyl to form an amide bond, with continuous thermal elimination and removal of water.",
+      "explanation": "Nylon-6,6 is formed by step-growth polyamidation between bifunctional diacids and diamines with continuous removal of water byproduct.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q048",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "PET Polyester Transesterification Condensation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What are the stoichiometric byproducts removed during the industrial melt polymerization of PET from dimethyl terephthalate and ethylene glycol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester."
+        },
+        {
+          "label": "B",
+          "text": "Ethylene gas and hydrochloric acid."
+        },
+        {
+          "label": "C",
+          "text": "Water and carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Ammonia gas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methanol (CH₃OH) gas is continuously removed by vacuum during transesterification, driving the step-growth condensation equilibrium toward high molecular weight polyester.",
+      "explanation": "Transesterification between dimethyl terephthalate and ethylene glycol expels volatile methanol, which is distilled off under vacuum.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q049",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Kevlar Aramid High Tensile Strength Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What molecular and supramolecular interactions give Kevlar (poly-p-phenylene terephthalamide) its bullet-resistant strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Covalent diamond-like sp³ carbon networks."
+        },
+        {
+          "label": "B",
+          "text": "Flexible aliphatic coils that stretch like rubber bands."
+        },
+        {
+          "label": "C",
+          "text": "Ionic bonds between sodium and chloride."
+        },
+        {
+          "label": "D",
+          "text": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rigid, planar aromatic rings in a fully extended trans-polyamide conformation form an extensive, dense network of intermolecular hydrogen bonds between adjacent polymer sheets.",
+      "explanation": "Rigid linear aromatic backbones stack into crystalline sheets locked together by regular, dense arrays of intermolecular N-H···O=C hydrogen bonds.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    },
+    {
+      "id": "ch27_q050",
+      "chapter": 27,
+      "chapter_title": "Synthetic Polymers",
+      "boss": "Macromolecule Monarch",
+      "topic": "Lexan Polycarbonate Interfacial Synthesis",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the nucleophilic substitution mechanism in the synthesis of Lexan polycarbonate from bisphenol A and phosgene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical polymerization of bisphenol A double bonds."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage."
+        },
+        {
+          "label": "C",
+          "text": "Coordination polymerization with titanium catalysts."
+        },
+        {
+          "label": "D",
+          "text": "Ring-closing metathesis with loss of ethylene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deprotonated phenoxide oxygens of bisphenol A attack the electrophilic carbonyl of phosgene (COCl₂) in sequential addition-eliminations, expelling two chloride ions per linkage.",
+      "explanation": "Interfacial polycondensation between bisphenol A phenoxide and phosgene expels chloride in repeated nucleophilic acyl substitution steps.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "macromolecule-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Monomer Marauder",
+    "Ziegler-Natta Zealot",
+    "Copolymer Colossus",
+    "Crosslink Commander",
+    "Macromolecule Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Monomer Marauder",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "monomer-marauder.png"
+        ]
+      },
+      {
+        "boss": "Ziegler-Natta Zealot",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "ziegler-natta-zealot.png"
+        ]
+      },
+      {
+        "boss": "Copolymer Colossus",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "copolymer-colossus.png"
+        ]
+      },
+      {
+        "boss": "Crosslink Commander",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "crosslink-commander.png"
+        ]
+      },
+      {
+        "boss": "Macromolecule Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "macromolecule-monarch.png"
+        ]
+      }
+    ]
+  }
+}

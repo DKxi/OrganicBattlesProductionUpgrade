@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereoisomerism",
+  "assigned_boss": "Chirality Cerberus",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Enantiomeric Mandelic Acid Resolution",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (±)-Mandelic acid reacts under the following conditions: (R)-(+)-1-Phenylethylamine in EtOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic liquid solution"
+        },
+        {
+          "label": "B",
+          "text": "Decarboxylated benzaldehyde"
+        },
+        {
+          "label": "C",
+          "text": "Diastereomeric salt mixture separable by crystallization"
+        },
+        {
+          "label": "D",
+          "text": "Enantiomerically inverted ester"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diastereomeric salt mixture separable by crystallization",
+      "explanation": "Major product rationale: Chiral amine resolves racemic carboxylic acid by forming pairs of diastereomeric salts with different solubilities. The correct major product is 'Diastereomeric salt mixture separable by crystallization'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Stereospecific Alkene Hydrogenation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: H₂ / Pt catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(2R,3R)-Butane"
+        },
+        {
+          "label": "B",
+          "text": "(2S,3S)-Butane"
+        },
+        {
+          "label": "C",
+          "text": "meso-Butane (Achiral butane)"
+        },
+        {
+          "label": "D",
+          "text": "(±)-trans-2-Butene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso-Butane (Achiral butane)",
+      "explanation": "Major product rationale: Syn addition of two hydrogens across the planar cis-alkene face generates an achiral alkane. The correct major product is 'meso-Butane (Achiral butane)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Stereoselective Halogenation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when trans-2-Butene reacts under the following conditions: Br₂ / CCl₄, 0°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(2S,3S)-2,3-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(±)-2,3-Dibromobutane"
+        },
+        {
+          "label": "C",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "(2R,3R)-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso-2,3-Dibromobutane",
+      "explanation": "Major product rationale: Anti-stereospecific addition through a bridged cyclic bromonium ion on trans-2-butene yields the meso diastereomer. The correct major product is 'meso-2,3-Dibromobutane'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Stereoselective Halogenation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: Br₂ in CCl₄, 0°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)"
+        },
+        {
+          "label": "C",
+          "text": "1,2-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)",
+      "explanation": "Major product rationale: Anti-addition of bromine across cis-2-butene yields an equimolar racemic pair of enantiomers. The correct major product is '(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Walden Inversion SN2 on Chiral Halide",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (R)-2-Bromobutane reacts under the following conditions: NaI in dry Acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-2-Iodobutane"
+        },
+        {
+          "label": "B",
+          "text": "(R)-2-Iodobutane"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Iodobutane + NaBr(s)"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene + HBr"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(S)-2-Iodobutane + NaBr(s)",
+      "explanation": "Major product rationale: Concerted backside nucleophilic attack inverts the chiral configuration from (R) to (S). The correct major product is '(S)-2-Iodobutane + NaBr(s)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into meso-Butane-2,3-diol in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-CBS Catalyst / BH₃·THF"
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "C",
+          "text": "OsO₄ / NMO aqueous acetone"
+        },
+        {
+          "label": "D",
+          "text": "OsO₄ / NMO in acetone"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "OsO₄ / NMO aqueous acetone",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → 'meso-Butane-2,3-diol' specifically requires 'OsO₄ / NMO aqueous acetone'. Mechanistic basis: Concerted syn-addition of two hydroxyl groups across cis-2-butene yields the meso-diol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert trans-2-Butene into (±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaOEt / EtOH, 80°C"
+        },
+        {
+          "label": "B",
+          "text": "OsO₄ / NMO in acetone"
+        },
+        {
+          "label": "C",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "D",
+          "text": "(R)-CBS Catalyst / BH₃·THF"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "OsO₄ / NMO in acetone",
+      "explanation": "Reagent selection rationale: The transformation 'trans-2-Butene' → '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)' specifically requires 'OsO₄ / NMO in acetone'. Mechanistic basis: Concerted syn-dihydroxylation across trans-2-butene creates a racemic mixture of chiral diols.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Epoxidation / Anti-Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into (±)-(2R,3R)/(2S,3S)-Butane-2,3-diol in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "B",
+          "text": "H₂ / Pt catalyst"
+        },
+        {
+          "label": "C",
+          "text": "Br₂ / CCl₄, 0°C"
+        },
+        {
+          "label": "D",
+          "text": "(R)-(+)-1-Phenylethylamine in EtOH"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. mCPBA  2. Aqueous H₃O⁺",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol' specifically requires '1. mCPBA  2. Aqueous H₃O⁺'. Mechanistic basis: Anti-dihydroxylation via epoxide ring opening inverts one stereocenter, converting cis-alkene to racemic diol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Chiral Hydride Reduction of Acetophenone",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '(R)-1-Phenylethan-1-ol (>95% ee)' when treated with '(R)-CBS Catalyst / BH₃·THF' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(1R,2S,5R)-Menthyl chloride"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "C",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-Bromobutane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetophenone (Ph-CO-CH₃)",
+      "explanation": "Starting material deduction: Treating 'Acetophenone (Ph-CO-CH₃)' with '(R)-CBS Catalyst / BH₃·THF' yields '(R)-1-Phenylethan-1-ol (>95% ee)'. Mechanistic rationale: Chiral CBS oxazaborolidine catalyst directs hydride delivery to the re-face of the ketone enantioselectively.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Stereospecific Elimination of Menthyl Chloride",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '2-Menthene (Non-Zaitsev product exclusively)' when treated with 'NaOEt / EtOH, 80°C' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "B",
+          "text": "(±)-Mandelic acid"
+        },
+        {
+          "label": "C",
+          "text": "(1R,2S,5R)-Menthyl chloride"
+        },
+        {
+          "label": "D",
+          "text": "cis-2-Butene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(1R,2S,5R)-Menthyl chloride",
+      "explanation": "Starting material deduction: Treating '(1R,2S,5R)-Menthyl chloride' with 'NaOEt / EtOH, 80°C' yields '2-Menthene (Non-Zaitsev product exclusively)'. Mechanistic rationale: Strict requirement for anti-periplanar geometry forces E2 elimination exclusively toward C2, yielding 2-menthene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Stereoselective Halogenation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when trans-2-Butene reacts under the following conditions: Br₂ / CCl₄, 0°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(±)-2,3-Dibromobutane"
+        },
+        {
+          "label": "C",
+          "text": "(2S,3S)-2,3-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "(2R,3R)-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso-2,3-Dibromobutane",
+      "explanation": "Major product rationale: Anti-stereospecific addition through a bridged cyclic bromonium ion on trans-2-butene yields the meso diastereomer. The correct major product is 'meso-2,3-Dibromobutane'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Stereoselective Halogenation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: Br₂ in CCl₄, 0°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)"
+        },
+        {
+          "label": "C",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)",
+      "explanation": "Major product rationale: Anti-addition of bromine across cis-2-butene yields an equimolar racemic pair of enantiomers. The correct major product is '(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Walden Inversion SN2 on Chiral Halide",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (R)-2-Bromobutane reacts under the following conditions: NaI in dry Acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Butene + HBr"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodobutane + NaBr(s)"
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-Iodobutane"
+        },
+        {
+          "label": "D",
+          "text": "(±)-2-Iodobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-Iodobutane + NaBr(s)",
+      "explanation": "Major product rationale: Concerted backside nucleophilic attack inverts the chiral configuration from (R) to (S). The correct major product is '(S)-2-Iodobutane + NaBr(s)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: OsO₄ / NMO aqueous acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(2S,3S)-Butane-2,3-diol"
+        },
+        {
+          "label": "B",
+          "text": "(2R,3R)-Butane-2,3-diol"
+        },
+        {
+          "label": "C",
+          "text": "meso-Butane-2,3-diol"
+        },
+        {
+          "label": "D",
+          "text": "(±)-Butane-2,3-diol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso-Butane-2,3-diol",
+      "explanation": "Major product rationale: Concerted syn-addition of two hydroxyl groups across cis-2-butene yields the meso-diol. The correct major product is 'meso-Butane-2,3-diol'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when trans-2-Butene reacts under the following conditions: OsO₄ / NMO in acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butanone"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Butanediol"
+        },
+        {
+          "label": "C",
+          "text": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)"
+        },
+        {
+          "label": "D",
+          "text": "meso-Butane-2,3-diol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)",
+      "explanation": "Major product rationale: Concerted syn-dihydroxylation across trans-2-butene creates a racemic mixture of chiral diols. The correct major product is '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Epoxidation / Anti-Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into (±)-(2R,3R)/(2S,3S)-Butane-2,3-diol in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br₂ / CCl₄, 0°C"
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "C",
+          "text": "H₂ / Pt catalyst"
+        },
+        {
+          "label": "D",
+          "text": "Br₂ in CCl₄, 0°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. mCPBA  2. Aqueous H₃O⁺",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol' specifically requires '1. mCPBA  2. Aqueous H₃O⁺'. Mechanistic basis: Anti-dihydroxylation via epoxide ring opening inverts one stereocenter, converting cis-alkene to racemic diol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Chiral Hydride Reduction of Acetophenone",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Acetophenone (Ph-CO-CH₃) into (R)-1-Phenylethan-1-ol (>95% ee) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-CBS Catalyst / BH₃·THF"
+        },
+        {
+          "label": "B",
+          "text": "Br₂ in CCl₄, 0°C"
+        },
+        {
+          "label": "C",
+          "text": "Br₂ / CCl₄, 0°C"
+        },
+        {
+          "label": "D",
+          "text": "NaI in dry Acetone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(R)-CBS Catalyst / BH₃·THF",
+      "explanation": "Reagent selection rationale: The transformation 'Acetophenone (Ph-CO-CH₃)' → '(R)-1-Phenylethan-1-ol (>95% ee)' specifically requires '(R)-CBS Catalyst / BH₃·THF'. Mechanistic basis: Chiral CBS oxazaborolidine catalyst directs hydride delivery to the re-face of the ketone enantioselectively.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Stereospecific Elimination of Menthyl Chloride",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert (1R,2S,5R)-Menthyl chloride into 2-Menthene (Non-Zaitsev product exclusively) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaI in dry Acetone"
+        },
+        {
+          "label": "B",
+          "text": "OsO₄ / NMO aqueous acetone"
+        },
+        {
+          "label": "C",
+          "text": "NaOEt / EtOH, 80°C"
+        },
+        {
+          "label": "D",
+          "text": "Br₂ in CCl₄, 0°C"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "NaOEt / EtOH, 80°C",
+      "explanation": "Reagent selection rationale: The transformation '(1R,2S,5R)-Menthyl chloride' → '2-Menthene (Non-Zaitsev product exclusively)' specifically requires 'NaOEt / EtOH, 80°C'. Mechanistic basis: Strict requirement for anti-periplanar geometry forces E2 elimination exclusively toward C2, yielding 2-menthene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Enantiomeric Mandelic Acid Resolution",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Diastereomeric salt mixture separable by crystallization' when treated with '(R)-(+)-1-Phenylethylamine in EtOH' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-2-Bromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(±)-Mandelic acid"
+        },
+        {
+          "label": "C",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "D",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(±)-Mandelic acid",
+      "explanation": "Starting material deduction: Treating '(±)-Mandelic acid' with '(R)-(+)-1-Phenylethylamine in EtOH' yields 'Diastereomeric salt mixture separable by crystallization'. Mechanistic rationale: Chiral amine resolves racemic carboxylic acid by forming pairs of diastereomeric salts with different solubilities.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Stereospecific Alkene Hydrogenation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'meso-Butane (Achiral butane)' when treated with 'H₂ / Pt catalyst' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        },
+        {
+          "label": "B",
+          "text": "(R)-2-Bromobutane"
+        },
+        {
+          "label": "C",
+          "text": "(1R,2S,5R)-Menthyl chloride"
+        },
+        {
+          "label": "D",
+          "text": "cis-2-Butene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-2-Butene",
+      "explanation": "Starting material deduction: Treating 'cis-2-Butene' with 'H₂ / Pt catalyst' yields 'meso-Butane (Achiral butane)'. Mechanistic rationale: Syn addition of two hydrogens across the planar cis-alkene face generates an achiral alkane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Walden Inversion SN2 on Chiral Halide",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (R)-2-Bromobutane reacts under the following conditions: NaI in dry Acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-2-Iodobutane"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodobutane + NaBr(s)"
+        },
+        {
+          "label": "C",
+          "text": "(±)-2-Iodobutane"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene + HBr"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-Iodobutane + NaBr(s)",
+      "explanation": "Major product rationale: Concerted backside nucleophilic attack inverts the chiral configuration from (R) to (S). The correct major product is '(S)-2-Iodobutane + NaBr(s)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: OsO₄ / NMO aqueous acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-Butane-2,3-diol"
+        },
+        {
+          "label": "B",
+          "text": "(2R,3R)-Butane-2,3-diol"
+        },
+        {
+          "label": "C",
+          "text": "(2S,3S)-Butane-2,3-diol"
+        },
+        {
+          "label": "D",
+          "text": "(±)-Butane-2,3-diol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso-Butane-2,3-diol",
+      "explanation": "Major product rationale: Concerted syn-addition of two hydroxyl groups across cis-2-butene yields the meso-diol. The correct major product is 'meso-Butane-2,3-diol'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when trans-2-Butene reacts under the following conditions: OsO₄ / NMO in acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Butanediol"
+        },
+        {
+          "label": "C",
+          "text": "2-Butanone"
+        },
+        {
+          "label": "D",
+          "text": "meso-Butane-2,3-diol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)",
+      "explanation": "Major product rationale: Concerted syn-dihydroxylation across trans-2-butene creates a racemic mixture of chiral diols. The correct major product is '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Epoxidation / Anti-Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: 1. mCPBA  2. Aqueous H₃O⁺?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butanol"
+        },
+        {
+          "label": "B",
+          "text": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol"
+        },
+        {
+          "label": "C",
+          "text": "Butanal"
+        },
+        {
+          "label": "D",
+          "text": "meso-Butane-2,3-diol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol",
+      "explanation": "Major product rationale: Anti-dihydroxylation via epoxide ring opening inverts one stereocenter, converting cis-alkene to racemic diol. The correct major product is '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Chiral Hydride Reduction of Acetophenone",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when Acetophenone (Ph-CO-CH₃) reacts under the following conditions: (R)-CBS Catalyst / BH₃·THF?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-1-Phenylethan-1-ol"
+        },
+        {
+          "label": "B",
+          "text": "Ethylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "(R)-1-Phenylethan-1-ol (>95% ee)"
+        },
+        {
+          "label": "D",
+          "text": "Acetophenone enol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R)-1-Phenylethan-1-ol (>95% ee)",
+      "explanation": "Major product rationale: Chiral CBS oxazaborolidine catalyst directs hydride delivery to the re-face of the ketone enantioselectively. The correct major product is '(R)-1-Phenylethan-1-ol (>95% ee)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Stereospecific Elimination of Menthyl Chloride",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert (1R,2S,5R)-Menthyl chloride into 2-Menthene (Non-Zaitsev product exclusively) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaOEt / EtOH, 80°C"
+        },
+        {
+          "label": "B",
+          "text": "OsO₄ / NMO aqueous acetone"
+        },
+        {
+          "label": "C",
+          "text": "OsO₄ / NMO in acetone"
+        },
+        {
+          "label": "D",
+          "text": "NaI in dry Acetone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "NaOEt / EtOH, 80°C",
+      "explanation": "Reagent selection rationale: The transformation '(1R,2S,5R)-Menthyl chloride' → '2-Menthene (Non-Zaitsev product exclusively)' specifically requires 'NaOEt / EtOH, 80°C'. Mechanistic basis: Strict requirement for anti-periplanar geometry forces E2 elimination exclusively toward C2, yielding 2-menthene.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Enantiomeric Mandelic Acid Resolution",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert (±)-Mandelic acid into Diastereomeric salt mixture separable by crystallization in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-(+)-1-Phenylethylamine in EtOH"
+        },
+        {
+          "label": "B",
+          "text": "(R)-CBS Catalyst / BH₃·THF"
+        },
+        {
+          "label": "C",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "D",
+          "text": "OsO₄ / NMO in acetone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(R)-(+)-1-Phenylethylamine in EtOH",
+      "explanation": "Reagent selection rationale: The transformation '(±)-Mandelic acid' → 'Diastereomeric salt mixture separable by crystallization' specifically requires '(R)-(+)-1-Phenylethylamine in EtOH'. Mechanistic basis: Chiral amine resolves racemic carboxylic acid by forming pairs of diastereomeric salts with different solubilities.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Stereospecific Alkene Hydrogenation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into meso-Butane (Achiral butane) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "B",
+          "text": "NaOEt / EtOH, 80°C"
+        },
+        {
+          "label": "C",
+          "text": "H₂ / Pt catalyst"
+        },
+        {
+          "label": "D",
+          "text": "(R)-CBS Catalyst / BH₃·THF"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "H₂ / Pt catalyst",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → 'meso-Butane (Achiral butane)' specifically requires 'H₂ / Pt catalyst'. Mechanistic basis: Syn addition of two hydrogens across the planar cis-alkene face generates an achiral alkane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Stereoselective Halogenation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'meso-2,3-Dibromobutane' when treated with 'Br₂ / CCl₄, 0°C' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2-Butene"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-Bromobutane"
+        },
+        {
+          "label": "D",
+          "text": "(±)-Mandelic acid"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-Butene",
+      "explanation": "Starting material deduction: Treating 'trans-2-Butene' with 'Br₂ / CCl₄, 0°C' yields 'meso-2,3-Dibromobutane'. Mechanistic rationale: Anti-stereospecific addition through a bridged cyclic bromonium ion on trans-2-butene yields the meso diastereomer.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Stereoselective Halogenation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)' when treated with 'Br₂ in CCl₄, 0°C' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "B",
+          "text": "cis-2-Butene"
+        },
+        {
+          "label": "C",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-Bromobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "cis-2-Butene",
+      "explanation": "Starting material deduction: Treating 'cis-2-Butene' with 'Br₂ in CCl₄, 0°C' yields '(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)'. Mechanistic rationale: Anti-addition of bromine across cis-2-butene yields an equimolar racemic pair of enantiomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when trans-2-Butene reacts under the following conditions: OsO₄ / NMO in acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-Butane-2,3-diol"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Butanediol"
+        },
+        {
+          "label": "C",
+          "text": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)"
+        },
+        {
+          "label": "D",
+          "text": "2-Butanone"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)",
+      "explanation": "Major product rationale: Concerted syn-dihydroxylation across trans-2-butene creates a racemic mixture of chiral diols. The correct major product is '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Epoxidation / Anti-Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: 1. mCPBA  2. Aqueous H₃O⁺?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butanol"
+        },
+        {
+          "label": "B",
+          "text": "meso-Butane-2,3-diol"
+        },
+        {
+          "label": "C",
+          "text": "Butanal"
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol",
+      "explanation": "Major product rationale: Anti-dihydroxylation via epoxide ring opening inverts one stereocenter, converting cis-alkene to racemic diol. The correct major product is '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Chiral Hydride Reduction of Acetophenone",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when Acetophenone (Ph-CO-CH₃) reacts under the following conditions: (R)-CBS Catalyst / BH₃·THF?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetophenone enol"
+        },
+        {
+          "label": "B",
+          "text": "(R)-1-Phenylethan-1-ol (>95% ee)"
+        },
+        {
+          "label": "C",
+          "text": "Ethylbenzene"
+        },
+        {
+          "label": "D",
+          "text": "(S)-1-Phenylethan-1-ol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(R)-1-Phenylethan-1-ol (>95% ee)",
+      "explanation": "Major product rationale: Chiral CBS oxazaborolidine catalyst directs hydride delivery to the re-face of the ketone enantioselectively. The correct major product is '(R)-1-Phenylethan-1-ol (>95% ee)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Stereospecific Elimination of Menthyl Chloride",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (1R,2S,5R)-Menthyl chloride reacts under the following conditions: NaOEt / EtOH, 80°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Menthene (Zaitsev product)"
+        },
+        {
+          "label": "B",
+          "text": "2-Menthene (Non-Zaitsev product exclusively)"
+        },
+        {
+          "label": "C",
+          "text": "Menthol"
+        },
+        {
+          "label": "D",
+          "text": "Menthane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Menthene (Non-Zaitsev product exclusively)",
+      "explanation": "Major product rationale: Strict requirement for anti-periplanar geometry forces E2 elimination exclusively toward C2, yielding 2-menthene. The correct major product is '2-Menthene (Non-Zaitsev product exclusively)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Enantiomeric Mandelic Acid Resolution",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (±)-Mandelic acid reacts under the following conditions: (R)-(+)-1-Phenylethylamine in EtOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomerically inverted ester"
+        },
+        {
+          "label": "B",
+          "text": "Racemic liquid solution"
+        },
+        {
+          "label": "C",
+          "text": "Decarboxylated benzaldehyde"
+        },
+        {
+          "label": "D",
+          "text": "Diastereomeric salt mixture separable by crystallization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Diastereomeric salt mixture separable by crystallization",
+      "explanation": "Major product rationale: Chiral amine resolves racemic carboxylic acid by forming pairs of diastereomeric salts with different solubilities. The correct major product is 'Diastereomeric salt mixture separable by crystallization'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Stereospecific Alkene Hydrogenation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into meso-Butane (Achiral butane) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br₂ in CCl₄, 0°C"
+        },
+        {
+          "label": "B",
+          "text": "H₂ / Pt catalyst"
+        },
+        {
+          "label": "C",
+          "text": "(R)-(+)-1-Phenylethylamine in EtOH"
+        },
+        {
+          "label": "D",
+          "text": "Br₂ / CCl₄, 0°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "H₂ / Pt catalyst",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → 'meso-Butane (Achiral butane)' specifically requires 'H₂ / Pt catalyst'. Mechanistic basis: Syn addition of two hydrogens across the planar cis-alkene face generates an achiral alkane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Stereoselective Halogenation of trans-2-Butene",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert trans-2-Butene into meso-2,3-Dibromobutane in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br₂ in CCl₄, 0°C"
+        },
+        {
+          "label": "B",
+          "text": "NaI in dry Acetone"
+        },
+        {
+          "label": "C",
+          "text": "Br₂ / CCl₄, 0°C"
+        },
+        {
+          "label": "D",
+          "text": "H₂ / Pt catalyst"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Br₂ / CCl₄, 0°C",
+      "explanation": "Reagent selection rationale: The transformation 'trans-2-Butene' → 'meso-2,3-Dibromobutane' specifically requires 'Br₂ / CCl₄, 0°C'. Mechanistic basis: Anti-stereospecific addition through a bridged cyclic bromonium ion on trans-2-butene yields the meso diastereomer.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Stereoselective Halogenation of cis-2-Butene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into (±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "OsO₄ / NMO aqueous acetone"
+        },
+        {
+          "label": "B",
+          "text": "NaI in dry Acetone"
+        },
+        {
+          "label": "C",
+          "text": "Br₂ / CCl₄, 0°C"
+        },
+        {
+          "label": "D",
+          "text": "Br₂ in CCl₄, 0°C"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Br₂ in CCl₄, 0°C",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → '(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)' specifically requires 'Br₂ in CCl₄, 0°C'. Mechanistic basis: Anti-addition of bromine across cis-2-butene yields an equimolar racemic pair of enantiomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Walden Inversion SN2 on Chiral Halide",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '(S)-2-Iodobutane + NaBr(s)' when treated with 'NaI in dry Acetone' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        },
+        {
+          "label": "B",
+          "text": "(1R,2S,5R)-Menthyl chloride"
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-Bromobutane"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R)-2-Bromobutane",
+      "explanation": "Starting material deduction: Treating '(R)-2-Bromobutane' with 'NaI in dry Acetone' yields '(S)-2-Iodobutane + NaBr(s)'. Mechanistic rationale: Concerted backside nucleophilic attack inverts the chiral configuration from (R) to (S).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'meso-Butane-2,3-diol' when treated with 'OsO₄ / NMO aqueous acetone' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-2-Bromobutane"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "C",
+          "text": "(±)-Mandelic acid"
+        },
+        {
+          "label": "D",
+          "text": "cis-2-Butene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-2-Butene",
+      "explanation": "Starting material deduction: Treating 'cis-2-Butene' with 'OsO₄ / NMO aqueous acetone' yields 'meso-Butane-2,3-diol'. Mechanistic rationale: Concerted syn-addition of two hydroxyl groups across cis-2-butene yields the meso-diol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Chiral Hydride Reduction of Acetophenone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when Acetophenone (Ph-CO-CH₃) reacts under the following conditions: (R)-CBS Catalyst / BH₃·THF?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-1-Phenylethan-1-ol (>95% ee)"
+        },
+        {
+          "label": "B",
+          "text": "Ethylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "(S)-1-Phenylethan-1-ol"
+        },
+        {
+          "label": "D",
+          "text": "Acetophenone enol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(R)-1-Phenylethan-1-ol (>95% ee)",
+      "explanation": "Major product rationale: Chiral CBS oxazaborolidine catalyst directs hydride delivery to the re-face of the ketone enantioselectively. The correct major product is '(R)-1-Phenylethan-1-ol (>95% ee)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Stereospecific Elimination of Menthyl Chloride",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (1R,2S,5R)-Menthyl chloride reacts under the following conditions: NaOEt / EtOH, 80°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Menthene (Non-Zaitsev product exclusively)"
+        },
+        {
+          "label": "B",
+          "text": "3-Menthene (Zaitsev product)"
+        },
+        {
+          "label": "C",
+          "text": "Menthane"
+        },
+        {
+          "label": "D",
+          "text": "Menthol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Menthene (Non-Zaitsev product exclusively)",
+      "explanation": "Major product rationale: Strict requirement for anti-periplanar geometry forces E2 elimination exclusively toward C2, yielding 2-menthene. The correct major product is '2-Menthene (Non-Zaitsev product exclusively)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Enantiomeric Mandelic Acid Resolution",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when (±)-Mandelic acid reacts under the following conditions: (R)-(+)-1-Phenylethylamine in EtOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomerically inverted ester"
+        },
+        {
+          "label": "B",
+          "text": "Decarboxylated benzaldehyde"
+        },
+        {
+          "label": "C",
+          "text": "Racemic liquid solution"
+        },
+        {
+          "label": "D",
+          "text": "Diastereomeric salt mixture separable by crystallization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Diastereomeric salt mixture separable by crystallization",
+      "explanation": "Major product rationale: Chiral amine resolves racemic carboxylic acid by forming pairs of diastereomeric salts with different solubilities. The correct major product is 'Diastereomeric salt mixture separable by crystallization'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Stereospecific Alkene Hydrogenation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when cis-2-Butene reacts under the following conditions: H₂ / Pt catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-Butane (Achiral butane)"
+        },
+        {
+          "label": "B",
+          "text": "(2S,3S)-Butane"
+        },
+        {
+          "label": "C",
+          "text": "(±)-trans-2-Butene"
+        },
+        {
+          "label": "D",
+          "text": "(2R,3R)-Butane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso-Butane (Achiral butane)",
+      "explanation": "Major product rationale: Syn addition of two hydrogens across the planar cis-alkene face generates an achiral alkane. The correct major product is 'meso-Butane (Achiral butane)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Stereoselective Halogenation of trans-2-Butene",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Stereoisomerism, what is the major organic product when trans-2-Butene reacts under the following conditions: Br₂ / CCl₄, 0°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(2R,3R)-2,3-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "C",
+          "text": "(±)-2,3-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "(2S,3S)-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "meso-2,3-Dibromobutane",
+      "explanation": "Major product rationale: Anti-stereospecific addition through a bridged cyclic bromonium ion on trans-2-butene yields the meso diastereomer. The correct major product is 'meso-2,3-Dibromobutane'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Stereoselective Halogenation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into (±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br₂ in CCl₄, 0°C"
+        },
+        {
+          "label": "B",
+          "text": "OsO₄ / NMO in acetone"
+        },
+        {
+          "label": "C",
+          "text": "NaI in dry Acetone"
+        },
+        {
+          "label": "D",
+          "text": "OsO₄ / NMO aqueous acetone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Br₂ in CCl₄, 0°C",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → '(±)-(2R,3R)/(2S,3S)-2,3-Dibromobutane (Racemic)' specifically requires 'Br₂ in CCl₄, 0°C'. Mechanistic basis: Anti-addition of bromine across cis-2-butene yields an equimolar racemic pair of enantiomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Walden Inversion SN2 on Chiral Halide",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert (R)-2-Bromobutane into (S)-2-Iodobutane + NaBr(s) in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaI in dry Acetone"
+        },
+        {
+          "label": "B",
+          "text": "OsO₄ / NMO in acetone"
+        },
+        {
+          "label": "C",
+          "text": "OsO₄ / NMO aqueous acetone"
+        },
+        {
+          "label": "D",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "NaI in dry Acetone",
+      "explanation": "Reagent selection rationale: The transformation '(R)-2-Bromobutane' → '(S)-2-Iodobutane + NaBr(s)' specifically requires 'NaI in dry Acetone'. Mechanistic basis: Concerted backside nucleophilic attack inverts the chiral configuration from (R) to (S).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert cis-2-Butene into meso-Butane-2,3-diol in Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-CBS Catalyst / BH₃·THF"
+        },
+        {
+          "label": "B",
+          "text": "1. mCPBA  2. Aqueous H₃O⁺"
+        },
+        {
+          "label": "C",
+          "text": "OsO₄ / NMO in acetone"
+        },
+        {
+          "label": "D",
+          "text": "OsO₄ / NMO aqueous acetone"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "OsO₄ / NMO aqueous acetone",
+      "explanation": "Reagent selection rationale: The transformation 'cis-2-Butene' → 'meso-Butane-2,3-diol' specifically requires 'OsO₄ / NMO aqueous acetone'. Mechanistic basis: Concerted syn-addition of two hydroxyl groups across cis-2-butene yields the meso-diol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)' when treated with 'OsO₄ / NMO in acetone' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        },
+        {
+          "label": "B",
+          "text": "(R)-2-Bromobutane"
+        },
+        {
+          "label": "C",
+          "text": "cis-2-Butene"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-2-Butene",
+      "explanation": "Starting material deduction: Treating 'trans-2-Butene' with 'OsO₄ / NMO in acetone' yields '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol (Racemic)'. Mechanistic rationale: Concerted syn-dihydroxylation across trans-2-butene creates a racemic mixture of chiral diols.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Epoxidation / Anti-Dihydroxylation of cis-2-Butene",
+      "difficulty": "hard",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol' when treated with '1. mCPBA  2. Aqueous H₃O⁺' according to the principles of Stereoisomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2-Butene"
+        },
+        {
+          "label": "B",
+          "text": "Acetophenone (Ph-CO-CH₃)"
+        },
+        {
+          "label": "C",
+          "text": "(1R,2S,5R)-Menthyl chloride"
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-Bromobutane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "cis-2-Butene",
+      "explanation": "Starting material deduction: Treating 'cis-2-Butene' with '1. mCPBA  2. Aqueous H₃O⁺' yields '(±)-(2R,3R)/(2S,3S)-Butane-2,3-diol'. Mechanistic rationale: Anti-dihydroxylation via epoxide ring opening inverts one stereocenter, converting cis-alkene to racemic diol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chirality Cerberus",
+    "Cahn-Ingold-Prelog Captain",
+    "Enantiomer Enchanter",
+    "Diastereomer Duelist",
+    "Meso Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chirality Cerberus",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chirality-cerberus.png"
+        ]
+      },
+      {
+        "boss": "Cahn-Ingold-Prelog Captain",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cahn-ingold-prelog-captain.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enchanter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enchanter.png"
+        ]
+      },
+      {
+        "boss": "Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Meso Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "meso-monarch.png"
+        ]
+      }
+    ]
+  }
+}

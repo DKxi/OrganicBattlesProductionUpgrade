@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereoisomerism",
+  "assigned_boss": "Chirality Cerberus",
+  "bosses": [
+    "Chirality Cerberus",
+    "Cahn-Ingold-Prelog Captain",
+    "Enantiomer Enchanter",
+    "Diastereomer Duelist",
+    "Meso Monarch"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Chirality Cerberus",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Cahn-Ingold-Prelog Captain",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Enantiomer Enchanter",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Diastereomer Duelist",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Meso Monarch",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Pharmacophore Identification",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "In the medicinal chemistry analysis of Chapter 05 therapeutic agents, what defines the essential pharmacophore?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The boiling point of the drug solvent."
+        },
+        {
+          "label": "B",
+          "text": "The color of the crystalline drug powder."
+        },
+        {
+          "label": "C",
+          "text": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The total molecular weight of the inactive excipient."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05.",
+      "explanation": "A pharmacophore represents the core ensemble of steric and electronic features necessary to ensure macromolecular biological interactions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Enzyme-Inhibitor Binding Interaction",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What non-covalent intermolecular forces dominate drug-receptor recognition in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Metallic bonding with platinum."
+        },
+        {
+          "label": "B",
+          "text": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Direct covalent diamond networks."
+        },
+        {
+          "label": "D",
+          "text": "Permanent nuclear fusion bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05.",
+      "explanation": "Reversible drug binding relies on complementary non-covalent forces matching the active site topography of the target protein.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Lipinski Rule of 5 Compliance",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "When evaluating a Chapter 05 candidate molecule for oral drug-likeness, which parameter must NOT exceed 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular weight (must be \u2264 5 Da)."
+        },
+        {
+          "label": "B",
+          "text": "The number of single bonds (must be \u2264 5)."
+        },
+        {
+          "label": "C",
+          "text": "The number of carbon atoms (must be \u2264 5)."
+        },
+        {
+          "label": "D",
+          "text": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05.",
+      "explanation": "Lipinski's Rule of 5 specifies LogP \u2264 5 and H-bond donors (OH + NH) \u2264 5 for favorable intestinal membrane permeability.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Metabolic Phase I Oxidation",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What is the primary metabolic fate of a lipophilic aromatic or benzylic site in Chapter 05 drug molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous combustion to carbon dioxide."
+        },
+        {
+          "label": "B",
+          "text": "Conversion to an explosive alkyne."
+        },
+        {
+          "label": "C",
+          "text": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Reduction to a saturated cycloalkane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05.",
+      "explanation": "Hepatic CYP450 enzymes introduce oxygen into electron-rich aromatic or benzylic positions, generating polar hydroxylated metabolites.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Metabolic Phase II Glucuronidation",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What cofactor provides the glucuronide moiety during Phase II metabolism of Chapter 05 functional groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NADH."
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A."
+        },
+        {
+          "label": "C",
+          "text": "ATP."
+        },
+        {
+          "label": "D",
+          "text": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05.",
+      "explanation": "UDP-glucuronyltransferases transfer glucuronic acid from UDP-GlcUA to polar functional groups, boosting renal clearance.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Prodrug Activation Strategy",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What chemical rationale justifies designing a prodrug for a Chapter 05 clinical drug candidate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To prevent the drug from ever being metabolized."
+        },
+        {
+          "label": "B",
+          "text": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "To increase the manufacturing cost."
+        },
+        {
+          "label": "D",
+          "text": "To make the drug permanently toxic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05.",
+      "explanation": "Prodrug strategies mask problematic functional groups to overcome pharmacokinetic barriers, releasing active drug enzymatically in vivo.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Suicide / Mechanism-Based Inhibition",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What characterizes a mechanism-based 'suicide' enzyme inhibitor in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The inhibitor acts strictly as a competitive non-covalent binder."
+        },
+        {
+          "label": "B",
+          "text": "The inhibitor permanently alters the patient's DNA."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The inhibitor explodes violently inside the cell."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05.",
+      "explanation": "Suicide inhibitors hijack the enzyme's own catalytic mechanism to generate an active alkylating/acylating agent that irreversibly kills the target enzyme.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Bioisosteric Replacement Strategy",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "In medicinal chemistry optimization of Chapter 05 leads, what is the purpose of bioisosteric replacement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replacing carbon with radioactive uranium."
+        },
+        {
+          "label": "B",
+          "text": "Adding 10 additional aromatic rings."
+        },
+        {
+          "label": "C",
+          "text": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Converting all single bonds to triple bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05.",
+      "explanation": "Bioisosteres preserve biological potency while optimizing pharmacokinetic properties, metabolic stability, and selectivity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Transition State Analog Design",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why do transition state analogs act as exceptionally potent, nanomolar enzyme inhibitors in Chapter 05?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because transition state analogs are made of solid gold."
+        },
+        {
+          "label": "B",
+          "text": "Because they destroy the ribosome."
+        },
+        {
+          "label": "C",
+          "text": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Because transition state analogs have zero molecular weight."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05.",
+      "explanation": "Pauling's principle dictates that enzymes achieve catalysis by stabilizing the transition state; stable mimics bind with picomolar/nanomolar affinity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Ch05 Stereochemical Eutomer vs Distomer",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "In chiral drug development for Chapter 05 targets, what term designates the therapeutically active enantiomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The monomer."
+        },
+        {
+          "label": "B",
+          "text": "The polymer."
+        },
+        {
+          "label": "C",
+          "text": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The isomer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05.",
+      "explanation": "In stereoselective pharmacology, the eutomer is the bioactive enantiomer and the distomer is the less active or counterproductive enantiomer.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Pharmacophore Identification",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "In the medicinal chemistry analysis of Chapter 05 therapeutic agents, what defines the essential pharmacophore?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The color of the crystalline drug powder."
+        },
+        {
+          "label": "B",
+          "text": "The boiling point of the drug solvent."
+        },
+        {
+          "label": "C",
+          "text": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The total molecular weight of the inactive excipient."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05.",
+      "explanation": "A pharmacophore represents the core ensemble of steric and electronic features necessary to ensure macromolecular biological interactions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Enzyme-Inhibitor Binding Interaction",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What non-covalent intermolecular forces dominate drug-receptor recognition in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct covalent diamond networks."
+        },
+        {
+          "label": "B",
+          "text": "Metallic bonding with platinum."
+        },
+        {
+          "label": "C",
+          "text": "Permanent nuclear fusion bonds."
+        },
+        {
+          "label": "D",
+          "text": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05.",
+      "explanation": "Reversible drug binding relies on complementary non-covalent forces matching the active site topography of the target protein.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Lipinski Rule of 5 Compliance",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "When evaluating a Chapter 05 candidate molecule for oral drug-likeness, which parameter must NOT exceed 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular weight (must be \u2264 5 Da)."
+        },
+        {
+          "label": "B",
+          "text": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "The number of single bonds (must be \u2264 5)."
+        },
+        {
+          "label": "D",
+          "text": "The number of carbon atoms (must be \u2264 5)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05.",
+      "explanation": "Lipinski's Rule of 5 specifies LogP \u2264 5 and H-bond donors (OH + NH) \u2264 5 for favorable intestinal membrane permeability.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Metabolic Phase I Oxidation",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What is the primary metabolic fate of a lipophilic aromatic or benzylic site in Chapter 05 drug molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conversion to an explosive alkyne."
+        },
+        {
+          "label": "B",
+          "text": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous combustion to carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Reduction to a saturated cycloalkane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05.",
+      "explanation": "Hepatic CYP450 enzymes introduce oxygen into electron-rich aromatic or benzylic positions, generating polar hydroxylated metabolites.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Metabolic Phase II Glucuronidation",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What cofactor provides the glucuronide moiety during Phase II metabolism of Chapter 05 functional groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coenzyme A."
+        },
+        {
+          "label": "B",
+          "text": "NADH."
+        },
+        {
+          "label": "C",
+          "text": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "ATP."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05.",
+      "explanation": "UDP-glucuronyltransferases transfer glucuronic acid from UDP-GlcUA to polar functional groups, boosting renal clearance.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Prodrug Activation Strategy",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What chemical rationale justifies designing a prodrug for a Chapter 05 clinical drug candidate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To increase the manufacturing cost."
+        },
+        {
+          "label": "B",
+          "text": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "To make the drug permanently toxic."
+        },
+        {
+          "label": "D",
+          "text": "To prevent the drug from ever being metabolized."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05.",
+      "explanation": "Prodrug strategies mask problematic functional groups to overcome pharmacokinetic barriers, releasing active drug enzymatically in vivo.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Suicide / Mechanism-Based Inhibition",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What characterizes a mechanism-based 'suicide' enzyme inhibitor in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The inhibitor acts strictly as a competitive non-covalent binder."
+        },
+        {
+          "label": "B",
+          "text": "The inhibitor permanently alters the patient's DNA."
+        },
+        {
+          "label": "C",
+          "text": "The inhibitor explodes violently inside the cell."
+        },
+        {
+          "label": "D",
+          "text": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05.",
+      "explanation": "Suicide inhibitors hijack the enzyme's own catalytic mechanism to generate an active alkylating/acylating agent that irreversibly kills the target enzyme.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Bioisosteric Replacement Strategy",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "In medicinal chemistry optimization of Chapter 05 leads, what is the purpose of bioisosteric replacement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adding 10 additional aromatic rings."
+        },
+        {
+          "label": "B",
+          "text": "Converting all single bonds to triple bonds."
+        },
+        {
+          "label": "C",
+          "text": "Replacing carbon with radioactive uranium."
+        },
+        {
+          "label": "D",
+          "text": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05.",
+      "explanation": "Bioisosteres preserve biological potency while optimizing pharmacokinetic properties, metabolic stability, and selectivity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Transition State Analog Design",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why do transition state analogs act as exceptionally potent, nanomolar enzyme inhibitors in Chapter 05?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because transition state analogs are made of solid gold."
+        },
+        {
+          "label": "B",
+          "text": "Because transition state analogs have zero molecular weight."
+        },
+        {
+          "label": "C",
+          "text": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Because they destroy the ribosome."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05.",
+      "explanation": "Pauling's principle dictates that enzymes achieve catalysis by stabilizing the transition state; stable mimics bind with picomolar/nanomolar affinity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Ch05 Stereochemical Eutomer vs Distomer",
+      "difficulty": "hard",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "In chiral drug development for Chapter 05 targets, what term designates the therapeutically active enantiomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05."
+        },
+        {
+          "label": "B",
+          "text": "The isomer."
+        },
+        {
+          "label": "C",
+          "text": "The monomer."
+        },
+        {
+          "label": "D",
+          "text": "The polymer."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05.",
+      "explanation": "In stereoselective pharmacology, the eutomer is the bioactive enantiomer and the distomer is the less active or counterproductive enantiomer.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Pharmacophore Identification",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "In the medicinal chemistry analysis of Chapter 05 therapeutic agents, what defines the essential pharmacophore?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The total molecular weight of the inactive excipient."
+        },
+        {
+          "label": "B",
+          "text": "The color of the crystalline drug powder."
+        },
+        {
+          "label": "C",
+          "text": "The boiling point of the drug solvent."
+        },
+        {
+          "label": "D",
+          "text": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05.",
+      "explanation": "A pharmacophore represents the core ensemble of steric and electronic features necessary to ensure macromolecular biological interactions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Enzyme-Inhibitor Binding Interaction",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What non-covalent intermolecular forces dominate drug-receptor recognition in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05."
+        },
+        {
+          "label": "B",
+          "text": "Metallic bonding with platinum."
+        },
+        {
+          "label": "C",
+          "text": "Permanent nuclear fusion bonds."
+        },
+        {
+          "label": "D",
+          "text": "Direct covalent diamond networks."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05.",
+      "explanation": "Reversible drug binding relies on complementary non-covalent forces matching the active site topography of the target protein.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Lipinski Rule of 5 Compliance",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "When evaluating a Chapter 05 candidate molecule for oral drug-likeness, which parameter must NOT exceed 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number of carbon atoms (must be \u2264 5)."
+        },
+        {
+          "label": "B",
+          "text": "The molecular weight (must be \u2264 5 Da)."
+        },
+        {
+          "label": "C",
+          "text": "The number of single bonds (must be \u2264 5)."
+        },
+        {
+          "label": "D",
+          "text": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05.",
+      "explanation": "Lipinski's Rule of 5 specifies LogP \u2264 5 and H-bond donors (OH + NH) \u2264 5 for favorable intestinal membrane permeability.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Metabolic Phase I Oxidation",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What is the primary metabolic fate of a lipophilic aromatic or benzylic site in Chapter 05 drug molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reduction to a saturated cycloalkane."
+        },
+        {
+          "label": "B",
+          "text": "Spontaneous combustion to carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Conversion to an explosive alkyne."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05.",
+      "explanation": "Hepatic CYP450 enzymes introduce oxygen into electron-rich aromatic or benzylic positions, generating polar hydroxylated metabolites.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Metabolic Phase II Glucuronidation",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What cofactor provides the glucuronide moiety during Phase II metabolism of Chapter 05 functional groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ATP."
+        },
+        {
+          "label": "B",
+          "text": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "NADH."
+        },
+        {
+          "label": "D",
+          "text": "Coenzyme A."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05.",
+      "explanation": "UDP-glucuronyltransferases transfer glucuronic acid from UDP-GlcUA to polar functional groups, boosting renal clearance.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Prodrug Activation Strategy",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "What chemical rationale justifies designing a prodrug for a Chapter 05 clinical drug candidate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To increase the manufacturing cost."
+        },
+        {
+          "label": "B",
+          "text": "To make the drug permanently toxic."
+        },
+        {
+          "label": "C",
+          "text": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "To prevent the drug from ever being metabolized."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05.",
+      "explanation": "Prodrug strategies mask problematic functional groups to overcome pharmacokinetic barriers, releasing active drug enzymatically in vivo.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Suicide / Mechanism-Based Inhibition",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What characterizes a mechanism-based 'suicide' enzyme inhibitor in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The inhibitor permanently alters the patient's DNA."
+        },
+        {
+          "label": "B",
+          "text": "The inhibitor explodes violently inside the cell."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The inhibitor acts strictly as a competitive non-covalent binder."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05.",
+      "explanation": "Suicide inhibitors hijack the enzyme's own catalytic mechanism to generate an active alkylating/acylating agent that irreversibly kills the target enzyme.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Bioisosteric Replacement Strategy",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "In medicinal chemistry optimization of Chapter 05 leads, what is the purpose of bioisosteric replacement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Converting all single bonds to triple bonds."
+        },
+        {
+          "label": "B",
+          "text": "Replacing carbon with radioactive uranium."
+        },
+        {
+          "label": "C",
+          "text": "Adding 10 additional aromatic rings."
+        },
+        {
+          "label": "D",
+          "text": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05.",
+      "explanation": "Bioisosteres preserve biological potency while optimizing pharmacokinetic properties, metabolic stability, and selectivity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Transition State Analog Design",
+      "difficulty": "hard",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why do transition state analogs act as exceptionally potent, nanomolar enzyme inhibitors in Chapter 05?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because transition state analogs are made of solid gold."
+        },
+        {
+          "label": "B",
+          "text": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Because transition state analogs have zero molecular weight."
+        },
+        {
+          "label": "D",
+          "text": "Because they destroy the ribosome."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05.",
+      "explanation": "Pauling's principle dictates that enzymes achieve catalysis by stabilizing the transition state; stable mimics bind with picomolar/nanomolar affinity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Ch05 Stereochemical Eutomer vs Distomer",
+      "difficulty": "hard",
+      "question_type": "pharmacophore_identification",
+      "question": "In chiral drug development for Chapter 05 targets, what term designates the therapeutically active enantiomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The isomer."
+        },
+        {
+          "label": "B",
+          "text": "The polymer."
+        },
+        {
+          "label": "C",
+          "text": "The monomer."
+        },
+        {
+          "label": "D",
+          "text": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05.",
+      "explanation": "In stereoselective pharmacology, the eutomer is the bioactive enantiomer and the distomer is the less active or counterproductive enantiomer.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Pharmacophore Identification",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "In the medicinal chemistry analysis of Chapter 05 therapeutic agents, what defines the essential pharmacophore?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The color of the crystalline drug powder."
+        },
+        {
+          "label": "B",
+          "text": "The boiling point of the drug solvent."
+        },
+        {
+          "label": "C",
+          "text": "The total molecular weight of the inactive excipient."
+        },
+        {
+          "label": "D",
+          "text": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05.",
+      "explanation": "A pharmacophore represents the core ensemble of steric and electronic features necessary to ensure macromolecular biological interactions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Enzyme-Inhibitor Binding Interaction",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What non-covalent intermolecular forces dominate drug-receptor recognition in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Permanent nuclear fusion bonds."
+        },
+        {
+          "label": "B",
+          "text": "Metallic bonding with platinum."
+        },
+        {
+          "label": "C",
+          "text": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Direct covalent diamond networks."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05.",
+      "explanation": "Reversible drug binding relies on complementary non-covalent forces matching the active site topography of the target protein.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Lipinski Rule of 5 Compliance",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "When evaluating a Chapter 05 candidate molecule for oral drug-likeness, which parameter must NOT exceed 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number of single bonds (must be \u2264 5)."
+        },
+        {
+          "label": "B",
+          "text": "The number of carbon atoms (must be \u2264 5)."
+        },
+        {
+          "label": "C",
+          "text": "The molecular weight (must be \u2264 5 Da)."
+        },
+        {
+          "label": "D",
+          "text": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05.",
+      "explanation": "Lipinski's Rule of 5 specifies LogP \u2264 5 and H-bond donors (OH + NH) \u2264 5 for favorable intestinal membrane permeability.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Metabolic Phase I Oxidation",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "What is the primary metabolic fate of a lipophilic aromatic or benzylic site in Chapter 05 drug molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conversion to an explosive alkyne."
+        },
+        {
+          "label": "B",
+          "text": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous combustion to carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Reduction to a saturated cycloalkane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05.",
+      "explanation": "Hepatic CYP450 enzymes introduce oxygen into electron-rich aromatic or benzylic positions, generating polar hydroxylated metabolites.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Metabolic Phase II Glucuronidation",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What cofactor provides the glucuronide moiety during Phase II metabolism of Chapter 05 functional groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NADH."
+        },
+        {
+          "label": "B",
+          "text": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Coenzyme A."
+        },
+        {
+          "label": "D",
+          "text": "ATP."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05.",
+      "explanation": "UDP-glucuronyltransferases transfer glucuronic acid from UDP-GlcUA to polar functional groups, boosting renal clearance.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Prodrug Activation Strategy",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What chemical rationale justifies designing a prodrug for a Chapter 05 clinical drug candidate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To prevent the drug from ever being metabolized."
+        },
+        {
+          "label": "B",
+          "text": "To make the drug permanently toxic."
+        },
+        {
+          "label": "C",
+          "text": "To increase the manufacturing cost."
+        },
+        {
+          "label": "D",
+          "text": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05.",
+      "explanation": "Prodrug strategies mask problematic functional groups to overcome pharmacokinetic barriers, releasing active drug enzymatically in vivo.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Suicide / Mechanism-Based Inhibition",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What characterizes a mechanism-based 'suicide' enzyme inhibitor in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The inhibitor acts strictly as a competitive non-covalent binder."
+        },
+        {
+          "label": "B",
+          "text": "The inhibitor explodes violently inside the cell."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The inhibitor permanently alters the patient's DNA."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05.",
+      "explanation": "Suicide inhibitors hijack the enzyme's own catalytic mechanism to generate an active alkylating/acylating agent that irreversibly kills the target enzyme.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Bioisosteric Replacement Strategy",
+      "difficulty": "hard",
+      "question_type": "pharmacophore_identification",
+      "question": "In medicinal chemistry optimization of Chapter 05 leads, what is the purpose of bioisosteric replacement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replacing carbon with radioactive uranium."
+        },
+        {
+          "label": "B",
+          "text": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Converting all single bonds to triple bonds."
+        },
+        {
+          "label": "D",
+          "text": "Adding 10 additional aromatic rings."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05.",
+      "explanation": "Bioisosteres preserve biological potency while optimizing pharmacokinetic properties, metabolic stability, and selectivity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Transition State Analog Design",
+      "difficulty": "hard",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why do transition state analogs act as exceptionally potent, nanomolar enzyme inhibitors in Chapter 05?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05."
+        },
+        {
+          "label": "B",
+          "text": "Because transition state analogs are made of solid gold."
+        },
+        {
+          "label": "C",
+          "text": "Because transition state analogs have zero molecular weight."
+        },
+        {
+          "label": "D",
+          "text": "Because they destroy the ribosome."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05.",
+      "explanation": "Pauling's principle dictates that enzymes achieve catalysis by stabilizing the transition state; stable mimics bind with picomolar/nanomolar affinity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Ch05 Stereochemical Eutomer vs Distomer",
+      "difficulty": "hard",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "In chiral drug development for Chapter 05 targets, what term designates the therapeutically active enantiomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The polymer."
+        },
+        {
+          "label": "B",
+          "text": "The isomer."
+        },
+        {
+          "label": "C",
+          "text": "The monomer."
+        },
+        {
+          "label": "D",
+          "text": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05.",
+      "explanation": "In stereoselective pharmacology, the eutomer is the bioactive enantiomer and the distomer is the less active or counterproductive enantiomer.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Pharmacophore Identification",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "In the medicinal chemistry analysis of Chapter 05 therapeutic agents, what defines the essential pharmacophore?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The total molecular weight of the inactive excipient."
+        },
+        {
+          "label": "B",
+          "text": "The boiling point of the drug solvent."
+        },
+        {
+          "label": "C",
+          "text": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The color of the crystalline drug powder."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The 3D spatial arrangement of electronic and steric features (hydrogen bond donors/acceptors, aromatic rings, charges) required for optimal receptor binding in Chapter 05.",
+      "explanation": "A pharmacophore represents the core ensemble of steric and electronic features necessary to ensure macromolecular biological interactions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Enzyme-Inhibitor Binding Interaction",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What non-covalent intermolecular forces dominate drug-receptor recognition in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Permanent nuclear fusion bonds."
+        },
+        {
+          "label": "B",
+          "text": "Direct covalent diamond networks."
+        },
+        {
+          "label": "C",
+          "text": "Metallic bonding with platinum."
+        },
+        {
+          "label": "D",
+          "text": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A synergistic combination of hydrogen bonding, electrostatic salt bridges, \u03c0-\u03c0 aromatic stacking, and hydrophobic desolvation in Chapter 05.",
+      "explanation": "Reversible drug binding relies on complementary non-covalent forces matching the active site topography of the target protein.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Lipinski Rule of 5 Compliance",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "When evaluating a Chapter 05 candidate molecule for oral drug-likeness, which parameter must NOT exceed 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05."
+        },
+        {
+          "label": "B",
+          "text": "The molecular weight (must be \u2264 5 Da)."
+        },
+        {
+          "label": "C",
+          "text": "The number of single bonds (must be \u2264 5)."
+        },
+        {
+          "label": "D",
+          "text": "The number of carbon atoms (must be \u2264 5)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The calculated octanol-water partition coefficient (LogP \u2264 5) and the number of hydrogen bond donors (HBD \u2264 5) in Chapter 05.",
+      "explanation": "Lipinski's Rule of 5 specifies LogP \u2264 5 and H-bond donors (OH + NH) \u2264 5 for favorable intestinal membrane permeability.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Metabolic Phase I Oxidation",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What is the primary metabolic fate of a lipophilic aromatic or benzylic site in Chapter 05 drug molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reduction to a saturated cycloalkane."
+        },
+        {
+          "label": "B",
+          "text": "Spontaneous combustion to carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "Conversion to an explosive alkyne."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CYP450-mediated aromatic epoxidation / para-hydroxylation yielding a phenolic metabolite for subsequent Phase II excretion in Chapter 05.",
+      "explanation": "Hepatic CYP450 enzymes introduce oxygen into electron-rich aromatic or benzylic positions, generating polar hydroxylated metabolites.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Metabolic Phase II Glucuronidation",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What cofactor provides the glucuronide moiety during Phase II metabolism of Chapter 05 functional groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NADH."
+        },
+        {
+          "label": "B",
+          "text": "ATP."
+        },
+        {
+          "label": "C",
+          "text": "Coenzyme A."
+        },
+        {
+          "label": "D",
+          "text": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "UDP-glucuronic acid (UDP-GlcUA), transferring glucuronate via nucleophilic attack by drug -OH, -COOH, or -NH\u2082 groups in Chapter 05.",
+      "explanation": "UDP-glucuronyltransferases transfer glucuronic acid from UDP-GlcUA to polar functional groups, boosting renal clearance.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Prodrug Activation Strategy",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "What chemical rationale justifies designing a prodrug for a Chapter 05 clinical drug candidate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To make the drug permanently toxic."
+        },
+        {
+          "label": "B",
+          "text": "To prevent the drug from ever being metabolized."
+        },
+        {
+          "label": "C",
+          "text": "To increase the manufacturing cost."
+        },
+        {
+          "label": "D",
+          "text": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "To improve oral bioavailability, enhance chemical stability, reduce gastrointestinal toxicity, or achieve organ-specific targeting in Chapter 05.",
+      "explanation": "Prodrug strategies mask problematic functional groups to overcome pharmacokinetic barriers, releasing active drug enzymatically in vivo.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Suicide / Mechanism-Based Inhibition",
+      "difficulty": "hard",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What characterizes a mechanism-based 'suicide' enzyme inhibitor in Chapter 05 pharmacology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The inhibitor acts strictly as a competitive non-covalent binder."
+        },
+        {
+          "label": "B",
+          "text": "The inhibitor permanently alters the patient's DNA."
+        },
+        {
+          "label": "C",
+          "text": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05."
+        },
+        {
+          "label": "D",
+          "text": "The inhibitor explodes violently inside the cell."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The enzyme converts the unreactive prodrug into a reactive species in situ, which covalently alkylates or acylates an active site residue in Chapter 05.",
+      "explanation": "Suicide inhibitors hijack the enzyme's own catalytic mechanism to generate an active alkylating/acylating agent that irreversibly kills the target enzyme.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Bioisosteric Replacement Strategy",
+      "difficulty": "hard",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "In medicinal chemistry optimization of Chapter 05 leads, what is the purpose of bioisosteric replacement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replacing carbon with radioactive uranium."
+        },
+        {
+          "label": "B",
+          "text": "Adding 10 additional aromatic rings."
+        },
+        {
+          "label": "C",
+          "text": "Converting all single bonds to triple bonds."
+        },
+        {
+          "label": "D",
+          "text": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Replacing a metabolically vulnerable or toxic group with a chemically distinct group of similar size and electronics (e.g., -F for -H, tetrazole for -COOH) in Chapter 05.",
+      "explanation": "Bioisosteres preserve biological potency while optimizing pharmacokinetic properties, metabolic stability, and selectivity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Transition State Analog Design",
+      "difficulty": "hard",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why do transition state analogs act as exceptionally potent, nanomolar enzyme inhibitors in Chapter 05?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because they destroy the ribosome."
+        },
+        {
+          "label": "B",
+          "text": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05."
+        },
+        {
+          "label": "C",
+          "text": "Because transition state analogs have zero molecular weight."
+        },
+        {
+          "label": "D",
+          "text": "Because transition state analogs are made of solid gold."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because enzymes have evolved active sites that bind the transition state geometry with vastly higher affinity (10\u00b9\u00b2-fold) than ground-state substrates in Chapter 05.",
+      "explanation": "Pauling's principle dictates that enzymes achieve catalysis by stabilizing the transition state; stable mimics bind with picomolar/nanomolar affinity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Ch05 Stereochemical Eutomer vs Distomer",
+      "difficulty": "hard",
+      "question_type": "pharmacophore_identification",
+      "question": "In chiral drug development for Chapter 05 targets, what term designates the therapeutically active enantiomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05."
+        },
+        {
+          "label": "B",
+          "text": "The isomer."
+        },
+        {
+          "label": "C",
+          "text": "The polymer."
+        },
+        {
+          "label": "D",
+          "text": "The monomer."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The eutomer (the active enantiomer), while the inactive or toxic enantiomer is designated as the distomer in Chapter 05.",
+      "explanation": "In stereoselective pharmacology, the eutomer is the bioactive enantiomer and the distomer is the less active or counterproductive enantiomer.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    }
+  ]
+}

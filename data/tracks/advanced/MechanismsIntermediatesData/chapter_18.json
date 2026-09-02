@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 18,
+  "chapter_title": "Aromatic Substitution Reactions",
+  "assigned_boss": "Arenium Archer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch18_q001",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "EAS Rate-Determining Sigma Complex Formation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the rate-determining step in the electrophilic aromatic substitution (EAS) bromination of benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex)."
+        },
+        {
+          "label": "B",
+          "text": "Coordination of FeBr₃ with benzene."
+        },
+        {
+          "label": "C",
+          "text": "Deprotonation of the arenium ion by FeBr₄⁻."
+        },
+        {
+          "label": "D",
+          "text": "Dissociation of bromobenzene into ions."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex).",
+      "explanation": "Formation of the sigma complex disrupts aromaticity, making it the slow, rate-determining endothermic step.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q002",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Aromaticity Restoration Fast Step",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is the second step (deprotonation of the arenium ion) in EAS extraordinarily fast and exergonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The arenium ion is an explosive intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring."
+        },
+        {
+          "label": "C",
+          "text": "The base FeBr₄⁻ is a superacid."
+        },
+        {
+          "label": "D",
+          "text": "The reaction releases elemental bromine gas."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring.",
+      "explanation": "Regaining aromaticity provides a powerful thermodynamic driving force that makes deprotonation extremely rapid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q003",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Nitronium Ion Generation Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How is the active electrophile (NO₂⁺) generated in the nitration of benzene by HNO₃ / H₂SO₄?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfuric acid oxidizes nitrogen dioxide to nitrate."
+        },
+        {
+          "label": "B",
+          "text": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O)."
+        },
+        {
+          "label": "C",
+          "text": "Nitric acid directly attacks benzene without acid catalysis."
+        },
+        {
+          "label": "D",
+          "text": "Nitric acid undergoes homolytic cleavage to NO₂ radicals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O).",
+      "explanation": "Protonation of nitric acid turns -OH into water, a good leaving group, expelling H₂O to liberate the powerful nitronium electrophile.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q004",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Friedel-Crafts Acylium Ion Resonance Stability",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do Friedel-Crafts acylations avoid carbocation rearrangements whereas Friedel-Crafts alkylations frequently rearrange?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts."
+        },
+        {
+          "label": "B",
+          "text": "Acylation proceeds via an SN2 mechanism on the ring."
+        },
+        {
+          "label": "C",
+          "text": "Aluminum chloride destroys all carbocations."
+        },
+        {
+          "label": "D",
+          "text": "Acylium ions are too small to undergo rearrangements."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts.",
+      "explanation": "The acylium ion is resonance-stabilized with an octet-complete [R-C≡O⁺] major contributor, making it immune to skeletal rearrangements.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q005",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Ortho/Para Directing Activators (Methoxy Resonance)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does a methoxy group (-OCH₃) direct incoming electrophiles predominantly to the ortho and para positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group sterically blocks the meta positions."
+        },
+        {
+          "label": "B",
+          "text": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group is strongly electron-withdrawing by induction."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group reacts directly with the electrophile first."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet.",
+      "explanation": "Resonance donation from the oxygen lone pair stabilizes the arenium ion selectively at ortho and para attack positions with a full-octet structure.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q006",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Meta Directing Deactivators (Nitro Group)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does a nitro group (-NO₂) direct electrophilic substitution exclusively to the meta position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meta attack is an aromatic transition state."
+        },
+        {
+          "label": "B",
+          "text": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways."
+        },
+        {
+          "label": "C",
+          "text": "The nitro group donates electrons to the meta position."
+        },
+        {
+          "label": "D",
+          "text": "The nitro group forms a covalent bond with the electrophile."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways.",
+      "explanation": "Ortho/para attack creates an exceptionally high-energy contributor with adjacent positive charges; meta attack avoids this electrostatic penalty.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q007",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Halogen Paradox (Deactivating yet Ortho/Para Directing)",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why are halogen substituents deactivating toward EAS yet ortho/para directing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halogens only react at high temperatures."
+        },
+        {
+          "label": "B",
+          "text": "Halogens are strong electron donors by induction."
+        },
+        {
+          "label": "C",
+          "text": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions."
+        },
+        {
+          "label": "D",
+          "text": "Halogens form cyclic halonium ions with the whole ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions.",
+      "explanation": "Inductive withdrawal deactivates the ring (slowing rate), while lone pair resonance donation stabilizes ortho/para transition states (governing regiochemistry).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q008",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "SNAr Meisenheimer Complex Intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key intermediate in the nucleophilic aromatic substitution (SNAr) of 1-chloro-2,4-dinitrobenzene by methoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens."
+        },
+        {
+          "label": "B",
+          "text": "A benzyne intermediate with a formal triple bond."
+        },
+        {
+          "label": "C",
+          "text": "An arenium cation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A phenyl radical intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens.",
+      "explanation": "Nucleophilic addition to an electron-poor aryl halide forms an anionic Meisenheimer complex stabilized by electron-withdrawing nitro groups.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q009",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the structural nature of the benzyne intermediate formed when chlorobenzene reacts with KNH₂ in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 7-membered cycloheptatrienyl radical."
+        },
+        {
+          "label": "B",
+          "text": "A radical anion with an open ring."
+        },
+        {
+          "label": "C",
+          "text": "A planar aromatic dication."
+        },
+        {
+          "label": "D",
+          "text": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane.",
+      "explanation": "Elimination of HCl generates benzyne, featuring a highly strained in-plane π bond formed from adjacent sp² orbitals.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q010",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Diazonium Sandmeyer Radical Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the role of copper(I) salts in the Sandmeyer reaction of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II)."
+        },
+        {
+          "label": "B",
+          "text": "Cu(I) acts as a Brønsted acid that protonates the diazonium group."
+        },
+        {
+          "label": "C",
+          "text": "Cu(I) forms an insoluble precipitate with nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "Cu(I) oxidizes the aromatic ring to quinone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II).",
+      "explanation": "Copper(I) catalyzes single-electron transfer, driving loss of N₂ gas and generation of a reactive aryl radical intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q011",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Nitronium Ion Generation Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How is the active electrophile (NO₂⁺) generated in the nitration of benzene by HNO₃ / H₂SO₄?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitric acid undergoes homolytic cleavage to NO₂ radicals."
+        },
+        {
+          "label": "B",
+          "text": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O)."
+        },
+        {
+          "label": "C",
+          "text": "Sulfuric acid oxidizes nitrogen dioxide to nitrate."
+        },
+        {
+          "label": "D",
+          "text": "Nitric acid directly attacks benzene without acid catalysis."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O).",
+      "explanation": "Protonation of nitric acid turns -OH into water, a good leaving group, expelling H₂O to liberate the powerful nitronium electrophile.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q012",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Friedel-Crafts Acylium Ion Resonance Stability",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do Friedel-Crafts acylations avoid carbocation rearrangements whereas Friedel-Crafts alkylations frequently rearrange?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aluminum chloride destroys all carbocations."
+        },
+        {
+          "label": "B",
+          "text": "Acylium ions are too small to undergo rearrangements."
+        },
+        {
+          "label": "C",
+          "text": "Acylation proceeds via an SN2 mechanism on the ring."
+        },
+        {
+          "label": "D",
+          "text": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts.",
+      "explanation": "The acylium ion is resonance-stabilized with an octet-complete [R-C≡O⁺] major contributor, making it immune to skeletal rearrangements.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q013",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Ortho/Para Directing Activators (Methoxy Resonance)",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does a methoxy group (-OCH₃) direct incoming electrophiles predominantly to the ortho and para positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group sterically blocks the meta positions."
+        },
+        {
+          "label": "B",
+          "text": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group is strongly electron-withdrawing by induction."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group reacts directly with the electrophile first."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet.",
+      "explanation": "Resonance donation from the oxygen lone pair stabilizes the arenium ion selectively at ortho and para attack positions with a full-octet structure.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q014",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Meta Directing Deactivators (Nitro Group)",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does a nitro group (-NO₂) direct electrophilic substitution exclusively to the meta position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitro group donates electrons to the meta position."
+        },
+        {
+          "label": "B",
+          "text": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways."
+        },
+        {
+          "label": "C",
+          "text": "The nitro group forms a covalent bond with the electrophile."
+        },
+        {
+          "label": "D",
+          "text": "Meta attack is an aromatic transition state."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways.",
+      "explanation": "Ortho/para attack creates an exceptionally high-energy contributor with adjacent positive charges; meta attack avoids this electrostatic penalty.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q015",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Halogen Paradox (Deactivating yet Ortho/Para Directing)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why are halogen substituents deactivating toward EAS yet ortho/para directing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halogens are strong electron donors by induction."
+        },
+        {
+          "label": "B",
+          "text": "Halogens form cyclic halonium ions with the whole ring."
+        },
+        {
+          "label": "C",
+          "text": "Halogens only react at high temperatures."
+        },
+        {
+          "label": "D",
+          "text": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions.",
+      "explanation": "Inductive withdrawal deactivates the ring (slowing rate), while lone pair resonance donation stabilizes ortho/para transition states (governing regiochemistry).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q016",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "SNAr Meisenheimer Complex Intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the key intermediate in the nucleophilic aromatic substitution (SNAr) of 1-chloro-2,4-dinitrobenzene by methoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens."
+        },
+        {
+          "label": "B",
+          "text": "An arenium cation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A benzyne intermediate with a formal triple bond."
+        },
+        {
+          "label": "D",
+          "text": "A phenyl radical intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens.",
+      "explanation": "Nucleophilic addition to an electron-poor aryl halide forms an anionic Meisenheimer complex stabilized by electron-withdrawing nitro groups.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q017",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the structural nature of the benzyne intermediate formed when chlorobenzene reacts with KNH₂ in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar aromatic dication."
+        },
+        {
+          "label": "B",
+          "text": "A radical anion with an open ring."
+        },
+        {
+          "label": "C",
+          "text": "A 7-membered cycloheptatrienyl radical."
+        },
+        {
+          "label": "D",
+          "text": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane.",
+      "explanation": "Elimination of HCl generates benzyne, featuring a highly strained in-plane π bond formed from adjacent sp² orbitals.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q018",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Diazonium Sandmeyer Radical Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the role of copper(I) salts in the Sandmeyer reaction of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cu(I) acts as a Brønsted acid that protonates the diazonium group."
+        },
+        {
+          "label": "B",
+          "text": "Cu(I) forms an insoluble precipitate with nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "Cu(I) oxidizes the aromatic ring to quinone."
+        },
+        {
+          "label": "D",
+          "text": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II).",
+      "explanation": "Copper(I) catalyzes single-electron transfer, driving loss of N₂ gas and generation of a reactive aryl radical intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q019",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "EAS Rate-Determining Sigma Complex Formation",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the rate-determining step in the electrophilic aromatic substitution (EAS) bromination of benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation of the arenium ion by FeBr₄⁻."
+        },
+        {
+          "label": "B",
+          "text": "Coordination of FeBr₃ with benzene."
+        },
+        {
+          "label": "C",
+          "text": "Dissociation of bromobenzene into ions."
+        },
+        {
+          "label": "D",
+          "text": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex).",
+      "explanation": "Formation of the sigma complex disrupts aromaticity, making it the slow, rate-determining endothermic step.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q020",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Aromaticity Restoration Fast Step",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the second step (deprotonation of the arenium ion) in EAS extraordinarily fast and exergonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The base FeBr₄⁻ is a superacid."
+        },
+        {
+          "label": "B",
+          "text": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring."
+        },
+        {
+          "label": "C",
+          "text": "The reaction releases elemental bromine gas."
+        },
+        {
+          "label": "D",
+          "text": "The arenium ion is an explosive intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring.",
+      "explanation": "Regaining aromaticity provides a powerful thermodynamic driving force that makes deprotonation extremely rapid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q021",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Ortho/Para Directing Activators (Methoxy Resonance)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does a methoxy group (-OCH₃) direct incoming electrophiles predominantly to the ortho and para positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group is strongly electron-withdrawing by induction."
+        },
+        {
+          "label": "B",
+          "text": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group sterically blocks the meta positions."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group reacts directly with the electrophile first."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet.",
+      "explanation": "Resonance donation from the oxygen lone pair stabilizes the arenium ion selectively at ortho and para attack positions with a full-octet structure.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q022",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Meta Directing Deactivators (Nitro Group)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does a nitro group (-NO₂) direct electrophilic substitution exclusively to the meta position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitro group donates electrons to the meta position."
+        },
+        {
+          "label": "B",
+          "text": "Meta attack is an aromatic transition state."
+        },
+        {
+          "label": "C",
+          "text": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways."
+        },
+        {
+          "label": "D",
+          "text": "The nitro group forms a covalent bond with the electrophile."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways.",
+      "explanation": "Ortho/para attack creates an exceptionally high-energy contributor with adjacent positive charges; meta attack avoids this electrostatic penalty.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q023",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Halogen Paradox (Deactivating yet Ortho/Para Directing)",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why are halogen substituents deactivating toward EAS yet ortho/para directing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halogens only react at high temperatures."
+        },
+        {
+          "label": "B",
+          "text": "Halogens are strong electron donors by induction."
+        },
+        {
+          "label": "C",
+          "text": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions."
+        },
+        {
+          "label": "D",
+          "text": "Halogens form cyclic halonium ions with the whole ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions.",
+      "explanation": "Inductive withdrawal deactivates the ring (slowing rate), while lone pair resonance donation stabilizes ortho/para transition states (governing regiochemistry).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q024",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "SNAr Meisenheimer Complex Intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the key intermediate in the nucleophilic aromatic substitution (SNAr) of 1-chloro-2,4-dinitrobenzene by methoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An arenium cation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens."
+        },
+        {
+          "label": "C",
+          "text": "A benzyne intermediate with a formal triple bond."
+        },
+        {
+          "label": "D",
+          "text": "A phenyl radical intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens.",
+      "explanation": "Nucleophilic addition to an electron-poor aryl halide forms an anionic Meisenheimer complex stabilized by electron-withdrawing nitro groups.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q025",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the structural nature of the benzyne intermediate formed when chlorobenzene reacts with KNH₂ in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar aromatic dication."
+        },
+        {
+          "label": "B",
+          "text": "A radical anion with an open ring."
+        },
+        {
+          "label": "C",
+          "text": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane."
+        },
+        {
+          "label": "D",
+          "text": "A 7-membered cycloheptatrienyl radical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane.",
+      "explanation": "Elimination of HCl generates benzyne, featuring a highly strained in-plane π bond formed from adjacent sp² orbitals.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q026",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Diazonium Sandmeyer Radical Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the role of copper(I) salts in the Sandmeyer reaction of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II)."
+        },
+        {
+          "label": "B",
+          "text": "Cu(I) forms an insoluble precipitate with nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "Cu(I) oxidizes the aromatic ring to quinone."
+        },
+        {
+          "label": "D",
+          "text": "Cu(I) acts as a Brønsted acid that protonates the diazonium group."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II).",
+      "explanation": "Copper(I) catalyzes single-electron transfer, driving loss of N₂ gas and generation of a reactive aryl radical intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q027",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "EAS Rate-Determining Sigma Complex Formation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the rate-determining step in the electrophilic aromatic substitution (EAS) bromination of benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coordination of FeBr₃ with benzene."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the arenium ion by FeBr₄⁻."
+        },
+        {
+          "label": "C",
+          "text": "Dissociation of bromobenzene into ions."
+        },
+        {
+          "label": "D",
+          "text": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex).",
+      "explanation": "Formation of the sigma complex disrupts aromaticity, making it the slow, rate-determining endothermic step.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q028",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Aromaticity Restoration Fast Step",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is the second step (deprotonation of the arenium ion) in EAS extraordinarily fast and exergonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction releases elemental bromine gas."
+        },
+        {
+          "label": "B",
+          "text": "The base FeBr₄⁻ is a superacid."
+        },
+        {
+          "label": "C",
+          "text": "The arenium ion is an explosive intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring.",
+      "explanation": "Regaining aromaticity provides a powerful thermodynamic driving force that makes deprotonation extremely rapid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q029",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Nitronium Ion Generation Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How is the active electrophile (NO₂⁺) generated in the nitration of benzene by HNO₃ / H₂SO₄?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitric acid directly attacks benzene without acid catalysis."
+        },
+        {
+          "label": "B",
+          "text": "Sulfuric acid oxidizes nitrogen dioxide to nitrate."
+        },
+        {
+          "label": "C",
+          "text": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O)."
+        },
+        {
+          "label": "D",
+          "text": "Nitric acid undergoes homolytic cleavage to NO₂ radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O).",
+      "explanation": "Protonation of nitric acid turns -OH into water, a good leaving group, expelling H₂O to liberate the powerful nitronium electrophile.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q030",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Friedel-Crafts Acylium Ion Resonance Stability",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why do Friedel-Crafts acylations avoid carbocation rearrangements whereas Friedel-Crafts alkylations frequently rearrange?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aluminum chloride destroys all carbocations."
+        },
+        {
+          "label": "B",
+          "text": "Acylation proceeds via an SN2 mechanism on the ring."
+        },
+        {
+          "label": "C",
+          "text": "Acylium ions are too small to undergo rearrangements."
+        },
+        {
+          "label": "D",
+          "text": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts.",
+      "explanation": "The acylium ion is resonance-stabilized with an octet-complete [R-C≡O⁺] major contributor, making it immune to skeletal rearrangements.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q031",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Halogen Paradox (Deactivating yet Ortho/Para Directing)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why are halogen substituents deactivating toward EAS yet ortho/para directing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halogens only react at high temperatures."
+        },
+        {
+          "label": "B",
+          "text": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions."
+        },
+        {
+          "label": "C",
+          "text": "Halogens are strong electron donors by induction."
+        },
+        {
+          "label": "D",
+          "text": "Halogens form cyclic halonium ions with the whole ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions.",
+      "explanation": "Inductive withdrawal deactivates the ring (slowing rate), while lone pair resonance donation stabilizes ortho/para transition states (governing regiochemistry).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q032",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "SNAr Meisenheimer Complex Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the key intermediate in the nucleophilic aromatic substitution (SNAr) of 1-chloro-2,4-dinitrobenzene by methoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A phenyl radical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A benzyne intermediate with a formal triple bond."
+        },
+        {
+          "label": "C",
+          "text": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens."
+        },
+        {
+          "label": "D",
+          "text": "An arenium cation intermediate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens.",
+      "explanation": "Nucleophilic addition to an electron-poor aryl halide forms an anionic Meisenheimer complex stabilized by electron-withdrawing nitro groups.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q033",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the structural nature of the benzyne intermediate formed when chlorobenzene reacts with KNH₂ in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 7-membered cycloheptatrienyl radical."
+        },
+        {
+          "label": "B",
+          "text": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane."
+        },
+        {
+          "label": "C",
+          "text": "A planar aromatic dication."
+        },
+        {
+          "label": "D",
+          "text": "A radical anion with an open ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane.",
+      "explanation": "Elimination of HCl generates benzyne, featuring a highly strained in-plane π bond formed from adjacent sp² orbitals.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q034",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Diazonium Sandmeyer Radical Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the role of copper(I) salts in the Sandmeyer reaction of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cu(I) acts as a Brønsted acid that protonates the diazonium group."
+        },
+        {
+          "label": "B",
+          "text": "Cu(I) forms an insoluble precipitate with nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "Cu(I) oxidizes the aromatic ring to quinone."
+        },
+        {
+          "label": "D",
+          "text": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II).",
+      "explanation": "Copper(I) catalyzes single-electron transfer, driving loss of N₂ gas and generation of a reactive aryl radical intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q035",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "EAS Rate-Determining Sigma Complex Formation",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the rate-determining step in the electrophilic aromatic substitution (EAS) bromination of benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex)."
+        },
+        {
+          "label": "B",
+          "text": "Dissociation of bromobenzene into ions."
+        },
+        {
+          "label": "C",
+          "text": "Coordination of FeBr₃ with benzene."
+        },
+        {
+          "label": "D",
+          "text": "Deprotonation of the arenium ion by FeBr₄⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex).",
+      "explanation": "Formation of the sigma complex disrupts aromaticity, making it the slow, rate-determining endothermic step.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q036",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Aromaticity Restoration Fast Step",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is the second step (deprotonation of the arenium ion) in EAS extraordinarily fast and exergonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The arenium ion is an explosive intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The base FeBr₄⁻ is a superacid."
+        },
+        {
+          "label": "C",
+          "text": "The reaction releases elemental bromine gas."
+        },
+        {
+          "label": "D",
+          "text": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring.",
+      "explanation": "Regaining aromaticity provides a powerful thermodynamic driving force that makes deprotonation extremely rapid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q037",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Nitronium Ion Generation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How is the active electrophile (NO₂⁺) generated in the nitration of benzene by HNO₃ / H₂SO₄?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O)."
+        },
+        {
+          "label": "B",
+          "text": "Nitric acid directly attacks benzene without acid catalysis."
+        },
+        {
+          "label": "C",
+          "text": "Sulfuric acid oxidizes nitrogen dioxide to nitrate."
+        },
+        {
+          "label": "D",
+          "text": "Nitric acid undergoes homolytic cleavage to NO₂ radicals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O).",
+      "explanation": "Protonation of nitric acid turns -OH into water, a good leaving group, expelling H₂O to liberate the powerful nitronium electrophile.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q038",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Friedel-Crafts Acylium Ion Resonance Stability",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do Friedel-Crafts acylations avoid carbocation rearrangements whereas Friedel-Crafts alkylations frequently rearrange?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acylation proceeds via an SN2 mechanism on the ring."
+        },
+        {
+          "label": "B",
+          "text": "Acylium ions are too small to undergo rearrangements."
+        },
+        {
+          "label": "C",
+          "text": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts."
+        },
+        {
+          "label": "D",
+          "text": "Aluminum chloride destroys all carbocations."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts.",
+      "explanation": "The acylium ion is resonance-stabilized with an octet-complete [R-C≡O⁺] major contributor, making it immune to skeletal rearrangements.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q039",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Ortho/Para Directing Activators (Methoxy Resonance)",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does a methoxy group (-OCH₃) direct incoming electrophiles predominantly to the ortho and para positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group is strongly electron-withdrawing by induction."
+        },
+        {
+          "label": "B",
+          "text": "The methoxy group reacts directly with the electrophile first."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group sterically blocks the meta positions."
+        },
+        {
+          "label": "D",
+          "text": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet.",
+      "explanation": "Resonance donation from the oxygen lone pair stabilizes the arenium ion selectively at ortho and para attack positions with a full-octet structure.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q040",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Meta Directing Deactivators (Nitro Group)",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does a nitro group (-NO₂) direct electrophilic substitution exclusively to the meta position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitro group forms a covalent bond with the electrophile."
+        },
+        {
+          "label": "B",
+          "text": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways."
+        },
+        {
+          "label": "C",
+          "text": "The nitro group donates electrons to the meta position."
+        },
+        {
+          "label": "D",
+          "text": "Meta attack is an aromatic transition state."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways.",
+      "explanation": "Ortho/para attack creates an exceptionally high-energy contributor with adjacent positive charges; meta attack avoids this electrostatic penalty.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q041",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the structural nature of the benzyne intermediate formed when chlorobenzene reacts with KNH₂ in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane."
+        },
+        {
+          "label": "B",
+          "text": "A planar aromatic dication."
+        },
+        {
+          "label": "C",
+          "text": "A 7-membered cycloheptatrienyl radical."
+        },
+        {
+          "label": "D",
+          "text": "A radical anion with an open ring."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A reactive, strained neutral intermediate containing a formal triple bond in the ring, where the new π bond is formed by sideways overlap of two sp² orbitals in the ring plane.",
+      "explanation": "Elimination of HCl generates benzyne, featuring a highly strained in-plane π bond formed from adjacent sp² orbitals.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q042",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Diazonium Sandmeyer Radical Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the role of copper(I) salts in the Sandmeyer reaction of aryldiazonium salts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cu(I) acts as a Brønsted acid that protonates the diazonium group."
+        },
+        {
+          "label": "B",
+          "text": "Cu(I) oxidizes the aromatic ring to quinone."
+        },
+        {
+          "label": "C",
+          "text": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II)."
+        },
+        {
+          "label": "D",
+          "text": "Cu(I) forms an insoluble precipitate with nitrogen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cu(I) transfers an electron to the diazonium ion (SET), generating an aryl radical and N₂ gas; the aryl radical is then captured by halide/cyanide from Cu(II).",
+      "explanation": "Copper(I) catalyzes single-electron transfer, driving loss of N₂ gas and generation of a reactive aryl radical intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q043",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "EAS Rate-Determining Sigma Complex Formation",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the rate-determining step in the electrophilic aromatic substitution (EAS) bromination of benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex)."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the arenium ion by FeBr₄⁻."
+        },
+        {
+          "label": "C",
+          "text": "Coordination of FeBr₃ with benzene."
+        },
+        {
+          "label": "D",
+          "text": "Dissociation of bromobenzene into ions."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Attack of the aromatic π system on the electrophilic Br⁺ equivalent (Br₂·FeBr₃) to form the non-aromatic resonance-stabilized arenium ion (sigma complex).",
+      "explanation": "Formation of the sigma complex disrupts aromaticity, making it the slow, rate-determining endothermic step.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q044",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Aromaticity Restoration Fast Step",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the second step (deprotonation of the arenium ion) in EAS extraordinarily fast and exergonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring."
+        },
+        {
+          "label": "B",
+          "text": "The base FeBr₄⁻ is a superacid."
+        },
+        {
+          "label": "C",
+          "text": "The reaction releases elemental bromine gas."
+        },
+        {
+          "label": "D",
+          "text": "The arenium ion is an explosive intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Loss of a proton from the sp³ carbon rehybridizes it to sp², instantly restoring the massive 150 kJ/mol aromatic resonance stabilization energy of the benzene ring.",
+      "explanation": "Regaining aromaticity provides a powerful thermodynamic driving force that makes deprotonation extremely rapid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q045",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Nitronium Ion Generation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "How is the active electrophile (NO₂⁺) generated in the nitration of benzene by HNO₃ / H₂SO₄?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfuric acid oxidizes nitrogen dioxide to nitrate."
+        },
+        {
+          "label": "B",
+          "text": "Nitric acid directly attacks benzene without acid catalysis."
+        },
+        {
+          "label": "C",
+          "text": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O)."
+        },
+        {
+          "label": "D",
+          "text": "Nitric acid undergoes homolytic cleavage to NO₂ radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sulfuric acid protonates the hydroxyl oxygen of nitric acid to form H₂O⁺-NO₂, which spontaneously loses water to generate the linear nitronium cation (O=N⁺=O).",
+      "explanation": "Protonation of nitric acid turns -OH into water, a good leaving group, expelling H₂O to liberate the powerful nitronium electrophile.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q046",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Friedel-Crafts Acylium Ion Resonance Stability",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do Friedel-Crafts acylations avoid carbocation rearrangements whereas Friedel-Crafts alkylations frequently rearrange?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acylium ions are too small to undergo rearrangements."
+        },
+        {
+          "label": "B",
+          "text": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts."
+        },
+        {
+          "label": "C",
+          "text": "Acylation proceeds via an SN2 mechanism on the ring."
+        },
+        {
+          "label": "D",
+          "text": "Aluminum chloride destroys all carbocations."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acyl halides generate resonance-stabilized acylium ions [R-C⁺=O ↔ R-C≡O⁺] where all atoms satisfy the octet rule, preventing 1,2-hydride or alkyl shifts.",
+      "explanation": "The acylium ion is resonance-stabilized with an octet-complete [R-C≡O⁺] major contributor, making it immune to skeletal rearrangements.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q047",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Ortho/Para Directing Activators (Methoxy Resonance)",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does a methoxy group (-OCH₃) direct incoming electrophiles predominantly to the ortho and para positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group sterically blocks the meta positions."
+        },
+        {
+          "label": "B",
+          "text": "The methoxy group is strongly electron-withdrawing by induction."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group reacts directly with the electrophile first."
+        },
+        {
+          "label": "D",
+          "text": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Lone pair donation from oxygen provides an additional, fourth resonance contributor for ortho and para sigma complexes where every atom has a full octet.",
+      "explanation": "Resonance donation from the oxygen lone pair stabilizes the arenium ion selectively at ortho and para attack positions with a full-octet structure.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q048",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Meta Directing Deactivators (Nitro Group)",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does a nitro group (-NO₂) direct electrophilic substitution exclusively to the meta position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways."
+        },
+        {
+          "label": "B",
+          "text": "The nitro group donates electrons to the meta position."
+        },
+        {
+          "label": "C",
+          "text": "The nitro group forms a covalent bond with the electrophile."
+        },
+        {
+          "label": "D",
+          "text": "Meta attack is an aromatic transition state."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ortho and para attack place a positive charge directly on the ring carbon bonded to the positively charged nitro nitrogen (adjacent positive charges), heavily destabilizing those pathways.",
+      "explanation": "Ortho/para attack creates an exceptionally high-energy contributor with adjacent positive charges; meta attack avoids this electrostatic penalty.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q049",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Halogen Paradox (Deactivating yet Ortho/Para Directing)",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why are halogen substituents deactivating toward EAS yet ortho/para directing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halogens form cyclic halonium ions with the whole ring."
+        },
+        {
+          "label": "B",
+          "text": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions."
+        },
+        {
+          "label": "C",
+          "text": "Halogens are strong electron donors by induction."
+        },
+        {
+          "label": "D",
+          "text": "Halogens only react at high temperatures."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strong inductive electron withdrawal (electronegativity) deactivates the ring overall, but lone pair resonance donation selectively stabilizes ortho/para arenium ions.",
+      "explanation": "Inductive withdrawal deactivates the ring (slowing rate), while lone pair resonance donation stabilizes ortho/para transition states (governing regiochemistry).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q050",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "SNAr Meisenheimer Complex Intermediate",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the key intermediate in the nucleophilic aromatic substitution (SNAr) of 1-chloro-2,4-dinitrobenzene by methoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An arenium cation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A phenyl radical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A benzyne intermediate with a formal triple bond."
+        },
+        {
+          "label": "D",
+          "text": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A resonance-stabilized cyclohexadienyl carbanion (Meisenheimer complex) where the negative charge is delocalized onto the ortho/para nitro oxygens.",
+      "explanation": "Nucleophilic addition to an electron-poor aryl halide forms an anionic Meisenheimer complex stabilized by electron-withdrawing nitro groups.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Arenium Archer",
+    "Friedel-Crafts Fiend",
+    "Ortho-Para Oracle",
+    "Meisenheimer Marauder",
+    "Benzyne Behemoth"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Arenium Archer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "arenium-archer.png"
+        ]
+      },
+      {
+        "boss": "Friedel-Crafts Fiend",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "friedel-crafts-fiend.png"
+        ]
+      },
+      {
+        "boss": "Ortho-Para Oracle",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "ortho-para-oracle.png"
+        ]
+      },
+      {
+        "boss": "Meisenheimer Marauder",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "meisenheimer-marauder.png"
+        ]
+      },
+      {
+        "boss": "Benzyne Behemoth",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "benzyne-behemoth.png"
+        ]
+      }
+    ]
+  }
+}

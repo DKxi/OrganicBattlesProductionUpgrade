@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 15,
+  "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+  "assigned_boss": "Chemical Shift Sprite",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch15_q001",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "NMR Nuclear Spin Magnetic Alignment",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What occurs at the quantum level when a sample containing ¹H nuclei (spin I = 1/2) is placed in a strong external magnetic field (B₀)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀)."
+        },
+        {
+          "label": "B",
+          "text": "All protons immediately emit electrons."
+        },
+        {
+          "label": "C",
+          "text": "The protons merge into a single nuclear dication."
+        },
+        {
+          "label": "D",
+          "text": "The protons stop rotating completely."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀).",
+      "explanation": "Spin-1/2 nuclei align either parallel (α, low energy) or antiparallel (β, high energy) to the external magnetic field B₀.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q002",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Diamagnetic Shielding and Chemical Shift",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do protons attached to electron-dense sp³ carbons resonate upfield (lower δ, closer to TMS) than protons attached to electronegative atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protons with high electron density absorb radiofrequency faster."
+        },
+        {
+          "label": "B",
+          "text": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local)."
+        },
+        {
+          "label": "C",
+          "text": "Electronegative atoms add neutrons to the proton nucleus."
+        },
+        {
+          "label": "D",
+          "text": "Electron-rich protons have smaller nuclear masses."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local).",
+      "explanation": "Diamagnetic electron circulation shields the nucleus from the external field, requiring higher applied field / lower δ to achieve resonance.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q003",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Aromatic Ring Current Anisotropy",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What physical phenomenon causes aromatic protons on benzene to resonate significantly downfield at δ 7.27 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter."
+        },
+        {
+          "label": "B",
+          "text": "Benzene protons are attached to sp³ carbons."
+        },
+        {
+          "label": "C",
+          "text": "Aromatic protons form hydrogen bonds with CDCl₃."
+        },
+        {
+          "label": "D",
+          "text": "Benzene has no valence electrons to shield the protons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter.",
+      "explanation": "The induced magnetic field from the circulating π electrons adds to the external field outside the ring perimeter (deshielding cone).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q004",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Aldehyde Proton Anisotropic Deshielding",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does the aldehyde proton (-CHO) appear uniquely far downfield at δ 9–10 ppm in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehyde protons are fully ionized in solution."
+        },
+        {
+          "label": "B",
+          "text": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton."
+        },
+        {
+          "label": "C",
+          "text": "The aldehyde proton is shielded by nitrogen lone pairs."
+        },
+        {
+          "label": "D",
+          "text": "The aldehyde proton undergoes rapid radical exchange."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton.",
+      "explanation": "The polarized C=O bond pulls electron density away, while magnetic anisotropy reinforces the external magnetic field at the proton position.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q005",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Scalar Spin-Spin (J) Coupling Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How is spin information transmitted between neighboring protons to produce multiplets (n+1 rule)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Through magnetic radiation emitted through empty space."
+        },
+        {
+          "label": "B",
+          "text": "Through physical collision of the two proton nuclei."
+        },
+        {
+          "label": "C",
+          "text": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B."
+        },
+        {
+          "label": "D",
+          "text": "Through rapid chemical exchange of hydrogen atoms."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B.",
+      "explanation": "Scalar J-coupling is mediated through bonding electrons via the Fermi contact interaction across 2 or 3 σ bonds.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q006",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Hydroxyl Proton Chemical Exchange in D₂O",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does adding a drop of D₂O to an NMR sample of an alcohol cause the O-H peak to vanish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D₂O destroys the magnetic field of the spectrometer."
+        },
+        {
+          "label": "B",
+          "text": "D₂O precipitates the alcohol from solution."
+        },
+        {
+          "label": "C",
+          "text": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency."
+        },
+        {
+          "label": "D",
+          "text": "D₂O oxidizes the alcohol to a ketone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency.",
+      "explanation": "Deuterium exchange replaces ¹H with ²H, eliminating the ¹H NMR resonance signal for the exchangeable hydroxyl proton.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q007",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Diastereotopic Protons Magnetic Non-Equivalence",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why do the two methylene protons of (S)-1,2-dichloropropane appear as two distinct multiplets with different chemical shifts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the molecule is a racemic mixture."
+        },
+        {
+          "label": "B",
+          "text": "Because the carbon-carbon bond cannot rotate."
+        },
+        {
+          "label": "C",
+          "text": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments."
+        },
+        {
+          "label": "D",
+          "text": "Because one proton is bonded to chlorine."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments.",
+      "explanation": "Diastereotopic protons reside in stereochemically distinct environments relative to adjacent chiral centers, making them magnetically non-equivalent.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q008",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "DEPT-135 Polarization Transfer Pulse Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "How does the DEPT-135 NMR pulse sequence differentiate between CH₃, CH₂, and CH carbon atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It detects carbon-carbon double bonds exclusively."
+        },
+        {
+          "label": "B",
+          "text": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish."
+        },
+        {
+          "label": "C",
+          "text": "It measures the radioactive decay rate of ¹³C."
+        },
+        {
+          "label": "D",
+          "text": "It heats the sample to evaporate primary carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish.",
+      "explanation": "DEPT-135 uses a 135° proton pulse to invert the phase of CH₂ signals while keeping CH and CH₃ positive and eliminating non-protonated carbons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q009",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Broadband Proton Decoupling in 13C NMR",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the purpose of applying continuous broadband radiofrequency radiation at proton frequencies during ¹³C NMR acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To prevent the sample from catching fire."
+        },
+        {
+          "label": "B",
+          "text": "To measure the molecular weight of the solvent."
+        },
+        {
+          "label": "C",
+          "text": "To split carbon peaks into triplets."
+        },
+        {
+          "label": "D",
+          "text": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE).",
+      "explanation": "Broadband decoupling simplifies the spectrum to single lines per distinct carbon while NOE increases carbon signal intensity up to 200%.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q010",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Integration Curve and Proton Ratios",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What physical property does the vertical step height of an NMR integration curve represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular weight of the compound."
+        },
+        {
+          "label": "B",
+          "text": "The boiling point of the functional group."
+        },
+        {
+          "label": "C",
+          "text": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal."
+        },
+        {
+          "label": "D",
+          "text": "The rate of chemical reaction."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal.",
+      "explanation": "NMR peak area is directly proportional to the number of resonant protons, allowing precise determination of hydrogen ratios in the molecule.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q011",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Aromatic Ring Current Anisotropy",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What physical phenomenon causes aromatic protons on benzene to resonate significantly downfield at δ 7.27 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzene protons are attached to sp³ carbons."
+        },
+        {
+          "label": "B",
+          "text": "Benzene has no valence electrons to shield the protons."
+        },
+        {
+          "label": "C",
+          "text": "Aromatic protons form hydrogen bonds with CDCl₃."
+        },
+        {
+          "label": "D",
+          "text": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter.",
+      "explanation": "The induced magnetic field from the circulating π electrons adds to the external field outside the ring perimeter (deshielding cone).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q012",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Aldehyde Proton Anisotropic Deshielding",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does the aldehyde proton (-CHO) appear uniquely far downfield at δ 9–10 ppm in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehyde protons are fully ionized in solution."
+        },
+        {
+          "label": "B",
+          "text": "The aldehyde proton is shielded by nitrogen lone pairs."
+        },
+        {
+          "label": "C",
+          "text": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton."
+        },
+        {
+          "label": "D",
+          "text": "The aldehyde proton undergoes rapid radical exchange."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton.",
+      "explanation": "The polarized C=O bond pulls electron density away, while magnetic anisotropy reinforces the external magnetic field at the proton position.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q013",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Scalar Spin-Spin (J) Coupling Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How is spin information transmitted between neighboring protons to produce multiplets (n+1 rule)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Through physical collision of the two proton nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Through magnetic radiation emitted through empty space."
+        },
+        {
+          "label": "C",
+          "text": "Through rapid chemical exchange of hydrogen atoms."
+        },
+        {
+          "label": "D",
+          "text": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B.",
+      "explanation": "Scalar J-coupling is mediated through bonding electrons via the Fermi contact interaction across 2 or 3 σ bonds.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q014",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Hydroxyl Proton Chemical Exchange in D₂O",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does adding a drop of D₂O to an NMR sample of an alcohol cause the O-H peak to vanish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D₂O oxidizes the alcohol to a ketone."
+        },
+        {
+          "label": "B",
+          "text": "D₂O precipitates the alcohol from solution."
+        },
+        {
+          "label": "C",
+          "text": "D₂O destroys the magnetic field of the spectrometer."
+        },
+        {
+          "label": "D",
+          "text": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency.",
+      "explanation": "Deuterium exchange replaces ¹H with ²H, eliminating the ¹H NMR resonance signal for the exchangeable hydroxyl proton.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q015",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Diastereotopic Protons Magnetic Non-Equivalence",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do the two methylene protons of (S)-1,2-dichloropropane appear as two distinct multiplets with different chemical shifts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the molecule is a racemic mixture."
+        },
+        {
+          "label": "B",
+          "text": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments."
+        },
+        {
+          "label": "C",
+          "text": "Because one proton is bonded to chlorine."
+        },
+        {
+          "label": "D",
+          "text": "Because the carbon-carbon bond cannot rotate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments.",
+      "explanation": "Diastereotopic protons reside in stereochemically distinct environments relative to adjacent chiral centers, making them magnetically non-equivalent.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q016",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "DEPT-135 Polarization Transfer Pulse Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How does the DEPT-135 NMR pulse sequence differentiate between CH₃, CH₂, and CH carbon atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It heats the sample to evaporate primary carbons."
+        },
+        {
+          "label": "B",
+          "text": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish."
+        },
+        {
+          "label": "C",
+          "text": "It detects carbon-carbon double bonds exclusively."
+        },
+        {
+          "label": "D",
+          "text": "It measures the radioactive decay rate of ¹³C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish.",
+      "explanation": "DEPT-135 uses a 135° proton pulse to invert the phase of CH₂ signals while keeping CH and CH₃ positive and eliminating non-protonated carbons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q017",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Broadband Proton Decoupling in 13C NMR",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the purpose of applying continuous broadband radiofrequency radiation at proton frequencies during ¹³C NMR acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To measure the molecular weight of the solvent."
+        },
+        {
+          "label": "B",
+          "text": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE)."
+        },
+        {
+          "label": "C",
+          "text": "To split carbon peaks into triplets."
+        },
+        {
+          "label": "D",
+          "text": "To prevent the sample from catching fire."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE).",
+      "explanation": "Broadband decoupling simplifies the spectrum to single lines per distinct carbon while NOE increases carbon signal intensity up to 200%.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q018",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Integration Curve and Proton Ratios",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What physical property does the vertical step height of an NMR integration curve represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular weight of the compound."
+        },
+        {
+          "label": "B",
+          "text": "The rate of chemical reaction."
+        },
+        {
+          "label": "C",
+          "text": "The boiling point of the functional group."
+        },
+        {
+          "label": "D",
+          "text": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal.",
+      "explanation": "NMR peak area is directly proportional to the number of resonant protons, allowing precise determination of hydrogen ratios in the molecule.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q019",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "NMR Nuclear Spin Magnetic Alignment",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What occurs at the quantum level when a sample containing ¹H nuclei (spin I = 1/2) is placed in a strong external magnetic field (B₀)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All protons immediately emit electrons."
+        },
+        {
+          "label": "B",
+          "text": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀)."
+        },
+        {
+          "label": "C",
+          "text": "The protons merge into a single nuclear dication."
+        },
+        {
+          "label": "D",
+          "text": "The protons stop rotating completely."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀).",
+      "explanation": "Spin-1/2 nuclei align either parallel (α, low energy) or antiparallel (β, high energy) to the external magnetic field B₀.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q020",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Diamagnetic Shielding and Chemical Shift",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do protons attached to electron-dense sp³ carbons resonate upfield (lower δ, closer to TMS) than protons attached to electronegative atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local)."
+        },
+        {
+          "label": "B",
+          "text": "Protons with high electron density absorb radiofrequency faster."
+        },
+        {
+          "label": "C",
+          "text": "Electronegative atoms add neutrons to the proton nucleus."
+        },
+        {
+          "label": "D",
+          "text": "Electron-rich protons have smaller nuclear masses."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local).",
+      "explanation": "Diamagnetic electron circulation shields the nucleus from the external field, requiring higher applied field / lower δ to achieve resonance.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q021",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Scalar Spin-Spin (J) Coupling Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How is spin information transmitted between neighboring protons to produce multiplets (n+1 rule)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Through physical collision of the two proton nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Through rapid chemical exchange of hydrogen atoms."
+        },
+        {
+          "label": "C",
+          "text": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B."
+        },
+        {
+          "label": "D",
+          "text": "Through magnetic radiation emitted through empty space."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B.",
+      "explanation": "Scalar J-coupling is mediated through bonding electrons via the Fermi contact interaction across 2 or 3 σ bonds.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q022",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Hydroxyl Proton Chemical Exchange in D₂O",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does adding a drop of D₂O to an NMR sample of an alcohol cause the O-H peak to vanish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D₂O oxidizes the alcohol to a ketone."
+        },
+        {
+          "label": "B",
+          "text": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency."
+        },
+        {
+          "label": "C",
+          "text": "D₂O destroys the magnetic field of the spectrometer."
+        },
+        {
+          "label": "D",
+          "text": "D₂O precipitates the alcohol from solution."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency.",
+      "explanation": "Deuterium exchange replaces ¹H with ²H, eliminating the ¹H NMR resonance signal for the exchangeable hydroxyl proton.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q023",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Diastereotopic Protons Magnetic Non-Equivalence",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do the two methylene protons of (S)-1,2-dichloropropane appear as two distinct multiplets with different chemical shifts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because one proton is bonded to chlorine."
+        },
+        {
+          "label": "B",
+          "text": "Because the molecule is a racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments."
+        },
+        {
+          "label": "D",
+          "text": "Because the carbon-carbon bond cannot rotate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments.",
+      "explanation": "Diastereotopic protons reside in stereochemically distinct environments relative to adjacent chiral centers, making them magnetically non-equivalent.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q024",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "DEPT-135 Polarization Transfer Pulse Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does the DEPT-135 NMR pulse sequence differentiate between CH₃, CH₂, and CH carbon atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish."
+        },
+        {
+          "label": "B",
+          "text": "It measures the radioactive decay rate of ¹³C."
+        },
+        {
+          "label": "C",
+          "text": "It heats the sample to evaporate primary carbons."
+        },
+        {
+          "label": "D",
+          "text": "It detects carbon-carbon double bonds exclusively."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish.",
+      "explanation": "DEPT-135 uses a 135° proton pulse to invert the phase of CH₂ signals while keeping CH and CH₃ positive and eliminating non-protonated carbons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q025",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Broadband Proton Decoupling in 13C NMR",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the purpose of applying continuous broadband radiofrequency radiation at proton frequencies during ¹³C NMR acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE)."
+        },
+        {
+          "label": "B",
+          "text": "To prevent the sample from catching fire."
+        },
+        {
+          "label": "C",
+          "text": "To measure the molecular weight of the solvent."
+        },
+        {
+          "label": "D",
+          "text": "To split carbon peaks into triplets."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE).",
+      "explanation": "Broadband decoupling simplifies the spectrum to single lines per distinct carbon while NOE increases carbon signal intensity up to 200%.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q026",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Integration Curve and Proton Ratios",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What physical property does the vertical step height of an NMR integration curve represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The rate of chemical reaction."
+        },
+        {
+          "label": "B",
+          "text": "The molecular weight of the compound."
+        },
+        {
+          "label": "C",
+          "text": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal."
+        },
+        {
+          "label": "D",
+          "text": "The boiling point of the functional group."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal.",
+      "explanation": "NMR peak area is directly proportional to the number of resonant protons, allowing precise determination of hydrogen ratios in the molecule.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q027",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "NMR Nuclear Spin Magnetic Alignment",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What occurs at the quantum level when a sample containing ¹H nuclei (spin I = 1/2) is placed in a strong external magnetic field (B₀)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The protons stop rotating completely."
+        },
+        {
+          "label": "B",
+          "text": "The protons merge into a single nuclear dication."
+        },
+        {
+          "label": "C",
+          "text": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀)."
+        },
+        {
+          "label": "D",
+          "text": "All protons immediately emit electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀).",
+      "explanation": "Spin-1/2 nuclei align either parallel (α, low energy) or antiparallel (β, high energy) to the external magnetic field B₀.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q028",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Diamagnetic Shielding and Chemical Shift",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do protons attached to electron-dense sp³ carbons resonate upfield (lower δ, closer to TMS) than protons attached to electronegative atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electron-rich protons have smaller nuclear masses."
+        },
+        {
+          "label": "B",
+          "text": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local)."
+        },
+        {
+          "label": "C",
+          "text": "Electronegative atoms add neutrons to the proton nucleus."
+        },
+        {
+          "label": "D",
+          "text": "Protons with high electron density absorb radiofrequency faster."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local).",
+      "explanation": "Diamagnetic electron circulation shields the nucleus from the external field, requiring higher applied field / lower δ to achieve resonance.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q029",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Aromatic Ring Current Anisotropy",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What physical phenomenon causes aromatic protons on benzene to resonate significantly downfield at δ 7.27 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aromatic protons form hydrogen bonds with CDCl₃."
+        },
+        {
+          "label": "B",
+          "text": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter."
+        },
+        {
+          "label": "C",
+          "text": "Benzene has no valence electrons to shield the protons."
+        },
+        {
+          "label": "D",
+          "text": "Benzene protons are attached to sp³ carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter.",
+      "explanation": "The induced magnetic field from the circulating π electrons adds to the external field outside the ring perimeter (deshielding cone).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q030",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Aldehyde Proton Anisotropic Deshielding",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does the aldehyde proton (-CHO) appear uniquely far downfield at δ 9–10 ppm in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The aldehyde proton is shielded by nitrogen lone pairs."
+        },
+        {
+          "label": "B",
+          "text": "Aldehyde protons are fully ionized in solution."
+        },
+        {
+          "label": "C",
+          "text": "The aldehyde proton undergoes rapid radical exchange."
+        },
+        {
+          "label": "D",
+          "text": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton.",
+      "explanation": "The polarized C=O bond pulls electron density away, while magnetic anisotropy reinforces the external magnetic field at the proton position.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q031",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Diastereotopic Protons Magnetic Non-Equivalence",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do the two methylene protons of (S)-1,2-dichloropropane appear as two distinct multiplets with different chemical shifts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because one proton is bonded to chlorine."
+        },
+        {
+          "label": "B",
+          "text": "Because the molecule is a racemic mixture."
+        },
+        {
+          "label": "C",
+          "text": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments."
+        },
+        {
+          "label": "D",
+          "text": "Because the carbon-carbon bond cannot rotate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments.",
+      "explanation": "Diastereotopic protons reside in stereochemically distinct environments relative to adjacent chiral centers, making them magnetically non-equivalent.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q032",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "DEPT-135 Polarization Transfer Pulse Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does the DEPT-135 NMR pulse sequence differentiate between CH₃, CH₂, and CH carbon atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It detects carbon-carbon double bonds exclusively."
+        },
+        {
+          "label": "B",
+          "text": "It measures the radioactive decay rate of ¹³C."
+        },
+        {
+          "label": "C",
+          "text": "It heats the sample to evaporate primary carbons."
+        },
+        {
+          "label": "D",
+          "text": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish.",
+      "explanation": "DEPT-135 uses a 135° proton pulse to invert the phase of CH₂ signals while keeping CH and CH₃ positive and eliminating non-protonated carbons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q033",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Broadband Proton Decoupling in 13C NMR",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the purpose of applying continuous broadband radiofrequency radiation at proton frequencies during ¹³C NMR acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To prevent the sample from catching fire."
+        },
+        {
+          "label": "B",
+          "text": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE)."
+        },
+        {
+          "label": "C",
+          "text": "To measure the molecular weight of the solvent."
+        },
+        {
+          "label": "D",
+          "text": "To split carbon peaks into triplets."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE).",
+      "explanation": "Broadband decoupling simplifies the spectrum to single lines per distinct carbon while NOE increases carbon signal intensity up to 200%.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q034",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Integration Curve and Proton Ratios",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What physical property does the vertical step height of an NMR integration curve represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal."
+        },
+        {
+          "label": "B",
+          "text": "The rate of chemical reaction."
+        },
+        {
+          "label": "C",
+          "text": "The molecular weight of the compound."
+        },
+        {
+          "label": "D",
+          "text": "The boiling point of the functional group."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal.",
+      "explanation": "NMR peak area is directly proportional to the number of resonant protons, allowing precise determination of hydrogen ratios in the molecule.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q035",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "NMR Nuclear Spin Magnetic Alignment",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What occurs at the quantum level when a sample containing ¹H nuclei (spin I = 1/2) is placed in a strong external magnetic field (B₀)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The protons merge into a single nuclear dication."
+        },
+        {
+          "label": "B",
+          "text": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀)."
+        },
+        {
+          "label": "C",
+          "text": "All protons immediately emit electrons."
+        },
+        {
+          "label": "D",
+          "text": "The protons stop rotating completely."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀).",
+      "explanation": "Spin-1/2 nuclei align either parallel (α, low energy) or antiparallel (β, high energy) to the external magnetic field B₀.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q036",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Diamagnetic Shielding and Chemical Shift",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why do protons attached to electron-dense sp³ carbons resonate upfield (lower δ, closer to TMS) than protons attached to electronegative atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local)."
+        },
+        {
+          "label": "B",
+          "text": "Protons with high electron density absorb radiofrequency faster."
+        },
+        {
+          "label": "C",
+          "text": "Electronegative atoms add neutrons to the proton nucleus."
+        },
+        {
+          "label": "D",
+          "text": "Electron-rich protons have smaller nuclear masses."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local).",
+      "explanation": "Diamagnetic electron circulation shields the nucleus from the external field, requiring higher applied field / lower δ to achieve resonance.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q037",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Aromatic Ring Current Anisotropy",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What physical phenomenon causes aromatic protons on benzene to resonate significantly downfield at δ 7.27 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter."
+        },
+        {
+          "label": "B",
+          "text": "Benzene protons are attached to sp³ carbons."
+        },
+        {
+          "label": "C",
+          "text": "Benzene has no valence electrons to shield the protons."
+        },
+        {
+          "label": "D",
+          "text": "Aromatic protons form hydrogen bonds with CDCl₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter.",
+      "explanation": "The induced magnetic field from the circulating π electrons adds to the external field outside the ring perimeter (deshielding cone).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q038",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Aldehyde Proton Anisotropic Deshielding",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the aldehyde proton (-CHO) appear uniquely far downfield at δ 9–10 ppm in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The aldehyde proton undergoes rapid radical exchange."
+        },
+        {
+          "label": "B",
+          "text": "The aldehyde proton is shielded by nitrogen lone pairs."
+        },
+        {
+          "label": "C",
+          "text": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton."
+        },
+        {
+          "label": "D",
+          "text": "Aldehyde protons are fully ionized in solution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton.",
+      "explanation": "The polarized C=O bond pulls electron density away, while magnetic anisotropy reinforces the external magnetic field at the proton position.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q039",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Scalar Spin-Spin (J) Coupling Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How is spin information transmitted between neighboring protons to produce multiplets (n+1 rule)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Through physical collision of the two proton nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B."
+        },
+        {
+          "label": "C",
+          "text": "Through rapid chemical exchange of hydrogen atoms."
+        },
+        {
+          "label": "D",
+          "text": "Through magnetic radiation emitted through empty space."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B.",
+      "explanation": "Scalar J-coupling is mediated through bonding electrons via the Fermi contact interaction across 2 or 3 σ bonds.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q040",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Hydroxyl Proton Chemical Exchange in D₂O",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does adding a drop of D₂O to an NMR sample of an alcohol cause the O-H peak to vanish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D₂O destroys the magnetic field of the spectrometer."
+        },
+        {
+          "label": "B",
+          "text": "D₂O oxidizes the alcohol to a ketone."
+        },
+        {
+          "label": "C",
+          "text": "D₂O precipitates the alcohol from solution."
+        },
+        {
+          "label": "D",
+          "text": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency.",
+      "explanation": "Deuterium exchange replaces ¹H with ²H, eliminating the ¹H NMR resonance signal for the exchangeable hydroxyl proton.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q041",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Broadband Proton Decoupling in 13C NMR",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the purpose of applying continuous broadband radiofrequency radiation at proton frequencies during ¹³C NMR acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE)."
+        },
+        {
+          "label": "B",
+          "text": "To measure the molecular weight of the solvent."
+        },
+        {
+          "label": "C",
+          "text": "To prevent the sample from catching fire."
+        },
+        {
+          "label": "D",
+          "text": "To split carbon peaks into triplets."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To rapidly saturate and average all ¹H spin states to zero, collapsing all ¹³C-¹H multiplets into sharp singlets and enhancing sensitivity via the Nuclear Overhauser Effect (NOE).",
+      "explanation": "Broadband decoupling simplifies the spectrum to single lines per distinct carbon while NOE increases carbon signal intensity up to 200%.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q042",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Integration Curve and Proton Ratios",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What physical property does the vertical step height of an NMR integration curve represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The boiling point of the functional group."
+        },
+        {
+          "label": "B",
+          "text": "The rate of chemical reaction."
+        },
+        {
+          "label": "C",
+          "text": "The molecular weight of the compound."
+        },
+        {
+          "label": "D",
+          "text": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The area under the resonance peak, which is strictly directly proportional to the relative number of hydrogen nuclei giving rise to that signal.",
+      "explanation": "NMR peak area is directly proportional to the number of resonant protons, allowing precise determination of hydrogen ratios in the molecule.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q043",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "NMR Nuclear Spin Magnetic Alignment",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What occurs at the quantum level when a sample containing ¹H nuclei (spin I = 1/2) is placed in a strong external magnetic field (B₀)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All protons immediately emit electrons."
+        },
+        {
+          "label": "B",
+          "text": "The protons stop rotating completely."
+        },
+        {
+          "label": "C",
+          "text": "The protons merge into a single nuclear dication."
+        },
+        {
+          "label": "D",
+          "text": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The nuclear magnetic moments quantize into two discrete energy states: low-energy α-spin (aligned with B₀) and high-energy β-spin (opposed to B₀).",
+      "explanation": "Spin-1/2 nuclei align either parallel (α, low energy) or antiparallel (β, high energy) to the external magnetic field B₀.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q044",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Diamagnetic Shielding and Chemical Shift",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do protons attached to electron-dense sp³ carbons resonate upfield (lower δ, closer to TMS) than protons attached to electronegative atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local)."
+        },
+        {
+          "label": "B",
+          "text": "Protons with high electron density absorb radiofrequency faster."
+        },
+        {
+          "label": "C",
+          "text": "Electron-rich protons have smaller nuclear masses."
+        },
+        {
+          "label": "D",
+          "text": "Electronegative atoms add neutrons to the proton nucleus."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Surrounding valence electrons circulate in response to B₀, generating an induced local magnetic field that opposes B₀ and shields the nucleus (B_effective = B₀ - B_local).",
+      "explanation": "Diamagnetic electron circulation shields the nucleus from the external field, requiring higher applied field / lower δ to achieve resonance.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q045",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Aromatic Ring Current Anisotropy",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What physical phenomenon causes aromatic protons on benzene to resonate significantly downfield at δ 7.27 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzene protons are attached to sp³ carbons."
+        },
+        {
+          "label": "B",
+          "text": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter."
+        },
+        {
+          "label": "C",
+          "text": "Benzene has no valence electrons to shield the protons."
+        },
+        {
+          "label": "D",
+          "text": "Aromatic protons form hydrogen bonds with CDCl₃."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The applied field induces a diamagnetic circulation of 6π electrons (ring current), which creates an induced magnetic field that reinforces B₀ outside the ring perimeter.",
+      "explanation": "The induced magnetic field from the circulating π electrons adds to the external field outside the ring perimeter (deshielding cone).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q046",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Aldehyde Proton Anisotropic Deshielding",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the aldehyde proton (-CHO) appear uniquely far downfield at δ 9–10 ppm in ¹H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The aldehyde proton is shielded by nitrogen lone pairs."
+        },
+        {
+          "label": "B",
+          "text": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton."
+        },
+        {
+          "label": "C",
+          "text": "The aldehyde proton undergoes rapid radical exchange."
+        },
+        {
+          "label": "D",
+          "text": "Aldehyde protons are fully ionized in solution."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A combination of powerful inductive electron withdrawal by the carbonyl oxygen and magnetic anisotropy from the C=O π electron circulation deshields the proton.",
+      "explanation": "The polarized C=O bond pulls electron density away, while magnetic anisotropy reinforces the external magnetic field at the proton position.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q047",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Scalar Spin-Spin (J) Coupling Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How is spin information transmitted between neighboring protons to produce multiplets (n+1 rule)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Through physical collision of the two proton nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B."
+        },
+        {
+          "label": "C",
+          "text": "Through magnetic radiation emitted through empty space."
+        },
+        {
+          "label": "D",
+          "text": "Through rapid chemical exchange of hydrogen atoms."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Through the polarization of intervening bonding electrons: the spin orientation of proton A slightly polarizes the C-H and C-C σ electrons that contact proton B.",
+      "explanation": "Scalar J-coupling is mediated through bonding electrons via the Fermi contact interaction across 2 or 3 σ bonds.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q048",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Hydroxyl Proton Chemical Exchange in D₂O",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does adding a drop of D₂O to an NMR sample of an alcohol cause the O-H peak to vanish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D₂O precipitates the alcohol from solution."
+        },
+        {
+          "label": "B",
+          "text": "D₂O destroys the magnetic field of the spectrometer."
+        },
+        {
+          "label": "C",
+          "text": "D₂O oxidizes the alcohol to a ketone."
+        },
+        {
+          "label": "D",
+          "text": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid, uncatalogued chemical exchange replaces the hydroxyl proton with deuterium (R-OH + D₂O ⇌ R-OD + HOD); deuterium resonates at a completely different frequency.",
+      "explanation": "Deuterium exchange replaces ¹H with ²H, eliminating the ¹H NMR resonance signal for the exchangeable hydroxyl proton.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q049",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Diastereotopic Protons Magnetic Non-Equivalence",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do the two methylene protons of (S)-1,2-dichloropropane appear as two distinct multiplets with different chemical shifts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments."
+        },
+        {
+          "label": "B",
+          "text": "Because the carbon-carbon bond cannot rotate."
+        },
+        {
+          "label": "C",
+          "text": "Because one proton is bonded to chlorine."
+        },
+        {
+          "label": "D",
+          "text": "Because the molecule is a racemic mixture."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because replacement of each proton individually generates a pair of diastereomers, proving that the two protons experience non-superimposable, diastereomeric spatial environments.",
+      "explanation": "Diastereotopic protons reside in stereochemically distinct environments relative to adjacent chiral centers, making them magnetically non-equivalent.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q050",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "DEPT-135 Polarization Transfer Pulse Mechanism",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "How does the DEPT-135 NMR pulse sequence differentiate between CH₃, CH₂, and CH carbon atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It heats the sample to evaporate primary carbons."
+        },
+        {
+          "label": "B",
+          "text": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish."
+        },
+        {
+          "label": "C",
+          "text": "It detects carbon-carbon double bonds exclusively."
+        },
+        {
+          "label": "D",
+          "text": "It measures the radioactive decay rate of ¹³C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It utilizes variable-angle polarization transfer from coupled protons: CH₃ and CH carbons appear as positive peaks, CH₂ carbons appear inverted (negative), and quaternary carbons vanish.",
+      "explanation": "DEPT-135 uses a 135° proton pulse to invert the phase of CH₂ signals while keeping CH and CH₃ positive and eliminating non-protonated carbons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chemical Shift Sprite",
+    "Splitting Sentry",
+    "DEPT Demon",
+    "Anisotropic Archon",
+    "Coupling Constant Conqueror"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chemical Shift Sprite",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chemical-shift-sprite.png"
+        ]
+      },
+      {
+        "boss": "Splitting Sentry",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "splitting-sentry.png"
+        ]
+      },
+      {
+        "boss": "DEPT Demon",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "dept-demon.png"
+        ]
+      },
+      {
+        "boss": "Anisotropic Archon",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "anisotropic-archon.png"
+        ]
+      },
+      {
+        "boss": "Coupling Constant Conqueror",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "coupling-constant-conqueror.png"
+        ]
+      }
+    ]
+  }
+}

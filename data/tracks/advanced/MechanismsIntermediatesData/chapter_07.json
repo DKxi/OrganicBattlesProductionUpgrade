@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 7,
+  "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+  "assigned_boss": "Halide Hound",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch07_q001",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "SN2 Rate Law and Stereochemistry",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic basis for the second-order rate law and complete stereochemical inversion in SN2 reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The substrate ionizes first, followed by rapid nucleophilic capture from both faces."
+        },
+        {
+          "label": "B",
+          "text": "The nucleophile adds to form a stable pentavalent intermediate that collapses."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu]."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via homolytic radical substitution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu].",
+      "explanation": "SN2 is a concerted bimolecular displacement requiring simultaneous interaction of both reactants in the transition state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q002",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "SN1 Rate-Determining Ionization Step",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the rate-determining step in the SN1 solvolysis of tert-butyl bromide in methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack of methanol on the neutral alkyl bromide."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the methyloxonium intermediate by solvent."
+        },
+        {
+          "label": "C",
+          "text": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br]."
+        },
+        {
+          "label": "D",
+          "text": "Formation of an alkene via E2 elimination."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br].",
+      "explanation": "The unimolecular loss of leaving group is the slow, rate-limiting step with the highest activation energy barrier.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q003",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "SN1 Stereochemical Outcome (Racemization with Inversion Excess)",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does SN1 solvolysis on a chiral secondary substrate often yield partial racemization with net inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile is completely blocked from the backside."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a pure E2 mechanism."
+        },
+        {
+          "label": "C",
+          "text": "The carbocation rotates into a chiral pyramid."
+        },
+        {
+          "label": "D",
+          "text": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible.",
+      "explanation": "Intimate ion pair dynamics shield the retention face, leading to predominant but incomplete inversion alongside racemization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q004",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "E2 Anti-Periplanar Alignment Requirement",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does E2 elimination exhibit a strict requirement for anti-periplanar geometry (180° dihedral angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system."
+        },
+        {
+          "label": "B",
+          "text": "The base is too small to reach the hydrogen in syn geometry."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group must collide directly with the base."
+        },
+        {
+          "label": "D",
+          "text": "Syn-periplanar geometry creates a forbidden 10-electron intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system.",
+      "explanation": "Continuous π orbital overlap in the anti-periplanar transition state minimizes the activation barrier for alkene formation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q005",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "E1 Mechanism Rate Law and Competition",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the E1 reaction share the exact same rate law as the SN1 reaction on the same tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both reactions proceed through a concerted pentacoordinate transition state."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions require two equivalents of strong base."
+        },
+        {
+          "label": "C",
+          "text": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Both reactions involve free radical intermediates."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate.",
+      "explanation": "Since carbocation formation is the rate-determining step for both SN1 and E1, they share identical unimolecular kinetics: Rate = k[Substrate].",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q006",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Bulky Base Hofmann Regioselectivity Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does potassium tert-butoxide (t-BuOK) favor the Hofmann (less substituted) alkene in E2 eliminations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hofmann alkenes are thermodynamically more stable than Zaitsev alkenes."
+        },
+        {
+          "label": "B",
+          "text": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butoxide reacts via an SN1 mechanism."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide is a weaker base than ethoxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons.",
+      "explanation": "Steric hindrance in the transition state prevents access to internal β-protons, making kinetic deprotonation of methyl protons much faster.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q007",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Leaving Group Ability and pKa of Conjugate Acid",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is iodide (I⁻) a superior leaving group compared to fluoride (F⁻) in substitution mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodine is more electronegative than fluorine."
+        },
+        {
+          "label": "B",
+          "text": "Fluoride has a larger atomic radius than iodide."
+        },
+        {
+          "label": "C",
+          "text": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state."
+        },
+        {
+          "label": "D",
+          "text": "Fluoride forms weaker covalent bonds to carbon than iodide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state.",
+      "explanation": "Weak bases (conjugate bases of strong acids) with large polarizable electron clouds are excellent leaving groups.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q008",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Polar Aprotic Solvent SN2 Acceleration",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do polar aprotic solvents like DMSO and DMF dramatically accelerate SN2 reaction rates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They lower the boiling point of the reaction mixture."
+        },
+        {
+          "label": "B",
+          "text": "They convert the alkyl halide into a free radical."
+        },
+        {
+          "label": "C",
+          "text": "They form strong hydrogen bonds with nucleophilic anions."
+        },
+        {
+          "label": "D",
+          "text": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity.",
+      "explanation": "Polar aprotic solvents do not hydrogen-bond with nucleophiles, significantly increasing nucleophile ground-state free energy and reaction rate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q009",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "E2 Elimination Stereospecificity on Cyclohexyl Rings",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "For an E2 elimination to occur on a substituted cyclohexane ring, what geometric condition must the leaving group satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The leaving group must be bonded to a bridgehead carbon."
+        },
+        {
+          "label": "B",
+          "text": "The ring must be in a boat conformation."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "The leaving group must be equatorial."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen.",
+      "explanation": "Only when both the β-hydrogen and the leaving group are diaxial (trans-diaxial) can an anti-periplanar 180° dihedral angle be attained.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q010",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Neighboring Group Participation (Anchimeric Assistance)",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic consequence occurs when a substrate contains a neighboring thioether or alkoxide during substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate."
+        },
+        {
+          "label": "B",
+          "text": "The substrate is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "The reaction is completely stopped by steric hindrance."
+        },
+        {
+          "label": "D",
+          "text": "The reaction changes into an E1 elimination."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate.",
+      "explanation": "Neighboring group participation proceeds via two consecutive SN2 inversions, resulting in net overall retention of stereochemistry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q011",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "SN1 Stereochemical Outcome (Racemization with Inversion Excess)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does SN1 solvolysis on a chiral secondary substrate often yield partial racemization with net inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile is completely blocked from the backside."
+        },
+        {
+          "label": "B",
+          "text": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible."
+        },
+        {
+          "label": "C",
+          "text": "The carbocation rotates into a chiral pyramid."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a pure E2 mechanism."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible.",
+      "explanation": "Intimate ion pair dynamics shield the retention face, leading to predominant but incomplete inversion alongside racemization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q012",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "E2 Anti-Periplanar Alignment Requirement",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does E2 elimination exhibit a strict requirement for anti-periplanar geometry (180° dihedral angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system."
+        },
+        {
+          "label": "B",
+          "text": "The base is too small to reach the hydrogen in syn geometry."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group must collide directly with the base."
+        },
+        {
+          "label": "D",
+          "text": "Syn-periplanar geometry creates a forbidden 10-electron intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system.",
+      "explanation": "Continuous π orbital overlap in the anti-periplanar transition state minimizes the activation barrier for alkene formation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q013",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "E1 Mechanism Rate Law and Competition",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the E1 reaction share the exact same rate law as the SN1 reaction on the same tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both reactions require two equivalents of strong base."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions involve free radical intermediates."
+        },
+        {
+          "label": "C",
+          "text": "Both reactions proceed through a concerted pentacoordinate transition state."
+        },
+        {
+          "label": "D",
+          "text": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate.",
+      "explanation": "Since carbocation formation is the rate-determining step for both SN1 and E1, they share identical unimolecular kinetics: Rate = k[Substrate].",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q014",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Bulky Base Hofmann Regioselectivity Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does potassium tert-butoxide (t-BuOK) favor the Hofmann (less substituted) alkene in E2 eliminations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons."
+        },
+        {
+          "label": "B",
+          "text": "Hofmann alkenes are thermodynamically more stable than Zaitsev alkenes."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butoxide reacts via an SN1 mechanism."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide is a weaker base than ethoxide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons.",
+      "explanation": "Steric hindrance in the transition state prevents access to internal β-protons, making kinetic deprotonation of methyl protons much faster.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q015",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Leaving Group Ability and pKa of Conjugate Acid",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is iodide (I⁻) a superior leaving group compared to fluoride (F⁻) in substitution mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state."
+        },
+        {
+          "label": "B",
+          "text": "Fluoride has a larger atomic radius than iodide."
+        },
+        {
+          "label": "C",
+          "text": "Fluoride forms weaker covalent bonds to carbon than iodide."
+        },
+        {
+          "label": "D",
+          "text": "Iodine is more electronegative than fluorine."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state.",
+      "explanation": "Weak bases (conjugate bases of strong acids) with large polarizable electron clouds are excellent leaving groups.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q016",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Polar Aprotic Solvent SN2 Acceleration",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why do polar aprotic solvents like DMSO and DMF dramatically accelerate SN2 reaction rates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They lower the boiling point of the reaction mixture."
+        },
+        {
+          "label": "B",
+          "text": "They convert the alkyl halide into a free radical."
+        },
+        {
+          "label": "C",
+          "text": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity."
+        },
+        {
+          "label": "D",
+          "text": "They form strong hydrogen bonds with nucleophilic anions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity.",
+      "explanation": "Polar aprotic solvents do not hydrogen-bond with nucleophiles, significantly increasing nucleophile ground-state free energy and reaction rate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q017",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "E2 Elimination Stereospecificity on Cyclohexyl Rings",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "For an E2 elimination to occur on a substituted cyclohexane ring, what geometric condition must the leaving group satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "The leaving group must be bonded to a bridgehead carbon."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group must be equatorial."
+        },
+        {
+          "label": "D",
+          "text": "The ring must be in a boat conformation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen.",
+      "explanation": "Only when both the β-hydrogen and the leaving group are diaxial (trans-diaxial) can an anti-periplanar 180° dihedral angle be attained.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q018",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Neighboring Group Participation (Anchimeric Assistance)",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What mechanistic consequence occurs when a substrate contains a neighboring thioether or alkoxide during substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction is completely stopped by steric hindrance."
+        },
+        {
+          "label": "B",
+          "text": "The reaction changes into an E1 elimination."
+        },
+        {
+          "label": "C",
+          "text": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate."
+        },
+        {
+          "label": "D",
+          "text": "The substrate is oxidized to a carboxylic acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate.",
+      "explanation": "Neighboring group participation proceeds via two consecutive SN2 inversions, resulting in net overall retention of stereochemistry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q019",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "SN2 Rate Law and Stereochemistry",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic basis for the second-order rate law and complete stereochemical inversion in SN2 reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile adds to form a stable pentavalent intermediate that collapses."
+        },
+        {
+          "label": "B",
+          "text": "The substrate ionizes first, followed by rapid nucleophilic capture from both faces."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via homolytic radical substitution."
+        },
+        {
+          "label": "D",
+          "text": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu].",
+      "explanation": "SN2 is a concerted bimolecular displacement requiring simultaneous interaction of both reactants in the transition state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q020",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "SN1 Rate-Determining Ionization Step",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the rate-determining step in the SN1 solvolysis of tert-butyl bromide in methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation of the methyloxonium intermediate by solvent."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of methanol on the neutral alkyl bromide."
+        },
+        {
+          "label": "C",
+          "text": "Formation of an alkene via E2 elimination."
+        },
+        {
+          "label": "D",
+          "text": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br].",
+      "explanation": "The unimolecular loss of leaving group is the slow, rate-limiting step with the highest activation energy barrier.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q021",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "E1 Mechanism Rate Law and Competition",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the E1 reaction share the exact same rate law as the SN1 reaction on the same tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions require two equivalents of strong base."
+        },
+        {
+          "label": "C",
+          "text": "Both reactions proceed through a concerted pentacoordinate transition state."
+        },
+        {
+          "label": "D",
+          "text": "Both reactions involve free radical intermediates."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate.",
+      "explanation": "Since carbocation formation is the rate-determining step for both SN1 and E1, they share identical unimolecular kinetics: Rate = k[Substrate].",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q022",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Bulky Base Hofmann Regioselectivity Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does potassium tert-butoxide (t-BuOK) favor the Hofmann (less substituted) alkene in E2 eliminations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hofmann alkenes are thermodynamically more stable than Zaitsev alkenes."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butoxide is a weaker base than ethoxide."
+        },
+        {
+          "label": "C",
+          "text": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide reacts via an SN1 mechanism."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons.",
+      "explanation": "Steric hindrance in the transition state prevents access to internal β-protons, making kinetic deprotonation of methyl protons much faster.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q023",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Leaving Group Ability and pKa of Conjugate Acid",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is iodide (I⁻) a superior leaving group compared to fluoride (F⁻) in substitution mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fluoride has a larger atomic radius than iodide."
+        },
+        {
+          "label": "B",
+          "text": "Fluoride forms weaker covalent bonds to carbon than iodide."
+        },
+        {
+          "label": "C",
+          "text": "Iodine is more electronegative than fluorine."
+        },
+        {
+          "label": "D",
+          "text": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state.",
+      "explanation": "Weak bases (conjugate bases of strong acids) with large polarizable electron clouds are excellent leaving groups.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q024",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Polar Aprotic Solvent SN2 Acceleration",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do polar aprotic solvents like DMSO and DMF dramatically accelerate SN2 reaction rates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They lower the boiling point of the reaction mixture."
+        },
+        {
+          "label": "B",
+          "text": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity."
+        },
+        {
+          "label": "C",
+          "text": "They convert the alkyl halide into a free radical."
+        },
+        {
+          "label": "D",
+          "text": "They form strong hydrogen bonds with nucleophilic anions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity.",
+      "explanation": "Polar aprotic solvents do not hydrogen-bond with nucleophiles, significantly increasing nucleophile ground-state free energy and reaction rate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q025",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "E2 Elimination Stereospecificity on Cyclohexyl Rings",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "For an E2 elimination to occur on a substituted cyclohexane ring, what geometric condition must the leaving group satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring must be in a boat conformation."
+        },
+        {
+          "label": "B",
+          "text": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group must be bonded to a bridgehead carbon."
+        },
+        {
+          "label": "D",
+          "text": "The leaving group must be equatorial."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen.",
+      "explanation": "Only when both the β-hydrogen and the leaving group are diaxial (trans-diaxial) can an anti-periplanar 180° dihedral angle be attained.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q026",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Neighboring Group Participation (Anchimeric Assistance)",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What mechanistic consequence occurs when a substrate contains a neighboring thioether or alkoxide during substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The substrate is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate."
+        },
+        {
+          "label": "C",
+          "text": "The reaction changes into an E1 elimination."
+        },
+        {
+          "label": "D",
+          "text": "The reaction is completely stopped by steric hindrance."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate.",
+      "explanation": "Neighboring group participation proceeds via two consecutive SN2 inversions, resulting in net overall retention of stereochemistry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q027",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "SN2 Rate Law and Stereochemistry",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic basis for the second-order rate law and complete stereochemical inversion in SN2 reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu]."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via homolytic radical substitution."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile adds to form a stable pentavalent intermediate that collapses."
+        },
+        {
+          "label": "D",
+          "text": "The substrate ionizes first, followed by rapid nucleophilic capture from both faces."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu].",
+      "explanation": "SN2 is a concerted bimolecular displacement requiring simultaneous interaction of both reactants in the transition state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q028",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "SN1 Rate-Determining Ionization Step",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the rate-determining step in the SN1 solvolysis of tert-butyl bromide in methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br]."
+        },
+        {
+          "label": "B",
+          "text": "Formation of an alkene via E2 elimination."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic attack of methanol on the neutral alkyl bromide."
+        },
+        {
+          "label": "D",
+          "text": "Deprotonation of the methyloxonium intermediate by solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br].",
+      "explanation": "The unimolecular loss of leaving group is the slow, rate-limiting step with the highest activation energy barrier.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q029",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "SN1 Stereochemical Outcome (Racemization with Inversion Excess)",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does SN1 solvolysis on a chiral secondary substrate often yield partial racemization with net inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbocation rotates into a chiral pyramid."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a pure E2 mechanism."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile is completely blocked from the backside."
+        },
+        {
+          "label": "D",
+          "text": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible.",
+      "explanation": "Intimate ion pair dynamics shield the retention face, leading to predominant but incomplete inversion alongside racemization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q030",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "E2 Anti-Periplanar Alignment Requirement",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does E2 elimination exhibit a strict requirement for anti-periplanar geometry (180° dihedral angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system."
+        },
+        {
+          "label": "B",
+          "text": "Syn-periplanar geometry creates a forbidden 10-electron intermediate."
+        },
+        {
+          "label": "C",
+          "text": "The base is too small to reach the hydrogen in syn geometry."
+        },
+        {
+          "label": "D",
+          "text": "The leaving group must collide directly with the base."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system.",
+      "explanation": "Continuous π orbital overlap in the anti-periplanar transition state minimizes the activation barrier for alkene formation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q031",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Leaving Group Ability and pKa of Conjugate Acid",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is iodide (I⁻) a superior leaving group compared to fluoride (F⁻) in substitution mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodine is more electronegative than fluorine."
+        },
+        {
+          "label": "B",
+          "text": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state."
+        },
+        {
+          "label": "C",
+          "text": "Fluoride forms weaker covalent bonds to carbon than iodide."
+        },
+        {
+          "label": "D",
+          "text": "Fluoride has a larger atomic radius than iodide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state.",
+      "explanation": "Weak bases (conjugate bases of strong acids) with large polarizable electron clouds are excellent leaving groups.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q032",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Polar Aprotic Solvent SN2 Acceleration",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do polar aprotic solvents like DMSO and DMF dramatically accelerate SN2 reaction rates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They convert the alkyl halide into a free radical."
+        },
+        {
+          "label": "B",
+          "text": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity."
+        },
+        {
+          "label": "C",
+          "text": "They lower the boiling point of the reaction mixture."
+        },
+        {
+          "label": "D",
+          "text": "They form strong hydrogen bonds with nucleophilic anions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity.",
+      "explanation": "Polar aprotic solvents do not hydrogen-bond with nucleophiles, significantly increasing nucleophile ground-state free energy and reaction rate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q033",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "E2 Elimination Stereospecificity on Cyclohexyl Rings",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "For an E2 elimination to occur on a substituted cyclohexane ring, what geometric condition must the leaving group satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring must be in a boat conformation."
+        },
+        {
+          "label": "B",
+          "text": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group must be equatorial."
+        },
+        {
+          "label": "D",
+          "text": "The leaving group must be bonded to a bridgehead carbon."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen.",
+      "explanation": "Only when both the β-hydrogen and the leaving group are diaxial (trans-diaxial) can an anti-periplanar 180° dihedral angle be attained.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q034",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Neighboring Group Participation (Anchimeric Assistance)",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What mechanistic consequence occurs when a substrate contains a neighboring thioether or alkoxide during substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction changes into an E1 elimination."
+        },
+        {
+          "label": "B",
+          "text": "The reaction is completely stopped by steric hindrance."
+        },
+        {
+          "label": "C",
+          "text": "The substrate is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate.",
+      "explanation": "Neighboring group participation proceeds via two consecutive SN2 inversions, resulting in net overall retention of stereochemistry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q035",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "SN2 Rate Law and Stereochemistry",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic basis for the second-order rate law and complete stereochemical inversion in SN2 reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile adds to form a stable pentavalent intermediate that collapses."
+        },
+        {
+          "label": "B",
+          "text": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu]."
+        },
+        {
+          "label": "C",
+          "text": "The substrate ionizes first, followed by rapid nucleophilic capture from both faces."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via homolytic radical substitution."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu].",
+      "explanation": "SN2 is a concerted bimolecular displacement requiring simultaneous interaction of both reactants in the transition state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q036",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "SN1 Rate-Determining Ionization Step",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the rate-determining step in the SN1 solvolysis of tert-butyl bromide in methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack of methanol on the neutral alkyl bromide."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the methyloxonium intermediate by solvent."
+        },
+        {
+          "label": "C",
+          "text": "Formation of an alkene via E2 elimination."
+        },
+        {
+          "label": "D",
+          "text": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br].",
+      "explanation": "The unimolecular loss of leaving group is the slow, rate-limiting step with the highest activation energy barrier.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q037",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "SN1 Stereochemical Outcome (Racemization with Inversion Excess)",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does SN1 solvolysis on a chiral secondary substrate often yield partial racemization with net inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a pure E2 mechanism."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile is completely blocked from the backside."
+        },
+        {
+          "label": "D",
+          "text": "The carbocation rotates into a chiral pyramid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible.",
+      "explanation": "Intimate ion pair dynamics shield the retention face, leading to predominant but incomplete inversion alongside racemization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q038",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "E2 Anti-Periplanar Alignment Requirement",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does E2 elimination exhibit a strict requirement for anti-periplanar geometry (180° dihedral angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system."
+        },
+        {
+          "label": "B",
+          "text": "The base is too small to reach the hydrogen in syn geometry."
+        },
+        {
+          "label": "C",
+          "text": "Syn-periplanar geometry creates a forbidden 10-electron intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The leaving group must collide directly with the base."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system.",
+      "explanation": "Continuous π orbital overlap in the anti-periplanar transition state minimizes the activation barrier for alkene formation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q039",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "E1 Mechanism Rate Law and Competition",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does the E1 reaction share the exact same rate law as the SN1 reaction on the same tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both reactions involve free radical intermediates."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions proceed through a concerted pentacoordinate transition state."
+        },
+        {
+          "label": "C",
+          "text": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Both reactions require two equivalents of strong base."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate.",
+      "explanation": "Since carbocation formation is the rate-determining step for both SN1 and E1, they share identical unimolecular kinetics: Rate = k[Substrate].",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q040",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Bulky Base Hofmann Regioselectivity Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does potassium tert-butoxide (t-BuOK) favor the Hofmann (less substituted) alkene in E2 eliminations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butoxide reacts via an SN1 mechanism."
+        },
+        {
+          "label": "B",
+          "text": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons."
+        },
+        {
+          "label": "C",
+          "text": "Hofmann alkenes are thermodynamically more stable than Zaitsev alkenes."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide is a weaker base than ethoxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons.",
+      "explanation": "Steric hindrance in the transition state prevents access to internal β-protons, making kinetic deprotonation of methyl protons much faster.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q041",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "E2 Elimination Stereospecificity on Cyclohexyl Rings",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "For an E2 elimination to occur on a substituted cyclohexane ring, what geometric condition must the leaving group satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The leaving group must be bonded to a bridgehead carbon."
+        },
+        {
+          "label": "B",
+          "text": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "The leaving group must be equatorial."
+        },
+        {
+          "label": "D",
+          "text": "The ring must be in a boat conformation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The leaving group MUST occupy an axial position to achieve the required anti-periplanar geometry relative to an adjacent axial β-hydrogen.",
+      "explanation": "Only when both the β-hydrogen and the leaving group are diaxial (trans-diaxial) can an anti-periplanar 180° dihedral angle be attained.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q042",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Neighboring Group Participation (Anchimeric Assistance)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What mechanistic consequence occurs when a substrate contains a neighboring thioether or alkoxide during substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate."
+        },
+        {
+          "label": "B",
+          "text": "The reaction is completely stopped by steric hindrance."
+        },
+        {
+          "label": "C",
+          "text": "The substrate is oxidized to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "The reaction changes into an E1 elimination."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The neighboring heteroatom attacks intramolecularly to form a transient 3-membered cyclic onium ion, leading to retention of configuration and accelerated rate.",
+      "explanation": "Neighboring group participation proceeds via two consecutive SN2 inversions, resulting in net overall retention of stereochemistry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q043",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "SN2 Rate Law and Stereochemistry",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic basis for the second-order rate law and complete stereochemical inversion in SN2 reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile adds to form a stable pentavalent intermediate that collapses."
+        },
+        {
+          "label": "B",
+          "text": "The substrate ionizes first, followed by rapid nucleophilic capture from both faces."
+        },
+        {
+          "label": "C",
+          "text": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu]."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via homolytic radical substitution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The nucleophile attacks the substrate carbon simultaneously with leaving group departure in a single bimolecular elementary step: Rate = k[Substrate][Nu].",
+      "explanation": "SN2 is a concerted bimolecular displacement requiring simultaneous interaction of both reactants in the transition state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q044",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "SN1 Rate-Determining Ionization Step",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the rate-determining step in the SN1 solvolysis of tert-butyl bromide in methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br]."
+        },
+        {
+          "label": "B",
+          "text": "Formation of an alkene via E2 elimination."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic attack of methanol on the neutral alkyl bromide."
+        },
+        {
+          "label": "D",
+          "text": "Deprotonation of the methyloxonium intermediate by solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unimolecular heterolytic cleavage of the C-Br bond to generate a planar tertiary carbocation intermediate and bromide ion: Rate = k[R-Br].",
+      "explanation": "The unimolecular loss of leaving group is the slow, rate-limiting step with the highest activation energy barrier.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q045",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "SN1 Stereochemical Outcome (Racemization with Inversion Excess)",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does SN1 solvolysis on a chiral secondary substrate often yield partial racemization with net inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nucleophile is completely blocked from the backside."
+        },
+        {
+          "label": "B",
+          "text": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a pure E2 mechanism."
+        },
+        {
+          "label": "D",
+          "text": "The carbocation rotates into a chiral pyramid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The departing leaving group partially shields the front face as an intimate ion pair, making backside attack by the nucleophile slightly more accessible.",
+      "explanation": "Intimate ion pair dynamics shield the retention face, leading to predominant but incomplete inversion alongside racemization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q046",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "E2 Anti-Periplanar Alignment Requirement",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does E2 elimination exhibit a strict requirement for anti-periplanar geometry (180° dihedral angle)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Syn-periplanar geometry creates a forbidden 10-electron intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The leaving group must collide directly with the base."
+        },
+        {
+          "label": "C",
+          "text": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system."
+        },
+        {
+          "label": "D",
+          "text": "The base is too small to reach the hydrogen in syn geometry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Anti-periplanar alignment allows simultaneous constructive overlap of the breaking C-H σ bond and C-X σ* antibonding orbital into the developing π system.",
+      "explanation": "Continuous π orbital overlap in the anti-periplanar transition state minimizes the activation barrier for alkene formation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q047",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "E1 Mechanism Rate Law and Competition",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the E1 reaction share the exact same rate law as the SN1 reaction on the same tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both reactions involve free radical intermediates."
+        },
+        {
+          "label": "B",
+          "text": "Both reactions proceed through a concerted pentacoordinate transition state."
+        },
+        {
+          "label": "C",
+          "text": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Both reactions require two equivalents of strong base."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Both reactions share the identical rate-determining step: unimolecular ionization to form the tertiary carbocation intermediate.",
+      "explanation": "Since carbocation formation is the rate-determining step for both SN1 and E1, they share identical unimolecular kinetics: Rate = k[Substrate].",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q048",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Bulky Base Hofmann Regioselectivity Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does potassium tert-butoxide (t-BuOK) favor the Hofmann (less substituted) alkene in E2 eliminations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butoxide is a weaker base than ethoxide."
+        },
+        {
+          "label": "B",
+          "text": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons."
+        },
+        {
+          "label": "C",
+          "text": "Hofmann alkenes are thermodynamically more stable than Zaitsev alkenes."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide reacts via an SN1 mechanism."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric clash between the bulky tert-butoxide base and substrate alkyl groups raises the activation energy for removing internal protons, funneling reaction to the accessible methyl protons.",
+      "explanation": "Steric hindrance in the transition state prevents access to internal β-protons, making kinetic deprotonation of methyl protons much faster.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q049",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Leaving Group Ability and pKa of Conjugate Acid",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is iodide (I⁻) a superior leaving group compared to fluoride (F⁻) in substitution mechanisms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodine is more electronegative than fluorine."
+        },
+        {
+          "label": "B",
+          "text": "Fluoride has a larger atomic radius than iodide."
+        },
+        {
+          "label": "C",
+          "text": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state."
+        },
+        {
+          "label": "D",
+          "text": "Fluoride forms weaker covalent bonds to carbon than iodide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Iodide is the conjugate base of a strong acid (HI, pKa ~ -10) with a large, polarizable 5p orbital that stably disperses negative charge in the transition state.",
+      "explanation": "Weak bases (conjugate bases of strong acids) with large polarizable electron clouds are excellent leaving groups.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q050",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Polar Aprotic Solvent SN2 Acceleration",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why do polar aprotic solvents like DMSO and DMF dramatically accelerate SN2 reaction rates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They lower the boiling point of the reaction mixture."
+        },
+        {
+          "label": "B",
+          "text": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity."
+        },
+        {
+          "label": "C",
+          "text": "They convert the alkyl halide into a free radical."
+        },
+        {
+          "label": "D",
+          "text": "They form strong hydrogen bonds with nucleophilic anions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "They solvate cations effectively via oxygen dipoles but leave nucleophilic anions 'naked' and unencumbered by hydrogen bonds, raising their ground-state reactivity.",
+      "explanation": "Polar aprotic solvents do not hydrogen-bond with nucleophiles, significantly increasing nucleophile ground-state free energy and reaction rate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Halide Hound",
+    "SN2 Striker",
+    "SN1 Shapeshifter",
+    "Zaitsev-Hofmann Zealot",
+    "Walden Inversion Warlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Halide Hound",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "halide-hound.png"
+        ]
+      },
+      {
+        "boss": "SN2 Striker",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "sn2-striker.png"
+        ]
+      },
+      {
+        "boss": "SN1 Shapeshifter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "sn1-shapeshifter.png"
+        ]
+      },
+      {
+        "boss": "Zaitsev-Hofmann Zealot",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "zaitsev-hofmann-zealot.png"
+        ]
+      },
+      {
+        "boss": "Walden Inversion Warlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "walden-inversion-warlord.png"
+        ]
+      }
+    ]
+  }
+}

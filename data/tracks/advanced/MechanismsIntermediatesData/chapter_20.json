@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 20,
+  "chapter_title": "Carboxylic Acids and Their Derivatives",
+  "assigned_boss": "Carboxylate Captain",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch20_q001",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Nucleophilic Acyl Substitution (NAS) Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the universal two-step mechanism for nucleophilic acyl substitution on carboxylic acid derivatives?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the acyl-leaving group bond."
+        },
+        {
+          "label": "B",
+          "text": "Direct SN2 backside displacement of the leaving group."
+        },
+        {
+          "label": "C",
+          "text": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond."
+        },
+        {
+          "label": "D",
+          "text": "Unimolecular ionization to an acylium ion followed by capture."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond.",
+      "explanation": "All NAS reactions proceed through a discrete sp³ tetrahedral intermediate that collapses by expelling the best leaving group.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q002",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Acyl Chloride Exceptional Reactivity Basis",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why are acyl chlorides (R-COCl) the most reactive carboxylic acid derivatives toward nucleophilic acyl substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl chlorides are nonpolar molecules."
+        },
+        {
+          "label": "B",
+          "text": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation."
+        },
+        {
+          "label": "C",
+          "text": "Chloride forms covalent bonds with solvent."
+        },
+        {
+          "label": "D",
+          "text": "Acyl chlorides have lower molecular weights."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation.",
+      "explanation": "Minimal resonance stabilization and an exceptional leaving group make acyl chlorides highly susceptible to nucleophilic attack.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q003",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Fischer Esterification Tetrahedral Intermediate",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "In the acid-catalyzed Fischer esterification of benzoic acid with methanol, what is the role of the acid catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acid deprotonates methanol to methoxide."
+        },
+        {
+          "label": "B",
+          "text": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O)."
+        },
+        {
+          "label": "C",
+          "text": "The acid removes methyl groups from the solution."
+        },
+        {
+          "label": "D",
+          "text": "The acid oxidizes benzoic acid to benzoyl peroxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O).",
+      "explanation": "Acid catalysis activates the carbonyl toward attack by weak methanol and facilitates elimination of water from the tetrahedral intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q004",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ester Saponification Irreversibility Driving Force",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is base-promoted ester saponification (NaOH / H₂O) an irreversible reaction, unlike acid-catalyzed hydrolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alcohol byproduct evaporates immediately."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylate ions explode in water."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide ion cannot attack esters."
+        },
+        {
+          "label": "D",
+          "text": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt.",
+      "explanation": "Exergonic deprotonation of the carboxylic acid (pKa ~ 5) by alkoxide (pKa ~ 16) shifts the equilibrium 10¹¹-fold, rendering saponification irreversible.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q005",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Acid Anhydride Cleavage Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "When acetic anhydride reacts with an alcohol in pyridine, what role does pyridine play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine oxidizes the ester to a lactone."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine protonates the alcohol."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine reduces the anhydride to an ether."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct.",
+      "explanation": "Pyridine functions as both a nucleophilic catalyst (forming N-acylpyridinium) and an acid scavenger (Py·HCl).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q006",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "DCC Peptide Coupling Activation Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the function of dicyclohexylcarbodiimide (DCC) in amide and peptide bond synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DCC oxidizes the amino acid to an aldehyde."
+        },
+        {
+          "label": "B",
+          "text": "DCC acts as a chiral resolution agent."
+        },
+        {
+          "label": "C",
+          "text": "DCC deprotonates the amine to a nitrene."
+        },
+        {
+          "label": "D",
+          "text": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group.",
+      "explanation": "DCC activates the carboxylic acid into a potent acylating agent that amines attack smoothly at room temperature.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q007",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Amide Resistance to Hydrolysis Basis",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why do amides require harsh conditions (6 M HCl or 40% NaOH at 100°C) for hydrolysis compared to esters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides are insoluble in all aqueous acids."
+        },
+        {
+          "label": "B",
+          "text": "Amides have no dipole moments."
+        },
+        {
+          "label": "C",
+          "text": "Amides form covalent bonds with glassware."
+        },
+        {
+          "label": "D",
+          "text": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻).",
+      "explanation": "Extensive resonance delocalization gives the amide C-N bond significant double-bond character, rendering the carbonyl carbon much less electrophilic.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q008",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Nitrile Acidic Hydrolysis Imidic Acid Intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the sequence of intermediates in the acid-catalyzed hydrolysis of a nitrile (R-C≡N) to a carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile → primary alcohol + NH₃."
+        },
+        {
+          "label": "B",
+          "text": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺."
+        },
+        {
+          "label": "C",
+          "text": "Nitrile → alkane + HCN."
+        },
+        {
+          "label": "D",
+          "text": "Nitrile → alkyl chloride → carboxylic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺.",
+      "explanation": "Nitrile hydrolysis proceeds stepwise through an imidic acid tautomer to a primary amide, which subsequently hydrolyzes to the carboxylic acid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q009",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Grignard Addition to Esters Double Addition",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why cannot the reaction of an ester with a Grignard reagent be stopped at the ketone stage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters cannot react with Grignard reagents."
+        },
+        {
+          "label": "B",
+          "text": "The ester reduces the ketone to an alkane."
+        },
+        {
+          "label": "C",
+          "text": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol."
+        },
+        {
+          "label": "D",
+          "text": "The ketone evaporates before it can be isolated."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol.",
+      "explanation": "Ketones are more reactive toward nucleophiles than esters due to less resonance stabilization, resulting in rapid double addition to tertiary alcohols.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q010",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Transesterification Equilibrium Control",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How can an organic chemist drive the acid-catalyzed transesterification of methyl benzoate to ethyl benzoate to 99% completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By adding solid sodium chloride."
+        },
+        {
+          "label": "B",
+          "text": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct."
+        },
+        {
+          "label": "C",
+          "text": "By running the reaction at -78°C."
+        },
+        {
+          "label": "D",
+          "text": "By adding excess water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct.",
+      "explanation": "Using excess reactant alcohol and removing the volatile alcohol byproduct shifts the thermodynamic equilibrium toward the desired ester.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q011",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Fischer Esterification Tetrahedral Intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "In the acid-catalyzed Fischer esterification of benzoic acid with methanol, what is the role of the acid catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acid removes methyl groups from the solution."
+        },
+        {
+          "label": "B",
+          "text": "The acid deprotonates methanol to methoxide."
+        },
+        {
+          "label": "C",
+          "text": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O)."
+        },
+        {
+          "label": "D",
+          "text": "The acid oxidizes benzoic acid to benzoyl peroxide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O).",
+      "explanation": "Acid catalysis activates the carbonyl toward attack by weak methanol and facilitates elimination of water from the tetrahedral intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q012",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ester Saponification Irreversibility Driving Force",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is base-promoted ester saponification (NaOH / H₂O) an irreversible reaction, unlike acid-catalyzed hydrolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydroxide ion cannot attack esters."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylate ions explode in water."
+        },
+        {
+          "label": "C",
+          "text": "The alcohol byproduct evaporates immediately."
+        },
+        {
+          "label": "D",
+          "text": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt.",
+      "explanation": "Exergonic deprotonation of the carboxylic acid (pKa ~ 5) by alkoxide (pKa ~ 16) shifts the equilibrium 10¹¹-fold, rendering saponification irreversible.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q013",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Acid Anhydride Cleavage Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "When acetic anhydride reacts with an alcohol in pyridine, what role does pyridine play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine reduces the anhydride to an ether."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine oxidizes the ester to a lactone."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine protonates the alcohol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct.",
+      "explanation": "Pyridine functions as both a nucleophilic catalyst (forming N-acylpyridinium) and an acid scavenger (Py·HCl).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q014",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "DCC Peptide Coupling Activation Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the function of dicyclohexylcarbodiimide (DCC) in amide and peptide bond synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group."
+        },
+        {
+          "label": "B",
+          "text": "DCC oxidizes the amino acid to an aldehyde."
+        },
+        {
+          "label": "C",
+          "text": "DCC acts as a chiral resolution agent."
+        },
+        {
+          "label": "D",
+          "text": "DCC deprotonates the amine to a nitrene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group.",
+      "explanation": "DCC activates the carboxylic acid into a potent acylating agent that amines attack smoothly at room temperature.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q015",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Amide Resistance to Hydrolysis Basis",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do amides require harsh conditions (6 M HCl or 40% NaOH at 100°C) for hydrolysis compared to esters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides have no dipole moments."
+        },
+        {
+          "label": "B",
+          "text": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻)."
+        },
+        {
+          "label": "C",
+          "text": "Amides form covalent bonds with glassware."
+        },
+        {
+          "label": "D",
+          "text": "Amides are insoluble in all aqueous acids."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻).",
+      "explanation": "Extensive resonance delocalization gives the amide C-N bond significant double-bond character, rendering the carbonyl carbon much less electrophilic.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q016",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Nitrile Acidic Hydrolysis Imidic Acid Intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of intermediates in the acid-catalyzed hydrolysis of a nitrile (R-C≡N) to a carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile → primary alcohol + NH₃."
+        },
+        {
+          "label": "B",
+          "text": "Nitrile → alkyl chloride → carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺."
+        },
+        {
+          "label": "D",
+          "text": "Nitrile → alkane + HCN."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺.",
+      "explanation": "Nitrile hydrolysis proceeds stepwise through an imidic acid tautomer to a primary amide, which subsequently hydrolyzes to the carboxylic acid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q017",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Grignard Addition to Esters Double Addition",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why cannot the reaction of an ester with a Grignard reagent be stopped at the ketone stage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ester reduces the ketone to an alkane."
+        },
+        {
+          "label": "B",
+          "text": "Esters cannot react with Grignard reagents."
+        },
+        {
+          "label": "C",
+          "text": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol."
+        },
+        {
+          "label": "D",
+          "text": "The ketone evaporates before it can be isolated."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol.",
+      "explanation": "Ketones are more reactive toward nucleophiles than esters due to less resonance stabilization, resulting in rapid double addition to tertiary alcohols.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q018",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Transesterification Equilibrium Control",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "How can an organic chemist drive the acid-catalyzed transesterification of methyl benzoate to ethyl benzoate to 99% completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct."
+        },
+        {
+          "label": "B",
+          "text": "By running the reaction at -78°C."
+        },
+        {
+          "label": "C",
+          "text": "By adding excess water."
+        },
+        {
+          "label": "D",
+          "text": "By adding solid sodium chloride."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct.",
+      "explanation": "Using excess reactant alcohol and removing the volatile alcohol byproduct shifts the thermodynamic equilibrium toward the desired ester.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q019",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Nucleophilic Acyl Substitution (NAS) Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the universal two-step mechanism for nucleophilic acyl substitution on carboxylic acid derivatives?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the acyl-leaving group bond."
+        },
+        {
+          "label": "B",
+          "text": "Direct SN2 backside displacement of the leaving group."
+        },
+        {
+          "label": "C",
+          "text": "Unimolecular ionization to an acylium ion followed by capture."
+        },
+        {
+          "label": "D",
+          "text": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond.",
+      "explanation": "All NAS reactions proceed through a discrete sp³ tetrahedral intermediate that collapses by expelling the best leaving group.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q020",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Acyl Chloride Exceptional Reactivity Basis",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why are acyl chlorides (R-COCl) the most reactive carboxylic acid derivatives toward nucleophilic acyl substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl chlorides have lower molecular weights."
+        },
+        {
+          "label": "B",
+          "text": "Chloride forms covalent bonds with solvent."
+        },
+        {
+          "label": "C",
+          "text": "Acyl chlorides are nonpolar molecules."
+        },
+        {
+          "label": "D",
+          "text": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation.",
+      "explanation": "Minimal resonance stabilization and an exceptional leaving group make acyl chlorides highly susceptible to nucleophilic attack.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q021",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Acid Anhydride Cleavage Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "When acetic anhydride reacts with an alcohol in pyridine, what role does pyridine play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine reduces the anhydride to an ether."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine oxidizes the ester to a lactone."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine protonates the alcohol."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct.",
+      "explanation": "Pyridine functions as both a nucleophilic catalyst (forming N-acylpyridinium) and an acid scavenger (Py·HCl).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q022",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "DCC Peptide Coupling Activation Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the function of dicyclohexylcarbodiimide (DCC) in amide and peptide bond synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group."
+        },
+        {
+          "label": "B",
+          "text": "DCC deprotonates the amine to a nitrene."
+        },
+        {
+          "label": "C",
+          "text": "DCC oxidizes the amino acid to an aldehyde."
+        },
+        {
+          "label": "D",
+          "text": "DCC acts as a chiral resolution agent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group.",
+      "explanation": "DCC activates the carboxylic acid into a potent acylating agent that amines attack smoothly at room temperature.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q023",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Amide Resistance to Hydrolysis Basis",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do amides require harsh conditions (6 M HCl or 40% NaOH at 100°C) for hydrolysis compared to esters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides form covalent bonds with glassware."
+        },
+        {
+          "label": "B",
+          "text": "Amides have no dipole moments."
+        },
+        {
+          "label": "C",
+          "text": "Amides are insoluble in all aqueous acids."
+        },
+        {
+          "label": "D",
+          "text": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻).",
+      "explanation": "Extensive resonance delocalization gives the amide C-N bond significant double-bond character, rendering the carbonyl carbon much less electrophilic.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q024",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Nitrile Acidic Hydrolysis Imidic Acid Intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of intermediates in the acid-catalyzed hydrolysis of a nitrile (R-C≡N) to a carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile → alkane + HCN."
+        },
+        {
+          "label": "B",
+          "text": "Nitrile → primary alcohol + NH₃."
+        },
+        {
+          "label": "C",
+          "text": "Nitrile → alkyl chloride → carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺.",
+      "explanation": "Nitrile hydrolysis proceeds stepwise through an imidic acid tautomer to a primary amide, which subsequently hydrolyzes to the carboxylic acid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q025",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Grignard Addition to Esters Double Addition",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why cannot the reaction of an ester with a Grignard reagent be stopped at the ketone stage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol."
+        },
+        {
+          "label": "B",
+          "text": "The ketone evaporates before it can be isolated."
+        },
+        {
+          "label": "C",
+          "text": "The ester reduces the ketone to an alkane."
+        },
+        {
+          "label": "D",
+          "text": "Esters cannot react with Grignard reagents."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol.",
+      "explanation": "Ketones are more reactive toward nucleophiles than esters due to less resonance stabilization, resulting in rapid double addition to tertiary alcohols.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q026",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Transesterification Equilibrium Control",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "How can an organic chemist drive the acid-catalyzed transesterification of methyl benzoate to ethyl benzoate to 99% completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct."
+        },
+        {
+          "label": "B",
+          "text": "By adding excess water."
+        },
+        {
+          "label": "C",
+          "text": "By adding solid sodium chloride."
+        },
+        {
+          "label": "D",
+          "text": "By running the reaction at -78°C."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct.",
+      "explanation": "Using excess reactant alcohol and removing the volatile alcohol byproduct shifts the thermodynamic equilibrium toward the desired ester.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q027",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Nucleophilic Acyl Substitution (NAS) Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the universal two-step mechanism for nucleophilic acyl substitution on carboxylic acid derivatives?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unimolecular ionization to an acylium ion followed by capture."
+        },
+        {
+          "label": "B",
+          "text": "Direct SN2 backside displacement of the leaving group."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the acyl-leaving group bond."
+        },
+        {
+          "label": "D",
+          "text": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond.",
+      "explanation": "All NAS reactions proceed through a discrete sp³ tetrahedral intermediate that collapses by expelling the best leaving group.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q028",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Acyl Chloride Exceptional Reactivity Basis",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why are acyl chlorides (R-COCl) the most reactive carboxylic acid derivatives toward nucleophilic acyl substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation."
+        },
+        {
+          "label": "B",
+          "text": "Chloride forms covalent bonds with solvent."
+        },
+        {
+          "label": "C",
+          "text": "Acyl chlorides are nonpolar molecules."
+        },
+        {
+          "label": "D",
+          "text": "Acyl chlorides have lower molecular weights."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation.",
+      "explanation": "Minimal resonance stabilization and an exceptional leaving group make acyl chlorides highly susceptible to nucleophilic attack.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q029",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Fischer Esterification Tetrahedral Intermediate",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In the acid-catalyzed Fischer esterification of benzoic acid with methanol, what is the role of the acid catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O)."
+        },
+        {
+          "label": "B",
+          "text": "The acid removes methyl groups from the solution."
+        },
+        {
+          "label": "C",
+          "text": "The acid oxidizes benzoic acid to benzoyl peroxide."
+        },
+        {
+          "label": "D",
+          "text": "The acid deprotonates methanol to methoxide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O).",
+      "explanation": "Acid catalysis activates the carbonyl toward attack by weak methanol and facilitates elimination of water from the tetrahedral intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q030",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ester Saponification Irreversibility Driving Force",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why is base-promoted ester saponification (NaOH / H₂O) an irreversible reaction, unlike acid-catalyzed hydrolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt."
+        },
+        {
+          "label": "B",
+          "text": "The alcohol byproduct evaporates immediately."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylate ions explode in water."
+        },
+        {
+          "label": "D",
+          "text": "Hydroxide ion cannot attack esters."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt.",
+      "explanation": "Exergonic deprotonation of the carboxylic acid (pKa ~ 5) by alkoxide (pKa ~ 16) shifts the equilibrium 10¹¹-fold, rendering saponification irreversible.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q031",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Amide Resistance to Hydrolysis Basis",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do amides require harsh conditions (6 M HCl or 40% NaOH at 100°C) for hydrolysis compared to esters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides have no dipole moments."
+        },
+        {
+          "label": "B",
+          "text": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻)."
+        },
+        {
+          "label": "C",
+          "text": "Amides are insoluble in all aqueous acids."
+        },
+        {
+          "label": "D",
+          "text": "Amides form covalent bonds with glassware."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻).",
+      "explanation": "Extensive resonance delocalization gives the amide C-N bond significant double-bond character, rendering the carbonyl carbon much less electrophilic.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q032",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Nitrile Acidic Hydrolysis Imidic Acid Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of intermediates in the acid-catalyzed hydrolysis of a nitrile (R-C≡N) to a carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile → alkane + HCN."
+        },
+        {
+          "label": "B",
+          "text": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺."
+        },
+        {
+          "label": "C",
+          "text": "Nitrile → primary alcohol + NH₃."
+        },
+        {
+          "label": "D",
+          "text": "Nitrile → alkyl chloride → carboxylic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺.",
+      "explanation": "Nitrile hydrolysis proceeds stepwise through an imidic acid tautomer to a primary amide, which subsequently hydrolyzes to the carboxylic acid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q033",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Grignard Addition to Esters Double Addition",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why cannot the reaction of an ester with a Grignard reagent be stopped at the ketone stage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters cannot react with Grignard reagents."
+        },
+        {
+          "label": "B",
+          "text": "The ester reduces the ketone to an alkane."
+        },
+        {
+          "label": "C",
+          "text": "The ketone evaporates before it can be isolated."
+        },
+        {
+          "label": "D",
+          "text": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol.",
+      "explanation": "Ketones are more reactive toward nucleophiles than esters due to less resonance stabilization, resulting in rapid double addition to tertiary alcohols.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q034",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Transesterification Equilibrium Control",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How can an organic chemist drive the acid-catalyzed transesterification of methyl benzoate to ethyl benzoate to 99% completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By running the reaction at -78°C."
+        },
+        {
+          "label": "B",
+          "text": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct."
+        },
+        {
+          "label": "C",
+          "text": "By adding solid sodium chloride."
+        },
+        {
+          "label": "D",
+          "text": "By adding excess water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct.",
+      "explanation": "Using excess reactant alcohol and removing the volatile alcohol byproduct shifts the thermodynamic equilibrium toward the desired ester.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q035",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Nucleophilic Acyl Substitution (NAS) Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the universal two-step mechanism for nucleophilic acyl substitution on carboxylic acid derivatives?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unimolecular ionization to an acylium ion followed by capture."
+        },
+        {
+          "label": "B",
+          "text": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 backside displacement of the leaving group."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the acyl-leaving group bond."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond.",
+      "explanation": "All NAS reactions proceed through a discrete sp³ tetrahedral intermediate that collapses by expelling the best leaving group.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q036",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Acyl Chloride Exceptional Reactivity Basis",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why are acyl chlorides (R-COCl) the most reactive carboxylic acid derivatives toward nucleophilic acyl substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation."
+        },
+        {
+          "label": "B",
+          "text": "Chloride forms covalent bonds with solvent."
+        },
+        {
+          "label": "C",
+          "text": "Acyl chlorides have lower molecular weights."
+        },
+        {
+          "label": "D",
+          "text": "Acyl chlorides are nonpolar molecules."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation.",
+      "explanation": "Minimal resonance stabilization and an exceptional leaving group make acyl chlorides highly susceptible to nucleophilic attack.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q037",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Fischer Esterification Tetrahedral Intermediate",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the acid-catalyzed Fischer esterification of benzoic acid with methanol, what is the role of the acid catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acid removes methyl groups from the solution."
+        },
+        {
+          "label": "B",
+          "text": "The acid deprotonates methanol to methoxide."
+        },
+        {
+          "label": "C",
+          "text": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O)."
+        },
+        {
+          "label": "D",
+          "text": "The acid oxidizes benzoic acid to benzoyl peroxide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O).",
+      "explanation": "Acid catalysis activates the carbonyl toward attack by weak methanol and facilitates elimination of water from the tetrahedral intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q038",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ester Saponification Irreversibility Driving Force",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is base-promoted ester saponification (NaOH / H₂O) an irreversible reaction, unlike acid-catalyzed hydrolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydroxide ion cannot attack esters."
+        },
+        {
+          "label": "B",
+          "text": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylate ions explode in water."
+        },
+        {
+          "label": "D",
+          "text": "The alcohol byproduct evaporates immediately."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt.",
+      "explanation": "Exergonic deprotonation of the carboxylic acid (pKa ~ 5) by alkoxide (pKa ~ 16) shifts the equilibrium 10¹¹-fold, rendering saponification irreversible.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q039",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Acid Anhydride Cleavage Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "When acetic anhydride reacts with an alcohol in pyridine, what role does pyridine play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine protonates the alcohol."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine reduces the anhydride to an ether."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine oxidizes the ester to a lactone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct.",
+      "explanation": "Pyridine functions as both a nucleophilic catalyst (forming N-acylpyridinium) and an acid scavenger (Py·HCl).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q040",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "DCC Peptide Coupling Activation Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the function of dicyclohexylcarbodiimide (DCC) in amide and peptide bond synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DCC oxidizes the amino acid to an aldehyde."
+        },
+        {
+          "label": "B",
+          "text": "DCC acts as a chiral resolution agent."
+        },
+        {
+          "label": "C",
+          "text": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group."
+        },
+        {
+          "label": "D",
+          "text": "DCC deprotonates the amine to a nitrene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group.",
+      "explanation": "DCC activates the carboxylic acid into a potent acylating agent that amines attack smoothly at room temperature.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q041",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Grignard Addition to Esters Double Addition",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why cannot the reaction of an ester with a Grignard reagent be stopped at the ketone stage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters cannot react with Grignard reagents."
+        },
+        {
+          "label": "B",
+          "text": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol."
+        },
+        {
+          "label": "C",
+          "text": "The ester reduces the ketone to an alkane."
+        },
+        {
+          "label": "D",
+          "text": "The ketone evaporates before it can be isolated."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The ketone product is more electrophilic than the starting ester; as soon as it forms in the presence of Grignard reagent, it reacts immediately to yield a tertiary alcohol.",
+      "explanation": "Ketones are more reactive toward nucleophiles than esters due to less resonance stabilization, resulting in rapid double addition to tertiary alcohols.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q042",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Transesterification Equilibrium Control",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How can an organic chemist drive the acid-catalyzed transesterification of methyl benzoate to ethyl benzoate to 99% completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By adding solid sodium chloride."
+        },
+        {
+          "label": "B",
+          "text": "By running the reaction at -78°C."
+        },
+        {
+          "label": "C",
+          "text": "By adding excess water."
+        },
+        {
+          "label": "D",
+          "text": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "By using ethanol as the solvent in vast excess (Le Chatelier's principle) and continuously distilling off the lower-boiling methanol byproduct.",
+      "explanation": "Using excess reactant alcohol and removing the volatile alcohol byproduct shifts the thermodynamic equilibrium toward the desired ester.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q043",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Nucleophilic Acyl Substitution (NAS) Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the universal two-step mechanism for nucleophilic acyl substitution on carboxylic acid derivatives?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond."
+        },
+        {
+          "label": "B",
+          "text": "Direct SN2 backside displacement of the leaving group."
+        },
+        {
+          "label": "C",
+          "text": "Unimolecular ionization to an acylium ion followed by capture."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the acyl-leaving group bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Addition of the nucleophile to the carbonyl carbon to form a tetrahedral intermediate, followed by elimination of the leaving group to regenerate the C=O double bond.",
+      "explanation": "All NAS reactions proceed through a discrete sp³ tetrahedral intermediate that collapses by expelling the best leaving group.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q044",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Acyl Chloride Exceptional Reactivity Basis",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why are acyl chlorides (R-COCl) the most reactive carboxylic acid derivatives toward nucleophilic acyl substitution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl chlorides are nonpolar molecules."
+        },
+        {
+          "label": "B",
+          "text": "Acyl chlorides have lower molecular weights."
+        },
+        {
+          "label": "C",
+          "text": "Chloride forms covalent bonds with solvent."
+        },
+        {
+          "label": "D",
+          "text": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chloride is an outstanding leaving group (conjugate base of strong acid HCl) and electronegative chlorine maximizes carbonyl carbon electrophilicity without resonance donation.",
+      "explanation": "Minimal resonance stabilization and an exceptional leaving group make acyl chlorides highly susceptible to nucleophilic attack.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q045",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Fischer Esterification Tetrahedral Intermediate",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In the acid-catalyzed Fischer esterification of benzoic acid with methanol, what is the role of the acid catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acid removes methyl groups from the solution."
+        },
+        {
+          "label": "B",
+          "text": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O)."
+        },
+        {
+          "label": "C",
+          "text": "The acid deprotonates methanol to methoxide."
+        },
+        {
+          "label": "D",
+          "text": "The acid oxidizes benzoic acid to benzoyl peroxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonating the carbonyl oxygen increases the electrophilicity of the carbonyl carbon and subsequently protonates the leaving -OH group to convert it into water (H₂O).",
+      "explanation": "Acid catalysis activates the carbonyl toward attack by weak methanol and facilitates elimination of water from the tetrahedral intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q046",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ester Saponification Irreversibility Driving Force",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is base-promoted ester saponification (NaOH / H₂O) an irreversible reaction, unlike acid-catalyzed hydrolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydroxide ion cannot attack esters."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylate ions explode in water."
+        },
+        {
+          "label": "C",
+          "text": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt."
+        },
+        {
+          "label": "D",
+          "text": "The alcohol byproduct evaporates immediately."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The final step is an irreversible proton transfer from the newly formed carboxylic acid to the basic alkoxide, trapping the product as a resonance-stabilized carboxylate salt.",
+      "explanation": "Exergonic deprotonation of the carboxylic acid (pKa ~ 5) by alkoxide (pKa ~ 16) shifts the equilibrium 10¹¹-fold, rendering saponification irreversible.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q047",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Acid Anhydride Cleavage Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "When acetic anhydride reacts with an alcohol in pyridine, what role does pyridine play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine reduces the anhydride to an ether."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine protonates the alcohol."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine oxidizes the ester to a lactone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Pyridine acts as a nucleophilic catalyst by attacking the anhydride to form a highly reactive N-acylpyridinium intermediate and neutralizes the acetic acid byproduct.",
+      "explanation": "Pyridine functions as both a nucleophilic catalyst (forming N-acylpyridinium) and an acid scavenger (Py·HCl).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q048",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "DCC Peptide Coupling Activation Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the function of dicyclohexylcarbodiimide (DCC) in amide and peptide bond synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DCC deprotonates the amine to a nitrene."
+        },
+        {
+          "label": "B",
+          "text": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group."
+        },
+        {
+          "label": "C",
+          "text": "DCC oxidizes the amino acid to an aldehyde."
+        },
+        {
+          "label": "D",
+          "text": "DCC acts as a chiral resolution agent."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DCC reacts with carboxylic acids to form an activated O-acylisourea intermediate, converting the poor -OH leaving group into an excellent dicyclohexylurea (DCU) leaving group.",
+      "explanation": "DCC activates the carboxylic acid into a potent acylating agent that amines attack smoothly at room temperature.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q049",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Amide Resistance to Hydrolysis Basis",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do amides require harsh conditions (6 M HCl or 40% NaOH at 100°C) for hydrolysis compared to esters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides have no dipole moments."
+        },
+        {
+          "label": "B",
+          "text": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻)."
+        },
+        {
+          "label": "C",
+          "text": "Amides form covalent bonds with glassware."
+        },
+        {
+          "label": "D",
+          "text": "Amides are insoluble in all aqueous acids."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strong resonance donation from the nitrogen lone pair into the carbonyl π system provides immense resonance stabilization (~75 kJ/mol) and poor leaving group ability (NH₂⁻).",
+      "explanation": "Extensive resonance delocalization gives the amide C-N bond significant double-bond character, rendering the carbonyl carbon much less electrophilic.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q050",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Nitrile Acidic Hydrolysis Imidic Acid Intermediate",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of intermediates in the acid-catalyzed hydrolysis of a nitrile (R-C≡N) to a carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile → primary alcohol + NH₃."
+        },
+        {
+          "label": "B",
+          "text": "Nitrile → alkane + HCN."
+        },
+        {
+          "label": "C",
+          "text": "Nitrile → alkyl chloride → carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonated nitrile → attack by water to form protonated hydroxy-imine (imidic acid) → tautomerization to primary amide → second hydrolysis to carboxylic acid and NH₄⁺.",
+      "explanation": "Nitrile hydrolysis proceeds stepwise through an imidic acid tautomer to a primary amide, which subsequently hydrolyzes to the carboxylic acid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Carboxylate Captain",
+    "Acid Chloride Assassin",
+    "Tetrahedral Titan",
+    "Anhydride Archon",
+    "Acyl Transfer Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Carboxylate Captain",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "carboxylate-captain.png"
+        ]
+      },
+      {
+        "boss": "Acid Chloride Assassin",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "acid-chloride-assassin.png"
+        ]
+      },
+      {
+        "boss": "Tetrahedral Titan",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "tetrahedral-titan.png"
+        ]
+      },
+      {
+        "boss": "Anhydride Archon",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "anhydride-archon.png"
+        ]
+      },
+      {
+        "boss": "Acyl Transfer Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "acyl-transfer-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

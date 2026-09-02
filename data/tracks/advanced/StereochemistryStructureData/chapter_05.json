@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereoisomerism",
+  "assigned_boss": "Chirality Cerberus",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Chiral Center (Stereocenter) Definition",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What structural feature defines a chiral (stereogenic) carbon center in an organic molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbon atom bonded to four identical groups."
+        },
+        {
+          "label": "B",
+          "text": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Any carbon atom in a cyclic ring."
+        },
+        {
+          "label": "D",
+          "text": "An sp²-hybridized planar carbon atom."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "An sp³ carbon bearing four different groups generates a non-superimposable mirror image (chiral stereocenter).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Enantiomer Definition and Properties",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the structural relationship between (R)-lactic acid and (S)-lactic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constitutional isomers."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "D",
+          "text": "Conformational rotamers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation.",
+      "explanation": "Enantiomers are exact non-superimposable mirror images that rotate plane-polarized light in equal and opposite directions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Diastereomer Definition and Properties",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "How do diastereomers differ fundamentally from enantiomers in their physical properties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers always have identical melting points."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers cannot be separated by chromatography."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers must rotate polarized light by the exact same angle."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra).",
+      "explanation": "Diastereomers are non-mirror-image stereoisomers with different spatial interatomic distances, leading to distinct physical properties.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Meso Compound Criteria and Optical Activity",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why is meso-tartaric acid optically inactive ([α] = 0°) despite containing two chiral carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two chiral centers destroy each other by chemical reaction."
+        },
+        {
+          "label": "B",
+          "text": "It contains only sp² carbons."
+        },
+        {
+          "label": "C",
+          "text": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image."
+        },
+        {
+          "label": "D",
+          "text": "It is a 50:50 racemic mixture of two enantiomers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image.",
+      "explanation": "Meso compounds possess multiple stereocenters but are achiral overall due to an internal symmetry element (mirror plane or center of inversion).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Cahn-Ingold-Prelog (CIP) Priority Rules",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "According to the Cahn-Ingold-Prelog rules, which group has the highest priority at a chiral center: -OH, -CH₂Br, -CH₂OH, -CH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number."
+        },
+        {
+          "label": "B",
+          "text": "-CH₂Br because bromine has a higher atomic weight than oxygen."
+        },
+        {
+          "label": "C",
+          "text": "-CH₂OH."
+        },
+        {
+          "label": "D",
+          "text": "-CH₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number.",
+      "explanation": "CIP priority is determined strictly by the atomic number of the atom directly attached to the stereocenter (O = 8 vs C = 6).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "R/S Configuration Assignment Sequence",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "When viewing a stereocenter with the lowest priority group (4) pointing away from the observer, what configuration corresponds to 1 → 2 → 3 clockwise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E) configuration."
+        },
+        {
+          "label": "B",
+          "text": "(Z) configuration."
+        },
+        {
+          "label": "C",
+          "text": "(S) configuration (sinister, counterclockwise)."
+        },
+        {
+          "label": "D",
+          "text": "(R) configuration (from Latin rectus, meaning right-handed / clockwise)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(R) configuration (from Latin rectus, meaning right-handed / clockwise).",
+      "explanation": "Clockwise arrangement of priority groups 1 → 2 → 3 with group 4 pointing away defines the (R) absolute configuration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "E/Z Alkene Stereochemical Nomenclature",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "How is the (E)/(Z) configuration assigned to a tetrasubstituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E)."
+        },
+        {
+          "label": "B",
+          "text": "Assign based on the boiling point of the alkene."
+        },
+        {
+          "label": "C",
+          "text": "Assign based on whether the alkene is cis or trans to hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "Assign (Z) if all four groups are identical."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E).",
+      "explanation": "(Z) (zusammen, together) means high-priority groups on the same side; (E) (entgegen, opposite) means high-priority groups on opposite sides.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Fischer Projection Rules for R/S Assignment",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "When assigning (R) or (S) configuration from a Fischer projection, what rule applies if priority group 4 is on a horizontal bond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The result remains unchanged (clockwise = R)."
+        },
+        {
+          "label": "B",
+          "text": "Group 4 must be deleted before assignment."
+        },
+        {
+          "label": "C",
+          "text": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R)."
+        },
+        {
+          "label": "D",
+          "text": "Fischer projections cannot be assigned R/S."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R).",
+      "explanation": "Horizontal bonds in Fischer projections point toward the viewer; hence, an apparent clockwise trace corresponds to the true (S) configuration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Prochirality and Topicity (Pro-R vs Pro-S)",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "In ethanol (CH₃-CH₂-OH), how are the two methylene hydrogens classified with respect to chirality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer."
+        },
+        {
+          "label": "B",
+          "text": "Constitutional hydrogens."
+        },
+        {
+          "label": "C",
+          "text": "Homotopic hydrogens."
+        },
+        {
+          "label": "D",
+          "text": "Diastereotopic hydrogens."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer.",
+      "explanation": "The two methylene hydrogens in ethanol reside in enantiotopic environments; replacing one produces a chiral stereocenter (Pro-R vs Pro-S).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Maximum Number of Stereoisomers (2^n Rule)",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the maximum number of stereoisomers possible for a molecule containing 3 asymmetric chiral centers and zero internal symmetry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 stereoisomers."
+        },
+        {
+          "label": "B",
+          "text": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers)."
+        },
+        {
+          "label": "C",
+          "text": "16 stereoisomers."
+        },
+        {
+          "label": "D",
+          "text": "4 stereoisomers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers).",
+      "explanation": "According to the 2^n rule, a molecule with n stereocenters and no symmetry has a maximum of 2^n possible stereoisomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Diastereomer Definition and Properties",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "How do diastereomers differ fundamentally from enantiomers in their physical properties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers cannot be separated by chromatography."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers must rotate polarized light by the exact same angle."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers always have identical melting points."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra).",
+      "explanation": "Diastereomers are non-mirror-image stereoisomers with different spatial interatomic distances, leading to distinct physical properties.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Meso Compound Criteria and Optical Activity",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is meso-tartaric acid optically inactive ([α] = 0°) despite containing two chiral carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a 50:50 racemic mixture of two enantiomers."
+        },
+        {
+          "label": "B",
+          "text": "The two chiral centers destroy each other by chemical reaction."
+        },
+        {
+          "label": "C",
+          "text": "It contains only sp² carbons."
+        },
+        {
+          "label": "D",
+          "text": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image.",
+      "explanation": "Meso compounds possess multiple stereocenters but are achiral overall due to an internal symmetry element (mirror plane or center of inversion).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Cahn-Ingold-Prelog (CIP) Priority Rules",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "According to the Cahn-Ingold-Prelog rules, which group has the highest priority at a chiral center: -OH, -CH₂Br, -CH₂OH, -CH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number."
+        },
+        {
+          "label": "B",
+          "text": "-CH₃."
+        },
+        {
+          "label": "C",
+          "text": "-CH₂OH."
+        },
+        {
+          "label": "D",
+          "text": "-CH₂Br because bromine has a higher atomic weight than oxygen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number.",
+      "explanation": "CIP priority is determined strictly by the atomic number of the atom directly attached to the stereocenter (O = 8 vs C = 6).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "R/S Configuration Assignment Sequence",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "When viewing a stereocenter with the lowest priority group (4) pointing away from the observer, what configuration corresponds to 1 → 2 → 3 clockwise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E) configuration."
+        },
+        {
+          "label": "B",
+          "text": "(R) configuration (from Latin rectus, meaning right-handed / clockwise)."
+        },
+        {
+          "label": "C",
+          "text": "(S) configuration (sinister, counterclockwise)."
+        },
+        {
+          "label": "D",
+          "text": "(Z) configuration."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(R) configuration (from Latin rectus, meaning right-handed / clockwise).",
+      "explanation": "Clockwise arrangement of priority groups 1 → 2 → 3 with group 4 pointing away defines the (R) absolute configuration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "E/Z Alkene Stereochemical Nomenclature",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "How is the (E)/(Z) configuration assigned to a tetrasubstituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign based on the boiling point of the alkene."
+        },
+        {
+          "label": "B",
+          "text": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E)."
+        },
+        {
+          "label": "C",
+          "text": "Assign (Z) if all four groups are identical."
+        },
+        {
+          "label": "D",
+          "text": "Assign based on whether the alkene is cis or trans to hydrogen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E).",
+      "explanation": "(Z) (zusammen, together) means high-priority groups on the same side; (E) (entgegen, opposite) means high-priority groups on opposite sides.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Fischer Projection Rules for R/S Assignment",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "When assigning (R) or (S) configuration from a Fischer projection, what rule applies if priority group 4 is on a horizontal bond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The result remains unchanged (clockwise = R)."
+        },
+        {
+          "label": "B",
+          "text": "Fischer projections cannot be assigned R/S."
+        },
+        {
+          "label": "C",
+          "text": "Group 4 must be deleted before assignment."
+        },
+        {
+          "label": "D",
+          "text": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R).",
+      "explanation": "Horizontal bonds in Fischer projections point toward the viewer; hence, an apparent clockwise trace corresponds to the true (S) configuration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Prochirality and Topicity (Pro-R vs Pro-S)",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "In ethanol (CH₃-CH₂-OH), how are the two methylene hydrogens classified with respect to chirality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereotopic hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Constitutional hydrogens."
+        },
+        {
+          "label": "C",
+          "text": "Homotopic hydrogens."
+        },
+        {
+          "label": "D",
+          "text": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer.",
+      "explanation": "The two methylene hydrogens in ethanol reside in enantiotopic environments; replacing one produces a chiral stereocenter (Pro-R vs Pro-S).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Maximum Number of Stereoisomers (2^n Rule)",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the maximum number of stereoisomers possible for a molecule containing 3 asymmetric chiral centers and zero internal symmetry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers)."
+        },
+        {
+          "label": "B",
+          "text": "16 stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "6 stereoisomers."
+        },
+        {
+          "label": "D",
+          "text": "4 stereoisomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers).",
+      "explanation": "According to the 2^n rule, a molecule with n stereocenters and no symmetry has a maximum of 2^n possible stereoisomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Chiral Center (Stereocenter) Definition",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What structural feature defines a chiral (stereogenic) carbon center in an organic molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp²-hybridized planar carbon atom."
+        },
+        {
+          "label": "B",
+          "text": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "A carbon atom bonded to four identical groups."
+        },
+        {
+          "label": "D",
+          "text": "Any carbon atom in a cyclic ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "An sp³ carbon bearing four different groups generates a non-superimposable mirror image (chiral stereocenter).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Enantiomer Definition and Properties",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the structural relationship between (R)-lactic acid and (S)-lactic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "Constitutional isomers."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "D",
+          "text": "Conformational rotamers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation.",
+      "explanation": "Enantiomers are exact non-superimposable mirror images that rotate plane-polarized light in equal and opposite directions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Cahn-Ingold-Prelog (CIP) Priority Rules",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "According to the Cahn-Ingold-Prelog rules, which group has the highest priority at a chiral center: -OH, -CH₂Br, -CH₂OH, -CH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CH₂OH."
+        },
+        {
+          "label": "B",
+          "text": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number."
+        },
+        {
+          "label": "C",
+          "text": "-CH₂Br because bromine has a higher atomic weight than oxygen."
+        },
+        {
+          "label": "D",
+          "text": "-CH₃."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number.",
+      "explanation": "CIP priority is determined strictly by the atomic number of the atom directly attached to the stereocenter (O = 8 vs C = 6).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "R/S Configuration Assignment Sequence",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "When viewing a stereocenter with the lowest priority group (4) pointing away from the observer, what configuration corresponds to 1 → 2 → 3 clockwise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S) configuration (sinister, counterclockwise)."
+        },
+        {
+          "label": "B",
+          "text": "(E) configuration."
+        },
+        {
+          "label": "C",
+          "text": "(Z) configuration."
+        },
+        {
+          "label": "D",
+          "text": "(R) configuration (from Latin rectus, meaning right-handed / clockwise)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(R) configuration (from Latin rectus, meaning right-handed / clockwise).",
+      "explanation": "Clockwise arrangement of priority groups 1 → 2 → 3 with group 4 pointing away defines the (R) absolute configuration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "E/Z Alkene Stereochemical Nomenclature",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "How is the (E)/(Z) configuration assigned to a tetrasubstituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E)."
+        },
+        {
+          "label": "B",
+          "text": "Assign based on the boiling point of the alkene."
+        },
+        {
+          "label": "C",
+          "text": "Assign based on whether the alkene is cis or trans to hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "Assign (Z) if all four groups are identical."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E).",
+      "explanation": "(Z) (zusammen, together) means high-priority groups on the same side; (E) (entgegen, opposite) means high-priority groups on opposite sides.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Fischer Projection Rules for R/S Assignment",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "When assigning (R) or (S) configuration from a Fischer projection, what rule applies if priority group 4 is on a horizontal bond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fischer projections cannot be assigned R/S."
+        },
+        {
+          "label": "B",
+          "text": "The result remains unchanged (clockwise = R)."
+        },
+        {
+          "label": "C",
+          "text": "Group 4 must be deleted before assignment."
+        },
+        {
+          "label": "D",
+          "text": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R).",
+      "explanation": "Horizontal bonds in Fischer projections point toward the viewer; hence, an apparent clockwise trace corresponds to the true (S) configuration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Prochirality and Topicity (Pro-R vs Pro-S)",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "In ethanol (CH₃-CH₂-OH), how are the two methylene hydrogens classified with respect to chirality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer."
+        },
+        {
+          "label": "B",
+          "text": "Homotopic hydrogens."
+        },
+        {
+          "label": "C",
+          "text": "Diastereotopic hydrogens."
+        },
+        {
+          "label": "D",
+          "text": "Constitutional hydrogens."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer.",
+      "explanation": "The two methylene hydrogens in ethanol reside in enantiotopic environments; replacing one produces a chiral stereocenter (Pro-R vs Pro-S).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Maximum Number of Stereoisomers (2^n Rule)",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the maximum number of stereoisomers possible for a molecule containing 3 asymmetric chiral centers and zero internal symmetry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers)."
+        },
+        {
+          "label": "B",
+          "text": "4 stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "6 stereoisomers."
+        },
+        {
+          "label": "D",
+          "text": "16 stereoisomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers).",
+      "explanation": "According to the 2^n rule, a molecule with n stereocenters and no symmetry has a maximum of 2^n possible stereoisomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Chiral Center (Stereocenter) Definition",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What structural feature defines a chiral (stereogenic) carbon center in an organic molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Any carbon atom in a cyclic ring."
+        },
+        {
+          "label": "B",
+          "text": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "A carbon atom bonded to four identical groups."
+        },
+        {
+          "label": "D",
+          "text": "An sp²-hybridized planar carbon atom."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "An sp³ carbon bearing four different groups generates a non-superimposable mirror image (chiral stereocenter).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Enantiomer Definition and Properties",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the structural relationship between (R)-lactic acid and (S)-lactic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "C",
+          "text": "Constitutional isomers."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation.",
+      "explanation": "Enantiomers are exact non-superimposable mirror images that rotate plane-polarized light in equal and opposite directions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Diastereomer Definition and Properties",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "How do diastereomers differ fundamentally from enantiomers in their physical properties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers cannot be separated by chromatography."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra)."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers must rotate polarized light by the exact same angle."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers always have identical melting points."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra).",
+      "explanation": "Diastereomers are non-mirror-image stereoisomers with different spatial interatomic distances, leading to distinct physical properties.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Meso Compound Criteria and Optical Activity",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why is meso-tartaric acid optically inactive ([α] = 0°) despite containing two chiral carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two chiral centers destroy each other by chemical reaction."
+        },
+        {
+          "label": "B",
+          "text": "It contains only sp² carbons."
+        },
+        {
+          "label": "C",
+          "text": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image."
+        },
+        {
+          "label": "D",
+          "text": "It is a 50:50 racemic mixture of two enantiomers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image.",
+      "explanation": "Meso compounds possess multiple stereocenters but are achiral overall due to an internal symmetry element (mirror plane or center of inversion).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "E/Z Alkene Stereochemical Nomenclature",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "How is the (E)/(Z) configuration assigned to a tetrasubstituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign based on the boiling point of the alkene."
+        },
+        {
+          "label": "B",
+          "text": "Assign based on whether the alkene is cis or trans to hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E)."
+        },
+        {
+          "label": "D",
+          "text": "Assign (Z) if all four groups are identical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E).",
+      "explanation": "(Z) (zusammen, together) means high-priority groups on the same side; (E) (entgegen, opposite) means high-priority groups on opposite sides.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Fischer Projection Rules for R/S Assignment",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "When assigning (R) or (S) configuration from a Fischer projection, what rule applies if priority group 4 is on a horizontal bond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Group 4 must be deleted before assignment."
+        },
+        {
+          "label": "B",
+          "text": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R)."
+        },
+        {
+          "label": "C",
+          "text": "Fischer projections cannot be assigned R/S."
+        },
+        {
+          "label": "D",
+          "text": "The result remains unchanged (clockwise = R)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R).",
+      "explanation": "Horizontal bonds in Fischer projections point toward the viewer; hence, an apparent clockwise trace corresponds to the true (S) configuration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Prochirality and Topicity (Pro-R vs Pro-S)",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "In ethanol (CH₃-CH₂-OH), how are the two methylene hydrogens classified with respect to chirality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constitutional hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Diastereotopic hydrogens."
+        },
+        {
+          "label": "C",
+          "text": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer."
+        },
+        {
+          "label": "D",
+          "text": "Homotopic hydrogens."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer.",
+      "explanation": "The two methylene hydrogens in ethanol reside in enantiotopic environments; replacing one produces a chiral stereocenter (Pro-R vs Pro-S).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Maximum Number of Stereoisomers (2^n Rule)",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the maximum number of stereoisomers possible for a molecule containing 3 asymmetric chiral centers and zero internal symmetry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers)."
+        },
+        {
+          "label": "B",
+          "text": "6 stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "16 stereoisomers."
+        },
+        {
+          "label": "D",
+          "text": "4 stereoisomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers).",
+      "explanation": "According to the 2^n rule, a molecule with n stereocenters and no symmetry has a maximum of 2^n possible stereoisomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Chiral Center (Stereocenter) Definition",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What structural feature defines a chiral (stereogenic) carbon center in an organic molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "An sp²-hybridized planar carbon atom."
+        },
+        {
+          "label": "C",
+          "text": "Any carbon atom in a cyclic ring."
+        },
+        {
+          "label": "D",
+          "text": "A carbon atom bonded to four identical groups."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "An sp³ carbon bearing four different groups generates a non-superimposable mirror image (chiral stereocenter).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Enantiomer Definition and Properties",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the structural relationship between (R)-lactic acid and (S)-lactic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constitutional isomers."
+        },
+        {
+          "label": "B",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation.",
+      "explanation": "Enantiomers are exact non-superimposable mirror images that rotate plane-polarized light in equal and opposite directions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Diastereomer Definition and Properties",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "How do diastereomers differ fundamentally from enantiomers in their physical properties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers always have identical melting points."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers must rotate polarized light by the exact same angle."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra)."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers cannot be separated by chromatography."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra).",
+      "explanation": "Diastereomers are non-mirror-image stereoisomers with different spatial interatomic distances, leading to distinct physical properties.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Meso Compound Criteria and Optical Activity",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Why is meso-tartaric acid optically inactive ([α] = 0°) despite containing two chiral carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a 50:50 racemic mixture of two enantiomers."
+        },
+        {
+          "label": "B",
+          "text": "It contains only sp² carbons."
+        },
+        {
+          "label": "C",
+          "text": "The two chiral centers destroy each other by chemical reaction."
+        },
+        {
+          "label": "D",
+          "text": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image.",
+      "explanation": "Meso compounds possess multiple stereocenters but are achiral overall due to an internal symmetry element (mirror plane or center of inversion).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Cahn-Ingold-Prelog (CIP) Priority Rules",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "According to the Cahn-Ingold-Prelog rules, which group has the highest priority at a chiral center: -OH, -CH₂Br, -CH₂OH, -CH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CH₃."
+        },
+        {
+          "label": "B",
+          "text": "-CH₂OH."
+        },
+        {
+          "label": "C",
+          "text": "-CH₂Br because bromine has a higher atomic weight than oxygen."
+        },
+        {
+          "label": "D",
+          "text": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number.",
+      "explanation": "CIP priority is determined strictly by the atomic number of the atom directly attached to the stereocenter (O = 8 vs C = 6).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "R/S Configuration Assignment Sequence",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "When viewing a stereocenter with the lowest priority group (4) pointing away from the observer, what configuration corresponds to 1 → 2 → 3 clockwise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(Z) configuration."
+        },
+        {
+          "label": "B",
+          "text": "(R) configuration (from Latin rectus, meaning right-handed / clockwise)."
+        },
+        {
+          "label": "C",
+          "text": "(E) configuration."
+        },
+        {
+          "label": "D",
+          "text": "(S) configuration (sinister, counterclockwise)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(R) configuration (from Latin rectus, meaning right-handed / clockwise).",
+      "explanation": "Clockwise arrangement of priority groups 1 → 2 → 3 with group 4 pointing away defines the (R) absolute configuration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Prochirality and Topicity (Pro-R vs Pro-S)",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "In ethanol (CH₃-CH₂-OH), how are the two methylene hydrogens classified with respect to chirality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constitutional hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer."
+        },
+        {
+          "label": "C",
+          "text": "Diastereotopic hydrogens."
+        },
+        {
+          "label": "D",
+          "text": "Homotopic hydrogens."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Enantiotopic: replacing one hydrogen with deuterium creates a chiral center, generating an (R) or (S) enantiomer.",
+      "explanation": "The two methylene hydrogens in ethanol reside in enantiotopic environments; replacing one produces a chiral stereocenter (Pro-R vs Pro-S).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Maximum Number of Stereoisomers (2^n Rule)",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the maximum number of stereoisomers possible for a molecule containing 3 asymmetric chiral centers and zero internal symmetry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers)."
+        },
+        {
+          "label": "B",
+          "text": "4 stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "16 stereoisomers."
+        },
+        {
+          "label": "D",
+          "text": "6 stereoisomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "8 stereoisomers (2³ = 8, consisting of 4 pairs of enantiomers).",
+      "explanation": "According to the 2^n rule, a molecule with n stereocenters and no symmetry has a maximum of 2^n possible stereoisomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Chiral Center (Stereocenter) Definition",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What structural feature defines a chiral (stereogenic) carbon center in an organic molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbon atom bonded to four identical groups."
+        },
+        {
+          "label": "B",
+          "text": "An sp²-hybridized planar carbon atom."
+        },
+        {
+          "label": "C",
+          "text": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "Any carbon atom in a cyclic ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An sp³-hybridized carbon atom bonded to four chemically distinct, non-identical substituents, lacking an internal plane of symmetry.",
+      "explanation": "An sp³ carbon bearing four different groups generates a non-superimposable mirror image (chiral stereocenter).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Enantiomer Definition and Properties",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the structural relationship between (R)-lactic acid and (S)-lactic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "D",
+          "text": "Constitutional isomers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Enantiomers: non-superimposable mirror-image stereoisomers with identical physical properties (bp, mp, density) except for the direction of optical rotation.",
+      "explanation": "Enantiomers are exact non-superimposable mirror images that rotate plane-polarized light in equal and opposite directions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Diastereomer Definition and Properties",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "How do diastereomers differ fundamentally from enantiomers in their physical properties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers must rotate polarized light by the exact same angle."
+        },
+        {
+          "label": "B",
+          "text": "Diastereomers always have identical melting points."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra)."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers cannot be separated by chromatography."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diastereomers are stereoisomers that are NOT mirror images; they possess different physical and chemical properties (mp, bp, solubility, NMR spectra).",
+      "explanation": "Diastereomers are non-mirror-image stereoisomers with different spatial interatomic distances, leading to distinct physical properties.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Meso Compound Criteria and Optical Activity",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why is meso-tartaric acid optically inactive ([α] = 0°) despite containing two chiral carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a 50:50 racemic mixture of two enantiomers."
+        },
+        {
+          "label": "B",
+          "text": "It contains only sp² carbons."
+        },
+        {
+          "label": "C",
+          "text": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image."
+        },
+        {
+          "label": "D",
+          "text": "The two chiral centers destroy each other by chemical reaction."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses an internal plane of symmetry (or inversion center) that renders the molecule achiral and superimposable on its mirror image.",
+      "explanation": "Meso compounds possess multiple stereocenters but are achiral overall due to an internal symmetry element (mirror plane or center of inversion).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Cahn-Ingold-Prelog (CIP) Priority Rules",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "According to the Cahn-Ingold-Prelog rules, which group has the highest priority at a chiral center: -OH, -CH₂Br, -CH₂OH, -CH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CH₃."
+        },
+        {
+          "label": "B",
+          "text": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number."
+        },
+        {
+          "label": "C",
+          "text": "-CH₂OH."
+        },
+        {
+          "label": "D",
+          "text": "-CH₂Br because bromine has a higher atomic weight than oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "-OH has the highest priority because the directly attached atom (oxygen, atomic number 8) has the highest atomic number.",
+      "explanation": "CIP priority is determined strictly by the atomic number of the atom directly attached to the stereocenter (O = 8 vs C = 6).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "R/S Configuration Assignment Sequence",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "When viewing a stereocenter with the lowest priority group (4) pointing away from the observer, what configuration corresponds to 1 → 2 → 3 clockwise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(Z) configuration."
+        },
+        {
+          "label": "B",
+          "text": "(E) configuration."
+        },
+        {
+          "label": "C",
+          "text": "(R) configuration (from Latin rectus, meaning right-handed / clockwise)."
+        },
+        {
+          "label": "D",
+          "text": "(S) configuration (sinister, counterclockwise)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R) configuration (from Latin rectus, meaning right-handed / clockwise).",
+      "explanation": "Clockwise arrangement of priority groups 1 → 2 → 3 with group 4 pointing away defines the (R) absolute configuration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "E/Z Alkene Stereochemical Nomenclature",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "How is the (E)/(Z) configuration assigned to a tetrasubstituted alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E)."
+        },
+        {
+          "label": "B",
+          "text": "Assign based on whether the alkene is cis or trans to hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "Assign (Z) if all four groups are identical."
+        },
+        {
+          "label": "D",
+          "text": "Assign based on the boiling point of the alkene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Assign CIP priorities (1 and 2) to the two groups on each alkene carbon; if the two priority 1 groups are on the same side, it is (Z); if opposite, it is (E).",
+      "explanation": "(Z) (zusammen, together) means high-priority groups on the same side; (E) (entgegen, opposite) means high-priority groups on opposite sides.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Fischer Projection Rules for R/S Assignment",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "When assigning (R) or (S) configuration from a Fischer projection, what rule applies if priority group 4 is on a horizontal bond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Group 4 must be deleted before assignment."
+        },
+        {
+          "label": "B",
+          "text": "Fischer projections cannot be assigned R/S."
+        },
+        {
+          "label": "C",
+          "text": "The result remains unchanged (clockwise = R)."
+        },
+        {
+          "label": "D",
+          "text": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Determine the apparent direction (1 → 2 → 3); because horizontal bonds project forward toward the viewer, reverse the result (clockwise = S, counterclockwise = R).",
+      "explanation": "Horizontal bonds in Fischer projections point toward the viewer; hence, an apparent clockwise trace corresponds to the true (S) configuration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chirality Cerberus",
+    "Cahn-Ingold-Prelog Captain",
+    "Enantiomer Enchanter",
+    "Diastereomer Duelist",
+    "Meso Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chirality Cerberus",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chirality-cerberus.png"
+        ]
+      },
+      {
+        "boss": "Cahn-Ingold-Prelog Captain",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cahn-ingold-prelog-captain.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enchanter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enchanter.png"
+        ]
+      },
+      {
+        "boss": "Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Meso Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "meso-monarch.png"
+        ]
+      }
+    ]
+  }
+}

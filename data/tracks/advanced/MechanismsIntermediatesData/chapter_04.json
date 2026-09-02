@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 4,
+  "chapter_title": "Alkanes and Cycloalkanes",
+  "assigned_boss": "IUPAC Infantry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch04_q001",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Radical Chain Initiation Step",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the elementary mechanistic event during the initiation of alkane halogenation by light (hν)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons."
+        },
+        {
+          "label": "B",
+          "text": "Direct insertion of molecular halogen into a C-H bond."
+        },
+        {
+          "label": "C",
+          "text": "Heterolytic cleavage to form a halonium cation and halide anion."
+        },
+        {
+          "label": "D",
+          "text": "Excitation of the alkane C-C σ bond to a carbocation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons.",
+      "explanation": "Photons of appropriate wavelength provide the bond dissociation energy required to split the weak halogen-halogen bond homolytically.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q002",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Rate-Determining Propagation Step in Halogenation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the radical bromination of alkanes, what is the rate-determining propagation step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•)."
+        },
+        {
+          "label": "B",
+          "text": "Exothermic reaction of the alkyl radical with Br₂ to form alkyl bromide."
+        },
+        {
+          "label": "C",
+          "text": "Coordination of bromine radical to the solvent cage."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic recombination of two alkyl radicals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•).",
+      "explanation": "Hydrogen abstraction by bromine radical is endothermic with a substantial activation barrier, dictating reaction rate and selectivity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q003",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Radical Chain Termination Step",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Which of the following represents a valid radical chain termination step in alkane chlorination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction of •CH₃ with Cl₂ to form CH₃Cl and •Cl."
+        },
+        {
+          "label": "B",
+          "text": "Abstraction of H from CH₄ by •Cl to form HCl."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of Cl₂ by heat."
+        },
+        {
+          "label": "D",
+          "text": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers.",
+      "explanation": "Termination steps consume two radical species to form a stable covalent bond without generating new propagating radicals.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q004",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Torsional Strain Mechanistic Origin",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the quantum mechanical origin of torsional strain in the eclipsed conformation of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Attractive van der Waals dispersion forces between hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Steric clash between the tiny hydrogen nuclei."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous radical formation at room temperature."
+        },
+        {
+          "label": "D",
+          "text": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds.",
+      "explanation": "Eclipsing forces adjacent bonding electron clouds into close proximity, causing ~12 kJ/mol (3 kcal/mol) of torsional strain in ethane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q005",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Cyclohexane Chair Flip Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the sequence of conformational intermediates during a cyclohexane chair-to-chair ring flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair → Cyclopentane + Methylene → Inverted Chair."
+        },
+        {
+          "label": "B",
+          "text": "Chair → Planar Hexagon (TS) → Inverted Chair."
+        },
+        {
+          "label": "C",
+          "text": "Chair → Envelope → Inverted Chair."
+        },
+        {
+          "label": "D",
+          "text": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair.",
+      "explanation": "The ring flip proceeds through high-energy half-chair conformations (~45 kJ/mol barrier) via a twist-boat intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q006",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "1,3-Diaxial Strain Mechanistic Clash",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What causes the energetic destabilization of an axial methyl group in methylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torsional eclipsing between the methyl group and C2 equatorial hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Dipole-dipole repulsion between carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Angle strain caused by compression of the C-C-C bond angle to 90°."
+        },
+        {
+          "label": "D",
+          "text": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring.",
+      "explanation": "Axial substituents experience steric crowding identical to two gauche-butane interactions (~7.6 kJ/mol destabilization).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q007",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Alkane Cracking Radical Intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "During thermal cracking of alkanes at 500°C, how do secondary radicals fragment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Via electrocyclic ring closure to cycloalkanes."
+        },
+        {
+          "label": "B",
+          "text": "Via concerted reductive elimination."
+        },
+        {
+          "label": "C",
+          "text": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical."
+        },
+        {
+          "label": "D",
+          "text": "Via α-cleavage producing two carbocations."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical.",
+      "explanation": "Beta-scission is the primary pathway by which carbon radicals fragment into smaller alkenes and primary radicals at high temperatures.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q008",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Catalytic Dehydrogenation on Metal Surface",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic role of the platinum catalyst during the aromatization of cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds."
+        },
+        {
+          "label": "B",
+          "text": "Platinum acts as a strong Brønsted base that abstracts protons."
+        },
+        {
+          "label": "C",
+          "text": "Platinum undergoes homolytic cleavage into atomic platinum vapor."
+        },
+        {
+          "label": "D",
+          "text": "Platinum forms permanent ionic bonds with the cyclohexane ring."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds.",
+      "explanation": "Transition metal surfaces facilitate sequential C-H activation and dehydrogenation through surface-bound organometallic intermediates.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q009",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Cyclopropane Ring-Opening Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does cyclopropane undergo ring opening with Br₂ whereas cyclopentane does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane is an antiaromatic planar ring."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane has a conjugated π system that undergoes EAS."
+        },
+        {
+          "label": "C",
+          "text": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane is a radical initiator that destroys bromine."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine.",
+      "explanation": "The severe angle strain (~115 kJ/mol) and bent orbital overlap in cyclopropane confer alkene-like reactivity toward electrophiles.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q010",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Isobutane Radical Selectivity Origin",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does radical bromination of isobutane yield >99% tert-butyl bromide, whereas chlorination yields only 36%?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine radicals are too large to attack tertiary carbons."
+        },
+        {
+          "label": "B",
+          "text": "Isobutane forms a cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS."
+        },
+        {
+          "label": "D",
+          "text": "Bromine reacts through an ionic SN2 mechanism rather than a radical mechanism."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS.",
+      "explanation": "According to the Hammond Postulate, endothermic reactions have late transition states that strongly reflect the relative stabilities of intermediate radicals.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q011",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Radical Chain Termination Step",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Which of the following represents a valid radical chain termination step in alkane chlorination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Abstraction of H from CH₄ by •Cl to form HCl."
+        },
+        {
+          "label": "B",
+          "text": "Reaction of •CH₃ with Cl₂ to form CH₃Cl and •Cl."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of Cl₂ by heat."
+        },
+        {
+          "label": "D",
+          "text": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers.",
+      "explanation": "Termination steps consume two radical species to form a stable covalent bond without generating new propagating radicals.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q012",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Torsional Strain Mechanistic Origin",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the quantum mechanical origin of torsional strain in the eclipsed conformation of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds."
+        },
+        {
+          "label": "B",
+          "text": "Attractive van der Waals dispersion forces between hydrogens."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous radical formation at room temperature."
+        },
+        {
+          "label": "D",
+          "text": "Steric clash between the tiny hydrogen nuclei."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds.",
+      "explanation": "Eclipsing forces adjacent bonding electron clouds into close proximity, causing ~12 kJ/mol (3 kcal/mol) of torsional strain in ethane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q013",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Cyclohexane Chair Flip Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the sequence of conformational intermediates during a cyclohexane chair-to-chair ring flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair → Envelope → Inverted Chair."
+        },
+        {
+          "label": "B",
+          "text": "Chair → Cyclopentane + Methylene → Inverted Chair."
+        },
+        {
+          "label": "C",
+          "text": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair."
+        },
+        {
+          "label": "D",
+          "text": "Chair → Planar Hexagon (TS) → Inverted Chair."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair.",
+      "explanation": "The ring flip proceeds through high-energy half-chair conformations (~45 kJ/mol barrier) via a twist-boat intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q014",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "1,3-Diaxial Strain Mechanistic Clash",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What causes the energetic destabilization of an axial methyl group in methylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Angle strain caused by compression of the C-C-C bond angle to 90°."
+        },
+        {
+          "label": "B",
+          "text": "Dipole-dipole repulsion between carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Torsional eclipsing between the methyl group and C2 equatorial hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring.",
+      "explanation": "Axial substituents experience steric crowding identical to two gauche-butane interactions (~7.6 kJ/mol destabilization).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q015",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Alkane Cracking Radical Intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "During thermal cracking of alkanes at 500°C, how do secondary radicals fragment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Via α-cleavage producing two carbocations."
+        },
+        {
+          "label": "B",
+          "text": "Via concerted reductive elimination."
+        },
+        {
+          "label": "C",
+          "text": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical."
+        },
+        {
+          "label": "D",
+          "text": "Via electrocyclic ring closure to cycloalkanes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical.",
+      "explanation": "Beta-scission is the primary pathway by which carbon radicals fragment into smaller alkenes and primary radicals at high temperatures.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q016",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Catalytic Dehydrogenation on Metal Surface",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic role of the platinum catalyst during the aromatization of cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Platinum forms permanent ionic bonds with the cyclohexane ring."
+        },
+        {
+          "label": "B",
+          "text": "Platinum undergoes homolytic cleavage into atomic platinum vapor."
+        },
+        {
+          "label": "C",
+          "text": "Platinum acts as a strong Brønsted base that abstracts protons."
+        },
+        {
+          "label": "D",
+          "text": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds.",
+      "explanation": "Transition metal surfaces facilitate sequential C-H activation and dehydrogenation through surface-bound organometallic intermediates.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q017",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Cyclopropane Ring-Opening Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does cyclopropane undergo ring opening with Br₂ whereas cyclopentane does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane has a conjugated π system that undergoes EAS."
+        },
+        {
+          "label": "B",
+          "text": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane is an antiaromatic planar ring."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane is a radical initiator that destroys bromine."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine.",
+      "explanation": "The severe angle strain (~115 kJ/mol) and bent orbital overlap in cyclopropane confer alkene-like reactivity toward electrophiles.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q018",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Isobutane Radical Selectivity Origin",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does radical bromination of isobutane yield >99% tert-butyl bromide, whereas chlorination yields only 36%?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine reacts through an ionic SN2 mechanism rather than a radical mechanism."
+        },
+        {
+          "label": "B",
+          "text": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS."
+        },
+        {
+          "label": "C",
+          "text": "Isobutane forms a cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine radicals are too large to attack tertiary carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS.",
+      "explanation": "According to the Hammond Postulate, endothermic reactions have late transition states that strongly reflect the relative stabilities of intermediate radicals.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q019",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Radical Chain Initiation Step",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the elementary mechanistic event during the initiation of alkane halogenation by light (hν)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heterolytic cleavage to form a halonium cation and halide anion."
+        },
+        {
+          "label": "B",
+          "text": "Direct insertion of molecular halogen into a C-H bond."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons."
+        },
+        {
+          "label": "D",
+          "text": "Excitation of the alkane C-C σ bond to a carbocation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons.",
+      "explanation": "Photons of appropriate wavelength provide the bond dissociation energy required to split the weak halogen-halogen bond homolytically.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q020",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Rate-Determining Propagation Step in Halogenation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In the radical bromination of alkanes, what is the rate-determining propagation step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•)."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic recombination of two alkyl radicals."
+        },
+        {
+          "label": "C",
+          "text": "Exothermic reaction of the alkyl radical with Br₂ to form alkyl bromide."
+        },
+        {
+          "label": "D",
+          "text": "Coordination of bromine radical to the solvent cage."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•).",
+      "explanation": "Hydrogen abstraction by bromine radical is endothermic with a substantial activation barrier, dictating reaction rate and selectivity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q021",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Cyclohexane Chair Flip Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the sequence of conformational intermediates during a cyclohexane chair-to-chair ring flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair."
+        },
+        {
+          "label": "B",
+          "text": "Chair → Envelope → Inverted Chair."
+        },
+        {
+          "label": "C",
+          "text": "Chair → Cyclopentane + Methylene → Inverted Chair."
+        },
+        {
+          "label": "D",
+          "text": "Chair → Planar Hexagon (TS) → Inverted Chair."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair.",
+      "explanation": "The ring flip proceeds through high-energy half-chair conformations (~45 kJ/mol barrier) via a twist-boat intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q022",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "1,3-Diaxial Strain Mechanistic Clash",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What causes the energetic destabilization of an axial methyl group in methylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring."
+        },
+        {
+          "label": "B",
+          "text": "Angle strain caused by compression of the C-C-C bond angle to 90°."
+        },
+        {
+          "label": "C",
+          "text": "Dipole-dipole repulsion between carbon atoms."
+        },
+        {
+          "label": "D",
+          "text": "Torsional eclipsing between the methyl group and C2 equatorial hydrogen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring.",
+      "explanation": "Axial substituents experience steric crowding identical to two gauche-butane interactions (~7.6 kJ/mol destabilization).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q023",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Alkane Cracking Radical Intermediate",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "During thermal cracking of alkanes at 500°C, how do secondary radicals fragment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Via concerted reductive elimination."
+        },
+        {
+          "label": "B",
+          "text": "Via α-cleavage producing two carbocations."
+        },
+        {
+          "label": "C",
+          "text": "Via electrocyclic ring closure to cycloalkanes."
+        },
+        {
+          "label": "D",
+          "text": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical.",
+      "explanation": "Beta-scission is the primary pathway by which carbon radicals fragment into smaller alkenes and primary radicals at high temperatures.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q024",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Catalytic Dehydrogenation on Metal Surface",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic role of the platinum catalyst during the aromatization of cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Platinum undergoes homolytic cleavage into atomic platinum vapor."
+        },
+        {
+          "label": "B",
+          "text": "Platinum acts as a strong Brønsted base that abstracts protons."
+        },
+        {
+          "label": "C",
+          "text": "Platinum forms permanent ionic bonds with the cyclohexane ring."
+        },
+        {
+          "label": "D",
+          "text": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds.",
+      "explanation": "Transition metal surfaces facilitate sequential C-H activation and dehydrogenation through surface-bound organometallic intermediates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q025",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Cyclopropane Ring-Opening Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does cyclopropane undergo ring opening with Br₂ whereas cyclopentane does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane has a conjugated π system that undergoes EAS."
+        },
+        {
+          "label": "B",
+          "text": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane is an antiaromatic planar ring."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane is a radical initiator that destroys bromine."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine.",
+      "explanation": "The severe angle strain (~115 kJ/mol) and bent orbital overlap in cyclopropane confer alkene-like reactivity toward electrophiles.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q026",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Isobutane Radical Selectivity Origin",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does radical bromination of isobutane yield >99% tert-butyl bromide, whereas chlorination yields only 36%?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine radicals are too large to attack tertiary carbons."
+        },
+        {
+          "label": "B",
+          "text": "Isobutane forms a cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Bromine reacts through an ionic SN2 mechanism rather than a radical mechanism."
+        },
+        {
+          "label": "D",
+          "text": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS.",
+      "explanation": "According to the Hammond Postulate, endothermic reactions have late transition states that strongly reflect the relative stabilities of intermediate radicals.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q027",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Radical Chain Initiation Step",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the elementary mechanistic event during the initiation of alkane halogenation by light (hν)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excitation of the alkane C-C σ bond to a carbocation."
+        },
+        {
+          "label": "B",
+          "text": "Direct insertion of molecular halogen into a C-H bond."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons."
+        },
+        {
+          "label": "D",
+          "text": "Heterolytic cleavage to form a halonium cation and halide anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons.",
+      "explanation": "Photons of appropriate wavelength provide the bond dissociation energy required to split the weak halogen-halogen bond homolytically.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q028",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Rate-Determining Propagation Step in Halogenation",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the radical bromination of alkanes, what is the rate-determining propagation step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic recombination of two alkyl radicals."
+        },
+        {
+          "label": "B",
+          "text": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•)."
+        },
+        {
+          "label": "C",
+          "text": "Coordination of bromine radical to the solvent cage."
+        },
+        {
+          "label": "D",
+          "text": "Exothermic reaction of the alkyl radical with Br₂ to form alkyl bromide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•).",
+      "explanation": "Hydrogen abstraction by bromine radical is endothermic with a substantial activation barrier, dictating reaction rate and selectivity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q029",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Radical Chain Termination Step",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Which of the following represents a valid radical chain termination step in alkane chlorination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction of •CH₃ with Cl₂ to form CH₃Cl and •Cl."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of Cl₂ by heat."
+        },
+        {
+          "label": "C",
+          "text": "Abstraction of H from CH₄ by •Cl to form HCl."
+        },
+        {
+          "label": "D",
+          "text": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers.",
+      "explanation": "Termination steps consume two radical species to form a stable covalent bond without generating new propagating radicals.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q030",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Torsional Strain Mechanistic Origin",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the quantum mechanical origin of torsional strain in the eclipsed conformation of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous radical formation at room temperature."
+        },
+        {
+          "label": "B",
+          "text": "Steric clash between the tiny hydrogen nuclei."
+        },
+        {
+          "label": "C",
+          "text": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds."
+        },
+        {
+          "label": "D",
+          "text": "Attractive van der Waals dispersion forces between hydrogens."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds.",
+      "explanation": "Eclipsing forces adjacent bonding electron clouds into close proximity, causing ~12 kJ/mol (3 kcal/mol) of torsional strain in ethane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q031",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Alkane Cracking Radical Intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "During thermal cracking of alkanes at 500°C, how do secondary radicals fragment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Via concerted reductive elimination."
+        },
+        {
+          "label": "B",
+          "text": "Via α-cleavage producing two carbocations."
+        },
+        {
+          "label": "C",
+          "text": "Via electrocyclic ring closure to cycloalkanes."
+        },
+        {
+          "label": "D",
+          "text": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical.",
+      "explanation": "Beta-scission is the primary pathway by which carbon radicals fragment into smaller alkenes and primary radicals at high temperatures.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q032",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Catalytic Dehydrogenation on Metal Surface",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic role of the platinum catalyst during the aromatization of cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds."
+        },
+        {
+          "label": "B",
+          "text": "Platinum undergoes homolytic cleavage into atomic platinum vapor."
+        },
+        {
+          "label": "C",
+          "text": "Platinum forms permanent ionic bonds with the cyclohexane ring."
+        },
+        {
+          "label": "D",
+          "text": "Platinum acts as a strong Brønsted base that abstracts protons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds.",
+      "explanation": "Transition metal surfaces facilitate sequential C-H activation and dehydrogenation through surface-bound organometallic intermediates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q033",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Cyclopropane Ring-Opening Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does cyclopropane undergo ring opening with Br₂ whereas cyclopentane does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane has a conjugated π system that undergoes EAS."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopentane is a radical initiator that destroys bromine."
+        },
+        {
+          "label": "C",
+          "text": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopropane is an antiaromatic planar ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine.",
+      "explanation": "The severe angle strain (~115 kJ/mol) and bent orbital overlap in cyclopropane confer alkene-like reactivity toward electrophiles.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q034",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Isobutane Radical Selectivity Origin",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does radical bromination of isobutane yield >99% tert-butyl bromide, whereas chlorination yields only 36%?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isobutane forms a cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine radicals are too large to attack tertiary carbons."
+        },
+        {
+          "label": "C",
+          "text": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS."
+        },
+        {
+          "label": "D",
+          "text": "Bromine reacts through an ionic SN2 mechanism rather than a radical mechanism."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS.",
+      "explanation": "According to the Hammond Postulate, endothermic reactions have late transition states that strongly reflect the relative stabilities of intermediate radicals.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q035",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Radical Chain Initiation Step",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the elementary mechanistic event during the initiation of alkane halogenation by light (hν)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons."
+        },
+        {
+          "label": "B",
+          "text": "Excitation of the alkane C-C σ bond to a carbocation."
+        },
+        {
+          "label": "C",
+          "text": "Heterolytic cleavage to form a halonium cation and halide anion."
+        },
+        {
+          "label": "D",
+          "text": "Direct insertion of molecular halogen into a C-H bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons.",
+      "explanation": "Photons of appropriate wavelength provide the bond dissociation energy required to split the weak halogen-halogen bond homolytically.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q036",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Rate-Determining Propagation Step in Halogenation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In the radical bromination of alkanes, what is the rate-determining propagation step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exothermic reaction of the alkyl radical with Br₂ to form alkyl bromide."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic recombination of two alkyl radicals."
+        },
+        {
+          "label": "C",
+          "text": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•)."
+        },
+        {
+          "label": "D",
+          "text": "Coordination of bromine radical to the solvent cage."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•).",
+      "explanation": "Hydrogen abstraction by bromine radical is endothermic with a substantial activation barrier, dictating reaction rate and selectivity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q037",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Radical Chain Termination Step",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Which of the following represents a valid radical chain termination step in alkane chlorination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction of •CH₃ with Cl₂ to form CH₃Cl and •Cl."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of Cl₂ by heat."
+        },
+        {
+          "label": "C",
+          "text": "Abstraction of H from CH₄ by •Cl to form HCl."
+        },
+        {
+          "label": "D",
+          "text": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers.",
+      "explanation": "Termination steps consume two radical species to form a stable covalent bond without generating new propagating radicals.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q038",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Torsional Strain Mechanistic Origin",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the quantum mechanical origin of torsional strain in the eclipsed conformation of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric clash between the tiny hydrogen nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Spontaneous radical formation at room temperature."
+        },
+        {
+          "label": "C",
+          "text": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds."
+        },
+        {
+          "label": "D",
+          "text": "Attractive van der Waals dispersion forces between hydrogens."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds.",
+      "explanation": "Eclipsing forces adjacent bonding electron clouds into close proximity, causing ~12 kJ/mol (3 kcal/mol) of torsional strain in ethane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q039",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Cyclohexane Chair Flip Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of conformational intermediates during a cyclohexane chair-to-chair ring flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair → Envelope → Inverted Chair."
+        },
+        {
+          "label": "B",
+          "text": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair."
+        },
+        {
+          "label": "C",
+          "text": "Chair → Planar Hexagon (TS) → Inverted Chair."
+        },
+        {
+          "label": "D",
+          "text": "Chair → Cyclopentane + Methylene → Inverted Chair."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair.",
+      "explanation": "The ring flip proceeds through high-energy half-chair conformations (~45 kJ/mol barrier) via a twist-boat intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q040",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "1,3-Diaxial Strain Mechanistic Clash",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What causes the energetic destabilization of an axial methyl group in methylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torsional eclipsing between the methyl group and C2 equatorial hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring."
+        },
+        {
+          "label": "C",
+          "text": "Angle strain caused by compression of the C-C-C bond angle to 90°."
+        },
+        {
+          "label": "D",
+          "text": "Dipole-dipole repulsion between carbon atoms."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring.",
+      "explanation": "Axial substituents experience steric crowding identical to two gauche-butane interactions (~7.6 kJ/mol destabilization).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q041",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cyclopropane Ring-Opening Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does cyclopropane undergo ring opening with Br₂ whereas cyclopentane does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentane is a radical initiator that destroys bromine."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane is an antiaromatic planar ring."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane has a conjugated π system that undergoes EAS."
+        },
+        {
+          "label": "D",
+          "text": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Extreme angle strain (60° vs 109.5°) creates weak, bent 'banana bonds' with high p-character that readily attack electrophilic bromine.",
+      "explanation": "The severe angle strain (~115 kJ/mol) and bent orbital overlap in cyclopropane confer alkene-like reactivity toward electrophiles.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q042",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Isobutane Radical Selectivity Origin",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does radical bromination of isobutane yield >99% tert-butyl bromide, whereas chlorination yields only 36%?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isobutane forms a cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine radicals are too large to attack tertiary carbons."
+        },
+        {
+          "label": "C",
+          "text": "Bromine reacts through an ionic SN2 mechanism rather than a radical mechanism."
+        },
+        {
+          "label": "D",
+          "text": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromination is endothermic with a late transition state resembling the stable 3° radical (Hammond postulate), whereas chlorination has an unselective early TS.",
+      "explanation": "According to the Hammond Postulate, endothermic reactions have late transition states that strongly reflect the relative stabilities of intermediate radicals.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q043",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Radical Chain Initiation Step",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the elementary mechanistic event during the initiation of alkane halogenation by light (hν)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excitation of the alkane C-C σ bond to a carbocation."
+        },
+        {
+          "label": "B",
+          "text": "Heterolytic cleavage to form a halonium cation and halide anion."
+        },
+        {
+          "label": "C",
+          "text": "Direct insertion of molecular halogen into a C-H bond."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Homolytic cleavage of the halogen-halogen bond (e.g., Cl-Cl or Br-Br) to produce two neutral halogen radicals with unpaired electrons.",
+      "explanation": "Photons of appropriate wavelength provide the bond dissociation energy required to split the weak halogen-halogen bond homolytically.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q044",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Rate-Determining Propagation Step in Halogenation",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In the radical bromination of alkanes, what is the rate-determining propagation step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exothermic reaction of the alkyl radical with Br₂ to form alkyl bromide."
+        },
+        {
+          "label": "B",
+          "text": "Coordination of bromine radical to the solvent cage."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic recombination of two alkyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Endothermic abstraction of a hydrogen atom from the alkane by a bromine radical (Br•) to form HBr and an alkyl radical (R•).",
+      "explanation": "Hydrogen abstraction by bromine radical is endothermic with a substantial activation barrier, dictating reaction rate and selectivity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q045",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Radical Chain Termination Step",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Which of the following represents a valid radical chain termination step in alkane chlorination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Abstraction of H from CH₄ by •Cl to form HCl."
+        },
+        {
+          "label": "B",
+          "text": "Reaction of •CH₃ with Cl₂ to form CH₃Cl and •Cl."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of Cl₂ by heat."
+        },
+        {
+          "label": "D",
+          "text": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling of two alkyl radicals (e.g., •CH₃ + •CH₃ → CH₃CH₃) to destroy radical chain carriers.",
+      "explanation": "Termination steps consume two radical species to form a stable covalent bond without generating new propagating radicals.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q046",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Torsional Strain Mechanistic Origin",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the quantum mechanical origin of torsional strain in the eclipsed conformation of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric clash between the tiny hydrogen nuclei."
+        },
+        {
+          "label": "B",
+          "text": "Spontaneous radical formation at room temperature."
+        },
+        {
+          "label": "C",
+          "text": "Attractive van der Waals dispersion forces between hydrogens."
+        },
+        {
+          "label": "D",
+          "text": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Electrostatic repulsion between bonding electron pairs in adjacent C-H σ bonds and destabilizing orbital interactions across eclipsed bonds.",
+      "explanation": "Eclipsing forces adjacent bonding electron clouds into close proximity, causing ~12 kJ/mol (3 kcal/mol) of torsional strain in ethane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q047",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cyclohexane Chair Flip Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the sequence of conformational intermediates during a cyclohexane chair-to-chair ring flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair → Envelope → Inverted Chair."
+        },
+        {
+          "label": "B",
+          "text": "Chair → Cyclopentane + Methylene → Inverted Chair."
+        },
+        {
+          "label": "C",
+          "text": "Chair → Planar Hexagon (TS) → Inverted Chair."
+        },
+        {
+          "label": "D",
+          "text": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chair → Half-Chair (highest energy TS) → Twist-Boat (local minimum) → Boat (transition state) → Twist-Boat → Half-Chair → Inverted Chair.",
+      "explanation": "The ring flip proceeds through high-energy half-chair conformations (~45 kJ/mol barrier) via a twist-boat intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q048",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "1,3-Diaxial Strain Mechanistic Clash",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What causes the energetic destabilization of an axial methyl group in methylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torsional eclipsing between the methyl group and C2 equatorial hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring."
+        },
+        {
+          "label": "C",
+          "text": "Angle strain caused by compression of the C-C-C bond angle to 90°."
+        },
+        {
+          "label": "D",
+          "text": "Dipole-dipole repulsion between carbon atoms."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric repulsion (gauche-like interactions) between the axial methyl group and the two axial hydrogens located at C3 and C5 on the same side of the ring.",
+      "explanation": "Axial substituents experience steric crowding identical to two gauche-butane interactions (~7.6 kJ/mol destabilization).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q049",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Alkane Cracking Radical Intermediate",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "During thermal cracking of alkanes at 500°C, how do secondary radicals fragment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Via α-cleavage producing two carbocations."
+        },
+        {
+          "label": "B",
+          "text": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical."
+        },
+        {
+          "label": "C",
+          "text": "Via electrocyclic ring closure to cycloalkanes."
+        },
+        {
+          "label": "D",
+          "text": "Via concerted reductive elimination."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Via β-scission: homolytic cleavage of a C-C bond beta to the radical carbon, releasing an alkene and a smaller alkyl radical.",
+      "explanation": "Beta-scission is the primary pathway by which carbon radicals fragment into smaller alkenes and primary radicals at high temperatures.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q050",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Catalytic Dehydrogenation on Metal Surface",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic role of the platinum catalyst during the aromatization of cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Platinum forms permanent ionic bonds with the cyclohexane ring."
+        },
+        {
+          "label": "B",
+          "text": "Platinum undergoes homolytic cleavage into atomic platinum vapor."
+        },
+        {
+          "label": "C",
+          "text": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds."
+        },
+        {
+          "label": "D",
+          "text": "Platinum acts as a strong Brønsted base that abstracts protons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Platinum atoms insert sequentially into C-H bonds via oxidative addition, releasing adsorbed H₂ and generating conjugated π bonds.",
+      "explanation": "Transition metal surfaces facilitate sequential C-H activation and dehydrogenation through surface-bound organometallic intermediates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "IUPAC Infantry",
+    "Newman Nightmare",
+    "Torsional Titan",
+    "Chair-Flip Champion",
+    "1,3-Diaxial Dreadnought"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "IUPAC Infantry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "iupac-infantry.png"
+        ]
+      },
+      {
+        "boss": "Newman Nightmare",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "newman-nightmare.png"
+        ]
+      },
+      {
+        "boss": "Torsional Titan",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "torsional-titan.png"
+        ]
+      },
+      {
+        "boss": "Chair-Flip Champion",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "chair-flip-champion.png"
+        ]
+      },
+      {
+        "boss": "1,3-Diaxial Dreadnought",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "13-diaxial-dreadnought.png"
+        ]
+      }
+    ]
+  }
+}

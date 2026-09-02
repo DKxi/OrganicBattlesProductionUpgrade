@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 16,
+  "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+  "assigned_boss": "Diene Demon",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch16_q001",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Diels-Alder [4+2] Concerted Pericyclic Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the orbital description of the transition state in a classic Diels-Alder reaction between 1,3-butadiene and ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbocation-carbanion zwitterionic intermediate."
+        },
+        {
+          "label": "B",
+          "text": "An electrocyclic 4-electron antiaromatic transition state."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*)."
+        },
+        {
+          "label": "D",
+          "text": "A stepwise biradical intermediate formed by end-to-end coupling."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*).",
+      "explanation": "The thermal Diels-Alder reaction is a concerted, suprafacial [4π_s + 2π_s] cycloaddition allowed by the Woodward-Hoffmann orbital symmetry rules.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q002",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Endo Rule Secondary Orbital Overlap",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic cause of the endo selectivity in the Diels-Alder reaction of cyclopentadiene with maleic anhydride?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a radical anion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state."
+        },
+        {
+          "label": "C",
+          "text": "The exo transition state experiences severe angle strain."
+        },
+        {
+          "label": "D",
+          "text": "The endo product is thermodynamically more stable than the exo product."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the diene and dienophile carbonyls lowers the activation energy for the endo pathway.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q003",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "s-cis Conformation Requirement for Diene",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is (2Z,4Z)-hexadiene significantly less reactive in Diels-Alder reactions than (2E,4E)-hexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (2Z,4Z) isomer has an odd number of double bonds."
+        },
+        {
+          "label": "B",
+          "text": "The (2Z,4Z) isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "The (2Z,4Z) isomer cannot absorb light."
+        },
+        {
+          "label": "D",
+          "text": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition.",
+      "explanation": "Dienes must adopt the s-cis conformation to react in Diels-Alder; steric clash between internal substituents severely penalizes s-cis population.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q004",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "1,3-Butadiene Kinetic vs Thermodynamic Addition",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "In the addition of HBr to 1,3-butadiene, what intermediate accounts for both 1,2- and 1,4-addition products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A 1,4-diradical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A primary carbocation intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4.",
+      "explanation": "Protonation at C1 generates a resonance-stabilized allylic carbocation, which can be captured by bromide at C2 (1,2) or C4 (1,4).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q005",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Thermal Electrocyclic Ring Closure Conrotatory Rule",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "According to the Woodward-Hoffmann rules, why does thermal ring closure of (2E,4E)-hexadiene yield cis-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal reactions always produce trans stereoisomers."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a free radical mechanism."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds through disrotatory motion to minimize steric clash."
+        },
+        {
+          "label": "D",
+          "text": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap.",
+      "explanation": "The HOMO of a 4π system requires conrotatory (same-direction) orbital rotation under thermal conditions for constructive in-phase overlap.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q006",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does photochemical ring closure of (2E,4E)-hexadiene produce trans-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light heats the reaction to 1000°C."
+        },
+        {
+          "label": "B",
+          "text": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "Photons destroy the methyl groups."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the allowed symmetry pathway from conrotatory to disrotatory.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q007",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Cope Rearrangement [3,3]-Sigmatropic Shift",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the transition state geometry of the degenerate Cope rearrangement of 1,5-hexadiene at 300°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An ionic pathway involving an allylic carbocation."
+        },
+        {
+          "label": "B",
+          "text": "A planar boat-like transition state with 8 electrons."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise pathway involving two allyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift.",
+      "explanation": "The Cope rearrangement is a concerted [3,3]-sigmatropic shift proceeding preferentially through a chair-like six-membered transition state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q008",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Claisen Rearrangement of Allyl Phenyl Ether",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the sequence of mechanistic events in the thermal Claisen rearrangement of allyl phenyl ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage to phenoxy radical followed by recombination."
+        },
+        {
+          "label": "C",
+          "text": "Direct electrophilic attack of allyl cation onto the ring."
+        },
+        {
+          "label": "D",
+          "text": "SN2 displacement of phenoxide by allyl radical."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol.",
+      "explanation": "Thermal [3,3]-shift yields an unconjugated cyclohexadienone intermediate whose enolization is driven by the immense stabilization of restoring aromaticity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q009",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "Retro-Diels-Alder Thermodynamic Driving Force",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does dicyclopentadiene crack into monomeric cyclopentadiene upon heating to 180°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentadiene has higher boiling point than the dimer."
+        },
+        {
+          "label": "B",
+          "text": "The dimer is an antiaromatic complex."
+        },
+        {
+          "label": "C",
+          "text": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°)."
+        },
+        {
+          "label": "D",
+          "text": "The monomer is stabilized by resonance with iron."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°).",
+      "explanation": "Splitting one reactant into two products increases entropy (ΔS > 0), making the retro-reaction thermodynamically favorable at high temperatures (ΔG = ΔH - TΔS).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q010",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diene Demon",
+      "topic": "UV-Vis Absorption and HOMO-LUMO Gap",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does β-carotene (11 conjugated double bonds) absorb visible light (orange, 450 nm) whereas 1,3-butadiene absorbs in the far UV (217 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "β-Carotene contains heavier carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum."
+        },
+        {
+          "label": "C",
+          "text": "1,3-Butadiene reflects all wavelengths of light."
+        },
+        {
+          "label": "D",
+          "text": "β-Carotene is a radical cation in solution."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum.",
+      "explanation": "Increasing conjugation narrows the HOMO-LUMO energy gap; smaller ΔE corresponds to absorption of longer wavelength light (E = hc/λ).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "diene-demon.png"
+      ]
+    },
+    {
+      "id": "ch16_q011",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "s-cis Conformation Requirement for Diene",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is (2Z,4Z)-hexadiene significantly less reactive in Diels-Alder reactions than (2E,4E)-hexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (2Z,4Z) isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "B",
+          "text": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition."
+        },
+        {
+          "label": "C",
+          "text": "The (2Z,4Z) isomer has an odd number of double bonds."
+        },
+        {
+          "label": "D",
+          "text": "The (2Z,4Z) isomer cannot absorb light."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition.",
+      "explanation": "Dienes must adopt the s-cis conformation to react in Diels-Alder; steric clash between internal substituents severely penalizes s-cis population.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q012",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "1,3-Butadiene Kinetic vs Thermodynamic Addition",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the addition of HBr to 1,3-butadiene, what intermediate accounts for both 1,2- and 1,4-addition products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A 1,4-diradical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A primary carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4.",
+      "explanation": "Protonation at C1 generates a resonance-stabilized allylic carbocation, which can be captured by bromide at C2 (1,2) or C4 (1,4).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q013",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Thermal Electrocyclic Ring Closure Conrotatory Rule",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "According to the Woodward-Hoffmann rules, why does thermal ring closure of (2E,4E)-hexadiene yield cis-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds through disrotatory motion to minimize steric clash."
+        },
+        {
+          "label": "B",
+          "text": "Thermal reactions always produce trans stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a free radical mechanism."
+        },
+        {
+          "label": "D",
+          "text": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap.",
+      "explanation": "The HOMO of a 4π system requires conrotatory (same-direction) orbital rotation under thermal conditions for constructive in-phase overlap.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q014",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does photochemical ring closure of (2E,4E)-hexadiene produce trans-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light heats the reaction to 1000°C."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "C",
+          "text": "Photons destroy the methyl groups."
+        },
+        {
+          "label": "D",
+          "text": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the allowed symmetry pathway from conrotatory to disrotatory.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q015",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Cope Rearrangement [3,3]-Sigmatropic Shift",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the transition state geometry of the degenerate Cope rearrangement of 1,5-hexadiene at 300°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift."
+        },
+        {
+          "label": "B",
+          "text": "A planar boat-like transition state with 8 electrons."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise pathway involving two allyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "An ionic pathway involving an allylic carbocation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift.",
+      "explanation": "The Cope rearrangement is a concerted [3,3]-sigmatropic shift proceeding preferentially through a chair-like six-membered transition state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q016",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Claisen Rearrangement of Allyl Phenyl Ether",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of mechanistic events in the thermal Claisen rearrangement of allyl phenyl ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage to phenoxy radical followed by recombination."
+        },
+        {
+          "label": "B",
+          "text": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol."
+        },
+        {
+          "label": "C",
+          "text": "SN2 displacement of phenoxide by allyl radical."
+        },
+        {
+          "label": "D",
+          "text": "Direct electrophilic attack of allyl cation onto the ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol.",
+      "explanation": "Thermal [3,3]-shift yields an unconjugated cyclohexadienone intermediate whose enolization is driven by the immense stabilization of restoring aromaticity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q017",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Retro-Diels-Alder Thermodynamic Driving Force",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does dicyclopentadiene crack into monomeric cyclopentadiene upon heating to 180°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°)."
+        },
+        {
+          "label": "B",
+          "text": "The dimer is an antiaromatic complex."
+        },
+        {
+          "label": "C",
+          "text": "The monomer is stabilized by resonance with iron."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentadiene has higher boiling point than the dimer."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°).",
+      "explanation": "Splitting one reactant into two products increases entropy (ΔS > 0), making the retro-reaction thermodynamically favorable at high temperatures (ΔG = ΔH - TΔS).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q018",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "UV-Vis Absorption and HOMO-LUMO Gap",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does β-carotene (11 conjugated double bonds) absorb visible light (orange, 450 nm) whereas 1,3-butadiene absorbs in the far UV (217 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "β-Carotene is a radical cation in solution."
+        },
+        {
+          "label": "B",
+          "text": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum."
+        },
+        {
+          "label": "C",
+          "text": "β-Carotene contains heavier carbon atoms."
+        },
+        {
+          "label": "D",
+          "text": "1,3-Butadiene reflects all wavelengths of light."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum.",
+      "explanation": "Increasing conjugation narrows the HOMO-LUMO energy gap; smaller ΔE corresponds to absorption of longer wavelength light (E = hc/λ).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q019",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Diels-Alder [4+2] Concerted Pericyclic Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the orbital description of the transition state in a classic Diels-Alder reaction between 1,3-butadiene and ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*)."
+        },
+        {
+          "label": "B",
+          "text": "A carbocation-carbanion zwitterionic intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise biradical intermediate formed by end-to-end coupling."
+        },
+        {
+          "label": "D",
+          "text": "An electrocyclic 4-electron antiaromatic transition state."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*).",
+      "explanation": "The thermal Diels-Alder reaction is a concerted, suprafacial [4π_s + 2π_s] cycloaddition allowed by the Woodward-Hoffmann orbital symmetry rules.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q020",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "1,4-Addition Anomaly",
+      "topic": "Endo Rule Secondary Orbital Overlap",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic cause of the endo selectivity in the Diels-Alder reaction of cyclopentadiene with maleic anhydride?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The endo product is thermodynamically more stable than the exo product."
+        },
+        {
+          "label": "B",
+          "text": "The exo transition state experiences severe angle strain."
+        },
+        {
+          "label": "C",
+          "text": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a radical anion intermediate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the diene and dienophile carbonyls lowers the activation energy for the endo pathway.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "14-addition-anomaly.png"
+      ]
+    },
+    {
+      "id": "ch16_q021",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Thermal Electrocyclic Ring Closure Conrotatory Rule",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "According to the Woodward-Hoffmann rules, why does thermal ring closure of (2E,4E)-hexadiene yield cis-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds through disrotatory motion to minimize steric clash."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a free radical mechanism."
+        },
+        {
+          "label": "D",
+          "text": "Thermal reactions always produce trans stereoisomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap.",
+      "explanation": "The HOMO of a 4π system requires conrotatory (same-direction) orbital rotation under thermal conditions for constructive in-phase overlap.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q022",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does photochemical ring closure of (2E,4E)-hexadiene produce trans-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light heats the reaction to 1000°C."
+        },
+        {
+          "label": "B",
+          "text": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "Photons destroy the methyl groups."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the allowed symmetry pathway from conrotatory to disrotatory.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q023",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Cope Rearrangement [3,3]-Sigmatropic Shift",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the transition state geometry of the degenerate Cope rearrangement of 1,5-hexadiene at 300°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stepwise pathway involving two allyl radicals."
+        },
+        {
+          "label": "B",
+          "text": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift."
+        },
+        {
+          "label": "C",
+          "text": "An ionic pathway involving an allylic carbocation."
+        },
+        {
+          "label": "D",
+          "text": "A planar boat-like transition state with 8 electrons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift.",
+      "explanation": "The Cope rearrangement is a concerted [3,3]-sigmatropic shift proceeding preferentially through a chair-like six-membered transition state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q024",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Claisen Rearrangement of Allyl Phenyl Ether",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of mechanistic events in the thermal Claisen rearrangement of allyl phenyl ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage to phenoxy radical followed by recombination."
+        },
+        {
+          "label": "B",
+          "text": "SN2 displacement of phenoxide by allyl radical."
+        },
+        {
+          "label": "C",
+          "text": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol."
+        },
+        {
+          "label": "D",
+          "text": "Direct electrophilic attack of allyl cation onto the ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol.",
+      "explanation": "Thermal [3,3]-shift yields an unconjugated cyclohexadienone intermediate whose enolization is driven by the immense stabilization of restoring aromaticity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q025",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Retro-Diels-Alder Thermodynamic Driving Force",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does dicyclopentadiene crack into monomeric cyclopentadiene upon heating to 180°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°)."
+        },
+        {
+          "label": "B",
+          "text": "The monomer is stabilized by resonance with iron."
+        },
+        {
+          "label": "C",
+          "text": "The dimer is an antiaromatic complex."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentadiene has higher boiling point than the dimer."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°).",
+      "explanation": "Splitting one reactant into two products increases entropy (ΔS > 0), making the retro-reaction thermodynamically favorable at high temperatures (ΔG = ΔH - TΔS).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q026",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "UV-Vis Absorption and HOMO-LUMO Gap",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does β-carotene (11 conjugated double bonds) absorb visible light (orange, 450 nm) whereas 1,3-butadiene absorbs in the far UV (217 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "β-Carotene contains heavier carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "1,3-Butadiene reflects all wavelengths of light."
+        },
+        {
+          "label": "C",
+          "text": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum."
+        },
+        {
+          "label": "D",
+          "text": "β-Carotene is a radical cation in solution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum.",
+      "explanation": "Increasing conjugation narrows the HOMO-LUMO energy gap; smaller ΔE corresponds to absorption of longer wavelength light (E = hc/λ).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q027",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Diels-Alder [4+2] Concerted Pericyclic Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the orbital description of the transition state in a classic Diels-Alder reaction between 1,3-butadiene and ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbocation-carbanion zwitterionic intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A stepwise biradical intermediate formed by end-to-end coupling."
+        },
+        {
+          "label": "C",
+          "text": "An electrocyclic 4-electron antiaromatic transition state."
+        },
+        {
+          "label": "D",
+          "text": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*).",
+      "explanation": "The thermal Diels-Alder reaction is a concerted, suprafacial [4π_s + 2π_s] cycloaddition allowed by the Woodward-Hoffmann orbital symmetry rules.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q028",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "Endo Rule Secondary Orbital Overlap",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic cause of the endo selectivity in the Diels-Alder reaction of cyclopentadiene with maleic anhydride?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a radical anion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The exo transition state experiences severe angle strain."
+        },
+        {
+          "label": "C",
+          "text": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state."
+        },
+        {
+          "label": "D",
+          "text": "The endo product is thermodynamically more stable than the exo product."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the diene and dienophile carbonyls lowers the activation energy for the endo pathway.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q029",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "s-cis Conformation Requirement for Diene",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is (2Z,4Z)-hexadiene significantly less reactive in Diels-Alder reactions than (2E,4E)-hexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (2Z,4Z) isomer cannot absorb light."
+        },
+        {
+          "label": "B",
+          "text": "The (2Z,4Z) isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "The (2Z,4Z) isomer has an odd number of double bonds."
+        },
+        {
+          "label": "D",
+          "text": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition.",
+      "explanation": "Dienes must adopt the s-cis conformation to react in Diels-Alder; steric clash between internal substituents severely penalizes s-cis population.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q030",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Woodward-Hoffmann Wyrm",
+      "topic": "1,3-Butadiene Kinetic vs Thermodynamic Addition",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "In the addition of HBr to 1,3-butadiene, what intermediate accounts for both 1,2- and 1,4-addition products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A 1,4-diradical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4.",
+      "explanation": "Protonation at C1 generates a resonance-stabilized allylic carbocation, which can be captured by bromide at C2 (1,2) or C4 (1,4).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "woodward-hoffmann-wyrm.png"
+      ]
+    },
+    {
+      "id": "ch16_q031",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Cope Rearrangement [3,3]-Sigmatropic Shift",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the transition state geometry of the degenerate Cope rearrangement of 1,5-hexadiene at 300°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar boat-like transition state with 8 electrons."
+        },
+        {
+          "label": "B",
+          "text": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift."
+        },
+        {
+          "label": "C",
+          "text": "An ionic pathway involving an allylic carbocation."
+        },
+        {
+          "label": "D",
+          "text": "A stepwise pathway involving two allyl radicals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift.",
+      "explanation": "The Cope rearrangement is a concerted [3,3]-sigmatropic shift proceeding preferentially through a chair-like six-membered transition state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q032",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Claisen Rearrangement of Allyl Phenyl Ether",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of mechanistic events in the thermal Claisen rearrangement of allyl phenyl ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SN2 displacement of phenoxide by allyl radical."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage to phenoxy radical followed by recombination."
+        },
+        {
+          "label": "C",
+          "text": "Direct electrophilic attack of allyl cation onto the ring."
+        },
+        {
+          "label": "D",
+          "text": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol.",
+      "explanation": "Thermal [3,3]-shift yields an unconjugated cyclohexadienone intermediate whose enolization is driven by the immense stabilization of restoring aromaticity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q033",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Retro-Diels-Alder Thermodynamic Driving Force",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does dicyclopentadiene crack into monomeric cyclopentadiene upon heating to 180°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The dimer is an antiaromatic complex."
+        },
+        {
+          "label": "B",
+          "text": "The monomer is stabilized by resonance with iron."
+        },
+        {
+          "label": "C",
+          "text": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°)."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentadiene has higher boiling point than the dimer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°).",
+      "explanation": "Splitting one reactant into two products increases entropy (ΔS > 0), making the retro-reaction thermodynamically favorable at high temperatures (ΔG = ΔH - TΔS).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q034",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "UV-Vis Absorption and HOMO-LUMO Gap",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does β-carotene (11 conjugated double bonds) absorb visible light (orange, 450 nm) whereas 1,3-butadiene absorbs in the far UV (217 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,3-Butadiene reflects all wavelengths of light."
+        },
+        {
+          "label": "B",
+          "text": "β-Carotene is a radical cation in solution."
+        },
+        {
+          "label": "C",
+          "text": "β-Carotene contains heavier carbon atoms."
+        },
+        {
+          "label": "D",
+          "text": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum.",
+      "explanation": "Increasing conjugation narrows the HOMO-LUMO energy gap; smaller ΔE corresponds to absorption of longer wavelength light (E = hc/λ).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q035",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Diels-Alder [4+2] Concerted Pericyclic Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the orbital description of the transition state in a classic Diels-Alder reaction between 1,3-butadiene and ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stepwise biradical intermediate formed by end-to-end coupling."
+        },
+        {
+          "label": "B",
+          "text": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*)."
+        },
+        {
+          "label": "C",
+          "text": "An electrocyclic 4-electron antiaromatic transition state."
+        },
+        {
+          "label": "D",
+          "text": "A carbocation-carbanion zwitterionic intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*).",
+      "explanation": "The thermal Diels-Alder reaction is a concerted, suprafacial [4π_s + 2π_s] cycloaddition allowed by the Woodward-Hoffmann orbital symmetry rules.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q036",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Endo Rule Secondary Orbital Overlap",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic cause of the endo selectivity in the Diels-Alder reaction of cyclopentadiene with maleic anhydride?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state."
+        },
+        {
+          "label": "B",
+          "text": "The exo transition state experiences severe angle strain."
+        },
+        {
+          "label": "C",
+          "text": "The endo product is thermodynamically more stable than the exo product."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a radical anion intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the diene and dienophile carbonyls lowers the activation energy for the endo pathway.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q037",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "s-cis Conformation Requirement for Diene",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is (2Z,4Z)-hexadiene significantly less reactive in Diels-Alder reactions than (2E,4E)-hexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (2Z,4Z) isomer has an odd number of double bonds."
+        },
+        {
+          "label": "B",
+          "text": "The (2Z,4Z) isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition."
+        },
+        {
+          "label": "D",
+          "text": "The (2Z,4Z) isomer cannot absorb light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition.",
+      "explanation": "Dienes must adopt the s-cis conformation to react in Diels-Alder; steric clash between internal substituents severely penalizes s-cis population.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q038",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "1,3-Butadiene Kinetic vs Thermodynamic Addition",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In the addition of HBr to 1,3-butadiene, what intermediate accounts for both 1,2- and 1,4-addition products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A 1,4-diradical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A primary carbocation intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4.",
+      "explanation": "Protonation at C1 generates a resonance-stabilized allylic carbocation, which can be captured by bromide at C2 (1,2) or C4 (1,4).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q039",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Thermal Electrocyclic Ring Closure Conrotatory Rule",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "According to the Woodward-Hoffmann rules, why does thermal ring closure of (2E,4E)-hexadiene yield cis-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a free radical mechanism."
+        },
+        {
+          "label": "B",
+          "text": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds through disrotatory motion to minimize steric clash."
+        },
+        {
+          "label": "D",
+          "text": "Thermal reactions always produce trans stereoisomers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap.",
+      "explanation": "The HOMO of a 4π system requires conrotatory (same-direction) orbital rotation under thermal conditions for constructive in-phase overlap.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q040",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Endo-Exo Executor",
+      "topic": "Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does photochemical ring closure of (2E,4E)-hexadiene produce trans-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Photons destroy the methyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Light heats the reaction to 1000°C."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the allowed symmetry pathway from conrotatory to disrotatory.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "endo-exo-executor.png"
+      ]
+    },
+    {
+      "id": "ch16_q041",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Retro-Diels-Alder Thermodynamic Driving Force",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does dicyclopentadiene crack into monomeric cyclopentadiene upon heating to 180°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The dimer is an antiaromatic complex."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopentadiene has higher boiling point than the dimer."
+        },
+        {
+          "label": "C",
+          "text": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°)."
+        },
+        {
+          "label": "D",
+          "text": "The monomer is stabilized by resonance with iron."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The retro-Diels-Alder reaction splits one molecule into two molecules, driven by a large positive entropy change (ΔS° > 0) that dominates at elevated temperatures (-TΔS°).",
+      "explanation": "Splitting one reactant into two products increases entropy (ΔS > 0), making the retro-reaction thermodynamically favorable at high temperatures (ΔG = ΔH - TΔS).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q042",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "UV-Vis Absorption and HOMO-LUMO Gap",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does β-carotene (11 conjugated double bonds) absorb visible light (orange, 450 nm) whereas 1,3-butadiene absorbs in the far UV (217 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "β-Carotene is a radical cation in solution."
+        },
+        {
+          "label": "B",
+          "text": "1,3-Butadiene reflects all wavelengths of light."
+        },
+        {
+          "label": "C",
+          "text": "β-Carotene contains heavier carbon atoms."
+        },
+        {
+          "label": "D",
+          "text": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Extended π conjugation increases the number of molecular orbitals, steadily decreasing the energy gap (ΔE) between the HOMO and LUMO into the visible spectrum.",
+      "explanation": "Increasing conjugation narrows the HOMO-LUMO energy gap; smaller ΔE corresponds to absorption of longer wavelength light (E = hc/λ).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q043",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Diels-Alder [4+2] Concerted Pericyclic Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the orbital description of the transition state in a classic Diels-Alder reaction between 1,3-butadiene and ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbocation-carbanion zwitterionic intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A stepwise biradical intermediate formed by end-to-end coupling."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*)."
+        },
+        {
+          "label": "D",
+          "text": "An electrocyclic 4-electron antiaromatic transition state."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, aromatic 6π electron transition state where the HOMO of the diene (ψ₂) overlaps suprafacially with the LUMO of the dienophile (π*).",
+      "explanation": "The thermal Diels-Alder reaction is a concerted, suprafacial [4π_s + 2π_s] cycloaddition allowed by the Woodward-Hoffmann orbital symmetry rules.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q044",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Endo Rule Secondary Orbital Overlap",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic cause of the endo selectivity in the Diels-Alder reaction of cyclopentadiene with maleic anhydride?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a radical anion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The endo product is thermodynamically more stable than the exo product."
+        },
+        {
+          "label": "C",
+          "text": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state."
+        },
+        {
+          "label": "D",
+          "text": "The exo transition state experiences severe angle strain."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Favorable secondary orbital overlap between the developing π system of the diene and the carbonyl π orbitals of the electron-withdrawing dienophile stabilizes the endo transition state.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the diene and dienophile carbonyls lowers the activation energy for the endo pathway.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q045",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "s-cis Conformation Requirement for Diene",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is (2Z,4Z)-hexadiene significantly less reactive in Diels-Alder reactions than (2E,4E)-hexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (2Z,4Z) isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "B",
+          "text": "The (2Z,4Z) isomer has an odd number of double bonds."
+        },
+        {
+          "label": "C",
+          "text": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition."
+        },
+        {
+          "label": "D",
+          "text": "The (2Z,4Z) isomer cannot absorb light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the required s-cis conformation, the two terminal methyl groups in the (2Z,4Z) isomer clash sterically, destabilizing the s-cis geometry needed for cycloaddition.",
+      "explanation": "Dienes must adopt the s-cis conformation to react in Diels-Alder; steric clash between internal substituents severely penalizes s-cis population.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q046",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "1,3-Butadiene Kinetic vs Thermodynamic Addition",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the addition of HBr to 1,3-butadiene, what intermediate accounts for both 1,2- and 1,4-addition products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic bromonium ion intermediate."
+        },
+        {
+          "label": "B",
+          "text": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4."
+        },
+        {
+          "label": "C",
+          "text": "A primary carbocation intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A 1,4-diradical intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An allylic carbocation intermediate [CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺] where positive charge is delocalized over C2 and C4.",
+      "explanation": "Protonation at C1 generates a resonance-stabilized allylic carbocation, which can be captured by bromide at C2 (1,2) or C4 (1,4).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q047",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Thermal Electrocyclic Ring Closure Conrotatory Rule",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "According to the Woodward-Hoffmann rules, why does thermal ring closure of (2E,4E)-hexadiene yield cis-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a free radical mechanism."
+        },
+        {
+          "label": "B",
+          "text": "Thermal reactions always produce trans stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds through disrotatory motion to minimize steric clash."
+        },
+        {
+          "label": "D",
+          "text": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermal electrocyclic reactions of 4n systems utilize the HOMO (ψ₂), which has opposite orbital symmetry at the termini, requiring conrotatory rotation to achieve bonding overlap.",
+      "explanation": "The HOMO of a 4π system requires conrotatory (same-direction) orbital rotation under thermal conditions for constructive in-phase overlap.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q048",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does photochemical ring closure of (2E,4E)-hexadiene produce trans-3,4-dimethylcyclobutene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "C",
+          "text": "Light heats the reaction to 1000°C."
+        },
+        {
+          "label": "D",
+          "text": "Photons destroy the methyl groups."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Light excites an electron to the ψ₃* orbital (new HOMO), reversing terminal orbital phase symmetry and enforcing disrotatory (opposite-direction) motion for bonding overlap.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the allowed symmetry pathway from conrotatory to disrotatory.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q049",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Cope Rearrangement [3,3]-Sigmatropic Shift",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the transition state geometry of the degenerate Cope rearrangement of 1,5-hexadiene at 300°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An ionic pathway involving an allylic carbocation."
+        },
+        {
+          "label": "B",
+          "text": "A planar boat-like transition state with 8 electrons."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise pathway involving two allyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted, six-membered chair-like transition state involving the simultaneous breaking of one C-C σ bond and making of a new C-C σ bond with π bond shift.",
+      "explanation": "The Cope rearrangement is a concerted [3,3]-sigmatropic shift proceeding preferentially through a chair-like six-membered transition state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    },
+    {
+      "id": "ch16_q050",
+      "chapter": 16,
+      "chapter_title": "Conjugated Pi Systems and Pericyclic Reactions",
+      "boss": "Diels-Alder Overlord",
+      "topic": "Claisen Rearrangement of Allyl Phenyl Ether",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of mechanistic events in the thermal Claisen rearrangement of allyl phenyl ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct electrophilic attack of allyl cation onto the ring."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage to phenoxy radical followed by recombination."
+        },
+        {
+          "label": "C",
+          "text": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol."
+        },
+        {
+          "label": "D",
+          "text": "SN2 displacement of phenoxide by allyl radical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Concerted [3,3]-sigmatropic rearrangement to a cyclohexadienone intermediate, followed by rapid tautomerization (enolization) to restore aromaticity, yielding ortho-allylphenol.",
+      "explanation": "Thermal [3,3]-shift yields an unconjugated cyclohexadienone intermediate whose enolization is driven by the immense stabilization of restoring aromaticity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diels-alder-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Diene Demon",
+    "1,4-Addition Anomaly",
+    "Woodward-Hoffmann Wyrm",
+    "Endo-Exo Executor",
+    "Diels-Alder Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Diene Demon",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "diene-demon.png"
+        ]
+      },
+      {
+        "boss": "1,4-Addition Anomaly",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "14-addition-anomaly.png"
+        ]
+      },
+      {
+        "boss": "Woodward-Hoffmann Wyrm",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "woodward-hoffmann-wyrm.png"
+        ]
+      },
+      {
+        "boss": "Endo-Exo Executor",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "endo-exo-executor.png"
+        ]
+      },
+      {
+        "boss": "Diels-Alder Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "diels-alder-overlord.png"
+        ]
+      }
+    ]
+  }
+}

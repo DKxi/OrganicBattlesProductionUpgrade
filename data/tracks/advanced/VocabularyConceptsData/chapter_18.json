@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 18,
+  "chapter_title": "Aromatic Substitution Reactions",
+  "assigned_boss": "Arenium Archer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch18_q001",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Electrophilic Aromatic Substitution (EAS)",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Electrophilic Aromatic Substitution (EAS)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "B",
+          "text": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "C",
+          "text": "The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "D",
+          "text": "A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.",
+      "explanation": "In David Klein's Organic Chemistry, 'Electrophilic Aromatic Substitution (EAS)' is defined as: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity. The distractors represent definitions of 'Arenium Ion (Sigma Complex)', 'Activating Group', and 'Deactivating Group'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q002",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Arenium Ion (Sigma Complex)",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Activating Group"
+        },
+        {
+          "label": "B",
+          "text": "Ortho/Para-Director"
+        },
+        {
+          "label": "C",
+          "text": "Deactivating Group"
+        },
+        {
+          "label": "D",
+          "text": "Arenium Ion (Sigma Complex)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Arenium Ion (Sigma Complex)",
+      "explanation": "The definition describes 'Arenium Ion (Sigma Complex)'. Specifically: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q003",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Activating Group",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Activating Group'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "B",
+          "text": "A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "C",
+          "text": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.",
+      "explanation": "In David Klein's Organic Chemistry, 'Activating Group' is defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions. The distractors represent definitions of 'Deactivating Group', 'Ortho/Para-Director', and 'Meta-Director'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q004",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Deactivating Group",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ortho/Para-Director"
+        },
+        {
+          "label": "B",
+          "text": "Deactivating Group"
+        },
+        {
+          "label": "C",
+          "text": "Meta-Director"
+        },
+        {
+          "label": "D",
+          "text": "Friedel-Crafts Alkylation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deactivating Group",
+      "explanation": "The definition describes 'Deactivating Group'. Specifically: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q005",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Ortho/Para-Director",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Ortho/Para-Director'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "D",
+          "text": "The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.",
+      "explanation": "In David Klein's Organic Chemistry, 'Ortho/Para-Director' is defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex. The distractors represent definitions of 'Meta-Director', 'Friedel-Crafts Alkylation', and 'Friedel-Crafts Acylation'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q006",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Meta-Director",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Acylation"
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic Aromatic Substitution (SNAr)"
+        },
+        {
+          "label": "C",
+          "text": "Meta-Director"
+        },
+        {
+          "label": "D",
+          "text": "Friedel-Crafts Alkylation"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Meta-Director",
+      "explanation": "The definition describes 'Meta-Director'. Specifically: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q007",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Friedel-Crafts Alkylation",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Friedel-Crafts Alkylation'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Alkylation is defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "B",
+          "text": "Friedel-Crafts Alkylation is characterized by: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts Alkylation is defined as: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "D",
+          "text": "Friedel-Crafts Alkylation is defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Friedel-Crafts Alkylation is characterized by: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.",
+      "explanation": "Accurate concept recognition: Friedel-Crafts Alkylation specifically corresponds to 'The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q008",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Friedel-Crafts Acylation",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Acylation — The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "Activating Group — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "C",
+          "text": "Arenium Ion (Sigma Complex) — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Electrophilic Aromatic Substitution (EAS) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Friedel-Crafts Acylation — The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.",
+      "explanation": "The correctly matched pair is 'Friedel-Crafts Acylation — The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q009",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Nucleophilic Aromatic Substitution (SNAr)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Nucleophilic Aromatic Substitution (SNAr)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is characterized by: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is defined as: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nucleophilic Aromatic Substitution (SNAr) is characterized by: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.",
+      "explanation": "Accurate concept recognition: Nucleophilic Aromatic Substitution (SNAr) specifically corresponds to 'A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q010",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Benzyne Intermediate",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ortho/Para-Director — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "B",
+          "text": "Deactivating Group — A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "C",
+          "text": "Benzyne Intermediate — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "D",
+          "text": "Activating Group — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzyne Intermediate — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.",
+      "explanation": "The correctly matched pair is 'Benzyne Intermediate — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q011",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Activating Group",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Activating Group'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "C",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "D",
+          "text": "A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.",
+      "explanation": "In David Klein's Organic Chemistry, 'Activating Group' is defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions. The distractors represent definitions of 'Ortho/Para-Director', 'Meta-Director', and 'Friedel-Crafts Alkylation'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q012",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Deactivating Group",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Acylation"
+        },
+        {
+          "label": "B",
+          "text": "Meta-Director"
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts Alkylation"
+        },
+        {
+          "label": "D",
+          "text": "Deactivating Group"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Deactivating Group",
+      "explanation": "The definition describes 'Deactivating Group'. Specifically: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q013",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Ortho/Para-Director",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Ortho/Para-Director'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.",
+      "explanation": "In David Klein's Organic Chemistry, 'Ortho/Para-Director' is defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex. The distractors represent definitions of 'Friedel-Crafts Alkylation', 'Friedel-Crafts Acylation', and 'Nucleophilic Aromatic Substitution (SNAr)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q014",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Meta-Director",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meta-Director"
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic Aromatic Substitution (SNAr)"
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts Acylation"
+        },
+        {
+          "label": "D",
+          "text": "Benzyne Intermediate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Meta-Director",
+      "explanation": "The definition describes 'Meta-Director'. Specifically: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q015",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Friedel-Crafts Alkylation",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Friedel-Crafts Alkylation'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "B",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.",
+      "explanation": "In David Klein's Organic Chemistry, 'Friedel-Crafts Alkylation' is defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation. The distractors represent definitions of 'Electrophilic Aromatic Substitution (EAS)', 'Arenium Ion (Sigma Complex)', and 'Activating Group'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q016",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Friedel-Crafts Acylation",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Friedel-Crafts Acylation'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Acylation is defined as: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "B",
+          "text": "Friedel-Crafts Acylation is characterized by: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts Acylation is defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Friedel-Crafts Acylation is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Friedel-Crafts Acylation is characterized by: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.",
+      "explanation": "Accurate concept recognition: Friedel-Crafts Acylation specifically corresponds to 'The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q017",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Nucleophilic Aromatic Substitution (SNAr)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) — A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "B",
+          "text": "Ortho/Para-Director — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "C",
+          "text": "Deactivating Group — A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "D",
+          "text": "Activating Group — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic Aromatic Substitution (SNAr) — A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.",
+      "explanation": "The correctly matched pair is 'Nucleophilic Aromatic Substitution (SNAr) — A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q018",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Benzyne Intermediate",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Benzyne Intermediate'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyne Intermediate is defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "Benzyne Intermediate is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "C",
+          "text": "Benzyne Intermediate is defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "D",
+          "text": "Benzyne Intermediate is characterized by: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Benzyne Intermediate is characterized by: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.",
+      "explanation": "Accurate concept recognition: Benzyne Intermediate specifically corresponds to 'A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q019",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Electrophilic Aromatic Substitution (EAS)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electrophilic Aromatic Substitution (EAS) — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "B",
+          "text": "Friedel-Crafts Acylation — A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts Alkylation — The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Meta-Director — The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.",
+      "explanation": "The correctly matched pair is 'Electrophilic Aromatic Substitution (EAS) — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q020",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Arenium Ion (Sigma Complex)",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Arenium Ion (Sigma Complex)' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Arenium Ion (Sigma Complex) is properly defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Arenium Ion (Sigma Complex) is properly defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Arenium Ion (Sigma Complex) is properly defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Arenium Ion (Sigma Complex) specifically denotes: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Arenium Ion (Sigma Complex) specifically denotes: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.",
+      "explanation": "Concept discrimination: Arenium Ion (Sigma Complex) is uniquely defined by: 'The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.'. The alternative statements erroneously attribute principles of 'Friedel-Crafts Alkylation', 'Friedel-Crafts Acylation', or 'Nucleophilic Aromatic Substitution (SNAr)' to 'Arenium Ion (Sigma Complex)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q021",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Ortho/Para-Director",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Ortho/Para-Director'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "B",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "C",
+          "text": "A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "D",
+          "text": "The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.",
+      "explanation": "In David Klein's Organic Chemistry, 'Ortho/Para-Director' is defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex. The distractors represent definitions of 'Friedel-Crafts Acylation', 'Nucleophilic Aromatic Substitution (SNAr)', and 'Benzyne Intermediate'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q022",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Meta-Director",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arenium Ion (Sigma Complex)"
+        },
+        {
+          "label": "B",
+          "text": "Meta-Director"
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS)"
+        },
+        {
+          "label": "D",
+          "text": "Activating Group"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Meta-Director",
+      "explanation": "The definition describes 'Meta-Director'. Specifically: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q023",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Friedel-Crafts Alkylation",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Friedel-Crafts Alkylation'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "B",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.",
+      "explanation": "In David Klein's Organic Chemistry, 'Friedel-Crafts Alkylation' is defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation. The distractors represent definitions of 'Arenium Ion (Sigma Complex)', 'Activating Group', and 'Deactivating Group'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q024",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Friedel-Crafts Acylation",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Acylation"
+        },
+        {
+          "label": "B",
+          "text": "Deactivating Group"
+        },
+        {
+          "label": "C",
+          "text": "Ortho/Para-Director"
+        },
+        {
+          "label": "D",
+          "text": "Activating Group"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Friedel-Crafts Acylation",
+      "explanation": "The definition describes 'Friedel-Crafts Acylation'. Specifically: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q025",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Nucleophilic Aromatic Substitution (SNAr)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Nucleophilic Aromatic Substitution (SNAr)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) is characterized by: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic Aromatic Substitution (SNAr) is characterized by: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.",
+      "explanation": "Accurate concept recognition: Nucleophilic Aromatic Substitution (SNAr) specifically corresponds to 'A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q026",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Benzyne Intermediate",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Alkylation — A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "Benzyne Intermediate — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "C",
+          "text": "Meta-Director — The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Ortho/Para-Director — A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Benzyne Intermediate — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.",
+      "explanation": "The correctly matched pair is 'Benzyne Intermediate — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q027",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Electrophilic Aromatic Substitution (EAS)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Electrophilic Aromatic Substitution (EAS)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electrophilic Aromatic Substitution (EAS) is defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "B",
+          "text": "Electrophilic Aromatic Substitution (EAS) is defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS) is characterized by: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "D",
+          "text": "Electrophilic Aromatic Substitution (EAS) is defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) is characterized by: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.",
+      "explanation": "Accurate concept recognition: Electrophilic Aromatic Substitution (EAS) specifically corresponds to 'A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q028",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Arenium Ion (Sigma Complex)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Acylation — A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "C",
+          "text": "Benzyne Intermediate — The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Arenium Ion (Sigma Complex) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Arenium Ion (Sigma Complex) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.",
+      "explanation": "The correctly matched pair is 'Arenium Ion (Sigma Complex) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q029",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Activating Group",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Activating Group' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Activating Group is properly defined as: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Activating Group is properly defined as: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Activating Group specifically denotes: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Activating Group is properly defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Unlike related phenomena, Activating Group specifically denotes: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.",
+      "explanation": "Concept discrimination: Activating Group is uniquely defined by: 'A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.'. The alternative statements erroneously attribute principles of 'Electrophilic Aromatic Substitution (EAS)', 'Arenium Ion (Sigma Complex)', or 'Deactivating Group' to 'Activating Group'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q030",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Deactivating Group",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Deactivating Group' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Deactivating Group is properly defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Deactivating Group specifically denotes: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Deactivating Group is properly defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Deactivating Group is properly defined as: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Unlike related phenomena, Deactivating Group specifically denotes: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.",
+      "explanation": "Concept discrimination: Deactivating Group is uniquely defined by: 'A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.'. The alternative statements erroneously attribute principles of 'Arenium Ion (Sigma Complex)', 'Activating Group', or 'Ortho/Para-Director' to 'Deactivating Group'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q031",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Friedel-Crafts Alkylation",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Friedel-Crafts Alkylation'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "B",
+          "text": "A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "C",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.",
+      "explanation": "In David Klein's Organic Chemistry, 'Friedel-Crafts Alkylation' is defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation. The distractors represent definitions of 'Activating Group', 'Deactivating Group', and 'Ortho/Para-Director'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q032",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Friedel-Crafts Acylation",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meta-Director"
+        },
+        {
+          "label": "B",
+          "text": "Deactivating Group"
+        },
+        {
+          "label": "C",
+          "text": "Ortho/Para-Director"
+        },
+        {
+          "label": "D",
+          "text": "Friedel-Crafts Acylation"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Friedel-Crafts Acylation",
+      "explanation": "The definition describes 'Friedel-Crafts Acylation'. Specifically: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q033",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Nucleophilic Aromatic Substitution (SNAr)",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Nucleophilic Aromatic Substitution (SNAr)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "B",
+          "text": "A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "C",
+          "text": "A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "D",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.",
+      "explanation": "In David Klein's Organic Chemistry, 'Nucleophilic Aromatic Substitution (SNAr)' is defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex. The distractors represent definitions of 'Ortho/Para-Director', 'Meta-Director', and 'Friedel-Crafts Alkylation'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q034",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Benzyne Intermediate",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Benzyne Intermediate'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyne Intermediate is characterized by: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "B",
+          "text": "Benzyne Intermediate is defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "C",
+          "text": "Benzyne Intermediate is defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Benzyne Intermediate is defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzyne Intermediate is characterized by: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.",
+      "explanation": "Accurate concept recognition: Benzyne Intermediate specifically corresponds to 'A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q035",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Electrophilic Aromatic Substitution (EAS)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyne Intermediate — The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic Aromatic Substitution (SNAr) — A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS) — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "D",
+          "text": "Friedel-Crafts Acylation — A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.",
+      "explanation": "The correctly matched pair is 'Electrophilic Aromatic Substitution (EAS) — A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q036",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Arenium Ion (Sigma Complex)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Arenium Ion (Sigma Complex)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arenium Ion (Sigma Complex) is defined as: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "B",
+          "text": "Arenium Ion (Sigma Complex) is characterized by: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "C",
+          "text": "Arenium Ion (Sigma Complex) is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "D",
+          "text": "Arenium Ion (Sigma Complex) is defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Arenium Ion (Sigma Complex) is characterized by: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.",
+      "explanation": "Accurate concept recognition: Arenium Ion (Sigma Complex) specifically corresponds to 'The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q037",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Activating Group",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deactivating Group — A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "Ortho/Para-Director — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "C",
+          "text": "Activating Group — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Arenium Ion (Sigma Complex) — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Activating Group — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.",
+      "explanation": "The correctly matched pair is 'Activating Group — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q038",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Deactivating Group",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Deactivating Group' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Deactivating Group is properly defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Deactivating Group is properly defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Deactivating Group specifically denotes: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Deactivating Group is properly defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Unlike related phenomena, Deactivating Group specifically denotes: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.",
+      "explanation": "Concept discrimination: Deactivating Group is uniquely defined by: 'A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.'. The alternative statements erroneously attribute principles of 'Activating Group', 'Ortho/Para-Director', or 'Meta-Director' to 'Deactivating Group'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q039",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Ortho/Para-Director",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Ortho/Para-Director' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Ortho/Para-Director specifically denotes: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Ortho/Para-Director is properly defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Ortho/Para-Director is properly defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Ortho/Para-Director is properly defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, Ortho/Para-Director specifically denotes: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.",
+      "explanation": "Concept discrimination: Ortho/Para-Director is uniquely defined by: 'A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.'. The alternative statements erroneously attribute principles of 'Deactivating Group', 'Meta-Director', or 'Friedel-Crafts Alkylation' to 'Ortho/Para-Director'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q040",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Meta-Director",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Meta-Director' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Meta-Director specifically denotes: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Meta-Director is properly defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Meta-Director is properly defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Meta-Director is properly defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, Meta-Director specifically denotes: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.",
+      "explanation": "Concept discrimination: Meta-Director is uniquely defined by: 'A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.'. The alternative statements erroneously attribute principles of 'Ortho/Para-Director', 'Friedel-Crafts Alkylation', or 'Friedel-Crafts Acylation' to 'Meta-Director'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q041",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Nucleophilic Aromatic Substitution (SNAr)",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "In the study of Aromatic Substitution Reactions, what is the authoritative chemical definition of 'Nucleophilic Aromatic Substitution (SNAr)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "C",
+          "text": "A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "D",
+          "text": "The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex.",
+      "explanation": "In David Klein's Organic Chemistry, 'Nucleophilic Aromatic Substitution (SNAr)' is defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex. The distractors represent definitions of 'Meta-Director', 'Friedel-Crafts Alkylation', and 'Friedel-Crafts Acylation'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q042",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Benzyne Intermediate",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which chemical term in Aromatic Substitution Reactions is defined as: \"A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts Alkylation"
+        },
+        {
+          "label": "B",
+          "text": "Friedel-Crafts Acylation"
+        },
+        {
+          "label": "C",
+          "text": "Benzyne Intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic Aromatic Substitution (SNAr)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzyne Intermediate",
+      "explanation": "The definition describes 'Benzyne Intermediate'. Specifically: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q043",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Electrophilic Aromatic Substitution (EAS)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Electrophilic Aromatic Substitution (EAS)'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Electrophilic Aromatic Substitution (EAS) is defined as: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "B",
+          "text": "Electrophilic Aromatic Substitution (EAS) is characterized by: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic Aromatic Substitution (EAS) is defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Electrophilic Aromatic Substitution (EAS) is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Electrophilic Aromatic Substitution (EAS) is characterized by: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.",
+      "explanation": "Accurate concept recognition: Electrophilic Aromatic Substitution (EAS) specifically corresponds to 'A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q044",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Arenium Ion (Sigma Complex)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arenium Ion (Sigma Complex) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "B",
+          "text": "Deactivating Group — A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "C",
+          "text": "Ortho/Para-Director — A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Activating Group — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Arenium Ion (Sigma Complex) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.",
+      "explanation": "The correctly matched pair is 'Arenium Ion (Sigma Complex) — The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q045",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Activating Group",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "Regarding Aromatic Substitution Reactions, which of the following statements accurately characterizes the concept of 'Activating Group'?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Activating Group is defined as: A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "B",
+          "text": "Activating Group is defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "C",
+          "text": "Activating Group is defined as: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "D",
+          "text": "Activating Group is characterized by: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Activating Group is characterized by: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.",
+      "explanation": "Accurate concept recognition: Activating Group specifically corresponds to 'A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions.'. The other options misassign definitions from other concepts.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q046",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Deactivating Group",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which of the following represents the correct term-to-definition pairing for Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deactivating Group — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene."
+        },
+        {
+          "label": "B",
+          "text": "Meta-Director — The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts Alkylation — A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        },
+        {
+          "label": "D",
+          "text": "Ortho/Para-Director — A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Deactivating Group — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.",
+      "explanation": "The correctly matched pair is 'Deactivating Group — A benzene substituent that withdraws electron density from the aromatic ring, retarding the rate of subsequent EAS reactions relative to benzene.'. The incorrect pairs mismatch terms with unrelated definitions from the chapter.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q047",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Ortho/Para-Director",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Ortho/Para-Director' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Ortho/Para-Director is properly defined as: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Ortho/Para-Director is properly defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Ortho/Para-Director is properly defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Ortho/Para-Director specifically denotes: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Ortho/Para-Director specifically denotes: A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.",
+      "explanation": "Concept discrimination: Ortho/Para-Director is uniquely defined by: 'A substituent that directs incoming electrophiles preferentially to the ortho and para positions by stabilizing the resulting sigma complex.'. The alternative statements erroneously attribute principles of 'Meta-Director', 'Friedel-Crafts Alkylation', or 'Friedel-Crafts Acylation' to 'Ortho/Para-Director'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q048",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Meta-Director",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Meta-Director' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Meta-Director is properly defined as: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Meta-Director is properly defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Meta-Director is properly defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Meta-Director specifically denotes: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Unlike related phenomena, Meta-Director specifically denotes: A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.",
+      "explanation": "Concept discrimination: Meta-Director is uniquely defined by: 'A substituent (typically electron-withdrawing) that directs incoming electrophiles to the meta position where positive charge overlap in the arenium ion is minimized.'. The alternative statements erroneously attribute principles of 'Friedel-Crafts Alkylation', 'Friedel-Crafts Acylation', or 'Nucleophilic Aromatic Substitution (SNAr)' to 'Meta-Director'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q049",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Friedel-Crafts Alkylation",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Friedel-Crafts Alkylation' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Friedel-Crafts Alkylation specifically denotes: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Friedel-Crafts Alkylation is properly defined as: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Friedel-Crafts Alkylation is properly defined as: A highly strained, reactive neutral aromatic intermediate possessing a formal triple bond in a six-membered ring, formed during elimination-addition reactions."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Friedel-Crafts Alkylation is properly defined as: A substitution mechanism on aryl halides bearing strong ortho/para electron-withdrawing groups proceeding through an anionic Meisenheimer complex."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, Friedel-Crafts Alkylation specifically denotes: The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.",
+      "explanation": "Concept discrimination: Friedel-Crafts Alkylation is uniquely defined by: 'The Lewis acid-catalyzed (AlCl₃) alkylation of an aromatic ring using an alkyl halide, prone to carbocation rearrangements and polyalkylation.'. The alternative statements erroneously attribute principles of 'Friedel-Crafts Acylation', 'Nucleophilic Aromatic Substitution (SNAr)', or 'Benzyne Intermediate' to 'Friedel-Crafts Alkylation'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q050",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Friedel-Crafts Acylation",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "Which statement best discriminates 'Friedel-Crafts Acylation' from other related principles in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlike related phenomena, Friedel-Crafts Acylation specifically denotes: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation."
+        },
+        {
+          "label": "B",
+          "text": "Unlike related phenomena, Friedel-Crafts Acylation is properly defined as: The resonance-stabilized, non-aromatic carbocation intermediate formed when an electrophile attacks an aromatic ring during an EAS reaction."
+        },
+        {
+          "label": "C",
+          "text": "Unlike related phenomena, Friedel-Crafts Acylation is properly defined as: A benzene substituent that donates electron density to the aromatic ring by resonance or induction, accelerating the rate of subsequent EAS reactions."
+        },
+        {
+          "label": "D",
+          "text": "Unlike related phenomena, Friedel-Crafts Acylation is properly defined as: A characteristic reaction of aromatic rings where an attacking electrophile (E⁺) replaces a ring hydrogen atom while regenerating aromaticity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Unlike related phenomena, Friedel-Crafts Acylation specifically denotes: The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.",
+      "explanation": "Concept discrimination: Friedel-Crafts Acylation is uniquely defined by: 'The Lewis acid-catalyzed reaction of an aromatic ring with an acyl halide to produce an aryl ketone without carbocation rearrangements or polyalkylation.'. The alternative statements erroneously attribute principles of 'Electrophilic Aromatic Substitution (EAS)', 'Arenium Ion (Sigma Complex)', or 'Activating Group' to 'Friedel-Crafts Acylation'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Arenium Archer",
+    "Friedel-Crafts Fiend",
+    "Ortho-Para Oracle",
+    "Meisenheimer Marauder",
+    "Benzyne Behemoth"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Arenium Archer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "arenium-archer.png"
+        ]
+      },
+      {
+        "boss": "Friedel-Crafts Fiend",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "friedel-crafts-fiend.png"
+        ]
+      },
+      {
+        "boss": "Ortho-Para Oracle",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "ortho-para-oracle.png"
+        ]
+      },
+      {
+        "boss": "Meisenheimer Marauder",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "meisenheimer-marauder.png"
+        ]
+      },
+      {
+        "boss": "Benzyne Behemoth",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "benzyne-behemoth.png"
+        ]
+      }
+    ]
+  }
+}

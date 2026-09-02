@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 21,
+  "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+  "assigned_boss": "Tautomer Troll",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch21_q001",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Keto-Enol Tautomerism Acid vs Base Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the difference in intermediate charge state between acid-catalyzed and base-catalyzed keto-enol tautomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base catalysis proceeds with retention; acid catalysis with inversion."
+        },
+        {
+          "label": "B",
+          "text": "There is no intermediate in either pathway."
+        },
+        {
+          "label": "C",
+          "text": "Acid catalysis forms a radical; base catalysis forms an anion."
+        },
+        {
+          "label": "D",
+          "text": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate.",
+      "explanation": "Acid mechanisms feature protonation first (cationic intermediates); base mechanisms feature deprotonation first (anionic enolate intermediates).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q002",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "LDA Kinetic Enolate Deprotonation Basis",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does lithium diisopropylamide (LDA) at -78°C selectively abstract the less hindered α-proton of 2-methylcyclohexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The less substituted enolate is thermodynamically more stable."
+        },
+        {
+          "label": "B",
+          "text": "LDA is a weak base that equilibrates to the thermodynamic product."
+        },
+        {
+          "label": "C",
+          "text": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate."
+        },
+        {
+          "label": "D",
+          "text": "LDA coordinates exclusively with the oxygen atom."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate.",
+      "explanation": "Steric hindrance and low temperature prevent equilibration, trapping the kinetically formed less substituted enolate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q003",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Thermodynamic Enolate Equilibration Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Under what conditions does 2-methylcyclohexanone convert selectively to the more substituted (thermodynamic) enolate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using LDA at -78°C in anhydrous THF."
+        },
+        {
+          "label": "B",
+          "text": "Using zinc metal in hydrochloric acid."
+        },
+        {
+          "label": "C",
+          "text": "Using elemental sodium in liquid ammonia."
+        },
+        {
+          "label": "D",
+          "text": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium.",
+      "explanation": "Reversible deprotonation at ambient temperatures allows the system to equilibrate to the more substituted, more stable tetrasubstituted enolate double bond.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q004",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Aldol Addition Tetrahedral Alkoxide Intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the key bond-forming step in the base-catalyzed self-aldol addition of acetaldehyde?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic coupling of two formyl radicals."
+        },
+        {
+          "label": "C",
+          "text": "Proton transfer from methyl to methyl."
+        },
+        {
+          "label": "D",
+          "text": "Attack of the enolate oxygen on the carbonyl carbon."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond.",
+      "explanation": "Enolates react as carbon nucleophiles (soft center) attacking the electrophilic carbonyl carbon of an aldehyde to create the β-hydroxy aldehyde.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q005",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Aldol Condensation E1cB Dehydration Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does dehydration of an aldol addition product proceed via an E1cB mechanism rather than E2 or E1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a tertiary carbocation."
+        },
+        {
+          "label": "B",
+          "text": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide is an excellent leaving group that falls off spontaneously."
+        },
+        {
+          "label": "D",
+          "text": "The reaction requires high-energy UV light."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone.",
+      "explanation": "Acidic α-protons allow formation of a carbanion/enolate intermediate (E1cB) that expels hydroxide driven by extended conjugation in the α,β-unsaturated enone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q006",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Claisen Condensation Driving Force",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What irreversible elementary step drives the Claisen condensation of ethyl acetate to completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Precipitation of sodium metal."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous loss of carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Evaporation of ethanol from the flask."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product.",
+      "explanation": "The β-keto ester is ~5 pKa units more acidic than ethanol; its quantitative deprotonation pulls the unfavorable equilibrium forward irreversibly.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q007",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Dieckmann Intramolecular Claisen Ring Size",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does diethyl heptanedioate (diethyl pimelate) undergo Dieckmann cyclization to form a 6-membered ring rather than an 8-membered ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The seven-carbon chain cannot form enolates."
+        },
+        {
+          "label": "B",
+          "text": "Eight-membered rings are aromatic."
+        },
+        {
+          "label": "C",
+          "text": "Six-membered rings have zero entropy."
+        },
+        {
+          "label": "D",
+          "text": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored.",
+      "explanation": "5- and 6-membered ring formations have low activation barriers and minimal ring strain compared to medium rings (7–9 membered).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q008",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Michael 1,4-Conjugate Addition Soft Nucleophile",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do enolates of β-dicarbonyl compounds (e.g., diethyl malonate) add to the β-carbon of α,β-unsaturated ketones (1,4-addition) rather than the carbonyl carbon (1,2-addition)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control)."
+        },
+        {
+          "label": "B",
+          "text": "1,2-Addition produces an antiaromatic product."
+        },
+        {
+          "label": "C",
+          "text": "The carbonyl carbon is sterically completely blocked."
+        },
+        {
+          "label": "D",
+          "text": "The β-carbon bears a formal full positive charge."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control).",
+      "explanation": "Soft, delocalized nucleophiles react under orbital control at the softer β-carbon of conjugated systems (1,4-conjugate addition).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q009",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Robinson Annulation Tandem Mechanism Sequence",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What two fundamental named reactions occur sequentially in a Robinson annulation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Wittig reaction followed by a Wolff-Kishner reduction."
+        },
+        {
+          "label": "B",
+          "text": "A Friedel-Crafts acylation followed by Clemmensen reduction."
+        },
+        {
+          "label": "C",
+          "text": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring."
+        },
+        {
+          "label": "D",
+          "text": "A Diels-Alder reaction followed by a Claisen rearrangement."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring.",
+      "explanation": "Robinson annulation combines a Michael conjugate addition with an intramolecular aldol condensation to forge a new cyclohexenone ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q010",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Tautomer Troll",
+      "topic": "Malonic Ester Decarboxylation Cyclic Transition State",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanism of thermal decarboxylation of a β-dicarboxylic acid in the malonic ester synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct SN2 displacement of carboxylate by water."
+        },
+        {
+          "label": "B",
+          "text": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "Unimolecular loss of CO gas followed by oxidation."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-C bond to form CO₂ radical."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid.",
+      "explanation": "Thermal decarboxylation of β-keto acids and β-diacids proceeds through a 6-membered cyclic transition state yielding an enol and carbon dioxide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "tautomer-troll.png"
+      ]
+    },
+    {
+      "id": "ch21_q011",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Thermodynamic Enolate Equilibration Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Under what conditions does 2-methylcyclohexanone convert selectively to the more substituted (thermodynamic) enolate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using zinc metal in hydrochloric acid."
+        },
+        {
+          "label": "B",
+          "text": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium."
+        },
+        {
+          "label": "C",
+          "text": "Using elemental sodium in liquid ammonia."
+        },
+        {
+          "label": "D",
+          "text": "Using LDA at -78°C in anhydrous THF."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium.",
+      "explanation": "Reversible deprotonation at ambient temperatures allows the system to equilibrate to the more substituted, more stable tetrasubstituted enolate double bond.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q012",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Aldol Addition Tetrahedral Alkoxide Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the key bond-forming step in the base-catalyzed self-aldol addition of acetaldehyde?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Proton transfer from methyl to methyl."
+        },
+        {
+          "label": "B",
+          "text": "Attack of the enolate oxygen on the carbonyl carbon."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic coupling of two formyl radicals."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond.",
+      "explanation": "Enolates react as carbon nucleophiles (soft center) attacking the electrophilic carbonyl carbon of an aldehyde to create the β-hydroxy aldehyde.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q013",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Aldol Condensation E1cB Dehydration Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does dehydration of an aldol addition product proceed via an E1cB mechanism rather than E2 or E1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a tertiary carbocation."
+        },
+        {
+          "label": "B",
+          "text": "The reaction requires high-energy UV light."
+        },
+        {
+          "label": "C",
+          "text": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone."
+        },
+        {
+          "label": "D",
+          "text": "Hydroxide is an excellent leaving group that falls off spontaneously."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone.",
+      "explanation": "Acidic α-protons allow formation of a carbanion/enolate intermediate (E1cB) that expels hydroxide driven by extended conjugation in the α,β-unsaturated enone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q014",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Claisen Condensation Driving Force",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What irreversible elementary step drives the Claisen condensation of ethyl acetate to completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous loss of carbon dioxide."
+        },
+        {
+          "label": "B",
+          "text": "Precipitation of sodium metal."
+        },
+        {
+          "label": "C",
+          "text": "Evaporation of ethanol from the flask."
+        },
+        {
+          "label": "D",
+          "text": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product.",
+      "explanation": "The β-keto ester is ~5 pKa units more acidic than ethanol; its quantitative deprotonation pulls the unfavorable equilibrium forward irreversibly.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q015",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Dieckmann Intramolecular Claisen Ring Size",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does diethyl heptanedioate (diethyl pimelate) undergo Dieckmann cyclization to form a 6-membered ring rather than an 8-membered ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored."
+        },
+        {
+          "label": "B",
+          "text": "Eight-membered rings are aromatic."
+        },
+        {
+          "label": "C",
+          "text": "The seven-carbon chain cannot form enolates."
+        },
+        {
+          "label": "D",
+          "text": "Six-membered rings have zero entropy."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored.",
+      "explanation": "5- and 6-membered ring formations have low activation barriers and minimal ring strain compared to medium rings (7–9 membered).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q016",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Michael 1,4-Conjugate Addition Soft Nucleophile",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why do enolates of β-dicarbonyl compounds (e.g., diethyl malonate) add to the β-carbon of α,β-unsaturated ketones (1,4-addition) rather than the carbonyl carbon (1,2-addition)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control)."
+        },
+        {
+          "label": "B",
+          "text": "The β-carbon bears a formal full positive charge."
+        },
+        {
+          "label": "C",
+          "text": "1,2-Addition produces an antiaromatic product."
+        },
+        {
+          "label": "D",
+          "text": "The carbonyl carbon is sterically completely blocked."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control).",
+      "explanation": "Soft, delocalized nucleophiles react under orbital control at the softer β-carbon of conjugated systems (1,4-conjugate addition).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q017",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Robinson Annulation Tandem Mechanism Sequence",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What two fundamental named reactions occur sequentially in a Robinson annulation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Friedel-Crafts acylation followed by Clemmensen reduction."
+        },
+        {
+          "label": "B",
+          "text": "A Diels-Alder reaction followed by a Claisen rearrangement."
+        },
+        {
+          "label": "C",
+          "text": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring."
+        },
+        {
+          "label": "D",
+          "text": "A Wittig reaction followed by a Wolff-Kishner reduction."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring.",
+      "explanation": "Robinson annulation combines a Michael conjugate addition with an intramolecular aldol condensation to forge a new cyclohexenone ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q018",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Malonic Ester Decarboxylation Cyclic Transition State",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanism of thermal decarboxylation of a β-dicarboxylic acid in the malonic ester synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-C bond to form CO₂ radical."
+        },
+        {
+          "label": "B",
+          "text": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "Unimolecular loss of CO gas followed by oxidation."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement of carboxylate by water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid.",
+      "explanation": "Thermal decarboxylation of β-keto acids and β-diacids proceeds through a 6-membered cyclic transition state yielding an enol and carbon dioxide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q019",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "Keto-Enol Tautomerism Acid vs Base Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the difference in intermediate charge state between acid-catalyzed and base-catalyzed keto-enol tautomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid catalysis forms a radical; base catalysis forms an anion."
+        },
+        {
+          "label": "B",
+          "text": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate."
+        },
+        {
+          "label": "C",
+          "text": "There is no intermediate in either pathway."
+        },
+        {
+          "label": "D",
+          "text": "Base catalysis proceeds with retention; acid catalysis with inversion."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate.",
+      "explanation": "Acid mechanisms feature protonation first (cationic intermediates); base mechanisms feature deprotonation first (anionic enolate intermediates).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q020",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "LDA Lancer",
+      "topic": "LDA Kinetic Enolate Deprotonation Basis",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does lithium diisopropylamide (LDA) at -78°C selectively abstract the less hindered α-proton of 2-methylcyclohexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The less substituted enolate is thermodynamically more stable."
+        },
+        {
+          "label": "B",
+          "text": "LDA coordinates exclusively with the oxygen atom."
+        },
+        {
+          "label": "C",
+          "text": "LDA is a weak base that equilibrates to the thermodynamic product."
+        },
+        {
+          "label": "D",
+          "text": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate.",
+      "explanation": "Steric hindrance and low temperature prevent equilibration, trapping the kinetically formed less substituted enolate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lda-lancer.png"
+      ]
+    },
+    {
+      "id": "ch21_q021",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Aldol Condensation E1cB Dehydration Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does dehydration of an aldol addition product proceed via an E1cB mechanism rather than E2 or E1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction requires high-energy UV light."
+        },
+        {
+          "label": "B",
+          "text": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via a tertiary carbocation."
+        },
+        {
+          "label": "D",
+          "text": "Hydroxide is an excellent leaving group that falls off spontaneously."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone.",
+      "explanation": "Acidic α-protons allow formation of a carbanion/enolate intermediate (E1cB) that expels hydroxide driven by extended conjugation in the α,β-unsaturated enone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q022",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Claisen Condensation Driving Force",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What irreversible elementary step drives the Claisen condensation of ethyl acetate to completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous loss of carbon dioxide."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product."
+        },
+        {
+          "label": "C",
+          "text": "Evaporation of ethanol from the flask."
+        },
+        {
+          "label": "D",
+          "text": "Precipitation of sodium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product.",
+      "explanation": "The β-keto ester is ~5 pKa units more acidic than ethanol; its quantitative deprotonation pulls the unfavorable equilibrium forward irreversibly.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q023",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Dieckmann Intramolecular Claisen Ring Size",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does diethyl heptanedioate (diethyl pimelate) undergo Dieckmann cyclization to form a 6-membered ring rather than an 8-membered ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored."
+        },
+        {
+          "label": "B",
+          "text": "Six-membered rings have zero entropy."
+        },
+        {
+          "label": "C",
+          "text": "The seven-carbon chain cannot form enolates."
+        },
+        {
+          "label": "D",
+          "text": "Eight-membered rings are aromatic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored.",
+      "explanation": "5- and 6-membered ring formations have low activation barriers and minimal ring strain compared to medium rings (7–9 membered).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q024",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Michael 1,4-Conjugate Addition Soft Nucleophile",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do enolates of β-dicarbonyl compounds (e.g., diethyl malonate) add to the β-carbon of α,β-unsaturated ketones (1,4-addition) rather than the carbonyl carbon (1,2-addition)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbonyl carbon is sterically completely blocked."
+        },
+        {
+          "label": "B",
+          "text": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control)."
+        },
+        {
+          "label": "C",
+          "text": "1,2-Addition produces an antiaromatic product."
+        },
+        {
+          "label": "D",
+          "text": "The β-carbon bears a formal full positive charge."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control).",
+      "explanation": "Soft, delocalized nucleophiles react under orbital control at the softer β-carbon of conjugated systems (1,4-conjugate addition).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q025",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Robinson Annulation Tandem Mechanism Sequence",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What two fundamental named reactions occur sequentially in a Robinson annulation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Wittig reaction followed by a Wolff-Kishner reduction."
+        },
+        {
+          "label": "B",
+          "text": "A Friedel-Crafts acylation followed by Clemmensen reduction."
+        },
+        {
+          "label": "C",
+          "text": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring."
+        },
+        {
+          "label": "D",
+          "text": "A Diels-Alder reaction followed by a Claisen rearrangement."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring.",
+      "explanation": "Robinson annulation combines a Michael conjugate addition with an intramolecular aldol condensation to forge a new cyclohexenone ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q026",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Malonic Ester Decarboxylation Cyclic Transition State",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanism of thermal decarboxylation of a β-dicarboxylic acid in the malonic ester synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-C bond to form CO₂ radical."
+        },
+        {
+          "label": "B",
+          "text": "Unimolecular loss of CO gas followed by oxidation."
+        },
+        {
+          "label": "C",
+          "text": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement of carboxylate by water."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid.",
+      "explanation": "Thermal decarboxylation of β-keto acids and β-diacids proceeds through a 6-membered cyclic transition state yielding an enol and carbon dioxide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q027",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Keto-Enol Tautomerism Acid vs Base Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the difference in intermediate charge state between acid-catalyzed and base-catalyzed keto-enol tautomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Acid catalysis forms a radical; base catalysis forms an anion."
+        },
+        {
+          "label": "C",
+          "text": "There is no intermediate in either pathway."
+        },
+        {
+          "label": "D",
+          "text": "Base catalysis proceeds with retention; acid catalysis with inversion."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate.",
+      "explanation": "Acid mechanisms feature protonation first (cationic intermediates); base mechanisms feature deprotonation first (anionic enolate intermediates).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q028",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "LDA Kinetic Enolate Deprotonation Basis",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does lithium diisopropylamide (LDA) at -78°C selectively abstract the less hindered α-proton of 2-methylcyclohexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The less substituted enolate is thermodynamically more stable."
+        },
+        {
+          "label": "B",
+          "text": "LDA is a weak base that equilibrates to the thermodynamic product."
+        },
+        {
+          "label": "C",
+          "text": "LDA coordinates exclusively with the oxygen atom."
+        },
+        {
+          "label": "D",
+          "text": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate.",
+      "explanation": "Steric hindrance and low temperature prevent equilibration, trapping the kinetically formed less substituted enolate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q029",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Thermodynamic Enolate Equilibration Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Under what conditions does 2-methylcyclohexanone convert selectively to the more substituted (thermodynamic) enolate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using elemental sodium in liquid ammonia."
+        },
+        {
+          "label": "B",
+          "text": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium."
+        },
+        {
+          "label": "C",
+          "text": "Using zinc metal in hydrochloric acid."
+        },
+        {
+          "label": "D",
+          "text": "Using LDA at -78°C in anhydrous THF."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium.",
+      "explanation": "Reversible deprotonation at ambient temperatures allows the system to equilibrate to the more substituted, more stable tetrasubstituted enolate double bond.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q030",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Aldol Alchemist",
+      "topic": "Aldol Addition Tetrahedral Alkoxide Intermediate",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the key bond-forming step in the base-catalyzed self-aldol addition of acetaldehyde?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Proton transfer from methyl to methyl."
+        },
+        {
+          "label": "B",
+          "text": "Attack of the enolate oxygen on the carbonyl carbon."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic coupling of two formyl radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond.",
+      "explanation": "Enolates react as carbon nucleophiles (soft center) attacking the electrophilic carbonyl carbon of an aldehyde to create the β-hydroxy aldehyde.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "aldol-alchemist.png"
+      ]
+    },
+    {
+      "id": "ch21_q031",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Dieckmann Intramolecular Claisen Ring Size",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does diethyl heptanedioate (diethyl pimelate) undergo Dieckmann cyclization to form a 6-membered ring rather than an 8-membered ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eight-membered rings are aromatic."
+        },
+        {
+          "label": "B",
+          "text": "Six-membered rings have zero entropy."
+        },
+        {
+          "label": "C",
+          "text": "The seven-carbon chain cannot form enolates."
+        },
+        {
+          "label": "D",
+          "text": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored.",
+      "explanation": "5- and 6-membered ring formations have low activation barriers and minimal ring strain compared to medium rings (7–9 membered).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q032",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Michael 1,4-Conjugate Addition Soft Nucleophile",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do enolates of β-dicarbonyl compounds (e.g., diethyl malonate) add to the β-carbon of α,β-unsaturated ketones (1,4-addition) rather than the carbonyl carbon (1,2-addition)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The β-carbon bears a formal full positive charge."
+        },
+        {
+          "label": "B",
+          "text": "The carbonyl carbon is sterically completely blocked."
+        },
+        {
+          "label": "C",
+          "text": "1,2-Addition produces an antiaromatic product."
+        },
+        {
+          "label": "D",
+          "text": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control).",
+      "explanation": "Soft, delocalized nucleophiles react under orbital control at the softer β-carbon of conjugated systems (1,4-conjugate addition).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q033",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Robinson Annulation Tandem Mechanism Sequence",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What two fundamental named reactions occur sequentially in a Robinson annulation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring."
+        },
+        {
+          "label": "B",
+          "text": "A Diels-Alder reaction followed by a Claisen rearrangement."
+        },
+        {
+          "label": "C",
+          "text": "A Friedel-Crafts acylation followed by Clemmensen reduction."
+        },
+        {
+          "label": "D",
+          "text": "A Wittig reaction followed by a Wolff-Kishner reduction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring.",
+      "explanation": "Robinson annulation combines a Michael conjugate addition with an intramolecular aldol condensation to forge a new cyclohexenone ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q034",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Malonic Ester Decarboxylation Cyclic Transition State",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanism of thermal decarboxylation of a β-dicarboxylic acid in the malonic ester synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-C bond to form CO₂ radical."
+        },
+        {
+          "label": "B",
+          "text": "Unimolecular loss of CO gas followed by oxidation."
+        },
+        {
+          "label": "C",
+          "text": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Direct SN2 displacement of carboxylate by water."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid.",
+      "explanation": "Thermal decarboxylation of β-keto acids and β-diacids proceeds through a 6-membered cyclic transition state yielding an enol and carbon dioxide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q035",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Keto-Enol Tautomerism Acid vs Base Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the difference in intermediate charge state between acid-catalyzed and base-catalyzed keto-enol tautomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base catalysis proceeds with retention; acid catalysis with inversion."
+        },
+        {
+          "label": "B",
+          "text": "There is no intermediate in either pathway."
+        },
+        {
+          "label": "C",
+          "text": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Acid catalysis forms a radical; base catalysis forms an anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate.",
+      "explanation": "Acid mechanisms feature protonation first (cationic intermediates); base mechanisms feature deprotonation first (anionic enolate intermediates).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q036",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "LDA Kinetic Enolate Deprotonation Basis",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does lithium diisopropylamide (LDA) at -78°C selectively abstract the less hindered α-proton of 2-methylcyclohexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The less substituted enolate is thermodynamically more stable."
+        },
+        {
+          "label": "B",
+          "text": "LDA coordinates exclusively with the oxygen atom."
+        },
+        {
+          "label": "C",
+          "text": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate."
+        },
+        {
+          "label": "D",
+          "text": "LDA is a weak base that equilibrates to the thermodynamic product."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate.",
+      "explanation": "Steric hindrance and low temperature prevent equilibration, trapping the kinetically formed less substituted enolate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q037",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Thermodynamic Enolate Equilibration Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Under what conditions does 2-methylcyclohexanone convert selectively to the more substituted (thermodynamic) enolate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium."
+        },
+        {
+          "label": "B",
+          "text": "Using elemental sodium in liquid ammonia."
+        },
+        {
+          "label": "C",
+          "text": "Using zinc metal in hydrochloric acid."
+        },
+        {
+          "label": "D",
+          "text": "Using LDA at -78°C in anhydrous THF."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium.",
+      "explanation": "Reversible deprotonation at ambient temperatures allows the system to equilibrate to the more substituted, more stable tetrasubstituted enolate double bond.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q038",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Aldol Addition Tetrahedral Alkoxide Intermediate",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key bond-forming step in the base-catalyzed self-aldol addition of acetaldehyde?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Proton transfer from methyl to methyl."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond."
+        },
+        {
+          "label": "C",
+          "text": "Attack of the enolate oxygen on the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic coupling of two formyl radicals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond.",
+      "explanation": "Enolates react as carbon nucleophiles (soft center) attacking the electrophilic carbonyl carbon of an aldehyde to create the β-hydroxy aldehyde.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q039",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Aldol Condensation E1cB Dehydration Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does dehydration of an aldol addition product proceed via an E1cB mechanism rather than E2 or E1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction requires high-energy UV light."
+        },
+        {
+          "label": "B",
+          "text": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide is an excellent leaving group that falls off spontaneously."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a tertiary carbocation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone.",
+      "explanation": "Acidic α-protons allow formation of a carbanion/enolate intermediate (E1cB) that expels hydroxide driven by extended conjugation in the α,β-unsaturated enone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q040",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Claisen Centurion",
+      "topic": "Claisen Condensation Driving Force",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What irreversible elementary step drives the Claisen condensation of ethyl acetate to completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product."
+        },
+        {
+          "label": "B",
+          "text": "Spontaneous loss of carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "Precipitation of sodium metal."
+        },
+        {
+          "label": "D",
+          "text": "Evaporation of ethanol from the flask."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product.",
+      "explanation": "The β-keto ester is ~5 pKa units more acidic than ethanol; its quantitative deprotonation pulls the unfavorable equilibrium forward irreversibly.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "claisen-centurion.png"
+      ]
+    },
+    {
+      "id": "ch21_q041",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Robinson Annulation Tandem Mechanism Sequence",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What two fundamental named reactions occur sequentially in a Robinson annulation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring."
+        },
+        {
+          "label": "B",
+          "text": "A Wittig reaction followed by a Wolff-Kishner reduction."
+        },
+        {
+          "label": "C",
+          "text": "A Diels-Alder reaction followed by a Claisen rearrangement."
+        },
+        {
+          "label": "D",
+          "text": "A Friedel-Crafts acylation followed by Clemmensen reduction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A Michael 1,4-conjugate addition followed by an intramolecular aldol condensation, constructing a fused six-membered α,β-unsaturated cyclohexenone ring.",
+      "explanation": "Robinson annulation combines a Michael conjugate addition with an intramolecular aldol condensation to forge a new cyclohexenone ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q042",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Malonic Ester Decarboxylation Cyclic Transition State",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanism of thermal decarboxylation of a β-dicarboxylic acid in the malonic ester synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct SN2 displacement of carboxylate by water."
+        },
+        {
+          "label": "B",
+          "text": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond to form CO₂ radical."
+        },
+        {
+          "label": "D",
+          "text": "Unimolecular loss of CO gas followed by oxidation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted six-membered cyclic transition state transfers the acidic proton to the second carbonyl oxygen, expelling CO₂ and forming a transient enol that tautomerizes to carboxylic acid.",
+      "explanation": "Thermal decarboxylation of β-keto acids and β-diacids proceeds through a 6-membered cyclic transition state yielding an enol and carbon dioxide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q043",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Keto-Enol Tautomerism Acid vs Base Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the difference in intermediate charge state between acid-catalyzed and base-catalyzed keto-enol tautomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid catalysis forms a radical; base catalysis forms an anion."
+        },
+        {
+          "label": "B",
+          "text": "Base catalysis proceeds with retention; acid catalysis with inversion."
+        },
+        {
+          "label": "C",
+          "text": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate."
+        },
+        {
+          "label": "D",
+          "text": "There is no intermediate in either pathway."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acid catalysis proceeds via a positively charged oxocarbenium intermediate, whereas base catalysis proceeds via a negatively charged resonance-stabilized enolate intermediate.",
+      "explanation": "Acid mechanisms feature protonation first (cationic intermediates); base mechanisms feature deprotonation first (anionic enolate intermediates).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q044",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "LDA Kinetic Enolate Deprotonation Basis",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does lithium diisopropylamide (LDA) at -78°C selectively abstract the less hindered α-proton of 2-methylcyclohexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate."
+        },
+        {
+          "label": "B",
+          "text": "LDA is a weak base that equilibrates to the thermodynamic product."
+        },
+        {
+          "label": "C",
+          "text": "LDA coordinates exclusively with the oxygen atom."
+        },
+        {
+          "label": "D",
+          "text": "The less substituted enolate is thermodynamically more stable."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "LDA is a bulky, sterically hindered base; at -78°C (irreversible kinetic control), it abstracts the most sterically accessible proton much faster to form the less substituted enolate.",
+      "explanation": "Steric hindrance and low temperature prevent equilibration, trapping the kinetically formed less substituted enolate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q045",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Thermodynamic Enolate Equilibration Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Under what conditions does 2-methylcyclohexanone convert selectively to the more substituted (thermodynamic) enolate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium."
+        },
+        {
+          "label": "B",
+          "text": "Using zinc metal in hydrochloric acid."
+        },
+        {
+          "label": "C",
+          "text": "Using LDA at -78°C in anhydrous THF."
+        },
+        {
+          "label": "D",
+          "text": "Using elemental sodium in liquid ammonia."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Using an unhindered base (e.g., NaOEt or KOtBu at room temperature) in a protic solvent, allowing reversible proton transfers to establish thermodynamic equilibrium.",
+      "explanation": "Reversible deprotonation at ambient temperatures allows the system to equilibrate to the more substituted, more stable tetrasubstituted enolate double bond.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q046",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Aldol Addition Tetrahedral Alkoxide Intermediate",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key bond-forming step in the base-catalyzed self-aldol addition of acetaldehyde?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Attack of the enolate oxygen on the carbonyl carbon."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic coupling of two formyl radicals."
+        },
+        {
+          "label": "C",
+          "text": "Proton transfer from methyl to methyl."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic attack of the resonance-stabilized enolate α-carbon on the carbonyl carbon of a second acetaldehyde molecule to forge a new C-C bond.",
+      "explanation": "Enolates react as carbon nucleophiles (soft center) attacking the electrophilic carbonyl carbon of an aldehyde to create the β-hydroxy aldehyde.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q047",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Aldol Condensation E1cB Dehydration Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does dehydration of an aldol addition product proceed via an E1cB mechanism rather than E2 or E1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydroxide is an excellent leaving group that falls off spontaneously."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a tertiary carbocation."
+        },
+        {
+          "label": "C",
+          "text": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone."
+        },
+        {
+          "label": "D",
+          "text": "The reaction requires high-energy UV light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The α-hydrogen is acidified by the adjacent carbonyl, allowing base to deprotonate it to an enolate anion, which subsequently expels the poor leaving group (OH⁻) to form a conjugated enone.",
+      "explanation": "Acidic α-protons allow formation of a carbanion/enolate intermediate (E1cB) that expels hydroxide driven by extended conjugation in the α,β-unsaturated enone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q048",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Claisen Condensation Driving Force",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What irreversible elementary step drives the Claisen condensation of ethyl acetate to completion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous loss of carbon dioxide."
+        },
+        {
+          "label": "B",
+          "text": "Precipitation of sodium metal."
+        },
+        {
+          "label": "C",
+          "text": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product."
+        },
+        {
+          "label": "D",
+          "text": "Evaporation of ethanol from the flask."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Deprotonation of the newly formed β-keto ester (pKa ~ 11) by ethoxide to generate a resonance-stabilized enolate salt, which requires acid workup to yield the neutral product.",
+      "explanation": "The β-keto ester is ~5 pKa units more acidic than ethanol; its quantitative deprotonation pulls the unfavorable equilibrium forward irreversibly.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q049",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Dieckmann Intramolecular Claisen Ring Size",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does diethyl heptanedioate (diethyl pimelate) undergo Dieckmann cyclization to form a 6-membered ring rather than an 8-membered ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored."
+        },
+        {
+          "label": "B",
+          "text": "Eight-membered rings are aromatic."
+        },
+        {
+          "label": "C",
+          "text": "Six-membered rings have zero entropy."
+        },
+        {
+          "label": "D",
+          "text": "The seven-carbon chain cannot form enolates."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Intramolecular nucleophilic attack of the enolate on the distal ester forms a strain-free six-membered tetrahedral intermediate, which is kinetically and thermodynamically favored.",
+      "explanation": "5- and 6-membered ring formations have low activation barriers and minimal ring strain compared to medium rings (7–9 membered).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    },
+    {
+      "id": "ch21_q050",
+      "chapter": 21,
+      "chapter_title": "Alpha Carbon Chemistry: Enols and Enolates",
+      "boss": "Robinson Annulation Regent",
+      "topic": "Michael 1,4-Conjugate Addition Soft Nucleophile",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why do enolates of β-dicarbonyl compounds (e.g., diethyl malonate) add to the β-carbon of α,β-unsaturated ketones (1,4-addition) rather than the carbonyl carbon (1,2-addition)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Addition produces an antiaromatic product."
+        },
+        {
+          "label": "B",
+          "text": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control)."
+        },
+        {
+          "label": "C",
+          "text": "The β-carbon bears a formal full positive charge."
+        },
+        {
+          "label": "D",
+          "text": "The carbonyl carbon is sterically completely blocked."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Resonance-delocalized, highly stabilized enolates are 'soft' nucleophiles that match the soft electrophilic character of the β-carbon (HOMO-LUMO orbital control).",
+      "explanation": "Soft, delocalized nucleophiles react under orbital control at the softer β-carbon of conjugated systems (1,4-conjugate addition).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-regent.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Tautomer Troll",
+    "LDA Lancer",
+    "Aldol Alchemist",
+    "Claisen Centurion",
+    "Robinson Annulation Regent"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Tautomer Troll",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "tautomer-troll.png"
+        ]
+      },
+      {
+        "boss": "LDA Lancer",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "lda-lancer.png"
+        ]
+      },
+      {
+        "boss": "Aldol Alchemist",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "aldol-alchemist.png"
+        ]
+      },
+      {
+        "boss": "Claisen Centurion",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "claisen-centurion.png"
+        ]
+      },
+      {
+        "boss": "Robinson Annulation Regent",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "robinson-annulation-regent.png"
+        ]
+      }
+    ]
+  }
+}

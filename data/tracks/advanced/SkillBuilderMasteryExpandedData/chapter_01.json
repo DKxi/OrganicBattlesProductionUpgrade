@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 1,
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "Valence Vanguard",
+  "bosses": [
+    "Valence Vanguard",
+    "Electronegativity Elemental",
+    "Hybridization Hydra",
+    "Dipole Dragon",
+    "Molecular Orbital Monarch"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Valence Vanguard",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Electronegativity Elemental",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Hybridization Hydra",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Dipole Dragon",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Molecular Orbital Monarch",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch01_q001",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Drawing Valid Lewis Structures",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central."
+        },
+        {
+          "label": "B",
+          "text": "Connect all atoms in a single closed circle."
+        },
+        {
+          "label": "C",
+          "text": "Draw double bonds to all hydrogen atoms."
+        },
+        {
+          "label": "D",
+          "text": "Assign +1 charge to carbon and -1 to hydrogen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central.",
+      "explanation": "Step 1 in Lewis structure assembly requires calculating the exact valence electron budget before distributing bonding and lone pairs.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q002",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Identifying Formal Charge Violations",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "What severe chemical error is present when a student draws a neutral carbon atom with 5 single bonds (a 'Texas Carbon')?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbon has only 2 valence electrons."
+        },
+        {
+          "label": "B",
+          "text": "Violation of the law of gravity."
+        },
+        {
+          "label": "C",
+          "text": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons."
+        },
+        {
+          "label": "D",
+          "text": "Hydrogen atoms cannot form single bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons.",
+      "explanation": "Carbon cannot expand its valence octet; drawing 5 bonds (10 electrons) is a fundamental octet violation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q003",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Curved Arrow Electron Flow Rules",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When debugging a proposed mechanism step, which curved arrow error violates the Law of Conservation of Charge?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing an arrow from a nucleophile to an electrophilic carbonyl."
+        },
+        {
+          "label": "B",
+          "text": "Drawing an arrow from a pi bond to a carbocation."
+        },
+        {
+          "label": "C",
+          "text": "Drawing an arrow from a lone pair to a proton."
+        },
+        {
+          "label": "D",
+          "text": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step.",
+      "explanation": "Curved arrows represent electron flow (negative charge motion); arrows must originate at electron-rich pairs/bonds, never at formal positive charges.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q004",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Resonance Arrow Validity",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "Which curved arrow maneuver is STRICTLY FORBIDDEN when drawing resonance contributors of a conjugated molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polarizing a carbonyl pi bond toward oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Moving a lone pair into an adjacent pi bond."
+        },
+        {
+          "label": "C",
+          "text": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework."
+        },
+        {
+          "label": "D",
+          "text": "Delocalizing pi electrons into an adjacent vacant p orbital."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework.",
+      "explanation": "Resonance structures differ ONLY in the placement of pi electrons and nonbonding lone pairs; sigma bond frameworks must remain identical.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q005",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Predicting Acid-Base Equilibrium Position",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "Using Klein's 4-step ARIO SkillBuilder decision tree, how do you determine which side of an acid-base equilibrium is favored?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa)."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the molecule with more carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium always favors the stronger acid."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium is always exactly 50:50."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa).",
+      "explanation": "The side containing the more stable conjugate base (derived from the weaker acid with higher pKa) is thermodynamically favored.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q006",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: IUPAC Systematic Nomenclature Hierarchy",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's SkillBuilder algorithm for naming polyfunctional alkanes, what is the first priority step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Number from right to left alphabetically."
+        },
+        {
+          "label": "B",
+          "text": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference."
+        },
+        {
+          "label": "C",
+          "text": "Ignore all branching substituents."
+        },
+        {
+          "label": "D",
+          "text": "Name all substituents in random order."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference.",
+      "explanation": "IUPAC rules require finding the principal parent carbon chain and numbering to give substituents the lowest possible locants at the first point of difference.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q007",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Newman Conformation Energy Analysis",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fully eclipsed conformation (0\u00b0 dihedral angle, methyls overlapping)."
+        },
+        {
+          "label": "B",
+          "text": "The gauche conformation (60\u00b0 dihedral angle)."
+        },
+        {
+          "label": "C",
+          "text": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain)."
+        },
+        {
+          "label": "D",
+          "text": "The eclipsed conformation (0\u00b0 dihedral angle)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain).",
+      "explanation": "The anti conformation places bulky methyl groups as far apart as possible (180\u00b0), eliminating steric and torsional strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q008",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: CIP (R)/(S) Stereocenter Assignment",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the 3-step SkillBuilder for assigning (R)/(S) configuration at a stereocenter, what do you do if two attached atoms have identical atomic numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ignore both groups."
+        },
+        {
+          "label": "B",
+          "text": "Flip a coin to decide priority."
+        },
+        {
+          "label": "C",
+          "text": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken."
+        },
+        {
+          "label": "D",
+          "text": "Assign priority based on the total number of hydrogen atoms."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken.",
+      "explanation": "When immediate atoms tie, compare the highest-atomic-number attached atoms at subsequent coordination spheres until priority is resolved.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q009",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Chair Conformation Flip and Stability",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's SkillBuilder for substituted cyclohexanes, how do axial and equatorial substituents change upon a chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring converts into a flat planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "Substituents detach and swap positions randomly."
+        },
+        {
+          "label": "C",
+          "text": "All 'up' groups become 'down'."
+        },
+        {
+          "label": "D",
+          "text": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation.",
+      "explanation": "A chair flip interconverts axial/equatorial positions, but preserves the configurational up/down relationships of all ring substituents.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q010",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "SkillBuilder: Diagnosing Synthetic Roadblocks",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "Why does a proposed Grignard reaction (CH\u2083MgBr + 4-hydroxycyclohexanone) fail to produce the desired tertiary alcohol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone."
+        },
+        {
+          "label": "B",
+          "text": "Because cyclohexanone cannot form tertiary alcohols."
+        },
+        {
+          "label": "C",
+          "text": "Because Grignard reagents only react with esters."
+        },
+        {
+          "label": "D",
+          "text": "Because the reaction explodes at -78\u00b0C."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone.",
+      "explanation": "Grignard reagents are strong bases; any acidic proton (alcohol, amine, alkyne, water) will destroy the reagent before nucleophilic addition can occur.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q011",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Drawing Valid Lewis Structures",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Connect all atoms in a single closed circle."
+        },
+        {
+          "label": "B",
+          "text": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central."
+        },
+        {
+          "label": "C",
+          "text": "Assign +1 charge to carbon and -1 to hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "Draw double bonds to all hydrogen atoms."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central.",
+      "explanation": "Step 1 in Lewis structure assembly requires calculating the exact valence electron budget before distributing bonding and lone pairs.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q012",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Identifying Formal Charge Violations",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "What severe chemical error is present when a student draws a neutral carbon atom with 5 single bonds (a 'Texas Carbon')?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogen atoms cannot form single bonds."
+        },
+        {
+          "label": "C",
+          "text": "Violation of the law of gravity."
+        },
+        {
+          "label": "D",
+          "text": "Carbon has only 2 valence electrons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons.",
+      "explanation": "Carbon cannot expand its valence octet; drawing 5 bonds (10 electrons) is a fundamental octet violation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q013",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Curved Arrow Electron Flow Rules",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "When debugging a proposed mechanism step, which curved arrow error violates the Law of Conservation of Charge?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing an arrow from a nucleophile to an electrophilic carbonyl."
+        },
+        {
+          "label": "B",
+          "text": "Drawing an arrow from a lone pair to a proton."
+        },
+        {
+          "label": "C",
+          "text": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step."
+        },
+        {
+          "label": "D",
+          "text": "Drawing an arrow from a pi bond to a carbocation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step.",
+      "explanation": "Curved arrows represent electron flow (negative charge motion); arrows must originate at electron-rich pairs/bonds, never at formal positive charges.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q014",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Resonance Arrow Validity",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "Which curved arrow maneuver is STRICTLY FORBIDDEN when drawing resonance contributors of a conjugated molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Moving a lone pair into an adjacent pi bond."
+        },
+        {
+          "label": "B",
+          "text": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework."
+        },
+        {
+          "label": "C",
+          "text": "Polarizing a carbonyl pi bond toward oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Delocalizing pi electrons into an adjacent vacant p orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework.",
+      "explanation": "Resonance structures differ ONLY in the placement of pi electrons and nonbonding lone pairs; sigma bond frameworks must remain identical.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q015",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Predicting Acid-Base Equilibrium Position",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "Using Klein's 4-step ARIO SkillBuilder decision tree, how do you determine which side of an acid-base equilibrium is favored?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the stronger acid."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the molecule with more carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium is always exactly 50:50."
+        },
+        {
+          "label": "D",
+          "text": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa).",
+      "explanation": "The side containing the more stable conjugate base (derived from the weaker acid with higher pKa) is thermodynamically favored.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q016",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: IUPAC Systematic Nomenclature Hierarchy",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder algorithm for naming polyfunctional alkanes, what is the first priority step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Name all substituents in random order."
+        },
+        {
+          "label": "B",
+          "text": "Number from right to left alphabetically."
+        },
+        {
+          "label": "C",
+          "text": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference."
+        },
+        {
+          "label": "D",
+          "text": "Ignore all branching substituents."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference.",
+      "explanation": "IUPAC rules require finding the principal parent carbon chain and numbering to give substituents the lowest possible locants at the first point of difference.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q017",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Newman Conformation Energy Analysis",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fully eclipsed conformation (0\u00b0 dihedral angle, methyls overlapping)."
+        },
+        {
+          "label": "B",
+          "text": "The eclipsed conformation (0\u00b0 dihedral angle)."
+        },
+        {
+          "label": "C",
+          "text": "The gauche conformation (60\u00b0 dihedral angle)."
+        },
+        {
+          "label": "D",
+          "text": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain).",
+      "explanation": "The anti conformation places bulky methyl groups as far apart as possible (180\u00b0), eliminating steric and torsional strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q018",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: CIP (R)/(S) Stereocenter Assignment",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the 3-step SkillBuilder for assigning (R)/(S) configuration at a stereocenter, what do you do if two attached atoms have identical atomic numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Flip a coin to decide priority."
+        },
+        {
+          "label": "B",
+          "text": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken."
+        },
+        {
+          "label": "C",
+          "text": "Ignore both groups."
+        },
+        {
+          "label": "D",
+          "text": "Assign priority based on the total number of hydrogen atoms."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken.",
+      "explanation": "When immediate atoms tie, compare the highest-atomic-number attached atoms at subsequent coordination spheres until priority is resolved.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q019",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Chair Conformation Flip and Stability",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder for substituted cyclohexanes, how do axial and equatorial substituents change upon a chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation."
+        },
+        {
+          "label": "B",
+          "text": "All 'up' groups become 'down'."
+        },
+        {
+          "label": "C",
+          "text": "Substituents detach and swap positions randomly."
+        },
+        {
+          "label": "D",
+          "text": "The ring converts into a flat planar hexagon."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation.",
+      "explanation": "A chair flip interconverts axial/equatorial positions, but preserves the configurational up/down relationships of all ring substituents.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q020",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "SkillBuilder: Diagnosing Synthetic Roadblocks",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "Why does a proposed Grignard reaction (CH\u2083MgBr + 4-hydroxycyclohexanone) fail to produce the desired tertiary alcohol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because Grignard reagents only react with esters."
+        },
+        {
+          "label": "B",
+          "text": "Because cyclohexanone cannot form tertiary alcohols."
+        },
+        {
+          "label": "C",
+          "text": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone."
+        },
+        {
+          "label": "D",
+          "text": "Because the reaction explodes at -78\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone.",
+      "explanation": "Grignard reagents are strong bases; any acidic proton (alcohol, amine, alkyne, water) will destroy the reagent before nucleophilic addition can occur.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q021",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Drawing Valid Lewis Structures",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Connect all atoms in a single closed circle."
+        },
+        {
+          "label": "B",
+          "text": "Draw double bonds to all hydrogen atoms."
+        },
+        {
+          "label": "C",
+          "text": "Assign +1 charge to carbon and -1 to hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central.",
+      "explanation": "Step 1 in Lewis structure assembly requires calculating the exact valence electron budget before distributing bonding and lone pairs.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q022",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Identifying Formal Charge Violations",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "What severe chemical error is present when a student draws a neutral carbon atom with 5 single bonds (a 'Texas Carbon')?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Violation of the law of gravity."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogen atoms cannot form single bonds."
+        },
+        {
+          "label": "C",
+          "text": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons."
+        },
+        {
+          "label": "D",
+          "text": "Carbon has only 2 valence electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons.",
+      "explanation": "Carbon cannot expand its valence octet; drawing 5 bonds (10 electrons) is a fundamental octet violation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q023",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Curved Arrow Electron Flow Rules",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "When debugging a proposed mechanism step, which curved arrow error violates the Law of Conservation of Charge?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing an arrow from a lone pair to a proton."
+        },
+        {
+          "label": "B",
+          "text": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step."
+        },
+        {
+          "label": "C",
+          "text": "Drawing an arrow from a pi bond to a carbocation."
+        },
+        {
+          "label": "D",
+          "text": "Drawing an arrow from a nucleophile to an electrophilic carbonyl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step.",
+      "explanation": "Curved arrows represent electron flow (negative charge motion); arrows must originate at electron-rich pairs/bonds, never at formal positive charges.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q024",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Resonance Arrow Validity",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "Which curved arrow maneuver is STRICTLY FORBIDDEN when drawing resonance contributors of a conjugated molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Moving a lone pair into an adjacent pi bond."
+        },
+        {
+          "label": "B",
+          "text": "Polarizing a carbonyl pi bond toward oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework."
+        },
+        {
+          "label": "D",
+          "text": "Delocalizing pi electrons into an adjacent vacant p orbital."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework.",
+      "explanation": "Resonance structures differ ONLY in the placement of pi electrons and nonbonding lone pairs; sigma bond frameworks must remain identical.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q025",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Predicting Acid-Base Equilibrium Position",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "Using Klein's 4-step ARIO SkillBuilder decision tree, how do you determine which side of an acid-base equilibrium is favored?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa)."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the molecule with more carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium always favors the stronger acid."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium is always exactly 50:50."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa).",
+      "explanation": "The side containing the more stable conjugate base (derived from the weaker acid with higher pKa) is thermodynamically favored.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q026",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: IUPAC Systematic Nomenclature Hierarchy",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's SkillBuilder algorithm for naming polyfunctional alkanes, what is the first priority step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Number from right to left alphabetically."
+        },
+        {
+          "label": "B",
+          "text": "Ignore all branching substituents."
+        },
+        {
+          "label": "C",
+          "text": "Name all substituents in random order."
+        },
+        {
+          "label": "D",
+          "text": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference.",
+      "explanation": "IUPAC rules require finding the principal parent carbon chain and numbering to give substituents the lowest possible locants at the first point of difference.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q027",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Newman Conformation Energy Analysis",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The eclipsed conformation (0\u00b0 dihedral angle)."
+        },
+        {
+          "label": "B",
+          "text": "The fully eclipsed conformation (0\u00b0 dihedral angle, methyls overlapping)."
+        },
+        {
+          "label": "C",
+          "text": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain)."
+        },
+        {
+          "label": "D",
+          "text": "The gauche conformation (60\u00b0 dihedral angle)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain).",
+      "explanation": "The anti conformation places bulky methyl groups as far apart as possible (180\u00b0), eliminating steric and torsional strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q028",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: CIP (R)/(S) Stereocenter Assignment",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the 3-step SkillBuilder for assigning (R)/(S) configuration at a stereocenter, what do you do if two attached atoms have identical atomic numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken."
+        },
+        {
+          "label": "B",
+          "text": "Assign priority based on the total number of hydrogen atoms."
+        },
+        {
+          "label": "C",
+          "text": "Flip a coin to decide priority."
+        },
+        {
+          "label": "D",
+          "text": "Ignore both groups."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken.",
+      "explanation": "When immediate atoms tie, compare the highest-atomic-number attached atoms at subsequent coordination spheres until priority is resolved.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q029",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Chair Conformation Flip and Stability",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's SkillBuilder for substituted cyclohexanes, how do axial and equatorial substituents change upon a chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation."
+        },
+        {
+          "label": "B",
+          "text": "Substituents detach and swap positions randomly."
+        },
+        {
+          "label": "C",
+          "text": "The ring converts into a flat planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "All 'up' groups become 'down'."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation.",
+      "explanation": "A chair flip interconverts axial/equatorial positions, but preserves the configurational up/down relationships of all ring substituents.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q030",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "SkillBuilder: Diagnosing Synthetic Roadblocks",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "Why does a proposed Grignard reaction (CH\u2083MgBr + 4-hydroxycyclohexanone) fail to produce the desired tertiary alcohol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the reaction explodes at -78\u00b0C."
+        },
+        {
+          "label": "B",
+          "text": "Because Grignard reagents only react with esters."
+        },
+        {
+          "label": "C",
+          "text": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone."
+        },
+        {
+          "label": "D",
+          "text": "Because cyclohexanone cannot form tertiary alcohols."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone.",
+      "explanation": "Grignard reagents are strong bases; any acidic proton (alcohol, amine, alkyne, water) will destroy the reagent before nucleophilic addition can occur.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q031",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Drawing Valid Lewis Structures",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Draw double bonds to all hydrogen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central."
+        },
+        {
+          "label": "C",
+          "text": "Connect all atoms in a single closed circle."
+        },
+        {
+          "label": "D",
+          "text": "Assign +1 charge to carbon and -1 to hydrogen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central.",
+      "explanation": "Step 1 in Lewis structure assembly requires calculating the exact valence electron budget before distributing bonding and lone pairs.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q032",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Identifying Formal Charge Violations",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "What severe chemical error is present when a student draws a neutral carbon atom with 5 single bonds (a 'Texas Carbon')?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbon has only 2 valence electrons."
+        },
+        {
+          "label": "B",
+          "text": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons."
+        },
+        {
+          "label": "C",
+          "text": "Hydrogen atoms cannot form single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Violation of the law of gravity."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons.",
+      "explanation": "Carbon cannot expand its valence octet; drawing 5 bonds (10 electrons) is a fundamental octet violation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q033",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Curved Arrow Electron Flow Rules",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When debugging a proposed mechanism step, which curved arrow error violates the Law of Conservation of Charge?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step."
+        },
+        {
+          "label": "B",
+          "text": "Drawing an arrow from a nucleophile to an electrophilic carbonyl."
+        },
+        {
+          "label": "C",
+          "text": "Drawing an arrow from a lone pair to a proton."
+        },
+        {
+          "label": "D",
+          "text": "Drawing an arrow from a pi bond to a carbocation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step.",
+      "explanation": "Curved arrows represent electron flow (negative charge motion); arrows must originate at electron-rich pairs/bonds, never at formal positive charges.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q034",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Resonance Arrow Validity",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "Which curved arrow maneuver is STRICTLY FORBIDDEN when drawing resonance contributors of a conjugated molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework."
+        },
+        {
+          "label": "B",
+          "text": "Polarizing a carbonyl pi bond toward oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Moving a lone pair into an adjacent pi bond."
+        },
+        {
+          "label": "D",
+          "text": "Delocalizing pi electrons into an adjacent vacant p orbital."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework.",
+      "explanation": "Resonance structures differ ONLY in the placement of pi electrons and nonbonding lone pairs; sigma bond frameworks must remain identical.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q035",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Predicting Acid-Base Equilibrium Position",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "Using Klein's 4-step ARIO SkillBuilder decision tree, how do you determine which side of an acid-base equilibrium is favored?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the stronger acid."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the molecule with more carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa)."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium is always exactly 50:50."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa).",
+      "explanation": "The side containing the more stable conjugate base (derived from the weaker acid with higher pKa) is thermodynamically favored.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q036",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: IUPAC Systematic Nomenclature Hierarchy",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's SkillBuilder algorithm for naming polyfunctional alkanes, what is the first priority step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Name all substituents in random order."
+        },
+        {
+          "label": "B",
+          "text": "Ignore all branching substituents."
+        },
+        {
+          "label": "C",
+          "text": "Number from right to left alphabetically."
+        },
+        {
+          "label": "D",
+          "text": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference.",
+      "explanation": "IUPAC rules require finding the principal parent carbon chain and numbering to give substituents the lowest possible locants at the first point of difference.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q037",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Newman Conformation Energy Analysis",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The gauche conformation (60\u00b0 dihedral angle)."
+        },
+        {
+          "label": "B",
+          "text": "The fully eclipsed conformation (0\u00b0 dihedral angle, methyls overlapping)."
+        },
+        {
+          "label": "C",
+          "text": "The eclipsed conformation (0\u00b0 dihedral angle)."
+        },
+        {
+          "label": "D",
+          "text": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain).",
+      "explanation": "The anti conformation places bulky methyl groups as far apart as possible (180\u00b0), eliminating steric and torsional strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q038",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: CIP (R)/(S) Stereocenter Assignment",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the 3-step SkillBuilder for assigning (R)/(S) configuration at a stereocenter, what do you do if two attached atoms have identical atomic numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign priority based on the total number of hydrogen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken."
+        },
+        {
+          "label": "C",
+          "text": "Ignore both groups."
+        },
+        {
+          "label": "D",
+          "text": "Flip a coin to decide priority."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken.",
+      "explanation": "When immediate atoms tie, compare the highest-atomic-number attached atoms at subsequent coordination spheres until priority is resolved.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q039",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Chair Conformation Flip and Stability",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's SkillBuilder for substituted cyclohexanes, how do axial and equatorial substituents change upon a chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation."
+        },
+        {
+          "label": "B",
+          "text": "The ring converts into a flat planar hexagon."
+        },
+        {
+          "label": "C",
+          "text": "Substituents detach and swap positions randomly."
+        },
+        {
+          "label": "D",
+          "text": "All 'up' groups become 'down'."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation.",
+      "explanation": "A chair flip interconverts axial/equatorial positions, but preserves the configurational up/down relationships of all ring substituents.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q040",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "SkillBuilder: Diagnosing Synthetic Roadblocks",
+      "difficulty": "hard",
+      "question_type": "decision_tree_branching",
+      "question": "Why does a proposed Grignard reaction (CH\u2083MgBr + 4-hydroxycyclohexanone) fail to produce the desired tertiary alcohol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because cyclohexanone cannot form tertiary alcohols."
+        },
+        {
+          "label": "B",
+          "text": "Because Grignard reagents only react with esters."
+        },
+        {
+          "label": "C",
+          "text": "Because the reaction explodes at -78\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone.",
+      "explanation": "Grignard reagents are strong bases; any acidic proton (alcohol, amine, alkyne, water) will destroy the reagent before nucleophilic addition can occur.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q041",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Drawing Valid Lewis Structures",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign +1 charge to carbon and -1 to hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Connect all atoms in a single closed circle."
+        },
+        {
+          "label": "C",
+          "text": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central."
+        },
+        {
+          "label": "D",
+          "text": "Draw double bonds to all hydrogen atoms."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Count total valence electrons from all constituent atoms, add/subtract formal charges, and arrange the skeleton with the least electronegative atom (except H) central.",
+      "explanation": "Step 1 in Lewis structure assembly requires calculating the exact valence electron budget before distributing bonding and lone pairs.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q042",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Identifying Formal Charge Violations",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "What severe chemical error is present when a student draws a neutral carbon atom with 5 single bonds (a 'Texas Carbon')?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbon has only 2 valence electrons."
+        },
+        {
+          "label": "B",
+          "text": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons."
+        },
+        {
+          "label": "C",
+          "text": "Hydrogen atoms cannot form single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Violation of the law of gravity."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Octet Rule violation: second-row carbon has only four valence orbitals (2s, 2px, 2py, 2pz) and cannot accommodate 10 valence electrons.",
+      "explanation": "Carbon cannot expand its valence octet; drawing 5 bonds (10 electrons) is a fundamental octet violation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q043",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Curved Arrow Electron Flow Rules",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When debugging a proposed mechanism step, which curved arrow error violates the Law of Conservation of Charge?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing an arrow from a pi bond to a carbocation."
+        },
+        {
+          "label": "B",
+          "text": "Drawing an arrow from a nucleophile to an electrophilic carbonyl."
+        },
+        {
+          "label": "C",
+          "text": "Drawing an arrow from a lone pair to a proton."
+        },
+        {
+          "label": "D",
+          "text": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Drawing an arrow originating from a positive charge to a neutral atom, creating a net change in overall formal charge across the elementary step.",
+      "explanation": "Curved arrows represent electron flow (negative charge motion); arrows must originate at electron-rich pairs/bonds, never at formal positive charges.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q044",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Resonance Arrow Validity",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "Which curved arrow maneuver is STRICTLY FORBIDDEN when drawing resonance contributors of a conjugated molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Moving a lone pair into an adjacent pi bond."
+        },
+        {
+          "label": "B",
+          "text": "Delocalizing pi electrons into an adjacent vacant p orbital."
+        },
+        {
+          "label": "C",
+          "text": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework."
+        },
+        {
+          "label": "D",
+          "text": "Polarizing a carbonyl pi bond toward oxygen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Breaking single (sigma) bonds or altering the underlying atomic connectivity of the molecular framework.",
+      "explanation": "Resonance structures differ ONLY in the placement of pi electrons and nonbonding lone pairs; sigma bond frameworks must remain identical.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q045",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Predicting Acid-Base Equilibrium Position",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "Using Klein's 4-step ARIO SkillBuilder decision tree, how do you determine which side of an acid-base equilibrium is favored?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the molecule with more carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the stronger acid."
+        },
+        {
+          "label": "C",
+          "text": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa)."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium is always exactly 50:50."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify conjugate bases, compare relative stability using Atom \u2192 Resonance \u2192 Induction \u2192 Orbital (ARIO), and shift equilibrium toward the WEAKER acid (higher pKa).",
+      "explanation": "The side containing the more stable conjugate base (derived from the weaker acid with higher pKa) is thermodynamically favored.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q046",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: IUPAC Systematic Nomenclature Hierarchy",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder algorithm for naming polyfunctional alkanes, what is the first priority step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Name all substituents in random order."
+        },
+        {
+          "label": "B",
+          "text": "Ignore all branching substituents."
+        },
+        {
+          "label": "C",
+          "text": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference."
+        },
+        {
+          "label": "D",
+          "text": "Number from right to left alphabetically."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify the longest continuous carbon chain containing the principal functional group, and number from the end providing the lowest locant number at the first point of difference.",
+      "explanation": "IUPAC rules require finding the principal parent carbon chain and numbering to give substituents the lowest possible locants at the first point of difference.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q047",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Newman Conformation Energy Analysis",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The eclipsed conformation (0\u00b0 dihedral angle)."
+        },
+        {
+          "label": "B",
+          "text": "The fully eclipsed conformation (0\u00b0 dihedral angle, methyls overlapping)."
+        },
+        {
+          "label": "C",
+          "text": "The gauche conformation (60\u00b0 dihedral angle)."
+        },
+        {
+          "label": "D",
+          "text": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The anti-periplanar conformation (dihedral angle 180\u00b0 between methyl groups, minimizing torsional and steric strain).",
+      "explanation": "The anti conformation places bulky methyl groups as far apart as possible (180\u00b0), eliminating steric and torsional strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q048",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: CIP (R)/(S) Stereocenter Assignment",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the 3-step SkillBuilder for assigning (R)/(S) configuration at a stereocenter, what do you do if two attached atoms have identical atomic numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ignore both groups."
+        },
+        {
+          "label": "B",
+          "text": "Assign priority based on the total number of hydrogen atoms."
+        },
+        {
+          "label": "C",
+          "text": "Flip a coin to decide priority."
+        },
+        {
+          "label": "D",
+          "text": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Compare the list of attached atoms in descending atomic number order at the next point of difference along the substituent paths until a tie is broken.",
+      "explanation": "When immediate atoms tie, compare the highest-atomic-number attached atoms at subsequent coordination spheres until priority is resolved.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q049",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Chair Conformation Flip and Stability",
+      "difficulty": "hard",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's SkillBuilder for substituted cyclohexanes, how do axial and equatorial substituents change upon a chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Substituents detach and swap positions randomly."
+        },
+        {
+          "label": "B",
+          "text": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation."
+        },
+        {
+          "label": "C",
+          "text": "The ring converts into a flat planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "All 'up' groups become 'down'."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "All axial groups become equatorial, and all equatorial groups become axial, while retaining their 'up' or 'down' relative stereochemical orientation.",
+      "explanation": "A chair flip interconverts axial/equatorial positions, but preserves the configurational up/down relationships of all ring substituents.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q050",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "SkillBuilder: Diagnosing Synthetic Roadblocks",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "Why does a proposed Grignard reaction (CH\u2083MgBr + 4-hydroxycyclohexanone) fail to produce the desired tertiary alcohol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because cyclohexanone cannot form tertiary alcohols."
+        },
+        {
+          "label": "B",
+          "text": "Because Grignard reagents only react with esters."
+        },
+        {
+          "label": "C",
+          "text": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone."
+        },
+        {
+          "label": "D",
+          "text": "Because the reaction explodes at -78\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Proton quenching roadblock: the strongly basic Grignard reagent (pKa ~ 50) is instantly destroyed by acid-base reaction with the acidic hydroxyl group (pKa ~ 16) before attacking the ketone.",
+      "explanation": "Grignard reagents are strong bases; any acidic proton (alcohol, amine, alkyne, water) will destroy the reagent before nucleophilic addition can occur.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    }
+  ]
+}

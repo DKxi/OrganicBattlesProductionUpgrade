@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 12,
+  "chapter_title": "Alcohols and Phenols",
+  "assigned_boss": "Hydroxyl Hydra",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch12_q001",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Grignard Addition to Carbonyl Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the nature of the key intermediate formed when methylmagnesium bromide adds to acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic 4-membered oxetane ring."
+        },
+        {
+          "label": "C",
+          "text": "A radical pair involving acetyl radical."
+        },
+        {
+          "label": "D",
+          "text": "A planar secondary carbocation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon.",
+      "explanation": "Nucleophilic addition of the polarized organomagnesium carbanion into the carbonyl π* orbital produces a tetrahedral magnesium alkoxide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q002",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Incompatibility of Grignard with Protic Groups",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does phenylmagnesium bromide immediately fail if water, alcohols, or amines are present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Water oxidizes the magnesium to magnesium peroxide."
+        },
+        {
+          "label": "B",
+          "text": "Protic solvents dissolve the organic substrate permanently."
+        },
+        {
+          "label": "C",
+          "text": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts."
+        },
+        {
+          "label": "D",
+          "text": "Amines polymerize the Grignard reagent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts.",
+      "explanation": "Grignard reagents are superbases and are instantly destroyed by protic hydrogens (water, alcohols, carboxylic acids, amines).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q003",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "PCC vs Jones Oxidation Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does pyridinium chlorochromate (PCC) in anhydrous CH₂Cl₂ stop at the aldehyde stage when oxidizing 1-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC lacks the oxidation potential to oxidize aldehydes."
+        },
+        {
+          "label": "B",
+          "text": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "PCC only oxidizes tertiary alcohols."
+        },
+        {
+          "label": "D",
+          "text": "PCC precipitates as an insoluble chromium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid.",
+      "explanation": "Jones reagent in aqueous acid forms the gem-diol hydrate, which undergoes a second oxidation; anhydrous PCC avoids hydrate formation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q004",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Swern Oxidation Intermediate and Byproducts",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "In the Swern oxidation of secondary alcohols, what reactive electrophile activates DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peracetic acid zwitterion."
+        },
+        {
+          "label": "B",
+          "text": "Chromium trioxide pyridine complex."
+        },
+        {
+          "label": "C",
+          "text": "Diazomethane gas."
+        },
+        {
+          "label": "D",
+          "text": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride.",
+      "explanation": "Oxalyl chloride activates DMSO to generate the electrophilic dimethylchlorosulfonium species, which coordinates alcohol oxygen.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q005",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Alcohol Halogenation via PBr₃ Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What reactive intermediate is generated when (R)-2-butanol reacts with phosphorus tribromide (PBr₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic phosphorus ylide."
+        },
+        {
+          "label": "C",
+          "text": "A free alkyl radical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A planar secondary carbocation with complete racemization."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion.",
+      "explanation": "PBr₃ converts the poor -OH leaving group into an excellent phosphite leaving group, which bromide displaces via SN2 with inversion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q006",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Thionyl Chloride with Pyridine Inversion",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does the reaction of (R)-2-octanol with SOCl₂ in the presence of pyridine proceed with inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chlorosulfite intermediate undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an internal SNi frontside attack."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine acts as a radical initiator that flips the bond."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate.",
+      "explanation": "In the presence of pyridine, chloride ion is liberated to perform an intermolecular SN2 attack, inverting stereochemistry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q007",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Alcohol Tosylation Preservation of Stereocenter",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does tosylation of (S)-2-butanol with TsCl and pyridine yield (S)-2-butyl tosylate with 100% retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because pyridine forces double inversion at carbon."
+        },
+        {
+          "label": "B",
+          "text": "Because TsCl is a chiral reagent."
+        },
+        {
+          "label": "C",
+          "text": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched."
+        },
+        {
+          "label": "D",
+          "text": "Because tosylate forms a planar carbocation that reforms the S-enantiomer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched.",
+      "explanation": "Tosylation forms an O-S bond without breaking the chiral C-O bond, preserving the absolute configuration of the carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q008",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Acid-Catalyzed Pinacol Rearrangement",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the driving force and mechanistic sequence in the pinacol rearrangement of 2,3-dimethylbutane-2,3-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of two water molecules to form a conjugated diene."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage to form two acetone molecules."
+        },
+        {
+          "label": "C",
+          "text": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone."
+        },
+        {
+          "label": "D",
+          "text": "Deprotonation to form a stable epoxide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone.",
+      "explanation": "The 1,2-alkyl shift transforms a tertiary carbocation into an exceptionally stable resonance-stabilized oxocarbenium ion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q009",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Periodic Acid Cleavage of Vicinal Diols",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the key cyclic intermediate during the oxidative cleavage of cis-cyclohexane-1,2-diol by periodic acid (HIO₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid."
+        },
+        {
+          "label": "B",
+          "text": "A six-membered ozonide ring."
+        },
+        {
+          "label": "C",
+          "text": "A diradical iodate intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A bridged oxonium cation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid.",
+      "explanation": "Vicinal diols condense with periodic acid to form a cyclic periodate ester, which fragments via a concerted pericyclic pathway.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q010",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydroxyl Hydra",
+      "topic": "Phenol Resistance to Acid-Catalyzed Dehydration",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does phenol completely resist acid-catalyzed dehydration compared to cyclohexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol is a stronger base than sulfuric acid."
+        },
+        {
+          "label": "B",
+          "text": "Phenol has no lone pairs on oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Phenol undergoes spontaneous combustion in acid."
+        },
+        {
+          "label": "D",
+          "text": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity.",
+      "explanation": "Aromatic rings cannot support carbocations in the sp² plane, making dehydration to benzyne thermodynamically prohibitive in acid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydroxyl-hydra.png"
+      ]
+    },
+    {
+      "id": "ch12_q011",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "PCC vs Jones Oxidation Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does pyridinium chlorochromate (PCC) in anhydrous CH₂Cl₂ stop at the aldehyde stage when oxidizing 1-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC precipitates as an insoluble chromium metal."
+        },
+        {
+          "label": "B",
+          "text": "PCC only oxidizes tertiary alcohols."
+        },
+        {
+          "label": "C",
+          "text": "PCC lacks the oxidation potential to oxidize aldehydes."
+        },
+        {
+          "label": "D",
+          "text": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid.",
+      "explanation": "Jones reagent in aqueous acid forms the gem-diol hydrate, which undergoes a second oxidation; anhydrous PCC avoids hydrate formation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q012",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Swern Oxidation Intermediate and Byproducts",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the Swern oxidation of secondary alcohols, what reactive electrophile activates DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diazomethane gas."
+        },
+        {
+          "label": "B",
+          "text": "Chromium trioxide pyridine complex."
+        },
+        {
+          "label": "C",
+          "text": "Peracetic acid zwitterion."
+        },
+        {
+          "label": "D",
+          "text": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride.",
+      "explanation": "Oxalyl chloride activates DMSO to generate the electrophilic dimethylchlorosulfonium species, which coordinates alcohol oxygen.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q013",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Alcohol Halogenation via PBr₃ Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What reactive intermediate is generated when (R)-2-butanol reacts with phosphorus tribromide (PBr₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic phosphorus ylide."
+        },
+        {
+          "label": "B",
+          "text": "A free alkyl radical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion."
+        },
+        {
+          "label": "D",
+          "text": "A planar secondary carbocation with complete racemization."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion.",
+      "explanation": "PBr₃ converts the poor -OH leaving group into an excellent phosphite leaving group, which bromide displaces via SN2 with inversion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q014",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Thionyl Chloride with Pyridine Inversion",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does the reaction of (R)-2-octanol with SOCl₂ in the presence of pyridine proceed with inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The chlorosulfite intermediate undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine acts as a radical initiator that flips the bond."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via an internal SNi frontside attack."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate.",
+      "explanation": "In the presence of pyridine, chloride ion is liberated to perform an intermolecular SN2 attack, inverting stereochemistry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q015",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Alcohol Tosylation Preservation of Stereocenter",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does tosylation of (S)-2-butanol with TsCl and pyridine yield (S)-2-butyl tosylate with 100% retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because TsCl is a chiral reagent."
+        },
+        {
+          "label": "B",
+          "text": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched."
+        },
+        {
+          "label": "C",
+          "text": "Because tosylate forms a planar carbocation that reforms the S-enantiomer."
+        },
+        {
+          "label": "D",
+          "text": "Because pyridine forces double inversion at carbon."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched.",
+      "explanation": "Tosylation forms an O-S bond without breaking the chiral C-O bond, preserving the absolute configuration of the carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q016",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Acid-Catalyzed Pinacol Rearrangement",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the driving force and mechanistic sequence in the pinacol rearrangement of 2,3-dimethylbutane-2,3-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage to form two acetone molecules."
+        },
+        {
+          "label": "B",
+          "text": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone."
+        },
+        {
+          "label": "C",
+          "text": "Loss of two water molecules to form a conjugated diene."
+        },
+        {
+          "label": "D",
+          "text": "Deprotonation to form a stable epoxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone.",
+      "explanation": "The 1,2-alkyl shift transforms a tertiary carbocation into an exceptionally stable resonance-stabilized oxocarbenium ion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q017",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Periodic Acid Cleavage of Vicinal Diols",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key cyclic intermediate during the oxidative cleavage of cis-cyclohexane-1,2-diol by periodic acid (HIO₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid."
+        },
+        {
+          "label": "B",
+          "text": "A bridged oxonium cation."
+        },
+        {
+          "label": "C",
+          "text": "A six-membered ozonide ring."
+        },
+        {
+          "label": "D",
+          "text": "A diradical iodate intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid.",
+      "explanation": "Vicinal diols condense with periodic acid to form a cyclic periodate ester, which fragments via a concerted pericyclic pathway.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q018",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Phenol Resistance to Acid-Catalyzed Dehydration",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does phenol completely resist acid-catalyzed dehydration compared to cyclohexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol undergoes spontaneous combustion in acid."
+        },
+        {
+          "label": "B",
+          "text": "Phenol is a stronger base than sulfuric acid."
+        },
+        {
+          "label": "C",
+          "text": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity."
+        },
+        {
+          "label": "D",
+          "text": "Phenol has no lone pairs on oxygen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity.",
+      "explanation": "Aromatic rings cannot support carbocations in the sp² plane, making dehydration to benzyne thermodynamically prohibitive in acid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q019",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Grignard Addition to Carbonyl Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the nature of the key intermediate formed when methylmagnesium bromide adds to acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar secondary carbocation."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic 4-membered oxetane ring."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "A radical pair involving acetyl radical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon.",
+      "explanation": "Nucleophilic addition of the polarized organomagnesium carbanion into the carbonyl π* orbital produces a tetrahedral magnesium alkoxide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q020",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Grignard Guardian",
+      "topic": "Incompatibility of Grignard with Protic Groups",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does phenylmagnesium bromide immediately fail if water, alcohols, or amines are present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines polymerize the Grignard reagent."
+        },
+        {
+          "label": "B",
+          "text": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts."
+        },
+        {
+          "label": "C",
+          "text": "Protic solvents dissolve the organic substrate permanently."
+        },
+        {
+          "label": "D",
+          "text": "Water oxidizes the magnesium to magnesium peroxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts.",
+      "explanation": "Grignard reagents are superbases and are instantly destroyed by protic hydrogens (water, alcohols, carboxylic acids, amines).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "grignard-guardian.png"
+      ]
+    },
+    {
+      "id": "ch12_q021",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Alcohol Halogenation via PBr₃ Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What reactive intermediate is generated when (R)-2-butanol reacts with phosphorus tribromide (PBr₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion."
+        },
+        {
+          "label": "B",
+          "text": "A free alkyl radical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A planar secondary carbocation with complete racemization."
+        },
+        {
+          "label": "D",
+          "text": "A cyclic phosphorus ylide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion.",
+      "explanation": "PBr₃ converts the poor -OH leaving group into an excellent phosphite leaving group, which bromide displaces via SN2 with inversion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q022",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Thionyl Chloride with Pyridine Inversion",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does the reaction of (R)-2-octanol with SOCl₂ in the presence of pyridine proceed with inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chlorosulfite intermediate undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an internal SNi frontside attack."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine acts as a radical initiator that flips the bond."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate.",
+      "explanation": "In the presence of pyridine, chloride ion is liberated to perform an intermolecular SN2 attack, inverting stereochemistry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q023",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Alcohol Tosylation Preservation of Stereocenter",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does tosylation of (S)-2-butanol with TsCl and pyridine yield (S)-2-butyl tosylate with 100% retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched."
+        },
+        {
+          "label": "B",
+          "text": "Because pyridine forces double inversion at carbon."
+        },
+        {
+          "label": "C",
+          "text": "Because tosylate forms a planar carbocation that reforms the S-enantiomer."
+        },
+        {
+          "label": "D",
+          "text": "Because TsCl is a chiral reagent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched.",
+      "explanation": "Tosylation forms an O-S bond without breaking the chiral C-O bond, preserving the absolute configuration of the carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q024",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Acid-Catalyzed Pinacol Rearrangement",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the driving force and mechanistic sequence in the pinacol rearrangement of 2,3-dimethylbutane-2,3-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation to form a stable epoxide."
+        },
+        {
+          "label": "B",
+          "text": "Loss of two water molecules to form a conjugated diene."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage to form two acetone molecules."
+        },
+        {
+          "label": "D",
+          "text": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone.",
+      "explanation": "The 1,2-alkyl shift transforms a tertiary carbocation into an exceptionally stable resonance-stabilized oxocarbenium ion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q025",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Periodic Acid Cleavage of Vicinal Diols",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the key cyclic intermediate during the oxidative cleavage of cis-cyclohexane-1,2-diol by periodic acid (HIO₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A six-membered ozonide ring."
+        },
+        {
+          "label": "B",
+          "text": "A bridged oxonium cation."
+        },
+        {
+          "label": "C",
+          "text": "A diradical iodate intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid.",
+      "explanation": "Vicinal diols condense with periodic acid to form a cyclic periodate ester, which fragments via a concerted pericyclic pathway.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q026",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Phenol Resistance to Acid-Catalyzed Dehydration",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does phenol completely resist acid-catalyzed dehydration compared to cyclohexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity."
+        },
+        {
+          "label": "B",
+          "text": "Phenol has no lone pairs on oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Phenol is a stronger base than sulfuric acid."
+        },
+        {
+          "label": "D",
+          "text": "Phenol undergoes spontaneous combustion in acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity.",
+      "explanation": "Aromatic rings cannot support carbocations in the sp² plane, making dehydration to benzyne thermodynamically prohibitive in acid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q027",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Grignard Addition to Carbonyl Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the nature of the key intermediate formed when methylmagnesium bromide adds to acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic 4-membered oxetane ring."
+        },
+        {
+          "label": "B",
+          "text": "A radical pair involving acetyl radical."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "A planar secondary carbocation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon.",
+      "explanation": "Nucleophilic addition of the polarized organomagnesium carbanion into the carbonyl π* orbital produces a tetrahedral magnesium alkoxide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q028",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Incompatibility of Grignard with Protic Groups",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does phenylmagnesium bromide immediately fail if water, alcohols, or amines are present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts."
+        },
+        {
+          "label": "B",
+          "text": "Amines polymerize the Grignard reagent."
+        },
+        {
+          "label": "C",
+          "text": "Protic solvents dissolve the organic substrate permanently."
+        },
+        {
+          "label": "D",
+          "text": "Water oxidizes the magnesium to magnesium peroxide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts.",
+      "explanation": "Grignard reagents are superbases and are instantly destroyed by protic hydrogens (water, alcohols, carboxylic acids, amines).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q029",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "PCC vs Jones Oxidation Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does pyridinium chlorochromate (PCC) in anhydrous CH₂Cl₂ stop at the aldehyde stage when oxidizing 1-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "PCC lacks the oxidation potential to oxidize aldehydes."
+        },
+        {
+          "label": "C",
+          "text": "PCC precipitates as an insoluble chromium metal."
+        },
+        {
+          "label": "D",
+          "text": "PCC only oxidizes tertiary alcohols."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid.",
+      "explanation": "Jones reagent in aqueous acid forms the gem-diol hydrate, which undergoes a second oxidation; anhydrous PCC avoids hydrate formation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q030",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Chromic Acid Crusher",
+      "topic": "Swern Oxidation Intermediate and Byproducts",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "In the Swern oxidation of secondary alcohols, what reactive electrophile activates DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peracetic acid zwitterion."
+        },
+        {
+          "label": "B",
+          "text": "Chromium trioxide pyridine complex."
+        },
+        {
+          "label": "C",
+          "text": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride."
+        },
+        {
+          "label": "D",
+          "text": "Diazomethane gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride.",
+      "explanation": "Oxalyl chloride activates DMSO to generate the electrophilic dimethylchlorosulfonium species, which coordinates alcohol oxygen.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chromic-acid-crusher.png"
+      ]
+    },
+    {
+      "id": "ch12_q031",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Alcohol Tosylation Preservation of Stereocenter",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does tosylation of (S)-2-butanol with TsCl and pyridine yield (S)-2-butyl tosylate with 100% retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched."
+        },
+        {
+          "label": "B",
+          "text": "Because pyridine forces double inversion at carbon."
+        },
+        {
+          "label": "C",
+          "text": "Because tosylate forms a planar carbocation that reforms the S-enantiomer."
+        },
+        {
+          "label": "D",
+          "text": "Because TsCl is a chiral reagent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched.",
+      "explanation": "Tosylation forms an O-S bond without breaking the chiral C-O bond, preserving the absolute configuration of the carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q032",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Acid-Catalyzed Pinacol Rearrangement",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the driving force and mechanistic sequence in the pinacol rearrangement of 2,3-dimethylbutane-2,3-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation to form a stable epoxide."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage to form two acetone molecules."
+        },
+        {
+          "label": "C",
+          "text": "Loss of two water molecules to form a conjugated diene."
+        },
+        {
+          "label": "D",
+          "text": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone.",
+      "explanation": "The 1,2-alkyl shift transforms a tertiary carbocation into an exceptionally stable resonance-stabilized oxocarbenium ion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q033",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Periodic Acid Cleavage of Vicinal Diols",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key cyclic intermediate during the oxidative cleavage of cis-cyclohexane-1,2-diol by periodic acid (HIO₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A bridged oxonium cation."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid."
+        },
+        {
+          "label": "C",
+          "text": "A diradical iodate intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A six-membered ozonide ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid.",
+      "explanation": "Vicinal diols condense with periodic acid to form a cyclic periodate ester, which fragments via a concerted pericyclic pathway.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q034",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Phenol Resistance to Acid-Catalyzed Dehydration",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does phenol completely resist acid-catalyzed dehydration compared to cyclohexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol has no lone pairs on oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity."
+        },
+        {
+          "label": "C",
+          "text": "Phenol is a stronger base than sulfuric acid."
+        },
+        {
+          "label": "D",
+          "text": "Phenol undergoes spontaneous combustion in acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity.",
+      "explanation": "Aromatic rings cannot support carbocations in the sp² plane, making dehydration to benzyne thermodynamically prohibitive in acid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q035",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Grignard Addition to Carbonyl Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the nature of the key intermediate formed when methylmagnesium bromide adds to acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar secondary carbocation."
+        },
+        {
+          "label": "B",
+          "text": "A radical pair involving acetyl radical."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "A cyclic 4-membered oxetane ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon.",
+      "explanation": "Nucleophilic addition of the polarized organomagnesium carbanion into the carbonyl π* orbital produces a tetrahedral magnesium alkoxide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q036",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Incompatibility of Grignard with Protic Groups",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does phenylmagnesium bromide immediately fail if water, alcohols, or amines are present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts."
+        },
+        {
+          "label": "B",
+          "text": "Protic solvents dissolve the organic substrate permanently."
+        },
+        {
+          "label": "C",
+          "text": "Amines polymerize the Grignard reagent."
+        },
+        {
+          "label": "D",
+          "text": "Water oxidizes the magnesium to magnesium peroxide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts.",
+      "explanation": "Grignard reagents are superbases and are instantly destroyed by protic hydrogens (water, alcohols, carboxylic acids, amines).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q037",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "PCC vs Jones Oxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does pyridinium chlorochromate (PCC) in anhydrous CH₂Cl₂ stop at the aldehyde stage when oxidizing 1-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC lacks the oxidation potential to oxidize aldehydes."
+        },
+        {
+          "label": "B",
+          "text": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "PCC precipitates as an insoluble chromium metal."
+        },
+        {
+          "label": "D",
+          "text": "PCC only oxidizes tertiary alcohols."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid.",
+      "explanation": "Jones reagent in aqueous acid forms the gem-diol hydrate, which undergoes a second oxidation; anhydrous PCC avoids hydrate formation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q038",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Swern Oxidation Intermediate and Byproducts",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In the Swern oxidation of secondary alcohols, what reactive electrophile activates DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peracetic acid zwitterion."
+        },
+        {
+          "label": "B",
+          "text": "Diazomethane gas."
+        },
+        {
+          "label": "C",
+          "text": "Chromium trioxide pyridine complex."
+        },
+        {
+          "label": "D",
+          "text": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride.",
+      "explanation": "Oxalyl chloride activates DMSO to generate the electrophilic dimethylchlorosulfonium species, which coordinates alcohol oxygen.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q039",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Alcohol Halogenation via PBr₃ Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What reactive intermediate is generated when (R)-2-butanol reacts with phosphorus tribromide (PBr₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic phosphorus ylide."
+        },
+        {
+          "label": "B",
+          "text": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion."
+        },
+        {
+          "label": "C",
+          "text": "A planar secondary carbocation with complete racemization."
+        },
+        {
+          "label": "D",
+          "text": "A free alkyl radical intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion.",
+      "explanation": "PBr₃ converts the poor -OH leaving group into an excellent phosphite leaving group, which bromide displaces via SN2 with inversion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q040",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol Phantom",
+      "topic": "Thionyl Chloride with Pyridine Inversion",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the reaction of (R)-2-octanol with SOCl₂ in the presence of pyridine proceed with inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chlorosulfite intermediate undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an internal SNi frontside attack."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine acts as a radical initiator that flips the bond."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate.",
+      "explanation": "In the presence of pyridine, chloride ion is liberated to perform an intermolecular SN2 attack, inverting stereochemistry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phenol-phantom.png"
+      ]
+    },
+    {
+      "id": "ch12_q041",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Periodic Acid Cleavage of Vicinal Diols",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key cyclic intermediate during the oxidative cleavage of cis-cyclohexane-1,2-diol by periodic acid (HIO₄)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A diradical iodate intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A bridged oxonium cation."
+        },
+        {
+          "label": "C",
+          "text": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid."
+        },
+        {
+          "label": "D",
+          "text": "A six-membered ozonide ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A cyclic five-membered periodate diester intermediate that undergoes concerted two-electron fragmentation to yield a dialdehyde and iodic acid.",
+      "explanation": "Vicinal diols condense with periodic acid to form a cyclic periodate ester, which fragments via a concerted pericyclic pathway.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q042",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Phenol Resistance to Acid-Catalyzed Dehydration",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does phenol completely resist acid-catalyzed dehydration compared to cyclohexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol has no lone pairs on oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Phenol undergoes spontaneous combustion in acid."
+        },
+        {
+          "label": "C",
+          "text": "Phenol is a stronger base than sulfuric acid."
+        },
+        {
+          "label": "D",
+          "text": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Loss of water would require forming an extremely unstable, high-energy phenyl cation (sp-hybridized vacant orbital) and destroying aromaticity.",
+      "explanation": "Aromatic rings cannot support carbocations in the sp² plane, making dehydration to benzyne thermodynamically prohibitive in acid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q043",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Grignard Addition to Carbonyl Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the nature of the key intermediate formed when methylmagnesium bromide adds to acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A radical pair involving acetyl radical."
+        },
+        {
+          "label": "B",
+          "text": "A planar secondary carbocation."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon."
+        },
+        {
+          "label": "D",
+          "text": "A cyclic 4-membered oxetane ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A tetrahedral magnesium alkoxide intermediate [(CH₃)₃C-O⁻ MgBr⁺] resulting from nucleophilic attack of the carbanionic methyl group on the carbonyl carbon.",
+      "explanation": "Nucleophilic addition of the polarized organomagnesium carbanion into the carbonyl π* orbital produces a tetrahedral magnesium alkoxide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q044",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Incompatibility of Grignard with Protic Groups",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does phenylmagnesium bromide immediately fail if water, alcohols, or amines are present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Water oxidizes the magnesium to magnesium peroxide."
+        },
+        {
+          "label": "B",
+          "text": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts."
+        },
+        {
+          "label": "C",
+          "text": "Amines polymerize the Grignard reagent."
+        },
+        {
+          "label": "D",
+          "text": "Protic solvents dissolve the organic substrate permanently."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The Grignard reagent acts as a powerful Brønsted base (pKa of benzene ~ 43), undergoing instant irreversible protonation to benzene and basic Mg salts.",
+      "explanation": "Grignard reagents are superbases and are instantly destroyed by protic hydrogens (water, alcohols, carboxylic acids, amines).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q045",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "PCC vs Jones Oxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does pyridinium chlorochromate (PCC) in anhydrous CH₂Cl₂ stop at the aldehyde stage when oxidizing 1-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC only oxidizes tertiary alcohols."
+        },
+        {
+          "label": "B",
+          "text": "PCC lacks the oxidation potential to oxidize aldehydes."
+        },
+        {
+          "label": "C",
+          "text": "PCC precipitates as an insoluble chromium metal."
+        },
+        {
+          "label": "D",
+          "text": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because the absence of water prevents hydration of the aldehyde to a gem-diol (aldehyde hydrate), which is required for the second chromate oxidation to carboxylic acid.",
+      "explanation": "Jones reagent in aqueous acid forms the gem-diol hydrate, which undergoes a second oxidation; anhydrous PCC avoids hydrate formation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q046",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Swern Oxidation Intermediate and Byproducts",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the Swern oxidation of secondary alcohols, what reactive electrophile activates DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diazomethane gas."
+        },
+        {
+          "label": "B",
+          "text": "Peracetic acid zwitterion."
+        },
+        {
+          "label": "C",
+          "text": "Chromium trioxide pyridine complex."
+        },
+        {
+          "label": "D",
+          "text": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Dimethylchlorosulfonium cation [Me₂S⁺-Cl], formed by reaction of DMSO with oxalyl chloride, releasing CO₂, CO, and chloride.",
+      "explanation": "Oxalyl chloride activates DMSO to generate the electrophilic dimethylchlorosulfonium species, which coordinates alcohol oxygen.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q047",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Alcohol Halogenation via PBr₃ Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What reactive intermediate is generated when (R)-2-butanol reacts with phosphorus tribromide (PBr₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free alkyl radical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic phosphorus ylide."
+        },
+        {
+          "label": "C",
+          "text": "A planar secondary carbocation with complete racemization."
+        },
+        {
+          "label": "D",
+          "text": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A protonated alkyl dibromophosphite intermediate [R-O⁺(H)-PBr₂], which is displaced by bromide in a clean SN2 backside attack with inversion.",
+      "explanation": "PBr₃ converts the poor -OH leaving group into an excellent phosphite leaving group, which bromide displaces via SN2 with inversion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q048",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Thionyl Chloride with Pyridine Inversion",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does the reaction of (R)-2-octanol with SOCl₂ in the presence of pyridine proceed with inversion of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The chlorosulfite intermediate undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an internal SNi frontside attack."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine acts as a radical initiator that flips the bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pyridine captures HCl to form pyridinium chloride; free chloride ion then carries out an SN2 backside displacement on the alkyl chlorosulfite intermediate.",
+      "explanation": "In the presence of pyridine, chloride ion is liberated to perform an intermolecular SN2 attack, inverting stereochemistry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q049",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Alcohol Tosylation Preservation of Stereocenter",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does tosylation of (S)-2-butanol with TsCl and pyridine yield (S)-2-butyl tosylate with 100% retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because pyridine forces double inversion at carbon."
+        },
+        {
+          "label": "B",
+          "text": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched."
+        },
+        {
+          "label": "C",
+          "text": "Because TsCl is a chiral reagent."
+        },
+        {
+          "label": "D",
+          "text": "Because tosylate forms a planar carbocation that reforms the S-enantiomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because the reaction occurs at the oxygen atom (O-S bond formation), leaving the chiral C-O carbon stereocenter completely untouched.",
+      "explanation": "Tosylation forms an O-S bond without breaking the chiral C-O bond, preserving the absolute configuration of the carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch12_q050",
+      "chapter": 12,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Swern-PCC Sovereign",
+      "topic": "Acid-Catalyzed Pinacol Rearrangement",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the driving force and mechanistic sequence in the pinacol rearrangement of 2,3-dimethylbutane-2,3-diol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage to form two acetone molecules."
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation to form a stable epoxide."
+        },
+        {
+          "label": "C",
+          "text": "Loss of two water molecules to form a conjugated diene."
+        },
+        {
+          "label": "D",
+          "text": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation and loss of water yields a 3° carbocation, followed by a 1,2-methyl shift driven by lone-pair resonance stabilization from the adjacent hydroxyl oxygen to form pinacolone.",
+      "explanation": "The 1,2-alkyl shift transforms a tertiary carbocation into an exceptionally stable resonance-stabilized oxocarbenium ion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "swern-pcc-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Hydroxyl Hydra",
+    "Grignard Guardian",
+    "Chromic Acid Crusher",
+    "Phenol Phantom",
+    "Swern-PCC Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Hydroxyl Hydra",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "hydroxyl-hydra.png"
+        ]
+      },
+      {
+        "boss": "Grignard Guardian",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "grignard-guardian.png"
+        ]
+      },
+      {
+        "boss": "Chromic Acid Crusher",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "chromic-acid-crusher.png"
+        ]
+      },
+      {
+        "boss": "Phenol Phantom",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "phenol-phantom.png"
+        ]
+      },
+      {
+        "boss": "Swern-PCC Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "swern-pcc-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 26,
+  "chapter_title": "Lipids",
+  "assigned_boss": "Fatty Acid Fiend",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch26_q001",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Acidity Ranking Ladder",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 26 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "C",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q002",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Carbocation Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 26 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "B",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q003",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Leaving Group Ability Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the common leaving groups in Chapter 26 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        },
+        {
+          "label": "B",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "D",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q004",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 26:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "B",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "D",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q005",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Boiling Point Molecular Structure Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the constitutional isomers of Chapter 26 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "B",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "D",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q006",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Carbonyl Electrophilicity Ladder",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 26 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "B",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "C",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q007",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Radical Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 26 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "B",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q008",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Alkene Substitution Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the alkenes of Chapter 26 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "B",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q009",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 A-Value Steric Demand Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 26 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        },
+        {
+          "label": "B",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "D",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q010",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Ch26 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 26 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q011",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Leaving Group Ability Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the common leaving groups in Chapter 26 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        },
+        {
+          "label": "D",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q012",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 26:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "B",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "C",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q013",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Boiling Point Molecular Structure Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the constitutional isomers of Chapter 26 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "C",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "D",
+          "text": "Linear < Highly branched < Moderately branched."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q014",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Carbonyl Electrophilicity Ladder",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 26 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "B",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q015",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Radical Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 26 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "B",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q016",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Alkene Substitution Stability Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkenes of Chapter 26 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q017",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 A-Value Steric Demand Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 26 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "B",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "C",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q018",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 26 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q019",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 26 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "B",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "C",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "D",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q020",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Ch26 Carbocation Stability Hierarchy",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 26 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "B",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "D",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q021",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Boiling Point Molecular Structure Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the constitutional isomers of Chapter 26 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "B",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "D",
+          "text": "Linear < Highly branched < Moderately branched."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q022",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Carbonyl Electrophilicity Ladder",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 26 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "B",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q023",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Radical Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 26 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "C",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "D",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q024",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Alkene Substitution Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the alkenes of Chapter 26 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q025",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 A-Value Steric Demand Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 26 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        },
+        {
+          "label": "B",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "D",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q026",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 26 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "C",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q027",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 26 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "D",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q028",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Carbocation Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 26 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "C",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "D",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q029",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Leaving Group Ability Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the common leaving groups in Chapter 26 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        },
+        {
+          "label": "B",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q030",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Ch26 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 26:",
+      "options": [
+        {
+          "label": "A",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "C",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "D",
+          "text": "All halides have identical nucleophilicity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q031",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Radical Stability Hierarchy",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 26 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "C",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q032",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Alkene Substitution Stability Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkenes of Chapter 26 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "B",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q033",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 A-Value Steric Demand Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 26 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "C",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "D",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q034",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Ring Strain Energy Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 26 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q035",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 26 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "B",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "D",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q036",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Carbocation Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 26 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "C",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q037",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Leaving Group Ability Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the common leaving groups in Chapter 26 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        },
+        {
+          "label": "D",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q038",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 26:",
+      "options": [
+        {
+          "label": "A",
+          "text": "All halides have identical nucleophilicity."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "C",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "D",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q039",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Boiling Point Molecular Structure Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the constitutional isomers of Chapter 26 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        },
+        {
+          "label": "B",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "D",
+          "text": "All isomers have identical boiling points."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q040",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Ch26 Carbonyl Electrophilicity Ladder",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 26 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        },
+        {
+          "label": "B",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "C",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "D",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q041",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 A-Value Steric Demand Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the cyclohexane substituents in Chapter 26 in order of increasing A-value (steric demand in axial position):",
+      "options": [
+        {
+          "label": "A",
+          "text": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "-CH₃ < -Cl < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "C",
+          "text": "-Cl < -CH₃ < -CN < -C(CH₃)₃."
+        },
+        {
+          "label": "D",
+          "text": "-C(CH₃)₃ < -CH(CH₃)₂ < -CH₃ < -Cl < -CN."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "-CN (0.8 kJ/mol) < -Cl (2.2 kJ/mol) < -CH₃ (7.3 kJ/mol) < -CH(CH₃)₂ (9.2 kJ/mol) < -C(CH₃)₃ (>20 kJ/mol) in Chapter 26.",
+      "explanation": "A-values increase with the physical steric bulk of the group directly interacting with 1,3-diaxial hydrogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q042",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Ring Strain Energy Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the cycloalkane ring sizes in Chapter 26 in order of increasing total ring strain per mole:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopentane < Cyclohexane < Cyclobutane < Cyclopropane."
+        },
+        {
+          "label": "D",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol) in Chapter 26.",
+      "explanation": "Ring strain is maximized in small 3- and 4-membered rings due to severe angle distortion and eclipsing torsional strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q043",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Acidity Ranking Ladder",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the principal acidic functional groups encountered in Chapter 26 in order of increasing acidity (lowest to highest pKa):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids < Phenols < Alcohols < Alkynes < Amines."
+        },
+        {
+          "label": "C",
+          "text": "Amines < Alcohols < Carboxylic acids < Alkanes."
+        },
+        {
+          "label": "D",
+          "text": "Alcohols < Carboxylic acids < Phenols < Alkanes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Alkanes (pKa ~50) < Amines (pKa ~38) < Terminal Alkynes (pKa ~25) < Alcohols (pKa ~16) < Phenols (pKa ~10) < Carboxylic acids (pKa ~4.8) in Chapter 26.",
+      "explanation": "Brønsted acidity follows the universal pKa hierarchy dictated by ARIO conjugate base stabilization rules.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q044",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Carbocation Stability Hierarchy",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the intermediate carbocations in Chapter 26 in order of increasing thermodynamic stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "B",
+          "text": "Methyl < Tertiary < Secondary < Primary."
+        },
+        {
+          "label": "C",
+          "text": "Allylic < Primary < Secondary < Tertiary."
+        },
+        {
+          "label": "D",
+          "text": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl cation < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic/Benzylic < Oxocarbenium ion [R-C⁺=O ↔ R-C≡O⁺] in Chapter 26.",
+      "explanation": "Carbocation stability increases with hyperconjugation, resonance delocalization, and octet-complete lone-pair donation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q045",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Leaving Group Ability Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the common leaving groups in Chapter 26 in order of increasing leaving group ability (worst to best):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodide < Bromide < Chloride < Fluoride < Hydroxide."
+        },
+        {
+          "label": "B",
+          "text": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Tosylate < Hydroxide < Chloride < Bromide."
+        },
+        {
+          "label": "D",
+          "text": "Chloride < Bromide < Iodide < Hydroxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydroxide (OH⁻) < Fluoride (F⁻) < Chloride (Cl⁻) < Bromide (Br⁻) < Iodide (I⁻) ≈ Tosylate (OTs⁻) in Chapter 26.",
+      "explanation": "Leaving group ability correlates inversely with basicity: the conjugate bases of strong acids (low pKa) are the best leaving groups.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q046",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Nucleophilicity Ranking in Polar Aprotic Solvent",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the halide nucleophiles in order of increasing nucleophilicity in DMSO/DMF (polar aprotic solvent) for Chapter 26:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl⁻ < F⁻ < Br⁻ < I⁻."
+        },
+        {
+          "label": "B",
+          "text": "F⁻ < Cl⁻ < Br⁻ < I⁻ in polar aprotic solvents."
+        },
+        {
+          "label": "C",
+          "text": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "All halides have identical nucleophilicity."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "I⁻ < Br⁻ < Cl⁻ < F⁻ in polar aprotic solvents (inverting the protic solvent trend) in Chapter 26.",
+      "explanation": "In aprotic solvents without hydrogen bonding, basicity dictates nucleophilicity: compact, electron-dense F⁻ is the strongest nucleophile.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q047",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Boiling Point Molecular Structure Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the constitutional isomers of Chapter 26 organic targets in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Linear < Highly branched < Moderately branched."
+        },
+        {
+          "label": "B",
+          "text": "All isomers have identical boiling points."
+        },
+        {
+          "label": "C",
+          "text": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Hydrogen-bonding < Linear < Highly branched."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Highly branched isomers < Moderately branched isomers < Linear straight-chain isomers < Hydrogen-bonding derivatives in Chapter 26.",
+      "explanation": "Boiling points increase with greater molecular surface contact area (London dispersion) and stronger intermolecular hydrogen bonding.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q048",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Carbonyl Electrophilicity Ladder",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the carbonyl functional groups in Chapter 26 in order of increasing electrophilicity toward nucleophiles:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehyde < Ketone < Amide < Ester < Acyl Chloride."
+        },
+        {
+          "label": "B",
+          "text": "Ketone < Aldehyde < Ester < Amide < Acyl Chloride."
+        },
+        {
+          "label": "C",
+          "text": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26."
+        },
+        {
+          "label": "D",
+          "text": "Acyl Chloride < Aldehyde < Ketone < Ester < Amide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Amide < Ester < Ketone < Aldehyde < Acyl Chloride in Chapter 26.",
+      "explanation": "Carbonyl electrophilicity decreases with resonance electron donation from heteroatoms and increases with electron withdrawal by halogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q049",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Radical Stability Hierarchy",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the carbon radical intermediates in Chapter 26 in order of increasing stability:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl < 3° < 2° < 1° < Benzylic."
+        },
+        {
+          "label": "B",
+          "text": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26."
+        },
+        {
+          "label": "C",
+          "text": "Tertiary < Secondary < Primary < Methyl."
+        },
+        {
+          "label": "D",
+          "text": "Benzylic < Allylic < 3° < 2° < 1° < Methyl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl radical (•CH₃) < Primary (1°) < Secondary (2°) < Tertiary (3°) < Allylic < Benzylic radical in Chapter 26.",
+      "explanation": "Carbon radicals are electron-deficient (7 valence electrons) and are stabilized by hyperconjugation and π-resonance delocalization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q050",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Ch26 Alkene Substitution Stability Ranking",
+      "difficulty": "hard",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkenes of Chapter 26 in order of increasing thermodynamic stability (lowest to highest heat of combustion):",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-Disubstituted < Monosubstituted < trans-Disubstituted."
+        },
+        {
+          "label": "B",
+          "text": "Tetrasubstituted < Trisubstituted < Disubstituted < Monosubstituted."
+        },
+        {
+          "label": "C",
+          "text": "Monosubstituted < Tetrasubstituted < Disubstituted."
+        },
+        {
+          "label": "D",
+          "text": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Monosubstituted < Disubstituted (cis < trans) < Trisubstituted < Tetrasubstituted alkene in Chapter 26.",
+      "explanation": "Each alkyl substituent stabilizes the alkene π bond by ~10–12 kJ/mol via hyperconjugative orbital overlap.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Fatty Acid Fiend",
+    "Micelle Minion",
+    "Steroid Shifter",
+    "Terpene Tracker",
+    "Phospholipid Patriarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Fatty Acid Fiend",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "fatty-acid-fiend.png"
+        ]
+      },
+      {
+        "boss": "Micelle Minion",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "micelle-minion.png"
+        ]
+      },
+      {
+        "boss": "Steroid Shifter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "steroid-shifter.png"
+        ]
+      },
+      {
+        "boss": "Terpene Tracker",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "terpene-tracker.png"
+        ]
+      },
+      {
+        "boss": "Phospholipid Patriarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "phospholipid-patriarch.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereoisomerism",
+  "assigned_boss": "Chirality Cerberus",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "SN2 Backside Inversion Transition State",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the geometric and orbital structure of the transition state during an SN2 displacement on a chiral carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tetrahedral intermediate with a pentavalent carbon atom."
+        },
+        {
+          "label": "B",
+          "text": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°."
+        },
+        {
+          "label": "C",
+          "text": "A square planar complex with 90° bond angles."
+        },
+        {
+          "label": "D",
+          "text": "A planar carbocation with completely dissociated leaving group."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°.",
+      "explanation": "The nucleophile donates electron density into the σ* anti-bonding orbital directly opposite the leaving group, causing umbrella-like stereoinversion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Bridged Bromonium Ion Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does the bromination of trans-2-butene yield exclusively the meso diastereomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two bromines add simultaneously to the same face of the alkene."
+        },
+        {
+          "label": "B",
+          "text": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds through a free carbocation that rotates 180° before capture."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene isomerizes to cis-2-butene during the reaction."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces.",
+      "explanation": "Bridged halonium formation followed by anti-stereospecific backside attack on trans-2-butene yields the symmetric (2R,3S)-meso-2,3-dibromobutane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Syn Dihydroxylation Cyclic Osmate Ester",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What reactive intermediate enforces the syn stereochemistry in OsO₄ dihydroxylation of alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An open carbocation intermediate that is captured by hydroxide from water."
+        },
+        {
+          "label": "B",
+          "text": "A free radical intermediate with a long lifetime."
+        },
+        {
+          "label": "C",
+          "text": "An epoxide intermediate that undergoes double inversion."
+        },
+        {
+          "label": "D",
+          "text": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond.",
+      "explanation": "Both oxygen atoms are tethered to the same osmium atom and delivered simultaneously to the same face of the alkene in a concerted step.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Chiral CBS Catalyst Hydride Delivery",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "In the enantioselective reduction of ketones by the (R)-CBS catalyst, how is facial selectivity achieved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst acts as an achiral solvent that increases reaction temperature."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN1 ionization of the carbonyl oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst racemizes the product after reduction."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face.",
+      "explanation": "Steric coordination in the well-defined CBS transition state differentiates between the enantiotopic faces of the prochiral ketone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Diastereomeric Salt Resolution Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the physical-chemical basis for resolving racemic acids with a pure chiral amine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points."
+        },
+        {
+          "label": "B",
+          "text": "The chiral amine destroys one enantiomer by chemical oxidation."
+        },
+        {
+          "label": "C",
+          "text": "The amine inverts the stereochemistry of the (S) enantiomer to (R)."
+        },
+        {
+          "label": "D",
+          "text": "The salts become volatile and separate by gas distillation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points.",
+      "explanation": "Diastereomeric salts have different physical properties, allowing clean fractional crystallization of one diastereomer.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Fischer Projection 180° Rotation Invariance",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does rotating a Fischer projection by 180° in the plane of the paper maintain the identical stereochemical configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It transforms the molecule into a constitutional isomer."
+        },
+        {
+          "label": "B",
+          "text": "It reflects the molecule through an internal mirror plane."
+        },
+        {
+          "label": "C",
+          "text": "A 180° rotation converts an (R) enantiomer into an (S) enantiomer."
+        },
+        {
+          "label": "D",
+          "text": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships.",
+      "explanation": "A 180° in-plane rotation is a symmetry operation that does not invert stereocenters (unlike a 90° rotation, which inverts configuration).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Cis vs Trans Alkene Heat of Combustion",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does cis-1,2-dimethylcyclopropane have a higher heat of combustion than its trans isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring."
+        },
+        {
+          "label": "B",
+          "text": "The trans isomer contains more C-C single bonds."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer has a higher molecular weight than the trans isomer."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an antiaromatic molecule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring.",
+      "explanation": "Steric clash between cis substituents elevates ground-state potential energy, releasing more heat upon complete combustion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Biological Chiral Receptor Recognition",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do enantiomers exhibit dramatically different biological and pharmacological effects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers have different chemical formulas in vivo."
+        },
+        {
+          "label": "B",
+          "text": "One enantiomer is always radioactive."
+        },
+        {
+          "label": "C",
+          "text": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove)."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers have different boiling points in aqueous blood."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove).",
+      "explanation": "Biological enzymes and receptors are chiral polymers (proteins) that interact stereospecifically with asymmetric substrate topographies.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Meso Compound Achirality Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is (2R,4S)-pentanediol achiral despite possessing two stereogenic carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "The chiral centers have zero optical rotation individually."
+        },
+        {
+          "label": "C",
+          "text": "It undergoes rapid interconversion with a planar enol isomer."
+        },
+        {
+          "label": "D",
+          "text": "The two hydroxyl groups form an intramolecular covalent bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation.",
+      "explanation": "Meso compounds possess an internal mirror plane or inversion center, making the molecule superimposable on its mirror image.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Chirality Cerberus",
+      "topic": "Anti-Periplanar E2 Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does E2 elimination require an anti-periplanar transition state geometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The base must attack the leaving group directly from the front."
+        },
+        {
+          "label": "B",
+          "text": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms."
+        },
+        {
+          "label": "C",
+          "text": "It allows the leaving group to retain its stereochemical configuration."
+        },
+        {
+          "label": "D",
+          "text": "A 180° angle minimizes the molecular weight of the transition state."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms.",
+      "explanation": "Anti-periplanar geometry maximizes constructive overlap between the breaking C-H σ orbital and the forming π system, lowering the activation energy.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chirality-cerberus.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Syn Dihydroxylation Cyclic Osmate Ester",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What reactive intermediate enforces the syn stereochemistry in OsO₄ dihydroxylation of alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free radical intermediate with a long lifetime."
+        },
+        {
+          "label": "B",
+          "text": "An epoxide intermediate that undergoes double inversion."
+        },
+        {
+          "label": "C",
+          "text": "An open carbocation intermediate that is captured by hydroxide from water."
+        },
+        {
+          "label": "D",
+          "text": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond.",
+      "explanation": "Both oxygen atoms are tethered to the same osmium atom and delivered simultaneously to the same face of the alkene in a concerted step.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Chiral CBS Catalyst Hydride Delivery",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the enantioselective reduction of ketones by the (R)-CBS catalyst, how is facial selectivity achieved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst racemizes the product after reduction."
+        },
+        {
+          "label": "B",
+          "text": "The catalyst acts as an achiral solvent that increases reaction temperature."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN1 ionization of the carbonyl oxygen."
+        },
+        {
+          "label": "D",
+          "text": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face.",
+      "explanation": "Steric coordination in the well-defined CBS transition state differentiates between the enantiotopic faces of the prochiral ketone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Diastereomeric Salt Resolution Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the physical-chemical basis for resolving racemic acids with a pure chiral amine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points."
+        },
+        {
+          "label": "B",
+          "text": "The salts become volatile and separate by gas distillation."
+        },
+        {
+          "label": "C",
+          "text": "The amine inverts the stereochemistry of the (S) enantiomer to (R)."
+        },
+        {
+          "label": "D",
+          "text": "The chiral amine destroys one enantiomer by chemical oxidation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points.",
+      "explanation": "Diastereomeric salts have different physical properties, allowing clean fractional crystallization of one diastereomer.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Fischer Projection 180° Rotation Invariance",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does rotating a Fischer projection by 180° in the plane of the paper maintain the identical stereochemical configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It transforms the molecule into a constitutional isomer."
+        },
+        {
+          "label": "B",
+          "text": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships."
+        },
+        {
+          "label": "C",
+          "text": "A 180° rotation converts an (R) enantiomer into an (S) enantiomer."
+        },
+        {
+          "label": "D",
+          "text": "It reflects the molecule through an internal mirror plane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships.",
+      "explanation": "A 180° in-plane rotation is a symmetry operation that does not invert stereocenters (unlike a 90° rotation, which inverts configuration).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Cis vs Trans Alkene Heat of Combustion",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does cis-1,2-dimethylcyclopropane have a higher heat of combustion than its trans isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The trans isomer contains more C-C single bonds."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer has a higher molecular weight than the trans isomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring.",
+      "explanation": "Steric clash between cis substituents elevates ground-state potential energy, releasing more heat upon complete combustion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Biological Chiral Receptor Recognition",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why do enantiomers exhibit dramatically different biological and pharmacological effects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers have different chemical formulas in vivo."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers have different boiling points in aqueous blood."
+        },
+        {
+          "label": "C",
+          "text": "One enantiomer is always radioactive."
+        },
+        {
+          "label": "D",
+          "text": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove).",
+      "explanation": "Biological enzymes and receptors are chiral polymers (proteins) that interact stereospecifically with asymmetric substrate topographies.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Meso Compound Achirality Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is (2R,4S)-pentanediol achiral despite possessing two stereogenic carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two hydroxyl groups form an intramolecular covalent bond."
+        },
+        {
+          "label": "B",
+          "text": "The chiral centers have zero optical rotation individually."
+        },
+        {
+          "label": "C",
+          "text": "It undergoes rapid interconversion with a planar enol isomer."
+        },
+        {
+          "label": "D",
+          "text": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation.",
+      "explanation": "Meso compounds possess an internal mirror plane or inversion center, making the molecule superimposable on its mirror image.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Anti-Periplanar E2 Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does E2 elimination require an anti-periplanar transition state geometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms."
+        },
+        {
+          "label": "B",
+          "text": "It allows the leaving group to retain its stereochemical configuration."
+        },
+        {
+          "label": "C",
+          "text": "The base must attack the leaving group directly from the front."
+        },
+        {
+          "label": "D",
+          "text": "A 180° angle minimizes the molecular weight of the transition state."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms.",
+      "explanation": "Anti-periplanar geometry maximizes constructive overlap between the breaking C-H σ orbital and the forming π system, lowering the activation energy.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "SN2 Backside Inversion Transition State",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the geometric and orbital structure of the transition state during an SN2 displacement on a chiral carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A planar carbocation with completely dissociated leaving group."
+        },
+        {
+          "label": "B",
+          "text": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral intermediate with a pentavalent carbon atom."
+        },
+        {
+          "label": "D",
+          "text": "A square planar complex with 90° bond angles."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°.",
+      "explanation": "The nucleophile donates electron density into the σ* anti-bonding orbital directly opposite the leaving group, causing umbrella-like stereoinversion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Cahn-Ingold-Prelog Captain",
+      "topic": "Bridged Bromonium Ion Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the bromination of trans-2-butene yield exclusively the meso diastereomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces."
+        },
+        {
+          "label": "B",
+          "text": "The two bromines add simultaneously to the same face of the alkene."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds through a free carbocation that rotates 180° before capture."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene isomerizes to cis-2-butene during the reaction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces.",
+      "explanation": "Bridged halonium formation followed by anti-stereospecific backside attack on trans-2-butene yields the symmetric (2R,3S)-meso-2,3-dibromobutane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cahn-ingold-prelog-captain.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Diastereomeric Salt Resolution Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the physical-chemical basis for resolving racemic acids with a pure chiral amine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The amine inverts the stereochemistry of the (S) enantiomer to (R)."
+        },
+        {
+          "label": "B",
+          "text": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points."
+        },
+        {
+          "label": "C",
+          "text": "The chiral amine destroys one enantiomer by chemical oxidation."
+        },
+        {
+          "label": "D",
+          "text": "The salts become volatile and separate by gas distillation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points.",
+      "explanation": "Diastereomeric salts have different physical properties, allowing clean fractional crystallization of one diastereomer.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Fischer Projection 180° Rotation Invariance",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does rotating a Fischer projection by 180° in the plane of the paper maintain the identical stereochemical configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 180° rotation converts an (R) enantiomer into an (S) enantiomer."
+        },
+        {
+          "label": "B",
+          "text": "It transforms the molecule into a constitutional isomer."
+        },
+        {
+          "label": "C",
+          "text": "It reflects the molecule through an internal mirror plane."
+        },
+        {
+          "label": "D",
+          "text": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships.",
+      "explanation": "A 180° in-plane rotation is a symmetry operation that does not invert stereocenters (unlike a 90° rotation, which inverts configuration).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Cis vs Trans Alkene Heat of Combustion",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does cis-1,2-dimethylcyclopropane have a higher heat of combustion than its trans isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring."
+        },
+        {
+          "label": "B",
+          "text": "The trans isomer contains more C-C single bonds."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer has a higher molecular weight than the trans isomer."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an antiaromatic molecule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring.",
+      "explanation": "Steric clash between cis substituents elevates ground-state potential energy, releasing more heat upon complete combustion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Biological Chiral Receptor Recognition",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do enantiomers exhibit dramatically different biological and pharmacological effects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers have different boiling points in aqueous blood."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers have different chemical formulas in vivo."
+        },
+        {
+          "label": "C",
+          "text": "One enantiomer is always radioactive."
+        },
+        {
+          "label": "D",
+          "text": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove).",
+      "explanation": "Biological enzymes and receptors are chiral polymers (proteins) that interact stereospecifically with asymmetric substrate topographies.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Meso Compound Achirality Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is (2R,4S)-pentanediol achiral despite possessing two stereogenic carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "It undergoes rapid interconversion with a planar enol isomer."
+        },
+        {
+          "label": "C",
+          "text": "The two hydroxyl groups form an intramolecular covalent bond."
+        },
+        {
+          "label": "D",
+          "text": "The chiral centers have zero optical rotation individually."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation.",
+      "explanation": "Meso compounds possess an internal mirror plane or inversion center, making the molecule superimposable on its mirror image.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Anti-Periplanar E2 Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does E2 elimination require an anti-periplanar transition state geometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms."
+        },
+        {
+          "label": "B",
+          "text": "A 180° angle minimizes the molecular weight of the transition state."
+        },
+        {
+          "label": "C",
+          "text": "The base must attack the leaving group directly from the front."
+        },
+        {
+          "label": "D",
+          "text": "It allows the leaving group to retain its stereochemical configuration."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms.",
+      "explanation": "Anti-periplanar geometry maximizes constructive overlap between the breaking C-H σ orbital and the forming π system, lowering the activation energy.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "SN2 Backside Inversion Transition State",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the geometric and orbital structure of the transition state during an SN2 displacement on a chiral carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A square planar complex with 90° bond angles."
+        },
+        {
+          "label": "B",
+          "text": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°."
+        },
+        {
+          "label": "C",
+          "text": "A tetrahedral intermediate with a pentavalent carbon atom."
+        },
+        {
+          "label": "D",
+          "text": "A planar carbocation with completely dissociated leaving group."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°.",
+      "explanation": "The nucleophile donates electron density into the σ* anti-bonding orbital directly opposite the leaving group, causing umbrella-like stereoinversion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Bridged Bromonium Ion Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the bromination of trans-2-butene yield exclusively the meso diastereomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Butene isomerizes to cis-2-butene during the reaction."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds through a free carbocation that rotates 180° before capture."
+        },
+        {
+          "label": "C",
+          "text": "The two bromines add simultaneously to the same face of the alkene."
+        },
+        {
+          "label": "D",
+          "text": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces.",
+      "explanation": "Bridged halonium formation followed by anti-stereospecific backside attack on trans-2-butene yields the symmetric (2R,3S)-meso-2,3-dibromobutane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Syn Dihydroxylation Cyclic Osmate Ester",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What reactive intermediate enforces the syn stereochemistry in OsO₄ dihydroxylation of alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free radical intermediate with a long lifetime."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond."
+        },
+        {
+          "label": "C",
+          "text": "An epoxide intermediate that undergoes double inversion."
+        },
+        {
+          "label": "D",
+          "text": "An open carbocation intermediate that is captured by hydroxide from water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond.",
+      "explanation": "Both oxygen atoms are tethered to the same osmium atom and delivered simultaneously to the same face of the alkene in a concerted step.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Enantiomer Enchanter",
+      "topic": "Chiral CBS Catalyst Hydride Delivery",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "In the enantioselective reduction of ketones by the (R)-CBS catalyst, how is facial selectivity achieved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst acts as an achiral solvent that increases reaction temperature."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN1 ionization of the carbonyl oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst racemizes the product after reduction."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face.",
+      "explanation": "Steric coordination in the well-defined CBS transition state differentiates between the enantiotopic faces of the prochiral ketone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Cis vs Trans Alkene Heat of Combustion",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does cis-1,2-dimethylcyclopropane have a higher heat of combustion than its trans isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The trans isomer contains more C-C single bonds."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer has a higher molecular weight than the trans isomer."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an antiaromatic molecule."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring.",
+      "explanation": "Steric clash between cis substituents elevates ground-state potential energy, releasing more heat upon complete combustion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Biological Chiral Receptor Recognition",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do enantiomers exhibit dramatically different biological and pharmacological effects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One enantiomer is always radioactive."
+        },
+        {
+          "label": "B",
+          "text": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove)."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers have different boiling points in aqueous blood."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers have different chemical formulas in vivo."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove).",
+      "explanation": "Biological enzymes and receptors are chiral polymers (proteins) that interact stereospecifically with asymmetric substrate topographies.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Meso Compound Achirality Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is (2R,4S)-pentanediol achiral despite possessing two stereogenic carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chiral centers have zero optical rotation individually."
+        },
+        {
+          "label": "B",
+          "text": "The two hydroxyl groups form an intramolecular covalent bond."
+        },
+        {
+          "label": "C",
+          "text": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "It undergoes rapid interconversion with a planar enol isomer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation.",
+      "explanation": "Meso compounds possess an internal mirror plane or inversion center, making the molecule superimposable on its mirror image.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Anti-Periplanar E2 Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does E2 elimination require an anti-periplanar transition state geometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms."
+        },
+        {
+          "label": "B",
+          "text": "The base must attack the leaving group directly from the front."
+        },
+        {
+          "label": "C",
+          "text": "It allows the leaving group to retain its stereochemical configuration."
+        },
+        {
+          "label": "D",
+          "text": "A 180° angle minimizes the molecular weight of the transition state."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms.",
+      "explanation": "Anti-periplanar geometry maximizes constructive overlap between the breaking C-H σ orbital and the forming π system, lowering the activation energy.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "SN2 Backside Inversion Transition State",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the geometric and orbital structure of the transition state during an SN2 displacement on a chiral carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°."
+        },
+        {
+          "label": "B",
+          "text": "A planar carbocation with completely dissociated leaving group."
+        },
+        {
+          "label": "C",
+          "text": "A square planar complex with 90° bond angles."
+        },
+        {
+          "label": "D",
+          "text": "A tetrahedral intermediate with a pentavalent carbon atom."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°.",
+      "explanation": "The nucleophile donates electron density into the σ* anti-bonding orbital directly opposite the leaving group, causing umbrella-like stereoinversion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Bridged Bromonium Ion Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does the bromination of trans-2-butene yield exclusively the meso diastereomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two bromines add simultaneously to the same face of the alkene."
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Butene isomerizes to cis-2-butene during the reaction."
+        },
+        {
+          "label": "C",
+          "text": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds through a free carbocation that rotates 180° before capture."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces.",
+      "explanation": "Bridged halonium formation followed by anti-stereospecific backside attack on trans-2-butene yields the symmetric (2R,3S)-meso-2,3-dibromobutane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Syn Dihydroxylation Cyclic Osmate Ester",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What reactive intermediate enforces the syn stereochemistry in OsO₄ dihydroxylation of alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An open carbocation intermediate that is captured by hydroxide from water."
+        },
+        {
+          "label": "B",
+          "text": "An epoxide intermediate that undergoes double inversion."
+        },
+        {
+          "label": "C",
+          "text": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond."
+        },
+        {
+          "label": "D",
+          "text": "A free radical intermediate with a long lifetime."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond.",
+      "explanation": "Both oxygen atoms are tethered to the same osmium atom and delivered simultaneously to the same face of the alkene in a concerted step.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Chiral CBS Catalyst Hydride Delivery",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In the enantioselective reduction of ketones by the (R)-CBS catalyst, how is facial selectivity achieved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst racemizes the product after reduction."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN1 ionization of the carbonyl oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The catalyst acts as an achiral solvent that increases reaction temperature."
+        },
+        {
+          "label": "D",
+          "text": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face.",
+      "explanation": "Steric coordination in the well-defined CBS transition state differentiates between the enantiotopic faces of the prochiral ketone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Diastereomeric Salt Resolution Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the physical-chemical basis for resolving racemic acids with a pure chiral amine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The salts become volatile and separate by gas distillation."
+        },
+        {
+          "label": "B",
+          "text": "The amine inverts the stereochemistry of the (S) enantiomer to (R)."
+        },
+        {
+          "label": "C",
+          "text": "The chiral amine destroys one enantiomer by chemical oxidation."
+        },
+        {
+          "label": "D",
+          "text": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points.",
+      "explanation": "Diastereomeric salts have different physical properties, allowing clean fractional crystallization of one diastereomer.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Diastereomer Duelist",
+      "topic": "Fischer Projection 180° Rotation Invariance",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does rotating a Fischer projection by 180° in the plane of the paper maintain the identical stereochemical configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It reflects the molecule through an internal mirror plane."
+        },
+        {
+          "label": "B",
+          "text": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships."
+        },
+        {
+          "label": "C",
+          "text": "It transforms the molecule into a constitutional isomer."
+        },
+        {
+          "label": "D",
+          "text": "A 180° rotation converts an (R) enantiomer into an (S) enantiomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships.",
+      "explanation": "A 180° in-plane rotation is a symmetry operation that does not invert stereocenters (unlike a 90° rotation, which inverts configuration).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Meso Compound Achirality Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is (2R,4S)-pentanediol achiral despite possessing two stereogenic carbon centers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chiral centers have zero optical rotation individually."
+        },
+        {
+          "label": "B",
+          "text": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "The two hydroxyl groups form an intramolecular covalent bond."
+        },
+        {
+          "label": "D",
+          "text": "It undergoes rapid interconversion with a planar enol isomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It possesses an internal plane of symmetry (σ) that reflects the (R) center into the (S) center, causing exact internal compensation of optical rotation.",
+      "explanation": "Meso compounds possess an internal mirror plane or inversion center, making the molecule superimposable on its mirror image.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Anti-Periplanar E2 Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does E2 elimination require an anti-periplanar transition state geometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms."
+        },
+        {
+          "label": "B",
+          "text": "A 180° angle minimizes the molecular weight of the transition state."
+        },
+        {
+          "label": "C",
+          "text": "It allows the leaving group to retain its stereochemical configuration."
+        },
+        {
+          "label": "D",
+          "text": "The base must attack the leaving group directly from the front."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The C-H σ bonding orbital and the C-X σ* anti-bonding orbital must be parallel (dihedral angle 180°) for continuous orbital overlap as the new π bond forms.",
+      "explanation": "Anti-periplanar geometry maximizes constructive overlap between the breaking C-H σ orbital and the forming π system, lowering the activation energy.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "SN2 Backside Inversion Transition State",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the geometric and orbital structure of the transition state during an SN2 displacement on a chiral carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tetrahedral intermediate with a pentavalent carbon atom."
+        },
+        {
+          "label": "B",
+          "text": "A planar carbocation with completely dissociated leaving group."
+        },
+        {
+          "label": "C",
+          "text": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°."
+        },
+        {
+          "label": "D",
+          "text": "A square planar complex with 90° bond angles."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A trigonal bipyramidal arrangement where the central carbon is sp²-like, with the nucleophile and leaving group occupying axial positions at 180°.",
+      "explanation": "The nucleophile donates electron density into the σ* anti-bonding orbital directly opposite the leaving group, causing umbrella-like stereoinversion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Bridged Bromonium Ion Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the bromination of trans-2-butene yield exclusively the meso diastereomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Butene isomerizes to cis-2-butene during the reaction."
+        },
+        {
+          "label": "B",
+          "text": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds through a free carbocation that rotates 180° before capture."
+        },
+        {
+          "label": "D",
+          "text": "The two bromines add simultaneously to the same face of the alkene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine forms a symmetrical bridged bromonium ion; subsequent backside attack by bromide at either carbon occurs with equal probability to produce identical meso enantiomeric faces.",
+      "explanation": "Bridged halonium formation followed by anti-stereospecific backside attack on trans-2-butene yields the symmetric (2R,3S)-meso-2,3-dibromobutane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Syn Dihydroxylation Cyclic Osmate Ester",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What reactive intermediate enforces the syn stereochemistry in OsO₄ dihydroxylation of alkenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An epoxide intermediate that undergoes double inversion."
+        },
+        {
+          "label": "B",
+          "text": "An open carbocation intermediate that is captured by hydroxide from water."
+        },
+        {
+          "label": "C",
+          "text": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond."
+        },
+        {
+          "label": "D",
+          "text": "A free radical intermediate with a long lifetime."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A cyclic five-membered osmate ester intermediate formed by concerted [3+2] cycloaddition to one face of the alkene double bond.",
+      "explanation": "Both oxygen atoms are tethered to the same osmium atom and delivered simultaneously to the same face of the alkene in a concerted step.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Chiral CBS Catalyst Hydride Delivery",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the enantioselective reduction of ketones by the (R)-CBS catalyst, how is facial selectivity achieved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The catalyst racemizes the product after reduction."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN1 ionization of the carbonyl oxygen."
+        },
+        {
+          "label": "C",
+          "text": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face."
+        },
+        {
+          "label": "D",
+          "text": "The catalyst acts as an achiral solvent that increases reaction temperature."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The chiral oxazaborolidine coordinates both the borane and the ketone, orienting the bulky group away from the catalyst to deliver hydride to the re-face.",
+      "explanation": "Steric coordination in the well-defined CBS transition state differentiates between the enantiotopic faces of the prochiral ketone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Diastereomeric Salt Resolution Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the physical-chemical basis for resolving racemic acids with a pure chiral amine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The salts become volatile and separate by gas distillation."
+        },
+        {
+          "label": "B",
+          "text": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points."
+        },
+        {
+          "label": "C",
+          "text": "The amine inverts the stereochemistry of the (S) enantiomer to (R)."
+        },
+        {
+          "label": "D",
+          "text": "The chiral amine destroys one enantiomer by chemical oxidation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The resulting (R,R) and (S,R) ammonium carboxylate salts are diastereomers with different crystal lattice energies, solubilities, and melting points.",
+      "explanation": "Diastereomeric salts have different physical properties, allowing clean fractional crystallization of one diastereomer.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Fischer Projection 180° Rotation Invariance",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does rotating a Fischer projection by 180° in the plane of the paper maintain the identical stereochemical configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It reflects the molecule through an internal mirror plane."
+        },
+        {
+          "label": "B",
+          "text": "It transforms the molecule into a constitutional isomer."
+        },
+        {
+          "label": "C",
+          "text": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships."
+        },
+        {
+          "label": "D",
+          "text": "A 180° rotation converts an (R) enantiomer into an (S) enantiomer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A 180° planar rotation keeps horizontal bonds pointing forward and vertical bonds pointing back, preserving all CIP spatial relationships.",
+      "explanation": "A 180° in-plane rotation is a symmetry operation that does not invert stereocenters (unlike a 90° rotation, which inverts configuration).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Cis vs Trans Alkene Heat of Combustion",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does cis-1,2-dimethylcyclopropane have a higher heat of combustion than its trans isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer has a higher molecular weight than the trans isomer."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer is an antiaromatic molecule."
+        },
+        {
+          "label": "D",
+          "text": "The trans isomer contains more C-C single bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The cis isomer experiences steric repulsion (van der Waals strain) between the two eclipsing methyl groups on the same face of the ring.",
+      "explanation": "Steric clash between cis substituents elevates ground-state potential energy, releasing more heat upon complete combustion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereoisomerism",
+      "boss": "Meso Monarch",
+      "topic": "Biological Chiral Receptor Recognition",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why do enantiomers exhibit dramatically different biological and pharmacological effects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One enantiomer is always radioactive."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers have different boiling points in aqueous blood."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers have different chemical formulas in vivo."
+        },
+        {
+          "label": "D",
+          "text": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chiral biological receptors require a three-point spatial interaction that can only be matched by one specific enantiomer (like a right hand in a right glove).",
+      "explanation": "Biological enzymes and receptors are chiral polymers (proteins) that interact stereospecifically with asymmetric substrate topographies.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "meso-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chirality Cerberus",
+    "Cahn-Ingold-Prelog Captain",
+    "Enantiomer Enchanter",
+    "Diastereomer Duelist",
+    "Meso Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chirality Cerberus",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chirality-cerberus.png"
+        ]
+      },
+      {
+        "boss": "Cahn-Ingold-Prelog Captain",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cahn-ingold-prelog-captain.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enchanter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enchanter.png"
+        ]
+      },
+      {
+        "boss": "Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Meso Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "meso-monarch.png"
+        ]
+      }
+    ]
+  }
+}

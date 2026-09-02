@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 2,
+  "chapter_title": "Molecular Representations",
+  "assigned_boss": "Skeletal Sentry",
+  "bosses": [
+    "Skeletal Sentry",
+    "Lone Pair Phantom",
+    "Resonance Reaver",
+    "Formal Charge Fiend",
+    "Delocalization Overlord"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Skeletal Sentry",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Lone Pair Phantom",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Resonance Reaver",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Formal Charge Fiend",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Delocalization Overlord",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch02_q001",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Allyl System 3-Orbital Energy Diagram",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In the allyl system (3 carbons, 3 p orbitals), what is the nodal structure of the non-bonding orbital (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A spherical node surrounding the whole molecule."
+        },
+        {
+          "label": "B",
+          "text": "Zero nodes across all three carbons."
+        },
+        {
+          "label": "C",
+          "text": "Two nodes located between C1-C2 and C2-C3."
+        },
+        {
+          "label": "D",
+          "text": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3.",
+      "explanation": "The \u03c8\u2082 non-bonding orbital of the allyl system has a node at C2; electron density in \u03c8\u2082 resides exclusively at the terminal carbons C1 and C3.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q002",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Allyl Cation vs Anion FMO Occupancy",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What is the HOMO of the allyl cation [C\u2083H\u2085\u207a] compared to the allyl anion [C\u2083H\u2085\u207b]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both have \u03c8\u2082 as the HOMO."
+        },
+        {
+          "label": "B",
+          "text": "The cation has \u03c8\u2083* as the HOMO."
+        },
+        {
+          "label": "C",
+          "text": "Both have \u03c8\u2081 as the HOMO."
+        },
+        {
+          "label": "D",
+          "text": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding).",
+      "explanation": "The allyl cation has 2 \u03c0 electrons filling \u03c8\u2081 (HOMO); the allyl anion has 4 \u03c0 electrons filling \u03c8\u2081 and \u03c8\u2082 (HOMO).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q003",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "1,3-Butadiene 4-Orbital MO Hierarchy",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How many vertical nodes exist in each of the four \u03c0 molecular orbitals of 1,3-butadiene (\u03c8\u2081 through \u03c8\u2084*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase)."
+        },
+        {
+          "label": "B",
+          "text": "\u03c8\u2081 has 2 nodes, \u03c8\u2082 has 0 nodes."
+        },
+        {
+          "label": "C",
+          "text": "All orbitals have 0 nodes."
+        },
+        {
+          "label": "D",
+          "text": "\u03c8\u2081 has 1, \u03c8\u2082 has 2, \u03c8\u2083 has 3, \u03c8\u2084 has 4."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase).",
+      "explanation": "The number of vertical nodes in a linear conjugated polyene system equals (n - 1), where n is the orbital index.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q004",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Butadiene HOMO Nodal Symmetry",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "In 1,3-butadiene, what is the relative phase (sign) of the terminal p orbitals (C1 and C4) in the HOMO (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion)."
+        },
+        {
+          "label": "B",
+          "text": "Zero coefficient on both terminal carbons."
+        },
+        {
+          "label": "C",
+          "text": "Both terminal lobes are non-bonding."
+        },
+        {
+          "label": "D",
+          "text": "Identical phases (symmetric with respect to mirror plane)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion).",
+      "explanation": "The HOMO (\u03c8\u2082) of butadiene has 1 central node, giving opposite phases at the C1 and C4 terminal lobes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q005",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Butadiene LUMO Nodal Symmetry",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In 1,3-butadiene, what is the relative phase of the terminal p orbitals (C1 and C4) in the LUMO (\u03c8\u2083*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Negative charge on all four lobes."
+        },
+        {
+          "label": "B",
+          "text": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond)."
+        },
+        {
+          "label": "C",
+          "text": "Zero amplitude at terminal carbons."
+        },
+        {
+          "label": "D",
+          "text": "Opposite phases."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond).",
+      "explanation": "The LUMO (\u03c8\u2083*) has 2 nodes (between C1-C2 and C3-C4), resulting in identical in-phase signs at C1 and C4.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q006",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Ozone 3-Center 4-Electron Resonance MO",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In the electronic structure of ozone (O\u2083), how are the 4 \u03c0 electrons distributed across the three oxygen atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges."
+        },
+        {
+          "label": "B",
+          "text": "Two electrons in \u03c8\u2083* antibonding orbital."
+        },
+        {
+          "label": "C",
+          "text": "Four electrons in localized single bonds."
+        },
+        {
+          "label": "D",
+          "text": "All four electrons in non-bonding d orbitals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges.",
+      "explanation": "Ozone is an isoelectronic 3-center 4-electron \u03c0 system analogous to the allyl anion, with non-bonding electron density localized on terminal oxygens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q007",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Benzyl Radical SOMO Orbital Distribution",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the benzyl radical (PhCH\u2082\u2022), in which molecular orbital does the unpaired radical electron reside?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons."
+        },
+        {
+          "label": "B",
+          "text": "In the lowest energy bonding orbital \u03c8\u2081."
+        },
+        {
+          "label": "C",
+          "text": "In the \u03c3* antibonding orbital of the methyl group."
+        },
+        {
+          "label": "D",
+          "text": "In the LUMO \u03c8\u2085*."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons.",
+      "explanation": "The SOMO of the benzyl radical has zero coefficients at meta carbons and non-zero amplitudes at the benzylic, ortho, and para positions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q008",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Conjugation and Optical Band Gap Reduction",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "How does extending \u03c0 conjugation from ethylene (1 double bond) to 1,3,5-hexatriene (3 double bonds) affect the HOMO-LUMO energy gap (\u0394E)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The energy gap increases, shifting absorption to higher energy X-rays."
+        },
+        {
+          "label": "B",
+          "text": "The energy gap remains completely unchanged."
+        },
+        {
+          "label": "C",
+          "text": "The molecule becomes completely transparent."
+        },
+        {
+          "label": "D",
+          "text": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift).",
+      "explanation": "As conjugation length increases, the spacing between MO levels decreases, narrowing \u0394E = E_LUMO - E_HOMO and shifting absorption toward the visible spectrum.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q009",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Aromatic vs Antiaromatic Frost Circle Derivation",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "Using a Frost Circle inscribed vertex-down in a circle of radius 2\u03b2, how many bonding MOs does planar cyclobutadiene (C\u2084H\u2084) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Four degenerate bonding MOs."
+        },
+        {
+          "label": "B",
+          "text": "Two bonding and two antibonding MOs."
+        },
+        {
+          "label": "C",
+          "text": "Three bonding MOs and one antibonding MO."
+        },
+        {
+          "label": "D",
+          "text": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO.",
+      "explanation": "Inscribing a 4-membered ring vertex-down yields 1 bonding level, 2 degenerate non-bonding levels (containing 2 unpaired electrons = antiaromatic diradical), and 1 antibonding level.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q010",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Benzene Frost Circle Aromatic Closed Shell",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "How does a Frost Circle for benzene (6-membered ring) demonstrate its closed-shell aromatic stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It shows an open-shell diradical configuration."
+        },
+        {
+          "label": "B",
+          "text": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons."
+        },
+        {
+          "label": "C",
+          "text": "It places all six electrons in antibonding orbitals."
+        },
+        {
+          "label": "D",
+          "text": "It has three degenerate non-bonding orbitals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons.",
+      "explanation": "Benzene's Frost circle has 3 bonding MOs (all filled by 6 \u03c0 electrons) forming a completely closed, exceptionally stable electronic shell.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q011",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Allyl System 3-Orbital Energy Diagram",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the allyl system (3 carbons, 3 p orbitals), what is the nodal structure of the non-bonding orbital (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero nodes across all three carbons."
+        },
+        {
+          "label": "B",
+          "text": "Two nodes located between C1-C2 and C2-C3."
+        },
+        {
+          "label": "C",
+          "text": "A spherical node surrounding the whole molecule."
+        },
+        {
+          "label": "D",
+          "text": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3.",
+      "explanation": "The \u03c8\u2082 non-bonding orbital of the allyl system has a node at C2; electron density in \u03c8\u2082 resides exclusively at the terminal carbons C1 and C3.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q012",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Allyl Cation vs Anion FMO Occupancy",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "What is the HOMO of the allyl cation [C\u2083H\u2085\u207a] compared to the allyl anion [C\u2083H\u2085\u207b]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cation has \u03c8\u2083* as the HOMO."
+        },
+        {
+          "label": "B",
+          "text": "Both have \u03c8\u2081 as the HOMO."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding)."
+        },
+        {
+          "label": "D",
+          "text": "Both have \u03c8\u2082 as the HOMO."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding).",
+      "explanation": "The allyl cation has 2 \u03c0 electrons filling \u03c8\u2081 (HOMO); the allyl anion has 4 \u03c0 electrons filling \u03c8\u2081 and \u03c8\u2082 (HOMO).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q013",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "1,3-Butadiene 4-Orbital MO Hierarchy",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "How many vertical nodes exist in each of the four \u03c0 molecular orbitals of 1,3-butadiene (\u03c8\u2081 through \u03c8\u2084*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u03c8\u2081 has 1, \u03c8\u2082 has 2, \u03c8\u2083 has 3, \u03c8\u2084 has 4."
+        },
+        {
+          "label": "B",
+          "text": "\u03c8\u2081 has 2 nodes, \u03c8\u2082 has 0 nodes."
+        },
+        {
+          "label": "C",
+          "text": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase)."
+        },
+        {
+          "label": "D",
+          "text": "All orbitals have 0 nodes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase).",
+      "explanation": "The number of vertical nodes in a linear conjugated polyene system equals (n - 1), where n is the orbital index.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q014",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Butadiene HOMO Nodal Symmetry",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In 1,3-butadiene, what is the relative phase (sign) of the terminal p orbitals (C1 and C4) in the HOMO (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion)."
+        },
+        {
+          "label": "B",
+          "text": "Identical phases (symmetric with respect to mirror plane)."
+        },
+        {
+          "label": "C",
+          "text": "Both terminal lobes are non-bonding."
+        },
+        {
+          "label": "D",
+          "text": "Zero coefficient on both terminal carbons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion).",
+      "explanation": "The HOMO (\u03c8\u2082) of butadiene has 1 central node, giving opposite phases at the C1 and C4 terminal lobes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q015",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Butadiene LUMO Nodal Symmetry",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In 1,3-butadiene, what is the relative phase of the terminal p orbitals (C1 and C4) in the LUMO (\u03c8\u2083*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Negative charge on all four lobes."
+        },
+        {
+          "label": "B",
+          "text": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond)."
+        },
+        {
+          "label": "C",
+          "text": "Zero amplitude at terminal carbons."
+        },
+        {
+          "label": "D",
+          "text": "Opposite phases."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond).",
+      "explanation": "The LUMO (\u03c8\u2083*) has 2 nodes (between C1-C2 and C3-C4), resulting in identical in-phase signs at C1 and C4.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q016",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Ozone 3-Center 4-Electron Resonance MO",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "In the electronic structure of ozone (O\u2083), how are the 4 \u03c0 electrons distributed across the three oxygen atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All four electrons in non-bonding d orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Four electrons in localized single bonds."
+        },
+        {
+          "label": "C",
+          "text": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges."
+        },
+        {
+          "label": "D",
+          "text": "Two electrons in \u03c8\u2083* antibonding orbital."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges.",
+      "explanation": "Ozone is an isoelectronic 3-center 4-electron \u03c0 system analogous to the allyl anion, with non-bonding electron density localized on terminal oxygens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q017",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Benzyl Radical SOMO Orbital Distribution",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "In the benzyl radical (PhCH\u2082\u2022), in which molecular orbital does the unpaired radical electron reside?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the lowest energy bonding orbital \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "In the \u03c3* antibonding orbital of the methyl group."
+        },
+        {
+          "label": "C",
+          "text": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons."
+        },
+        {
+          "label": "D",
+          "text": "In the LUMO \u03c8\u2085*."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons.",
+      "explanation": "The SOMO of the benzyl radical has zero coefficients at meta carbons and non-zero amplitudes at the benzylic, ortho, and para positions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q018",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Conjugation and Optical Band Gap Reduction",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "How does extending \u03c0 conjugation from ethylene (1 double bond) to 1,3,5-hexatriene (3 double bonds) affect the HOMO-LUMO energy gap (\u0394E)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule becomes completely transparent."
+        },
+        {
+          "label": "B",
+          "text": "The energy gap increases, shifting absorption to higher energy X-rays."
+        },
+        {
+          "label": "C",
+          "text": "The energy gap remains completely unchanged."
+        },
+        {
+          "label": "D",
+          "text": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift).",
+      "explanation": "As conjugation length increases, the spacing between MO levels decreases, narrowing \u0394E = E_LUMO - E_HOMO and shifting absorption toward the visible spectrum.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q019",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Aromatic vs Antiaromatic Frost Circle Derivation",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Using a Frost Circle inscribed vertex-down in a circle of radius 2\u03b2, how many bonding MOs does planar cyclobutadiene (C\u2084H\u2084) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO."
+        },
+        {
+          "label": "B",
+          "text": "Two bonding and two antibonding MOs."
+        },
+        {
+          "label": "C",
+          "text": "Three bonding MOs and one antibonding MO."
+        },
+        {
+          "label": "D",
+          "text": "Four degenerate bonding MOs."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO.",
+      "explanation": "Inscribing a 4-membered ring vertex-down yields 1 bonding level, 2 degenerate non-bonding levels (containing 2 unpaired electrons = antiaromatic diradical), and 1 antibonding level.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q020",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Benzene Frost Circle Aromatic Closed Shell",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "How does a Frost Circle for benzene (6-membered ring) demonstrate its closed-shell aromatic stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has three degenerate non-bonding orbitals."
+        },
+        {
+          "label": "B",
+          "text": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons."
+        },
+        {
+          "label": "C",
+          "text": "It places all six electrons in antibonding orbitals."
+        },
+        {
+          "label": "D",
+          "text": "It shows an open-shell diradical configuration."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons.",
+      "explanation": "Benzene's Frost circle has 3 bonding MOs (all filled by 6 \u03c0 electrons) forming a completely closed, exceptionally stable electronic shell.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q021",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Allyl System 3-Orbital Energy Diagram",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In the allyl system (3 carbons, 3 p orbitals), what is the nodal structure of the non-bonding orbital (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two nodes located between C1-C2 and C2-C3."
+        },
+        {
+          "label": "B",
+          "text": "Zero nodes across all three carbons."
+        },
+        {
+          "label": "C",
+          "text": "A spherical node surrounding the whole molecule."
+        },
+        {
+          "label": "D",
+          "text": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3.",
+      "explanation": "The \u03c8\u2082 non-bonding orbital of the allyl system has a node at C2; electron density in \u03c8\u2082 resides exclusively at the terminal carbons C1 and C3.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q022",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Allyl Cation vs Anion FMO Occupancy",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What is the HOMO of the allyl cation [C\u2083H\u2085\u207a] compared to the allyl anion [C\u2083H\u2085\u207b]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both have \u03c8\u2082 as the HOMO."
+        },
+        {
+          "label": "B",
+          "text": "The cation has \u03c8\u2083* as the HOMO."
+        },
+        {
+          "label": "C",
+          "text": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding)."
+        },
+        {
+          "label": "D",
+          "text": "Both have \u03c8\u2081 as the HOMO."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding).",
+      "explanation": "The allyl cation has 2 \u03c0 electrons filling \u03c8\u2081 (HOMO); the allyl anion has 4 \u03c0 electrons filling \u03c8\u2081 and \u03c8\u2082 (HOMO).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q023",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "1,3-Butadiene 4-Orbital MO Hierarchy",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How many vertical nodes exist in each of the four \u03c0 molecular orbitals of 1,3-butadiene (\u03c8\u2081 through \u03c8\u2084*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All orbitals have 0 nodes."
+        },
+        {
+          "label": "B",
+          "text": "\u03c8\u2081 has 2 nodes, \u03c8\u2082 has 0 nodes."
+        },
+        {
+          "label": "C",
+          "text": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase)."
+        },
+        {
+          "label": "D",
+          "text": "\u03c8\u2081 has 1, \u03c8\u2082 has 2, \u03c8\u2083 has 3, \u03c8\u2084 has 4."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase).",
+      "explanation": "The number of vertical nodes in a linear conjugated polyene system equals (n - 1), where n is the orbital index.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q024",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Butadiene HOMO Nodal Symmetry",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "In 1,3-butadiene, what is the relative phase (sign) of the terminal p orbitals (C1 and C4) in the HOMO (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero coefficient on both terminal carbons."
+        },
+        {
+          "label": "B",
+          "text": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion)."
+        },
+        {
+          "label": "C",
+          "text": "Both terminal lobes are non-bonding."
+        },
+        {
+          "label": "D",
+          "text": "Identical phases (symmetric with respect to mirror plane)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion).",
+      "explanation": "The HOMO (\u03c8\u2082) of butadiene has 1 central node, giving opposite phases at the C1 and C4 terminal lobes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q025",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Butadiene LUMO Nodal Symmetry",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "In 1,3-butadiene, what is the relative phase of the terminal p orbitals (C1 and C4) in the LUMO (\u03c8\u2083*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Negative charge on all four lobes."
+        },
+        {
+          "label": "B",
+          "text": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond)."
+        },
+        {
+          "label": "C",
+          "text": "Opposite phases."
+        },
+        {
+          "label": "D",
+          "text": "Zero amplitude at terminal carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond).",
+      "explanation": "The LUMO (\u03c8\u2083*) has 2 nodes (between C1-C2 and C3-C4), resulting in identical in-phase signs at C1 and C4.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q026",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Ozone 3-Center 4-Electron Resonance MO",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In the electronic structure of ozone (O\u2083), how are the 4 \u03c0 electrons distributed across the three oxygen atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All four electrons in non-bonding d orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Two electrons in \u03c8\u2083* antibonding orbital."
+        },
+        {
+          "label": "C",
+          "text": "Four electrons in localized single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges.",
+      "explanation": "Ozone is an isoelectronic 3-center 4-electron \u03c0 system analogous to the allyl anion, with non-bonding electron density localized on terminal oxygens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q027",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Benzyl Radical SOMO Orbital Distribution",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the benzyl radical (PhCH\u2082\u2022), in which molecular orbital does the unpaired radical electron reside?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the lowest energy bonding orbital \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "In the LUMO \u03c8\u2085*."
+        },
+        {
+          "label": "C",
+          "text": "In the \u03c3* antibonding orbital of the methyl group."
+        },
+        {
+          "label": "D",
+          "text": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons.",
+      "explanation": "The SOMO of the benzyl radical has zero coefficients at meta carbons and non-zero amplitudes at the benzylic, ortho, and para positions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q028",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Conjugation and Optical Band Gap Reduction",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "How does extending \u03c0 conjugation from ethylene (1 double bond) to 1,3,5-hexatriene (3 double bonds) affect the HOMO-LUMO energy gap (\u0394E)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The energy gap increases, shifting absorption to higher energy X-rays."
+        },
+        {
+          "label": "B",
+          "text": "The energy gap remains completely unchanged."
+        },
+        {
+          "label": "C",
+          "text": "The molecule becomes completely transparent."
+        },
+        {
+          "label": "D",
+          "text": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift).",
+      "explanation": "As conjugation length increases, the spacing between MO levels decreases, narrowing \u0394E = E_LUMO - E_HOMO and shifting absorption toward the visible spectrum.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q029",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Aromatic vs Antiaromatic Frost Circle Derivation",
+      "difficulty": "hard",
+      "question_type": "homo_lumo_identification",
+      "question": "Using a Frost Circle inscribed vertex-down in a circle of radius 2\u03b2, how many bonding MOs does planar cyclobutadiene (C\u2084H\u2084) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO."
+        },
+        {
+          "label": "B",
+          "text": "Four degenerate bonding MOs."
+        },
+        {
+          "label": "C",
+          "text": "Three bonding MOs and one antibonding MO."
+        },
+        {
+          "label": "D",
+          "text": "Two bonding and two antibonding MOs."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO.",
+      "explanation": "Inscribing a 4-membered ring vertex-down yields 1 bonding level, 2 degenerate non-bonding levels (containing 2 unpaired electrons = antiaromatic diradical), and 1 antibonding level.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q030",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Benzene Frost Circle Aromatic Closed Shell",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "How does a Frost Circle for benzene (6-membered ring) demonstrate its closed-shell aromatic stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It places all six electrons in antibonding orbitals."
+        },
+        {
+          "label": "B",
+          "text": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons."
+        },
+        {
+          "label": "C",
+          "text": "It shows an open-shell diradical configuration."
+        },
+        {
+          "label": "D",
+          "text": "It has three degenerate non-bonding orbitals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons.",
+      "explanation": "Benzene's Frost circle has 3 bonding MOs (all filled by 6 \u03c0 electrons) forming a completely closed, exceptionally stable electronic shell.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q031",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Allyl System 3-Orbital Energy Diagram",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the allyl system (3 carbons, 3 p orbitals), what is the nodal structure of the non-bonding orbital (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two nodes located between C1-C2 and C2-C3."
+        },
+        {
+          "label": "B",
+          "text": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3."
+        },
+        {
+          "label": "C",
+          "text": "A spherical node surrounding the whole molecule."
+        },
+        {
+          "label": "D",
+          "text": "Zero nodes across all three carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3.",
+      "explanation": "The \u03c8\u2082 non-bonding orbital of the allyl system has a node at C2; electron density in \u03c8\u2082 resides exclusively at the terminal carbons C1 and C3.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q032",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Allyl Cation vs Anion FMO Occupancy",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "What is the HOMO of the allyl cation [C\u2083H\u2085\u207a] compared to the allyl anion [C\u2083H\u2085\u207b]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding)."
+        },
+        {
+          "label": "B",
+          "text": "Both have \u03c8\u2081 as the HOMO."
+        },
+        {
+          "label": "C",
+          "text": "Both have \u03c8\u2082 as the HOMO."
+        },
+        {
+          "label": "D",
+          "text": "The cation has \u03c8\u2083* as the HOMO."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding).",
+      "explanation": "The allyl cation has 2 \u03c0 electrons filling \u03c8\u2081 (HOMO); the allyl anion has 4 \u03c0 electrons filling \u03c8\u2081 and \u03c8\u2082 (HOMO).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q033",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "1,3-Butadiene 4-Orbital MO Hierarchy",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "How many vertical nodes exist in each of the four \u03c0 molecular orbitals of 1,3-butadiene (\u03c8\u2081 through \u03c8\u2084*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase)."
+        },
+        {
+          "label": "B",
+          "text": "\u03c8\u2081 has 2 nodes, \u03c8\u2082 has 0 nodes."
+        },
+        {
+          "label": "C",
+          "text": "\u03c8\u2081 has 1, \u03c8\u2082 has 2, \u03c8\u2083 has 3, \u03c8\u2084 has 4."
+        },
+        {
+          "label": "D",
+          "text": "All orbitals have 0 nodes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase).",
+      "explanation": "The number of vertical nodes in a linear conjugated polyene system equals (n - 1), where n is the orbital index.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q034",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Butadiene HOMO Nodal Symmetry",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In 1,3-butadiene, what is the relative phase (sign) of the terminal p orbitals (C1 and C4) in the HOMO (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero coefficient on both terminal carbons."
+        },
+        {
+          "label": "B",
+          "text": "Both terminal lobes are non-bonding."
+        },
+        {
+          "label": "C",
+          "text": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion)."
+        },
+        {
+          "label": "D",
+          "text": "Identical phases (symmetric with respect to mirror plane)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion).",
+      "explanation": "The HOMO (\u03c8\u2082) of butadiene has 1 central node, giving opposite phases at the C1 and C4 terminal lobes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q035",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Butadiene LUMO Nodal Symmetry",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In 1,3-butadiene, what is the relative phase of the terminal p orbitals (C1 and C4) in the LUMO (\u03c8\u2083*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Negative charge on all four lobes."
+        },
+        {
+          "label": "B",
+          "text": "Zero amplitude at terminal carbons."
+        },
+        {
+          "label": "C",
+          "text": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond)."
+        },
+        {
+          "label": "D",
+          "text": "Opposite phases."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond).",
+      "explanation": "The LUMO (\u03c8\u2083*) has 2 nodes (between C1-C2 and C3-C4), resulting in identical in-phase signs at C1 and C4.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q036",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Ozone 3-Center 4-Electron Resonance MO",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "In the electronic structure of ozone (O\u2083), how are the 4 \u03c0 electrons distributed across the three oxygen atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Four electrons in localized single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Two electrons in \u03c8\u2083* antibonding orbital."
+        },
+        {
+          "label": "C",
+          "text": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges."
+        },
+        {
+          "label": "D",
+          "text": "All four electrons in non-bonding d orbitals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges.",
+      "explanation": "Ozone is an isoelectronic 3-center 4-electron \u03c0 system analogous to the allyl anion, with non-bonding electron density localized on terminal oxygens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q037",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Benzyl Radical SOMO Orbital Distribution",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "In the benzyl radical (PhCH\u2082\u2022), in which molecular orbital does the unpaired radical electron reside?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the lowest energy bonding orbital \u03c8\u2081."
+        },
+        {
+          "label": "B",
+          "text": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons."
+        },
+        {
+          "label": "C",
+          "text": "In the \u03c3* antibonding orbital of the methyl group."
+        },
+        {
+          "label": "D",
+          "text": "In the LUMO \u03c8\u2085*."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons.",
+      "explanation": "The SOMO of the benzyl radical has zero coefficients at meta carbons and non-zero amplitudes at the benzylic, ortho, and para positions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q038",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Conjugation and Optical Band Gap Reduction",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "How does extending \u03c0 conjugation from ethylene (1 double bond) to 1,3,5-hexatriene (3 double bonds) affect the HOMO-LUMO energy gap (\u0394E)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The energy gap increases, shifting absorption to higher energy X-rays."
+        },
+        {
+          "label": "B",
+          "text": "The molecule becomes completely transparent."
+        },
+        {
+          "label": "C",
+          "text": "The energy gap remains completely unchanged."
+        },
+        {
+          "label": "D",
+          "text": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift).",
+      "explanation": "As conjugation length increases, the spacing between MO levels decreases, narrowing \u0394E = E_LUMO - E_HOMO and shifting absorption toward the visible spectrum.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q039",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Aromatic vs Antiaromatic Frost Circle Derivation",
+      "difficulty": "hard",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Using a Frost Circle inscribed vertex-down in a circle of radius 2\u03b2, how many bonding MOs does planar cyclobutadiene (C\u2084H\u2084) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two bonding and two antibonding MOs."
+        },
+        {
+          "label": "B",
+          "text": "Four degenerate bonding MOs."
+        },
+        {
+          "label": "C",
+          "text": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO."
+        },
+        {
+          "label": "D",
+          "text": "Three bonding MOs and one antibonding MO."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO.",
+      "explanation": "Inscribing a 4-membered ring vertex-down yields 1 bonding level, 2 degenerate non-bonding levels (containing 2 unpaired electrons = antiaromatic diradical), and 1 antibonding level.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q040",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Benzene Frost Circle Aromatic Closed Shell",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "How does a Frost Circle for benzene (6-membered ring) demonstrate its closed-shell aromatic stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It places all six electrons in antibonding orbitals."
+        },
+        {
+          "label": "B",
+          "text": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons."
+        },
+        {
+          "label": "C",
+          "text": "It shows an open-shell diradical configuration."
+        },
+        {
+          "label": "D",
+          "text": "It has three degenerate non-bonding orbitals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons.",
+      "explanation": "Benzene's Frost circle has 3 bonding MOs (all filled by 6 \u03c0 electrons) forming a completely closed, exceptionally stable electronic shell.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q041",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Allyl System 3-Orbital Energy Diagram",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In the allyl system (3 carbons, 3 p orbitals), what is the nodal structure of the non-bonding orbital (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A spherical node surrounding the whole molecule."
+        },
+        {
+          "label": "B",
+          "text": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3."
+        },
+        {
+          "label": "C",
+          "text": "Two nodes located between C1-C2 and C2-C3."
+        },
+        {
+          "label": "D",
+          "text": "Zero nodes across all three carbons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One vertical nodal plane passing directly through the central carbon atom (C2), leaving orbital lobes only on C1 and C3.",
+      "explanation": "The \u03c8\u2082 non-bonding orbital of the allyl system has a node at C2; electron density in \u03c8\u2082 resides exclusively at the terminal carbons C1 and C3.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q042",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Allyl Cation vs Anion FMO Occupancy",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What is the HOMO of the allyl cation [C\u2083H\u2085\u207a] compared to the allyl anion [C\u2083H\u2085\u207b]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cation has \u03c8\u2083* as the HOMO."
+        },
+        {
+          "label": "B",
+          "text": "Both have \u03c8\u2081 as the HOMO."
+        },
+        {
+          "label": "C",
+          "text": "Both have \u03c8\u2082 as the HOMO."
+        },
+        {
+          "label": "D",
+          "text": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The HOMO of the allyl cation is \u03c8\u2081 (2\u03c0 electrons); the HOMO of the allyl anion is \u03c8\u2082 (4\u03c0 electrons, non-bonding).",
+      "explanation": "The allyl cation has 2 \u03c0 electrons filling \u03c8\u2081 (HOMO); the allyl anion has 4 \u03c0 electrons filling \u03c8\u2081 and \u03c8\u2082 (HOMO).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q043",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "1,3-Butadiene 4-Orbital MO Hierarchy",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "How many vertical nodes exist in each of the four \u03c0 molecular orbitals of 1,3-butadiene (\u03c8\u2081 through \u03c8\u2084*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u03c8\u2081 has 2 nodes, \u03c8\u2082 has 0 nodes."
+        },
+        {
+          "label": "B",
+          "text": "\u03c8\u2081 has 1, \u03c8\u2082 has 2, \u03c8\u2083 has 3, \u03c8\u2084 has 4."
+        },
+        {
+          "label": "C",
+          "text": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase)."
+        },
+        {
+          "label": "D",
+          "text": "All orbitals have 0 nodes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u03c8\u2081 has 0 nodes, \u03c8\u2082 has 1 node (HOMO), \u03c8\u2083* has 2 nodes (LUMO), and \u03c8\u2084* has 3 nodes (all out-of-phase).",
+      "explanation": "The number of vertical nodes in a linear conjugated polyene system equals (n - 1), where n is the orbital index.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q044",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Butadiene HOMO Nodal Symmetry",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "In 1,3-butadiene, what is the relative phase (sign) of the terminal p orbitals (C1 and C4) in the HOMO (\u03c8\u2082)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion)."
+        },
+        {
+          "label": "B",
+          "text": "Zero coefficient on both terminal carbons."
+        },
+        {
+          "label": "C",
+          "text": "Both terminal lobes are non-bonding."
+        },
+        {
+          "label": "D",
+          "text": "Identical phases (symmetric with respect to mirror plane)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Opposite phases (antisymmetric with respect to the mirror plane; symmetric with respect to C\u2082 inversion).",
+      "explanation": "The HOMO (\u03c8\u2082) of butadiene has 1 central node, giving opposite phases at the C1 and C4 terminal lobes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q045",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Butadiene LUMO Nodal Symmetry",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "In 1,3-butadiene, what is the relative phase of the terminal p orbitals (C1 and C4) in the LUMO (\u03c8\u2083*)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond)."
+        },
+        {
+          "label": "B",
+          "text": "Negative charge on all four lobes."
+        },
+        {
+          "label": "C",
+          "text": "Zero amplitude at terminal carbons."
+        },
+        {
+          "label": "D",
+          "text": "Opposite phases."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Identical phases (symmetric with respect to the mirror plane perpendicular to the C2-C3 bond).",
+      "explanation": "The LUMO (\u03c8\u2083*) has 2 nodes (between C1-C2 and C3-C4), resulting in identical in-phase signs at C1 and C4.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q046",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Ozone 3-Center 4-Electron Resonance MO",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In the electronic structure of ozone (O\u2083), how are the 4 \u03c0 electrons distributed across the three oxygen atoms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All four electrons in non-bonding d orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges."
+        },
+        {
+          "label": "C",
+          "text": "Four electrons in localized single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Two electrons in \u03c8\u2083* antibonding orbital."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Two electrons in the bonding \u03c8\u2081 MO and two electrons in the non-bonding \u03c8\u2082 MO with nodes on the central oxygen, leaving terminal oxygens with partial charges.",
+      "explanation": "Ozone is an isoelectronic 3-center 4-electron \u03c0 system analogous to the allyl anion, with non-bonding electron density localized on terminal oxygens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q047",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Benzyl Radical SOMO Orbital Distribution",
+      "difficulty": "hard",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the benzyl radical (PhCH\u2082\u2022), in which molecular orbital does the unpaired radical electron reside?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the \u03c3* antibonding orbital of the methyl group."
+        },
+        {
+          "label": "B",
+          "text": "In the LUMO \u03c8\u2085*."
+        },
+        {
+          "label": "C",
+          "text": "In the lowest energy bonding orbital \u03c8\u2081."
+        },
+        {
+          "label": "D",
+          "text": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In the non-bonding Single Occupied Molecular Orbital (SOMO, \u03c8\u2084), with wave function amplitude distributed exclusively at the benzylic carbon and ortho/para ring carbons.",
+      "explanation": "The SOMO of the benzyl radical has zero coefficients at meta carbons and non-zero amplitudes at the benzylic, ortho, and para positions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q048",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Conjugation and Optical Band Gap Reduction",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "How does extending \u03c0 conjugation from ethylene (1 double bond) to 1,3,5-hexatriene (3 double bonds) affect the HOMO-LUMO energy gap (\u0394E)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The energy gap increases, shifting absorption to higher energy X-rays."
+        },
+        {
+          "label": "B",
+          "text": "The molecule becomes completely transparent."
+        },
+        {
+          "label": "C",
+          "text": "The energy gap remains completely unchanged."
+        },
+        {
+          "label": "D",
+          "text": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The energy gap \u0394E decreases systematically, shifting the electronic absorption (\u03bbmax) to longer wavelengths (bathochromic red shift).",
+      "explanation": "As conjugation length increases, the spacing between MO levels decreases, narrowing \u0394E = E_LUMO - E_HOMO and shifting absorption toward the visible spectrum.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q049",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Aromatic vs Antiaromatic Frost Circle Derivation",
+      "difficulty": "hard",
+      "question_type": "homo_lumo_identification",
+      "question": "Using a Frost Circle inscribed vertex-down in a circle of radius 2\u03b2, how many bonding MOs does planar cyclobutadiene (C\u2084H\u2084) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two bonding and two antibonding MOs."
+        },
+        {
+          "label": "B",
+          "text": "Three bonding MOs and one antibonding MO."
+        },
+        {
+          "label": "C",
+          "text": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO."
+        },
+        {
+          "label": "D",
+          "text": "Four degenerate bonding MOs."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One bonding MO (lowest vertex), two degenerate non-bonding MOs (on the horizontal center line), and one antibonding MO.",
+      "explanation": "Inscribing a 4-membered ring vertex-down yields 1 bonding level, 2 degenerate non-bonding levels (containing 2 unpaired electrons = antiaromatic diradical), and 1 antibonding level.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q050",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Benzene Frost Circle Aromatic Closed Shell",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "How does a Frost Circle for benzene (6-membered ring) demonstrate its closed-shell aromatic stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It places all six electrons in antibonding orbitals."
+        },
+        {
+          "label": "B",
+          "text": "It has three degenerate non-bonding orbitals."
+        },
+        {
+          "label": "C",
+          "text": "It shows an open-shell diradical configuration."
+        },
+        {
+          "label": "D",
+          "text": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It places 1 lowest-energy bonding MO and 2 degenerate bonding MOs below the center line, completely filled by 6 \u03c0 electrons with zero non-bonding or antibonding electrons.",
+      "explanation": "Benzene's Frost circle has 3 bonding MOs (all filled by 6 \u03c0 electrons) forming a completely closed, exceptionally stable electronic shell.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    }
+  ]
+}

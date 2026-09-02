@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 24,
+  "chapter_title": "Carbohydrates",
+  "assigned_boss": "Aldose Apparition",
+  "bosses": [
+    "Aldose Apparition",
+    "Pyranose Phantom",
+    "Anomeric Archer",
+    "Kiliani-Fischer Knight",
+    "Polysaccharide Pharaoh"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Aldose Apparition",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Pyranose Phantom",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Anomeric Archer",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Kiliani-Fischer Knight",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Polysaccharide Pharaoh",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch24_q001",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 24 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "B",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "C",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "D",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q002",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Step 2: Formulate the Plan for Chapter 24 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "C",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "D",
+          "text": "Pick an arbitrary reagent from memory."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q003",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 3: Verify the Solution for Chapter 24, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "B",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "C",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the product is colored red."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q004",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Decision Tree Regioselectivity Choice",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In the algorithmic decision tree for Chapter 24 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "B",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "C",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "D",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q005",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Stereochemical Decision Tree Branching",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "When evaluating stereochemical outcomes in Chapter 24, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?"
+        },
+        {
+          "label": "B",
+          "text": "Is the product soluble in oil?"
+        },
+        {
+          "label": "C",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product an aromatic ring?"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q006",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Mechanism Arrow Debugging Violation",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When auditing student-drawn mechanisms for Chapter 24, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Protonating a basic oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Forming a stable carbocation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q007",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 24 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "B",
+          "text": "The substrate is converted to an alkane."
+        },
+        {
+          "label": "C",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "D",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q008",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Functional Group Chemoselectivity Decision",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the chemoselectivity decision tree for Chapter 24, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "C",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "D",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q009",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Competing Pathway Disambiguation",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 24, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary halide treated with sodium cyanide."
+        },
+        {
+          "label": "B",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "C",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q010",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Ch24 Algorithmic Synthesis Planning Verification",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In retrosynthetic planning for Chapter 24, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Verify that all reagents are colored white."
+        },
+        {
+          "label": "C",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "D",
+          "text": "Confirm that the final step produces water."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q011",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 24 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "C",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "D",
+          "text": "Guess the final answer immediately without reading."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q012",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 2: Formulate the Plan for Chapter 24 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "C",
+          "text": "Pick an arbitrary reagent from memory."
+        },
+        {
+          "label": "D",
+          "text": "Ignore stereochemistry completely."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q013",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Step 3: Verify the Solution for Chapter 24, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "B",
+          "text": "Ensure the product is colored red."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "D",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q014",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Decision Tree Regioselectivity Choice",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the algorithmic decision tree for Chapter 24 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "B",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?"
+        },
+        {
+          "label": "C",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "D",
+          "text": "Is the flask made of Pyrex?"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q015",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Stereochemical Decision Tree Branching",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When evaluating stereochemical outcomes in Chapter 24, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "B",
+          "text": "Is the product soluble in oil?"
+        },
+        {
+          "label": "C",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "D",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q016",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When auditing student-drawn mechanisms for Chapter 24, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "B",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "D",
+          "text": "Protonating a basic oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q017",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 24 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "The substrate is converted to an alkane."
+        },
+        {
+          "label": "C",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "D",
+          "text": "The reaction undergoes spontaneous polymerization."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q018",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Functional Group Chemoselectivity Decision",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the chemoselectivity decision tree for Chapter 24, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids are reduced first."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q019",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Competing Pathway Disambiguation",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 24, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "A primary halide treated with sodium cyanide."
+        },
+        {
+          "label": "C",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "A primary halide with sodium iodide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q020",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Ch24 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In retrosynthetic planning for Chapter 24, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that all reagents are colored white."
+        },
+        {
+          "label": "B",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "C",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the reaction takes exactly one hour."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q021",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 24 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "B",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "C",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Memorize the textbook page number."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q022",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Step 2: Formulate the Plan for Chapter 24 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pick an arbitrary reagent from memory."
+        },
+        {
+          "label": "B",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "C",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Ignore stereochemistry completely."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q023",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Step 3: Verify the Solution for Chapter 24, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "B",
+          "text": "Ensure the product is colored red."
+        },
+        {
+          "label": "C",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Verify that no bonds were formed."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q024",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Decision Tree Regioselectivity Choice",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the algorithmic decision tree for Chapter 24 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "B",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "C",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "D",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q025",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Stereochemical Decision Tree Branching",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When evaluating stereochemical outcomes in Chapter 24, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the product soluble in oil?"
+        },
+        {
+          "label": "B",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?"
+        },
+        {
+          "label": "C",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "D",
+          "text": "Does the reaction have a yellow color?"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q026",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "When auditing student-drawn mechanisms for Chapter 24, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "B",
+          "text": "Protonating a basic oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "D",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q027",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 24 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "B",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "The substrate is converted to an alkane."
+        },
+        {
+          "label": "D",
+          "text": "The solvent boils away instantly."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q028",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Functional Group Chemoselectivity Decision",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the chemoselectivity decision tree for Chapter 24, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids are reduced first."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Esters are reduced faster than aldehydes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q029",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Competing Pathway Disambiguation",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 24, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "C",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "D",
+          "text": "A primary halide treated with sodium cyanide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q030",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Ch24 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In retrosynthetic planning for Chapter 24, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "B",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "C",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Verify that all reagents are colored white."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q031",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "decision_tree_branching",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 24 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "B",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "C",
+          "text": "Calculate the molar mass of the glassware."
+        },
+        {
+          "label": "D",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q032",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Step 2: Formulate the Plan for Chapter 24 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "B",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "D",
+          "text": "Pick an arbitrary reagent from memory."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q033",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 SkillBuilder Solution Verification",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 3: Verify the Solution for Chapter 24, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "B",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the product is colored red."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q034",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Decision Tree Regioselectivity Choice",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In the algorithmic decision tree for Chapter 24 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the flask made of Pyrex?"
+        },
+        {
+          "label": "B",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "C",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?"
+        },
+        {
+          "label": "D",
+          "text": "Are all reactants gases?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q035",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Stereochemical Decision Tree Branching",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "When evaluating stereochemical outcomes in Chapter 24, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "B",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "C",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product soluble in oil?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q036",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When auditing student-drawn mechanisms for Chapter 24, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "C",
+          "text": "Protonating a basic oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Eliminating a good leaving group."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q037",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 24 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "B",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "D",
+          "text": "The substrate is converted to an alkane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q038",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Functional Group Chemoselectivity Decision",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the chemoselectivity decision tree for Chapter 24, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters are reduced faster than aldehydes."
+        },
+        {
+          "label": "B",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "C",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids are reduced first."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q039",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Competing Pathway Disambiguation",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 24, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "C",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "A primary halide treated with sodium cyanide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q040",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Ch24 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "decision_tree_branching",
+      "question": "In retrosynthetic planning for Chapter 24, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "B",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "D",
+          "text": "Verify that all reagents are colored white."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q041",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 SkillBuilder Problem Analysis",
+      "difficulty": "easy",
+      "question_type": "mechanism_error_debugging",
+      "question": "In Klein's 3-step SkillBuilder algorithm for Chapter 24 problems, what is the objective of Step 1: Analyze the Problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Guess the final answer immediately without reading."
+        },
+        {
+          "label": "C",
+          "text": "Memorize the textbook page number."
+        },
+        {
+          "label": "D",
+          "text": "Calculate the molar mass of the glassware."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Identify the starting material functional groups, reagents/conditions, and classify the fundamental chemical transformation in Chapter 24.",
+      "explanation": "Step 1 systematically breaks down the chemical prompt into functional group reactants, reaction conditions, and transformation types.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q042",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 SkillBuilder Plan Formulation",
+      "difficulty": "easy",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In Step 2: Formulate the Plan for Chapter 24 transformations, what strategic logic is executed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Combine all reactants in a single step."
+        },
+        {
+          "label": "B",
+          "text": "Ignore stereochemistry completely."
+        },
+        {
+          "label": "C",
+          "text": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Pick an arbitrary reagent from memory."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Select the appropriate mechanistic pathway, apply regiochemical/stereochemical rules, and construct the reaction flowchart in Chapter 24.",
+      "explanation": "Step 2 connects starting materials to targets through established mechanistic rules, regioselectivity principles, and stereochemical constraints.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q043",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 SkillBuilder Solution Verification",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "In Step 3: Verify the Solution for Chapter 24, what sanity check must be completed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that no bonds were formed."
+        },
+        {
+          "label": "B",
+          "text": "Confirm that the answer has 100 letters."
+        },
+        {
+          "label": "C",
+          "text": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "Ensure the product is colored red."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Check formal charge balance, octet rule compliance, stereochemical descriptors (R/S, E/Z), and conservation of mass in Chapter 24.",
+      "explanation": "Step 3 audits the proposed product against fundamental physical laws: valence octets, charge conservation, and stereochemical validity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q044",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Decision Tree Regioselectivity Choice",
+      "difficulty": "medium",
+      "question_type": "mechanism_error_debugging",
+      "question": "In the algorithmic decision tree for Chapter 24 additions, what primary question directs regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Are all reactants gases?"
+        },
+        {
+          "label": "B",
+          "text": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?"
+        },
+        {
+          "label": "C",
+          "text": "What is the room temperature in Celsius?"
+        },
+        {
+          "label": "D",
+          "text": "Is the flask made of Pyrex?"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Is the reaction governed by Markovnikov addition (more stable intermediate) or Anti-Markovnikov addition (radical/steric control) in Chapter 24?",
+      "explanation": "Regiochemical branching determines whether addition proceeds via the more substituted carbocation (Markovnikov) or via alternative mechanisms (anti-Markovnikov).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q045",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Stereochemical Decision Tree Branching",
+      "difficulty": "medium",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "When evaluating stereochemical outcomes in Chapter 24, what question determines enantiomeric vs diastereomeric products?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Does the reaction have a yellow color?"
+        },
+        {
+          "label": "B",
+          "text": "Is the product an aromatic ring?"
+        },
+        {
+          "label": "C",
+          "text": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?"
+        },
+        {
+          "label": "D",
+          "text": "Is the product soluble in oil?"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Does the starting material already contain a pre-existing chiral center (yielding diastereomers) or is it achiral (yielding a racemic mixture) in Chapter 24?",
+      "explanation": "Achiral substrates reacting with achiral reagents produce racemic enantiomers; substrates with existing stereocenters produce unequal diastereomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q046",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Mechanism Arrow Debugging Violation",
+      "difficulty": "medium",
+      "question_type": "decision_tree_branching",
+      "question": "When auditing student-drawn mechanisms for Chapter 24, which curved arrow mistake is most frequently flagged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Eliminating a good leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24."
+        },
+        {
+          "label": "C",
+          "text": "Forming a stable carbocation."
+        },
+        {
+          "label": "D",
+          "text": "Protonating a basic oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Drawing a curved arrow pointing to an atom without simultaneously breaking an existing bond, exceeding the 8-electron valence octet in Chapter 24.",
+      "explanation": "Second-row elements cannot exceed an octet; nucleophilic attack on a neutral atom must be coupled with leaving group departure or pi bond polarization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q047",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Synthetic Roadblock Incompatible Functional Groups",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "What synthetic roadblock occurs when attempting a nucleophilic addition in Chapter 24 on a substrate containing an unprotected acidic proton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction undergoes spontaneous polymerization."
+        },
+        {
+          "label": "B",
+          "text": "The solvent boils away instantly."
+        },
+        {
+          "label": "C",
+          "text": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24."
+        },
+        {
+          "label": "D",
+          "text": "The substrate is converted to an alkane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The strong nucleophile acts as a base, undergoing instantaneous acid-base proton transfer rather than the desired nucleophilic addition in Chapter 24.",
+      "explanation": "Acid-base proton transfer rates are orders of magnitude faster than nucleophilic additions; unprotected acidic groups quench organometallic nucleophiles.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q048",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Functional Group Chemoselectivity Decision",
+      "difficulty": "hard",
+      "question_type": "synthetic_roadblock_troubleshooting",
+      "question": "In the chemoselectivity decision tree for Chapter 24, which carbonyl is preferentially reduced by sodium borohydride (NaBH\u2084)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24."
+        },
+        {
+          "label": "B",
+          "text": "Amides are reduced first."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids are reduced first."
+        },
+        {
+          "label": "D",
+          "text": "Esters are reduced faster than aldehydes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aldehydes and ketones are selectively reduced in the presence of esters, amides, and carboxylic acids in Chapter 24.",
+      "explanation": "Mild reducing agents (NaBH\u2084) selectively reduce more electrophilic aldehydes and ketones while leaving less electrophilic esters and amides intact.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q049",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Competing Pathway Disambiguation",
+      "difficulty": "hard",
+      "question_type": "decision_tree_branching",
+      "question": "In the SN1 / SN2 / E1 / E2 decision matrix for Chapter 24, what combination exclusively promotes bimolecular elimination (E2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary halide with sodium iodide."
+        },
+        {
+          "label": "B",
+          "text": "A primary halide treated with sodium cyanide."
+        },
+        {
+          "label": "C",
+          "text": "A tertiary halide in pure water at 0\u00b0C."
+        },
+        {
+          "label": "D",
+          "text": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A secondary or tertiary alkyl halide treated with a strong, sterically hindered base (e.g., potassium tert-butoxide, t-BuOK) in Chapter 24.",
+      "explanation": "Sterically bulky strong bases prevent substitution and exclusively trigger concerted E2 elimination across secondary and tertiary substrates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q050",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Ch24 Algorithmic Synthesis Planning Verification",
+      "difficulty": "hard",
+      "question_type": "mechanism_error_debugging",
+      "question": "In retrosynthetic planning for Chapter 24, what final step ensures that the forward sequence is chemically viable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ensure the reaction takes exactly one hour."
+        },
+        {
+          "label": "B",
+          "text": "Confirm that the final step produces water."
+        },
+        {
+          "label": "C",
+          "text": "Verify that all reagents are colored white."
+        },
+        {
+          "label": "D",
+          "text": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Verify that every step has appropriate chemoselectivity, regiocontrol, stereospecificity, and no incompatible reactive functionalities in Chapter 24.",
+      "explanation": "Forward validation ensures each reaction step in a multi-step sequence proceeds cleanly without competing side reactions or functional group interference.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    }
+  ]
+}

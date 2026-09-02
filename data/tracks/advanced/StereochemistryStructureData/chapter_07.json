@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 7,
+  "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+  "assigned_boss": "Halide Hound",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch07_q001",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Walden Inversion in SN2 Reactions",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome when (S)-2-bromobutane is treated with sodium cyanide in DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-2-methylbutanenitrile with retention of configuration."
+        },
+        {
+          "label": "B",
+          "text": "A 50:50 racemic mixture of (R) and (S)."
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center."
+        },
+        {
+          "label": "D",
+          "text": "An optically inactive meso compound."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center.",
+      "explanation": "Backside nucleophilic attack in an SN2 displacement forces complete stereochemical inversion (Walden inversion).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q002",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "SN1 Solvolysis Stereochemical Outcome",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does solvolysis of (R)-3-bromo-3-methylhexane in water yield a mixture of (R)- and (S)-3-methyl-3-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "B",
+          "text": "Water inverts the stereochemistry twice."
+        },
+        {
+          "label": "C",
+          "text": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces."
+        },
+        {
+          "label": "D",
+          "text": "The product undergoes spontaneous ring closure."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from both faces produces a mixture of (R) and (S) enantiomers (racemization).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q003",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "E2 Anti-Coplanar Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "When (2R,3R)-2-bromo-3-phenylbutane is treated with NaOEt, which alkene stereoisomer is produced exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2-phenyl-2-butene."
+        },
+        {
+          "label": "B",
+          "text": "2-phenyl-1-butene."
+        },
+        {
+          "label": "C",
+          "text": "3-phenyl-1-butene."
+        },
+        {
+          "label": "D",
+          "text": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine.",
+      "explanation": "Conformational rotation to achieve anti-periplanar alignment places the phenyl and methyl groups in the (Z) orientation upon elimination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q004",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Menthyl vs Neomenthyl Chloride E2 Elimination Rates",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why does neomenthyl chloride eliminate 200 times faster than menthyl chloride with NaOEt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Neomenthyl chloride is an aromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "Neomenthyl chloride reacts via an SN1 mechanism."
+        },
+        {
+          "label": "D",
+          "text": "Menthyl chloride contains no chlorine atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens.",
+      "explanation": "Neomenthyl chloride has an axial chlorine in its major diequatorial conformer, avoiding the energetic penalty of flipping to an unstable chair.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q005",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Stereochemistry of Intramolecular SN2 (Epoxide Formation)",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What stereochemical configuration is obtained when (2R,3R)-3-bromobutan-2-ol is treated with aqueous NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "B",
+          "text": "meso-2,3-butanediol."
+        },
+        {
+          "label": "C",
+          "text": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen)."
+        },
+        {
+          "label": "D",
+          "text": "2-butanone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen).",
+      "explanation": "Deprotonation creates an alkoxide that attacks the adjacent C-Br carbon from the backside, inverting C3 to produce the trans-epoxide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q006",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Retention of Configuration via Neighboring Group Participation",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does treatment of (2S,3R)-3-(methylthio)butan-2-ol with TsCl followed by acetate yield an acetate product with net retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur oxidizes the carbon atom."
+        },
+        {
+          "label": "B",
+          "text": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention)."
+        },
+        {
+          "label": "C",
+          "text": "The molecule is an achiral meso compound."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds through a radical intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention).",
+      "explanation": "Two consecutive SN2 backside displacements (anchimeric assistance) result in net overall retention of absolute stereochemistry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q007",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Stereochemistry of Halohydrin Cyclization",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why must halohydrins adopt an anti-periplanar conformation between the alkoxide oxygen and halogen for epoxide closure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halohydrins are planar molecules."
+        },
+        {
+          "label": "B",
+          "text": "The alkoxide must attack the halogen atom directly."
+        },
+        {
+          "label": "C",
+          "text": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "A syn conformation is required to form a four-membered ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement.",
+      "explanation": "Intramolecular SN2 requires strict collinear alignment of the nucleophilic oxygen lone pair and the C-X σ* antibonding orbital.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q008",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Chiral Alkyl Halide SN2 Reaction with Inversion Verification",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the absolute configuration of the product when (R)-2-chloropentane is treated with sodium ethanethiolate (NaSEt)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-2-(ethylthio)pentane (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "1-(ethylthio)pentane."
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-(ethylthio)pentane."
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter.",
+      "explanation": "Direct backside displacement of chloride by ethanethiolate inverts the chiral center from (R) to (S).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q009",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Stereospecific Elimination of Meso vs d,l Substrates",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What alkene stereoisomer is formed from the E2 elimination of meso-1,2-dibromo-1,2-diphenylethane with base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diphenylacetylene directly."
+        },
+        {
+          "label": "B",
+          "text": "A 50:50 mixture of (E) and (Z)."
+        },
+        {
+          "label": "C",
+          "text": "(E)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "D",
+          "text": "(Z)-1-bromo-1,2-diphenylethane exclusively."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(E)-1-bromo-1,2-diphenylethane exclusively.",
+      "explanation": "Anti-periplanar alignment of H and Br in the meso diastereomer forces the two bulky phenyl rings into opposite (E) geometry upon elimination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q010",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Halide Hound",
+      "topic": "Carbocation Rearrangement Stereochemical Erasure",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "When an optically active secondary alkyl halide undergoes SN1 solvolysis with a 1,2-hydride shift, what happens to the chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center."
+        },
+        {
+          "label": "B",
+          "text": "The product forms a chiral polymer."
+        },
+        {
+          "label": "C",
+          "text": "The chiral center is inverted with 100% enantiomeric excess."
+        },
+        {
+          "label": "D",
+          "text": "The product retains 100% optical purity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center.",
+      "explanation": "Carbocation rearrangement proceeds through planar sp² carbocations, completely destroying stereochemical memory at participating carbons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halide-hound.png"
+      ]
+    },
+    {
+      "id": "ch07_q011",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "E2 Anti-Coplanar Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "When (2R,3R)-2-bromo-3-phenylbutane is treated with NaOEt, which alkene stereoisomer is produced exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2-phenyl-2-butene."
+        },
+        {
+          "label": "B",
+          "text": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine."
+        },
+        {
+          "label": "C",
+          "text": "3-phenyl-1-butene."
+        },
+        {
+          "label": "D",
+          "text": "2-phenyl-1-butene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine.",
+      "explanation": "Conformational rotation to achieve anti-periplanar alignment places the phenyl and methyl groups in the (Z) orientation upon elimination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q012",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Menthyl vs Neomenthyl Chloride E2 Elimination Rates",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does neomenthyl chloride eliminate 200 times faster than menthyl chloride with NaOEt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Neomenthyl chloride is an aromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "Neomenthyl chloride reacts via an SN1 mechanism."
+        },
+        {
+          "label": "D",
+          "text": "Menthyl chloride contains no chlorine atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens.",
+      "explanation": "Neomenthyl chloride has an axial chlorine in its major diequatorial conformer, avoiding the energetic penalty of flipping to an unstable chair.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q013",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Stereochemistry of Intramolecular SN2 (Epoxide Formation)",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What stereochemical configuration is obtained when (2R,3R)-3-bromobutan-2-ol is treated with aqueous NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-2,3-butanediol."
+        },
+        {
+          "label": "B",
+          "text": "2-butanone."
+        },
+        {
+          "label": "C",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "D",
+          "text": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen).",
+      "explanation": "Deprotonation creates an alkoxide that attacks the adjacent C-Br carbon from the backside, inverting C3 to produce the trans-epoxide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q014",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Retention of Configuration via Neighboring Group Participation",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why does treatment of (2S,3R)-3-(methylthio)butan-2-ol with TsCl followed by acetate yield an acetate product with net retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention)."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur oxidizes the carbon atom."
+        },
+        {
+          "label": "C",
+          "text": "The molecule is an achiral meso compound."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds through a radical intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention).",
+      "explanation": "Two consecutive SN2 backside displacements (anchimeric assistance) result in net overall retention of absolute stereochemistry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q015",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Stereochemistry of Halohydrin Cyclization",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why must halohydrins adopt an anti-periplanar conformation between the alkoxide oxygen and halogen for epoxide closure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement."
+        },
+        {
+          "label": "B",
+          "text": "The alkoxide must attack the halogen atom directly."
+        },
+        {
+          "label": "C",
+          "text": "A syn conformation is required to form a four-membered ring."
+        },
+        {
+          "label": "D",
+          "text": "Halohydrins are planar molecules."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement.",
+      "explanation": "Intramolecular SN2 requires strict collinear alignment of the nucleophilic oxygen lone pair and the C-X σ* antibonding orbital.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q016",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Chiral Alkyl Halide SN2 Reaction with Inversion Verification",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the absolute configuration of the product when (R)-2-chloropentane is treated with sodium ethanethiolate (NaSEt)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-2-(ethylthio)pentane (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "1-(ethylthio)pentane."
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter."
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-(ethylthio)pentane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter.",
+      "explanation": "Direct backside displacement of chloride by ethanethiolate inverts the chiral center from (R) to (S).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q017",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Stereospecific Elimination of Meso vs d,l Substrates",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What alkene stereoisomer is formed from the E2 elimination of meso-1,2-dibromo-1,2-diphenylethane with base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "B",
+          "text": "Diphenylacetylene directly."
+        },
+        {
+          "label": "C",
+          "text": "(Z)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "D",
+          "text": "A 50:50 mixture of (E) and (Z)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(E)-1-bromo-1,2-diphenylethane exclusively.",
+      "explanation": "Anti-periplanar alignment of H and Br in the meso diastereomer forces the two bulky phenyl rings into opposite (E) geometry upon elimination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q018",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Carbocation Rearrangement Stereochemical Erasure",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "When an optically active secondary alkyl halide undergoes SN1 solvolysis with a 1,2-hydride shift, what happens to the chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chiral center is inverted with 100% enantiomeric excess."
+        },
+        {
+          "label": "B",
+          "text": "The product retains 100% optical purity."
+        },
+        {
+          "label": "C",
+          "text": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center."
+        },
+        {
+          "label": "D",
+          "text": "The product forms a chiral polymer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center.",
+      "explanation": "Carbocation rearrangement proceeds through planar sp² carbocations, completely destroying stereochemical memory at participating carbons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q019",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "Walden Inversion in SN2 Reactions",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome when (S)-2-bromobutane is treated with sodium cyanide in DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 50:50 racemic mixture of (R) and (S)."
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-methylbutanenitrile with retention of configuration."
+        },
+        {
+          "label": "C",
+          "text": "An optically inactive meso compound."
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center.",
+      "explanation": "Backside nucleophilic attack in an SN2 displacement forces complete stereochemical inversion (Walden inversion).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q020",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN2 Striker",
+      "topic": "SN1 Solvolysis Stereochemical Outcome",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does solvolysis of (R)-3-bromo-3-methylhexane in water yield a mixture of (R)- and (S)-3-methyl-3-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Water inverts the stereochemistry twice."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "C",
+          "text": "The product undergoes spontaneous ring closure."
+        },
+        {
+          "label": "D",
+          "text": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from both faces produces a mixture of (R) and (S) enantiomers (racemization).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "sn2-striker.png"
+      ]
+    },
+    {
+      "id": "ch07_q021",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Stereochemistry of Intramolecular SN2 (Epoxide Formation)",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What stereochemical configuration is obtained when (2R,3R)-3-bromobutan-2-ol is treated with aqueous NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen)."
+        },
+        {
+          "label": "B",
+          "text": "meso-2,3-butanediol."
+        },
+        {
+          "label": "C",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "D",
+          "text": "2-butanone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen).",
+      "explanation": "Deprotonation creates an alkoxide that attacks the adjacent C-Br carbon from the backside, inverting C3 to produce the trans-epoxide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q022",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Retention of Configuration via Neighboring Group Participation",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does treatment of (2S,3R)-3-(methylthio)butan-2-ol with TsCl followed by acetate yield an acetate product with net retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur oxidizes the carbon atom."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds through a radical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention)."
+        },
+        {
+          "label": "D",
+          "text": "The molecule is an achiral meso compound."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention).",
+      "explanation": "Two consecutive SN2 backside displacements (anchimeric assistance) result in net overall retention of absolute stereochemistry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q023",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Stereochemistry of Halohydrin Cyclization",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why must halohydrins adopt an anti-periplanar conformation between the alkoxide oxygen and halogen for epoxide closure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alkoxide must attack the halogen atom directly."
+        },
+        {
+          "label": "B",
+          "text": "A syn conformation is required to form a four-membered ring."
+        },
+        {
+          "label": "C",
+          "text": "Halohydrins are planar molecules."
+        },
+        {
+          "label": "D",
+          "text": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement.",
+      "explanation": "Intramolecular SN2 requires strict collinear alignment of the nucleophilic oxygen lone pair and the C-X σ* antibonding orbital.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q024",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Chiral Alkyl Halide SN2 Reaction with Inversion Verification",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What is the absolute configuration of the product when (R)-2-chloropentane is treated with sodium ethanethiolate (NaSEt)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-2-(ethylthio)pentane (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter."
+        },
+        {
+          "label": "C",
+          "text": "1-(ethylthio)pentane."
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-(ethylthio)pentane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter.",
+      "explanation": "Direct backside displacement of chloride by ethanethiolate inverts the chiral center from (R) to (S).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q025",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Stereospecific Elimination of Meso vs d,l Substrates",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What alkene stereoisomer is formed from the E2 elimination of meso-1,2-dibromo-1,2-diphenylethane with base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 50:50 mixture of (E) and (Z)."
+        },
+        {
+          "label": "B",
+          "text": "(E)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "C",
+          "text": "Diphenylacetylene directly."
+        },
+        {
+          "label": "D",
+          "text": "(Z)-1-bromo-1,2-diphenylethane exclusively."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(E)-1-bromo-1,2-diphenylethane exclusively.",
+      "explanation": "Anti-periplanar alignment of H and Br in the meso diastereomer forces the two bulky phenyl rings into opposite (E) geometry upon elimination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q026",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Carbocation Rearrangement Stereochemical Erasure",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "When an optically active secondary alkyl halide undergoes SN1 solvolysis with a 1,2-hydride shift, what happens to the chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The product forms a chiral polymer."
+        },
+        {
+          "label": "B",
+          "text": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center."
+        },
+        {
+          "label": "C",
+          "text": "The product retains 100% optical purity."
+        },
+        {
+          "label": "D",
+          "text": "The chiral center is inverted with 100% enantiomeric excess."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center.",
+      "explanation": "Carbocation rearrangement proceeds through planar sp² carbocations, completely destroying stereochemical memory at participating carbons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q027",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Walden Inversion in SN2 Reactions",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical outcome when (S)-2-bromobutane is treated with sodium cyanide in DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center."
+        },
+        {
+          "label": "B",
+          "text": "An optically inactive meso compound."
+        },
+        {
+          "label": "C",
+          "text": "A 50:50 racemic mixture of (R) and (S)."
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-methylbutanenitrile with retention of configuration."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center.",
+      "explanation": "Backside nucleophilic attack in an SN2 displacement forces complete stereochemical inversion (Walden inversion).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q028",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "SN1 Solvolysis Stereochemical Outcome",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does solvolysis of (R)-3-bromo-3-methylhexane in water yield a mixture of (R)- and (S)-3-methyl-3-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces."
+        },
+        {
+          "label": "B",
+          "text": "The product undergoes spontaneous ring closure."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "Water inverts the stereochemistry twice."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from both faces produces a mixture of (R) and (S) enantiomers (racemization).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q029",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "E2 Anti-Coplanar Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "When (2R,3R)-2-bromo-3-phenylbutane is treated with NaOEt, which alkene stereoisomer is produced exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-phenyl-1-butene."
+        },
+        {
+          "label": "B",
+          "text": "2-phenyl-1-butene."
+        },
+        {
+          "label": "C",
+          "text": "(E)-2-phenyl-2-butene."
+        },
+        {
+          "label": "D",
+          "text": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine.",
+      "explanation": "Conformational rotation to achieve anti-periplanar alignment places the phenyl and methyl groups in the (Z) orientation upon elimination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q030",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "SN1 Shapeshifter",
+      "topic": "Menthyl vs Neomenthyl Chloride E2 Elimination Rates",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why does neomenthyl chloride eliminate 200 times faster than menthyl chloride with NaOEt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Menthyl chloride contains no chlorine atoms."
+        },
+        {
+          "label": "C",
+          "text": "Neomenthyl chloride is an aromatic molecule."
+        },
+        {
+          "label": "D",
+          "text": "Neomenthyl chloride reacts via an SN1 mechanism."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens.",
+      "explanation": "Neomenthyl chloride has an axial chlorine in its major diequatorial conformer, avoiding the energetic penalty of flipping to an unstable chair.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sn1-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch07_q031",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Stereochemistry of Halohydrin Cyclization",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why must halohydrins adopt an anti-periplanar conformation between the alkoxide oxygen and halogen for epoxide closure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halohydrins are planar molecules."
+        },
+        {
+          "label": "B",
+          "text": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement."
+        },
+        {
+          "label": "C",
+          "text": "A syn conformation is required to form a four-membered ring."
+        },
+        {
+          "label": "D",
+          "text": "The alkoxide must attack the halogen atom directly."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement.",
+      "explanation": "Intramolecular SN2 requires strict collinear alignment of the nucleophilic oxygen lone pair and the C-X σ* antibonding orbital.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q032",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Chiral Alkyl Halide SN2 Reaction with Inversion Verification",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the absolute configuration of the product when (R)-2-chloropentane is treated with sodium ethanethiolate (NaSEt)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-(ethylthio)pentane."
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter."
+        },
+        {
+          "label": "C",
+          "text": "(±)-2-(ethylthio)pentane (racemic)."
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-(ethylthio)pentane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter.",
+      "explanation": "Direct backside displacement of chloride by ethanethiolate inverts the chiral center from (R) to (S).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q033",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Stereospecific Elimination of Meso vs d,l Substrates",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What alkene stereoisomer is formed from the E2 elimination of meso-1,2-dibromo-1,2-diphenylethane with base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 50:50 mixture of (E) and (Z)."
+        },
+        {
+          "label": "B",
+          "text": "(E)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "C",
+          "text": "(Z)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "D",
+          "text": "Diphenylacetylene directly."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(E)-1-bromo-1,2-diphenylethane exclusively.",
+      "explanation": "Anti-periplanar alignment of H and Br in the meso diastereomer forces the two bulky phenyl rings into opposite (E) geometry upon elimination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q034",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Carbocation Rearrangement Stereochemical Erasure",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "When an optically active secondary alkyl halide undergoes SN1 solvolysis with a 1,2-hydride shift, what happens to the chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The product retains 100% optical purity."
+        },
+        {
+          "label": "B",
+          "text": "The chiral center is inverted with 100% enantiomeric excess."
+        },
+        {
+          "label": "C",
+          "text": "The product forms a chiral polymer."
+        },
+        {
+          "label": "D",
+          "text": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center.",
+      "explanation": "Carbocation rearrangement proceeds through planar sp² carbocations, completely destroying stereochemical memory at participating carbons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q035",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Walden Inversion in SN2 Reactions",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical outcome when (S)-2-bromobutane is treated with sodium cyanide in DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 50:50 racemic mixture of (R) and (S)."
+        },
+        {
+          "label": "B",
+          "text": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center."
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-methylbutanenitrile with retention of configuration."
+        },
+        {
+          "label": "D",
+          "text": "An optically inactive meso compound."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center.",
+      "explanation": "Backside nucleophilic attack in an SN2 displacement forces complete stereochemical inversion (Walden inversion).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q036",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "SN1 Solvolysis Stereochemical Outcome",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why does solvolysis of (R)-3-bromo-3-methylhexane in water yield a mixture of (R)- and (S)-3-methyl-3-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "B",
+          "text": "Water inverts the stereochemistry twice."
+        },
+        {
+          "label": "C",
+          "text": "The product undergoes spontaneous ring closure."
+        },
+        {
+          "label": "D",
+          "text": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from both faces produces a mixture of (R) and (S) enantiomers (racemization).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q037",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "E2 Anti-Coplanar Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "When (2R,3R)-2-bromo-3-phenylbutane is treated with NaOEt, which alkene stereoisomer is produced exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine."
+        },
+        {
+          "label": "B",
+          "text": "2-phenyl-1-butene."
+        },
+        {
+          "label": "C",
+          "text": "(E)-2-phenyl-2-butene."
+        },
+        {
+          "label": "D",
+          "text": "3-phenyl-1-butene."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine.",
+      "explanation": "Conformational rotation to achieve anti-periplanar alignment places the phenyl and methyl groups in the (Z) orientation upon elimination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q038",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Menthyl vs Neomenthyl Chloride E2 Elimination Rates",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does neomenthyl chloride eliminate 200 times faster than menthyl chloride with NaOEt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Neomenthyl chloride is an aromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "Menthyl chloride contains no chlorine atoms."
+        },
+        {
+          "label": "D",
+          "text": "Neomenthyl chloride reacts via an SN1 mechanism."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens.",
+      "explanation": "Neomenthyl chloride has an axial chlorine in its major diequatorial conformer, avoiding the energetic penalty of flipping to an unstable chair.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q039",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Stereochemistry of Intramolecular SN2 (Epoxide Formation)",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "What stereochemical configuration is obtained when (2R,3R)-3-bromobutan-2-ol is treated with aqueous NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanone."
+        },
+        {
+          "label": "B",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "C",
+          "text": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen)."
+        },
+        {
+          "label": "D",
+          "text": "meso-2,3-butanediol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen).",
+      "explanation": "Deprotonation creates an alkoxide that attacks the adjacent C-Br carbon from the backside, inverting C3 to produce the trans-epoxide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q040",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Zaitsev-Hofmann Zealot",
+      "topic": "Retention of Configuration via Neighboring Group Participation",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does treatment of (2S,3R)-3-(methylthio)butan-2-ol with TsCl followed by acetate yield an acetate product with net retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule is an achiral meso compound."
+        },
+        {
+          "label": "B",
+          "text": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention)."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur oxidizes the carbon atom."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds through a radical intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention).",
+      "explanation": "Two consecutive SN2 backside displacements (anchimeric assistance) result in net overall retention of absolute stereochemistry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "zaitsev-hofmann-zealot.png"
+      ]
+    },
+    {
+      "id": "ch07_q041",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Stereospecific Elimination of Meso vs d,l Substrates",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What alkene stereoisomer is formed from the E2 elimination of meso-1,2-dibromo-1,2-diphenylethane with base?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diphenylacetylene directly."
+        },
+        {
+          "label": "B",
+          "text": "(E)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "C",
+          "text": "(Z)-1-bromo-1,2-diphenylethane exclusively."
+        },
+        {
+          "label": "D",
+          "text": "A 50:50 mixture of (E) and (Z)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(E)-1-bromo-1,2-diphenylethane exclusively.",
+      "explanation": "Anti-periplanar alignment of H and Br in the meso diastereomer forces the two bulky phenyl rings into opposite (E) geometry upon elimination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q042",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Carbocation Rearrangement Stereochemical Erasure",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "When an optically active secondary alkyl halide undergoes SN1 solvolysis with a 1,2-hydride shift, what happens to the chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center."
+        },
+        {
+          "label": "B",
+          "text": "The chiral center is inverted with 100% enantiomeric excess."
+        },
+        {
+          "label": "C",
+          "text": "The product forms a chiral polymer."
+        },
+        {
+          "label": "D",
+          "text": "The product retains 100% optical purity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The original chiral stereocenter is completely erased because the rearranged carbocation intermediate is planar and achiral at that center.",
+      "explanation": "Carbocation rearrangement proceeds through planar sp² carbocations, completely destroying stereochemical memory at participating carbons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q043",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Walden Inversion in SN2 Reactions",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the stereochemical outcome when (S)-2-bromobutane is treated with sodium cyanide in DMSO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 50:50 racemic mixture of (R) and (S)."
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-methylbutanenitrile with retention of configuration."
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center."
+        },
+        {
+          "label": "D",
+          "text": "An optically inactive meso compound."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R)-2-methylbutanenitrile with 100% inversion of stereochemical configuration at the chiral center.",
+      "explanation": "Backside nucleophilic attack in an SN2 displacement forces complete stereochemical inversion (Walden inversion).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q044",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "SN1 Solvolysis Stereochemical Outcome",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does solvolysis of (R)-3-bromo-3-methylhexane in water yield a mixture of (R)- and (S)-3-methyl-3-hexanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces."
+        },
+        {
+          "label": "B",
+          "text": "The product undergoes spontaneous ring closure."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "Water inverts the stereochemistry twice."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ionization generates a planar, achiral tertiary carbocation intermediate that is captured by water from both the top and bottom faces.",
+      "explanation": "Planar sp² carbocations are achiral; attack from both faces produces a mixture of (R) and (S) enantiomers (racemization).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q045",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "E2 Anti-Coplanar Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "When (2R,3R)-2-bromo-3-phenylbutane is treated with NaOEt, which alkene stereoisomer is produced exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2-phenyl-2-butene."
+        },
+        {
+          "label": "B",
+          "text": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine."
+        },
+        {
+          "label": "C",
+          "text": "2-phenyl-1-butene."
+        },
+        {
+          "label": "D",
+          "text": "3-phenyl-1-butene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(Z)-2-phenyl-2-butene, dictated by the strict anti-periplanar alignment of the β-hydrogen and leaving group bromine.",
+      "explanation": "Conformational rotation to achieve anti-periplanar alignment places the phenyl and methyl groups in the (Z) orientation upon elimination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q046",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Menthyl vs Neomenthyl Chloride E2 Elimination Rates",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does neomenthyl chloride eliminate 200 times faster than menthyl chloride with NaOEt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menthyl chloride contains no chlorine atoms."
+        },
+        {
+          "label": "B",
+          "text": "Neomenthyl chloride reacts via an SN1 mechanism."
+        },
+        {
+          "label": "C",
+          "text": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens."
+        },
+        {
+          "label": "D",
+          "text": "Neomenthyl chloride is an aromatic molecule."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In neomenthyl chloride, the chlorine atom is already axial in the most stable chair conformer, ready for anti-periplanar E2 elimination with adjacent hydrogens.",
+      "explanation": "Neomenthyl chloride has an axial chlorine in its major diequatorial conformer, avoiding the energetic penalty of flipping to an unstable chair.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q047",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Stereochemistry of Intramolecular SN2 (Epoxide Formation)",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What stereochemical configuration is obtained when (2R,3R)-3-bromobutan-2-ol is treated with aqueous NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanone."
+        },
+        {
+          "label": "B",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "C",
+          "text": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen)."
+        },
+        {
+          "label": "D",
+          "text": "meso-2,3-butanediol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-2,3-dimethyloxirane (inversion at C3 upon intramolecular backside attack by the deprotonated alkoxide oxygen).",
+      "explanation": "Deprotonation creates an alkoxide that attacks the adjacent C-Br carbon from the backside, inverting C3 to produce the trans-epoxide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q048",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Retention of Configuration via Neighboring Group Participation",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why does treatment of (2S,3R)-3-(methylthio)butan-2-ol with TsCl followed by acetate yield an acetate product with net retention of configuration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds through a radical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention)."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur oxidizes the carbon atom."
+        },
+        {
+          "label": "D",
+          "text": "The molecule is an achiral meso compound."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The sulfur atom attacks intramolecularly to form a cyclic sulfonium ion with inversion, followed by a second intermolecular attack by acetate with inversion (double inversion = net retention).",
+      "explanation": "Two consecutive SN2 backside displacements (anchimeric assistance) result in net overall retention of absolute stereochemistry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q049",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Stereochemistry of Halohydrin Cyclization",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why must halohydrins adopt an anti-periplanar conformation between the alkoxide oxygen and halogen for epoxide closure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Halohydrins are planar molecules."
+        },
+        {
+          "label": "B",
+          "text": "The alkoxide must attack the halogen atom directly."
+        },
+        {
+          "label": "C",
+          "text": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "A syn conformation is required to form a four-membered ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The alkoxide lone pair must align at 180° directly opposite the C-X σ* antibonding orbital to execute the intramolecular SN2 displacement.",
+      "explanation": "Intramolecular SN2 requires strict collinear alignment of the nucleophilic oxygen lone pair and the C-X σ* antibonding orbital.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    },
+    {
+      "id": "ch07_q050",
+      "chapter": 7,
+      "chapter_title": "Alkyl Halides: Nucleophilic Substitution and Elimination Reactions",
+      "boss": "Walden Inversion Warlord",
+      "topic": "Chiral Alkyl Halide SN2 Reaction with Inversion Verification",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "What is the absolute configuration of the product when (R)-2-chloropentane is treated with sodium ethanethiolate (NaSEt)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-2-(ethylthio)pentane (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter."
+        },
+        {
+          "label": "C",
+          "text": "1-(ethylthio)pentane."
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-(ethylthio)pentane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-(ethylthio)pentane, resulting from clean SN2 inversion of the (R) stereocenter.",
+      "explanation": "Direct backside displacement of chloride by ethanethiolate inverts the chiral center from (R) to (S).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "walden-inversion-warlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Halide Hound",
+    "SN2 Striker",
+    "SN1 Shapeshifter",
+    "Zaitsev-Hofmann Zealot",
+    "Walden Inversion Warlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Halide Hound",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "halide-hound.png"
+        ]
+      },
+      {
+        "boss": "SN2 Striker",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "sn2-striker.png"
+        ]
+      },
+      {
+        "boss": "SN1 Shapeshifter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "sn1-shapeshifter.png"
+        ]
+      },
+      {
+        "boss": "Zaitsev-Hofmann Zealot",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "zaitsev-hofmann-zealot.png"
+        ]
+      },
+      {
+        "boss": "Walden Inversion Warlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "walden-inversion-warlord.png"
+        ]
+      }
+    ]
+  }
+}

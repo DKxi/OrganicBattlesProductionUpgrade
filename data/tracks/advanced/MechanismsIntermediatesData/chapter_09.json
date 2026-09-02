@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 9,
+  "chapter_title": "Alkynes",
+  "assigned_boss": "Triple-Bond Troll",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch09_q001",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Terminal Alkyne Deprotonation Carbanion",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the orbital hybridization and geometry of the acetylide anion formed by deprotonating 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The lone pair resides in an unhybridized 2p orbital perpendicular to the ring."
+        },
+        {
+          "label": "B",
+          "text": "The lone pair resides in an sp³ tetrahedral orbital."
+        },
+        {
+          "label": "C",
+          "text": "The carbanionic carbon is sp² hybridized with trigonal planar geometry."
+        },
+        {
+          "label": "D",
+          "text": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond.",
+      "explanation": "The terminal alkyne carbon is sp hybridized; deprotonation retains the sp orbital holding the lone pair close to the nucleus.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q002",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Acetylide SN2 Alkylation Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic classification of the reaction between sodium acetylide and 1-bromobutane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An electrophilic addition across the alkyne triple bond."
+        },
+        {
+          "label": "B",
+          "text": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide."
+        },
+        {
+          "label": "C",
+          "text": "An E2 elimination yielding butene and acetylene."
+        },
+        {
+          "label": "D",
+          "text": "A radical chain substitution initiated by sodium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide.",
+      "explanation": "Acetylide anions are powerful, linear carbon nucleophiles that displace primary alkyl halides efficiently via SN2.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q003",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Alkyne Hydration Mercuric Ion Catalysis",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the role of the Hg²⁺ catalyst in the acid-catalyzed hydration of alkynes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hg²⁺ acts as a Brønsted base that deprotonates water."
+        },
+        {
+          "label": "B",
+          "text": "Hg²⁺ oxidizes the alkyne to a dialdehyde."
+        },
+        {
+          "label": "C",
+          "text": "Hg²⁺ reduces the alkyne to an alkane directly."
+        },
+        {
+          "label": "D",
+          "text": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water.",
+      "explanation": "Mercuric ion electrophilically coordinates to the alkyne π system, greatly accelerating nucleophilic capture by water.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q004",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Keto-Enol Tautomerism in Alkyne Hydration",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What mechanistic sequence converts the transient enol intermediate into the final ketone during alkyne hydration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of hydroxide on the enol oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Direct uncatalyzed intramolecular 1,3-proton transfer through space."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the O-H bond followed by 1,2-hydrogen shift."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen.",
+      "explanation": "Acid-catalyzed tautomerization proceeds through oxocarbenium resonance intermediates to achieve the thermodynamically stable keto form.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q005",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Hydroboration-Oxidation of Alkynes (Aldehyde)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why are hindered dialkylboranes such as disiamylborane or 9-BBN used instead of BH₃ for terminal alkyne hydroboration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hindered boranes act as radical initiators."
+        },
+        {
+          "label": "B",
+          "text": "Hindered boranes oxidize the alkyne directly to carboxylic acids."
+        },
+        {
+          "label": "C",
+          "text": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate."
+        },
+        {
+          "label": "D",
+          "text": "BH₃ is incapable of reacting with alkynes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate.",
+      "explanation": "Bulky dialkylboranes ensure mono-addition to terminal alkynes, allowing subsequent oxidation to yield the aldehyde without over-hydroboration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q006",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Dissolving Metal Reduction Mechanism (Trans Alkene)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of elementary steps in the reduction of an internal alkyne with Na in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted syn addition of two sodium atoms followed by water quench."
+        },
+        {
+          "label": "B",
+          "text": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic addition of amide ion followed by hydride displacement."
+        },
+        {
+          "label": "D",
+          "text": "Catalytic hydrogenation on colloidal sodium nanoparticles."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene.",
+      "explanation": "Stepwise single-electron transfers allow the radical anion intermediate to equilibrate to the thermodynamically favored trans configuration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q007",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Lindlar Catalyst Poisoning Role",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic function of lead acetate and quinoline 'poisons' in the Lindlar palladium catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene."
+        },
+        {
+          "label": "B",
+          "text": "They act as phase-transfer catalysts that dissolve palladium."
+        },
+        {
+          "label": "C",
+          "text": "They change the reaction mechanism from syn addition to anti addition."
+        },
+        {
+          "label": "D",
+          "text": "They oxidize the alkyne to a diketone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene.",
+      "explanation": "Catalyst poisoning attenuates catalytic activity so that the reaction stops cleanly at the cis-alkene stage without overreduction to the alkane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q008",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Alkyne Dihalogenation Carbocation Intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In the addition of 2 equivalents of HBr to propyne, why do both bromines attach to the same carbon (geminal dibromide)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via a cyclic dibromonium dication."
+        },
+        {
+          "label": "C",
+          "text": "Steric hindrance prevents bromine from attacking the terminal carbon."
+        },
+        {
+          "label": "D",
+          "text": "The terminal carbon is antiaromatic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom.",
+      "explanation": "Halogen lone pair resonance donation stabilizes the α-halocarbocation intermediate, directing the second addition to the same carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q009",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Alkyne Ozonolysis Intermediate Cleavage",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does ozonolysis of an internal alkyne produce two carboxylic acids rather than aldehydes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids are formed by secondary reaction with zinc."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes cannot undergo ozonolysis."
+        },
+        {
+          "label": "C",
+          "text": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids."
+        },
+        {
+          "label": "D",
+          "text": "Aldehydes are reduced to acids by ozone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids.",
+      "explanation": "Ozonolysis cleaves all three bonds of the alkyne triple bond, generating carboxylic acid functional groups at each sp carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q010",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Triple-Bond Troll",
+      "topic": "Alkyne Acidity vs Alkene and Alkane",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the physical basis for the significant acidity of terminal alkynes (pKa ~ 25) compared to alkenes (pKa ~ 44)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkynes have lower molecular weights than alkenes."
+        },
+        {
+          "label": "B",
+          "text": "The acetylide anion is aromatic."
+        },
+        {
+          "label": "C",
+          "text": "Terminal alkynes undergo rapid resonance into the triple bond."
+        },
+        {
+          "label": "D",
+          "text": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus.",
+      "explanation": "High s-character (50% in sp vs 33% in sp² and 25% in sp³) increases effective nuclear charge felt by lone pair electrons, stabilizing the carbanion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "triple-bond-troll.png"
+      ]
+    },
+    {
+      "id": "ch09_q011",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Alkyne Hydration Mercuric Ion Catalysis",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the role of the Hg²⁺ catalyst in the acid-catalyzed hydration of alkynes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hg²⁺ oxidizes the alkyne to a dialdehyde."
+        },
+        {
+          "label": "B",
+          "text": "Hg²⁺ reduces the alkyne to an alkane directly."
+        },
+        {
+          "label": "C",
+          "text": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water."
+        },
+        {
+          "label": "D",
+          "text": "Hg²⁺ acts as a Brønsted base that deprotonates water."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water.",
+      "explanation": "Mercuric ion electrophilically coordinates to the alkyne π system, greatly accelerating nucleophilic capture by water.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q012",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Keto-Enol Tautomerism in Alkyne Hydration",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What mechanistic sequence converts the transient enol intermediate into the final ketone during alkyne hydration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the O-H bond followed by 1,2-hydrogen shift."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of hydroxide on the enol oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Direct uncatalyzed intramolecular 1,3-proton transfer through space."
+        },
+        {
+          "label": "D",
+          "text": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen.",
+      "explanation": "Acid-catalyzed tautomerization proceeds through oxocarbenium resonance intermediates to achieve the thermodynamically stable keto form.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q013",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Hydroboration-Oxidation of Alkynes (Aldehyde)",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why are hindered dialkylboranes such as disiamylborane or 9-BBN used instead of BH₃ for terminal alkyne hydroboration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Hindered boranes act as radical initiators."
+        },
+        {
+          "label": "C",
+          "text": "BH₃ is incapable of reacting with alkynes."
+        },
+        {
+          "label": "D",
+          "text": "Hindered boranes oxidize the alkyne directly to carboxylic acids."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate.",
+      "explanation": "Bulky dialkylboranes ensure mono-addition to terminal alkynes, allowing subsequent oxidation to yield the aldehyde without over-hydroboration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q014",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Dissolving Metal Reduction Mechanism (Trans Alkene)",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of elementary steps in the reduction of an internal alkyne with Na in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene."
+        },
+        {
+          "label": "B",
+          "text": "Concerted syn addition of two sodium atoms followed by water quench."
+        },
+        {
+          "label": "C",
+          "text": "Electrophilic addition of amide ion followed by hydride displacement."
+        },
+        {
+          "label": "D",
+          "text": "Catalytic hydrogenation on colloidal sodium nanoparticles."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene.",
+      "explanation": "Stepwise single-electron transfers allow the radical anion intermediate to equilibrate to the thermodynamically favored trans configuration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q015",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Lindlar Catalyst Poisoning Role",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic function of lead acetate and quinoline 'poisons' in the Lindlar palladium catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They change the reaction mechanism from syn addition to anti addition."
+        },
+        {
+          "label": "B",
+          "text": "They oxidize the alkyne to a diketone."
+        },
+        {
+          "label": "C",
+          "text": "They act as phase-transfer catalysts that dissolve palladium."
+        },
+        {
+          "label": "D",
+          "text": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene.",
+      "explanation": "Catalyst poisoning attenuates catalytic activity so that the reaction stops cleanly at the cis-alkene stage without overreduction to the alkane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q016",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Alkyne Dihalogenation Carbocation Intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "In the addition of 2 equivalents of HBr to propyne, why do both bromines attach to the same carbon (geminal dibromide)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The terminal carbon is antiaromatic."
+        },
+        {
+          "label": "B",
+          "text": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom."
+        },
+        {
+          "label": "C",
+          "text": "Steric hindrance prevents bromine from attacking the terminal carbon."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a cyclic dibromonium dication."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom.",
+      "explanation": "Halogen lone pair resonance donation stabilizes the α-halocarbocation intermediate, directing the second addition to the same carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q017",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Alkyne Ozonolysis Intermediate Cleavage",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does ozonolysis of an internal alkyne produce two carboxylic acids rather than aldehydes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids are formed by secondary reaction with zinc."
+        },
+        {
+          "label": "B",
+          "text": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes cannot undergo ozonolysis."
+        },
+        {
+          "label": "D",
+          "text": "Aldehydes are reduced to acids by ozone."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids.",
+      "explanation": "Ozonolysis cleaves all three bonds of the alkyne triple bond, generating carboxylic acid functional groups at each sp carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q018",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Alkyne Acidity vs Alkene and Alkane",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the physical basis for the significant acidity of terminal alkynes (pKa ~ 25) compared to alkenes (pKa ~ 44)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus."
+        },
+        {
+          "label": "B",
+          "text": "Terminal alkynes undergo rapid resonance into the triple bond."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes have lower molecular weights than alkenes."
+        },
+        {
+          "label": "D",
+          "text": "The acetylide anion is aromatic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus.",
+      "explanation": "High s-character (50% in sp vs 33% in sp² and 25% in sp³) increases effective nuclear charge felt by lone pair electrons, stabilizing the carbanion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q019",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Terminal Alkyne Deprotonation Carbanion",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the orbital hybridization and geometry of the acetylide anion formed by deprotonating 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The lone pair resides in an unhybridized 2p orbital perpendicular to the ring."
+        },
+        {
+          "label": "B",
+          "text": "The lone pair resides in an sp³ tetrahedral orbital."
+        },
+        {
+          "label": "C",
+          "text": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond."
+        },
+        {
+          "label": "D",
+          "text": "The carbanionic carbon is sp² hybridized with trigonal planar geometry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond.",
+      "explanation": "The terminal alkyne carbon is sp hybridized; deprotonation retains the sp orbital holding the lone pair close to the nucleus.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q020",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Acetylide Assassin",
+      "topic": "Acetylide SN2 Alkylation Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic classification of the reaction between sodium acetylide and 1-bromobutane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide."
+        },
+        {
+          "label": "B",
+          "text": "An E2 elimination yielding butene and acetylene."
+        },
+        {
+          "label": "C",
+          "text": "An electrophilic addition across the alkyne triple bond."
+        },
+        {
+          "label": "D",
+          "text": "A radical chain substitution initiated by sodium metal."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide.",
+      "explanation": "Acetylide anions are powerful, linear carbon nucleophiles that displace primary alkyl halides efficiently via SN2.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acetylide-assassin.png"
+      ]
+    },
+    {
+      "id": "ch09_q021",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Hydroboration-Oxidation of Alkynes (Aldehyde)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why are hindered dialkylboranes such as disiamylborane or 9-BBN used instead of BH₃ for terminal alkyne hydroboration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BH₃ is incapable of reacting with alkynes."
+        },
+        {
+          "label": "B",
+          "text": "Hindered boranes act as radical initiators."
+        },
+        {
+          "label": "C",
+          "text": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Hindered boranes oxidize the alkyne directly to carboxylic acids."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate.",
+      "explanation": "Bulky dialkylboranes ensure mono-addition to terminal alkynes, allowing subsequent oxidation to yield the aldehyde without over-hydroboration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q022",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Dissolving Metal Reduction Mechanism (Trans Alkene)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of elementary steps in the reduction of an internal alkyne with Na in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted syn addition of two sodium atoms followed by water quench."
+        },
+        {
+          "label": "B",
+          "text": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene."
+        },
+        {
+          "label": "C",
+          "text": "Catalytic hydrogenation on colloidal sodium nanoparticles."
+        },
+        {
+          "label": "D",
+          "text": "Electrophilic addition of amide ion followed by hydride displacement."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene.",
+      "explanation": "Stepwise single-electron transfers allow the radical anion intermediate to equilibrate to the thermodynamically favored trans configuration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q023",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Lindlar Catalyst Poisoning Role",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic function of lead acetate and quinoline 'poisons' in the Lindlar palladium catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They act as phase-transfer catalysts that dissolve palladium."
+        },
+        {
+          "label": "B",
+          "text": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene."
+        },
+        {
+          "label": "C",
+          "text": "They oxidize the alkyne to a diketone."
+        },
+        {
+          "label": "D",
+          "text": "They change the reaction mechanism from syn addition to anti addition."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene.",
+      "explanation": "Catalyst poisoning attenuates catalytic activity so that the reaction stops cleanly at the cis-alkene stage without overreduction to the alkane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q024",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Alkyne Dihalogenation Carbocation Intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "In the addition of 2 equivalents of HBr to propyne, why do both bromines attach to the same carbon (geminal dibromide)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric hindrance prevents bromine from attacking the terminal carbon."
+        },
+        {
+          "label": "B",
+          "text": "The terminal carbon is antiaromatic."
+        },
+        {
+          "label": "C",
+          "text": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via a cyclic dibromonium dication."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom.",
+      "explanation": "Halogen lone pair resonance donation stabilizes the α-halocarbocation intermediate, directing the second addition to the same carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q025",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Alkyne Ozonolysis Intermediate Cleavage",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does ozonolysis of an internal alkyne produce two carboxylic acids rather than aldehydes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids."
+        },
+        {
+          "label": "B",
+          "text": "Aldehydes are reduced to acids by ozone."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids are formed by secondary reaction with zinc."
+        },
+        {
+          "label": "D",
+          "text": "Alkynes cannot undergo ozonolysis."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids.",
+      "explanation": "Ozonolysis cleaves all three bonds of the alkyne triple bond, generating carboxylic acid functional groups at each sp carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q026",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Alkyne Acidity vs Alkene and Alkane",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the physical basis for the significant acidity of terminal alkynes (pKa ~ 25) compared to alkenes (pKa ~ 44)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus."
+        },
+        {
+          "label": "B",
+          "text": "Terminal alkynes undergo rapid resonance into the triple bond."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes have lower molecular weights than alkenes."
+        },
+        {
+          "label": "D",
+          "text": "The acetylide anion is aromatic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus.",
+      "explanation": "High s-character (50% in sp vs 33% in sp² and 25% in sp³) increases effective nuclear charge felt by lone pair electrons, stabilizing the carbanion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q027",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Terminal Alkyne Deprotonation Carbanion",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the orbital hybridization and geometry of the acetylide anion formed by deprotonating 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The lone pair resides in an sp³ tetrahedral orbital."
+        },
+        {
+          "label": "B",
+          "text": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond."
+        },
+        {
+          "label": "C",
+          "text": "The lone pair resides in an unhybridized 2p orbital perpendicular to the ring."
+        },
+        {
+          "label": "D",
+          "text": "The carbanionic carbon is sp² hybridized with trigonal planar geometry."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond.",
+      "explanation": "The terminal alkyne carbon is sp hybridized; deprotonation retains the sp orbital holding the lone pair close to the nucleus.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q028",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Acetylide SN2 Alkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic classification of the reaction between sodium acetylide and 1-bromobutane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An electrophilic addition across the alkyne triple bond."
+        },
+        {
+          "label": "B",
+          "text": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide."
+        },
+        {
+          "label": "C",
+          "text": "An E2 elimination yielding butene and acetylene."
+        },
+        {
+          "label": "D",
+          "text": "A radical chain substitution initiated by sodium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide.",
+      "explanation": "Acetylide anions are powerful, linear carbon nucleophiles that displace primary alkyl halides efficiently via SN2.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q029",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Alkyne Hydration Mercuric Ion Catalysis",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the role of the Hg²⁺ catalyst in the acid-catalyzed hydration of alkynes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hg²⁺ reduces the alkyne to an alkane directly."
+        },
+        {
+          "label": "B",
+          "text": "Hg²⁺ oxidizes the alkyne to a dialdehyde."
+        },
+        {
+          "label": "C",
+          "text": "Hg²⁺ acts as a Brønsted base that deprotonates water."
+        },
+        {
+          "label": "D",
+          "text": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water.",
+      "explanation": "Mercuric ion electrophilically coordinates to the alkyne π system, greatly accelerating nucleophilic capture by water.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q030",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Keto-Enol Karkinos",
+      "topic": "Keto-Enol Tautomerism in Alkyne Hydration",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What mechanistic sequence converts the transient enol intermediate into the final ketone during alkyne hydration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack of hydroxide on the enol oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Direct uncatalyzed intramolecular 1,3-proton transfer through space."
+        },
+        {
+          "label": "C",
+          "text": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the O-H bond followed by 1,2-hydrogen shift."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen.",
+      "explanation": "Acid-catalyzed tautomerization proceeds through oxocarbenium resonance intermediates to achieve the thermodynamically stable keto form.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "keto-enol-karkinos.png"
+      ]
+    },
+    {
+      "id": "ch09_q031",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Lindlar Catalyst Poisoning Role",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic function of lead acetate and quinoline 'poisons' in the Lindlar palladium catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They oxidize the alkyne to a diketone."
+        },
+        {
+          "label": "B",
+          "text": "They act as phase-transfer catalysts that dissolve palladium."
+        },
+        {
+          "label": "C",
+          "text": "They change the reaction mechanism from syn addition to anti addition."
+        },
+        {
+          "label": "D",
+          "text": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene.",
+      "explanation": "Catalyst poisoning attenuates catalytic activity so that the reaction stops cleanly at the cis-alkene stage without overreduction to the alkane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q032",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Alkyne Dihalogenation Carbocation Intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the addition of 2 equivalents of HBr to propyne, why do both bromines attach to the same carbon (geminal dibromide)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a cyclic dibromonium dication."
+        },
+        {
+          "label": "B",
+          "text": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom."
+        },
+        {
+          "label": "C",
+          "text": "The terminal carbon is antiaromatic."
+        },
+        {
+          "label": "D",
+          "text": "Steric hindrance prevents bromine from attacking the terminal carbon."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom.",
+      "explanation": "Halogen lone pair resonance donation stabilizes the α-halocarbocation intermediate, directing the second addition to the same carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q033",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Alkyne Ozonolysis Intermediate Cleavage",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does ozonolysis of an internal alkyne produce two carboxylic acids rather than aldehydes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehydes are reduced to acids by ozone."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes cannot undergo ozonolysis."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids are formed by secondary reaction with zinc."
+        },
+        {
+          "label": "D",
+          "text": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids.",
+      "explanation": "Ozonolysis cleaves all three bonds of the alkyne triple bond, generating carboxylic acid functional groups at each sp carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q034",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Alkyne Acidity vs Alkene and Alkane",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the physical basis for the significant acidity of terminal alkynes (pKa ~ 25) compared to alkenes (pKa ~ 44)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acetylide anion is aromatic."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes have lower molecular weights than alkenes."
+        },
+        {
+          "label": "C",
+          "text": "Terminal alkynes undergo rapid resonance into the triple bond."
+        },
+        {
+          "label": "D",
+          "text": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus.",
+      "explanation": "High s-character (50% in sp vs 33% in sp² and 25% in sp³) increases effective nuclear charge felt by lone pair electrons, stabilizing the carbanion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q035",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Terminal Alkyne Deprotonation Carbanion",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the orbital hybridization and geometry of the acetylide anion formed by deprotonating 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The lone pair resides in an sp³ tetrahedral orbital."
+        },
+        {
+          "label": "B",
+          "text": "The lone pair resides in an unhybridized 2p orbital perpendicular to the ring."
+        },
+        {
+          "label": "C",
+          "text": "The carbanionic carbon is sp² hybridized with trigonal planar geometry."
+        },
+        {
+          "label": "D",
+          "text": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond.",
+      "explanation": "The terminal alkyne carbon is sp hybridized; deprotonation retains the sp orbital holding the lone pair close to the nucleus.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q036",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Acetylide SN2 Alkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic classification of the reaction between sodium acetylide and 1-bromobutane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A radical chain substitution initiated by sodium metal."
+        },
+        {
+          "label": "B",
+          "text": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide."
+        },
+        {
+          "label": "C",
+          "text": "An E2 elimination yielding butene and acetylene."
+        },
+        {
+          "label": "D",
+          "text": "An electrophilic addition across the alkyne triple bond."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide.",
+      "explanation": "Acetylide anions are powerful, linear carbon nucleophiles that displace primary alkyl halides efficiently via SN2.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q037",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Alkyne Hydration Mercuric Ion Catalysis",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the role of the Hg²⁺ catalyst in the acid-catalyzed hydration of alkynes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water."
+        },
+        {
+          "label": "B",
+          "text": "Hg²⁺ oxidizes the alkyne to a dialdehyde."
+        },
+        {
+          "label": "C",
+          "text": "Hg²⁺ reduces the alkyne to an alkane directly."
+        },
+        {
+          "label": "D",
+          "text": "Hg²⁺ acts as a Brønsted base that deprotonates water."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water.",
+      "explanation": "Mercuric ion electrophilically coordinates to the alkyne π system, greatly accelerating nucleophilic capture by water.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q038",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Keto-Enol Tautomerism in Alkyne Hydration",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What mechanistic sequence converts the transient enol intermediate into the final ketone during alkyne hydration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct uncatalyzed intramolecular 1,3-proton transfer through space."
+        },
+        {
+          "label": "B",
+          "text": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the O-H bond followed by 1,2-hydrogen shift."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack of hydroxide on the enol oxygen."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen.",
+      "explanation": "Acid-catalyzed tautomerization proceeds through oxocarbenium resonance intermediates to achieve the thermodynamically stable keto form.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q039",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Hydroboration-Oxidation of Alkynes (Aldehyde)",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why are hindered dialkylboranes such as disiamylborane or 9-BBN used instead of BH₃ for terminal alkyne hydroboration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hindered boranes act as radical initiators."
+        },
+        {
+          "label": "B",
+          "text": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Hindered boranes oxidize the alkyne directly to carboxylic acids."
+        },
+        {
+          "label": "D",
+          "text": "BH₃ is incapable of reacting with alkynes."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate.",
+      "explanation": "Bulky dialkylboranes ensure mono-addition to terminal alkynes, allowing subsequent oxidation to yield the aldehyde without over-hydroboration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q040",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Lindlar Lancer",
+      "topic": "Dissolving Metal Reduction Mechanism (Trans Alkene)",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the sequence of elementary steps in the reduction of an internal alkyne with Na in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted syn addition of two sodium atoms followed by water quench."
+        },
+        {
+          "label": "B",
+          "text": "Electrophilic addition of amide ion followed by hydride displacement."
+        },
+        {
+          "label": "C",
+          "text": "Catalytic hydrogenation on colloidal sodium nanoparticles."
+        },
+        {
+          "label": "D",
+          "text": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene.",
+      "explanation": "Stepwise single-electron transfers allow the radical anion intermediate to equilibrate to the thermodynamically favored trans configuration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "lindlar-lancer.png"
+      ]
+    },
+    {
+      "id": "ch09_q041",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Alkyne Ozonolysis Intermediate Cleavage",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does ozonolysis of an internal alkyne produce two carboxylic acids rather than aldehydes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldehydes are reduced to acids by ozone."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes cannot undergo ozonolysis."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids are formed by secondary reaction with zinc."
+        },
+        {
+          "label": "D",
+          "text": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The high oxidation state of the alkyne carbon (sp) and ozonide intermediate leads to complete oxidative cleavage of all three C-C bonds to carboxylic acids.",
+      "explanation": "Ozonolysis cleaves all three bonds of the alkyne triple bond, generating carboxylic acid functional groups at each sp carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q042",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Alkyne Acidity vs Alkene and Alkane",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the physical basis for the significant acidity of terminal alkynes (pKa ~ 25) compared to alkenes (pKa ~ 44)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Terminal alkynes undergo rapid resonance into the triple bond."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes have lower molecular weights than alkenes."
+        },
+        {
+          "label": "C",
+          "text": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus."
+        },
+        {
+          "label": "D",
+          "text": "The acetylide anion is aromatic."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The conjugate base acetylide carbanion holds its lone pair in an sp orbital with 50% s-character, placing negative charge closer to the carbon nucleus.",
+      "explanation": "High s-character (50% in sp vs 33% in sp² and 25% in sp³) increases effective nuclear charge felt by lone pair electrons, stabilizing the carbanion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q043",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Terminal Alkyne Deprotonation Carbanion",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the orbital hybridization and geometry of the acetylide anion formed by deprotonating 1-butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbanionic carbon is sp² hybridized with trigonal planar geometry."
+        },
+        {
+          "label": "B",
+          "text": "The lone pair resides in an unhybridized 2p orbital perpendicular to the ring."
+        },
+        {
+          "label": "C",
+          "text": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond."
+        },
+        {
+          "label": "D",
+          "text": "The lone pair resides in an sp³ tetrahedral orbital."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The carbanionic lone pair resides in an sp hybrid orbital directed linearly at 180° from the C-C single bond.",
+      "explanation": "The terminal alkyne carbon is sp hybridized; deprotonation retains the sp orbital holding the lone pair close to the nucleus.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q044",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Acetylide SN2 Alkylation Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic classification of the reaction between sodium acetylide and 1-bromobutane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A radical chain substitution initiated by sodium metal."
+        },
+        {
+          "label": "B",
+          "text": "An E2 elimination yielding butene and acetylene."
+        },
+        {
+          "label": "C",
+          "text": "An electrophilic addition across the alkyne triple bond."
+        },
+        {
+          "label": "D",
+          "text": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A classic bimolecular nucleophilic substitution (SN2) where the sp-carbanion attacks the primary carbon with backside displacement of bromide.",
+      "explanation": "Acetylide anions are powerful, linear carbon nucleophiles that displace primary alkyl halides efficiently via SN2.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q045",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Alkyne Hydration Mercuric Ion Catalysis",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the role of the Hg²⁺ catalyst in the acid-catalyzed hydration of alkynes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hg²⁺ oxidizes the alkyne to a dialdehyde."
+        },
+        {
+          "label": "B",
+          "text": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water."
+        },
+        {
+          "label": "C",
+          "text": "Hg²⁺ acts as a Brønsted base that deprotonates water."
+        },
+        {
+          "label": "D",
+          "text": "Hg²⁺ reduces the alkyne to an alkane directly."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hg²⁺ coordinates to the alkyne π system to form a cyclic mercurinium ion, activating the triple bond toward nucleophilic attack by water.",
+      "explanation": "Mercuric ion electrophilically coordinates to the alkyne π system, greatly accelerating nucleophilic capture by water.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q046",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Keto-Enol Tautomerism in Alkyne Hydration",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic sequence converts the transient enol intermediate into the final ketone during alkyne hydration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct uncatalyzed intramolecular 1,3-proton transfer through space."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the O-H bond followed by 1,2-hydrogen shift."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic attack of hydroxide on the enol oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation of the enol π bond at the terminal carbon to form a resonance-stabilized oxocarbenium ion, followed by deprotonation at oxygen.",
+      "explanation": "Acid-catalyzed tautomerization proceeds through oxocarbenium resonance intermediates to achieve the thermodynamically stable keto form.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q047",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Hydroboration-Oxidation of Alkynes (Aldehyde)",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why are hindered dialkylboranes such as disiamylborane or 9-BBN used instead of BH₃ for terminal alkyne hydroboration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hindered boranes oxidize the alkyne directly to carboxylic acids."
+        },
+        {
+          "label": "B",
+          "text": "BH₃ is incapable of reacting with alkynes."
+        },
+        {
+          "label": "C",
+          "text": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Hindered boranes act as radical initiators."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Steric bulk prevents a second hydroboration across the remaining double bond, cleanly stopping at the mono-alkenylborane intermediate.",
+      "explanation": "Bulky dialkylboranes ensure mono-addition to terminal alkynes, allowing subsequent oxidation to yield the aldehyde without over-hydroboration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q048",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Dissolving Metal Reduction Mechanism (Trans Alkene)",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of elementary steps in the reduction of an internal alkyne with Na in liquid NH₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Catalytic hydrogenation on colloidal sodium nanoparticles."
+        },
+        {
+          "label": "B",
+          "text": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene."
+        },
+        {
+          "label": "C",
+          "text": "Concerted syn addition of two sodium atoms followed by water quench."
+        },
+        {
+          "label": "D",
+          "text": "Electrophilic addition of amide ion followed by hydride displacement."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single electron transfer (SET) → radical anion → trans-inversion → protonation by NH₃ → second SET to carbanion → final protonation to trans-alkene.",
+      "explanation": "Stepwise single-electron transfers allow the radical anion intermediate to equilibrate to the thermodynamically favored trans configuration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q049",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Lindlar Catalyst Poisoning Role",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic function of lead acetate and quinoline 'poisons' in the Lindlar palladium catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene."
+        },
+        {
+          "label": "B",
+          "text": "They change the reaction mechanism from syn addition to anti addition."
+        },
+        {
+          "label": "C",
+          "text": "They act as phase-transfer catalysts that dissolve palladium."
+        },
+        {
+          "label": "D",
+          "text": "They oxidize the alkyne to a diketone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "They selectively deactivate high-energy catalytic sites on palladium, allowing syn-hydrogenation of alkynes to cis-alkenes while preventing further reduction of the alkene.",
+      "explanation": "Catalyst poisoning attenuates catalytic activity so that the reaction stops cleanly at the cis-alkene stage without overreduction to the alkane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    },
+    {
+      "id": "ch09_q050",
+      "chapter": 9,
+      "chapter_title": "Alkynes",
+      "boss": "Dissolving Metal Dragon",
+      "topic": "Alkyne Dihalogenation Carbocation Intermediate",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "In the addition of 2 equivalents of HBr to propyne, why do both bromines attach to the same carbon (geminal dibromide)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via a cyclic dibromonium dication."
+        },
+        {
+          "label": "B",
+          "text": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom."
+        },
+        {
+          "label": "C",
+          "text": "Steric hindrance prevents bromine from attacking the terminal carbon."
+        },
+        {
+          "label": "D",
+          "text": "The terminal carbon is antiaromatic."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The secondary bromo-carbocation intermediate [CH₃-C⁺(Br)-CH₃] is strongly resonance-stabilized by lone pair donation from the adjacent bromine atom.",
+      "explanation": "Halogen lone pair resonance donation stabilizes the α-halocarbocation intermediate, directing the second addition to the same carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "dissolving-metal-dragon.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Triple-Bond Troll",
+    "Acetylide Assassin",
+    "Keto-Enol Karkinos",
+    "Lindlar Lancer",
+    "Dissolving Metal Dragon"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Triple-Bond Troll",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "triple-bond-troll.png"
+        ]
+      },
+      {
+        "boss": "Acetylide Assassin",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "acetylide-assassin.png"
+        ]
+      },
+      {
+        "boss": "Keto-Enol Karkinos",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "keto-enol-karkinos.png"
+        ]
+      },
+      {
+        "boss": "Lindlar Lancer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "lindlar-lancer.png"
+        ]
+      },
+      {
+        "boss": "Dissolving Metal Dragon",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "dissolving-metal-dragon.png"
+        ]
+      }
+    ]
+  }
+}

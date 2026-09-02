@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 3,
+  "chapter_title": "Acids and Bases",
+  "assigned_boss": "Proton Pixie",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch03_q001",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Brønsted Proton Transfer Curved Arrow",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the universal curved-arrow sequence in a single-step Brønsted acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One arrow from the acidic proton to the base lone pair."
+        },
+        {
+          "label": "B",
+          "text": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A."
+        },
+        {
+          "label": "C",
+          "text": "Two arrows transferring protons in opposite directions simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "An arrow breaking the base into two ions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A.",
+      "explanation": "The electron pair of the base forms a new bond to H⁺, while the bonding pair in H-A is transferred entirely to atom A.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q002",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "ARIO Atom Size Effect in Thiol vs Alcohol",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is ethanethiol (CH₃CH₂SH, pKa ~ 10.5) more acidic than ethanol (CH₃CH₂OH, pKa ~ 16) mechanistically?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Ethanethiol undergoes rapid resonance delocalization into the ethyl chain."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur is more electronegative than oxygen on the Pauling scale."
+        },
+        {
+          "label": "D",
+          "text": "Ethanol forms stronger intramolecular hydrogen bonds that trap the proton."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen.",
+      "explanation": "Down a column in the periodic table, atomic size dominates over electronegativity: larger polarizable orbitals stabilize conjugate base anions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q003",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "ARIO Resonance Delocalization in Carboxylates",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What mechanistic factor accounts for the ~11 pKa unit acidity difference between acetic acid (pKa 4.76) and ethanol (pKa 16)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Ethanol undergoes spontaneous homolytic cleavage in water."
+        },
+        {
+          "label": "C",
+          "text": "Acetate anion is stabilized by aromaticity."
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid has stronger inductive electron donation from its methyl group."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen.",
+      "explanation": "Resonance delocalization of the negative charge over two equivalent oxygen atoms provides massive stabilization to the carboxylate conjugate base.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q004",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Inductive Field Effect of Halogens",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does a trifluoromethyl group (-CF₃) mechanistically decrease the pKa of an adjacent carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fluorine forms covalent bonds directly with incoming hydronium ions."
+        },
+        {
+          "label": "B",
+          "text": "Fluorine donates lone pairs into the carboxylate π system via resonance."
+        },
+        {
+          "label": "C",
+          "text": "The CF₃ group acts as a Brønsted base that absorbs excess protons."
+        },
+        {
+          "label": "D",
+          "text": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group.",
+      "explanation": "Inductive electron withdrawal through σ bonds stabilizes the conjugate base anion, lowering the energy barrier for proton loss.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q005",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Orbital Hybridization Acidity Ladder",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is acetylene (sp, pKa 25) significantly more acidic than ethylene (sp², pKa 44) and ethane (sp³, pKa 50)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sp orbital has a larger volume than sp³ orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Acetylene undergoes resonance delocalization upon losing a proton."
+        },
+        {
+          "label": "C",
+          "text": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus."
+        },
+        {
+          "label": "D",
+          "text": "The triple bond creates an internal dipole that repels protons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus.",
+      "explanation": "Higher s-character means electrons reside closer to the nucleus, significantly enhancing carbanion conjugate base stability.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q006",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Solvent Leveling Mechanism in Water",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic fate of sodium ethoxide (NaOEt) when added to pure water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethoxide remains unreacted as free C₂H₅O⁻ ions."
+        },
+        {
+          "label": "B",
+          "text": "Ethoxide decomposes to ethylene gas and water."
+        },
+        {
+          "label": "C",
+          "text": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water."
+        },
+        {
+          "label": "D",
+          "text": "Ethoxide is oxidized to acetic acid by dissolved oxygen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water.",
+      "explanation": "Any base stronger than hydroxide is leveled by water, converting completely to the solvent's conjugate base (OH⁻).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q007",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Lewis Acid-Base Halide Abstraction",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the first elementary step when AlCl₃ reacts with 2-chloro-2-methylpropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻."
+        },
+        {
+          "label": "B",
+          "text": "AlCl₃ deprotonates the alkyl halide to form an alkene."
+        },
+        {
+          "label": "C",
+          "text": "A chlorine radical is homolytically abstracted by aluminum."
+        },
+        {
+          "label": "D",
+          "text": "Aluminum attacks the methyl carbon via backside SN2 displacement."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻.",
+      "explanation": "AlCl₃ acts as an electrophilic Lewis acid, coordinating the halogen lone pair and weakening the C-Cl bond for heterolytic cleavage.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q008",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Acid-Base Equilibrium Directionality",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "How does the pKa difference between reactants and products dictate the equilibrium position of an acid-base mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the side with smaller molecules regardless of pKa."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium favors the stronger acid to maximize heat release."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid)."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium is independent of pKa and depends only on solvent viscosity."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid).",
+      "explanation": "Acid-base equilibria thermodynamically shift toward the more stable, lower-energy conjugate acid-base pair (higher pKa).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q009",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Phenol Substituent Resonance Directing",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is p-nitrophenol (pKa 7.15) much more acidic than phenol (pKa 9.95)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Nitrophenol undergoes rapid tautomerization to an aliphatic ketone."
+        },
+        {
+          "label": "B",
+          "text": "The nitro group donates electron density into the aromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "The nitro group physically blocks base access to the phenoxide oxygen."
+        },
+        {
+          "label": "D",
+          "text": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens.",
+      "explanation": "Direct resonance conjugation between the phenoxide oxygen and the para nitro group provides extra stabilization to the conjugate base.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q010",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Proton Pixie",
+      "topic": "Solvation Stabilization of Alkoxides",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is methanol (pKa 15.5) slightly more acidic than tert-butanol (pKa 18.0) in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methyl group is more electron-withdrawing than three methyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Methanol has more hyperconjugation than tert-butanol."
+        },
+        {
+          "label": "C",
+          "text": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide is an aromatic anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide.",
+      "explanation": "Steric hindrance in tert-butoxide impedes solvent molecules from closely coordinating and solvating the negative charge.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "proton-pixie.png"
+      ]
+    },
+    {
+      "id": "ch03_q011",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "ARIO Resonance Delocalization in Carboxylates",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic factor accounts for the ~11 pKa unit acidity difference between acetic acid (pKa 4.76) and ethanol (pKa 16)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid has stronger inductive electron donation from its methyl group."
+        },
+        {
+          "label": "C",
+          "text": "Acetate anion is stabilized by aromaticity."
+        },
+        {
+          "label": "D",
+          "text": "Ethanol undergoes spontaneous homolytic cleavage in water."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen.",
+      "explanation": "Resonance delocalization of the negative charge over two equivalent oxygen atoms provides massive stabilization to the carboxylate conjugate base.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q012",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Inductive Field Effect of Halogens",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does a trifluoromethyl group (-CF₃) mechanistically decrease the pKa of an adjacent carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group."
+        },
+        {
+          "label": "B",
+          "text": "Fluorine forms covalent bonds directly with incoming hydronium ions."
+        },
+        {
+          "label": "C",
+          "text": "The CF₃ group acts as a Brønsted base that absorbs excess protons."
+        },
+        {
+          "label": "D",
+          "text": "Fluorine donates lone pairs into the carboxylate π system via resonance."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group.",
+      "explanation": "Inductive electron withdrawal through σ bonds stabilizes the conjugate base anion, lowering the energy barrier for proton loss.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q013",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Orbital Hybridization Acidity Ladder",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is acetylene (sp, pKa 25) significantly more acidic than ethylene (sp², pKa 44) and ethane (sp³, pKa 50)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus."
+        },
+        {
+          "label": "B",
+          "text": "The sp orbital has a larger volume than sp³ orbitals."
+        },
+        {
+          "label": "C",
+          "text": "The triple bond creates an internal dipole that repels protons."
+        },
+        {
+          "label": "D",
+          "text": "Acetylene undergoes resonance delocalization upon losing a proton."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus.",
+      "explanation": "Higher s-character means electrons reside closer to the nucleus, significantly enhancing carbanion conjugate base stability.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q014",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Solvent Leveling Mechanism in Water",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic fate of sodium ethoxide (NaOEt) when added to pure water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water."
+        },
+        {
+          "label": "B",
+          "text": "Ethoxide is oxidized to acetic acid by dissolved oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Ethoxide decomposes to ethylene gas and water."
+        },
+        {
+          "label": "D",
+          "text": "Ethoxide remains unreacted as free C₂H₅O⁻ ions."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water.",
+      "explanation": "Any base stronger than hydroxide is leveled by water, converting completely to the solvent's conjugate base (OH⁻).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q015",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Lewis Acid-Base Halide Abstraction",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the first elementary step when AlCl₃ reacts with 2-chloro-2-methylpropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A chlorine radical is homolytically abstracted by aluminum."
+        },
+        {
+          "label": "B",
+          "text": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻."
+        },
+        {
+          "label": "C",
+          "text": "AlCl₃ deprotonates the alkyl halide to form an alkene."
+        },
+        {
+          "label": "D",
+          "text": "Aluminum attacks the methyl carbon via backside SN2 displacement."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻.",
+      "explanation": "AlCl₃ acts as an electrophilic Lewis acid, coordinating the halogen lone pair and weakening the C-Cl bond for heterolytic cleavage.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q016",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Acid-Base Equilibrium Directionality",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How does the pKa difference between reactants and products dictate the equilibrium position of an acid-base mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid)."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium favors the stronger acid to maximize heat release."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium is independent of pKa and depends only on solvent viscosity."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium always favors the side with smaller molecules regardless of pKa."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid).",
+      "explanation": "Acid-base equilibria thermodynamically shift toward the more stable, lower-energy conjugate acid-base pair (higher pKa).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q017",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Phenol Substituent Resonance Directing",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is p-nitrophenol (pKa 7.15) much more acidic than phenol (pKa 9.95)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens."
+        },
+        {
+          "label": "B",
+          "text": "The nitro group donates electron density into the aromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "The nitro group physically blocks base access to the phenoxide oxygen."
+        },
+        {
+          "label": "D",
+          "text": "p-Nitrophenol undergoes rapid tautomerization to an aliphatic ketone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens.",
+      "explanation": "Direct resonance conjugation between the phenoxide oxygen and the para nitro group provides extra stabilization to the conjugate base.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q018",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Solvation Stabilization of Alkoxides",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is methanol (pKa 15.5) slightly more acidic than tert-butanol (pKa 18.0) in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butoxide is an aromatic anion."
+        },
+        {
+          "label": "B",
+          "text": "Methanol has more hyperconjugation than tert-butanol."
+        },
+        {
+          "label": "C",
+          "text": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide."
+        },
+        {
+          "label": "D",
+          "text": "The methyl group is more electron-withdrawing than three methyl groups."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide.",
+      "explanation": "Steric hindrance in tert-butoxide impedes solvent molecules from closely coordinating and solvating the negative charge.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q019",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "Brønsted Proton Transfer Curved Arrow",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the universal curved-arrow sequence in a single-step Brønsted acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two arrows transferring protons in opposite directions simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "An arrow breaking the base into two ions."
+        },
+        {
+          "label": "C",
+          "text": "One arrow from the acidic proton to the base lone pair."
+        },
+        {
+          "label": "D",
+          "text": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A.",
+      "explanation": "The electron pair of the base forms a new bond to H⁺, while the bonding pair in H-A is transferred entirely to atom A.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q020",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Conjugate Chimera",
+      "topic": "ARIO Atom Size Effect in Thiol vs Alcohol",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is ethanethiol (CH₃CH₂SH, pKa ~ 10.5) more acidic than ethanol (CH₃CH₂OH, pKa ~ 16) mechanistically?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Ethanethiol undergoes rapid resonance delocalization into the ethyl chain."
+        },
+        {
+          "label": "C",
+          "text": "Ethanol forms stronger intramolecular hydrogen bonds that trap the proton."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur is more electronegative than oxygen on the Pauling scale."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen.",
+      "explanation": "Down a column in the periodic table, atomic size dominates over electronegativity: larger polarizable orbitals stabilize conjugate base anions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "conjugate-chimera.png"
+      ]
+    },
+    {
+      "id": "ch03_q021",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Orbital Hybridization Acidity Ladder",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is acetylene (sp, pKa 25) significantly more acidic than ethylene (sp², pKa 44) and ethane (sp³, pKa 50)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus."
+        },
+        {
+          "label": "B",
+          "text": "The triple bond creates an internal dipole that repels protons."
+        },
+        {
+          "label": "C",
+          "text": "Acetylene undergoes resonance delocalization upon losing a proton."
+        },
+        {
+          "label": "D",
+          "text": "The sp orbital has a larger volume than sp³ orbitals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus.",
+      "explanation": "Higher s-character means electrons reside closer to the nucleus, significantly enhancing carbanion conjugate base stability.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q022",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Solvent Leveling Mechanism in Water",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic fate of sodium ethoxide (NaOEt) when added to pure water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethoxide remains unreacted as free C₂H₅O⁻ ions."
+        },
+        {
+          "label": "B",
+          "text": "Ethoxide is oxidized to acetic acid by dissolved oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Ethoxide decomposes to ethylene gas and water."
+        },
+        {
+          "label": "D",
+          "text": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water.",
+      "explanation": "Any base stronger than hydroxide is leveled by water, converting completely to the solvent's conjugate base (OH⁻).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q023",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Lewis Acid-Base Halide Abstraction",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the first elementary step when AlCl₃ reacts with 2-chloro-2-methylpropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AlCl₃ deprotonates the alkyl halide to form an alkene."
+        },
+        {
+          "label": "B",
+          "text": "A chlorine radical is homolytically abstracted by aluminum."
+        },
+        {
+          "label": "C",
+          "text": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻."
+        },
+        {
+          "label": "D",
+          "text": "Aluminum attacks the methyl carbon via backside SN2 displacement."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻.",
+      "explanation": "AlCl₃ acts as an electrophilic Lewis acid, coordinating the halogen lone pair and weakening the C-Cl bond for heterolytic cleavage.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q024",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Acid-Base Equilibrium Directionality",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does the pKa difference between reactants and products dictate the equilibrium position of an acid-base mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium is independent of pKa and depends only on solvent viscosity."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid)."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium always favors the side with smaller molecules regardless of pKa."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium favors the stronger acid to maximize heat release."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid).",
+      "explanation": "Acid-base equilibria thermodynamically shift toward the more stable, lower-energy conjugate acid-base pair (higher pKa).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q025",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Phenol Substituent Resonance Directing",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is p-nitrophenol (pKa 7.15) much more acidic than phenol (pKa 9.95)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens."
+        },
+        {
+          "label": "B",
+          "text": "The nitro group physically blocks base access to the phenoxide oxygen."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitrophenol undergoes rapid tautomerization to an aliphatic ketone."
+        },
+        {
+          "label": "D",
+          "text": "The nitro group donates electron density into the aromatic ring."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens.",
+      "explanation": "Direct resonance conjugation between the phenoxide oxygen and the para nitro group provides extra stabilization to the conjugate base.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q026",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Solvation Stabilization of Alkoxides",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is methanol (pKa 15.5) slightly more acidic than tert-butanol (pKa 18.0) in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methanol has more hyperconjugation than tert-butanol."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butoxide is an aromatic anion."
+        },
+        {
+          "label": "C",
+          "text": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide."
+        },
+        {
+          "label": "D",
+          "text": "The methyl group is more electron-withdrawing than three methyl groups."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide.",
+      "explanation": "Steric hindrance in tert-butoxide impedes solvent molecules from closely coordinating and solvating the negative charge.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q027",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Brønsted Proton Transfer Curved Arrow",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the universal curved-arrow sequence in a single-step Brønsted acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A."
+        },
+        {
+          "label": "B",
+          "text": "One arrow from the acidic proton to the base lone pair."
+        },
+        {
+          "label": "C",
+          "text": "An arrow breaking the base into two ions."
+        },
+        {
+          "label": "D",
+          "text": "Two arrows transferring protons in opposite directions simultaneously."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A.",
+      "explanation": "The electron pair of the base forms a new bond to H⁺, while the bonding pair in H-A is transferred entirely to atom A.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q028",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "ARIO Atom Size Effect in Thiol vs Alcohol",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is ethanethiol (CH₃CH₂SH, pKa ~ 10.5) more acidic than ethanol (CH₃CH₂OH, pKa ~ 16) mechanistically?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanethiol undergoes rapid resonance delocalization into the ethyl chain."
+        },
+        {
+          "label": "B",
+          "text": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur is more electronegative than oxygen on the Pauling scale."
+        },
+        {
+          "label": "D",
+          "text": "Ethanol forms stronger intramolecular hydrogen bonds that trap the proton."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen.",
+      "explanation": "Down a column in the periodic table, atomic size dominates over electronegativity: larger polarizable orbitals stabilize conjugate base anions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q029",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "ARIO Resonance Delocalization in Carboxylates",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What mechanistic factor accounts for the ~11 pKa unit acidity difference between acetic acid (pKa 4.76) and ethanol (pKa 16)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanol undergoes spontaneous homolytic cleavage in water."
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid has stronger inductive electron donation from its methyl group."
+        },
+        {
+          "label": "C",
+          "text": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Acetate anion is stabilized by aromaticity."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen.",
+      "explanation": "Resonance delocalization of the negative charge over two equivalent oxygen atoms provides massive stabilization to the carboxylate conjugate base.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q030",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Inductive Imp",
+      "topic": "Inductive Field Effect of Halogens",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How does a trifluoromethyl group (-CF₃) mechanistically decrease the pKa of an adjacent carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The CF₃ group acts as a Brønsted base that absorbs excess protons."
+        },
+        {
+          "label": "B",
+          "text": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group."
+        },
+        {
+          "label": "C",
+          "text": "Fluorine forms covalent bonds directly with incoming hydronium ions."
+        },
+        {
+          "label": "D",
+          "text": "Fluorine donates lone pairs into the carboxylate π system via resonance."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group.",
+      "explanation": "Inductive electron withdrawal through σ bonds stabilizes the conjugate base anion, lowering the energy barrier for proton loss.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "inductive-imp.png"
+      ]
+    },
+    {
+      "id": "ch03_q031",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Lewis Acid-Base Halide Abstraction",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the first elementary step when AlCl₃ reacts with 2-chloro-2-methylpropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AlCl₃ deprotonates the alkyl halide to form an alkene."
+        },
+        {
+          "label": "B",
+          "text": "A chlorine radical is homolytically abstracted by aluminum."
+        },
+        {
+          "label": "C",
+          "text": "Aluminum attacks the methyl carbon via backside SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻.",
+      "explanation": "AlCl₃ acts as an electrophilic Lewis acid, coordinating the halogen lone pair and weakening the C-Cl bond for heterolytic cleavage.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q032",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Acid-Base Equilibrium Directionality",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does the pKa difference between reactants and products dictate the equilibrium position of an acid-base mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the side with smaller molecules regardless of pKa."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium favors the stronger acid to maximize heat release."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium is independent of pKa and depends only on solvent viscosity."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid).",
+      "explanation": "Acid-base equilibria thermodynamically shift toward the more stable, lower-energy conjugate acid-base pair (higher pKa).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q033",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Phenol Substituent Resonance Directing",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is p-nitrophenol (pKa 7.15) much more acidic than phenol (pKa 9.95)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitro group physically blocks base access to the phenoxide oxygen."
+        },
+        {
+          "label": "B",
+          "text": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitrophenol undergoes rapid tautomerization to an aliphatic ketone."
+        },
+        {
+          "label": "D",
+          "text": "The nitro group donates electron density into the aromatic ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens.",
+      "explanation": "Direct resonance conjugation between the phenoxide oxygen and the para nitro group provides extra stabilization to the conjugate base.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q034",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Solvation Stabilization of Alkoxides",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is methanol (pKa 15.5) slightly more acidic than tert-butanol (pKa 18.0) in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butoxide is an aromatic anion."
+        },
+        {
+          "label": "B",
+          "text": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide."
+        },
+        {
+          "label": "C",
+          "text": "The methyl group is more electron-withdrawing than three methyl groups."
+        },
+        {
+          "label": "D",
+          "text": "Methanol has more hyperconjugation than tert-butanol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide.",
+      "explanation": "Steric hindrance in tert-butoxide impedes solvent molecules from closely coordinating and solvating the negative charge.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q035",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Brønsted Proton Transfer Curved Arrow",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the universal curved-arrow sequence in a single-step Brønsted acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A."
+        },
+        {
+          "label": "B",
+          "text": "One arrow from the acidic proton to the base lone pair."
+        },
+        {
+          "label": "C",
+          "text": "Two arrows transferring protons in opposite directions simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "An arrow breaking the base into two ions."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A.",
+      "explanation": "The electron pair of the base forms a new bond to H⁺, while the bonding pair in H-A is transferred entirely to atom A.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q036",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "ARIO Atom Size Effect in Thiol vs Alcohol",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is ethanethiol (CH₃CH₂SH, pKa ~ 10.5) more acidic than ethanol (CH₃CH₂OH, pKa ~ 16) mechanistically?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Ethanethiol undergoes rapid resonance delocalization into the ethyl chain."
+        },
+        {
+          "label": "C",
+          "text": "Ethanol forms stronger intramolecular hydrogen bonds that trap the proton."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur is more electronegative than oxygen on the Pauling scale."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen.",
+      "explanation": "Down a column in the periodic table, atomic size dominates over electronegativity: larger polarizable orbitals stabilize conjugate base anions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q037",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "ARIO Resonance Delocalization in Carboxylates",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic factor accounts for the ~11 pKa unit acidity difference between acetic acid (pKa 4.76) and ethanol (pKa 16)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid has stronger inductive electron donation from its methyl group."
+        },
+        {
+          "label": "C",
+          "text": "Ethanol undergoes spontaneous homolytic cleavage in water."
+        },
+        {
+          "label": "D",
+          "text": "Acetate anion is stabilized by aromaticity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen.",
+      "explanation": "Resonance delocalization of the negative charge over two equivalent oxygen atoms provides massive stabilization to the carboxylate conjugate base.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q038",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Inductive Field Effect of Halogens",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How does a trifluoromethyl group (-CF₃) mechanistically decrease the pKa of an adjacent carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The CF₃ group acts as a Brønsted base that absorbs excess protons."
+        },
+        {
+          "label": "B",
+          "text": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group."
+        },
+        {
+          "label": "C",
+          "text": "Fluorine donates lone pairs into the carboxylate π system via resonance."
+        },
+        {
+          "label": "D",
+          "text": "Fluorine forms covalent bonds directly with incoming hydronium ions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group.",
+      "explanation": "Inductive electron withdrawal through σ bonds stabilizes the conjugate base anion, lowering the energy barrier for proton loss.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q039",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Orbital Hybridization Acidity Ladder",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why is acetylene (sp, pKa 25) significantly more acidic than ethylene (sp², pKa 44) and ethane (sp³, pKa 50)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sp orbital has a larger volume than sp³ orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Acetylene undergoes resonance delocalization upon losing a proton."
+        },
+        {
+          "label": "C",
+          "text": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus."
+        },
+        {
+          "label": "D",
+          "text": "The triple bond creates an internal dipole that repels protons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus.",
+      "explanation": "Higher s-character means electrons reside closer to the nucleus, significantly enhancing carbanion conjugate base stability.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q040",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "ARIO Archmage",
+      "topic": "Solvent Leveling Mechanism in Water",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic fate of sodium ethoxide (NaOEt) when added to pure water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethoxide is oxidized to acetic acid by dissolved oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water."
+        },
+        {
+          "label": "C",
+          "text": "Ethoxide remains unreacted as free C₂H₅O⁻ ions."
+        },
+        {
+          "label": "D",
+          "text": "Ethoxide decomposes to ethylene gas and water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water.",
+      "explanation": "Any base stronger than hydroxide is leveled by water, converting completely to the solvent's conjugate base (OH⁻).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ario-archmage.png"
+      ]
+    },
+    {
+      "id": "ch03_q041",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Phenol Substituent Resonance Directing",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is p-nitrophenol (pKa 7.15) much more acidic than phenol (pKa 9.95)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitro group physically blocks base access to the phenoxide oxygen."
+        },
+        {
+          "label": "B",
+          "text": "The nitro group donates electron density into the aromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "p-Nitrophenol undergoes rapid tautomerization to an aliphatic ketone."
+        },
+        {
+          "label": "D",
+          "text": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The para nitro group provides an additional resonance contributor that delocalizes the phenoxide negative charge directly onto the electronegative nitro oxygens.",
+      "explanation": "Direct resonance conjugation between the phenoxide oxygen and the para nitro group provides extra stabilization to the conjugate base.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q042",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Solvation Stabilization of Alkoxides",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is methanol (pKa 15.5) slightly more acidic than tert-butanol (pKa 18.0) in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methyl group is more electron-withdrawing than three methyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Methanol has more hyperconjugation than tert-butanol."
+        },
+        {
+          "label": "C",
+          "text": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butoxide is an aromatic anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The unhindered methoxide anion is more effectively solvated and stabilized by hydrogen-bonding water networks than the sterically bulky tert-butoxide.",
+      "explanation": "Steric hindrance in tert-butoxide impedes solvent molecules from closely coordinating and solvating the negative charge.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q043",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Brønsted Proton Transfer Curved Arrow",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the universal curved-arrow sequence in a single-step Brønsted acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A."
+        },
+        {
+          "label": "B",
+          "text": "One arrow from the acidic proton to the base lone pair."
+        },
+        {
+          "label": "C",
+          "text": "An arrow breaking the base into two ions."
+        },
+        {
+          "label": "D",
+          "text": "Two arrows transferring protons in opposite directions simultaneously."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One arrow from the base lone pair to the acidic proton, and a second arrow from the H-A σ bond onto the conjugate base atom A.",
+      "explanation": "The electron pair of the base forms a new bond to H⁺, while the bonding pair in H-A is transferred entirely to atom A.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q044",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "ARIO Atom Size Effect in Thiol vs Alcohol",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is ethanethiol (CH₃CH₂SH, pKa ~ 10.5) more acidic than ethanol (CH₃CH₂OH, pKa ~ 16) mechanistically?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Ethanol forms stronger intramolecular hydrogen bonds that trap the proton."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur is more electronegative than oxygen on the Pauling scale."
+        },
+        {
+          "label": "D",
+          "text": "Ethanethiol undergoes rapid resonance delocalization into the ethyl chain."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The larger 3p orbital of sulfur delocalizes and stabilizes negative charge density over a larger volume than the compact 2p orbital of oxygen.",
+      "explanation": "Down a column in the periodic table, atomic size dominates over electronegativity: larger polarizable orbitals stabilize conjugate base anions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q045",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "ARIO Resonance Delocalization in Carboxylates",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What mechanistic factor accounts for the ~11 pKa unit acidity difference between acetic acid (pKa 4.76) and ethanol (pKa 16)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetate anion is stabilized by aromaticity."
+        },
+        {
+          "label": "B",
+          "text": "Ethanol undergoes spontaneous homolytic cleavage in water."
+        },
+        {
+          "label": "C",
+          "text": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid has stronger inductive electron donation from its methyl group."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The acetate conjugate base delocalizes negative charge equally across two electronegative oxygen atoms via resonance, whereas ethoxide localizes charge on one oxygen.",
+      "explanation": "Resonance delocalization of the negative charge over two equivalent oxygen atoms provides massive stabilization to the carboxylate conjugate base.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q046",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Inductive Field Effect of Halogens",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How does a trifluoromethyl group (-CF₃) mechanistically decrease the pKa of an adjacent carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The CF₃ group acts as a Brønsted base that absorbs excess protons."
+        },
+        {
+          "label": "B",
+          "text": "Fluorine donates lone pairs into the carboxylate π system via resonance."
+        },
+        {
+          "label": "C",
+          "text": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group."
+        },
+        {
+          "label": "D",
+          "text": "Fluorine forms covalent bonds directly with incoming hydronium ions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Strongly electronegative fluorine atoms pull σ-electron density through inductive polarization, dispersing negative charge away from the carboxylate group.",
+      "explanation": "Inductive electron withdrawal through σ bonds stabilizes the conjugate base anion, lowering the energy barrier for proton loss.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q047",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Orbital Hybridization Acidity Ladder",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is acetylene (sp, pKa 25) significantly more acidic than ethylene (sp², pKa 44) and ethane (sp³, pKa 50)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sp orbital has a larger volume than sp³ orbitals."
+        },
+        {
+          "label": "B",
+          "text": "Acetylene undergoes resonance delocalization upon losing a proton."
+        },
+        {
+          "label": "C",
+          "text": "The triple bond creates an internal dipole that repels protons."
+        },
+        {
+          "label": "D",
+          "text": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The sp hybrid orbital of the acetylide carbanion has 50% s-character, holding the lone pair electrons closer to the positively charged nucleus.",
+      "explanation": "Higher s-character means electrons reside closer to the nucleus, significantly enhancing carbanion conjugate base stability.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q048",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Solvent Leveling Mechanism in Water",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic fate of sodium ethoxide (NaOEt) when added to pure water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethoxide decomposes to ethylene gas and water."
+        },
+        {
+          "label": "B",
+          "text": "Ethoxide remains unreacted as free C₂H₅O⁻ ions."
+        },
+        {
+          "label": "C",
+          "text": "Ethoxide is oxidized to acetic acid by dissolved oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethoxide rapidly and quantitatively abstracts a proton from water to form ethanol and hydroxide ion (OH⁻), the strongest base that can exist in water.",
+      "explanation": "Any base stronger than hydroxide is leveled by water, converting completely to the solvent's conjugate base (OH⁻).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q049",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Lewis Acid-Base Halide Abstraction",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the first elementary step when AlCl₃ reacts with 2-chloro-2-methylpropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AlCl₃ deprotonates the alkyl halide to form an alkene."
+        },
+        {
+          "label": "B",
+          "text": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻."
+        },
+        {
+          "label": "C",
+          "text": "Aluminum attacks the methyl carbon via backside SN2 displacement."
+        },
+        {
+          "label": "D",
+          "text": "A chlorine radical is homolytically abstracted by aluminum."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A chlorine lone pair coordinates to the vacant p orbital of AlCl₃, forming a Lewis acid-base complex that subsequently cleaves to yield a carbocation and AlCl₄⁻.",
+      "explanation": "AlCl₃ acts as an electrophilic Lewis acid, coordinating the halogen lone pair and weakening the C-Cl bond for heterolytic cleavage.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch03_q050",
+      "chapter": 3,
+      "chapter_title": "Acids and Bases",
+      "boss": "Equilibrium Sovereign",
+      "topic": "Acid-Base Equilibrium Directionality",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "How does the pKa difference between reactants and products dictate the equilibrium position of an acid-base mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid)."
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium always favors the side with smaller molecules regardless of pKa."
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium favors the stronger acid to maximize heat release."
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium is independent of pKa and depends only on solvent viscosity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Equilibrium always favors the side with the weaker acid (higher pKa) and weaker conjugate base, with Keq = 10^(pKa_product_acid - pKa_reactant_acid).",
+      "explanation": "Acid-base equilibria thermodynamically shift toward the more stable, lower-energy conjugate acid-base pair (higher pKa).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "equilibrium-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Proton Pixie",
+    "Conjugate Chimera",
+    "Inductive Imp",
+    "ARIO Archmage",
+    "Equilibrium Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Proton Pixie",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "proton-pixie.png"
+        ]
+      },
+      {
+        "boss": "Conjugate Chimera",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "conjugate-chimera.png"
+        ]
+      },
+      {
+        "boss": "Inductive Imp",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "inductive-imp.png"
+        ]
+      },
+      {
+        "boss": "ARIO Archmage",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "ario-archmage.png"
+        ]
+      },
+      {
+        "boss": "Equilibrium Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "equilibrium-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

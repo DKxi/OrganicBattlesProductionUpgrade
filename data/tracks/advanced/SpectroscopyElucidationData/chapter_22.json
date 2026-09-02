@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 22,
+  "chapter_title": "Amines",
+  "assigned_boss": "Amino Assassin",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch22_q001",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 IR Diagnostic Wavenumber",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What is the primary diagnostic IR absorption band for the characteristic functional group of Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode."
+        },
+        {
+          "label": "B",
+          "text": "Absence of any vibrational modes."
+        },
+        {
+          "label": "C",
+          "text": "Weak background noise below 500 cm⁻¹."
+        },
+        {
+          "label": "D",
+          "text": "A single broad peak at 4000 cm⁻¹."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode.",
+      "explanation": "Every functional group in Chapter 22 displays a characteristic diagnostic infrared absorption frequency.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q002",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 1H NMR Multiplicity Prediction",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "Applying the (n+1) splitting rule, what multiplicity is predicted for a proton with n equivalent neighboring protons in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero splitting regardless of neighbors."
+        },
+        {
+          "label": "B",
+          "text": "A doublet with 2n peaks."
+        },
+        {
+          "label": "C",
+          "text": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "A singlet with n peaks."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22.",
+      "explanation": "Scalar spin-spin coupling splits NMR signals into (n+1) peaks where n is the number of vicinal equivalent protons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q003",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 13C NMR Signal Counting",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How many distinct ¹³C NMR signals are observed for a symmetric molecule in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Always exactly one signal."
+        },
+        {
+          "label": "B",
+          "text": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure."
+        },
+        {
+          "label": "C",
+          "text": "Zero signals in decoupled mode."
+        },
+        {
+          "label": "D",
+          "text": "Always exactly equal to the total number of carbons regardless of symmetry."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure.",
+      "explanation": "Molecular symmetry reduces the number of unique carbon resonance peaks in broadband proton-decoupled 13C NMR.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q004",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 DEPT Carbon Multiplicity Assignment",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "In Chapter 22 spectral analysis, how does DEPT-135 identify a quaternary carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quaternary carbons appear as intense inverted negative peaks."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary carbons split into quartets."
+        },
+        {
+          "label": "D",
+          "text": "Quaternary carbons appear at δ 0 ppm."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22.",
+      "explanation": "DEPT relies on polarization transfer from directly attached protons; carbons without protons give zero signal in DEPT.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q005",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 Mass Spec M+2 Isotope Pattern",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What isotopic signature in mass spectrometry confirms the presence of a single bromine atom in a Chapter 22 compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "A 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "A 100:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "A single peak with no isotopes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22.",
+      "explanation": "The ~1:1 natural abundance of 79Br and 81Br isotopes produces diagnostic twin peaks of equal height.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q006",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 Mass Spec Chlorine Isotope Pattern",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What isotopic signature confirms the presence of a single chlorine atom in a Chapter 22 mass spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10:1 ratio."
+        },
+        {
+          "label": "B",
+          "text": "A 1:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "A single M⁺ peak only."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22.",
+      "explanation": "The natural ~3:1 abundance ratio of 35Cl to 37Cl produces the characteristic 3:1 M / (M+2) ratio.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q007",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 Mass Spec Alpha-Cleavage Diagnostic",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What fragment ion is generated by α-cleavage of a Chapter 22 heteroatom-containing radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "A naked proton."
+        },
+        {
+          "label": "C",
+          "text": "A high-energy dication."
+        },
+        {
+          "label": "D",
+          "text": "A neutral alkane molecule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22.",
+      "explanation": "Alpha-cleavage expels a neutral radical to generate a resonance-stabilized heteroatom cation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q008",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 Coupling Constant (J-Value) Invariance",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How does the spin-spin coupling constant (J, in Hz) between two coupled protons behave when magnetic field strength (MHz) is increased?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "J-value drops to zero at high fields."
+        },
+        {
+          "label": "C",
+          "text": "J-value doubles every 100 MHz."
+        },
+        {
+          "label": "D",
+          "text": "J-value increases linearly with spectrometer frequency."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22.",
+      "explanation": "Scalar coupling J is an intrinsic molecular property mediated by bonding electrons, independent of external field B0.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q009",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 Integration and Proton Counting",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "In a ¹H NMR spectrum of a Chapter 22 target, how are relative proton counts determined from integration curves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By counting the number of split sub-peaks."
+        },
+        {
+          "label": "B",
+          "text": "By measuring the chemical shift in ppm."
+        },
+        {
+          "label": "C",
+          "text": "By measuring the width of the peaks at half-height."
+        },
+        {
+          "label": "D",
+          "text": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22.",
+      "explanation": "Integration curve area is directly proportional to the relative number of resonant hydrogen nuclei.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q010",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Amino Assassin",
+      "topic": "Ch22 Combined Spectral Elucidation Logic",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What systematic sequence is optimal for determining an unknown organic structure in Chapter 22 from spectral data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "Use only mass spectrometry without NMR."
+        },
+        {
+          "label": "C",
+          "text": "Guess the structure from boiling point alone."
+        },
+        {
+          "label": "D",
+          "text": "Assume all unknowns are symmetrical polymers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22.",
+      "explanation": "Systematic integration of MS (formula/HDI), IR (functional groups), 13C/DEPT (carbon skeleton), and 1H NMR (connectivity) yields definitive structure determination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "amino-assassin.png"
+      ]
+    },
+    {
+      "id": "ch22_q011",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 13C NMR Signal Counting",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How many distinct ¹³C NMR signals are observed for a symmetric molecule in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero signals in decoupled mode."
+        },
+        {
+          "label": "B",
+          "text": "Always exactly one signal."
+        },
+        {
+          "label": "C",
+          "text": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure."
+        },
+        {
+          "label": "D",
+          "text": "Always exactly equal to the total number of carbons regardless of symmetry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure.",
+      "explanation": "Molecular symmetry reduces the number of unique carbon resonance peaks in broadband proton-decoupled 13C NMR.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q012",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 DEPT Carbon Multiplicity Assignment",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In Chapter 22 spectral analysis, how does DEPT-135 identify a quaternary carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quaternary carbons appear at δ 0 ppm."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary carbons split into quartets."
+        },
+        {
+          "label": "D",
+          "text": "Quaternary carbons appear as intense inverted negative peaks."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22.",
+      "explanation": "DEPT relies on polarization transfer from directly attached protons; carbons without protons give zero signal in DEPT.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q013",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 Mass Spec M+2 Isotope Pattern",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What isotopic signature in mass spectrometry confirms the presence of a single bromine atom in a Chapter 22 compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "B",
+          "text": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "A 100:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "A single peak with no isotopes."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22.",
+      "explanation": "The ~1:1 natural abundance of 79Br and 81Br isotopes produces diagnostic twin peaks of equal height.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q014",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 Mass Spec Chlorine Isotope Pattern",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "What isotopic signature confirms the presence of a single chlorine atom in a Chapter 22 mass spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A single M⁺ peak only."
+        },
+        {
+          "label": "B",
+          "text": "A 1:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "A 10:1 ratio."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22.",
+      "explanation": "The natural ~3:1 abundance ratio of 35Cl to 37Cl produces the characteristic 3:1 M / (M+2) ratio.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q015",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 Mass Spec Alpha-Cleavage Diagnostic",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What fragment ion is generated by α-cleavage of a Chapter 22 heteroatom-containing radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A naked proton."
+        },
+        {
+          "label": "B",
+          "text": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "A neutral alkane molecule."
+        },
+        {
+          "label": "D",
+          "text": "A high-energy dication."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22.",
+      "explanation": "Alpha-cleavage expels a neutral radical to generate a resonance-stabilized heteroatom cation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q016",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 Coupling Constant (J-Value) Invariance",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How does the spin-spin coupling constant (J, in Hz) between two coupled protons behave when magnetic field strength (MHz) is increased?",
+      "options": [
+        {
+          "label": "A",
+          "text": "J-value drops to zero at high fields."
+        },
+        {
+          "label": "B",
+          "text": "J-value increases linearly with spectrometer frequency."
+        },
+        {
+          "label": "C",
+          "text": "J-value doubles every 100 MHz."
+        },
+        {
+          "label": "D",
+          "text": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22.",
+      "explanation": "Scalar coupling J is an intrinsic molecular property mediated by bonding electrons, independent of external field B0.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q017",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 Integration and Proton Counting",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In a ¹H NMR spectrum of a Chapter 22 target, how are relative proton counts determined from integration curves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By counting the number of split sub-peaks."
+        },
+        {
+          "label": "B",
+          "text": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "By measuring the chemical shift in ppm."
+        },
+        {
+          "label": "D",
+          "text": "By measuring the width of the peaks at half-height."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22.",
+      "explanation": "Integration curve area is directly proportional to the relative number of resonant hydrogen nuclei.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q018",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 Combined Spectral Elucidation Logic",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "What systematic sequence is optimal for determining an unknown organic structure in Chapter 22 from spectral data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "Use only mass spectrometry without NMR."
+        },
+        {
+          "label": "C",
+          "text": "Guess the structure from boiling point alone."
+        },
+        {
+          "label": "D",
+          "text": "Assume all unknowns are symmetrical polymers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22.",
+      "explanation": "Systematic integration of MS (formula/HDI), IR (functional groups), 13C/DEPT (carbon skeleton), and 1H NMR (connectivity) yields definitive structure determination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q019",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 IR Diagnostic Wavenumber",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What is the primary diagnostic IR absorption band for the characteristic functional group of Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Weak background noise below 500 cm⁻¹."
+        },
+        {
+          "label": "B",
+          "text": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode."
+        },
+        {
+          "label": "C",
+          "text": "A single broad peak at 4000 cm⁻¹."
+        },
+        {
+          "label": "D",
+          "text": "Absence of any vibrational modes."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode.",
+      "explanation": "Every functional group in Chapter 22 displays a characteristic diagnostic infrared absorption frequency.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q020",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Inversion Imp",
+      "topic": "Ch22 1H NMR Multiplicity Prediction",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Applying the (n+1) splitting rule, what multiplicity is predicted for a proton with n equivalent neighboring protons in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A doublet with 2n peaks."
+        },
+        {
+          "label": "B",
+          "text": "A singlet with n peaks."
+        },
+        {
+          "label": "C",
+          "text": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "Zero splitting regardless of neighbors."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22.",
+      "explanation": "Scalar spin-spin coupling splits NMR signals into (n+1) peaks where n is the number of vicinal equivalent protons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "inversion-imp.png"
+      ]
+    },
+    {
+      "id": "ch22_q021",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 Mass Spec M+2 Isotope Pattern",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What isotopic signature in mass spectrometry confirms the presence of a single bromine atom in a Chapter 22 compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "B",
+          "text": "A single peak with no isotopes."
+        },
+        {
+          "label": "C",
+          "text": "A 100:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22.",
+      "explanation": "The ~1:1 natural abundance of 79Br and 81Br isotopes produces diagnostic twin peaks of equal height.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q022",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 Mass Spec Chlorine Isotope Pattern",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What isotopic signature confirms the presence of a single chlorine atom in a Chapter 22 mass spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A single M⁺ peak only."
+        },
+        {
+          "label": "B",
+          "text": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "A 10:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "A 1:1 ratio of M⁺ to (M+2)⁺."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22.",
+      "explanation": "The natural ~3:1 abundance ratio of 35Cl to 37Cl produces the characteristic 3:1 M / (M+2) ratio.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q023",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 Mass Spec Alpha-Cleavage Diagnostic",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What fragment ion is generated by α-cleavage of a Chapter 22 heteroatom-containing radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "A naked proton."
+        },
+        {
+          "label": "C",
+          "text": "A high-energy dication."
+        },
+        {
+          "label": "D",
+          "text": "A neutral alkane molecule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22.",
+      "explanation": "Alpha-cleavage expels a neutral radical to generate a resonance-stabilized heteroatom cation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q024",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 Coupling Constant (J-Value) Invariance",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "How does the spin-spin coupling constant (J, in Hz) between two coupled protons behave when magnetic field strength (MHz) is increased?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "J-value drops to zero at high fields."
+        },
+        {
+          "label": "C",
+          "text": "J-value increases linearly with spectrometer frequency."
+        },
+        {
+          "label": "D",
+          "text": "J-value doubles every 100 MHz."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22.",
+      "explanation": "Scalar coupling J is an intrinsic molecular property mediated by bonding electrons, independent of external field B0.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q025",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 Integration and Proton Counting",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In a ¹H NMR spectrum of a Chapter 22 target, how are relative proton counts determined from integration curves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By counting the number of split sub-peaks."
+        },
+        {
+          "label": "B",
+          "text": "By measuring the width of the peaks at half-height."
+        },
+        {
+          "label": "C",
+          "text": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "By measuring the chemical shift in ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22.",
+      "explanation": "Integration curve area is directly proportional to the relative number of resonant hydrogen nuclei.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q026",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 Combined Spectral Elucidation Logic",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What systematic sequence is optimal for determining an unknown organic structure in Chapter 22 from spectral data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Use only mass spectrometry without NMR."
+        },
+        {
+          "label": "B",
+          "text": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "Guess the structure from boiling point alone."
+        },
+        {
+          "label": "D",
+          "text": "Assume all unknowns are symmetrical polymers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22.",
+      "explanation": "Systematic integration of MS (formula/HDI), IR (functional groups), 13C/DEPT (carbon skeleton), and 1H NMR (connectivity) yields definitive structure determination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q027",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 IR Diagnostic Wavenumber",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "What is the primary diagnostic IR absorption band for the characteristic functional group of Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Weak background noise below 500 cm⁻¹."
+        },
+        {
+          "label": "B",
+          "text": "A single broad peak at 4000 cm⁻¹."
+        },
+        {
+          "label": "C",
+          "text": "Absence of any vibrational modes."
+        },
+        {
+          "label": "D",
+          "text": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode.",
+      "explanation": "Every functional group in Chapter 22 displays a characteristic diagnostic infrared absorption frequency.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q028",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 1H NMR Multiplicity Prediction",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Applying the (n+1) splitting rule, what multiplicity is predicted for a proton with n equivalent neighboring protons in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A doublet with 2n peaks."
+        },
+        {
+          "label": "B",
+          "text": "Zero splitting regardless of neighbors."
+        },
+        {
+          "label": "C",
+          "text": "A singlet with n peaks."
+        },
+        {
+          "label": "D",
+          "text": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22.",
+      "explanation": "Scalar spin-spin coupling splits NMR signals into (n+1) peaks where n is the number of vicinal equivalent protons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q029",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 13C NMR Signal Counting",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How many distinct ¹³C NMR signals are observed for a symmetric molecule in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero signals in decoupled mode."
+        },
+        {
+          "label": "B",
+          "text": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure."
+        },
+        {
+          "label": "C",
+          "text": "Always exactly one signal."
+        },
+        {
+          "label": "D",
+          "text": "Always exactly equal to the total number of carbons regardless of symmetry."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure.",
+      "explanation": "Molecular symmetry reduces the number of unique carbon resonance peaks in broadband proton-decoupled 13C NMR.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q030",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Gabriel Gargoyle",
+      "topic": "Ch22 DEPT Carbon Multiplicity Assignment",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "In Chapter 22 spectral analysis, how does DEPT-135 identify a quaternary carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quaternary carbons appear as intense inverted negative peaks."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary carbons split into quartets."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "Quaternary carbons appear at δ 0 ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22.",
+      "explanation": "DEPT relies on polarization transfer from directly attached protons; carbons without protons give zero signal in DEPT.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "gabriel-gargoyle.png"
+      ]
+    },
+    {
+      "id": "ch22_q031",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 Mass Spec Alpha-Cleavage Diagnostic",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What fragment ion is generated by α-cleavage of a Chapter 22 heteroatom-containing radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A neutral alkane molecule."
+        },
+        {
+          "label": "B",
+          "text": "A naked proton."
+        },
+        {
+          "label": "C",
+          "text": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "A high-energy dication."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22.",
+      "explanation": "Alpha-cleavage expels a neutral radical to generate a resonance-stabilized heteroatom cation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q032",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 Coupling Constant (J-Value) Invariance",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How does the spin-spin coupling constant (J, in Hz) between two coupled protons behave when magnetic field strength (MHz) is increased?",
+      "options": [
+        {
+          "label": "A",
+          "text": "J-value increases linearly with spectrometer frequency."
+        },
+        {
+          "label": "B",
+          "text": "J-value drops to zero at high fields."
+        },
+        {
+          "label": "C",
+          "text": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "J-value doubles every 100 MHz."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22.",
+      "explanation": "Scalar coupling J is an intrinsic molecular property mediated by bonding electrons, independent of external field B0.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q033",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 Integration and Proton Counting",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In a ¹H NMR spectrum of a Chapter 22 target, how are relative proton counts determined from integration curves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By counting the number of split sub-peaks."
+        },
+        {
+          "label": "B",
+          "text": "By measuring the chemical shift in ppm."
+        },
+        {
+          "label": "C",
+          "text": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "By measuring the width of the peaks at half-height."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22.",
+      "explanation": "Integration curve area is directly proportional to the relative number of resonant hydrogen nuclei.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q034",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 Combined Spectral Elucidation Logic",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What systematic sequence is optimal for determining an unknown organic structure in Chapter 22 from spectral data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume all unknowns are symmetrical polymers."
+        },
+        {
+          "label": "B",
+          "text": "Guess the structure from boiling point alone."
+        },
+        {
+          "label": "C",
+          "text": "Use only mass spectrometry without NMR."
+        },
+        {
+          "label": "D",
+          "text": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22.",
+      "explanation": "Systematic integration of MS (formula/HDI), IR (functional groups), 13C/DEPT (carbon skeleton), and 1H NMR (connectivity) yields definitive structure determination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q035",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 IR Diagnostic Wavenumber",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What is the primary diagnostic IR absorption band for the characteristic functional group of Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Weak background noise below 500 cm⁻¹."
+        },
+        {
+          "label": "B",
+          "text": "A single broad peak at 4000 cm⁻¹."
+        },
+        {
+          "label": "C",
+          "text": "Absence of any vibrational modes."
+        },
+        {
+          "label": "D",
+          "text": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode.",
+      "explanation": "Every functional group in Chapter 22 displays a characteristic diagnostic infrared absorption frequency.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q036",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 1H NMR Multiplicity Prediction",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "Applying the (n+1) splitting rule, what multiplicity is predicted for a proton with n equivalent neighboring protons in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "A doublet with 2n peaks."
+        },
+        {
+          "label": "C",
+          "text": "A singlet with n peaks."
+        },
+        {
+          "label": "D",
+          "text": "Zero splitting regardless of neighbors."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22.",
+      "explanation": "Scalar spin-spin coupling splits NMR signals into (n+1) peaks where n is the number of vicinal equivalent protons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q037",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 13C NMR Signal Counting",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How many distinct ¹³C NMR signals are observed for a symmetric molecule in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Always exactly one signal."
+        },
+        {
+          "label": "B",
+          "text": "Always exactly equal to the total number of carbons regardless of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Zero signals in decoupled mode."
+        },
+        {
+          "label": "D",
+          "text": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure.",
+      "explanation": "Molecular symmetry reduces the number of unique carbon resonance peaks in broadband proton-decoupled 13C NMR.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q038",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 DEPT Carbon Multiplicity Assignment",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In Chapter 22 spectral analysis, how does DEPT-135 identify a quaternary carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary carbons split into quartets."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary carbons appear as intense inverted negative peaks."
+        },
+        {
+          "label": "D",
+          "text": "Quaternary carbons appear at δ 0 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22.",
+      "explanation": "DEPT relies on polarization transfer from directly attached protons; carbons without protons give zero signal in DEPT.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q039",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 Mass Spec M+2 Isotope Pattern",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "What isotopic signature in mass spectrometry confirms the presence of a single bromine atom in a Chapter 22 compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A single peak with no isotopes."
+        },
+        {
+          "label": "B",
+          "text": "A 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "A 100:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22.",
+      "explanation": "The ~1:1 natural abundance of 79Br and 81Br isotopes produces diagnostic twin peaks of equal height.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q040",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Hofmann Hunter",
+      "topic": "Ch22 Mass Spec Chlorine Isotope Pattern",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What isotopic signature confirms the presence of a single chlorine atom in a Chapter 22 mass spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A single M⁺ peak only."
+        },
+        {
+          "label": "B",
+          "text": "A 1:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "A 10:1 ratio."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22.",
+      "explanation": "The natural ~3:1 abundance ratio of 35Cl to 37Cl produces the characteristic 3:1 M / (M+2) ratio.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hofmann-hunter.png"
+      ]
+    },
+    {
+      "id": "ch22_q041",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 Integration and Proton Counting",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In a ¹H NMR spectrum of a Chapter 22 target, how are relative proton counts determined from integration curves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By counting the number of split sub-peaks."
+        },
+        {
+          "label": "B",
+          "text": "By measuring the width of the peaks at half-height."
+        },
+        {
+          "label": "C",
+          "text": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22."
+        },
+        {
+          "label": "D",
+          "text": "By measuring the chemical shift in ppm."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "By measuring the relative vertical step heights of the integration traces, which are directly proportional to the number of protons giving rise to each peak in Chapter 22.",
+      "explanation": "Integration curve area is directly proportional to the relative number of resonant hydrogen nuclei.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q042",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 Combined Spectral Elucidation Logic",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What systematic sequence is optimal for determining an unknown organic structure in Chapter 22 from spectral data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Guess the structure from boiling point alone."
+        },
+        {
+          "label": "B",
+          "text": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "Assume all unknowns are symmetrical polymers."
+        },
+        {
+          "label": "D",
+          "text": "Use only mass spectrometry without NMR."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Calculate HDI from MS formula → Identify functional groups via IR → Determine carbon framework via ¹³C/DEPT → Assemble connectivity and stereochemistry via ¹H NMR in Chapter 22.",
+      "explanation": "Systematic integration of MS (formula/HDI), IR (functional groups), 13C/DEPT (carbon skeleton), and 1H NMR (connectivity) yields definitive structure determination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q043",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 IR Diagnostic Wavenumber",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What is the primary diagnostic IR absorption band for the characteristic functional group of Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Weak background noise below 500 cm⁻¹."
+        },
+        {
+          "label": "B",
+          "text": "A single broad peak at 4000 cm⁻¹."
+        },
+        {
+          "label": "C",
+          "text": "Absence of any vibrational modes."
+        },
+        {
+          "label": "D",
+          "text": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Characteristic diagnostic vibrational absorption corresponding to the core Chapter 22 functional group stretching mode.",
+      "explanation": "Every functional group in Chapter 22 displays a characteristic diagnostic infrared absorption frequency.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q044",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 1H NMR Multiplicity Prediction",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Applying the (n+1) splitting rule, what multiplicity is predicted for a proton with n equivalent neighboring protons in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero splitting regardless of neighbors."
+        },
+        {
+          "label": "B",
+          "text": "A singlet with n peaks."
+        },
+        {
+          "label": "C",
+          "text": "A doublet with 2n peaks."
+        },
+        {
+          "label": "D",
+          "text": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A multiplet with (n + 1) distinct peaks with intensity ratios determined by Pascal's triangle in Chapter 22.",
+      "explanation": "Scalar spin-spin coupling splits NMR signals into (n+1) peaks where n is the number of vicinal equivalent protons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q045",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 13C NMR Signal Counting",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "How many distinct ¹³C NMR signals are observed for a symmetric molecule in Chapter 22?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure."
+        },
+        {
+          "label": "B",
+          "text": "Zero signals in decoupled mode."
+        },
+        {
+          "label": "C",
+          "text": "Always exactly one signal."
+        },
+        {
+          "label": "D",
+          "text": "Always exactly equal to the total number of carbons regardless of symmetry."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The number of signals equals the number of chemically and magnetically non-equivalent carbon sets in the Chapter 22 structure.",
+      "explanation": "Molecular symmetry reduces the number of unique carbon resonance peaks in broadband proton-decoupled 13C NMR.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q046",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 DEPT Carbon Multiplicity Assignment",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In Chapter 22 spectral analysis, how does DEPT-135 identify a quaternary carbon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22."
+        },
+        {
+          "label": "B",
+          "text": "Quaternary carbons split into quartets."
+        },
+        {
+          "label": "C",
+          "text": "Quaternary carbons appear as intense inverted negative peaks."
+        },
+        {
+          "label": "D",
+          "text": "Quaternary carbons appear at δ 0 ppm."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Quaternary carbons (bearing zero hydrogens) produce NO signal in DEPT-135, appearing only in the broadband decoupled ¹³C spectrum in Chapter 22.",
+      "explanation": "DEPT relies on polarization transfer from directly attached protons; carbons without protons give zero signal in DEPT.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q047",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 Mass Spec M+2 Isotope Pattern",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What isotopic signature in mass spectrometry confirms the presence of a single bromine atom in a Chapter 22 compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A single peak with no isotopes."
+        },
+        {
+          "label": "B",
+          "text": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "A 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "D",
+          "text": "A 100:1 ratio."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Twin molecular ion peaks M⁺ and (M+2)⁺ of approximately equal intensity (1:1 ratio) separated by 2 m/z units in Chapter 22.",
+      "explanation": "The ~1:1 natural abundance of 79Br and 81Br isotopes produces diagnostic twin peaks of equal height.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q048",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 Mass Spec Chlorine Isotope Pattern",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "What isotopic signature confirms the presence of a single chlorine atom in a Chapter 22 mass spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10:1 ratio."
+        },
+        {
+          "label": "B",
+          "text": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22."
+        },
+        {
+          "label": "C",
+          "text": "A 1:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "D",
+          "text": "A single M⁺ peak only."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Molecular ion peaks M⁺ and (M+2)⁺ in an approximately 3:1 intensity ratio separated by 2 m/z in Chapter 22.",
+      "explanation": "The natural ~3:1 abundance ratio of 35Cl to 37Cl produces the characteristic 3:1 M / (M+2) ratio.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q049",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 Mass Spec Alpha-Cleavage Diagnostic",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What fragment ion is generated by α-cleavage of a Chapter 22 heteroatom-containing radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A high-energy dication."
+        },
+        {
+          "label": "B",
+          "text": "A naked proton."
+        },
+        {
+          "label": "C",
+          "text": "A neutral alkane molecule."
+        },
+        {
+          "label": "D",
+          "text": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A resonance-stabilized oxonium, iminium, or sulfonium cation with expulsion of the largest alkyl radical in Chapter 22.",
+      "explanation": "Alpha-cleavage expels a neutral radical to generate a resonance-stabilized heteroatom cation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    },
+    {
+      "id": "ch22_q050",
+      "chapter": 22,
+      "chapter_title": "Amines",
+      "boss": "Diazonium Dragon",
+      "topic": "Ch22 Coupling Constant (J-Value) Invariance",
+      "difficulty": "hard",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How does the spin-spin coupling constant (J, in Hz) between two coupled protons behave when magnetic field strength (MHz) is increased?",
+      "options": [
+        {
+          "label": "A",
+          "text": "J-value drops to zero at high fields."
+        },
+        {
+          "label": "B",
+          "text": "J-value doubles every 100 MHz."
+        },
+        {
+          "label": "C",
+          "text": "J-value increases linearly with spectrometer frequency."
+        },
+        {
+          "label": "D",
+          "text": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The coupling constant J (Hz) remains strictly constant and invariant with field strength, whereas chemical shift separation (Hz) increases proportionally in Chapter 22.",
+      "explanation": "Scalar coupling J is an intrinsic molecular property mediated by bonding electrons, independent of external field B0.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "diazonium-dragon.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Amino Assassin",
+    "Inversion Imp",
+    "Gabriel Gargoyle",
+    "Hofmann Hunter",
+    "Diazonium Dragon"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Amino Assassin",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "amino-assassin.png"
+        ]
+      },
+      {
+        "boss": "Inversion Imp",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "inversion-imp.png"
+        ]
+      },
+      {
+        "boss": "Gabriel Gargoyle",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "gabriel-gargoyle.png"
+        ]
+      },
+      {
+        "boss": "Hofmann Hunter",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "hofmann-hunter.png"
+        ]
+      },
+      {
+        "boss": "Diazonium Dragon",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "diazonium-dragon.png"
+        ]
+      }
+    ]
+  }
+}

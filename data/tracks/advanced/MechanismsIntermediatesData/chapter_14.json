@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 14,
+  "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+  "assigned_boss": "Wavenumber Wraith",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch14_q001",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Mass Spectrometry Electron Ionization (EI)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the immediate product formed when an organic molecule (M) is bombarded by a 70 eV electron beam in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A neutral radical and a hydride anion."
+        },
+        {
+          "label": "B",
+          "text": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻."
+        },
+        {
+          "label": "C",
+          "text": "A carbanion formed by electron capture."
+        },
+        {
+          "label": "D",
+          "text": "A doubly charged dication [M²⁺]."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻.",
+      "explanation": "High-energy electron impact ejects an electron from the lowest ionization energy orbital, generating the molecular radical cation (M⁺•).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q002",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Alpha-Cleavage Fragmentation Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the driving force and curved-arrow flow during the α-cleavage of a 2-butanol radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heterolytic cleavage of the C-O bond to form a hydroxyl cation."
+        },
+        {
+          "label": "B",
+          "text": "Expulsion of methane gas."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45)."
+        },
+        {
+          "label": "D",
+          "text": "Loss of water to form a butadiene radical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45).",
+      "explanation": "Alpha-cleavage is driven by formation of an exceptionally stable, resonance-stabilized oxonium cation [CH₃CH=OH⁺].",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q003",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "McLafferty Rearrangement Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What structural requirement and transition state geometry are essential for a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An alcohol with an α-hydrogen undergoing a 3-membered ring flip."
+        },
+        {
+          "label": "B",
+          "text": "An aromatic ring with ortho substituents."
+        },
+        {
+          "label": "C",
+          "text": "A tertiary halide undergoing unimolecular ionization."
+        },
+        {
+          "label": "D",
+          "text": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene.",
+      "explanation": "The McLafferty rearrangement requires a γ-hydrogen that transfers to the radical cation oxygen through a 6-membered cyclic transition state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q004",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Tropylium Ion Mass Spectral Rearrangement",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do alkylbenzenes (e.g., toluene, propylbenzene) characteristically show a base peak at m/z 91 in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene fragments into three acetylene molecules."
+        },
+        {
+          "label": "B",
+          "text": "The benzene ring expels a methyl radical directly."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation."
+        },
+        {
+          "label": "D",
+          "text": "The phenyl cation coordinates with nitrogen gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation.",
+      "explanation": "The m/z 91 benzyl cation rearranges into the symmetrical, aromatic 6π tropylium cation (C₇H₇⁺).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q005",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Nitrogen Rule Mechanistic Basis",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the physical reason that an organic molecule with an odd number of nitrogen atoms has an odd nominal molecular weight?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen decays radioactively inside the mass spectrometer."
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen only forms ionic bonds in organic molecules."
+        },
+        {
+          "label": "D",
+          "text": "Nitrogen contains an unpaired nuclear proton."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen.",
+      "explanation": "Because nitrogen forms three bonds with an atomic weight of 14, molecules containing an odd number of nitrogens must contain an odd number of hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q006",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Chlorine (M+2) Isotope Abundance Origin",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does a monochlorinated compound exhibit two molecular ion peaks separated by 2 m/z in a 3:1 intensity ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine absorbs two extra electrons in 25% of molecules."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "The molecule undergoes rapid hydrogen abstraction in the source."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine fragments into two chloride ions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺.",
+      "explanation": "The natural ~3:1 ratio of ³⁵Cl to ³⁷Cl isotopes directly generates the diagnostic M / (M+2) isotopic fingerprint.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q007",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Bromine (M+2) Isotope Abundance Origin",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the isotopic origin of the characteristic twin molecular ion peaks of equal height (1:1 ratio) in brominated compounds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine undergoes 50% homolytic cleavage during ionization."
+        },
+        {
+          "label": "B",
+          "text": "Bromine exists as a dimer in mass spectrometers."
+        },
+        {
+          "label": "C",
+          "text": "The molecular ion has two conformations in gas phase."
+        },
+        {
+          "label": "D",
+          "text": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights.",
+      "explanation": "The nearly 1:1 natural abundance of ⁷⁹Br and ⁸¹Br creates the diagnostic twin peak pattern in mass spectrometry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q008",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "IR Dipole Moment Transition Rule",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the C=C stretching vibration of symmetrical trans-2-butene inactive (invisible) in infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because the C=C bond is too strong to vibrate."
+        },
+        {
+          "label": "B",
+          "text": "Because trans-2-butene does not absorb any energy."
+        },
+        {
+          "label": "C",
+          "text": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0)."
+        },
+        {
+          "label": "D",
+          "text": "Because infrared light only detects nitrogen and oxygen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0).",
+      "explanation": "Infrared absorption requires a vibration that causes a net change in the molecular dipole moment; centrosymmetric vibrations are IR inactive.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q009",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Carbonyl IR Force Constant vs Conjugation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does the C=O stretching frequency decrease from 1715 cm⁻¹ in cyclohexanone to 1685 cm⁻¹ in cyclohex-2-en-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k)."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexenone undergoes rapid keto-enol tautomerism."
+        },
+        {
+          "label": "C",
+          "text": "Conjugation destroys the carbonyl dipole moment."
+        },
+        {
+          "label": "D",
+          "text": "Conjugation increases the reduced mass (μ) of the carbonyl atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k).",
+      "explanation": "According to Hooke's Law (ν ∝ √(k/μ)), resonance delocalization reduces bond order/force constant k, shifting absorption to lower wavenumber.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q010",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Wavenumber Wraith",
+      "topic": "Carboxylic Acid Dimer Hydrogen-Bonding Broadening",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the O-H stretch of carboxylic acids appear as an extremely broad band between 2500–3300 cm⁻¹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids absorb moisture from the air during testing."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids undergo continuous radical homolysis."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies."
+        },
+        {
+          "label": "D",
+          "text": "The O-H bond is completely ionic in solution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies.",
+      "explanation": "Intermolecular centrosymmetric dimerization creates strong hydrogen bonds that severely weaken and broaden the O-H stretching potential.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "wavenumber-wraith.png"
+      ]
+    },
+    {
+      "id": "ch14_q011",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "McLafferty Rearrangement Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What structural requirement and transition state geometry are essential for a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene."
+        },
+        {
+          "label": "B",
+          "text": "An alcohol with an α-hydrogen undergoing a 3-membered ring flip."
+        },
+        {
+          "label": "C",
+          "text": "An aromatic ring with ortho substituents."
+        },
+        {
+          "label": "D",
+          "text": "A tertiary halide undergoing unimolecular ionization."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene.",
+      "explanation": "The McLafferty rearrangement requires a γ-hydrogen that transfers to the radical cation oxygen through a 6-membered cyclic transition state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q012",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Tropylium Ion Mass Spectral Rearrangement",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do alkylbenzenes (e.g., toluene, propylbenzene) characteristically show a base peak at m/z 91 in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation."
+        },
+        {
+          "label": "B",
+          "text": "Toluene fragments into three acetylene molecules."
+        },
+        {
+          "label": "C",
+          "text": "The phenyl cation coordinates with nitrogen gas."
+        },
+        {
+          "label": "D",
+          "text": "The benzene ring expels a methyl radical directly."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation.",
+      "explanation": "The m/z 91 benzyl cation rearranges into the symmetrical, aromatic 6π tropylium cation (C₇H₇⁺).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q013",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Nitrogen Rule Mechanistic Basis",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the physical reason that an organic molecule with an odd number of nitrogen atoms has an odd nominal molecular weight?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrogen contains an unpaired nuclear proton."
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen decays radioactively inside the mass spectrometer."
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen only forms ionic bonds in organic molecules."
+        },
+        {
+          "label": "D",
+          "text": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen.",
+      "explanation": "Because nitrogen forms three bonds with an atomic weight of 14, molecules containing an odd number of nitrogens must contain an odd number of hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q014",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Chlorine (M+2) Isotope Abundance Origin",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does a monochlorinated compound exhibit two molecular ion peaks separated by 2 m/z in a 3:1 intensity ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine absorbs two extra electrons in 25% of molecules."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine fragments into two chloride ions."
+        },
+        {
+          "label": "C",
+          "text": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "D",
+          "text": "The molecule undergoes rapid hydrogen abstraction in the source."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺.",
+      "explanation": "The natural ~3:1 ratio of ³⁵Cl to ³⁷Cl isotopes directly generates the diagnostic M / (M+2) isotopic fingerprint.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q015",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Bromine (M+2) Isotope Abundance Origin",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the isotopic origin of the characteristic twin molecular ion peaks of equal height (1:1 ratio) in brominated compounds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular ion has two conformations in gas phase."
+        },
+        {
+          "label": "B",
+          "text": "Bromine undergoes 50% homolytic cleavage during ionization."
+        },
+        {
+          "label": "C",
+          "text": "Bromine exists as a dimer in mass spectrometers."
+        },
+        {
+          "label": "D",
+          "text": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights.",
+      "explanation": "The nearly 1:1 natural abundance of ⁷⁹Br and ⁸¹Br creates the diagnostic twin peak pattern in mass spectrometry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q016",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "IR Dipole Moment Transition Rule",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is the C=C stretching vibration of symmetrical trans-2-butene inactive (invisible) in infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0)."
+        },
+        {
+          "label": "B",
+          "text": "Because trans-2-butene does not absorb any energy."
+        },
+        {
+          "label": "C",
+          "text": "Because the C=C bond is too strong to vibrate."
+        },
+        {
+          "label": "D",
+          "text": "Because infrared light only detects nitrogen and oxygen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0).",
+      "explanation": "Infrared absorption requires a vibration that causes a net change in the molecular dipole moment; centrosymmetric vibrations are IR inactive.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q017",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Carbonyl IR Force Constant vs Conjugation",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the C=O stretching frequency decrease from 1715 cm⁻¹ in cyclohexanone to 1685 cm⁻¹ in cyclohex-2-en-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexenone undergoes rapid keto-enol tautomerism."
+        },
+        {
+          "label": "B",
+          "text": "Conjugation increases the reduced mass (μ) of the carbonyl atoms."
+        },
+        {
+          "label": "C",
+          "text": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k)."
+        },
+        {
+          "label": "D",
+          "text": "Conjugation destroys the carbonyl dipole moment."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k).",
+      "explanation": "According to Hooke's Law (ν ∝ √(k/μ)), resonance delocalization reduces bond order/force constant k, shifting absorption to lower wavenumber.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q018",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Carboxylic Acid Dimer Hydrogen-Bonding Broadening",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does the O-H stretch of carboxylic acids appear as an extremely broad band between 2500–3300 cm⁻¹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies."
+        },
+        {
+          "label": "B",
+          "text": "The O-H bond is completely ionic in solution."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids undergo continuous radical homolysis."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids absorb moisture from the air during testing."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies.",
+      "explanation": "Intermolecular centrosymmetric dimerization creates strong hydrogen bonds that severely weaken and broaden the O-H stretching potential.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q019",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Mass Spectrometry Electron Ionization (EI)",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the immediate product formed when an organic molecule (M) is bombarded by a 70 eV electron beam in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A doubly charged dication [M²⁺]."
+        },
+        {
+          "label": "B",
+          "text": "A carbanion formed by electron capture."
+        },
+        {
+          "label": "C",
+          "text": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻."
+        },
+        {
+          "label": "D",
+          "text": "A neutral radical and a hydride anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻.",
+      "explanation": "High-energy electron impact ejects an electron from the lowest ionization energy orbital, generating the molecular radical cation (M⁺•).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q020",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Carbonyl Peak Corsair",
+      "topic": "Alpha-Cleavage Fragmentation Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the driving force and curved-arrow flow during the α-cleavage of a 2-butanol radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heterolytic cleavage of the C-O bond to form a hydroxyl cation."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45)."
+        },
+        {
+          "label": "C",
+          "text": "Expulsion of methane gas."
+        },
+        {
+          "label": "D",
+          "text": "Loss of water to form a butadiene radical."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45).",
+      "explanation": "Alpha-cleavage is driven by formation of an exceptionally stable, resonance-stabilized oxonium cation [CH₃CH=OH⁺].",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-peak-corsair.png"
+      ]
+    },
+    {
+      "id": "ch14_q021",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Nitrogen Rule Mechanistic Basis",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the physical reason that an organic molecule with an odd number of nitrogen atoms has an odd nominal molecular weight?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrogen decays radioactively inside the mass spectrometer."
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen contains an unpaired nuclear proton."
+        },
+        {
+          "label": "D",
+          "text": "Nitrogen only forms ionic bonds in organic molecules."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen.",
+      "explanation": "Because nitrogen forms three bonds with an atomic weight of 14, molecules containing an odd number of nitrogens must contain an odd number of hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q022",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Chlorine (M+2) Isotope Abundance Origin",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does a monochlorinated compound exhibit two molecular ion peaks separated by 2 m/z in a 3:1 intensity ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule undergoes rapid hydrogen abstraction in the source."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "Chlorine fragments into two chloride ions."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine absorbs two extra electrons in 25% of molecules."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺.",
+      "explanation": "The natural ~3:1 ratio of ³⁵Cl to ³⁷Cl isotopes directly generates the diagnostic M / (M+2) isotopic fingerprint.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q023",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Bromine (M+2) Isotope Abundance Origin",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the isotopic origin of the characteristic twin molecular ion peaks of equal height (1:1 ratio) in brominated compounds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine undergoes 50% homolytic cleavage during ionization."
+        },
+        {
+          "label": "B",
+          "text": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights."
+        },
+        {
+          "label": "C",
+          "text": "The molecular ion has two conformations in gas phase."
+        },
+        {
+          "label": "D",
+          "text": "Bromine exists as a dimer in mass spectrometers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights.",
+      "explanation": "The nearly 1:1 natural abundance of ⁷⁹Br and ⁸¹Br creates the diagnostic twin peak pattern in mass spectrometry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q024",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "IR Dipole Moment Transition Rule",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is the C=C stretching vibration of symmetrical trans-2-butene inactive (invisible) in infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because infrared light only detects nitrogen and oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0)."
+        },
+        {
+          "label": "C",
+          "text": "Because trans-2-butene does not absorb any energy."
+        },
+        {
+          "label": "D",
+          "text": "Because the C=C bond is too strong to vibrate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0).",
+      "explanation": "Infrared absorption requires a vibration that causes a net change in the molecular dipole moment; centrosymmetric vibrations are IR inactive.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q025",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Carbonyl IR Force Constant vs Conjugation",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does the C=O stretching frequency decrease from 1715 cm⁻¹ in cyclohexanone to 1685 cm⁻¹ in cyclohex-2-en-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conjugation destroys the carbonyl dipole moment."
+        },
+        {
+          "label": "B",
+          "text": "Conjugation increases the reduced mass (μ) of the carbonyl atoms."
+        },
+        {
+          "label": "C",
+          "text": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k)."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexenone undergoes rapid keto-enol tautomerism."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k).",
+      "explanation": "According to Hooke's Law (ν ∝ √(k/μ)), resonance delocalization reduces bond order/force constant k, shifting absorption to lower wavenumber.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q026",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Carboxylic Acid Dimer Hydrogen-Bonding Broadening",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the O-H stretch of carboxylic acids appear as an extremely broad band between 2500–3300 cm⁻¹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids undergo continuous radical homolysis."
+        },
+        {
+          "label": "B",
+          "text": "The O-H bond is completely ionic in solution."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids absorb moisture from the air during testing."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies.",
+      "explanation": "Intermolecular centrosymmetric dimerization creates strong hydrogen bonds that severely weaken and broaden the O-H stretching potential.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q027",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Mass Spectrometry Electron Ionization (EI)",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the immediate product formed when an organic molecule (M) is bombarded by a 70 eV electron beam in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A doubly charged dication [M²⁺]."
+        },
+        {
+          "label": "B",
+          "text": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻."
+        },
+        {
+          "label": "C",
+          "text": "A carbanion formed by electron capture."
+        },
+        {
+          "label": "D",
+          "text": "A neutral radical and a hydride anion."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻.",
+      "explanation": "High-energy electron impact ejects an electron from the lowest ionization energy orbital, generating the molecular radical cation (M⁺•).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q028",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Alpha-Cleavage Fragmentation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the driving force and curved-arrow flow during the α-cleavage of a 2-butanol radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Expulsion of methane gas."
+        },
+        {
+          "label": "B",
+          "text": "Heterolytic cleavage of the C-O bond to form a hydroxyl cation."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45)."
+        },
+        {
+          "label": "D",
+          "text": "Loss of water to form a butadiene radical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45).",
+      "explanation": "Alpha-cleavage is driven by formation of an exceptionally stable, resonance-stabilized oxonium cation [CH₃CH=OH⁺].",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q029",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "McLafferty Rearrangement Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What structural requirement and transition state geometry are essential for a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene."
+        },
+        {
+          "label": "B",
+          "text": "A tertiary halide undergoing unimolecular ionization."
+        },
+        {
+          "label": "C",
+          "text": "An alcohol with an α-hydrogen undergoing a 3-membered ring flip."
+        },
+        {
+          "label": "D",
+          "text": "An aromatic ring with ortho substituents."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene.",
+      "explanation": "The McLafferty rearrangement requires a γ-hydrogen that transfers to the radical cation oxygen through a 6-membered cyclic transition state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q030",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "McLafferty Mage",
+      "topic": "Tropylium Ion Mass Spectral Rearrangement",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why do alkylbenzenes (e.g., toluene, propylbenzene) characteristically show a base peak at m/z 91 in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The benzene ring expels a methyl radical directly."
+        },
+        {
+          "label": "B",
+          "text": "Toluene fragments into three acetylene molecules."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation."
+        },
+        {
+          "label": "D",
+          "text": "The phenyl cation coordinates with nitrogen gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation.",
+      "explanation": "The m/z 91 benzyl cation rearranges into the symmetrical, aromatic 6π tropylium cation (C₇H₇⁺).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-mage.png"
+      ]
+    },
+    {
+      "id": "ch14_q031",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Bromine (M+2) Isotope Abundance Origin",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the isotopic origin of the characteristic twin molecular ion peaks of equal height (1:1 ratio) in brominated compounds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine undergoes 50% homolytic cleavage during ionization."
+        },
+        {
+          "label": "B",
+          "text": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights."
+        },
+        {
+          "label": "C",
+          "text": "Bromine exists as a dimer in mass spectrometers."
+        },
+        {
+          "label": "D",
+          "text": "The molecular ion has two conformations in gas phase."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights.",
+      "explanation": "The nearly 1:1 natural abundance of ⁷⁹Br and ⁸¹Br creates the diagnostic twin peak pattern in mass spectrometry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q032",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "IR Dipole Moment Transition Rule",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is the C=C stretching vibration of symmetrical trans-2-butene inactive (invisible) in infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because infrared light only detects nitrogen and oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Because the C=C bond is too strong to vibrate."
+        },
+        {
+          "label": "C",
+          "text": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0)."
+        },
+        {
+          "label": "D",
+          "text": "Because trans-2-butene does not absorb any energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0).",
+      "explanation": "Infrared absorption requires a vibration that causes a net change in the molecular dipole moment; centrosymmetric vibrations are IR inactive.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q033",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Carbonyl IR Force Constant vs Conjugation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the C=O stretching frequency decrease from 1715 cm⁻¹ in cyclohexanone to 1685 cm⁻¹ in cyclohex-2-en-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexenone undergoes rapid keto-enol tautomerism."
+        },
+        {
+          "label": "B",
+          "text": "Conjugation increases the reduced mass (μ) of the carbonyl atoms."
+        },
+        {
+          "label": "C",
+          "text": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k)."
+        },
+        {
+          "label": "D",
+          "text": "Conjugation destroys the carbonyl dipole moment."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k).",
+      "explanation": "According to Hooke's Law (ν ∝ √(k/μ)), resonance delocalization reduces bond order/force constant k, shifting absorption to lower wavenumber.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q034",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Carboxylic Acid Dimer Hydrogen-Bonding Broadening",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does the O-H stretch of carboxylic acids appear as an extremely broad band between 2500–3300 cm⁻¹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids undergo continuous radical homolysis."
+        },
+        {
+          "label": "B",
+          "text": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids absorb moisture from the air during testing."
+        },
+        {
+          "label": "D",
+          "text": "The O-H bond is completely ionic in solution."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies.",
+      "explanation": "Intermolecular centrosymmetric dimerization creates strong hydrogen bonds that severely weaken and broaden the O-H stretching potential.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q035",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Mass Spectrometry Electron Ionization (EI)",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the immediate product formed when an organic molecule (M) is bombarded by a 70 eV electron beam in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbanion formed by electron capture."
+        },
+        {
+          "label": "B",
+          "text": "A doubly charged dication [M²⁺]."
+        },
+        {
+          "label": "C",
+          "text": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻."
+        },
+        {
+          "label": "D",
+          "text": "A neutral radical and a hydride anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻.",
+      "explanation": "High-energy electron impact ejects an electron from the lowest ionization energy orbital, generating the molecular radical cation (M⁺•).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q036",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Alpha-Cleavage Fragmentation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the driving force and curved-arrow flow during the α-cleavage of a 2-butanol radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of water to form a butadiene radical."
+        },
+        {
+          "label": "B",
+          "text": "Expulsion of methane gas."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45)."
+        },
+        {
+          "label": "D",
+          "text": "Heterolytic cleavage of the C-O bond to form a hydroxyl cation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45).",
+      "explanation": "Alpha-cleavage is driven by formation of an exceptionally stable, resonance-stabilized oxonium cation [CH₃CH=OH⁺].",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q037",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "McLafferty Rearrangement Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What structural requirement and transition state geometry are essential for a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An alcohol with an α-hydrogen undergoing a 3-membered ring flip."
+        },
+        {
+          "label": "B",
+          "text": "A tertiary halide undergoing unimolecular ionization."
+        },
+        {
+          "label": "C",
+          "text": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene."
+        },
+        {
+          "label": "D",
+          "text": "An aromatic ring with ortho substituents."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene.",
+      "explanation": "The McLafferty rearrangement requires a γ-hydrogen that transfers to the radical cation oxygen through a 6-membered cyclic transition state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q038",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Tropylium Ion Mass Spectral Rearrangement",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do alkylbenzenes (e.g., toluene, propylbenzene) characteristically show a base peak at m/z 91 in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation."
+        },
+        {
+          "label": "B",
+          "text": "The benzene ring expels a methyl radical directly."
+        },
+        {
+          "label": "C",
+          "text": "Toluene fragments into three acetylene molecules."
+        },
+        {
+          "label": "D",
+          "text": "The phenyl cation coordinates with nitrogen gas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation.",
+      "explanation": "The m/z 91 benzyl cation rearranges into the symmetrical, aromatic 6π tropylium cation (C₇H₇⁺).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q039",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Nitrogen Rule Mechanistic Basis",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the physical reason that an organic molecule with an odd number of nitrogen atoms has an odd nominal molecular weight?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrogen only forms ionic bonds in organic molecules."
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen contains an unpaired nuclear proton."
+        },
+        {
+          "label": "D",
+          "text": "Nitrogen decays radioactively inside the mass spectrometer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen.",
+      "explanation": "Because nitrogen forms three bonds with an atomic weight of 14, molecules containing an odd number of nitrogens must contain an odd number of hydrogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q040",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Isotope Inquisitor",
+      "topic": "Chlorine (M+2) Isotope Abundance Origin",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does a monochlorinated compound exhibit two molecular ion peaks separated by 2 m/z in a 3:1 intensity ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule undergoes rapid hydrogen abstraction in the source."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "Chlorine fragments into two chloride ions."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine absorbs two extra electrons in 25% of molecules."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺.",
+      "explanation": "The natural ~3:1 ratio of ³⁵Cl to ³⁷Cl isotopes directly generates the diagnostic M / (M+2) isotopic fingerprint.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch14_q041",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Carbonyl IR Force Constant vs Conjugation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the C=O stretching frequency decrease from 1715 cm⁻¹ in cyclohexanone to 1685 cm⁻¹ in cyclohex-2-en-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k)."
+        },
+        {
+          "label": "B",
+          "text": "Conjugation destroys the carbonyl dipole moment."
+        },
+        {
+          "label": "C",
+          "text": "Conjugation increases the reduced mass (μ) of the carbonyl atoms."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexenone undergoes rapid keto-enol tautomerism."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Resonance delocalization of π electrons into the adjacent double bond gives the C=O bond more single-bond character, lowering the bond force constant (k).",
+      "explanation": "According to Hooke's Law (ν ∝ √(k/μ)), resonance delocalization reduces bond order/force constant k, shifting absorption to lower wavenumber.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q042",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Carboxylic Acid Dimer Hydrogen-Bonding Broadening",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does the O-H stretch of carboxylic acids appear as an extremely broad band between 2500–3300 cm⁻¹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies."
+        },
+        {
+          "label": "B",
+          "text": "The O-H bond is completely ionic in solution."
+        },
+        {
+          "label": "C",
+          "text": "Carboxylic acids absorb moisture from the air during testing."
+        },
+        {
+          "label": "D",
+          "text": "Carboxylic acids undergo continuous radical homolysis."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Carboxylic acids form strong, stable hydrogen-bonded dimers in solution, creating a continuum of perturbed O-H bond lengths and vibrational frequencies.",
+      "explanation": "Intermolecular centrosymmetric dimerization creates strong hydrogen bonds that severely weaken and broaden the O-H stretching potential.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q043",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Mass Spectrometry Electron Ionization (EI)",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the immediate product formed when an organic molecule (M) is bombarded by a 70 eV electron beam in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A doubly charged dication [M²⁺]."
+        },
+        {
+          "label": "B",
+          "text": "A carbanion formed by electron capture."
+        },
+        {
+          "label": "C",
+          "text": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻."
+        },
+        {
+          "label": "D",
+          "text": "A neutral radical and a hydride anion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A high-energy radical cation (molecular ion, M⁺•) formed by ejection of a single valence electron from the molecule: M + e⁻ → M⁺• + 2e⁻.",
+      "explanation": "High-energy electron impact ejects an electron from the lowest ionization energy orbital, generating the molecular radical cation (M⁺•).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q044",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Alpha-Cleavage Fragmentation Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the driving force and curved-arrow flow during the α-cleavage of a 2-butanol radical cation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45)."
+        },
+        {
+          "label": "B",
+          "text": "Heterolytic cleavage of the C-O bond to form a hydroxyl cation."
+        },
+        {
+          "label": "C",
+          "text": "Loss of water to form a butadiene radical."
+        },
+        {
+          "label": "D",
+          "text": "Expulsion of methane gas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Homolytic cleavage of the C-C bond adjacent to the oxygen radical cation, expelling a neutral ethyl radical and forming a resonance-stabilized oxonium ion (m/z 45).",
+      "explanation": "Alpha-cleavage is driven by formation of an exceptionally stable, resonance-stabilized oxonium cation [CH₃CH=OH⁺].",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q045",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "McLafferty Rearrangement Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What structural requirement and transition state geometry are essential for a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene."
+        },
+        {
+          "label": "B",
+          "text": "An aromatic ring with ortho substituents."
+        },
+        {
+          "label": "C",
+          "text": "An alcohol with an α-hydrogen undergoing a 3-membered ring flip."
+        },
+        {
+          "label": "D",
+          "text": "A tertiary halide undergoing unimolecular ionization."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A carbonyl compound with a γ-hydrogen atom undergoing a six-membered cyclic transition state to transfer the γ-H to oxygen with elimination of a neutral alkene.",
+      "explanation": "The McLafferty rearrangement requires a γ-hydrogen that transfers to the radical cation oxygen through a 6-membered cyclic transition state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q046",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Tropylium Ion Mass Spectral Rearrangement",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do alkylbenzenes (e.g., toluene, propylbenzene) characteristically show a base peak at m/z 91 in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The benzene ring expels a methyl radical directly."
+        },
+        {
+          "label": "B",
+          "text": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation."
+        },
+        {
+          "label": "C",
+          "text": "The phenyl cation coordinates with nitrogen gas."
+        },
+        {
+          "label": "D",
+          "text": "Toluene fragments into three acetylene molecules."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Benzylic cleavage generates the benzyl cation (PhCH₂⁺), which rapidly rearranges to the aromatic, resonance-stabilized cycloheptatrienyl (tropylium) cation.",
+      "explanation": "The m/z 91 benzyl cation rearranges into the symmetrical, aromatic 6π tropylium cation (C₇H₇⁺).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q047",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Nitrogen Rule Mechanistic Basis",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the physical reason that an organic molecule with an odd number of nitrogen atoms has an odd nominal molecular weight?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrogen only forms ionic bonds in organic molecules."
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen contains an unpaired nuclear proton."
+        },
+        {
+          "label": "D",
+          "text": "Nitrogen decays radioactively inside the mass spectrometer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitrogen has an even atomic mass (14 Da) but an odd valence (3 bonds), requiring an odd number of monovalent hydrogens compared to carbon and oxygen.",
+      "explanation": "Because nitrogen forms three bonds with an atomic weight of 14, molecules containing an odd number of nitrogens must contain an odd number of hydrogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q048",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Chlorine (M+2) Isotope Abundance Origin",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does a monochlorinated compound exhibit two molecular ion peaks separated by 2 m/z in a 3:1 intensity ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine absorbs two extra electrons in 25% of molecules."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺."
+        },
+        {
+          "label": "C",
+          "text": "Chlorine fragments into two chloride ions."
+        },
+        {
+          "label": "D",
+          "text": "The molecule undergoes rapid hydrogen abstraction in the source."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chlorine exists naturally as two stable isotopes: ³⁵Cl (75.8% abundance) and ³⁷Cl (24.2% abundance), creating a 3:1 ratio of M⁺ to (M+2)⁺.",
+      "explanation": "The natural ~3:1 ratio of ³⁵Cl to ³⁷Cl isotopes directly generates the diagnostic M / (M+2) isotopic fingerprint.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q049",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "Bromine (M+2) Isotope Abundance Origin",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the isotopic origin of the characteristic twin molecular ion peaks of equal height (1:1 ratio) in brominated compounds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular ion has two conformations in gas phase."
+        },
+        {
+          "label": "B",
+          "text": "Bromine exists as a dimer in mass spectrometers."
+        },
+        {
+          "label": "C",
+          "text": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights."
+        },
+        {
+          "label": "D",
+          "text": "Bromine undergoes 50% homolytic cleavage during ionization."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromine occurs in nature as two stable isotopes in nearly equal abundance: ⁷⁹Br (50.7%) and ⁸¹Br (49.3%), yielding equal M⁺ and (M+2)⁺ peak heights.",
+      "explanation": "The nearly 1:1 natural abundance of ⁷⁹Br and ⁸¹Br creates the diagnostic twin peak pattern in mass spectrometry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    },
+    {
+      "id": "ch14_q050",
+      "chapter": 14,
+      "chapter_title": "Infrared Spectroscopy and Mass Spectrometry",
+      "boss": "Molecular Ion Monarch",
+      "topic": "IR Dipole Moment Transition Rule",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why is the C=C stretching vibration of symmetrical trans-2-butene inactive (invisible) in infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because infrared light only detects nitrogen and oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Because trans-2-butene does not absorb any energy."
+        },
+        {
+          "label": "C",
+          "text": "Because the C=C bond is too strong to vibrate."
+        },
+        {
+          "label": "D",
+          "text": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because symmetrical stretching of the centrosymmetric trans-alkene produces zero net change in molecular dipole moment (dμ/dr = 0).",
+      "explanation": "Infrared absorption requires a vibration that causes a net change in the molecular dipole moment; centrosymmetric vibrations are IR inactive.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-ion-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Wavenumber Wraith",
+    "Carbonyl Peak Corsair",
+    "McLafferty Mage",
+    "Isotope Inquisitor",
+    "Molecular Ion Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Wavenumber Wraith",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "wavenumber-wraith.png"
+        ]
+      },
+      {
+        "boss": "Carbonyl Peak Corsair",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "carbonyl-peak-corsair.png"
+        ]
+      },
+      {
+        "boss": "McLafferty Mage",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "mclafferty-mage.png"
+        ]
+      },
+      {
+        "boss": "Isotope Inquisitor",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "isotope-inquisitor.png"
+        ]
+      },
+      {
+        "boss": "Molecular Ion Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "molecular-ion-monarch.png"
+        ]
+      }
+    ]
+  }
+}

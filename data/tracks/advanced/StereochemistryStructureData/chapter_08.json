@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 8,
+  "chapter_title": "Addition Reactions of Alkenes",
+  "assigned_boss": "Pi-Bond Paladin",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch08_q001",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Syn Stereospecificity of Alkene Hydrogenation",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical relationship of the two methyl groups in the product of catalytic hydrogenation of 1,2-dimethylcyclopentene over Pt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-dimethylcyclopentane does not have stereoisomers."
+        },
+        {
+          "label": "B",
+          "text": "A racemic mixture of (1R,2R) and (1S,2S)."
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface."
+        },
+        {
+          "label": "D",
+          "text": "trans-1,2-dimethylcyclopentane exclusively."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface.",
+      "explanation": "Heterogeneous catalytic hydrogenation delivers two hydrogens from the catalyst surface in a stereospecific syn addition.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q002",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Anti Stereospecificity of Alkene Halogenation",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does the bromination of cyclohexene yield trans-1,2-dibromocyclohexane rather than the cis isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry."
+        },
+        {
+          "label": "B",
+          "text": "Bromine atoms are too large to fit on opposite sides."
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an explosive compound."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry.",
+      "explanation": "Backside opening of the 3-membered cyclic bromonium intermediate dictates strict anti stereospecificity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q003",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Hydroboration-Oxidation Syn Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical outcome when 1-methylcyclohexene is subjected to hydroboration-oxidation (1. BH₃·THF, 2. H₂O₂/NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration."
+        },
+        {
+          "label": "B",
+          "text": "cis-2-methylcyclohexanol."
+        },
+        {
+          "label": "C",
+          "text": "1-methylcyclohexane-1,2-diol."
+        },
+        {
+          "label": "D",
+          "text": "1-methylcyclohexanol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration.",
+      "explanation": "Syn addition of H-BH₂ followed by alkaline peroxide oxidation with retention delivers H and OH syn, yielding trans-2-methylcyclohexanol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q004",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Epoxidation Syn Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "When cis-2-butene is treated with mCPBA, what is the stereochemical structure of the resulting epoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanone."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups."
+        },
+        {
+          "label": "D",
+          "text": "butane-2,3-diol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups.",
+      "explanation": "Peroxy acid epoxidation is a concerted syn-addition that strictly preserves the stereochemical relationship of alkene substituents.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q005",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Halohydrin Formation Regio- and Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical relationship between the -Br and -OH groups in the bromohydrin of 1-methylcyclopentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-bromo-2-methylcyclopentanol with syn geometry."
+        },
+        {
+          "label": "B",
+          "text": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon."
+        },
+        {
+          "label": "C",
+          "text": "cis-2-bromo-1-methylcyclopentanol."
+        },
+        {
+          "label": "D",
+          "text": "2-bromo-1-methylcyclopentene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon.",
+      "explanation": "Water attacks the more substituted carbon of the cyclic bromonium ion from the backside, enforcing anti stereochemistry and Markovnikov regiochemistry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q006",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the stereochemical outcome of treating trans-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanone."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers)."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers).",
+      "explanation": "Syn addition of two hydroxyl groups across a trans alkene produces a racemic mixture of chiral (R,R) and (S,S) enantiomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q007",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the stereochemical outcome of treating cis-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2,3-dimethyloxirane."
+        },
+        {
+          "label": "B",
+          "text": "1,2-butanediol."
+        },
+        {
+          "label": "C",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "D",
+          "text": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane).",
+      "explanation": "Syn addition of two hydroxyl groups across a cis alkene produces the symmetric meso diastereomer.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q008",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Anti Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What stereoisomer is formed when cis-2-butene is converted to an epoxide and opened with aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "B",
+          "text": "1,4-butanediol."
+        },
+        {
+          "label": "C",
+          "text": "2-butanol."
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework.",
+      "explanation": "Anti-dihydroxylation of cis-2-butene yields the racemic chiral pair of enantiomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q009",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Anti Dihydroxylation of trans-2-Butene",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What stereoisomer is formed when trans-2-butene is epoxidized with mCPBA and opened in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol (optically inactive meso diol)."
+        },
+        {
+          "label": "C",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "D",
+          "text": "2-butanone."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "meso-butane-2,3-diol (optically inactive meso diol).",
+      "explanation": "Anti-dihydroxylation of trans-2-butene yields the symmetric meso diol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q010",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Pi-Bond Paladin",
+      "topic": "Ozonolysis Retention of Carbonyl Geometry",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does reductive ozonolysis of (E)-3-methyl-2-pentene yield acetone and acetaldehyde with zero stereocenters remaining?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The products form chiral crystals."
+        },
+        {
+          "label": "B",
+          "text": "Ozone racemizes the alkyl chain by homolysis."
+        },
+        {
+          "label": "C",
+          "text": "The stereocenters are inverted into (S) configurations."
+        },
+        {
+          "label": "D",
+          "text": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O).",
+      "explanation": "Cleaving the C=C double bond into carbonyls eliminates geometric isomerism, converting planar alkene carbons into planar achiral aldehydes/ketones.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "pi-bond-paladin.png"
+      ]
+    },
+    {
+      "id": "ch08_q011",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Hydroboration-Oxidation Syn Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome when 1-methylcyclohexene is subjected to hydroboration-oxidation (1. BH₃·THF, 2. H₂O₂/NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-methylcyclohexane-1,2-diol."
+        },
+        {
+          "label": "B",
+          "text": "1-methylcyclohexanol."
+        },
+        {
+          "label": "C",
+          "text": "cis-2-methylcyclohexanol."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration.",
+      "explanation": "Syn addition of H-BH₂ followed by alkaline peroxide oxidation with retention delivers H and OH syn, yielding trans-2-methylcyclohexanol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q012",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Epoxidation Syn Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "When cis-2-butene is treated with mCPBA, what is the stereochemical structure of the resulting epoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "butane-2,3-diol."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups.",
+      "explanation": "Peroxy acid epoxidation is a concerted syn-addition that strictly preserves the stereochemical relationship of alkene substituents.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q013",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Halohydrin Formation Regio- and Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical relationship between the -Br and -OH groups in the bromohydrin of 1-methylcyclopentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-bromo-2-methylcyclopentanol with syn geometry."
+        },
+        {
+          "label": "B",
+          "text": "cis-2-bromo-1-methylcyclopentanol."
+        },
+        {
+          "label": "C",
+          "text": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon."
+        },
+        {
+          "label": "D",
+          "text": "2-bromo-1-methylcyclopentene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon.",
+      "explanation": "Water attacks the more substituted carbon of the cyclic bromonium ion from the backside, enforcing anti stereochemistry and Markovnikov regiochemistry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q014",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical outcome of treating trans-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers)."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers).",
+      "explanation": "Syn addition of two hydroxyl groups across a trans alkene produces a racemic mixture of chiral (R,R) and (S,S) enantiomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q015",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome of treating cis-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane)."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane."
+        },
+        {
+          "label": "C",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "D",
+          "text": "1,2-butanediol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane).",
+      "explanation": "Syn addition of two hydroxyl groups across a cis alkene produces the symmetric meso diastereomer.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q016",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Anti Dihydroxylation of cis-2-Butene",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What stereoisomer is formed when cis-2-butene is converted to an epoxide and opened with aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "B",
+          "text": "1,4-butanediol."
+        },
+        {
+          "label": "C",
+          "text": "2-butanol."
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework.",
+      "explanation": "Anti-dihydroxylation of cis-2-butene yields the racemic chiral pair of enantiomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q017",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Anti Dihydroxylation of trans-2-Butene",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What stereoisomer is formed when trans-2-butene is epoxidized with mCPBA and opened in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "C",
+          "text": "meso-butane-2,3-diol (optically inactive meso diol)."
+        },
+        {
+          "label": "D",
+          "text": "2-butanone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso-butane-2,3-diol (optically inactive meso diol).",
+      "explanation": "Anti-dihydroxylation of trans-2-butene yields the symmetric meso diol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q018",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Ozonolysis Retention of Carbonyl Geometry",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why does reductive ozonolysis of (E)-3-methyl-2-pentene yield acetone and acetaldehyde with zero stereocenters remaining?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The stereocenters are inverted into (S) configurations."
+        },
+        {
+          "label": "B",
+          "text": "Ozone racemizes the alkyl chain by homolysis."
+        },
+        {
+          "label": "C",
+          "text": "The products form chiral crystals."
+        },
+        {
+          "label": "D",
+          "text": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O).",
+      "explanation": "Cleaving the C=C double bond into carbonyls eliminates geometric isomerism, converting planar alkene carbons into planar achiral aldehydes/ketones.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q019",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Syn Stereospecificity of Alkene Hydrogenation",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical relationship of the two methyl groups in the product of catalytic hydrogenation of 1,2-dimethylcyclopentene over Pt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-dimethylcyclopentane does not have stereoisomers."
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-dimethylcyclopentane exclusively."
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface."
+        },
+        {
+          "label": "D",
+          "text": "A racemic mixture of (1R,2R) and (1S,2S)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface.",
+      "explanation": "Heterogeneous catalytic hydrogenation delivers two hydrogens from the catalyst surface in a stereospecific syn addition.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q020",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Markovnikov Minotaur",
+      "topic": "Anti Stereospecificity of Alkene Halogenation",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does the bromination of cyclohexene yield trans-1,2-dibromocyclohexane rather than the cis isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer is an explosive compound."
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "D",
+          "text": "Bromine atoms are too large to fit on opposite sides."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry.",
+      "explanation": "Backside opening of the 3-membered cyclic bromonium intermediate dictates strict anti stereospecificity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "markovnikov-minotaur.png"
+      ]
+    },
+    {
+      "id": "ch08_q021",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Halohydrin Formation Regio- and Stereospecificity",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical relationship between the -Br and -OH groups in the bromohydrin of 1-methylcyclopentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-bromo-2-methylcyclopentanol with syn geometry."
+        },
+        {
+          "label": "B",
+          "text": "2-bromo-1-methylcyclopentene."
+        },
+        {
+          "label": "C",
+          "text": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon."
+        },
+        {
+          "label": "D",
+          "text": "cis-2-bromo-1-methylcyclopentanol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon.",
+      "explanation": "Water attacks the more substituted carbon of the cyclic bromonium ion from the backside, enforcing anti stereochemistry and Markovnikov regiochemistry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q022",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the stereochemical outcome of treating trans-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "B",
+          "text": "2-butanone."
+        },
+        {
+          "label": "C",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers)."
+        },
+        {
+          "label": "D",
+          "text": "meso-butane-2,3-diol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers).",
+      "explanation": "Syn addition of two hydroxyl groups across a trans alkene produces a racemic mixture of chiral (R,R) and (S,S) enantiomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q023",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical outcome of treating cis-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane)."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane."
+        },
+        {
+          "label": "C",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "D",
+          "text": "1,2-butanediol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane).",
+      "explanation": "Syn addition of two hydroxyl groups across a cis alkene produces the symmetric meso diastereomer.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q024",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Anti Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What stereoisomer is formed when cis-2-butene is converted to an epoxide and opened with aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "1,4-butanediol."
+        },
+        {
+          "label": "D",
+          "text": "2-butanol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework.",
+      "explanation": "Anti-dihydroxylation of cis-2-butene yields the racemic chiral pair of enantiomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q025",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Anti Dihydroxylation of trans-2-Butene",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What stereoisomer is formed when trans-2-butene is epoxidized with mCPBA and opened in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol (optically inactive meso diol)."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "meso-butane-2,3-diol (optically inactive meso diol).",
+      "explanation": "Anti-dihydroxylation of trans-2-butene yields the symmetric meso diol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q026",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Ozonolysis Retention of Carbonyl Geometry",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does reductive ozonolysis of (E)-3-methyl-2-pentene yield acetone and acetaldehyde with zero stereocenters remaining?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The stereocenters are inverted into (S) configurations."
+        },
+        {
+          "label": "B",
+          "text": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O)."
+        },
+        {
+          "label": "C",
+          "text": "Ozone racemizes the alkyl chain by homolysis."
+        },
+        {
+          "label": "D",
+          "text": "The products form chiral crystals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O).",
+      "explanation": "Cleaving the C=C double bond into carbonyls eliminates geometric isomerism, converting planar alkene carbons into planar achiral aldehydes/ketones.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q027",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Syn Stereospecificity of Alkene Hydrogenation",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical relationship of the two methyl groups in the product of catalytic hydrogenation of 1,2-dimethylcyclopentene over Pt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface."
+        },
+        {
+          "label": "B",
+          "text": "A racemic mixture of (1R,2R) and (1S,2S)."
+        },
+        {
+          "label": "C",
+          "text": "trans-1,2-dimethylcyclopentane exclusively."
+        },
+        {
+          "label": "D",
+          "text": "1,2-dimethylcyclopentane does not have stereoisomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface.",
+      "explanation": "Heterogeneous catalytic hydrogenation delivers two hydrogens from the catalyst surface in a stereospecific syn addition.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q028",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Anti Stereospecificity of Alkene Halogenation",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does the bromination of cyclohexene yield trans-1,2-dibromocyclohexane rather than the cis isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexene undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "B",
+          "text": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry."
+        },
+        {
+          "label": "C",
+          "text": "Bromine atoms are too large to fit on opposite sides."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an explosive compound."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry.",
+      "explanation": "Backside opening of the 3-membered cyclic bromonium intermediate dictates strict anti stereospecificity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q029",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Hydroboration-Oxidation Syn Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical outcome when 1-methylcyclohexene is subjected to hydroboration-oxidation (1. BH₃·THF, 2. H₂O₂/NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2-methylcyclohexanol."
+        },
+        {
+          "label": "B",
+          "text": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration."
+        },
+        {
+          "label": "C",
+          "text": "1-methylcyclohexane-1,2-diol."
+        },
+        {
+          "label": "D",
+          "text": "1-methylcyclohexanol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration.",
+      "explanation": "Syn addition of H-BH₂ followed by alkaline peroxide oxidation with retention delivers H and OH syn, yielding trans-2-methylcyclohexanol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q030",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Bromonium Berserker",
+      "topic": "Epoxidation Syn Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "When cis-2-butene is treated with mCPBA, what is the stereochemical structure of the resulting epoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "butane-2,3-diol."
+        },
+        {
+          "label": "D",
+          "text": "2-butanone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups.",
+      "explanation": "Peroxy acid epoxidation is a concerted syn-addition that strictly preserves the stereochemical relationship of alkene substituents.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "bromonium-berserker.png"
+      ]
+    },
+    {
+      "id": "ch08_q031",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome of treating cis-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-butanediol."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane)."
+        },
+        {
+          "label": "C",
+          "text": "trans-2,3-dimethyloxirane."
+        },
+        {
+          "label": "D",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane).",
+      "explanation": "Syn addition of two hydroxyl groups across a cis alkene produces the symmetric meso diastereomer.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q032",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Anti Dihydroxylation of cis-2-Butene",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What stereoisomer is formed when cis-2-butene is converted to an epoxide and opened with aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanol."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "1,4-butanediol."
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework.",
+      "explanation": "Anti-dihydroxylation of cis-2-butene yields the racemic chiral pair of enantiomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q033",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Anti Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What stereoisomer is formed when trans-2-butene is epoxidized with mCPBA and opened in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "B",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "C",
+          "text": "meso-butane-2,3-diol (optically inactive meso diol)."
+        },
+        {
+          "label": "D",
+          "text": "2-butanone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso-butane-2,3-diol (optically inactive meso diol).",
+      "explanation": "Anti-dihydroxylation of trans-2-butene yields the symmetric meso diol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q034",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Ozonolysis Retention of Carbonyl Geometry",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why does reductive ozonolysis of (E)-3-methyl-2-pentene yield acetone and acetaldehyde with zero stereocenters remaining?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ozone racemizes the alkyl chain by homolysis."
+        },
+        {
+          "label": "B",
+          "text": "The products form chiral crystals."
+        },
+        {
+          "label": "C",
+          "text": "The stereocenters are inverted into (S) configurations."
+        },
+        {
+          "label": "D",
+          "text": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O).",
+      "explanation": "Cleaving the C=C double bond into carbonyls eliminates geometric isomerism, converting planar alkene carbons into planar achiral aldehydes/ketones.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q035",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Syn Stereospecificity of Alkene Hydrogenation",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical relationship of the two methyl groups in the product of catalytic hydrogenation of 1,2-dimethylcyclopentene over Pt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A racemic mixture of (1R,2R) and (1S,2S)."
+        },
+        {
+          "label": "B",
+          "text": "1,2-dimethylcyclopentane does not have stereoisomers."
+        },
+        {
+          "label": "C",
+          "text": "trans-1,2-dimethylcyclopentane exclusively."
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface.",
+      "explanation": "Heterogeneous catalytic hydrogenation delivers two hydrogens from the catalyst surface in a stereospecific syn addition.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q036",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Anti Stereospecificity of Alkene Halogenation",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why does the bromination of cyclohexene yield trans-1,2-dibromocyclohexane rather than the cis isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexene undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer is an explosive compound."
+        },
+        {
+          "label": "C",
+          "text": "Bromine atoms are too large to fit on opposite sides."
+        },
+        {
+          "label": "D",
+          "text": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry.",
+      "explanation": "Backside opening of the 3-membered cyclic bromonium intermediate dictates strict anti stereospecificity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q037",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Hydroboration-Oxidation Syn Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome when 1-methylcyclohexene is subjected to hydroboration-oxidation (1. BH₃·THF, 2. H₂O₂/NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-methylcyclohexanol."
+        },
+        {
+          "label": "B",
+          "text": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration."
+        },
+        {
+          "label": "C",
+          "text": "1-methylcyclohexane-1,2-diol."
+        },
+        {
+          "label": "D",
+          "text": "cis-2-methylcyclohexanol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration.",
+      "explanation": "Syn addition of H-BH₂ followed by alkaline peroxide oxidation with retention delivers H and OH syn, yielding trans-2-methylcyclohexanol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q038",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Epoxidation Syn Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "When cis-2-butene is treated with mCPBA, what is the stereochemical structure of the resulting epoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "butane-2,3-diol."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups.",
+      "explanation": "Peroxy acid epoxidation is a concerted syn-addition that strictly preserves the stereochemical relationship of alkene substituents.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q039",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Halohydrin Formation Regio- and Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical relationship between the -Br and -OH groups in the bromohydrin of 1-methylcyclopentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-bromo-2-methylcyclopentanol with syn geometry."
+        },
+        {
+          "label": "B",
+          "text": "2-bromo-1-methylcyclopentene."
+        },
+        {
+          "label": "C",
+          "text": "cis-2-bromo-1-methylcyclopentanol."
+        },
+        {
+          "label": "D",
+          "text": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon.",
+      "explanation": "Water attacks the more substituted carbon of the cyclic bromonium ion from the backside, enforcing anti stereochemistry and Markovnikov regiochemistry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q040",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Hydroboration Harrier",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome of treating trans-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers).",
+      "explanation": "Syn addition of two hydroxyl groups across a trans alkene produces a racemic mixture of chiral (R,R) and (S,S) enantiomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "hydroboration-harrier.png"
+      ]
+    },
+    {
+      "id": "ch08_q041",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Anti Dihydroxylation of trans-2-Butene",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What stereoisomer is formed when trans-2-butene is epoxidized with mCPBA and opened in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanone."
+        },
+        {
+          "label": "B",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "meso-butane-2,3-diol (optically inactive meso diol)."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso-butane-2,3-diol (optically inactive meso diol).",
+      "explanation": "Anti-dihydroxylation of trans-2-butene yields the symmetric meso diol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q042",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Ozonolysis Retention of Carbonyl Geometry",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why does reductive ozonolysis of (E)-3-methyl-2-pentene yield acetone and acetaldehyde with zero stereocenters remaining?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The stereocenters are inverted into (S) configurations."
+        },
+        {
+          "label": "B",
+          "text": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O)."
+        },
+        {
+          "label": "C",
+          "text": "Ozone racemizes the alkyl chain by homolysis."
+        },
+        {
+          "label": "D",
+          "text": "The products form chiral crystals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Because oxidative cleavage of the double bond transforms both sp² alkene carbons into planar, achiral carbonyl groups (C=O).",
+      "explanation": "Cleaving the C=C double bond into carbonyls eliminates geometric isomerism, converting planar alkene carbons into planar achiral aldehydes/ketones.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q043",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Syn Stereospecificity of Alkene Hydrogenation",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the stereochemical relationship of the two methyl groups in the product of catalytic hydrogenation of 1,2-dimethylcyclopentene over Pt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface."
+        },
+        {
+          "label": "B",
+          "text": "A racemic mixture of (1R,2R) and (1S,2S)."
+        },
+        {
+          "label": "C",
+          "text": "1,2-dimethylcyclopentane does not have stereoisomers."
+        },
+        {
+          "label": "D",
+          "text": "trans-1,2-dimethylcyclopentane exclusively."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "cis-1,2-dimethylcyclopentane exclusively (meso compound), because both hydrogens are delivered simultaneously to the same face of the planar alkene from the metal surface.",
+      "explanation": "Heterogeneous catalytic hydrogenation delivers two hydrogens from the catalyst surface in a stereospecific syn addition.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q044",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Anti Stereospecificity of Alkene Halogenation",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does the bromination of cyclohexene yield trans-1,2-dibromocyclohexane rather than the cis isomer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine atoms are too large to fit on opposite sides."
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexene undergoes a 1,2-hydride shift."
+        },
+        {
+          "label": "C",
+          "text": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an explosive compound."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromination proceeds via a bridged cyclic bromonium ion; bromide must attack from the opposite (backside) face, enforcing anti stereochemistry.",
+      "explanation": "Backside opening of the 3-membered cyclic bromonium intermediate dictates strict anti stereospecificity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q045",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Hydroboration-Oxidation Syn Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical outcome when 1-methylcyclohexene is subjected to hydroboration-oxidation (1. BH₃·THF, 2. H₂O₂/NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-methylcyclohexane-1,2-diol."
+        },
+        {
+          "label": "B",
+          "text": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration."
+        },
+        {
+          "label": "C",
+          "text": "1-methylcyclohexanol."
+        },
+        {
+          "label": "D",
+          "text": "cis-2-methylcyclohexanol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-methylcyclohexanol (racemic), resulting from concerted syn-addition of H and B followed by oxidation with complete retention of configuration.",
+      "explanation": "Syn addition of H-BH₂ followed by alkaline peroxide oxidation with retention delivers H and OH syn, yielding trans-2-methylcyclohexanol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q046",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Epoxidation Syn Stereospecificity",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "When cis-2-butene is treated with mCPBA, what is the stereochemical structure of the resulting epoxide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "butane-2,3-diol."
+        },
+        {
+          "label": "B",
+          "text": "trans-2,3-dimethyloxirane (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-2,3-dimethyloxirane (meso-epoxide with an internal plane of symmetry), preserving the cis orientation of methyl groups.",
+      "explanation": "Peroxy acid epoxidation is a concerted syn-addition that strictly preserves the stereochemical relationship of alkene substituents.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q047",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Halohydrin Formation Regio- and Stereospecificity",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical relationship between the -Br and -OH groups in the bromohydrin of 1-methylcyclopentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon."
+        },
+        {
+          "label": "B",
+          "text": "2-bromo-1-methylcyclopentene."
+        },
+        {
+          "label": "C",
+          "text": "cis-2-bromo-1-methylcyclopentanol."
+        },
+        {
+          "label": "D",
+          "text": "1-bromo-2-methylcyclopentanol with syn geometry."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "trans-2-bromo-1-methylcyclopentanol: the -OH and -Br groups are strictly trans (anti addition), with -OH located at the more substituted C1 carbon.",
+      "explanation": "Water attacks the more substituted carbon of the cyclic bromonium ion from the backside, enforcing anti stereochemistry and Markovnikov regiochemistry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q048",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Syn Dihydroxylation of trans-2-Butene",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical outcome of treating trans-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2,3-dimethyloxirane."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "2-butanone."
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (a racemic pair of chiral enantiomers).",
+      "explanation": "Syn addition of two hydroxyl groups across a trans alkene produces a racemic mixture of chiral (R,R) and (S,S) enantiomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q049",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Syn Dihydroxylation of cis-2-Butene",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical outcome of treating cis-2-butene with OsO₄ / NMO?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-butanediol."
+        },
+        {
+          "label": "B",
+          "text": "(±)-butane-2,3-diol (racemic)."
+        },
+        {
+          "label": "C",
+          "text": "trans-2,3-dimethyloxirane."
+        },
+        {
+          "label": "D",
+          "text": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "meso-butane-2,3-diol (an optically inactive meso compound with an internal mirror plane).",
+      "explanation": "Syn addition of two hydroxyl groups across a cis alkene produces the symmetric meso diastereomer.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    },
+    {
+      "id": "ch08_q050",
+      "chapter": 8,
+      "chapter_title": "Addition Reactions of Alkenes",
+      "boss": "Ozonolysis Overlord",
+      "topic": "Anti Dihydroxylation of cis-2-Butene",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "What stereoisomer is formed when cis-2-butene is converted to an epoxide and opened with aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-butanol."
+        },
+        {
+          "label": "B",
+          "text": "meso-butane-2,3-diol."
+        },
+        {
+          "label": "C",
+          "text": "1,4-butanediol."
+        },
+        {
+          "label": "D",
+          "text": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(±)-(2R,3R)/(2S,3S)-butane-2,3-diol (racemic diol), because the anti opening inverts one stereocenter of the cis framework.",
+      "explanation": "Anti-dihydroxylation of cis-2-butene yields the racemic chiral pair of enantiomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "ozonolysis-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Pi-Bond Paladin",
+    "Markovnikov Minotaur",
+    "Bromonium Berserker",
+    "Hydroboration Harrier",
+    "Ozonolysis Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Pi-Bond Paladin",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "pi-bond-paladin.png"
+        ]
+      },
+      {
+        "boss": "Markovnikov Minotaur",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "markovnikov-minotaur.png"
+        ]
+      },
+      {
+        "boss": "Bromonium Berserker",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "bromonium-berserker.png"
+        ]
+      },
+      {
+        "boss": "Hydroboration Harrier",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "hydroboration-harrier.png"
+        ]
+      },
+      {
+        "boss": "Ozonolysis Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "ozonolysis-overlord.png"
+        ]
+      }
+    ]
+  }
+}

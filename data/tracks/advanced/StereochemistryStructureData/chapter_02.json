@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 2,
+  "chapter_title": "Molecular Representations",
+  "assigned_boss": "Skeletal Sentry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch02_q001",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Constitutional Isomers Definition",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the structural relationship between butane (CH₃CH₂CH₂CH₃) and isobutane [(CH₃)₂CHCH₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers."
+        },
+        {
+          "label": "B",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "C",
+          "text": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity."
+        },
+        {
+          "label": "D",
+          "text": "Diastereomers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity.",
+      "explanation": "Constitutional isomers share the same molecular formula but have different atom connectivity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q002",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Stereoisomer Definition and Scope",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "How do stereoisomers differ fundamentally from constitutional isomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers have different numbers of carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers have different functional groups."
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers cannot be isolated."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds.",
+      "explanation": "Stereoisomers share identical IUPAC connectivity but differ in the spatial arrangement of atoms (e.g., cis/trans, R/S).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q003",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Resonance Contributor Octet Priority",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "When evaluating the relative stability of resonance contributors, which rule takes top priority?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Structures with maximum formal charge separation are preferred."
+        },
+        {
+          "label": "B",
+          "text": "Structures with fewer single bonds are preferred."
+        },
+        {
+          "label": "C",
+          "text": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets."
+        },
+        {
+          "label": "D",
+          "text": "Structures with positive charge on electronegative atoms are preferred."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets.",
+      "explanation": "Octet satisfaction is the foremost criterion for resonance stability, overriding electronegativity rules.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q004",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Major vs Minor Resonance Hybrid Contributor",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "In the resonance contributors of formaldehyde [H₂C=O ↔ H₂C⁺-O⁻], which contributor is major?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The zwitterionic structure H₂C⁺-O⁻ is major."
+        },
+        {
+          "label": "B",
+          "text": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation."
+        },
+        {
+          "label": "C",
+          "text": "Both contributors contribute exactly 50%."
+        },
+        {
+          "label": "D",
+          "text": "Neither structure exists."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation.",
+      "explanation": "Neutral contributors with complete octets and minimal charge separation dominate the resonance hybrid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q005",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Curved Arrow Formal Charge Tracking",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "When a curved arrow moves a lone pair from oxygen to form a new C=O π bond, what happens to the formal charge on oxygen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The formal charge on oxygen remains unchanged."
+        },
+        {
+          "label": "B",
+          "text": "The formal charge on oxygen decreases by -1."
+        },
+        {
+          "label": "C",
+          "text": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1)."
+        },
+        {
+          "label": "D",
+          "text": "The formal charge doubles."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1).",
+      "explanation": "Donating a lone pair to form a shared bond reduces nonbonding electron count by 2 and adds 1 shared electron, increasing formal charge by +1.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q006",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Localized vs Delocalized Lone Pairs",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is the nitrogen lone pair in acetamide (CH₃CONH₂) delocalized whereas in ethylamine (CH₃CH₂NH₂) it is localized?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitrogen in acetamide is sp³ hybridized."
+        },
+        {
+          "label": "B",
+          "text": "Acetamide has no hydrogen atoms on nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system."
+        },
+        {
+          "label": "D",
+          "text": "Ethylamine contains an aromatic ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system.",
+      "explanation": "Lone pairs adjacent to π systems rehybridize from sp³ to 2p to participate in stabilizing resonance delocalization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q007",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Enolate Ambident Ion Resonance Hybrid",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What does the true resonance hybrid structure of the acetaldehyde enolate [CH₂=CH-O⁻] look like?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic three-membered ring."
+        },
+        {
+          "label": "B",
+          "text": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen."
+        },
+        {
+          "label": "C",
+          "text": "A localized carbanion with no charge on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "A symmetrical neutral alkene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen.",
+      "explanation": "The resonance hybrid has partial double-bond character across C-C and C-O, with negative charge shared between C and O (predominantly on electronegative O).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q008",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Cis-Trans Geometric Isomerism in Alkenes",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why do cis-2-butene and trans-2-butene exist as distinct, isolable stereoisomers at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion."
+        },
+        {
+          "label": "B",
+          "text": "They are enantiomers that rotate polarized light in opposite directions."
+        },
+        {
+          "label": "C",
+          "text": "They interconvert at 10¹² times per second."
+        },
+        {
+          "label": "D",
+          "text": "They have different molecular formulas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion.",
+      "explanation": "The carbon-carbon π bond prevents free rotation, locking substituents in distinct spatial orientations (cis vs trans).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q009",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Dipole Moments of Alkene Stereoisomers",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why does cis-1,2-dichloroethene possess a large molecular dipole moment (1.90 D) while trans-1,2-dichloroethene has zero dipole moment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer is an ionic salt."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer contains more chlorine atoms than the trans isomer."
+        },
+        {
+          "label": "C",
+          "text": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly."
+        },
+        {
+          "label": "D",
+          "text": "The trans isomer is nonplanar."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly.",
+      "explanation": "Vector cancellation of equal and opposite C-Cl dipoles in the centrosymmetric trans isomer yields a zero molecular dipole moment.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q010",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Skeletal Sentry",
+      "topic": "Aromatic Delocalization Energy of Benzene",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the experimental structural evidence that benzene does not exist as alternating single and double bonds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzene decomposes instantly in air."
+        },
+        {
+          "label": "B",
+          "text": "Benzene has three long bonds and three short bonds."
+        },
+        {
+          "label": "C",
+          "text": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "Benzene is a nonplanar puckered ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon.",
+      "explanation": "X-ray crystallography reveals identical 1.39 Å bond lengths and 120° angles, confirming completely delocalized 6π aromatic resonance.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "skeletal-sentry.png"
+      ]
+    },
+    {
+      "id": "ch02_q011",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Resonance Contributor Octet Priority",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "When evaluating the relative stability of resonance contributors, which rule takes top priority?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets."
+        },
+        {
+          "label": "B",
+          "text": "Structures with fewer single bonds are preferred."
+        },
+        {
+          "label": "C",
+          "text": "Structures with maximum formal charge separation are preferred."
+        },
+        {
+          "label": "D",
+          "text": "Structures with positive charge on electronegative atoms are preferred."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets.",
+      "explanation": "Octet satisfaction is the foremost criterion for resonance stability, overriding electronegativity rules.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q012",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Major vs Minor Resonance Hybrid Contributor",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "In the resonance contributors of formaldehyde [H₂C=O ↔ H₂C⁺-O⁻], which contributor is major?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both contributors contribute exactly 50%."
+        },
+        {
+          "label": "B",
+          "text": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation."
+        },
+        {
+          "label": "C",
+          "text": "The zwitterionic structure H₂C⁺-O⁻ is major."
+        },
+        {
+          "label": "D",
+          "text": "Neither structure exists."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation.",
+      "explanation": "Neutral contributors with complete octets and minimal charge separation dominate the resonance hybrid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q013",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Curved Arrow Formal Charge Tracking",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "When a curved arrow moves a lone pair from oxygen to form a new C=O π bond, what happens to the formal charge on oxygen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The formal charge doubles."
+        },
+        {
+          "label": "B",
+          "text": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1)."
+        },
+        {
+          "label": "C",
+          "text": "The formal charge on oxygen decreases by -1."
+        },
+        {
+          "label": "D",
+          "text": "The formal charge on oxygen remains unchanged."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1).",
+      "explanation": "Donating a lone pair to form a shared bond reduces nonbonding electron count by 2 and adds 1 shared electron, increasing formal charge by +1.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q014",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Localized vs Delocalized Lone Pairs",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why is the nitrogen lone pair in acetamide (CH₃CONH₂) delocalized whereas in ethylamine (CH₃CH₂NH₂) it is localized?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetamide has no hydrogen atoms on nitrogen."
+        },
+        {
+          "label": "B",
+          "text": "Ethylamine contains an aromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system."
+        },
+        {
+          "label": "D",
+          "text": "The nitrogen in acetamide is sp³ hybridized."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system.",
+      "explanation": "Lone pairs adjacent to π systems rehybridize from sp³ to 2p to participate in stabilizing resonance delocalization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q015",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Enolate Ambident Ion Resonance Hybrid",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does the true resonance hybrid structure of the acetaldehyde enolate [CH₂=CH-O⁻] look like?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A symmetrical neutral alkene."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic three-membered ring."
+        },
+        {
+          "label": "C",
+          "text": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "A localized carbanion with no charge on oxygen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen.",
+      "explanation": "The resonance hybrid has partial double-bond character across C-C and C-O, with negative charge shared between C and O (predominantly on electronegative O).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q016",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Cis-Trans Geometric Isomerism in Alkenes",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why do cis-2-butene and trans-2-butene exist as distinct, isolable stereoisomers at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are enantiomers that rotate polarized light in opposite directions."
+        },
+        {
+          "label": "B",
+          "text": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion."
+        },
+        {
+          "label": "C",
+          "text": "They have different molecular formulas."
+        },
+        {
+          "label": "D",
+          "text": "They interconvert at 10¹² times per second."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion.",
+      "explanation": "The carbon-carbon π bond prevents free rotation, locking substituents in distinct spatial orientations (cis vs trans).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q017",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Dipole Moments of Alkene Stereoisomers",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does cis-1,2-dichloroethene possess a large molecular dipole moment (1.90 D) while trans-1,2-dichloroethene has zero dipole moment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly."
+        },
+        {
+          "label": "B",
+          "text": "The trans isomer is nonplanar."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer contains more chlorine atoms than the trans isomer."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an ionic salt."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly.",
+      "explanation": "Vector cancellation of equal and opposite C-Cl dipoles in the centrosymmetric trans isomer yields a zero molecular dipole moment.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q018",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Aromatic Delocalization Energy of Benzene",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the experimental structural evidence that benzene does not exist as alternating single and double bonds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzene is a nonplanar puckered ring."
+        },
+        {
+          "label": "B",
+          "text": "Benzene decomposes instantly in air."
+        },
+        {
+          "label": "C",
+          "text": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "Benzene has three long bonds and three short bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon.",
+      "explanation": "X-ray crystallography reveals identical 1.39 Å bond lengths and 120° angles, confirming completely delocalized 6π aromatic resonance.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q019",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Constitutional Isomers Definition",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the structural relationship between butane (CH₃CH₂CH₂CH₃) and isobutane [(CH₃)₂CHCH₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "B",
+          "text": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers."
+        },
+        {
+          "label": "D",
+          "text": "Conformational rotamers."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity.",
+      "explanation": "Constitutional isomers share the same molecular formula but have different atom connectivity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q020",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Lone Pair Phantom",
+      "topic": "Stereoisomer Definition and Scope",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "How do stereoisomers differ fundamentally from constitutional isomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers have different functional groups."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers have different numbers of carbon atoms."
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers cannot be isolated."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds.",
+      "explanation": "Stereoisomers share identical IUPAC connectivity but differ in the spatial arrangement of atoms (e.g., cis/trans, R/S).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "lone-pair-phantom.png"
+      ]
+    },
+    {
+      "id": "ch02_q021",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Curved Arrow Formal Charge Tracking",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "When a curved arrow moves a lone pair from oxygen to form a new C=O π bond, what happens to the formal charge on oxygen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The formal charge on oxygen decreases by -1."
+        },
+        {
+          "label": "B",
+          "text": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1)."
+        },
+        {
+          "label": "C",
+          "text": "The formal charge on oxygen remains unchanged."
+        },
+        {
+          "label": "D",
+          "text": "The formal charge doubles."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1).",
+      "explanation": "Donating a lone pair to form a shared bond reduces nonbonding electron count by 2 and adds 1 shared electron, increasing formal charge by +1.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q022",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Localized vs Delocalized Lone Pairs",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is the nitrogen lone pair in acetamide (CH₃CONH₂) delocalized whereas in ethylamine (CH₃CH₂NH₂) it is localized?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system."
+        },
+        {
+          "label": "B",
+          "text": "Ethylamine contains an aromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "Acetamide has no hydrogen atoms on nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "The nitrogen in acetamide is sp³ hybridized."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system.",
+      "explanation": "Lone pairs adjacent to π systems rehybridize from sp³ to 2p to participate in stabilizing resonance delocalization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q023",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Enolate Ambident Ion Resonance Hybrid",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What does the true resonance hybrid structure of the acetaldehyde enolate [CH₂=CH-O⁻] look like?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic three-membered ring."
+        },
+        {
+          "label": "C",
+          "text": "A symmetrical neutral alkene."
+        },
+        {
+          "label": "D",
+          "text": "A localized carbanion with no charge on oxygen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen.",
+      "explanation": "The resonance hybrid has partial double-bond character across C-C and C-O, with negative charge shared between C and O (predominantly on electronegative O).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q024",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Cis-Trans Geometric Isomerism in Alkenes",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why do cis-2-butene and trans-2-butene exist as distinct, isolable stereoisomers at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They interconvert at 10¹² times per second."
+        },
+        {
+          "label": "B",
+          "text": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion."
+        },
+        {
+          "label": "C",
+          "text": "They are enantiomers that rotate polarized light in opposite directions."
+        },
+        {
+          "label": "D",
+          "text": "They have different molecular formulas."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion.",
+      "explanation": "The carbon-carbon π bond prevents free rotation, locking substituents in distinct spatial orientations (cis vs trans).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q025",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Dipole Moments of Alkene Stereoisomers",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why does cis-1,2-dichloroethene possess a large molecular dipole moment (1.90 D) while trans-1,2-dichloroethene has zero dipole moment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer contains more chlorine atoms than the trans isomer."
+        },
+        {
+          "label": "B",
+          "text": "The trans isomer is nonplanar."
+        },
+        {
+          "label": "C",
+          "text": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an ionic salt."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly.",
+      "explanation": "Vector cancellation of equal and opposite C-Cl dipoles in the centrosymmetric trans isomer yields a zero molecular dipole moment.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q026",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Aromatic Delocalization Energy of Benzene",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the experimental structural evidence that benzene does not exist as alternating single and double bonds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "Benzene is a nonplanar puckered ring."
+        },
+        {
+          "label": "C",
+          "text": "Benzene decomposes instantly in air."
+        },
+        {
+          "label": "D",
+          "text": "Benzene has three long bonds and three short bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon.",
+      "explanation": "X-ray crystallography reveals identical 1.39 Å bond lengths and 120° angles, confirming completely delocalized 6π aromatic resonance.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q027",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Constitutional Isomers Definition",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the structural relationship between butane (CH₃CH₂CH₂CH₃) and isobutane [(CH₃)₂CHCH₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity."
+        },
+        {
+          "label": "B",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "C",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity.",
+      "explanation": "Constitutional isomers share the same molecular formula but have different atom connectivity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q028",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Stereoisomer Definition and Scope",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "How do stereoisomers differ fundamentally from constitutional isomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers have different numbers of carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers cannot be isolated."
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers have different functional groups."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds.",
+      "explanation": "Stereoisomers share identical IUPAC connectivity but differ in the spatial arrangement of atoms (e.g., cis/trans, R/S).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q029",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Resonance Contributor Octet Priority",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "When evaluating the relative stability of resonance contributors, which rule takes top priority?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Structures with maximum formal charge separation are preferred."
+        },
+        {
+          "label": "B",
+          "text": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets."
+        },
+        {
+          "label": "C",
+          "text": "Structures with fewer single bonds are preferred."
+        },
+        {
+          "label": "D",
+          "text": "Structures with positive charge on electronegative atoms are preferred."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets.",
+      "explanation": "Octet satisfaction is the foremost criterion for resonance stability, overriding electronegativity rules.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q030",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Resonance Reaver",
+      "topic": "Major vs Minor Resonance Hybrid Contributor",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "In the resonance contributors of formaldehyde [H₂C=O ↔ H₂C⁺-O⁻], which contributor is major?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The zwitterionic structure H₂C⁺-O⁻ is major."
+        },
+        {
+          "label": "B",
+          "text": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation."
+        },
+        {
+          "label": "C",
+          "text": "Neither structure exists."
+        },
+        {
+          "label": "D",
+          "text": "Both contributors contribute exactly 50%."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation.",
+      "explanation": "Neutral contributors with complete octets and minimal charge separation dominate the resonance hybrid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-reaver.png"
+      ]
+    },
+    {
+      "id": "ch02_q031",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Enolate Ambident Ion Resonance Hybrid",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does the true resonance hybrid structure of the acetaldehyde enolate [CH₂=CH-O⁻] look like?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A localized carbanion with no charge on oxygen."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic three-membered ring."
+        },
+        {
+          "label": "C",
+          "text": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "A symmetrical neutral alkene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen.",
+      "explanation": "The resonance hybrid has partial double-bond character across C-C and C-O, with negative charge shared between C and O (predominantly on electronegative O).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q032",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Cis-Trans Geometric Isomerism in Alkenes",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why do cis-2-butene and trans-2-butene exist as distinct, isolable stereoisomers at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They interconvert at 10¹² times per second."
+        },
+        {
+          "label": "B",
+          "text": "They have different molecular formulas."
+        },
+        {
+          "label": "C",
+          "text": "They are enantiomers that rotate polarized light in opposite directions."
+        },
+        {
+          "label": "D",
+          "text": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion.",
+      "explanation": "The carbon-carbon π bond prevents free rotation, locking substituents in distinct spatial orientations (cis vs trans).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q033",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Dipole Moments of Alkene Stereoisomers",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does cis-1,2-dichloroethene possess a large molecular dipole moment (1.90 D) while trans-1,2-dichloroethene has zero dipole moment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer is an ionic salt."
+        },
+        {
+          "label": "B",
+          "text": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly."
+        },
+        {
+          "label": "C",
+          "text": "The trans isomer is nonplanar."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer contains more chlorine atoms than the trans isomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly.",
+      "explanation": "Vector cancellation of equal and opposite C-Cl dipoles in the centrosymmetric trans isomer yields a zero molecular dipole moment.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q034",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Aromatic Delocalization Energy of Benzene",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the experimental structural evidence that benzene does not exist as alternating single and double bonds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzene has three long bonds and three short bonds."
+        },
+        {
+          "label": "B",
+          "text": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon."
+        },
+        {
+          "label": "C",
+          "text": "Benzene is a nonplanar puckered ring."
+        },
+        {
+          "label": "D",
+          "text": "Benzene decomposes instantly in air."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon.",
+      "explanation": "X-ray crystallography reveals identical 1.39 Å bond lengths and 120° angles, confirming completely delocalized 6π aromatic resonance.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q035",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Constitutional Isomers Definition",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the structural relationship between butane (CH₃CH₂CH₂CH₃) and isobutane [(CH₃)₂CHCH₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers."
+        },
+        {
+          "label": "C",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "D",
+          "text": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity.",
+      "explanation": "Constitutional isomers share the same molecular formula but have different atom connectivity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q036",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Stereoisomer Definition and Scope",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "How do stereoisomers differ fundamentally from constitutional isomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers cannot be isolated."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds."
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers have different numbers of carbon atoms."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers have different functional groups."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds.",
+      "explanation": "Stereoisomers share identical IUPAC connectivity but differ in the spatial arrangement of atoms (e.g., cis/trans, R/S).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q037",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Resonance Contributor Octet Priority",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "When evaluating the relative stability of resonance contributors, which rule takes top priority?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Structures with maximum formal charge separation are preferred."
+        },
+        {
+          "label": "B",
+          "text": "Structures with fewer single bonds are preferred."
+        },
+        {
+          "label": "C",
+          "text": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets."
+        },
+        {
+          "label": "D",
+          "text": "Structures with positive charge on electronegative atoms are preferred."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets.",
+      "explanation": "Octet satisfaction is the foremost criterion for resonance stability, overriding electronegativity rules.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q038",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Major vs Minor Resonance Hybrid Contributor",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "In the resonance contributors of formaldehyde [H₂C=O ↔ H₂C⁺-O⁻], which contributor is major?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Neither structure exists."
+        },
+        {
+          "label": "B",
+          "text": "Both contributors contribute exactly 50%."
+        },
+        {
+          "label": "C",
+          "text": "The zwitterionic structure H₂C⁺-O⁻ is major."
+        },
+        {
+          "label": "D",
+          "text": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation.",
+      "explanation": "Neutral contributors with complete octets and minimal charge separation dominate the resonance hybrid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q039",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Curved Arrow Formal Charge Tracking",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "When a curved arrow moves a lone pair from oxygen to form a new C=O π bond, what happens to the formal charge on oxygen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The formal charge on oxygen remains unchanged."
+        },
+        {
+          "label": "B",
+          "text": "The formal charge doubles."
+        },
+        {
+          "label": "C",
+          "text": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1)."
+        },
+        {
+          "label": "D",
+          "text": "The formal charge on oxygen decreases by -1."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1).",
+      "explanation": "Donating a lone pair to form a shared bond reduces nonbonding electron count by 2 and adds 1 shared electron, increasing formal charge by +1.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q040",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Formal Charge Fiend",
+      "topic": "Localized vs Delocalized Lone Pairs",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why is the nitrogen lone pair in acetamide (CH₃CONH₂) delocalized whereas in ethylamine (CH₃CH₂NH₂) it is localized?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitrogen in acetamide is sp³ hybridized."
+        },
+        {
+          "label": "B",
+          "text": "Acetamide has no hydrogen atoms on nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "Ethylamine contains an aromatic ring."
+        },
+        {
+          "label": "D",
+          "text": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system.",
+      "explanation": "Lone pairs adjacent to π systems rehybridize from sp³ to 2p to participate in stabilizing resonance delocalization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "formal-charge-fiend.png"
+      ]
+    },
+    {
+      "id": "ch02_q041",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Dipole Moments of Alkene Stereoisomers",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does cis-1,2-dichloroethene possess a large molecular dipole moment (1.90 D) while trans-1,2-dichloroethene has zero dipole moment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly."
+        },
+        {
+          "label": "B",
+          "text": "The trans isomer is nonplanar."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer contains more chlorine atoms than the trans isomer."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer is an ionic salt."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In the cis isomer, the two polar C-Cl bond dipoles point in the same direction and reinforce; in the trans isomer, they point in opposite directions and cancel exactly.",
+      "explanation": "Vector cancellation of equal and opposite C-Cl dipoles in the centrosymmetric trans isomer yields a zero molecular dipole moment.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q042",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Aromatic Delocalization Energy of Benzene",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the experimental structural evidence that benzene does not exist as alternating single and double bonds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "Benzene has three long bonds and three short bonds."
+        },
+        {
+          "label": "C",
+          "text": "Benzene decomposes instantly in air."
+        },
+        {
+          "label": "D",
+          "text": "Benzene is a nonplanar puckered ring."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "All six carbon-carbon bonds have an identical intermediate length of 1.39 Å (between C-C single 1.54 Å and C=C double 1.34 Å) in a regular planar hexagon.",
+      "explanation": "X-ray crystallography reveals identical 1.39 Å bond lengths and 120° angles, confirming completely delocalized 6π aromatic resonance.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q043",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Constitutional Isomers Definition",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the structural relationship between butane (CH₃CH₂CH₂CH₃) and isobutane [(CH₃)₂CHCH₃]?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomers."
+        },
+        {
+          "label": "B",
+          "text": "Conformational rotamers."
+        },
+        {
+          "label": "C",
+          "text": "Enantiomers."
+        },
+        {
+          "label": "D",
+          "text": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Constitutional (structural) isomers: identical molecular formula (C₄H₁₀) with completely different atom connectivity.",
+      "explanation": "Constitutional isomers share the same molecular formula but have different atom connectivity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q044",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Stereoisomer Definition and Scope",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "How do stereoisomers differ fundamentally from constitutional isomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers have different functional groups."
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers cannot be isolated."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers have different numbers of carbon atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereoisomers possess identical molecular formulas AND identical atom connectivity, differing only in the 3D spatial orientation of their bonds.",
+      "explanation": "Stereoisomers share identical IUPAC connectivity but differ in the spatial arrangement of atoms (e.g., cis/trans, R/S).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q045",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Resonance Contributor Octet Priority",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "When evaluating the relative stability of resonance contributors, which rule takes top priority?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Structures with positive charge on electronegative atoms are preferred."
+        },
+        {
+          "label": "B",
+          "text": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets."
+        },
+        {
+          "label": "C",
+          "text": "Structures with fewer single bonds are preferred."
+        },
+        {
+          "label": "D",
+          "text": "Structures with maximum formal charge separation are preferred."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Structures where every atom satisfies the octet rule (full valence shell) are vastly more significant than structures with open octets.",
+      "explanation": "Octet satisfaction is the foremost criterion for resonance stability, overriding electronegativity rules.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q046",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Major vs Minor Resonance Hybrid Contributor",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "In the resonance contributors of formaldehyde [H₂C=O ↔ H₂C⁺-O⁻], which contributor is major?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation."
+        },
+        {
+          "label": "B",
+          "text": "Neither structure exists."
+        },
+        {
+          "label": "C",
+          "text": "The zwitterionic structure H₂C⁺-O⁻ is major."
+        },
+        {
+          "label": "D",
+          "text": "Both contributors contribute exactly 50%."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The neutral structure H₂C=O is major because all atoms satisfy the octet rule with zero formal charge separation.",
+      "explanation": "Neutral contributors with complete octets and minimal charge separation dominate the resonance hybrid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q047",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Curved Arrow Formal Charge Tracking",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "When a curved arrow moves a lone pair from oxygen to form a new C=O π bond, what happens to the formal charge on oxygen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1)."
+        },
+        {
+          "label": "B",
+          "text": "The formal charge on oxygen remains unchanged."
+        },
+        {
+          "label": "C",
+          "text": "The formal charge on oxygen decreases by -1."
+        },
+        {
+          "label": "D",
+          "text": "The formal charge doubles."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The formal charge on oxygen increases by +1 (e.g., -1 becomes 0, or 0 becomes +1).",
+      "explanation": "Donating a lone pair to form a shared bond reduces nonbonding electron count by 2 and adds 1 shared electron, increasing formal charge by +1.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q048",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Localized vs Delocalized Lone Pairs",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why is the nitrogen lone pair in acetamide (CH₃CONH₂) delocalized whereas in ethylamine (CH₃CH₂NH₂) it is localized?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitrogen in acetamide is sp³ hybridized."
+        },
+        {
+          "label": "B",
+          "text": "Acetamide has no hydrogen atoms on nitrogen."
+        },
+        {
+          "label": "C",
+          "text": "Ethylamine contains an aromatic ring."
+        },
+        {
+          "label": "D",
+          "text": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "In acetamide, the nitrogen lone pair resides in an unhybridized 2p orbital that overlaps with the adjacent carbonyl C=O π system.",
+      "explanation": "Lone pairs adjacent to π systems rehybridize from sp³ to 2p to participate in stabilizing resonance delocalization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q049",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Enolate Ambident Ion Resonance Hybrid",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does the true resonance hybrid structure of the acetaldehyde enolate [CH₂=CH-O⁻] look like?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic three-membered ring."
+        },
+        {
+          "label": "B",
+          "text": "A symmetrical neutral alkene."
+        },
+        {
+          "label": "C",
+          "text": "A localized carbanion with no charge on oxygen."
+        },
+        {
+          "label": "D",
+          "text": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A continuous 3-center 4π electron system with partial negative charges on both the α-carbon (δ-) and oxygen (δ-), with greatest charge on oxygen.",
+      "explanation": "The resonance hybrid has partial double-bond character across C-C and C-O, with negative charge shared between C and O (predominantly on electronegative O).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    },
+    {
+      "id": "ch02_q050",
+      "chapter": 2,
+      "chapter_title": "Molecular Representations",
+      "boss": "Delocalization Overlord",
+      "topic": "Cis-Trans Geometric Isomerism in Alkenes",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "Why do cis-2-butene and trans-2-butene exist as distinct, isolable stereoisomers at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion."
+        },
+        {
+          "label": "B",
+          "text": "They are enantiomers that rotate polarized light in opposite directions."
+        },
+        {
+          "label": "C",
+          "text": "They interconvert at 10¹² times per second."
+        },
+        {
+          "label": "D",
+          "text": "They have different molecular formulas."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Restricted rotation around the carbon-carbon double bond due to the ~260 kJ/mol π bond energy barrier prevents spontaneous interconversion.",
+      "explanation": "The carbon-carbon π bond prevents free rotation, locking substituents in distinct spatial orientations (cis vs trans).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "delocalization-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Skeletal Sentry",
+    "Lone Pair Phantom",
+    "Resonance Reaver",
+    "Formal Charge Fiend",
+    "Delocalization Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Skeletal Sentry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "skeletal-sentry.png"
+        ]
+      },
+      {
+        "boss": "Lone Pair Phantom",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "lone-pair-phantom.png"
+        ]
+      },
+      {
+        "boss": "Resonance Reaver",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "resonance-reaver.png"
+        ]
+      },
+      {
+        "boss": "Formal Charge Fiend",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "formal-charge-fiend.png"
+        ]
+      },
+      {
+        "boss": "Delocalization Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "delocalization-overlord.png"
+        ]
+      }
+    ]
+  }
+}

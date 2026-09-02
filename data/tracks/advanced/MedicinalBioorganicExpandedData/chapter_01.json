@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 1,
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "Valence Vanguard",
+  "bosses": [
+    "Valence Vanguard",
+    "Electronegativity Elemental",
+    "Hybridization Hydra",
+    "Dipole Dragon",
+    "Molecular Orbital Monarch"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Valence Vanguard",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Electronegativity Elemental",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Hybridization Hydra",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Dipole Dragon",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Molecular Orbital Monarch",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch01_q001",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Lipinski Rule of Five Oral Bioavailability",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What are the four quantitative structural criteria of Lipinski's Rule of Five for predicting drug oral bioavailability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10."
+        },
+        {
+          "label": "B",
+          "text": "Must contain at least 5 heavy metals."
+        },
+        {
+          "label": "C",
+          "text": "MW > 1000 Da, LogP > 10, Zero H-bond donors, Exactly 20 oxygens."
+        },
+        {
+          "label": "D",
+          "text": "Must be completely insoluble in water with 10 chiral centers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10.",
+      "explanation": "Lipinski's Rule of 5 sets empirical thresholds for drug-likeness: MW \u2264 500, LogP \u2264 5, HBD \u2264 5, HBA \u2264 10.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q002",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Aspirin Irreversible COX Inhibition",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What is the chemical mechanism of action by which aspirin (acetylsalicylic acid) permanently inhibits cyclooxygenase (COX-1/2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-covalent ionic binding to arginine."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of the enzyme heme iron by peroxide."
+        },
+        {
+          "label": "C",
+          "text": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry."
+        },
+        {
+          "label": "D",
+          "text": "Chelation of zinc ions in the active site."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry.",
+      "explanation": "Aspirin acts as an irreversible suicide inhibitor by acetylating the Ser530 hydroxyl group in the cyclooxygenase channel.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q003",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Beta-Lactam Antibiotic Mechanism of Action",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "How do penicillin and cephalosporin \u03b2-lactam antibiotics chemically inhibit bacterial cell wall transpeptidase enzymes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They intercalate into bacterial DNA."
+        },
+        {
+          "label": "B",
+          "text": "They bind to bacterial ribosomes to stop translation."
+        },
+        {
+          "label": "C",
+          "text": "They dissolve the bacterial cell membrane like detergents."
+        },
+        {
+          "label": "D",
+          "text": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct.",
+      "explanation": "High ring strain (~110 kJ/mol) accelerates nucleophilic attack of the transpeptidase serine on the \u03b2-lactam carbonyl, permanently inactivating the enzyme.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q004",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Omeprazole (Prilosec) Prodrug Activation",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "How does the proton pump inhibitor omeprazole undergo acid-catalyzed activation in gastric parietal cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is reduced by gastric NADH."
+        },
+        {
+          "label": "B",
+          "text": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase."
+        },
+        {
+          "label": "C",
+          "text": "It undergoes photochemical cleavage by stomach light."
+        },
+        {
+          "label": "D",
+          "text": "It is directly absorbed as an active neutral amine."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase.",
+      "explanation": "Omeprazole is a prodrug activated selectively in the acidic canaliculus of parietal cells to a covalent sulfenamide inhibitor.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q005",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Ibuprofen vs Naproxen Chiral NSAID Activity",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why is (S)-(+)-ibuprofen biologically active as an anti-inflammatory drug while (R)-(-)-ibuprofen is inactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both enantiomers have identical in vitro activity."
+        },
+        {
+          "label": "B",
+          "text": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S)."
+        },
+        {
+          "label": "C",
+          "text": "The (R) enantiomer is converted into aspirin."
+        },
+        {
+          "label": "D",
+          "text": "The (R) enantiomer is toxic and destroys the liver."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S).",
+      "explanation": "Chiral drug-receptor interactions are stereospecific; an in vivo acyl-CoA epimerase inverts inactive (R)-ibuprofen into active (S)-ibuprofen.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q006",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Local Anesthetics (Lidocaine) Voltage-Gated Block",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What structural pharmacophore in lidocaine and procaine is required for blocking neuronal voltage-gated Na\u207a channels?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0)."
+        },
+        {
+          "label": "B",
+          "text": "A polycyclic steroid core with four ketone groups."
+        },
+        {
+          "label": "C",
+          "text": "A cyclic tetrasaccharide ring."
+        },
+        {
+          "label": "D",
+          "text": "A long hydrocarbon wax chain with zero nitrogens."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0).",
+      "explanation": "Local anesthetics feature a universal 3-part pharmacophore: lipophilic aromatic ring, ester/amide linker, and ionizable tertiary amine.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q007",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Prodrug Ester Bioactivation by Esterases",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why are ACE inhibitors such as enalapril formulated as ethyl ester prodrugs rather than the active dicarboxylic acid (enalaprilat)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ester group increases shelf-life to 100 years."
+        },
+        {
+          "label": "B",
+          "text": "Esterases convert enalapril into an antibiotic."
+        },
+        {
+          "label": "C",
+          "text": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug."
+        },
+        {
+          "label": "D",
+          "text": "Enalaprilat is an explosive solid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug.",
+      "explanation": "Masking one carboxylic acid as an ethyl ester improves oral intestinal absorption; hepatic esterases rapidly liberate the active diacid enalaprilat.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q008",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Cytochrome P450 Aliphatic Hydroxylation",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What chemical transformation is commonly executed by hepatic Cytochrome P450 enzymes during Phase I drug metabolism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conversion of aromatic rings into aliphatic polymers."
+        },
+        {
+          "label": "B",
+          "text": "Halogenation with chlorine gas."
+        },
+        {
+          "label": "C",
+          "text": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion."
+        },
+        {
+          "label": "D",
+          "text": "Reduction of carboxylic acids to alkanes."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion.",
+      "explanation": "Phase I CYP450 monooxygenases oxidize lipophilic C-H bonds to polar hydroxyl groups to facilitate renal clearance.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q009",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Glucuronidation Phase II Conjugation",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "How does Phase II UDP-glucuronosyltransferase (UGT) metabolism solubilize lipophilic drugs containing -OH or -COOH groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It decarboxylates the drug into carbon dioxide."
+        },
+        {
+          "label": "B",
+          "text": "It attaches a fatty acid wax to the drug."
+        },
+        {
+          "label": "C",
+          "text": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion."
+        },
+        {
+          "label": "D",
+          "text": "It methylates the drug into an ether."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion.",
+      "explanation": "Glucuronidation appends a highly polar, water-soluble glucuronate sugar, targeting the conjugate for rapid urinary or biliary excretion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q010",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Sulfa Drugs (Sulfonamides) Antimetabolite Action",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "How do sulfonamide antibiotics (e.g., sulfamethoxazole) selectively kill bacteria without harming human cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They destroy human red blood cells directly."
+        },
+        {
+          "label": "B",
+          "text": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis."
+        },
+        {
+          "label": "C",
+          "text": "They inhibit human DNA polymerase."
+        },
+        {
+          "label": "D",
+          "text": "They block human cholesterol absorption."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis.",
+      "explanation": "Bacteria must synthesize folate de novo from PABA; humans absorb folate from diet and lack the target enzyme dihydropteroate synthase.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q011",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Lipinski Rule of Five Oral Bioavailability",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What are the four quantitative structural criteria of Lipinski's Rule of Five for predicting drug oral bioavailability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Must be completely insoluble in water with 10 chiral centers."
+        },
+        {
+          "label": "B",
+          "text": "MW > 1000 Da, LogP > 10, Zero H-bond donors, Exactly 20 oxygens."
+        },
+        {
+          "label": "C",
+          "text": "Must contain at least 5 heavy metals."
+        },
+        {
+          "label": "D",
+          "text": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10.",
+      "explanation": "Lipinski's Rule of 5 sets empirical thresholds for drug-likeness: MW \u2264 500, LogP \u2264 5, HBD \u2264 5, HBA \u2264 10.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q012",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Aspirin Irreversible COX Inhibition",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What is the chemical mechanism of action by which aspirin (acetylsalicylic acid) permanently inhibits cyclooxygenase (COX-1/2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chelation of zinc ions in the active site."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of the enzyme heme iron by peroxide."
+        },
+        {
+          "label": "C",
+          "text": "Non-covalent ionic binding to arginine."
+        },
+        {
+          "label": "D",
+          "text": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry.",
+      "explanation": "Aspirin acts as an irreversible suicide inhibitor by acetylating the Ser530 hydroxyl group in the cyclooxygenase channel.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q013",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Beta-Lactam Antibiotic Mechanism of Action",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "How do penicillin and cephalosporin \u03b2-lactam antibiotics chemically inhibit bacterial cell wall transpeptidase enzymes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They intercalate into bacterial DNA."
+        },
+        {
+          "label": "B",
+          "text": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct."
+        },
+        {
+          "label": "C",
+          "text": "They bind to bacterial ribosomes to stop translation."
+        },
+        {
+          "label": "D",
+          "text": "They dissolve the bacterial cell membrane like detergents."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct.",
+      "explanation": "High ring strain (~110 kJ/mol) accelerates nucleophilic attack of the transpeptidase serine on the \u03b2-lactam carbonyl, permanently inactivating the enzyme.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q014",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Omeprazole (Prilosec) Prodrug Activation",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "How does the proton pump inhibitor omeprazole undergo acid-catalyzed activation in gastric parietal cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It undergoes photochemical cleavage by stomach light."
+        },
+        {
+          "label": "B",
+          "text": "It is reduced by gastric NADH."
+        },
+        {
+          "label": "C",
+          "text": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase."
+        },
+        {
+          "label": "D",
+          "text": "It is directly absorbed as an active neutral amine."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase.",
+      "explanation": "Omeprazole is a prodrug activated selectively in the acidic canaliculus of parietal cells to a covalent sulfenamide inhibitor.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q015",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Ibuprofen vs Naproxen Chiral NSAID Activity",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why is (S)-(+)-ibuprofen biologically active as an anti-inflammatory drug while (R)-(-)-ibuprofen is inactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (R) enantiomer is converted into aspirin."
+        },
+        {
+          "label": "B",
+          "text": "The (R) enantiomer is toxic and destroys the liver."
+        },
+        {
+          "label": "C",
+          "text": "Both enantiomers have identical in vitro activity."
+        },
+        {
+          "label": "D",
+          "text": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S).",
+      "explanation": "Chiral drug-receptor interactions are stereospecific; an in vivo acyl-CoA epimerase inverts inactive (R)-ibuprofen into active (S)-ibuprofen.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q016",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Local Anesthetics (Lidocaine) Voltage-Gated Block",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What structural pharmacophore in lidocaine and procaine is required for blocking neuronal voltage-gated Na\u207a channels?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0)."
+        },
+        {
+          "label": "B",
+          "text": "A cyclic tetrasaccharide ring."
+        },
+        {
+          "label": "C",
+          "text": "A long hydrocarbon wax chain with zero nitrogens."
+        },
+        {
+          "label": "D",
+          "text": "A polycyclic steroid core with four ketone groups."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0).",
+      "explanation": "Local anesthetics feature a universal 3-part pharmacophore: lipophilic aromatic ring, ester/amide linker, and ionizable tertiary amine.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q017",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Prodrug Ester Bioactivation by Esterases",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why are ACE inhibitors such as enalapril formulated as ethyl ester prodrugs rather than the active dicarboxylic acid (enalaprilat)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esterases convert enalapril into an antibiotic."
+        },
+        {
+          "label": "B",
+          "text": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug."
+        },
+        {
+          "label": "C",
+          "text": "The ester group increases shelf-life to 100 years."
+        },
+        {
+          "label": "D",
+          "text": "Enalaprilat is an explosive solid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug.",
+      "explanation": "Masking one carboxylic acid as an ethyl ester improves oral intestinal absorption; hepatic esterases rapidly liberate the active diacid enalaprilat.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q018",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Cytochrome P450 Aliphatic Hydroxylation",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "What chemical transformation is commonly executed by hepatic Cytochrome P450 enzymes during Phase I drug metabolism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion."
+        },
+        {
+          "label": "B",
+          "text": "Reduction of carboxylic acids to alkanes."
+        },
+        {
+          "label": "C",
+          "text": "Halogenation with chlorine gas."
+        },
+        {
+          "label": "D",
+          "text": "Conversion of aromatic rings into aliphatic polymers."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion.",
+      "explanation": "Phase I CYP450 monooxygenases oxidize lipophilic C-H bonds to polar hydroxyl groups to facilitate renal clearance.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q019",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Glucuronidation Phase II Conjugation",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "How does Phase II UDP-glucuronosyltransferase (UGT) metabolism solubilize lipophilic drugs containing -OH or -COOH groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It methylates the drug into an ether."
+        },
+        {
+          "label": "B",
+          "text": "It decarboxylates the drug into carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "It attaches a fatty acid wax to the drug."
+        },
+        {
+          "label": "D",
+          "text": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion.",
+      "explanation": "Glucuronidation appends a highly polar, water-soluble glucuronate sugar, targeting the conjugate for rapid urinary or biliary excretion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q020",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Sulfa Drugs (Sulfonamides) Antimetabolite Action",
+      "difficulty": "hard",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "How do sulfonamide antibiotics (e.g., sulfamethoxazole) selectively kill bacteria without harming human cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis."
+        },
+        {
+          "label": "B",
+          "text": "They block human cholesterol absorption."
+        },
+        {
+          "label": "C",
+          "text": "They destroy human red blood cells directly."
+        },
+        {
+          "label": "D",
+          "text": "They inhibit human DNA polymerase."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis.",
+      "explanation": "Bacteria must synthesize folate de novo from PABA; humans absorb folate from diet and lack the target enzyme dihydropteroate synthase.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q021",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Lipinski Rule of Five Oral Bioavailability",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What are the four quantitative structural criteria of Lipinski's Rule of Five for predicting drug oral bioavailability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Must contain at least 5 heavy metals."
+        },
+        {
+          "label": "B",
+          "text": "MW > 1000 Da, LogP > 10, Zero H-bond donors, Exactly 20 oxygens."
+        },
+        {
+          "label": "C",
+          "text": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10."
+        },
+        {
+          "label": "D",
+          "text": "Must be completely insoluble in water with 10 chiral centers."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10.",
+      "explanation": "Lipinski's Rule of 5 sets empirical thresholds for drug-likeness: MW \u2264 500, LogP \u2264 5, HBD \u2264 5, HBA \u2264 10.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q022",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Aspirin Irreversible COX Inhibition",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What is the chemical mechanism of action by which aspirin (acetylsalicylic acid) permanently inhibits cyclooxygenase (COX-1/2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of the enzyme heme iron by peroxide."
+        },
+        {
+          "label": "B",
+          "text": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry."
+        },
+        {
+          "label": "C",
+          "text": "Non-covalent ionic binding to arginine."
+        },
+        {
+          "label": "D",
+          "text": "Chelation of zinc ions in the active site."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry.",
+      "explanation": "Aspirin acts as an irreversible suicide inhibitor by acetylating the Ser530 hydroxyl group in the cyclooxygenase channel.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q023",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Beta-Lactam Antibiotic Mechanism of Action",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "How do penicillin and cephalosporin \u03b2-lactam antibiotics chemically inhibit bacterial cell wall transpeptidase enzymes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They bind to bacterial ribosomes to stop translation."
+        },
+        {
+          "label": "B",
+          "text": "They intercalate into bacterial DNA."
+        },
+        {
+          "label": "C",
+          "text": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct."
+        },
+        {
+          "label": "D",
+          "text": "They dissolve the bacterial cell membrane like detergents."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct.",
+      "explanation": "High ring strain (~110 kJ/mol) accelerates nucleophilic attack of the transpeptidase serine on the \u03b2-lactam carbonyl, permanently inactivating the enzyme.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q024",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Omeprazole (Prilosec) Prodrug Activation",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "How does the proton pump inhibitor omeprazole undergo acid-catalyzed activation in gastric parietal cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase."
+        },
+        {
+          "label": "B",
+          "text": "It is directly absorbed as an active neutral amine."
+        },
+        {
+          "label": "C",
+          "text": "It is reduced by gastric NADH."
+        },
+        {
+          "label": "D",
+          "text": "It undergoes photochemical cleavage by stomach light."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase.",
+      "explanation": "Omeprazole is a prodrug activated selectively in the acidic canaliculus of parietal cells to a covalent sulfenamide inhibitor.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q025",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Ibuprofen vs Naproxen Chiral NSAID Activity",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why is (S)-(+)-ibuprofen biologically active as an anti-inflammatory drug while (R)-(-)-ibuprofen is inactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both enantiomers have identical in vitro activity."
+        },
+        {
+          "label": "B",
+          "text": "The (R) enantiomer is toxic and destroys the liver."
+        },
+        {
+          "label": "C",
+          "text": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S)."
+        },
+        {
+          "label": "D",
+          "text": "The (R) enantiomer is converted into aspirin."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S).",
+      "explanation": "Chiral drug-receptor interactions are stereospecific; an in vivo acyl-CoA epimerase inverts inactive (R)-ibuprofen into active (S)-ibuprofen.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q026",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Local Anesthetics (Lidocaine) Voltage-Gated Block",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "What structural pharmacophore in lidocaine and procaine is required for blocking neuronal voltage-gated Na\u207a channels?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A long hydrocarbon wax chain with zero nitrogens."
+        },
+        {
+          "label": "B",
+          "text": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0)."
+        },
+        {
+          "label": "C",
+          "text": "A cyclic tetrasaccharide ring."
+        },
+        {
+          "label": "D",
+          "text": "A polycyclic steroid core with four ketone groups."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0).",
+      "explanation": "Local anesthetics feature a universal 3-part pharmacophore: lipophilic aromatic ring, ester/amide linker, and ionizable tertiary amine.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q027",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Prodrug Ester Bioactivation by Esterases",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why are ACE inhibitors such as enalapril formulated as ethyl ester prodrugs rather than the active dicarboxylic acid (enalaprilat)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enalaprilat is an explosive solid."
+        },
+        {
+          "label": "B",
+          "text": "Esterases convert enalapril into an antibiotic."
+        },
+        {
+          "label": "C",
+          "text": "The ester group increases shelf-life to 100 years."
+        },
+        {
+          "label": "D",
+          "text": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug.",
+      "explanation": "Masking one carboxylic acid as an ethyl ester improves oral intestinal absorption; hepatic esterases rapidly liberate the active diacid enalaprilat.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q028",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Cytochrome P450 Aliphatic Hydroxylation",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What chemical transformation is commonly executed by hepatic Cytochrome P450 enzymes during Phase I drug metabolism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reduction of carboxylic acids to alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Conversion of aromatic rings into aliphatic polymers."
+        },
+        {
+          "label": "C",
+          "text": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion."
+        },
+        {
+          "label": "D",
+          "text": "Halogenation with chlorine gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion.",
+      "explanation": "Phase I CYP450 monooxygenases oxidize lipophilic C-H bonds to polar hydroxyl groups to facilitate renal clearance.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q029",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Glucuronidation Phase II Conjugation",
+      "difficulty": "hard",
+      "question_type": "drug_mechanism_of_action",
+      "question": "How does Phase II UDP-glucuronosyltransferase (UGT) metabolism solubilize lipophilic drugs containing -OH or -COOH groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It methylates the drug into an ether."
+        },
+        {
+          "label": "B",
+          "text": "It decarboxylates the drug into carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion."
+        },
+        {
+          "label": "D",
+          "text": "It attaches a fatty acid wax to the drug."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion.",
+      "explanation": "Glucuronidation appends a highly polar, water-soluble glucuronate sugar, targeting the conjugate for rapid urinary or biliary excretion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q030",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Sulfa Drugs (Sulfonamides) Antimetabolite Action",
+      "difficulty": "hard",
+      "question_type": "pharmacophore_identification",
+      "question": "How do sulfonamide antibiotics (e.g., sulfamethoxazole) selectively kill bacteria without harming human cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They destroy human red blood cells directly."
+        },
+        {
+          "label": "B",
+          "text": "They block human cholesterol absorption."
+        },
+        {
+          "label": "C",
+          "text": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis."
+        },
+        {
+          "label": "D",
+          "text": "They inhibit human DNA polymerase."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis.",
+      "explanation": "Bacteria must synthesize folate de novo from PABA; humans absorb folate from diet and lack the target enzyme dihydropteroate synthase.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q031",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Lipinski Rule of Five Oral Bioavailability",
+      "difficulty": "easy",
+      "question_type": "lipinski_rule_of_five",
+      "question": "What are the four quantitative structural criteria of Lipinski's Rule of Five for predicting drug oral bioavailability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Must contain at least 5 heavy metals."
+        },
+        {
+          "label": "B",
+          "text": "Must be completely insoluble in water with 10 chiral centers."
+        },
+        {
+          "label": "C",
+          "text": "MW > 1000 Da, LogP > 10, Zero H-bond donors, Exactly 20 oxygens."
+        },
+        {
+          "label": "D",
+          "text": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10.",
+      "explanation": "Lipinski's Rule of 5 sets empirical thresholds for drug-likeness: MW \u2264 500, LogP \u2264 5, HBD \u2264 5, HBA \u2264 10.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q032",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Aspirin Irreversible COX Inhibition",
+      "difficulty": "easy",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What is the chemical mechanism of action by which aspirin (acetylsalicylic acid) permanently inhibits cyclooxygenase (COX-1/2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chelation of zinc ions in the active site."
+        },
+        {
+          "label": "B",
+          "text": "Non-covalent ionic binding to arginine."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of the enzyme heme iron by peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry.",
+      "explanation": "Aspirin acts as an irreversible suicide inhibitor by acetylating the Ser530 hydroxyl group in the cyclooxygenase channel.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q033",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Beta-Lactam Antibiotic Mechanism of Action",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "How do penicillin and cephalosporin \u03b2-lactam antibiotics chemically inhibit bacterial cell wall transpeptidase enzymes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They dissolve the bacterial cell membrane like detergents."
+        },
+        {
+          "label": "B",
+          "text": "They intercalate into bacterial DNA."
+        },
+        {
+          "label": "C",
+          "text": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct."
+        },
+        {
+          "label": "D",
+          "text": "They bind to bacterial ribosomes to stop translation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct.",
+      "explanation": "High ring strain (~110 kJ/mol) accelerates nucleophilic attack of the transpeptidase serine on the \u03b2-lactam carbonyl, permanently inactivating the enzyme.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q034",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Omeprazole (Prilosec) Prodrug Activation",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "How does the proton pump inhibitor omeprazole undergo acid-catalyzed activation in gastric parietal cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is reduced by gastric NADH."
+        },
+        {
+          "label": "B",
+          "text": "It is directly absorbed as an active neutral amine."
+        },
+        {
+          "label": "C",
+          "text": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase."
+        },
+        {
+          "label": "D",
+          "text": "It undergoes photochemical cleavage by stomach light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase.",
+      "explanation": "Omeprazole is a prodrug activated selectively in the acidic canaliculus of parietal cells to a covalent sulfenamide inhibitor.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q035",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Ibuprofen vs Naproxen Chiral NSAID Activity",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why is (S)-(+)-ibuprofen biologically active as an anti-inflammatory drug while (R)-(-)-ibuprofen is inactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The (R) enantiomer is converted into aspirin."
+        },
+        {
+          "label": "B",
+          "text": "Both enantiomers have identical in vitro activity."
+        },
+        {
+          "label": "C",
+          "text": "The (R) enantiomer is toxic and destroys the liver."
+        },
+        {
+          "label": "D",
+          "text": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S).",
+      "explanation": "Chiral drug-receptor interactions are stereospecific; an in vivo acyl-CoA epimerase inverts inactive (R)-ibuprofen into active (S)-ibuprofen.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q036",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Local Anesthetics (Lidocaine) Voltage-Gated Block",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What structural pharmacophore in lidocaine and procaine is required for blocking neuronal voltage-gated Na\u207a channels?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic tetrasaccharide ring."
+        },
+        {
+          "label": "B",
+          "text": "A polycyclic steroid core with four ketone groups."
+        },
+        {
+          "label": "C",
+          "text": "A long hydrocarbon wax chain with zero nitrogens."
+        },
+        {
+          "label": "D",
+          "text": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0).",
+      "explanation": "Local anesthetics feature a universal 3-part pharmacophore: lipophilic aromatic ring, ester/amide linker, and ionizable tertiary amine.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q037",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Prodrug Ester Bioactivation by Esterases",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why are ACE inhibitors such as enalapril formulated as ethyl ester prodrugs rather than the active dicarboxylic acid (enalaprilat)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esterases convert enalapril into an antibiotic."
+        },
+        {
+          "label": "B",
+          "text": "Enalaprilat is an explosive solid."
+        },
+        {
+          "label": "C",
+          "text": "The ester group increases shelf-life to 100 years."
+        },
+        {
+          "label": "D",
+          "text": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug.",
+      "explanation": "Masking one carboxylic acid as an ethyl ester improves oral intestinal absorption; hepatic esterases rapidly liberate the active diacid enalaprilat.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q038",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Cytochrome P450 Aliphatic Hydroxylation",
+      "difficulty": "hard",
+      "question_type": "pharmacophore_identification",
+      "question": "What chemical transformation is commonly executed by hepatic Cytochrome P450 enzymes during Phase I drug metabolism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reduction of carboxylic acids to alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Conversion of aromatic rings into aliphatic polymers."
+        },
+        {
+          "label": "C",
+          "text": "Halogenation with chlorine gas."
+        },
+        {
+          "label": "D",
+          "text": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion.",
+      "explanation": "Phase I CYP450 monooxygenases oxidize lipophilic C-H bonds to polar hydroxyl groups to facilitate renal clearance.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q039",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Glucuronidation Phase II Conjugation",
+      "difficulty": "hard",
+      "question_type": "lipinski_rule_of_five",
+      "question": "How does Phase II UDP-glucuronosyltransferase (UGT) metabolism solubilize lipophilic drugs containing -OH or -COOH groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It decarboxylates the drug into carbon dioxide."
+        },
+        {
+          "label": "B",
+          "text": "It methylates the drug into an ether."
+        },
+        {
+          "label": "C",
+          "text": "It attaches a fatty acid wax to the drug."
+        },
+        {
+          "label": "D",
+          "text": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion.",
+      "explanation": "Glucuronidation appends a highly polar, water-soluble glucuronate sugar, targeting the conjugate for rapid urinary or biliary excretion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q040",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Sulfa Drugs (Sulfonamides) Antimetabolite Action",
+      "difficulty": "hard",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "How do sulfonamide antibiotics (e.g., sulfamethoxazole) selectively kill bacteria without harming human cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They destroy human red blood cells directly."
+        },
+        {
+          "label": "B",
+          "text": "They inhibit human DNA polymerase."
+        },
+        {
+          "label": "C",
+          "text": "They block human cholesterol absorption."
+        },
+        {
+          "label": "D",
+          "text": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis.",
+      "explanation": "Bacteria must synthesize folate de novo from PABA; humans absorb folate from diet and lack the target enzyme dihydropteroate synthase.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q041",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Lipinski Rule of Five Oral Bioavailability",
+      "difficulty": "easy",
+      "question_type": "drug_mechanism_of_action",
+      "question": "What are the four quantitative structural criteria of Lipinski's Rule of Five for predicting drug oral bioavailability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Must be completely insoluble in water with 10 chiral centers."
+        },
+        {
+          "label": "B",
+          "text": "MW > 1000 Da, LogP > 10, Zero H-bond donors, Exactly 20 oxygens."
+        },
+        {
+          "label": "C",
+          "text": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10."
+        },
+        {
+          "label": "D",
+          "text": "Must contain at least 5 heavy metals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Molecular Weight \u2264 500 Da, LogP \u2264 5, Hydrogen Bond Donors (OH + NH) \u2264 5, and Hydrogen Bond Acceptors (O + N) \u2264 10.",
+      "explanation": "Lipinski's Rule of 5 sets empirical thresholds for drug-likeness: MW \u2264 500, LogP \u2264 5, HBD \u2264 5, HBA \u2264 10.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q042",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Aspirin Irreversible COX Inhibition",
+      "difficulty": "easy",
+      "question_type": "pharmacophore_identification",
+      "question": "What is the chemical mechanism of action by which aspirin (acetylsalicylic acid) permanently inhibits cyclooxygenase (COX-1/2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-covalent ionic binding to arginine."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of the enzyme heme iron by peroxide."
+        },
+        {
+          "label": "C",
+          "text": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry."
+        },
+        {
+          "label": "D",
+          "text": "Chelation of zinc ions in the active site."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Covalent transesterification: the acetyl group of aspirin is transferred to an active site Ser530 hydroxyl group via nucleophilic acyl substitution, blocking arachidonic acid entry.",
+      "explanation": "Aspirin acts as an irreversible suicide inhibitor by acetylating the Ser530 hydroxyl group in the cyclooxygenase channel.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q043",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Beta-Lactam Antibiotic Mechanism of Action",
+      "difficulty": "medium",
+      "question_type": "lipinski_rule_of_five",
+      "question": "How do penicillin and cephalosporin \u03b2-lactam antibiotics chemically inhibit bacterial cell wall transpeptidase enzymes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They dissolve the bacterial cell membrane like detergents."
+        },
+        {
+          "label": "B",
+          "text": "They intercalate into bacterial DNA."
+        },
+        {
+          "label": "C",
+          "text": "They bind to bacterial ribosomes to stop translation."
+        },
+        {
+          "label": "D",
+          "text": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The strained 4-membered \u03b2-lactam ring acylates the catalytic serine residue of transpeptidase, forming a stable, non-hydrolyzable acyl-enzyme ester adduct.",
+      "explanation": "High ring strain (~110 kJ/mol) accelerates nucleophilic attack of the transpeptidase serine on the \u03b2-lactam carbonyl, permanently inactivating the enzyme.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q044",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Omeprazole (Prilosec) Prodrug Activation",
+      "difficulty": "medium",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "How does the proton pump inhibitor omeprazole undergo acid-catalyzed activation in gastric parietal cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase."
+        },
+        {
+          "label": "B",
+          "text": "It undergoes photochemical cleavage by stomach light."
+        },
+        {
+          "label": "C",
+          "text": "It is directly absorbed as an active neutral amine."
+        },
+        {
+          "label": "D",
+          "text": "It is reduced by gastric NADH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "In the strongly acidic environment of the stomach (pH ~ 1), omeprazole undergoes acid-catalyzed Smiles-type rearrangement into a reactive sulfenamide, which forms a covalent disulfide bond with Cys813 of H\u207a/K\u207a ATPase.",
+      "explanation": "Omeprazole is a prodrug activated selectively in the acidic canaliculus of parietal cells to a covalent sulfenamide inhibitor.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q045",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Ibuprofen vs Naproxen Chiral NSAID Activity",
+      "difficulty": "medium",
+      "question_type": "drug_mechanism_of_action",
+      "question": "Why is (S)-(+)-ibuprofen biologically active as an anti-inflammatory drug while (R)-(-)-ibuprofen is inactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both enantiomers have identical in vitro activity."
+        },
+        {
+          "label": "B",
+          "text": "The (R) enantiomer is toxic and destroys the liver."
+        },
+        {
+          "label": "C",
+          "text": "The (R) enantiomer is converted into aspirin."
+        },
+        {
+          "label": "D",
+          "text": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Only the (S) enantiomer fits stereospecifically into the chiral binding pocket of cyclooxygenase; in vivo, an isomerase enzymatically inverts inactive (R) into active (S).",
+      "explanation": "Chiral drug-receptor interactions are stereospecific; an in vivo acyl-CoA epimerase inverts inactive (R)-ibuprofen into active (S)-ibuprofen.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q046",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Local Anesthetics (Lidocaine) Voltage-Gated Block",
+      "difficulty": "medium",
+      "question_type": "pharmacophore_identification",
+      "question": "What structural pharmacophore in lidocaine and procaine is required for blocking neuronal voltage-gated Na\u207a channels?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A cyclic tetrasaccharide ring."
+        },
+        {
+          "label": "B",
+          "text": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0)."
+        },
+        {
+          "label": "C",
+          "text": "A long hydrocarbon wax chain with zero nitrogens."
+        },
+        {
+          "label": "D",
+          "text": "A polycyclic steroid core with four ketone groups."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A lipophilic aromatic ring connected via an intermediate ester/amide linker to an ionizable tertiary amine tail (pKa ~ 8.0).",
+      "explanation": "Local anesthetics feature a universal 3-part pharmacophore: lipophilic aromatic ring, ester/amide linker, and ionizable tertiary amine.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q047",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Prodrug Ester Bioactivation by Esterases",
+      "difficulty": "hard",
+      "question_type": "lipinski_rule_of_five",
+      "question": "Why are ACE inhibitors such as enalapril formulated as ethyl ester prodrugs rather than the active dicarboxylic acid (enalaprilat)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug."
+        },
+        {
+          "label": "B",
+          "text": "The ester group increases shelf-life to 100 years."
+        },
+        {
+          "label": "C",
+          "text": "Enalaprilat is an explosive solid."
+        },
+        {
+          "label": "D",
+          "text": "Esterases convert enalapril into an antibiotic."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The neutral monoester has higher lipophilicity and oral membrane absorption, and is rapidly hydrolyzed by serum esterases in the liver to the active dicarboxylate drug.",
+      "explanation": "Masking one carboxylic acid as an ethyl ester improves oral intestinal absorption; hepatic esterases rapidly liberate the active diacid enalaprilat.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q048",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Cytochrome P450 Aliphatic Hydroxylation",
+      "difficulty": "hard",
+      "question_type": "metabolic_fgi_pathway",
+      "question": "What chemical transformation is commonly executed by hepatic Cytochrome P450 enzymes during Phase I drug metabolism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reduction of carboxylic acids to alkanes."
+        },
+        {
+          "label": "B",
+          "text": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion."
+        },
+        {
+          "label": "C",
+          "text": "Conversion of aromatic rings into aliphatic polymers."
+        },
+        {
+          "label": "D",
+          "text": "Halogenation with chlorine gas."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Stereoselective insertion of an oxygen atom into an unactivated C-H bond to form an alcohol (-OH), increasing water solubility for excretion.",
+      "explanation": "Phase I CYP450 monooxygenases oxidize lipophilic C-H bonds to polar hydroxyl groups to facilitate renal clearance.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q049",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Glucuronidation Phase II Conjugation",
+      "difficulty": "hard",
+      "question_type": "drug_mechanism_of_action",
+      "question": "How does Phase II UDP-glucuronosyltransferase (UGT) metabolism solubilize lipophilic drugs containing -OH or -COOH groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It attaches a fatty acid wax to the drug."
+        },
+        {
+          "label": "B",
+          "text": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion."
+        },
+        {
+          "label": "C",
+          "text": "It decarboxylates the drug into carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "It methylates the drug into an ether."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It transfers a hydrophilic, polyhydroxylated glucuronic acid sugar moiety to the drug via an SN2 glycosidic linkage, vastly increasing aqueous excretion.",
+      "explanation": "Glucuronidation appends a highly polar, water-soluble glucuronate sugar, targeting the conjugate for rapid urinary or biliary excretion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q050",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Sulfa Drugs (Sulfonamides) Antimetabolite Action",
+      "difficulty": "hard",
+      "question_type": "pharmacophore_identification",
+      "question": "How do sulfonamide antibiotics (e.g., sulfamethoxazole) selectively kill bacteria without harming human cells?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis."
+        },
+        {
+          "label": "B",
+          "text": "They destroy human red blood cells directly."
+        },
+        {
+          "label": "C",
+          "text": "They inhibit human DNA polymerase."
+        },
+        {
+          "label": "D",
+          "text": "They block human cholesterol absorption."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "They act as structural mimics (antimetabolites) of p-aminobenzoic acid (PABA), competitively inhibiting dihydropteroate synthase in bacterial folic acid biosynthesis.",
+      "explanation": "Bacteria must synthesize folate de novo from PABA; humans absorb folate from diet and lack the target enzyme dihydropteroate synthase.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    }
+  ]
+}

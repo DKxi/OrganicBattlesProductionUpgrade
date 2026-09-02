@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 20,
+  "chapter_title": "Carboxylic Acids and Their Derivatives",
+  "assigned_boss": "Carboxylate Captain",
+  "bosses": [
+    "Carboxylate Captain",
+    "Acid Chloride Assassin",
+    "Tetrahedral Titan",
+    "Anhydride Archon",
+    "Acyl Transfer Sovereign"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Carboxylate Captain",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Acid Chloride Assassin",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Tetrahedral Titan",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Anhydride Archon",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Acyl Transfer Sovereign",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch20_q001",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Enthalpy of Reaction Calculation",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Using standard BDE tables for Chapter 20 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20.",
+      "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q002",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Gibbs Free Energy Equilibrium Relation",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 = +RT Keq."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20.",
+      "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q003",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Arrhenius Equation Activation Energy",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "According to the Arrhenius equation k = A exp(-Ea/RT), how does a 10 kJ/mol increase in Ea affect the rate constant k in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It doubles the rate constant."
+        },
+        {
+          "label": "B",
+          "text": "It has zero effect on the rate constant."
+        },
+        {
+          "label": "C",
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "It increases the rate constant by 10 fold."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20.",
+      "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q004",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Primary Kinetic Isotope Effect Diagnostic",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "In Chapter 20 mechanistic investigations, what primary deuterium isotope effect (k_H / k_D) confirms C-H cleavage in the RDS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "A value of k_H / k_D = 1.0."
+        },
+        {
+          "label": "C",
+          "text": "A value of k_H / k_D < 0.5."
+        },
+        {
+          "label": "D",
+          "text": "A value of k_H / k_D = 100."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20.",
+      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q005",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Secondary Kinetic Isotope Effect Analysis",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "In Chapter 20 substitution reactions, what does a normal secondary KIE (k_H / k_D = 1.15 to 1.25) indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+        },
+        {
+          "label": "C",
+          "text": "An inverse KIE."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-H bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20.",
+      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q006",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Eyring Transition State Theory Math",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "According to transition state theory (Eyring equation), what thermodynamic quantity dictates reaction rate in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "The equilibrium constant Keq exclusively."
+        },
+        {
+          "label": "C",
+          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+        },
+        {
+          "label": "D",
+          "text": "The molecular weight of the solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20.",
+      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q007",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Activation Entropy (Delta S-Double Dagger) Interpretation",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 20 mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "A gas-phase explosion."
+        },
+        {
+          "label": "C",
+          "text": "A dissociative unimolecular step with ion formation."
+        },
+        {
+          "label": "D",
+          "text": "A barrier-free reaction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20.",
+      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q008",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Hammond Postulate Reaction Coordinate Math",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 20, how does the transition state location (x_TS) correlate with energy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state is at x_TS = 0.0."
+        },
+        {
+          "label": "B",
+          "text": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "The transition state does not exist."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs early (x_TS < 0.2)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20.",
+      "explanation": "According to the Hammond postulate, endergonic steps have late transition states that closely mirror the adjacent high-energy intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q009",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Kinetic vs Thermodynamic Ratio Math",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 20, what is the kinetic product ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10,000:1 ratio."
+        },
+        {
+          "label": "B",
+          "text": "A 10:1 ratio."
+        },
+        {
+          "label": "C",
+          "text": "A 1:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q010",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Carboxylate Captain",
+      "topic": "Ch20 Quantitative pKa and Delta G Connection",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 20 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 is independent of pKa."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "carboxylate-captain.png"
+      ]
+    },
+    {
+      "id": "ch20_q011",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Enthalpy of Reaction Calculation",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "Using standard BDE tables for Chapter 20 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20.",
+      "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q012",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Gibbs Free Energy Equilibrium Relation",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+        },
+        {
+          "label": "B",
+          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = +RT Keq."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20.",
+      "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q013",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Arrhenius Equation Activation Energy",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "According to the Arrhenius equation k = A exp(-Ea/RT), how does a 10 kJ/mol increase in Ea affect the rate constant k in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "It has zero effect on the rate constant."
+        },
+        {
+          "label": "C",
+          "text": "It increases the rate constant by 10 fold."
+        },
+        {
+          "label": "D",
+          "text": "It doubles the rate constant."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20.",
+      "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q014",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Primary Kinetic Isotope Effect Diagnostic",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "In Chapter 20 mechanistic investigations, what primary deuterium isotope effect (k_H / k_D) confirms C-H cleavage in the RDS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A value of k_H / k_D < 0.5."
+        },
+        {
+          "label": "B",
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "A value of k_H / k_D = 100."
+        },
+        {
+          "label": "D",
+          "text": "A value of k_H / k_D = 1.0."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20.",
+      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q015",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Secondary Kinetic Isotope Effect Analysis",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "In Chapter 20 substitution reactions, what does a normal secondary KIE (k_H / k_D = 1.15 to 1.25) indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An inverse KIE."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-H bond."
+        },
+        {
+          "label": "D",
+          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20.",
+      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q016",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Eyring Transition State Theory Math",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "According to transition state theory (Eyring equation), what thermodynamic quantity dictates reaction rate in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The equilibrium constant Keq exclusively."
+        },
+        {
+          "label": "B",
+          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+        },
+        {
+          "label": "C",
+          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "The molecular weight of the solvent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20.",
+      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q017",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Activation Entropy (Delta S-Double Dagger) Interpretation",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 20 mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "A gas-phase explosion."
+        },
+        {
+          "label": "C",
+          "text": "A dissociative unimolecular step with ion formation."
+        },
+        {
+          "label": "D",
+          "text": "A barrier-free reaction."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20.",
+      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q018",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Hammond Postulate Reaction Coordinate Math",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 20, how does the transition state location (x_TS) correlate with energy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs early (x_TS < 0.2)."
+        },
+        {
+          "label": "B",
+          "text": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "The transition state does not exist."
+        },
+        {
+          "label": "D",
+          "text": "The transition state is at x_TS = 0.0."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20.",
+      "explanation": "According to the Hammond postulate, endergonic steps have late transition states that closely mirror the adjacent high-energy intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q019",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Kinetic vs Thermodynamic Ratio Math",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 20, what is the kinetic product ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10:1 ratio."
+        },
+        {
+          "label": "B",
+          "text": "A 10,000:1 ratio."
+        },
+        {
+          "label": "C",
+          "text": "A 1:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q020",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acid Chloride Assassin",
+      "topic": "Ch20 Quantitative pKa and Delta G Connection",
+      "difficulty": "hard",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 20 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 is independent of pKa."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "acid-chloride-assassin.png"
+      ]
+    },
+    {
+      "id": "ch20_q021",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Enthalpy of Reaction Calculation",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Using standard BDE tables for Chapter 20 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20.",
+      "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q022",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Gibbs Free Energy Equilibrium Relation",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = +RT Keq."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+        },
+        {
+          "label": "C",
+          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20.",
+      "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q023",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Arrhenius Equation Activation Energy",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "According to the Arrhenius equation k = A exp(-Ea/RT), how does a 10 kJ/mol increase in Ea affect the rate constant k in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It doubles the rate constant."
+        },
+        {
+          "label": "B",
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "It increases the rate constant by 10 fold."
+        },
+        {
+          "label": "D",
+          "text": "It has zero effect on the rate constant."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20.",
+      "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q024",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Primary Kinetic Isotope Effect Diagnostic",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "In Chapter 20 mechanistic investigations, what primary deuterium isotope effect (k_H / k_D) confirms C-H cleavage in the RDS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A value of k_H / k_D < 0.5."
+        },
+        {
+          "label": "B",
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "A value of k_H / k_D = 1.0."
+        },
+        {
+          "label": "D",
+          "text": "A value of k_H / k_D = 100."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20.",
+      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q025",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Secondary Kinetic Isotope Effect Analysis",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "In Chapter 20 substitution reactions, what does a normal secondary KIE (k_H / k_D = 1.15 to 1.25) indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+        },
+        {
+          "label": "C",
+          "text": "An inverse KIE."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-H bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20.",
+      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q026",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Eyring Transition State Theory Math",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "According to transition state theory (Eyring equation), what thermodynamic quantity dictates reaction rate in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The equilibrium constant Keq exclusively."
+        },
+        {
+          "label": "B",
+          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+        },
+        {
+          "label": "C",
+          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "The molecular weight of the solvent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20.",
+      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q027",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Activation Entropy (Delta S-Double Dagger) Interpretation",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 20 mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A gas-phase explosion."
+        },
+        {
+          "label": "B",
+          "text": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "A dissociative unimolecular step with ion formation."
+        },
+        {
+          "label": "D",
+          "text": "A barrier-free reaction."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20.",
+      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q028",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Hammond Postulate Reaction Coordinate Math",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 20, how does the transition state location (x_TS) correlate with energy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state does not exist."
+        },
+        {
+          "label": "B",
+          "text": "The transition state is at x_TS = 0.0."
+        },
+        {
+          "label": "C",
+          "text": "The transition state occurs early (x_TS < 0.2)."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20.",
+      "explanation": "According to the Hammond postulate, endergonic steps have late transition states that closely mirror the adjacent high-energy intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q029",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Kinetic vs Thermodynamic Ratio Math",
+      "difficulty": "hard",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 20, what is the kinetic product ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "A 1:1 ratio."
+        },
+        {
+          "label": "C",
+          "text": "A 10:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "A 10,000:1 ratio."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q030",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Tetrahedral Titan",
+      "topic": "Ch20 Quantitative pKa and Delta G Connection",
+      "difficulty": "hard",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 20 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 is independent of pKa."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "tetrahedral-titan.png"
+      ]
+    },
+    {
+      "id": "ch20_q031",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Enthalpy of Reaction Calculation",
+      "difficulty": "easy",
+      "question_type": "arrhenius_activation_energy",
+      "question": "Using standard BDE tables for Chapter 20 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20.",
+      "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q032",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Gibbs Free Energy Equilibrium Relation",
+      "difficulty": "easy",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+        },
+        {
+          "label": "C",
+          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 = +RT Keq."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20.",
+      "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q033",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Arrhenius Equation Activation Energy",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "According to the Arrhenius equation k = A exp(-Ea/RT), how does a 10 kJ/mol increase in Ea affect the rate constant k in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It increases the rate constant by 10 fold."
+        },
+        {
+          "label": "B",
+          "text": "It doubles the rate constant."
+        },
+        {
+          "label": "C",
+          "text": "It has zero effect on the rate constant."
+        },
+        {
+          "label": "D",
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20.",
+      "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q034",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Primary Kinetic Isotope Effect Diagnostic",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "In Chapter 20 mechanistic investigations, what primary deuterium isotope effect (k_H / k_D) confirms C-H cleavage in the RDS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A value of k_H / k_D < 0.5."
+        },
+        {
+          "label": "B",
+          "text": "A value of k_H / k_D = 1.0."
+        },
+        {
+          "label": "C",
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "A value of k_H / k_D = 100."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20.",
+      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q035",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Secondary Kinetic Isotope Effect Analysis",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "In Chapter 20 substitution reactions, what does a normal secondary KIE (k_H / k_D = 1.15 to 1.25) indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "An inverse KIE."
+        },
+        {
+          "label": "C",
+          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-H bond."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20.",
+      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q036",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Eyring Transition State Theory Math",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "According to transition state theory (Eyring equation), what thermodynamic quantity dictates reaction rate in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+        },
+        {
+          "label": "B",
+          "text": "The molecular weight of the solvent."
+        },
+        {
+          "label": "C",
+          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "The equilibrium constant Keq exclusively."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20.",
+      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q037",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Activation Entropy (Delta S-Double Dagger) Interpretation",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 20 mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A gas-phase explosion."
+        },
+        {
+          "label": "B",
+          "text": "A barrier-free reaction."
+        },
+        {
+          "label": "C",
+          "text": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "A dissociative unimolecular step with ion formation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20.",
+      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q038",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Hammond Postulate Reaction Coordinate Math",
+      "difficulty": "hard",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 20, how does the transition state location (x_TS) correlate with energy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs early (x_TS < 0.2)."
+        },
+        {
+          "label": "B",
+          "text": "The transition state does not exist."
+        },
+        {
+          "label": "C",
+          "text": "The transition state is at x_TS = 0.0."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20.",
+      "explanation": "According to the Hammond postulate, endergonic steps have late transition states that closely mirror the adjacent high-energy intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q039",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Kinetic vs Thermodynamic Ratio Math",
+      "difficulty": "hard",
+      "question_type": "arrhenius_activation_energy",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 20, what is the kinetic product ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10,000:1 ratio."
+        },
+        {
+          "label": "B",
+          "text": "A 1:1 ratio."
+        },
+        {
+          "label": "C",
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "A 10:1 ratio."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q040",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Anhydride Archon",
+      "topic": "Ch20 Quantitative pKa and Delta G Connection",
+      "difficulty": "hard",
+      "question_type": "kinetic_isotope_effect",
+      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 20 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 is independent of pKa."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anhydride-archon.png"
+      ]
+    },
+    {
+      "id": "ch20_q041",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Enthalpy of Reaction Calculation",
+      "difficulty": "easy",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "Using standard BDE tables for Chapter 20 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+        },
+        {
+          "label": "B",
+          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+        },
+        {
+          "label": "C",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+        },
+        {
+          "label": "D",
+          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 20.",
+      "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q042",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Gibbs Free Energy Equilibrium Relation",
+      "difficulty": "easy",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = +RT Keq."
+        },
+        {
+          "label": "D",
+          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 20.",
+      "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q043",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Arrhenius Equation Activation Energy",
+      "difficulty": "medium",
+      "question_type": "arrhenius_activation_energy",
+      "question": "According to the Arrhenius equation k = A exp(-Ea/RT), how does a 10 kJ/mol increase in Ea affect the rate constant k in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It doubles the rate constant."
+        },
+        {
+          "label": "B",
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "It has zero effect on the rate constant."
+        },
+        {
+          "label": "D",
+          "text": "It increases the rate constant by 10 fold."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 20.",
+      "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q044",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Primary Kinetic Isotope Effect Diagnostic",
+      "difficulty": "medium",
+      "question_type": "kinetic_isotope_effect",
+      "question": "In Chapter 20 mechanistic investigations, what primary deuterium isotope effect (k_H / k_D) confirms C-H cleavage in the RDS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "A value of k_H / k_D = 100."
+        },
+        {
+          "label": "C",
+          "text": "A value of k_H / k_D = 1.0."
+        },
+        {
+          "label": "D",
+          "text": "A value of k_H / k_D < 0.5."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 20.",
+      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q045",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Secondary Kinetic Isotope Effect Analysis",
+      "difficulty": "medium",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "In Chapter 20 substitution reactions, what does a normal secondary KIE (k_H / k_D = 1.15 to 1.25) indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+        },
+        {
+          "label": "B",
+          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "An inverse KIE."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-H bond."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 20.",
+      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q046",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Eyring Transition State Theory Math",
+      "difficulty": "medium",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "According to transition state theory (Eyring equation), what thermodynamic quantity dictates reaction rate in Chapter 20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+        },
+        {
+          "label": "B",
+          "text": "The equilibrium constant Keq exclusively."
+        },
+        {
+          "label": "C",
+          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20."
+        },
+        {
+          "label": "D",
+          "text": "The molecular weight of the solvent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 20.",
+      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q047",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Activation Entropy (Delta S-Double Dagger) Interpretation",
+      "difficulty": "hard",
+      "question_type": "arrhenius_activation_energy",
+      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 20 mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "A barrier-free reaction."
+        },
+        {
+          "label": "C",
+          "text": "A dissociative unimolecular step with ion formation."
+        },
+        {
+          "label": "D",
+          "text": "A gas-phase explosion."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 20.",
+      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q048",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Hammond Postulate Reaction Coordinate Math",
+      "difficulty": "hard",
+      "question_type": "kinetic_isotope_effect",
+      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 20, how does the transition state location (x_TS) correlate with energy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20."
+        },
+        {
+          "label": "B",
+          "text": "The transition state does not exist."
+        },
+        {
+          "label": "C",
+          "text": "The transition state is at x_TS = 0.0."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs early (x_TS < 0.2)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The transition state occurs late along the reaction coordinate (x_TS > 0.5), structurally and energetically resembling the high-energy intermediate in Chapter 20.",
+      "explanation": "According to the Hammond postulate, endergonic steps have late transition states that closely mirror the adjacent high-energy intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q049",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Kinetic vs Thermodynamic Ratio Math",
+      "difficulty": "hard",
+      "question_type": "bde_enthalpy_calculation",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 20, what is the kinetic product ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 10,000:1 ratio."
+        },
+        {
+          "label": "B",
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "A 1:1 ratio."
+        },
+        {
+          "label": "D",
+          "text": "A 10:1 ratio."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 20.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch20_q050",
+      "chapter": 20,
+      "chapter_title": "Carboxylic Acids and Their Derivatives",
+      "boss": "Acyl Transfer Sovereign",
+      "topic": "Ch20 Quantitative pKa and Delta G Connection",
+      "difficulty": "hard",
+      "question_type": "gibbs_equilibrium_math",
+      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 20 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+        },
+        {
+          "label": "B",
+          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20."
+        },
+        {
+          "label": "C",
+          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+        },
+        {
+          "label": "D",
+          "text": "\u0394G\u00b0 is independent of pKa."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 20.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "acyl-transfer-sovereign.png"
+      ]
+    }
+  ]
+}

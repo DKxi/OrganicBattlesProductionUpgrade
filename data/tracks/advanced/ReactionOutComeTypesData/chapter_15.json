@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 15,
+  "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+  "assigned_boss": "Chemical Shift Sprite",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch15_q001",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Proton Chemical Shift of Aromatic Protons",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Benzene (C₆H₆) reacts under the following conditions: ¹H NMR (400 MHz in CDCl₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet at δ = 9.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Single sharp singlet at δ = 7.27 ppm (6H)"
+        },
+        {
+          "label": "C",
+          "text": "Singlet at δ = 1.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Doublet at δ = 5.0 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single sharp singlet at δ = 7.27 ppm (6H)",
+      "explanation": "Major product rationale: Ring-current magnetic anisotropy strongly deshields aromatic protons, shifting resonance downfield to 7–8 ppm. The correct major product is 'Single sharp singlet at δ = 7.27 ppm (6H)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q002",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Aldehyde Proton Chemical Shift",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Acetaldehyde (CH₃CHO) reacts under the following conditions: ¹H NMR (CDCl₃ standard)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Multiplet at δ = 7.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Singlet at δ = 5.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Triplet at δ = 1.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)",
+      "explanation": "Major product rationale: Strong inductive deshielding by the carbonyl oxygen combined with magnetic anisotropy shifts the aldehyde proton to 9–10 ppm. The correct major product is 'Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q003",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Spin-Spin Splitting of Ethyl Group",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Bromoethane (CH₃CH₂Br) reacts under the following conditions: ¹H NMR spectrum acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two doublets"
+        },
+        {
+          "label": "B",
+          "text": "Doublet and triplet"
+        },
+        {
+          "label": "C",
+          "text": "Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)"
+        },
+        {
+          "label": "D",
+          "text": "Two singlets"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)",
+      "explanation": "Major product rationale: The CH₃ protons split the CH₂ into a quartet (3+1); the CH₂ protons split the CH₃ into a triplet (2+1). The correct major product is 'Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q004",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Isopropyl Group Diagnostic Pattern",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 2-Bromopropane [(CH₃)₂CHBr] reacts under the following conditions: ¹H NMR in CDCl₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)"
+        },
+        {
+          "label": "B",
+          "text": "Two triplets"
+        },
+        {
+          "label": "C",
+          "text": "Two singlets"
+        },
+        {
+          "label": "D",
+          "text": "Triplet and quartet"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)",
+      "explanation": "Major product rationale: Six equivalent methyl protons split the lone methine proton into a septet (6+1); methine splits methyls into a doublet. The correct major product is 'Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q005",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "tert-Butyl Group Diagnostic NMR Peak",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when tert-Butyl methyl ether reacts under the following conditions: ¹H NMR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (9H) + quartet (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (9H)"
+        },
+        {
+          "label": "D",
+          "text": "Multiplet"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)",
+      "explanation": "Major product rationale: Nine chemically and magnetically equivalent protons with zero neighbors produce an intense 9H singlet. The correct major product is 'Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q006",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Diastereotopic Protons in Chiral Molecule",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert (S)-1,2-Dichloropropane into Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-135 NMR pulse sequence"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        },
+        {
+          "label": "C",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (500 MHz high field)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "¹H NMR (500 MHz high field)",
+      "explanation": "Reagent selection rationale: The transformation '(S)-1,2-Dichloropropane' → 'Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets' specifically requires '¹H NMR (500 MHz high field)'. Mechanistic basis: Protons attached to C1 reside in diastereomeric environments relative to the C2 chiral center, giving different chemical shifts.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q007",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Homotopic Protons Equivalence",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Dichloromethane (CH₂Cl₂) into Single sharp singlet at δ = 5.3 ppm (2H) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-90 and DEPT-135 NMR"
+        },
+        {
+          "label": "B",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "C",
+          "text": "DEPT-135 NMR pulse sequence"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "¹H NMR (CDCl₃ solvent)",
+      "explanation": "Reagent selection rationale: The transformation 'Dichloromethane (CH₂Cl₂)' → 'Single sharp singlet at δ = 5.3 ppm (2H)' specifically requires '¹H NMR (CDCl₃ solvent)'. Mechanistic basis: Rotational symmetry (C₂) makes both protons homotopic and strictly equivalent in all solvents.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q008",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Decoupled 13C NMR Signal Count",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Toluene (C₇H₈) into 5 distinct carbon signals in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR (400 MHz in CDCl₃)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR spectrum acquisition"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR (CDCl₃ standard)"
+        },
+        {
+          "label": "D",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "¹³C NMR (Broadband proton decoupled)",
+      "explanation": "Reagent selection rationale: The transformation 'Toluene (C₇H₈)' → '5 distinct carbon signals' specifically requires '¹³C NMR (Broadband proton decoupled)'. Mechanistic basis: Symmetry yields 5 signals: ipso-C, ortho-C (2), meta-C (2), para-C, and methyl-C.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q009",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "DEPT-135 Carbon Multiplicity",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'One positive peak (CH₃) + three negative/inverted peaks (CH₂)' when treated with 'DEPT-135 NMR pulse sequence' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromoethane (CH₃CH₂Br)"
+        },
+        {
+          "label": "B",
+          "text": "Acetaldehyde (CH₃CHO)"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromopropane [(CH₃)₂CHBr]"
+        },
+        {
+          "label": "D",
+          "text": "1-Butanol (CH₃CH₂CH₂CH₂OH)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1-Butanol (CH₃CH₂CH₂CH₂OH)",
+      "explanation": "Starting material deduction: Treating '1-Butanol (CH₃CH₂CH₂CH₂OH)' with 'DEPT-135 NMR pulse sequence' yields 'One positive peak (CH₃) + three negative/inverted peaks (CH₂)'. Mechanistic rationale: DEPT-135 displays CH₃ and CH carbons as positive signals and CH₂ carbons as inverted (negative) signals.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q010",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Sprite",
+      "topic": "Quaternary Carbon Absence in DEPT",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'No signal for the central quaternary carbon (C2)' when treated with 'DEPT-90 and DEPT-135 NMR' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-propanol [(CH₃)₃C-OH]"
+        },
+        {
+          "label": "B",
+          "text": "Bromoethane (CH₃CH₂Br)"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromopropane [(CH₃)₂CHBr]"
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl methyl ether"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Methyl-2-propanol [(CH₃)₃C-OH]",
+      "explanation": "Starting material deduction: Treating '2-Methyl-2-propanol [(CH₃)₃C-OH]' with 'DEPT-90 and DEPT-135 NMR' yields 'No signal for the central quaternary carbon (C2)'. Mechanistic rationale: DEPT pulse sequences only enhance and detect carbons directly bonded to one or more hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-sprite.png"
+      ]
+    },
+    {
+      "id": "ch15_q011",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Spin-Spin Splitting of Ethyl Group",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Bromoethane (CH₃CH₂Br) reacts under the following conditions: ¹H NMR spectrum acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)"
+        },
+        {
+          "label": "B",
+          "text": "Two singlets"
+        },
+        {
+          "label": "C",
+          "text": "Doublet and triplet"
+        },
+        {
+          "label": "D",
+          "text": "Two doublets"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)",
+      "explanation": "Major product rationale: The CH₃ protons split the CH₂ into a quartet (3+1); the CH₂ protons split the CH₃ into a triplet (2+1). The correct major product is 'Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q012",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Isopropyl Group Diagnostic Pattern",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 2-Bromopropane [(CH₃)₂CHBr] reacts under the following conditions: ¹H NMR in CDCl₃?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two triplets"
+        },
+        {
+          "label": "B",
+          "text": "Triplet and quartet"
+        },
+        {
+          "label": "C",
+          "text": "Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)"
+        },
+        {
+          "label": "D",
+          "text": "Two singlets"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)",
+      "explanation": "Major product rationale: Six equivalent methyl protons split the lone methine proton into a septet (6+1); methine splits methyls into a doublet. The correct major product is 'Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q013",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "tert-Butyl Group Diagnostic NMR Peak",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when tert-Butyl methyl ether reacts under the following conditions: ¹H NMR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (9H)"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (9H) + quartet (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)"
+        },
+        {
+          "label": "D",
+          "text": "Multiplet"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)",
+      "explanation": "Major product rationale: Nine chemically and magnetically equivalent protons with zero neighbors produce an intense 9H singlet. The correct major product is 'Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q014",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Diastereotopic Protons in Chiral Molecule",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when (S)-1,2-Dichloropropane reacts under the following conditions: ¹H NMR (500 MHz high field)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets"
+        },
+        {
+          "label": "B",
+          "text": "One singlet"
+        },
+        {
+          "label": "C",
+          "text": "Single combined doublet"
+        },
+        {
+          "label": "D",
+          "text": "Triplet"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets",
+      "explanation": "Major product rationale: Protons attached to C1 reside in diastereomeric environments relative to the C2 chiral center, giving different chemical shifts. The correct major product is 'Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q015",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Homotopic Protons Equivalence",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Dichloromethane (CH₂Cl₂) reacts under the following conditions: ¹H NMR (CDCl₃ solvent)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two doublets"
+        },
+        {
+          "label": "B",
+          "text": "Two singlets"
+        },
+        {
+          "label": "C",
+          "text": "Single sharp singlet at δ = 5.3 ppm (2H)"
+        },
+        {
+          "label": "D",
+          "text": "One triplet"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Single sharp singlet at δ = 5.3 ppm (2H)",
+      "explanation": "Major product rationale: Rotational symmetry (C₂) makes both protons homotopic and strictly equivalent in all solvents. The correct major product is 'Single sharp singlet at δ = 5.3 ppm (2H)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q016",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Decoupled 13C NMR Signal Count",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Toluene (C₇H₈) into 5 distinct carbon signals in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR in CDCl₃"
+        },
+        {
+          "label": "B",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR spectrum acquisition"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (CDCl₃ standard)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "¹³C NMR (Broadband proton decoupled)",
+      "explanation": "Reagent selection rationale: The transformation 'Toluene (C₇H₈)' → '5 distinct carbon signals' specifically requires '¹³C NMR (Broadband proton decoupled)'. Mechanistic basis: Symmetry yields 5 signals: ipso-C, ortho-C (2), meta-C (2), para-C, and methyl-C.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q017",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "DEPT-135 Carbon Multiplicity",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 1-Butanol (CH₃CH₂CH₂CH₂OH) into One positive peak (CH₃) + three negative/inverted peaks (CH₂) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR spectrum acquisition"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR in CDCl₃"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR spectroscopy"
+        },
+        {
+          "label": "D",
+          "text": "DEPT-135 NMR pulse sequence"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DEPT-135 NMR pulse sequence",
+      "explanation": "Reagent selection rationale: The transformation '1-Butanol (CH₃CH₂CH₂CH₂OH)' → 'One positive peak (CH₃) + three negative/inverted peaks (CH₂)' specifically requires 'DEPT-135 NMR pulse sequence'. Mechanistic basis: DEPT-135 displays CH₃ and CH carbons as positive signals and CH₂ carbons as inverted (negative) signals.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q018",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Quaternary Carbon Absence in DEPT",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 2-Methyl-2-propanol [(CH₃)₃C-OH] into No signal for the central quaternary carbon (C2) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR in CDCl₃"
+        },
+        {
+          "label": "B",
+          "text": "DEPT-90 and DEPT-135 NMR"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR spectroscopy"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (500 MHz high field)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DEPT-90 and DEPT-135 NMR",
+      "explanation": "Reagent selection rationale: The transformation '2-Methyl-2-propanol [(CH₃)₃C-OH]' → 'No signal for the central quaternary carbon (C2)' specifically requires 'DEPT-90 and DEPT-135 NMR'. Mechanistic basis: DEPT pulse sequences only enhance and detect carbons directly bonded to one or more hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q019",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Proton Chemical Shift of Aromatic Protons",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Single sharp singlet at δ = 7.27 ppm (6H)' when treated with '¹H NMR (400 MHz in CDCl₃)' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-1,2-Dichloropropane"
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "C",
+          "text": "Dichloromethane (CH₂Cl₂)"
+        },
+        {
+          "label": "D",
+          "text": "Benzene (C₆H₆)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Benzene (C₆H₆)",
+      "explanation": "Starting material deduction: Treating 'Benzene (C₆H₆)' with '¹H NMR (400 MHz in CDCl₃)' yields 'Single sharp singlet at δ = 7.27 ppm (6H)'. Mechanistic rationale: Ring-current magnetic anisotropy strongly deshields aromatic protons, shifting resonance downfield to 7–8 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q020",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Splitting Sentry",
+      "topic": "Aldehyde Proton Chemical Shift",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)' when treated with '¹H NMR (CDCl₃ standard)' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dichloromethane (CH₂Cl₂)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-1,2-Dichloropropane"
+        },
+        {
+          "label": "C",
+          "text": "Acetaldehyde (CH₃CHO)"
+        },
+        {
+          "label": "D",
+          "text": "Toluene (C₇H₈)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetaldehyde (CH₃CHO)",
+      "explanation": "Starting material deduction: Treating 'Acetaldehyde (CH₃CHO)' with '¹H NMR (CDCl₃ standard)' yields 'Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)'. Mechanistic rationale: Strong inductive deshielding by the carbonyl oxygen combined with magnetic anisotropy shifts the aldehyde proton to 9–10 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "splitting-sentry.png"
+      ]
+    },
+    {
+      "id": "ch15_q021",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "tert-Butyl Group Diagnostic NMR Peak",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when tert-Butyl methyl ether reacts under the following conditions: ¹H NMR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Multiplet"
+        },
+        {
+          "label": "B",
+          "text": "Doublet (9H)"
+        },
+        {
+          "label": "C",
+          "text": "Triplet (9H) + quartet (3H)"
+        },
+        {
+          "label": "D",
+          "text": "Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)",
+      "explanation": "Major product rationale: Nine chemically and magnetically equivalent protons with zero neighbors produce an intense 9H singlet. The correct major product is 'Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q022",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Diastereotopic Protons in Chiral Molecule",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when (S)-1,2-Dichloropropane reacts under the following conditions: ¹H NMR (500 MHz high field)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet"
+        },
+        {
+          "label": "B",
+          "text": "Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets"
+        },
+        {
+          "label": "C",
+          "text": "Single combined doublet"
+        },
+        {
+          "label": "D",
+          "text": "One singlet"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets",
+      "explanation": "Major product rationale: Protons attached to C1 reside in diastereomeric environments relative to the C2 chiral center, giving different chemical shifts. The correct major product is 'Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q023",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Homotopic Protons Equivalence",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Dichloromethane (CH₂Cl₂) reacts under the following conditions: ¹H NMR (CDCl₃ solvent)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Single sharp singlet at δ = 5.3 ppm (2H)"
+        },
+        {
+          "label": "B",
+          "text": "One triplet"
+        },
+        {
+          "label": "C",
+          "text": "Two doublets"
+        },
+        {
+          "label": "D",
+          "text": "Two singlets"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Single sharp singlet at δ = 5.3 ppm (2H)",
+      "explanation": "Major product rationale: Rotational symmetry (C₂) makes both protons homotopic and strictly equivalent in all solvents. The correct major product is 'Single sharp singlet at δ = 5.3 ppm (2H)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q024",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Decoupled 13C NMR Signal Count",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Toluene (C₇H₈) reacts under the following conditions: ¹³C NMR (Broadband proton decoupled)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 signals"
+        },
+        {
+          "label": "B",
+          "text": "5 distinct carbon signals"
+        },
+        {
+          "label": "C",
+          "text": "1 signal"
+        },
+        {
+          "label": "D",
+          "text": "7 signals"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "5 distinct carbon signals",
+      "explanation": "Major product rationale: Symmetry yields 5 signals: ipso-C, ortho-C (2), meta-C (2), para-C, and methyl-C. The correct major product is '5 distinct carbon signals'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q025",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "DEPT-135 Carbon Multiplicity",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 1-Butanol (CH₃CH₂CH₂CH₂OH) reacts under the following conditions: DEPT-135 NMR pulse sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One positive peak (CH₃) + three negative/inverted peaks (CH₂)"
+        },
+        {
+          "label": "B",
+          "text": "All peaks disappear"
+        },
+        {
+          "label": "C",
+          "text": "Four positive peaks"
+        },
+        {
+          "label": "D",
+          "text": "Two positive and two negative"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One positive peak (CH₃) + three negative/inverted peaks (CH₂)",
+      "explanation": "Major product rationale: DEPT-135 displays CH₃ and CH carbons as positive signals and CH₂ carbons as inverted (negative) signals. The correct major product is 'One positive peak (CH₃) + three negative/inverted peaks (CH₂)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q026",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Quaternary Carbon Absence in DEPT",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 2-Methyl-2-propanol [(CH₃)₃C-OH] into No signal for the central quaternary carbon (C2) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR (500 MHz high field)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR spectroscopy"
+        },
+        {
+          "label": "D",
+          "text": "DEPT-90 and DEPT-135 NMR"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DEPT-90 and DEPT-135 NMR",
+      "explanation": "Reagent selection rationale: The transformation '2-Methyl-2-propanol [(CH₃)₃C-OH]' → 'No signal for the central quaternary carbon (C2)' specifically requires 'DEPT-90 and DEPT-135 NMR'. Mechanistic basis: DEPT pulse sequences only enhance and detect carbons directly bonded to one or more hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q027",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Proton Chemical Shift of Aromatic Protons",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Benzene (C₆H₆) into Single sharp singlet at δ = 7.27 ppm (6H) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        },
+        {
+          "label": "B",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR (400 MHz in CDCl₃)"
+        },
+        {
+          "label": "D",
+          "text": "DEPT-135 NMR pulse sequence"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "¹H NMR (400 MHz in CDCl₃)",
+      "explanation": "Reagent selection rationale: The transformation 'Benzene (C₆H₆)' → 'Single sharp singlet at δ = 7.27 ppm (6H)' specifically requires '¹H NMR (400 MHz in CDCl₃)'. Mechanistic basis: Ring-current magnetic anisotropy strongly deshields aromatic protons, shifting resonance downfield to 7–8 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q028",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Aldehyde Proton Chemical Shift",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Acetaldehyde (CH₃CHO) into Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR (CDCl₃ standard)"
+        },
+        {
+          "label": "C",
+          "text": "DEPT-90 and DEPT-135 NMR"
+        },
+        {
+          "label": "D",
+          "text": "DEPT-135 NMR pulse sequence"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "¹H NMR (CDCl₃ standard)",
+      "explanation": "Reagent selection rationale: The transformation 'Acetaldehyde (CH₃CHO)' → 'Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)' specifically requires '¹H NMR (CDCl₃ standard)'. Mechanistic basis: Strong inductive deshielding by the carbonyl oxygen combined with magnetic anisotropy shifts the aldehyde proton to 9–10 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q029",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Spin-Spin Splitting of Ethyl Group",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)' when treated with '¹H NMR spectrum acquisition' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butanol (CH₃CH₂CH₂CH₂OH)"
+        },
+        {
+          "label": "B",
+          "text": "Toluene (C₇H₈)"
+        },
+        {
+          "label": "C",
+          "text": "Dichloromethane (CH₂Cl₂)"
+        },
+        {
+          "label": "D",
+          "text": "Bromoethane (CH₃CH₂Br)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromoethane (CH₃CH₂Br)",
+      "explanation": "Starting material deduction: Treating 'Bromoethane (CH₃CH₂Br)' with '¹H NMR spectrum acquisition' yields 'Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)'. Mechanistic rationale: The CH₃ protons split the CH₂ into a quartet (3+1); the CH₂ protons split the CH₃ into a triplet (2+1).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q030",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Demon",
+      "topic": "Isopropyl Group Diagnostic Pattern",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)' when treated with '¹H NMR in CDCl₃' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene (C₇H₈)"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromopropane [(CH₃)₂CHBr]"
+        },
+        {
+          "label": "C",
+          "text": "2-Methyl-2-propanol [(CH₃)₃C-OH]"
+        },
+        {
+          "label": "D",
+          "text": "1-Butanol (CH₃CH₂CH₂CH₂OH)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Bromopropane [(CH₃)₂CHBr]",
+      "explanation": "Starting material deduction: Treating '2-Bromopropane [(CH₃)₂CHBr]' with '¹H NMR in CDCl₃' yields 'Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)'. Mechanistic rationale: Six equivalent methyl protons split the lone methine proton into a septet (6+1); methine splits methyls into a doublet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dept-demon.png"
+      ]
+    },
+    {
+      "id": "ch15_q031",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Homotopic Protons Equivalence",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Dichloromethane (CH₂Cl₂) reacts under the following conditions: ¹H NMR (CDCl₃ solvent)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One triplet"
+        },
+        {
+          "label": "B",
+          "text": "Two singlets"
+        },
+        {
+          "label": "C",
+          "text": "Single sharp singlet at δ = 5.3 ppm (2H)"
+        },
+        {
+          "label": "D",
+          "text": "Two doublets"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Single sharp singlet at δ = 5.3 ppm (2H)",
+      "explanation": "Major product rationale: Rotational symmetry (C₂) makes both protons homotopic and strictly equivalent in all solvents. The correct major product is 'Single sharp singlet at δ = 5.3 ppm (2H)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q032",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Decoupled 13C NMR Signal Count",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Toluene (C₇H₈) reacts under the following conditions: ¹³C NMR (Broadband proton decoupled)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 signals"
+        },
+        {
+          "label": "B",
+          "text": "7 signals"
+        },
+        {
+          "label": "C",
+          "text": "5 distinct carbon signals"
+        },
+        {
+          "label": "D",
+          "text": "1 signal"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "5 distinct carbon signals",
+      "explanation": "Major product rationale: Symmetry yields 5 signals: ipso-C, ortho-C (2), meta-C (2), para-C, and methyl-C. The correct major product is '5 distinct carbon signals'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q033",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "DEPT-135 Carbon Multiplicity",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 1-Butanol (CH₃CH₂CH₂CH₂OH) reacts under the following conditions: DEPT-135 NMR pulse sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two positive and two negative"
+        },
+        {
+          "label": "B",
+          "text": "One positive peak (CH₃) + three negative/inverted peaks (CH₂)"
+        },
+        {
+          "label": "C",
+          "text": "All peaks disappear"
+        },
+        {
+          "label": "D",
+          "text": "Four positive peaks"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One positive peak (CH₃) + three negative/inverted peaks (CH₂)",
+      "explanation": "Major product rationale: DEPT-135 displays CH₃ and CH carbons as positive signals and CH₂ carbons as inverted (negative) signals. The correct major product is 'One positive peak (CH₃) + three negative/inverted peaks (CH₂)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q034",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Quaternary Carbon Absence in DEPT",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 2-Methyl-2-propanol [(CH₃)₃C-OH] reacts under the following conditions: DEPT-90 and DEPT-135 NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No signal for the central quaternary carbon (C2)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet signal"
+        },
+        {
+          "label": "C",
+          "text": "Inverted negative peak"
+        },
+        {
+          "label": "D",
+          "text": "Strong positive peak"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "No signal for the central quaternary carbon (C2)",
+      "explanation": "Major product rationale: DEPT pulse sequences only enhance and detect carbons directly bonded to one or more hydrogens. The correct major product is 'No signal for the central quaternary carbon (C2)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q035",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Proton Chemical Shift of Aromatic Protons",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Benzene (C₆H₆) reacts under the following conditions: ¹H NMR (400 MHz in CDCl₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet at δ = 9.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Doublet at δ = 5.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Single sharp singlet at δ = 7.27 ppm (6H)"
+        },
+        {
+          "label": "D",
+          "text": "Singlet at δ = 1.0 ppm"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Single sharp singlet at δ = 7.27 ppm (6H)",
+      "explanation": "Major product rationale: Ring-current magnetic anisotropy strongly deshields aromatic protons, shifting resonance downfield to 7–8 ppm. The correct major product is 'Single sharp singlet at δ = 7.27 ppm (6H)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q036",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Aldehyde Proton Chemical Shift",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Acetaldehyde (CH₃CHO) into Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR (400 MHz in CDCl₃)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR (CDCl₃ standard)"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR spectrum acquisition"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR in CDCl₃"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "¹H NMR (CDCl₃ standard)",
+      "explanation": "Reagent selection rationale: The transformation 'Acetaldehyde (CH₃CHO)' → 'Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)' specifically requires '¹H NMR (CDCl₃ standard)'. Mechanistic basis: Strong inductive deshielding by the carbonyl oxygen combined with magnetic anisotropy shifts the aldehyde proton to 9–10 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q037",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Spin-Spin Splitting of Ethyl Group",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Bromoethane (CH₃CH₂Br) into Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR (CDCl₃ standard)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR spectrum acquisition"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR in CDCl₃"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR spectroscopy"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "¹H NMR spectrum acquisition",
+      "explanation": "Reagent selection rationale: The transformation 'Bromoethane (CH₃CH₂Br)' → 'Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)' specifically requires '¹H NMR spectrum acquisition'. Mechanistic basis: The CH₃ protons split the CH₂ into a quartet (3+1); the CH₂ protons split the CH₃ into a triplet (2+1).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q038",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Isopropyl Group Diagnostic Pattern",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 2-Bromopropane [(CH₃)₂CHBr] into Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR spectroscopy"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR spectrum acquisition"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR (500 MHz high field)"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR in CDCl₃"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "¹H NMR in CDCl₃",
+      "explanation": "Reagent selection rationale: The transformation '2-Bromopropane [(CH₃)₂CHBr]' → 'Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)' specifically requires '¹H NMR in CDCl₃'. Mechanistic basis: Six equivalent methyl protons split the lone methine proton into a septet (6+1); methine splits methyls into a doublet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q039",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "tert-Butyl Group Diagnostic NMR Peak",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)' when treated with '¹H NMR spectroscopy' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "B",
+          "text": "Bromoethane (CH₃CH₂Br)"
+        },
+        {
+          "label": "C",
+          "text": "Benzene (C₆H₆)"
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde (CH₃CHO)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "tert-Butyl methyl ether",
+      "explanation": "Starting material deduction: Treating 'tert-Butyl methyl ether' with '¹H NMR spectroscopy' yields 'Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)'. Mechanistic rationale: Nine chemically and magnetically equivalent protons with zero neighbors produce an intense 9H singlet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q040",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Anisotropic Archon",
+      "topic": "Diastereotopic Protons in Chiral Molecule",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets' when treated with '¹H NMR (500 MHz high field)' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromoethane (CH₃CH₂Br)"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromopropane [(CH₃)₂CHBr]"
+        },
+        {
+          "label": "C",
+          "text": "Acetaldehyde (CH₃CHO)"
+        },
+        {
+          "label": "D",
+          "text": "(S)-1,2-Dichloropropane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(S)-1,2-Dichloropropane",
+      "explanation": "Starting material deduction: Treating '(S)-1,2-Dichloropropane' with '¹H NMR (500 MHz high field)' yields 'Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets'. Mechanistic rationale: Protons attached to C1 reside in diastereomeric environments relative to the C2 chiral center, giving different chemical shifts.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "anisotropic-archon.png"
+      ]
+    },
+    {
+      "id": "ch15_q041",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "DEPT-135 Carbon Multiplicity",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 1-Butanol (CH₃CH₂CH₂CH₂OH) reacts under the following conditions: DEPT-135 NMR pulse sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Four positive peaks"
+        },
+        {
+          "label": "B",
+          "text": "All peaks disappear"
+        },
+        {
+          "label": "C",
+          "text": "One positive peak (CH₃) + three negative/inverted peaks (CH₂)"
+        },
+        {
+          "label": "D",
+          "text": "Two positive and two negative"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One positive peak (CH₃) + three negative/inverted peaks (CH₂)",
+      "explanation": "Major product rationale: DEPT-135 displays CH₃ and CH carbons as positive signals and CH₂ carbons as inverted (negative) signals. The correct major product is 'One positive peak (CH₃) + three negative/inverted peaks (CH₂)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q042",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Quaternary Carbon Absence in DEPT",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when 2-Methyl-2-propanol [(CH₃)₃C-OH] reacts under the following conditions: DEPT-90 and DEPT-135 NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Strong positive peak"
+        },
+        {
+          "label": "B",
+          "text": "No signal for the central quaternary carbon (C2)"
+        },
+        {
+          "label": "C",
+          "text": "Inverted negative peak"
+        },
+        {
+          "label": "D",
+          "text": "Doublet signal"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "No signal for the central quaternary carbon (C2)",
+      "explanation": "Major product rationale: DEPT pulse sequences only enhance and detect carbons directly bonded to one or more hydrogens. The correct major product is 'No signal for the central quaternary carbon (C2)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q043",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Proton Chemical Shift of Aromatic Protons",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Benzene (C₆H₆) reacts under the following conditions: ¹H NMR (400 MHz in CDCl₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet at δ = 9.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Singlet at δ = 1.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Doublet at δ = 5.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Single sharp singlet at δ = 7.27 ppm (6H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Single sharp singlet at δ = 7.27 ppm (6H)",
+      "explanation": "Major product rationale: Ring-current magnetic anisotropy strongly deshields aromatic protons, shifting resonance downfield to 7–8 ppm. The correct major product is 'Single sharp singlet at δ = 7.27 ppm (6H)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q044",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Aldehyde Proton Chemical Shift",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Acetaldehyde (CH₃CHO) reacts under the following conditions: ¹H NMR (CDCl₃ standard)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet at δ = 1.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Multiplet at δ = 7.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Singlet at δ = 5.0 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)",
+      "explanation": "Major product rationale: Strong inductive deshielding by the carbonyl oxygen combined with magnetic anisotropy shifts the aldehyde proton to 9–10 ppm. The correct major product is 'Downfield quartet at δ = 9.8 ppm (1H) + doublet at δ = 2.2 ppm (3H)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q045",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Spin-Spin Splitting of Ethyl Group",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Nuclear Magnetic Resonance Spectroscopy, what is the major organic product when Bromoethane (CH₃CH₂Br) reacts under the following conditions: ¹H NMR spectrum acquisition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet and triplet"
+        },
+        {
+          "label": "B",
+          "text": "Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)"
+        },
+        {
+          "label": "C",
+          "text": "Two singlets"
+        },
+        {
+          "label": "D",
+          "text": "Two doublets"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)",
+      "explanation": "Major product rationale: The CH₃ protons split the CH₂ into a quartet (3+1); the CH₂ protons split the CH₃ into a triplet (2+1). The correct major product is 'Triplet at δ = 1.6 ppm (3H, J = 7 Hz) + quartet at δ = 3.4 ppm (2H, J = 7 Hz)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q046",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Isopropyl Group Diagnostic Pattern",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 2-Bromopropane [(CH₃)₂CHBr] into Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹H NMR in CDCl₃"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR spectroscopy"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR (500 MHz high field)"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "¹H NMR in CDCl₃",
+      "explanation": "Reagent selection rationale: The transformation '2-Bromopropane [(CH₃)₂CHBr]' → 'Doublet at δ = 1.7 ppm (6H, J = 7 Hz) + septet at δ = 4.3 ppm (1H, J = 7 Hz)' specifically requires '¹H NMR in CDCl₃'. Mechanistic basis: Six equivalent methyl protons split the lone methine proton into a septet (6+1); methine splits methyls into a doublet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q047",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "tert-Butyl Group Diagnostic NMR Peak",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert tert-Butyl methyl ether into Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H) in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR spectroscopy"
+        },
+        {
+          "label": "C",
+          "text": "¹H NMR (500 MHz high field)"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "¹H NMR spectroscopy",
+      "explanation": "Reagent selection rationale: The transformation 'tert-Butyl methyl ether' → 'Intense sharp singlet at δ = 1.2 ppm (9H) + singlet at δ = 3.2 ppm (3H)' specifically requires '¹H NMR spectroscopy'. Mechanistic basis: Nine chemically and magnetically equivalent protons with zero neighbors produce an intense 9H singlet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q048",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Diastereotopic Protons in Chiral Molecule",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert (S)-1,2-Dichloropropane into Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets in Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "¹³C NMR (Broadband proton decoupled)"
+        },
+        {
+          "label": "B",
+          "text": "¹H NMR (CDCl₃ solvent)"
+        },
+        {
+          "label": "C",
+          "text": "DEPT-135 NMR pulse sequence"
+        },
+        {
+          "label": "D",
+          "text": "¹H NMR (500 MHz high field)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "¹H NMR (500 MHz high field)",
+      "explanation": "Reagent selection rationale: The transformation '(S)-1,2-Dichloropropane' → 'Diastereotopic C1 protons appear as two distinct non-equivalent doublets of doublets' specifically requires '¹H NMR (500 MHz high field)'. Mechanistic basis: Protons attached to C1 reside in diastereomeric environments relative to the C2 chiral center, giving different chemical shifts.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q049",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Homotopic Protons Equivalence",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Single sharp singlet at δ = 5.3 ppm (2H)' when treated with '¹H NMR (CDCl₃ solvent)' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromoethane (CH₃CH₂Br)"
+        },
+        {
+          "label": "B",
+          "text": "Dichloromethane (CH₂Cl₂)"
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane [(CH₃)₂CHBr]"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Dichloromethane (CH₂Cl₂)",
+      "explanation": "Starting material deduction: Treating 'Dichloromethane (CH₂Cl₂)' with '¹H NMR (CDCl₃ solvent)' yields 'Single sharp singlet at δ = 5.3 ppm (2H)'. Mechanistic rationale: Rotational symmetry (C₂) makes both protons homotopic and strictly equivalent in all solvents.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    },
+    {
+      "id": "ch15_q050",
+      "chapter": 15,
+      "chapter_title": "Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Coupling Constant Conqueror",
+      "topic": "Decoupled 13C NMR Signal Count",
+      "difficulty": "hard",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '5 distinct carbon signals' when treated with '¹³C NMR (Broadband proton decoupled)' according to the principles of Nuclear Magnetic Resonance Spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-1,2-Dichloropropane"
+        },
+        {
+          "label": "B",
+          "text": "Toluene (C₇H₈)"
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane [(CH₃)₂CHBr]"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Toluene (C₇H₈)",
+      "explanation": "Starting material deduction: Treating 'Toluene (C₇H₈)' with '¹³C NMR (Broadband proton decoupled)' yields '5 distinct carbon signals'. Mechanistic rationale: Symmetry yields 5 signals: ipso-C, ortho-C (2), meta-C (2), para-C, and methyl-C.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "coupling-constant-conqueror.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chemical Shift Sprite",
+    "Splitting Sentry",
+    "DEPT Demon",
+    "Anisotropic Archon",
+    "Coupling Constant Conqueror"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chemical Shift Sprite",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chemical-shift-sprite.png"
+        ]
+      },
+      {
+        "boss": "Splitting Sentry",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "splitting-sentry.png"
+        ]
+      },
+      {
+        "boss": "DEPT Demon",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "dept-demon.png"
+        ]
+      },
+      {
+        "boss": "Anisotropic Archon",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "anisotropic-archon.png"
+        ]
+      },
+      {
+        "boss": "Coupling Constant Conqueror",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "coupling-constant-conqueror.png"
+        ]
+      }
+    ]
+  }
+}

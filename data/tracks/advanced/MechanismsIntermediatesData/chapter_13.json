@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 13,
+  "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+  "assigned_boss": "Alkoxy Ape",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch13_q001",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Williamson Ether Synthesis Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic limitation of the Williamson ether synthesis when using a tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene."
+        },
+        {
+          "label": "B",
+          "text": "The alkoxide decomposes into carbon monoxide."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds with retention of configuration."
+        },
+        {
+          "label": "D",
+          "text": "The tertiary halide undergoes rapid homolytic polymerization."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene.",
+      "explanation": "Tertiary alkyl halides are too sterically hindered for SN2 backside attack; basic alkoxides exclusively undergo E2 elimination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q002",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Acidic Cleavage of Dialkyl Ethers Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the cleavage of diethyl ether by excess concentrated HI, what are the sequential mechanistic steps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage into ethyl radicals followed by iodination."
+        },
+        {
+          "label": "B",
+          "text": "E1 elimination to ethylene followed by HI addition."
+        },
+        {
+          "label": "C",
+          "text": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide."
+        },
+        {
+          "label": "D",
+          "text": "Direct insertion of iodine into C-O bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide.",
+      "explanation": "Strongly acidic HI protonates the ether oxygen into a good leaving group, enabling sequential SN2 displacements by nucleophilic iodide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q003",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "mCPBA Alkene Epoxidation Transition State",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the structure of the 'butterfly' transition state during mCPBA epoxidation of an alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stepwise carbocation intermediate captured by carboxylate."
+        },
+        {
+          "label": "B",
+          "text": "A free oxygen radical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl."
+        },
+        {
+          "label": "D",
+          "text": "A 4-membered cyclic dioxetane ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl.",
+      "explanation": "The peroxy acid epoxidation is a concerted syn-addition proceeding through a highly organized 'butterfly' transition state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q004",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Acid-Catalyzed Epoxide Opening Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does acid-catalyzed methanolysis of 1,2-epoxypropane yield 2-methoxy-1-propanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 attack at the less hindered carbon."
+        },
+        {
+          "label": "B",
+          "text": "Methanol is a bulky base that attacks terminal positions."
+        },
+        {
+          "label": "C",
+          "text": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there."
+        },
+        {
+          "label": "D",
+          "text": "The epoxide undergoes a 1,2-hydride shift before attack."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there.",
+      "explanation": "Under acidic conditions, electronic factors dominate: the protonated epoxide has a longer, weaker bond to the more substituted carbon (greater positive charge).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q005",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Base-Promoted Epoxide Opening Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does basic methanolysis (NaOCH₃ / CH₃OH) of 1,2-epoxypropane yield 1-methoxy-2-propanol exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C2 is deactivated by hyperconjugation."
+        },
+        {
+          "label": "B",
+          "text": "Methoxide coordinates to oxygen prior to elimination."
+        },
+        {
+          "label": "C",
+          "text": "The basic epoxide forms a free carbocation at C1."
+        },
+        {
+          "label": "D",
+          "text": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion.",
+      "explanation": "Basic nucleophiles attack unprotonated epoxides via pure SN2 kinetics, governed entirely by steric accessibility at the less substituted carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q006",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Crown Ether Cation Coordination Complex",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does 18-crown-6 mechanistically enhance the nucleophilicity of potassium cyanide in benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18-crown-6 forms covalent bonds with benzene solvent."
+        },
+        {
+          "label": "B",
+          "text": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive."
+        },
+        {
+          "label": "C",
+          "text": "18-crown-6 donates protons to cyanide."
+        },
+        {
+          "label": "D",
+          "text": "18-crown-6 oxidizes potassium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive.",
+      "explanation": "Encapsulation of the cation in nonpolar solvents produces 'naked' anions with enormous nucleophilic reactivity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q007",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Thiol Oxidation to Disulfides Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic pathway for the oxidation of two thiols to a disulfide by molecular iodine (I₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct reduction of iodine to iodate."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of sulfur-carbon bonds."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide."
+        },
+        {
+          "label": "D",
+          "text": "Formation of a sulfur trioxide adduct."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide.",
+      "explanation": "The reaction proceeds via a sulfenyl iodide intermediate that is rapidly displaced by a second thiolate nucleophile to forge the S-S bridge.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q008",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Disulfide Reduction by DTT Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is dithiothreitol (DTT / Cleland's reagent) exceptionally effective at reducing protein disulfide bridges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion."
+        },
+        {
+          "label": "B",
+          "text": "DTT precipitates proteins from solution."
+        },
+        {
+          "label": "C",
+          "text": "DTT is a strong Brønsted acid that hydrolyzes disulfides."
+        },
+        {
+          "label": "D",
+          "text": "DTT releases gaseous hydrogen that hydrogenates the disulfide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion.",
+      "explanation": "Formation of an entropically and enthalpically favored six-membered ring drives quantitative reduction of intermolecular disulfides.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q009",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Sulfide Nucleophilic Alkylation to Sulfonium",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why do dialkyl sulfides react with alkyl halides much faster than dialkyl ethers via SN2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur forms ionic bonds with carbon."
+        },
+        {
+          "label": "C",
+          "text": "Sulfides are strong Brønsted acids."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur is more electronegative than oxygen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs.",
+      "explanation": "Greater polarizability makes sulfur a far superior nucleophile compared to oxygen in SN2 displacements.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q010",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Alkoxy Ape",
+      "topic": "Sharpless Asymmetric Epoxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the Sharpless epoxidation of allylic alcohols, what components assemble the chiral catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rhodium chloride and chiral phosphines."
+        },
+        {
+          "label": "B",
+          "text": "Palladium acetate and BINAP."
+        },
+        {
+          "label": "C",
+          "text": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively."
+        },
+        {
+          "label": "D",
+          "text": "Osmium tetroxide, NMO, and chiral quinine."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively.",
+      "explanation": "The chiral titanium-tartrate dimer coordinates both the allylic alcohol and peroxide, transferring oxygen exclusively to one enantiotopic face.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "alkoxy-ape.png"
+      ]
+    },
+    {
+      "id": "ch13_q011",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "mCPBA Alkene Epoxidation Transition State",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the structure of the 'butterfly' transition state during mCPBA epoxidation of an alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free oxygen radical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl."
+        },
+        {
+          "label": "C",
+          "text": "A 4-membered cyclic dioxetane ring."
+        },
+        {
+          "label": "D",
+          "text": "A stepwise carbocation intermediate captured by carboxylate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl.",
+      "explanation": "The peroxy acid epoxidation is a concerted syn-addition proceeding through a highly organized 'butterfly' transition state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q012",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Acid-Catalyzed Epoxide Opening Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does acid-catalyzed methanolysis of 1,2-epoxypropane yield 2-methoxy-1-propanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methanol is a bulky base that attacks terminal positions."
+        },
+        {
+          "label": "B",
+          "text": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 attack at the less hindered carbon."
+        },
+        {
+          "label": "D",
+          "text": "The epoxide undergoes a 1,2-hydride shift before attack."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there.",
+      "explanation": "Under acidic conditions, electronic factors dominate: the protonated epoxide has a longer, weaker bond to the more substituted carbon (greater positive charge).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q013",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Base-Promoted Epoxide Opening Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does basic methanolysis (NaOCH₃ / CH₃OH) of 1,2-epoxypropane yield 1-methoxy-2-propanol exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The basic epoxide forms a free carbocation at C1."
+        },
+        {
+          "label": "B",
+          "text": "C2 is deactivated by hyperconjugation."
+        },
+        {
+          "label": "C",
+          "text": "Methoxide coordinates to oxygen prior to elimination."
+        },
+        {
+          "label": "D",
+          "text": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion.",
+      "explanation": "Basic nucleophiles attack unprotonated epoxides via pure SN2 kinetics, governed entirely by steric accessibility at the less substituted carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q014",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Crown Ether Cation Coordination Complex",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does 18-crown-6 mechanistically enhance the nucleophilicity of potassium cyanide in benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18-crown-6 oxidizes potassium metal."
+        },
+        {
+          "label": "B",
+          "text": "18-crown-6 donates protons to cyanide."
+        },
+        {
+          "label": "C",
+          "text": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive."
+        },
+        {
+          "label": "D",
+          "text": "18-crown-6 forms covalent bonds with benzene solvent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive.",
+      "explanation": "Encapsulation of the cation in nonpolar solvents produces 'naked' anions with enormous nucleophilic reactivity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q015",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Thiol Oxidation to Disulfides Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic pathway for the oxidation of two thiols to a disulfide by molecular iodine (I₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct reduction of iodine to iodate."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide."
+        },
+        {
+          "label": "C",
+          "text": "Formation of a sulfur trioxide adduct."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of sulfur-carbon bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide.",
+      "explanation": "The reaction proceeds via a sulfenyl iodide intermediate that is rapidly displaced by a second thiolate nucleophile to forge the S-S bridge.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q016",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Disulfide Reduction by DTT Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is dithiothreitol (DTT / Cleland's reagent) exceptionally effective at reducing protein disulfide bridges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DTT precipitates proteins from solution."
+        },
+        {
+          "label": "B",
+          "text": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion."
+        },
+        {
+          "label": "C",
+          "text": "DTT is a strong Brønsted acid that hydrolyzes disulfides."
+        },
+        {
+          "label": "D",
+          "text": "DTT releases gaseous hydrogen that hydrogenates the disulfide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion.",
+      "explanation": "Formation of an entropically and enthalpically favored six-membered ring drives quantitative reduction of intermolecular disulfides.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q017",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Sulfide Nucleophilic Alkylation to Sulfonium",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do dialkyl sulfides react with alkyl halides much faster than dialkyl ethers via SN2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur forms ionic bonds with carbon."
+        },
+        {
+          "label": "C",
+          "text": "Sulfides are strong Brønsted acids."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur is more electronegative than oxygen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs.",
+      "explanation": "Greater polarizability makes sulfur a far superior nucleophile compared to oxygen in SN2 displacements.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q018",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Sharpless Asymmetric Epoxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In the Sharpless epoxidation of allylic alcohols, what components assemble the chiral catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rhodium chloride and chiral phosphines."
+        },
+        {
+          "label": "B",
+          "text": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively."
+        },
+        {
+          "label": "C",
+          "text": "Osmium tetroxide, NMO, and chiral quinine."
+        },
+        {
+          "label": "D",
+          "text": "Palladium acetate and BINAP."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively.",
+      "explanation": "The chiral titanium-tartrate dimer coordinates both the allylic alcohol and peroxide, transferring oxygen exclusively to one enantiotopic face.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q019",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Williamson Ether Synthesis Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic limitation of the Williamson ether synthesis when using a tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds with retention of configuration."
+        },
+        {
+          "label": "B",
+          "text": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene."
+        },
+        {
+          "label": "C",
+          "text": "The tertiary halide undergoes rapid homolytic polymerization."
+        },
+        {
+          "label": "D",
+          "text": "The alkoxide decomposes into carbon monoxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene.",
+      "explanation": "Tertiary alkyl halides are too sterically hindered for SN2 backside attack; basic alkoxides exclusively undergo E2 elimination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q020",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Williamson Warden",
+      "topic": "Acidic Cleavage of Dialkyl Ethers Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In the cleavage of diethyl ether by excess concentrated HI, what are the sequential mechanistic steps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide."
+        },
+        {
+          "label": "B",
+          "text": "Direct insertion of iodine into C-O bonds."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage into ethyl radicals followed by iodination."
+        },
+        {
+          "label": "D",
+          "text": "E1 elimination to ethylene followed by HI addition."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide.",
+      "explanation": "Strongly acidic HI protonates the ether oxygen into a good leaving group, enabling sequential SN2 displacements by nucleophilic iodide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "williamson-warden.png"
+      ]
+    },
+    {
+      "id": "ch13_q021",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Base-Promoted Epoxide Opening Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does basic methanolysis (NaOCH₃ / CH₃OH) of 1,2-epoxypropane yield 1-methoxy-2-propanol exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion."
+        },
+        {
+          "label": "B",
+          "text": "Methoxide coordinates to oxygen prior to elimination."
+        },
+        {
+          "label": "C",
+          "text": "The basic epoxide forms a free carbocation at C1."
+        },
+        {
+          "label": "D",
+          "text": "C2 is deactivated by hyperconjugation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion.",
+      "explanation": "Basic nucleophiles attack unprotonated epoxides via pure SN2 kinetics, governed entirely by steric accessibility at the less substituted carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q022",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Crown Ether Cation Coordination Complex",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does 18-crown-6 mechanistically enhance the nucleophilicity of potassium cyanide in benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive."
+        },
+        {
+          "label": "B",
+          "text": "18-crown-6 donates protons to cyanide."
+        },
+        {
+          "label": "C",
+          "text": "18-crown-6 oxidizes potassium metal."
+        },
+        {
+          "label": "D",
+          "text": "18-crown-6 forms covalent bonds with benzene solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive.",
+      "explanation": "Encapsulation of the cation in nonpolar solvents produces 'naked' anions with enormous nucleophilic reactivity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q023",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Thiol Oxidation to Disulfides Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic pathway for the oxidation of two thiols to a disulfide by molecular iodine (I₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct reduction of iodine to iodate."
+        },
+        {
+          "label": "B",
+          "text": "Formation of a sulfur trioxide adduct."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of sulfur-carbon bonds."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide.",
+      "explanation": "The reaction proceeds via a sulfenyl iodide intermediate that is rapidly displaced by a second thiolate nucleophile to forge the S-S bridge.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q024",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Disulfide Reduction by DTT Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is dithiothreitol (DTT / Cleland's reagent) exceptionally effective at reducing protein disulfide bridges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion."
+        },
+        {
+          "label": "B",
+          "text": "DTT precipitates proteins from solution."
+        },
+        {
+          "label": "C",
+          "text": "DTT is a strong Brønsted acid that hydrolyzes disulfides."
+        },
+        {
+          "label": "D",
+          "text": "DTT releases gaseous hydrogen that hydrogenates the disulfide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion.",
+      "explanation": "Formation of an entropically and enthalpically favored six-membered ring drives quantitative reduction of intermolecular disulfides.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q025",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Sulfide Nucleophilic Alkylation to Sulfonium",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why do dialkyl sulfides react with alkyl halides much faster than dialkyl ethers via SN2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfides are strong Brønsted acids."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur forms ionic bonds with carbon."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur is more electronegative than oxygen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs.",
+      "explanation": "Greater polarizability makes sulfur a far superior nucleophile compared to oxygen in SN2 displacements.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q026",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Sharpless Asymmetric Epoxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In the Sharpless epoxidation of allylic alcohols, what components assemble the chiral catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Palladium acetate and BINAP."
+        },
+        {
+          "label": "B",
+          "text": "Osmium tetroxide, NMO, and chiral quinine."
+        },
+        {
+          "label": "C",
+          "text": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively."
+        },
+        {
+          "label": "D",
+          "text": "Rhodium chloride and chiral phosphines."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively.",
+      "explanation": "The chiral titanium-tartrate dimer coordinates both the allylic alcohol and peroxide, transferring oxygen exclusively to one enantiotopic face.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q027",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Williamson Ether Synthesis Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic limitation of the Williamson ether synthesis when using a tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The tertiary halide undergoes rapid homolytic polymerization."
+        },
+        {
+          "label": "B",
+          "text": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds with retention of configuration."
+        },
+        {
+          "label": "D",
+          "text": "The alkoxide decomposes into carbon monoxide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene.",
+      "explanation": "Tertiary alkyl halides are too sterically hindered for SN2 backside attack; basic alkoxides exclusively undergo E2 elimination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q028",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Acidic Cleavage of Dialkyl Ethers Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In the cleavage of diethyl ether by excess concentrated HI, what are the sequential mechanistic steps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage into ethyl radicals followed by iodination."
+        },
+        {
+          "label": "B",
+          "text": "E1 elimination to ethylene followed by HI addition."
+        },
+        {
+          "label": "C",
+          "text": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide."
+        },
+        {
+          "label": "D",
+          "text": "Direct insertion of iodine into C-O bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide.",
+      "explanation": "Strongly acidic HI protonates the ether oxygen into a good leaving group, enabling sequential SN2 displacements by nucleophilic iodide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q029",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "mCPBA Alkene Epoxidation Transition State",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the structure of the 'butterfly' transition state during mCPBA epoxidation of an alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free oxygen radical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "A 4-membered cyclic dioxetane ring."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise carbocation intermediate captured by carboxylate."
+        },
+        {
+          "label": "D",
+          "text": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl.",
+      "explanation": "The peroxy acid epoxidation is a concerted syn-addition proceeding through a highly organized 'butterfly' transition state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q030",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Epoxide Enchanter",
+      "topic": "Acid-Catalyzed Epoxide Opening Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does acid-catalyzed methanolysis of 1,2-epoxypropane yield 2-methoxy-1-propanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 attack at the less hindered carbon."
+        },
+        {
+          "label": "B",
+          "text": "The epoxide undergoes a 1,2-hydride shift before attack."
+        },
+        {
+          "label": "C",
+          "text": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there."
+        },
+        {
+          "label": "D",
+          "text": "Methanol is a bulky base that attacks terminal positions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there.",
+      "explanation": "Under acidic conditions, electronic factors dominate: the protonated epoxide has a longer, weaker bond to the more substituted carbon (greater positive charge).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "epoxide-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch13_q031",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Thiol Oxidation to Disulfides Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic pathway for the oxidation of two thiols to a disulfide by molecular iodine (I₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct reduction of iodine to iodate."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of sulfur-carbon bonds."
+        },
+        {
+          "label": "D",
+          "text": "Formation of a sulfur trioxide adduct."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide.",
+      "explanation": "The reaction proceeds via a sulfenyl iodide intermediate that is rapidly displaced by a second thiolate nucleophile to forge the S-S bridge.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q032",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Disulfide Reduction by DTT Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is dithiothreitol (DTT / Cleland's reagent) exceptionally effective at reducing protein disulfide bridges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DTT releases gaseous hydrogen that hydrogenates the disulfide."
+        },
+        {
+          "label": "B",
+          "text": "DTT is a strong Brønsted acid that hydrolyzes disulfides."
+        },
+        {
+          "label": "C",
+          "text": "DTT precipitates proteins from solution."
+        },
+        {
+          "label": "D",
+          "text": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion.",
+      "explanation": "Formation of an entropically and enthalpically favored six-membered ring drives quantitative reduction of intermolecular disulfides.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q033",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Sulfide Nucleophilic Alkylation to Sulfonium",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why do dialkyl sulfides react with alkyl halides much faster than dialkyl ethers via SN2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur forms ionic bonds with carbon."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur is more electronegative than oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs."
+        },
+        {
+          "label": "D",
+          "text": "Sulfides are strong Brønsted acids."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs.",
+      "explanation": "Greater polarizability makes sulfur a far superior nucleophile compared to oxygen in SN2 displacements.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q034",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Sharpless Asymmetric Epoxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "In the Sharpless epoxidation of allylic alcohols, what components assemble the chiral catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Osmium tetroxide, NMO, and chiral quinine."
+        },
+        {
+          "label": "B",
+          "text": "Palladium acetate and BINAP."
+        },
+        {
+          "label": "C",
+          "text": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively."
+        },
+        {
+          "label": "D",
+          "text": "Rhodium chloride and chiral phosphines."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively.",
+      "explanation": "The chiral titanium-tartrate dimer coordinates both the allylic alcohol and peroxide, transferring oxygen exclusively to one enantiotopic face.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q035",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Williamson Ether Synthesis Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic limitation of the Williamson ether synthesis when using a tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alkoxide decomposes into carbon monoxide."
+        },
+        {
+          "label": "B",
+          "text": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds with retention of configuration."
+        },
+        {
+          "label": "D",
+          "text": "The tertiary halide undergoes rapid homolytic polymerization."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene.",
+      "explanation": "Tertiary alkyl halides are too sterically hindered for SN2 backside attack; basic alkoxides exclusively undergo E2 elimination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q036",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Acidic Cleavage of Dialkyl Ethers Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In the cleavage of diethyl ether by excess concentrated HI, what are the sequential mechanistic steps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage into ethyl radicals followed by iodination."
+        },
+        {
+          "label": "B",
+          "text": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide."
+        },
+        {
+          "label": "C",
+          "text": "Direct insertion of iodine into C-O bonds."
+        },
+        {
+          "label": "D",
+          "text": "E1 elimination to ethylene followed by HI addition."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide.",
+      "explanation": "Strongly acidic HI protonates the ether oxygen into a good leaving group, enabling sequential SN2 displacements by nucleophilic iodide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q037",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "mCPBA Alkene Epoxidation Transition State",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the structure of the 'butterfly' transition state during mCPBA epoxidation of an alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stepwise carbocation intermediate captured by carboxylate."
+        },
+        {
+          "label": "B",
+          "text": "A 4-membered cyclic dioxetane ring."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl."
+        },
+        {
+          "label": "D",
+          "text": "A free oxygen radical intermediate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl.",
+      "explanation": "The peroxy acid epoxidation is a concerted syn-addition proceeding through a highly organized 'butterfly' transition state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q038",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Acid-Catalyzed Epoxide Opening Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does acid-catalyzed methanolysis of 1,2-epoxypropane yield 2-methoxy-1-propanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there."
+        },
+        {
+          "label": "B",
+          "text": "Methanol is a bulky base that attacks terminal positions."
+        },
+        {
+          "label": "C",
+          "text": "The reaction proceeds via an SN2 attack at the less hindered carbon."
+        },
+        {
+          "label": "D",
+          "text": "The epoxide undergoes a 1,2-hydride shift before attack."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there.",
+      "explanation": "Under acidic conditions, electronic factors dominate: the protonated epoxide has a longer, weaker bond to the more substituted carbon (greater positive charge).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q039",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Base-Promoted Epoxide Opening Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does basic methanolysis (NaOCH₃ / CH₃OH) of 1,2-epoxypropane yield 1-methoxy-2-propanol exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methoxide coordinates to oxygen prior to elimination."
+        },
+        {
+          "label": "B",
+          "text": "The basic epoxide forms a free carbocation at C1."
+        },
+        {
+          "label": "C",
+          "text": "C2 is deactivated by hyperconjugation."
+        },
+        {
+          "label": "D",
+          "text": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion.",
+      "explanation": "Basic nucleophiles attack unprotonated epoxides via pure SN2 kinetics, governed entirely by steric accessibility at the less substituted carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q040",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Oxirane Opener",
+      "topic": "Crown Ether Cation Coordination Complex",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "How does 18-crown-6 mechanistically enhance the nucleophilicity of potassium cyanide in benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18-crown-6 donates protons to cyanide."
+        },
+        {
+          "label": "B",
+          "text": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive."
+        },
+        {
+          "label": "C",
+          "text": "18-crown-6 forms covalent bonds with benzene solvent."
+        },
+        {
+          "label": "D",
+          "text": "18-crown-6 oxidizes potassium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive.",
+      "explanation": "Encapsulation of the cation in nonpolar solvents produces 'naked' anions with enormous nucleophilic reactivity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "oxirane-opener.png"
+      ]
+    },
+    {
+      "id": "ch13_q041",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Sulfide Nucleophilic Alkylation to Sulfonium",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do dialkyl sulfides react with alkyl halides much faster than dialkyl ethers via SN2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs."
+        },
+        {
+          "label": "B",
+          "text": "Sulfur is more electronegative than oxygen."
+        },
+        {
+          "label": "C",
+          "text": "Sulfides are strong Brønsted acids."
+        },
+        {
+          "label": "D",
+          "text": "Sulfur forms ionic bonds with carbon."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sulfur has larger, more polarizable 3p nonbonding lone pairs that attack electrophilic carbons with lower activation energy than compact 2p oxygen lone pairs.",
+      "explanation": "Greater polarizability makes sulfur a far superior nucleophile compared to oxygen in SN2 displacements.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q042",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Sharpless Asymmetric Epoxidation Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the Sharpless epoxidation of allylic alcohols, what components assemble the chiral catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rhodium chloride and chiral phosphines."
+        },
+        {
+          "label": "B",
+          "text": "Osmium tetroxide, NMO, and chiral quinine."
+        },
+        {
+          "label": "C",
+          "text": "Palladium acetate and BINAP."
+        },
+        {
+          "label": "D",
+          "text": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Titanium(IV) isopropoxide [Ti(OiPr)₄], chiral diethyl tartrate (DET), and tert-butyl hydroperoxide (TBHP) coordinate to deliver oxygen enantioselectively.",
+      "explanation": "The chiral titanium-tartrate dimer coordinates both the allylic alcohol and peroxide, transferring oxygen exclusively to one enantiotopic face.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q043",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Williamson Ether Synthesis Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic limitation of the Williamson ether synthesis when using a tertiary alkyl halide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds with retention of configuration."
+        },
+        {
+          "label": "B",
+          "text": "The alkoxide decomposes into carbon monoxide."
+        },
+        {
+          "label": "C",
+          "text": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene."
+        },
+        {
+          "label": "D",
+          "text": "The tertiary halide undergoes rapid homolytic polymerization."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The strongly basic alkoxide performs rapid E2 elimination on the tertiary alkyl halide rather than SN2 substitution, yielding an alkene.",
+      "explanation": "Tertiary alkyl halides are too sterically hindered for SN2 backside attack; basic alkoxides exclusively undergo E2 elimination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q044",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Acidic Cleavage of Dialkyl Ethers Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In the cleavage of diethyl ether by excess concentrated HI, what are the sequential mechanistic steps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage into ethyl radicals followed by iodination."
+        },
+        {
+          "label": "B",
+          "text": "E1 elimination to ethylene followed by HI addition."
+        },
+        {
+          "label": "C",
+          "text": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide."
+        },
+        {
+          "label": "D",
+          "text": "Direct insertion of iodine into C-O bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of ether oxygen to an oxonium ion → SN2 displacement by iodide to yield ethyl iodide and ethanol → protonation of ethanol → second SN2 displacement to yield a second ethyl iodide.",
+      "explanation": "Strongly acidic HI protonates the ether oxygen into a good leaving group, enabling sequential SN2 displacements by nucleophilic iodide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q045",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "mCPBA Alkene Epoxidation Transition State",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the structure of the 'butterfly' transition state during mCPBA epoxidation of an alkene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl."
+        },
+        {
+          "label": "B",
+          "text": "A free oxygen radical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A 4-membered cyclic dioxetane ring."
+        },
+        {
+          "label": "D",
+          "text": "A stepwise carbocation intermediate captured by carboxylate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A concerted, single-step transition state where the peroxy oxygen is transferred to the π bond simultaneously with proton transfer to the peroxy carbonyl.",
+      "explanation": "The peroxy acid epoxidation is a concerted syn-addition proceeding through a highly organized 'butterfly' transition state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q046",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Acid-Catalyzed Epoxide Opening Regioselectivity",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does acid-catalyzed methanolysis of 1,2-epoxypropane yield 2-methoxy-1-propanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 attack at the less hindered carbon."
+        },
+        {
+          "label": "B",
+          "text": "The epoxide undergoes a 1,2-hydride shift before attack."
+        },
+        {
+          "label": "C",
+          "text": "Methanol is a bulky base that attacks terminal positions."
+        },
+        {
+          "label": "D",
+          "text": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation of the epoxide creates substantial partial carbocation character at the more substituted C2 carbon, directing the weak methanol nucleophile there.",
+      "explanation": "Under acidic conditions, electronic factors dominate: the protonated epoxide has a longer, weaker bond to the more substituted carbon (greater positive charge).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q047",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Base-Promoted Epoxide Opening Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does basic methanolysis (NaOCH₃ / CH₃OH) of 1,2-epoxypropane yield 1-methoxy-2-propanol exclusively?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C2 is deactivated by hyperconjugation."
+        },
+        {
+          "label": "B",
+          "text": "The basic epoxide forms a free carbocation at C1."
+        },
+        {
+          "label": "C",
+          "text": "Methoxide coordinates to oxygen prior to elimination."
+        },
+        {
+          "label": "D",
+          "text": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Under basic conditions, the strong methoxide nucleophile attacks the less sterically hindered carbon (C1) in a classic SN2 pathway with inversion.",
+      "explanation": "Basic nucleophiles attack unprotonated epoxides via pure SN2 kinetics, governed entirely by steric accessibility at the less substituted carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q048",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Crown Ether Cation Coordination Complex",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How does 18-crown-6 mechanistically enhance the nucleophilicity of potassium cyanide in benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18-crown-6 oxidizes potassium metal."
+        },
+        {
+          "label": "B",
+          "text": "18-crown-6 forms covalent bonds with benzene solvent."
+        },
+        {
+          "label": "C",
+          "text": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive."
+        },
+        {
+          "label": "D",
+          "text": "18-crown-6 donates protons to cyanide."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "18-crown-6 coordinates K⁺ into its central cavity via ion-dipole interactions with 6 ethereal oxygens, leaving CN⁻ 'naked', unsolvated, and hyper-reactive.",
+      "explanation": "Encapsulation of the cation in nonpolar solvents produces 'naked' anions with enormous nucleophilic reactivity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q049",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Thiol Oxidation to Disulfides Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic pathway for the oxidation of two thiols to a disulfide by molecular iodine (I₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide."
+        },
+        {
+          "label": "B",
+          "text": "Direct reduction of iodine to iodate."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of sulfur-carbon bonds."
+        },
+        {
+          "label": "D",
+          "text": "Formation of a sulfur trioxide adduct."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic attack of thiol sulfur on I₂ yields a sulfenyl iodide intermediate (R-SI), which is attacked by a second thiol with displacement of iodide.",
+      "explanation": "The reaction proceeds via a sulfenyl iodide intermediate that is rapidly displaced by a second thiolate nucleophile to forge the S-S bridge.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    },
+    {
+      "id": "ch13_q050",
+      "chapter": 13,
+      "chapter_title": "Ethers and Epoxides; Thiols and Sulfides",
+      "boss": "Thiol-Crown Tyrant",
+      "topic": "Disulfide Reduction by DTT Mechanism",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why is dithiothreitol (DTT / Cleland's reagent) exceptionally effective at reducing protein disulfide bridges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DTT precipitates proteins from solution."
+        },
+        {
+          "label": "B",
+          "text": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion."
+        },
+        {
+          "label": "C",
+          "text": "DTT is a strong Brønsted acid that hydrolyzes disulfides."
+        },
+        {
+          "label": "D",
+          "text": "DTT releases gaseous hydrogen that hydrogenates the disulfide."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DTT undergoes sequential thiol-disulfide exchange, forming a thermodynamically stable six-membered cyclic disulfide ring that drives the reduction to completion.",
+      "explanation": "Formation of an entropically and enthalpically favored six-membered ring drives quantitative reduction of intermolecular disulfides.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thiol-crown-tyrant.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Alkoxy Ape",
+    "Williamson Warden",
+    "Epoxide Enchanter",
+    "Oxirane Opener",
+    "Thiol-Crown Tyrant"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Alkoxy Ape",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "alkoxy-ape.png"
+        ]
+      },
+      {
+        "boss": "Williamson Warden",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "williamson-warden.png"
+        ]
+      },
+      {
+        "boss": "Epoxide Enchanter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "epoxide-enchanter.png"
+        ]
+      },
+      {
+        "boss": "Oxirane Opener",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "oxirane-opener.png"
+        ]
+      },
+      {
+        "boss": "Thiol-Crown Tyrant",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "thiol-crown-tyrant.png"
+        ]
+      }
+    ]
+  }
+}

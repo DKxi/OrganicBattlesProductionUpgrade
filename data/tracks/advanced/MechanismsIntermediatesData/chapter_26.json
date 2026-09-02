@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 26,
+  "chapter_title": "Lipids",
+  "assigned_boss": "Fatty Acid Fiend",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch26_q001",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Triglyceride Saponification Stepwise Tetrahedral Cleavage",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the sequence of tetrahedral intermediates during the saponification of a triglyceride with 3 equivalents of NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct SN2 displacement of fatty acids by sodium."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage into glycerol radicals."
+        },
+        {
+          "label": "C",
+          "text": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps."
+        },
+        {
+          "label": "D",
+          "text": "Simultaneous cleavage of all three ester bonds in a single pericyclic step."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps.",
+      "explanation": "Saponification is a stepwise nucleophilic acyl substitution on each ester linkage of the glycerol triester.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q002",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Vegetable Oil Hydrogenation Cis-Trans Isomerization",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What side reaction occurs on the metal catalyst surface during partial hydrogenation of polyunsaturated vegetable oils?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Decarboxylation of fatty acids to hydrocarbons."
+        },
+        {
+          "label": "B",
+          "text": "Complete polymerization of the triglyceride into plastic."
+        },
+        {
+          "label": "C",
+          "text": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of fatty acids to explosive peroxides."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats.",
+      "explanation": "Incomplete hydrogenation allows surface-bound radicals to rotate and eliminate, generating thermodynamically more stable trans-fatty acid isomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q003",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Bromine Addition Fatty Acid Unsaturation Assay",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does an unsaturated oil (e.g., olive oil) decolorize bromine water (Br₂ / CCl₄) while saturated fat (e.g., butter) does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unsaturated oils precipitate bromine as a yellow solid."
+        },
+        {
+          "label": "B",
+          "text": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂."
+        },
+        {
+          "label": "C",
+          "text": "Saturated fats destroy bromine by oxidation."
+        },
+        {
+          "label": "D",
+          "text": "Bromine evaporates faster in the presence of oil."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂.",
+      "explanation": "Electrophilic halogenation consumes colored bromine as it adds across carbon-carbon double bonds, quantifying unsaturation (bromine number).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q004",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Phospholipase A2 Enzymatic Regiospecific Cleavage",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What specific ester bond in a phosphatidylcholine phospholipid is cleaved by the venom enzyme phospholipase A₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The choline trimethylammonium bond."
+        },
+        {
+          "label": "B",
+          "text": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine."
+        },
+        {
+          "label": "C",
+          "text": "The ester linkage at C1 exclusively."
+        },
+        {
+          "label": "D",
+          "text": "The phosphate ester at C3."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine.",
+      "explanation": "Phospholipase A₂ exhibits strict regiospecificity for hydrolyzing the sn-2 acyl ester bond of membrane phospholipids.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q005",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Isoprene Biosynthetic Condensation Carbocation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key reactive intermediate in the enzymatic coupling of DMAPP with IPP to form monoterpenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free radical generated by light."
+        },
+        {
+          "label": "B",
+          "text": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate)."
+        },
+        {
+          "label": "C",
+          "text": "An epoxide intermediate."
+        },
+        {
+          "label": "D",
+          "text": "An organolithium carbanion."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate).",
+      "explanation": "Pyrophosphate acts as an excellent biological leaving group, generating a resonance-stabilized allylic carbocation that alkylates IPP.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q006",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Squalene Epoxide Polycyclization Cascade",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What remarkable single-step mechanistic cascade converts squalene 2,3-epoxide into the tetracyclic lanosterol steroid skeleton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A sequence of four separate Diels-Alder reactions."
+        },
+        {
+          "label": "B",
+          "text": "Thermal electrocyclic ring closures at 400°C."
+        },
+        {
+          "label": "C",
+          "text": "A free radical polymerization initiated by oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts.",
+      "explanation": "Oxidosqualene cyclase catalyzes a breathtaking cascade: stereospecific polycyclization creates 4 rings and 7 stereocenters in a single enzymatic event.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q007",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Cholesterol Jones Oxidation with Alkene Migration",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "When cholesterol is oxidized by Jones reagent (CrO₃ / H₂SO₄), why does the product contain a conjugated 4-en-3-one system?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The double bond is cleaved by ozonolysis."
+        },
+        {
+          "label": "B",
+          "text": "The chromium atom directly moves the double bond."
+        },
+        {
+          "label": "C",
+          "text": "Cholesterol decarboxylates in acid."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one).",
+      "explanation": "Acid-catalyzed enolization of the initial β,γ-unsaturated ketone drives double-bond migration into conjugation with the C3 carbonyl.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q008",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Prostaglandin Biosynthesis Cyclooxygenase (COX)",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic role of cyclooxygenase (COX-1/COX-2) in the conversion of arachidonic acid to prostaglandin H₂ (PGH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydrolysis of arachidonic acid into four molecules of pentanoic acid."
+        },
+        {
+          "label": "B",
+          "text": "Direct reduction of arachidonic acid by NADH."
+        },
+        {
+          "label": "C",
+          "text": "Friedel-Crafts alkylation of the fatty acid."
+        },
+        {
+          "label": "D",
+          "text": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring.",
+      "explanation": "COX enzymes utilize a tyrosyl radical to initiate bis-dioxygenation and cyclization of arachidonic acid into the cyclopentane endoperoxide PGH₂.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q009",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Aspirin Irreversible COX Inhibition Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "How does aspirin (acetylsalicylic acid) mechanistically inactivate the cyclooxygenase (COX) enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aspirin oxidizes the heme iron from Fe(II) to Fe(III)."
+        },
+        {
+          "label": "B",
+          "text": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding."
+        },
+        {
+          "label": "C",
+          "text": "Aspirin coordinates to the RNA of the enzyme."
+        },
+        {
+          "label": "D",
+          "text": "Aspirin dissolves the enzyme membrane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding.",
+      "explanation": "Covalent acetylation of Ser530 irreversibly blocks the cyclooxygenase active site channel, preventing prostaglandin synthesis.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q010",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Fatty Acid Fiend",
+      "topic": "Wax Transesterification Methanolysis",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What products are generated when spermaceti wax (cetyl palmitate, C₁₅H₃₁COOC₁₆H₃₃) is subjected to base-catalyzed methanolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Glycerol and palmitic acid."
+        },
+        {
+          "label": "B",
+          "text": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide."
+        },
+        {
+          "label": "C",
+          "text": "Palmitic acid and ethylene glycol."
+        },
+        {
+          "label": "D",
+          "text": "Hexadecane and palmitic anhydride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide.",
+      "explanation": "Waxes are simple monoesters of long-chain fatty acids with long-chain fatty alcohols; transesterification yields the methyl ester and free long-chain alcohol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fatty-acid-fiend.png"
+      ]
+    },
+    {
+      "id": "ch26_q011",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Bromine Addition Fatty Acid Unsaturation Assay",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does an unsaturated oil (e.g., olive oil) decolorize bromine water (Br₂ / CCl₄) while saturated fat (e.g., butter) does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Saturated fats destroy bromine by oxidation."
+        },
+        {
+          "label": "B",
+          "text": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂."
+        },
+        {
+          "label": "C",
+          "text": "Unsaturated oils precipitate bromine as a yellow solid."
+        },
+        {
+          "label": "D",
+          "text": "Bromine evaporates faster in the presence of oil."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂.",
+      "explanation": "Electrophilic halogenation consumes colored bromine as it adds across carbon-carbon double bonds, quantifying unsaturation (bromine number).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q012",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Phospholipase A2 Enzymatic Regiospecific Cleavage",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What specific ester bond in a phosphatidylcholine phospholipid is cleaved by the venom enzyme phospholipase A₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The choline trimethylammonium bond."
+        },
+        {
+          "label": "B",
+          "text": "The ester linkage at C1 exclusively."
+        },
+        {
+          "label": "C",
+          "text": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine."
+        },
+        {
+          "label": "D",
+          "text": "The phosphate ester at C3."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine.",
+      "explanation": "Phospholipase A₂ exhibits strict regiospecificity for hydrolyzing the sn-2 acyl ester bond of membrane phospholipids.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q013",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Isoprene Biosynthetic Condensation Carbocation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key reactive intermediate in the enzymatic coupling of DMAPP with IPP to form monoterpenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate)."
+        },
+        {
+          "label": "B",
+          "text": "An organolithium carbanion."
+        },
+        {
+          "label": "C",
+          "text": "An epoxide intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A free radical generated by light."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate).",
+      "explanation": "Pyrophosphate acts as an excellent biological leaving group, generating a resonance-stabilized allylic carbocation that alkylates IPP.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q014",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Squalene Epoxide Polycyclization Cascade",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What remarkable single-step mechanistic cascade converts squalene 2,3-epoxide into the tetracyclic lanosterol steroid skeleton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal electrocyclic ring closures at 400°C."
+        },
+        {
+          "label": "B",
+          "text": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts."
+        },
+        {
+          "label": "C",
+          "text": "A free radical polymerization initiated by oxygen."
+        },
+        {
+          "label": "D",
+          "text": "A sequence of four separate Diels-Alder reactions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts.",
+      "explanation": "Oxidosqualene cyclase catalyzes a breathtaking cascade: stereospecific polycyclization creates 4 rings and 7 stereocenters in a single enzymatic event.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q015",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Cholesterol Jones Oxidation with Alkene Migration",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "When cholesterol is oxidized by Jones reagent (CrO₃ / H₂SO₄), why does the product contain a conjugated 4-en-3-one system?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The double bond is cleaved by ozonolysis."
+        },
+        {
+          "label": "B",
+          "text": "The chromium atom directly moves the double bond."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one)."
+        },
+        {
+          "label": "D",
+          "text": "Cholesterol decarboxylates in acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one).",
+      "explanation": "Acid-catalyzed enolization of the initial β,γ-unsaturated ketone drives double-bond migration into conjugation with the C3 carbonyl.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q016",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Prostaglandin Biosynthesis Cyclooxygenase (COX)",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic role of cyclooxygenase (COX-1/COX-2) in the conversion of arachidonic acid to prostaglandin H₂ (PGH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring."
+        },
+        {
+          "label": "B",
+          "text": "Friedel-Crafts alkylation of the fatty acid."
+        },
+        {
+          "label": "C",
+          "text": "Hydrolysis of arachidonic acid into four molecules of pentanoic acid."
+        },
+        {
+          "label": "D",
+          "text": "Direct reduction of arachidonic acid by NADH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring.",
+      "explanation": "COX enzymes utilize a tyrosyl radical to initiate bis-dioxygenation and cyclization of arachidonic acid into the cyclopentane endoperoxide PGH₂.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q017",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Aspirin Irreversible COX Inhibition Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "How does aspirin (acetylsalicylic acid) mechanistically inactivate the cyclooxygenase (COX) enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aspirin coordinates to the RNA of the enzyme."
+        },
+        {
+          "label": "B",
+          "text": "Aspirin dissolves the enzyme membrane."
+        },
+        {
+          "label": "C",
+          "text": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding."
+        },
+        {
+          "label": "D",
+          "text": "Aspirin oxidizes the heme iron from Fe(II) to Fe(III)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding.",
+      "explanation": "Covalent acetylation of Ser530 irreversibly blocks the cyclooxygenase active site channel, preventing prostaglandin synthesis.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q018",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Wax Transesterification Methanolysis",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What products are generated when spermaceti wax (cetyl palmitate, C₁₅H₃₁COOC₁₆H₃₃) is subjected to base-catalyzed methanolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Palmitic acid and ethylene glycol."
+        },
+        {
+          "label": "B",
+          "text": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide."
+        },
+        {
+          "label": "C",
+          "text": "Hexadecane and palmitic anhydride."
+        },
+        {
+          "label": "D",
+          "text": "Glycerol and palmitic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide.",
+      "explanation": "Waxes are simple monoesters of long-chain fatty acids with long-chain fatty alcohols; transesterification yields the methyl ester and free long-chain alcohol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q019",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Triglyceride Saponification Stepwise Tetrahedral Cleavage",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the sequence of tetrahedral intermediates during the saponification of a triglyceride with 3 equivalents of NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Simultaneous cleavage of all three ester bonds in a single pericyclic step."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage into glycerol radicals."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement of fatty acids by sodium."
+        },
+        {
+          "label": "D",
+          "text": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps.",
+      "explanation": "Saponification is a stepwise nucleophilic acyl substitution on each ester linkage of the glycerol triester.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q020",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Micelle Minion",
+      "topic": "Vegetable Oil Hydrogenation Cis-Trans Isomerization",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What side reaction occurs on the metal catalyst surface during partial hydrogenation of polyunsaturated vegetable oils?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of fatty acids to explosive peroxides."
+        },
+        {
+          "label": "B",
+          "text": "Complete polymerization of the triglyceride into plastic."
+        },
+        {
+          "label": "C",
+          "text": "Decarboxylation of fatty acids to hydrocarbons."
+        },
+        {
+          "label": "D",
+          "text": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats.",
+      "explanation": "Incomplete hydrogenation allows surface-bound radicals to rotate and eliminate, generating thermodynamically more stable trans-fatty acid isomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "micelle-minion.png"
+      ]
+    },
+    {
+      "id": "ch26_q021",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Isoprene Biosynthetic Condensation Carbocation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key reactive intermediate in the enzymatic coupling of DMAPP with IPP to form monoterpenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An epoxide intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate)."
+        },
+        {
+          "label": "C",
+          "text": "An organolithium carbanion."
+        },
+        {
+          "label": "D",
+          "text": "A free radical generated by light."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate).",
+      "explanation": "Pyrophosphate acts as an excellent biological leaving group, generating a resonance-stabilized allylic carbocation that alkylates IPP.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q022",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Squalene Epoxide Polycyclization Cascade",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What remarkable single-step mechanistic cascade converts squalene 2,3-epoxide into the tetracyclic lanosterol steroid skeleton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal electrocyclic ring closures at 400°C."
+        },
+        {
+          "label": "B",
+          "text": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts."
+        },
+        {
+          "label": "C",
+          "text": "A free radical polymerization initiated by oxygen."
+        },
+        {
+          "label": "D",
+          "text": "A sequence of four separate Diels-Alder reactions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts.",
+      "explanation": "Oxidosqualene cyclase catalyzes a breathtaking cascade: stereospecific polycyclization creates 4 rings and 7 stereocenters in a single enzymatic event.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q023",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Cholesterol Jones Oxidation with Alkene Migration",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "When cholesterol is oxidized by Jones reagent (CrO₃ / H₂SO₄), why does the product contain a conjugated 4-en-3-one system?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The chromium atom directly moves the double bond."
+        },
+        {
+          "label": "B",
+          "text": "Cholesterol decarboxylates in acid."
+        },
+        {
+          "label": "C",
+          "text": "The double bond is cleaved by ozonolysis."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one).",
+      "explanation": "Acid-catalyzed enolization of the initial β,γ-unsaturated ketone drives double-bond migration into conjugation with the C3 carbonyl.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q024",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Prostaglandin Biosynthesis Cyclooxygenase (COX)",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the mechanistic role of cyclooxygenase (COX-1/COX-2) in the conversion of arachidonic acid to prostaglandin H₂ (PGH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring."
+        },
+        {
+          "label": "B",
+          "text": "Friedel-Crafts alkylation of the fatty acid."
+        },
+        {
+          "label": "C",
+          "text": "Hydrolysis of arachidonic acid into four molecules of pentanoic acid."
+        },
+        {
+          "label": "D",
+          "text": "Direct reduction of arachidonic acid by NADH."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring.",
+      "explanation": "COX enzymes utilize a tyrosyl radical to initiate bis-dioxygenation and cyclization of arachidonic acid into the cyclopentane endoperoxide PGH₂.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q025",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Aspirin Irreversible COX Inhibition Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How does aspirin (acetylsalicylic acid) mechanistically inactivate the cyclooxygenase (COX) enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aspirin oxidizes the heme iron from Fe(II) to Fe(III)."
+        },
+        {
+          "label": "B",
+          "text": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding."
+        },
+        {
+          "label": "C",
+          "text": "Aspirin coordinates to the RNA of the enzyme."
+        },
+        {
+          "label": "D",
+          "text": "Aspirin dissolves the enzyme membrane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding.",
+      "explanation": "Covalent acetylation of Ser530 irreversibly blocks the cyclooxygenase active site channel, preventing prostaglandin synthesis.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q026",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Wax Transesterification Methanolysis",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What products are generated when spermaceti wax (cetyl palmitate, C₁₅H₃₁COOC₁₆H₃₃) is subjected to base-catalyzed methanolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexadecane and palmitic anhydride."
+        },
+        {
+          "label": "B",
+          "text": "Glycerol and palmitic acid."
+        },
+        {
+          "label": "C",
+          "text": "Palmitic acid and ethylene glycol."
+        },
+        {
+          "label": "D",
+          "text": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide.",
+      "explanation": "Waxes are simple monoesters of long-chain fatty acids with long-chain fatty alcohols; transesterification yields the methyl ester and free long-chain alcohol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q027",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Triglyceride Saponification Stepwise Tetrahedral Cleavage",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of tetrahedral intermediates during the saponification of a triglyceride with 3 equivalents of NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct SN2 displacement of fatty acids by sodium."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage into glycerol radicals."
+        },
+        {
+          "label": "C",
+          "text": "Simultaneous cleavage of all three ester bonds in a single pericyclic step."
+        },
+        {
+          "label": "D",
+          "text": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps.",
+      "explanation": "Saponification is a stepwise nucleophilic acyl substitution on each ester linkage of the glycerol triester.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q028",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Vegetable Oil Hydrogenation Cis-Trans Isomerization",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What side reaction occurs on the metal catalyst surface during partial hydrogenation of polyunsaturated vegetable oils?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Complete polymerization of the triglyceride into plastic."
+        },
+        {
+          "label": "B",
+          "text": "Decarboxylation of fatty acids to hydrocarbons."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of fatty acids to explosive peroxides."
+        },
+        {
+          "label": "D",
+          "text": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats.",
+      "explanation": "Incomplete hydrogenation allows surface-bound radicals to rotate and eliminate, generating thermodynamically more stable trans-fatty acid isomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q029",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Bromine Addition Fatty Acid Unsaturation Assay",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does an unsaturated oil (e.g., olive oil) decolorize bromine water (Br₂ / CCl₄) while saturated fat (e.g., butter) does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unsaturated oils precipitate bromine as a yellow solid."
+        },
+        {
+          "label": "B",
+          "text": "Saturated fats destroy bromine by oxidation."
+        },
+        {
+          "label": "C",
+          "text": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂."
+        },
+        {
+          "label": "D",
+          "text": "Bromine evaporates faster in the presence of oil."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂.",
+      "explanation": "Electrophilic halogenation consumes colored bromine as it adds across carbon-carbon double bonds, quantifying unsaturation (bromine number).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q030",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Steroid Shifter",
+      "topic": "Phospholipase A2 Enzymatic Regiospecific Cleavage",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What specific ester bond in a phosphatidylcholine phospholipid is cleaved by the venom enzyme phospholipase A₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine."
+        },
+        {
+          "label": "B",
+          "text": "The choline trimethylammonium bond."
+        },
+        {
+          "label": "C",
+          "text": "The phosphate ester at C3."
+        },
+        {
+          "label": "D",
+          "text": "The ester linkage at C1 exclusively."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine.",
+      "explanation": "Phospholipase A₂ exhibits strict regiospecificity for hydrolyzing the sn-2 acyl ester bond of membrane phospholipids.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "steroid-shifter.png"
+      ]
+    },
+    {
+      "id": "ch26_q031",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Cholesterol Jones Oxidation with Alkene Migration",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "When cholesterol is oxidized by Jones reagent (CrO₃ / H₂SO₄), why does the product contain a conjugated 4-en-3-one system?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cholesterol decarboxylates in acid."
+        },
+        {
+          "label": "B",
+          "text": "The double bond is cleaved by ozonolysis."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one)."
+        },
+        {
+          "label": "D",
+          "text": "The chromium atom directly moves the double bond."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one).",
+      "explanation": "Acid-catalyzed enolization of the initial β,γ-unsaturated ketone drives double-bond migration into conjugation with the C3 carbonyl.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q032",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Prostaglandin Biosynthesis Cyclooxygenase (COX)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic role of cyclooxygenase (COX-1/COX-2) in the conversion of arachidonic acid to prostaglandin H₂ (PGH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts alkylation of the fatty acid."
+        },
+        {
+          "label": "B",
+          "text": "Direct reduction of arachidonic acid by NADH."
+        },
+        {
+          "label": "C",
+          "text": "Hydrolysis of arachidonic acid into four molecules of pentanoic acid."
+        },
+        {
+          "label": "D",
+          "text": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring.",
+      "explanation": "COX enzymes utilize a tyrosyl radical to initiate bis-dioxygenation and cyclization of arachidonic acid into the cyclopentane endoperoxide PGH₂.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q033",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Aspirin Irreversible COX Inhibition Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How does aspirin (acetylsalicylic acid) mechanistically inactivate the cyclooxygenase (COX) enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding."
+        },
+        {
+          "label": "B",
+          "text": "Aspirin coordinates to the RNA of the enzyme."
+        },
+        {
+          "label": "C",
+          "text": "Aspirin dissolves the enzyme membrane."
+        },
+        {
+          "label": "D",
+          "text": "Aspirin oxidizes the heme iron from Fe(II) to Fe(III)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding.",
+      "explanation": "Covalent acetylation of Ser530 irreversibly blocks the cyclooxygenase active site channel, preventing prostaglandin synthesis.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q034",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Wax Transesterification Methanolysis",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What products are generated when spermaceti wax (cetyl palmitate, C₁₅H₃₁COOC₁₆H₃₃) is subjected to base-catalyzed methanolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide."
+        },
+        {
+          "label": "B",
+          "text": "Palmitic acid and ethylene glycol."
+        },
+        {
+          "label": "C",
+          "text": "Glycerol and palmitic acid."
+        },
+        {
+          "label": "D",
+          "text": "Hexadecane and palmitic anhydride."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide.",
+      "explanation": "Waxes are simple monoesters of long-chain fatty acids with long-chain fatty alcohols; transesterification yields the methyl ester and free long-chain alcohol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q035",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Triglyceride Saponification Stepwise Tetrahedral Cleavage",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the sequence of tetrahedral intermediates during the saponification of a triglyceride with 3 equivalents of NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Simultaneous cleavage of all three ester bonds in a single pericyclic step."
+        },
+        {
+          "label": "B",
+          "text": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement of fatty acids by sodium."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage into glycerol radicals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps.",
+      "explanation": "Saponification is a stepwise nucleophilic acyl substitution on each ester linkage of the glycerol triester.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q036",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Vegetable Oil Hydrogenation Cis-Trans Isomerization",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What side reaction occurs on the metal catalyst surface during partial hydrogenation of polyunsaturated vegetable oils?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Complete polymerization of the triglyceride into plastic."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of fatty acids to explosive peroxides."
+        },
+        {
+          "label": "C",
+          "text": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats."
+        },
+        {
+          "label": "D",
+          "text": "Decarboxylation of fatty acids to hydrocarbons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats.",
+      "explanation": "Incomplete hydrogenation allows surface-bound radicals to rotate and eliminate, generating thermodynamically more stable trans-fatty acid isomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q037",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Bromine Addition Fatty Acid Unsaturation Assay",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does an unsaturated oil (e.g., olive oil) decolorize bromine water (Br₂ / CCl₄) while saturated fat (e.g., butter) does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine evaporates faster in the presence of oil."
+        },
+        {
+          "label": "B",
+          "text": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂."
+        },
+        {
+          "label": "C",
+          "text": "Saturated fats destroy bromine by oxidation."
+        },
+        {
+          "label": "D",
+          "text": "Unsaturated oils precipitate bromine as a yellow solid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂.",
+      "explanation": "Electrophilic halogenation consumes colored bromine as it adds across carbon-carbon double bonds, quantifying unsaturation (bromine number).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q038",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Phospholipase A2 Enzymatic Regiospecific Cleavage",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What specific ester bond in a phosphatidylcholine phospholipid is cleaved by the venom enzyme phospholipase A₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ester linkage at C1 exclusively."
+        },
+        {
+          "label": "B",
+          "text": "The phosphate ester at C3."
+        },
+        {
+          "label": "C",
+          "text": "The choline trimethylammonium bond."
+        },
+        {
+          "label": "D",
+          "text": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine.",
+      "explanation": "Phospholipase A₂ exhibits strict regiospecificity for hydrolyzing the sn-2 acyl ester bond of membrane phospholipids.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q039",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Isoprene Biosynthetic Condensation Carbocation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the key reactive intermediate in the enzymatic coupling of DMAPP with IPP to form monoterpenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An organolithium carbanion."
+        },
+        {
+          "label": "B",
+          "text": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate)."
+        },
+        {
+          "label": "C",
+          "text": "A free radical generated by light."
+        },
+        {
+          "label": "D",
+          "text": "An epoxide intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate).",
+      "explanation": "Pyrophosphate acts as an excellent biological leaving group, generating a resonance-stabilized allylic carbocation that alkylates IPP.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q040",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Terpene Tracker",
+      "topic": "Squalene Epoxide Polycyclization Cascade",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What remarkable single-step mechanistic cascade converts squalene 2,3-epoxide into the tetracyclic lanosterol steroid skeleton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A sequence of four separate Diels-Alder reactions."
+        },
+        {
+          "label": "B",
+          "text": "Thermal electrocyclic ring closures at 400°C."
+        },
+        {
+          "label": "C",
+          "text": "A free radical polymerization initiated by oxygen."
+        },
+        {
+          "label": "D",
+          "text": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts.",
+      "explanation": "Oxidosqualene cyclase catalyzes a breathtaking cascade: stereospecific polycyclization creates 4 rings and 7 stereocenters in a single enzymatic event.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "terpene-tracker.png"
+      ]
+    },
+    {
+      "id": "ch26_q041",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Aspirin Irreversible COX Inhibition Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How does aspirin (acetylsalicylic acid) mechanistically inactivate the cyclooxygenase (COX) enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding."
+        },
+        {
+          "label": "B",
+          "text": "Aspirin dissolves the enzyme membrane."
+        },
+        {
+          "label": "C",
+          "text": "Aspirin coordinates to the RNA of the enzyme."
+        },
+        {
+          "label": "D",
+          "text": "Aspirin oxidizes the heme iron from Fe(II) to Fe(III)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aspirin transfers its acetyl group to a nucleophilic serine residue (Ser530) in the active site channel via nucleophilic acyl substitution, physically blocking arachidonic acid binding.",
+      "explanation": "Covalent acetylation of Ser530 irreversibly blocks the cyclooxygenase active site channel, preventing prostaglandin synthesis.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q042",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Wax Transesterification Methanolysis",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What products are generated when spermaceti wax (cetyl palmitate, C₁₅H₃₁COOC₁₆H₃₃) is subjected to base-catalyzed methanolysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide."
+        },
+        {
+          "label": "B",
+          "text": "Palmitic acid and ethylene glycol."
+        },
+        {
+          "label": "C",
+          "text": "Hexadecane and palmitic anhydride."
+        },
+        {
+          "label": "D",
+          "text": "Glycerol and palmitic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Methyl palmitate (a fatty acid methyl ester) and 1-hexadecanol (cetyl alcohol), resulting from nucleophilic acyl substitution by methoxide.",
+      "explanation": "Waxes are simple monoesters of long-chain fatty acids with long-chain fatty alcohols; transesterification yields the methyl ester and free long-chain alcohol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q043",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Triglyceride Saponification Stepwise Tetrahedral Cleavage",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of tetrahedral intermediates during the saponification of a triglyceride with 3 equivalents of NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps."
+        },
+        {
+          "label": "B",
+          "text": "Simultaneous cleavage of all three ester bonds in a single pericyclic step."
+        },
+        {
+          "label": "C",
+          "text": "Direct SN2 displacement of fatty acids by sodium."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage into glycerol radicals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sequential nucleophilic attack of hydroxide on each ester carbonyl, forming three successive tetrahedral intermediates that expel alkoxide to yield glycerol and three fatty acid soaps.",
+      "explanation": "Saponification is a stepwise nucleophilic acyl substitution on each ester linkage of the glycerol triester.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q044",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Vegetable Oil Hydrogenation Cis-Trans Isomerization",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What side reaction occurs on the metal catalyst surface during partial hydrogenation of polyunsaturated vegetable oils?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Complete polymerization of the triglyceride into plastic."
+        },
+        {
+          "label": "B",
+          "text": "Decarboxylation of fatty acids to hydrocarbons."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of fatty acids to explosive peroxides."
+        },
+        {
+          "label": "D",
+          "text": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reversible semi-hydrogenation allows the intermediate alkyl-metal complex to rotate and undergo β-hydride elimination, isomerizing natural cis double bonds into unnatural trans fats.",
+      "explanation": "Incomplete hydrogenation allows surface-bound radicals to rotate and eliminate, generating thermodynamically more stable trans-fatty acid isomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q045",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Bromine Addition Fatty Acid Unsaturation Assay",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does an unsaturated oil (e.g., olive oil) decolorize bromine water (Br₂ / CCl₄) while saturated fat (e.g., butter) does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine evaporates faster in the presence of oil."
+        },
+        {
+          "label": "B",
+          "text": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂."
+        },
+        {
+          "label": "C",
+          "text": "Unsaturated oils precipitate bromine as a yellow solid."
+        },
+        {
+          "label": "D",
+          "text": "Saturated fats destroy bromine by oxidation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromine adds electrophilically across the cis double bonds via cyclic bromonium intermediates to form colorless vicinal dibromoalkanes, consuming the colored Br₂.",
+      "explanation": "Electrophilic halogenation consumes colored bromine as it adds across carbon-carbon double bonds, quantifying unsaturation (bromine number).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q046",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Phospholipase A2 Enzymatic Regiospecific Cleavage",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What specific ester bond in a phosphatidylcholine phospholipid is cleaved by the venom enzyme phospholipase A₂?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The choline trimethylammonium bond."
+        },
+        {
+          "label": "B",
+          "text": "The phosphate ester at C3."
+        },
+        {
+          "label": "C",
+          "text": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine."
+        },
+        {
+          "label": "D",
+          "text": "The ester linkage at C1 exclusively."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The ester linkage at the central C2 position of the glycerol backbone, releasing a free unsaturated fatty acid (often arachidonic acid) and lysophosphatidylcholine.",
+      "explanation": "Phospholipase A₂ exhibits strict regiospecificity for hydrolyzing the sn-2 acyl ester bond of membrane phospholipids.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q047",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Isoprene Biosynthetic Condensation Carbocation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key reactive intermediate in the enzymatic coupling of DMAPP with IPP to form monoterpenes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free radical generated by light."
+        },
+        {
+          "label": "B",
+          "text": "An epoxide intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate)."
+        },
+        {
+          "label": "D",
+          "text": "An organolithium carbanion."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Dissociation of the pyrophosphate group from DMAPP (dimethylallyl pyrophosphate) generates an allylic carbocation, which is attacked by the π bond of IPP (isopentenyl pyrophosphate).",
+      "explanation": "Pyrophosphate acts as an excellent biological leaving group, generating a resonance-stabilized allylic carbocation that alkylates IPP.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q048",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Squalene Epoxide Polycyclization Cascade",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What remarkable single-step mechanistic cascade converts squalene 2,3-epoxide into the tetracyclic lanosterol steroid skeleton?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A free radical polymerization initiated by oxygen."
+        },
+        {
+          "label": "B",
+          "text": "Thermal electrocyclic ring closures at 400°C."
+        },
+        {
+          "label": "C",
+          "text": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts."
+        },
+        {
+          "label": "D",
+          "text": "A sequence of four separate Diels-Alder reactions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Enzyme-promoted protonation of the epoxide triggers a concerted cationic polycyclization cascade through four contiguous rings, followed by a series of 1,2-hydride and methyl shifts.",
+      "explanation": "Oxidosqualene cyclase catalyzes a breathtaking cascade: stereospecific polycyclization creates 4 rings and 7 stereocenters in a single enzymatic event.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q049",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Cholesterol Jones Oxidation with Alkene Migration",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "When cholesterol is oxidized by Jones reagent (CrO₃ / H₂SO₄), why does the product contain a conjugated 4-en-3-one system?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The double bond is cleaved by ozonolysis."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one)."
+        },
+        {
+          "label": "C",
+          "text": "Cholesterol decarboxylates in acid."
+        },
+        {
+          "label": "D",
+          "text": "The chromium atom directly moves the double bond."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Oxidation of the 3β-OH yields a β,γ-unsaturated ketone (5-cholesten-3-one), which rapidly tautomerizes in acid to the thermodynamically more stable conjugated α,β-unsaturated enone (4-cholesten-3-one).",
+      "explanation": "Acid-catalyzed enolization of the initial β,γ-unsaturated ketone drives double-bond migration into conjugation with the C3 carbonyl.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    },
+    {
+      "id": "ch26_q050",
+      "chapter": 26,
+      "chapter_title": "Lipids",
+      "boss": "Phospholipid Patriarch",
+      "topic": "Prostaglandin Biosynthesis Cyclooxygenase (COX)",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic role of cyclooxygenase (COX-1/COX-2) in the conversion of arachidonic acid to prostaglandin H₂ (PGH₂)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Friedel-Crafts alkylation of the fatty acid."
+        },
+        {
+          "label": "B",
+          "text": "Hydrolysis of arachidonic acid into four molecules of pentanoic acid."
+        },
+        {
+          "label": "C",
+          "text": "Direct reduction of arachidonic acid by NADH."
+        },
+        {
+          "label": "D",
+          "text": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stereospecific radical abstraction of a hydrogen atom by a tyrosyl radical, followed by two sequential additions of molecular oxygen (O₂) to forge a bicyclic endoperoxide cyclopentane ring.",
+      "explanation": "COX enzymes utilize a tyrosyl radical to initiate bis-dioxygenation and cyclization of arachidonic acid into the cyclopentane endoperoxide PGH₂.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phospholipid-patriarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Fatty Acid Fiend",
+    "Micelle Minion",
+    "Steroid Shifter",
+    "Terpene Tracker",
+    "Phospholipid Patriarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Fatty Acid Fiend",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "fatty-acid-fiend.png"
+        ]
+      },
+      {
+        "boss": "Micelle Minion",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "micelle-minion.png"
+        ]
+      },
+      {
+        "boss": "Steroid Shifter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "steroid-shifter.png"
+        ]
+      },
+      {
+        "boss": "Terpene Tracker",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "terpene-tracker.png"
+        ]
+      },
+      {
+        "boss": "Phospholipid Patriarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "phospholipid-patriarch.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 1,
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "Valence Vanguard",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch01_q001",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Halogen Acid Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the hydrogen halides in order of increasing Brønsted acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10)."
+        },
+        {
+          "label": "B",
+          "text": "HI < HBr < HCl < HF."
+        },
+        {
+          "label": "C",
+          "text": "HCl < HBr < HI < HF."
+        },
+        {
+          "label": "D",
+          "text": "HF < HI < HBr < HCl."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10).",
+      "explanation": "Down the halogen group, larger orbital size and weaker H-X bond strength dominate over electronegativity, increasing acidity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q002",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Intermolecular Force Boiling Point Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following four-carbon compounds in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid < 1-Butanol < Diethyl ether < n-Butane."
+        },
+        {
+          "label": "B",
+          "text": "Diethyl ether < n-Butane < 1-Butanol < Butanoic acid."
+        },
+        {
+          "label": "C",
+          "text": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer)."
+        },
+        {
+          "label": "D",
+          "text": "1-Butanol < Butanoic acid < n-Butane < Diethyl ether."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer).",
+      "explanation": "Boiling point increases with the strength of intermolecular forces: London dispersion < dipole-dipole < single H-bonding < dual H-bonded dimerization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q003",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Electronegativity and Bond Dipole Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbon-heteroatom single bonds in order of increasing bond dipole moment (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5)."
+        },
+        {
+          "label": "B",
+          "text": "C-O < C-F < C-N < C-C."
+        },
+        {
+          "label": "C",
+          "text": "C-N < C-C < C-O < C-F."
+        },
+        {
+          "label": "D",
+          "text": "C-F < C-O < C-N < C-C."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5).",
+      "explanation": "Dipole moment increases directly with the electronegativity difference (ΔEN) across the carbon-heteroatom bond.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q004",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Alkane Branching Boiling Point Ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the three C₅H₁₂ pentane isomers in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C]."
+        },
+        {
+          "label": "B",
+          "text": "All three isomers have identical boiling points."
+        },
+        {
+          "label": "C",
+          "text": "n-Pentane < Isopentane < Neopentane."
+        },
+        {
+          "label": "D",
+          "text": "Isopentane < Neopentane < n-Pentane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C].",
+      "explanation": "Spherical branched isomers have lower surface contact area and weaker London dispersion forces, lowering boiling points.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q005",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Formaldehyde Hydration Equilibrium Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbonyl compounds in order of increasing equilibrium constant for hydration (K_hyd in water):",
+      "options": [
+        {
+          "label": "A",
+          "text": "All three carbonyls have identical K_hyd."
+        },
+        {
+          "label": "B",
+          "text": "Acetaldehyde < Acetone < Formaldehyde."
+        },
+        {
+          "label": "C",
+          "text": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000)."
+        },
+        {
+          "label": "D",
+          "text": "Formaldehyde < Acetaldehyde < Acetone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000).",
+      "explanation": "Electron-donating alkyl groups and steric crowding stabilize the carbonyl group, reducing hydration equilibrium from formaldehyde to acetone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q006",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Water vs Alcohol vs Alkyne Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following Brønsted acids in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Water < Ethanol < Acetic acid < Acetylene < Ethane."
+        },
+        {
+          "label": "B",
+          "text": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76)."
+        },
+        {
+          "label": "C",
+          "text": "Ethane < Ethanol < Acetylene < Water < Acetic acid."
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid < Water < Ethanol < Acetylene < Ethane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76).",
+      "explanation": "Acidity increases according to ARIO rules: sp³ C-H < sp C-H < O-H (alcohol) < O-H (water) < resonance-stabilized carboxyl O-H.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q007",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Ammonia vs Water vs Methane Basicity Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the conjugate bases in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻)."
+        },
+        {
+          "label": "B",
+          "text": "NH₂⁻ < OH⁻ < CH₃⁻."
+        },
+        {
+          "label": "C",
+          "text": "OH⁻ < CH₃⁻ < NH₂⁻."
+        },
+        {
+          "label": "D",
+          "text": "CH₃⁻ < NH₂⁻ < OH⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻).",
+      "explanation": "Across a row in the periodic table, electronegativity increases (C < N < O), stabilizing negative charge and decreasing basicity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q008",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Lewis Acidity Ranking of Boron Trihalides",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the boron trihalides in order of increasing Lewis acidity toward pyridine:",
+      "options": [
+        {
+          "label": "A",
+          "text": "BI₃ < BBr₃ < BCl₃ < BF₃."
+        },
+        {
+          "label": "B",
+          "text": "All boron trihalides have identical Lewis acidity."
+        },
+        {
+          "label": "C",
+          "text": "BCl₃ < BF₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "D",
+          "text": "BF₃ < BCl₃ < BBr₃ < BI₃."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "BF₃ < BCl₃ < BBr₃ < BI₃.",
+      "explanation": "Planar (p-p)π backbonding is strongest in BF₃ (matching 2p orbitals), reducing the electrophilicity of boron compared to larger halides.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q009",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Dipole Moments of Chloromethanes Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following halomethanes in order of increasing molecular dipole moment:",
+      "options": [
+        {
+          "label": "A",
+          "text": "CCl₄ (0 D) < CHCl₃ (1.04 D) < CH₂Cl₂ (1.60 D) < CH₃Cl (1.87 D)."
+        },
+        {
+          "label": "B",
+          "text": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D)."
+        },
+        {
+          "label": "C",
+          "text": "CCl₄ < CH₃Cl < CHCl₃ < CH₂Cl₂."
+        },
+        {
+          "label": "D",
+          "text": "CH₃Cl < CH₂Cl₂ < CHCl₃ < CCl₄."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D).",
+      "explanation": "Symmetric tetrahedral CCl₄ cancels dipoles completely (0 D); CH₃Cl has the maximal uncompensated vector sum (1.87 D).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q010",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Valence Vanguard",
+      "topic": "Solvation Free Energy of Alkali Metal Cations",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the alkali metal cations in order of increasing enthalpy of hydration (most negative ΔH_hyd):",
+      "options": [
+        {
+          "label": "A",
+          "text": "All alkali cations have identical hydration energy."
+        },
+        {
+          "label": "B",
+          "text": "Li⁺ < Na⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "C",
+          "text": "Cs⁺ < K⁺ < Na⁺ < Li⁺."
+        },
+        {
+          "label": "D",
+          "text": "Na⁺ < Li⁺ < K⁺ < Cs⁺."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cs⁺ < K⁺ < Na⁺ < Li⁺.",
+      "explanation": "Smaller ionic radius increases charge density (q/r), maximizing ion-dipole electrostatic interaction with water molecules.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "valence-vanguard.png"
+      ]
+    },
+    {
+      "id": "ch01_q011",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Electronegativity and Bond Dipole Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbon-heteroatom single bonds in order of increasing bond dipole moment (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "C-O < C-F < C-N < C-C."
+        },
+        {
+          "label": "B",
+          "text": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5)."
+        },
+        {
+          "label": "C",
+          "text": "C-N < C-C < C-O < C-F."
+        },
+        {
+          "label": "D",
+          "text": "C-F < C-O < C-N < C-C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5).",
+      "explanation": "Dipole moment increases directly with the electronegativity difference (ΔEN) across the carbon-heteroatom bond.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q012",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Alkane Branching Boiling Point Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the three C₅H₁₂ pentane isomers in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "n-Pentane < Isopentane < Neopentane."
+        },
+        {
+          "label": "B",
+          "text": "All three isomers have identical boiling points."
+        },
+        {
+          "label": "C",
+          "text": "Isopentane < Neopentane < n-Pentane."
+        },
+        {
+          "label": "D",
+          "text": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C].",
+      "explanation": "Spherical branched isomers have lower surface contact area and weaker London dispersion forces, lowering boiling points.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q013",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Formaldehyde Hydration Equilibrium Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbonyl compounds in order of increasing equilibrium constant for hydration (K_hyd in water):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000)."
+        },
+        {
+          "label": "B",
+          "text": "Formaldehyde < Acetaldehyde < Acetone."
+        },
+        {
+          "label": "C",
+          "text": "All three carbonyls have identical K_hyd."
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde < Acetone < Formaldehyde."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000).",
+      "explanation": "Electron-donating alkyl groups and steric crowding stabilize the carbonyl group, reducing hydration equilibrium from formaldehyde to acetone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q014",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Water vs Alcohol vs Alkyne Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following Brønsted acids in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane < Ethanol < Acetylene < Water < Acetic acid."
+        },
+        {
+          "label": "B",
+          "text": "Water < Ethanol < Acetic acid < Acetylene < Ethane."
+        },
+        {
+          "label": "C",
+          "text": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76)."
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid < Water < Ethanol < Acetylene < Ethane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76).",
+      "explanation": "Acidity increases according to ARIO rules: sp³ C-H < sp C-H < O-H (alcohol) < O-H (water) < resonance-stabilized carboxyl O-H.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q015",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Ammonia vs Water vs Methane Basicity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the conjugate bases in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "OH⁻ < CH₃⁻ < NH₂⁻."
+        },
+        {
+          "label": "B",
+          "text": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻)."
+        },
+        {
+          "label": "C",
+          "text": "CH₃⁻ < NH₂⁻ < OH⁻."
+        },
+        {
+          "label": "D",
+          "text": "NH₂⁻ < OH⁻ < CH₃⁻."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻).",
+      "explanation": "Across a row in the periodic table, electronegativity increases (C < N < O), stabilizing negative charge and decreasing basicity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q016",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Lewis Acidity Ranking of Boron Trihalides",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the boron trihalides in order of increasing Lewis acidity toward pyridine:",
+      "options": [
+        {
+          "label": "A",
+          "text": "BF₃ < BCl₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "B",
+          "text": "All boron trihalides have identical Lewis acidity."
+        },
+        {
+          "label": "C",
+          "text": "BCl₃ < BF₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "D",
+          "text": "BI₃ < BBr₃ < BCl₃ < BF₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "BF₃ < BCl₃ < BBr₃ < BI₃.",
+      "explanation": "Planar (p-p)π backbonding is strongest in BF₃ (matching 2p orbitals), reducing the electrophilicity of boron compared to larger halides.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q017",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Dipole Moments of Chloromethanes Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following halomethanes in order of increasing molecular dipole moment:",
+      "options": [
+        {
+          "label": "A",
+          "text": "CCl₄ (0 D) < CHCl₃ (1.04 D) < CH₂Cl₂ (1.60 D) < CH₃Cl (1.87 D)."
+        },
+        {
+          "label": "B",
+          "text": "CCl₄ < CH₃Cl < CHCl₃ < CH₂Cl₂."
+        },
+        {
+          "label": "C",
+          "text": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D)."
+        },
+        {
+          "label": "D",
+          "text": "CH₃Cl < CH₂Cl₂ < CHCl₃ < CCl₄."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D).",
+      "explanation": "Symmetric tetrahedral CCl₄ cancels dipoles completely (0 D); CH₃Cl has the maximal uncompensated vector sum (1.87 D).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q018",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Solvation Free Energy of Alkali Metal Cations",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the alkali metal cations in order of increasing enthalpy of hydration (most negative ΔH_hyd):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Li⁺ < Na⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "B",
+          "text": "All alkali cations have identical hydration energy."
+        },
+        {
+          "label": "C",
+          "text": "Na⁺ < Li⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "D",
+          "text": "Cs⁺ < K⁺ < Na⁺ < Li⁺."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cs⁺ < K⁺ < Na⁺ < Li⁺.",
+      "explanation": "Smaller ionic radius increases charge density (q/r), maximizing ion-dipole electrostatic interaction with water molecules.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q019",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Halogen Acid Acidity Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the hydrogen halides in order of increasing Brønsted acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "HCl < HBr < HI < HF."
+        },
+        {
+          "label": "B",
+          "text": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10)."
+        },
+        {
+          "label": "C",
+          "text": "HF < HI < HBr < HCl."
+        },
+        {
+          "label": "D",
+          "text": "HI < HBr < HCl < HF."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10).",
+      "explanation": "Down the halogen group, larger orbital size and weaker H-X bond strength dominate over electronegativity, increasing acidity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q020",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Electronegativity Elemental",
+      "topic": "Intermolecular Force Boiling Point Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following four-carbon compounds in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer)."
+        },
+        {
+          "label": "B",
+          "text": "Butanoic acid < 1-Butanol < Diethyl ether < n-Butane."
+        },
+        {
+          "label": "C",
+          "text": "1-Butanol < Butanoic acid < n-Butane < Diethyl ether."
+        },
+        {
+          "label": "D",
+          "text": "Diethyl ether < n-Butane < 1-Butanol < Butanoic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer).",
+      "explanation": "Boiling point increases with the strength of intermolecular forces: London dispersion < dipole-dipole < single H-bonding < dual H-bonded dimerization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "electronegativity-elemental.png"
+      ]
+    },
+    {
+      "id": "ch01_q021",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Formaldehyde Hydration Equilibrium Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbonyl compounds in order of increasing equilibrium constant for hydration (K_hyd in water):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Formaldehyde < Acetaldehyde < Acetone."
+        },
+        {
+          "label": "B",
+          "text": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000)."
+        },
+        {
+          "label": "C",
+          "text": "All three carbonyls have identical K_hyd."
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde < Acetone < Formaldehyde."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000).",
+      "explanation": "Electron-donating alkyl groups and steric crowding stabilize the carbonyl group, reducing hydration equilibrium from formaldehyde to acetone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q022",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Water vs Alcohol vs Alkyne Acidity Ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following Brønsted acids in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76)."
+        },
+        {
+          "label": "B",
+          "text": "Water < Ethanol < Acetic acid < Acetylene < Ethane."
+        },
+        {
+          "label": "C",
+          "text": "Ethane < Ethanol < Acetylene < Water < Acetic acid."
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid < Water < Ethanol < Acetylene < Ethane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76).",
+      "explanation": "Acidity increases according to ARIO rules: sp³ C-H < sp C-H < O-H (alcohol) < O-H (water) < resonance-stabilized carboxyl O-H.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q023",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Ammonia vs Water vs Methane Basicity Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the conjugate bases in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻)."
+        },
+        {
+          "label": "B",
+          "text": "NH₂⁻ < OH⁻ < CH₃⁻."
+        },
+        {
+          "label": "C",
+          "text": "CH₃⁻ < NH₂⁻ < OH⁻."
+        },
+        {
+          "label": "D",
+          "text": "OH⁻ < CH₃⁻ < NH₂⁻."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻).",
+      "explanation": "Across a row in the periodic table, electronegativity increases (C < N < O), stabilizing negative charge and decreasing basicity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q024",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Lewis Acidity Ranking of Boron Trihalides",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the boron trihalides in order of increasing Lewis acidity toward pyridine:",
+      "options": [
+        {
+          "label": "A",
+          "text": "BF₃ < BCl₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "B",
+          "text": "BCl₃ < BF₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "C",
+          "text": "BI₃ < BBr₃ < BCl₃ < BF₃."
+        },
+        {
+          "label": "D",
+          "text": "All boron trihalides have identical Lewis acidity."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "BF₃ < BCl₃ < BBr₃ < BI₃.",
+      "explanation": "Planar (p-p)π backbonding is strongest in BF₃ (matching 2p orbitals), reducing the electrophilicity of boron compared to larger halides.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q025",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Dipole Moments of Chloromethanes Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the following halomethanes in order of increasing molecular dipole moment:",
+      "options": [
+        {
+          "label": "A",
+          "text": "CCl₄ < CH₃Cl < CHCl₃ < CH₂Cl₂."
+        },
+        {
+          "label": "B",
+          "text": "CCl₄ (0 D) < CHCl₃ (1.04 D) < CH₂Cl₂ (1.60 D) < CH₃Cl (1.87 D)."
+        },
+        {
+          "label": "C",
+          "text": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D)."
+        },
+        {
+          "label": "D",
+          "text": "CH₃Cl < CH₂Cl₂ < CHCl₃ < CCl₄."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D).",
+      "explanation": "Symmetric tetrahedral CCl₄ cancels dipoles completely (0 D); CH₃Cl has the maximal uncompensated vector sum (1.87 D).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q026",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Solvation Free Energy of Alkali Metal Cations",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the alkali metal cations in order of increasing enthalpy of hydration (most negative ΔH_hyd):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cs⁺ < K⁺ < Na⁺ < Li⁺."
+        },
+        {
+          "label": "B",
+          "text": "All alkali cations have identical hydration energy."
+        },
+        {
+          "label": "C",
+          "text": "Na⁺ < Li⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "D",
+          "text": "Li⁺ < Na⁺ < K⁺ < Cs⁺."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cs⁺ < K⁺ < Na⁺ < Li⁺.",
+      "explanation": "Smaller ionic radius increases charge density (q/r), maximizing ion-dipole electrostatic interaction with water molecules.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q027",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Halogen Acid Acidity Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the hydrogen halides in order of increasing Brønsted acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10)."
+        },
+        {
+          "label": "B",
+          "text": "HF < HI < HBr < HCl."
+        },
+        {
+          "label": "C",
+          "text": "HCl < HBr < HI < HF."
+        },
+        {
+          "label": "D",
+          "text": "HI < HBr < HCl < HF."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10).",
+      "explanation": "Down the halogen group, larger orbital size and weaker H-X bond strength dominate over electronegativity, increasing acidity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q028",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Intermolecular Force Boiling Point Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following four-carbon compounds in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butanol < Butanoic acid < n-Butane < Diethyl ether."
+        },
+        {
+          "label": "B",
+          "text": "Diethyl ether < n-Butane < 1-Butanol < Butanoic acid."
+        },
+        {
+          "label": "C",
+          "text": "Butanoic acid < 1-Butanol < Diethyl ether < n-Butane."
+        },
+        {
+          "label": "D",
+          "text": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer).",
+      "explanation": "Boiling point increases with the strength of intermolecular forces: London dispersion < dipole-dipole < single H-bonding < dual H-bonded dimerization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q029",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Electronegativity and Bond Dipole Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbon-heteroatom single bonds in order of increasing bond dipole moment (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5)."
+        },
+        {
+          "label": "B",
+          "text": "C-N < C-C < C-O < C-F."
+        },
+        {
+          "label": "C",
+          "text": "C-O < C-F < C-N < C-C."
+        },
+        {
+          "label": "D",
+          "text": "C-F < C-O < C-N < C-C."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5).",
+      "explanation": "Dipole moment increases directly with the electronegativity difference (ΔEN) across the carbon-heteroatom bond.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q030",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Hybridization Hydra",
+      "topic": "Alkane Branching Boiling Point Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the three C₅H₁₂ pentane isomers in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "n-Pentane < Isopentane < Neopentane."
+        },
+        {
+          "label": "B",
+          "text": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C]."
+        },
+        {
+          "label": "C",
+          "text": "All three isomers have identical boiling points."
+        },
+        {
+          "label": "D",
+          "text": "Isopentane < Neopentane < n-Pentane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C].",
+      "explanation": "Spherical branched isomers have lower surface contact area and weaker London dispersion forces, lowering boiling points.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hybridization-hydra.png"
+      ]
+    },
+    {
+      "id": "ch01_q031",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Ammonia vs Water vs Methane Basicity Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the conjugate bases in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "NH₂⁻ < OH⁻ < CH₃⁻."
+        },
+        {
+          "label": "B",
+          "text": "CH₃⁻ < NH₂⁻ < OH⁻."
+        },
+        {
+          "label": "C",
+          "text": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻)."
+        },
+        {
+          "label": "D",
+          "text": "OH⁻ < CH₃⁻ < NH₂⁻."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻).",
+      "explanation": "Across a row in the periodic table, electronegativity increases (C < N < O), stabilizing negative charge and decreasing basicity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q032",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Lewis Acidity Ranking of Boron Trihalides",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the boron trihalides in order of increasing Lewis acidity toward pyridine:",
+      "options": [
+        {
+          "label": "A",
+          "text": "BF₃ < BCl₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "B",
+          "text": "BCl₃ < BF₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "C",
+          "text": "All boron trihalides have identical Lewis acidity."
+        },
+        {
+          "label": "D",
+          "text": "BI₃ < BBr₃ < BCl₃ < BF₃."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "BF₃ < BCl₃ < BBr₃ < BI₃.",
+      "explanation": "Planar (p-p)π backbonding is strongest in BF₃ (matching 2p orbitals), reducing the electrophilicity of boron compared to larger halides.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q033",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Dipole Moments of Chloromethanes Ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following halomethanes in order of increasing molecular dipole moment:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D)."
+        },
+        {
+          "label": "B",
+          "text": "CCl₄ (0 D) < CHCl₃ (1.04 D) < CH₂Cl₂ (1.60 D) < CH₃Cl (1.87 D)."
+        },
+        {
+          "label": "C",
+          "text": "CCl₄ < CH₃Cl < CHCl₃ < CH₂Cl₂."
+        },
+        {
+          "label": "D",
+          "text": "CH₃Cl < CH₂Cl₂ < CHCl₃ < CCl₄."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D).",
+      "explanation": "Symmetric tetrahedral CCl₄ cancels dipoles completely (0 D); CH₃Cl has the maximal uncompensated vector sum (1.87 D).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q034",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Solvation Free Energy of Alkali Metal Cations",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkali metal cations in order of increasing enthalpy of hydration (most negative ΔH_hyd):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Na⁺ < Li⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "B",
+          "text": "Li⁺ < Na⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "C",
+          "text": "Cs⁺ < K⁺ < Na⁺ < Li⁺."
+        },
+        {
+          "label": "D",
+          "text": "All alkali cations have identical hydration energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cs⁺ < K⁺ < Na⁺ < Li⁺.",
+      "explanation": "Smaller ionic radius increases charge density (q/r), maximizing ion-dipole electrostatic interaction with water molecules.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q035",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Halogen Acid Acidity Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the hydrogen halides in order of increasing Brønsted acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF < HI < HBr < HCl."
+        },
+        {
+          "label": "B",
+          "text": "HCl < HBr < HI < HF."
+        },
+        {
+          "label": "C",
+          "text": "HI < HBr < HCl < HF."
+        },
+        {
+          "label": "D",
+          "text": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10).",
+      "explanation": "Down the halogen group, larger orbital size and weaker H-X bond strength dominate over electronegativity, increasing acidity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q036",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Intermolecular Force Boiling Point Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following four-carbon compounds in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid < 1-Butanol < Diethyl ether < n-Butane."
+        },
+        {
+          "label": "B",
+          "text": "1-Butanol < Butanoic acid < n-Butane < Diethyl ether."
+        },
+        {
+          "label": "C",
+          "text": "Diethyl ether < n-Butane < 1-Butanol < Butanoic acid."
+        },
+        {
+          "label": "D",
+          "text": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer).",
+      "explanation": "Boiling point increases with the strength of intermolecular forces: London dispersion < dipole-dipole < single H-bonding < dual H-bonded dimerization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q037",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Electronegativity and Bond Dipole Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following carbon-heteroatom single bonds in order of increasing bond dipole moment (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "C-N < C-C < C-O < C-F."
+        },
+        {
+          "label": "B",
+          "text": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5)."
+        },
+        {
+          "label": "C",
+          "text": "C-O < C-F < C-N < C-C."
+        },
+        {
+          "label": "D",
+          "text": "C-F < C-O < C-N < C-C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5).",
+      "explanation": "Dipole moment increases directly with the electronegativity difference (ΔEN) across the carbon-heteroatom bond.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q038",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Alkane Branching Boiling Point Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the three C₅H₁₂ pentane isomers in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "All three isomers have identical boiling points."
+        },
+        {
+          "label": "B",
+          "text": "Isopentane < Neopentane < n-Pentane."
+        },
+        {
+          "label": "C",
+          "text": "n-Pentane < Isopentane < Neopentane."
+        },
+        {
+          "label": "D",
+          "text": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C].",
+      "explanation": "Spherical branched isomers have lower surface contact area and weaker London dispersion forces, lowering boiling points.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q039",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Formaldehyde Hydration Equilibrium Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following carbonyl compounds in order of increasing equilibrium constant for hydration (K_hyd in water):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Formaldehyde < Acetaldehyde < Acetone."
+        },
+        {
+          "label": "B",
+          "text": "Acetaldehyde < Acetone < Formaldehyde."
+        },
+        {
+          "label": "C",
+          "text": "All three carbonyls have identical K_hyd."
+        },
+        {
+          "label": "D",
+          "text": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000).",
+      "explanation": "Electron-donating alkyl groups and steric crowding stabilize the carbonyl group, reducing hydration equilibrium from formaldehyde to acetone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q040",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Dipole Dragon",
+      "topic": "Water vs Alcohol vs Alkyne Acidity Ranking",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following Brønsted acids in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane < Ethanol < Acetylene < Water < Acetic acid."
+        },
+        {
+          "label": "B",
+          "text": "Water < Ethanol < Acetic acid < Acetylene < Ethane."
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid < Water < Ethanol < Acetylene < Ethane."
+        },
+        {
+          "label": "D",
+          "text": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76).",
+      "explanation": "Acidity increases according to ARIO rules: sp³ C-H < sp C-H < O-H (alcohol) < O-H (water) < resonance-stabilized carboxyl O-H.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dipole-dragon.png"
+      ]
+    },
+    {
+      "id": "ch01_q041",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Dipole Moments of Chloromethanes Ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the following halomethanes in order of increasing molecular dipole moment:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D)."
+        },
+        {
+          "label": "B",
+          "text": "CCl₄ < CH₃Cl < CHCl₃ < CH₂Cl₂."
+        },
+        {
+          "label": "C",
+          "text": "CCl₄ (0 D) < CHCl₃ (1.04 D) < CH₂Cl₂ (1.60 D) < CH₃Cl (1.87 D)."
+        },
+        {
+          "label": "D",
+          "text": "CH₃Cl < CH₂Cl₂ < CHCl₃ < CCl₄."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Carbon tetrachloride (CCl₄, μ = 0 D) < Methyl chloride (CH₃Cl, 1.87 D) < Dichloromethane (CH₂Cl₂, 1.60 D) < Chloroform (CHCl₃, 1.04 D).",
+      "explanation": "Symmetric tetrahedral CCl₄ cancels dipoles completely (0 D); CH₃Cl has the maximal uncompensated vector sum (1.87 D).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q042",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Solvation Free Energy of Alkali Metal Cations",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the alkali metal cations in order of increasing enthalpy of hydration (most negative ΔH_hyd):",
+      "options": [
+        {
+          "label": "A",
+          "text": "All alkali cations have identical hydration energy."
+        },
+        {
+          "label": "B",
+          "text": "Cs⁺ < K⁺ < Na⁺ < Li⁺."
+        },
+        {
+          "label": "C",
+          "text": "Na⁺ < Li⁺ < K⁺ < Cs⁺."
+        },
+        {
+          "label": "D",
+          "text": "Li⁺ < Na⁺ < K⁺ < Cs⁺."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cs⁺ < K⁺ < Na⁺ < Li⁺.",
+      "explanation": "Smaller ionic radius increases charge density (q/r), maximizing ion-dipole electrostatic interaction with water molecules.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q043",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Halogen Acid Acidity Ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the hydrogen halides in order of increasing Brønsted acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "HCl < HBr < HI < HF."
+        },
+        {
+          "label": "B",
+          "text": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10)."
+        },
+        {
+          "label": "C",
+          "text": "HI < HBr < HCl < HF."
+        },
+        {
+          "label": "D",
+          "text": "HF < HI < HBr < HCl."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "HF (pKa 3.2) < HCl (pKa -7) < HBr (pKa -9) < HI (pKa -10).",
+      "explanation": "Down the halogen group, larger orbital size and weaker H-X bond strength dominate over electronegativity, increasing acidity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q044",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Intermolecular Force Boiling Point Ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following four-carbon compounds in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer)."
+        },
+        {
+          "label": "B",
+          "text": "Diethyl ether < n-Butane < 1-Butanol < Butanoic acid."
+        },
+        {
+          "label": "C",
+          "text": "1-Butanol < Butanoic acid < n-Butane < Diethyl ether."
+        },
+        {
+          "label": "D",
+          "text": "Butanoic acid < 1-Butanol < Diethyl ether < n-Butane."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "n-Butane (-0.5°C, London dispersion) < Diethyl ether (34.5°C, dipole-dipole) < 1-Butanol (117°C, H-bonding) < Butanoic acid (164°C, H-bonded dimer).",
+      "explanation": "Boiling point increases with the strength of intermolecular forces: London dispersion < dipole-dipole < single H-bonding < dual H-bonded dimerization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q045",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Electronegativity and Bond Dipole Ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following carbon-heteroatom single bonds in order of increasing bond dipole moment (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "C-O < C-F < C-N < C-C."
+        },
+        {
+          "label": "B",
+          "text": "C-N < C-C < C-O < C-F."
+        },
+        {
+          "label": "C",
+          "text": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5)."
+        },
+        {
+          "label": "D",
+          "text": "C-F < C-O < C-N < C-C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "C-C (ΔEN 0.0) < C-N (ΔEN 0.5) < C-O (ΔEN 1.0) < C-F (ΔEN 1.5).",
+      "explanation": "Dipole moment increases directly with the electronegativity difference (ΔEN) across the carbon-heteroatom bond.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q046",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Alkane Branching Boiling Point Ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the three C₅H₁₂ pentane isomers in order of increasing boiling point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isopentane < Neopentane < n-Pentane."
+        },
+        {
+          "label": "B",
+          "text": "n-Pentane < Isopentane < Neopentane."
+        },
+        {
+          "label": "C",
+          "text": "All three isomers have identical boiling points."
+        },
+        {
+          "label": "D",
+          "text": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C]."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Neopentane [2,2-dimethylpropane, 9.5°C] < Isopentane [2-methylbutane, 28°C] < n-Pentane [36°C].",
+      "explanation": "Spherical branched isomers have lower surface contact area and weaker London dispersion forces, lowering boiling points.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q047",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Formaldehyde Hydration Equilibrium Ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Rank the following carbonyl compounds in order of increasing equilibrium constant for hydration (K_hyd in water):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000)."
+        },
+        {
+          "label": "B",
+          "text": "All three carbonyls have identical K_hyd."
+        },
+        {
+          "label": "C",
+          "text": "Acetaldehyde < Acetone < Formaldehyde."
+        },
+        {
+          "label": "D",
+          "text": "Formaldehyde < Acetaldehyde < Acetone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetone (K_hyd = 0.001) < Acetaldehyde (K_hyd = 1.0) < Formaldehyde (K_hyd = 2000).",
+      "explanation": "Electron-donating alkyl groups and steric crowding stabilize the carbonyl group, reducing hydration equilibrium from formaldehyde to acetone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q048",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Water vs Alcohol vs Alkyne Acidity Ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Rank the following Brønsted acids in order of increasing acidity (lowest to highest):",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid < Water < Ethanol < Acetylene < Ethane."
+        },
+        {
+          "label": "B",
+          "text": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76)."
+        },
+        {
+          "label": "C",
+          "text": "Water < Ethanol < Acetic acid < Acetylene < Ethane."
+        },
+        {
+          "label": "D",
+          "text": "Ethane < Ethanol < Acetylene < Water < Acetic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethane (pKa 50) < Acetylene (pKa 25) < Ethanol (pKa 16) < Water (pKa 15.7) < Acetic acid (pKa 4.76).",
+      "explanation": "Acidity increases according to ARIO rules: sp³ C-H < sp C-H < O-H (alcohol) < O-H (water) < resonance-stabilized carboxyl O-H.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q049",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Ammonia vs Water vs Methane Basicity Ranking",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Rank the conjugate bases in order of increasing basicity (weakest to strongest base):",
+      "options": [
+        {
+          "label": "A",
+          "text": "OH⁻ < CH₃⁻ < NH₂⁻."
+        },
+        {
+          "label": "B",
+          "text": "NH₂⁻ < OH⁻ < CH₃⁻."
+        },
+        {
+          "label": "C",
+          "text": "CH₃⁻ < NH₂⁻ < OH⁻."
+        },
+        {
+          "label": "D",
+          "text": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hydroxide ion (OH⁻) < Amide ion (NH₂⁻) < Methanide carbanion (CH₃⁻).",
+      "explanation": "Across a row in the periodic table, electronegativity increases (C < N < O), stabilizing negative charge and decreasing basicity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    },
+    {
+      "id": "ch01_q050",
+      "chapter": 1,
+      "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+      "boss": "Molecular Orbital Monarch",
+      "topic": "Lewis Acidity Ranking of Boron Trihalides",
+      "difficulty": "hard",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Rank the boron trihalides in order of increasing Lewis acidity toward pyridine:",
+      "options": [
+        {
+          "label": "A",
+          "text": "BCl₃ < BF₃ < BBr₃ < BI₃."
+        },
+        {
+          "label": "B",
+          "text": "BI₃ < BBr₃ < BCl₃ < BF₃."
+        },
+        {
+          "label": "C",
+          "text": "All boron trihalides have identical Lewis acidity."
+        },
+        {
+          "label": "D",
+          "text": "BF₃ < BCl₃ < BBr₃ < BI₃."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "BF₃ < BCl₃ < BBr₃ < BI₃.",
+      "explanation": "Planar (p-p)π backbonding is strongest in BF₃ (matching 2p orbitals), reducing the electrophilicity of boron compared to larger halides.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "molecular-orbital-monarch.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Valence Vanguard",
+    "Electronegativity Elemental",
+    "Hybridization Hydra",
+    "Dipole Dragon",
+    "Molecular Orbital Monarch"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Valence Vanguard",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "valence-vanguard.png"
+        ]
+      },
+      {
+        "boss": "Electronegativity Elemental",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "electronegativity-elemental.png"
+        ]
+      },
+      {
+        "boss": "Hybridization Hydra",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "hybridization-hydra.png"
+        ]
+      },
+      {
+        "boss": "Dipole Dragon",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "dipole-dragon.png"
+        ]
+      },
+      {
+        "boss": "Molecular Orbital Monarch",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "molecular-orbital-monarch.png"
+        ]
+      }
+    ]
+  }
+}

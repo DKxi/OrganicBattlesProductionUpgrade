@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 4,
+  "chapter_title": "Alkanes and Cycloalkanes",
+  "assigned_boss": "IUPAC Infantry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch04_q001",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Ethane Staggered vs Eclipsed Conformations",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the energy difference between the staggered and eclipsed conformations of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds."
+        },
+        {
+          "label": "B",
+          "text": "The eclipsed conformation is 100 kJ/mol more stable."
+        },
+        {
+          "label": "C",
+          "text": "The staggered conformation is 50 kJ/mol higher in energy."
+        },
+        {
+          "label": "D",
+          "text": "Both conformations have identical potential energy."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds.",
+      "explanation": "Three pairs of eclipsed C-H bonds create 3 × 4.0 kJ/mol = 12 kJ/mol of torsional strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q002",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Butane Conformational Energy Profile",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Rank the four principal conformations of n-butane in order of increasing potential energy:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol)."
+        },
+        {
+          "label": "B",
+          "text": "Fully Eclipsed < Eclipsed < Gauche < Anti."
+        },
+        {
+          "label": "C",
+          "text": "All conformations have identical energy."
+        },
+        {
+          "label": "D",
+          "text": "Gauche < Anti < Fully Eclipsed < Eclipsed."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol).",
+      "explanation": "Anti is the global minimum; gauche experiences steric strain (3.8 kJ/mol); fully eclipsed has maximum steric and torsional strain (19 kJ/mol).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q003",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Cycloalkane Ring Strain Ranking",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Rank the following cycloalkanes in order of increasing total ring strain: cyclohexane, cyclopentane, cyclobutane, cyclopropane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopentane has zero ring strain."
+        },
+        {
+          "label": "C",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol).",
+      "explanation": "Cyclohexane is completely strain-free; cyclopropane and cyclobutane suffer severe angle and torsional strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q004",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Cyclohexane Chair Conformation Geometry",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What geometric features make the chair conformation of cyclohexane completely strain-free?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All hydrogens occupy axial positions simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "The ring is a completely flat planar hexagon."
+        },
+        {
+          "label": "C",
+          "text": "The ring contains three double bonds."
+        },
+        {
+          "label": "D",
+          "text": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain).",
+      "explanation": "The chair conformation achieves perfect tetrahedral angles (109.5°) and fully staggered dihedral angles around all 6 C-C bonds.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q005",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Axial vs Equatorial Conformational Equilibrium",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "In methylcyclohexane, what percentage of molecules exist in the equatorial conformation at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10% equatorial / 90% axial."
+        },
+        {
+          "label": "B",
+          "text": "50% equatorial / 50% axial."
+        },
+        {
+          "label": "C",
+          "text": "100% axial."
+        },
+        {
+          "label": "D",
+          "text": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions.",
+      "explanation": "An equatorial methyl group avoids two 1,3-diaxial gauche interactions (~7.3 kJ/mol), placing 95% of molecules in the equatorial chair at 25°C.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q006",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "tert-Butyl Group A-Value Conformational Locking",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is the tert-butyl group considered a 'conformational locking group' on cyclohexane rings?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl forms covalent bonds with the ring carbons."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl group is always axial."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl forces the ring into a planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position.",
+      "explanation": "Severe 1,3-diaxial steric clash locks the bulky tert-butyl group in the equatorial position (>99.99% at equilibrium).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q007",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Cis-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the conformational relationship between the two chair forms of cis-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair is a planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "One chair is 50 kJ/mol more stable."
+        },
+        {
+          "label": "C",
+          "text": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a)."
+        },
+        {
+          "label": "D",
+          "text": "One chair has both methyls equatorial (e,e) and the other has both axial (a,a)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a).",
+      "explanation": "A chair flip of cis-1,4-dimethylcyclohexane interconverts an (axial, equatorial) chair into an identical (equatorial, axial) chair.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q008",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Trans-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the conformational relationship between the two chair forms of trans-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol)."
+        },
+        {
+          "label": "B",
+          "text": "Both chair forms are degenerate (a,e ⇌ e,a)."
+        },
+        {
+          "label": "C",
+          "text": "The diaxial conformer is more stable than the diequatorial conformer."
+        },
+        {
+          "label": "D",
+          "text": "The molecule exists exclusively in a boat conformation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol).",
+      "explanation": "In trans-1,4-dimethylcyclohexane, the diequatorial conformer (e,e) is favored over the diaxial conformer (a,a) by ~15 kJ/mol (>99% population).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q009",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Cis-1,3-Dimethylcyclohexane Diequatorial Conformation",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why is cis-1,3-dimethylcyclohexane overwhelmingly more stable in its (e,e) chair conformation than trans-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer contains an internal triple bond."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer has a lower molecular weight."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e)."
+        },
+        {
+          "label": "D",
+          "text": "The trans isomer is an antiaromatic ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e).",
+      "explanation": "cis-1,3-Dimethylcyclohexane achieves a strain-free diequatorial (e,e) chair, whereas the trans-1,3 isomer is locked in an (a,e) state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q010",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "IUPAC Infantry",
+      "topic": "Decalin Cis vs Trans Ring Fusion Rigidity",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why can cis-decalin undergo chair-to-chair ring flipping while trans-decalin is conformationally rigid and cannot flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cis-decalin contains a double bond at the bridgehead."
+        },
+        {
+          "label": "B",
+          "text": "Cis-decalin is an enantiomer of trans-decalin."
+        },
+        {
+          "label": "C",
+          "text": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily."
+        },
+        {
+          "label": "D",
+          "text": "Trans-decalin is an aromatic molecule."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily.",
+      "explanation": "Trans-decalin is conformationally locked in its diequatorial chair; cis-decalin readily equilibrates between two degenerate flipped chair conformations.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "iupac-infantry.png"
+      ]
+    },
+    {
+      "id": "ch04_q011",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Cycloalkane Ring Strain Ranking",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Rank the following cycloalkanes in order of increasing total ring strain: cyclohexane, cyclopentane, cyclobutane, cyclopropane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentane has zero ring strain."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "C",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol).",
+      "explanation": "Cyclohexane is completely strain-free; cyclopropane and cyclobutane suffer severe angle and torsional strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q012",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Cyclohexane Chair Conformation Geometry",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What geometric features make the chair conformation of cyclohexane completely strain-free?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain)."
+        },
+        {
+          "label": "B",
+          "text": "All hydrogens occupy axial positions simultaneously."
+        },
+        {
+          "label": "C",
+          "text": "The ring contains three double bonds."
+        },
+        {
+          "label": "D",
+          "text": "The ring is a completely flat planar hexagon."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain).",
+      "explanation": "The chair conformation achieves perfect tetrahedral angles (109.5°) and fully staggered dihedral angles around all 6 C-C bonds.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q013",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Axial vs Equatorial Conformational Equilibrium",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "In methylcyclohexane, what percentage of molecules exist in the equatorial conformation at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% axial."
+        },
+        {
+          "label": "B",
+          "text": "10% equatorial / 90% axial."
+        },
+        {
+          "label": "C",
+          "text": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions."
+        },
+        {
+          "label": "D",
+          "text": "50% equatorial / 50% axial."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions.",
+      "explanation": "An equatorial methyl group avoids two 1,3-diaxial gauche interactions (~7.3 kJ/mol), placing 95% of molecules in the equatorial chair at 25°C.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q014",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "tert-Butyl Group A-Value Conformational Locking",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why is the tert-butyl group considered a 'conformational locking group' on cyclohexane rings?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl forces the ring into a planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl group is always axial."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl forms covalent bonds with the ring carbons."
+        },
+        {
+          "label": "D",
+          "text": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position.",
+      "explanation": "Severe 1,3-diaxial steric clash locks the bulky tert-butyl group in the equatorial position (>99.99% at equilibrium).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q015",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Cis-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the conformational relationship between the two chair forms of cis-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair has both methyls equatorial (e,e) and the other has both axial (a,a)."
+        },
+        {
+          "label": "B",
+          "text": "One chair is 50 kJ/mol more stable."
+        },
+        {
+          "label": "C",
+          "text": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a)."
+        },
+        {
+          "label": "D",
+          "text": "One chair is a planar hexagon."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a).",
+      "explanation": "A chair flip of cis-1,4-dimethylcyclohexane interconverts an (axial, equatorial) chair into an identical (equatorial, axial) chair.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q016",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Trans-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the conformational relationship between the two chair forms of trans-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule exists exclusively in a boat conformation."
+        },
+        {
+          "label": "B",
+          "text": "The diaxial conformer is more stable than the diequatorial conformer."
+        },
+        {
+          "label": "C",
+          "text": "Both chair forms are degenerate (a,e ⇌ e,a)."
+        },
+        {
+          "label": "D",
+          "text": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol).",
+      "explanation": "In trans-1,4-dimethylcyclohexane, the diequatorial conformer (e,e) is favored over the diaxial conformer (a,a) by ~15 kJ/mol (>99% population).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q017",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Cis-1,3-Dimethylcyclohexane Diequatorial Conformation",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why is cis-1,3-dimethylcyclohexane overwhelmingly more stable in its (e,e) chair conformation than trans-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer has a lower molecular weight."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e)."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer contains an internal triple bond."
+        },
+        {
+          "label": "D",
+          "text": "The trans isomer is an antiaromatic ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e).",
+      "explanation": "cis-1,3-Dimethylcyclohexane achieves a strain-free diequatorial (e,e) chair, whereas the trans-1,3 isomer is locked in an (a,e) state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q018",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Decalin Cis vs Trans Ring Fusion Rigidity",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why can cis-decalin undergo chair-to-chair ring flipping while trans-decalin is conformationally rigid and cannot flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trans-decalin is an aromatic molecule."
+        },
+        {
+          "label": "B",
+          "text": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily."
+        },
+        {
+          "label": "C",
+          "text": "Cis-decalin is an enantiomer of trans-decalin."
+        },
+        {
+          "label": "D",
+          "text": "Cis-decalin contains a double bond at the bridgehead."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily.",
+      "explanation": "Trans-decalin is conformationally locked in its diequatorial chair; cis-decalin readily equilibrates between two degenerate flipped chair conformations.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q019",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Ethane Staggered vs Eclipsed Conformations",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the energy difference between the staggered and eclipsed conformations of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The staggered conformation is 50 kJ/mol higher in energy."
+        },
+        {
+          "label": "B",
+          "text": "The eclipsed conformation is 100 kJ/mol more stable."
+        },
+        {
+          "label": "C",
+          "text": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds."
+        },
+        {
+          "label": "D",
+          "text": "Both conformations have identical potential energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds.",
+      "explanation": "Three pairs of eclipsed C-H bonds create 3 × 4.0 kJ/mol = 12 kJ/mol of torsional strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q020",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Newman Nightmare",
+      "topic": "Butane Conformational Energy Profile",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Rank the four principal conformations of n-butane in order of increasing potential energy:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol)."
+        },
+        {
+          "label": "B",
+          "text": "Gauche < Anti < Fully Eclipsed < Eclipsed."
+        },
+        {
+          "label": "C",
+          "text": "Fully Eclipsed < Eclipsed < Gauche < Anti."
+        },
+        {
+          "label": "D",
+          "text": "All conformations have identical energy."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol).",
+      "explanation": "Anti is the global minimum; gauche experiences steric strain (3.8 kJ/mol); fully eclipsed has maximum steric and torsional strain (19 kJ/mol).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "newman-nightmare.png"
+      ]
+    },
+    {
+      "id": "ch04_q021",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Axial vs Equatorial Conformational Equilibrium",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "In methylcyclohexane, what percentage of molecules exist in the equatorial conformation at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions."
+        },
+        {
+          "label": "B",
+          "text": "100% axial."
+        },
+        {
+          "label": "C",
+          "text": "10% equatorial / 90% axial."
+        },
+        {
+          "label": "D",
+          "text": "50% equatorial / 50% axial."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions.",
+      "explanation": "An equatorial methyl group avoids two 1,3-diaxial gauche interactions (~7.3 kJ/mol), placing 95% of molecules in the equatorial chair at 25°C.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q022",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "tert-Butyl Group A-Value Conformational Locking",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is the tert-butyl group considered a 'conformational locking group' on cyclohexane rings?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position."
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl forces the ring into a planar hexagon."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl group is always axial."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl forms covalent bonds with the ring carbons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position.",
+      "explanation": "Severe 1,3-diaxial steric clash locks the bulky tert-butyl group in the equatorial position (>99.99% at equilibrium).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q023",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Cis-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the conformational relationship between the two chair forms of cis-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair is 50 kJ/mol more stable."
+        },
+        {
+          "label": "B",
+          "text": "One chair has both methyls equatorial (e,e) and the other has both axial (a,a)."
+        },
+        {
+          "label": "C",
+          "text": "One chair is a planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a).",
+      "explanation": "A chair flip of cis-1,4-dimethylcyclohexane interconverts an (axial, equatorial) chair into an identical (equatorial, axial) chair.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q024",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Trans-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What is the conformational relationship between the two chair forms of trans-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The diaxial conformer is more stable than the diequatorial conformer."
+        },
+        {
+          "label": "B",
+          "text": "Both chair forms are degenerate (a,e ⇌ e,a)."
+        },
+        {
+          "label": "C",
+          "text": "The molecule exists exclusively in a boat conformation."
+        },
+        {
+          "label": "D",
+          "text": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol).",
+      "explanation": "In trans-1,4-dimethylcyclohexane, the diequatorial conformer (e,e) is favored over the diaxial conformer (a,a) by ~15 kJ/mol (>99% population).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q025",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Cis-1,3-Dimethylcyclohexane Diequatorial Conformation",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why is cis-1,3-dimethylcyclohexane overwhelmingly more stable in its (e,e) chair conformation than trans-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer has a lower molecular weight."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e)."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer contains an internal triple bond."
+        },
+        {
+          "label": "D",
+          "text": "The trans isomer is an antiaromatic ring."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e).",
+      "explanation": "cis-1,3-Dimethylcyclohexane achieves a strain-free diequatorial (e,e) chair, whereas the trans-1,3 isomer is locked in an (a,e) state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q026",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Decalin Cis vs Trans Ring Fusion Rigidity",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why can cis-decalin undergo chair-to-chair ring flipping while trans-decalin is conformationally rigid and cannot flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cis-decalin contains a double bond at the bridgehead."
+        },
+        {
+          "label": "B",
+          "text": "Cis-decalin is an enantiomer of trans-decalin."
+        },
+        {
+          "label": "C",
+          "text": "Trans-decalin is an aromatic molecule."
+        },
+        {
+          "label": "D",
+          "text": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily.",
+      "explanation": "Trans-decalin is conformationally locked in its diequatorial chair; cis-decalin readily equilibrates between two degenerate flipped chair conformations.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q027",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Ethane Staggered vs Eclipsed Conformations",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the energy difference between the staggered and eclipsed conformations of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both conformations have identical potential energy."
+        },
+        {
+          "label": "B",
+          "text": "The eclipsed conformation is 100 kJ/mol more stable."
+        },
+        {
+          "label": "C",
+          "text": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds."
+        },
+        {
+          "label": "D",
+          "text": "The staggered conformation is 50 kJ/mol higher in energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds.",
+      "explanation": "Three pairs of eclipsed C-H bonds create 3 × 4.0 kJ/mol = 12 kJ/mol of torsional strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q028",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Butane Conformational Energy Profile",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Rank the four principal conformations of n-butane in order of increasing potential energy:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Gauche < Anti < Fully Eclipsed < Eclipsed."
+        },
+        {
+          "label": "B",
+          "text": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol)."
+        },
+        {
+          "label": "C",
+          "text": "All conformations have identical energy."
+        },
+        {
+          "label": "D",
+          "text": "Fully Eclipsed < Eclipsed < Gauche < Anti."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol).",
+      "explanation": "Anti is the global minimum; gauche experiences steric strain (3.8 kJ/mol); fully eclipsed has maximum steric and torsional strain (19 kJ/mol).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q029",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Cycloalkane Ring Strain Ranking",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Rank the following cycloalkanes in order of increasing total ring strain: cyclohexane, cyclopentane, cyclobutane, cyclopropane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "B",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopentane has zero ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol).",
+      "explanation": "Cyclohexane is completely strain-free; cyclopropane and cyclobutane suffer severe angle and torsional strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q030",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Torsional Titan",
+      "topic": "Cyclohexane Chair Conformation Geometry",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "What geometric features make the chair conformation of cyclohexane completely strain-free?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring contains three double bonds."
+        },
+        {
+          "label": "B",
+          "text": "The ring is a completely flat planar hexagon."
+        },
+        {
+          "label": "C",
+          "text": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain)."
+        },
+        {
+          "label": "D",
+          "text": "All hydrogens occupy axial positions simultaneously."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain).",
+      "explanation": "The chair conformation achieves perfect tetrahedral angles (109.5°) and fully staggered dihedral angles around all 6 C-C bonds.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "torsional-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q031",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Cis-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the conformational relationship between the two chair forms of cis-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair is 50 kJ/mol more stable."
+        },
+        {
+          "label": "B",
+          "text": "One chair has both methyls equatorial (e,e) and the other has both axial (a,a)."
+        },
+        {
+          "label": "C",
+          "text": "One chair is a planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a).",
+      "explanation": "A chair flip of cis-1,4-dimethylcyclohexane interconverts an (axial, equatorial) chair into an identical (equatorial, axial) chair.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q032",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Trans-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What is the conformational relationship between the two chair forms of trans-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol)."
+        },
+        {
+          "label": "B",
+          "text": "The diaxial conformer is more stable than the diequatorial conformer."
+        },
+        {
+          "label": "C",
+          "text": "The molecule exists exclusively in a boat conformation."
+        },
+        {
+          "label": "D",
+          "text": "Both chair forms are degenerate (a,e ⇌ e,a)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol).",
+      "explanation": "In trans-1,4-dimethylcyclohexane, the diequatorial conformer (e,e) is favored over the diaxial conformer (a,a) by ~15 kJ/mol (>99% population).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q033",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Cis-1,3-Dimethylcyclohexane Diequatorial Conformation",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why is cis-1,3-dimethylcyclohexane overwhelmingly more stable in its (e,e) chair conformation than trans-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cis isomer has a lower molecular weight."
+        },
+        {
+          "label": "B",
+          "text": "The trans isomer is an antiaromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e)."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer contains an internal triple bond."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e).",
+      "explanation": "cis-1,3-Dimethylcyclohexane achieves a strain-free diequatorial (e,e) chair, whereas the trans-1,3 isomer is locked in an (a,e) state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q034",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Decalin Cis vs Trans Ring Fusion Rigidity",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why can cis-decalin undergo chair-to-chair ring flipping while trans-decalin is conformationally rigid and cannot flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cis-decalin is an enantiomer of trans-decalin."
+        },
+        {
+          "label": "B",
+          "text": "Cis-decalin contains a double bond at the bridgehead."
+        },
+        {
+          "label": "C",
+          "text": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily."
+        },
+        {
+          "label": "D",
+          "text": "Trans-decalin is an aromatic molecule."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily.",
+      "explanation": "Trans-decalin is conformationally locked in its diequatorial chair; cis-decalin readily equilibrates between two degenerate flipped chair conformations.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q035",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Ethane Staggered vs Eclipsed Conformations",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the energy difference between the staggered and eclipsed conformations of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds."
+        },
+        {
+          "label": "B",
+          "text": "Both conformations have identical potential energy."
+        },
+        {
+          "label": "C",
+          "text": "The staggered conformation is 50 kJ/mol higher in energy."
+        },
+        {
+          "label": "D",
+          "text": "The eclipsed conformation is 100 kJ/mol more stable."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds.",
+      "explanation": "Three pairs of eclipsed C-H bonds create 3 × 4.0 kJ/mol = 12 kJ/mol of torsional strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q036",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Butane Conformational Energy Profile",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Rank the four principal conformations of n-butane in order of increasing potential energy:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fully Eclipsed < Eclipsed < Gauche < Anti."
+        },
+        {
+          "label": "B",
+          "text": "Gauche < Anti < Fully Eclipsed < Eclipsed."
+        },
+        {
+          "label": "C",
+          "text": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol)."
+        },
+        {
+          "label": "D",
+          "text": "All conformations have identical energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol).",
+      "explanation": "Anti is the global minimum; gauche experiences steric strain (3.8 kJ/mol); fully eclipsed has maximum steric and torsional strain (19 kJ/mol).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q037",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Cycloalkane Ring Strain Ranking",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Rank the following cycloalkanes in order of increasing total ring strain: cyclohexane, cyclopentane, cyclobutane, cyclopropane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "B",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "C",
+          "text": "Cyclopentane has zero ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol).",
+      "explanation": "Cyclohexane is completely strain-free; cyclopropane and cyclobutane suffer severe angle and torsional strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q038",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Cyclohexane Chair Conformation Geometry",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What geometric features make the chair conformation of cyclohexane completely strain-free?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring is a completely flat planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "The ring contains three double bonds."
+        },
+        {
+          "label": "C",
+          "text": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain)."
+        },
+        {
+          "label": "D",
+          "text": "All hydrogens occupy axial positions simultaneously."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain).",
+      "explanation": "The chair conformation achieves perfect tetrahedral angles (109.5°) and fully staggered dihedral angles around all 6 C-C bonds.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q039",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "Axial vs Equatorial Conformational Equilibrium",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "In methylcyclohexane, what percentage of molecules exist in the equatorial conformation at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% axial."
+        },
+        {
+          "label": "B",
+          "text": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions."
+        },
+        {
+          "label": "C",
+          "text": "50% equatorial / 50% axial."
+        },
+        {
+          "label": "D",
+          "text": "10% equatorial / 90% axial."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions.",
+      "explanation": "An equatorial methyl group avoids two 1,3-diaxial gauche interactions (~7.3 kJ/mol), placing 95% of molecules in the equatorial chair at 25°C.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q040",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "Chair-Flip Champion",
+      "topic": "tert-Butyl Group A-Value Conformational Locking",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why is the tert-butyl group considered a 'conformational locking group' on cyclohexane rings?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl forms covalent bonds with the ring carbons."
+        },
+        {
+          "label": "B",
+          "text": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl forces the ring into a planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl group is always axial."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position.",
+      "explanation": "Severe 1,3-diaxial steric clash locks the bulky tert-butyl group in the equatorial position (>99.99% at equilibrium).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "chair-flip-champion.png"
+      ]
+    },
+    {
+      "id": "ch04_q041",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cis-1,3-Dimethylcyclohexane Diequatorial Conformation",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why is cis-1,3-dimethylcyclohexane overwhelmingly more stable in its (e,e) chair conformation than trans-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The trans isomer is an antiaromatic ring."
+        },
+        {
+          "label": "B",
+          "text": "The cis isomer contains an internal triple bond."
+        },
+        {
+          "label": "C",
+          "text": "The cis isomer has a lower molecular weight."
+        },
+        {
+          "label": "D",
+          "text": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The cis isomer can place BOTH methyl groups in equatorial positions (e,e), whereas the trans isomer is forced to have one axial and one equatorial group (a,e).",
+      "explanation": "cis-1,3-Dimethylcyclohexane achieves a strain-free diequatorial (e,e) chair, whereas the trans-1,3 isomer is locked in an (a,e) state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q042",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Decalin Cis vs Trans Ring Fusion Rigidity",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why can cis-decalin undergo chair-to-chair ring flipping while trans-decalin is conformationally rigid and cannot flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cis-decalin is an enantiomer of trans-decalin."
+        },
+        {
+          "label": "B",
+          "text": "Cis-decalin contains a double bond at the bridgehead."
+        },
+        {
+          "label": "C",
+          "text": "Trans-decalin is an aromatic molecule."
+        },
+        {
+          "label": "D",
+          "text": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Trans-decalin has a rigid diequatorial fusion that cannot flip without breaking C-C bonds, whereas cis-decalin has an axial-equatorial fusion that flips readily.",
+      "explanation": "Trans-decalin is conformationally locked in its diequatorial chair; cis-decalin readily equilibrates between two degenerate flipped chair conformations.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q043",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Ethane Staggered vs Eclipsed Conformations",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What is the energy difference between the staggered and eclipsed conformations of ethane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both conformations have identical potential energy."
+        },
+        {
+          "label": "B",
+          "text": "The staggered conformation is 50 kJ/mol higher in energy."
+        },
+        {
+          "label": "C",
+          "text": "The eclipsed conformation is 100 kJ/mol more stable."
+        },
+        {
+          "label": "D",
+          "text": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The eclipsed conformation is 12 kJ/mol (2.9 kcal/mol) higher in potential energy due to torsional strain between adjacent C-H bonds.",
+      "explanation": "Three pairs of eclipsed C-H bonds create 3 × 4.0 kJ/mol = 12 kJ/mol of torsional strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q044",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Butane Conformational Energy Profile",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Rank the four principal conformations of n-butane in order of increasing potential energy:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fully Eclipsed < Eclipsed < Gauche < Anti."
+        },
+        {
+          "label": "B",
+          "text": "All conformations have identical energy."
+        },
+        {
+          "label": "C",
+          "text": "Gauche < Anti < Fully Eclipsed < Eclipsed."
+        },
+        {
+          "label": "D",
+          "text": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Anti (0 kJ/mol) < Gauche (3.8 kJ/mol) < Eclipsed H/CH₃ (16 kJ/mol) < Fully Eclipsed CH₃/CH₃ (19 kJ/mol).",
+      "explanation": "Anti is the global minimum; gauche experiences steric strain (3.8 kJ/mol); fully eclipsed has maximum steric and torsional strain (19 kJ/mol).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q045",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cycloalkane Ring Strain Ranking",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Rank the following cycloalkanes in order of increasing total ring strain: cyclohexane, cyclopentane, cyclobutane, cyclopropane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentane has zero ring strain."
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane < Cyclobutane < Cyclopentane < Cyclohexane."
+        },
+        {
+          "label": "C",
+          "text": "All cycloalkanes have identical ring strain."
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexane (0 kJ/mol) < Cyclopentane (27 kJ/mol) < Cyclobutane (110 kJ/mol) < Cyclopropane (115 kJ/mol).",
+      "explanation": "Cyclohexane is completely strain-free; cyclopropane and cyclobutane suffer severe angle and torsional strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q046",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cyclohexane Chair Conformation Geometry",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What geometric features make the chair conformation of cyclohexane completely strain-free?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring is a completely flat planar hexagon."
+        },
+        {
+          "label": "B",
+          "text": "The ring contains three double bonds."
+        },
+        {
+          "label": "C",
+          "text": "All hydrogens occupy axial positions simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "All C-C-C bond angles are 109.5° (zero angle strain) and all adjacent C-H bonds are fully staggered (zero torsional strain).",
+      "explanation": "The chair conformation achieves perfect tetrahedral angles (109.5°) and fully staggered dihedral angles around all 6 C-C bonds.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q047",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Axial vs Equatorial Conformational Equilibrium",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "In methylcyclohexane, what percentage of molecules exist in the equatorial conformation at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100% axial."
+        },
+        {
+          "label": "B",
+          "text": "10% equatorial / 90% axial."
+        },
+        {
+          "label": "C",
+          "text": "50% equatorial / 50% axial."
+        },
+        {
+          "label": "D",
+          "text": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Approximately 95% equatorial (A-value = 7.3 kJ/mol), because the equatorial conformer avoids 1,3-diaxial steric interactions.",
+      "explanation": "An equatorial methyl group avoids two 1,3-diaxial gauche interactions (~7.3 kJ/mol), placing 95% of molecules in the equatorial chair at 25°C.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q048",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "tert-Butyl Group A-Value Conformational Locking",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why is the tert-butyl group considered a 'conformational locking group' on cyclohexane rings?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl forms covalent bonds with the ring carbons."
+        },
+        {
+          "label": "B",
+          "text": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl forces the ring into a planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl group is always axial."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Its enormous A-value (~20 kJ/mol) dictates that >99.9% of molecules adopt the chair conformation with the tert-butyl group in the equatorial position.",
+      "explanation": "Severe 1,3-diaxial steric clash locks the bulky tert-butyl group in the equatorial position (>99.99% at equilibrium).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q049",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cis-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the conformational relationship between the two chair forms of cis-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One chair has both methyls equatorial (e,e) and the other has both axial (a,a)."
+        },
+        {
+          "label": "B",
+          "text": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a)."
+        },
+        {
+          "label": "C",
+          "text": "One chair is a planar hexagon."
+        },
+        {
+          "label": "D",
+          "text": "One chair is 50 kJ/mol more stable."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Both chair conformations are degenerate (identical in energy), each having exactly one axial methyl and one equatorial methyl group (a,e ⇌ e,a).",
+      "explanation": "A chair flip of cis-1,4-dimethylcyclohexane interconverts an (axial, equatorial) chair into an identical (equatorial, axial) chair.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q050",
+      "chapter": 4,
+      "chapter_title": "Alkanes and Cycloalkanes",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Trans-1,4-Dimethylcyclohexane Conformations",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "What is the conformational relationship between the two chair forms of trans-1,4-dimethylcyclohexane upon chair flipping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule exists exclusively in a boat conformation."
+        },
+        {
+          "label": "B",
+          "text": "The diaxial conformer is more stable than the diequatorial conformer."
+        },
+        {
+          "label": "C",
+          "text": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol)."
+        },
+        {
+          "label": "D",
+          "text": "Both chair forms are degenerate (a,e ⇌ e,a)."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One chair conformation is diequatorial (e,e - highly stable) and the flipped chair is diaxial (a,a - high energy, destabilized by 15 kJ/mol).",
+      "explanation": "In trans-1,4-dimethylcyclohexane, the diequatorial conformer (e,e) is favored over the diaxial conformer (a,a) by ~15 kJ/mol (>99% population).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "IUPAC Infantry",
+    "Newman Nightmare",
+    "Torsional Titan",
+    "Chair-Flip Champion",
+    "1,3-Diaxial Dreadnought"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "IUPAC Infantry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "iupac-infantry.png"
+        ]
+      },
+      {
+        "boss": "Newman Nightmare",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "newman-nightmare.png"
+        ]
+      },
+      {
+        "boss": "Torsional Titan",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "torsional-titan.png"
+        ]
+      },
+      {
+        "boss": "Chair-Flip Champion",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "chair-flip-champion.png"
+        ]
+      },
+      {
+        "boss": "1,3-Diaxial Dreadnought",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "13-diaxial-dreadnought.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 6,
+  "chapter_title": "Chemical Reactivity and Mechanisms",
+  "assigned_boss": "Enthalpy Elemental",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch06_q001",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Carbocation 1,2-Hydride Shift Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the orbital description of a 1,2-hydride shift in a carbocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbocation inverts its configuration like an umbrella."
+        },
+        {
+          "label": "B",
+          "text": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon."
+        },
+        {
+          "label": "C",
+          "text": "A proton jumps through space while leaving its electrons behind."
+        },
+        {
+          "label": "D",
+          "text": "A hydride radical adds to the double bond."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon.",
+      "explanation": "A 1,2-hydride shift involves simultaneous migration of the hydrogen nucleus and its two σ electrons into the adjacent empty p orbital.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q002",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "1,2-Methanide Shift Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "When 3,3-dimethyl-2-butanol is dehydrated in acid, why does a methyl shift occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted pericyclic electrocyclic closure occurs."
+        },
+        {
+          "label": "B",
+          "text": "Methyl cation departs as a leaving group."
+        },
+        {
+          "label": "C",
+          "text": "The methyl group undergoes homolytic cleavage to a methyl radical."
+        },
+        {
+          "label": "D",
+          "text": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻).",
+      "explanation": "Thermodynamic stabilization gained by forming a tertiary carbocation from a secondary cation drives the 1,2-methanide rearrangement.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q003",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Hammond Postulate in Exergonic Reactions",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "According to the Hammond Postulate, what does the transition state of a highly exergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state resembles a high-energy biradical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The transition state is equidistant in structure between reactants and products."
+        },
+        {
+          "label": "C",
+          "text": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles the products in structure and energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy.",
+      "explanation": "In exergonic reactions (ΔG° < 0), the transition state is early and structurally resembles the starting materials.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q004",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Hammond Postulate in Endergonic Reactions",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "According to the Hammond Postulate, what does the transition state of an endergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles solvent molecules."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles the low-energy reactants."
+        },
+        {
+          "label": "D",
+          "text": "The transition state is barrier-free."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate.",
+      "explanation": "In endergonic reactions, the transition state is close in energy to the products/intermediate and therefore closely resembles them structurally.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q005",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Four Core Curved-Arrow Mechanistic Patterns",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What are the four fundamental curved-arrow mechanistic patterns in organic chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements."
+        },
+        {
+          "label": "B",
+          "text": "Combustion, distillation, extraction, and crystallization."
+        },
+        {
+          "label": "C",
+          "text": "Radical coupling, homolysis, ionization, and sublimation."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation, reduction, complexation, and precipitation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements.",
+      "explanation": "Klein establishes four universal arrow-pushing primitives: nucleophilic attack, leaving group loss, proton transfer, and rearrangement.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q006",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Rate-Determining Step in Multi-Step Pathway",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How is the rate-determining step (RDS) identified on a multi-step reaction energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the step with the highest intermediate potential well."
+        },
+        {
+          "label": "B",
+          "text": "It is the step that releases the most heat (largest ΔH°)."
+        },
+        {
+          "label": "C",
+          "text": "It is the last step in the mechanism."
+        },
+        {
+          "label": "D",
+          "text": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley).",
+      "explanation": "The step with the greatest energy barrier dictates the overall turnover frequency and rate equation of the reaction.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q007",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Kinetic vs Thermodynamic Control Energy Profile",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "On a reaction energy coordinate, what distinguishes the kinetic product from the thermodynamic product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The kinetic product is formed only at high temperatures."
+        },
+        {
+          "label": "B",
+          "text": "The kinetic product is always more stable than the thermodynamic product."
+        },
+        {
+          "label": "C",
+          "text": "The thermodynamic product forms with zero activation energy."
+        },
+        {
+          "label": "D",
+          "text": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability).",
+      "explanation": "Low temperature favors the pathway with the lowest Ea (kinetic), while high temperature allows equilibration to the lowest free energy product (thermodynamic).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q008",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Solvolysis Transition State Polarity",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In the solvolysis of tert-butyl chloride in water/acetone mixtures, why does increasing solvent polarity accelerate the reaction rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polar solvents raise the ground state energy of tert-butyl chloride."
+        },
+        {
+          "label": "B",
+          "text": "Nonpolar solvents decompose the carbocation intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Water acts as a catalyst by removing acetone from solution."
+        },
+        {
+          "label": "D",
+          "text": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant.",
+      "explanation": "Polar protic solvents solvate developing partial charges in the transition state, lowering the activation energy barrier.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q009",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Concerted vs Stepwise Transition States",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the key topological difference between a concerted mechanism and a stepwise mechanism on a free energy surface?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stepwise mechanism has zero activation energy."
+        },
+        {
+          "label": "B",
+          "text": "A concerted mechanism always requires high pressure."
+        },
+        {
+          "label": "C",
+          "text": "Concerted reactions cannot form stereocenters."
+        },
+        {
+          "label": "D",
+          "text": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates).",
+      "explanation": "Concerted processes proceed in a single elementary step through one transition state; stepwise reactions involve discrete chemical intermediates.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q010",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Enthalpy Elemental",
+      "topic": "Microscopic Reversibility Principle",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What does the principle of microscopic reversibility dictate regarding the reverse pathway of a chemical mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction always uses a completely different catalyst."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction must proceed via a radical pathway."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction has a higher activation energy than the forward reaction under all conditions."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order.",
+      "explanation": "At equilibrium, the forward and reverse elementary steps follow identical potential energy trajectories in opposite directions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "enthalpy-elemental.png"
+      ]
+    },
+    {
+      "id": "ch06_q011",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Hammond Postulate in Exergonic Reactions",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "According to the Hammond Postulate, what does the transition state of a highly exergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles the products in structure and energy."
+        },
+        {
+          "label": "C",
+          "text": "The transition state is equidistant in structure between reactants and products."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles a high-energy biradical intermediate."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy.",
+      "explanation": "In exergonic reactions (ΔG° < 0), the transition state is early and structurally resembles the starting materials.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q012",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Hammond Postulate in Endergonic Reactions",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "According to the Hammond Postulate, what does the transition state of an endergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state resembles solvent molecules."
+        },
+        {
+          "label": "B",
+          "text": "The transition state is barrier-free."
+        },
+        {
+          "label": "C",
+          "text": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles the low-energy reactants."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate.",
+      "explanation": "In endergonic reactions, the transition state is close in energy to the products/intermediate and therefore closely resembles them structurally.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q013",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Four Core Curved-Arrow Mechanistic Patterns",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What are the four fundamental curved-arrow mechanistic patterns in organic chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Radical coupling, homolysis, ionization, and sublimation."
+        },
+        {
+          "label": "B",
+          "text": "Combustion, distillation, extraction, and crystallization."
+        },
+        {
+          "label": "C",
+          "text": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation, reduction, complexation, and precipitation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements.",
+      "explanation": "Klein establishes four universal arrow-pushing primitives: nucleophilic attack, leaving group loss, proton transfer, and rearrangement.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q014",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Rate-Determining Step in Multi-Step Pathway",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How is the rate-determining step (RDS) identified on a multi-step reaction energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley)."
+        },
+        {
+          "label": "B",
+          "text": "It is the last step in the mechanism."
+        },
+        {
+          "label": "C",
+          "text": "It is the step that releases the most heat (largest ΔH°)."
+        },
+        {
+          "label": "D",
+          "text": "It is the step with the highest intermediate potential well."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley).",
+      "explanation": "The step with the greatest energy barrier dictates the overall turnover frequency and rate equation of the reaction.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q015",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Kinetic vs Thermodynamic Control Energy Profile",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "On a reaction energy coordinate, what distinguishes the kinetic product from the thermodynamic product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The kinetic product is always more stable than the thermodynamic product."
+        },
+        {
+          "label": "B",
+          "text": "The kinetic product is formed only at high temperatures."
+        },
+        {
+          "label": "C",
+          "text": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability)."
+        },
+        {
+          "label": "D",
+          "text": "The thermodynamic product forms with zero activation energy."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability).",
+      "explanation": "Low temperature favors the pathway with the lowest Ea (kinetic), while high temperature allows equilibration to the lowest free energy product (thermodynamic).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q016",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Solvolysis Transition State Polarity",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "In the solvolysis of tert-butyl chloride in water/acetone mixtures, why does increasing solvent polarity accelerate the reaction rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nonpolar solvents decompose the carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant."
+        },
+        {
+          "label": "C",
+          "text": "Water acts as a catalyst by removing acetone from solution."
+        },
+        {
+          "label": "D",
+          "text": "Polar solvents raise the ground state energy of tert-butyl chloride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant.",
+      "explanation": "Polar protic solvents solvate developing partial charges in the transition state, lowering the activation energy barrier.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q017",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Concerted vs Stepwise Transition States",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key topological difference between a concerted mechanism and a stepwise mechanism on a free energy surface?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted mechanism always requires high pressure."
+        },
+        {
+          "label": "B",
+          "text": "A stepwise mechanism has zero activation energy."
+        },
+        {
+          "label": "C",
+          "text": "Concerted reactions cannot form stereocenters."
+        },
+        {
+          "label": "D",
+          "text": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates).",
+      "explanation": "Concerted processes proceed in a single elementary step through one transition state; stepwise reactions involve discrete chemical intermediates.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q018",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Microscopic Reversibility Principle",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What does the principle of microscopic reversibility dictate regarding the reverse pathway of a chemical mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction always uses a completely different catalyst."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction must proceed via a radical pathway."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction has a higher activation energy than the forward reaction under all conditions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order.",
+      "explanation": "At equilibrium, the forward and reverse elementary steps follow identical potential energy trajectories in opposite directions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q019",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "Carbocation 1,2-Hydride Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the orbital description of a 1,2-hydride shift in a carbocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A hydride radical adds to the double bond."
+        },
+        {
+          "label": "B",
+          "text": "A proton jumps through space while leaving its electrons behind."
+        },
+        {
+          "label": "C",
+          "text": "The carbocation inverts its configuration like an umbrella."
+        },
+        {
+          "label": "D",
+          "text": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon.",
+      "explanation": "A 1,2-hydride shift involves simultaneous migration of the hydrogen nucleus and its two σ electrons into the adjacent empty p orbital.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q020",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Entropy Spectre",
+      "topic": "1,2-Methanide Shift Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "When 3,3-dimethyl-2-butanol is dehydrated in acid, why does a methyl shift occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methyl group undergoes homolytic cleavage to a methyl radical."
+        },
+        {
+          "label": "B",
+          "text": "Methyl cation departs as a leaving group."
+        },
+        {
+          "label": "C",
+          "text": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻)."
+        },
+        {
+          "label": "D",
+          "text": "A concerted pericyclic electrocyclic closure occurs."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻).",
+      "explanation": "Thermodynamic stabilization gained by forming a tertiary carbocation from a secondary cation drives the 1,2-methanide rearrangement.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "entropy-spectre.png"
+      ]
+    },
+    {
+      "id": "ch06_q021",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Four Core Curved-Arrow Mechanistic Patterns",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What are the four fundamental curved-arrow mechanistic patterns in organic chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation, reduction, complexation, and precipitation."
+        },
+        {
+          "label": "B",
+          "text": "Radical coupling, homolysis, ionization, and sublimation."
+        },
+        {
+          "label": "C",
+          "text": "Combustion, distillation, extraction, and crystallization."
+        },
+        {
+          "label": "D",
+          "text": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements.",
+      "explanation": "Klein establishes four universal arrow-pushing primitives: nucleophilic attack, leaving group loss, proton transfer, and rearrangement.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q022",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Rate-Determining Step in Multi-Step Pathway",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How is the rate-determining step (RDS) identified on a multi-step reaction energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the step with the highest intermediate potential well."
+        },
+        {
+          "label": "B",
+          "text": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley)."
+        },
+        {
+          "label": "C",
+          "text": "It is the step that releases the most heat (largest ΔH°)."
+        },
+        {
+          "label": "D",
+          "text": "It is the last step in the mechanism."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley).",
+      "explanation": "The step with the greatest energy barrier dictates the overall turnover frequency and rate equation of the reaction.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q023",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Kinetic vs Thermodynamic Control Energy Profile",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "On a reaction energy coordinate, what distinguishes the kinetic product from the thermodynamic product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability)."
+        },
+        {
+          "label": "B",
+          "text": "The thermodynamic product forms with zero activation energy."
+        },
+        {
+          "label": "C",
+          "text": "The kinetic product is always more stable than the thermodynamic product."
+        },
+        {
+          "label": "D",
+          "text": "The kinetic product is formed only at high temperatures."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability).",
+      "explanation": "Low temperature favors the pathway with the lowest Ea (kinetic), while high temperature allows equilibration to the lowest free energy product (thermodynamic).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q024",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Solvolysis Transition State Polarity",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "In the solvolysis of tert-butyl chloride in water/acetone mixtures, why does increasing solvent polarity accelerate the reaction rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nonpolar solvents decompose the carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant."
+        },
+        {
+          "label": "C",
+          "text": "Water acts as a catalyst by removing acetone from solution."
+        },
+        {
+          "label": "D",
+          "text": "Polar solvents raise the ground state energy of tert-butyl chloride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant.",
+      "explanation": "Polar protic solvents solvate developing partial charges in the transition state, lowering the activation energy barrier.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q025",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Concerted vs Stepwise Transition States",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the key topological difference between a concerted mechanism and a stepwise mechanism on a free energy surface?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates)."
+        },
+        {
+          "label": "B",
+          "text": "A stepwise mechanism has zero activation energy."
+        },
+        {
+          "label": "C",
+          "text": "A concerted mechanism always requires high pressure."
+        },
+        {
+          "label": "D",
+          "text": "Concerted reactions cannot form stereocenters."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates).",
+      "explanation": "Concerted processes proceed in a single elementary step through one transition state; stepwise reactions involve discrete chemical intermediates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q026",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Microscopic Reversibility Principle",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What does the principle of microscopic reversibility dictate regarding the reverse pathway of a chemical mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction must proceed via a radical pathway."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction has a higher activation energy than the forward reaction under all conditions."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction always uses a completely different catalyst."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order.",
+      "explanation": "At equilibrium, the forward and reverse elementary steps follow identical potential energy trajectories in opposite directions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q027",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Carbocation 1,2-Hydride Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the orbital description of a 1,2-hydride shift in a carbocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A proton jumps through space while leaving its electrons behind."
+        },
+        {
+          "label": "B",
+          "text": "A hydride radical adds to the double bond."
+        },
+        {
+          "label": "C",
+          "text": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon."
+        },
+        {
+          "label": "D",
+          "text": "The carbocation inverts its configuration like an umbrella."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon.",
+      "explanation": "A 1,2-hydride shift involves simultaneous migration of the hydrogen nucleus and its two σ electrons into the adjacent empty p orbital.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q028",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "1,2-Methanide Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "When 3,3-dimethyl-2-butanol is dehydrated in acid, why does a methyl shift occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl cation departs as a leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻)."
+        },
+        {
+          "label": "C",
+          "text": "A concerted pericyclic electrocyclic closure occurs."
+        },
+        {
+          "label": "D",
+          "text": "The methyl group undergoes homolytic cleavage to a methyl radical."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻).",
+      "explanation": "Thermodynamic stabilization gained by forming a tertiary carbocation from a secondary cation drives the 1,2-methanide rearrangement.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q029",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Hammond Postulate in Exergonic Reactions",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "According to the Hammond Postulate, what does the transition state of a highly exergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state is equidistant in structure between reactants and products."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles a high-energy biradical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles the products in structure and energy."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy.",
+      "explanation": "In exergonic reactions (ΔG° < 0), the transition state is early and structurally resembles the starting materials.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q030",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Carbocation Colossus",
+      "topic": "Hammond Postulate in Endergonic Reactions",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "According to the Hammond Postulate, what does the transition state of an endergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state resembles the low-energy reactants."
+        },
+        {
+          "label": "B",
+          "text": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles solvent molecules."
+        },
+        {
+          "label": "D",
+          "text": "The transition state is barrier-free."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate.",
+      "explanation": "In endergonic reactions, the transition state is close in energy to the products/intermediate and therefore closely resembles them structurally.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "carbocation-colossus.png"
+      ]
+    },
+    {
+      "id": "ch06_q031",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Kinetic vs Thermodynamic Control Energy Profile",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "On a reaction energy coordinate, what distinguishes the kinetic product from the thermodynamic product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The thermodynamic product forms with zero activation energy."
+        },
+        {
+          "label": "B",
+          "text": "The kinetic product is formed only at high temperatures."
+        },
+        {
+          "label": "C",
+          "text": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability)."
+        },
+        {
+          "label": "D",
+          "text": "The kinetic product is always more stable than the thermodynamic product."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability).",
+      "explanation": "Low temperature favors the pathway with the lowest Ea (kinetic), while high temperature allows equilibration to the lowest free energy product (thermodynamic).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q032",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Solvolysis Transition State Polarity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In the solvolysis of tert-butyl chloride in water/acetone mixtures, why does increasing solvent polarity accelerate the reaction rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nonpolar solvents decompose the carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Polar solvents raise the ground state energy of tert-butyl chloride."
+        },
+        {
+          "label": "C",
+          "text": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant."
+        },
+        {
+          "label": "D",
+          "text": "Water acts as a catalyst by removing acetone from solution."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant.",
+      "explanation": "Polar protic solvents solvate developing partial charges in the transition state, lowering the activation energy barrier.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q033",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Concerted vs Stepwise Transition States",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key topological difference between a concerted mechanism and a stepwise mechanism on a free energy surface?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concerted reactions cannot form stereocenters."
+        },
+        {
+          "label": "B",
+          "text": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates)."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise mechanism has zero activation energy."
+        },
+        {
+          "label": "D",
+          "text": "A concerted mechanism always requires high pressure."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates).",
+      "explanation": "Concerted processes proceed in a single elementary step through one transition state; stepwise reactions involve discrete chemical intermediates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q034",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Microscopic Reversibility Principle",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What does the principle of microscopic reversibility dictate regarding the reverse pathway of a chemical mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction has a higher activation energy than the forward reaction under all conditions."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction must proceed via a radical pathway."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction always uses a completely different catalyst."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order.",
+      "explanation": "At equilibrium, the forward and reverse elementary steps follow identical potential energy trajectories in opposite directions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q035",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Carbocation 1,2-Hydride Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the orbital description of a 1,2-hydride shift in a carbocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbocation inverts its configuration like an umbrella."
+        },
+        {
+          "label": "B",
+          "text": "A hydride radical adds to the double bond."
+        },
+        {
+          "label": "C",
+          "text": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon."
+        },
+        {
+          "label": "D",
+          "text": "A proton jumps through space while leaving its electrons behind."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon.",
+      "explanation": "A 1,2-hydride shift involves simultaneous migration of the hydrogen nucleus and its two σ electrons into the adjacent empty p orbital.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q036",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "1,2-Methanide Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "When 3,3-dimethyl-2-butanol is dehydrated in acid, why does a methyl shift occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl cation departs as a leaving group."
+        },
+        {
+          "label": "B",
+          "text": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻)."
+        },
+        {
+          "label": "C",
+          "text": "The methyl group undergoes homolytic cleavage to a methyl radical."
+        },
+        {
+          "label": "D",
+          "text": "A concerted pericyclic electrocyclic closure occurs."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻).",
+      "explanation": "Thermodynamic stabilization gained by forming a tertiary carbocation from a secondary cation drives the 1,2-methanide rearrangement.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q037",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Hammond Postulate in Exergonic Reactions",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "According to the Hammond Postulate, what does the transition state of a highly exergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state resembles the products in structure and energy."
+        },
+        {
+          "label": "B",
+          "text": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles a high-energy biradical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "The transition state is equidistant in structure between reactants and products."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy.",
+      "explanation": "In exergonic reactions (ΔG° < 0), the transition state is early and structurally resembles the starting materials.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q038",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Hammond Postulate in Endergonic Reactions",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "According to the Hammond Postulate, what does the transition state of an endergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state is barrier-free."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles the low-energy reactants."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles solvent molecules."
+        },
+        {
+          "label": "D",
+          "text": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate.",
+      "explanation": "In endergonic reactions, the transition state is close in energy to the products/intermediate and therefore closely resembles them structurally.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q039",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Four Core Curved-Arrow Mechanistic Patterns",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What are the four fundamental curved-arrow mechanistic patterns in organic chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation, reduction, complexation, and precipitation."
+        },
+        {
+          "label": "C",
+          "text": "Combustion, distillation, extraction, and crystallization."
+        },
+        {
+          "label": "D",
+          "text": "Radical coupling, homolysis, ionization, and sublimation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements.",
+      "explanation": "Klein establishes four universal arrow-pushing primitives: nucleophilic attack, leaving group loss, proton transfer, and rearrangement.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q040",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Transition State Trickster",
+      "topic": "Rate-Determining Step in Multi-Step Pathway",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "How is the rate-determining step (RDS) identified on a multi-step reaction energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the last step in the mechanism."
+        },
+        {
+          "label": "B",
+          "text": "It is the step with the highest intermediate potential well."
+        },
+        {
+          "label": "C",
+          "text": "It is the step that releases the most heat (largest ΔH°)."
+        },
+        {
+          "label": "D",
+          "text": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley).",
+      "explanation": "The step with the greatest energy barrier dictates the overall turnover frequency and rate equation of the reaction.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "transition-state-trickster.png"
+      ]
+    },
+    {
+      "id": "ch06_q041",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Concerted vs Stepwise Transition States",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key topological difference between a concerted mechanism and a stepwise mechanism on a free energy surface?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A concerted mechanism always requires high pressure."
+        },
+        {
+          "label": "B",
+          "text": "A stepwise mechanism has zero activation energy."
+        },
+        {
+          "label": "C",
+          "text": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates)."
+        },
+        {
+          "label": "D",
+          "text": "Concerted reactions cannot form stereocenters."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted mechanism has a single transition state with no intermediates, whereas a stepwise mechanism has two or more transition states separated by shallow energy wells (intermediates).",
+      "explanation": "Concerted processes proceed in a single elementary step through one transition state; stepwise reactions involve discrete chemical intermediates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q042",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Microscopic Reversibility Principle",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What does the principle of microscopic reversibility dictate regarding the reverse pathway of a chemical mechanism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reverse reaction always uses a completely different catalyst."
+        },
+        {
+          "label": "B",
+          "text": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order."
+        },
+        {
+          "label": "C",
+          "text": "The reverse reaction must proceed via a radical pathway."
+        },
+        {
+          "label": "D",
+          "text": "The reverse reaction has a higher activation energy than the forward reaction under all conditions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The reverse reaction must proceed through the exact same sequence of intermediates and transition states as the forward reaction in exact reverse order.",
+      "explanation": "At equilibrium, the forward and reverse elementary steps follow identical potential energy trajectories in opposite directions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q043",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Carbocation 1,2-Hydride Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the orbital description of a 1,2-hydride shift in a carbocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carbocation inverts its configuration like an umbrella."
+        },
+        {
+          "label": "B",
+          "text": "A proton jumps through space while leaving its electrons behind."
+        },
+        {
+          "label": "C",
+          "text": "A hydride radical adds to the double bond."
+        },
+        {
+          "label": "D",
+          "text": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The C-H σ bonding electron pair migrates with its hydrogen nucleus into the adjacent vacant unhybridized 2p orbital on the positively charged carbon.",
+      "explanation": "A 1,2-hydride shift involves simultaneous migration of the hydrogen nucleus and its two σ electrons into the adjacent empty p orbital.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q044",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "1,2-Methanide Shift Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "When 3,3-dimethyl-2-butanol is dehydrated in acid, why does a methyl shift occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methyl group undergoes homolytic cleavage to a methyl radical."
+        },
+        {
+          "label": "B",
+          "text": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻)."
+        },
+        {
+          "label": "C",
+          "text": "A concerted pericyclic electrocyclic closure occurs."
+        },
+        {
+          "label": "D",
+          "text": "Methyl cation departs as a leaving group."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Relief of steric strain and conversion of a secondary carbocation into a more stable tertiary carbocation drives migration of the methanide group (:CH₃⁻).",
+      "explanation": "Thermodynamic stabilization gained by forming a tertiary carbocation from a secondary cation drives the 1,2-methanide rearrangement.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q045",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Hammond Postulate in Exergonic Reactions",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "According to the Hammond Postulate, what does the transition state of a highly exergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state is equidistant in structure between reactants and products."
+        },
+        {
+          "label": "B",
+          "text": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy."
+        },
+        {
+          "label": "C",
+          "text": "The transition state resembles the products in structure and energy."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles a high-energy biradical intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The transition state occurs early along the reaction coordinate and closely resembles the reactants in structure and energy.",
+      "explanation": "In exergonic reactions (ΔG° < 0), the transition state is early and structurally resembles the starting materials.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q046",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Hammond Postulate in Endergonic Reactions",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "According to the Hammond Postulate, what does the transition state of an endergonic elementary step resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The transition state resembles the low-energy reactants."
+        },
+        {
+          "label": "C",
+          "text": "The transition state is barrier-free."
+        },
+        {
+          "label": "D",
+          "text": "The transition state resembles solvent molecules."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The transition state occurs late along the reaction coordinate and closely resembles the high-energy products or intermediate.",
+      "explanation": "In endergonic reactions, the transition state is close in energy to the products/intermediate and therefore closely resembles them structurally.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q047",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Four Core Curved-Arrow Mechanistic Patterns",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What are the four fundamental curved-arrow mechanistic patterns in organic chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation, reduction, complexation, and precipitation."
+        },
+        {
+          "label": "B",
+          "text": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements."
+        },
+        {
+          "label": "C",
+          "text": "Combustion, distillation, extraction, and crystallization."
+        },
+        {
+          "label": "D",
+          "text": "Radical coupling, homolysis, ionization, and sublimation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nucleophilic attack, loss of a leaving group, proton transfer, and carbocation rearrangements.",
+      "explanation": "Klein establishes four universal arrow-pushing primitives: nucleophilic attack, leaving group loss, proton transfer, and rearrangement.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q048",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Rate-Determining Step in Multi-Step Pathway",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How is the rate-determining step (RDS) identified on a multi-step reaction energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the last step in the mechanism."
+        },
+        {
+          "label": "B",
+          "text": "It is the step that releases the most heat (largest ΔH°)."
+        },
+        {
+          "label": "C",
+          "text": "It is the step with the highest intermediate potential well."
+        },
+        {
+          "label": "D",
+          "text": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It is the elementary step with the highest individual activation energy barrier (largest Ea peak relative to preceding valley).",
+      "explanation": "The step with the greatest energy barrier dictates the overall turnover frequency and rate equation of the reaction.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q049",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Kinetic vs Thermodynamic Control Energy Profile",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "On a reaction energy coordinate, what distinguishes the kinetic product from the thermodynamic product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The kinetic product is always more stable than the thermodynamic product."
+        },
+        {
+          "label": "B",
+          "text": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability)."
+        },
+        {
+          "label": "C",
+          "text": "The kinetic product is formed only at high temperatures."
+        },
+        {
+          "label": "D",
+          "text": "The thermodynamic product forms with zero activation energy."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The kinetic product forms via a lower activation energy barrier (faster rate), while the thermodynamic product resides in a deeper potential energy well (greater stability).",
+      "explanation": "Low temperature favors the pathway with the lowest Ea (kinetic), while high temperature allows equilibration to the lowest free energy product (thermodynamic).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch06_q050",
+      "chapter": 6,
+      "chapter_title": "Chemical Reactivity and Mechanisms",
+      "boss": "Gibbs Free Energy Sovereign",
+      "topic": "Solvolysis Transition State Polarity",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "In the solvolysis of tert-butyl chloride in water/acetone mixtures, why does increasing solvent polarity accelerate the reaction rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nonpolar solvents decompose the carbocation intermediate."
+        },
+        {
+          "label": "B",
+          "text": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant."
+        },
+        {
+          "label": "C",
+          "text": "Water acts as a catalyst by removing acetone from solution."
+        },
+        {
+          "label": "D",
+          "text": "Polar solvents raise the ground state energy of tert-butyl chloride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The rate-determining transition state has substantial ionic charge separation [Rδ+···Clδ-] which is stabilized more effectively by polar solvents than the neutral reactant.",
+      "explanation": "Polar protic solvents solvate developing partial charges in the transition state, lowering the activation energy barrier.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "gibbs-free-energy-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Enthalpy Elemental",
+    "Entropy Spectre",
+    "Carbocation Colossus",
+    "Transition State Trickster",
+    "Gibbs Free Energy Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Enthalpy Elemental",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "enthalpy-elemental.png"
+        ]
+      },
+      {
+        "boss": "Entropy Spectre",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "entropy-spectre.png"
+        ]
+      },
+      {
+        "boss": "Carbocation Colossus",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "carbocation-colossus.png"
+        ]
+      },
+      {
+        "boss": "Transition State Trickster",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "transition-state-trickster.png"
+        ]
+      },
+      {
+        "boss": "Gibbs Free Energy Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "gibbs-free-energy-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

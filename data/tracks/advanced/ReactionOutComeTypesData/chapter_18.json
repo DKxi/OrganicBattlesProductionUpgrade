@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 18,
+  "chapter_title": "Aromatic Substitution Reactions",
+  "assigned_boss": "Arenium Archer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch18_q001",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Friedel-Crafts Alkylation with Rearrangement",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Benzene reacts under the following conditions: CH₃CH₂CH₂Cl / AlCl₃ catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "B",
+          "text": "1,4-Dipropylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "Propylbenzene exclusively"
+        },
+        {
+          "label": "D",
+          "text": "Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)",
+      "explanation": "Major product rationale: Primary propyl carbocation complex undergoes a rapid 1,2-hydride shift to form the more stable isopropyl cation electrophile. The correct major product is 'Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q002",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Friedel-Crafts Acylation (No Rearrangement)",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Benzene reacts under the following conditions: CH₃CH₂COCl / AlCl₃, then H₂O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isopropylbenzene"
+        },
+        {
+          "label": "B",
+          "text": "Propylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "Phenyl acetate"
+        },
+        {
+          "label": "D",
+          "text": "Propiophenone [PhCOCH₂CH₃] + HCl"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Propiophenone [PhCOCH₂CH₃] + HCl",
+      "explanation": "Major product rationale: The resonance-stabilized acylium ion (CH₃CH₂-C≡O⁺) electrophile resists rearrangements and prevents polyalkylation. The correct major product is 'Propiophenone [PhCOCH₂CH₃] + HCl'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q003",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Clemmensen Reduction of Aryl Ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Propiophenone (PhCOCH₂CH₃) reacts under the following conditions: Zn(Hg) / conc. HCl, reflux?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propylbenzene (PhCH₂CH₂CH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Isopropylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "1-Phenyl-1-propanol"
+        },
+        {
+          "label": "D",
+          "text": "Propenylbenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propylbenzene (PhCH₂CH₂CH₃)",
+      "explanation": "Major product rationale: Reduces aryl ketones completely to alkylbenzenes without carbocation rearrangements. The correct major product is 'Propylbenzene (PhCH₂CH₂CH₃)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q004",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Wolff-Kishner Reduction of Aryl Ketone",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Acetophenone (PhCOCH₃) reacts under the following conditions: NH₂NH₂, KOH, Diethylene glycol, 200°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylbenzene (PhCH₂CH₃) + N₂(g)"
+        },
+        {
+          "label": "B",
+          "text": "Styrene"
+        },
+        {
+          "label": "C",
+          "text": "Toluene"
+        },
+        {
+          "label": "D",
+          "text": "Phenylethanol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethylbenzene (PhCH₂CH₃) + N₂(g)",
+      "explanation": "Major product rationale: Basic reduction of carbonyls via hydrazone intermediates, useful for acid-sensitive substrates. The correct major product is 'Ethylbenzene (PhCH₂CH₃) + N₂(g)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q005",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Nitration of Toluene (Ortho/Para Directing)",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Toluene (PhCH₃) reacts under the following conditions: HNO₃ / H₂SO₄ at 30°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl nitrate"
+        },
+        {
+          "label": "B",
+          "text": "m-Nitrotoluene exclusively"
+        },
+        {
+          "label": "C",
+          "text": "2,4,6-Trinitrotoluene"
+        },
+        {
+          "label": "D",
+          "text": "o-Nitrotoluene + p-Nitrotoluene (Major mixture)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "o-Nitrotoluene + p-Nitrotoluene (Major mixture)",
+      "explanation": "Major product rationale: Electron-donating methyl group stabilizes the arenium ion by hyperconjugation preferentially at ortho and para positions. The correct major product is 'o-Nitrotoluene + p-Nitrotoluene (Major mixture)'.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q006",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Bromination of Nitrobenzene (Meta Directing)",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Nitrobenzene (PhNO₂) into m-Bromonitrobenzene (Major, >90%) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        },
+        {
+          "label": "B",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        },
+        {
+          "label": "C",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        },
+        {
+          "label": "D",
+          "text": "NaNH₂ in liq. NH₃, -33°C"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Br₂ / FeBr₃ at 80°C",
+      "explanation": "Reagent selection rationale: The transformation 'Nitrobenzene (PhNO₂)' → 'm-Bromonitrobenzene (Major, >90%)' specifically requires 'Br₂ / FeBr₃ at 80°C'. Mechanistic basis: Strongly electron-withdrawing nitro group deactivates all positions but destabilizes the meta arenium ion least.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q007",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Halogen Ortho/Para Directing Deactivation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Chlorobenzene into o-Chloronitrobenzene + p-Chloronitrobenzene in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaNH₂ in liq. NH₃, -33°C"
+        },
+        {
+          "label": "B",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        },
+        {
+          "label": "C",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        },
+        {
+          "label": "D",
+          "text": "CuCl / HCl in H₂O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "HNO₃ / H₂SO₄ at 50°C",
+      "explanation": "Reagent selection rationale: The transformation 'Chlorobenzene' → 'o-Chloronitrobenzene + p-Chloronitrobenzene' specifically requires 'HNO₃ / H₂SO₄ at 50°C'. Mechanistic basis: Halogens are deactivating due to electronegativity (induction) but ortho/para directing due to lone pair resonance delocalization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q008",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "SNAr Nucleophilic Substitution",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 1-Chloro-2,4-dinitrobenzene into 1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zn(Hg) / conc. HCl, reflux"
+        },
+        {
+          "label": "B",
+          "text": "CH₃CH₂COCl / AlCl₃, then H₂O"
+        },
+        {
+          "label": "C",
+          "text": "CH₃CH₂CH₂Cl / AlCl₃ catalyst"
+        },
+        {
+          "label": "D",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "NaOCH₃ / CH₃OH at 50°C",
+      "explanation": "Reagent selection rationale: The transformation '1-Chloro-2,4-dinitrobenzene' → '1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl' specifically requires 'NaOCH₃ / CH₃OH at 50°C'. Mechanistic basis: Strongly electron-withdrawing nitro groups ortho/para to chlorine stabilize the anionic Meisenheimer complex intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q009",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Mixture of m-Toluidine and p-Toluidine (~1:1)' when treated with 'NaNH₂ in liq. NH₃, -33°C' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene (PhCH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Nitrobenzene (PhNO₂)"
+        },
+        {
+          "label": "C",
+          "text": "p-Chlorotoluene"
+        },
+        {
+          "label": "D",
+          "text": "Acetophenone (PhCOCH₃)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "p-Chlorotoluene",
+      "explanation": "Starting material deduction: Treating 'p-Chlorotoluene' with 'NaNH₂ in liq. NH₃, -33°C' yields 'Mixture of m-Toluidine and p-Toluidine (~1:1)'. Mechanistic rationale: Strong base elimination forms a benzyne intermediate; subsequent addition of amide ion occurs with equal probability at both carbons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q010",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Arenium Archer",
+      "topic": "Diazonium Salt Sandmeyer Chlorination",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Chlorobenzene + N₂(g)' when treated with 'CuCl / HCl in H₂O' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene (PhCH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "C",
+          "text": "Phenyldiazonium chloride (PhN₂⁺Cl⁻)"
+        },
+        {
+          "label": "D",
+          "text": "Nitrobenzene (PhNO₂)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Phenyldiazonium chloride (PhN₂⁺Cl⁻)",
+      "explanation": "Starting material deduction: Treating 'Phenyldiazonium chloride (PhN₂⁺Cl⁻)' with 'CuCl / HCl in H₂O' yields 'Chlorobenzene + N₂(g)'. Mechanistic rationale: Copper(I) catalyst promotes radical substitution of the diazonium group with loss of nitrogen gas.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "arenium-archer.png"
+      ]
+    },
+    {
+      "id": "ch18_q011",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Clemmensen Reduction of Aryl Ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Propiophenone (PhCOCH₂CH₃) reacts under the following conditions: Zn(Hg) / conc. HCl, reflux?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propylbenzene (PhCH₂CH₂CH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Isopropylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "1-Phenyl-1-propanol"
+        },
+        {
+          "label": "D",
+          "text": "Propenylbenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propylbenzene (PhCH₂CH₂CH₃)",
+      "explanation": "Major product rationale: Reduces aryl ketones completely to alkylbenzenes without carbocation rearrangements. The correct major product is 'Propylbenzene (PhCH₂CH₂CH₃)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q012",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Wolff-Kishner Reduction of Aryl Ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Acetophenone (PhCOCH₃) reacts under the following conditions: NH₂NH₂, KOH, Diethylene glycol, 200°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene"
+        },
+        {
+          "label": "B",
+          "text": "Styrene"
+        },
+        {
+          "label": "C",
+          "text": "Ethylbenzene (PhCH₂CH₃) + N₂(g)"
+        },
+        {
+          "label": "D",
+          "text": "Phenylethanol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethylbenzene (PhCH₂CH₃) + N₂(g)",
+      "explanation": "Major product rationale: Basic reduction of carbonyls via hydrazone intermediates, useful for acid-sensitive substrates. The correct major product is 'Ethylbenzene (PhCH₂CH₃) + N₂(g)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q013",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Nitration of Toluene (Ortho/Para Directing)",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Toluene (PhCH₃) reacts under the following conditions: HNO₃ / H₂SO₄ at 30°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,4,6-Trinitrotoluene"
+        },
+        {
+          "label": "B",
+          "text": "m-Nitrotoluene exclusively"
+        },
+        {
+          "label": "C",
+          "text": "Benzyl nitrate"
+        },
+        {
+          "label": "D",
+          "text": "o-Nitrotoluene + p-Nitrotoluene (Major mixture)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "o-Nitrotoluene + p-Nitrotoluene (Major mixture)",
+      "explanation": "Major product rationale: Electron-donating methyl group stabilizes the arenium ion by hyperconjugation preferentially at ortho and para positions. The correct major product is 'o-Nitrotoluene + p-Nitrotoluene (Major mixture)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q014",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Bromination of Nitrobenzene (Meta Directing)",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Nitrobenzene (PhNO₂) reacts under the following conditions: Br₂ / FeBr₃ at 80°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Bromonitrobenzene"
+        },
+        {
+          "label": "B",
+          "text": "o-Bromonitrobenzene"
+        },
+        {
+          "label": "C",
+          "text": "m-Bromonitrobenzene (Major, >90%)"
+        },
+        {
+          "label": "D",
+          "text": "Bromobenzene + NO₂"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "m-Bromonitrobenzene (Major, >90%)",
+      "explanation": "Major product rationale: Strongly electron-withdrawing nitro group deactivates all positions but destabilizes the meta arenium ion least. The correct major product is 'm-Bromonitrobenzene (Major, >90%)'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q015",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Halogen Ortho/Para Directing Deactivation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Chlorobenzene reacts under the following conditions: HNO₃ / H₂SO₄ at 50°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "m-Chloronitrobenzene"
+        },
+        {
+          "label": "B",
+          "text": "Nitrobenzene"
+        },
+        {
+          "label": "C",
+          "text": "1,2-Dichlorobenzene"
+        },
+        {
+          "label": "D",
+          "text": "o-Chloronitrobenzene + p-Chloronitrobenzene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "o-Chloronitrobenzene + p-Chloronitrobenzene",
+      "explanation": "Major product rationale: Halogens are deactivating due to electronegativity (induction) but ortho/para directing due to lone pair resonance delocalization. The correct major product is 'o-Chloronitrobenzene + p-Chloronitrobenzene'.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q016",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "SNAr Nucleophilic Substitution",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert 1-Chloro-2,4-dinitrobenzene into 1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zn(Hg) / conc. HCl, reflux"
+        },
+        {
+          "label": "B",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        },
+        {
+          "label": "C",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        },
+        {
+          "label": "D",
+          "text": "CH₃CH₂COCl / AlCl₃, then H₂O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NaOCH₃ / CH₃OH at 50°C",
+      "explanation": "Reagent selection rationale: The transformation '1-Chloro-2,4-dinitrobenzene' → '1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl' specifically requires 'NaOCH₃ / CH₃OH at 50°C'. Mechanistic basis: Strongly electron-withdrawing nitro groups ortho/para to chlorine stabilize the anionic Meisenheimer complex intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q017",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert p-Chlorotoluene into Mixture of m-Toluidine and p-Toluidine (~1:1) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        },
+        {
+          "label": "B",
+          "text": "Zn(Hg) / conc. HCl, reflux"
+        },
+        {
+          "label": "C",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        },
+        {
+          "label": "D",
+          "text": "NaNH₂ in liq. NH₃, -33°C"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "NaNH₂ in liq. NH₃, -33°C",
+      "explanation": "Reagent selection rationale: The transformation 'p-Chlorotoluene' → 'Mixture of m-Toluidine and p-Toluidine (~1:1)' specifically requires 'NaNH₂ in liq. NH₃, -33°C'. Mechanistic basis: Strong base elimination forms a benzyne intermediate; subsequent addition of amide ion occurs with equal probability at both carbons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q018",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Diazonium Salt Sandmeyer Chlorination",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Phenyldiazonium chloride (PhN₂⁺Cl⁻) into Chlorobenzene + N₂(g) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        },
+        {
+          "label": "B",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        },
+        {
+          "label": "C",
+          "text": "CuCl / HCl in H₂O"
+        },
+        {
+          "label": "D",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CuCl / HCl in H₂O",
+      "explanation": "Reagent selection rationale: The transformation 'Phenyldiazonium chloride (PhN₂⁺Cl⁻)' → 'Chlorobenzene + N₂(g)' specifically requires 'CuCl / HCl in H₂O'. Mechanistic basis: Copper(I) catalyst promotes radical substitution of the diazonium group with loss of nitrogen gas.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q019",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Friedel-Crafts Alkylation with Rearrangement",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)' when treated with 'CH₃CH₂CH₂Cl / AlCl₃ catalyst' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Chloro-2,4-dinitrobenzene"
+        },
+        {
+          "label": "B",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "C",
+          "text": "Benzene"
+        },
+        {
+          "label": "D",
+          "text": "p-Chlorotoluene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzene",
+      "explanation": "Starting material deduction: Treating 'Benzene' with 'CH₃CH₂CH₂Cl / AlCl₃ catalyst' yields 'Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)'. Mechanistic rationale: Primary propyl carbocation complex undergoes a rapid 1,2-hydride shift to form the more stable isopropyl cation electrophile.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q020",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Friedel-Crafts Fiend",
+      "topic": "Friedel-Crafts Acylation (No Rearrangement)",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Propiophenone [PhCOCH₂CH₃] + HCl' when treated with 'CH₃CH₂COCl / AlCl₃, then H₂O' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenyldiazonium chloride (PhN₂⁺Cl⁻)"
+        },
+        {
+          "label": "B",
+          "text": "1-Chloro-2,4-dinitrobenzene"
+        },
+        {
+          "label": "C",
+          "text": "Benzene"
+        },
+        {
+          "label": "D",
+          "text": "p-Chlorotoluene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzene",
+      "explanation": "Starting material deduction: Treating 'Benzene' with 'CH₃CH₂COCl / AlCl₃, then H₂O' yields 'Propiophenone [PhCOCH₂CH₃] + HCl'. Mechanistic rationale: The resonance-stabilized acylium ion (CH₃CH₂-C≡O⁺) electrophile resists rearrangements and prevents polyalkylation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "friedel-crafts-fiend.png"
+      ]
+    },
+    {
+      "id": "ch18_q021",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Nitration of Toluene (Ortho/Para Directing)",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Toluene (PhCH₃) reacts under the following conditions: HNO₃ / H₂SO₄ at 30°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "o-Nitrotoluene + p-Nitrotoluene (Major mixture)"
+        },
+        {
+          "label": "B",
+          "text": "Benzyl nitrate"
+        },
+        {
+          "label": "C",
+          "text": "m-Nitrotoluene exclusively"
+        },
+        {
+          "label": "D",
+          "text": "2,4,6-Trinitrotoluene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "o-Nitrotoluene + p-Nitrotoluene (Major mixture)",
+      "explanation": "Major product rationale: Electron-donating methyl group stabilizes the arenium ion by hyperconjugation preferentially at ortho and para positions. The correct major product is 'o-Nitrotoluene + p-Nitrotoluene (Major mixture)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q022",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Bromination of Nitrobenzene (Meta Directing)",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Nitrobenzene (PhNO₂) reacts under the following conditions: Br₂ / FeBr₃ at 80°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "o-Bromonitrobenzene"
+        },
+        {
+          "label": "B",
+          "text": "Bromobenzene + NO₂"
+        },
+        {
+          "label": "C",
+          "text": "p-Bromonitrobenzene"
+        },
+        {
+          "label": "D",
+          "text": "m-Bromonitrobenzene (Major, >90%)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "m-Bromonitrobenzene (Major, >90%)",
+      "explanation": "Major product rationale: Strongly electron-withdrawing nitro group deactivates all positions but destabilizes the meta arenium ion least. The correct major product is 'm-Bromonitrobenzene (Major, >90%)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q023",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Halogen Ortho/Para Directing Deactivation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Chlorobenzene reacts under the following conditions: HNO₃ / H₂SO₄ at 50°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "m-Chloronitrobenzene"
+        },
+        {
+          "label": "B",
+          "text": "o-Chloronitrobenzene + p-Chloronitrobenzene"
+        },
+        {
+          "label": "C",
+          "text": "Nitrobenzene"
+        },
+        {
+          "label": "D",
+          "text": "1,2-Dichlorobenzene"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "o-Chloronitrobenzene + p-Chloronitrobenzene",
+      "explanation": "Major product rationale: Halogens are deactivating due to electronegativity (induction) but ortho/para directing due to lone pair resonance delocalization. The correct major product is 'o-Chloronitrobenzene + p-Chloronitrobenzene'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q024",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "SNAr Nucleophilic Substitution",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when 1-Chloro-2,4-dinitrobenzene reacts under the following conditions: NaOCH₃ / CH₃OH at 50°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl"
+        },
+        {
+          "label": "B",
+          "text": "No reaction"
+        },
+        {
+          "label": "C",
+          "text": "m-Methoxynitrobenzene"
+        },
+        {
+          "label": "D",
+          "text": "Chlorobenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl",
+      "explanation": "Major product rationale: Strongly electron-withdrawing nitro groups ortho/para to chlorine stabilize the anionic Meisenheimer complex intermediate. The correct major product is '1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q025",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when p-Chlorotoluene reacts under the following conditions: NaNH₂ in liq. NH₃, -33°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene + NH₂Cl"
+        },
+        {
+          "label": "B",
+          "text": "p-Toluidine exclusively"
+        },
+        {
+          "label": "C",
+          "text": "Mixture of m-Toluidine and p-Toluidine (~1:1)"
+        },
+        {
+          "label": "D",
+          "text": "o-Toluidine"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Mixture of m-Toluidine and p-Toluidine (~1:1)",
+      "explanation": "Major product rationale: Strong base elimination forms a benzyne intermediate; subsequent addition of amide ion occurs with equal probability at both carbons. The correct major product is 'Mixture of m-Toluidine and p-Toluidine (~1:1)'.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q026",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Diazonium Salt Sandmeyer Chlorination",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Phenyldiazonium chloride (PhN₂⁺Cl⁻) into Chlorobenzene + N₂(g) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        },
+        {
+          "label": "B",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        },
+        {
+          "label": "C",
+          "text": "CuCl / HCl in H₂O"
+        },
+        {
+          "label": "D",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CuCl / HCl in H₂O",
+      "explanation": "Reagent selection rationale: The transformation 'Phenyldiazonium chloride (PhN₂⁺Cl⁻)' → 'Chlorobenzene + N₂(g)' specifically requires 'CuCl / HCl in H₂O'. Mechanistic basis: Copper(I) catalyst promotes radical substitution of the diazonium group with loss of nitrogen gas.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q027",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Friedel-Crafts Alkylation with Rearrangement",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Benzene into Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaNH₂ in liq. NH₃, -33°C"
+        },
+        {
+          "label": "B",
+          "text": "CH₃CH₂CH₂Cl / AlCl₃ catalyst"
+        },
+        {
+          "label": "C",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        },
+        {
+          "label": "D",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CH₃CH₂CH₂Cl / AlCl₃ catalyst",
+      "explanation": "Reagent selection rationale: The transformation 'Benzene' → 'Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)' specifically requires 'CH₃CH₂CH₂Cl / AlCl₃ catalyst'. Mechanistic basis: Primary propyl carbocation complex undergoes a rapid 1,2-hydride shift to form the more stable isopropyl cation electrophile.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q028",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Friedel-Crafts Acylation (No Rearrangement)",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Benzene into Propiophenone [PhCOCH₂CH₃] + HCl in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaNH₂ in liq. NH₃, -33°C"
+        },
+        {
+          "label": "B",
+          "text": "CH₃CH₂COCl / AlCl₃, then H₂O"
+        },
+        {
+          "label": "C",
+          "text": "CuCl / HCl in H₂O"
+        },
+        {
+          "label": "D",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CH₃CH₂COCl / AlCl₃, then H₂O",
+      "explanation": "Reagent selection rationale: The transformation 'Benzene' → 'Propiophenone [PhCOCH₂CH₃] + HCl' specifically requires 'CH₃CH₂COCl / AlCl₃, then H₂O'. Mechanistic basis: The resonance-stabilized acylium ion (CH₃CH₂-C≡O⁺) electrophile resists rearrangements and prevents polyalkylation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q029",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Clemmensen Reduction of Aryl Ketone",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Propylbenzene (PhCH₂CH₂CH₃)' when treated with 'Zn(Hg) / conc. HCl, reflux' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetophenone (PhCOCH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Benzene"
+        },
+        {
+          "label": "C",
+          "text": "Toluene (PhCH₃)"
+        },
+        {
+          "label": "D",
+          "text": "Propiophenone (PhCOCH₂CH₃)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Propiophenone (PhCOCH₂CH₃)",
+      "explanation": "Starting material deduction: Treating 'Propiophenone (PhCOCH₂CH₃)' with 'Zn(Hg) / conc. HCl, reflux' yields 'Propylbenzene (PhCH₂CH₂CH₃)'. Mechanistic rationale: Reduces aryl ketones completely to alkylbenzenes without carbocation rearrangements.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q030",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Ortho-Para Oracle",
+      "topic": "Wolff-Kishner Reduction of Aryl Ketone",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'Ethylbenzene (PhCH₂CH₃) + N₂(g)' when treated with 'NH₂NH₂, KOH, Diethylene glycol, 200°C' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propiophenone (PhCOCH₂CH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Toluene (PhCH₃)"
+        },
+        {
+          "label": "C",
+          "text": "Acetophenone (PhCOCH₃)"
+        },
+        {
+          "label": "D",
+          "text": "Nitrobenzene (PhNO₂)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetophenone (PhCOCH₃)",
+      "explanation": "Starting material deduction: Treating 'Acetophenone (PhCOCH₃)' with 'NH₂NH₂, KOH, Diethylene glycol, 200°C' yields 'Ethylbenzene (PhCH₂CH₃) + N₂(g)'. Mechanistic rationale: Basic reduction of carbonyls via hydrazone intermediates, useful for acid-sensitive substrates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "ortho-para-oracle.png"
+      ]
+    },
+    {
+      "id": "ch18_q031",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Halogen Ortho/Para Directing Deactivation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Chlorobenzene reacts under the following conditions: HNO₃ / H₂SO₄ at 50°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Dichlorobenzene"
+        },
+        {
+          "label": "B",
+          "text": "Nitrobenzene"
+        },
+        {
+          "label": "C",
+          "text": "o-Chloronitrobenzene + p-Chloronitrobenzene"
+        },
+        {
+          "label": "D",
+          "text": "m-Chloronitrobenzene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "o-Chloronitrobenzene + p-Chloronitrobenzene",
+      "explanation": "Major product rationale: Halogens are deactivating due to electronegativity (induction) but ortho/para directing due to lone pair resonance delocalization. The correct major product is 'o-Chloronitrobenzene + p-Chloronitrobenzene'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q032",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "SNAr Nucleophilic Substitution",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when 1-Chloro-2,4-dinitrobenzene reacts under the following conditions: NaOCH₃ / CH₃OH at 50°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl"
+        },
+        {
+          "label": "B",
+          "text": "m-Methoxynitrobenzene"
+        },
+        {
+          "label": "C",
+          "text": "No reaction"
+        },
+        {
+          "label": "D",
+          "text": "Chlorobenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl",
+      "explanation": "Major product rationale: Strongly electron-withdrawing nitro groups ortho/para to chlorine stabilize the anionic Meisenheimer complex intermediate. The correct major product is '1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q033",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when p-Chlorotoluene reacts under the following conditions: NaNH₂ in liq. NH₃, -33°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Toluene + NH₂Cl"
+        },
+        {
+          "label": "B",
+          "text": "p-Toluidine exclusively"
+        },
+        {
+          "label": "C",
+          "text": "Mixture of m-Toluidine and p-Toluidine (~1:1)"
+        },
+        {
+          "label": "D",
+          "text": "o-Toluidine"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Mixture of m-Toluidine and p-Toluidine (~1:1)",
+      "explanation": "Major product rationale: Strong base elimination forms a benzyne intermediate; subsequent addition of amide ion occurs with equal probability at both carbons. The correct major product is 'Mixture of m-Toluidine and p-Toluidine (~1:1)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q034",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Diazonium Salt Sandmeyer Chlorination",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Phenyldiazonium chloride (PhN₂⁺Cl⁻) reacts under the following conditions: CuCl / HCl in H₂O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline"
+        },
+        {
+          "label": "B",
+          "text": "Benzene"
+        },
+        {
+          "label": "C",
+          "text": "Chlorobenzene + N₂(g)"
+        },
+        {
+          "label": "D",
+          "text": "Phenol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chlorobenzene + N₂(g)",
+      "explanation": "Major product rationale: Copper(I) catalyst promotes radical substitution of the diazonium group with loss of nitrogen gas. The correct major product is 'Chlorobenzene + N₂(g)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q035",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Friedel-Crafts Alkylation with Rearrangement",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Benzene reacts under the following conditions: CH₃CH₂CH₂Cl / AlCl₃ catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)"
+        },
+        {
+          "label": "B",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "C",
+          "text": "Propylbenzene exclusively"
+        },
+        {
+          "label": "D",
+          "text": "1,4-Dipropylbenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)",
+      "explanation": "Major product rationale: Primary propyl carbocation complex undergoes a rapid 1,2-hydride shift to form the more stable isopropyl cation electrophile. The correct major product is 'Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)'.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q036",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Friedel-Crafts Acylation (No Rearrangement)",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Benzene into Propiophenone [PhCOCH₂CH₃] + HCl in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zn(Hg) / conc. HCl, reflux"
+        },
+        {
+          "label": "B",
+          "text": "CH₃CH₂COCl / AlCl₃, then H₂O"
+        },
+        {
+          "label": "C",
+          "text": "CH₃CH₂CH₂Cl / AlCl₃ catalyst"
+        },
+        {
+          "label": "D",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CH₃CH₂COCl / AlCl₃, then H₂O",
+      "explanation": "Reagent selection rationale: The transformation 'Benzene' → 'Propiophenone [PhCOCH₂CH₃] + HCl' specifically requires 'CH₃CH₂COCl / AlCl₃, then H₂O'. Mechanistic basis: The resonance-stabilized acylium ion (CH₃CH₂-C≡O⁺) electrophile resists rearrangements and prevents polyalkylation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q037",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Clemmensen Reduction of Aryl Ketone",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Propiophenone (PhCOCH₂CH₃) into Propylbenzene (PhCH₂CH₂CH₃) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        },
+        {
+          "label": "B",
+          "text": "Zn(Hg) / conc. HCl, reflux"
+        },
+        {
+          "label": "C",
+          "text": "CH₃CH₂COCl / AlCl₃, then H₂O"
+        },
+        {
+          "label": "D",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Zn(Hg) / conc. HCl, reflux",
+      "explanation": "Reagent selection rationale: The transformation 'Propiophenone (PhCOCH₂CH₃)' → 'Propylbenzene (PhCH₂CH₂CH₃)' specifically requires 'Zn(Hg) / conc. HCl, reflux'. Mechanistic basis: Reduces aryl ketones completely to alkylbenzenes without carbocation rearrangements.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q038",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Wolff-Kishner Reduction of Aryl Ketone",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Acetophenone (PhCOCH₃) into Ethylbenzene (PhCH₂CH₃) + N₂(g) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        },
+        {
+          "label": "B",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        },
+        {
+          "label": "C",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        },
+        {
+          "label": "D",
+          "text": "Zn(Hg) / conc. HCl, reflux"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "NH₂NH₂, KOH, Diethylene glycol, 200°C",
+      "explanation": "Reagent selection rationale: The transformation 'Acetophenone (PhCOCH₃)' → 'Ethylbenzene (PhCH₂CH₃) + N₂(g)' specifically requires 'NH₂NH₂, KOH, Diethylene glycol, 200°C'. Mechanistic basis: Basic reduction of carbonyls via hydrazone intermediates, useful for acid-sensitive substrates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q039",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Nitration of Toluene (Ortho/Para Directing)",
+      "difficulty": "easy",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'o-Nitrotoluene + p-Nitrotoluene (Major mixture)' when treated with 'HNO₃ / H₂SO₄ at 30°C' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetophenone (PhCOCH₃)"
+        },
+        {
+          "label": "B",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "C",
+          "text": "Nitrobenzene (PhNO₂)"
+        },
+        {
+          "label": "D",
+          "text": "Toluene (PhCH₃)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Toluene (PhCH₃)",
+      "explanation": "Starting material deduction: Treating 'Toluene (PhCH₃)' with 'HNO₃ / H₂SO₄ at 30°C' yields 'o-Nitrotoluene + p-Nitrotoluene (Major mixture)'. Mechanistic rationale: Electron-donating methyl group stabilizes the arenium ion by hyperconjugation preferentially at ortho and para positions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q040",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Meisenheimer Marauder",
+      "topic": "Bromination of Nitrobenzene (Meta Directing)",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'm-Bromonitrobenzene (Major, >90%)' when treated with 'Br₂ / FeBr₃ at 80°C' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrobenzene (PhNO₂)"
+        },
+        {
+          "label": "B",
+          "text": "Toluene (PhCH₃)"
+        },
+        {
+          "label": "C",
+          "text": "1-Chloro-2,4-dinitrobenzene"
+        },
+        {
+          "label": "D",
+          "text": "Chlorobenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nitrobenzene (PhNO₂)",
+      "explanation": "Starting material deduction: Treating 'Nitrobenzene (PhNO₂)' with 'Br₂ / FeBr₃ at 80°C' yields 'm-Bromonitrobenzene (Major, >90%)'. Mechanistic rationale: Strongly electron-withdrawing nitro group deactivates all positions but destabilizes the meta arenium ion least.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meisenheimer-marauder.png"
+      ]
+    },
+    {
+      "id": "ch18_q041",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Benzyne Elimination-Addition Mechanism",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when p-Chlorotoluene reacts under the following conditions: NaNH₂ in liq. NH₃, -33°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "p-Toluidine exclusively"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of m-Toluidine and p-Toluidine (~1:1)"
+        },
+        {
+          "label": "C",
+          "text": "o-Toluidine"
+        },
+        {
+          "label": "D",
+          "text": "Toluene + NH₂Cl"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Mixture of m-Toluidine and p-Toluidine (~1:1)",
+      "explanation": "Major product rationale: Strong base elimination forms a benzyne intermediate; subsequent addition of amide ion occurs with equal probability at both carbons. The correct major product is 'Mixture of m-Toluidine and p-Toluidine (~1:1)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q042",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Diazonium Salt Sandmeyer Chlorination",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Phenyldiazonium chloride (PhN₂⁺Cl⁻) reacts under the following conditions: CuCl / HCl in H₂O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline"
+        },
+        {
+          "label": "B",
+          "text": "Phenol"
+        },
+        {
+          "label": "C",
+          "text": "Chlorobenzene + N₂(g)"
+        },
+        {
+          "label": "D",
+          "text": "Benzene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chlorobenzene + N₂(g)",
+      "explanation": "Major product rationale: Copper(I) catalyst promotes radical substitution of the diazonium group with loss of nitrogen gas. The correct major product is 'Chlorobenzene + N₂(g)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q043",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Friedel-Crafts Alkylation with Rearrangement",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Benzene reacts under the following conditions: CH₃CH₂CH₂Cl / AlCl₃ catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propylbenzene exclusively"
+        },
+        {
+          "label": "B",
+          "text": "1,4-Dipropylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "D",
+          "text": "Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)",
+      "explanation": "Major product rationale: Primary propyl carbocation complex undergoes a rapid 1,2-hydride shift to form the more stable isopropyl cation electrophile. The correct major product is 'Cumene [Isopropylbenzene, (CH₃)₂CHPh] (Major)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q044",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Friedel-Crafts Acylation (No Rearrangement)",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Benzene reacts under the following conditions: CH₃CH₂COCl / AlCl₃, then H₂O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propiophenone [PhCOCH₂CH₃] + HCl"
+        },
+        {
+          "label": "B",
+          "text": "Phenyl acetate"
+        },
+        {
+          "label": "C",
+          "text": "Isopropylbenzene"
+        },
+        {
+          "label": "D",
+          "text": "Propylbenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propiophenone [PhCOCH₂CH₃] + HCl",
+      "explanation": "Major product rationale: The resonance-stabilized acylium ion (CH₃CH₂-C≡O⁺) electrophile resists rearrangements and prevents polyalkylation. The correct major product is 'Propiophenone [PhCOCH₂CH₃] + HCl'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q045",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Clemmensen Reduction of Aryl Ketone",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "In the context of Aromatic Substitution Reactions, what is the major organic product when Propiophenone (PhCOCH₂CH₃) reacts under the following conditions: Zn(Hg) / conc. HCl, reflux?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isopropylbenzene"
+        },
+        {
+          "label": "B",
+          "text": "Propenylbenzene"
+        },
+        {
+          "label": "C",
+          "text": "Propylbenzene (PhCH₂CH₂CH₃)"
+        },
+        {
+          "label": "D",
+          "text": "1-Phenyl-1-propanol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propylbenzene (PhCH₂CH₂CH₃)",
+      "explanation": "Major product rationale: Reduces aryl ketones completely to alkylbenzenes without carbocation rearrangements. The correct major product is 'Propylbenzene (PhCH₂CH₂CH₃)'.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q046",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Wolff-Kishner Reduction of Aryl Ketone",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Acetophenone (PhCOCH₃) into Ethylbenzene (PhCH₂CH₃) + N₂(g) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NH₂NH₂, KOH, Diethylene glycol, 200°C"
+        },
+        {
+          "label": "B",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        },
+        {
+          "label": "C",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        },
+        {
+          "label": "D",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "NH₂NH₂, KOH, Diethylene glycol, 200°C",
+      "explanation": "Reagent selection rationale: The transformation 'Acetophenone (PhCOCH₃)' → 'Ethylbenzene (PhCH₂CH₃) + N₂(g)' specifically requires 'NH₂NH₂, KOH, Diethylene glycol, 200°C'. Mechanistic basis: Basic reduction of carbonyls via hydrazone intermediates, useful for acid-sensitive substrates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q047",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Nitration of Toluene (Ortho/Para Directing)",
+      "difficulty": "medium",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Toluene (PhCH₃) into o-Nitrotoluene + p-Nitrotoluene (Major mixture) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        },
+        {
+          "label": "B",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        },
+        {
+          "label": "C",
+          "text": "HNO₃ / H₂SO₄ at 30°C"
+        },
+        {
+          "label": "D",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "HNO₃ / H₂SO₄ at 30°C",
+      "explanation": "Reagent selection rationale: The transformation 'Toluene (PhCH₃)' → 'o-Nitrotoluene + p-Nitrotoluene (Major mixture)' specifically requires 'HNO₃ / H₂SO₄ at 30°C'. Mechanistic basis: Electron-donating methyl group stabilizes the arenium ion by hyperconjugation preferentially at ortho and para positions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q048",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Bromination of Nitrobenzene (Meta Directing)",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reaction conditions / reagents are required to convert Nitrobenzene (PhNO₂) into m-Bromonitrobenzene (Major, >90%) in Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaOCH₃ / CH₃OH at 50°C"
+        },
+        {
+          "label": "B",
+          "text": "Br₂ / FeBr₃ at 80°C"
+        },
+        {
+          "label": "C",
+          "text": "NaNH₂ in liq. NH₃, -33°C"
+        },
+        {
+          "label": "D",
+          "text": "HNO₃ / H₂SO₄ at 50°C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br₂ / FeBr₃ at 80°C",
+      "explanation": "Reagent selection rationale: The transformation 'Nitrobenzene (PhNO₂)' → 'm-Bromonitrobenzene (Major, >90%)' specifically requires 'Br₂ / FeBr₃ at 80°C'. Mechanistic basis: Strongly electron-withdrawing nitro group deactivates all positions but destabilizes the meta arenium ion least.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q049",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "Halogen Ortho/Para Directing Deactivation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields 'o-Chloronitrobenzene + p-Chloronitrobenzene' when treated with 'HNO₃ / H₂SO₄ at 50°C' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "B",
+          "text": "p-Chlorotoluene"
+        },
+        {
+          "label": "C",
+          "text": "Nitrobenzene (PhNO₂)"
+        },
+        {
+          "label": "D",
+          "text": "1-Chloro-2,4-dinitrobenzene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chlorobenzene",
+      "explanation": "Starting material deduction: Treating 'Chlorobenzene' with 'HNO₃ / H₂SO₄ at 50°C' yields 'o-Chloronitrobenzene + p-Chloronitrobenzene'. Mechanistic rationale: Halogens are deactivating due to electronegativity (induction) but ortho/para directing due to lone pair resonance delocalization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch18_q050",
+      "chapter": 18,
+      "chapter_title": "Aromatic Substitution Reactions",
+      "boss": "Benzyne Behemoth",
+      "topic": "SNAr Nucleophilic Substitution",
+      "difficulty": "hard",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material yields '1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl' when treated with 'NaOCH₃ / CH₃OH at 50°C' according to the principles of Aromatic Substitution Reactions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Chloro-2,4-dinitrobenzene"
+        },
+        {
+          "label": "B",
+          "text": "p-Chlorotoluene"
+        },
+        {
+          "label": "C",
+          "text": "Chlorobenzene"
+        },
+        {
+          "label": "D",
+          "text": "Phenyldiazonium chloride (PhN₂⁺Cl⁻)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Chloro-2,4-dinitrobenzene",
+      "explanation": "Starting material deduction: Treating '1-Chloro-2,4-dinitrobenzene' with 'NaOCH₃ / CH₃OH at 50°C' yields '1-Methoxy-2,4-dinitrobenzene (2,4-Dinitroanisole) + NaCl'. Mechanistic rationale: Strongly electron-withdrawing nitro groups ortho/para to chlorine stabilize the anionic Meisenheimer complex intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "benzyne-behemoth.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Arenium Archer",
+    "Friedel-Crafts Fiend",
+    "Ortho-Para Oracle",
+    "Meisenheimer Marauder",
+    "Benzyne Behemoth"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Arenium Archer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "arenium-archer.png"
+        ]
+      },
+      {
+        "boss": "Friedel-Crafts Fiend",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "friedel-crafts-fiend.png"
+        ]
+      },
+      {
+        "boss": "Ortho-Para Oracle",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "ortho-para-oracle.png"
+        ]
+      },
+      {
+        "boss": "Meisenheimer Marauder",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "meisenheimer-marauder.png"
+        ]
+      },
+      {
+        "boss": "Benzyne Behemoth",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "benzyne-behemoth.png"
+        ]
+      }
+    ]
+  }
+}

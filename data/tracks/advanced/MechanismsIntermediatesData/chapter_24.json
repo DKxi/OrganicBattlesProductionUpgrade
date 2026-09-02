@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 24,
+  "chapter_title": "Carbohydrates",
+  "assigned_boss": "Aldose Apparition",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch24_q001",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Carbohydrate Hemiacetal Intramolecular Cyclization",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic step accounts for the spontaneous conversion of open-chain D-glucose into glucopyranose in water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of the C6 alcohol to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the C1-C2 single bond."
+        },
+        {
+          "label": "C",
+          "text": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal."
+        },
+        {
+          "label": "D",
+          "text": "Intermolecular esterification between two glucose molecules."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal.",
+      "explanation": "The C5 hydroxyl attacks the C1 carbonyl in a 6-endo-trig cyclization, creating a new chiral anomeric center at C1.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q002",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Mutarotation Thermodynamic Equilibrium Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the chemical mechanism responsible for the mutarotation of pure α-D-glucopyranose in water until [α] = +52.7°?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous epimerization at all five stereocenters simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "Dehydration of glucose into glucal."
+        },
+        {
+          "label": "C",
+          "text": "Permanent decomposition of glucose into lactic acid."
+        },
+        {
+          "label": "D",
+          "text": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β).",
+      "explanation": "Mutarotation occurs through reversible opening to the planar aldehyde, allowing re-closure from the top (β) or bottom (α) face.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q003",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Methyl Glucoside Formation Oxocarbenium Intermediate",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does treating D-glucose with anhydrous methanol and catalytic HCl lock the anomeric center (preventing mutarotation)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methyl group forms an ionic salt with chloride."
+        },
+        {
+          "label": "B",
+          "text": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside)."
+        },
+        {
+          "label": "C",
+          "text": "Methanol oxidizes the C1 carbon to an ester."
+        },
+        {
+          "label": "D",
+          "text": "Methanol reacts with all six carbons simultaneously."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside).",
+      "explanation": "Converting the hemiacetal to a stable acetal locks the ring: acetals are stable to neutral water and cannot mutarotate without strong acid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q004",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Bromine Water Aldose Oxidation Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does neutral bromine water (Br₂ / H₂O) selectively oxidize aldoses to aldonic acids without attacking ketoses?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly."
+        },
+        {
+          "label": "B",
+          "text": "Bromine water is a chiral oxidizing agent."
+        },
+        {
+          "label": "C",
+          "text": "Bromine water destroys all ketones by radical cleavage."
+        },
+        {
+          "label": "D",
+          "text": "Aldoses precipitate from water with bromine."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly.",
+      "explanation": "Br₂/H₂O is a mild, selective oxidant for the aldehyde group of aldoses, leaving primary alcohols and ketoses unoxidized under neutral conditions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q005",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Nitric Acid Aldaric Acid Dicarboxylic Oxidation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What structural transformation occurs when D-glucose is heated with concentrated nitric acid (HNO₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid)."
+        },
+        {
+          "label": "B",
+          "text": "The glucose ring is cleaved into two glyceraldehyde molecules."
+        },
+        {
+          "label": "C",
+          "text": "Glucose is completely combusted to carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Only the secondary alcohols at C2-C4 are oxidized."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid).",
+      "explanation": "Hot nitric acid is a vigorous oxidant that converts both terminal carbons (C1 aldehyde and C6 primary alcohol) into -COOH groups.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q006",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Tollens Test Enediol Tautomerism of Ketoses",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do ketoses (such as D-fructose) give a positive Tollens silver mirror test despite lacking an aldehyde group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose)."
+        },
+        {
+          "label": "B",
+          "text": "Basic Tollens reagent cleaves fructose into formaldehyde."
+        },
+        {
+          "label": "C",
+          "text": "Silver ions oxidize ketone carbonyls directly."
+        },
+        {
+          "label": "D",
+          "text": "Fructose contains a hidden aldehyde in its ester form."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose).",
+      "explanation": "Basic conditions promote keto-enol tautomerism via an enediol intermediate, isomerizing ketoses into oxidizable aldoses.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q007",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Kiliani-Fischer Chain Elongation Stereocenters",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the mechanistic outcome of adding HCN to D-arabinose in the Kiliani-Fischer synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyanide oxidizes arabinose to an aldaric acid."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide removes one carbon from the arabinose chain."
+        },
+        {
+          "label": "C",
+          "text": "Only a single optically pure enantiomer is produced."
+        },
+        {
+          "label": "D",
+          "text": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins.",
+      "explanation": "Nucleophilic addition of cyanide to the prochiral aldehyde generates two C2 diastereomers (epimers) that are subsequently hydrolyzed to elongated aldoses.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q008",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Wohl Degradation Cyanohydrin Elimination",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key chain-shortening elimination step in the Wohl degradation of an aldose?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of carbon monoxide from an acyl radical."
+        },
+        {
+          "label": "B",
+          "text": "Decarboxylation of a β-keto acid intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond by peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom.",
+      "explanation": "The peracetylated cyanohydrin intermediate undergoes base-promoted retro-cyanohydrin elimination to release cyanide and the shortened aldose.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q009",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Periodate Oxidation Vicinal Diol Cleavage",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In the exhaustive periodic acid (HIO₄) oxidation of methyl α-D-glucopyranoside, why is no formic acid produced from C1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetals are cleaved to free aldehydes by periodic acid."
+        },
+        {
+          "label": "B",
+          "text": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3."
+        },
+        {
+          "label": "C",
+          "text": "Periodic acid cannot react with cyclic molecules."
+        },
+        {
+          "label": "D",
+          "text": "C1 is oxidized to carbon dioxide gas."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3.",
+      "explanation": "Protected anomeric acetals cannot undergo cleavage at C1, confining periodate oxidation to unprotected vicinal secondary diol positions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q010",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Aldose Apparition",
+      "topic": "Sucrose Non-Reducing Disaccharide Basis",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is sucrose a non-reducing sugar that fails to react with Tollens or Fehling's reagents?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sucrose contains no oxygen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Sucrose is an antiaromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone."
+        },
+        {
+          "label": "D",
+          "text": "Sucrose is insoluble in water."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone.",
+      "explanation": "Head-to-head anomeric bonding (α-D-Glc-(1↔2)-β-D-Fru) eliminates free hemiacetal groups, preventing ring opening to oxidizable aldehydes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldose-apparition.png"
+      ]
+    },
+    {
+      "id": "ch24_q011",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Methyl Glucoside Formation Oxocarbenium Intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does treating D-glucose with anhydrous methanol and catalytic HCl lock the anomeric center (preventing mutarotation)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methanol oxidizes the C1 carbon to an ester."
+        },
+        {
+          "label": "B",
+          "text": "Methanol reacts with all six carbons simultaneously."
+        },
+        {
+          "label": "C",
+          "text": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside)."
+        },
+        {
+          "label": "D",
+          "text": "The methyl group forms an ionic salt with chloride."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside).",
+      "explanation": "Converting the hemiacetal to a stable acetal locks the ring: acetals are stable to neutral water and cannot mutarotate without strong acid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q012",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Bromine Water Aldose Oxidation Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does neutral bromine water (Br₂ / H₂O) selectively oxidize aldoses to aldonic acids without attacking ketoses?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly."
+        },
+        {
+          "label": "B",
+          "text": "Aldoses precipitate from water with bromine."
+        },
+        {
+          "label": "C",
+          "text": "Bromine water is a chiral oxidizing agent."
+        },
+        {
+          "label": "D",
+          "text": "Bromine water destroys all ketones by radical cleavage."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly.",
+      "explanation": "Br₂/H₂O is a mild, selective oxidant for the aldehyde group of aldoses, leaving primary alcohols and ketoses unoxidized under neutral conditions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q013",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Nitric Acid Aldaric Acid Dicarboxylic Oxidation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What structural transformation occurs when D-glucose is heated with concentrated nitric acid (HNO₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The glucose ring is cleaved into two glyceraldehyde molecules."
+        },
+        {
+          "label": "B",
+          "text": "Only the secondary alcohols at C2-C4 are oxidized."
+        },
+        {
+          "label": "C",
+          "text": "Glucose is completely combusted to carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid).",
+      "explanation": "Hot nitric acid is a vigorous oxidant that converts both terminal carbons (C1 aldehyde and C6 primary alcohol) into -COOH groups.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q014",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Tollens Test Enediol Tautomerism of Ketoses",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why do ketoses (such as D-fructose) give a positive Tollens silver mirror test despite lacking an aldehyde group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Silver ions oxidize ketone carbonyls directly."
+        },
+        {
+          "label": "B",
+          "text": "Basic Tollens reagent cleaves fructose into formaldehyde."
+        },
+        {
+          "label": "C",
+          "text": "Fructose contains a hidden aldehyde in its ester form."
+        },
+        {
+          "label": "D",
+          "text": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose).",
+      "explanation": "Basic conditions promote keto-enol tautomerism via an enediol intermediate, isomerizing ketoses into oxidizable aldoses.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q015",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Kiliani-Fischer Chain Elongation Stereocenters",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic outcome of adding HCN to D-arabinose in the Kiliani-Fischer synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyanide oxidizes arabinose to an aldaric acid."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins."
+        },
+        {
+          "label": "C",
+          "text": "Only a single optically pure enantiomer is produced."
+        },
+        {
+          "label": "D",
+          "text": "Cyanide removes one carbon from the arabinose chain."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins.",
+      "explanation": "Nucleophilic addition of cyanide to the prochiral aldehyde generates two C2 diastereomers (epimers) that are subsequently hydrolyzed to elongated aldoses.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q016",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Wohl Degradation Cyanohydrin Elimination",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the key chain-shortening elimination step in the Wohl degradation of an aldose?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom."
+        },
+        {
+          "label": "B",
+          "text": "Loss of carbon monoxide from an acyl radical."
+        },
+        {
+          "label": "C",
+          "text": "Decarboxylation of a β-keto acid intermediate."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C-C bond by peroxide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom.",
+      "explanation": "The peracetylated cyanohydrin intermediate undergoes base-promoted retro-cyanohydrin elimination to release cyanide and the shortened aldose.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q017",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Periodate Oxidation Vicinal Diol Cleavage",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In the exhaustive periodic acid (HIO₄) oxidation of methyl α-D-glucopyranoside, why is no formic acid produced from C1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C1 is oxidized to carbon dioxide gas."
+        },
+        {
+          "label": "B",
+          "text": "Periodic acid cannot react with cyclic molecules."
+        },
+        {
+          "label": "C",
+          "text": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3."
+        },
+        {
+          "label": "D",
+          "text": "Acetals are cleaved to free aldehydes by periodic acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3.",
+      "explanation": "Protected anomeric acetals cannot undergo cleavage at C1, confining periodate oxidation to unprotected vicinal secondary diol positions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q018",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Sucrose Non-Reducing Disaccharide Basis",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is sucrose a non-reducing sugar that fails to react with Tollens or Fehling's reagents?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sucrose contains no oxygen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Sucrose is an antiaromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "Sucrose is insoluble in water."
+        },
+        {
+          "label": "D",
+          "text": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone.",
+      "explanation": "Head-to-head anomeric bonding (α-D-Glc-(1↔2)-β-D-Fru) eliminates free hemiacetal groups, preventing ring opening to oxidizable aldehydes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q019",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Carbohydrate Hemiacetal Intramolecular Cyclization",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What mechanistic step accounts for the spontaneous conversion of open-chain D-glucose into glucopyranose in water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation of the C6 alcohol to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "Intermolecular esterification between two glucose molecules."
+        },
+        {
+          "label": "C",
+          "text": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the C1-C2 single bond."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal.",
+      "explanation": "The C5 hydroxyl attacks the C1 carbonyl in a 6-endo-trig cyclization, creating a new chiral anomeric center at C1.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q020",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Pyranose Phantom",
+      "topic": "Mutarotation Thermodynamic Equilibrium Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the chemical mechanism responsible for the mutarotation of pure α-D-glucopyranose in water until [α] = +52.7°?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β)."
+        },
+        {
+          "label": "B",
+          "text": "Dehydration of glucose into glucal."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous epimerization at all five stereocenters simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "Permanent decomposition of glucose into lactic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β).",
+      "explanation": "Mutarotation occurs through reversible opening to the planar aldehyde, allowing re-closure from the top (β) or bottom (α) face.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "pyranose-phantom.png"
+      ]
+    },
+    {
+      "id": "ch24_q021",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Nitric Acid Aldaric Acid Dicarboxylic Oxidation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What structural transformation occurs when D-glucose is heated with concentrated nitric acid (HNO₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the secondary alcohols at C2-C4 are oxidized."
+        },
+        {
+          "label": "B",
+          "text": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid)."
+        },
+        {
+          "label": "C",
+          "text": "Glucose is completely combusted to carbon dioxide."
+        },
+        {
+          "label": "D",
+          "text": "The glucose ring is cleaved into two glyceraldehyde molecules."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid).",
+      "explanation": "Hot nitric acid is a vigorous oxidant that converts both terminal carbons (C1 aldehyde and C6 primary alcohol) into -COOH groups.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q022",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Tollens Test Enediol Tautomerism of Ketoses",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why do ketoses (such as D-fructose) give a positive Tollens silver mirror test despite lacking an aldehyde group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Basic Tollens reagent cleaves fructose into formaldehyde."
+        },
+        {
+          "label": "B",
+          "text": "Silver ions oxidize ketone carbonyls directly."
+        },
+        {
+          "label": "C",
+          "text": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose)."
+        },
+        {
+          "label": "D",
+          "text": "Fructose contains a hidden aldehyde in its ester form."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose).",
+      "explanation": "Basic conditions promote keto-enol tautomerism via an enediol intermediate, isomerizing ketoses into oxidizable aldoses.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q023",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Kiliani-Fischer Chain Elongation Stereocenters",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the mechanistic outcome of adding HCN to D-arabinose in the Kiliani-Fischer synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide removes one carbon from the arabinose chain."
+        },
+        {
+          "label": "C",
+          "text": "Only a single optically pure enantiomer is produced."
+        },
+        {
+          "label": "D",
+          "text": "Cyanide oxidizes arabinose to an aldaric acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins.",
+      "explanation": "Nucleophilic addition of cyanide to the prochiral aldehyde generates two C2 diastereomers (epimers) that are subsequently hydrolyzed to elongated aldoses.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q024",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Wohl Degradation Cyanohydrin Elimination",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the key chain-shortening elimination step in the Wohl degradation of an aldose?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of carbon monoxide from an acyl radical."
+        },
+        {
+          "label": "B",
+          "text": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond by peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Decarboxylation of a β-keto acid intermediate."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom.",
+      "explanation": "The peracetylated cyanohydrin intermediate undergoes base-promoted retro-cyanohydrin elimination to release cyanide and the shortened aldose.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q025",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Periodate Oxidation Vicinal Diol Cleavage",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "In the exhaustive periodic acid (HIO₄) oxidation of methyl α-D-glucopyranoside, why is no formic acid produced from C1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3."
+        },
+        {
+          "label": "B",
+          "text": "C1 is oxidized to carbon dioxide gas."
+        },
+        {
+          "label": "C",
+          "text": "Periodic acid cannot react with cyclic molecules."
+        },
+        {
+          "label": "D",
+          "text": "Acetals are cleaved to free aldehydes by periodic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3.",
+      "explanation": "Protected anomeric acetals cannot undergo cleavage at C1, confining periodate oxidation to unprotected vicinal secondary diol positions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q026",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Sucrose Non-Reducing Disaccharide Basis",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is sucrose a non-reducing sugar that fails to react with Tollens or Fehling's reagents?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone."
+        },
+        {
+          "label": "B",
+          "text": "Sucrose is insoluble in water."
+        },
+        {
+          "label": "C",
+          "text": "Sucrose contains no oxygen atoms."
+        },
+        {
+          "label": "D",
+          "text": "Sucrose is an antiaromatic molecule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone.",
+      "explanation": "Head-to-head anomeric bonding (α-D-Glc-(1↔2)-β-D-Fru) eliminates free hemiacetal groups, preventing ring opening to oxidizable aldehydes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q027",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Carbohydrate Hemiacetal Intramolecular Cyclization",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What mechanistic step accounts for the spontaneous conversion of open-chain D-glucose into glucopyranose in water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C1-C2 single bond."
+        },
+        {
+          "label": "B",
+          "text": "Intermolecular esterification between two glucose molecules."
+        },
+        {
+          "label": "C",
+          "text": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation of the C6 alcohol to a carboxylic acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal.",
+      "explanation": "The C5 hydroxyl attacks the C1 carbonyl in a 6-endo-trig cyclization, creating a new chiral anomeric center at C1.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q028",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Mutarotation Thermodynamic Equilibrium Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the chemical mechanism responsible for the mutarotation of pure α-D-glucopyranose in water until [α] = +52.7°?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β)."
+        },
+        {
+          "label": "B",
+          "text": "Permanent decomposition of glucose into lactic acid."
+        },
+        {
+          "label": "C",
+          "text": "Spontaneous epimerization at all five stereocenters simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "Dehydration of glucose into glucal."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β).",
+      "explanation": "Mutarotation occurs through reversible opening to the planar aldehyde, allowing re-closure from the top (β) or bottom (α) face.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q029",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Methyl Glucoside Formation Oxocarbenium Intermediate",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does treating D-glucose with anhydrous methanol and catalytic HCl lock the anomeric center (preventing mutarotation)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methanol oxidizes the C1 carbon to an ester."
+        },
+        {
+          "label": "B",
+          "text": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside)."
+        },
+        {
+          "label": "C",
+          "text": "Methanol reacts with all six carbons simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "The methyl group forms an ionic salt with chloride."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside).",
+      "explanation": "Converting the hemiacetal to a stable acetal locks the ring: acetals are stable to neutral water and cannot mutarotate without strong acid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q030",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Anomeric Archer",
+      "topic": "Bromine Water Aldose Oxidation Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does neutral bromine water (Br₂ / H₂O) selectively oxidize aldoses to aldonic acids without attacking ketoses?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine water destroys all ketones by radical cleavage."
+        },
+        {
+          "label": "B",
+          "text": "Aldoses precipitate from water with bromine."
+        },
+        {
+          "label": "C",
+          "text": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly."
+        },
+        {
+          "label": "D",
+          "text": "Bromine water is a chiral oxidizing agent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly.",
+      "explanation": "Br₂/H₂O is a mild, selective oxidant for the aldehyde group of aldoses, leaving primary alcohols and ketoses unoxidized under neutral conditions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "anomeric-archer.png"
+      ]
+    },
+    {
+      "id": "ch24_q031",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Kiliani-Fischer Chain Elongation Stereocenters",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic outcome of adding HCN to D-arabinose in the Kiliani-Fischer synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide oxidizes arabinose to an aldaric acid."
+        },
+        {
+          "label": "C",
+          "text": "Only a single optically pure enantiomer is produced."
+        },
+        {
+          "label": "D",
+          "text": "Cyanide removes one carbon from the arabinose chain."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins.",
+      "explanation": "Nucleophilic addition of cyanide to the prochiral aldehyde generates two C2 diastereomers (epimers) that are subsequently hydrolyzed to elongated aldoses.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q032",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Wohl Degradation Cyanohydrin Elimination",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the key chain-shortening elimination step in the Wohl degradation of an aldose?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Decarboxylation of a β-keto acid intermediate."
+        },
+        {
+          "label": "B",
+          "text": "Loss of carbon monoxide from an acyl radical."
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the C-C bond by peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom.",
+      "explanation": "The peracetylated cyanohydrin intermediate undergoes base-promoted retro-cyanohydrin elimination to release cyanide and the shortened aldose.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q033",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Periodate Oxidation Vicinal Diol Cleavage",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "In the exhaustive periodic acid (HIO₄) oxidation of methyl α-D-glucopyranoside, why is no formic acid produced from C1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3."
+        },
+        {
+          "label": "B",
+          "text": "C1 is oxidized to carbon dioxide gas."
+        },
+        {
+          "label": "C",
+          "text": "Acetals are cleaved to free aldehydes by periodic acid."
+        },
+        {
+          "label": "D",
+          "text": "Periodic acid cannot react with cyclic molecules."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3.",
+      "explanation": "Protected anomeric acetals cannot undergo cleavage at C1, confining periodate oxidation to unprotected vicinal secondary diol positions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q034",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Sucrose Non-Reducing Disaccharide Basis",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why is sucrose a non-reducing sugar that fails to react with Tollens or Fehling's reagents?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sucrose is insoluble in water."
+        },
+        {
+          "label": "B",
+          "text": "Sucrose is an antiaromatic molecule."
+        },
+        {
+          "label": "C",
+          "text": "Sucrose contains no oxygen atoms."
+        },
+        {
+          "label": "D",
+          "text": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone.",
+      "explanation": "Head-to-head anomeric bonding (α-D-Glc-(1↔2)-β-D-Fru) eliminates free hemiacetal groups, preventing ring opening to oxidizable aldehydes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q035",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Carbohydrate Hemiacetal Intramolecular Cyclization",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What mechanistic step accounts for the spontaneous conversion of open-chain D-glucose into glucopyranose in water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C1-C2 single bond."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation of the C6 alcohol to a carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "Intermolecular esterification between two glucose molecules."
+        },
+        {
+          "label": "D",
+          "text": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal.",
+      "explanation": "The C5 hydroxyl attacks the C1 carbonyl in a 6-endo-trig cyclization, creating a new chiral anomeric center at C1.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q036",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Mutarotation Thermodynamic Equilibrium Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the chemical mechanism responsible for the mutarotation of pure α-D-glucopyranose in water until [α] = +52.7°?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous epimerization at all five stereocenters simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "Dehydration of glucose into glucal."
+        },
+        {
+          "label": "C",
+          "text": "Permanent decomposition of glucose into lactic acid."
+        },
+        {
+          "label": "D",
+          "text": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β).",
+      "explanation": "Mutarotation occurs through reversible opening to the planar aldehyde, allowing re-closure from the top (β) or bottom (α) face.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q037",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Methyl Glucoside Formation Oxocarbenium Intermediate",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does treating D-glucose with anhydrous methanol and catalytic HCl lock the anomeric center (preventing mutarotation)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methyl group forms an ionic salt with chloride."
+        },
+        {
+          "label": "B",
+          "text": "Methanol oxidizes the C1 carbon to an ester."
+        },
+        {
+          "label": "C",
+          "text": "Methanol reacts with all six carbons simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside).",
+      "explanation": "Converting the hemiacetal to a stable acetal locks the ring: acetals are stable to neutral water and cannot mutarotate without strong acid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q038",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Bromine Water Aldose Oxidation Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does neutral bromine water (Br₂ / H₂O) selectively oxidize aldoses to aldonic acids without attacking ketoses?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine water is a chiral oxidizing agent."
+        },
+        {
+          "label": "B",
+          "text": "Bromine water destroys all ketones by radical cleavage."
+        },
+        {
+          "label": "C",
+          "text": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly."
+        },
+        {
+          "label": "D",
+          "text": "Aldoses precipitate from water with bromine."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly.",
+      "explanation": "Br₂/H₂O is a mild, selective oxidant for the aldehyde group of aldoses, leaving primary alcohols and ketoses unoxidized under neutral conditions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q039",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Nitric Acid Aldaric Acid Dicarboxylic Oxidation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What structural transformation occurs when D-glucose is heated with concentrated nitric acid (HNO₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The glucose ring is cleaved into two glyceraldehyde molecules."
+        },
+        {
+          "label": "B",
+          "text": "Glucose is completely combusted to carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "Only the secondary alcohols at C2-C4 are oxidized."
+        },
+        {
+          "label": "D",
+          "text": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid).",
+      "explanation": "Hot nitric acid is a vigorous oxidant that converts both terminal carbons (C1 aldehyde and C6 primary alcohol) into -COOH groups.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q040",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Kiliani-Fischer Knight",
+      "topic": "Tollens Test Enediol Tautomerism of Ketoses",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why do ketoses (such as D-fructose) give a positive Tollens silver mirror test despite lacking an aldehyde group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Silver ions oxidize ketone carbonyls directly."
+        },
+        {
+          "label": "B",
+          "text": "Fructose contains a hidden aldehyde in its ester form."
+        },
+        {
+          "label": "C",
+          "text": "Basic Tollens reagent cleaves fructose into formaldehyde."
+        },
+        {
+          "label": "D",
+          "text": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose).",
+      "explanation": "Basic conditions promote keto-enol tautomerism via an enediol intermediate, isomerizing ketoses into oxidizable aldoses.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "kiliani-fischer-knight.png"
+      ]
+    },
+    {
+      "id": "ch24_q041",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Periodate Oxidation Vicinal Diol Cleavage",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "In the exhaustive periodic acid (HIO₄) oxidation of methyl α-D-glucopyranoside, why is no formic acid produced from C1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetals are cleaved to free aldehydes by periodic acid."
+        },
+        {
+          "label": "B",
+          "text": "Periodic acid cannot react with cyclic molecules."
+        },
+        {
+          "label": "C",
+          "text": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3."
+        },
+        {
+          "label": "D",
+          "text": "C1 is oxidized to carbon dioxide gas."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "C1 is protected as a methyl acetal with no free adjacent hydroxyl; periodate cleaves between C2-C3 and C3-C4, consuming 2 moles of HIO₄ and releasing 1 mole of formic acid from C3.",
+      "explanation": "Protected anomeric acetals cannot undergo cleavage at C1, confining periodate oxidation to unprotected vicinal secondary diol positions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q042",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Sucrose Non-Reducing Disaccharide Basis",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is sucrose a non-reducing sugar that fails to react with Tollens or Fehling's reagents?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sucrose is an antiaromatic molecule."
+        },
+        {
+          "label": "B",
+          "text": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone."
+        },
+        {
+          "label": "C",
+          "text": "Sucrose contains no oxygen atoms."
+        },
+        {
+          "label": "D",
+          "text": "Sucrose is insoluble in water."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The glycosidic linkage connects the anomeric carbon of glucose (C1) directly to the anomeric carbon of fructose (C2), locking both hemiacetals as acetals with no free aldehyde/ketone.",
+      "explanation": "Head-to-head anomeric bonding (α-D-Glc-(1↔2)-β-D-Fru) eliminates free hemiacetal groups, preventing ring opening to oxidizable aldehydes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q043",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Carbohydrate Hemiacetal Intramolecular Cyclization",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What mechanistic step accounts for the spontaneous conversion of open-chain D-glucose into glucopyranose in water?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C1-C2 single bond."
+        },
+        {
+          "label": "B",
+          "text": "Intermolecular esterification between two glucose molecules."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation of the C6 alcohol to a carboxylic acid."
+        },
+        {
+          "label": "D",
+          "text": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Intramolecular nucleophilic addition of the C5 hydroxyl oxygen to the electrophilic C1 aldehyde carbonyl to form a six-membered cyclic hemiacetal.",
+      "explanation": "The C5 hydroxyl attacks the C1 carbonyl in a 6-endo-trig cyclization, creating a new chiral anomeric center at C1.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q044",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Mutarotation Thermodynamic Equilibrium Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the chemical mechanism responsible for the mutarotation of pure α-D-glucopyranose in water until [α] = +52.7°?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Spontaneous epimerization at all five stereocenters simultaneously."
+        },
+        {
+          "label": "B",
+          "text": "Permanent decomposition of glucose into lactic acid."
+        },
+        {
+          "label": "C",
+          "text": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β)."
+        },
+        {
+          "label": "D",
+          "text": "Dehydration of glucose into glucal."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Reversible acid/base-catalyzed ring opening through the acyclic aldehyde intermediate, followed by re-closure from either face to form an equilibrium mixture (36% α, 64% β).",
+      "explanation": "Mutarotation occurs through reversible opening to the planar aldehyde, allowing re-closure from the top (β) or bottom (α) face.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q045",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Methyl Glucoside Formation Oxocarbenium Intermediate",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does treating D-glucose with anhydrous methanol and catalytic HCl lock the anomeric center (preventing mutarotation)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside)."
+        },
+        {
+          "label": "B",
+          "text": "Methanol oxidizes the C1 carbon to an ester."
+        },
+        {
+          "label": "C",
+          "text": "Methanol reacts with all six carbons simultaneously."
+        },
+        {
+          "label": "D",
+          "text": "The methyl group forms an ionic salt with chloride."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acid protonates the anomeric C1-OH, which departs as water to form a resonance-stabilized oxocarbenium ion that is trapped by methanol as a stable acetal (methyl glucoside).",
+      "explanation": "Converting the hemiacetal to a stable acetal locks the ring: acetals are stable to neutral water and cannot mutarotate without strong acid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q046",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Bromine Water Aldose Oxidation Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does neutral bromine water (Br₂ / H₂O) selectively oxidize aldoses to aldonic acids without attacking ketoses?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly."
+        },
+        {
+          "label": "B",
+          "text": "Bromine water destroys all ketones by radical cleavage."
+        },
+        {
+          "label": "C",
+          "text": "Bromine water is a chiral oxidizing agent."
+        },
+        {
+          "label": "D",
+          "text": "Aldoses precipitate from water with bromine."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromine selectively oxidizes the open-chain aldehyde group to a carboxylic acid via a hypobromite intermediate; ketoses lack a hydrogen on the carbonyl carbon and react very slowly.",
+      "explanation": "Br₂/H₂O is a mild, selective oxidant for the aldehyde group of aldoses, leaving primary alcohols and ketoses unoxidized under neutral conditions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q047",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Nitric Acid Aldaric Acid Dicarboxylic Oxidation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What structural transformation occurs when D-glucose is heated with concentrated nitric acid (HNO₃)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid)."
+        },
+        {
+          "label": "B",
+          "text": "Glucose is completely combusted to carbon dioxide."
+        },
+        {
+          "label": "C",
+          "text": "Only the secondary alcohols at C2-C4 are oxidized."
+        },
+        {
+          "label": "D",
+          "text": "The glucose ring is cleaved into two glyceraldehyde molecules."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Both the C1 aldehyde and the terminal C6 primary alcohol are oxidized to carboxylic acid groups, yielding dicarboxylic D-glucaric acid (an aldaric acid).",
+      "explanation": "Hot nitric acid is a vigorous oxidant that converts both terminal carbons (C1 aldehyde and C6 primary alcohol) into -COOH groups.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q048",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Tollens Test Enediol Tautomerism of Ketoses",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why do ketoses (such as D-fructose) give a positive Tollens silver mirror test despite lacking an aldehyde group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fructose contains a hidden aldehyde in its ester form."
+        },
+        {
+          "label": "B",
+          "text": "Silver ions oxidize ketone carbonyls directly."
+        },
+        {
+          "label": "C",
+          "text": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose)."
+        },
+        {
+          "label": "D",
+          "text": "Basic Tollens reagent cleaves fructose into formaldehyde."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Under the basic conditions of Tollens reagent, fructose undergoes reversible enediol tautomerization (Lobry de Bruyn-van Ekenstein) to equilibrate with aldoses (glucose/mannose).",
+      "explanation": "Basic conditions promote keto-enol tautomerism via an enediol intermediate, isomerizing ketoses into oxidizable aldoses.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q049",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Kiliani-Fischer Chain Elongation Stereocenters",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the mechanistic outcome of adding HCN to D-arabinose in the Kiliani-Fischer synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only a single optically pure enantiomer is produced."
+        },
+        {
+          "label": "B",
+          "text": "Cyanide removes one carbon from the arabinose chain."
+        },
+        {
+          "label": "C",
+          "text": "Cyanide oxidizes arabinose to an aldaric acid."
+        },
+        {
+          "label": "D",
+          "text": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyanide attacks the C1 aldehyde carbonyl from both re- and si-faces, creating a new chiral center at C2 and producing an epimeric pair of diastereomeric cyanohydrins.",
+      "explanation": "Nucleophilic addition of cyanide to the prochiral aldehyde generates two C2 diastereomers (epimers) that are subsequently hydrolyzed to elongated aldoses.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    },
+    {
+      "id": "ch24_q050",
+      "chapter": 24,
+      "chapter_title": "Carbohydrates",
+      "boss": "Polysaccharide Pharaoh",
+      "topic": "Wohl Degradation Cyanohydrin Elimination",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What is the key chain-shortening elimination step in the Wohl degradation of an aldose?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the C-C bond by peroxide."
+        },
+        {
+          "label": "B",
+          "text": "Decarboxylation of a β-keto acid intermediate."
+        },
+        {
+          "label": "C",
+          "text": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom."
+        },
+        {
+          "label": "D",
+          "text": "Loss of carbon monoxide from an acyl radical."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Base-promoted elimination of cyanide (HCN) from the peracetylated aldoxime nitrile derivative, expelling C1 and releasing an aldose with one fewer carbon atom.",
+      "explanation": "The peracetylated cyanohydrin intermediate undergoes base-promoted retro-cyanohydrin elimination to release cyanide and the shortened aldose.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysaccharide-pharaoh.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Aldose Apparition",
+    "Pyranose Phantom",
+    "Anomeric Archer",
+    "Kiliani-Fischer Knight",
+    "Polysaccharide Pharaoh"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Aldose Apparition",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "aldose-apparition.png"
+        ]
+      },
+      {
+        "boss": "Pyranose Phantom",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "pyranose-phantom.png"
+        ]
+      },
+      {
+        "boss": "Anomeric Archer",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "anomeric-archer.png"
+        ]
+      },
+      {
+        "boss": "Kiliani-Fischer Knight",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "kiliani-fischer-knight.png"
+        ]
+      },
+      {
+        "boss": "Polysaccharide Pharaoh",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "polysaccharide-pharaoh.png"
+        ]
+      }
+    ]
+  }
+}

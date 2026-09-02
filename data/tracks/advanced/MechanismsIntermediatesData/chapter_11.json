@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 11,
+  "chapter_title": "Synthesis",
+  "assigned_boss": "FGI Footman",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch11_q001",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Retrosynthetic Disconnection Logic",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the core conceptual objective of a retrosynthetic disconnection in organic synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To predict the infrared spectrum of the target molecule."
+        },
+        {
+          "label": "B",
+          "text": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons."
+        },
+        {
+          "label": "C",
+          "text": "To convert all chiral centers to achiral conformations."
+        },
+        {
+          "label": "D",
+          "text": "To calculate the thermodynamic entropy of the overall reaction."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons.",
+      "explanation": "Retrosynthesis deconstructs complex targets step-by-step into simpler precursor materials using known forward reactions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q002",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Synthon vs Synthetic Equivalent",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In retrosynthetic analysis, what is the relationship between an acyl synthon [R-C⁺=O] and its synthetic equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The synthetic equivalent is always a radical."
+        },
+        {
+          "label": "B",
+          "text": "The synthon is a real isolated molecule and the synthetic equivalent is imaginary."
+        },
+        {
+          "label": "C",
+          "text": "They are resonance structures of each other."
+        },
+        {
+          "label": "D",
+          "text": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity.",
+      "explanation": "Synthons are idealized ionic/radical fragments; synthetic equivalents are real, shelf-stable chemical reagents.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q003",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "FGI in Multi-Step Synthesis",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What does a Functional Group Interconversion (FGI) accomplish in a forward synthetic sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It racemizes all stereocenters."
+        },
+        {
+          "label": "B",
+          "text": "It rearranges the carbon skeleton into an aromatic ring."
+        },
+        {
+          "label": "C",
+          "text": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step."
+        },
+        {
+          "label": "D",
+          "text": "It cleaves the carbon chain into equal halves."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step.",
+      "explanation": "FGI modifies functional groups (e.g., alcohol to halide) to enable subsequent bond-forming or selective transformation steps.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q004",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Silyl Ether Protection Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does triethylsilyl chloride (TESCl) protect an alcohol against strong organometallic bases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃)."
+        },
+        {
+          "label": "B",
+          "text": "The silyl group protonates the organometallic reagent."
+        },
+        {
+          "label": "C",
+          "text": "TESCl forms an ionic salt precipitate with the alcohol."
+        },
+        {
+          "label": "D",
+          "text": "Silicon oxidizes the alcohol to a carboxylic acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃).",
+      "explanation": "Silyl ethers mask acidic hydroxyl protons, preventing unwanted acid-base quenching when using Grignard or organolithium reagents.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q005",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Fluoride Deprotection of Silyl Ethers",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does tetra-n-butylammonium fluoride (TBAF) selectively cleave silyl ether protecting groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon."
+        },
+        {
+          "label": "B",
+          "text": "Fluoride acts as a powerful reducing agent."
+        },
+        {
+          "label": "C",
+          "text": "TBAF protonates the silicon atom."
+        },
+        {
+          "label": "D",
+          "text": "Fluoride oxidizes the oxygen atom to peroxide."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon.",
+      "explanation": "The immense strength of the Si-F bond drives thermodynamic cleavage of silyl ethers under mild, neutral conditions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q006",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Convergent vs Linear Synthesis Efficiency",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is a convergent synthetic strategy dramatically superior to a linear sequence for synthesizing large molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Convergent synthesis eliminates all transition states."
+        },
+        {
+          "label": "B",
+          "text": "Linear synthesis always produces racemic mixtures."
+        },
+        {
+          "label": "C",
+          "text": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences."
+        },
+        {
+          "label": "D",
+          "text": "Convergent synthesis does not require any purification."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences.",
+      "explanation": "Linear yield compounds multiplicatively (0.8^10 ≈ 10.7%), whereas convergent coupling of two 5-step halves yields ~33% overall.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q007",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Chemoselectivity in Hydride Reduction",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How can a chemist selectively reduce a ketone in the presence of an ester within the same molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By utilizing excess lithium aluminum hydride (LiAlH₄) at 100°C."
+        },
+        {
+          "label": "B",
+          "text": "By irradiating with UV light."
+        },
+        {
+          "label": "C",
+          "text": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters."
+        },
+        {
+          "label": "D",
+          "text": "By adding concentrated sulfuric acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters.",
+      "explanation": "NaBH₄ is a mild reducing agent that exhibits high chemoselectivity for ketones/aldehydes over esters and amides.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q008",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Regiochemical Control in Alkene Synthesis",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What synthetic strategy ensures clean conversion of 2-bromopentane to 1-pentene rather than 2-pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group."
+        },
+        {
+          "label": "B",
+          "text": "Using sodium hydroxide in water at 100°C."
+        },
+        {
+          "label": "C",
+          "text": "Using concentrated sulfuric acid."
+        },
+        {
+          "label": "D",
+          "text": "Using sodium iodide in acetone."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group.",
+      "explanation": "Bulky alkoxide bases selectively abstract accessible terminal protons, overriding thermodynamic Zaitsev selectivity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q009",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Strategic C-C Bond Construction via Alkynylation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the key advantage of using terminal alkynes as building blocks in carbon chain extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkynes only react via free radical mechanisms."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes cannot be oxidized or reduced."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes are inert toward all electrophiles."
+        },
+        {
+          "label": "D",
+          "text": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions.",
+      "explanation": "Terminal alkynes provide a nucleophilic carbon center for C-C bond formation, with the resulting triple bond ready for diverse functionalizations.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q010",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "FGI Footman",
+      "topic": "Stereospecific Route Design",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In designing a stereoselective synthesis of cis-1,2-dimethylcyclohexane, which sequence is optimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical bromination followed by sodium ethoxide."
+        },
+        {
+          "label": "B",
+          "text": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond."
+        },
+        {
+          "label": "C",
+          "text": "mCPBA epoxidation followed by aqueous acid hydrolysis."
+        },
+        {
+          "label": "D",
+          "text": "Birch reduction using sodium in liquid ammonia."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond.",
+      "explanation": "Catalytic hydrogenation over solid metal delivers both hydrogen atoms to the same face of the alkene, forging the cis stereoisomer.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "fgi-footman.png"
+      ]
+    },
+    {
+      "id": "ch11_q011",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "FGI in Multi-Step Synthesis",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What does a Functional Group Interconversion (FGI) accomplish in a forward synthetic sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It cleaves the carbon chain into equal halves."
+        },
+        {
+          "label": "B",
+          "text": "It racemizes all stereocenters."
+        },
+        {
+          "label": "C",
+          "text": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step."
+        },
+        {
+          "label": "D",
+          "text": "It rearranges the carbon skeleton into an aromatic ring."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step.",
+      "explanation": "FGI modifies functional groups (e.g., alcohol to halide) to enable subsequent bond-forming or selective transformation steps.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q012",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Silyl Ether Protection Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does triethylsilyl chloride (TESCl) protect an alcohol against strong organometallic bases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TESCl forms an ionic salt precipitate with the alcohol."
+        },
+        {
+          "label": "B",
+          "text": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃)."
+        },
+        {
+          "label": "C",
+          "text": "The silyl group protonates the organometallic reagent."
+        },
+        {
+          "label": "D",
+          "text": "Silicon oxidizes the alcohol to a carboxylic acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃).",
+      "explanation": "Silyl ethers mask acidic hydroxyl protons, preventing unwanted acid-base quenching when using Grignard or organolithium reagents.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q013",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Fluoride Deprotection of Silyl Ethers",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does tetra-n-butylammonium fluoride (TBAF) selectively cleave silyl ether protecting groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TBAF protonates the silicon atom."
+        },
+        {
+          "label": "B",
+          "text": "Fluoride acts as a powerful reducing agent."
+        },
+        {
+          "label": "C",
+          "text": "Fluoride oxidizes the oxygen atom to peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon.",
+      "explanation": "The immense strength of the Si-F bond drives thermodynamic cleavage of silyl ethers under mild, neutral conditions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q014",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Convergent vs Linear Synthesis Efficiency",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is a convergent synthetic strategy dramatically superior to a linear sequence for synthesizing large molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Linear synthesis always produces racemic mixtures."
+        },
+        {
+          "label": "B",
+          "text": "Convergent synthesis does not require any purification."
+        },
+        {
+          "label": "C",
+          "text": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences."
+        },
+        {
+          "label": "D",
+          "text": "Convergent synthesis eliminates all transition states."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences.",
+      "explanation": "Linear yield compounds multiplicatively (0.8^10 ≈ 10.7%), whereas convergent coupling of two 5-step halves yields ~33% overall.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q015",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Chemoselectivity in Hydride Reduction",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How can a chemist selectively reduce a ketone in the presence of an ester within the same molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters."
+        },
+        {
+          "label": "B",
+          "text": "By utilizing excess lithium aluminum hydride (LiAlH₄) at 100°C."
+        },
+        {
+          "label": "C",
+          "text": "By irradiating with UV light."
+        },
+        {
+          "label": "D",
+          "text": "By adding concentrated sulfuric acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters.",
+      "explanation": "NaBH₄ is a mild reducing agent that exhibits high chemoselectivity for ketones/aldehydes over esters and amides.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q016",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Regiochemical Control in Alkene Synthesis",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What synthetic strategy ensures clean conversion of 2-bromopentane to 1-pentene rather than 2-pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using concentrated sulfuric acid."
+        },
+        {
+          "label": "B",
+          "text": "Using sodium hydroxide in water at 100°C."
+        },
+        {
+          "label": "C",
+          "text": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group."
+        },
+        {
+          "label": "D",
+          "text": "Using sodium iodide in acetone."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group.",
+      "explanation": "Bulky alkoxide bases selectively abstract accessible terminal protons, overriding thermodynamic Zaitsev selectivity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q017",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Strategic C-C Bond Construction via Alkynylation",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key advantage of using terminal alkynes as building blocks in carbon chain extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes cannot be oxidized or reduced."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes are inert toward all electrophiles."
+        },
+        {
+          "label": "D",
+          "text": "Alkynes only react via free radical mechanisms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions.",
+      "explanation": "Terminal alkynes provide a nucleophilic carbon center for C-C bond formation, with the resulting triple bond ready for diverse functionalizations.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q018",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Stereospecific Route Design",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In designing a stereoselective synthesis of cis-1,2-dimethylcyclohexane, which sequence is optimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical bromination followed by sodium ethoxide."
+        },
+        {
+          "label": "B",
+          "text": "mCPBA epoxidation followed by aqueous acid hydrolysis."
+        },
+        {
+          "label": "C",
+          "text": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond."
+        },
+        {
+          "label": "D",
+          "text": "Birch reduction using sodium in liquid ammonia."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond.",
+      "explanation": "Catalytic hydrogenation over solid metal delivers both hydrogen atoms to the same face of the alkene, forging the cis stereoisomer.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q019",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Retrosynthetic Disconnection Logic",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the core conceptual objective of a retrosynthetic disconnection in organic synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons."
+        },
+        {
+          "label": "B",
+          "text": "To calculate the thermodynamic entropy of the overall reaction."
+        },
+        {
+          "label": "C",
+          "text": "To convert all chiral centers to achiral conformations."
+        },
+        {
+          "label": "D",
+          "text": "To predict the infrared spectrum of the target molecule."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons.",
+      "explanation": "Retrosynthesis deconstructs complex targets step-by-step into simpler precursor materials using known forward reactions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q020",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Carbon-Chain Centaur",
+      "topic": "Synthon vs Synthetic Equivalent",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In retrosynthetic analysis, what is the relationship between an acyl synthon [R-C⁺=O] and its synthetic equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity."
+        },
+        {
+          "label": "B",
+          "text": "The synthetic equivalent is always a radical."
+        },
+        {
+          "label": "C",
+          "text": "They are resonance structures of each other."
+        },
+        {
+          "label": "D",
+          "text": "The synthon is a real isolated molecule and the synthetic equivalent is imaginary."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity.",
+      "explanation": "Synthons are idealized ionic/radical fragments; synthetic equivalents are real, shelf-stable chemical reagents.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbon-chain-centaur.png"
+      ]
+    },
+    {
+      "id": "ch11_q021",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Fluoride Deprotection of Silyl Ethers",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does tetra-n-butylammonium fluoride (TBAF) selectively cleave silyl ether protecting groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon."
+        },
+        {
+          "label": "B",
+          "text": "TBAF protonates the silicon atom."
+        },
+        {
+          "label": "C",
+          "text": "Fluoride oxidizes the oxygen atom to peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Fluoride acts as a powerful reducing agent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon.",
+      "explanation": "The immense strength of the Si-F bond drives thermodynamic cleavage of silyl ethers under mild, neutral conditions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q022",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Convergent vs Linear Synthesis Efficiency",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is a convergent synthetic strategy dramatically superior to a linear sequence for synthesizing large molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences."
+        },
+        {
+          "label": "B",
+          "text": "Convergent synthesis eliminates all transition states."
+        },
+        {
+          "label": "C",
+          "text": "Linear synthesis always produces racemic mixtures."
+        },
+        {
+          "label": "D",
+          "text": "Convergent synthesis does not require any purification."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences.",
+      "explanation": "Linear yield compounds multiplicatively (0.8^10 ≈ 10.7%), whereas convergent coupling of two 5-step halves yields ~33% overall.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q023",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Chemoselectivity in Hydride Reduction",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How can a chemist selectively reduce a ketone in the presence of an ester within the same molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By utilizing excess lithium aluminum hydride (LiAlH₄) at 100°C."
+        },
+        {
+          "label": "B",
+          "text": "By irradiating with UV light."
+        },
+        {
+          "label": "C",
+          "text": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters."
+        },
+        {
+          "label": "D",
+          "text": "By adding concentrated sulfuric acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters.",
+      "explanation": "NaBH₄ is a mild reducing agent that exhibits high chemoselectivity for ketones/aldehydes over esters and amides.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q024",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Regiochemical Control in Alkene Synthesis",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What synthetic strategy ensures clean conversion of 2-bromopentane to 1-pentene rather than 2-pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using sodium iodide in acetone."
+        },
+        {
+          "label": "B",
+          "text": "Using concentrated sulfuric acid."
+        },
+        {
+          "label": "C",
+          "text": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group."
+        },
+        {
+          "label": "D",
+          "text": "Using sodium hydroxide in water at 100°C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group.",
+      "explanation": "Bulky alkoxide bases selectively abstract accessible terminal protons, overriding thermodynamic Zaitsev selectivity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q025",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Strategic C-C Bond Construction via Alkynylation",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the key advantage of using terminal alkynes as building blocks in carbon chain extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkynes are inert toward all electrophiles."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes cannot be oxidized or reduced."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes only react via free radical mechanisms."
+        },
+        {
+          "label": "D",
+          "text": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions.",
+      "explanation": "Terminal alkynes provide a nucleophilic carbon center for C-C bond formation, with the resulting triple bond ready for diverse functionalizations.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q026",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Stereospecific Route Design",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In designing a stereoselective synthesis of cis-1,2-dimethylcyclohexane, which sequence is optimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "mCPBA epoxidation followed by aqueous acid hydrolysis."
+        },
+        {
+          "label": "B",
+          "text": "Free radical bromination followed by sodium ethoxide."
+        },
+        {
+          "label": "C",
+          "text": "Birch reduction using sodium in liquid ammonia."
+        },
+        {
+          "label": "D",
+          "text": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond.",
+      "explanation": "Catalytic hydrogenation over solid metal delivers both hydrogen atoms to the same face of the alkene, forging the cis stereoisomer.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q027",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Retrosynthetic Disconnection Logic",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the core conceptual objective of a retrosynthetic disconnection in organic synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons."
+        },
+        {
+          "label": "B",
+          "text": "To predict the infrared spectrum of the target molecule."
+        },
+        {
+          "label": "C",
+          "text": "To calculate the thermodynamic entropy of the overall reaction."
+        },
+        {
+          "label": "D",
+          "text": "To convert all chiral centers to achiral conformations."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons.",
+      "explanation": "Retrosynthesis deconstructs complex targets step-by-step into simpler precursor materials using known forward reactions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q028",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Synthon vs Synthetic Equivalent",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In retrosynthetic analysis, what is the relationship between an acyl synthon [R-C⁺=O] and its synthetic equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The synthetic equivalent is always a radical."
+        },
+        {
+          "label": "B",
+          "text": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity."
+        },
+        {
+          "label": "C",
+          "text": "The synthon is a real isolated molecule and the synthetic equivalent is imaginary."
+        },
+        {
+          "label": "D",
+          "text": "They are resonance structures of each other."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity.",
+      "explanation": "Synthons are idealized ionic/radical fragments; synthetic equivalents are real, shelf-stable chemical reagents.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q029",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "FGI in Multi-Step Synthesis",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What does a Functional Group Interconversion (FGI) accomplish in a forward synthetic sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It rearranges the carbon skeleton into an aromatic ring."
+        },
+        {
+          "label": "B",
+          "text": "It racemizes all stereocenters."
+        },
+        {
+          "label": "C",
+          "text": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step."
+        },
+        {
+          "label": "D",
+          "text": "It cleaves the carbon chain into equal halves."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step.",
+      "explanation": "FGI modifies functional groups (e.g., alcohol to halide) to enable subsequent bond-forming or selective transformation steps.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q030",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Synthon Shapeshifter",
+      "topic": "Silyl Ether Protection Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How does triethylsilyl chloride (TESCl) protect an alcohol against strong organometallic bases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃)."
+        },
+        {
+          "label": "B",
+          "text": "Silicon oxidizes the alcohol to a carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "The silyl group protonates the organometallic reagent."
+        },
+        {
+          "label": "D",
+          "text": "TESCl forms an ionic salt precipitate with the alcohol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃).",
+      "explanation": "Silyl ethers mask acidic hydroxyl protons, preventing unwanted acid-base quenching when using Grignard or organolithium reagents.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "synthon-shapeshifter.png"
+      ]
+    },
+    {
+      "id": "ch11_q031",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Chemoselectivity in Hydride Reduction",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How can a chemist selectively reduce a ketone in the presence of an ester within the same molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By irradiating with UV light."
+        },
+        {
+          "label": "B",
+          "text": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters."
+        },
+        {
+          "label": "C",
+          "text": "By adding concentrated sulfuric acid."
+        },
+        {
+          "label": "D",
+          "text": "By utilizing excess lithium aluminum hydride (LiAlH₄) at 100°C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters.",
+      "explanation": "NaBH₄ is a mild reducing agent that exhibits high chemoselectivity for ketones/aldehydes over esters and amides.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q032",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Regiochemical Control in Alkene Synthesis",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What synthetic strategy ensures clean conversion of 2-bromopentane to 1-pentene rather than 2-pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using sodium iodide in acetone."
+        },
+        {
+          "label": "B",
+          "text": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group."
+        },
+        {
+          "label": "C",
+          "text": "Using sodium hydroxide in water at 100°C."
+        },
+        {
+          "label": "D",
+          "text": "Using concentrated sulfuric acid."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group.",
+      "explanation": "Bulky alkoxide bases selectively abstract accessible terminal protons, overriding thermodynamic Zaitsev selectivity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q033",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Strategic C-C Bond Construction via Alkynylation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the key advantage of using terminal alkynes as building blocks in carbon chain extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes only react via free radical mechanisms."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes cannot be oxidized or reduced."
+        },
+        {
+          "label": "D",
+          "text": "Alkynes are inert toward all electrophiles."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions.",
+      "explanation": "Terminal alkynes provide a nucleophilic carbon center for C-C bond formation, with the resulting triple bond ready for diverse functionalizations.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q034",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Stereospecific Route Design",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "In designing a stereoselective synthesis of cis-1,2-dimethylcyclohexane, which sequence is optimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Birch reduction using sodium in liquid ammonia."
+        },
+        {
+          "label": "B",
+          "text": "Free radical bromination followed by sodium ethoxide."
+        },
+        {
+          "label": "C",
+          "text": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond."
+        },
+        {
+          "label": "D",
+          "text": "mCPBA epoxidation followed by aqueous acid hydrolysis."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond.",
+      "explanation": "Catalytic hydrogenation over solid metal delivers both hydrogen atoms to the same face of the alkene, forging the cis stereoisomer.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q035",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Retrosynthetic Disconnection Logic",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the core conceptual objective of a retrosynthetic disconnection in organic synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To predict the infrared spectrum of the target molecule."
+        },
+        {
+          "label": "B",
+          "text": "To calculate the thermodynamic entropy of the overall reaction."
+        },
+        {
+          "label": "C",
+          "text": "To convert all chiral centers to achiral conformations."
+        },
+        {
+          "label": "D",
+          "text": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons.",
+      "explanation": "Retrosynthesis deconstructs complex targets step-by-step into simpler precursor materials using known forward reactions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q036",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Synthon vs Synthetic Equivalent",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In retrosynthetic analysis, what is the relationship between an acyl synthon [R-C⁺=O] and its synthetic equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The synthetic equivalent is always a radical."
+        },
+        {
+          "label": "B",
+          "text": "They are resonance structures of each other."
+        },
+        {
+          "label": "C",
+          "text": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity."
+        },
+        {
+          "label": "D",
+          "text": "The synthon is a real isolated molecule and the synthetic equivalent is imaginary."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity.",
+      "explanation": "Synthons are idealized ionic/radical fragments; synthetic equivalents are real, shelf-stable chemical reagents.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q037",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "FGI in Multi-Step Synthesis",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What does a Functional Group Interconversion (FGI) accomplish in a forward synthetic sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step."
+        },
+        {
+          "label": "B",
+          "text": "It racemizes all stereocenters."
+        },
+        {
+          "label": "C",
+          "text": "It rearranges the carbon skeleton into an aromatic ring."
+        },
+        {
+          "label": "D",
+          "text": "It cleaves the carbon chain into equal halves."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step.",
+      "explanation": "FGI modifies functional groups (e.g., alcohol to halide) to enable subsequent bond-forming or selective transformation steps.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q038",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Silyl Ether Protection Mechanism",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How does triethylsilyl chloride (TESCl) protect an alcohol against strong organometallic bases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Silicon oxidizes the alcohol to a carboxylic acid."
+        },
+        {
+          "label": "B",
+          "text": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃)."
+        },
+        {
+          "label": "C",
+          "text": "The silyl group protonates the organometallic reagent."
+        },
+        {
+          "label": "D",
+          "text": "TESCl forms an ionic salt precipitate with the alcohol."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃).",
+      "explanation": "Silyl ethers mask acidic hydroxyl protons, preventing unwanted acid-base quenching when using Grignard or organolithium reagents.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q039",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Fluoride Deprotection of Silyl Ethers",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does tetra-n-butylammonium fluoride (TBAF) selectively cleave silyl ether protecting groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fluoride acts as a powerful reducing agent."
+        },
+        {
+          "label": "B",
+          "text": "TBAF protonates the silicon atom."
+        },
+        {
+          "label": "C",
+          "text": "Fluoride oxidizes the oxygen atom to peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon.",
+      "explanation": "The immense strength of the Si-F bond drives thermodynamic cleavage of silyl ethers under mild, neutral conditions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q040",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Disconnection Duelist",
+      "topic": "Convergent vs Linear Synthesis Efficiency",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is a convergent synthetic strategy dramatically superior to a linear sequence for synthesizing large molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Convergent synthesis does not require any purification."
+        },
+        {
+          "label": "B",
+          "text": "Convergent synthesis eliminates all transition states."
+        },
+        {
+          "label": "C",
+          "text": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences."
+        },
+        {
+          "label": "D",
+          "text": "Linear synthesis always produces racemic mixtures."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences.",
+      "explanation": "Linear yield compounds multiplicatively (0.8^10 ≈ 10.7%), whereas convergent coupling of two 5-step halves yields ~33% overall.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "disconnection-duelist.png"
+      ]
+    },
+    {
+      "id": "ch11_q041",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Strategic C-C Bond Construction via Alkynylation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the key advantage of using terminal alkynes as building blocks in carbon chain extension?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkynes are inert toward all electrophiles."
+        },
+        {
+          "label": "B",
+          "text": "Alkynes only react via free radical mechanisms."
+        },
+        {
+          "label": "C",
+          "text": "Alkynes cannot be oxidized or reduced."
+        },
+        {
+          "label": "D",
+          "text": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The terminal sp C-H can be deprotonated to an acetylide carbanion, which acts as a powerful nucleophile in SN2 alkylations and carbonyl additions.",
+      "explanation": "Terminal alkynes provide a nucleophilic carbon center for C-C bond formation, with the resulting triple bond ready for diverse functionalizations.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q042",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Stereospecific Route Design",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "In designing a stereoselective synthesis of cis-1,2-dimethylcyclohexane, which sequence is optimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Free radical bromination followed by sodium ethoxide."
+        },
+        {
+          "label": "B",
+          "text": "Birch reduction using sodium in liquid ammonia."
+        },
+        {
+          "label": "C",
+          "text": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond."
+        },
+        {
+          "label": "D",
+          "text": "mCPBA epoxidation followed by aqueous acid hydrolysis."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Synthesis of 1,2-dimethylcyclohexene followed by heterogeneous catalytic hydrogenation (H₂ / Pt), which guarantees syn addition across the π bond.",
+      "explanation": "Catalytic hydrogenation over solid metal delivers both hydrogen atoms to the same face of the alkene, forging the cis stereoisomer.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q043",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Retrosynthetic Disconnection Logic",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the core conceptual objective of a retrosynthetic disconnection in organic synthesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons."
+        },
+        {
+          "label": "B",
+          "text": "To predict the infrared spectrum of the target molecule."
+        },
+        {
+          "label": "C",
+          "text": "To calculate the thermodynamic entropy of the overall reaction."
+        },
+        {
+          "label": "D",
+          "text": "To convert all chiral centers to achiral conformations."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "To identify strategic C-C or C-heteroatom bonds whose hypothetical cleavage reveals simpler, commercially available precursor synthons.",
+      "explanation": "Retrosynthesis deconstructs complex targets step-by-step into simpler precursor materials using known forward reactions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q044",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Synthon vs Synthetic Equivalent",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "In retrosynthetic analysis, what is the relationship between an acyl synthon [R-C⁺=O] and its synthetic equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity."
+        },
+        {
+          "label": "B",
+          "text": "The synthon is a real isolated molecule and the synthetic equivalent is imaginary."
+        },
+        {
+          "label": "C",
+          "text": "They are resonance structures of each other."
+        },
+        {
+          "label": "D",
+          "text": "The synthetic equivalent is always a radical."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The synthon is an idealized reactive fragment (R-C⁺=O), while the acyl chloride (R-COCl) is the actual laboratory reagent carrying out that reactivity.",
+      "explanation": "Synthons are idealized ionic/radical fragments; synthetic equivalents are real, shelf-stable chemical reagents.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q045",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "FGI in Multi-Step Synthesis",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What does a Functional Group Interconversion (FGI) accomplish in a forward synthetic sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It cleaves the carbon chain into equal halves."
+        },
+        {
+          "label": "B",
+          "text": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step."
+        },
+        {
+          "label": "C",
+          "text": "It rearranges the carbon skeleton into an aromatic ring."
+        },
+        {
+          "label": "D",
+          "text": "It racemizes all stereocenters."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It transforms one functional group into another without altering the underlying carbon skeleton, preparing the molecule for a subsequent strategic step.",
+      "explanation": "FGI modifies functional groups (e.g., alcohol to halide) to enable subsequent bond-forming or selective transformation steps.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q046",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Silyl Ether Protection Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How does triethylsilyl chloride (TESCl) protect an alcohol against strong organometallic bases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃)."
+        },
+        {
+          "label": "B",
+          "text": "Silicon oxidizes the alcohol to a carboxylic acid."
+        },
+        {
+          "label": "C",
+          "text": "The silyl group protonates the organometallic reagent."
+        },
+        {
+          "label": "D",
+          "text": "TESCl forms an ionic salt precipitate with the alcohol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The alcohol oxygen attacks silicon in an SN2-Si displacement with chloride loss, converting the acidic O-H into a base-inert silyl ether (-OSiEt₃).",
+      "explanation": "Silyl ethers mask acidic hydroxyl protons, preventing unwanted acid-base quenching when using Grignard or organolithium reagents.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q047",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Fluoride Deprotection of Silyl Ethers",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does tetra-n-butylammonium fluoride (TBAF) selectively cleave silyl ether protecting groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fluoride acts as a powerful reducing agent."
+        },
+        {
+          "label": "B",
+          "text": "TBAF protonates the silicon atom."
+        },
+        {
+          "label": "C",
+          "text": "Fluoride oxidizes the oxygen atom to peroxide."
+        },
+        {
+          "label": "D",
+          "text": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Silicon has an exceptionally high thermodynamic affinity for fluoride (Si-F bond energy ~570 kJ/mol), driving rapid nucleophilic displacement at silicon.",
+      "explanation": "The immense strength of the Si-F bond drives thermodynamic cleavage of silyl ethers under mild, neutral conditions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q048",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Convergent vs Linear Synthesis Efficiency",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why is a convergent synthetic strategy dramatically superior to a linear sequence for synthesizing large molecules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences."
+        },
+        {
+          "label": "B",
+          "text": "Linear synthesis always produces racemic mixtures."
+        },
+        {
+          "label": "C",
+          "text": "Convergent synthesis does not require any purification."
+        },
+        {
+          "label": "D",
+          "text": "Convergent synthesis eliminates all transition states."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Convergent synthesis couples pre-assembled complex fragments in the final steps, minimizing the compounding penalty of fractional yields across long linear sequences.",
+      "explanation": "Linear yield compounds multiplicatively (0.8^10 ≈ 10.7%), whereas convergent coupling of two 5-step halves yields ~33% overall.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q049",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Chemoselectivity in Hydride Reduction",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "How can a chemist selectively reduce a ketone in the presence of an ester within the same molecule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By adding concentrated sulfuric acid."
+        },
+        {
+          "label": "B",
+          "text": "By utilizing excess lithium aluminum hydride (LiAlH₄) at 100°C."
+        },
+        {
+          "label": "C",
+          "text": "By irradiating with UV light."
+        },
+        {
+          "label": "D",
+          "text": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "By utilizing sodium borohydride (NaBH₄), which reduces electrophilic aldehydes and ketones rapidly but is inert toward less electrophilic esters.",
+      "explanation": "NaBH₄ is a mild reducing agent that exhibits high chemoselectivity for ketones/aldehydes over esters and amides.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch11_q050",
+      "chapter": 11,
+      "chapter_title": "Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Regiochemical Control in Alkene Synthesis",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What synthetic strategy ensures clean conversion of 2-bromopentane to 1-pentene rather than 2-pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group."
+        },
+        {
+          "label": "B",
+          "text": "Using sodium iodide in acetone."
+        },
+        {
+          "label": "C",
+          "text": "Using sodium hydroxide in water at 100°C."
+        },
+        {
+          "label": "D",
+          "text": "Using concentrated sulfuric acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Using a sterically bulky base like potassium tert-butoxide (t-BuOK) to enforce kinetic Hofmann elimination at the terminal methyl group.",
+      "explanation": "Bulky alkoxide bases selectively abstract accessible terminal protons, overriding thermodynamic Zaitsev selectivity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "FGI Footman",
+    "Carbon-Chain Centaur",
+    "Synthon Shapeshifter",
+    "Disconnection Duelist",
+    "Retrosynthesis Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "FGI Footman",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "fgi-footman.png"
+        ]
+      },
+      {
+        "boss": "Carbon-Chain Centaur",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "carbon-chain-centaur.png"
+        ]
+      },
+      {
+        "boss": "Synthon Shapeshifter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "synthon-shapeshifter.png"
+        ]
+      },
+      {
+        "boss": "Disconnection Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "disconnection-duelist.png"
+        ]
+      },
+      {
+        "boss": "Retrosynthesis Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "retrosynthesis-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

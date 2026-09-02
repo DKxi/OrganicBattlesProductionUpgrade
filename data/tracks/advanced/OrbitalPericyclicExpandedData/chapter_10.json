@@ -1,0 +1,2187 @@
+{
+  "schema_version": 2.0,
+  "chapter": 10,
+  "chapter_title": "Radical Reactions",
+  "assigned_boss": "Homolytic Harpy",
+  "bosses": [
+    "Homolytic Harpy",
+    "Chlorination Cyclops",
+    "Allylic Radical Archer",
+    "Bromination Behemoth",
+    "Autooxidation Sovereign"
+  ],
+  "question_count": 50,
+  "boss_strategy": {
+    "description": "5-Tier Boss RPG battle progression with difficulty curve and spell thresholds",
+    "distribution": [
+      {
+        "boss": "Homolytic Harpy",
+        "tier": 1,
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "health": 100,
+        "spells": [
+          20,
+          30,
+          45
+        ]
+      },
+      {
+        "boss": "Chlorination Cyclops",
+        "tier": 2,
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "health": 200,
+        "spells": [
+          25,
+          35,
+          50
+        ]
+      },
+      {
+        "boss": "Allylic Radical Archer",
+        "tier": 3,
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "health": 300,
+        "spells": [
+          30,
+          40,
+          55
+        ]
+      },
+      {
+        "boss": "Bromination Behemoth",
+        "tier": 4,
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "health": 400,
+        "spells": [
+          35,
+          45,
+          60
+        ]
+      },
+      {
+        "boss": "Autooxidation Sovereign",
+        "tier": 5,
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "health": 500,
+        "spells": [
+          40,
+          50,
+          65
+        ]
+      }
+    ],
+    "progression": "10 questions per boss across 5 tiers (6E/4M/0H -> 5E/4M/1H -> 4E/4M/2H -> 3E/4M/3H -> 2E/4M/4H)"
+  },
+  "questions": [
+    {
+      "id": "ch10_q001",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 FMO Interaction Model",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In the Frontier Molecular Orbital analysis of Chapter 10 transformations, what interaction dictates reactivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Overlap between two empty LUMOs."
+        },
+        {
+          "label": "B",
+          "text": "Repulsion between core 1s electrons."
+        },
+        {
+          "label": "C",
+          "text": "Overlap between two filled HOMOs."
+        },
+        {
+          "label": "D",
+          "text": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10.",
+      "explanation": "Chemical reactions are governed by HOMO-LUMO frontier orbital interactions that maximize constructive bonding overlap.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q002",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Woodward-Hoffmann Orbital Symmetry Rule",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "According to the Woodward-Hoffmann rules, what condition allows a thermal pericyclic reaction in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "The reaction must generate free radicals."
+        },
+        {
+          "label": "C",
+          "text": "The reaction must proceed with 100% loss of entropy."
+        },
+        {
+          "label": "D",
+          "text": "The reaction must be heated to over 1000\u00b0C."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10.",
+      "explanation": "Thermally allowed pericyclic processes proceed through transition states where orbital phase symmetry is conserved without crossing high-energy antibonding levels.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q003",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Suprafacial vs Antarafacial Topology",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the difference between suprafacial and antarafacial orbital participation in Chapter 10 cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both terms mean identical facial attack."
+        },
+        {
+          "label": "B",
+          "text": "Antarafacial occurs only in the gas phase."
+        },
+        {
+          "label": "C",
+          "text": "Suprafacial requires breaking all single bonds."
+        },
+        {
+          "label": "D",
+          "text": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10.",
+      "explanation": "Suprafacial processes engage the same face (top-top or bottom-bottom); antarafacial processes engage opposite faces of the participating \u03c0 component.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q004",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Electrocyclic Ring Closure Conrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "For a thermal [4n] \u03c0-electron electrocyclic reaction in Chapter 10, what motion is symmetry-allowed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Complete dissociation into atoms."
+        },
+        {
+          "label": "B",
+          "text": "Disrotatory motion (rotating in opposite directions)."
+        },
+        {
+          "label": "C",
+          "text": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Planar translation without rotation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10.",
+      "explanation": "Thermal 4n electrocyclic reactions require conrotatory rotation to bring terminal lobes into constructive in-phase overlap.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q005",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "Why does photochemical excitation switch the allowed electrocyclic pathway to disrotatory in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light eliminates all orbital nodes."
+        },
+        {
+          "label": "B",
+          "text": "Photons destroy the carbon framework."
+        },
+        {
+          "label": "C",
+          "text": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Photons heat the solvent to 500\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the selection rule from conrotatory to disrotatory (or vice versa).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q006",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Secondary Orbital Overlap Stabilization",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What quantum mechanical effect accounts for endo selectivity in Chapter 10 [4+2] cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Dipole cancellation in nonpolar solvents."
+        },
+        {
+          "label": "C",
+          "text": "Electrostatic repulsion between nuclei."
+        },
+        {
+          "label": "D",
+          "text": "Steric repulsion between alkyl groups."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the interacting \u03c0 systems lowers the transition state energy for the endo pathway.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q007",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Diels-Alder [4s+2s] Thermal Allowedness",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Why is the [4\u03c0_s + 2\u03c0_s] Diels-Alder cycloaddition thermally allowed in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It requires UV light initiation."
+        },
+        {
+          "label": "B",
+          "text": "It proceeds via an antiaromatic 8-electron transition state."
+        },
+        {
+          "label": "C",
+          "text": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "It involves 4 \u03c0 electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10.",
+      "explanation": "A suprafacial 6\u03c0 electron transition state is aromatic and thermally allowed by the Woodward-Hoffmann rules.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q008",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Photochemical [2+2] Cycloaddition Allowedness",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "Why does the [2+2] cycloaddition of two alkenes require photochemical excitation (h\u03bd) in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light changes the alkene into an alkyne."
+        },
+        {
+          "label": "B",
+          "text": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Thermal [2+2] requires liquid nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "Alkenes cannot collide in the dark."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10.",
+      "explanation": "Thermal [2s+2s] has mismatched orbital phases (symmetry forbidden); photochemical excitation enables constructive orbital overlap.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q009",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Sigmatropic [3,3] Rearrangement Orbital Symmetry",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the orbital topology of the transition state in the thermal [3,3]-sigmatropic rearrangement in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An open-chain carbocation-carbanion pair."
+        },
+        {
+          "label": "B",
+          "text": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise diradical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A boat transition state with 4 electrons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10.",
+      "explanation": "Thermal [3,3]-sigmatropic shifts (Cope, Claisen) proceed suprafacially on both 3-carbon fragments via an aromatic 6\u03c0 transition state.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q010",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Ch10 Orbital Perturbation and Regioselectivity",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In unsymmetrical pericyclic reactions in Chapter 10, how do substituents govern regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By preventing orbital overlap."
+        },
+        {
+          "label": "B",
+          "text": "By increasing the molecular weight of the product."
+        },
+        {
+          "label": "C",
+          "text": "By converting all bonds to ionic bonds."
+        },
+        {
+          "label": "D",
+          "text": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10.",
+      "explanation": "Substituents polarize FMO coefficients; the fastest reaction occurs by pairing the largest terminal coefficients of the HOMO and LUMO.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q011",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 FMO Interaction Model",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the Frontier Molecular Orbital analysis of Chapter 10 transformations, what interaction dictates reactivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Overlap between two filled HOMOs."
+        },
+        {
+          "label": "C",
+          "text": "Overlap between two empty LUMOs."
+        },
+        {
+          "label": "D",
+          "text": "Repulsion between core 1s electrons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10.",
+      "explanation": "Chemical reactions are governed by HOMO-LUMO frontier orbital interactions that maximize constructive bonding overlap.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q012",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Woodward-Hoffmann Orbital Symmetry Rule",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "According to the Woodward-Hoffmann rules, what condition allows a thermal pericyclic reaction in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "The reaction must be heated to over 1000\u00b0C."
+        },
+        {
+          "label": "C",
+          "text": "The reaction must proceed with 100% loss of entropy."
+        },
+        {
+          "label": "D",
+          "text": "The reaction must generate free radicals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10.",
+      "explanation": "Thermally allowed pericyclic processes proceed through transition states where orbital phase symmetry is conserved without crossing high-energy antibonding levels.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q013",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Suprafacial vs Antarafacial Topology",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the difference between suprafacial and antarafacial orbital participation in Chapter 10 cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Antarafacial occurs only in the gas phase."
+        },
+        {
+          "label": "B",
+          "text": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Both terms mean identical facial attack."
+        },
+        {
+          "label": "D",
+          "text": "Suprafacial requires breaking all single bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10.",
+      "explanation": "Suprafacial processes engage the same face (top-top or bottom-bottom); antarafacial processes engage opposite faces of the participating \u03c0 component.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q014",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Electrocyclic Ring Closure Conrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "For a thermal [4n] \u03c0-electron electrocyclic reaction in Chapter 10, what motion is symmetry-allowed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Planar translation without rotation."
+        },
+        {
+          "label": "C",
+          "text": "Disrotatory motion (rotating in opposite directions)."
+        },
+        {
+          "label": "D",
+          "text": "Complete dissociation into atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10.",
+      "explanation": "Thermal 4n electrocyclic reactions require conrotatory rotation to bring terminal lobes into constructive in-phase overlap.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q015",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Why does photochemical excitation switch the allowed electrocyclic pathway to disrotatory in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Photons heat the solvent to 500\u00b0C."
+        },
+        {
+          "label": "B",
+          "text": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Light eliminates all orbital nodes."
+        },
+        {
+          "label": "D",
+          "text": "Photons destroy the carbon framework."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the selection rule from conrotatory to disrotatory (or vice versa).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q016",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Secondary Orbital Overlap Stabilization",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "What quantum mechanical effect accounts for endo selectivity in Chapter 10 [4+2] cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric repulsion between alkyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Electrostatic repulsion between nuclei."
+        },
+        {
+          "label": "D",
+          "text": "Dipole cancellation in nonpolar solvents."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the interacting \u03c0 systems lowers the transition state energy for the endo pathway.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q017",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Diels-Alder [4s+2s] Thermal Allowedness",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "Why is the [4\u03c0_s + 2\u03c0_s] Diels-Alder cycloaddition thermally allowed in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "It requires UV light initiation."
+        },
+        {
+          "label": "C",
+          "text": "It involves 4 \u03c0 electrons."
+        },
+        {
+          "label": "D",
+          "text": "It proceeds via an antiaromatic 8-electron transition state."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10.",
+      "explanation": "A suprafacial 6\u03c0 electron transition state is aromatic and thermally allowed by the Woodward-Hoffmann rules.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q018",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Photochemical [2+2] Cycloaddition Allowedness",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Why does the [2+2] cycloaddition of two alkenes require photochemical excitation (h\u03bd) in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light changes the alkene into an alkyne."
+        },
+        {
+          "label": "B",
+          "text": "Alkenes cannot collide in the dark."
+        },
+        {
+          "label": "C",
+          "text": "Thermal [2+2] requires liquid nitrogen."
+        },
+        {
+          "label": "D",
+          "text": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10.",
+      "explanation": "Thermal [2s+2s] has mismatched orbital phases (symmetry forbidden); photochemical excitation enables constructive orbital overlap.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q019",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Sigmatropic [3,3] Rearrangement Orbital Symmetry",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the orbital topology of the transition state in the thermal [3,3]-sigmatropic rearrangement in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A boat transition state with 4 electrons."
+        },
+        {
+          "label": "B",
+          "text": "An open-chain carbocation-carbanion pair."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "A stepwise diradical intermediate."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10.",
+      "explanation": "Thermal [3,3]-sigmatropic shifts (Cope, Claisen) proceed suprafacially on both 3-carbon fragments via an aromatic 6\u03c0 transition state.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q020",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Ch10 Orbital Perturbation and Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "In unsymmetrical pericyclic reactions in Chapter 10, how do substituents govern regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By preventing orbital overlap."
+        },
+        {
+          "label": "B",
+          "text": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "By increasing the molecular weight of the product."
+        },
+        {
+          "label": "D",
+          "text": "By converting all bonds to ionic bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10.",
+      "explanation": "Substituents polarize FMO coefficients; the fastest reaction occurs by pairing the largest terminal coefficients of the HOMO and LUMO.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q021",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 FMO Interaction Model",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In the Frontier Molecular Orbital analysis of Chapter 10 transformations, what interaction dictates reactivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Overlap between two filled HOMOs."
+        },
+        {
+          "label": "B",
+          "text": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Overlap between two empty LUMOs."
+        },
+        {
+          "label": "D",
+          "text": "Repulsion between core 1s electrons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10.",
+      "explanation": "Chemical reactions are governed by HOMO-LUMO frontier orbital interactions that maximize constructive bonding overlap.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q022",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Woodward-Hoffmann Orbital Symmetry Rule",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "According to the Woodward-Hoffmann rules, what condition allows a thermal pericyclic reaction in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "The reaction must be heated to over 1000\u00b0C."
+        },
+        {
+          "label": "C",
+          "text": "The reaction must proceed with 100% loss of entropy."
+        },
+        {
+          "label": "D",
+          "text": "The reaction must generate free radicals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10.",
+      "explanation": "Thermally allowed pericyclic processes proceed through transition states where orbital phase symmetry is conserved without crossing high-energy antibonding levels.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q023",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Suprafacial vs Antarafacial Topology",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the difference between suprafacial and antarafacial orbital participation in Chapter 10 cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Antarafacial occurs only in the gas phase."
+        },
+        {
+          "label": "B",
+          "text": "Both terms mean identical facial attack."
+        },
+        {
+          "label": "C",
+          "text": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Suprafacial requires breaking all single bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10.",
+      "explanation": "Suprafacial processes engage the same face (top-top or bottom-bottom); antarafacial processes engage opposite faces of the participating \u03c0 component.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q024",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Electrocyclic Ring Closure Conrotatory Selection",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "For a thermal [4n] \u03c0-electron electrocyclic reaction in Chapter 10, what motion is symmetry-allowed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Planar translation without rotation."
+        },
+        {
+          "label": "B",
+          "text": "Complete dissociation into atoms."
+        },
+        {
+          "label": "C",
+          "text": "Disrotatory motion (rotating in opposite directions)."
+        },
+        {
+          "label": "D",
+          "text": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10.",
+      "explanation": "Thermal 4n electrocyclic reactions require conrotatory rotation to bring terminal lobes into constructive in-phase overlap.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q025",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "Why does photochemical excitation switch the allowed electrocyclic pathway to disrotatory in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light eliminates all orbital nodes."
+        },
+        {
+          "label": "B",
+          "text": "Photons destroy the carbon framework."
+        },
+        {
+          "label": "C",
+          "text": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Photons heat the solvent to 500\u00b0C."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the selection rule from conrotatory to disrotatory (or vice versa).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q026",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Secondary Orbital Overlap Stabilization",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What quantum mechanical effect accounts for endo selectivity in Chapter 10 [4+2] cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dipole cancellation in nonpolar solvents."
+        },
+        {
+          "label": "B",
+          "text": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Steric repulsion between alkyl groups."
+        },
+        {
+          "label": "D",
+          "text": "Electrostatic repulsion between nuclei."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the interacting \u03c0 systems lowers the transition state energy for the endo pathway.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q027",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Diels-Alder [4s+2s] Thermal Allowedness",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Why is the [4\u03c0_s + 2\u03c0_s] Diels-Alder cycloaddition thermally allowed in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "It requires UV light initiation."
+        },
+        {
+          "label": "C",
+          "text": "It involves 4 \u03c0 electrons."
+        },
+        {
+          "label": "D",
+          "text": "It proceeds via an antiaromatic 8-electron transition state."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10.",
+      "explanation": "A suprafacial 6\u03c0 electron transition state is aromatic and thermally allowed by the Woodward-Hoffmann rules.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q028",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Photochemical [2+2] Cycloaddition Allowedness",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "Why does the [2+2] cycloaddition of two alkenes require photochemical excitation (h\u03bd) in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Light changes the alkene into an alkyne."
+        },
+        {
+          "label": "C",
+          "text": "Alkenes cannot collide in the dark."
+        },
+        {
+          "label": "D",
+          "text": "Thermal [2+2] requires liquid nitrogen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10.",
+      "explanation": "Thermal [2s+2s] has mismatched orbital phases (symmetry forbidden); photochemical excitation enables constructive orbital overlap.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q029",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Sigmatropic [3,3] Rearrangement Orbital Symmetry",
+      "difficulty": "hard",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the orbital topology of the transition state in the thermal [3,3]-sigmatropic rearrangement in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An open-chain carbocation-carbanion pair."
+        },
+        {
+          "label": "B",
+          "text": "A boat transition state with 4 electrons."
+        },
+        {
+          "label": "C",
+          "text": "A stepwise diradical intermediate."
+        },
+        {
+          "label": "D",
+          "text": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10.",
+      "explanation": "Thermal [3,3]-sigmatropic shifts (Cope, Claisen) proceed suprafacially on both 3-carbon fragments via an aromatic 6\u03c0 transition state.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q030",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Ch10 Orbital Perturbation and Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In unsymmetrical pericyclic reactions in Chapter 10, how do substituents govern regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By preventing orbital overlap."
+        },
+        {
+          "label": "B",
+          "text": "By converting all bonds to ionic bonds."
+        },
+        {
+          "label": "C",
+          "text": "By increasing the molecular weight of the product."
+        },
+        {
+          "label": "D",
+          "text": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10.",
+      "explanation": "Substituents polarize FMO coefficients; the fastest reaction occurs by pairing the largest terminal coefficients of the HOMO and LUMO.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q031",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 FMO Interaction Model",
+      "difficulty": "easy",
+      "question_type": "orbital_phase_symmetry",
+      "question": "In the Frontier Molecular Orbital analysis of Chapter 10 transformations, what interaction dictates reactivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Overlap between two empty LUMOs."
+        },
+        {
+          "label": "C",
+          "text": "Overlap between two filled HOMOs."
+        },
+        {
+          "label": "D",
+          "text": "Repulsion between core 1s electrons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10.",
+      "explanation": "Chemical reactions are governed by HOMO-LUMO frontier orbital interactions that maximize constructive bonding overlap.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q032",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Woodward-Hoffmann Orbital Symmetry Rule",
+      "difficulty": "easy",
+      "question_type": "frost_circle_construction",
+      "question": "According to the Woodward-Hoffmann rules, what condition allows a thermal pericyclic reaction in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction must generate free radicals."
+        },
+        {
+          "label": "B",
+          "text": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "The reaction must proceed with 100% loss of entropy."
+        },
+        {
+          "label": "D",
+          "text": "The reaction must be heated to over 1000\u00b0C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10.",
+      "explanation": "Thermally allowed pericyclic processes proceed through transition states where orbital phase symmetry is conserved without crossing high-energy antibonding levels.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q033",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Suprafacial vs Antarafacial Topology",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the difference between suprafacial and antarafacial orbital participation in Chapter 10 cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Antarafacial occurs only in the gas phase."
+        },
+        {
+          "label": "C",
+          "text": "Both terms mean identical facial attack."
+        },
+        {
+          "label": "D",
+          "text": "Suprafacial requires breaking all single bonds."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10.",
+      "explanation": "Suprafacial processes engage the same face (top-top or bottom-bottom); antarafacial processes engage opposite faces of the participating \u03c0 component.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q034",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Electrocyclic Ring Closure Conrotatory Selection",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "For a thermal [4n] \u03c0-electron electrocyclic reaction in Chapter 10, what motion is symmetry-allowed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Disrotatory motion (rotating in opposite directions)."
+        },
+        {
+          "label": "B",
+          "text": "Planar translation without rotation."
+        },
+        {
+          "label": "C",
+          "text": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Complete dissociation into atoms."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10.",
+      "explanation": "Thermal 4n electrocyclic reactions require conrotatory rotation to bring terminal lobes into constructive in-phase overlap.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q035",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Why does photochemical excitation switch the allowed electrocyclic pathway to disrotatory in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Photons heat the solvent to 500\u00b0C."
+        },
+        {
+          "label": "C",
+          "text": "Light eliminates all orbital nodes."
+        },
+        {
+          "label": "D",
+          "text": "Photons destroy the carbon framework."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the selection rule from conrotatory to disrotatory (or vice versa).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q036",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Secondary Orbital Overlap Stabilization",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "What quantum mechanical effect accounts for endo selectivity in Chapter 10 [4+2] cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric repulsion between alkyl groups."
+        },
+        {
+          "label": "B",
+          "text": "Electrostatic repulsion between nuclei."
+        },
+        {
+          "label": "C",
+          "text": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Dipole cancellation in nonpolar solvents."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the interacting \u03c0 systems lowers the transition state energy for the endo pathway.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q037",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Diels-Alder [4s+2s] Thermal Allowedness",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "Why is the [4\u03c0_s + 2\u03c0_s] Diels-Alder cycloaddition thermally allowed in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "It involves 4 \u03c0 electrons."
+        },
+        {
+          "label": "C",
+          "text": "It proceeds via an antiaromatic 8-electron transition state."
+        },
+        {
+          "label": "D",
+          "text": "It requires UV light initiation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10.",
+      "explanation": "A suprafacial 6\u03c0 electron transition state is aromatic and thermally allowed by the Woodward-Hoffmann rules.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q038",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Photochemical [2+2] Cycloaddition Allowedness",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "Why does the [2+2] cycloaddition of two alkenes require photochemical excitation (h\u03bd) in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal [2+2] requires liquid nitrogen."
+        },
+        {
+          "label": "B",
+          "text": "Light changes the alkene into an alkyne."
+        },
+        {
+          "label": "C",
+          "text": "Alkenes cannot collide in the dark."
+        },
+        {
+          "label": "D",
+          "text": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10.",
+      "explanation": "Thermal [2s+2s] has mismatched orbital phases (symmetry forbidden); photochemical excitation enables constructive orbital overlap.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q039",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Sigmatropic [3,3] Rearrangement Orbital Symmetry",
+      "difficulty": "hard",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the orbital topology of the transition state in the thermal [3,3]-sigmatropic rearrangement in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stepwise diradical intermediate."
+        },
+        {
+          "label": "B",
+          "text": "An open-chain carbocation-carbanion pair."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "A boat transition state with 4 electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10.",
+      "explanation": "Thermal [3,3]-sigmatropic shifts (Cope, Claisen) proceed suprafacially on both 3-carbon fragments via an aromatic 6\u03c0 transition state.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q040",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Ch10 Orbital Perturbation and Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "In unsymmetrical pericyclic reactions in Chapter 10, how do substituents govern regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By increasing the molecular weight of the product."
+        },
+        {
+          "label": "B",
+          "text": "By preventing orbital overlap."
+        },
+        {
+          "label": "C",
+          "text": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "By converting all bonds to ionic bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10.",
+      "explanation": "Substituents polarize FMO coefficients; the fastest reaction occurs by pairing the largest terminal coefficients of the HOMO and LUMO.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q041",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 FMO Interaction Model",
+      "difficulty": "easy",
+      "question_type": "homo_lumo_identification",
+      "question": "In the Frontier Molecular Orbital analysis of Chapter 10 transformations, what interaction dictates reactivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Repulsion between core 1s electrons."
+        },
+        {
+          "label": "B",
+          "text": "Overlap between two empty LUMOs."
+        },
+        {
+          "label": "C",
+          "text": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Overlap between two filled HOMOs."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Constructive overlap between the HOMO of the electron donor (nucleophile) and the LUMO of the electron acceptor (electrophile) in Chapter 10.",
+      "explanation": "Chemical reactions are governed by HOMO-LUMO frontier orbital interactions that maximize constructive bonding overlap.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q042",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Woodward-Hoffmann Orbital Symmetry Rule",
+      "difficulty": "easy",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "According to the Woodward-Hoffmann rules, what condition allows a thermal pericyclic reaction in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction must be heated to over 1000\u00b0C."
+        },
+        {
+          "label": "B",
+          "text": "The reaction must proceed with 100% loss of entropy."
+        },
+        {
+          "label": "C",
+          "text": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "The reaction must generate free radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Conservation of orbital symmetry: the symmetry of the reactant molecular orbitals must correlate continuously with ground-state product orbitals in Chapter 10.",
+      "explanation": "Thermally allowed pericyclic processes proceed through transition states where orbital phase symmetry is conserved without crossing high-energy antibonding levels.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q043",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Suprafacial vs Antarafacial Topology",
+      "difficulty": "medium",
+      "question_type": "orbital_phase_symmetry",
+      "question": "What is the difference between suprafacial and antarafacial orbital participation in Chapter 10 cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Suprafacial requires breaking all single bonds."
+        },
+        {
+          "label": "B",
+          "text": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Both terms mean identical facial attack."
+        },
+        {
+          "label": "D",
+          "text": "Antarafacial occurs only in the gas phase."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Suprafacial reactions involve bonding on the SAME face of the \u03c0 system at both termini; antarafacial involves bonding on OPPOSITE faces in Chapter 10.",
+      "explanation": "Suprafacial processes engage the same face (top-top or bottom-bottom); antarafacial processes engage opposite faces of the participating \u03c0 component.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q044",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Electrocyclic Ring Closure Conrotatory Selection",
+      "difficulty": "medium",
+      "question_type": "frost_circle_construction",
+      "question": "For a thermal [4n] \u03c0-electron electrocyclic reaction in Chapter 10, what motion is symmetry-allowed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Disrotatory motion (rotating in opposite directions)."
+        },
+        {
+          "label": "B",
+          "text": "Planar translation without rotation."
+        },
+        {
+          "label": "C",
+          "text": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Complete dissociation into atoms."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Conrotatory motion (both terminal p orbitals rotate in the SAME direction) dictated by opposite phase signs in the HOMO in Chapter 10.",
+      "explanation": "Thermal 4n electrocyclic reactions require conrotatory rotation to bring terminal lobes into constructive in-phase overlap.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q045",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Photochemical Electrocyclic Disrotatory Selection",
+      "difficulty": "medium",
+      "question_type": "homo_lumo_identification",
+      "question": "Why does photochemical excitation switch the allowed electrocyclic pathway to disrotatory in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Light eliminates all orbital nodes."
+        },
+        {
+          "label": "B",
+          "text": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "Photons destroy the carbon framework."
+        },
+        {
+          "label": "D",
+          "text": "Photons heat the solvent to 500\u00b0C."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Light promotes an electron to the next higher orbital (\u03c8_{n+1}*), inverting the terminal orbital symmetry of the new HOMO in Chapter 10.",
+      "explanation": "Photochemical excitation inverts the orbital symmetry of the HOMO, switching the selection rule from conrotatory to disrotatory (or vice versa).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q046",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Secondary Orbital Overlap Stabilization",
+      "difficulty": "medium",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "What quantum mechanical effect accounts for endo selectivity in Chapter 10 [4+2] cycloadditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dipole cancellation in nonpolar solvents."
+        },
+        {
+          "label": "B",
+          "text": "Steric repulsion between alkyl groups."
+        },
+        {
+          "label": "C",
+          "text": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "Electrostatic repulsion between nuclei."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Favorable secondary orbital overlap between the developing diene \u03c0 system and the electron-withdrawing dienophile substituent in Chapter 10.",
+      "explanation": "Secondary orbital overlap between non-bonding portions of the interacting \u03c0 systems lowers the transition state energy for the endo pathway.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q047",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Diels-Alder [4s+2s] Thermal Allowedness",
+      "difficulty": "hard",
+      "question_type": "orbital_phase_symmetry",
+      "question": "Why is the [4\u03c0_s + 2\u03c0_s] Diels-Alder cycloaddition thermally allowed in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It involves 4 \u03c0 electrons."
+        },
+        {
+          "label": "B",
+          "text": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "It requires UV light initiation."
+        },
+        {
+          "label": "D",
+          "text": "It proceeds via an antiaromatic 8-electron transition state."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It involves 6 \u03c0 electrons (a H\u00fcckel-type [4n+2] system, n=1) with suprafacial-suprafacial overlap and zero phase inversions in Chapter 10.",
+      "explanation": "A suprafacial 6\u03c0 electron transition state is aromatic and thermally allowed by the Woodward-Hoffmann rules.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q048",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Photochemical [2+2] Cycloaddition Allowedness",
+      "difficulty": "hard",
+      "question_type": "frost_circle_construction",
+      "question": "Why does the [2+2] cycloaddition of two alkenes require photochemical excitation (h\u03bd) in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10."
+        },
+        {
+          "label": "B",
+          "text": "Alkenes cannot collide in the dark."
+        },
+        {
+          "label": "C",
+          "text": "Light changes the alkene into an alkyne."
+        },
+        {
+          "label": "D",
+          "text": "Thermal [2+2] requires liquid nitrogen."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal [2_s + 2_s] is symmetry-forbidden (4n antiaromatic TS); photochemical excitation populates the \u03c0* orbital, making [2_s + 2_s] symmetry-allowed in Chapter 10.",
+      "explanation": "Thermal [2s+2s] has mismatched orbital phases (symmetry forbidden); photochemical excitation enables constructive orbital overlap.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q049",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Sigmatropic [3,3] Rearrangement Orbital Symmetry",
+      "difficulty": "hard",
+      "question_type": "homo_lumo_identification",
+      "question": "What is the orbital topology of the transition state in the thermal [3,3]-sigmatropic rearrangement in Chapter 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A boat transition state with 4 electrons."
+        },
+        {
+          "label": "B",
+          "text": "A stepwise diradical intermediate."
+        },
+        {
+          "label": "C",
+          "text": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10."
+        },
+        {
+          "label": "D",
+          "text": "An open-chain carbocation-carbanion pair."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A concerted, aromatic 6-electron chair-like transition state with suprafacial-suprafacial orbital overlap across both allylic fragments in Chapter 10.",
+      "explanation": "Thermal [3,3]-sigmatropic shifts (Cope, Claisen) proceed suprafacially on both 3-carbon fragments via an aromatic 6\u03c0 transition state.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q050",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Ch10 Orbital Perturbation and Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "woodward_hoffmann_selection",
+      "question": "In unsymmetrical pericyclic reactions in Chapter 10, how do substituents govern regioselectivity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By converting all bonds to ionic bonds."
+        },
+        {
+          "label": "B",
+          "text": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10."
+        },
+        {
+          "label": "C",
+          "text": "By increasing the molecular weight of the product."
+        },
+        {
+          "label": "D",
+          "text": "By preventing orbital overlap."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Electron-donating and electron-withdrawing groups perturb FMO coefficients, directing union between the atom with the largest HOMO coefficient and the largest LUMO coefficient in Chapter 10.",
+      "explanation": "Substituents polarize FMO coefficients; the fastest reaction occurs by pairing the largest terminal coefficients of the HOMO and LUMO.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    }
+  ]
+}

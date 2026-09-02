@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 10,
+  "chapter_title": "Radical Reactions",
+  "assigned_boss": "Homolytic Harpy",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch10_q001",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "NBS Allylic Bromination Low-Concentration Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How does N-bromosuccinimide (NBS) maintain a low steady-state concentration of molecular Br₂ during allylic bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NBS dissolves all bromine into the gas phase."
+        },
+        {
+          "label": "B",
+          "text": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition."
+        },
+        {
+          "label": "C",
+          "text": "NBS acts as a Lewis acid that destroys bromine."
+        },
+        {
+          "label": "D",
+          "text": "NBS completely prevents HBr from forming."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition.",
+      "explanation": "Maintaining extremely low [Br₂] prevents ionic electrophilic addition across the double bond, ensuring selective allylic radical substitution.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q002",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Allylic Radical Resonance Stabilization",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is the activation energy for allylic C-H hydrogen abstraction (~360 kJ/mol) significantly lower than for aliphatic C-H (~410 kJ/mol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alkene π bond repels the incoming radical initiator."
+        },
+        {
+          "label": "B",
+          "text": "Allylic C-H bonds are ionic rather than covalent."
+        },
+        {
+          "label": "C",
+          "text": "Allylic radicals form three-membered cyclic rings."
+        },
+        {
+          "label": "D",
+          "text": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons.",
+      "explanation": "Delocalization of the unpaired electron across the 3-carbon π system lowers the bond dissociation energy and transition state energy.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q003",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Benzylic Radical Hyper-Resonance",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How many resonance structures distribute the unpaired electron in a benzyl radical (PhCH₂•)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two structures involving meta positions."
+        },
+        {
+          "label": "B",
+          "text": "Only one localized structure."
+        },
+        {
+          "label": "C",
+          "text": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors."
+        },
+        {
+          "label": "D",
+          "text": "Six structures with ring expansion to tropylium."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors.",
+      "explanation": "The unpaired electron is delocalized onto the benzylic carbon and the ortho and para positions of the aromatic ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q004",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Chlorination vs Bromination Radical Selectivity",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is radical bromination highly regioselective for tertiary positions (1600:1 vs 1°) while chlorination is unselective (5:1 vs 1°)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine radicals cannot abstract primary hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS."
+        },
+        {
+          "label": "C",
+          "text": "Bromine radicals react via ionic mechanisms."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine radicals are sterically much larger than bromine radicals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS.",
+      "explanation": "Endothermic abstraction by bromine creates a late transition state that fully senses differences in radical intermediate stabilities.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q005",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Radical Addition of HBr to Alkenes (Peroxide Effect)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the 'peroxide effect' reverse the regioselectivity of HBr addition to alkenes, but fails for HCl and HI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HCl and HI are insoluble in peroxides."
+        },
+        {
+          "label": "B",
+          "text": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl."
+        },
+        {
+          "label": "C",
+          "text": "HCl forms carbocations exclusively under all conditions."
+        },
+        {
+          "label": "D",
+          "text": "Peroxides only react with bromine atoms."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl.",
+      "explanation": "Radical chain propagation is thermodynamically feasible only when both propagation steps have favorable negative or near-zero free energies (unique to HBr).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q006",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Radical Polymerization Chain Propagation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the elementary step that drives polymer chain growth in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coupling of two polymer radicals with loss of hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end."
+        },
+        {
+          "label": "C",
+          "text": "Elimination of phenyl radicals into the solvent."
+        },
+        {
+          "label": "D",
+          "text": "Proton transfer from the initiator to the monomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end.",
+      "explanation": "Chain propagation proceeds by repeated addition of the propagating radical to monomer double bonds, regenerating the active radical center.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q007",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Autooxidation of Ethers Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the hazardous intermediate formed when diethyl ether is exposed to atmospheric oxygen and light over time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A harmless dimer of diethyl ether."
+        },
+        {
+          "label": "B",
+          "text": "Gaseous carbon dioxide and methane."
+        },
+        {
+          "label": "C",
+          "text": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping."
+        },
+        {
+          "label": "D",
+          "text": "Pure liquid ethanol."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping.",
+      "explanation": "The α-hydrogens adjacent to ether oxygen are easily abstracted by radicals, initiating autooxidation to explosive organic hydroperoxides.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q008",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "BHT Antioxidant Radical Trapping Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "How does butylated hydroxytoluene (BHT) chemically inhibit radical chain degradation in foods and polymers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BHT reacts with water to form sulfuric acid."
+        },
+        {
+          "label": "B",
+          "text": "BHT destroys all oxygen molecules in the mixture."
+        },
+        {
+          "label": "C",
+          "text": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions."
+        },
+        {
+          "label": "D",
+          "text": "BHT acts as a photochemical shield reflecting UV light."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions.",
+      "explanation": "The resulting hindered phenoxy radical is stabilized by resonance and sterically shielded by two tert-butyl groups, halting radical chain propagation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q009",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Tributyltin Hydride Radical Dehalogenation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the role of AIBN in the Barton radical dehalogenation using Bu₃SnH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AIBN acts as a strong Lewis acid catalyst."
+        },
+        {
+          "label": "B",
+          "text": "AIBN coordinates to the alkyl halide to form an onium salt."
+        },
+        {
+          "label": "C",
+          "text": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical."
+        },
+        {
+          "label": "D",
+          "text": "AIBN reduces the alkyl halide via SN2."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical.",
+      "explanation": "AIBN is a radical initiator that homolytically cleaves with loss of N₂ gas to launch the radical chain cycle.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q010",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Homolytic Harpy",
+      "topic": "Radical-Radical Combination vs Disproportionation",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What are the two competing pathways for radical chain termination when two alkyl radicals collide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxidation to carboxylic acids and reduction to alcohols."
+        },
+        {
+          "label": "B",
+          "text": "Electrocyclic ring opening and cyclization."
+        },
+        {
+          "label": "C",
+          "text": "Ionization into carbocations and precipitation as salts."
+        },
+        {
+          "label": "D",
+          "text": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene).",
+      "explanation": "Two radicals can terminate either by direct coupling to form a longer alkane or by hydrogen abstraction to form an alkane/alkene pair.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "homolytic-harpy.png"
+      ]
+    },
+    {
+      "id": "ch10_q011",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Benzylic Radical Hyper-Resonance",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How many resonance structures distribute the unpaired electron in a benzyl radical (PhCH₂•)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Six structures with ring expansion to tropylium."
+        },
+        {
+          "label": "B",
+          "text": "Only one localized structure."
+        },
+        {
+          "label": "C",
+          "text": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors."
+        },
+        {
+          "label": "D",
+          "text": "Two structures involving meta positions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors.",
+      "explanation": "The unpaired electron is delocalized onto the benzylic carbon and the ortho and para positions of the aromatic ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q012",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Chlorination vs Bromination Radical Selectivity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is radical bromination highly regioselective for tertiary positions (1600:1 vs 1°) while chlorination is unselective (5:1 vs 1°)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromine radicals react via ionic mechanisms."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine radicals are sterically much larger than bromine radicals."
+        },
+        {
+          "label": "C",
+          "text": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine radicals cannot abstract primary hydrogens."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS.",
+      "explanation": "Endothermic abstraction by bromine creates a late transition state that fully senses differences in radical intermediate stabilities.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q013",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Radical Addition of HBr to Alkenes (Peroxide Effect)",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the 'peroxide effect' reverse the regioselectivity of HBr addition to alkenes, but fails for HCl and HI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peroxides only react with bromine atoms."
+        },
+        {
+          "label": "B",
+          "text": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl."
+        },
+        {
+          "label": "C",
+          "text": "HCl and HI are insoluble in peroxides."
+        },
+        {
+          "label": "D",
+          "text": "HCl forms carbocations exclusively under all conditions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl.",
+      "explanation": "Radical chain propagation is thermodynamically feasible only when both propagation steps have favorable negative or near-zero free energies (unique to HBr).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q014",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Radical Polymerization Chain Propagation",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the elementary step that drives polymer chain growth in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Elimination of phenyl radicals into the solvent."
+        },
+        {
+          "label": "B",
+          "text": "Proton transfer from the initiator to the monomer."
+        },
+        {
+          "label": "C",
+          "text": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end."
+        },
+        {
+          "label": "D",
+          "text": "Coupling of two polymer radicals with loss of hydrogen."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end.",
+      "explanation": "Chain propagation proceeds by repeated addition of the propagating radical to monomer double bonds, regenerating the active radical center.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q015",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Autooxidation of Ethers Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the hazardous intermediate formed when diethyl ether is exposed to atmospheric oxygen and light over time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping."
+        },
+        {
+          "label": "B",
+          "text": "Pure liquid ethanol."
+        },
+        {
+          "label": "C",
+          "text": "Gaseous carbon dioxide and methane."
+        },
+        {
+          "label": "D",
+          "text": "A harmless dimer of diethyl ether."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping.",
+      "explanation": "The α-hydrogens adjacent to ether oxygen are easily abstracted by radicals, initiating autooxidation to explosive organic hydroperoxides.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q016",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "BHT Antioxidant Radical Trapping Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How does butylated hydroxytoluene (BHT) chemically inhibit radical chain degradation in foods and polymers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BHT reacts with water to form sulfuric acid."
+        },
+        {
+          "label": "B",
+          "text": "BHT acts as a photochemical shield reflecting UV light."
+        },
+        {
+          "label": "C",
+          "text": "BHT destroys all oxygen molecules in the mixture."
+        },
+        {
+          "label": "D",
+          "text": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions.",
+      "explanation": "The resulting hindered phenoxy radical is stabilized by resonance and sterically shielded by two tert-butyl groups, halting radical chain propagation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q017",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Tributyltin Hydride Radical Dehalogenation",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the role of AIBN in the Barton radical dehalogenation using Bu₃SnH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AIBN coordinates to the alkyl halide to form an onium salt."
+        },
+        {
+          "label": "B",
+          "text": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical."
+        },
+        {
+          "label": "C",
+          "text": "AIBN acts as a strong Lewis acid catalyst."
+        },
+        {
+          "label": "D",
+          "text": "AIBN reduces the alkyl halide via SN2."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical.",
+      "explanation": "AIBN is a radical initiator that homolytically cleaves with loss of N₂ gas to launch the radical chain cycle.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q018",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Radical-Radical Combination vs Disproportionation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What are the two competing pathways for radical chain termination when two alkyl radicals collide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene)."
+        },
+        {
+          "label": "B",
+          "text": "Electrocyclic ring opening and cyclization."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation to carboxylic acids and reduction to alcohols."
+        },
+        {
+          "label": "D",
+          "text": "Ionization into carbocations and precipitation as salts."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene).",
+      "explanation": "Two radicals can terminate either by direct coupling to form a longer alkane or by hydrogen abstraction to form an alkane/alkene pair.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q019",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "NBS Allylic Bromination Low-Concentration Mechanism",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How does N-bromosuccinimide (NBS) maintain a low steady-state concentration of molecular Br₂ during allylic bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NBS acts as a Lewis acid that destroys bromine."
+        },
+        {
+          "label": "B",
+          "text": "NBS dissolves all bromine into the gas phase."
+        },
+        {
+          "label": "C",
+          "text": "NBS completely prevents HBr from forming."
+        },
+        {
+          "label": "D",
+          "text": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition.",
+      "explanation": "Maintaining extremely low [Br₂] prevents ionic electrophilic addition across the double bond, ensuring selective allylic radical substitution.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q020",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Chlorination Cyclops",
+      "topic": "Allylic Radical Resonance Stabilization",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the activation energy for allylic C-H hydrogen abstraction (~360 kJ/mol) significantly lower than for aliphatic C-H (~410 kJ/mol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The alkene π bond repels the incoming radical initiator."
+        },
+        {
+          "label": "B",
+          "text": "Allylic radicals form three-membered cyclic rings."
+        },
+        {
+          "label": "C",
+          "text": "Allylic C-H bonds are ionic rather than covalent."
+        },
+        {
+          "label": "D",
+          "text": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons.",
+      "explanation": "Delocalization of the unpaired electron across the 3-carbon π system lowers the bond dissociation energy and transition state energy.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "chlorination-cyclops.png"
+      ]
+    },
+    {
+      "id": "ch10_q021",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Radical Addition of HBr to Alkenes (Peroxide Effect)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does the 'peroxide effect' reverse the regioselectivity of HBr addition to alkenes, but fails for HCl and HI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peroxides only react with bromine atoms."
+        },
+        {
+          "label": "B",
+          "text": "HCl and HI are insoluble in peroxides."
+        },
+        {
+          "label": "C",
+          "text": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl."
+        },
+        {
+          "label": "D",
+          "text": "HCl forms carbocations exclusively under all conditions."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl.",
+      "explanation": "Radical chain propagation is thermodynamically feasible only when both propagation steps have favorable negative or near-zero free energies (unique to HBr).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q022",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Radical Polymerization Chain Propagation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the elementary step that drives polymer chain growth in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Elimination of phenyl radicals into the solvent."
+        },
+        {
+          "label": "B",
+          "text": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end."
+        },
+        {
+          "label": "C",
+          "text": "Coupling of two polymer radicals with loss of hydrogen."
+        },
+        {
+          "label": "D",
+          "text": "Proton transfer from the initiator to the monomer."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end.",
+      "explanation": "Chain propagation proceeds by repeated addition of the propagating radical to monomer double bonds, regenerating the active radical center.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q023",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Autooxidation of Ethers Mechanism",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the hazardous intermediate formed when diethyl ether is exposed to atmospheric oxygen and light over time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping."
+        },
+        {
+          "label": "B",
+          "text": "Gaseous carbon dioxide and methane."
+        },
+        {
+          "label": "C",
+          "text": "A harmless dimer of diethyl ether."
+        },
+        {
+          "label": "D",
+          "text": "Pure liquid ethanol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping.",
+      "explanation": "The α-hydrogens adjacent to ether oxygen are easily abstracted by radicals, initiating autooxidation to explosive organic hydroperoxides.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q024",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "BHT Antioxidant Radical Trapping Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "How does butylated hydroxytoluene (BHT) chemically inhibit radical chain degradation in foods and polymers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BHT acts as a photochemical shield reflecting UV light."
+        },
+        {
+          "label": "B",
+          "text": "BHT destroys all oxygen molecules in the mixture."
+        },
+        {
+          "label": "C",
+          "text": "BHT reacts with water to form sulfuric acid."
+        },
+        {
+          "label": "D",
+          "text": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions.",
+      "explanation": "The resulting hindered phenoxy radical is stabilized by resonance and sterically shielded by two tert-butyl groups, halting radical chain propagation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q025",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Tributyltin Hydride Radical Dehalogenation",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the role of AIBN in the Barton radical dehalogenation using Bu₃SnH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical."
+        },
+        {
+          "label": "B",
+          "text": "AIBN reduces the alkyl halide via SN2."
+        },
+        {
+          "label": "C",
+          "text": "AIBN coordinates to the alkyl halide to form an onium salt."
+        },
+        {
+          "label": "D",
+          "text": "AIBN acts as a strong Lewis acid catalyst."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical.",
+      "explanation": "AIBN is a radical initiator that homolytically cleaves with loss of N₂ gas to launch the radical chain cycle.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q026",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Radical-Radical Combination vs Disproportionation",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What are the two competing pathways for radical chain termination when two alkyl radicals collide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene)."
+        },
+        {
+          "label": "B",
+          "text": "Ionization into carbocations and precipitation as salts."
+        },
+        {
+          "label": "C",
+          "text": "Oxidation to carboxylic acids and reduction to alcohols."
+        },
+        {
+          "label": "D",
+          "text": "Electrocyclic ring opening and cyclization."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene).",
+      "explanation": "Two radicals can terminate either by direct coupling to form a longer alkane or by hydrogen abstraction to form an alkane/alkene pair.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q027",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "NBS Allylic Bromination Low-Concentration Mechanism",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "How does N-bromosuccinimide (NBS) maintain a low steady-state concentration of molecular Br₂ during allylic bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NBS acts as a Lewis acid that destroys bromine."
+        },
+        {
+          "label": "B",
+          "text": "NBS completely prevents HBr from forming."
+        },
+        {
+          "label": "C",
+          "text": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition."
+        },
+        {
+          "label": "D",
+          "text": "NBS dissolves all bromine into the gas phase."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition.",
+      "explanation": "Maintaining extremely low [Br₂] prevents ionic electrophilic addition across the double bond, ensuring selective allylic radical substitution.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q028",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Allylic Radical Resonance Stabilization",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is the activation energy for allylic C-H hydrogen abstraction (~360 kJ/mol) significantly lower than for aliphatic C-H (~410 kJ/mol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons."
+        },
+        {
+          "label": "B",
+          "text": "Allylic radicals form three-membered cyclic rings."
+        },
+        {
+          "label": "C",
+          "text": "Allylic C-H bonds are ionic rather than covalent."
+        },
+        {
+          "label": "D",
+          "text": "The alkene π bond repels the incoming radical initiator."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons.",
+      "explanation": "Delocalization of the unpaired electron across the 3-carbon π system lowers the bond dissociation energy and transition state energy.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q029",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Benzylic Radical Hyper-Resonance",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How many resonance structures distribute the unpaired electron in a benzyl radical (PhCH₂•)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Six structures with ring expansion to tropylium."
+        },
+        {
+          "label": "B",
+          "text": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors."
+        },
+        {
+          "label": "C",
+          "text": "Two structures involving meta positions."
+        },
+        {
+          "label": "D",
+          "text": "Only one localized structure."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors.",
+      "explanation": "The unpaired electron is delocalized onto the benzylic carbon and the ortho and para positions of the aromatic ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q030",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Allylic Radical Archer",
+      "topic": "Chlorination vs Bromination Radical Selectivity",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why is radical bromination highly regioselective for tertiary positions (1600:1 vs 1°) while chlorination is unselective (5:1 vs 1°)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine radicals cannot abstract primary hydrogens."
+        },
+        {
+          "label": "B",
+          "text": "Bromine radicals react via ionic mechanisms."
+        },
+        {
+          "label": "C",
+          "text": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine radicals are sterically much larger than bromine radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS.",
+      "explanation": "Endothermic abstraction by bromine creates a late transition state that fully senses differences in radical intermediate stabilities.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "allylic-radical-archer.png"
+      ]
+    },
+    {
+      "id": "ch10_q031",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Autooxidation of Ethers Mechanism",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the hazardous intermediate formed when diethyl ether is exposed to atmospheric oxygen and light over time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pure liquid ethanol."
+        },
+        {
+          "label": "B",
+          "text": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping."
+        },
+        {
+          "label": "C",
+          "text": "A harmless dimer of diethyl ether."
+        },
+        {
+          "label": "D",
+          "text": "Gaseous carbon dioxide and methane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping.",
+      "explanation": "The α-hydrogens adjacent to ether oxygen are easily abstracted by radicals, initiating autooxidation to explosive organic hydroperoxides.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q032",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "BHT Antioxidant Radical Trapping Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "How does butylated hydroxytoluene (BHT) chemically inhibit radical chain degradation in foods and polymers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions."
+        },
+        {
+          "label": "B",
+          "text": "BHT acts as a photochemical shield reflecting UV light."
+        },
+        {
+          "label": "C",
+          "text": "BHT destroys all oxygen molecules in the mixture."
+        },
+        {
+          "label": "D",
+          "text": "BHT reacts with water to form sulfuric acid."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions.",
+      "explanation": "The resulting hindered phenoxy radical is stabilized by resonance and sterically shielded by two tert-butyl groups, halting radical chain propagation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q033",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Tributyltin Hydride Radical Dehalogenation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the role of AIBN in the Barton radical dehalogenation using Bu₃SnH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical."
+        },
+        {
+          "label": "B",
+          "text": "AIBN acts as a strong Lewis acid catalyst."
+        },
+        {
+          "label": "C",
+          "text": "AIBN coordinates to the alkyl halide to form an onium salt."
+        },
+        {
+          "label": "D",
+          "text": "AIBN reduces the alkyl halide via SN2."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical.",
+      "explanation": "AIBN is a radical initiator that homolytically cleaves with loss of N₂ gas to launch the radical chain cycle.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q034",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Radical-Radical Combination vs Disproportionation",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What are the two competing pathways for radical chain termination when two alkyl radicals collide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ionization into carbocations and precipitation as salts."
+        },
+        {
+          "label": "B",
+          "text": "Oxidation to carboxylic acids and reduction to alcohols."
+        },
+        {
+          "label": "C",
+          "text": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene)."
+        },
+        {
+          "label": "D",
+          "text": "Electrocyclic ring opening and cyclization."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene).",
+      "explanation": "Two radicals can terminate either by direct coupling to form a longer alkane or by hydrogen abstraction to form an alkane/alkene pair.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q035",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "NBS Allylic Bromination Low-Concentration Mechanism",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "How does N-bromosuccinimide (NBS) maintain a low steady-state concentration of molecular Br₂ during allylic bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NBS completely prevents HBr from forming."
+        },
+        {
+          "label": "B",
+          "text": "NBS acts as a Lewis acid that destroys bromine."
+        },
+        {
+          "label": "C",
+          "text": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition."
+        },
+        {
+          "label": "D",
+          "text": "NBS dissolves all bromine into the gas phase."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition.",
+      "explanation": "Maintaining extremely low [Br₂] prevents ionic electrophilic addition across the double bond, ensuring selective allylic radical substitution.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q036",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Allylic Radical Resonance Stabilization",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is the activation energy for allylic C-H hydrogen abstraction (~360 kJ/mol) significantly lower than for aliphatic C-H (~410 kJ/mol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons."
+        },
+        {
+          "label": "B",
+          "text": "Allylic C-H bonds are ionic rather than covalent."
+        },
+        {
+          "label": "C",
+          "text": "Allylic radicals form three-membered cyclic rings."
+        },
+        {
+          "label": "D",
+          "text": "The alkene π bond repels the incoming radical initiator."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons.",
+      "explanation": "Delocalization of the unpaired electron across the 3-carbon π system lowers the bond dissociation energy and transition state energy.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q037",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Benzylic Radical Hyper-Resonance",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "How many resonance structures distribute the unpaired electron in a benzyl radical (PhCH₂•)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only one localized structure."
+        },
+        {
+          "label": "B",
+          "text": "Two structures involving meta positions."
+        },
+        {
+          "label": "C",
+          "text": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors."
+        },
+        {
+          "label": "D",
+          "text": "Six structures with ring expansion to tropylium."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors.",
+      "explanation": "The unpaired electron is delocalized onto the benzylic carbon and the ortho and para positions of the aromatic ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q038",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Chlorination vs Bromination Radical Selectivity",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is radical bromination highly regioselective for tertiary positions (1600:1 vs 1°) while chlorination is unselective (5:1 vs 1°)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine radicals are sterically much larger than bromine radicals."
+        },
+        {
+          "label": "B",
+          "text": "Chlorine radicals cannot abstract primary hydrogens."
+        },
+        {
+          "label": "C",
+          "text": "Bromine radicals react via ionic mechanisms."
+        },
+        {
+          "label": "D",
+          "text": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS.",
+      "explanation": "Endothermic abstraction by bromine creates a late transition state that fully senses differences in radical intermediate stabilities.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q039",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Radical Addition of HBr to Alkenes (Peroxide Effect)",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why does the 'peroxide effect' reverse the regioselectivity of HBr addition to alkenes, but fails for HCl and HI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl."
+        },
+        {
+          "label": "B",
+          "text": "Peroxides only react with bromine atoms."
+        },
+        {
+          "label": "C",
+          "text": "HCl forms carbocations exclusively under all conditions."
+        },
+        {
+          "label": "D",
+          "text": "HCl and HI are insoluble in peroxides."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl.",
+      "explanation": "Radical chain propagation is thermodynamically feasible only when both propagation steps have favorable negative or near-zero free energies (unique to HBr).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q040",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Bromination Behemoth",
+      "topic": "Radical Polymerization Chain Propagation",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the elementary step that drives polymer chain growth in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coupling of two polymer radicals with loss of hydrogen."
+        },
+        {
+          "label": "B",
+          "text": "Proton transfer from the initiator to the monomer."
+        },
+        {
+          "label": "C",
+          "text": "Elimination of phenyl radicals into the solvent."
+        },
+        {
+          "label": "D",
+          "text": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end.",
+      "explanation": "Chain propagation proceeds by repeated addition of the propagating radical to monomer double bonds, regenerating the active radical center.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "bromination-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch10_q041",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Tributyltin Hydride Radical Dehalogenation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the role of AIBN in the Barton radical dehalogenation using Bu₃SnH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AIBN coordinates to the alkyl halide to form an onium salt."
+        },
+        {
+          "label": "B",
+          "text": "AIBN reduces the alkyl halide via SN2."
+        },
+        {
+          "label": "C",
+          "text": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical."
+        },
+        {
+          "label": "D",
+          "text": "AIBN acts as a strong Lewis acid catalyst."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "AIBN undergoes thermal homolysis to generate isobutyronitrile radicals that abstract hydrogen from Bu₃SnH, generating the chain-propagating Bu₃Sn• radical.",
+      "explanation": "AIBN is a radical initiator that homolytically cleaves with loss of N₂ gas to launch the radical chain cycle.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q042",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Radical-Radical Combination vs Disproportionation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What are the two competing pathways for radical chain termination when two alkyl radicals collide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ionization into carbocations and precipitation as salts."
+        },
+        {
+          "label": "B",
+          "text": "Electrocyclic ring opening and cyclization."
+        },
+        {
+          "label": "C",
+          "text": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene)."
+        },
+        {
+          "label": "D",
+          "text": "Oxidation to carboxylic acids and reduction to alcohols."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Combination (covalent C-C coupling) and Disproportionation (hydrogen transfer from one radical to the other, yielding an alkane and an alkene).",
+      "explanation": "Two radicals can terminate either by direct coupling to form a longer alkane or by hydrogen abstraction to form an alkane/alkene pair.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q043",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "NBS Allylic Bromination Low-Concentration Mechanism",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "How does N-bromosuccinimide (NBS) maintain a low steady-state concentration of molecular Br₂ during allylic bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NBS completely prevents HBr from forming."
+        },
+        {
+          "label": "B",
+          "text": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition."
+        },
+        {
+          "label": "C",
+          "text": "NBS acts as a Lewis acid that destroys bromine."
+        },
+        {
+          "label": "D",
+          "text": "NBS dissolves all bromine into the gas phase."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NBS reacts rapidly with trace HBr generated in the reaction to produce Br₂ at low steady-state concentrations, favoring radical substitution over ionic addition.",
+      "explanation": "Maintaining extremely low [Br₂] prevents ionic electrophilic addition across the double bond, ensuring selective allylic radical substitution.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q044",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Allylic Radical Resonance Stabilization",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the activation energy for allylic C-H hydrogen abstraction (~360 kJ/mol) significantly lower than for aliphatic C-H (~410 kJ/mol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Allylic radicals form three-membered cyclic rings."
+        },
+        {
+          "label": "B",
+          "text": "The alkene π bond repels the incoming radical initiator."
+        },
+        {
+          "label": "C",
+          "text": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons."
+        },
+        {
+          "label": "D",
+          "text": "Allylic C-H bonds are ionic rather than covalent."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The developing allylic radical in the transition state is stabilized by continuous orbital overlap with the adjacent alkene π bond across three sp² carbons.",
+      "explanation": "Delocalization of the unpaired electron across the 3-carbon π system lowers the bond dissociation energy and transition state energy.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q045",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Benzylic Radical Hyper-Resonance",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "How many resonance structures distribute the unpaired electron in a benzyl radical (PhCH₂•)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Six structures with ring expansion to tropylium."
+        },
+        {
+          "label": "B",
+          "text": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors."
+        },
+        {
+          "label": "C",
+          "text": "Only one localized structure."
+        },
+        {
+          "label": "D",
+          "text": "Two structures involving meta positions."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Four resonance structures: one benzylic structure and three ortho/para cyclohexadienyl radical contributors.",
+      "explanation": "The unpaired electron is delocalized onto the benzylic carbon and the ortho and para positions of the aromatic ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q046",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Chlorination vs Bromination Radical Selectivity",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is radical bromination highly regioselective for tertiary positions (1600:1 vs 1°) while chlorination is unselective (5:1 vs 1°)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorine radicals are sterically much larger than bromine radicals."
+        },
+        {
+          "label": "B",
+          "text": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS."
+        },
+        {
+          "label": "C",
+          "text": "Bromine radicals react via ionic mechanisms."
+        },
+        {
+          "label": "D",
+          "text": "Chlorine radicals cannot abstract primary hydrogens."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromination hydrogen abstraction is endothermic with a late transition state resembling the radical intermediate (Hammond postulate), whereas chlorination is exothermic with an early TS.",
+      "explanation": "Endothermic abstraction by bromine creates a late transition state that fully senses differences in radical intermediate stabilities.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q047",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Radical Addition of HBr to Alkenes (Peroxide Effect)",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does the 'peroxide effect' reverse the regioselectivity of HBr addition to alkenes, but fails for HCl and HI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peroxides only react with bromine atoms."
+        },
+        {
+          "label": "B",
+          "text": "HCl forms carbocations exclusively under all conditions."
+        },
+        {
+          "label": "C",
+          "text": "HCl and HI are insoluble in peroxides."
+        },
+        {
+          "label": "D",
+          "text": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Both propagation steps are exothermic for HBr, whereas hydrogen abstraction is endothermic for HI and halogen radical addition is endothermic for HCl.",
+      "explanation": "Radical chain propagation is thermodynamically feasible only when both propagation steps have favorable negative or near-zero free energies (unique to HBr).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q048",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Radical Polymerization Chain Propagation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the elementary step that drives polymer chain growth in the radical polymerization of styrene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end."
+        },
+        {
+          "label": "B",
+          "text": "Coupling of two polymer radicals with loss of hydrogen."
+        },
+        {
+          "label": "C",
+          "text": "Proton transfer from the initiator to the monomer."
+        },
+        {
+          "label": "D",
+          "text": "Elimination of phenyl radicals into the solvent."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Addition of the carbon-centered benzyl radical to the less substituted carbon of a styrene monomer, regenerating a stable benzylic radical at the chain end.",
+      "explanation": "Chain propagation proceeds by repeated addition of the propagating radical to monomer double bonds, regenerating the active radical center.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q049",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "Autooxidation of Ethers Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the hazardous intermediate formed when diethyl ether is exposed to atmospheric oxygen and light over time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Gaseous carbon dioxide and methane."
+        },
+        {
+          "label": "B",
+          "text": "Pure liquid ethanol."
+        },
+        {
+          "label": "C",
+          "text": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping."
+        },
+        {
+          "label": "D",
+          "text": "A harmless dimer of diethyl ether."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An explosive hydroperoxide [CH₃CH(OOH)OCH₂CH₃] formed by radical abstraction of the weak α-ethereal C-H bond followed by O₂ trapping.",
+      "explanation": "The α-hydrogens adjacent to ether oxygen are easily abstracted by radicals, initiating autooxidation to explosive organic hydroperoxides.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch10_q050",
+      "chapter": 10,
+      "chapter_title": "Radical Reactions",
+      "boss": "Autooxidation Sovereign",
+      "topic": "BHT Antioxidant Radical Trapping Mechanism",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "How does butylated hydroxytoluene (BHT) chemically inhibit radical chain degradation in foods and polymers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BHT destroys all oxygen molecules in the mixture."
+        },
+        {
+          "label": "B",
+          "text": "BHT acts as a photochemical shield reflecting UV light."
+        },
+        {
+          "label": "C",
+          "text": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions."
+        },
+        {
+          "label": "D",
+          "text": "BHT reacts with water to form sulfuric acid."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "BHT donates a phenolic hydrogen to propagating radicals, forming a sterically hindered phenoxy radical that is too unreactive to propagate chain reactions.",
+      "explanation": "The resulting hindered phenoxy radical is stabilized by resonance and sterically shielded by two tert-butyl groups, halting radical chain propagation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "autooxidation-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Homolytic Harpy",
+    "Chlorination Cyclops",
+    "Allylic Radical Archer",
+    "Bromination Behemoth",
+    "Autooxidation Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Homolytic Harpy",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "homolytic-harpy.png"
+        ]
+      },
+      {
+        "boss": "Chlorination Cyclops",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "chlorination-cyclops.png"
+        ]
+      },
+      {
+        "boss": "Allylic Radical Archer",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "allylic-radical-archer.png"
+        ]
+      },
+      {
+        "boss": "Bromination Behemoth",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "bromination-behemoth.png"
+        ]
+      },
+      {
+        "boss": "Autooxidation Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "autooxidation-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 17,
+  "chapter_title": "Aromatic Compounds",
+  "assigned_boss": "Benzene Basilisk",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch17_q001",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Aromaticity Criteria (Hückel's 4n+2 Rule)",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What four structural criteria must a molecule satisfy to possess aromatic stabilization?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer)."
+        },
+        {
+          "label": "B",
+          "text": "The molecule must contain exactly 6 carbons, 6 hydrogens, and 3 double bonds."
+        },
+        {
+          "label": "C",
+          "text": "The molecule must be nonplanar with 4n π electrons."
+        },
+        {
+          "label": "D",
+          "text": "The molecule must contain at least one nitrogen or oxygen atom."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer).",
+      "explanation": "Hückel's criteria define aromaticity: continuous cyclic planar p-orbital overlap with an odd number of electron pairs (4n+2).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q002",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Antiaromaticity Destabilization (4n Rule)",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is planar cyclobutadiene (4π electrons) exceptionally unstable and reactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It violates the octet rule on all carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "It contains only C-C single bonds."
+        },
+        {
+          "label": "C",
+          "text": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical)."
+        },
+        {
+          "label": "D",
+          "text": "It has a molecular weight below 10 Da."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical).",
+      "explanation": "Planar cyclic conjugated systems with 4n π electrons suffer antiaromatic destabilization, having degenerate semi-filled nonbonding orbitals.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q003",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Cyclopentadienyl Anion Aromaticity",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the cyclopentadienyl anion (C₅H₅⁻) aromatic despite being an anion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It contains 4 π electrons."
+        },
+        {
+          "label": "B",
+          "text": "The negative charge is localized on a single carbon."
+        },
+        {
+          "label": "C",
+          "text": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1)."
+        },
+        {
+          "label": "D",
+          "text": "The ring is non-planar and avoids conjugation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1).",
+      "explanation": "Deprotonation creates a lone pair in an unhybridized p orbital, completing a planar continuous 6π electron aromatic system.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q004",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Tropylium Cation 6π Aromaticity",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why is the cycloheptatrienyl (tropylium) cation (C₇H₇⁺) extraordinarily stable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1)."
+        },
+        {
+          "label": "B",
+          "text": "It has 8 π electrons."
+        },
+        {
+          "label": "C",
+          "text": "It is an antiaromatic dication."
+        },
+        {
+          "label": "D",
+          "text": "It contains an sp³ methylene carbon that blocks conjugation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1).",
+      "explanation": "The empty p orbital allows uninterrupted 7-center cyclic overlap containing 6 delocalized π electrons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q005",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Pyridine Lone Pair Orbital Orientation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is pyridine basic (pKa of conjugate acid = 5.25) whereas pyrrole is non-basic (pKa of conjugate acid = -3.8)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyrrole does not have any nitrogen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine is not an aromatic compound."
+        },
+        {
+          "label": "D",
+          "text": "Pyrrole contains an extra pair of π electrons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet.",
+      "explanation": "Pyridine's lone pair does not participate in the aromatic π system and is free to accept a proton; protonating pyrrole destroys aromaticity.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q006",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Birch Reduction Electron Transfer Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of elementary steps in the Birch reduction of benzene by sodium in liquid ammonia?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage into three acetylene radical molecules."
+        },
+        {
+          "label": "B",
+          "text": "Catalytic hydrogenation on sodium metal surface."
+        },
+        {
+          "label": "C",
+          "text": "Direct addition of two sodium atoms across the ring followed by water quench."
+        },
+        {
+          "label": "D",
+          "text": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene.",
+      "explanation": "Birch reduction proceeds via alternating electron transfer and protonation steps to yield an unconjugated 1,4-cyclohexadiene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q007",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Birch Reduction of Anisole Regioselectivity",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does Birch reduction of methoxybenzene (anisole) yield 1-methoxy-1,4-cyclohexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group directs protonation exclusively to the ipso carbon."
+        },
+        {
+          "label": "B",
+          "text": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond."
+        },
+        {
+          "label": "C",
+          "text": "Anisole is reduced completely to cyclohexanol."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group is cleaved by sodium metal."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond.",
+      "explanation": "Electron-donating substituents direct radical anion protonation to positions that keep the substituent on an sp² double bond.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q008",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Birch Reduction of Benzoic Acid Regioselectivity",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does Birch reduction of benzoic acid yield 2,5-cyclohexadiene-1-carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions."
+        },
+        {
+          "label": "B",
+          "text": "The carboxyl group donates electrons to the ring."
+        },
+        {
+          "label": "C",
+          "text": "Benzoic acid decarboxylates to cyclopentadiene."
+        },
+        {
+          "label": "D",
+          "text": "The carboxyl group is reduced to an alcohol."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions.",
+      "explanation": "Electron-withdrawing groups stabilize carbanion intermediates at the ipso carbon, placing the substituent at an sp³ position in the product.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q009",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Benzylic Bromination Radical Intermediate",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does radical bromination of ethylbenzene by NBS occur exclusively at the benzylic position (C1) rather than C2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primary radicals are more stable than benzylic radicals."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "C",
+          "text": "The aromatic ring blocks radicals from reaching C2."
+        },
+        {
+          "label": "D",
+          "text": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy.",
+      "explanation": "Benzylic C-H bonds are weakened by ~50 kJ/mol because the resulting radical is resonance-delocalized throughout the benzene ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q010",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Benzene Basilisk",
+      "topic": "Oxidation of Benzylic Carbons by KMnO₄",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does tert-butylbenzene resist oxidation by hot KMnO₄, whereas toluene oxidizes smoothly to benzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butylbenzene has too high a molecular weight."
+        },
+        {
+          "label": "B",
+          "text": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species."
+        },
+        {
+          "label": "C",
+          "text": "The tert-butyl group is an electron-withdrawing group."
+        },
+        {
+          "label": "D",
+          "text": "KMnO₄ is insoluble in tert-butylbenzene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species.",
+      "explanation": "The initial mechanistic step of benzylic oxidation requires homolytic abstraction of a benzylic hydrogen, which tert-butylbenzene lacks.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "benzene-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch17_q011",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Cyclopentadienyl Anion Aromaticity",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is the cyclopentadienyl anion (C₅H₅⁻) aromatic despite being an anion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring is non-planar and avoids conjugation."
+        },
+        {
+          "label": "B",
+          "text": "The negative charge is localized on a single carbon."
+        },
+        {
+          "label": "C",
+          "text": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1)."
+        },
+        {
+          "label": "D",
+          "text": "It contains 4 π electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1).",
+      "explanation": "Deprotonation creates a lone pair in an unhybridized p orbital, completing a planar continuous 6π electron aromatic system.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q012",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Tropylium Cation 6π Aromaticity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why is the cycloheptatrienyl (tropylium) cation (C₇H₇⁺) extraordinarily stable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1)."
+        },
+        {
+          "label": "B",
+          "text": "It has 8 π electrons."
+        },
+        {
+          "label": "C",
+          "text": "It contains an sp³ methylene carbon that blocks conjugation."
+        },
+        {
+          "label": "D",
+          "text": "It is an antiaromatic dication."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1).",
+      "explanation": "The empty p orbital allows uninterrupted 7-center cyclic overlap containing 6 delocalized π electrons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q013",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Pyridine Lone Pair Orbital Orientation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is pyridine basic (pKa of conjugate acid = 5.25) whereas pyrrole is non-basic (pKa of conjugate acid = -3.8)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyrrole contains an extra pair of π electrons."
+        },
+        {
+          "label": "B",
+          "text": "Pyrrole does not have any nitrogen atoms."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine is not an aromatic compound."
+        },
+        {
+          "label": "D",
+          "text": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet.",
+      "explanation": "Pyridine's lone pair does not participate in the aromatic π system and is free to accept a proton; protonating pyrrole destroys aromaticity.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q014",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Birch Reduction Electron Transfer Mechanism",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of elementary steps in the Birch reduction of benzene by sodium in liquid ammonia?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct addition of two sodium atoms across the ring followed by water quench."
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage into three acetylene radical molecules."
+        },
+        {
+          "label": "C",
+          "text": "Catalytic hydrogenation on sodium metal surface."
+        },
+        {
+          "label": "D",
+          "text": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene.",
+      "explanation": "Birch reduction proceeds via alternating electron transfer and protonation steps to yield an unconjugated 1,4-cyclohexadiene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q015",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Birch Reduction of Anisole Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does Birch reduction of methoxybenzene (anisole) yield 1-methoxy-1,4-cyclohexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anisole is reduced completely to cyclohexanol."
+        },
+        {
+          "label": "B",
+          "text": "The methoxy group is cleaved by sodium metal."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group directs protonation exclusively to the ipso carbon."
+        },
+        {
+          "label": "D",
+          "text": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond.",
+      "explanation": "Electron-donating substituents direct radical anion protonation to positions that keep the substituent on an sp² double bond.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q016",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Birch Reduction of Benzoic Acid Regioselectivity",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does Birch reduction of benzoic acid yield 2,5-cyclohexadiene-1-carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carboxyl group is reduced to an alcohol."
+        },
+        {
+          "label": "B",
+          "text": "Benzoic acid decarboxylates to cyclopentadiene."
+        },
+        {
+          "label": "C",
+          "text": "The carboxyl group donates electrons to the ring."
+        },
+        {
+          "label": "D",
+          "text": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions.",
+      "explanation": "Electron-withdrawing groups stabilize carbanion intermediates at the ipso carbon, placing the substituent at an sp³ position in the product.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q017",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Benzylic Bromination Radical Intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does radical bromination of ethylbenzene by NBS occur exclusively at the benzylic position (C1) rather than C2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "B",
+          "text": "The aromatic ring blocks radicals from reaching C2."
+        },
+        {
+          "label": "C",
+          "text": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy."
+        },
+        {
+          "label": "D",
+          "text": "Primary radicals are more stable than benzylic radicals."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy.",
+      "explanation": "Benzylic C-H bonds are weakened by ~50 kJ/mol because the resulting radical is resonance-delocalized throughout the benzene ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q018",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Oxidation of Benzylic Carbons by KMnO₄",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why does tert-butylbenzene resist oxidation by hot KMnO₄, whereas toluene oxidizes smoothly to benzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KMnO₄ is insoluble in tert-butylbenzene."
+        },
+        {
+          "label": "B",
+          "text": "The tert-butyl group is an electron-withdrawing group."
+        },
+        {
+          "label": "C",
+          "text": "tert-Butylbenzene has too high a molecular weight."
+        },
+        {
+          "label": "D",
+          "text": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species.",
+      "explanation": "The initial mechanistic step of benzylic oxidation requires homolytic abstraction of a benzylic hydrogen, which tert-butylbenzene lacks.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q019",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Aromaticity Criteria (Hückel's 4n+2 Rule)",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What four structural criteria must a molecule satisfy to possess aromatic stabilization?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule must contain exactly 6 carbons, 6 hydrogens, and 3 double bonds."
+        },
+        {
+          "label": "B",
+          "text": "The molecule must be nonplanar with 4n π electrons."
+        },
+        {
+          "label": "C",
+          "text": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer)."
+        },
+        {
+          "label": "D",
+          "text": "The molecule must contain at least one nitrogen or oxygen atom."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer).",
+      "explanation": "Hückel's criteria define aromaticity: continuous cyclic planar p-orbital overlap with an odd number of electron pairs (4n+2).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q020",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Hückel Herald",
+      "topic": "Antiaromaticity Destabilization (4n Rule)",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is planar cyclobutadiene (4π electrons) exceptionally unstable and reactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It violates the octet rule on all carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "It has a molecular weight below 10 Da."
+        },
+        {
+          "label": "C",
+          "text": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical)."
+        },
+        {
+          "label": "D",
+          "text": "It contains only C-C single bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical).",
+      "explanation": "Planar cyclic conjugated systems with 4n π electrons suffer antiaromatic destabilization, having degenerate semi-filled nonbonding orbitals.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "hckel-herald.png"
+      ]
+    },
+    {
+      "id": "ch17_q021",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Pyridine Lone Pair Orbital Orientation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is pyridine basic (pKa of conjugate acid = 5.25) whereas pyrrole is non-basic (pKa of conjugate acid = -3.8)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine is not an aromatic compound."
+        },
+        {
+          "label": "C",
+          "text": "Pyrrole does not have any nitrogen atoms."
+        },
+        {
+          "label": "D",
+          "text": "Pyrrole contains an extra pair of π electrons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet.",
+      "explanation": "Pyridine's lone pair does not participate in the aromatic π system and is free to accept a proton; protonating pyrrole destroys aromaticity.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q022",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Birch Reduction Electron Transfer Mechanism",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the sequence of elementary steps in the Birch reduction of benzene by sodium in liquid ammonia?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct addition of two sodium atoms across the ring followed by water quench."
+        },
+        {
+          "label": "B",
+          "text": "Catalytic hydrogenation on sodium metal surface."
+        },
+        {
+          "label": "C",
+          "text": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage into three acetylene radical molecules."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene.",
+      "explanation": "Birch reduction proceeds via alternating electron transfer and protonation steps to yield an unconjugated 1,4-cyclohexadiene.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q023",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Birch Reduction of Anisole Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does Birch reduction of methoxybenzene (anisole) yield 1-methoxy-1,4-cyclohexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anisole is reduced completely to cyclohexanol."
+        },
+        {
+          "label": "B",
+          "text": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group is cleaved by sodium metal."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group directs protonation exclusively to the ipso carbon."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond.",
+      "explanation": "Electron-donating substituents direct radical anion protonation to positions that keep the substituent on an sp² double bond.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q024",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Birch Reduction of Benzoic Acid Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Why does Birch reduction of benzoic acid yield 2,5-cyclohexadiene-1-carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carboxyl group donates electrons to the ring."
+        },
+        {
+          "label": "B",
+          "text": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions."
+        },
+        {
+          "label": "C",
+          "text": "The carboxyl group is reduced to an alcohol."
+        },
+        {
+          "label": "D",
+          "text": "Benzoic acid decarboxylates to cyclopentadiene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions.",
+      "explanation": "Electron-withdrawing groups stabilize carbanion intermediates at the ipso carbon, placing the substituent at an sp³ position in the product.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q025",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Benzylic Bromination Radical Intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does radical bromination of ethylbenzene by NBS occur exclusively at the benzylic position (C1) rather than C2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primary radicals are more stable than benzylic radicals."
+        },
+        {
+          "label": "B",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "C",
+          "text": "The aromatic ring blocks radicals from reaching C2."
+        },
+        {
+          "label": "D",
+          "text": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy.",
+      "explanation": "Benzylic C-H bonds are weakened by ~50 kJ/mol because the resulting radical is resonance-delocalized throughout the benzene ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q026",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Oxidation of Benzylic Carbons by KMnO₄",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does tert-butylbenzene resist oxidation by hot KMnO₄, whereas toluene oxidizes smoothly to benzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species."
+        },
+        {
+          "label": "B",
+          "text": "The tert-butyl group is an electron-withdrawing group."
+        },
+        {
+          "label": "C",
+          "text": "KMnO₄ is insoluble in tert-butylbenzene."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butylbenzene has too high a molecular weight."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species.",
+      "explanation": "The initial mechanistic step of benzylic oxidation requires homolytic abstraction of a benzylic hydrogen, which tert-butylbenzene lacks.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q027",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Aromaticity Criteria (Hückel's 4n+2 Rule)",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What four structural criteria must a molecule satisfy to possess aromatic stabilization?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule must be nonplanar with 4n π electrons."
+        },
+        {
+          "label": "B",
+          "text": "The molecule must contain exactly 6 carbons, 6 hydrogens, and 3 double bonds."
+        },
+        {
+          "label": "C",
+          "text": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer)."
+        },
+        {
+          "label": "D",
+          "text": "The molecule must contain at least one nitrogen or oxygen atom."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer).",
+      "explanation": "Hückel's criteria define aromaticity: continuous cyclic planar p-orbital overlap with an odd number of electron pairs (4n+2).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q028",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Antiaromaticity Destabilization (4n Rule)",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is planar cyclobutadiene (4π electrons) exceptionally unstable and reactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has a molecular weight below 10 Da."
+        },
+        {
+          "label": "B",
+          "text": "It contains only C-C single bonds."
+        },
+        {
+          "label": "C",
+          "text": "It violates the octet rule on all carbon atoms."
+        },
+        {
+          "label": "D",
+          "text": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical).",
+      "explanation": "Planar cyclic conjugated systems with 4n π electrons suffer antiaromatic destabilization, having degenerate semi-filled nonbonding orbitals.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q029",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Cyclopentadienyl Anion Aromaticity",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the cyclopentadienyl anion (C₅H₅⁻) aromatic despite being an anion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It contains 4 π electrons."
+        },
+        {
+          "label": "B",
+          "text": "The negative charge is localized on a single carbon."
+        },
+        {
+          "label": "C",
+          "text": "The ring is non-planar and avoids conjugation."
+        },
+        {
+          "label": "D",
+          "text": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1).",
+      "explanation": "Deprotonation creates a lone pair in an unhybridized p orbital, completing a planar continuous 6π electron aromatic system.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q030",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Annulene Abomination",
+      "topic": "Tropylium Cation 6π Aromaticity",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why is the cycloheptatrienyl (tropylium) cation (C₇H₇⁺) extraordinarily stable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has 8 π electrons."
+        },
+        {
+          "label": "B",
+          "text": "It is an antiaromatic dication."
+        },
+        {
+          "label": "C",
+          "text": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1)."
+        },
+        {
+          "label": "D",
+          "text": "It contains an sp³ methylene carbon that blocks conjugation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1).",
+      "explanation": "The empty p orbital allows uninterrupted 7-center cyclic overlap containing 6 delocalized π electrons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "annulene-abomination.png"
+      ]
+    },
+    {
+      "id": "ch17_q031",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Birch Reduction of Anisole Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does Birch reduction of methoxybenzene (anisole) yield 1-methoxy-1,4-cyclohexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The methoxy group is cleaved by sodium metal."
+        },
+        {
+          "label": "B",
+          "text": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond."
+        },
+        {
+          "label": "C",
+          "text": "Anisole is reduced completely to cyclohexanol."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group directs protonation exclusively to the ipso carbon."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond.",
+      "explanation": "Electron-donating substituents direct radical anion protonation to positions that keep the substituent on an sp² double bond.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q032",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Birch Reduction of Benzoic Acid Regioselectivity",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does Birch reduction of benzoic acid yield 2,5-cyclohexadiene-1-carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carboxyl group donates electrons to the ring."
+        },
+        {
+          "label": "B",
+          "text": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions."
+        },
+        {
+          "label": "C",
+          "text": "The carboxyl group is reduced to an alcohol."
+        },
+        {
+          "label": "D",
+          "text": "Benzoic acid decarboxylates to cyclopentadiene."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions.",
+      "explanation": "Electron-withdrawing groups stabilize carbanion intermediates at the ipso carbon, placing the substituent at an sp³ position in the product.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q033",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Benzylic Bromination Radical Intermediate",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Why does radical bromination of ethylbenzene by NBS occur exclusively at the benzylic position (C1) rather than C2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reaction proceeds via an SN2 displacement."
+        },
+        {
+          "label": "B",
+          "text": "Primary radicals are more stable than benzylic radicals."
+        },
+        {
+          "label": "C",
+          "text": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy."
+        },
+        {
+          "label": "D",
+          "text": "The aromatic ring blocks radicals from reaching C2."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy.",
+      "explanation": "Benzylic C-H bonds are weakened by ~50 kJ/mol because the resulting radical is resonance-delocalized throughout the benzene ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q034",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Oxidation of Benzylic Carbons by KMnO₄",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Why does tert-butylbenzene resist oxidation by hot KMnO₄, whereas toluene oxidizes smoothly to benzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butylbenzene has too high a molecular weight."
+        },
+        {
+          "label": "B",
+          "text": "The tert-butyl group is an electron-withdrawing group."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species."
+        },
+        {
+          "label": "D",
+          "text": "KMnO₄ is insoluble in tert-butylbenzene."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species.",
+      "explanation": "The initial mechanistic step of benzylic oxidation requires homolytic abstraction of a benzylic hydrogen, which tert-butylbenzene lacks.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q035",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Aromaticity Criteria (Hückel's 4n+2 Rule)",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What four structural criteria must a molecule satisfy to possess aromatic stabilization?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule must contain at least one nitrogen or oxygen atom."
+        },
+        {
+          "label": "B",
+          "text": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer)."
+        },
+        {
+          "label": "C",
+          "text": "The molecule must be nonplanar with 4n π electrons."
+        },
+        {
+          "label": "D",
+          "text": "The molecule must contain exactly 6 carbons, 6 hydrogens, and 3 double bonds."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer).",
+      "explanation": "Hückel's criteria define aromaticity: continuous cyclic planar p-orbital overlap with an odd number of electron pairs (4n+2).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q036",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Antiaromaticity Destabilization (4n Rule)",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is planar cyclobutadiene (4π electrons) exceptionally unstable and reactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It violates the octet rule on all carbon atoms."
+        },
+        {
+          "label": "B",
+          "text": "It has a molecular weight below 10 Da."
+        },
+        {
+          "label": "C",
+          "text": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical)."
+        },
+        {
+          "label": "D",
+          "text": "It contains only C-C single bonds."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical).",
+      "explanation": "Planar cyclic conjugated systems with 4n π electrons suffer antiaromatic destabilization, having degenerate semi-filled nonbonding orbitals.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q037",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Cyclopentadienyl Anion Aromaticity",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is the cyclopentadienyl anion (C₅H₅⁻) aromatic despite being an anion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring is non-planar and avoids conjugation."
+        },
+        {
+          "label": "B",
+          "text": "The negative charge is localized on a single carbon."
+        },
+        {
+          "label": "C",
+          "text": "It contains 4 π electrons."
+        },
+        {
+          "label": "D",
+          "text": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1).",
+      "explanation": "Deprotonation creates a lone pair in an unhybridized p orbital, completing a planar continuous 6π electron aromatic system.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q038",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Tropylium Cation 6π Aromaticity",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is the cycloheptatrienyl (tropylium) cation (C₇H₇⁺) extraordinarily stable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1)."
+        },
+        {
+          "label": "B",
+          "text": "It is an antiaromatic dication."
+        },
+        {
+          "label": "C",
+          "text": "It contains an sp³ methylene carbon that blocks conjugation."
+        },
+        {
+          "label": "D",
+          "text": "It has 8 π electrons."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1).",
+      "explanation": "The empty p orbital allows uninterrupted 7-center cyclic overlap containing 6 delocalized π electrons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q039",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Pyridine Lone Pair Orbital Orientation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Why is pyridine basic (pKa of conjugate acid = 5.25) whereas pyrrole is non-basic (pKa of conjugate acid = -3.8)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyrrole does not have any nitrogen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine is not an aromatic compound."
+        },
+        {
+          "label": "D",
+          "text": "Pyrrole contains an extra pair of π electrons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet.",
+      "explanation": "Pyridine's lone pair does not participate in the aromatic π system and is free to accept a proton; protonating pyrrole destroys aromaticity.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q040",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Birch Berserker",
+      "topic": "Birch Reduction Electron Transfer Mechanism",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the sequence of elementary steps in the Birch reduction of benzene by sodium in liquid ammonia?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage into three acetylene radical molecules."
+        },
+        {
+          "label": "B",
+          "text": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene."
+        },
+        {
+          "label": "C",
+          "text": "Catalytic hydrogenation on sodium metal surface."
+        },
+        {
+          "label": "D",
+          "text": "Direct addition of two sodium atoms across the ring followed by water quench."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene.",
+      "explanation": "Birch reduction proceeds via alternating electron transfer and protonation steps to yield an unconjugated 1,4-cyclohexadiene.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "birch-berserker.png"
+      ]
+    },
+    {
+      "id": "ch17_q041",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Benzylic Bromination Radical Intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does radical bromination of ethylbenzene by NBS occur exclusively at the benzylic position (C1) rather than C2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy."
+        },
+        {
+          "label": "B",
+          "text": "Primary radicals are more stable than benzylic radicals."
+        },
+        {
+          "label": "C",
+          "text": "The aromatic ring blocks radicals from reaching C2."
+        },
+        {
+          "label": "D",
+          "text": "The reaction proceeds via an SN2 displacement."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The secondary benzylic radical is stabilized by resonance overlap with the aromatic π system (4 resonance contributors), lowering the C-H bond dissociation energy.",
+      "explanation": "Benzylic C-H bonds are weakened by ~50 kJ/mol because the resulting radical is resonance-delocalized throughout the benzene ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q042",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Oxidation of Benzylic Carbons by KMnO₄",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Why does tert-butylbenzene resist oxidation by hot KMnO₄, whereas toluene oxidizes smoothly to benzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KMnO₄ is insoluble in tert-butylbenzene."
+        },
+        {
+          "label": "B",
+          "text": "The tert-butyl group is an electron-withdrawing group."
+        },
+        {
+          "label": "C",
+          "text": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species."
+        },
+        {
+          "label": "D",
+          "text": "tert-Butylbenzene has too high a molecular weight."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Benzylic oxidation requires the presence of at least one benzylic C-H bond for initial hydrogen abstraction by the high-valent manganese oxo species.",
+      "explanation": "The initial mechanistic step of benzylic oxidation requires homolytic abstraction of a benzylic hydrogen, which tert-butylbenzene lacks.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q043",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Aromaticity Criteria (Hückel's 4n+2 Rule)",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What four structural criteria must a molecule satisfy to possess aromatic stabilization?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer)."
+        },
+        {
+          "label": "B",
+          "text": "The molecule must contain exactly 6 carbons, 6 hydrogens, and 3 double bonds."
+        },
+        {
+          "label": "C",
+          "text": "The molecule must be nonplanar with 4n π electrons."
+        },
+        {
+          "label": "D",
+          "text": "The molecule must contain at least one nitrogen or oxygen atom."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The molecule must be cyclic, fully conjugated (every ring atom has an unhybridized p orbital), planar, and contain [4n + 2] π electrons (where n is an integer).",
+      "explanation": "Hückel's criteria define aromaticity: continuous cyclic planar p-orbital overlap with an odd number of electron pairs (4n+2).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q044",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Antiaromaticity Destabilization (4n Rule)",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is planar cyclobutadiene (4π electrons) exceptionally unstable and reactive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical)."
+        },
+        {
+          "label": "B",
+          "text": "It has a molecular weight below 10 Da."
+        },
+        {
+          "label": "C",
+          "text": "It contains only C-C single bonds."
+        },
+        {
+          "label": "D",
+          "text": "It violates the octet rule on all carbon atoms."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It possesses a continuous cyclic planar 4n π electron system, placing two unpaired electrons in degenerate non-bonding molecular orbitals (antiaromatic diradical).",
+      "explanation": "Planar cyclic conjugated systems with 4n π electrons suffer antiaromatic destabilization, having degenerate semi-filled nonbonding orbitals.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q045",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Cyclopentadienyl Anion Aromaticity",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Why is the cyclopentadienyl anion (C₅H₅⁻) aromatic despite being an anion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It contains 4 π electrons."
+        },
+        {
+          "label": "B",
+          "text": "The negative charge is localized on a single carbon."
+        },
+        {
+          "label": "C",
+          "text": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1)."
+        },
+        {
+          "label": "D",
+          "text": "The ring is non-planar and avoids conjugation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It contains 6 π electrons (four from two double bonds and two from the sp² lone pair) in a planar, fully conjugated 5-membered ring satisfying the [4n+2] rule (n=1).",
+      "explanation": "Deprotonation creates a lone pair in an unhybridized p orbital, completing a planar continuous 6π electron aromatic system.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q046",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Tropylium Cation 6π Aromaticity",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Why is the cycloheptatrienyl (tropylium) cation (C₇H₇⁺) extraordinarily stable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It contains an sp³ methylene carbon that blocks conjugation."
+        },
+        {
+          "label": "B",
+          "text": "It is an antiaromatic dication."
+        },
+        {
+          "label": "C",
+          "text": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1)."
+        },
+        {
+          "label": "D",
+          "text": "It has 8 π electrons."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It is a planar, completely conjugated 7-membered ring with an empty p orbital on the carbocation carbon, containing 6 π electrons (4n+2, n=1).",
+      "explanation": "The empty p orbital allows uninterrupted 7-center cyclic overlap containing 6 delocalized π electrons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q047",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Pyridine Lone Pair Orbital Orientation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Why is pyridine basic (pKa of conjugate acid = 5.25) whereas pyrrole is non-basic (pKa of conjugate acid = -3.8)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyrrole does not have any nitrogen atoms."
+        },
+        {
+          "label": "B",
+          "text": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet."
+        },
+        {
+          "label": "C",
+          "text": "Pyridine is not an aromatic compound."
+        },
+        {
+          "label": "D",
+          "text": "Pyrrole contains an extra pair of π electrons."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pyridine's nitrogen lone pair resides in an sp² orbital in the ring plane outside the 6π aromatic system, whereas pyrrole's lone pair is required to complete the 6π aromatic sextet.",
+      "explanation": "Pyridine's lone pair does not participate in the aromatic π system and is free to accept a proton; protonating pyrrole destroys aromaticity.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q048",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Birch Reduction Electron Transfer Mechanism",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "What is the sequence of elementary steps in the Birch reduction of benzene by sodium in liquid ammonia?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Direct addition of two sodium atoms across the ring followed by water quench."
+        },
+        {
+          "label": "B",
+          "text": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene."
+        },
+        {
+          "label": "C",
+          "text": "Catalytic hydrogenation on sodium metal surface."
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage into three acetylene radical molecules."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single Electron Transfer (SET) to form radical anion → protonation by alcohol → second SET to form carbanion → second protonation to 1,4-cyclohexadiene.",
+      "explanation": "Birch reduction proceeds via alternating electron transfer and protonation steps to yield an unconjugated 1,4-cyclohexadiene.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q049",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Birch Reduction of Anisole Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "Why does Birch reduction of methoxybenzene (anisole) yield 1-methoxy-1,4-cyclohexadiene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anisole is reduced completely to cyclohexanol."
+        },
+        {
+          "label": "B",
+          "text": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond."
+        },
+        {
+          "label": "C",
+          "text": "The methoxy group is cleaved by sodium metal."
+        },
+        {
+          "label": "D",
+          "text": "The methoxy group directs protonation exclusively to the ipso carbon."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The electron-donating methoxy group destabilizes negative charge at the ipso position, directing initial protonation to the ortho/meta carbons to preserve the enol ether double bond.",
+      "explanation": "Electron-donating substituents direct radical anion protonation to positions that keep the substituent on an sp² double bond.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    },
+    {
+      "id": "ch17_q050",
+      "chapter": 17,
+      "chapter_title": "Aromatic Compounds",
+      "boss": "Aromaticity Overlord",
+      "topic": "Birch Reduction of Benzoic Acid Regioselectivity",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "Why does Birch reduction of benzoic acid yield 2,5-cyclohexadiene-1-carboxylic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The carboxyl group is reduced to an alcohol."
+        },
+        {
+          "label": "B",
+          "text": "The carboxyl group donates electrons to the ring."
+        },
+        {
+          "label": "C",
+          "text": "Benzoic acid decarboxylates to cyclopentadiene."
+        },
+        {
+          "label": "D",
+          "text": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The electron-withdrawing carboxyl group stabilizes negative charge at the ipso position via resonance, directing initial protonation to the ipso and para positions.",
+      "explanation": "Electron-withdrawing groups stabilize carbanion intermediates at the ipso carbon, placing the substituent at an sp³ position in the product.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "aromaticity-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Benzene Basilisk",
+    "Hückel Herald",
+    "Annulene Abomination",
+    "Birch Berserker",
+    "Aromaticity Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Benzene Basilisk",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "benzene-basilisk.png"
+        ]
+      },
+      {
+        "boss": "Hückel Herald",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "hckel-herald.png"
+        ]
+      },
+      {
+        "boss": "Annulene Abomination",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "annulene-abomination.png"
+        ]
+      },
+      {
+        "boss": "Birch Berserker",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "birch-berserker.png"
+        ]
+      },
+      {
+        "boss": "Aromaticity Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "aromaticity-overlord.png"
+        ]
+      }
+    ]
+  }
+}
