@@ -255,16 +255,17 @@ function ensureAvatarCreatorUi() {
 }
 
 function ensureExplanationUi() {
-  const brand = $('.brand');
-  if (!brand) return;
-
   let button = $('#view-explanation');
-  if (!button) {
+  const gameHeader = $('#game-shell header') || $('header');
+  if (!button && gameHeader) {
     button = document.createElement('button');
     button.id = 'view-explanation';
-    button.className = 'header-help';
+    button.className = 'header-help hidden';
+    button.type = 'button';
     button.textContent = 'VIEW EXPLANATION';
-    brand.parentElement.insertBefore(button, brand.nextSibling);
+    const configBtn = $('#open-admin-game');
+    if (configBtn) gameHeader.insertBefore(button, configBtn);
+    else gameHeader.appendChild(button);
   }
 
   let modal = $('#explanation-modal');
@@ -294,9 +295,11 @@ function ensureExplanationUi() {
     };
   }
 
-  button.onclick = () => {
-    if (window.lastExplanation) showExplanation(window.lastExplanation);
-  };
+  if (button) {
+    button.onclick = () => {
+      if (window.lastExplanation) showExplanation(window.lastExplanation);
+    };
+  }
 }
 
 function closeExplanation() {
@@ -304,8 +307,15 @@ function closeExplanation() {
 }
 
 function showExplanation(result) {
+  if (!result) return;
   window.lastExplanation = result;
   ensureExplanationUi();
+  const headerButton = $('#view-explanation');
+  if (headerButton) {
+    headerButton.textContent = 'VIEW EXPLANATION';
+    headerButton.classList.remove('hidden');
+    headerButton.classList.add('available');
+  }
   $('#explanation-question').textContent = result.question_prompt || 'Review the chemistry concept from the last trial.';
   $('#explanation-answer').textContent = result.correct_answer;
   $('#explanation-copy').textContent = result.explanation;
@@ -369,6 +379,15 @@ function render(s) {
   renderQuestion(s);
   drawScene(s);
   renderAvatars(s);
+
+  if (window.lastExplanation) {
+    const headerButton = $('#view-explanation');
+    if (headerButton) {
+      headerButton.textContent = 'VIEW EXPLANATION';
+      headerButton.classList.remove('hidden');
+      headerButton.classList.add('available');
+    }
+  }
 }
 
 function renderAvatars(s) {
@@ -544,7 +563,8 @@ function showOutcome(r) {
       ensureExplanationUi();
       const headerButton = $('#view-explanation');
       if (headerButton) {
-        headerButton.textContent = 'EXPLANATION';
+        headerButton.textContent = 'VIEW EXPLANATION';
+        headerButton.classList.remove('hidden');
         headerButton.classList.add('available');
       }
     }
@@ -578,7 +598,8 @@ function showOutcome(r) {
     ensureExplanationUi();
     const headerButton = $('#view-explanation');
     if (headerButton) {
-      headerButton.textContent = 'EXPLANATION';
+      headerButton.textContent = 'VIEW EXPLANATION';
+      headerButton.classList.remove('hidden');
       headerButton.classList.add('available');
     }
     showBattleModal({
@@ -1412,6 +1433,19 @@ function bindDomEvents() {
       if (e.target.id === 'track-folder-modal') closeTrackFolderModal();
     });
 
+    $('#track-blocked-resume-btn')?.addEventListener('click', () => {
+      $('#track-blocked-modal')?.classList.add('hidden');
+      $('#track-screen')?.classList.add('hidden');
+      $('#game-shell')?.classList.remove('hidden');
+      startPhaser();
+      render(session);
+    });
+    $('#track-blocked-modal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'track-blocked-modal') {
+        $('#track-blocked-modal')?.classList.add('hidden');
+      }
+    });
+
     $('#start-battle-button')?.addEventListener('click', async () => {
       const startBtn = $('#start-battle-button');
       if (!startBtn) return;
@@ -1426,13 +1460,25 @@ function bindDomEvents() {
 
         if (session?.session_id) {
           try {
-            await api('/api/game/track', {
+            const res = await api('/api/game/track', {
               session_id: session.session_id,
               track_id: selectedTrackId,
               data_folder: folderPath,
+              boss_folder: activeTrack?.boss_folder,
             });
+            if (res && res.session) {
+              session = res.session;
+            }
           } catch (trackErr) {
-            console.warn('Track config API warning:', trackErr);
+            console.warn('Track switch blocked:', trackErr);
+            const msgEl = $('#track-blocked-message');
+            if (msgEl) {
+              msgEl.textContent = trackErr.message || 'Please complete your active chapter in this track before switching tracks!';
+            }
+            $('#track-blocked-modal')?.classList.remove('hidden');
+            startBtn.disabled = false;
+            startBtn.innerHTML = `<span>START THE BATTLE</span> <span class="btn-arrow">→</span>`;
+            return;
           }
         }
 

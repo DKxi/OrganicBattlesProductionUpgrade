@@ -27,6 +27,18 @@ const CURRICULA = [
 ];
 
 const TRACKS = [
+  {
+    id: 'default',
+    curriculum: 'foundational',
+    title: 'Default Track',
+    detail: 'core curriculum · comprehensive chemistry',
+    boss: 'Orbital Ogre',
+    boss_folder: 'data/tracks/default/bosses',
+    questions: 1350,
+    chapters: 27,
+    accent: 'amber',
+    data_folder: 'data/tracks/default'
+  },
   // 12 Advanced Mechanistic Mastery Tracks
   {
     id: 'adv-vocab',
@@ -34,10 +46,11 @@ const TRACKS = [
     title: 'Vocabulary & Core Concepts',
     detail: 'definitions · patterns · principles',
     boss: 'The Lexicon',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'violet',
-    data_folder: 'data/tracks/VocabularyConceptsData'
+    data_folder: 'data/tracks/advanced/VocabularyConceptsData'
   },
   {
     id: 'adv-outcomes',
@@ -45,10 +58,11 @@ const TRACKS = [
     title: 'Reaction Outcomes',
     detail: '50 / 30 / 20 outcome weighting',
     boss: 'The Selector',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'coral',
-    data_folder: 'data/tracks/ReactionOutComeTypesData'
+    data_folder: 'data/tracks/advanced/ReactionOutComeTypesData'
   },
   {
     id: 'adv-arrows',
@@ -56,10 +70,11 @@ const TRACKS = [
     title: 'Curved Arrow & Intermediates',
     detail: 'electron flow · reactive species',
     boss: 'The Arrowmith',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'teal',
-    data_folder: 'data/tracks/MechanismsIntermediatesData'
+    data_folder: 'data/tracks/advanced/MechanismsIntermediatesData'
   },
   {
     id: 'adv-stereo',
@@ -67,10 +82,11 @@ const TRACKS = [
     title: 'Stereochemistry & Structure',
     detail: '3D thinking · configurations',
     boss: 'The Geometer',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'amber',
-    data_folder: 'data/tracks/StereochemistryStructureData'
+    data_folder: 'data/tracks/advanced/StereochemistryStructureData'
   },
   {
     id: 'adv-rankings',
@@ -78,10 +94,11 @@ const TRACKS = [
     title: 'Relative Property Rankings',
     detail: 'acidity · stability · reactivity',
     boss: 'The Comparator',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'pink',
-    data_folder: 'data/tracks/RelativePropertyRankingsData'
+    data_folder: 'data/tracks/advanced/RelativePropertyRankingsData'
   },
   {
     id: 'adv-spectra',
@@ -89,10 +106,11 @@ const TRACKS = [
     title: 'Spectroscopy',
     detail: 'IR · NMR · MS · DEPT',
     boss: 'The Signal',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'blue',
-    data_folder: 'data/tracks/SpectroscopyElucidationData'
+    data_folder: 'data/tracks/advanced/SpectroscopyElucidationData'
   },
   {
     id: 'adv-retro',
@@ -100,10 +118,11 @@ const TRACKS = [
     title: 'Multi-Step & Retrosynthesis',
     detail: 'disconnections · route design',
     boss: 'The Cartographer',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'lime',
-    data_folder: 'data/tracks/MultiStepSynthesisData'
+    data_folder: 'data/tracks/advanced/MultiStepSynthesisData'
   },
   {
     id: 'adv-mo',
@@ -111,10 +130,11 @@ const TRACKS = [
     title: 'MO Theory & Pericyclics',
     detail: 'orbitals · electrocyclic logic',
     boss: 'The Orbitalist',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'indigo',
-    data_folder: 'data/tracks/OrbitalPericyclicExpandedData'
+    data_folder: 'data/tracks/advanced/OrbitalPericyclicExpandedData'
   },
   {
     id: 'adv-thermo',
@@ -122,10 +142,11 @@ const TRACKS = [
     title: 'Thermodynamics & Kinetics Math',
     detail: 'energy · rates · equations',
     boss: 'The Kinetician',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'orange',
-    data_folder: 'data/tracks/ThermodynamicsKineticsExpandedData'
+    data_folder: 'data/tracks/advanced/ThermodynamicsKineticsExpandedData'
   },
   {
     id: 'adv-medicinal',
@@ -133,10 +154,11 @@ const TRACKS = [
     title: 'Medicinal & Bioorganic Chemistry',
     detail: 'drug design · biomolecules',
     boss: 'The Pharmacist',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'rose',
-    data_folder: 'data/tracks/MedicinalBioorganicExpandedData'
+    data_folder: 'data/tracks/advanced/MedicinalBioorganicExpandedData'
   },
   {
     id: 'adv-lab',
@@ -144,10 +166,11 @@ const TRACKS = [
     title: 'Lab Techniques & Green Chemistry',
     detail: 'workup · safety · sustainability',
     boss: 'The Steward',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'emerald',
-    data_folder: 'data/tracks/LabTechniquesGreenExpandedData'
+    data_folder: 'data/tracks/advanced/LabTechniquesGreenExpandedData'
   },
   {
     id: 'adv-trees',
@@ -155,10 +178,11 @@ const TRACKS = [
     title: 'SkillBuilder Decision Trees',
     detail: 'choose the next best move',
     boss: 'The Brancher',
+    boss_folder: 'data/tracks/advanced/bosses',
     questions: 1350,
     chapters: 27,
     accent: 'cyan',
-    data_folder: 'data/tracks/SkillBuilderMasteryExpandedData'
+    data_folder: 'data/tracks/advanced/SkillBuilderMasteryExpandedData'
   },
   // 7 Foundational Open Tracks
   {
@@ -167,10 +191,11 @@ const TRACKS = [
     title: 'Nomenclature & Concepts',
     detail: 'name it · see it · understand it',
     boss: 'The Namer',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'sky',
-    data_folder: 'data/tracks/FoundationalNomenclatureData'
+    data_folder: 'data/tracks/foundational/FoundationalNomenclatureData'
   },
   {
     id: 'found-outcomes',
@@ -178,10 +203,11 @@ const TRACKS = [
     title: 'Reaction Outcomes',
     detail: 'predict the product with confidence',
     boss: 'The Predictor',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'coral',
-    data_folder: 'data/tracks/FoundationalReactionOutcomesData'
+    data_folder: 'data/tracks/foundational/FoundationalReactionOutcomesData'
   },
   {
     id: 'found-mechanisms',
@@ -189,10 +215,11 @@ const TRACKS = [
     title: 'Reaction Mechanisms',
     detail: 'follow the electrons',
     boss: 'The Mechanist',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'teal',
-    data_folder: 'data/tracks/FoundationalMechanismsData'
+    data_folder: 'data/tracks/foundational/FoundationalMechanismsData'
   },
   {
     id: 'found-stereo',
@@ -200,10 +227,11 @@ const TRACKS = [
     title: 'Stereochemistry Analysis',
     detail: 'wedges · dashes · spatial logic',
     boss: 'The Spatialist',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'amber',
-    data_folder: 'data/tracks/FoundationalStereochemistryData'
+    data_folder: 'data/tracks/foundational/FoundationalStereochemistryData'
   },
   {
     id: 'found-property',
@@ -211,10 +239,11 @@ const TRACKS = [
     title: 'Property & Acidity Rankings',
     detail: 'compare what matters',
     boss: 'The Ranker',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'pink',
-    data_folder: 'data/tracks/FoundationalPropertyRankingsData'
+    data_folder: 'data/tracks/foundational/FoundationalPropertyRankingsData'
   },
   {
     id: 'found-spectra',
@@ -222,10 +251,11 @@ const TRACKS = [
     title: 'Spectroscopy & Structure',
     detail: 'read the hidden structure',
     boss: 'The Listener',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'blue',
-    data_folder: 'data/tracks/FoundationalSpectroscopyData'
+    data_folder: 'data/tracks/foundational/FoundationalSpectroscopyData'
   },
   {
     id: 'found-synthesis',
@@ -233,10 +263,11 @@ const TRACKS = [
     title: 'Multi-Step Synthesis',
     detail: 'build a route, one move at a time',
     boss: 'The Builder',
+    boss_folder: 'data/tracks/foundational/bosses',
     questions: 1550,
     chapters: 31,
     accent: 'lime',
-    data_folder: 'data/tracks/FoundationalMultiStepSynthesisData'
+    data_folder: 'data/tracks/foundational/FoundationalMultiStepSynthesisData'
   }
 ];
 

@@ -65,7 +65,8 @@ def select_spell(
     bosses = chapters[ch_idx]["bosses"]
     boss_slug = bosses[max(0, min(game_session.boss_index, len(bosses) - 1))][0]
 
-    if effective == "json":
+    is_json_like = (effective != "app")
+    if is_json_like:
         boss_values = bundle.boss_spell_values.get((game_session.chapter, boss_slug)) or bundle.boss_spell_values.get(boss_slug) or []
         avail_spells = json_available_spells(boss_values)
         if avail_spells and spell_id not in avail_spells:
@@ -111,6 +112,7 @@ def answer_question(
     q_prompt, choices, correct_answer = active_q[0], active_q[1], active_q[2]
 
     effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
+    is_json_like = (effective != "app")
     bundle = get_content_bundle(effective)
     explanation = bundle.explanations.get(q_prompt, f"The correct answer is {correct_answer}.")
 
@@ -121,9 +123,14 @@ def answer_question(
     boss_slug = bosses[max(0, min(game_session.boss_index, len(bosses) - 1))][0]
     cursor_key = f"{game_session.chapter}:{boss_slug}"
 
-    if effective == "json":
+    if is_json_like:
         boss_values = bundle.boss_spell_values.get((game_session.chapter, boss_slug)) or bundle.boss_spell_values.get(boss_slug) or []
-        question_spell_values = bundle.spell_values.get(q_prompt, boss_values) or boss_values
+        question_spell_values = (
+            bundle.spell_values.get((game_session.chapter, boss_slug, q_prompt))
+            or boss_values
+            or bundle.spell_values.get(q_prompt)
+            or []
+        )
         if question_spell_values and game_session.active_spell in JSON_SPELL_IDS_BY_RANK:
             rank_idx = JSON_SPELL_IDS_BY_RANK.index(game_session.active_spell)
             spell_dmg = question_spell_values[rank_idx] if rank_idx < len(question_spell_values) else get_spell(game_session.active_spell).damage

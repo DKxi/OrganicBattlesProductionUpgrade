@@ -12,12 +12,14 @@ def resolve_content_source(user_content_source: Optional[str] = None) -> str:
     env_override = os.getenv("GAME_CONTENT_SOURCE")
     if env_override and env_override.strip():
         val = env_override.strip().lower()
-        if val in ("app", "json"):
+        if val in ("app", "json") or val.startswith("track:"):
             return val
 
     if user_content_source and user_content_source.strip():
         val = user_content_source.strip().lower()
-        if val in ("app", "json"):
+        if val in ("app", "json") or val.startswith("track:"):
             return val
+        if val == "default" or val.startswith("adv-") or val.startswith("found-"):
+            return f"track:{val}"
 
     return "json"

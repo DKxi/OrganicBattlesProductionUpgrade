@@ -234,10 +234,25 @@
       </form>
     </div>
   </div>
+
+  <!-- Track Switch Blocked Modal -->
+  <div id="track-blocked-modal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+    <div class="modal-card" style="max-width: 460px; text-align: center; border: 1px solid rgba(255, 159, 90, 0.4); box-shadow: 0 10px 40px rgba(0,0,0,0.8);">
+      <div style="font-size: 2.2rem; margin-bottom: 8px;">⚔️</div>
+      <h2 style="color: #ff9f5a; letter-spacing: 1px; margin-bottom: 8px;">CHAPTER IN PROGRESS</h2>
+      <p id="track-blocked-message" style="color: #c9d6e4; font-size: 0.95rem; line-height: 1.55; margin: 16px 0;">
+        Please complete your active chapter in this track before switching tracks!
+      </p>
+      <div class="modal-actions" style="margin-top: 22px; display: flex; justify-content: center; gap: 12px;">
+        <button type="button" class="primary" id="track-blocked-resume-btn" style="padding: 10px 28px; font-weight: 700;">RESUME CHAPTER</button>
+      </div>
+    </div>
+  </div>
     <header>
       <div class="brand">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
 
       <div id="chapter-label"></div>
+      <button id="view-explanation" class="header-help hidden" type="button">VIEW EXPLANATION</button>
       <button id="open-admin-game" class="header-help" type="button">⚙ CONFIG</button>
       <button id="logout" class="header-help">LOG OUT</button>
       <button id="mute">◼ AUDIO</button>

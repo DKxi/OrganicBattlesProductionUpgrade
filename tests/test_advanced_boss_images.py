@@ -8,7 +8,7 @@ import re
 import pytest
 
 BESTIARY_PATH = os.path.join(os.path.dirname(__file__), "..", "AdvancedBestiary.md")
-BOSSES_DIR = os.path.join(os.path.dirname(__file__), "..\data\tracks\advanced\", "bosses")
+BOSSES_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "tracks", "advanced", "bosses")
 
 
 def get_boss_images_from_bestiary(bestiary_path=BESTIARY_PATH):

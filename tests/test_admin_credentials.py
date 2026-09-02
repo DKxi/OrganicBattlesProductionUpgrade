@@ -94,7 +94,7 @@ def test_admin_update_credentials_validation():
     # 4. Reject duplicate username (User A trying to take User B's username)
     dup_res = client.post(
         f"/api/v1/admin/users/{user_a_id}/credentials",
-        json={"username": "UserBeta"},
+        json={"username": user_b_name},
         headers=admin_headers,
     )
     assert dup_res.status_code == 400

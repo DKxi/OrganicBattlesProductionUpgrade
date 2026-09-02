@@ -54,6 +54,65 @@ def create_app() -> FastAPI:
     application.include_router(health.router)
 
 
+    from app.domain.content.loader import load_tracks_config
+
+    @application.get("/static/assets/bosses/{filename:path}")
+    @application.get("/bosses/{filename:path}")
+    def serve_boss_image(filename: str):
+        """
+        Dynamically serve boss images.
+        Checks:
+        1. Configured boss_folder directories from tracks_config.json (e.g. data/tracks/advanced/bosses)
+        2. data/bosses/
+        3. data/
+        4. bosses/
+        5. static/assets/bosses/
+        6. Fallback to static/assets/bosses/boss-placeholder.svg
+        """
+        raw_name = Path(filename).name
+        config = load_tracks_config(settings.root_dir)
+
+        # 1. Configured track boss folders
+        for t in config.get("tracks", []):
+            bf = t.get("boss_folder")
+            if bf:
+                bf_path = Path(bf) if Path(bf).is_absolute() else settings.root_dir / bf
+                target_file = bf_path / raw_name
+                if target_file.is_file():
+                    return FileResponse(target_file)
+
+        # 2. Fallback to default track bosses folder data/tracks/default/bosses
+        default_bosses = settings.root_dir / "data" / "tracks" / "default" / "bosses" / raw_name
+        if default_bosses.is_file():
+            return FileResponse(default_bosses)
+
+        # 3. Fallback to bosses/ (folder outside data/)
+        root_bosses = settings.root_dir / "bosses" / raw_name
+        if root_bosses.is_file():
+            return FileResponse(root_bosses)
+
+        # 3. Fallback to data/bosses
+        data_bosses = settings.root_dir / "data" / "bosses" / raw_name
+        if data_bosses.is_file():
+            return FileResponse(data_bosses)
+
+        # 4. Fallback to data/
+        data_file = settings.root_dir / "data" / raw_name
+        if data_file.is_file():
+            return FileResponse(data_file)
+
+        # 5. Fallback to static/assets/bosses
+        static_boss = settings.root_dir / "static" / "assets" / "bosses" / raw_name
+        if static_boss.is_file():
+            return FileResponse(static_boss)
+
+        # 6. Fallback to SVG placeholder
+        placeholder = settings.root_dir / "static" / "assets" / "bosses" / "boss-placeholder.svg"
+        if placeholder.is_file():
+            return FileResponse(placeholder, media_type="image/svg+xml")
+
+        raise HTTPException(404, f"Boss image '{raw_name}' not found")
+
     # Static file mounts
     static_dir = settings.root_dir / "static"
     avatars_dir = settings.root_dir / "avatars"

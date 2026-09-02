@@ -12,7 +12,7 @@ from app.infrastructure.database.repositories import UserRepository, AuthReposit
 from app.infrastructure.identity.crypto import code_hash
 from app.infrastructure.cache.memory import get_admin_token_expiry
 from app.domain.content.entities import ContentBundle
-from app.domain.content.loader import load_app_bundle, load_json_bundle
+from app.domain.content.loader import load_app_bundle, load_json_bundle, load_track_bundle
 from app.domain.content.resolver import resolve_content_source
 
 import os
@@ -27,10 +27,21 @@ limiter = Limiter(
 # Preload bundles in memory
 APP_DATA: ContentBundle = load_app_bundle()
 JSON_DATA: ContentBundle = load_json_bundle(settings.root_dir)
+TRACK_BUNDLES: Dict[str, ContentBundle] = {}
 
 
 def get_content_bundle(mode: str) -> ContentBundle:
-    """Retrieve preloaded content bundle."""
+    """Retrieve preloaded content bundle, including dynamic track bundles."""
+    if mode.startswith("track:"):
+        track_id = mode.split(":", 1)[1]
+        if track_id not in TRACK_BUNDLES:
+            TRACK_BUNDLES[track_id] = load_track_bundle(settings.root_dir, track_id)
+        return TRACK_BUNDLES[track_id]
+    if mode == "default" or mode.startswith("adv-") or mode.startswith("found-"):
+        track_id = mode
+        if track_id not in TRACK_BUNDLES:
+            TRACK_BUNDLES[track_id] = load_track_bundle(settings.root_dir, track_id)
+        return TRACK_BUNDLES[track_id]
     return JSON_DATA if mode == "json" else APP_DATA
 
 

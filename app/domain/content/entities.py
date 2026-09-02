@@ -15,6 +15,8 @@ class ContentBundle:
     spell_values: Dict[str, List[int]] = field(default_factory=dict)
     spells: Dict[str, Any] = field(default_factory=dict)
     json_spell_damage: Dict[int, int] = field(default_factory=dict)
+    data_dir: Optional[Any] = None
+    boss_dir: Optional[Any] = None
 
     def __getitem__(self, item: str) -> Any:
         return getattr(self, item)

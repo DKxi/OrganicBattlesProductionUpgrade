@@ -121,8 +121,34 @@ def load_app_bundle() -> ContentBundle:
     )
 
 
-def load_json_bundle(root_dir: Path, data_dir: Optional[Path] = None) -> ContentBundle:
-    target_dir = data_dir if data_dir and data_dir.is_dir() else root_dir / "data"
+def load_json_bundle(
+    root_dir: Path,
+    data_dir: Optional[Path] = None,
+    boss_dir: Optional[Path] = None,
+) -> ContentBundle:
+    # Resolve data directory: default track data/tracks/default if available, else fallback to data/
+    default_dir = root_dir / "data" / "tracks" / "default"
+    if not (default_dir.is_dir() and list(default_dir.glob("chapter_*.json"))):
+        default_dir = root_dir / "data"
+
+    target_dir = default_dir
+    if data_dir and data_dir.is_dir():
+        if (data_dir / "manifest.json").is_file() or list(data_dir.glob("chapter_*.json")):
+            target_dir = data_dir
+
+    # Resolve boss directory: check boss_dir, fallback to data/tracks/default/bosses, bosses/, data/bosses, or data/
+    target_boss_dir = None
+    if boss_dir and boss_dir.is_dir():
+        target_boss_dir = boss_dir
+    elif (root_dir / "data" / "tracks" / "default" / "bosses").is_dir():
+        target_boss_dir = root_dir / "data" / "tracks" / "default" / "bosses"
+    elif (root_dir / "bosses").is_dir():
+        target_boss_dir = root_dir / "bosses"
+    elif (root_dir / "data" / "bosses").is_dir():
+        target_boss_dir = root_dir / "data" / "bosses"
+    else:
+        target_boss_dir = root_dir / "data"
+
     manifest_path = target_dir / "manifest.json"
     
     # If target folder has no manifest, look for chapter_*.json files directly
@@ -202,7 +228,8 @@ def load_json_bundle(root_dir: Path, data_dir: Optional[Path] = None) -> Content
                     boss_images.setdefault(boss_name, f"{boss_slug}.png")
 
                 sp_vals = [int(value) for value in item.get("spells", [])]
-                spell_values[prompt] = sp_vals
+                spell_values[(chapter_id, boss_slug, prompt)] = sp_vals
+                spell_values.setdefault(prompt, sp_vals)
                 for damage in sp_vals:
                     spell_damage[int(damage)] = int(damage)
 
@@ -237,6 +264,8 @@ def load_json_bundle(root_dir: Path, data_dir: Optional[Path] = None) -> Content
             spell_values=spell_values,
             spells=json_spells,
             json_spell_damage=spell_damage,
+            data_dir=target_dir,
+            boss_dir=target_boss_dir,
         )
     except Exception as exc:
         logger.error("Error loading JSON bundle from %s: %s", target_dir, exc)
@@ -263,25 +292,45 @@ def get_track_config(root_dir: Path, track_id: str) -> Optional[dict]:
     return None
 
 
-def load_track_bundle(root_dir: Path, track_id: str, custom_folder: Optional[str] = None) -> ContentBundle:
+def load_track_bundle(
+    root_dir: Path,
+    track_id: str,
+    custom_folder: Optional[str] = None,
+    custom_boss_folder: Optional[str] = None,
+) -> ContentBundle:
     """
-    Load a ContentBundle for a specific track, using its configured data_folder.
-    If custom_folder is provided (configured by user), it overrides the default track path.
-    Gracefully falls back to data/ if the target folder does not exist or has no chapters.
+    Load a ContentBundle for a specific track, using its configured data_folder and boss_folder.
+    If custom_folder or custom_boss_folder are provided, they override the track config paths.
+    Gracefully falls back to data/ and default boss directories on any missing folder or mismatch.
     """
     track_cfg = get_track_config(root_dir, track_id)
-    folder_str = custom_folder or (track_cfg.get("data_folder") if track_cfg else None)
-    if folder_str:
-        folder_path = Path(folder_str)
-        if not folder_path.is_absolute():
-            folder_path = root_dir / folder_str
-        if folder_path.is_dir():
-            bundle = load_json_bundle(root_dir, data_dir=folder_path)
-            bundle.source_name = f"track:{track_id}"
-            return bundle
 
-    # Default fallback to master data/ directory
-    bundle = load_json_bundle(root_dir)
+    # Resolve default fallback directories: data/tracks/default and data/tracks/default/bosses
+    default_data_dir = root_dir / "data" / "tracks" / "default"
+    if not (default_data_dir.is_dir() and list(default_data_dir.glob("chapter_*.json"))):
+        default_data_dir = root_dir / "data"
+
+    default_boss_dir = root_dir / "data" / "tracks" / "default" / "bosses"
+    if not default_boss_dir.is_dir():
+        default_boss_dir = root_dir / "bosses" if (root_dir / "bosses").is_dir() else root_dir / "data"
+
+    # 1. Resolve data_folder
+    folder_str = custom_folder or (track_cfg.get("data_folder") if track_cfg else None)
+    target_data_dir = default_data_dir
+    if folder_str:
+        folder_path = Path(folder_str) if Path(folder_str).is_absolute() else root_dir / folder_str
+        if folder_path.is_dir() and ((folder_path / "manifest.json").is_file() or list(folder_path.glob("chapter_*.json"))):
+            target_data_dir = folder_path
+
+    # 2. Resolve boss_folder
+    boss_str = custom_boss_folder or (track_cfg.get("boss_folder") if track_cfg else None)
+    target_boss_dir = default_boss_dir
+    if boss_str:
+        boss_path = Path(boss_str) if Path(boss_str).is_absolute() else root_dir / boss_str
+        if boss_path.is_dir():
+            target_boss_dir = boss_path
+
+    bundle = load_json_bundle(root_dir, data_dir=target_data_dir, boss_dir=target_boss_dir)
     bundle.source_name = f"track:{track_id}"
     return bundle
 

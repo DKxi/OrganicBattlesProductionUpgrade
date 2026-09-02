@@ -23,6 +23,17 @@
   ],
   "tracks": [
     {
+      "id": "default",
+      "curriculum": "foundational",
+      "title": "Default Track",
+      "detail": "core curriculum · comprehensive chemistry",
+      "boss_folder": "data/tracks/default/bosses",
+      "questions": 1350,
+      "chapters": 27,
+      "accent": "amber",
+      "data_folder": "data/tracks/default"
+    },
+    {
       "id": "adv-vocab",
       "curriculum": "advanced",
       "title": "Vocabulary & Core Concepts",

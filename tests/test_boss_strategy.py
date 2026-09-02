@@ -7,7 +7,9 @@ from app.settings import settings
 
 def test_boss_strategy_integrity_across_all_27_chapters():
     """Verify that all 27 chapter JSON files define a valid boss_strategy that matches their question dataset."""
-    data_dir = settings.root_dir / "data"
+    data_dir = settings.root_dir / "data" / "tracks" / "default"
+    if not data_dir.exists():
+        data_dir = settings.root_dir / "data"
     manifest_path = data_dir / "manifest.json"
     assert manifest_path.exists(), "data/manifest.json must exist"
 
