@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 29,
+  "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+  "assigned_boss": "ATP Phosphoryl-Transfer Phantom",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch29_q001",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "ATP phosphoanhydride hydrolysis",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Adenosine triphosphate (ATP) is treated with ATPase enzyme / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        },
+        {
+          "label": "B",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "C",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy",
+      "explanation": "Treating Adenosine triphosphate (ATP) with ATPase enzyme / H2O yields ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy. Rationale: Hydrolysis of terminal phosphoanhydride bond relieves electrostatic repulsion and increases resonance stabilization.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q002",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Glycolysis hexokinase phosphorylation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of D-Glucose into Glucose-6-phosphate + ADP?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Citrate synthase enzyme / H2O"
+        },
+        {
+          "label": "B",
+          "text": "PLP-dependent Alanine transaminase"
+        },
+        {
+          "label": "C",
+          "text": "ATPase enzyme / H2O"
+        },
+        {
+          "label": "D",
+          "text": "ATP / Hexokinase enzyme"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "ATP / Hexokinase enzyme",
+      "explanation": "To convert D-Glucose into Glucose-6-phosphate + ADP, the appropriate reagent is ATP / Hexokinase enzyme. Rationale: Hexokinase transfers a phosphate group from ATP to glucose C6, trapping glucose inside the cell.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q003",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Glycolysis retro-aldol cleavage",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Fructose-1,6-bisphosphate is treated with Aldolase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "B",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "C",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "D",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)",
+      "explanation": "Treating Fructose-1,6-bisphosphate with Aldolase enzyme yields Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP). Rationale: Enzymatic reverse-aldol cleavage splits the 6-carbon bisphosphate into two 3-carbon phosphorylated trioses.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q004",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Beta-oxidation thiolysis cleavage",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 3-Ketoacyl-CoA into Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldolase enzyme"
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "NAD+ / Pyruvate dehydrogenase complex"
+        },
+        {
+          "label": "D",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Coenzyme A (CoA-SH) / Thiolase enzyme",
+      "explanation": "To convert 3-Ketoacyl-CoA into Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA, the appropriate reagent is Coenzyme A (CoA-SH) / Thiolase enzyme. Rationale: Thiolase catalyzes a retro-Claisen condensation, cleaving two-carbon acetyl-CoA from the fatty acid chain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q005",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Pyruvate oxidative decarboxylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Pyruvate + Coenzyme A is treated with NAD+ / Pyruvate dehydrogenase complex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "B",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "C",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetyl-CoA + CO2 + NADH",
+      "explanation": "Treating Pyruvate + Coenzyme A with NAD+ / Pyruvate dehydrogenase complex yields Acetyl-CoA + CO2 + NADH. Rationale: Multi-enzyme complex decarboxylates pyruvate, transferring the acetyl group to CoA and reducing NAD+.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q006",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Citrate synthase Claisen condensation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "Citrate synthase enzyme / H2O"
+        },
+        {
+          "label": "D",
+          "text": "Aldolase enzyme"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Citrate synthase enzyme / H2O",
+      "explanation": "To convert Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH), the appropriate reagent is Citrate synthase enzyme / H2O. Rationale: Acetyl-CoA enol intermediate attacks oxaloacetate carbonyl, followed by thioester hydrolysis to form citrate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q007",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Isocitrate oxidative decarboxylation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NAD+ / Isocitrate dehydrogenase to yield Alpha-Ketoglutarate + CO2 + NADH as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isocitrate"
+        },
+        {
+          "label": "B",
+          "text": "Oxaloacetate + Acetyl-CoA"
+        },
+        {
+          "label": "C",
+          "text": "Alanine + Alpha-Ketoglutarate"
+        },
+        {
+          "label": "D",
+          "text": "L-Malate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Isocitrate",
+      "explanation": "Isocitrate reacts with NAD+ / Isocitrate dehydrogenase to yield Alpha-Ketoglutarate + CO2 + NADH. Rationale: Oxidation of secondary alcohol to beta-keto acid followed by spontaneous decarboxylation yields alpha-ketoglutarate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q008",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Alanine transamination with PLP",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Alanine + Alpha-Ketoglutarate is treated with PLP-dependent Alanine transaminase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "B",
+          "text": "Pyruvate + L-Glutamate"
+        },
+        {
+          "label": "C",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        },
+        {
+          "label": "D",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pyruvate + L-Glutamate",
+      "explanation": "Treating Alanine + Alpha-Ketoglutarate with PLP-dependent Alanine transaminase yields Pyruvate + L-Glutamate. Rationale: Pyridoxal phosphate coenzyme forms a Schiff base, transferring the amino group from alanine to alpha-ketoglutarate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q009",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Glutamate oxidative deamination",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NAD+ + H2O / Glutamate dehydrogenase to yield Alpha-Ketoglutarate + NH4+ + NADH as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "L-Malate"
+        },
+        {
+          "label": "B",
+          "text": "Pyruvate + Coenzyme A"
+        },
+        {
+          "label": "C",
+          "text": "L-Glutamate"
+        },
+        {
+          "label": "D",
+          "text": "3-Ketoacyl-CoA"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "L-Glutamate",
+      "explanation": "L-Glutamate reacts with NAD+ + H2O / Glutamate dehydrogenase to yield Alpha-Ketoglutarate + NH4+ + NADH. Rationale: Oxidative deamination releases free ammonium ion and regenerates the citric acid cycle intermediate alpha-ketoglutarate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q010",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "ATP Phosphoryl-Transfer Phantom",
+      "topic": "Malate oxidation to oxaloacetate",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when L-Malate is treated with NAD+ / Malate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "B",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "D",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Oxaloacetate + NADH + H+",
+      "explanation": "Treating L-Malate with NAD+ / Malate dehydrogenase yields Oxaloacetate + NADH + H+. Rationale: Final step of the citric acid cycle oxidizes secondary alcohol to ketone, regenerating oxaloacetate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "atp-phosphoryl-transfer-phantom.png"
+      ]
+    },
+    {
+      "id": "ch29_q011",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Glycolysis retro-aldol cleavage",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Fructose-1,6-bisphosphate is treated with Aldolase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "B",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "C",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate + L-Glutamate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)",
+      "explanation": "Treating Fructose-1,6-bisphosphate with Aldolase enzyme yields Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP). Rationale: Enzymatic reverse-aldol cleavage splits the 6-carbon bisphosphate into two 3-carbon phosphorylated trioses.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q012",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Beta-oxidation thiolysis cleavage",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 3-Ketoacyl-CoA into Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NAD+ / Pyruvate dehydrogenase complex"
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "Aldolase enzyme"
+        },
+        {
+          "label": "D",
+          "text": "NAD+ + H2O / Glutamate dehydrogenase"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Coenzyme A (CoA-SH) / Thiolase enzyme",
+      "explanation": "To convert 3-Ketoacyl-CoA into Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA, the appropriate reagent is Coenzyme A (CoA-SH) / Thiolase enzyme. Rationale: Thiolase catalyzes a retro-Claisen condensation, cleaving two-carbon acetyl-CoA from the fatty acid chain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q013",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Pyruvate oxidative decarboxylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Pyruvate + Coenzyme A is treated with NAD+ / Pyruvate dehydrogenase complex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "B",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Pyruvate + L-Glutamate"
+        },
+        {
+          "label": "D",
+          "text": "Oxaloacetate + NADH + H+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetyl-CoA + CO2 + NADH",
+      "explanation": "Treating Pyruvate + Coenzyme A with NAD+ / Pyruvate dehydrogenase complex yields Acetyl-CoA + CO2 + NADH. Rationale: Multi-enzyme complex decarboxylates pyruvate, transferring the acetyl group to CoA and reducing NAD+.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q014",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Citrate synthase Claisen condensation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ATP / Hexokinase enzyme"
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "Aldolase enzyme"
+        },
+        {
+          "label": "D",
+          "text": "Citrate synthase enzyme / H2O"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Citrate synthase enzyme / H2O",
+      "explanation": "To convert Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH), the appropriate reagent is Citrate synthase enzyme / H2O. Rationale: Acetyl-CoA enol intermediate attacks oxaloacetate carbonyl, followed by thioester hydrolysis to form citrate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q015",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Isocitrate oxidative decarboxylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Isocitrate is treated with NAD+ / Isocitrate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "B",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alpha-Ketoglutarate + CO2 + NADH",
+      "explanation": "Treating Isocitrate with NAD+ / Isocitrate dehydrogenase yields Alpha-Ketoglutarate + CO2 + NADH. Rationale: Oxidation of secondary alcohol to beta-keto acid followed by spontaneous decarboxylation yields alpha-ketoglutarate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q016",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Alanine transamination with PLP",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with PLP-dependent Alanine transaminase to yield Pyruvate + L-Glutamate as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "L-Glutamate"
+        },
+        {
+          "label": "B",
+          "text": "Oxaloacetate + Acetyl-CoA"
+        },
+        {
+          "label": "C",
+          "text": "3-Ketoacyl-CoA"
+        },
+        {
+          "label": "D",
+          "text": "Alanine + Alpha-Ketoglutarate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alanine + Alpha-Ketoglutarate",
+      "explanation": "Alanine + Alpha-Ketoglutarate reacts with PLP-dependent Alanine transaminase to yield Pyruvate + L-Glutamate. Rationale: Pyridoxal phosphate coenzyme forms a Schiff base, transferring the amino group from alanine to alpha-ketoglutarate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q017",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Glutamate oxidative deamination",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when L-Glutamate is treated with NAD+ + H2O / Glutamate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "B",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate + L-Glutamate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alpha-Ketoglutarate + NH4+ + NADH",
+      "explanation": "Treating L-Glutamate with NAD+ + H2O / Glutamate dehydrogenase yields Alpha-Ketoglutarate + NH4+ + NADH. Rationale: Oxidative deamination releases free ammonium ion and regenerates the citric acid cycle intermediate alpha-ketoglutarate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q018",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Malate oxidation to oxaloacetate",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NAD+ / Malate dehydrogenase to yield Oxaloacetate + NADH + H+ as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "L-Glutamate"
+        },
+        {
+          "label": "B",
+          "text": "Isocitrate"
+        },
+        {
+          "label": "C",
+          "text": "L-Malate"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate + Coenzyme A"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "L-Malate",
+      "explanation": "L-Malate reacts with NAD+ / Malate dehydrogenase to yield Oxaloacetate + NADH + H+. Rationale: Final step of the citric acid cycle oxidizes secondary alcohol to ketone, regenerating oxaloacetate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q019",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "ATP phosphoanhydride hydrolysis",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Adenosine triphosphate (ATP) is treated with ATPase enzyme / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyruvate + L-Glutamate"
+        },
+        {
+          "label": "B",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "D",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy",
+      "explanation": "Treating Adenosine triphosphate (ATP) with ATPase enzyme / H2O yields ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy. Rationale: Hydrolysis of terminal phosphoanhydride bond relieves electrostatic repulsion and increases resonance stabilization.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q020",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Beta-Oxidation Berserker",
+      "topic": "Glycolysis hexokinase phosphorylation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of D-Glucose into Glucose-6-phosphate + ADP?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ATP / Hexokinase enzyme"
+        },
+        {
+          "label": "B",
+          "text": "ATPase enzyme / H2O"
+        },
+        {
+          "label": "C",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        },
+        {
+          "label": "D",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "ATP / Hexokinase enzyme",
+      "explanation": "To convert D-Glucose into Glucose-6-phosphate + ADP, the appropriate reagent is ATP / Hexokinase enzyme. Rationale: Hexokinase transfers a phosphate group from ATP to glucose C6, trapping glucose inside the cell.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "beta-oxidation-berserker.png"
+      ]
+    },
+    {
+      "id": "ch29_q021",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Pyruvate oxidative decarboxylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Pyruvate + Coenzyme A is treated with NAD+ / Pyruvate dehydrogenase complex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "B",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "C",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetyl-CoA + CO2 + NADH",
+      "explanation": "Treating Pyruvate + Coenzyme A with NAD+ / Pyruvate dehydrogenase complex yields Acetyl-CoA + CO2 + NADH. Rationale: Multi-enzyme complex decarboxylates pyruvate, transferring the acetyl group to CoA and reducing NAD+.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q022",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Citrate synthase Claisen condensation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NAD+ + H2O / Glutamate dehydrogenase"
+        },
+        {
+          "label": "B",
+          "text": "PLP-dependent Alanine transaminase"
+        },
+        {
+          "label": "C",
+          "text": "Citrate synthase enzyme / H2O"
+        },
+        {
+          "label": "D",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Citrate synthase enzyme / H2O",
+      "explanation": "To convert Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH), the appropriate reagent is Citrate synthase enzyme / H2O. Rationale: Acetyl-CoA enol intermediate attacks oxaloacetate carbonyl, followed by thioester hydrolysis to form citrate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q023",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Isocitrate oxidative decarboxylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Isocitrate is treated with NAD+ / Isocitrate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        },
+        {
+          "label": "B",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "C",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "D",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Alpha-Ketoglutarate + CO2 + NADH",
+      "explanation": "Treating Isocitrate with NAD+ / Isocitrate dehydrogenase yields Alpha-Ketoglutarate + CO2 + NADH. Rationale: Oxidation of secondary alcohol to beta-keto acid followed by spontaneous decarboxylation yields alpha-ketoglutarate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q024",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Alanine transamination with PLP",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Alanine + Alpha-Ketoglutarate into Pyruvate + L-Glutamate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NAD+ / Malate dehydrogenase"
+        },
+        {
+          "label": "B",
+          "text": "Aldolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "PLP-dependent Alanine transaminase"
+        },
+        {
+          "label": "D",
+          "text": "Citrate synthase enzyme / H2O"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "PLP-dependent Alanine transaminase",
+      "explanation": "To convert Alanine + Alpha-Ketoglutarate into Pyruvate + L-Glutamate, the appropriate reagent is PLP-dependent Alanine transaminase. Rationale: Pyridoxal phosphate coenzyme forms a Schiff base, transferring the amino group from alanine to alpha-ketoglutarate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q025",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Glutamate oxidative deamination",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NAD+ + H2O / Glutamate dehydrogenase to yield Alpha-Ketoglutarate + NH4+ + NADH as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "L-Glutamate"
+        },
+        {
+          "label": "B",
+          "text": "Fructose-1,6-bisphosphate"
+        },
+        {
+          "label": "C",
+          "text": "D-Glucose"
+        },
+        {
+          "label": "D",
+          "text": "Oxaloacetate + Acetyl-CoA"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "L-Glutamate",
+      "explanation": "L-Glutamate reacts with NAD+ + H2O / Glutamate dehydrogenase to yield Alpha-Ketoglutarate + NH4+ + NADH. Rationale: Oxidative deamination releases free ammonium ion and regenerates the citric acid cycle intermediate alpha-ketoglutarate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q026",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Malate oxidation to oxaloacetate",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when L-Malate is treated with NAD+ / Malate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "B",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "C",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "D",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Oxaloacetate + NADH + H+",
+      "explanation": "Treating L-Malate with NAD+ / Malate dehydrogenase yields Oxaloacetate + NADH + H+. Rationale: Final step of the citric acid cycle oxidizes secondary alcohol to ketone, regenerating oxaloacetate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q027",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "ATP phosphoanhydride hydrolysis",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with ATPase enzyme / H2O to yield ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D-Glucose"
+        },
+        {
+          "label": "B",
+          "text": "Adenosine triphosphate (ATP)"
+        },
+        {
+          "label": "C",
+          "text": "Pyruvate + Coenzyme A"
+        },
+        {
+          "label": "D",
+          "text": "Fructose-1,6-bisphosphate"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Adenosine triphosphate (ATP)",
+      "explanation": "Adenosine triphosphate (ATP) reacts with ATPase enzyme / H2O to yield ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy. Rationale: Hydrolysis of terminal phosphoanhydride bond relieves electrostatic repulsion and increases resonance stabilization.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q028",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Glycolysis hexokinase phosphorylation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when D-Glucose is treated with ATP / Hexokinase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "B",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Oxaloacetate + NADH + H+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Glucose-6-phosphate + ADP",
+      "explanation": "Treating D-Glucose with ATP / Hexokinase enzyme yields Glucose-6-phosphate + ADP. Rationale: Hexokinase transfers a phosphate group from ATP to glucose C6, trapping glucose inside the cell.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q029",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Glycolysis retro-aldol cleavage",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Fructose-1,6-bisphosphate into Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aldolase enzyme"
+        },
+        {
+          "label": "B",
+          "text": "PLP-dependent Alanine transaminase"
+        },
+        {
+          "label": "C",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        },
+        {
+          "label": "D",
+          "text": "Citrate synthase enzyme / H2O"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aldolase enzyme",
+      "explanation": "To convert Fructose-1,6-bisphosphate into Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP), the appropriate reagent is Aldolase enzyme. Rationale: Enzymatic reverse-aldol cleavage splits the 6-carbon bisphosphate into two 3-carbon phosphorylated trioses.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q030",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Glycolysis Aldol-Cleavage Golem",
+      "topic": "Beta-oxidation thiolysis cleavage",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 3-Ketoacyl-CoA is treated with Coenzyme A (CoA-SH) / Thiolase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        },
+        {
+          "label": "B",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "C",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate + L-Glutamate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA",
+      "explanation": "Treating 3-Ketoacyl-CoA with Coenzyme A (CoA-SH) / Thiolase enzyme yields Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA. Rationale: Thiolase catalyzes a retro-Claisen condensation, cleaving two-carbon acetyl-CoA from the fatty acid chain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "glycolysis-aldol-cleavage-golem.png"
+      ]
+    },
+    {
+      "id": "ch29_q031",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Isocitrate oxidative decarboxylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Isocitrate is treated with NAD+ / Isocitrate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        },
+        {
+          "label": "B",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate + L-Glutamate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alpha-Ketoglutarate + CO2 + NADH",
+      "explanation": "Treating Isocitrate with NAD+ / Isocitrate dehydrogenase yields Alpha-Ketoglutarate + CO2 + NADH. Rationale: Oxidation of secondary alcohol to beta-keto acid followed by spontaneous decarboxylation yields alpha-ketoglutarate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q032",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Alanine transamination with PLP",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Alanine + Alpha-Ketoglutarate into Pyruvate + L-Glutamate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PLP-dependent Alanine transaminase"
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "NAD+ / Malate dehydrogenase"
+        },
+        {
+          "label": "D",
+          "text": "NAD+ / Pyruvate dehydrogenase complex"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "PLP-dependent Alanine transaminase",
+      "explanation": "To convert Alanine + Alpha-Ketoglutarate into Pyruvate + L-Glutamate, the appropriate reagent is PLP-dependent Alanine transaminase. Rationale: Pyridoxal phosphate coenzyme forms a Schiff base, transferring the amino group from alanine to alpha-ketoglutarate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q033",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Glutamate oxidative deamination",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when L-Glutamate is treated with NAD+ + H2O / Glutamate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "B",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "C",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "D",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alpha-Ketoglutarate + NH4+ + NADH",
+      "explanation": "Treating L-Glutamate with NAD+ + H2O / Glutamate dehydrogenase yields Alpha-Ketoglutarate + NH4+ + NADH. Rationale: Oxidative deamination releases free ammonium ion and regenerates the citric acid cycle intermediate alpha-ketoglutarate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q034",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Malate oxidation to oxaloacetate",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NAD+ / Malate dehydrogenase to yield Oxaloacetate + NADH + H+ as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D-Glucose"
+        },
+        {
+          "label": "B",
+          "text": "Pyruvate + Coenzyme A"
+        },
+        {
+          "label": "C",
+          "text": "Isocitrate"
+        },
+        {
+          "label": "D",
+          "text": "L-Malate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "L-Malate",
+      "explanation": "L-Malate reacts with NAD+ / Malate dehydrogenase to yield Oxaloacetate + NADH + H+. Rationale: Final step of the citric acid cycle oxidizes secondary alcohol to ketone, regenerating oxaloacetate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q035",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "ATP phosphoanhydride hydrolysis",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Adenosine triphosphate (ATP) is treated with ATPase enzyme / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "B",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "C",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "D",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy",
+      "explanation": "Treating Adenosine triphosphate (ATP) with ATPase enzyme / H2O yields ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy. Rationale: Hydrolysis of terminal phosphoanhydride bond relieves electrostatic repulsion and increases resonance stabilization.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q036",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Glycolysis hexokinase phosphorylation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with ATP / Hexokinase enzyme to yield Glucose-6-phosphate + ADP as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D-Glucose"
+        },
+        {
+          "label": "B",
+          "text": "3-Ketoacyl-CoA"
+        },
+        {
+          "label": "C",
+          "text": "Adenosine triphosphate (ATP)"
+        },
+        {
+          "label": "D",
+          "text": "Alanine + Alpha-Ketoglutarate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "D-Glucose",
+      "explanation": "D-Glucose reacts with ATP / Hexokinase enzyme to yield Glucose-6-phosphate + ADP. Rationale: Hexokinase transfers a phosphate group from ATP to glucose C6, trapping glucose inside the cell.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q037",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Glycolysis retro-aldol cleavage",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Fructose-1,6-bisphosphate is treated with Aldolase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "B",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + CO2 + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)",
+      "explanation": "Treating Fructose-1,6-bisphosphate with Aldolase enzyme yields Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP). Rationale: Enzymatic reverse-aldol cleavage splits the 6-carbon bisphosphate into two 3-carbon phosphorylated trioses.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q038",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Beta-oxidation thiolysis cleavage",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 3-Ketoacyl-CoA into Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        },
+        {
+          "label": "B",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "NAD+ / Pyruvate dehydrogenase complex"
+        },
+        {
+          "label": "D",
+          "text": "NAD+ + H2O / Glutamate dehydrogenase"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Coenzyme A (CoA-SH) / Thiolase enzyme",
+      "explanation": "To convert 3-Ketoacyl-CoA into Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA, the appropriate reagent is Coenzyme A (CoA-SH) / Thiolase enzyme. Rationale: Thiolase catalyzes a retro-Claisen condensation, cleaving two-carbon acetyl-CoA from the fatty acid chain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q039",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Pyruvate oxidative decarboxylation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Pyruvate + Coenzyme A is treated with NAD+ / Pyruvate dehydrogenase complex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "B",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "C",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "D",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetyl-CoA + CO2 + NADH",
+      "explanation": "Treating Pyruvate + Coenzyme A with NAD+ / Pyruvate dehydrogenase complex yields Acetyl-CoA + CO2 + NADH. Rationale: Multi-enzyme complex decarboxylates pyruvate, transferring the acetyl group to CoA and reducing NAD+.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q040",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+      "topic": "Citrate synthase Claisen condensation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ATPase enzyme / H2O"
+        },
+        {
+          "label": "B",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        },
+        {
+          "label": "C",
+          "text": "Citrate synthase enzyme / H2O"
+        },
+        {
+          "label": "D",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Citrate synthase enzyme / H2O",
+      "explanation": "To convert Oxaloacetate + Acetyl-CoA into Citrate + Coenzyme A (CoA-SH), the appropriate reagent is Citrate synthase enzyme / H2O. Rationale: Acetyl-CoA enol intermediate attacks oxaloacetate carbonyl, followed by thioester hydrolysis to form citrate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pyridoxal-phosphate-plp-puppeteer.png"
+      ]
+    },
+    {
+      "id": "ch29_q041",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Glutamate oxidative deamination",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when L-Glutamate is treated with NAD+ + H2O / Glutamate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "B",
+          "text": "Acetyl-CoA + CO2 + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "D",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alpha-Ketoglutarate + NH4+ + NADH",
+      "explanation": "Treating L-Glutamate with NAD+ + H2O / Glutamate dehydrogenase yields Alpha-Ketoglutarate + NH4+ + NADH. Rationale: Oxidative deamination releases free ammonium ion and regenerates the citric acid cycle intermediate alpha-ketoglutarate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q042",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Malate oxidation to oxaloacetate",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of L-Malate into Oxaloacetate + NADH + H+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Citrate synthase enzyme / H2O"
+        },
+        {
+          "label": "B",
+          "text": "NAD+ / Malate dehydrogenase"
+        },
+        {
+          "label": "C",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "D",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NAD+ / Malate dehydrogenase",
+      "explanation": "To convert L-Malate into Oxaloacetate + NADH + H+, the appropriate reagent is NAD+ / Malate dehydrogenase. Rationale: Final step of the citric acid cycle oxidizes secondary alcohol to ketone, regenerating oxaloacetate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q043",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "ATP phosphoanhydride hydrolysis",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with ATPase enzyme / H2O to yield ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adenosine triphosphate (ATP)"
+        },
+        {
+          "label": "B",
+          "text": "D-Glucose"
+        },
+        {
+          "label": "C",
+          "text": "Pyruvate + Coenzyme A"
+        },
+        {
+          "label": "D",
+          "text": "Alanine + Alpha-Ketoglutarate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Adenosine triphosphate (ATP)",
+      "explanation": "Adenosine triphosphate (ATP) reacts with ATPase enzyme / H2O to yield ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy. Rationale: Hydrolysis of terminal phosphoanhydride bond relieves electrostatic repulsion and increases resonance stabilization.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q044",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Glycolysis hexokinase phosphorylation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when D-Glucose is treated with ATP / Hexokinase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "B",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "C",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        },
+        {
+          "label": "D",
+          "text": "Glucose-6-phosphate + ADP"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Glucose-6-phosphate + ADP",
+      "explanation": "Treating D-Glucose with ATP / Hexokinase enzyme yields Glucose-6-phosphate + ADP. Rationale: Hexokinase transfers a phosphate group from ATP to glucose C6, trapping glucose inside the cell.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q045",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Glycolysis retro-aldol cleavage",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Aldolase enzyme to yield Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fructose-1,6-bisphosphate"
+        },
+        {
+          "label": "B",
+          "text": "Pyruvate + Coenzyme A"
+        },
+        {
+          "label": "C",
+          "text": "D-Glucose"
+        },
+        {
+          "label": "D",
+          "text": "L-Malate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Fructose-1,6-bisphosphate",
+      "explanation": "Fructose-1,6-bisphosphate reacts with Aldolase enzyme to yield Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP). Rationale: Enzymatic reverse-aldol cleavage splits the 6-carbon bisphosphate into two 3-carbon phosphorylated trioses.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q046",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Beta-oxidation thiolysis cleavage",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 3-Ketoacyl-CoA is treated with Coenzyme A (CoA-SH) / Thiolase enzyme?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "B",
+          "text": "Pyruvate + L-Glutamate"
+        },
+        {
+          "label": "C",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "D",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA",
+      "explanation": "Treating 3-Ketoacyl-CoA with Coenzyme A (CoA-SH) / Thiolase enzyme yields Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA. Rationale: Thiolase catalyzes a retro-Claisen condensation, cleaving two-carbon acetyl-CoA from the fatty acid chain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q047",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Pyruvate oxidative decarboxylation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Pyruvate + Coenzyme A into Acetyl-CoA + CO2 + NADH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ATP / Hexokinase enzyme"
+        },
+        {
+          "label": "B",
+          "text": "NAD+ / Pyruvate dehydrogenase complex"
+        },
+        {
+          "label": "C",
+          "text": "NAD+ / Malate dehydrogenase"
+        },
+        {
+          "label": "D",
+          "text": "PLP-dependent Alanine transaminase"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NAD+ / Pyruvate dehydrogenase complex",
+      "explanation": "To convert Pyruvate + Coenzyme A into Acetyl-CoA + CO2 + NADH, the appropriate reagent is NAD+ / Pyruvate dehydrogenase complex. Rationale: Multi-enzyme complex decarboxylates pyruvate, transferring the acetyl group to CoA and reducing NAD+.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q048",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Citrate synthase Claisen condensation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Oxaloacetate + Acetyl-CoA is treated with Citrate synthase enzyme / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Citrate + Coenzyme A (CoA-SH)"
+        },
+        {
+          "label": "B",
+          "text": "Alpha-Ketoglutarate + NH4+ + NADH"
+        },
+        {
+          "label": "C",
+          "text": "Glucose-6-phosphate + ADP"
+        },
+        {
+          "label": "D",
+          "text": "Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (GAP)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Citrate + Coenzyme A (CoA-SH)",
+      "explanation": "Treating Oxaloacetate + Acetyl-CoA with Citrate synthase enzyme / H2O yields Citrate + Coenzyme A (CoA-SH). Rationale: Acetyl-CoA enol intermediate attacks oxaloacetate carbonyl, followed by thioester hydrolysis to form citrate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q049",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Isocitrate oxidative decarboxylation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Isocitrate into Alpha-Ketoglutarate + CO2 + NADH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NAD+ / Isocitrate dehydrogenase"
+        },
+        {
+          "label": "B",
+          "text": "Aldolase enzyme"
+        },
+        {
+          "label": "C",
+          "text": "Coenzyme A (CoA-SH) / Thiolase enzyme"
+        },
+        {
+          "label": "D",
+          "text": "Citrate synthase enzyme / H2O"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "NAD+ / Isocitrate dehydrogenase",
+      "explanation": "To convert Isocitrate into Alpha-Ketoglutarate + CO2 + NADH, the appropriate reagent is NAD+ / Isocitrate dehydrogenase. Rationale: Oxidation of secondary alcohol to beta-keto acid followed by spontaneous decarboxylation yields alpha-ketoglutarate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    },
+    {
+      "id": "ch29_q050",
+      "chapter": 29,
+      "chapter_title": "The Organic Chemistry of Metabolic Pathways",
+      "boss": "Citric Acid Cycle Overlord",
+      "topic": "Alanine transamination with PLP",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Alanine + Alpha-Ketoglutarate is treated with PLP-dependent Alanine transaminase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fatty acyl-CoA (shortened by 2 carbons) + Acetyl-CoA"
+        },
+        {
+          "label": "B",
+          "text": "Oxaloacetate + NADH + H+"
+        },
+        {
+          "label": "C",
+          "text": "ADP + Inorganic phosphate (Pi) + 30.5 kJ/mol energy"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate + L-Glutamate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Pyruvate + L-Glutamate",
+      "explanation": "Treating Alanine + Alpha-Ketoglutarate with PLP-dependent Alanine transaminase yields Pyruvate + L-Glutamate. Rationale: Pyridoxal phosphate coenzyme forms a Schiff base, transferring the amino group from alanine to alpha-ketoglutarate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "citric-acid-cycle-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "ATP Phosphoryl-Transfer Phantom",
+    "Beta-Oxidation Berserker",
+    "Glycolysis Aldol-Cleavage Golem",
+    "Pyridoxal Phosphate (PLP) Puppeteer",
+    "Citric Acid Cycle Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "ATP Phosphoryl-Transfer Phantom",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "atp-phosphoryl-transfer-phantom.png"
+        ]
+      },
+      {
+        "boss": "Beta-Oxidation Berserker",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "beta-oxidation-berserker.png"
+        ]
+      },
+      {
+        "boss": "Glycolysis Aldol-Cleavage Golem",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "glycolysis-aldol-cleavage-golem.png"
+        ]
+      },
+      {
+        "boss": "Pyridoxal Phosphate (PLP) Puppeteer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "pyridoxal-phosphate-plp-puppeteer.png"
+        ]
+      },
+      {
+        "boss": "Citric Acid Cycle Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "citric-acid-cycle-overlord.png"
+        ]
+      }
+    ]
+  }
+}

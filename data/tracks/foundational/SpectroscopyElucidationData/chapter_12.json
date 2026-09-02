@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 12,
+  "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+  "assigned_boss": "Hooke's Law Harmonizer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch12_q001",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "IR alcohol identification",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "A liquid unknown displays a very broad, intense IR absorption band centered at 3350 cm-1. What functional group is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkane (C-C)"
+        },
+        {
+          "label": "B",
+          "text": "Nitrile (C≡N)"
+        },
+        {
+          "label": "C",
+          "text": "Ketone (C=O)"
+        },
+        {
+          "label": "D",
+          "text": "Alcohol (O-H stretch)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alcohol (O-H stretch)",
+      "explanation": "Intermolecular hydrogen bonding broadens the O-H stretch significantly in liquid films.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q002",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "IR carbonyl diagnostic frequency",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "An unknown compound shows a sharp, strong IR peak at 1715 cm-1. Which compound matches this spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexanol"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexanone (unconjugated 6-ring ketone)"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexanamine"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexene"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyclohexanone (unconjugated 6-ring ketone)",
+      "explanation": "Unconjugated 6-membered cyclic ketones absorb strongly near 1715 cm-1.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q003",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "IR ester vs ketone diagnostic",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How can an ester be distinguished from a ketone using infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters only absorb below 1000 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Esters lack a C=O stretch entirely"
+        },
+        {
+          "label": "D",
+          "text": "Ketones show broad absorptions at 3300 cm-1"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1",
+      "explanation": "Esters feature an inductive shift pushing C=O higher and prominent C-O-C stretches.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q004",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "IR alkyne C-H vs alkene C-H",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "Where does the sp C-H stretch of a terminal alkyne appear in an IR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broad peak at 3400 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Peak at 1650 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Sharp absorption near 3300 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Peak at 2950 cm-1"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sharp absorption near 3300 cm-1",
+      "explanation": "Higher s-character strengthens the sp C-H bond, shifting its stretch to 3300 cm-1.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q005",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "Mass spec molecular ion identification",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In the mass spectrum of 2-butanone (C4H8O, MW 72), what does the peak at m/z = 72 represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The McLafferty fragment"
+        },
+        {
+          "label": "B",
+          "text": "The base peak formed by alpha-cleavage"
+        },
+        {
+          "label": "C",
+          "text": "The molecular ion (M+•) formed by loss of a single electron"
+        },
+        {
+          "label": "D",
+          "text": "An isotopic M+2 artifact"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The molecular ion (M+•) formed by loss of a single electron",
+      "explanation": "The intact radical cation resulting from initial electron bombardment corresponds to MW = 72.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q006",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "Mass spec alpha-cleavage of 2-butanone",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In the mass spectrum of 2-butanone (CH3COCH2CH3), what is the origin of the base peak at m/z = 43?",
+      "options": [
+        {
+          "label": "A",
+          "text": "McLafferty rearrangement with ethylene loss"
+        },
+        {
+          "label": "B",
+          "text": "Loss of CO to form propyl radical"
+        },
+        {
+          "label": "C",
+          "text": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+"
+        },
+        {
+          "label": "D",
+          "text": "Loss of a methyl radical to form [CH3CH2C≡O]+ at m/z 57"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+",
+      "explanation": "Loss of the larger ethyl radical produces the stabilized acylium ion at m/z = 43.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q007",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "Mass spec bromine isotope pattern",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "An organic halide shows twin molecular ion peaks at m/z = 156 and m/z = 158 in a 1:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One iodine atom"
+        },
+        {
+          "label": "B",
+          "text": "Two fluorine atoms"
+        },
+        {
+          "label": "C",
+          "text": "One chlorine atom"
+        },
+        {
+          "label": "D",
+          "text": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)",
+      "explanation": "Bromine's two stable isotopes occur in equal abundance, creating a 1:1 M/(M+2) signature.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q008",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "Mass spec chlorine isotope pattern",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "An unknown shows molecular ion peaks at m/z = 112 and m/z = 114 in a 3:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One fluorine atom"
+        },
+        {
+          "label": "B",
+          "text": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)"
+        },
+        {
+          "label": "C",
+          "text": "Two chlorine atoms"
+        },
+        {
+          "label": "D",
+          "text": "One bromine atom"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)",
+      "explanation": "Chlorine exhibits a characteristic 3:1 M/(M+2) intensity ratio.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q009",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "Mass spec McLafferty rearrangement requirement",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "Which structural feature is required for a carbonyl compound to undergo a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group"
+        },
+        {
+          "label": "B",
+          "text": "An alpha-halogen substituent"
+        },
+        {
+          "label": "C",
+          "text": "A tertiary beta carbon"
+        },
+        {
+          "label": "D",
+          "text": "A double bond conjugated with the carbonyl"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group",
+      "explanation": "McLafferty fragmentation proceeds via a 6-membered cyclic transition state requiring a gamma-hydrogen.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q010",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Hooke's Law Harmonizer",
+      "topic": "IR nitrile vs alkyne distinction",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How can an aliphatic nitrile (R-C≡N) be distinguished from an internal alkyne (R-C≡C-R) in IR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change"
+        },
+        {
+          "label": "B",
+          "text": "Alkynes absorb at 3300 cm-1 only"
+        },
+        {
+          "label": "C",
+          "text": "Nitriles absorb at 1715 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Nitriles have broad peaks at 3400 cm-1"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change",
+      "explanation": "Symmetric alkynes have no net dipole moment change during vibration and are IR inactive.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hookes-law-harmonizer.png"
+      ]
+    },
+    {
+      "id": "ch12_q011",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "IR ester vs ketone diagnostic",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How can an ester be distinguished from a ketone using infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters only absorb below 1000 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Ketones show broad absorptions at 3300 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Esters lack a C=O stretch entirely"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1",
+      "explanation": "Esters feature an inductive shift pushing C=O higher and prominent C-O-C stretches.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q012",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "IR alkyne C-H vs alkene C-H",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "Where does the sp C-H stretch of a terminal alkyne appear in an IR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Peak at 1650 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Peak at 2950 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Sharp absorption near 3300 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Broad peak at 3400 cm-1"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sharp absorption near 3300 cm-1",
+      "explanation": "Higher s-character strengthens the sp C-H bond, shifting its stretch to 3300 cm-1.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q013",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "Mass spec molecular ion identification",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In the mass spectrum of 2-butanone (C4H8O, MW 72), what does the peak at m/z = 72 represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The McLafferty fragment"
+        },
+        {
+          "label": "B",
+          "text": "The base peak formed by alpha-cleavage"
+        },
+        {
+          "label": "C",
+          "text": "An isotopic M+2 artifact"
+        },
+        {
+          "label": "D",
+          "text": "The molecular ion (M+•) formed by loss of a single electron"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The molecular ion (M+•) formed by loss of a single electron",
+      "explanation": "The intact radical cation resulting from initial electron bombardment corresponds to MW = 72.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q014",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "Mass spec alpha-cleavage of 2-butanone",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "In the mass spectrum of 2-butanone (CH3COCH2CH3), what is the origin of the base peak at m/z = 43?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+"
+        },
+        {
+          "label": "B",
+          "text": "Loss of a methyl radical to form [CH3CH2C≡O]+ at m/z 57"
+        },
+        {
+          "label": "C",
+          "text": "McLafferty rearrangement with ethylene loss"
+        },
+        {
+          "label": "D",
+          "text": "Loss of CO to form propyl radical"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+",
+      "explanation": "Loss of the larger ethyl radical produces the stabilized acylium ion at m/z = 43.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q015",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "Mass spec bromine isotope pattern",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "An organic halide shows twin molecular ion peaks at m/z = 156 and m/z = 158 in a 1:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One iodine atom"
+        },
+        {
+          "label": "B",
+          "text": "Two fluorine atoms"
+        },
+        {
+          "label": "C",
+          "text": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)"
+        },
+        {
+          "label": "D",
+          "text": "One chlorine atom"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)",
+      "explanation": "Bromine's two stable isotopes occur in equal abundance, creating a 1:1 M/(M+2) signature.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q016",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "Mass spec chlorine isotope pattern",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "An unknown shows molecular ion peaks at m/z = 112 and m/z = 114 in a 3:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two chlorine atoms"
+        },
+        {
+          "label": "B",
+          "text": "One bromine atom"
+        },
+        {
+          "label": "C",
+          "text": "One fluorine atom"
+        },
+        {
+          "label": "D",
+          "text": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)",
+      "explanation": "Chlorine exhibits a characteristic 3:1 M/(M+2) intensity ratio.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q017",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "Mass spec McLafferty rearrangement requirement",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Which structural feature is required for a carbonyl compound to undergo a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A tertiary beta carbon"
+        },
+        {
+          "label": "B",
+          "text": "An alpha-halogen substituent"
+        },
+        {
+          "label": "C",
+          "text": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group"
+        },
+        {
+          "label": "D",
+          "text": "A double bond conjugated with the carbonyl"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group",
+      "explanation": "McLafferty fragmentation proceeds via a 6-membered cyclic transition state requiring a gamma-hydrogen.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q018",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "IR nitrile vs alkyne distinction",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "How can an aliphatic nitrile (R-C≡N) be distinguished from an internal alkyne (R-C≡C-R) in IR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitriles absorb at 1715 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Alkynes absorb at 3300 cm-1 only"
+        },
+        {
+          "label": "C",
+          "text": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change"
+        },
+        {
+          "label": "D",
+          "text": "Nitriles have broad peaks at 3400 cm-1"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change",
+      "explanation": "Symmetric alkynes have no net dipole moment change during vibration and are IR inactive.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q019",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "IR alcohol identification",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "A liquid unknown displays a very broad, intense IR absorption band centered at 3350 cm-1. What functional group is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile (C≡N)"
+        },
+        {
+          "label": "B",
+          "text": "Ketone (C=O)"
+        },
+        {
+          "label": "C",
+          "text": "Alkane (C-C)"
+        },
+        {
+          "label": "D",
+          "text": "Alcohol (O-H stretch)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alcohol (O-H stretch)",
+      "explanation": "Intermolecular hydrogen bonding broadens the O-H stretch significantly in liquid films.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q020",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Carbonyl Diagnostic Demon",
+      "topic": "IR carbonyl diagnostic frequency",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "An unknown compound shows a sharp, strong IR peak at 1715 cm-1. Which compound matches this spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexanamine"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexanone (unconjugated 6-ring ketone)"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexanol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cyclohexanone (unconjugated 6-ring ketone)",
+      "explanation": "Unconjugated 6-membered cyclic ketones absorb strongly near 1715 cm-1.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "carbonyl-diagnostic-demon.png"
+      ]
+    },
+    {
+      "id": "ch12_q021",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "Mass spec molecular ion identification",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In the mass spectrum of 2-butanone (C4H8O, MW 72), what does the peak at m/z = 72 represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular ion (M+•) formed by loss of a single electron"
+        },
+        {
+          "label": "B",
+          "text": "The base peak formed by alpha-cleavage"
+        },
+        {
+          "label": "C",
+          "text": "The McLafferty fragment"
+        },
+        {
+          "label": "D",
+          "text": "An isotopic M+2 artifact"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The molecular ion (M+•) formed by loss of a single electron",
+      "explanation": "The intact radical cation resulting from initial electron bombardment corresponds to MW = 72.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q022",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "Mass spec alpha-cleavage of 2-butanone",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In the mass spectrum of 2-butanone (CH3COCH2CH3), what is the origin of the base peak at m/z = 43?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+"
+        },
+        {
+          "label": "B",
+          "text": "McLafferty rearrangement with ethylene loss"
+        },
+        {
+          "label": "C",
+          "text": "Loss of a methyl radical to form [CH3CH2C≡O]+ at m/z 57"
+        },
+        {
+          "label": "D",
+          "text": "Loss of CO to form propyl radical"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+",
+      "explanation": "Loss of the larger ethyl radical produces the stabilized acylium ion at m/z = 43.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q023",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "Mass spec bromine isotope pattern",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "An organic halide shows twin molecular ion peaks at m/z = 156 and m/z = 158 in a 1:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One iodine atom"
+        },
+        {
+          "label": "B",
+          "text": "One chlorine atom"
+        },
+        {
+          "label": "C",
+          "text": "Two fluorine atoms"
+        },
+        {
+          "label": "D",
+          "text": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)",
+      "explanation": "Bromine's two stable isotopes occur in equal abundance, creating a 1:1 M/(M+2) signature.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q024",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "Mass spec chlorine isotope pattern",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "An unknown shows molecular ion peaks at m/z = 112 and m/z = 114 in a 3:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One bromine atom"
+        },
+        {
+          "label": "B",
+          "text": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)"
+        },
+        {
+          "label": "C",
+          "text": "Two chlorine atoms"
+        },
+        {
+          "label": "D",
+          "text": "One fluorine atom"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)",
+      "explanation": "Chlorine exhibits a characteristic 3:1 M/(M+2) intensity ratio.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q025",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "Mass spec McLafferty rearrangement requirement",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "Which structural feature is required for a carbonyl compound to undergo a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group"
+        },
+        {
+          "label": "B",
+          "text": "A tertiary beta carbon"
+        },
+        {
+          "label": "C",
+          "text": "An alpha-halogen substituent"
+        },
+        {
+          "label": "D",
+          "text": "A double bond conjugated with the carbonyl"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group",
+      "explanation": "McLafferty fragmentation proceeds via a 6-membered cyclic transition state requiring a gamma-hydrogen.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q026",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "IR nitrile vs alkyne distinction",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How can an aliphatic nitrile (R-C≡N) be distinguished from an internal alkyne (R-C≡C-R) in IR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitriles absorb at 1715 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change"
+        },
+        {
+          "label": "C",
+          "text": "Nitriles have broad peaks at 3400 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Alkynes absorb at 3300 cm-1 only"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change",
+      "explanation": "Symmetric alkynes have no net dipole moment change during vibration and are IR inactive.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q027",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "IR alcohol identification",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "A liquid unknown displays a very broad, intense IR absorption band centered at 3350 cm-1. What functional group is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ketone (C=O)"
+        },
+        {
+          "label": "B",
+          "text": "Nitrile (C≡N)"
+        },
+        {
+          "label": "C",
+          "text": "Alkane (C-C)"
+        },
+        {
+          "label": "D",
+          "text": "Alcohol (O-H stretch)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alcohol (O-H stretch)",
+      "explanation": "Intermolecular hydrogen bonding broadens the O-H stretch significantly in liquid films.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q028",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "IR carbonyl diagnostic frequency",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "An unknown compound shows a sharp, strong IR peak at 1715 cm-1. Which compound matches this spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexanone (unconjugated 6-ring ketone)"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexanamine"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexanol"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexanone (unconjugated 6-ring ketone)",
+      "explanation": "Unconjugated 6-membered cyclic ketones absorb strongly near 1715 cm-1.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q029",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "IR ester vs ketone diagnostic",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How can an ester be distinguished from a ketone using infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters lack a C=O stretch entirely"
+        },
+        {
+          "label": "B",
+          "text": "Esters only absorb below 1000 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Ketones show broad absorptions at 3300 cm-1"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1",
+      "explanation": "Esters feature an inductive shift pushing C=O higher and prominent C-O-C stretches.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q030",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "McLafferty Reaper",
+      "topic": "IR alkyne C-H vs alkene C-H",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "Where does the sp C-H stretch of a terminal alkyne appear in an IR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broad peak at 3400 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Peak at 2950 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Peak at 1650 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Sharp absorption near 3300 cm-1"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sharp absorption near 3300 cm-1",
+      "explanation": "Higher s-character strengthens the sp C-H bond, shifting its stretch to 3300 cm-1.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "mclafferty-reaper.png"
+      ]
+    },
+    {
+      "id": "ch12_q031",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "Mass spec bromine isotope pattern",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "An organic halide shows twin molecular ion peaks at m/z = 156 and m/z = 158 in a 1:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two fluorine atoms"
+        },
+        {
+          "label": "B",
+          "text": "One iodine atom"
+        },
+        {
+          "label": "C",
+          "text": "One chlorine atom"
+        },
+        {
+          "label": "D",
+          "text": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)",
+      "explanation": "Bromine's two stable isotopes occur in equal abundance, creating a 1:1 M/(M+2) signature.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q032",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "Mass spec chlorine isotope pattern",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "An unknown shows molecular ion peaks at m/z = 112 and m/z = 114 in a 3:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One bromine atom"
+        },
+        {
+          "label": "B",
+          "text": "Two chlorine atoms"
+        },
+        {
+          "label": "C",
+          "text": "One fluorine atom"
+        },
+        {
+          "label": "D",
+          "text": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)",
+      "explanation": "Chlorine exhibits a characteristic 3:1 M/(M+2) intensity ratio.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q033",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "Mass spec McLafferty rearrangement requirement",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Which structural feature is required for a carbonyl compound to undergo a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group"
+        },
+        {
+          "label": "B",
+          "text": "An alpha-halogen substituent"
+        },
+        {
+          "label": "C",
+          "text": "A double bond conjugated with the carbonyl"
+        },
+        {
+          "label": "D",
+          "text": "A tertiary beta carbon"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group",
+      "explanation": "McLafferty fragmentation proceeds via a 6-membered cyclic transition state requiring a gamma-hydrogen.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q034",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "IR nitrile vs alkyne distinction",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How can an aliphatic nitrile (R-C≡N) be distinguished from an internal alkyne (R-C≡C-R) in IR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkynes absorb at 3300 cm-1 only"
+        },
+        {
+          "label": "B",
+          "text": "Nitriles have broad peaks at 3400 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change"
+        },
+        {
+          "label": "D",
+          "text": "Nitriles absorb at 1715 cm-1"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change",
+      "explanation": "Symmetric alkynes have no net dipole moment change during vibration and are IR inactive.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q035",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "IR alcohol identification",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "A liquid unknown displays a very broad, intense IR absorption band centered at 3350 cm-1. What functional group is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Alkane (C-C)"
+        },
+        {
+          "label": "B",
+          "text": "Ketone (C=O)"
+        },
+        {
+          "label": "C",
+          "text": "Nitrile (C≡N)"
+        },
+        {
+          "label": "D",
+          "text": "Alcohol (O-H stretch)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alcohol (O-H stretch)",
+      "explanation": "Intermolecular hydrogen bonding broadens the O-H stretch significantly in liquid films.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q036",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "IR carbonyl diagnostic frequency",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "An unknown compound shows a sharp, strong IR peak at 1715 cm-1. Which compound matches this spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexanone (unconjugated 6-ring ketone)"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexanol"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexanamine"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexanone (unconjugated 6-ring ketone)",
+      "explanation": "Unconjugated 6-membered cyclic ketones absorb strongly near 1715 cm-1.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q037",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "IR ester vs ketone diagnostic",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How can an ester be distinguished from a ketone using infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters only absorb below 1000 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Esters lack a C=O stretch entirely"
+        },
+        {
+          "label": "D",
+          "text": "Ketones show broad absorptions at 3300 cm-1"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1",
+      "explanation": "Esters feature an inductive shift pushing C=O higher and prominent C-O-C stretches.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q038",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "IR alkyne C-H vs alkene C-H",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Where does the sp C-H stretch of a terminal alkyne appear in an IR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broad peak at 3400 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Peak at 1650 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Peak at 2950 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Sharp absorption near 3300 cm-1"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sharp absorption near 3300 cm-1",
+      "explanation": "Higher s-character strengthens the sp C-H bond, shifting its stretch to 3300 cm-1.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q039",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "Mass spec molecular ion identification",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "In the mass spectrum of 2-butanone (C4H8O, MW 72), what does the peak at m/z = 72 represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecular ion (M+•) formed by loss of a single electron"
+        },
+        {
+          "label": "B",
+          "text": "An isotopic M+2 artifact"
+        },
+        {
+          "label": "C",
+          "text": "The base peak formed by alpha-cleavage"
+        },
+        {
+          "label": "D",
+          "text": "The McLafferty fragment"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The molecular ion (M+•) formed by loss of a single electron",
+      "explanation": "The intact radical cation resulting from initial electron bombardment corresponds to MW = 72.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q040",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Isotope Ratio Inquisitor",
+      "topic": "Mass spec alpha-cleavage of 2-butanone",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In the mass spectrum of 2-butanone (CH3COCH2CH3), what is the origin of the base peak at m/z = 43?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of a methyl radical to form [CH3CH2C≡O]+ at m/z 57"
+        },
+        {
+          "label": "B",
+          "text": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+"
+        },
+        {
+          "label": "C",
+          "text": "Loss of CO to form propyl radical"
+        },
+        {
+          "label": "D",
+          "text": "McLafferty rearrangement with ethylene loss"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+",
+      "explanation": "Loss of the larger ethyl radical produces the stabilized acylium ion at m/z = 43.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "isotope-ratio-inquisitor.png"
+      ]
+    },
+    {
+      "id": "ch12_q041",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "Mass spec McLafferty rearrangement requirement",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Which structural feature is required for a carbonyl compound to undergo a McLafferty rearrangement in mass spectrometry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group"
+        },
+        {
+          "label": "B",
+          "text": "A tertiary beta carbon"
+        },
+        {
+          "label": "C",
+          "text": "A double bond conjugated with the carbonyl"
+        },
+        {
+          "label": "D",
+          "text": "An alpha-halogen substituent"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A hydrogen atom on the gamma (γ) carbon relative to the carbonyl group",
+      "explanation": "McLafferty fragmentation proceeds via a 6-membered cyclic transition state requiring a gamma-hydrogen.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q042",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "IR nitrile vs alkyne distinction",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How can an aliphatic nitrile (R-C≡N) be distinguished from an internal alkyne (R-C≡C-R) in IR spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitriles absorb at 1715 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change"
+        },
+        {
+          "label": "C",
+          "text": "Nitriles have broad peaks at 3400 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Alkynes absorb at 3300 cm-1 only"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Nitriles show a strong/medium peak at 2250 cm-1; symmetric internal alkynes show no C≡C peak due to zero dipole change",
+      "explanation": "Symmetric alkynes have no net dipole moment change during vibration and are IR inactive.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q043",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "IR alcohol identification",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "A liquid unknown displays a very broad, intense IR absorption band centered at 3350 cm-1. What functional group is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrile (C≡N)"
+        },
+        {
+          "label": "B",
+          "text": "Ketone (C=O)"
+        },
+        {
+          "label": "C",
+          "text": "Alcohol (O-H stretch)"
+        },
+        {
+          "label": "D",
+          "text": "Alkane (C-C)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Alcohol (O-H stretch)",
+      "explanation": "Intermolecular hydrogen bonding broadens the O-H stretch significantly in liquid films.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q044",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "IR carbonyl diagnostic frequency",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "An unknown compound shows a sharp, strong IR peak at 1715 cm-1. Which compound matches this spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexanone (unconjugated 6-ring ketone)"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexanamine"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexanol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexanone (unconjugated 6-ring ketone)",
+      "explanation": "Unconjugated 6-membered cyclic ketones absorb strongly near 1715 cm-1.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q045",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "IR ester vs ketone diagnostic",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "How can an ester be distinguished from a ketone using infrared spectroscopy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esters lack a C=O stretch entirely"
+        },
+        {
+          "label": "B",
+          "text": "Esters only absorb below 1000 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Ketones show broad absorptions at 3300 cm-1"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Esters show a C=O stretch at higher frequency (~1735-1750 cm-1) and strong C-O single bond stretches near 1200 cm-1",
+      "explanation": "Esters feature an inductive shift pushing C=O higher and prominent C-O-C stretches.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q046",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "IR alkyne C-H vs alkene C-H",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Where does the sp C-H stretch of a terminal alkyne appear in an IR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sharp absorption near 3300 cm-1"
+        },
+        {
+          "label": "B",
+          "text": "Broad peak at 3400 cm-1"
+        },
+        {
+          "label": "C",
+          "text": "Peak at 2950 cm-1"
+        },
+        {
+          "label": "D",
+          "text": "Peak at 1650 cm-1"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sharp absorption near 3300 cm-1",
+      "explanation": "Higher s-character strengthens the sp C-H bond, shifting its stretch to 3300 cm-1.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q047",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "Mass spec molecular ion identification",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In the mass spectrum of 2-butanone (C4H8O, MW 72), what does the peak at m/z = 72 represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An isotopic M+2 artifact"
+        },
+        {
+          "label": "B",
+          "text": "The McLafferty fragment"
+        },
+        {
+          "label": "C",
+          "text": "The base peak formed by alpha-cleavage"
+        },
+        {
+          "label": "D",
+          "text": "The molecular ion (M+•) formed by loss of a single electron"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The molecular ion (M+•) formed by loss of a single electron",
+      "explanation": "The intact radical cation resulting from initial electron bombardment corresponds to MW = 72.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q048",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "Mass spec alpha-cleavage of 2-butanone",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "In the mass spectrum of 2-butanone (CH3COCH2CH3), what is the origin of the base peak at m/z = 43?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss of a methyl radical to form [CH3CH2C≡O]+ at m/z 57"
+        },
+        {
+          "label": "B",
+          "text": "Loss of CO to form propyl radical"
+        },
+        {
+          "label": "C",
+          "text": "McLafferty rearrangement with ethylene loss"
+        },
+        {
+          "label": "D",
+          "text": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Alpha-cleavage of an ethyl radical to yield the acetylium ion [CH3C≡O]+",
+      "explanation": "Loss of the larger ethyl radical produces the stabilized acylium ion at m/z = 43.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q049",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "Mass spec bromine isotope pattern",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "An organic halide shows twin molecular ion peaks at m/z = 156 and m/z = 158 in a 1:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One iodine atom"
+        },
+        {
+          "label": "B",
+          "text": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)"
+        },
+        {
+          "label": "C",
+          "text": "Two fluorine atoms"
+        },
+        {
+          "label": "D",
+          "text": "One chlorine atom"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One bromine atom (79Br and 81Br in 50.7% : 49.3% natural abundance)",
+      "explanation": "Bromine's two stable isotopes occur in equal abundance, creating a 1:1 M/(M+2) signature.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch12_q050",
+      "chapter": 12,
+      "chapter_title": "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+      "boss": "Spectral Elucidation Behemoth",
+      "topic": "Mass spec chlorine isotope pattern",
+      "difficulty": "hard",
+      "question_type": "nmr_splitting_prediction",
+      "question": "An unknown shows molecular ion peaks at m/z = 112 and m/z = 114 in a 3:1 intensity ratio. What halogen is present?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One bromine atom"
+        },
+        {
+          "label": "B",
+          "text": "Two chlorine atoms"
+        },
+        {
+          "label": "C",
+          "text": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)"
+        },
+        {
+          "label": "D",
+          "text": "One fluorine atom"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "One chlorine atom (35Cl and 37Cl in 75.8% : 24.2% natural abundance)",
+      "explanation": "Chlorine exhibits a characteristic 3:1 M/(M+2) intensity ratio.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "spectral-elucidation-behemoth.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Hooke's Law Harmonizer",
+    "Carbonyl Diagnostic Demon",
+    "McLafferty Reaper",
+    "Isotope Ratio Inquisitor",
+    "Spectral Elucidation Behemoth"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Hooke's Law Harmonizer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "hookes-law-harmonizer.png"
+        ]
+      },
+      {
+        "boss": "Carbonyl Diagnostic Demon",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "carbonyl-diagnostic-demon.png"
+        ]
+      },
+      {
+        "boss": "McLafferty Reaper",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "mclafferty-reaper.png"
+        ]
+      },
+      {
+        "boss": "Isotope Ratio Inquisitor",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "isotope-ratio-inquisitor.png"
+        ]
+      },
+      {
+        "boss": "Spectral Elucidation Behemoth",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "spectral-elucidation-behemoth.png"
+        ]
+      }
+    ]
+  }
+}

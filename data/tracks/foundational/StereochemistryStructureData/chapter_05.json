@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereochemistry at Tetrahedral Centers",
+  "assigned_boss": "Chiral Centinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Enantiomer definition",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What defines a pair of enantiomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other"
+        },
+        {
+          "label": "B",
+          "text": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters"
+        },
+        {
+          "label": "C",
+          "text": "Molecules that interconvert freely at room temperature"
+        },
+        {
+          "label": "D",
+          "text": "Isomers with different atom connectivity"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters",
+      "explanation": "Enantiomers have identical physical properties except for the direction of optical rotation and interaction with chiral environments.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Diastereomer definition",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What defines a pair of diastereomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isomers with different molecular formulas"
+        },
+        {
+          "label": "B",
+          "text": "Non-superimposable mirror images"
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters"
+        },
+        {
+          "label": "D",
+          "text": "Conformers differing only by C-C rotation"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters",
+      "explanation": "Diastereomers possess different physical and chemical properties (different melting points, boiling points, and NMR spectra).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Meso compound definition",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Which statement accurately describes a meso compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An optically active 50:50 mixture of two enantiomers"
+        },
+        {
+          "label": "B",
+          "text": "A diastereomer lacking any stereocenters"
+        },
+        {
+          "label": "C",
+          "text": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry"
+        },
+        {
+          "label": "D",
+          "text": "A chiral molecule with zero net optical rotation"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry",
+      "explanation": "Despite having chiral centers, internal symmetry planes or inversion centers make meso molecules achiral.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Cahn-Ingold-Prelog priority rule",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "According to the CIP priority rules, how are substituents ranked at a chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference"
+        },
+        {
+          "label": "B",
+          "text": "Higher molecular mass of the entire substituent receives higher priority"
+        },
+        {
+          "label": "C",
+          "text": "Branched chains always outrank unbranched chains regardless of atoms"
+        },
+        {
+          "label": "D",
+          "text": "Alkyl groups always have higher priority than heteroatoms"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference",
+      "explanation": "CIP ranking strictly proceeds atom-by-atom based on atomic number.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "(R) vs (S) configuration assignment",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "How is an (R) configuration determined at a tetrahedral stereocenter with lowest-priority group (4) pointing away?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All substituents reside in the plane of the page"
+        },
+        {
+          "label": "B",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds counterclockwise"
+        },
+        {
+          "label": "C",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction"
+        },
+        {
+          "label": "D",
+          "text": "The molecule rotates plane-polarized light in a clockwise direction (+)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction",
+      "explanation": "With lowest priority (4) in the back, clockwise 1->2->3 is (R) rectus; counterclockwise is (S) sinister.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Specific rotation formula",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "How is specific rotation [α] calculated from polarimetry data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[α] = α × c × l"
+        },
+        {
+          "label": "B",
+          "text": "[α] = α / (molecular weight)"
+        },
+        {
+          "label": "C",
+          "text": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm"
+        },
+        {
+          "label": "D",
+          "text": "[α] = (c × l) / α"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm",
+      "explanation": "Specific rotation standardizes observed rotation against sample concentration and polarimeter cell length.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Racemic mixture properties",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why does a racemic mixture exhibit an observed optical rotation of zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers react with each other to form achiral meso complexes"
+        },
+        {
+          "label": "B",
+          "text": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly"
+        },
+        {
+          "label": "C",
+          "text": "Light cannot pass through solutions of enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "The molecules in a racemic mixture lack stereocenters"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly",
+      "explanation": "An equimolar mixture of (+) and (-) enantiomers produces net zero rotation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Enantiotopic protons and prochirality",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What occurs when one of two enantiotopic protons on a CH2 group is replaced with deuterium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A chiral center is created, generating one specific enantiomer"
+        },
+        {
+          "label": "B",
+          "text": "A meso compound is formed"
+        },
+        {
+          "label": "C",
+          "text": "A constitutional isomer is produced"
+        },
+        {
+          "label": "D",
+          "text": "No stereochemical change occurs"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A chiral center is created, generating one specific enantiomer",
+      "explanation": "Replacing an enantiotopic hydrogen creates a new stereocenter, generating (R) or (S) enantiomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Chirality at heteroatoms",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Why do simple tertiary amines (R1R2R3N) usually fail to exhibit optical activity at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nitrogen cannot form four covalent bonds"
+        },
+        {
+          "label": "B",
+          "text": "Amines always possess an internal plane of symmetry"
+        },
+        {
+          "label": "C",
+          "text": "The nitrogen lone pair prevents optical activity"
+        },
+        {
+          "label": "D",
+          "text": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated",
+      "explanation": "Low inversion barriers (~25 kJ/mol) cause rapid umbrella-like inversion at room temperature.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Fischer projection vertical vs horizontal bonds",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "In a standard Fischer projection, what do horizontal and vertical lines represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Vertical lines represent carbon-carbon double bonds"
+        },
+        {
+          "label": "B",
+          "text": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away"
+        },
+        {
+          "label": "C",
+          "text": "All lines represent bonds lying exactly in the plane of the page"
+        },
+        {
+          "label": "D",
+          "text": "Horizontal lines dash away; vertical lines wedge toward viewer"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away",
+      "explanation": "Horizontal bonds project out toward you (hugging you); vertical bonds project backward into the page.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Meso compound definition",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Which statement accurately describes a meso compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A diastereomer lacking any stereocenters"
+        },
+        {
+          "label": "B",
+          "text": "A chiral molecule with zero net optical rotation"
+        },
+        {
+          "label": "C",
+          "text": "An optically active 50:50 mixture of two enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry",
+      "explanation": "Despite having chiral centers, internal symmetry planes or inversion centers make meso molecules achiral.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Cahn-Ingold-Prelog priority rule",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "According to the CIP priority rules, how are substituents ranked at a chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Branched chains always outrank unbranched chains regardless of atoms"
+        },
+        {
+          "label": "B",
+          "text": "Alkyl groups always have higher priority than heteroatoms"
+        },
+        {
+          "label": "C",
+          "text": "Higher molecular mass of the entire substituent receives higher priority"
+        },
+        {
+          "label": "D",
+          "text": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference",
+      "explanation": "CIP ranking strictly proceeds atom-by-atom based on atomic number.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "(R) vs (S) configuration assignment",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "How is an (R) configuration determined at a tetrahedral stereocenter with lowest-priority group (4) pointing away?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction"
+        },
+        {
+          "label": "B",
+          "text": "The molecule rotates plane-polarized light in a clockwise direction (+)"
+        },
+        {
+          "label": "C",
+          "text": "All substituents reside in the plane of the page"
+        },
+        {
+          "label": "D",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds counterclockwise"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction",
+      "explanation": "With lowest priority (4) in the back, clockwise 1->2->3 is (R) rectus; counterclockwise is (S) sinister.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Specific rotation formula",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "How is specific rotation [α] calculated from polarimetry data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[α] = α × c × l"
+        },
+        {
+          "label": "B",
+          "text": "[α] = (c × l) / α"
+        },
+        {
+          "label": "C",
+          "text": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm"
+        },
+        {
+          "label": "D",
+          "text": "[α] = α / (molecular weight)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm",
+      "explanation": "Specific rotation standardizes observed rotation against sample concentration and polarimeter cell length.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Racemic mixture properties",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does a racemic mixture exhibit an observed optical rotation of zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly"
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers react with each other to form achiral meso complexes"
+        },
+        {
+          "label": "C",
+          "text": "Light cannot pass through solutions of enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "The molecules in a racemic mixture lack stereocenters"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly",
+      "explanation": "An equimolar mixture of (+) and (-) enantiomers produces net zero rotation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Enantiotopic protons and prochirality",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What occurs when one of two enantiotopic protons on a CH2 group is replaced with deuterium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A meso compound is formed"
+        },
+        {
+          "label": "B",
+          "text": "No stereochemical change occurs"
+        },
+        {
+          "label": "C",
+          "text": "A constitutional isomer is produced"
+        },
+        {
+          "label": "D",
+          "text": "A chiral center is created, generating one specific enantiomer"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A chiral center is created, generating one specific enantiomer",
+      "explanation": "Replacing an enantiotopic hydrogen creates a new stereocenter, generating (R) or (S) enantiomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Chirality at heteroatoms",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Why do simple tertiary amines (R1R2R3N) usually fail to exhibit optical activity at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines always possess an internal plane of symmetry"
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen cannot form four covalent bonds"
+        },
+        {
+          "label": "C",
+          "text": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated"
+        },
+        {
+          "label": "D",
+          "text": "The nitrogen lone pair prevents optical activity"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated",
+      "explanation": "Low inversion barriers (~25 kJ/mol) cause rapid umbrella-like inversion at room temperature.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Fischer projection vertical vs horizontal bonds",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "In a standard Fischer projection, what do horizontal and vertical lines represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Horizontal lines dash away; vertical lines wedge toward viewer"
+        },
+        {
+          "label": "B",
+          "text": "All lines represent bonds lying exactly in the plane of the page"
+        },
+        {
+          "label": "C",
+          "text": "Vertical lines represent carbon-carbon double bonds"
+        },
+        {
+          "label": "D",
+          "text": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away",
+      "explanation": "Horizontal bonds project out toward you (hugging you); vertical bonds project backward into the page.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Enantiomer definition",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What defines a pair of enantiomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other"
+        },
+        {
+          "label": "B",
+          "text": "Molecules that interconvert freely at room temperature"
+        },
+        {
+          "label": "C",
+          "text": "Isomers with different atom connectivity"
+        },
+        {
+          "label": "D",
+          "text": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters",
+      "explanation": "Enantiomers have identical physical properties except for the direction of optical rotation and interaction with chiral environments.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Diastereomer definition",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What defines a pair of diastereomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-superimposable mirror images"
+        },
+        {
+          "label": "B",
+          "text": "Isomers with different molecular formulas"
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters"
+        },
+        {
+          "label": "D",
+          "text": "Conformers differing only by C-C rotation"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters",
+      "explanation": "Diastereomers possess different physical and chemical properties (different melting points, boiling points, and NMR spectra).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "(R) vs (S) configuration assignment",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "How is an (R) configuration determined at a tetrahedral stereocenter with lowest-priority group (4) pointing away?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds counterclockwise"
+        },
+        {
+          "label": "B",
+          "text": "The molecule rotates plane-polarized light in a clockwise direction (+)"
+        },
+        {
+          "label": "C",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction"
+        },
+        {
+          "label": "D",
+          "text": "All substituents reside in the plane of the page"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction",
+      "explanation": "With lowest priority (4) in the back, clockwise 1->2->3 is (R) rectus; counterclockwise is (S) sinister.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Specific rotation formula",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "How is specific rotation [α] calculated from polarimetry data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[α] = (c × l) / α"
+        },
+        {
+          "label": "B",
+          "text": "[α] = α × c × l"
+        },
+        {
+          "label": "C",
+          "text": "[α] = α / (molecular weight)"
+        },
+        {
+          "label": "D",
+          "text": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm",
+      "explanation": "Specific rotation standardizes observed rotation against sample concentration and polarimeter cell length.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Racemic mixture properties",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does a racemic mixture exhibit an observed optical rotation of zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecules in a racemic mixture lack stereocenters"
+        },
+        {
+          "label": "B",
+          "text": "Light cannot pass through solutions of enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly"
+        },
+        {
+          "label": "D",
+          "text": "Enantiomers react with each other to form achiral meso complexes"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly",
+      "explanation": "An equimolar mixture of (+) and (-) enantiomers produces net zero rotation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Enantiotopic protons and prochirality",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What occurs when one of two enantiotopic protons on a CH2 group is replaced with deuterium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A chiral center is created, generating one specific enantiomer"
+        },
+        {
+          "label": "B",
+          "text": "A constitutional isomer is produced"
+        },
+        {
+          "label": "C",
+          "text": "A meso compound is formed"
+        },
+        {
+          "label": "D",
+          "text": "No stereochemical change occurs"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A chiral center is created, generating one specific enantiomer",
+      "explanation": "Replacing an enantiotopic hydrogen creates a new stereocenter, generating (R) or (S) enantiomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Chirality at heteroatoms",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why do simple tertiary amines (R1R2R3N) usually fail to exhibit optical activity at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines always possess an internal plane of symmetry"
+        },
+        {
+          "label": "B",
+          "text": "The nitrogen lone pair prevents optical activity"
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen cannot form four covalent bonds"
+        },
+        {
+          "label": "D",
+          "text": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated",
+      "explanation": "Low inversion barriers (~25 kJ/mol) cause rapid umbrella-like inversion at room temperature.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Fischer projection vertical vs horizontal bonds",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "In a standard Fischer projection, what do horizontal and vertical lines represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All lines represent bonds lying exactly in the plane of the page"
+        },
+        {
+          "label": "B",
+          "text": "Horizontal lines dash away; vertical lines wedge toward viewer"
+        },
+        {
+          "label": "C",
+          "text": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away"
+        },
+        {
+          "label": "D",
+          "text": "Vertical lines represent carbon-carbon double bonds"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away",
+      "explanation": "Horizontal bonds project out toward you (hugging you); vertical bonds project backward into the page.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Enantiomer definition",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What defines a pair of enantiomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Molecules that interconvert freely at room temperature"
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other"
+        },
+        {
+          "label": "C",
+          "text": "Isomers with different atom connectivity"
+        },
+        {
+          "label": "D",
+          "text": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters",
+      "explanation": "Enantiomers have identical physical properties except for the direction of optical rotation and interaction with chiral environments.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Diastereomer definition",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What defines a pair of diastereomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-superimposable mirror images"
+        },
+        {
+          "label": "B",
+          "text": "Conformers differing only by C-C rotation"
+        },
+        {
+          "label": "C",
+          "text": "Isomers with different molecular formulas"
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters",
+      "explanation": "Diastereomers possess different physical and chemical properties (different melting points, boiling points, and NMR spectra).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Meso compound definition",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "Which statement accurately describes a meso compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry"
+        },
+        {
+          "label": "B",
+          "text": "An optically active 50:50 mixture of two enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "A diastereomer lacking any stereocenters"
+        },
+        {
+          "label": "D",
+          "text": "A chiral molecule with zero net optical rotation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry",
+      "explanation": "Despite having chiral centers, internal symmetry planes or inversion centers make meso molecules achiral.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Cahn-Ingold-Prelog priority rule",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "According to the CIP priority rules, how are substituents ranked at a chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference"
+        },
+        {
+          "label": "B",
+          "text": "Branched chains always outrank unbranched chains regardless of atoms"
+        },
+        {
+          "label": "C",
+          "text": "Higher molecular mass of the entire substituent receives higher priority"
+        },
+        {
+          "label": "D",
+          "text": "Alkyl groups always have higher priority than heteroatoms"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference",
+      "explanation": "CIP ranking strictly proceeds atom-by-atom based on atomic number.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Racemic mixture properties",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does a racemic mixture exhibit an observed optical rotation of zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enantiomers react with each other to form achiral meso complexes"
+        },
+        {
+          "label": "B",
+          "text": "Light cannot pass through solutions of enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "The molecules in a racemic mixture lack stereocenters"
+        },
+        {
+          "label": "D",
+          "text": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly",
+      "explanation": "An equimolar mixture of (+) and (-) enantiomers produces net zero rotation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Enantiotopic protons and prochirality",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What occurs when one of two enantiotopic protons on a CH2 group is replaced with deuterium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A meso compound is formed"
+        },
+        {
+          "label": "B",
+          "text": "No stereochemical change occurs"
+        },
+        {
+          "label": "C",
+          "text": "A constitutional isomer is produced"
+        },
+        {
+          "label": "D",
+          "text": "A chiral center is created, generating one specific enantiomer"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A chiral center is created, generating one specific enantiomer",
+      "explanation": "Replacing an enantiotopic hydrogen creates a new stereocenter, generating (R) or (S) enantiomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Chirality at heteroatoms",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why do simple tertiary amines (R1R2R3N) usually fail to exhibit optical activity at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The nitrogen lone pair prevents optical activity"
+        },
+        {
+          "label": "B",
+          "text": "Nitrogen cannot form four covalent bonds"
+        },
+        {
+          "label": "C",
+          "text": "Amines always possess an internal plane of symmetry"
+        },
+        {
+          "label": "D",
+          "text": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated",
+      "explanation": "Low inversion barriers (~25 kJ/mol) cause rapid umbrella-like inversion at room temperature.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Fischer projection vertical vs horizontal bonds",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "In a standard Fischer projection, what do horizontal and vertical lines represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Vertical lines represent carbon-carbon double bonds"
+        },
+        {
+          "label": "B",
+          "text": "All lines represent bonds lying exactly in the plane of the page"
+        },
+        {
+          "label": "C",
+          "text": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away"
+        },
+        {
+          "label": "D",
+          "text": "Horizontal lines dash away; vertical lines wedge toward viewer"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away",
+      "explanation": "Horizontal bonds project out toward you (hugging you); vertical bonds project backward into the page.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Enantiomer definition",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What defines a pair of enantiomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters"
+        },
+        {
+          "label": "B",
+          "text": "Isomers with different atom connectivity"
+        },
+        {
+          "label": "C",
+          "text": "Stereoisomers that are not mirror images of each other"
+        },
+        {
+          "label": "D",
+          "text": "Molecules that interconvert freely at room temperature"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters",
+      "explanation": "Enantiomers have identical physical properties except for the direction of optical rotation and interaction with chiral environments.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Diastereomer definition",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What defines a pair of diastereomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters"
+        },
+        {
+          "label": "B",
+          "text": "Conformers differing only by C-C rotation"
+        },
+        {
+          "label": "C",
+          "text": "Isomers with different molecular formulas"
+        },
+        {
+          "label": "D",
+          "text": "Non-superimposable mirror images"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters",
+      "explanation": "Diastereomers possess different physical and chemical properties (different melting points, boiling points, and NMR spectra).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Meso compound definition",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Which statement accurately describes a meso compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An optically active 50:50 mixture of two enantiomers"
+        },
+        {
+          "label": "B",
+          "text": "A diastereomer lacking any stereocenters"
+        },
+        {
+          "label": "C",
+          "text": "A chiral molecule with zero net optical rotation"
+        },
+        {
+          "label": "D",
+          "text": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry",
+      "explanation": "Despite having chiral centers, internal symmetry planes or inversion centers make meso molecules achiral.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Cahn-Ingold-Prelog priority rule",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "According to the CIP priority rules, how are substituents ranked at a chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference"
+        },
+        {
+          "label": "B",
+          "text": "Alkyl groups always have higher priority than heteroatoms"
+        },
+        {
+          "label": "C",
+          "text": "Branched chains always outrank unbranched chains regardless of atoms"
+        },
+        {
+          "label": "D",
+          "text": "Higher molecular mass of the entire substituent receives higher priority"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference",
+      "explanation": "CIP ranking strictly proceeds atom-by-atom based on atomic number.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "(R) vs (S) configuration assignment",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "How is an (R) configuration determined at a tetrahedral stereocenter with lowest-priority group (4) pointing away?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction"
+        },
+        {
+          "label": "B",
+          "text": "All substituents reside in the plane of the page"
+        },
+        {
+          "label": "C",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds counterclockwise"
+        },
+        {
+          "label": "D",
+          "text": "The molecule rotates plane-polarized light in a clockwise direction (+)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction",
+      "explanation": "With lowest priority (4) in the back, clockwise 1->2->3 is (R) rectus; counterclockwise is (S) sinister.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Specific rotation formula",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "How is specific rotation [α] calculated from polarimetry data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm"
+        },
+        {
+          "label": "B",
+          "text": "[α] = (c × l) / α"
+        },
+        {
+          "label": "C",
+          "text": "[α] = α / (molecular weight)"
+        },
+        {
+          "label": "D",
+          "text": "[α] = α × c × l"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm",
+      "explanation": "Specific rotation standardizes observed rotation against sample concentration and polarimeter cell length.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Chirality at heteroatoms",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why do simple tertiary amines (R1R2R3N) usually fail to exhibit optical activity at room temperature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amines always possess an internal plane of symmetry"
+        },
+        {
+          "label": "B",
+          "text": "The nitrogen lone pair prevents optical activity"
+        },
+        {
+          "label": "C",
+          "text": "Nitrogen cannot form four covalent bonds"
+        },
+        {
+          "label": "D",
+          "text": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Rapid nitrogen pyramidal inversion interconverts enantiomers faster than they can be separated",
+      "explanation": "Low inversion barriers (~25 kJ/mol) cause rapid umbrella-like inversion at room temperature.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Fischer projection vertical vs horizontal bonds",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "In a standard Fischer projection, what do horizontal and vertical lines represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Vertical lines represent carbon-carbon double bonds"
+        },
+        {
+          "label": "B",
+          "text": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away"
+        },
+        {
+          "label": "C",
+          "text": "Horizontal lines dash away; vertical lines wedge toward viewer"
+        },
+        {
+          "label": "D",
+          "text": "All lines represent bonds lying exactly in the plane of the page"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Horizontal lines represent bonds wedging toward the viewer; vertical lines represent bonds dashing away",
+      "explanation": "Horizontal bonds project out toward you (hugging you); vertical bonds project backward into the page.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Enantiomer definition",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What defines a pair of enantiomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isomers with different atom connectivity"
+        },
+        {
+          "label": "B",
+          "text": "Molecules that interconvert freely at room temperature"
+        },
+        {
+          "label": "C",
+          "text": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters"
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers that are not mirror images of each other"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers with opposite configurations at all stereocenters",
+      "explanation": "Enantiomers have identical physical properties except for the direction of optical rotation and interaction with chiral environments.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Diastereomer definition",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What defines a pair of diastereomers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isomers with different molecular formulas"
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters"
+        },
+        {
+          "label": "C",
+          "text": "Conformers differing only by C-C rotation"
+        },
+        {
+          "label": "D",
+          "text": "Non-superimposable mirror images"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Stereoisomers that are not mirror images of each other, having different configurations at some (but not all) stereocenters",
+      "explanation": "Diastereomers possess different physical and chemical properties (different melting points, boiling points, and NMR spectra).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Meso compound definition",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Which statement accurately describes a meso compound?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry"
+        },
+        {
+          "label": "B",
+          "text": "An optically active 50:50 mixture of two enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "A chiral molecule with zero net optical rotation"
+        },
+        {
+          "label": "D",
+          "text": "A diastereomer lacking any stereocenters"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An achiral molecule containing two or more stereocenters that is superimposable on its mirror image due to internal symmetry",
+      "explanation": "Despite having chiral centers, internal symmetry planes or inversion centers make meso molecules achiral.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Cahn-Ingold-Prelog priority rule",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "According to the CIP priority rules, how are substituents ranked at a chiral center?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Higher molecular mass of the entire substituent receives higher priority"
+        },
+        {
+          "label": "B",
+          "text": "Alkyl groups always have higher priority than heteroatoms"
+        },
+        {
+          "label": "C",
+          "text": "Branched chains always outrank unbranched chains regardless of atoms"
+        },
+        {
+          "label": "D",
+          "text": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Higher atomic number receives higher priority; if tied, compare atoms along the chain until the first point of difference",
+      "explanation": "CIP ranking strictly proceeds atom-by-atom based on atomic number.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "(R) vs (S) configuration assignment",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "How is an (R) configuration determined at a tetrahedral stereocenter with lowest-priority group (4) pointing away?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The molecule rotates plane-polarized light in a clockwise direction (+)"
+        },
+        {
+          "label": "B",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds counterclockwise"
+        },
+        {
+          "label": "C",
+          "text": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction"
+        },
+        {
+          "label": "D",
+          "text": "All substituents reside in the plane of the page"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Tracing priorities 1 -> 2 -> 3 proceeds in a clockwise direction",
+      "explanation": "With lowest priority (4) in the back, clockwise 1->2->3 is (R) rectus; counterclockwise is (S) sinister.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Specific rotation formula",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "How is specific rotation [α] calculated from polarimetry data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[α] = (c × l) / α"
+        },
+        {
+          "label": "B",
+          "text": "[α] = α / (molecular weight)"
+        },
+        {
+          "label": "C",
+          "text": "[α] = α × c × l"
+        },
+        {
+          "label": "D",
+          "text": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "[α] = α / (c × l), where α is observed rotation, c is concentration in g/mL, and l is pathlength in dm",
+      "explanation": "Specific rotation standardizes observed rotation against sample concentration and polarimeter cell length.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Racemic mixture properties",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does a racemic mixture exhibit an observed optical rotation of zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly"
+        },
+        {
+          "label": "B",
+          "text": "Enantiomers react with each other to form achiral meso complexes"
+        },
+        {
+          "label": "C",
+          "text": "The molecules in a racemic mixture lack stereocenters"
+        },
+        {
+          "label": "D",
+          "text": "Light cannot pass through solutions of enantiomers"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The equal and opposite optical rotations of the two enantiomers cancel out perfectly",
+      "explanation": "An equimolar mixture of (+) and (-) enantiomers produces net zero rotation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Enantiotopic protons and prochirality",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "What occurs when one of two enantiotopic protons on a CH2 group is replaced with deuterium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A constitutional isomer is produced"
+        },
+        {
+          "label": "B",
+          "text": "A meso compound is formed"
+        },
+        {
+          "label": "C",
+          "text": "A chiral center is created, generating one specific enantiomer"
+        },
+        {
+          "label": "D",
+          "text": "No stereochemical change occurs"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A chiral center is created, generating one specific enantiomer",
+      "explanation": "Replacing an enantiotopic hydrogen creates a new stereocenter, generating (R) or (S) enantiomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chiral Centinel",
+    "CIP Priority Paladin",
+    "Enantiomer Enigma",
+    "Meso-Diastereomer Duelist",
+    "Prochiral Prism Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chiral Centinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chiral-centinel.png"
+        ]
+      },
+      {
+        "boss": "CIP Priority Paladin",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cip-priority-paladin.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enigma",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enigma.png"
+        ]
+      },
+      {
+        "boss": "Meso-Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "meso-diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Prochiral Prism Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "prochiral-prism-overlord.png"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 13,
+  "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+  "assigned_boss": "Chemical Shift Shield Sentinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch13_q001",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR ethyl group pattern",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Bromoethane (CH3CH2Br) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "D",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm",
+      "explanation": "Treating Bromoethane (CH3CH2Br) with 1H NMR spectrometer yields Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm. Rationale: Vicinal coupling between methyl (3H) and methylene (2H) generates reciprocal quartet-triplet patterns.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q002",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR isopropyl group pattern",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Bromopropane ((CH3)2CHBr) into Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert 2-Bromopropane ((CH3)2CHBr) into Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm, the appropriate reagent is 1H NMR spectrometer. Rationale: The methine proton splits the 6 equivalent methyl protons into a doublet; methyls split methine into a septet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q003",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR tert-butyl group pattern",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when tert-Butyl methyl ether is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "B",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "D",
+          "text": "3 distinct carbon signals"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)",
+      "explanation": "Treating tert-Butyl methyl ether with 1H NMR spectrometer yields Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H). Rationale: Both the 9 tert-butyl protons and 3 methoxy protons have no adjacent hydrogens, appearing as clean singlets.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q004",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR symmetry of para-disubstituted benzene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,4-Dimethylbenzene (p-xylene) into Singlet (6H, methyls) and Singlet (4H, aromatic)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13C NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectrometer"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert 1,4-Dimethylbenzene (p-xylene) into Singlet (6H, methyls) and Singlet (4H, aromatic), the appropriate reagent is 1H NMR spectrometer. Rationale: Molecular symmetry makes all 4 aromatic ring hydrogens equivalent, producing a single 4H singlet at δ 7.0 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q005",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "13C NMR signal count in symmetric ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 3-Pentanone ((CH3CH2)2C=O) is treated with 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "B",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "3 distinct carbon signals"
+        },
+        {
+          "label": "D",
+          "text": "Downfield signal at δ 206 ppm"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "3 distinct carbon signals",
+      "explanation": "Treating 3-Pentanone ((CH3CH2)2C=O) with 13C NMR spectrometer yields 3 distinct carbon signals. Rationale: Due to plane of symmetry, the molecule contains 3 types of carbon: methyl (C1/C5), methylene (C2/C4), and carbonyl (C3).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q006",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "DEPT-135 NMR spectral interpretation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13C NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "DEPT-135 13C NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DEPT-135 13C NMR spectrometer",
+      "explanation": "To convert 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups), the appropriate reagent is DEPT-135 13C NMR spectrometer. Rationale: DEPT-135 displays CH3 and CH carbons pointing upward (positive) and CH2 carbons pointing downward (negative).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q007",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR alkene coupling constant",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Doublet of doublets with large coupling constant J = 16 Hz as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Pentanone ((CH3CH2)2C=O)"
+        },
+        {
+          "label": "B",
+          "text": "trans-Cinnamic acid (trans-PhCH=CHCOOH)"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Dimethylbenzene (p-xylene)"
+        },
+        {
+          "label": "D",
+          "text": "1-Butanol (CH3CH2CH2CH2OH)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-Cinnamic acid (trans-PhCH=CHCOOH)",
+      "explanation": "trans-Cinnamic acid (trans-PhCH=CHCOOH) reacts with 1H NMR spectrometer to yield Doublet of doublets with large coupling constant J = 16 Hz. Rationale: Trans-alkene protons exhibit large coupling constants (J = 14-18 Hz), whereas cis-alkenes show J = 6-12 Hz.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q008",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR aldehyde peak position",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde (C6H5CHO) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "C",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "3 distinct carbon signals"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sharp singlet downfield at δ 9.8-10.0 ppm",
+      "explanation": "Treating Benzaldehyde (C6H5CHO) with 1H NMR spectrometer yields Sharp singlet downfield at δ 9.8-10.0 ppm. Rationale: Strong magnetic anisotropy and inductive deshielding from the carbonyl group shift the formyl proton to δ 10 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q009",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR carboxylic acid peak position",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Broad singlet downfield at δ 11.5-12.0 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Pentanone ((CH3CH2)2C=O)"
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid (CH3COOH)"
+        },
+        {
+          "label": "D",
+          "text": "Acetone ((CH3)2C=O)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetic acid (CH3COOH)",
+      "explanation": "Acetic acid (CH3COOH) reacts with 1H NMR spectrometer to yield Broad singlet downfield at δ 11.5-12.0 ppm. Rationale: Extensive hydrogen bonding and electron withdrawal strongly deshield the carboxyl proton beyond δ 11 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q010",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "13C NMR carbonyl carbon chemical shift",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetone ((CH3)2C=O) is treated with 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "C",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Downfield signal at δ 206 ppm",
+      "explanation": "Treating Acetone ((CH3)2C=O) with 13C NMR spectrometer yields Downfield signal at δ 206 ppm. Rationale: The highly polarized, sp2-hybridized carbonyl carbon resonates far downfield between δ 190 and 220 ppm.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q011",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR tert-butyl group pattern",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when tert-Butyl methyl ether is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "C",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)",
+      "explanation": "Treating tert-Butyl methyl ether with 1H NMR spectrometer yields Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H). Rationale: Both the 9 tert-butyl protons and 3 methoxy protons have no adjacent hydrogens, appearing as clean singlets.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q012",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR symmetry of para-disubstituted benzene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,4-Dimethylbenzene (p-xylene) into Singlet (6H, methyls) and Singlet (4H, aromatic)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-135 13C NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectrometer"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert 1,4-Dimethylbenzene (p-xylene) into Singlet (6H, methyls) and Singlet (4H, aromatic), the appropriate reagent is 1H NMR spectrometer. Rationale: Molecular symmetry makes all 4 aromatic ring hydrogens equivalent, producing a single 4H singlet at δ 7.0 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q013",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "13C NMR signal count in symmetric ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 3-Pentanone ((CH3CH2)2C=O) is treated with 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "B",
+          "text": "3 distinct carbon signals"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3 distinct carbon signals",
+      "explanation": "Treating 3-Pentanone ((CH3CH2)2C=O) with 13C NMR spectrometer yields 3 distinct carbon signals. Rationale: Due to plane of symmetry, the molecule contains 3 types of carbon: methyl (C1/C5), methylene (C2/C4), and carbonyl (C3).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q014",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "DEPT-135 NMR spectral interpretation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "DEPT-135 13C NMR spectrometer"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DEPT-135 13C NMR spectrometer",
+      "explanation": "To convert 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups), the appropriate reagent is DEPT-135 13C NMR spectrometer. Rationale: DEPT-135 displays CH3 and CH carbons pointing upward (positive) and CH2 carbons pointing downward (negative).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q015",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR alkene coupling constant",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-Cinnamic acid (trans-PhCH=CHCOOH) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "C",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Doublet of doublets with large coupling constant J = 16 Hz",
+      "explanation": "Treating trans-Cinnamic acid (trans-PhCH=CHCOOH) with 1H NMR spectrometer yields Doublet of doublets with large coupling constant J = 16 Hz. Rationale: Trans-alkene protons exhibit large coupling constants (J = 14-18 Hz), whereas cis-alkenes show J = 6-12 Hz.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q016",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR aldehyde peak position",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Sharp singlet downfield at δ 9.8-10.0 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromoethane (CH3CH2Br)"
+        },
+        {
+          "label": "B",
+          "text": "1,4-Dimethylbenzene (p-xylene)"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid (CH3COOH)"
+        },
+        {
+          "label": "D",
+          "text": "Benzaldehyde (C6H5CHO)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Benzaldehyde (C6H5CHO)",
+      "explanation": "Benzaldehyde (C6H5CHO) reacts with 1H NMR spectrometer to yield Sharp singlet downfield at δ 9.8-10.0 ppm. Rationale: Strong magnetic anisotropy and inductive deshielding from the carbonyl group shift the formyl proton to δ 10 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q017",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR carboxylic acid peak position",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetic acid (CH3COOH) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Broad singlet downfield at δ 11.5-12.0 ppm",
+      "explanation": "Treating Acetic acid (CH3COOH) with 1H NMR spectrometer yields Broad singlet downfield at δ 11.5-12.0 ppm. Rationale: Extensive hydrogen bonding and electron withdrawal strongly deshield the carboxyl proton beyond δ 11 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q018",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "13C NMR carbonyl carbon chemical shift",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 13C NMR spectrometer to yield Downfield signal at δ 206 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Pentanone ((CH3CH2)2C=O)"
+        },
+        {
+          "label": "B",
+          "text": "1-Butanol (CH3CH2CH2CH2OH)"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid (CH3COOH)"
+        },
+        {
+          "label": "D",
+          "text": "Acetone ((CH3)2C=O)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetone ((CH3)2C=O)",
+      "explanation": "Acetone ((CH3)2C=O) reacts with 13C NMR spectrometer to yield Downfield signal at δ 206 ppm. Rationale: The highly polarized, sp2-hybridized carbonyl carbon resonates far downfield between δ 190 and 220 ppm.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q019",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR ethyl group pattern",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Bromoethane (CH3CH2Br) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm",
+      "explanation": "Treating Bromoethane (CH3CH2Br) with 1H NMR spectrometer yields Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm. Rationale: Vicinal coupling between methyl (3H) and methylene (2H) generates reciprocal quartet-triplet patterns.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q020",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR isopropyl group pattern",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Bromopropane ((CH3)2CHBr) into Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert 2-Bromopropane ((CH3)2CHBr) into Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm, the appropriate reagent is 1H NMR spectrometer. Rationale: The methine proton splits the 6 equivalent methyl protons into a doublet; methyls split methine into a septet.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q021",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "13C NMR signal count in symmetric ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 3-Pentanone ((CH3CH2)2C=O) is treated with 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 distinct carbon signals"
+        },
+        {
+          "label": "B",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "D",
+          "text": "Downfield signal at δ 206 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "3 distinct carbon signals",
+      "explanation": "Treating 3-Pentanone ((CH3CH2)2C=O) with 13C NMR spectrometer yields 3 distinct carbon signals. Rationale: Due to plane of symmetry, the molecule contains 3 types of carbon: methyl (C1/C5), methylene (C2/C4), and carbonyl (C3).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q022",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "DEPT-135 NMR spectral interpretation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-135 13C NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DEPT-135 13C NMR spectrometer",
+      "explanation": "To convert 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups), the appropriate reagent is DEPT-135 13C NMR spectrometer. Rationale: DEPT-135 displays CH3 and CH carbons pointing upward (positive) and CH2 carbons pointing downward (negative).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q023",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR alkene coupling constant",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-Cinnamic acid (trans-PhCH=CHCOOH) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "C",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        },
+        {
+          "label": "D",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Doublet of doublets with large coupling constant J = 16 Hz",
+      "explanation": "Treating trans-Cinnamic acid (trans-PhCH=CHCOOH) with 1H NMR spectrometer yields Doublet of doublets with large coupling constant J = 16 Hz. Rationale: Trans-alkene protons exhibit large coupling constants (J = 14-18 Hz), whereas cis-alkenes show J = 6-12 Hz.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q024",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR aldehyde peak position",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Benzaldehyde (C6H5CHO) into Sharp singlet downfield at δ 9.8-10.0 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13C NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert Benzaldehyde (C6H5CHO) into Sharp singlet downfield at δ 9.8-10.0 ppm, the appropriate reagent is 1H NMR spectrometer. Rationale: Strong magnetic anisotropy and inductive deshielding from the carbonyl group shift the formyl proton to δ 10 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q025",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR carboxylic acid peak position",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Broad singlet downfield at δ 11.5-12.0 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid (CH3COOH)"
+        },
+        {
+          "label": "B",
+          "text": "Benzaldehyde (C6H5CHO)"
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "D",
+          "text": "3-Pentanone ((CH3CH2)2C=O)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetic acid (CH3COOH)",
+      "explanation": "Acetic acid (CH3COOH) reacts with 1H NMR spectrometer to yield Broad singlet downfield at δ 11.5-12.0 ppm. Rationale: Extensive hydrogen bonding and electron withdrawal strongly deshield the carboxyl proton beyond δ 11 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q026",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "13C NMR carbonyl carbon chemical shift",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetone ((CH3)2C=O) is treated with 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "C",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "3 distinct carbon signals"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Downfield signal at δ 206 ppm",
+      "explanation": "Treating Acetone ((CH3)2C=O) with 13C NMR spectrometer yields Downfield signal at δ 206 ppm. Rationale: The highly polarized, sp2-hybridized carbonyl carbon resonates far downfield between δ 190 and 220 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q027",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR ethyl group pattern",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "B",
+          "text": "1-Butanol (CH3CH2CH2CH2OH)"
+        },
+        {
+          "label": "C",
+          "text": "Bromoethane (CH3CH2Br)"
+        },
+        {
+          "label": "D",
+          "text": "Acetone ((CH3)2C=O)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromoethane (CH3CH2Br)",
+      "explanation": "Bromoethane (CH3CH2Br) reacts with 1H NMR spectrometer to yield Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm. Rationale: Vicinal coupling between methyl (3H) and methylene (2H) generates reciprocal quartet-triplet patterns.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q028",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR isopropyl group pattern",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Bromopropane ((CH3)2CHBr) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "D",
+          "text": "3 distinct carbon signals"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm",
+      "explanation": "Treating 2-Bromopropane ((CH3)2CHBr) with 1H NMR spectrometer yields Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm. Rationale: The methine proton splits the 6 equivalent methyl protons into a doublet; methyls split methine into a septet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q029",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR tert-butyl group pattern",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of tert-Butyl methyl ether into Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert tert-Butyl methyl ether into Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H), the appropriate reagent is 1H NMR spectrometer. Rationale: Both the 9 tert-butyl protons and 3 methoxy protons have no adjacent hydrogens, appearing as clean singlets.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q030",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR symmetry of para-disubstituted benzene",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,4-Dimethylbenzene (p-xylene) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "B",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        },
+        {
+          "label": "D",
+          "text": "3 distinct carbon signals"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Singlet (6H, methyls) and Singlet (4H, aromatic)",
+      "explanation": "Treating 1,4-Dimethylbenzene (p-xylene) with 1H NMR spectrometer yields Singlet (6H, methyls) and Singlet (4H, aromatic). Rationale: Molecular symmetry makes all 4 aromatic ring hydrogens equivalent, producing a single 4H singlet at δ 7.0 ppm.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q031",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR alkene coupling constant",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-Cinnamic acid (trans-PhCH=CHCOOH) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "C",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Doublet of doublets with large coupling constant J = 16 Hz",
+      "explanation": "Treating trans-Cinnamic acid (trans-PhCH=CHCOOH) with 1H NMR spectrometer yields Doublet of doublets with large coupling constant J = 16 Hz. Rationale: Trans-alkene protons exhibit large coupling constants (J = 14-18 Hz), whereas cis-alkenes show J = 6-12 Hz.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q032",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR aldehyde peak position",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Benzaldehyde (C6H5CHO) into Sharp singlet downfield at δ 9.8-10.0 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectrometer"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert Benzaldehyde (C6H5CHO) into Sharp singlet downfield at δ 9.8-10.0 ppm, the appropriate reagent is 1H NMR spectrometer. Rationale: Strong magnetic anisotropy and inductive deshielding from the carbonyl group shift the formyl proton to δ 10 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q033",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR carboxylic acid peak position",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetic acid (CH3COOH) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Broad singlet downfield at δ 11.5-12.0 ppm",
+      "explanation": "Treating Acetic acid (CH3COOH) with 1H NMR spectrometer yields Broad singlet downfield at δ 11.5-12.0 ppm. Rationale: Extensive hydrogen bonding and electron withdrawal strongly deshield the carboxyl proton beyond δ 11 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q034",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "13C NMR carbonyl carbon chemical shift",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 13C NMR spectrometer to yield Downfield signal at δ 206 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone ((CH3)2C=O)"
+        },
+        {
+          "label": "B",
+          "text": "trans-Cinnamic acid (trans-PhCH=CHCOOH)"
+        },
+        {
+          "label": "C",
+          "text": "Benzaldehyde (C6H5CHO)"
+        },
+        {
+          "label": "D",
+          "text": "1,4-Dimethylbenzene (p-xylene)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetone ((CH3)2C=O)",
+      "explanation": "Acetone ((CH3)2C=O) reacts with 13C NMR spectrometer to yield Downfield signal at δ 206 ppm. Rationale: The highly polarized, sp2-hybridized carbonyl carbon resonates far downfield between δ 190 and 220 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q035",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR ethyl group pattern",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Bromoethane (CH3CH2Br) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "D",
+          "text": "Downfield signal at δ 206 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm",
+      "explanation": "Treating Bromoethane (CH3CH2Br) with 1H NMR spectrometer yields Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm. Rationale: Vicinal coupling between methyl (3H) and methylene (2H) generates reciprocal quartet-triplet patterns.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q036",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR isopropyl group pattern",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromopropane ((CH3)2CHBr)"
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid (CH3COOH)"
+        },
+        {
+          "label": "C",
+          "text": "trans-Cinnamic acid (trans-PhCH=CHCOOH)"
+        },
+        {
+          "label": "D",
+          "text": "Acetone ((CH3)2C=O)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Bromopropane ((CH3)2CHBr)",
+      "explanation": "2-Bromopropane ((CH3)2CHBr) reacts with 1H NMR spectrometer to yield Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm. Rationale: The methine proton splits the 6 equivalent methyl protons into a doublet; methyls split methine into a septet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q037",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR tert-butyl group pattern",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when tert-Butyl methyl ether is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        },
+        {
+          "label": "D",
+          "text": "Downfield signal at δ 206 ppm"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)",
+      "explanation": "Treating tert-Butyl methyl ether with 1H NMR spectrometer yields Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H). Rationale: Both the 9 tert-butyl protons and 3 methoxy protons have no adjacent hydrogens, appearing as clean singlets.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q038",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR symmetry of para-disubstituted benzene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,4-Dimethylbenzene (p-xylene) into Singlet (6H, methyls) and Singlet (4H, aromatic)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT-135 13C NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert 1,4-Dimethylbenzene (p-xylene) into Singlet (6H, methyls) and Singlet (4H, aromatic), the appropriate reagent is 1H NMR spectrometer. Rationale: Molecular symmetry makes all 4 aromatic ring hydrogens equivalent, producing a single 4H singlet at δ 7.0 ppm.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q039",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "13C NMR signal count in symmetric ketone",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 3-Pentanone ((CH3CH2)2C=O) is treated with 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        },
+        {
+          "label": "B",
+          "text": "3 distinct carbon signals"
+        },
+        {
+          "label": "C",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3 distinct carbon signals",
+      "explanation": "Treating 3-Pentanone ((CH3CH2)2C=O) with 13C NMR spectrometer yields 3 distinct carbon signals. Rationale: Due to plane of symmetry, the molecule contains 3 types of carbon: methyl (C1/C5), methylene (C2/C4), and carbonyl (C3).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q040",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "DEPT-135 NMR spectral interpretation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "DEPT-135 13C NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectrometer"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DEPT-135 13C NMR spectrometer",
+      "explanation": "To convert 1-Butanol (CH3CH2CH2CH2OH) into 1 positive signal (CH3) and 3 negative signals (CH2 groups), the appropriate reagent is DEPT-135 13C NMR spectrometer. Rationale: DEPT-135 displays CH3 and CH carbons pointing upward (positive) and CH2 carbons pointing downward (negative).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q041",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR carboxylic acid peak position",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetic acid (CH3COOH) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "D",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Broad singlet downfield at δ 11.5-12.0 ppm",
+      "explanation": "Treating Acetic acid (CH3COOH) with 1H NMR spectrometer yields Broad singlet downfield at δ 11.5-12.0 ppm. Rationale: Extensive hydrogen bonding and electron withdrawal strongly deshield the carboxyl proton beyond δ 11 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q042",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "13C NMR carbonyl carbon chemical shift",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Acetone ((CH3)2C=O) into Downfield signal at δ 206 ppm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "13C NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "13C NMR spectrometer",
+      "explanation": "To convert Acetone ((CH3)2C=O) into Downfield signal at δ 206 ppm, the appropriate reagent is 13C NMR spectrometer. Rationale: The highly polarized, sp2-hybridized carbonyl carbon resonates far downfield between δ 190 and 220 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q043",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR ethyl group pattern",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzaldehyde (C6H5CHO)"
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "C",
+          "text": "trans-Cinnamic acid (trans-PhCH=CHCOOH)"
+        },
+        {
+          "label": "D",
+          "text": "Bromoethane (CH3CH2Br)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromoethane (CH3CH2Br)",
+      "explanation": "Bromoethane (CH3CH2Br) reacts with 1H NMR spectrometer to yield Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm. Rationale: Vicinal coupling between methyl (3H) and methylene (2H) generates reciprocal quartet-triplet patterns.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q044",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR isopropyl group pattern",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Bromopropane ((CH3)2CHBr) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Doublet of doublets with large coupling constant J = 16 Hz"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm",
+      "explanation": "Treating 2-Bromopropane ((CH3)2CHBr) with 1H NMR spectrometer yields Doublet (6H) at δ 1.7 ppm and Septet (1H) at δ 4.3 ppm. Rationale: The methine proton splits the 6 equivalent methyl protons into a doublet; methyls split methine into a septet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q045",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR tert-butyl group pattern",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1H NMR spectrometer to yield Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl methyl ether"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromopropane ((CH3)2CHBr)"
+        },
+        {
+          "label": "C",
+          "text": "Acetone ((CH3)2C=O)"
+        },
+        {
+          "label": "D",
+          "text": "Bromoethane (CH3CH2Br)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "tert-Butyl methyl ether",
+      "explanation": "tert-Butyl methyl ether reacts with 1H NMR spectrometer to yield Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H). Rationale: Both the 9 tert-butyl protons and 3 methoxy protons have no adjacent hydrogens, appearing as clean singlets.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q046",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR symmetry of para-disubstituted benzene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,4-Dimethylbenzene (p-xylene) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "B",
+          "text": "Two singlets: δ 1.2 ppm (9H) and δ 3.2 ppm (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Downfield signal at δ 206 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Singlet (6H, methyls) and Singlet (4H, aromatic)",
+      "explanation": "Treating 1,4-Dimethylbenzene (p-xylene) with 1H NMR spectrometer yields Singlet (6H, methyls) and Singlet (4H, aromatic). Rationale: Molecular symmetry makes all 4 aromatic ring hydrogens equivalent, producing a single 4H singlet at δ 7.0 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q047",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "13C NMR signal count in symmetric ketone",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 3-Pentanone ((CH3CH2)2C=O) into 3 distinct carbon signals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "13C NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectrometer"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "13C NMR spectrometer",
+      "explanation": "To convert 3-Pentanone ((CH3CH2)2C=O) into 3 distinct carbon signals, the appropriate reagent is 13C NMR spectrometer. Rationale: Due to plane of symmetry, the molecule contains 3 types of carbon: methyl (C1/C5), methylene (C2/C4), and carbonyl (C3).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q048",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "DEPT-135 NMR spectral interpretation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Butanol (CH3CH2CH2CH2OH) is treated with DEPT-135 13C NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (6H, methyls) and Singlet (4H, aromatic)"
+        },
+        {
+          "label": "B",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Downfield signal at δ 206 ppm"
+        },
+        {
+          "label": "D",
+          "text": "1 positive signal (CH3) and 3 negative signals (CH2 groups)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1 positive signal (CH3) and 3 negative signals (CH2 groups)",
+      "explanation": "Treating 1-Butanol (CH3CH2CH2CH2OH) with DEPT-135 13C NMR spectrometer yields 1 positive signal (CH3) and 3 negative signals (CH2 groups). Rationale: DEPT-135 displays CH3 and CH carbons pointing upward (positive) and CH2 carbons pointing downward (negative).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q049",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR alkene coupling constant",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of trans-Cinnamic acid (trans-PhCH=CHCOOH) into Doublet of doublets with large coupling constant J = 16 Hz?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "B",
+          "text": "1H NMR spectrometer"
+        },
+        {
+          "label": "C",
+          "text": "13C NMR spectrometer"
+        },
+        {
+          "label": "D",
+          "text": "1H NMR spectrometer"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1H NMR spectrometer",
+      "explanation": "To convert trans-Cinnamic acid (trans-PhCH=CHCOOH) into Doublet of doublets with large coupling constant J = 16 Hz, the appropriate reagent is 1H NMR spectrometer. Rationale: Trans-alkene protons exhibit large coupling constants (J = 14-18 Hz), whereas cis-alkenes show J = 6-12 Hz.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q050",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR aldehyde peak position",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde (C6H5CHO) is treated with 1H NMR spectrometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 distinct carbon signals"
+        },
+        {
+          "label": "B",
+          "text": "Sharp singlet downfield at δ 9.8-10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "Broad singlet downfield at δ 11.5-12.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "Triplet (3H) at δ 1.7 ppm and Quartet (2H) at δ 3.4 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sharp singlet downfield at δ 9.8-10.0 ppm",
+      "explanation": "Treating Benzaldehyde (C6H5CHO) with 1H NMR spectrometer yields Sharp singlet downfield at δ 9.8-10.0 ppm. Rationale: Strong magnetic anisotropy and inductive deshielding from the carbonyl group shift the formyl proton to δ 10 ppm.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chemical Shift Shield Sentinel",
+    "Multiplicity Mage",
+    "J-Coupling Juggernaut",
+    "DEPT Carbon Cartographer",
+    "Supreme NMR Oracle"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chemical Shift Shield Sentinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chemical-shift-shield-sentinel.png"
+        ]
+      },
+      {
+        "boss": "Multiplicity Mage",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "multiplicity-mage.png"
+        ]
+      },
+      {
+        "boss": "J-Coupling Juggernaut",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "j-coupling-juggernaut.png"
+        ]
+      },
+      {
+        "boss": "DEPT Carbon Cartographer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "dept-carbon-cartographer.png"
+        ]
+      },
+      {
+        "boss": "Supreme NMR Oracle",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "supreme-nmr-oracle.png"
+        ]
+      }
+    ]
+  }
+}

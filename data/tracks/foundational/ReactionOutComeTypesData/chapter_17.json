@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 17,
+  "chapter_title": "Alcohols and Phenols",
+  "assigned_boss": "Hydride Reducer Hound",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch17_q001",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Selective aldehyde reduction",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde is treated with Sodium borohydride (NaBH4) in ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "C",
+          "text": "Hexanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "Benzyl alcohol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Benzyl alcohol",
+      "explanation": "Treating Benzaldehyde with Sodium borohydride (NaBH4) in ethanol yields Benzyl alcohol. Rationale: NaBH4 selectively reduces aldehydes and ketones to alcohols without affecting esters, amides, or acids.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q002",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Exhaustive ester reduction",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Methyl benzoate into Benzyl alcohol + Methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Acetone ((CH3)2CO); 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. Formaldehyde (HCHO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "D",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. LiAlH4 in ether; 2. Aqueous H3O+",
+      "explanation": "To convert Methyl benzoate into Benzyl alcohol + Methanol, the appropriate reagent is 1. LiAlH4 in ether; 2. Aqueous H3O+. Rationale: Powerful LiAlH4 reduces esters to primary alcohols through an aldehyde intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q003",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Grignard addition to formaldehyde",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexylmagnesium bromide is treated with 1. Formaldehyde (HCHO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexylmethanol (primary alcohol)",
+      "explanation": "Treating Cyclohexylmagnesium bromide with 1. Formaldehyde (HCHO); 2. H3O+ yields Cyclohexylmethanol (primary alcohol). Rationale: Grignard attack on formaldehyde adds a single hydroxymethyl (-CH2OH) carbon unit.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q004",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Grignard addition to aldehyde",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phenylmagnesium bromide into 1-Phenylethanol (secondary alcohol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. CO2 (125°C, 100 atm); 2. Aqueous HCl"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetone ((CH3)2CO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. Acetaldehyde (CH3CHO); 2. H3O+",
+      "explanation": "To convert Phenylmagnesium bromide into 1-Phenylethanol (secondary alcohol), the appropriate reagent is 1. Acetaldehyde (CH3CHO); 2. H3O+. Rationale: Nucleophilic addition of aryl Grignard to an aldehyde generates a secondary alcohol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q005",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Grignard addition to ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Methylmagnesium bromide is treated with 1. Acetone ((CH3)2CO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "Hexanoic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)",
+      "explanation": "Treating Methylmagnesium bromide with 1. Acetone ((CH3)2CO); 2. H3O+ yields 2-Methyl-2-propanol (tert-butanol, tertiary alcohol). Rationale: Nucleophilic addition of methyl Grignard to a ketone constructs a tertiary alcohol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q006",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Selective oxidation of 1° alcohol to aldehyde",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexanol into Hexanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "CrO3 / aqueous H2SO4 (Jones reagent)"
+        },
+        {
+          "label": "C",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "D",
+          "text": "1. Acetone ((CH3)2CO); 2. H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "PCC (pyridinium chlorochromate) in CH2Cl2",
+      "explanation": "To convert 1-Hexanol into Hexanal, the appropriate reagent is PCC (pyridinium chlorochromate) in CH2Cl2. Rationale: Anhydrous PCC oxidizes primary alcohols to aldehydes without over-oxidation to carboxylic acids.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q007",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Exhaustive oxidation of 1° alcohol to carboxylic acid",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with CrO3 / aqueous H2SO4 (Jones reagent) to yield Hexanoic acid as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,3-Dimethyl-2,3-butanediol (pinacol)"
+        },
+        {
+          "label": "B",
+          "text": "Sodium phenoxide"
+        },
+        {
+          "label": "C",
+          "text": "Methylmagnesium bromide"
+        },
+        {
+          "label": "D",
+          "text": "1-Hexanol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1-Hexanol",
+      "explanation": "1-Hexanol reacts with CrO3 / aqueous H2SO4 (Jones reagent) to yield Hexanoic acid. Rationale: Hydrated aldehyde intermediate is rapidly oxidized by aqueous chromium(VI) to carboxylic acid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q008",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Pinacol rearrangement",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2,3-Dimethyl-2,3-butanediol (pinacol) is treated with Concentrated H2SO4 / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "3,3-Dimethyl-2-butanone (pinacolone) + H2O",
+      "explanation": "Treating 2,3-Dimethyl-2,3-butanediol (pinacol) with Concentrated H2SO4 / heat yields 3,3-Dimethyl-2-butanone (pinacolone) + H2O. Rationale: Protonation, loss of water to form 3° carbocation, and 1,2-methyl shift driven by carbonyl resonance.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q009",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Kolbe-Schmitt synthesis of salicylic acid",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl to yield Salicylic acid (2-hydroxybenzoic acid) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methylmagnesium bromide"
+        },
+        {
+          "label": "B",
+          "text": "Benzaldehyde"
+        },
+        {
+          "label": "C",
+          "text": "Sodium phenoxide"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexylmagnesium bromide"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Sodium phenoxide",
+      "explanation": "Sodium phenoxide reacts with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl to yield Salicylic acid (2-hydroxybenzoic acid). Rationale: Phenoxide nucleophile attacks CO2 ortho to the hydroxyl group under high pressure.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q010",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Hydride Reducer Hound",
+      "topic": "Oxidation of hydroquinone to quinone",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,4-Benzenediol (hydroquinone) is treated with Na2Cr2O7 / H2SO4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "B",
+          "text": "Hexanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1,4-Benzoquinone",
+      "explanation": "Treating 1,4-Benzenediol (hydroquinone) with Na2Cr2O7 / H2SO4 yields 1,4-Benzoquinone. Rationale: Oxidation of 1,4-hydroquinone removes two electrons and two protons to form the fully conjugated 1,4-dione.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "hydride-reducer-hound.png"
+      ]
+    },
+    {
+      "id": "ch17_q011",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Grignard addition to formaldehyde",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexylmagnesium bromide is treated with 1. Formaldehyde (HCHO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        },
+        {
+          "label": "D",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cyclohexylmethanol (primary alcohol)",
+      "explanation": "Treating Cyclohexylmagnesium bromide with 1. Formaldehyde (HCHO); 2. H3O+ yields Cyclohexylmethanol (primary alcohol). Rationale: Grignard attack on formaldehyde adds a single hydroxymethyl (-CH2OH) carbon unit.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q012",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Grignard addition to aldehyde",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phenylmagnesium bromide into 1-Phenylethanol (secondary alcohol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concentrated H2SO4 / heat"
+        },
+        {
+          "label": "B",
+          "text": "CrO3 / aqueous H2SO4 (Jones reagent)"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "Na2Cr2O7 / H2SO4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. Acetaldehyde (CH3CHO); 2. H3O+",
+      "explanation": "To convert Phenylmagnesium bromide into 1-Phenylethanol (secondary alcohol), the appropriate reagent is 1. Acetaldehyde (CH3CHO); 2. H3O+. Rationale: Nucleophilic addition of aryl Grignard to an aldehyde generates a secondary alcohol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q013",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Grignard addition to ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Methylmagnesium bromide is treated with 1. Acetone ((CH3)2CO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)",
+      "explanation": "Treating Methylmagnesium bromide with 1. Acetone ((CH3)2CO); 2. H3O+ yields 2-Methyl-2-propanol (tert-butanol, tertiary alcohol). Rationale: Nucleophilic addition of methyl Grignard to a ketone constructs a tertiary alcohol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q014",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Selective oxidation of 1° alcohol to aldehyde",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexanol into Hexanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concentrated H2SO4 / heat"
+        },
+        {
+          "label": "B",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "Na2Cr2O7 / H2SO4"
+        },
+        {
+          "label": "D",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "PCC (pyridinium chlorochromate) in CH2Cl2",
+      "explanation": "To convert 1-Hexanol into Hexanal, the appropriate reagent is PCC (pyridinium chlorochromate) in CH2Cl2. Rationale: Anhydrous PCC oxidizes primary alcohols to aldehydes without over-oxidation to carboxylic acids.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q015",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Exhaustive oxidation of 1° alcohol to carboxylic acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexanol is treated with CrO3 / aqueous H2SO4 (Jones reagent)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol"
+        },
+        {
+          "label": "B",
+          "text": "Hexanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hexanoic acid",
+      "explanation": "Treating 1-Hexanol with CrO3 / aqueous H2SO4 (Jones reagent) yields Hexanoic acid. Rationale: Hydrated aldehyde intermediate is rapidly oxidized by aqueous chromium(VI) to carboxylic acid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q016",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Pinacol rearrangement",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Concentrated H2SO4 / heat to yield 3,3-Dimethyl-2-butanone (pinacolone) + H2O as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Hexanol"
+        },
+        {
+          "label": "B",
+          "text": "2,3-Dimethyl-2,3-butanediol (pinacol)"
+        },
+        {
+          "label": "C",
+          "text": "Benzaldehyde"
+        },
+        {
+          "label": "D",
+          "text": "Methyl benzoate"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2,3-Dimethyl-2,3-butanediol (pinacol)",
+      "explanation": "2,3-Dimethyl-2,3-butanediol (pinacol) reacts with Concentrated H2SO4 / heat to yield 3,3-Dimethyl-2-butanone (pinacolone) + H2O. Rationale: Protonation, loss of water to form 3° carbocation, and 1,2-methyl shift driven by carbonyl resonance.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q017",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Kolbe-Schmitt synthesis of salicylic acid",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Sodium phenoxide is treated with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexanal"
+        },
+        {
+          "label": "B",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "C",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Salicylic acid (2-hydroxybenzoic acid)",
+      "explanation": "Treating Sodium phenoxide with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl yields Salicylic acid (2-hydroxybenzoic acid). Rationale: Phenoxide nucleophile attacks CO2 ortho to the hydroxyl group under high pressure.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q018",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Oxidation of hydroquinone to quinone",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Na2Cr2O7 / H2SO4 to yield 1,4-Benzoquinone as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,4-Benzenediol (hydroquinone)"
+        },
+        {
+          "label": "B",
+          "text": "Methylmagnesium bromide"
+        },
+        {
+          "label": "C",
+          "text": "Methyl benzoate"
+        },
+        {
+          "label": "D",
+          "text": "1-Hexanol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1,4-Benzenediol (hydroquinone)",
+      "explanation": "1,4-Benzenediol (hydroquinone) reacts with Na2Cr2O7 / H2SO4 to yield 1,4-Benzoquinone. Rationale: Oxidation of 1,4-hydroquinone removes two electrons and two protons to form the fully conjugated 1,4-dione.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q019",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Selective aldehyde reduction",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde is treated with Sodium borohydride (NaBH4) in ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol"
+        },
+        {
+          "label": "B",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "C",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "D",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzyl alcohol",
+      "explanation": "Treating Benzaldehyde with Sodium borohydride (NaBH4) in ethanol yields Benzyl alcohol. Rationale: NaBH4 selectively reduces aldehydes and ketones to alcohols without affecting esters, amides, or acids.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q020",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Tosylate Trapper",
+      "topic": "Exhaustive ester reduction",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Methyl benzoate into Benzyl alcohol + Methanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Concentrated H2SO4 / heat"
+        },
+        {
+          "label": "D",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. LiAlH4 in ether; 2. Aqueous H3O+",
+      "explanation": "To convert Methyl benzoate into Benzyl alcohol + Methanol, the appropriate reagent is 1. LiAlH4 in ether; 2. Aqueous H3O+. Rationale: Powerful LiAlH4 reduces esters to primary alcohols through an aldehyde intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tosylate-trapper.png"
+      ]
+    },
+    {
+      "id": "ch17_q021",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Grignard addition to ketone",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Methylmagnesium bromide is treated with 1. Acetone ((CH3)2CO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "D",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)",
+      "explanation": "Treating Methylmagnesium bromide with 1. Acetone ((CH3)2CO); 2. H3O+ yields 2-Methyl-2-propanol (tert-butanol, tertiary alcohol). Rationale: Nucleophilic addition of methyl Grignard to a ketone constructs a tertiary alcohol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q022",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Selective oxidation of 1° alcohol to aldehyde",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexanol into Hexanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Na2Cr2O7 / H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. CO2 (125°C, 100 atm); 2. Aqueous HCl"
+        },
+        {
+          "label": "C",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "1. Formaldehyde (HCHO); 2. H3O+"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "PCC (pyridinium chlorochromate) in CH2Cl2",
+      "explanation": "To convert 1-Hexanol into Hexanal, the appropriate reagent is PCC (pyridinium chlorochromate) in CH2Cl2. Rationale: Anhydrous PCC oxidizes primary alcohols to aldehydes without over-oxidation to carboxylic acids.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q023",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Exhaustive oxidation of 1° alcohol to carboxylic acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexanol is treated with CrO3 / aqueous H2SO4 (Jones reagent)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hexanoic acid",
+      "explanation": "Treating 1-Hexanol with CrO3 / aqueous H2SO4 (Jones reagent) yields Hexanoic acid. Rationale: Hydrated aldehyde intermediate is rapidly oxidized by aqueous chromium(VI) to carboxylic acid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q024",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Pinacol rearrangement",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2,3-Dimethyl-2,3-butanediol (pinacol) into 3,3-Dimethyl-2-butanone (pinacolone) + H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Concentrated H2SO4 / heat"
+        },
+        {
+          "label": "B",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Concentrated H2SO4 / heat",
+      "explanation": "To convert 2,3-Dimethyl-2,3-butanediol (pinacol) into 3,3-Dimethyl-2-butanone (pinacolone) + H2O, the appropriate reagent is Concentrated H2SO4 / heat. Rationale: Protonation, loss of water to form 3° carbocation, and 1,2-methyl shift driven by carbonyl resonance.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q025",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Kolbe-Schmitt synthesis of salicylic acid",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl to yield Salicylic acid (2-hydroxybenzoic acid) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sodium phenoxide"
+        },
+        {
+          "label": "B",
+          "text": "1,4-Benzenediol (hydroquinone)"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexanol"
+        },
+        {
+          "label": "D",
+          "text": "Phenylmagnesium bromide"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sodium phenoxide",
+      "explanation": "Sodium phenoxide reacts with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl to yield Salicylic acid (2-hydroxybenzoic acid). Rationale: Phenoxide nucleophile attacks CO2 ortho to the hydroxyl group under high pressure.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q026",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Oxidation of hydroquinone to quinone",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,4-Benzenediol (hydroquinone) is treated with Na2Cr2O7 / H2SO4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "Hexanal"
+        },
+        {
+          "label": "D",
+          "text": "1,4-Benzoquinone"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1,4-Benzoquinone",
+      "explanation": "Treating 1,4-Benzenediol (hydroquinone) with Na2Cr2O7 / H2SO4 yields 1,4-Benzoquinone. Rationale: Oxidation of 1,4-hydroquinone removes two electrons and two protons to form the fully conjugated 1,4-dione.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q027",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Selective aldehyde reduction",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Sodium borohydride (NaBH4) in ethanol to yield Benzyl alcohol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmagnesium bromide"
+        },
+        {
+          "label": "B",
+          "text": "Benzaldehyde"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzenediol (hydroquinone)"
+        },
+        {
+          "label": "D",
+          "text": "Methylmagnesium bromide"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Benzaldehyde",
+      "explanation": "Benzaldehyde reacts with Sodium borohydride (NaBH4) in ethanol to yield Benzyl alcohol. Rationale: NaBH4 selectively reduces aldehydes and ketones to alcohols without affecting esters, amides, or acids.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q028",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Exhaustive ester reduction",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Methyl benzoate is treated with 1. LiAlH4 in ether; 2. Aqueous H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "B",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "C",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Hexanoic acid"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Benzyl alcohol + Methanol",
+      "explanation": "Treating Methyl benzoate with 1. LiAlH4 in ether; 2. Aqueous H3O+ yields Benzyl alcohol + Methanol. Rationale: Powerful LiAlH4 reduces esters to primary alcohols through an aldehyde intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q029",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Grignard addition to formaldehyde",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclohexylmagnesium bromide into Cyclohexylmethanol (primary alcohol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sodium borohydride (NaBH4) in ethanol"
+        },
+        {
+          "label": "B",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetone ((CH3)2CO); 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "1. Formaldehyde (HCHO); 2. H3O+"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Formaldehyde (HCHO); 2. H3O+",
+      "explanation": "To convert Cyclohexylmagnesium bromide into Cyclohexylmethanol (primary alcohol), the appropriate reagent is 1. Formaldehyde (HCHO); 2. H3O+. Rationale: Grignard attack on formaldehyde adds a single hydroxymethyl (-CH2OH) carbon unit.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q030",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Selective Oxidation Ogre",
+      "topic": "Grignard addition to aldehyde",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Phenylmagnesium bromide is treated with 1. Acetaldehyde (CH3CHO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol"
+        },
+        {
+          "label": "B",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Phenylethanol (secondary alcohol)",
+      "explanation": "Treating Phenylmagnesium bromide with 1. Acetaldehyde (CH3CHO); 2. H3O+ yields 1-Phenylethanol (secondary alcohol). Rationale: Nucleophilic addition of aryl Grignard to an aldehyde generates a secondary alcohol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "selective-oxidation-ogre.png"
+      ]
+    },
+    {
+      "id": "ch17_q031",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Exhaustive oxidation of 1° alcohol to carboxylic acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexanol is treated with CrO3 / aqueous H2SO4 (Jones reagent)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "Benzyl alcohol"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Hexanal"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hexanoic acid",
+      "explanation": "Treating 1-Hexanol with CrO3 / aqueous H2SO4 (Jones reagent) yields Hexanoic acid. Rationale: Hydrated aldehyde intermediate is rapidly oxidized by aqueous chromium(VI) to carboxylic acid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q032",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Pinacol rearrangement",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2,3-Dimethyl-2,3-butanediol (pinacol) into 3,3-Dimethyl-2-butanone (pinacolone) + H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetone ((CH3)2CO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. CO2 (125°C, 100 atm); 2. Aqueous HCl"
+        },
+        {
+          "label": "D",
+          "text": "Concentrated H2SO4 / heat"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Concentrated H2SO4 / heat",
+      "explanation": "To convert 2,3-Dimethyl-2,3-butanediol (pinacol) into 3,3-Dimethyl-2-butanone (pinacolone) + H2O, the appropriate reagent is Concentrated H2SO4 / heat. Rationale: Protonation, loss of water to form 3° carbocation, and 1,2-methyl shift driven by carbonyl resonance.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q033",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Kolbe-Schmitt synthesis of salicylic acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Sodium phenoxide is treated with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "D",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Salicylic acid (2-hydroxybenzoic acid)",
+      "explanation": "Treating Sodium phenoxide with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl yields Salicylic acid (2-hydroxybenzoic acid). Rationale: Phenoxide nucleophile attacks CO2 ortho to the hydroxyl group under high pressure.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q034",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Oxidation of hydroquinone to quinone",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Na2Cr2O7 / H2SO4 to yield 1,4-Benzoquinone as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl benzoate"
+        },
+        {
+          "label": "B",
+          "text": "Sodium phenoxide"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexanol"
+        },
+        {
+          "label": "D",
+          "text": "1,4-Benzenediol (hydroquinone)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1,4-Benzenediol (hydroquinone)",
+      "explanation": "1,4-Benzenediol (hydroquinone) reacts with Na2Cr2O7 / H2SO4 to yield 1,4-Benzoquinone. Rationale: Oxidation of 1,4-hydroquinone removes two electrons and two protons to form the fully conjugated 1,4-dione.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q035",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Selective aldehyde reduction",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde is treated with Sodium borohydride (NaBH4) in ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "Hexanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "1,4-Benzoquinone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzyl alcohol",
+      "explanation": "Treating Benzaldehyde with Sodium borohydride (NaBH4) in ethanol yields Benzyl alcohol. Rationale: NaBH4 selectively reduces aldehydes and ketones to alcohols without affecting esters, amides, or acids.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q036",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Exhaustive ester reduction",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. LiAlH4 in ether; 2. Aqueous H3O+ to yield Benzyl alcohol + Methanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmagnesium bromide"
+        },
+        {
+          "label": "B",
+          "text": "2,3-Dimethyl-2,3-butanediol (pinacol)"
+        },
+        {
+          "label": "C",
+          "text": "Methyl benzoate"
+        },
+        {
+          "label": "D",
+          "text": "Sodium phenoxide"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methyl benzoate",
+      "explanation": "Methyl benzoate reacts with 1. LiAlH4 in ether; 2. Aqueous H3O+ to yield Benzyl alcohol + Methanol. Rationale: Powerful LiAlH4 reduces esters to primary alcohols through an aldehyde intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q037",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Grignard addition to formaldehyde",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexylmagnesium bromide is treated with 1. Formaldehyde (HCHO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol"
+        },
+        {
+          "label": "B",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "C",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclohexylmethanol (primary alcohol)",
+      "explanation": "Treating Cyclohexylmagnesium bromide with 1. Formaldehyde (HCHO); 2. H3O+ yields Cyclohexylmethanol (primary alcohol). Rationale: Grignard attack on formaldehyde adds a single hydroxymethyl (-CH2OH) carbon unit.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q038",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Grignard addition to aldehyde",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phenylmagnesium bromide into 1-Phenylethanol (secondary alcohol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Na2Cr2O7 / H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Sodium borohydride (NaBH4) in ethanol"
+        },
+        {
+          "label": "D",
+          "text": "Concentrated H2SO4 / heat"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Acetaldehyde (CH3CHO); 2. H3O+",
+      "explanation": "To convert Phenylmagnesium bromide into 1-Phenylethanol (secondary alcohol), the appropriate reagent is 1. Acetaldehyde (CH3CHO); 2. H3O+. Rationale: Nucleophilic addition of aryl Grignard to an aldehyde generates a secondary alcohol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q039",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Grignard addition to ketone",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Methylmagnesium bromide is treated with 1. Acetone ((CH3)2CO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,4-Benzoquinone"
+        },
+        {
+          "label": "B",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "C",
+          "text": "Hexanal"
+        },
+        {
+          "label": "D",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)",
+      "explanation": "Treating Methylmagnesium bromide with 1. Acetone ((CH3)2CO); 2. H3O+ yields 2-Methyl-2-propanol (tert-butanol, tertiary alcohol). Rationale: Nucleophilic addition of methyl Grignard to a ketone constructs a tertiary alcohol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q040",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Silyl Ether Shieldbearer",
+      "topic": "Selective oxidation of 1° alcohol to aldehyde",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexanol into Hexanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PCC (pyridinium chlorochromate) in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Concentrated H2SO4 / heat"
+        },
+        {
+          "label": "D",
+          "text": "CrO3 / aqueous H2SO4 (Jones reagent)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "PCC (pyridinium chlorochromate) in CH2Cl2",
+      "explanation": "To convert 1-Hexanol into Hexanal, the appropriate reagent is PCC (pyridinium chlorochromate) in CH2Cl2. Rationale: Anhydrous PCC oxidizes primary alcohols to aldehydes without over-oxidation to carboxylic acids.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "silyl-ether-shieldbearer.png"
+      ]
+    },
+    {
+      "id": "ch17_q041",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Kolbe-Schmitt synthesis of salicylic acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Sodium phenoxide is treated with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "C",
+          "text": "Hexanal"
+        },
+        {
+          "label": "D",
+          "text": "Hexanoic acid"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Salicylic acid (2-hydroxybenzoic acid)",
+      "explanation": "Treating Sodium phenoxide with 1. CO2 (125°C, 100 atm); 2. Aqueous HCl yields Salicylic acid (2-hydroxybenzoic acid). Rationale: Phenoxide nucleophile attacks CO2 ortho to the hydroxyl group under high pressure.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q042",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Oxidation of hydroquinone to quinone",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,4-Benzenediol (hydroquinone) into 1,4-Benzoquinone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CrO3 / aqueous H2SO4 (Jones reagent)"
+        },
+        {
+          "label": "B",
+          "text": "Na2Cr2O7 / H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "Sodium borohydride (NaBH4) in ethanol"
+        },
+        {
+          "label": "D",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Na2Cr2O7 / H2SO4",
+      "explanation": "To convert 1,4-Benzenediol (hydroquinone) into 1,4-Benzoquinone, the appropriate reagent is Na2Cr2O7 / H2SO4. Rationale: Oxidation of 1,4-hydroquinone removes two electrons and two protons to form the fully conjugated 1,4-dione.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q043",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Selective aldehyde reduction",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Sodium borohydride (NaBH4) in ethanol to yield Benzyl alcohol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzaldehyde"
+        },
+        {
+          "label": "B",
+          "text": "Sodium phenoxide"
+        },
+        {
+          "label": "C",
+          "text": "Methylmagnesium bromide"
+        },
+        {
+          "label": "D",
+          "text": "Methyl benzoate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzaldehyde",
+      "explanation": "Benzaldehyde reacts with Sodium borohydride (NaBH4) in ethanol to yield Benzyl alcohol. Rationale: NaBH4 selectively reduces aldehydes and ketones to alcohols without affecting esters, amides, or acids.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q044",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Exhaustive ester reduction",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Methyl benzoate is treated with 1. LiAlH4 in ether; 2. Aqueous H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "B",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        },
+        {
+          "label": "C",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "D",
+          "text": "Hexanal"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzyl alcohol + Methanol",
+      "explanation": "Treating Methyl benzoate with 1. LiAlH4 in ether; 2. Aqueous H3O+ yields Benzyl alcohol + Methanol. Rationale: Powerful LiAlH4 reduces esters to primary alcohols through an aldehyde intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q045",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Grignard addition to formaldehyde",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. Formaldehyde (HCHO); 2. H3O+ to yield Cyclohexylmethanol (primary alcohol) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmagnesium bromide"
+        },
+        {
+          "label": "B",
+          "text": "1,4-Benzenediol (hydroquinone)"
+        },
+        {
+          "label": "C",
+          "text": "Methylmagnesium bromide"
+        },
+        {
+          "label": "D",
+          "text": "Sodium phenoxide"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexylmagnesium bromide",
+      "explanation": "Cyclohexylmagnesium bromide reacts with 1. Formaldehyde (HCHO); 2. H3O+ to yield Cyclohexylmethanol (primary alcohol). Rationale: Grignard attack on formaldehyde adds a single hydroxymethyl (-CH2OH) carbon unit.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q046",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Grignard addition to aldehyde",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Phenylmagnesium bromide is treated with 1. Acetaldehyde (CH3CHO); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "C",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "D",
+          "text": "1-Phenylethanol (secondary alcohol)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1-Phenylethanol (secondary alcohol)",
+      "explanation": "Treating Phenylmagnesium bromide with 1. Acetaldehyde (CH3CHO); 2. H3O+ yields 1-Phenylethanol (secondary alcohol). Rationale: Nucleophilic addition of aryl Grignard to an aldehyde generates a secondary alcohol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q047",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Grignard addition to ketone",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Methylmagnesium bromide into 2-Methyl-2-propanol (tert-butanol, tertiary alcohol)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Formaldehyde (HCHO); 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetone ((CH3)2CO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Concentrated H2SO4 / heat"
+        },
+        {
+          "label": "D",
+          "text": "Na2Cr2O7 / H2SO4"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Acetone ((CH3)2CO); 2. H3O+",
+      "explanation": "To convert Methylmagnesium bromide into 2-Methyl-2-propanol (tert-butanol, tertiary alcohol), the appropriate reagent is 1. Acetone ((CH3)2CO); 2. H3O+. Rationale: Nucleophilic addition of methyl Grignard to a ketone constructs a tertiary alcohol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q048",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Selective oxidation of 1° alcohol to aldehyde",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexanol is treated with PCC (pyridinium chlorochromate) in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "Hexanal"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexylmethanol (primary alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Benzyl alcohol + Methanol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hexanal",
+      "explanation": "Treating 1-Hexanol with PCC (pyridinium chlorochromate) in CH2Cl2 yields Hexanal. Rationale: Anhydrous PCC oxidizes primary alcohols to aldehydes without over-oxidation to carboxylic acids.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q049",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Exhaustive oxidation of 1° alcohol to carboxylic acid",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexanol into Hexanoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CrO3 / aqueous H2SO4 (Jones reagent)"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetaldehyde (CH3CHO); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. LiAlH4 in ether; 2. Aqueous H3O+"
+        },
+        {
+          "label": "D",
+          "text": "Na2Cr2O7 / H2SO4"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "CrO3 / aqueous H2SO4 (Jones reagent)",
+      "explanation": "To convert 1-Hexanol into Hexanoic acid, the appropriate reagent is CrO3 / aqueous H2SO4 (Jones reagent). Rationale: Hydrated aldehyde intermediate is rapidly oxidized by aqueous chromium(VI) to carboxylic acid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch17_q050",
+      "chapter": 17,
+      "chapter_title": "Alcohols and Phenols",
+      "boss": "Phenol-Quinone Sovereign",
+      "topic": "Pinacol rearrangement",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2,3-Dimethyl-2,3-butanediol (pinacol) is treated with Concentrated H2SO4 / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol + Methanol"
+        },
+        {
+          "label": "B",
+          "text": "3,3-Dimethyl-2-butanone (pinacolone) + H2O"
+        },
+        {
+          "label": "C",
+          "text": "Salicylic acid (2-hydroxybenzoic acid)"
+        },
+        {
+          "label": "D",
+          "text": "2-Methyl-2-propanol (tert-butanol, tertiary alcohol)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3,3-Dimethyl-2-butanone (pinacolone) + H2O",
+      "explanation": "Treating 2,3-Dimethyl-2,3-butanediol (pinacol) with Concentrated H2SO4 / heat yields 3,3-Dimethyl-2-butanone (pinacolone) + H2O. Rationale: Protonation, loss of water to form 3° carbocation, and 1,2-methyl shift driven by carbonyl resonance.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "phenol-quinone-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Hydride Reducer Hound",
+    "Tosylate Trapper",
+    "Selective Oxidation Ogre",
+    "Silyl Ether Shieldbearer",
+    "Phenol-Quinone Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Hydride Reducer Hound",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "hydride-reducer-hound.png"
+        ]
+      },
+      {
+        "boss": "Tosylate Trapper",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "tosylate-trapper.png"
+        ]
+      },
+      {
+        "boss": "Selective Oxidation Ogre",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "selective-oxidation-ogre.png"
+        ]
+      },
+      {
+        "boss": "Silyl Ether Shieldbearer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "silyl-ether-shieldbearer.png"
+        ]
+      },
+      {
+        "boss": "Phenol-Quinone Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "phenol-quinone-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

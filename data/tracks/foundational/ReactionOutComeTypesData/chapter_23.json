@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 23,
+  "chapter_title": "Carbonyl Condensation Reactions",
+  "assigned_boss": "Aldol Apprentice",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch23_q001",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Base-catalyzed aldol addition",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetaldehyde (2 equiv) is treated with Dilute NaOH (0°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        },
+        {
+          "label": "D",
+          "text": "3-Hydroxybutanal (aldol product)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "3-Hydroxybutanal (aldol product)",
+      "explanation": "Treating Acetaldehyde (2 equiv) with Dilute NaOH (0°C) yields 3-Hydroxybutanal (aldol product). Rationale: Enolate of acetaldehyde attacks another acetaldehyde molecule to form beta-hydroxy aldehyde.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q002",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Aldol condensation with dehydration",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Acetaldehyde (2 equiv) into 2-Butenal (crotonaldehyde) + H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaOH in H2O / heat"
+        },
+        {
+          "label": "B",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "C",
+          "text": "Aqueous NaOH / heat"
+        },
+        {
+          "label": "D",
+          "text": "1. Acrylonitrile (H2C=CHCN); 2. H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "NaOH in H2O / heat",
+      "explanation": "To convert Acetaldehyde (2 equiv) into 2-Butenal (crotonaldehyde) + H2O, the appropriate reagent is NaOH in H2O / heat. Rationale: Base-promoted E1cB dehydration of beta-hydroxy aldehyde forms conjugated alpha,beta-unsaturated enal.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q003",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Crossed aldol condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde + Acetone is treated with Sodium hydroxide in ethanol / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "B",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        },
+        {
+          "label": "C",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl 2-oxocyclopentanecarboxylate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "4-Phenyl-3-buten-2-one (benzalacetone)",
+      "explanation": "Treating Benzaldehyde + Acetone with Sodium hydroxide in ethanol / H2O yields 4-Phenyl-3-buten-2-one (benzalacetone). Rationale: Benzaldehyde has no alpha-hydrogens and is more electrophilic, reacting cleanly with acetone enolate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q004",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Intramolecular aldol cyclization",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2,6-Heptanedione into 3-Methyl-2-cyclohexen-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aqueous NaOH / heat"
+        },
+        {
+          "label": "B",
+          "text": "Sodium hydroxide in ethanol / H2O"
+        },
+        {
+          "label": "C",
+          "text": "NaOH in H2O / heat"
+        },
+        {
+          "label": "D",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aqueous NaOH / heat",
+      "explanation": "To convert 2,6-Heptanedione into 3-Methyl-2-cyclohexen-1-one, the appropriate reagent is Aqueous NaOH / heat. Rationale: Intramolecular enolate attack on the remaining carbonyl cyclizes selectively to form a stable 6-membered enone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q005",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Claisen self-condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl acetate (2 equiv) is treated with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "B",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "C",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "D",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethyl acetoacetate (beta-keto ester) + Ethanol",
+      "explanation": "Treating Ethyl acetate (2 equiv) with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+ yields Ethyl acetoacetate (beta-keto ester) + Ethanol. Rationale: Ester enolate attacks second ester molecule; deprotonation of beta-keto ester drives reaction to completion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q006",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Dieckmann intramolecular Claisen cyclization",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "D",
+          "text": "Aqueous NaOH / heat"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. NaOEt in ethanol; 2. H3O+",
+      "explanation": "To convert Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate, the appropriate reagent is 1. NaOEt in ethanol; 2. H3O+. Rationale: Intramolecular ester condensation forms a stable 5-membered cyclic beta-keto ester.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q007",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Crossed Claisen condensation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. NaOEt in ethanol; 2. H3O+ to yield Ethyl benzoylacetate + Ethanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl benzoate + Ethyl acetate"
+        },
+        {
+          "label": "C",
+          "text": "Diethyl malonate + 2-Cyclohexen-1-one"
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde (2 equiv)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethyl benzoate + Ethyl acetate",
+      "explanation": "Ethyl benzoate + Ethyl acetate reacts with 1. NaOEt in ethanol; 2. H3O+ to yield Ethyl benzoylacetate + Ethanol. Rationale: Non-enolizable ethyl benzoate is attacked by ethyl acetate enolate, forming a beta-keto ester.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q008",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Michael conjugate addition",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Diethyl malonate + 2-Cyclohexen-1-one is treated with Catalytic sodium ethoxide in ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "B",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "C",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl 2-oxocyclopentanecarboxylate"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Diethyl 2-(3-oxocyclohexyl)malonate",
+      "explanation": "Treating Diethyl malonate + 2-Cyclohexen-1-one with Catalytic sodium ethoxide in ethanol yields Diethyl 2-(3-oxocyclohexyl)malonate. Rationale: Stabilized dicarbonyl enolate (Michael donor) undergoes 1,4-addition to alpha,beta-unsaturated ketone (acceptor).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q009",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Stork enamine conjugate addition",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ to yield 3-(2-Oxocyclohexyl)propanenitrile as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethyl benzoate + Ethyl acetate"
+        },
+        {
+          "label": "B",
+          "text": "1-(Pyrrolidin-1-yl)cyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl acetate (2 equiv)"
+        },
+        {
+          "label": "D",
+          "text": "Benzaldehyde + Acetone"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-(Pyrrolidin-1-yl)cyclohexene",
+      "explanation": "1-(Pyrrolidin-1-yl)cyclohexene reacts with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ to yield 3-(2-Oxocyclohexyl)propanenitrile. Rationale: Enamine nucleophile performs soft 1,4-addition to electron-deficient alkene; hydrolysis restores ketone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q010",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Aldol Apprentice",
+      "topic": "Robinson annulation sequence",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylcyclohexanone + Methyl vinyl ketone is treated with Sodium ethoxide in ethanol / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "B",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "C",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one",
+      "explanation": "Treating 2-Methylcyclohexanone + Methyl vinyl ketone with Sodium ethoxide in ethanol / heat yields 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one. Rationale: Tandem Michael conjugate addition followed by intramolecular aldol condensation builds a fused bicyclic ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "aldol-apprentice.png"
+      ]
+    },
+    {
+      "id": "ch23_q011",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Crossed aldol condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde + Acetone is treated with Sodium hydroxide in ethanol / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl benzoylacetate + Ethanol"
+        },
+        {
+          "label": "D",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "4-Phenyl-3-buten-2-one (benzalacetone)",
+      "explanation": "Treating Benzaldehyde + Acetone with Sodium hydroxide in ethanol / H2O yields 4-Phenyl-3-buten-2-one (benzalacetone). Rationale: Benzaldehyde has no alpha-hydrogens and is more electrophilic, reacting cleanly with acetone enolate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q012",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Intramolecular aldol cyclization",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2,6-Heptanedione into 3-Methyl-2-cyclohexen-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aqueous NaOH / heat"
+        },
+        {
+          "label": "B",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "Dilute NaOH (0°C)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aqueous NaOH / heat",
+      "explanation": "To convert 2,6-Heptanedione into 3-Methyl-2-cyclohexen-1-one, the appropriate reagent is Aqueous NaOH / heat. Rationale: Intramolecular enolate attack on the remaining carbonyl cyclizes selectively to form a stable 6-membered enone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q013",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Claisen self-condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl acetate (2 equiv) is treated with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "D",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethyl acetoacetate (beta-keto ester) + Ethanol",
+      "explanation": "Treating Ethyl acetate (2 equiv) with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+ yields Ethyl acetoacetate (beta-keto ester) + Ethanol. Rationale: Ester enolate attacks second ester molecule; deprotonation of beta-keto ester drives reaction to completion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q014",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Dieckmann intramolecular Claisen cyclization",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NaOH in H2O / heat"
+        },
+        {
+          "label": "B",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "D",
+          "text": "1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. NaOEt in ethanol; 2. H3O+",
+      "explanation": "To convert Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate, the appropriate reagent is 1. NaOEt in ethanol; 2. H3O+. Rationale: Intramolecular ester condensation forms a stable 5-membered cyclic beta-keto ester.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q015",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Crossed Claisen condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl benzoate + Ethyl acetate is treated with 1. NaOEt in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "B",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl benzoylacetate + Ethanol"
+        },
+        {
+          "label": "D",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethyl benzoylacetate + Ethanol",
+      "explanation": "Treating Ethyl benzoate + Ethyl acetate with 1. NaOEt in ethanol; 2. H3O+ yields Ethyl benzoylacetate + Ethanol. Rationale: Non-enolizable ethyl benzoate is attacked by ethyl acetate enolate, forming a beta-keto ester.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q016",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Michael conjugate addition",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Catalytic sodium ethoxide in ethanol to yield Diethyl 2-(3-oxocyclohexyl)malonate as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-(Pyrrolidin-1-yl)cyclohexene"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl acetate (2 equiv)"
+        },
+        {
+          "label": "D",
+          "text": "Diethyl malonate + 2-Cyclohexen-1-one"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Diethyl malonate + 2-Cyclohexen-1-one",
+      "explanation": "Diethyl malonate + 2-Cyclohexen-1-one reacts with Catalytic sodium ethoxide in ethanol to yield Diethyl 2-(3-oxocyclohexyl)malonate. Rationale: Stabilized dicarbonyl enolate (Michael donor) undergoes 1,4-addition to alpha,beta-unsaturated ketone (acceptor).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q017",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Stork enamine conjugate addition",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-(Pyrrolidin-1-yl)cyclohexene is treated with 1. Acrylonitrile (H2C=CHCN); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "D",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "3-(2-Oxocyclohexyl)propanenitrile",
+      "explanation": "Treating 1-(Pyrrolidin-1-yl)cyclohexene with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ yields 3-(2-Oxocyclohexyl)propanenitrile. Rationale: Enamine nucleophile performs soft 1,4-addition to electron-deficient alkene; hydrolysis restores ketone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q018",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Robinson annulation sequence",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Sodium ethoxide in ethanol / heat to yield 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diethyl hexanedioate (diethyl adipate)"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl benzoate + Ethyl acetate"
+        },
+        {
+          "label": "C",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde (2 equiv)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Methylcyclohexanone + Methyl vinyl ketone",
+      "explanation": "2-Methylcyclohexanone + Methyl vinyl ketone reacts with Sodium ethoxide in ethanol / heat to yield 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one. Rationale: Tandem Michael conjugate addition followed by intramolecular aldol condensation builds a fused bicyclic ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q019",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Base-catalyzed aldol addition",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetaldehyde (2 equiv) is treated with Dilute NaOH (0°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl 2-oxocyclopentanecarboxylate"
+        },
+        {
+          "label": "D",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3-Hydroxybutanal (aldol product)",
+      "explanation": "Treating Acetaldehyde (2 equiv) with Dilute NaOH (0°C) yields 3-Hydroxybutanal (aldol product). Rationale: Enolate of acetaldehyde attacks another acetaldehyde molecule to form beta-hydroxy aldehyde.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q020",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "E1cB Dehydration Djinn",
+      "topic": "Aldol condensation with dehydration",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Acetaldehyde (2 equiv) into 2-Butenal (crotonaldehyde) + H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. Acrylonitrile (H2C=CHCN); 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "D",
+          "text": "NaOH in H2O / heat"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "NaOH in H2O / heat",
+      "explanation": "To convert Acetaldehyde (2 equiv) into 2-Butenal (crotonaldehyde) + H2O, the appropriate reagent is NaOH in H2O / heat. Rationale: Base-promoted E1cB dehydration of beta-hydroxy aldehyde forms conjugated alpha,beta-unsaturated enal.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "e1cb-dehydration-djinn.png"
+      ]
+    },
+    {
+      "id": "ch23_q021",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Claisen self-condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl acetate (2 equiv) is treated with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethyl acetoacetate (beta-keto ester) + Ethanol",
+      "explanation": "Treating Ethyl acetate (2 equiv) with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+ yields Ethyl acetoacetate (beta-keto ester) + Ethanol. Rationale: Ester enolate attacks second ester molecule; deprotonation of beta-keto ester drives reaction to completion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q022",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Dieckmann intramolecular Claisen cyclization",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute NaOH (0°C)"
+        },
+        {
+          "label": "B",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "NaOH in H2O / heat"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. NaOEt in ethanol; 2. H3O+",
+      "explanation": "To convert Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate, the appropriate reagent is 1. NaOEt in ethanol; 2. H3O+. Rationale: Intramolecular ester condensation forms a stable 5-membered cyclic beta-keto ester.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q023",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Crossed Claisen condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl benzoate + Ethyl acetate is treated with 1. NaOEt in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "B",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "C",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl benzoylacetate + Ethanol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethyl benzoylacetate + Ethanol",
+      "explanation": "Treating Ethyl benzoate + Ethyl acetate with 1. NaOEt in ethanol; 2. H3O+ yields Ethyl benzoylacetate + Ethanol. Rationale: Non-enolizable ethyl benzoate is attacked by ethyl acetate enolate, forming a beta-keto ester.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q024",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Michael conjugate addition",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Diethyl malonate + 2-Cyclohexen-1-one into Diethyl 2-(3-oxocyclohexyl)malonate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "B",
+          "text": "NaOH in H2O / heat"
+        },
+        {
+          "label": "C",
+          "text": "Dilute NaOH (0°C)"
+        },
+        {
+          "label": "D",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Catalytic sodium ethoxide in ethanol",
+      "explanation": "To convert Diethyl malonate + 2-Cyclohexen-1-one into Diethyl 2-(3-oxocyclohexyl)malonate, the appropriate reagent is Catalytic sodium ethoxide in ethanol. Rationale: Stabilized dicarbonyl enolate (Michael donor) undergoes 1,4-addition to alpha,beta-unsaturated ketone (acceptor).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q025",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Stork enamine conjugate addition",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ to yield 3-(2-Oxocyclohexyl)propanenitrile as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-(Pyrrolidin-1-yl)cyclohexene"
+        },
+        {
+          "label": "B",
+          "text": "Diethyl malonate + 2-Cyclohexen-1-one"
+        },
+        {
+          "label": "C",
+          "text": "Diethyl hexanedioate (diethyl adipate)"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl benzoate + Ethyl acetate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-(Pyrrolidin-1-yl)cyclohexene",
+      "explanation": "1-(Pyrrolidin-1-yl)cyclohexene reacts with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ to yield 3-(2-Oxocyclohexyl)propanenitrile. Rationale: Enamine nucleophile performs soft 1,4-addition to electron-deficient alkene; hydrolysis restores ketone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q026",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Robinson annulation sequence",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylcyclohexanone + Methyl vinyl ketone is treated with Sodium ethoxide in ethanol / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "B",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl 2-oxocyclopentanecarboxylate"
+        },
+        {
+          "label": "D",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one",
+      "explanation": "Treating 2-Methylcyclohexanone + Methyl vinyl ketone with Sodium ethoxide in ethanol / heat yields 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one. Rationale: Tandem Michael conjugate addition followed by intramolecular aldol condensation builds a fused bicyclic ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q027",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Base-catalyzed aldol addition",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Dilute NaOH (0°C) to yield 3-Hydroxybutanal (aldol product) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "B",
+          "text": "Benzaldehyde + Acetone"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl acetate (2 equiv)"
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde (2 equiv)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetaldehyde (2 equiv)",
+      "explanation": "Acetaldehyde (2 equiv) reacts with Dilute NaOH (0°C) to yield 3-Hydroxybutanal (aldol product). Rationale: Enolate of acetaldehyde attacks another acetaldehyde molecule to form beta-hydroxy aldehyde.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q028",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Aldol condensation with dehydration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetaldehyde (2 equiv) is treated with NaOH in H2O / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "D",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Butenal (crotonaldehyde) + H2O",
+      "explanation": "Treating Acetaldehyde (2 equiv) with NaOH in H2O / heat yields 2-Butenal (crotonaldehyde) + H2O. Rationale: Base-promoted E1cB dehydration of beta-hydroxy aldehyde forms conjugated alpha,beta-unsaturated enal.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q029",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Crossed aldol condensation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Benzaldehyde + Acetone into 4-Phenyl-3-buten-2-one (benzalacetone)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sodium hydroxide in ethanol / H2O"
+        },
+        {
+          "label": "B",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "C",
+          "text": "Aqueous NaOH / heat"
+        },
+        {
+          "label": "D",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Sodium hydroxide in ethanol / H2O",
+      "explanation": "To convert Benzaldehyde + Acetone into 4-Phenyl-3-buten-2-one (benzalacetone), the appropriate reagent is Sodium hydroxide in ethanol / H2O. Rationale: Benzaldehyde has no alpha-hydrogens and is more electrophilic, reacting cleanly with acetone enolate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q030",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Dieckmann Cyclization Crusher",
+      "topic": "Intramolecular aldol cyclization",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2,6-Heptanedione is treated with Aqueous NaOH / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "D",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "3-Methyl-2-cyclohexen-1-one",
+      "explanation": "Treating 2,6-Heptanedione with Aqueous NaOH / heat yields 3-Methyl-2-cyclohexen-1-one. Rationale: Intramolecular enolate attack on the remaining carbonyl cyclizes selectively to form a stable 6-membered enone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "dieckmann-cyclization-crusher.png"
+      ]
+    },
+    {
+      "id": "ch23_q031",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Crossed Claisen condensation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl benzoate + Ethyl acetate is treated with 1. NaOEt in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "B",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl benzoylacetate + Ethanol"
+        },
+        {
+          "label": "D",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethyl benzoylacetate + Ethanol",
+      "explanation": "Treating Ethyl benzoate + Ethyl acetate with 1. NaOEt in ethanol; 2. H3O+ yields Ethyl benzoylacetate + Ethanol. Rationale: Non-enolizable ethyl benzoate is attacked by ethyl acetate enolate, forming a beta-keto ester.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q032",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Michael conjugate addition",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Diethyl malonate + 2-Cyclohexen-1-one into Diethyl 2-(3-oxocyclohexyl)malonate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Acrylonitrile (H2C=CHCN); 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Catalytic sodium ethoxide in ethanol"
+        },
+        {
+          "label": "D",
+          "text": "Sodium hydroxide in ethanol / H2O"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Catalytic sodium ethoxide in ethanol",
+      "explanation": "To convert Diethyl malonate + 2-Cyclohexen-1-one into Diethyl 2-(3-oxocyclohexyl)malonate, the appropriate reagent is Catalytic sodium ethoxide in ethanol. Rationale: Stabilized dicarbonyl enolate (Michael donor) undergoes 1,4-addition to alpha,beta-unsaturated ketone (acceptor).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q033",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Stork enamine conjugate addition",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-(Pyrrolidin-1-yl)cyclohexene is treated with 1. Acrylonitrile (H2C=CHCN); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "D",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "3-(2-Oxocyclohexyl)propanenitrile",
+      "explanation": "Treating 1-(Pyrrolidin-1-yl)cyclohexene with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ yields 3-(2-Oxocyclohexyl)propanenitrile. Rationale: Enamine nucleophile performs soft 1,4-addition to electron-deficient alkene; hydrolysis restores ketone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q034",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Robinson annulation sequence",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Sodium ethoxide in ethanol / heat to yield 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,6-Heptanedione"
+        },
+        {
+          "label": "B",
+          "text": "Diethyl hexanedioate (diethyl adipate)"
+        },
+        {
+          "label": "C",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde (2 equiv)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Methylcyclohexanone + Methyl vinyl ketone",
+      "explanation": "2-Methylcyclohexanone + Methyl vinyl ketone reacts with Sodium ethoxide in ethanol / heat to yield 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one. Rationale: Tandem Michael conjugate addition followed by intramolecular aldol condensation builds a fused bicyclic ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q035",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Base-catalyzed aldol addition",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetaldehyde (2 equiv) is treated with Dilute NaOH (0°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "D",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3-Hydroxybutanal (aldol product)",
+      "explanation": "Treating Acetaldehyde (2 equiv) with Dilute NaOH (0°C) yields 3-Hydroxybutanal (aldol product). Rationale: Enolate of acetaldehyde attacks another acetaldehyde molecule to form beta-hydroxy aldehyde.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q036",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Aldol condensation with dehydration",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NaOH in H2O / heat to yield 2-Butenal (crotonaldehyde) + H2O as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,6-Heptanedione"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl acetate (2 equiv)"
+        },
+        {
+          "label": "C",
+          "text": "Acetaldehyde (2 equiv)"
+        },
+        {
+          "label": "D",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetaldehyde (2 equiv)",
+      "explanation": "Acetaldehyde (2 equiv) reacts with NaOH in H2O / heat to yield 2-Butenal (crotonaldehyde) + H2O. Rationale: Base-promoted E1cB dehydration of beta-hydroxy aldehyde forms conjugated alpha,beta-unsaturated enal.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q037",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Crossed aldol condensation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Benzaldehyde + Acetone is treated with Sodium hydroxide in ethanol / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl 2-oxocyclopentanecarboxylate"
+        },
+        {
+          "label": "C",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "D",
+          "text": "3-Hydroxybutanal (aldol product)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "4-Phenyl-3-buten-2-one (benzalacetone)",
+      "explanation": "Treating Benzaldehyde + Acetone with Sodium hydroxide in ethanol / H2O yields 4-Phenyl-3-buten-2-one (benzalacetone). Rationale: Benzaldehyde has no alpha-hydrogens and is more electrophilic, reacting cleanly with acetone enolate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q038",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Intramolecular aldol cyclization",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2,6-Heptanedione into 3-Methyl-2-cyclohexen-1-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute NaOH (0°C)"
+        },
+        {
+          "label": "B",
+          "text": "Aqueous NaOH / heat"
+        },
+        {
+          "label": "C",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aqueous NaOH / heat",
+      "explanation": "To convert 2,6-Heptanedione into 3-Methyl-2-cyclohexen-1-one, the appropriate reagent is Aqueous NaOH / heat. Rationale: Intramolecular enolate attack on the remaining carbonyl cyclizes selectively to form a stable 6-membered enone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q039",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Claisen self-condensation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethyl acetate (2 equiv) is treated with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "B",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "C",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethyl acetoacetate (beta-keto ester) + Ethanol",
+      "explanation": "Treating Ethyl acetate (2 equiv) with 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+ yields Ethyl acetoacetate (beta-keto ester) + Ethanol. Rationale: Ester enolate attacks second ester molecule; deprotonation of beta-keto ester drives reaction to completion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q040",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Michael & Stork Marauder",
+      "topic": "Dieckmann intramolecular Claisen cyclization",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute NaOH (0°C)"
+        },
+        {
+          "label": "B",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. Acrylonitrile (H2C=CHCN); 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "Sodium ethoxide in ethanol / heat"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. NaOEt in ethanol; 2. H3O+",
+      "explanation": "To convert Diethyl hexanedioate (diethyl adipate) into Ethyl 2-oxocyclopentanecarboxylate, the appropriate reagent is 1. NaOEt in ethanol; 2. H3O+. Rationale: Intramolecular ester condensation forms a stable 5-membered cyclic beta-keto ester.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "michael--stork-marauder.png"
+      ]
+    },
+    {
+      "id": "ch23_q041",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Stork enamine conjugate addition",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-(Pyrrolidin-1-yl)cyclohexene is treated with 1. Acrylonitrile (H2C=CHCN); 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-(2-Oxocyclohexyl)propanenitrile"
+        },
+        {
+          "label": "B",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "C",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        },
+        {
+          "label": "D",
+          "text": "3-Hydroxybutanal (aldol product)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "3-(2-Oxocyclohexyl)propanenitrile",
+      "explanation": "Treating 1-(Pyrrolidin-1-yl)cyclohexene with 1. Acrylonitrile (H2C=CHCN); 2. H3O+ yields 3-(2-Oxocyclohexyl)propanenitrile. Rationale: Enamine nucleophile performs soft 1,4-addition to electron-deficient alkene; hydrolysis restores ketone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q042",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Robinson annulation sequence",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Methylcyclohexanone + Methyl vinyl ketone into 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute NaOH (0°C)"
+        },
+        {
+          "label": "B",
+          "text": "Sodium ethoxide in ethanol / heat"
+        },
+        {
+          "label": "C",
+          "text": "Sodium hydroxide in ethanol / H2O"
+        },
+        {
+          "label": "D",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Sodium ethoxide in ethanol / heat",
+      "explanation": "To convert 2-Methylcyclohexanone + Methyl vinyl ketone into 4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one, the appropriate reagent is Sodium ethoxide in ethanol / heat. Rationale: Tandem Michael conjugate addition followed by intramolecular aldol condensation builds a fused bicyclic ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q043",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Base-catalyzed aldol addition",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Dilute NaOH (0°C) to yield 3-Hydroxybutanal (aldol product) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diethyl malonate + 2-Cyclohexen-1-one"
+        },
+        {
+          "label": "B",
+          "text": "Acetaldehyde (2 equiv)"
+        },
+        {
+          "label": "C",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "D",
+          "text": "Ethyl benzoate + Ethyl acetate"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetaldehyde (2 equiv)",
+      "explanation": "Acetaldehyde (2 equiv) reacts with Dilute NaOH (0°C) to yield 3-Hydroxybutanal (aldol product). Rationale: Enolate of acetaldehyde attacks another acetaldehyde molecule to form beta-hydroxy aldehyde.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q044",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Aldol condensation with dehydration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Acetaldehyde (2 equiv) is treated with NaOH in H2O / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "B",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl acetoacetate (beta-keto ester) + Ethanol"
+        },
+        {
+          "label": "D",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Butenal (crotonaldehyde) + H2O",
+      "explanation": "Treating Acetaldehyde (2 equiv) with NaOH in H2O / heat yields 2-Butenal (crotonaldehyde) + H2O. Rationale: Base-promoted E1cB dehydration of beta-hydroxy aldehyde forms conjugated alpha,beta-unsaturated enal.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q045",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Crossed aldol condensation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Sodium hydroxide in ethanol / H2O to yield 4-Phenyl-3-buten-2-one (benzalacetone) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzaldehyde + Acetone"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylcyclohexanone + Methyl vinyl ketone"
+        },
+        {
+          "label": "C",
+          "text": "2,6-Heptanedione"
+        },
+        {
+          "label": "D",
+          "text": "Acetaldehyde (2 equiv)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Benzaldehyde + Acetone",
+      "explanation": "Benzaldehyde + Acetone reacts with Sodium hydroxide in ethanol / H2O to yield 4-Phenyl-3-buten-2-one (benzalacetone). Rationale: Benzaldehyde has no alpha-hydrogens and is more electrophilic, reacting cleanly with acetone enolate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q046",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Intramolecular aldol cyclization",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2,6-Heptanedione is treated with Aqueous NaOH / heat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl benzoylacetate + Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "D",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "3-Methyl-2-cyclohexen-1-one",
+      "explanation": "Treating 2,6-Heptanedione with Aqueous NaOH / heat yields 3-Methyl-2-cyclohexen-1-one. Rationale: Intramolecular enolate attack on the remaining carbonyl cyclizes selectively to form a stable 6-membered enone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q047",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Claisen self-condensation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Ethyl acetate (2 equiv) into Ethyl acetoacetate (beta-keto ester) + Ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "Sodium hydroxide in ethanol / H2O"
+        },
+        {
+          "label": "C",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "D",
+          "text": "NaOH in H2O / heat"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+",
+      "explanation": "To convert Ethyl acetate (2 equiv) into Ethyl acetoacetate (beta-keto ester) + Ethanol, the appropriate reagent is 1. Sodium ethoxide (NaOEt) in ethanol; 2. H3O+. Rationale: Ester enolate attacks second ester molecule; deprotonation of beta-keto ester drives reaction to completion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q048",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Dieckmann intramolecular Claisen cyclization",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Diethyl hexanedioate (diethyl adipate) is treated with 1. NaOEt in ethanol; 2. H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Phenyl-3-buten-2-one (benzalacetone)"
+        },
+        {
+          "label": "B",
+          "text": "3-Hydroxybutanal (aldol product)"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl 2-oxocyclopentanecarboxylate"
+        },
+        {
+          "label": "D",
+          "text": "3-Methyl-2-cyclohexen-1-one"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethyl 2-oxocyclopentanecarboxylate",
+      "explanation": "Treating Diethyl hexanedioate (diethyl adipate) with 1. NaOEt in ethanol; 2. H3O+ yields Ethyl 2-oxocyclopentanecarboxylate. Rationale: Intramolecular ester condensation forms a stable 5-membered cyclic beta-keto ester.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q049",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Crossed Claisen condensation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Ethyl benzoate + Ethyl acetate into Ethyl benzoylacetate + Ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        },
+        {
+          "label": "B",
+          "text": "Aqueous NaOH / heat"
+        },
+        {
+          "label": "C",
+          "text": "Sodium hydroxide in ethanol / H2O"
+        },
+        {
+          "label": "D",
+          "text": "1. NaOEt in ethanol; 2. H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. NaOEt in ethanol; 2. H3O+",
+      "explanation": "To convert Ethyl benzoate + Ethyl acetate into Ethyl benzoylacetate + Ethanol, the appropriate reagent is 1. NaOEt in ethanol; 2. H3O+. Rationale: Non-enolizable ethyl benzoate is attacked by ethyl acetate enolate, forming a beta-keto ester.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch23_q050",
+      "chapter": 23,
+      "chapter_title": "Carbonyl Condensation Reactions",
+      "boss": "Robinson Annulation Sovereign",
+      "topic": "Michael conjugate addition",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Diethyl malonate + 2-Cyclohexen-1-one is treated with Catalytic sodium ethoxide in ethanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butenal (crotonaldehyde) + H2O"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl benzoylacetate + Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "Diethyl 2-(3-oxocyclohexyl)malonate"
+        },
+        {
+          "label": "D",
+          "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diethyl 2-(3-oxocyclohexyl)malonate",
+      "explanation": "Treating Diethyl malonate + 2-Cyclohexen-1-one with Catalytic sodium ethoxide in ethanol yields Diethyl 2-(3-oxocyclohexyl)malonate. Rationale: Stabilized dicarbonyl enolate (Michael donor) undergoes 1,4-addition to alpha,beta-unsaturated ketone (acceptor).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "robinson-annulation-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Aldol Apprentice",
+    "E1cB Dehydration Djinn",
+    "Dieckmann Cyclization Crusher",
+    "Michael & Stork Marauder",
+    "Robinson Annulation Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Aldol Apprentice",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "aldol-apprentice.png"
+        ]
+      },
+      {
+        "boss": "E1cB Dehydration Djinn",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "e1cb-dehydration-djinn.png"
+        ]
+      },
+      {
+        "boss": "Dieckmann Cyclization Crusher",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "dieckmann-cyclization-crusher.png"
+        ]
+      },
+      {
+        "boss": "Michael & Stork Marauder",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "michael--stork-marauder.png"
+        ]
+      },
+      {
+        "boss": "Robinson Annulation Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "robinson-annulation-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

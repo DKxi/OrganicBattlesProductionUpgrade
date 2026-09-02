@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereochemistry at Tetrahedral Centers",
+  "assigned_boss": "Chiral Centinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Enantiomeric resolution via salt formation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Racemic (±)-lactic acid is treated with (R)-1-Phenylethylamine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        },
+        {
+          "label": "D",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diastereomeric salt pair (separable by crystallization)",
+      "explanation": "Treating Racemic (±)-lactic acid with (R)-1-Phenylethylamine yields Diastereomeric salt pair (separable by crystallization). Rationale: Reacting an enantiomeric pair with a single chiral amine yields diastereomeric salts with different solubilities.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Bromination of chiral alkyl halide",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of (S)-2-Bromobutane into 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        },
+        {
+          "label": "B",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, PBr3; 2. H2O"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / hν"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Br2 / hν",
+      "explanation": "To convert (S)-2-Bromobutane into 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers), the appropriate reagent is Br2 / hν. Rationale: Abstraction at C2 destroys the stereocenter via a planar radical intermediate; abstraction at C3 creates a second stereocenter.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "SN2 inversion of configuration",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-2-Bromooctane is treated with Sodium iodide (NaI) in acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "D",
+          "text": "(S)-Lactate (pure enantiomer)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-Iodooctane + NaBr",
+      "explanation": "Treating (R)-2-Bromooctane with Sodium iodide (NaI) in acetone yields (S)-2-Iodooctane + NaBr. Rationale: Backside nucleophilic attack by iodide inverts the tetrahedral chiral center completely (Walden inversion).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Prochiral alpha-bromination",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Propanoic acid into Racemic (±)-2-bromopropanoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, PBr3; 2. H2O"
+        },
+        {
+          "label": "B",
+          "text": "Sodium iodide (NaI) in acetone"
+        },
+        {
+          "label": "C",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "D",
+          "text": "Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Br2, PBr3; 2. H2O",
+      "explanation": "To convert Propanoic acid into Racemic (±)-2-bromopropanoic acid, the appropriate reagent is 1. Br2, PBr3; 2. H2O. Rationale: Attack at the planar enol intermediate occurs with equal probability from top (re) and bottom (si) faces.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Polarimetry optical activity outcome",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Equimolar mixture of (R)- and (S)-carvone is treated with Polarimeter (589 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-Lactate (pure enantiomer)"
+        },
+        {
+          "label": "B",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "D",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Zero net optical rotation ([α] = 0°)",
+      "explanation": "Treating Equimolar mixture of (R)- and (S)-carvone with Polarimeter (589 nm) yields Zero net optical rotation ([α] = 0°). Rationale: A 50:50 racemic mixture shows zero optical rotation because equal and opposite rotations cancel.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Stereospecific halogenation of cis-alkene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "B",
+          "text": "(R)-1-Phenylethylamine"
+        },
+        {
+          "label": "C",
+          "text": "Sodium iodide (NaI) in acetone"
+        },
+        {
+          "label": "D",
+          "text": "Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Br2 in CH2Cl2",
+      "explanation": "To convert cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair), the appropriate reagent is Br2 in CH2Cl2. Rationale: Anti-addition of bromonium ion to cis-alkene produces a pair of chiral enantiomers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Stereospecific halogenation of trans-alkene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Br2 in CH2Cl2 to yield meso-2,3-Dibromobutane as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-2-Bromooctane"
+        },
+        {
+          "label": "B",
+          "text": "Equimolar mixture of (R)- and (S)-carvone"
+        },
+        {
+          "label": "C",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-2-Butene",
+      "explanation": "trans-2-Butene reacts with Br2 in CH2Cl2 to yield meso-2,3-Dibromobutane. Rationale: Anti-addition across the trans-double bond yields the achiral meso diastereomer with an internal mirror plane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Enzymatic chiral reduction",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Pyruvate is treated with NADH / Lactate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "C",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "(S)-Lactate (pure enantiomer)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(S)-Lactate (pure enantiomer)",
+      "explanation": "Treating Pyruvate with NADH / Lactate dehydrogenase yields (S)-Lactate (pure enantiomer). Rationale: The chiral active site of the enzyme directs hydride transfer exclusively to the re-face of pyruvate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Diastereoselective epoxidation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with mCPBA to yield trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equimolar mixture of (R)- and (S)-carvone"
+        },
+        {
+          "label": "B",
+          "text": "(R)-4-Methylcyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "Racemic (±)-lactic acid"
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-Bromobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(R)-4-Methylcyclohexene",
+      "explanation": "(R)-4-Methylcyclohexene reacts with mCPBA to yield trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture). Rationale: The pre-existing chiral center creates diastereotopic faces with unequal steric accessibility.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Tosylation with retention followed by SN2",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-2-Butanol is treated with 1. TsCl, pyridine; 2. NaCN?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "C",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-Methylbutanenitrile",
+      "explanation": "Treating (R)-2-Butanol with 1. TsCl, pyridine; 2. NaCN yields (S)-2-Methylbutanenitrile. Rationale: Tosylation breaks the O-H bond (retention); subsequent SN2 displacement of tosylate by cyanide inverts configuration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "SN2 inversion of configuration",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-2-Bromooctane is treated with Sodium iodide (NaI) in acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        },
+        {
+          "label": "D",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-Iodooctane + NaBr",
+      "explanation": "Treating (R)-2-Bromooctane with Sodium iodide (NaI) in acetone yields (S)-2-Iodooctane + NaBr. Rationale: Backside nucleophilic attack by iodide inverts the tetrahedral chiral center completely (Walden inversion).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Prochiral alpha-bromination",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Propanoic acid into Racemic (±)-2-bromopropanoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, PBr3; 2. H2O"
+        },
+        {
+          "label": "B",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        },
+        {
+          "label": "D",
+          "text": "Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Br2, PBr3; 2. H2O",
+      "explanation": "To convert Propanoic acid into Racemic (±)-2-bromopropanoic acid, the appropriate reagent is 1. Br2, PBr3; 2. H2O. Rationale: Attack at the planar enol intermediate occurs with equal probability from top (re) and bottom (si) faces.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Polarimetry optical activity outcome",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Equimolar mixture of (R)- and (S)-carvone is treated with Polarimeter (589 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Zero net optical rotation ([α] = 0°)",
+      "explanation": "Treating Equimolar mixture of (R)- and (S)-carvone with Polarimeter (589 nm) yields Zero net optical rotation ([α] = 0°). Rationale: A 50:50 racemic mixture shows zero optical rotation because equal and opposite rotations cancel.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Stereospecific halogenation of cis-alkene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "mCPBA"
+        },
+        {
+          "label": "B",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        },
+        {
+          "label": "C",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "Sodium iodide (NaI) in acetone"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Br2 in CH2Cl2",
+      "explanation": "To convert cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair), the appropriate reagent is Br2 in CH2Cl2. Rationale: Anti-addition of bromonium ion to cis-alkene produces a pair of chiral enantiomers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Stereospecific halogenation of trans-alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-2-Butene is treated with Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "B",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "D",
+          "text": "meso-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "meso-2,3-Dibromobutane",
+      "explanation": "Treating trans-2-Butene with Br2 in CH2Cl2 yields meso-2,3-Dibromobutane. Rationale: Anti-addition across the trans-double bond yields the achiral meso diastereomer with an internal mirror plane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Enzymatic chiral reduction",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with NADH / Lactate dehydrogenase to yield (S)-Lactate (pure enantiomer) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyruvate"
+        },
+        {
+          "label": "B",
+          "text": "Equimolar mixture of (R)- and (S)-carvone"
+        },
+        {
+          "label": "C",
+          "text": "Propanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-Bromooctane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pyruvate",
+      "explanation": "Pyruvate reacts with NADH / Lactate dehydrogenase to yield (S)-Lactate (pure enantiomer). Rationale: The chiral active site of the enzyme directs hydride transfer exclusively to the re-face of pyruvate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Diastereoselective epoxidation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-4-Methylcyclohexene is treated with mCPBA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "D",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)",
+      "explanation": "Treating (R)-4-Methylcyclohexene with mCPBA yields trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture). Rationale: The pre-existing chiral center creates diastereotopic faces with unequal steric accessibility.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Tosylation with retention followed by SN2",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. TsCl, pyridine; 2. NaCN to yield (S)-2-Methylbutanenitrile as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equimolar mixture of (R)- and (S)-carvone"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Butene"
+        },
+        {
+          "label": "C",
+          "text": "cis-2-Butene"
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-Butanol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(R)-2-Butanol",
+      "explanation": "(R)-2-Butanol reacts with 1. TsCl, pyridine; 2. NaCN to yield (S)-2-Methylbutanenitrile. Rationale: Tosylation breaks the O-H bond (retention); subsequent SN2 displacement of tosylate by cyanide inverts configuration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Enantiomeric resolution via salt formation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Racemic (±)-lactic acid is treated with (R)-1-Phenylethylamine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-Lactate (pure enantiomer)"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-Iodooctane + NaBr"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Diastereomeric salt pair (separable by crystallization)",
+      "explanation": "Treating Racemic (±)-lactic acid with (R)-1-Phenylethylamine yields Diastereomeric salt pair (separable by crystallization). Rationale: Reacting an enantiomeric pair with a single chiral amine yields diastereomeric salts with different solubilities.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Bromination of chiral alkyl halide",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of (S)-2-Bromobutane into 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "B",
+          "text": "mCPBA"
+        },
+        {
+          "label": "C",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Br2 / hν",
+      "explanation": "To convert (S)-2-Bromobutane into 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers), the appropriate reagent is Br2 / hν. Rationale: Abstraction at C2 destroys the stereocenter via a planar radical intermediate; abstraction at C3 creates a second stereocenter.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Polarimetry optical activity outcome",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Equimolar mixture of (R)- and (S)-carvone is treated with Polarimeter (589 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "D",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Zero net optical rotation ([α] = 0°)",
+      "explanation": "Treating Equimolar mixture of (R)- and (S)-carvone with Polarimeter (589 nm) yields Zero net optical rotation ([α] = 0°). Rationale: A 50:50 racemic mixture shows zero optical rotation because equal and opposite rotations cancel.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Stereospecific halogenation of cis-alkene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "B",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "(R)-1-Phenylethylamine"
+        },
+        {
+          "label": "D",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 in CH2Cl2",
+      "explanation": "To convert cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair), the appropriate reagent is Br2 in CH2Cl2. Rationale: Anti-addition of bromonium ion to cis-alkene produces a pair of chiral enantiomers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Stereospecific halogenation of trans-alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-2-Butene is treated with Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "D",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso-2,3-Dibromobutane",
+      "explanation": "Treating trans-2-Butene with Br2 in CH2Cl2 yields meso-2,3-Dibromobutane. Rationale: Anti-addition across the trans-double bond yields the achiral meso diastereomer with an internal mirror plane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Enzymatic chiral reduction",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Pyruvate into (S)-Lactate (pure enantiomer)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "B",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "NADH / Lactate dehydrogenase"
+        },
+        {
+          "label": "D",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "NADH / Lactate dehydrogenase",
+      "explanation": "To convert Pyruvate into (S)-Lactate (pure enantiomer), the appropriate reagent is NADH / Lactate dehydrogenase. Rationale: The chiral active site of the enzyme directs hydride transfer exclusively to the re-face of pyruvate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Diastereoselective epoxidation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with mCPBA to yield trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic (±)-lactic acid"
+        },
+        {
+          "label": "B",
+          "text": "Equimolar mixture of (R)- and (S)-carvone"
+        },
+        {
+          "label": "C",
+          "text": "Pyruvate"
+        },
+        {
+          "label": "D",
+          "text": "(R)-4-Methylcyclohexene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(R)-4-Methylcyclohexene",
+      "explanation": "(R)-4-Methylcyclohexene reacts with mCPBA to yield trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture). Rationale: The pre-existing chiral center creates diastereotopic faces with unequal steric accessibility.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Tosylation with retention followed by SN2",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-2-Butanol is treated with 1. TsCl, pyridine; 2. NaCN?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "C",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-Iodooctane + NaBr"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-2-Methylbutanenitrile",
+      "explanation": "Treating (R)-2-Butanol with 1. TsCl, pyridine; 2. NaCN yields (S)-2-Methylbutanenitrile. Rationale: Tosylation breaks the O-H bond (retention); subsequent SN2 displacement of tosylate by cyanide inverts configuration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Enantiomeric resolution via salt formation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with (R)-1-Phenylethylamine to yield Diastereomeric salt pair (separable by crystallization) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic (±)-lactic acid"
+        },
+        {
+          "label": "B",
+          "text": "Pyruvate"
+        },
+        {
+          "label": "C",
+          "text": "Propanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "(R)-2-Butanol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Racemic (±)-lactic acid",
+      "explanation": "Racemic (±)-lactic acid reacts with (R)-1-Phenylethylamine to yield Diastereomeric salt pair (separable by crystallization). Rationale: Reacting an enantiomeric pair with a single chiral amine yields diastereomeric salts with different solubilities.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Bromination of chiral alkyl halide",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (S)-2-Bromobutane is treated with Br2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "B",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-Methylbutanenitrile"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)",
+      "explanation": "Treating (S)-2-Bromobutane with Br2 / hν yields 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers). Rationale: Abstraction at C2 destroys the stereocenter via a planar radical intermediate; abstraction at C3 creates a second stereocenter.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "SN2 inversion of configuration",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of (R)-2-Bromooctane into (S)-2-Iodooctane + NaBr?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, PBr3; 2. H2O"
+        },
+        {
+          "label": "C",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "Sodium iodide (NaI) in acetone"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Sodium iodide (NaI) in acetone",
+      "explanation": "To convert (R)-2-Bromooctane into (S)-2-Iodooctane + NaBr, the appropriate reagent is Sodium iodide (NaI) in acetone. Rationale: Backside nucleophilic attack by iodide inverts the tetrahedral chiral center completely (Walden inversion).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Prochiral alpha-bromination",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propanoic acid is treated with 1. Br2, PBr3; 2. H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "C",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Racemic (±)-2-bromopropanoic acid",
+      "explanation": "Treating Propanoic acid with 1. Br2, PBr3; 2. H2O yields Racemic (±)-2-bromopropanoic acid. Rationale: Attack at the planar enol intermediate occurs with equal probability from top (re) and bottom (si) faces.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Stereospecific halogenation of trans-alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-2-Butene is treated with Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "D",
+          "text": "meso-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "meso-2,3-Dibromobutane",
+      "explanation": "Treating trans-2-Butene with Br2 in CH2Cl2 yields meso-2,3-Dibromobutane. Rationale: Anti-addition across the trans-double bond yields the achiral meso diastereomer with an internal mirror plane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Enzymatic chiral reduction",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Pyruvate into (S)-Lactate (pure enantiomer)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "B",
+          "text": "NADH / Lactate dehydrogenase"
+        },
+        {
+          "label": "C",
+          "text": "(R)-1-Phenylethylamine"
+        },
+        {
+          "label": "D",
+          "text": "Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "NADH / Lactate dehydrogenase",
+      "explanation": "To convert Pyruvate into (S)-Lactate (pure enantiomer), the appropriate reagent is NADH / Lactate dehydrogenase. Rationale: The chiral active site of the enzyme directs hydride transfer exclusively to the re-face of pyruvate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Diastereoselective epoxidation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-4-Methylcyclohexene is treated with mCPBA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-Lactate (pure enantiomer)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)",
+      "explanation": "Treating (R)-4-Methylcyclohexene with mCPBA yields trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture). Rationale: The pre-existing chiral center creates diastereotopic faces with unequal steric accessibility.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Tosylation with retention followed by SN2",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. TsCl, pyridine; 2. NaCN to yield (S)-2-Methylbutanenitrile as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pyruvate"
+        },
+        {
+          "label": "B",
+          "text": "(R)-2-Bromooctane"
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-Butanol"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R)-2-Butanol",
+      "explanation": "(R)-2-Butanol reacts with 1. TsCl, pyridine; 2. NaCN to yield (S)-2-Methylbutanenitrile. Rationale: Tosylation breaks the O-H bond (retention); subsequent SN2 displacement of tosylate by cyanide inverts configuration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Enantiomeric resolution via salt formation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Racemic (±)-lactic acid is treated with (R)-1-Phenylethylamine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diastereomeric salt pair (separable by crystallization)"
+        },
+        {
+          "label": "B",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-Methylbutanenitrile"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Diastereomeric salt pair (separable by crystallization)",
+      "explanation": "Treating Racemic (±)-lactic acid with (R)-1-Phenylethylamine yields Diastereomeric salt pair (separable by crystallization). Rationale: Reacting an enantiomeric pair with a single chiral amine yields diastereomeric salts with different solubilities.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Bromination of chiral alkyl halide",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Br2 / hν to yield 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-2-Bromobutane"
+        },
+        {
+          "label": "B",
+          "text": "Racemic (±)-lactic acid"
+        },
+        {
+          "label": "C",
+          "text": "(R)-4-Methylcyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(S)-2-Bromobutane",
+      "explanation": "(S)-2-Bromobutane reacts with Br2 / hν to yield 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers). Rationale: Abstraction at C2 destroys the stereocenter via a planar radical intermediate; abstraction at C3 creates a second stereocenter.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "SN2 inversion of configuration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-2-Bromooctane is treated with Sodium iodide (NaI) in acetone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Methylbutanenitrile"
+        },
+        {
+          "label": "C",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "(S)-2-Iodooctane + NaBr"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(S)-2-Iodooctane + NaBr",
+      "explanation": "Treating (R)-2-Bromooctane with Sodium iodide (NaI) in acetone yields (S)-2-Iodooctane + NaBr. Rationale: Backside nucleophilic attack by iodide inverts the tetrahedral chiral center completely (Walden inversion).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Prochiral alpha-bromination",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Propanoic acid into Racemic (±)-2-bromopropanoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, PBr3; 2. H2O"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "C",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Br2, PBr3; 2. H2O",
+      "explanation": "To convert Propanoic acid into Racemic (±)-2-bromopropanoic acid, the appropriate reagent is 1. Br2, PBr3; 2. H2O. Rationale: Attack at the planar enol intermediate occurs with equal probability from top (re) and bottom (si) faces.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Polarimetry optical activity outcome",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Equimolar mixture of (R)- and (S)-carvone is treated with Polarimeter (589 nm)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        },
+        {
+          "label": "C",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "D",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Zero net optical rotation ([α] = 0°)",
+      "explanation": "Treating Equimolar mixture of (R)- and (S)-carvone with Polarimeter (589 nm) yields Zero net optical rotation ([α] = 0°). Rationale: A 50:50 racemic mixture shows zero optical rotation because equal and opposite rotations cancel.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Stereospecific halogenation of cis-alkene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "B",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "mCPBA"
+        },
+        {
+          "label": "D",
+          "text": "(R)-1-Phenylethylamine"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 in CH2Cl2",
+      "explanation": "To convert cis-2-Butene into (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair), the appropriate reagent is Br2 in CH2Cl2. Rationale: Anti-addition of bromonium ion to cis-alkene produces a pair of chiral enantiomers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Diastereoselective epoxidation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (R)-4-Methylcyclohexene is treated with mCPBA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        },
+        {
+          "label": "D",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)",
+      "explanation": "Treating (R)-4-Methylcyclohexene with mCPBA yields trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture). Rationale: The pre-existing chiral center creates diastereotopic faces with unequal steric accessibility.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Tosylation with retention followed by SN2",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of (R)-2-Butanol into (S)-2-Methylbutanenitrile?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, PBr3; 2. H2O"
+        },
+        {
+          "label": "B",
+          "text": "1. TsCl, pyridine; 2. NaCN"
+        },
+        {
+          "label": "C",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. TsCl, pyridine; 2. NaCN",
+      "explanation": "To convert (R)-2-Butanol into (S)-2-Methylbutanenitrile, the appropriate reagent is 1. TsCl, pyridine; 2. NaCN. Rationale: Tosylation breaks the O-H bond (retention); subsequent SN2 displacement of tosylate by cyanide inverts configuration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Enantiomeric resolution via salt formation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with (R)-1-Phenylethylamine to yield Diastereomeric salt pair (separable by crystallization) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Racemic (±)-lactic acid"
+        },
+        {
+          "label": "B",
+          "text": "(R)-2-Bromooctane"
+        },
+        {
+          "label": "C",
+          "text": "Pyruvate"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Butene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Racemic (±)-lactic acid",
+      "explanation": "Racemic (±)-lactic acid reacts with (R)-1-Phenylethylamine to yield Diastereomeric salt pair (separable by crystallization). Rationale: Reacting an enantiomeric pair with a single chiral amine yields diastereomeric salts with different solubilities.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Bromination of chiral alkyl halide",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when (S)-2-Bromobutane is treated with Br2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "D",
+          "text": "meso-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)",
+      "explanation": "Treating (S)-2-Bromobutane with Br2 / hν yields 2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers). Rationale: Abstraction at C2 destroys the stereocenter via a planar radical intermediate; abstraction at C3 creates a second stereocenter.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "SN2 inversion of configuration",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Sodium iodide (NaI) in acetone to yield (S)-2-Iodooctane + NaBr as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(R)-2-Butanol"
+        },
+        {
+          "label": "B",
+          "text": "(R)-4-Methylcyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "(R)-2-Bromooctane"
+        },
+        {
+          "label": "D",
+          "text": "Pyruvate"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(R)-2-Bromooctane",
+      "explanation": "(R)-2-Bromooctane reacts with Sodium iodide (NaI) in acetone to yield (S)-2-Iodooctane + NaBr. Rationale: Backside nucleophilic attack by iodide inverts the tetrahedral chiral center completely (Walden inversion).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Prochiral alpha-bromination",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propanoic acid is treated with 1. Br2, PBr3; 2. H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(S)-Lactate (pure enantiomer)"
+        },
+        {
+          "label": "B",
+          "text": "meso-2,3-Dibromobutane"
+        },
+        {
+          "label": "C",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        },
+        {
+          "label": "D",
+          "text": "Racemic (±)-2-bromopropanoic acid"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Racemic (±)-2-bromopropanoic acid",
+      "explanation": "Treating Propanoic acid with 1. Br2, PBr3; 2. H2O yields Racemic (±)-2-bromopropanoic acid. Rationale: Attack at the planar enol intermediate occurs with equal probability from top (re) and bottom (si) faces.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Polarimetry optical activity outcome",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Equimolar mixture of (R)- and (S)-carvone into Zero net optical rotation ([α] = 0°)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "Polarimeter (589 nm)"
+        },
+        {
+          "label": "C",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "D",
+          "text": "mCPBA"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Polarimeter (589 nm)",
+      "explanation": "To convert Equimolar mixture of (R)- and (S)-carvone into Zero net optical rotation ([α] = 0°), the appropriate reagent is Polarimeter (589 nm). Rationale: A 50:50 racemic mixture shows zero optical rotation because equal and opposite rotations cancel.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Stereospecific halogenation of cis-alkene",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when cis-2-Butene is treated with Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zero net optical rotation ([α] = 0°)"
+        },
+        {
+          "label": "B",
+          "text": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "D",
+          "text": "trans- and cis-Epoxy-4-methylcyclohexane (diastereomeric mixture)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(2R,3R)- and (2S,3S)-Dibromobutane (racemic pair)",
+      "explanation": "Treating cis-2-Butene with Br2 in CH2Cl2 yields (2R,3R)- and (2S,3S)-Dibromobutane (racemic pair). Rationale: Anti-addition of bromonium ion to cis-alkene produces a pair of chiral enantiomers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Stereospecific halogenation of trans-alkene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of trans-2-Butene into meso-2,3-Dibromobutane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "B",
+          "text": "Br2 in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "(R)-1-Phenylethylamine"
+        },
+        {
+          "label": "D",
+          "text": "Sodium iodide (NaI) in acetone"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 in CH2Cl2",
+      "explanation": "To convert trans-2-Butene into meso-2,3-Dibromobutane, the appropriate reagent is Br2 in CH2Cl2. Rationale: Anti-addition across the trans-double bond yields the achiral meso diastereomer with an internal mirror plane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Enzymatic chiral reduction",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Pyruvate is treated with NADH / Lactate dehydrogenase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dibromobutane (achiral) + 2,3-Dibromobutane (diastereomers)"
+        },
+        {
+          "label": "B",
+          "text": "(S)-Lactate (pure enantiomer)"
+        },
+        {
+          "label": "C",
+          "text": "(S)-2-Iodooctane + NaBr"
+        },
+        {
+          "label": "D",
+          "text": "meso-2,3-Dibromobutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "(S)-Lactate (pure enantiomer)",
+      "explanation": "Treating Pyruvate with NADH / Lactate dehydrogenase yields (S)-Lactate (pure enantiomer). Rationale: The chiral active site of the enzyme directs hydride transfer exclusively to the re-face of pyruvate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chiral Centinel",
+    "CIP Priority Paladin",
+    "Enantiomer Enigma",
+    "Meso-Diastereomer Duelist",
+    "Prochiral Prism Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chiral Centinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chiral-centinel.png"
+        ]
+      },
+      {
+        "boss": "CIP Priority Paladin",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cip-priority-paladin.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enigma",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enigma.png"
+        ]
+      },
+      {
+        "boss": "Meso-Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "meso-diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Prochiral Prism Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "prochiral-prism-overlord.png"
+        ]
+      }
+    ]
+  }
+}

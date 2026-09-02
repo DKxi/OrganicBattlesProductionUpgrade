@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 9,
+  "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+  "assigned_boss": "Acetylide Archer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch09_q001",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Terminal acetylide alkylation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Butyne is treated with 1. NaNH2; 2. 1-Bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "B",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Pentene"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3-Heptyne + NaBr",
+      "explanation": "Treating 1-Butyne with 1. NaNH2; 2. 1-Bromopropane yields 3-Heptyne + NaBr. Rationale: Acetylide anion acts as a strong nucleophile, displacing bromide in an SN2 reaction to lengthen the carbon chain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q002",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Mercury-catalyzed alkyne hydration",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexyne into 2-Hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "label": "B",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "C",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        },
+        {
+          "label": "D",
+          "text": "Excess H2 / Pt"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H2O, H2SO4, HgSO4",
+      "explanation": "To convert 1-Hexyne into 2-Hexanone, the appropriate reagent is H2O, H2SO4, HgSO4. Rationale: Markovnikov addition of water produces an enol that tautomerizes to the methyl ketone.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q003",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Hydroboration-oxidation of terminal alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexyne is treated with 1. Disiamylborane; 2. H2O2, NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "Hexanal"
+        },
+        {
+          "label": "C",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "D",
+          "text": "Butanoic acid + CO2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hexanal",
+      "explanation": "Treating 1-Hexyne with 1. Disiamylborane; 2. H2O2, NaOH yields Hexanal. Rationale: Bulky borane adds to the terminal carbon, producing an aldehyde upon basic peroxide oxidation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q004",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Syn-reduction with Lindlar catalyst",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Pentyne into cis-2-Pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Lindlar catalyst"
+        },
+        {
+          "label": "B",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "C",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "D",
+          "text": "1. O3; 2. H2O"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H2 / Lindlar catalyst",
+      "explanation": "To convert 2-Pentyne into cis-2-Pentene, the appropriate reagent is H2 / Lindlar catalyst. Rationale: Poisoned palladium catalyst allows syn-hydrogenation of alkyne to cis-alkene without further reduction.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q005",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Anti-reduction with dissolving metal",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with Na / liquid NH3 (-78°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "B",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Pentene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-2-Pentene",
+      "explanation": "Treating 2-Pentyne with Na / liquid NH3 (-78°C) yields trans-2-Pentene. Rationale: Stepwise electron and proton transfer through a trans-radical anion intermediate yields the trans-alkene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q006",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Exhaustive catalytic hydrogenation of alkyne",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Pentyne into Pentane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Lindlar catalyst"
+        },
+        {
+          "label": "B",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "C",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "D",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Excess H2 / Pt",
+      "explanation": "To convert 1-Pentyne into Pentane, the appropriate reagent is Excess H2 / Pt. Rationale: Unpoisoned platinum catalyst reduces alkynes completely through alkene to alkane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q007",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Monobromination of alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1 equivalent Br2 in CH2Cl2 to yield (E)-2,3-Dibromo-2-butene as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butyne"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Dibromobutane"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Pentyne"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Butyne",
+      "explanation": "2-Butyne reacts with 1 equivalent Br2 in CH2Cl2 to yield (E)-2,3-Dibromo-2-butene. Rationale: Anti-addition of one equivalent of bromine across the triple bond yields the trans-dibromoalkene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q008",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Double dehydrohalogenation to alkyne",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,2-Dibromobutane is treated with 2 equivalents NaNH2 / mineral oil (150°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "B",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "cis-2-Pentene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1-Butyne",
+      "explanation": "Treating 1,2-Dibromobutane with 2 equivalents NaNH2 / mineral oil (150°C) yields 1-Butyne. Rationale: Two successive E2 eliminations convert the vicinal dibromide into a carbon-carbon triple bond.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q009",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Ozonolysis of internal alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. O3; 2. H2O to yield Acetic acid + Propanoic acid as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "B",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "1-Pentyne"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Pentyne",
+      "explanation": "2-Pentyne reacts with 1. O3; 2. H2O to yield Acetic acid + Propanoic acid. Rationale: Ozonolysis cleaves the internal triple bond, converting both alkyne carbons into carboxylic acids.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q010",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Acetylide Archer",
+      "topic": "Permanganate cleavage of terminal alkyne",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Pentyne is treated with KMnO4 / H2O (neutral)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexanal"
+        },
+        {
+          "label": "B",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "C",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "D",
+          "text": "Butanoic acid + CO2"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Butanoic acid + CO2",
+      "explanation": "Treating 1-Pentyne with KMnO4 / H2O (neutral) yields Butanoic acid + CO2. Rationale: Oxidative cleavage of a terminal alkyne yields a carboxylic acid from the internal carbon and CO2 from terminal carbon.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "acetylide-archer.png"
+      ]
+    },
+    {
+      "id": "ch09_q011",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Hydroboration-oxidation of terminal alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexyne is treated with 1. Disiamylborane; 2. H2O2, NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "Hexanal"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Hexanal",
+      "explanation": "Treating 1-Hexyne with 1. Disiamylborane; 2. H2O2, NaOH yields Hexanal. Rationale: Bulky borane adds to the terminal carbon, producing an aldehyde upon basic peroxide oxidation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q012",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Syn-reduction with Lindlar catalyst",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Pentyne into cis-2-Pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "B",
+          "text": "1. Disiamylborane; 2. H2O2, NaOH"
+        },
+        {
+          "label": "C",
+          "text": "Na / liquid NH3 (-78°C)"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Lindlar catalyst"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "H2 / Lindlar catalyst",
+      "explanation": "To convert 2-Pentyne into cis-2-Pentene, the appropriate reagent is H2 / Lindlar catalyst. Rationale: Poisoned palladium catalyst allows syn-hydrogenation of alkyne to cis-alkene without further reduction.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q013",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Anti-reduction with dissolving metal",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with Na / liquid NH3 (-78°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "C",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanone"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-Pentene",
+      "explanation": "Treating 2-Pentyne with Na / liquid NH3 (-78°C) yields trans-2-Pentene. Rationale: Stepwise electron and proton transfer through a trans-radical anion intermediate yields the trans-alkene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q014",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Exhaustive catalytic hydrogenation of alkyne",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Pentyne into Pentane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "B",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "C",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "D",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Excess H2 / Pt",
+      "explanation": "To convert 1-Pentyne into Pentane, the appropriate reagent is Excess H2 / Pt. Rationale: Unpoisoned platinum catalyst reduces alkynes completely through alkene to alkane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q015",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Monobromination of alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Butyne is treated with 1 equivalent Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "D",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "(E)-2,3-Dibromo-2-butene",
+      "explanation": "Treating 2-Butyne with 1 equivalent Br2 in CH2Cl2 yields (E)-2,3-Dibromo-2-butene. Rationale: Anti-addition of one equivalent of bromine across the triple bond yields the trans-dibromoalkene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q016",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Double dehydrohalogenation to alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 2 equivalents NaNH2 / mineral oil (150°C) to yield 1-Butyne as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Butyne"
+        },
+        {
+          "label": "B",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "1,2-Dibromobutane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1,2-Dibromobutane",
+      "explanation": "1,2-Dibromobutane reacts with 2 equivalents NaNH2 / mineral oil (150°C) to yield 1-Butyne. Rationale: Two successive E2 eliminations convert the vicinal dibromide into a carbon-carbon triple bond.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q017",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Ozonolysis of internal alkyne",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with 1. O3; 2. H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "Butanoic acid + CO2"
+        },
+        {
+          "label": "D",
+          "text": "3-Heptyne + NaBr"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetic acid + Propanoic acid",
+      "explanation": "Treating 2-Pentyne with 1. O3; 2. H2O yields Acetic acid + Propanoic acid. Rationale: Ozonolysis cleaves the internal triple bond, converting both alkyne carbons into carboxylic acids.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q018",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Permanganate cleavage of terminal alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with KMnO4 / H2O (neutral) to yield Butanoic acid + CO2 as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "B",
+          "text": "2-Butyne"
+        },
+        {
+          "label": "C",
+          "text": "1-Pentyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Pentyne"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1-Pentyne",
+      "explanation": "1-Pentyne reacts with KMnO4 / H2O (neutral) to yield Butanoic acid + CO2. Rationale: Oxidative cleavage of a terminal alkyne yields a carboxylic acid from the internal carbon and CO2 from terminal carbon.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q019",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Terminal acetylide alkylation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Butyne is treated with 1. NaNH2; 2. 1-Bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "Hexanal"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "3-Heptyne + NaBr",
+      "explanation": "Treating 1-Butyne with 1. NaNH2; 2. 1-Bromopropane yields 3-Heptyne + NaBr. Rationale: Acetylide anion acts as a strong nucleophile, displacing bromide in an SN2 reaction to lengthen the carbon chain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q020",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Tautomerism Trickster",
+      "topic": "Mercury-catalyzed alkyne hydration",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexyne into 2-Hexanone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Disiamylborane; 2. H2O2, NaOH"
+        },
+        {
+          "label": "B",
+          "text": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "label": "C",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Lindlar catalyst"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "H2O, H2SO4, HgSO4",
+      "explanation": "To convert 1-Hexyne into 2-Hexanone, the appropriate reagent is H2O, H2SO4, HgSO4. Rationale: Markovnikov addition of water produces an enol that tautomerizes to the methyl ketone.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "tautomerism-trickster.png"
+      ]
+    },
+    {
+      "id": "ch09_q021",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Anti-reduction with dissolving metal",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with Na / liquid NH3 (-78°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "B",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "Butanoic acid + CO2"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "trans-2-Pentene",
+      "explanation": "Treating 2-Pentyne with Na / liquid NH3 (-78°C) yields trans-2-Pentene. Rationale: Stepwise electron and proton transfer through a trans-radical anion intermediate yields the trans-alkene.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q022",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Exhaustive catalytic hydrogenation of alkyne",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Pentyne into Pentane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "B",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "C",
+          "text": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "label": "D",
+          "text": "1. Disiamylborane; 2. H2O2, NaOH"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Excess H2 / Pt",
+      "explanation": "To convert 1-Pentyne into Pentane, the appropriate reagent is Excess H2 / Pt. Rationale: Unpoisoned platinum catalyst reduces alkynes completely through alkene to alkane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q023",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Monobromination of alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Butyne is treated with 1 equivalent Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid + CO2"
+        },
+        {
+          "label": "B",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "C",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "D",
+          "text": "Pentane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "(E)-2,3-Dibromo-2-butene",
+      "explanation": "Treating 2-Butyne with 1 equivalent Br2 in CH2Cl2 yields (E)-2,3-Dibromo-2-butene. Rationale: Anti-addition of one equivalent of bromine across the triple bond yields the trans-dibromoalkene.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q024",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Double dehydrohalogenation to alkyne",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Dibromobutane into 1-Butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 equivalent Br2 in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "C",
+          "text": "H2 / Lindlar catalyst"
+        },
+        {
+          "label": "D",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2 equivalents NaNH2 / mineral oil (150°C)",
+      "explanation": "To convert 1,2-Dibromobutane into 1-Butyne, the appropriate reagent is 2 equivalents NaNH2 / mineral oil (150°C). Rationale: Two successive E2 eliminations convert the vicinal dibromide into a carbon-carbon triple bond.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q025",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Ozonolysis of internal alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. O3; 2. H2O to yield Acetic acid + Propanoic acid as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "C",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "D",
+          "text": "1-Butyne"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Pentyne",
+      "explanation": "2-Pentyne reacts with 1. O3; 2. H2O to yield Acetic acid + Propanoic acid. Rationale: Ozonolysis cleaves the internal triple bond, converting both alkyne carbons into carboxylic acids.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q026",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Permanganate cleavage of terminal alkyne",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Pentyne is treated with KMnO4 / H2O (neutral)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "B",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "Butanoic acid + CO2"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Butanoic acid + CO2",
+      "explanation": "Treating 1-Pentyne with KMnO4 / H2O (neutral) yields Butanoic acid + CO2. Rationale: Oxidative cleavage of a terminal alkyne yields a carboxylic acid from the internal carbon and CO2 from terminal carbon.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q027",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Terminal acetylide alkylation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. NaNH2; 2. 1-Bromopropane to yield 3-Heptyne + NaBr as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "B",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "C",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Pentyne"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Butyne",
+      "explanation": "1-Butyne reacts with 1. NaNH2; 2. 1-Bromopropane to yield 3-Heptyne + NaBr. Rationale: Acetylide anion acts as a strong nucleophile, displacing bromide in an SN2 reaction to lengthen the carbon chain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q028",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Mercury-catalyzed alkyne hydration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexyne is treated with H2O, H2SO4, HgSO4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "B",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "C",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "D",
+          "text": "Pentane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Hexanone",
+      "explanation": "Treating 1-Hexyne with H2O, H2SO4, HgSO4 yields 2-Hexanone. Rationale: Markovnikov addition of water produces an enol that tautomerizes to the methyl ketone.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q029",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Hydroboration-oxidation of terminal alkyne",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Hexyne into Hexanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O3; 2. H2O"
+        },
+        {
+          "label": "B",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "C",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "D",
+          "text": "1. Disiamylborane; 2. H2O2, NaOH"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Disiamylborane; 2. H2O2, NaOH",
+      "explanation": "To convert 1-Hexyne into Hexanal, the appropriate reagent is 1. Disiamylborane; 2. H2O2, NaOH. Rationale: Bulky borane adds to the terminal carbon, producing an aldehyde upon basic peroxide oxidation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q030",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Reduction Reaver",
+      "topic": "Syn-reduction with Lindlar catalyst",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with H2 / Lindlar catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "B",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "C",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "D",
+          "text": "Hexanal"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "cis-2-Pentene",
+      "explanation": "Treating 2-Pentyne with H2 / Lindlar catalyst yields cis-2-Pentene. Rationale: Poisoned palladium catalyst allows syn-hydrogenation of alkyne to cis-alkene without further reduction.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reduction-reaver.png"
+      ]
+    },
+    {
+      "id": "ch09_q031",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Monobromination of alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Butyne is treated with 1 equivalent Br2 in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Pentene"
+        },
+        {
+          "label": "C",
+          "text": "Pentane"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanone"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "(E)-2,3-Dibromo-2-butene",
+      "explanation": "Treating 2-Butyne with 1 equivalent Br2 in CH2Cl2 yields (E)-2,3-Dibromo-2-butene. Rationale: Anti-addition of one equivalent of bromine across the triple bond yields the trans-dibromoalkene.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q032",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Double dehydrohalogenation to alkyne",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Dibromobutane into 1-Butyne?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "label": "B",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        },
+        {
+          "label": "C",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "D",
+          "text": "1 equivalent Br2 in CH2Cl2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2 equivalents NaNH2 / mineral oil (150°C)",
+      "explanation": "To convert 1,2-Dibromobutane into 1-Butyne, the appropriate reagent is 2 equivalents NaNH2 / mineral oil (150°C). Rationale: Two successive E2 eliminations convert the vicinal dibromide into a carbon-carbon triple bond.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q033",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Ozonolysis of internal alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with 1. O3; 2. H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid + CO2"
+        },
+        {
+          "label": "B",
+          "text": "Hexanal"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "Pentane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetic acid + Propanoic acid",
+      "explanation": "Treating 2-Pentyne with 1. O3; 2. H2O yields Acetic acid + Propanoic acid. Rationale: Ozonolysis cleaves the internal triple bond, converting both alkyne carbons into carboxylic acids.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q034",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Permanganate cleavage of terminal alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with KMnO4 / H2O (neutral) to yield Butanoic acid + CO2 as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "B",
+          "text": "1-Pentyne"
+        },
+        {
+          "label": "C",
+          "text": "1-Pentyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Butyne"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Pentyne",
+      "explanation": "1-Pentyne reacts with KMnO4 / H2O (neutral) to yield Butanoic acid + CO2. Rationale: Oxidative cleavage of a terminal alkyne yields a carboxylic acid from the internal carbon and CO2 from terminal carbon.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q035",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Terminal acetylide alkylation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Butyne is treated with 1. NaNH2; 2. 1-Bromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "C",
+          "text": "Butanoic acid + CO2"
+        },
+        {
+          "label": "D",
+          "text": "Hexanal"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "3-Heptyne + NaBr",
+      "explanation": "Treating 1-Butyne with 1. NaNH2; 2. 1-Bromopropane yields 3-Heptyne + NaBr. Rationale: Acetylide anion acts as a strong nucleophile, displacing bromide in an SN2 reaction to lengthen the carbon chain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q036",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Mercury-catalyzed alkyne hydration",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with H2O, H2SO4, HgSO4 to yield 2-Hexanone as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Pentyne"
+        },
+        {
+          "label": "B",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Butyne"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Hexyne",
+      "explanation": "1-Hexyne reacts with H2O, H2SO4, HgSO4 to yield 2-Hexanone. Rationale: Markovnikov addition of water produces an enol that tautomerizes to the methyl ketone.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q037",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Hydroboration-oxidation of terminal alkyne",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexyne is treated with 1. Disiamylborane; 2. H2O2, NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexanal"
+        },
+        {
+          "label": "B",
+          "text": "2-Hexanone"
+        },
+        {
+          "label": "C",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid + Propanoic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hexanal",
+      "explanation": "Treating 1-Hexyne with 1. Disiamylborane; 2. H2O2, NaOH yields Hexanal. Rationale: Bulky borane adds to the terminal carbon, producing an aldehyde upon basic peroxide oxidation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q038",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Syn-reduction with Lindlar catalyst",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Pentyne into cis-2-Pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "B",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "C",
+          "text": "H2 / Lindlar catalyst"
+        },
+        {
+          "label": "D",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "H2 / Lindlar catalyst",
+      "explanation": "To convert 2-Pentyne into cis-2-Pentene, the appropriate reagent is H2 / Lindlar catalyst. Rationale: Poisoned palladium catalyst allows syn-hydrogenation of alkyne to cis-alkene without further reduction.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q039",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Anti-reduction with dissolving metal",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with Na / liquid NH3 (-78°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "B",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "C",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Pentene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-2-Pentene",
+      "explanation": "Treating 2-Pentyne with Na / liquid NH3 (-78°C) yields trans-2-Pentene. Rationale: Stepwise electron and proton transfer through a trans-radical anion intermediate yields the trans-alkene.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q040",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Dihalide Elimination Duelist",
+      "topic": "Exhaustive catalytic hydrogenation of alkyne",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Pentyne into Pentane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O3; 2. H2O"
+        },
+        {
+          "label": "B",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "C",
+          "text": "Na / liquid NH3 (-78°C)"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Lindlar catalyst"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Excess H2 / Pt",
+      "explanation": "To convert 1-Pentyne into Pentane, the appropriate reagent is Excess H2 / Pt. Rationale: Unpoisoned platinum catalyst reduces alkynes completely through alkene to alkane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dihalide-elimination-duelist.png"
+      ]
+    },
+    {
+      "id": "ch09_q041",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Ozonolysis of internal alkyne",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with 1. O3; 2. H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        },
+        {
+          "label": "B",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "C",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid + Propanoic acid"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetic acid + Propanoic acid",
+      "explanation": "Treating 2-Pentyne with 1. O3; 2. H2O yields Acetic acid + Propanoic acid. Rationale: Ozonolysis cleaves the internal triple bond, converting both alkyne carbons into carboxylic acids.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q042",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Permanganate cleavage of terminal alkyne",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Pentyne into Butanoic acid + CO2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "B",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "C",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        },
+        {
+          "label": "D",
+          "text": "1. Disiamylborane; 2. H2O2, NaOH"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "KMnO4 / H2O (neutral)",
+      "explanation": "To convert 1-Pentyne into Butanoic acid + CO2, the appropriate reagent is KMnO4 / H2O (neutral). Rationale: Oxidative cleavage of a terminal alkyne yields a carboxylic acid from the internal carbon and CO2 from terminal carbon.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q043",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Terminal acetylide alkylation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. NaNH2; 2. 1-Bromopropane to yield 3-Heptyne + NaBr as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "B",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "C",
+          "text": "2-Pentyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Pentyne"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Butyne",
+      "explanation": "1-Butyne reacts with 1. NaNH2; 2. 1-Bromopropane to yield 3-Heptyne + NaBr. Rationale: Acetylide anion acts as a strong nucleophile, displacing bromide in an SN2 reaction to lengthen the carbon chain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q044",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Mercury-catalyzed alkyne hydration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexyne is treated with H2O, H2SO4, HgSO4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "B",
+          "text": "Hexanal"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanone"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2-Hexanone",
+      "explanation": "Treating 1-Hexyne with H2O, H2SO4, HgSO4 yields 2-Hexanone. Rationale: Markovnikov addition of water produces an enol that tautomerizes to the methyl ketone.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q045",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Hydroboration-oxidation of terminal alkyne",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. Disiamylborane; 2. H2O2, NaOH to yield Hexanal as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Dibromobutane"
+        },
+        {
+          "label": "B",
+          "text": "1-Pentyne"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexyne"
+        },
+        {
+          "label": "D",
+          "text": "1-Hexyne"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1-Hexyne",
+      "explanation": "1-Hexyne reacts with 1. Disiamylborane; 2. H2O2, NaOH to yield Hexanal. Rationale: Bulky borane adds to the terminal carbon, producing an aldehyde upon basic peroxide oxidation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q046",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Syn-reduction with Lindlar catalyst",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Pentyne is treated with H2 / Lindlar catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "Pentane"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "cis-2-Pentene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-2-Pentene",
+      "explanation": "Treating 2-Pentyne with H2 / Lindlar catalyst yields cis-2-Pentene. Rationale: Poisoned palladium catalyst allows syn-hydrogenation of alkyne to cis-alkene without further reduction.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q047",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Anti-reduction with dissolving metal",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Pentyne into trans-2-Pentene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KMnO4 / H2O (neutral)"
+        },
+        {
+          "label": "B",
+          "text": "2 equivalents NaNH2 / mineral oil (150°C)"
+        },
+        {
+          "label": "C",
+          "text": "1. O3; 2. H2O"
+        },
+        {
+          "label": "D",
+          "text": "Na / liquid NH3 (-78°C)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Na / liquid NH3 (-78°C)",
+      "explanation": "To convert 2-Pentyne into trans-2-Pentene, the appropriate reagent is Na / liquid NH3 (-78°C). Rationale: Stepwise electron and proton transfer through a trans-radical anion intermediate yields the trans-alkene.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q048",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Exhaustive catalytic hydrogenation of alkyne",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Pentyne is treated with Excess H2 / Pt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-2-Pentene"
+        },
+        {
+          "label": "B",
+          "text": "Pentane"
+        },
+        {
+          "label": "C",
+          "text": "Butanoic acid + CO2"
+        },
+        {
+          "label": "D",
+          "text": "(E)-2,3-Dibromo-2-butene"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pentane",
+      "explanation": "Treating 1-Pentyne with Excess H2 / Pt yields Pentane. Rationale: Unpoisoned platinum catalyst reduces alkynes completely through alkene to alkane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q049",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Monobromination of alkyne",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Butyne into (E)-2,3-Dibromo-2-butene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 equivalent Br2 in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "Excess H2 / Pt"
+        },
+        {
+          "label": "C",
+          "text": "1. NaNH2; 2. 1-Bromopropane"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Lindlar catalyst"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1 equivalent Br2 in CH2Cl2",
+      "explanation": "To convert 2-Butyne into (E)-2,3-Dibromo-2-butene, the appropriate reagent is 1 equivalent Br2 in CH2Cl2. Rationale: Anti-addition of one equivalent of bromine across the triple bond yields the trans-dibromoalkene.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch09_q050",
+      "chapter": 9,
+      "chapter_title": "Alkynes: An Introduction to Organic Synthesis",
+      "boss": "Retrosynthesis Sovereign",
+      "topic": "Double dehydrohalogenation to alkyne",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,2-Dibromobutane is treated with 2 equivalents NaNH2 / mineral oil (150°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid + Propanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "3-Heptyne + NaBr"
+        },
+        {
+          "label": "C",
+          "text": "1-Butyne"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Pentene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1-Butyne",
+      "explanation": "Treating 1,2-Dibromobutane with 2 equivalents NaNH2 / mineral oil (150°C) yields 1-Butyne. Rationale: Two successive E2 eliminations convert the vicinal dibromide into a carbon-carbon triple bond.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "retrosynthesis-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Acetylide Archer",
+    "Tautomerism Trickster",
+    "Reduction Reaver",
+    "Dihalide Elimination Duelist",
+    "Retrosynthesis Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Acetylide Archer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "acetylide-archer.png"
+        ]
+      },
+      {
+        "boss": "Tautomerism Trickster",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "tautomerism-trickster.png"
+        ]
+      },
+      {
+        "boss": "Reduction Reaver",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "reduction-reaver.png"
+        ]
+      },
+      {
+        "boss": "Dihalide Elimination Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "dihalide-elimination-duelist.png"
+        ]
+      },
+      {
+        "boss": "Retrosynthesis Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "retrosynthesis-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

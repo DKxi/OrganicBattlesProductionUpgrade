@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 4,
+  "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+  "assigned_boss": "Cycloalkane Sentry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch04_q001",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Methylcyclohexane chair flip equilibrium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Axial methylcyclohexane is treated with Conformational chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorocyclohexane + HCl"
+        },
+        {
+          "label": "B",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "No reaction (ring remains intact)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Equatorial methylcyclohexane (95% at eq)",
+      "explanation": "Treating Axial methylcyclohexane with Conformational chair flip yields Equatorial methylcyclohexane (95% at eq). Rationale: The equatorial position eliminates 1,3-diaxial steric interactions, making it 7.3 kJ/mol more stable.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q002",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Ring-opening bromination of cyclopropane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopropane into 1,3-Dibromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Ni (80°C)"
+        },
+        {
+          "label": "B",
+          "text": "Equilibrium conformation"
+        },
+        {
+          "label": "C",
+          "text": "Chair equilibrium"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / dark, catalyst or light"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Br2 / dark, catalyst or light",
+      "explanation": "To convert Cyclopropane into 1,3-Dibromopropane, the appropriate reagent is Br2 / dark, catalyst or light. Rationale: Relief of 115 kJ/mol Baeyer angle strain drives facile ring opening by electrophiles.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q003",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Hydrogenation of cyclopropane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopropane is treated with H2 / Ni (80°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propane"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propane",
+      "explanation": "Treating Cyclopropane with H2 / Ni (80°C) yields Propane. Rationale: Angle strain facilitates catalytic hydrogenative ring opening at much milder temperatures than higher cycloalkanes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q004",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Non-opening hydrogenation of cyclopentane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopentane into No reaction (ring remains intact)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / dark, catalyst or light"
+        },
+        {
+          "label": "B",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "D",
+          "text": "Chair equilibrium"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "H2 / Pt (room temp)",
+      "explanation": "To convert Cyclopentane into No reaction (ring remains intact), the appropriate reagent is H2 / Pt (room temp). Rationale: Cyclopentane possesses minimal ring strain (26 kJ/mol) and resists hydrogenative ring cleavage.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q005",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Radical bromination of cyclopentane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentane is treated with Br2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "D",
+          "text": "Butane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Bromocyclopentane + HBr",
+      "explanation": "Treating Cyclopentane with Br2 / hν yields Bromocyclopentane + HBr. Rationale: All 10 secondary hydrogens in cyclopentane are chemically equivalent, yielding a single monobromo product.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q006",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Conformational stability of 1,2-dimethylcyclohexane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / dark, catalyst or light"
+        },
+        {
+          "label": "B",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "C",
+          "text": "Chair equilibrium"
+        },
+        {
+          "label": "D",
+          "text": "Conformational chair flip"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chair equilibrium",
+      "explanation": "To convert trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation, the appropriate reagent is Chair equilibrium. Rationale: The trans isomer adopts a stable diequatorial chair devoid of 1,3-diaxial methyl-hydrogen clashes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q007",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Hydrogenative cleavage of cyclobutane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with H2 / Ni (180°C) to yield Butane as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane"
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclobutane",
+      "explanation": "Cyclobutane reacts with H2 / Ni (180°C) to yield Butane. Rationale: Cyclobutane opens under catalytic hydrogenation at 180°C to release its 110 kJ/mol ring strain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q008",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Monochlorination of cyclohexane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexane is treated with Cl2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorocyclohexane + HCl"
+        },
+        {
+          "label": "B",
+          "text": "Propane"
+        },
+        {
+          "label": "C",
+          "text": "Butane"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chlorocyclohexane + HCl",
+      "explanation": "Treating Cyclohexane with Cl2 / hν yields Chlorocyclohexane + HCl. Rationale: Radical substitution at any of the 12 equivalent secondary C-H positions yields pure chlorocyclohexane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q009",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Rigid chair conformation of di-tert-butylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Equilibrium conformation to yield Diequatorial (1e, 4e) chair conformation as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopropane"
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "trans-1,4-Di-tert-butylcyclohexane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-1,4-Di-tert-butylcyclohexane",
+      "explanation": "trans-1,4-Di-tert-butylcyclohexane reacts with Equilibrium conformation to yield Diequatorial (1e, 4e) chair conformation. Rationale: Bulky tert-butyl groups have high A-values (20 kJ/mol) and lock the ring into the diequatorial conformation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q010",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Cis-1,3-dimethylcyclohexane conformation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when cis-1,3-Dimethylcyclohexane is treated with Conformational preference?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Chlorocyclohexane + HCl"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Bromocyclopentane + HBr"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diequatorial (1e, 3e) chair conformation",
+      "explanation": "Treating cis-1,3-Dimethylcyclohexane with Conformational preference yields Diequatorial (1e, 3e) chair conformation. Rationale: Both methyl groups occupy equatorial positions on the same face, avoiding massive 1,3-diaxial methyl-methyl clash.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q011",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Hydrogenation of cyclopropane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopropane is treated with H2 / Ni (80°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Propane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Propane",
+      "explanation": "Treating Cyclopropane with H2 / Ni (80°C) yields Propane. Rationale: Angle strain facilitates catalytic hydrogenative ring opening at much milder temperatures than higher cycloalkanes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q012",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Non-opening hydrogenation of cyclopentane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopentane into No reaction (ring remains intact)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Ni (180°C)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H2 / Pt (room temp)",
+      "explanation": "To convert Cyclopentane into No reaction (ring remains intact), the appropriate reagent is H2 / Pt (room temp). Rationale: Cyclopentane possesses minimal ring strain (26 kJ/mol) and resists hydrogenative ring cleavage.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q013",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Radical bromination of cyclopentane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentane is treated with Br2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "C",
+          "text": "Propane"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Bromocyclopentane + HBr",
+      "explanation": "Treating Cyclopentane with Br2 / hν yields Bromocyclopentane + HBr. Rationale: All 10 secondary hydrogens in cyclopentane are chemically equivalent, yielding a single monobromo product.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q014",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Conformational stability of 1,2-dimethylcyclohexane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Ni (80°C)"
+        },
+        {
+          "label": "B",
+          "text": "Chair equilibrium"
+        },
+        {
+          "label": "C",
+          "text": "Conformational preference"
+        },
+        {
+          "label": "D",
+          "text": "Equilibrium conformation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chair equilibrium",
+      "explanation": "To convert trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation, the appropriate reagent is Chair equilibrium. Rationale: The trans isomer adopts a stable diequatorial chair devoid of 1,3-diaxial methyl-hydrogen clashes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q015",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Hydrogenative cleavage of cyclobutane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclobutane is treated with H2 / Ni (180°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "D",
+          "text": "Butane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Butane",
+      "explanation": "Treating Cyclobutane with H2 / Ni (180°C) yields Butane. Rationale: Cyclobutane opens under catalytic hydrogenation at 180°C to release its 110 kJ/mol ring strain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q016",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Monochlorination of cyclohexane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Cl2 / hν to yield Chlorocyclohexane + HCl as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,3-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclopropane"
+        },
+        {
+          "label": "D",
+          "text": "Cyclobutane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cyclohexane",
+      "explanation": "Cyclohexane reacts with Cl2 / hν to yield Chlorocyclohexane + HCl. Rationale: Radical substitution at any of the 12 equivalent secondary C-H positions yields pure chlorocyclohexane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q017",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Rigid chair conformation of di-tert-butylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-1,4-Di-tert-butylcyclohexane is treated with Equilibrium conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Diequatorial (1e, 4e) chair conformation",
+      "explanation": "Treating trans-1,4-Di-tert-butylcyclohexane with Equilibrium conformation yields Diequatorial (1e, 4e) chair conformation. Rationale: Bulky tert-butyl groups have high A-values (20 kJ/mol) and lock the ring into the diequatorial conformation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q018",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Cis-1,3-dimethylcyclohexane conformation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Conformational preference to yield Diequatorial (1e, 3e) chair conformation as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,3-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "D",
+          "text": "trans-1,4-Di-tert-butylcyclohexane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "cis-1,3-Dimethylcyclohexane",
+      "explanation": "cis-1,3-Dimethylcyclohexane reacts with Conformational preference to yield Diequatorial (1e, 3e) chair conformation. Rationale: Both methyl groups occupy equatorial positions on the same face, avoiding massive 1,3-diaxial methyl-methyl clash.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q019",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Methylcyclohexane chair flip equilibrium",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Axial methylcyclohexane is treated with Conformational chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Butane"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Bromocyclopentane + HBr"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Equatorial methylcyclohexane (95% at eq)",
+      "explanation": "Treating Axial methylcyclohexane with Conformational chair flip yields Equatorial methylcyclohexane (95% at eq). Rationale: The equatorial position eliminates 1,3-diaxial steric interactions, making it 7.3 kJ/mol more stable.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q020",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Ring-opening bromination of cyclopropane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopropane into 1,3-Dibromopropane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Ni (80°C)"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "C",
+          "text": "Br2 / dark, catalyst or light"
+        },
+        {
+          "label": "D",
+          "text": "Chair equilibrium"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Br2 / dark, catalyst or light",
+      "explanation": "To convert Cyclopropane into 1,3-Dibromopropane, the appropriate reagent is Br2 / dark, catalyst or light. Rationale: Relief of 115 kJ/mol Baeyer angle strain drives facile ring opening by electrophiles.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q021",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Radical bromination of cyclopentane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentane is treated with Br2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "No reaction (ring remains intact)"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Bromocyclopentane + HBr"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bromocyclopentane + HBr",
+      "explanation": "Treating Cyclopentane with Br2 / hν yields Bromocyclopentane + HBr. Rationale: All 10 secondary hydrogens in cyclopentane are chemically equivalent, yielding a single monobromo product.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q022",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Conformational stability of 1,2-dimethylcyclohexane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "B",
+          "text": "Chair equilibrium"
+        },
+        {
+          "label": "C",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / dark, catalyst or light"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chair equilibrium",
+      "explanation": "To convert trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation, the appropriate reagent is Chair equilibrium. Rationale: The trans isomer adopts a stable diequatorial chair devoid of 1,3-diaxial methyl-hydrogen clashes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q023",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Hydrogenative cleavage of cyclobutane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclobutane is treated with H2 / Ni (180°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No reaction (ring remains intact)"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Butane"
+        },
+        {
+          "label": "D",
+          "text": "1,3-Dibromopropane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Butane",
+      "explanation": "Treating Cyclobutane with H2 / Ni (180°C) yields Butane. Rationale: Cyclobutane opens under catalytic hydrogenation at 180°C to release its 110 kJ/mol ring strain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q024",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Monochlorination of cyclohexane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclohexane into Chlorocyclohexane + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / dark, catalyst or light"
+        },
+        {
+          "label": "B",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "C",
+          "text": "H2 / Ni (180°C)"
+        },
+        {
+          "label": "D",
+          "text": "Conformational preference"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cl2 / hν",
+      "explanation": "To convert Cyclohexane into Chlorocyclohexane + HCl, the appropriate reagent is Cl2 / hν. Rationale: Radical substitution at any of the 12 equivalent secondary C-H positions yields pure chlorocyclohexane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q025",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Rigid chair conformation of di-tert-butylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Equilibrium conformation to yield Diequatorial (1e, 4e) chair conformation as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Axial methylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "Cyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "D",
+          "text": "trans-1,4-Di-tert-butylcyclohexane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-1,4-Di-tert-butylcyclohexane",
+      "explanation": "trans-1,4-Di-tert-butylcyclohexane reacts with Equilibrium conformation to yield Diequatorial (1e, 4e) chair conformation. Rationale: Bulky tert-butyl groups have high A-values (20 kJ/mol) and lock the ring into the diequatorial conformation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q026",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Cis-1,3-dimethylcyclohexane conformation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when cis-1,3-Dimethylcyclohexane is treated with Conformational preference?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "B",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Butane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diequatorial (1e, 3e) chair conformation",
+      "explanation": "Treating cis-1,3-Dimethylcyclohexane with Conformational preference yields Diequatorial (1e, 3e) chair conformation. Rationale: Both methyl groups occupy equatorial positions on the same face, avoiding massive 1,3-diaxial methyl-methyl clash.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q027",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Methylcyclohexane chair flip equilibrium",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Conformational chair flip to yield Equatorial methylcyclohexane (95% at eq) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Axial methylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,3-Dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Axial methylcyclohexane",
+      "explanation": "Axial methylcyclohexane reacts with Conformational chair flip to yield Equatorial methylcyclohexane (95% at eq). Rationale: The equatorial position eliminates 1,3-diaxial steric interactions, making it 7.3 kJ/mol more stable.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q028",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Ring-opening bromination of cyclopropane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopropane is treated with Br2 / dark, catalyst or light?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1,3-Dibromopropane",
+      "explanation": "Treating Cyclopropane with Br2 / dark, catalyst or light yields 1,3-Dibromopropane. Rationale: Relief of 115 kJ/mol Baeyer angle strain drives facile ring opening by electrophiles.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q029",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Hydrogenation of cyclopropane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopropane into Propane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Ni (80°C)"
+        },
+        {
+          "label": "B",
+          "text": "Conformational chair flip"
+        },
+        {
+          "label": "C",
+          "text": "H2 / Ni (180°C)"
+        },
+        {
+          "label": "D",
+          "text": "Chair equilibrium"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H2 / Ni (80°C)",
+      "explanation": "To convert Cyclopropane into Propane, the appropriate reagent is H2 / Ni (80°C). Rationale: Angle strain facilitates catalytic hydrogenative ring opening at much milder temperatures than higher cycloalkanes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q030",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Non-opening hydrogenation of cyclopentane",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentane is treated with H2 / Pt (room temp)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propane"
+        },
+        {
+          "label": "B",
+          "text": "No reaction (ring remains intact)"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "No reaction (ring remains intact)",
+      "explanation": "Treating Cyclopentane with H2 / Pt (room temp) yields No reaction (ring remains intact). Rationale: Cyclopentane possesses minimal ring strain (26 kJ/mol) and resists hydrogenative ring cleavage.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q031",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Hydrogenative cleavage of cyclobutane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclobutane is treated with H2 / Ni (180°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "C",
+          "text": "Butane"
+        },
+        {
+          "label": "D",
+          "text": "Propane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Butane",
+      "explanation": "Treating Cyclobutane with H2 / Ni (180°C) yields Butane. Rationale: Cyclobutane opens under catalytic hydrogenation at 180°C to release its 110 kJ/mol ring strain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q032",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Monochlorination of cyclohexane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclohexane into Chlorocyclohexane + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair equilibrium"
+        },
+        {
+          "label": "B",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "D",
+          "text": "Conformational preference"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cl2 / hν",
+      "explanation": "To convert Cyclohexane into Chlorocyclohexane + HCl, the appropriate reagent is Cl2 / hν. Rationale: Radical substitution at any of the 12 equivalent secondary C-H positions yields pure chlorocyclohexane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q033",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Rigid chair conformation of di-tert-butylcyclohexane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-1,4-Di-tert-butylcyclohexane is treated with Equilibrium conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Propane"
+        },
+        {
+          "label": "C",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "D",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Diequatorial (1e, 4e) chair conformation",
+      "explanation": "Treating trans-1,4-Di-tert-butylcyclohexane with Equilibrium conformation yields Diequatorial (1e, 4e) chair conformation. Rationale: Bulky tert-butyl groups have high A-values (20 kJ/mol) and lock the ring into the diequatorial conformation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q034",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cis-1,3-dimethylcyclohexane conformation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Conformational preference to yield Diequatorial (1e, 3e) chair conformation as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Axial methylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "Cyclopropane"
+        },
+        {
+          "label": "C",
+          "text": "trans-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,3-Dimethylcyclohexane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-1,3-Dimethylcyclohexane",
+      "explanation": "cis-1,3-Dimethylcyclohexane reacts with Conformational preference to yield Diequatorial (1e, 3e) chair conformation. Rationale: Both methyl groups occupy equatorial positions on the same face, avoiding massive 1,3-diaxial methyl-methyl clash.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q035",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Methylcyclohexane chair flip equilibrium",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Axial methylcyclohexane is treated with Conformational chair flip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Propane"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Equatorial methylcyclohexane (95% at eq)",
+      "explanation": "Treating Axial methylcyclohexane with Conformational chair flip yields Equatorial methylcyclohexane (95% at eq). Rationale: The equatorial position eliminates 1,3-diaxial steric interactions, making it 7.3 kJ/mol more stable.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q036",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Ring-opening bromination of cyclopropane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Br2 / dark, catalyst or light to yield 1,3-Dibromopropane as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclopentane"
+        },
+        {
+          "label": "D",
+          "text": "Cyclopropane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclopropane",
+      "explanation": "Cyclopropane reacts with Br2 / dark, catalyst or light to yield 1,3-Dibromopropane. Rationale: Relief of 115 kJ/mol Baeyer angle strain drives facile ring opening by electrophiles.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q037",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Hydrogenation of cyclopropane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopropane is treated with H2 / Ni (80°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Propane"
+        },
+        {
+          "label": "D",
+          "text": "1,3-Dibromopropane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propane",
+      "explanation": "Treating Cyclopropane with H2 / Ni (80°C) yields Propane. Rationale: Angle strain facilitates catalytic hydrogenative ring opening at much milder temperatures than higher cycloalkanes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q038",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Non-opening hydrogenation of cyclopentane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopentane into No reaction (ring remains intact)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "B",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium conformation"
+        },
+        {
+          "label": "D",
+          "text": "Conformational chair flip"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "H2 / Pt (room temp)",
+      "explanation": "To convert Cyclopentane into No reaction (ring remains intact), the appropriate reagent is H2 / Pt (room temp). Rationale: Cyclopentane possesses minimal ring strain (26 kJ/mol) and resists hydrogenative ring cleavage.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q039",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Radical bromination of cyclopentane",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentane is treated with Br2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propane"
+        },
+        {
+          "label": "B",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "C",
+          "text": "Bromocyclopentane + HBr"
+        },
+        {
+          "label": "D",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bromocyclopentane + HBr",
+      "explanation": "Treating Cyclopentane with Br2 / hν yields Bromocyclopentane + HBr. Rationale: All 10 secondary hydrogens in cyclopentane are chemically equivalent, yielding a single monobromo product.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q040",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Conformational stability of 1,2-dimethylcyclohexane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Ni (80°C)"
+        },
+        {
+          "label": "B",
+          "text": "Chair equilibrium"
+        },
+        {
+          "label": "C",
+          "text": "Equilibrium conformation"
+        },
+        {
+          "label": "D",
+          "text": "Conformational chair flip"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chair equilibrium",
+      "explanation": "To convert trans-1,2-Dimethylcyclohexane into Diequatorial (1e, 2e) chair conformation, the appropriate reagent is Chair equilibrium. Rationale: The trans isomer adopts a stable diequatorial chair devoid of 1,3-diaxial methyl-hydrogen clashes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q041",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Rigid chair conformation of di-tert-butylcyclohexane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-1,4-Di-tert-butylcyclohexane is treated with Equilibrium conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chlorocyclohexane + HCl"
+        },
+        {
+          "label": "B",
+          "text": "Butane"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Bromocyclopentane + HBr"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diequatorial (1e, 4e) chair conformation",
+      "explanation": "Treating trans-1,4-Di-tert-butylcyclohexane with Equilibrium conformation yields Diequatorial (1e, 4e) chair conformation. Rationale: Bulky tert-butyl groups have high A-values (20 kJ/mol) and lock the ring into the diequatorial conformation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q042",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Cis-1,3-dimethylcyclohexane conformation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of cis-1,3-Dimethylcyclohexane into Diequatorial (1e, 3e) chair conformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / hν"
+        },
+        {
+          "label": "B",
+          "text": "Conformational preference"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Ni (80°C)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Conformational preference",
+      "explanation": "To convert cis-1,3-Dimethylcyclohexane into Diequatorial (1e, 3e) chair conformation, the appropriate reagent is Conformational preference. Rationale: Both methyl groups occupy equatorial positions on the same face, avoiding massive 1,3-diaxial methyl-methyl clash.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q043",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Methylcyclohexane chair flip equilibrium",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Conformational chair flip to yield Equatorial methylcyclohexane (95% at eq) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,3-Dimethylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "Cyclopentane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "D",
+          "text": "Axial methylcyclohexane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Axial methylcyclohexane",
+      "explanation": "Axial methylcyclohexane reacts with Conformational chair flip to yield Equatorial methylcyclohexane (95% at eq). Rationale: The equatorial position eliminates 1,3-diaxial steric interactions, making it 7.3 kJ/mol more stable.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q044",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Ring-opening bromination of cyclopropane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopropane is treated with Br2 / dark, catalyst or light?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Chlorocyclohexane + HCl"
+        },
+        {
+          "label": "C",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "D",
+          "text": "1,3-Dibromopropane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1,3-Dibromopropane",
+      "explanation": "Treating Cyclopropane with Br2 / dark, catalyst or light yields 1,3-Dibromopropane. Rationale: Relief of 115 kJ/mol Baeyer angle strain drives facile ring opening by electrophiles.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q045",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Hydrogenation of cyclopropane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with H2 / Ni (80°C) to yield Propane as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclobutane"
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "Cyclopropane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclopropane",
+      "explanation": "Cyclopropane reacts with H2 / Ni (80°C) to yield Propane. Rationale: Angle strain facilitates catalytic hydrogenative ring opening at much milder temperatures than higher cycloalkanes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q046",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Non-opening hydrogenation of cyclopentane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentane is treated with H2 / Pt (room temp)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "B",
+          "text": "No reaction (ring remains intact)"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 4e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Bromocyclopentane + HBr"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "No reaction (ring remains intact)",
+      "explanation": "Treating Cyclopentane with H2 / Pt (room temp) yields No reaction (ring remains intact). Rationale: Cyclopentane possesses minimal ring strain (26 kJ/mol) and resists hydrogenative ring cleavage.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q047",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Radical bromination of cyclopentane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopentane into Bromocyclopentane + HBr?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "B",
+          "text": "Cl2 / hν"
+        },
+        {
+          "label": "C",
+          "text": "H2 / Ni (180°C)"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / hν"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Br2 / hν",
+      "explanation": "To convert Cyclopentane into Bromocyclopentane + HBr, the appropriate reagent is Br2 / hν. Rationale: All 10 secondary hydrogens in cyclopentane are chemically equivalent, yielding a single monobromo product.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q048",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Conformational stability of 1,2-dimethylcyclohexane",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when trans-1,2-Dimethylcyclohexane is treated with Chair equilibrium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equatorial methylcyclohexane (95% at eq)"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Propane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diequatorial (1e, 2e) chair conformation",
+      "explanation": "Treating trans-1,2-Dimethylcyclohexane with Chair equilibrium yields Diequatorial (1e, 2e) chair conformation. Rationale: The trans isomer adopts a stable diequatorial chair devoid of 1,3-diaxial methyl-hydrogen clashes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q049",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Hydrogenative cleavage of cyclobutane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclobutane into Butane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Pt (room temp)"
+        },
+        {
+          "label": "B",
+          "text": "H2 / Ni (180°C)"
+        },
+        {
+          "label": "C",
+          "text": "Conformational chair flip"
+        },
+        {
+          "label": "D",
+          "text": "Conformational preference"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "H2 / Ni (180°C)",
+      "explanation": "To convert Cyclobutane into Butane, the appropriate reagent is H2 / Ni (180°C). Rationale: Cyclobutane opens under catalytic hydrogenation at 180°C to release its 110 kJ/mol ring strain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q050",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Monochlorination of cyclohexane",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexane is treated with Cl2 / hν?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propane"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 3e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Dibromopropane"
+        },
+        {
+          "label": "D",
+          "text": "Chlorocyclohexane + HCl"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chlorocyclohexane + HCl",
+      "explanation": "Treating Cyclohexane with Cl2 / hν yields Chlorocyclohexane + HCl. Rationale: Radical substitution at any of the 12 equivalent secondary C-H positions yields pure chlorocyclohexane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Cycloalkane Sentry",
+    "Ring-Strain Reaver",
+    "Chair-Flip Chimera",
+    "1,3-Diaxial Dreadnought",
+    "Polycyclic Ring Titan"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Cycloalkane Sentry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "cycloalkane-sentry.png"
+        ]
+      },
+      {
+        "boss": "Ring-Strain Reaver",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "ring-strain-reaver.png"
+        ]
+      },
+      {
+        "boss": "Chair-Flip Chimera",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "chair-flip-chimera.png"
+        ]
+      },
+      {
+        "boss": "1,3-Diaxial Dreadnought",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "13-diaxial-dreadnought.png"
+        ]
+      },
+      {
+        "boss": "Polycyclic Ring Titan",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "polycyclic-ring-titan.png"
+        ]
+      }
+    ]
+  }
+}

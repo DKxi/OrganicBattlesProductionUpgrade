@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 5,
+  "chapter_title": "Stereochemistry at Tetrahedral Centers",
+  "assigned_boss": "Chiral Centinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch05_q001",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "chiral",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “chiral”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "B",
+          "text": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations."
+        },
+        {
+          "label": "C",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "explanation": "A accurate description of chiral is: Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q002",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "achiral",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cahn–Ingold–Prelog rules"
+        },
+        {
+          "label": "B",
+          "text": "achiral"
+        },
+        {
+          "label": "C",
+          "text": "chiral"
+        },
+        {
+          "label": "D",
+          "text": "enantiomers"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "achiral",
+      "explanation": "The best match is achiral: Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q003",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "enantiomers",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “enantiomers”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        },
+        {
+          "label": "D",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "explanation": "A accurate description of enantiomers is: Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q004",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "diastereomers",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cahn–Ingold–Prelog rules"
+        },
+        {
+          "label": "B",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "C",
+          "text": "stereocenter"
+        },
+        {
+          "label": "D",
+          "text": "diastereomers"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "diastereomers",
+      "explanation": "The best match is diastereomers: Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q005",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "stereocenter",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “stereocenter”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        },
+        {
+          "label": "B",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "explanation": "A accurate description of stereocenter is: An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q006",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "Cahn–Ingold–Prelog rules",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "achiral"
+        },
+        {
+          "label": "B",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "C",
+          "text": "Cahn–Ingold–Prelog rules"
+        },
+        {
+          "label": "D",
+          "text": "optical activity"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cahn–Ingold–Prelog rules",
+      "explanation": "The best match is Cahn–Ingold–Prelog rules: A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q007",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "optical activity",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The ability of a chiral substance or solution to rotate the plane of polarized light passing through it. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "optical activity"
+        },
+        {
+          "label": "B",
+          "text": "enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "chiral"
+        },
+        {
+          "label": "D",
+          "text": "Cahn–Ingold–Prelog rules"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "optical activity",
+      "explanation": "This description identifies optical activity. The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q008",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "meso compound",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "optical activity — An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "B",
+          "text": "stereocenter — An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "C",
+          "text": "meso compound — An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "D",
+          "text": "diastereomers — An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso compound — An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "explanation": "meso compound is correctly paired with: An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q009",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "racemic mixture",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "diastereomers"
+        },
+        {
+          "label": "B",
+          "text": "prochirality"
+        },
+        {
+          "label": "C",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "D",
+          "text": "meso compound"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "racemic mixture",
+      "explanation": "This description identifies racemic mixture. An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q010",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Chiral Centinel",
+      "topic": "prochirality",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cahn–Ingold–Prelog rules — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "B",
+          "text": "prochirality — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "C",
+          "text": "meso compound — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "D",
+          "text": "diastereomers — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "prochirality — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "explanation": "prochirality is correctly paired with: The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chiral-centinel.png"
+      ]
+    },
+    {
+      "id": "ch05_q011",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "enantiomers",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “enantiomers”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "B",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "D",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "explanation": "A accurate description of enantiomers is: Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q012",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "diastereomers",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "options": [
+        {
+          "label": "A",
+          "text": "achiral"
+        },
+        {
+          "label": "B",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "C",
+          "text": "chiral"
+        },
+        {
+          "label": "D",
+          "text": "diastereomers"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "diastereomers",
+      "explanation": "The best match is diastereomers: Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q013",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "stereocenter",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “stereocenter”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "B",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        },
+        {
+          "label": "C",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "D",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "explanation": "A accurate description of stereocenter is: An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q014",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "Cahn–Ingold–Prelog rules",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "B",
+          "text": "optical activity"
+        },
+        {
+          "label": "C",
+          "text": "prochirality"
+        },
+        {
+          "label": "D",
+          "text": "Cahn–Ingold–Prelog rules"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cahn–Ingold–Prelog rules",
+      "explanation": "The best match is Cahn–Ingold–Prelog rules: A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q015",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "optical activity",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “optical activity”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "C",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "D",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "explanation": "A accurate description of optical activity is: The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q016",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "meso compound",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "prochirality"
+        },
+        {
+          "label": "B",
+          "text": "diastereomers"
+        },
+        {
+          "label": "C",
+          "text": "meso compound"
+        },
+        {
+          "label": "D",
+          "text": "achiral"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "meso compound",
+      "explanation": "This description identifies meso compound. An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q017",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "racemic mixture",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cahn–Ingold–Prelog rules — An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "racemic mixture — An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "chiral — An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "prochirality — An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "racemic mixture — An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "explanation": "racemic mixture is correctly paired with: An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q018",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "prochirality",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "optical activity"
+        },
+        {
+          "label": "B",
+          "text": "stereocenter"
+        },
+        {
+          "label": "C",
+          "text": "prochirality"
+        },
+        {
+          "label": "D",
+          "text": "chiral"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "prochirality",
+      "explanation": "This description identifies prochirality. The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q019",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "chiral",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cahn–Ingold–Prelog rules — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "diastereomers — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "chiral — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "prochirality — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "chiral — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "explanation": "chiral is correctly paired with: Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q020",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "CIP Priority Paladin",
+      "topic": "achiral",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “achiral” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "D",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "explanation": "The distinguishing description for achiral is: Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "cip-priority-paladin.png"
+      ]
+    },
+    {
+      "id": "ch05_q021",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "stereocenter",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “stereocenter”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "C",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "explanation": "A accurate description of stereocenter is: An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q022",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "Cahn–Ingold–Prelog rules",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "enantiomers"
+        },
+        {
+          "label": "B",
+          "text": "Cahn–Ingold–Prelog rules"
+        },
+        {
+          "label": "C",
+          "text": "prochirality"
+        },
+        {
+          "label": "D",
+          "text": "optical activity"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Cahn–Ingold–Prelog rules",
+      "explanation": "The best match is Cahn–Ingold–Prelog rules: A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q023",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "optical activity",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “optical activity”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "explanation": "A accurate description of optical activity is: The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q024",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "meso compound",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso compound"
+        },
+        {
+          "label": "B",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "C",
+          "text": "stereocenter"
+        },
+        {
+          "label": "D",
+          "text": "Cahn–Ingold–Prelog rules"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso compound",
+      "explanation": "The best match is meso compound: An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q025",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "racemic mixture",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "achiral"
+        },
+        {
+          "label": "B",
+          "text": "stereocenter"
+        },
+        {
+          "label": "C",
+          "text": "optical activity"
+        },
+        {
+          "label": "D",
+          "text": "racemic mixture"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "racemic mixture",
+      "explanation": "This description identifies racemic mixture. An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q026",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "prochirality",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "prochirality — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "B",
+          "text": "achiral — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "C",
+          "text": "stereocenter — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "D",
+          "text": "Cahn–Ingold–Prelog rules — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "prochirality — The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "explanation": "prochirality is correctly paired with: The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q027",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "chiral",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "achiral"
+        },
+        {
+          "label": "B",
+          "text": "stereocenter"
+        },
+        {
+          "label": "C",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "D",
+          "text": "chiral"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "chiral",
+      "explanation": "This description identifies chiral. Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q028",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "achiral",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "achiral — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "stereocenter — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "meso compound — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "Cahn–Ingold–Prelog rules — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "achiral — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "explanation": "achiral is correctly paired with: Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q029",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "enantiomers",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “enantiomers” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "C",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "explanation": "The distinguishing description for enantiomers is: Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q030",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Enantiomer Enigma",
+      "topic": "diastereomers",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “diastereomers” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "B",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        },
+        {
+          "label": "C",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "D",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "explanation": "The distinguishing description for diastereomers is: Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "enantiomer-enigma.png"
+      ]
+    },
+    {
+      "id": "ch05_q031",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "optical activity",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “optical activity”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "B",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "explanation": "A accurate description of optical activity is: The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q032",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "meso compound",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso compound"
+        },
+        {
+          "label": "B",
+          "text": "racemic mixture"
+        },
+        {
+          "label": "C",
+          "text": "optical activity"
+        },
+        {
+          "label": "D",
+          "text": "achiral"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "meso compound",
+      "explanation": "The best match is meso compound: An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q033",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "racemic mixture",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “racemic mixture”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "B",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "D",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "explanation": "A accurate description of racemic mixture is: An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q034",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "prochirality",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "prochirality"
+        },
+        {
+          "label": "B",
+          "text": "Cahn–Ingold–Prelog rules"
+        },
+        {
+          "label": "C",
+          "text": "enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "optical activity"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "prochirality",
+      "explanation": "This description identifies prochirality. The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q035",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "chiral",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso compound — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "enantiomers — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "racemic mixture — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "chiral — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "chiral — Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "explanation": "chiral is correctly paired with: Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q036",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "achiral",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "achiral"
+        },
+        {
+          "label": "B",
+          "text": "meso compound"
+        },
+        {
+          "label": "C",
+          "text": "stereocenter"
+        },
+        {
+          "label": "D",
+          "text": "enantiomers"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "achiral",
+      "explanation": "This description identifies achiral. Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q037",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "enantiomers",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso compound — Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "B",
+          "text": "optical activity — Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "enantiomers — Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "stereocenter — Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "enantiomers — Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "explanation": "enantiomers is correctly paired with: Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q038",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "diastereomers",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “diastereomers” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "B",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "C",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "D",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "explanation": "The distinguishing description for diastereomers is: Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q039",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "stereocenter",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “stereocenter” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "B",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        },
+        {
+          "label": "D",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "explanation": "The distinguishing description for stereocenter is: An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q040",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Meso-Diastereomer Duelist",
+      "topic": "Cahn–Ingold–Prelog rules",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “Cahn–Ingold–Prelog rules” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations."
+        },
+        {
+          "label": "B",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "explanation": "The distinguishing description for Cahn–Ingold–Prelog rules is: A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "meso-diastereomer-duelist.png"
+      ]
+    },
+    {
+      "id": "ch05_q041",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "racemic mixture",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “racemic mixture”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "B",
+          "text": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations."
+        },
+        {
+          "label": "C",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "D",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "explanation": "A accurate description of racemic mixture is: An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q042",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "prochirality",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso compound"
+        },
+        {
+          "label": "B",
+          "text": "prochirality"
+        },
+        {
+          "label": "C",
+          "text": "optical activity"
+        },
+        {
+          "label": "D",
+          "text": "stereocenter"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "prochirality",
+      "explanation": "The best match is prochirality: The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q043",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "chiral",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "enantiomers"
+        },
+        {
+          "label": "B",
+          "text": "chiral"
+        },
+        {
+          "label": "C",
+          "text": "optical activity"
+        },
+        {
+          "label": "D",
+          "text": "diastereomers"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "chiral",
+      "explanation": "This description identifies chiral. Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q044",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "achiral",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chiral — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "meso compound — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "achiral — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "optical activity — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "achiral — Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "explanation": "achiral is correctly paired with: Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q045",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "enantiomers",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "meso compound"
+        },
+        {
+          "label": "B",
+          "text": "stereocenter"
+        },
+        {
+          "label": "C",
+          "text": "prochirality"
+        },
+        {
+          "label": "D",
+          "text": "enantiomers"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "enantiomers",
+      "explanation": "This description identifies enantiomers. Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q046",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "diastereomers",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "racemic mixture — Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "B",
+          "text": "Cahn–Ingold–Prelog rules — Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "C",
+          "text": "diastereomers — Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "D",
+          "text": "optical activity — Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "diastereomers — Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "explanation": "diastereomers is correctly paired with: Stereoisomers that are not mirror images of each other and possess different physical and chemical properties.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q047",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "stereocenter",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “stereocenter” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Describing a molecule that is superimposable on its mirror image, typically possessing an internal plane or center of symmetry."
+        },
+        {
+          "label": "B",
+          "text": "An equimolar 50:50 mixture of two enantiomers exhibiting zero net optical rotation."
+        },
+        {
+          "label": "C",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "D",
+          "text": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "explanation": "The distinguishing description for stereocenter is: An sp3-hybridized carbon atom bonded to four completely different groups, giving rise to stereoisomerism.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q048",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "Cahn–Ingold–Prelog rules",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “Cahn–Ingold–Prelog rules” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stereoisomers that are not mirror images of each other and possess different physical and chemical properties."
+        },
+        {
+          "label": "B",
+          "text": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations."
+        },
+        {
+          "label": "C",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "D",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "explanation": "The distinguishing description for Cahn–Ingold–Prelog rules is: A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q049",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "optical activity",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “optical activity” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it."
+        },
+        {
+          "label": "B",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "C",
+          "text": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations."
+        },
+        {
+          "label": "D",
+          "text": "Non-superimposable mirror-image stereoisomers that have identical physical properties except for the direction of optical rotation."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "explanation": "The distinguishing description for optical activity is: The ability of a chiral substance or solution to rotate the plane of polarized light passing through it.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    },
+    {
+      "id": "ch05_q050",
+      "chapter": 5,
+      "chapter_title": "Stereochemistry at Tetrahedral Centers",
+      "boss": "Prochiral Prism Overlord",
+      "topic": "meso compound",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “meso compound” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The geometric property of an achiral molecule that can become chiral in a single chemical step by altering one group or face."
+        },
+        {
+          "label": "B",
+          "text": "Describing an object or molecule that is non-superimposable on its mirror image and lacks an internal plane of symmetry."
+        },
+        {
+          "label": "C",
+          "text": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane."
+        },
+        {
+          "label": "D",
+          "text": "A standardized system for ranking substituent priorities by atomic number to assign absolute (R) or (S) configurations."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "explanation": "The distinguishing description for meso compound is: An achiral molecule that contains two or more stereocenters but is superimposable on its mirror image due to an internal symmetry plane.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "prochiral-prism-overlord.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chiral Centinel",
+    "CIP Priority Paladin",
+    "Enantiomer Enigma",
+    "Meso-Diastereomer Duelist",
+    "Prochiral Prism Overlord"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chiral Centinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chiral-centinel.png"
+        ]
+      },
+      {
+        "boss": "CIP Priority Paladin",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "cip-priority-paladin.png"
+        ]
+      },
+      {
+        "boss": "Enantiomer Enigma",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "enantiomer-enigma.png"
+        ]
+      },
+      {
+        "boss": "Meso-Diastereomer Duelist",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "meso-diastereomer-duelist.png"
+        ]
+      },
+      {
+        "boss": "Prochiral Prism Overlord",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "prochiral-prism-overlord.png"
+        ]
+      }
+    ]
+  }
+}

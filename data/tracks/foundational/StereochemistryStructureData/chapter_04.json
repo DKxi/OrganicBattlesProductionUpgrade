@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 4,
+  "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+  "assigned_boss": "Cycloalkane Sentry",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch04_q001",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Chair conformation of methylcyclohexane",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Which conformation of methylcyclohexane is thermodynamically favored at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair conformation with the methyl group in the equatorial position (95% abundance)"
+        },
+        {
+          "label": "B",
+          "text": "Chair conformation with the methyl group in the axial position"
+        },
+        {
+          "label": "C",
+          "text": "Planar flat cyclohexane ring"
+        },
+        {
+          "label": "D",
+          "text": "Boat conformation with flagpole methyl interaction"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chair conformation with the methyl group in the equatorial position (95% abundance)",
+      "explanation": "Equatorial methyl avoids destabilizing 1,3-diaxial steric interactions with axial ring hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q002",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "1,3-Diaxial interaction in cyclohexanes",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What structural factor causes the energy penalty of an axial substituent on cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torsional strain from eclipsed C-C bonds"
+        },
+        {
+          "label": "B",
+          "text": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5"
+        },
+        {
+          "label": "C",
+          "text": "Angle strain from deviation from 109.5° tetrahedral angles"
+        },
+        {
+          "label": "D",
+          "text": "Dipole-dipole repulsion with ring carbons"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5",
+      "explanation": "Axial substituents experience steric crowding with axial hydrogens positioned two carbons away on the same face.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q003",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "trans-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the most stable conformation of trans-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Axial-equatorial (1a, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Twist-boat conformation"
+        },
+        {
+          "label": "D",
+          "text": "Diaxial (1a, 2a) chair conformation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Diequatorial (1e, 2e) chair conformation",
+      "explanation": "The trans-1,2 isomer can place both methyl groups in equatorial positions simultaneously.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q004",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "cis-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What are the positions of the methyl groups in the chair conformations of cis-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip"
+        },
+        {
+          "label": "B",
+          "text": "Both diequatorial (1e, 2e)"
+        },
+        {
+          "label": "C",
+          "text": "Both planar in the ring plane"
+        },
+        {
+          "label": "D",
+          "text": "Both diaxial (1a, 2a)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip",
+      "explanation": "In the 1,2-cis isomer, one substituent must point up (axial) and the other up (equatorial).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q005",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "cis-1,3-Dimethylcyclohexane meso property",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical nature of cis-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is an achiral meso compound possessing an internal plane of symmetry"
+        },
+        {
+          "label": "B",
+          "text": "It is a constitutional isomer of 1,4-dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "It is an optically active diastereomer"
+        },
+        {
+          "label": "D",
+          "text": "It is a chiral molecule with two enantiomers"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "It is an achiral meso compound possessing an internal plane of symmetry",
+      "explanation": "An internal vertical symmetry plane bisects C2 and C5, rendering cis-1,3-dimethylcyclohexane achiral (meso).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q006",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "trans-1,4-Di-tert-butylcyclohexane rigidity",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is trans-1,4-di-tert-butylcyclohexane considered a conformationally locked ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions"
+        },
+        {
+          "label": "B",
+          "text": "The tert-butyl groups form an intramolecular covalent bond"
+        },
+        {
+          "label": "C",
+          "text": "It exists exclusively in a stable twist-boat conformation"
+        },
+        {
+          "label": "D",
+          "text": "The ring is planar and cannot undergo chair flips"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions",
+      "explanation": "The extreme energy cost of placing even one tert-butyl axial locks the molecule in the diequatorial chair.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q007",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Cyclopropane angle strain",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Why does cyclopropane possess 115 kJ/mol of ring strain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,3-Diaxial steric repulsion across the ring"
+        },
+        {
+          "label": "B",
+          "text": "Non-coplanar p-orbital misalignment"
+        },
+        {
+          "label": "C",
+          "text": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain"
+        },
+        {
+          "label": "D",
+          "text": "Unfavorable dipole moments"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain",
+      "explanation": "Carbons are forced into rigid 60° 'bent' bonds with all six C-H bonds eclipsed.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q008",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Boat conformation strain sources",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What two factors make the cyclohexane boat conformation 29 kJ/mol higher in energy than the chair?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Severe dipole-dipole repulsions"
+        },
+        {
+          "label": "B",
+          "text": "1,3-Diaxial interactions with axial substituents"
+        },
+        {
+          "label": "C",
+          "text": "Angle strain at all six carbon vertices"
+        },
+        {
+          "label": "D",
+          "text": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides",
+      "explanation": "The boat has four pairs of eclipsed C-H bonds and steric clash between the two inside flagpole hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q009",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "Decalin stereoisomers",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "How do cis-decalin and trans-decalin differ in conformational flexibility?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips"
+        },
+        {
+          "label": "B",
+          "text": "cis-Decalin is planar; trans-decalin is non-planar"
+        },
+        {
+          "label": "C",
+          "text": "Both decalins have identical heats of combustion"
+        },
+        {
+          "label": "D",
+          "text": "trans-Decalin is a meso compound; cis-decalin is chiral"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips",
+      "explanation": "trans-Decalin is fused via diequatorial bonds which cannot flip without tearing bonds; cis-decalin can flip chairs.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q010",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Cycloalkane Sentry",
+      "topic": "A-value significance",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What does a substituent's conformational A-value represent in cyclohexane chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The boiling point elevation caused by the substituent"
+        },
+        {
+          "label": "B",
+          "text": "The rate constant of nucleophilic substitution"
+        },
+        {
+          "label": "C",
+          "text": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations"
+        },
+        {
+          "label": "D",
+          "text": "The activation energy required for a chair flip"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations",
+      "explanation": "A-values quantitatively rank the steric preference of groups for the equatorial position.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "cycloalkane-sentry.png"
+      ]
+    },
+    {
+      "id": "ch04_q011",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "trans-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the most stable conformation of trans-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Twist-boat conformation"
+        },
+        {
+          "label": "B",
+          "text": "Diaxial (1a, 2a) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Axial-equatorial (1a, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Diequatorial (1e, 2e) chair conformation",
+      "explanation": "The trans-1,2 isomer can place both methyl groups in equatorial positions simultaneously.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q012",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "cis-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What are the positions of the methyl groups in the chair conformations of cis-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both diequatorial (1e, 2e)"
+        },
+        {
+          "label": "B",
+          "text": "Both diaxial (1a, 2a)"
+        },
+        {
+          "label": "C",
+          "text": "Both planar in the ring plane"
+        },
+        {
+          "label": "D",
+          "text": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip",
+      "explanation": "In the 1,2-cis isomer, one substituent must point up (axial) and the other up (equatorial).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q013",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "cis-1,3-Dimethylcyclohexane meso property",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical nature of cis-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a chiral molecule with two enantiomers"
+        },
+        {
+          "label": "B",
+          "text": "It is an optically active diastereomer"
+        },
+        {
+          "label": "C",
+          "text": "It is a constitutional isomer of 1,4-dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "It is an achiral meso compound possessing an internal plane of symmetry"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It is an achiral meso compound possessing an internal plane of symmetry",
+      "explanation": "An internal vertical symmetry plane bisects C2 and C5, rendering cis-1,3-dimethylcyclohexane achiral (meso).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q014",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "trans-1,4-Di-tert-butylcyclohexane rigidity",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "Why is trans-1,4-di-tert-butylcyclohexane considered a conformationally locked ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The tert-butyl groups form an intramolecular covalent bond"
+        },
+        {
+          "label": "B",
+          "text": "The ring is planar and cannot undergo chair flips"
+        },
+        {
+          "label": "C",
+          "text": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions"
+        },
+        {
+          "label": "D",
+          "text": "It exists exclusively in a stable twist-boat conformation"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions",
+      "explanation": "The extreme energy cost of placing even one tert-butyl axial locks the molecule in the diequatorial chair.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q015",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Cyclopropane angle strain",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does cyclopropane possess 115 kJ/mol of ring strain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,3-Diaxial steric repulsion across the ring"
+        },
+        {
+          "label": "B",
+          "text": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain"
+        },
+        {
+          "label": "C",
+          "text": "Non-coplanar p-orbital misalignment"
+        },
+        {
+          "label": "D",
+          "text": "Unfavorable dipole moments"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain",
+      "explanation": "Carbons are forced into rigid 60° 'bent' bonds with all six C-H bonds eclipsed.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q016",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Boat conformation strain sources",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What two factors make the cyclohexane boat conformation 29 kJ/mol higher in energy than the chair?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides"
+        },
+        {
+          "label": "B",
+          "text": "Severe dipole-dipole repulsions"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Diaxial interactions with axial substituents"
+        },
+        {
+          "label": "D",
+          "text": "Angle strain at all six carbon vertices"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides",
+      "explanation": "The boat has four pairs of eclipsed C-H bonds and steric clash between the two inside flagpole hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q017",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Decalin stereoisomers",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "How do cis-decalin and trans-decalin differ in conformational flexibility?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-Decalin is planar; trans-decalin is non-planar"
+        },
+        {
+          "label": "B",
+          "text": "Both decalins have identical heats of combustion"
+        },
+        {
+          "label": "C",
+          "text": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips"
+        },
+        {
+          "label": "D",
+          "text": "trans-Decalin is a meso compound; cis-decalin is chiral"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips",
+      "explanation": "trans-Decalin is fused via diequatorial bonds which cannot flip without tearing bonds; cis-decalin can flip chairs.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q018",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "A-value significance",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What does a substituent's conformational A-value represent in cyclohexane chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The activation energy required for a chair flip"
+        },
+        {
+          "label": "B",
+          "text": "The boiling point elevation caused by the substituent"
+        },
+        {
+          "label": "C",
+          "text": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations"
+        },
+        {
+          "label": "D",
+          "text": "The rate constant of nucleophilic substitution"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations",
+      "explanation": "A-values quantitatively rank the steric preference of groups for the equatorial position.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q019",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "Chair conformation of methylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "Which conformation of methylcyclohexane is thermodynamically favored at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair conformation with the methyl group in the equatorial position (95% abundance)"
+        },
+        {
+          "label": "B",
+          "text": "Chair conformation with the methyl group in the axial position"
+        },
+        {
+          "label": "C",
+          "text": "Boat conformation with flagpole methyl interaction"
+        },
+        {
+          "label": "D",
+          "text": "Planar flat cyclohexane ring"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chair conformation with the methyl group in the equatorial position (95% abundance)",
+      "explanation": "Equatorial methyl avoids destabilizing 1,3-diaxial steric interactions with axial ring hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q020",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Ring-Strain Reaver",
+      "topic": "1,3-Diaxial interaction in cyclohexanes",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What structural factor causes the energy penalty of an axial substituent on cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torsional strain from eclipsed C-C bonds"
+        },
+        {
+          "label": "B",
+          "text": "Dipole-dipole repulsion with ring carbons"
+        },
+        {
+          "label": "C",
+          "text": "Angle strain from deviation from 109.5° tetrahedral angles"
+        },
+        {
+          "label": "D",
+          "text": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5",
+      "explanation": "Axial substituents experience steric crowding with axial hydrogens positioned two carbons away on the same face.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "ring-strain-reaver.png"
+      ]
+    },
+    {
+      "id": "ch04_q021",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "cis-1,3-Dimethylcyclohexane meso property",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the stereochemical nature of cis-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is an optically active diastereomer"
+        },
+        {
+          "label": "B",
+          "text": "It is a chiral molecule with two enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "It is a constitutional isomer of 1,4-dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "It is an achiral meso compound possessing an internal plane of symmetry"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "It is an achiral meso compound possessing an internal plane of symmetry",
+      "explanation": "An internal vertical symmetry plane bisects C2 and C5, rendering cis-1,3-dimethylcyclohexane achiral (meso).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q022",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "trans-1,4-Di-tert-butylcyclohexane rigidity",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "Why is trans-1,4-di-tert-butylcyclohexane considered a conformationally locked ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ring is planar and cannot undergo chair flips"
+        },
+        {
+          "label": "B",
+          "text": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions"
+        },
+        {
+          "label": "C",
+          "text": "It exists exclusively in a stable twist-boat conformation"
+        },
+        {
+          "label": "D",
+          "text": "The tert-butyl groups form an intramolecular covalent bond"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions",
+      "explanation": "The extreme energy cost of placing even one tert-butyl axial locks the molecule in the diequatorial chair.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q023",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Cyclopropane angle strain",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "Why does cyclopropane possess 115 kJ/mol of ring strain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unfavorable dipole moments"
+        },
+        {
+          "label": "B",
+          "text": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Diaxial steric repulsion across the ring"
+        },
+        {
+          "label": "D",
+          "text": "Non-coplanar p-orbital misalignment"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain",
+      "explanation": "Carbons are forced into rigid 60° 'bent' bonds with all six C-H bonds eclipsed.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q024",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Boat conformation strain sources",
+      "difficulty": "easy",
+      "question_type": "prochirality_topicity",
+      "question": "What two factors make the cyclohexane boat conformation 29 kJ/mol higher in energy than the chair?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Angle strain at all six carbon vertices"
+        },
+        {
+          "label": "B",
+          "text": "Severe dipole-dipole repulsions"
+        },
+        {
+          "label": "C",
+          "text": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides"
+        },
+        {
+          "label": "D",
+          "text": "1,3-Diaxial interactions with axial substituents"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides",
+      "explanation": "The boat has four pairs of eclipsed C-H bonds and steric clash between the two inside flagpole hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q025",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Decalin stereoisomers",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "How do cis-decalin and trans-decalin differ in conformational flexibility?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-Decalin is planar; trans-decalin is non-planar"
+        },
+        {
+          "label": "B",
+          "text": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips"
+        },
+        {
+          "label": "C",
+          "text": "Both decalins have identical heats of combustion"
+        },
+        {
+          "label": "D",
+          "text": "trans-Decalin is a meso compound; cis-decalin is chiral"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips",
+      "explanation": "trans-Decalin is fused via diequatorial bonds which cannot flip without tearing bonds; cis-decalin can flip chairs.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q026",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "A-value significance",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What does a substituent's conformational A-value represent in cyclohexane chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations"
+        },
+        {
+          "label": "B",
+          "text": "The boiling point elevation caused by the substituent"
+        },
+        {
+          "label": "C",
+          "text": "The activation energy required for a chair flip"
+        },
+        {
+          "label": "D",
+          "text": "The rate constant of nucleophilic substitution"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations",
+      "explanation": "A-values quantitatively rank the steric preference of groups for the equatorial position.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q027",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "Chair conformation of methylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "Which conformation of methylcyclohexane is thermodynamically favored at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Planar flat cyclohexane ring"
+        },
+        {
+          "label": "B",
+          "text": "Chair conformation with the methyl group in the axial position"
+        },
+        {
+          "label": "C",
+          "text": "Chair conformation with the methyl group in the equatorial position (95% abundance)"
+        },
+        {
+          "label": "D",
+          "text": "Boat conformation with flagpole methyl interaction"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Chair conformation with the methyl group in the equatorial position (95% abundance)",
+      "explanation": "Equatorial methyl avoids destabilizing 1,3-diaxial steric interactions with axial ring hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q028",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "1,3-Diaxial interaction in cyclohexanes",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What structural factor causes the energy penalty of an axial substituent on cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5"
+        },
+        {
+          "label": "B",
+          "text": "Dipole-dipole repulsion with ring carbons"
+        },
+        {
+          "label": "C",
+          "text": "Angle strain from deviation from 109.5° tetrahedral angles"
+        },
+        {
+          "label": "D",
+          "text": "Torsional strain from eclipsed C-C bonds"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5",
+      "explanation": "Axial substituents experience steric crowding with axial hydrogens positioned two carbons away on the same face.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q029",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "trans-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the most stable conformation of trans-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diaxial (1a, 2a) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Axial-equatorial (1a, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Twist-boat conformation"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Diequatorial (1e, 2e) chair conformation",
+      "explanation": "The trans-1,2 isomer can place both methyl groups in equatorial positions simultaneously.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q030",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Chair-Flip Chimera",
+      "topic": "cis-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "What are the positions of the methyl groups in the chair conformations of cis-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both planar in the ring plane"
+        },
+        {
+          "label": "B",
+          "text": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip"
+        },
+        {
+          "label": "C",
+          "text": "Both diequatorial (1e, 2e)"
+        },
+        {
+          "label": "D",
+          "text": "Both diaxial (1a, 2a)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip",
+      "explanation": "In the 1,2-cis isomer, one substituent must point up (axial) and the other up (equatorial).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "chair-flip-chimera.png"
+      ]
+    },
+    {
+      "id": "ch04_q031",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Cyclopropane angle strain",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does cyclopropane possess 115 kJ/mol of ring strain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,3-Diaxial steric repulsion across the ring"
+        },
+        {
+          "label": "B",
+          "text": "Unfavorable dipole moments"
+        },
+        {
+          "label": "C",
+          "text": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain"
+        },
+        {
+          "label": "D",
+          "text": "Non-coplanar p-orbital misalignment"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain",
+      "explanation": "Carbons are forced into rigid 60° 'bent' bonds with all six C-H bonds eclipsed.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q032",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Boat conformation strain sources",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What two factors make the cyclohexane boat conformation 29 kJ/mol higher in energy than the chair?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides"
+        },
+        {
+          "label": "B",
+          "text": "Severe dipole-dipole repulsions"
+        },
+        {
+          "label": "C",
+          "text": "Angle strain at all six carbon vertices"
+        },
+        {
+          "label": "D",
+          "text": "1,3-Diaxial interactions with axial substituents"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides",
+      "explanation": "The boat has four pairs of eclipsed C-H bonds and steric clash between the two inside flagpole hydrogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q033",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Decalin stereoisomers",
+      "difficulty": "easy",
+      "question_type": "chair_conformation_stability",
+      "question": "How do cis-decalin and trans-decalin differ in conformational flexibility?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-Decalin is a meso compound; cis-decalin is chiral"
+        },
+        {
+          "label": "B",
+          "text": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips"
+        },
+        {
+          "label": "C",
+          "text": "cis-Decalin is planar; trans-decalin is non-planar"
+        },
+        {
+          "label": "D",
+          "text": "Both decalins have identical heats of combustion"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips",
+      "explanation": "trans-Decalin is fused via diequatorial bonds which cannot flip without tearing bonds; cis-decalin can flip chairs.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q034",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "A-value significance",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "What does a substituent's conformational A-value represent in cyclohexane chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The boiling point elevation caused by the substituent"
+        },
+        {
+          "label": "B",
+          "text": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations"
+        },
+        {
+          "label": "C",
+          "text": "The rate constant of nucleophilic substitution"
+        },
+        {
+          "label": "D",
+          "text": "The activation energy required for a chair flip"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations",
+      "explanation": "A-values quantitatively rank the steric preference of groups for the equatorial position.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q035",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "Chair conformation of methylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "Which conformation of methylcyclohexane is thermodynamically favored at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair conformation with the methyl group in the equatorial position (95% abundance)"
+        },
+        {
+          "label": "B",
+          "text": "Boat conformation with flagpole methyl interaction"
+        },
+        {
+          "label": "C",
+          "text": "Planar flat cyclohexane ring"
+        },
+        {
+          "label": "D",
+          "text": "Chair conformation with the methyl group in the axial position"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chair conformation with the methyl group in the equatorial position (95% abundance)",
+      "explanation": "Equatorial methyl avoids destabilizing 1,3-diaxial steric interactions with axial ring hydrogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q036",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "1,3-Diaxial interaction in cyclohexanes",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What structural factor causes the energy penalty of an axial substituent on cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Angle strain from deviation from 109.5° tetrahedral angles"
+        },
+        {
+          "label": "B",
+          "text": "Torsional strain from eclipsed C-C bonds"
+        },
+        {
+          "label": "C",
+          "text": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5"
+        },
+        {
+          "label": "D",
+          "text": "Dipole-dipole repulsion with ring carbons"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5",
+      "explanation": "Axial substituents experience steric crowding with axial hydrogens positioned two carbons away on the same face.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q037",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "trans-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What is the most stable conformation of trans-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Diaxial (1a, 2a) chair conformation"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Twist-boat conformation"
+        },
+        {
+          "label": "D",
+          "text": "Axial-equatorial (1a, 2e) chair conformation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Diequatorial (1e, 2e) chair conformation",
+      "explanation": "The trans-1,2 isomer can place both methyl groups in equatorial positions simultaneously.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q038",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "cis-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What are the positions of the methyl groups in the chair conformations of cis-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both diequatorial (1e, 2e)"
+        },
+        {
+          "label": "B",
+          "text": "Both planar in the ring plane"
+        },
+        {
+          "label": "C",
+          "text": "Both diaxial (1a, 2a)"
+        },
+        {
+          "label": "D",
+          "text": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip",
+      "explanation": "In the 1,2-cis isomer, one substituent must point up (axial) and the other up (equatorial).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q039",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "cis-1,3-Dimethylcyclohexane meso property",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "What is the stereochemical nature of cis-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a constitutional isomer of 1,4-dimethylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "It is a chiral molecule with two enantiomers"
+        },
+        {
+          "label": "C",
+          "text": "It is an achiral meso compound possessing an internal plane of symmetry"
+        },
+        {
+          "label": "D",
+          "text": "It is an optically active diastereomer"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "It is an achiral meso compound possessing an internal plane of symmetry",
+      "explanation": "An internal vertical symmetry plane bisects C2 and C5, rendering cis-1,3-dimethylcyclohexane achiral (meso).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q040",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "1,3-Diaxial Dreadnought",
+      "topic": "trans-1,4-Di-tert-butylcyclohexane rigidity",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why is trans-1,4-di-tert-butylcyclohexane considered a conformationally locked ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It exists exclusively in a stable twist-boat conformation"
+        },
+        {
+          "label": "B",
+          "text": "The tert-butyl groups form an intramolecular covalent bond"
+        },
+        {
+          "label": "C",
+          "text": "The ring is planar and cannot undergo chair flips"
+        },
+        {
+          "label": "D",
+          "text": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions",
+      "explanation": "The extreme energy cost of placing even one tert-butyl axial locks the molecule in the diequatorial chair.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "13-diaxial-dreadnought.png"
+      ]
+    },
+    {
+      "id": "ch04_q041",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Decalin stereoisomers",
+      "difficulty": "easy",
+      "question_type": "stereoisomer_relationship",
+      "question": "How do cis-decalin and trans-decalin differ in conformational flexibility?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips"
+        },
+        {
+          "label": "B",
+          "text": "Both decalins have identical heats of combustion"
+        },
+        {
+          "label": "C",
+          "text": "trans-Decalin is a meso compound; cis-decalin is chiral"
+        },
+        {
+          "label": "D",
+          "text": "cis-Decalin is planar; trans-decalin is non-planar"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "trans-Decalin is rigidly locked and cannot ring-flip; cis-decalin is conformationally flexible and undergoes chair flips",
+      "explanation": "trans-Decalin is fused via diequatorial bonds which cannot flip without tearing bonds; cis-decalin can flip chairs.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q042",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "A-value significance",
+      "difficulty": "easy",
+      "question_type": "configuration_assignment",
+      "question": "What does a substituent's conformational A-value represent in cyclohexane chemistry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The rate constant of nucleophilic substitution"
+        },
+        {
+          "label": "B",
+          "text": "The activation energy required for a chair flip"
+        },
+        {
+          "label": "C",
+          "text": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations"
+        },
+        {
+          "label": "D",
+          "text": "The boiling point elevation caused by the substituent"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The free energy difference (-ΔG°) between the axial and equatorial chair conformations",
+      "explanation": "A-values quantitatively rank the steric preference of groups for the equatorial position.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q043",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Chair conformation of methylcyclohexane",
+      "difficulty": "medium",
+      "question_type": "configuration_assignment",
+      "question": "Which conformation of methylcyclohexane is thermodynamically favored at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chair conformation with the methyl group in the equatorial position (95% abundance)"
+        },
+        {
+          "label": "B",
+          "text": "Planar flat cyclohexane ring"
+        },
+        {
+          "label": "C",
+          "text": "Chair conformation with the methyl group in the axial position"
+        },
+        {
+          "label": "D",
+          "text": "Boat conformation with flagpole methyl interaction"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Chair conformation with the methyl group in the equatorial position (95% abundance)",
+      "explanation": "Equatorial methyl avoids destabilizing 1,3-diaxial steric interactions with axial ring hydrogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q044",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "1,3-Diaxial interaction in cyclohexanes",
+      "difficulty": "medium",
+      "question_type": "chair_conformation_stability",
+      "question": "What structural factor causes the energy penalty of an axial substituent on cyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torsional strain from eclipsed C-C bonds"
+        },
+        {
+          "label": "B",
+          "text": "Angle strain from deviation from 109.5° tetrahedral angles"
+        },
+        {
+          "label": "C",
+          "text": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5"
+        },
+        {
+          "label": "D",
+          "text": "Dipole-dipole repulsion with ring carbons"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Steric clash (gauche-like interactions) with the two syn-axial hydrogens on carbons 3 and 5",
+      "explanation": "Axial substituents experience steric crowding with axial hydrogens positioned two carbons away on the same face.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q045",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "trans-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "medium",
+      "question_type": "prochirality_topicity",
+      "question": "What is the most stable conformation of trans-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Twist-boat conformation"
+        },
+        {
+          "label": "B",
+          "text": "Diequatorial (1e, 2e) chair conformation"
+        },
+        {
+          "label": "C",
+          "text": "Axial-equatorial (1a, 2e) chair conformation"
+        },
+        {
+          "label": "D",
+          "text": "Diaxial (1a, 2a) chair conformation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Diequatorial (1e, 2e) chair conformation",
+      "explanation": "The trans-1,2 isomer can place both methyl groups in equatorial positions simultaneously.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q046",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "cis-1,2-Dimethylcyclohexane stereochemistry",
+      "difficulty": "medium",
+      "question_type": "stereoisomer_relationship",
+      "question": "What are the positions of the methyl groups in the chair conformations of cis-1,2-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both planar in the ring plane"
+        },
+        {
+          "label": "B",
+          "text": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip"
+        },
+        {
+          "label": "C",
+          "text": "Both diaxial (1a, 2a)"
+        },
+        {
+          "label": "D",
+          "text": "Both diequatorial (1e, 2e)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "One axial and one equatorial (1a, 2e), interconverting to (1e, 2a) upon ring flip",
+      "explanation": "In the 1,2-cis isomer, one substituent must point up (axial) and the other up (equatorial).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q047",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "cis-1,3-Dimethylcyclohexane meso property",
+      "difficulty": "hard",
+      "question_type": "chair_conformation_stability",
+      "question": "What is the stereochemical nature of cis-1,3-dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is an optically active diastereomer"
+        },
+        {
+          "label": "B",
+          "text": "It is an achiral meso compound possessing an internal plane of symmetry"
+        },
+        {
+          "label": "C",
+          "text": "It is a chiral molecule with two enantiomers"
+        },
+        {
+          "label": "D",
+          "text": "It is a constitutional isomer of 1,4-dimethylcyclohexane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "It is an achiral meso compound possessing an internal plane of symmetry",
+      "explanation": "An internal vertical symmetry plane bisects C2 and C5, rendering cis-1,3-dimethylcyclohexane achiral (meso).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q048",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "trans-1,4-Di-tert-butylcyclohexane rigidity",
+      "difficulty": "hard",
+      "question_type": "prochirality_topicity",
+      "question": "Why is trans-1,4-di-tert-butylcyclohexane considered a conformationally locked ring?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions"
+        },
+        {
+          "label": "B",
+          "text": "The ring is planar and cannot undergo chair flips"
+        },
+        {
+          "label": "C",
+          "text": "The tert-butyl groups form an intramolecular covalent bond"
+        },
+        {
+          "label": "D",
+          "text": "It exists exclusively in a stable twist-boat conformation"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The massive A-value of tert-butyl groups (~20 kJ/mol) locks both groups into equatorial positions",
+      "explanation": "The extreme energy cost of placing even one tert-butyl axial locks the molecule in the diequatorial chair.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q049",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Cyclopropane angle strain",
+      "difficulty": "hard",
+      "question_type": "stereoisomer_relationship",
+      "question": "Why does cyclopropane possess 115 kJ/mol of ring strain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Non-coplanar p-orbital misalignment"
+        },
+        {
+          "label": "B",
+          "text": "Unfavorable dipole moments"
+        },
+        {
+          "label": "C",
+          "text": "1,3-Diaxial steric repulsion across the ring"
+        },
+        {
+          "label": "D",
+          "text": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Severe angle strain (60° bond angles vs 109.5° tetrahedral) combined with eclipsing C-H torsional strain",
+      "explanation": "Carbons are forced into rigid 60° 'bent' bonds with all six C-H bonds eclipsed.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    },
+    {
+      "id": "ch04_q050",
+      "chapter": 4,
+      "chapter_title": "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+      "boss": "Polycyclic Ring Titan",
+      "topic": "Boat conformation strain sources",
+      "difficulty": "hard",
+      "question_type": "configuration_assignment",
+      "question": "What two factors make the cyclohexane boat conformation 29 kJ/mol higher in energy than the chair?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Angle strain at all six carbon vertices"
+        },
+        {
+          "label": "B",
+          "text": "1,3-Diaxial interactions with axial substituents"
+        },
+        {
+          "label": "C",
+          "text": "Severe dipole-dipole repulsions"
+        },
+        {
+          "label": "D",
+          "text": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Flagpole steric interactions between C1/C4 hydrogens and torsional strain from eclipsed bonds along the sides",
+      "explanation": "The boat has four pairs of eclipsed C-H bonds and steric clash between the two inside flagpole hydrogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polycyclic-ring-titan.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Cycloalkane Sentry",
+    "Ring-Strain Reaver",
+    "Chair-Flip Chimera",
+    "1,3-Diaxial Dreadnought",
+    "Polycyclic Ring Titan"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Cycloalkane Sentry",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "cycloalkane-sentry.png"
+        ]
+      },
+      {
+        "boss": "Ring-Strain Reaver",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "ring-strain-reaver.png"
+        ]
+      },
+      {
+        "boss": "Chair-Flip Chimera",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "chair-flip-chimera.png"
+        ]
+      },
+      {
+        "boss": "1,3-Diaxial Dreadnought",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "13-diaxial-dreadnought.png"
+        ]
+      },
+      {
+        "boss": "Polycyclic Ring Titan",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "polycyclic-ring-titan.png"
+        ]
+      }
+    ]
+  }
+}

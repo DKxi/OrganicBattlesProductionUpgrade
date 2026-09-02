@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 28,
+  "chapter_title": "Biomolecules: Nucleic Acids",
+  "assigned_boss": "Phosphodiester Backbone Paladin",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch28_q001",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "Alkaline hydrolysis of RNA",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ribonucleic acid (RNA) is treated with Dilute aqueous sodium hydroxide (0.1 M NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "B",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Mixture of 2'- and 3'-nucleoside monophosphates",
+      "explanation": "Treating Ribonucleic acid (RNA) with Dilute aqueous sodium hydroxide (0.1 M NaOH) yields Mixture of 2'- and 3'-nucleoside monophosphates. Rationale: The 2'-hydroxyl group attacks the adjacent 3'-phosphodiester bond, forming a cyclic 2',3'-phosphate intermediate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q002",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "Base stability of DNA",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Deoxyribonucleic acid (DNA) into Stable (denatures to single strands without backbone cleavage)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3% Trichloroacetic acid (TCA) in CH2Cl2"
+        },
+        {
+          "label": "B",
+          "text": "Taq DNA Polymerase + dNTPs (72°C)"
+        },
+        {
+          "label": "C",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "D",
+          "text": "Specific oligonucleotide primers (55°C)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Dilute aqueous sodium hydroxide (0.1 M NaOH)",
+      "explanation": "To convert Deoxyribonucleic acid (DNA) into Stable (denatures to single strands without backbone cleavage), the appropriate reagent is Dilute aqueous sodium hydroxide (0.1 M NaOH). Rationale: DNA lacks a 2'-hydroxyl group, making its phosphodiester backbone completely resistant to alkaline cleavage.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q003",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "DNA replication elongation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Primer-template DNA duplex is treated with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "B",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "C",
+          "text": "Stable phosphate triester backbone"
+        },
+        {
+          "label": "D",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Extended double-stranded DNA + Pyrophosphate (PPi)",
+      "explanation": "Treating Primer-template DNA duplex with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP) yields Extended double-stranded DNA + Pyrophosphate (PPi). Rationale: 3'-Hydroxyl of the growing primer attacks the alpha-phosphate of incoming dNTP, releasing pyrophosphate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q004",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "Sanger dideoxy chain termination",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of DNA sequencing reaction mixture into DNA fragments terminating selectively at dideoxy-A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "B",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "C",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "D",
+          "text": "Iodine (I2) in THF, pyridine, H2O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)",
+      "explanation": "To convert DNA sequencing reaction mixture into DNA fragments terminating selectively at dideoxy-A, the appropriate reagent is DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy). Rationale: ddATP lacks both 2'-OH and 3'-OH groups; once incorporated, no further phosphodiester bond can form.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q005",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "Solid-phase oligonucleotide phosphoramidite coupling",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-DMT-nucleoside phosphoramidite is treated with 3'-Anchored nucleoside + Tetrazole catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Doubled quantity of target duplex DNA"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Phosphite triester intermediate",
+      "explanation": "Treating 5'-DMT-nucleoside phosphoramidite with 3'-Anchored nucleoside + Tetrazole catalyst yields Phosphite triester intermediate. Rationale: Tetrazole protonates the diisopropylamino group, facilitating nucleophilic attack by the 5'-hydroxyl of the growing chain.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q006",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "Phosphite triester oxidation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phosphite triester into Stable phosphate triester backbone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "B",
+          "text": "3'-Anchored nucleoside + Tetrazole catalyst"
+        },
+        {
+          "label": "C",
+          "text": "Iodine (I2) in THF, pyridine, H2O"
+        },
+        {
+          "label": "D",
+          "text": "Heat (95°C for 30 seconds)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Iodine (I2) in THF, pyridine, H2O",
+      "explanation": "To convert Phosphite triester into Stable phosphate triester backbone, the appropriate reagent is Iodine (I2) in THF, pyridine, H2O. Rationale: Iodine oxidizes phosphorus(III) to phosphorus(V), generating the stable phosphate triester linkage.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q007",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "DMT protecting group cleavage",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 3% Trichloroacetic acid (TCA) in CH2Cl2 to yield 5'-Unprotected hydroxyl + DMT cation (bright orange) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-Dimethoxytrityl (DMT)-protected nucleotide"
+        },
+        {
+          "label": "B",
+          "text": "DNA sequencing reaction mixture"
+        },
+        {
+          "label": "C",
+          "text": "5'-DMT-nucleoside phosphoramidite"
+        },
+        {
+          "label": "D",
+          "text": "Deoxyribonucleic acid (DNA)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "5'-Dimethoxytrityl (DMT)-protected nucleotide",
+      "explanation": "5'-Dimethoxytrityl (DMT)-protected nucleotide reacts with 3% Trichloroacetic acid (TCA) in CH2Cl2 to yield 5'-Unprotected hydroxyl + DMT cation (bright orange). Rationale: Mild acid cleaves the acid-sensitive trityl ether, releasing the resonance-stabilized orange dimethoxytrityl carbocation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q008",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "PCR thermal denaturation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Double-stranded genomic DNA is treated with Heat (95°C for 30 seconds)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Two separated single-stranded DNA templates"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Two separated single-stranded DNA templates",
+      "explanation": "Treating Double-stranded genomic DNA with Heat (95°C for 30 seconds) yields Two separated single-stranded DNA templates. Rationale: Thermal energy disrupts hydrogen bonds between Watson-Crick base pairs, separating the duplex strands.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q009",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "PCR primer annealing",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Specific oligonucleotide primers (55°C) to yield Primer-template duplex hybrids as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA sequencing reaction mixture"
+        },
+        {
+          "label": "B",
+          "text": "Single-stranded template DNA"
+        },
+        {
+          "label": "C",
+          "text": "Ribonucleic acid (RNA)"
+        },
+        {
+          "label": "D",
+          "text": "Deoxyribonucleic acid (DNA)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Single-stranded template DNA",
+      "explanation": "Single-stranded template DNA reacts with Specific oligonucleotide primers (55°C) to yield Primer-template duplex hybrids. Rationale: Lowering temperature allows complementary oligonucleotide primers to hybridize specifically to target flanking regions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q010",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphodiester Backbone Paladin",
+      "topic": "PCR extension by Taq polymerase",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Primer-annealed template DNA is treated with Taq DNA Polymerase + dNTPs (72°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "B",
+          "text": "Stable phosphate triester backbone"
+        },
+        {
+          "label": "C",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "D",
+          "text": "Primer-template duplex hybrids"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Doubled quantity of target duplex DNA",
+      "explanation": "Treating Primer-annealed template DNA with Taq DNA Polymerase + dNTPs (72°C) yields Doubled quantity of target duplex DNA. Rationale: Thermostable Taq polymerase synthesizes complementary strands from 5' to 3' across the annealed templates.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "phosphodiester-backbone-paladin.png"
+      ]
+    },
+    {
+      "id": "ch28_q011",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "DNA replication elongation",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Primer-template DNA duplex is treated with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two separated single-stranded DNA templates"
+        },
+        {
+          "label": "B",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "C",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "D",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Extended double-stranded DNA + Pyrophosphate (PPi)",
+      "explanation": "Treating Primer-template DNA duplex with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP) yields Extended double-stranded DNA + Pyrophosphate (PPi). Rationale: 3'-Hydroxyl of the growing primer attacks the alpha-phosphate of incoming dNTP, releasing pyrophosphate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q012",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "Sanger dideoxy chain termination",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of DNA sequencing reaction mixture into DNA fragments terminating selectively at dideoxy-A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Specific oligonucleotide primers (55°C)"
+        },
+        {
+          "label": "B",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "C",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "D",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)",
+      "explanation": "To convert DNA sequencing reaction mixture into DNA fragments terminating selectively at dideoxy-A, the appropriate reagent is DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy). Rationale: ddATP lacks both 2'-OH and 3'-OH groups; once incorporated, no further phosphodiester bond can form.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q013",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "Solid-phase oligonucleotide phosphoramidite coupling",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-DMT-nucleoside phosphoramidite is treated with 3'-Anchored nucleoside + Tetrazole catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Stable phosphate triester backbone"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Phosphite triester intermediate",
+      "explanation": "Treating 5'-DMT-nucleoside phosphoramidite with 3'-Anchored nucleoside + Tetrazole catalyst yields Phosphite triester intermediate. Rationale: Tetrazole protonates the diisopropylamino group, facilitating nucleophilic attack by the 5'-hydroxyl of the growing chain.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q014",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "Phosphite triester oxidation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phosphite triester into Stable phosphate triester backbone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodine (I2) in THF, pyridine, H2O"
+        },
+        {
+          "label": "B",
+          "text": "Specific oligonucleotide primers (55°C)"
+        },
+        {
+          "label": "C",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "D",
+          "text": "3'-Anchored nucleoside + Tetrazole catalyst"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Iodine (I2) in THF, pyridine, H2O",
+      "explanation": "To convert Phosphite triester into Stable phosphate triester backbone, the appropriate reagent is Iodine (I2) in THF, pyridine, H2O. Rationale: Iodine oxidizes phosphorus(III) to phosphorus(V), generating the stable phosphate triester linkage.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q015",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "DMT protecting group cleavage",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-Dimethoxytrityl (DMT)-protected nucleotide is treated with 3% Trichloroacetic acid (TCA) in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        },
+        {
+          "label": "B",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "C",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "D",
+          "text": "Two separated single-stranded DNA templates"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "5'-Unprotected hydroxyl + DMT cation (bright orange)",
+      "explanation": "Treating 5'-Dimethoxytrityl (DMT)-protected nucleotide with 3% Trichloroacetic acid (TCA) in CH2Cl2 yields 5'-Unprotected hydroxyl + DMT cation (bright orange). Rationale: Mild acid cleaves the acid-sensitive trityl ether, releasing the resonance-stabilized orange dimethoxytrityl carbocation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q016",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "PCR thermal denaturation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Heat (95°C for 30 seconds) to yield Two separated single-stranded DNA templates as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA sequencing reaction mixture"
+        },
+        {
+          "label": "B",
+          "text": "Ribonucleic acid (RNA)"
+        },
+        {
+          "label": "C",
+          "text": "Deoxyribonucleic acid (DNA)"
+        },
+        {
+          "label": "D",
+          "text": "Double-stranded genomic DNA"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Double-stranded genomic DNA",
+      "explanation": "Double-stranded genomic DNA reacts with Heat (95°C for 30 seconds) to yield Two separated single-stranded DNA templates. Rationale: Thermal energy disrupts hydrogen bonds between Watson-Crick base pairs, separating the duplex strands.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q017",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "PCR primer annealing",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Single-stranded template DNA is treated with Specific oligonucleotide primers (55°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primer-template duplex hybrids"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "C",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "D",
+          "text": "Two separated single-stranded DNA templates"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Primer-template duplex hybrids",
+      "explanation": "Treating Single-stranded template DNA with Specific oligonucleotide primers (55°C) yields Primer-template duplex hybrids. Rationale: Lowering temperature allows complementary oligonucleotide primers to hybridize specifically to target flanking regions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q018",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "PCR extension by Taq polymerase",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Taq DNA Polymerase + dNTPs (72°C) to yield Doubled quantity of target duplex DNA as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-DMT-nucleoside phosphoramidite"
+        },
+        {
+          "label": "B",
+          "text": "DNA sequencing reaction mixture"
+        },
+        {
+          "label": "C",
+          "text": "Primer-annealed template DNA"
+        },
+        {
+          "label": "D",
+          "text": "5'-Dimethoxytrityl (DMT)-protected nucleotide"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Primer-annealed template DNA",
+      "explanation": "Primer-annealed template DNA reacts with Taq DNA Polymerase + dNTPs (72°C) to yield Doubled quantity of target duplex DNA. Rationale: Thermostable Taq polymerase synthesizes complementary strands from 5' to 3' across the annealed templates.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q019",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "Alkaline hydrolysis of RNA",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ribonucleic acid (RNA) is treated with Dilute aqueous sodium hydroxide (0.1 M NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "C",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "D",
+          "text": "Primer-template duplex hybrids"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Mixture of 2'- and 3'-nucleoside monophosphates",
+      "explanation": "Treating Ribonucleic acid (RNA) with Dilute aqueous sodium hydroxide (0.1 M NaOH) yields Mixture of 2'- and 3'-nucleoside monophosphates. Rationale: The 2'-hydroxyl group attacks the adjacent 3'-phosphodiester bond, forming a cyclic 2',3'-phosphate intermediate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q020",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Watson–Crick Base-Pair Basilisk",
+      "topic": "Base stability of DNA",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Deoxyribonucleic acid (DNA) into Stable (denatures to single strands without backbone cleavage)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "B",
+          "text": "3'-Anchored nucleoside + Tetrazole catalyst"
+        },
+        {
+          "label": "C",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "D",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Dilute aqueous sodium hydroxide (0.1 M NaOH)",
+      "explanation": "To convert Deoxyribonucleic acid (DNA) into Stable (denatures to single strands without backbone cleavage), the appropriate reagent is Dilute aqueous sodium hydroxide (0.1 M NaOH). Rationale: DNA lacks a 2'-hydroxyl group, making its phosphodiester backbone completely resistant to alkaline cleavage.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "watsoncrick-base-pair-basilisk.png"
+      ]
+    },
+    {
+      "id": "ch28_q021",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "Solid-phase oligonucleotide phosphoramidite coupling",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-DMT-nucleoside phosphoramidite is treated with 3'-Anchored nucleoside + Tetrazole catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primer-template duplex hybrids"
+        },
+        {
+          "label": "B",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "C",
+          "text": "Two separated single-stranded DNA templates"
+        },
+        {
+          "label": "D",
+          "text": "Phosphite triester intermediate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Phosphite triester intermediate",
+      "explanation": "Treating 5'-DMT-nucleoside phosphoramidite with 3'-Anchored nucleoside + Tetrazole catalyst yields Phosphite triester intermediate. Rationale: Tetrazole protonates the diisopropylamino group, facilitating nucleophilic attack by the 5'-hydroxyl of the growing chain.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q022",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "Phosphite triester oxidation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phosphite triester into Stable phosphate triester backbone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "B",
+          "text": "Iodine (I2) in THF, pyridine, H2O"
+        },
+        {
+          "label": "C",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "D",
+          "text": "3% Trichloroacetic acid (TCA) in CH2Cl2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Iodine (I2) in THF, pyridine, H2O",
+      "explanation": "To convert Phosphite triester into Stable phosphate triester backbone, the appropriate reagent is Iodine (I2) in THF, pyridine, H2O. Rationale: Iodine oxidizes phosphorus(III) to phosphorus(V), generating the stable phosphate triester linkage.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q023",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "DMT protecting group cleavage",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-Dimethoxytrityl (DMT)-protected nucleotide is treated with 3% Trichloroacetic acid (TCA) in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "B",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "C",
+          "text": "Primer-template duplex hybrids"
+        },
+        {
+          "label": "D",
+          "text": "Two separated single-stranded DNA templates"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "5'-Unprotected hydroxyl + DMT cation (bright orange)",
+      "explanation": "Treating 5'-Dimethoxytrityl (DMT)-protected nucleotide with 3% Trichloroacetic acid (TCA) in CH2Cl2 yields 5'-Unprotected hydroxyl + DMT cation (bright orange). Rationale: Mild acid cleaves the acid-sensitive trityl ether, releasing the resonance-stabilized orange dimethoxytrityl carbocation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q024",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "PCR thermal denaturation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Double-stranded genomic DNA into Two separated single-stranded DNA templates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "B",
+          "text": "3% Trichloroacetic acid (TCA) in CH2Cl2"
+        },
+        {
+          "label": "C",
+          "text": "Specific oligonucleotide primers (55°C)"
+        },
+        {
+          "label": "D",
+          "text": "Heat (95°C for 30 seconds)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Heat (95°C for 30 seconds)",
+      "explanation": "To convert Double-stranded genomic DNA into Two separated single-stranded DNA templates, the appropriate reagent is Heat (95°C for 30 seconds). Rationale: Thermal energy disrupts hydrogen bonds between Watson-Crick base pairs, separating the duplex strands.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q025",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "PCR primer annealing",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Specific oligonucleotide primers (55°C) to yield Primer-template duplex hybrids as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Single-stranded template DNA"
+        },
+        {
+          "label": "B",
+          "text": "5'-DMT-nucleoside phosphoramidite"
+        },
+        {
+          "label": "C",
+          "text": "DNA sequencing reaction mixture"
+        },
+        {
+          "label": "D",
+          "text": "Primer-template DNA duplex"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Single-stranded template DNA",
+      "explanation": "Single-stranded template DNA reacts with Specific oligonucleotide primers (55°C) to yield Primer-template duplex hybrids. Rationale: Lowering temperature allows complementary oligonucleotide primers to hybridize specifically to target flanking regions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q026",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "PCR extension by Taq polymerase",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Primer-annealed template DNA is treated with Taq DNA Polymerase + dNTPs (72°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "B",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "C",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "D",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Doubled quantity of target duplex DNA",
+      "explanation": "Treating Primer-annealed template DNA with Taq DNA Polymerase + dNTPs (72°C) yields Doubled quantity of target duplex DNA. Rationale: Thermostable Taq polymerase synthesizes complementary strands from 5' to 3' across the annealed templates.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q027",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "Alkaline hydrolysis of RNA",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Dilute aqueous sodium hydroxide (0.1 M NaOH) to yield Mixture of 2'- and 3'-nucleoside monophosphates as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primer-template DNA duplex"
+        },
+        {
+          "label": "B",
+          "text": "Ribonucleic acid (RNA)"
+        },
+        {
+          "label": "C",
+          "text": "5'-DMT-nucleoside phosphoramidite"
+        },
+        {
+          "label": "D",
+          "text": "Double-stranded genomic DNA"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ribonucleic acid (RNA)",
+      "explanation": "Ribonucleic acid (RNA) reacts with Dilute aqueous sodium hydroxide (0.1 M NaOH) to yield Mixture of 2'- and 3'-nucleoside monophosphates. Rationale: The 2'-hydroxyl group attacks the adjacent 3'-phosphodiester bond, forming a cyclic 2',3'-phosphate intermediate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q028",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "Base stability of DNA",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Deoxyribonucleic acid (DNA) is treated with Dilute aqueous sodium hydroxide (0.1 M NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "B",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stable (denatures to single strands without backbone cleavage)",
+      "explanation": "Treating Deoxyribonucleic acid (DNA) with Dilute aqueous sodium hydroxide (0.1 M NaOH) yields Stable (denatures to single strands without backbone cleavage). Rationale: DNA lacks a 2'-hydroxyl group, making its phosphodiester backbone completely resistant to alkaline cleavage.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q029",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "DNA replication elongation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Primer-template DNA duplex into Extended double-stranded DNA + Pyrophosphate (PPi)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "B",
+          "text": "DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)"
+        },
+        {
+          "label": "C",
+          "text": "Specific oligonucleotide primers (55°C)"
+        },
+        {
+          "label": "D",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)",
+      "explanation": "To convert Primer-template DNA duplex into Extended double-stranded DNA + Pyrophosphate (PPi), the appropriate reagent is DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP). Rationale: 3'-Hydroxyl of the growing primer attacks the alpha-phosphate of incoming dNTP, releasing pyrophosphate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q030",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Sanger Dideoxy Disruptor",
+      "topic": "Sanger dideoxy chain termination",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when DNA sequencing reaction mixture is treated with DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "B",
+          "text": "Primer-template duplex hybrids"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DNA fragments terminating selectively at dideoxy-A",
+      "explanation": "Treating DNA sequencing reaction mixture with DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy) yields DNA fragments terminating selectively at dideoxy-A. Rationale: ddATP lacks both 2'-OH and 3'-OH groups; once incorporated, no further phosphodiester bond can form.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "sanger-dideoxy-disruptor.png"
+      ]
+    },
+    {
+      "id": "ch28_q031",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "DMT protecting group cleavage",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-Dimethoxytrityl (DMT)-protected nucleotide is treated with 3% Trichloroacetic acid (TCA) in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "B",
+          "text": "Primer-template duplex hybrids"
+        },
+        {
+          "label": "C",
+          "text": "Stable phosphate triester backbone"
+        },
+        {
+          "label": "D",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "5'-Unprotected hydroxyl + DMT cation (bright orange)",
+      "explanation": "Treating 5'-Dimethoxytrityl (DMT)-protected nucleotide with 3% Trichloroacetic acid (TCA) in CH2Cl2 yields 5'-Unprotected hydroxyl + DMT cation (bright orange). Rationale: Mild acid cleaves the acid-sensitive trityl ether, releasing the resonance-stabilized orange dimethoxytrityl carbocation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q032",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "PCR thermal denaturation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Double-stranded genomic DNA into Two separated single-stranded DNA templates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "B",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "C",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "D",
+          "text": "Taq DNA Polymerase + dNTPs (72°C)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Heat (95°C for 30 seconds)",
+      "explanation": "To convert Double-stranded genomic DNA into Two separated single-stranded DNA templates, the appropriate reagent is Heat (95°C for 30 seconds). Rationale: Thermal energy disrupts hydrogen bonds between Watson-Crick base pairs, separating the duplex strands.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q033",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "PCR primer annealing",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Single-stranded template DNA is treated with Specific oligonucleotide primers (55°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        },
+        {
+          "label": "B",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "C",
+          "text": "Two separated single-stranded DNA templates"
+        },
+        {
+          "label": "D",
+          "text": "Primer-template duplex hybrids"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Primer-template duplex hybrids",
+      "explanation": "Treating Single-stranded template DNA with Specific oligonucleotide primers (55°C) yields Primer-template duplex hybrids. Rationale: Lowering temperature allows complementary oligonucleotide primers to hybridize specifically to target flanking regions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q034",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "PCR extension by Taq polymerase",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Taq DNA Polymerase + dNTPs (72°C) to yield Doubled quantity of target duplex DNA as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Double-stranded genomic DNA"
+        },
+        {
+          "label": "B",
+          "text": "5'-DMT-nucleoside phosphoramidite"
+        },
+        {
+          "label": "C",
+          "text": "5'-Dimethoxytrityl (DMT)-protected nucleotide"
+        },
+        {
+          "label": "D",
+          "text": "Primer-annealed template DNA"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Primer-annealed template DNA",
+      "explanation": "Primer-annealed template DNA reacts with Taq DNA Polymerase + dNTPs (72°C) to yield Doubled quantity of target duplex DNA. Rationale: Thermostable Taq polymerase synthesizes complementary strands from 5' to 3' across the annealed templates.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q035",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "Alkaline hydrolysis of RNA",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ribonucleic acid (RNA) is treated with Dilute aqueous sodium hydroxide (0.1 M NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "B",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "C",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "D",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Mixture of 2'- and 3'-nucleoside monophosphates",
+      "explanation": "Treating Ribonucleic acid (RNA) with Dilute aqueous sodium hydroxide (0.1 M NaOH) yields Mixture of 2'- and 3'-nucleoside monophosphates. Rationale: The 2'-hydroxyl group attacks the adjacent 3'-phosphodiester bond, forming a cyclic 2',3'-phosphate intermediate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q036",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "Base stability of DNA",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Dilute aqueous sodium hydroxide (0.1 M NaOH) to yield Stable (denatures to single strands without backbone cleavage) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-Dimethoxytrityl (DMT)-protected nucleotide"
+        },
+        {
+          "label": "B",
+          "text": "Double-stranded genomic DNA"
+        },
+        {
+          "label": "C",
+          "text": "Deoxyribonucleic acid (DNA)"
+        },
+        {
+          "label": "D",
+          "text": "Ribonucleic acid (RNA)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Deoxyribonucleic acid (DNA)",
+      "explanation": "Deoxyribonucleic acid (DNA) reacts with Dilute aqueous sodium hydroxide (0.1 M NaOH) to yield Stable (denatures to single strands without backbone cleavage). Rationale: DNA lacks a 2'-hydroxyl group, making its phosphodiester backbone completely resistant to alkaline cleavage.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q037",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "DNA replication elongation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Primer-template DNA duplex is treated with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "B",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "C",
+          "text": "Two separated single-stranded DNA templates"
+        },
+        {
+          "label": "D",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Extended double-stranded DNA + Pyrophosphate (PPi)",
+      "explanation": "Treating Primer-template DNA duplex with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP) yields Extended double-stranded DNA + Pyrophosphate (PPi). Rationale: 3'-Hydroxyl of the growing primer attacks the alpha-phosphate of incoming dNTP, releasing pyrophosphate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q038",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "Sanger dideoxy chain termination",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of DNA sequencing reaction mixture into DNA fragments terminating selectively at dideoxy-A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)"
+        },
+        {
+          "label": "B",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "C",
+          "text": "DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)"
+        },
+        {
+          "label": "D",
+          "text": "Specific oligonucleotide primers (55°C)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)",
+      "explanation": "To convert DNA sequencing reaction mixture into DNA fragments terminating selectively at dideoxy-A, the appropriate reagent is DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy). Rationale: ddATP lacks both 2'-OH and 3'-OH groups; once incorporated, no further phosphodiester bond can form.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q039",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "Solid-phase oligonucleotide phosphoramidite coupling",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 5'-DMT-nucleoside phosphoramidite is treated with 3'-Anchored nucleoside + Tetrazole catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        },
+        {
+          "label": "B",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "C",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Phosphite triester intermediate",
+      "explanation": "Treating 5'-DMT-nucleoside phosphoramidite with 3'-Anchored nucleoside + Tetrazole catalyst yields Phosphite triester intermediate. Rationale: Tetrazole protonates the diisopropylamino group, facilitating nucleophilic attack by the 5'-hydroxyl of the growing chain.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q040",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Phosphoramidite Synthesizer",
+      "topic": "Phosphite triester oxidation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Phosphite triester into Stable phosphate triester backbone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodine (I2) in THF, pyridine, H2O"
+        },
+        {
+          "label": "B",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "C",
+          "text": "3'-Anchored nucleoside + Tetrazole catalyst"
+        },
+        {
+          "label": "D",
+          "text": "DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Iodine (I2) in THF, pyridine, H2O",
+      "explanation": "To convert Phosphite triester into Stable phosphate triester backbone, the appropriate reagent is Iodine (I2) in THF, pyridine, H2O. Rationale: Iodine oxidizes phosphorus(III) to phosphorus(V), generating the stable phosphate triester linkage.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "phosphoramidite-synthesizer.png"
+      ]
+    },
+    {
+      "id": "ch28_q041",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "PCR primer annealing",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Single-stranded template DNA is treated with Specific oligonucleotide primers (55°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stable phosphate triester backbone"
+        },
+        {
+          "label": "B",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        },
+        {
+          "label": "C",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "D",
+          "text": "Primer-template duplex hybrids"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Primer-template duplex hybrids",
+      "explanation": "Treating Single-stranded template DNA with Specific oligonucleotide primers (55°C) yields Primer-template duplex hybrids. Rationale: Lowering temperature allows complementary oligonucleotide primers to hybridize specifically to target flanking regions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q042",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "PCR extension by Taq polymerase",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Primer-annealed template DNA into Doubled quantity of target duplex DNA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "B",
+          "text": "Specific oligonucleotide primers (55°C)"
+        },
+        {
+          "label": "C",
+          "text": "DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP)"
+        },
+        {
+          "label": "D",
+          "text": "Taq DNA Polymerase + dNTPs (72°C)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Taq DNA Polymerase + dNTPs (72°C)",
+      "explanation": "To convert Primer-annealed template DNA into Doubled quantity of target duplex DNA, the appropriate reagent is Taq DNA Polymerase + dNTPs (72°C). Rationale: Thermostable Taq polymerase synthesizes complementary strands from 5' to 3' across the annealed templates.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q043",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "Alkaline hydrolysis of RNA",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Dilute aqueous sodium hydroxide (0.1 M NaOH) to yield Mixture of 2'- and 3'-nucleoside monophosphates as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ribonucleic acid (RNA)"
+        },
+        {
+          "label": "B",
+          "text": "Double-stranded genomic DNA"
+        },
+        {
+          "label": "C",
+          "text": "Primer-template DNA duplex"
+        },
+        {
+          "label": "D",
+          "text": "DNA sequencing reaction mixture"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ribonucleic acid (RNA)",
+      "explanation": "Ribonucleic acid (RNA) reacts with Dilute aqueous sodium hydroxide (0.1 M NaOH) to yield Mixture of 2'- and 3'-nucleoside monophosphates. Rationale: The 2'-hydroxyl group attacks the adjacent 3'-phosphodiester bond, forming a cyclic 2',3'-phosphate intermediate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q044",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "Base stability of DNA",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Deoxyribonucleic acid (DNA) is treated with Dilute aqueous sodium hydroxide (0.1 M NaOH)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stable (denatures to single strands without backbone cleavage)"
+        },
+        {
+          "label": "B",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "C",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        },
+        {
+          "label": "D",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Stable (denatures to single strands without backbone cleavage)",
+      "explanation": "Treating Deoxyribonucleic acid (DNA) with Dilute aqueous sodium hydroxide (0.1 M NaOH) yields Stable (denatures to single strands without backbone cleavage). Rationale: DNA lacks a 2'-hydroxyl group, making its phosphodiester backbone completely resistant to alkaline cleavage.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q045",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "DNA replication elongation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP) to yield Extended double-stranded DNA + Pyrophosphate (PPi) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phosphite triester"
+        },
+        {
+          "label": "B",
+          "text": "Primer-template DNA duplex"
+        },
+        {
+          "label": "C",
+          "text": "5'-DMT-nucleoside phosphoramidite"
+        },
+        {
+          "label": "D",
+          "text": "DNA sequencing reaction mixture"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Primer-template DNA duplex",
+      "explanation": "Primer-template DNA duplex reacts with DNA Polymerase + 4 dNTPs (dATP, dCTP, dGTP, dTTP) to yield Extended double-stranded DNA + Pyrophosphate (PPi). Rationale: 3'-Hydroxyl of the growing primer attacks the alpha-phosphate of incoming dNTP, releasing pyrophosphate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q046",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "Sanger dideoxy chain termination",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when DNA sequencing reaction mixture is treated with DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DNA fragments terminating selectively at dideoxy-A"
+        },
+        {
+          "label": "B",
+          "text": "Stable phosphate triester backbone"
+        },
+        {
+          "label": "C",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "D",
+          "text": "Phosphite triester intermediate"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DNA fragments terminating selectively at dideoxy-A",
+      "explanation": "Treating DNA sequencing reaction mixture with DNA Polymerase + dNTPs + ddATP (2',3'-dideoxy) yields DNA fragments terminating selectively at dideoxy-A. Rationale: ddATP lacks both 2'-OH and 3'-OH groups; once incorporated, no further phosphodiester bond can form.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q047",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "Solid-phase oligonucleotide phosphoramidite coupling",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 5'-DMT-nucleoside phosphoramidite into Phosphite triester intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Iodine (I2) in THF, pyridine, H2O"
+        },
+        {
+          "label": "B",
+          "text": "3'-Anchored nucleoside + Tetrazole catalyst"
+        },
+        {
+          "label": "C",
+          "text": "Specific oligonucleotide primers (55°C)"
+        },
+        {
+          "label": "D",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "3'-Anchored nucleoside + Tetrazole catalyst",
+      "explanation": "To convert 5'-DMT-nucleoside phosphoramidite into Phosphite triester intermediate, the appropriate reagent is 3'-Anchored nucleoside + Tetrazole catalyst. Rationale: Tetrazole protonates the diisopropylamino group, facilitating nucleophilic attack by the 5'-hydroxyl of the growing chain.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q048",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "Phosphite triester oxidation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Phosphite triester is treated with Iodine (I2) in THF, pyridine, H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doubled quantity of target duplex DNA"
+        },
+        {
+          "label": "B",
+          "text": "Phosphite triester intermediate"
+        },
+        {
+          "label": "C",
+          "text": "Mixture of 2'- and 3'-nucleoside monophosphates"
+        },
+        {
+          "label": "D",
+          "text": "Stable phosphate triester backbone"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Stable phosphate triester backbone",
+      "explanation": "Treating Phosphite triester with Iodine (I2) in THF, pyridine, H2O yields Stable phosphate triester backbone. Rationale: Iodine oxidizes phosphorus(III) to phosphorus(V), generating the stable phosphate triester linkage.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q049",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "DMT protecting group cleavage",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 5'-Dimethoxytrityl (DMT)-protected nucleotide into 5'-Unprotected hydroxyl + DMT cation (bright orange)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dilute aqueous sodium hydroxide (0.1 M NaOH)"
+        },
+        {
+          "label": "B",
+          "text": "Heat (95°C for 30 seconds)"
+        },
+        {
+          "label": "C",
+          "text": "3% Trichloroacetic acid (TCA) in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "3'-Anchored nucleoside + Tetrazole catalyst"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "3% Trichloroacetic acid (TCA) in CH2Cl2",
+      "explanation": "To convert 5'-Dimethoxytrityl (DMT)-protected nucleotide into 5'-Unprotected hydroxyl + DMT cation (bright orange), the appropriate reagent is 3% Trichloroacetic acid (TCA) in CH2Cl2. Rationale: Mild acid cleaves the acid-sensitive trityl ether, releasing the resonance-stabilized orange dimethoxytrityl carbocation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    },
+    {
+      "id": "ch28_q050",
+      "chapter": 28,
+      "chapter_title": "Biomolecules: Nucleic Acids",
+      "boss": "Polymerase Chain Reaction Prime",
+      "topic": "PCR thermal denaturation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Double-stranded genomic DNA is treated with Heat (95°C for 30 seconds)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5'-Unprotected hydroxyl + DMT cation (bright orange)"
+        },
+        {
+          "label": "B",
+          "text": "Primer-template duplex hybrids"
+        },
+        {
+          "label": "C",
+          "text": "Extended double-stranded DNA + Pyrophosphate (PPi)"
+        },
+        {
+          "label": "D",
+          "text": "Two separated single-stranded DNA templates"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Two separated single-stranded DNA templates",
+      "explanation": "Treating Double-stranded genomic DNA with Heat (95°C for 30 seconds) yields Two separated single-stranded DNA templates. Rationale: Thermal energy disrupts hydrogen bonds between Watson-Crick base pairs, separating the duplex strands.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polymerase-chain-reaction-prime.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Phosphodiester Backbone Paladin",
+    "Watson–Crick Base-Pair Basilisk",
+    "Sanger Dideoxy Disruptor",
+    "Phosphoramidite Synthesizer",
+    "Polymerase Chain Reaction Prime"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Phosphodiester Backbone Paladin",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "phosphodiester-backbone-paladin.png"
+        ]
+      },
+      {
+        "boss": "Watson–Crick Base-Pair Basilisk",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "watsoncrick-base-pair-basilisk.png"
+        ]
+      },
+      {
+        "boss": "Sanger Dideoxy Disruptor",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "sanger-dideoxy-disruptor.png"
+        ]
+      },
+      {
+        "boss": "Phosphoramidite Synthesizer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "phosphoramidite-synthesizer.png"
+        ]
+      },
+      {
+        "boss": "Polymerase Chain Reaction Prime",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "polymerase-chain-reaction-prime.png"
+        ]
+      }
+    ]
+  }
+}

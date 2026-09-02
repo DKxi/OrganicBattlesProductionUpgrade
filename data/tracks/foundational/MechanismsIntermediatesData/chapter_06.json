@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 6,
+  "chapter_title": "An Overview of Organic Reactions",
+  "assigned_boss": "Curved-Arrow Archer",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch06_q001",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Polar addition of HBr to alkene",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Which step is the rate-determining step in the electrophilic addition of HBr to ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Capture of carbocation by bromide anion"
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the alkyl halide product"
+        },
+        {
+          "label": "C",
+          "text": "Homolytic cleavage of the H-Br bond"
+        },
+        {
+          "label": "D",
+          "text": "Protonation of the alkene double bond to generate the carbocation intermediate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation of the alkene double bond to generate the carbocation intermediate",
+      "explanation": "Protonation breaks the pi bond and creates a high-energy carbocation, representing the highest activation barrier.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q002",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Carbocation geometry",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the geometry and orbital hybridization of a simple alkyl carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Linear with an sp-hybridized carbon"
+        },
+        {
+          "label": "B",
+          "text": "Tetrahedral with an sp3-hybridized carbon"
+        },
+        {
+          "label": "C",
+          "text": "Trigonal pyramidal with an sp3 lone pair"
+        },
+        {
+          "label": "D",
+          "text": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital",
+      "explanation": "A carbocation has 6 valence electrons in 3 sigma bonds, adopting a planar 120° geometry with an unhybridized vacant p orbital.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q003",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Curved arrow representation",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "In an organic mechanism, what does a standard double-barbed curved arrow represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The direction of dipole moment vectors"
+        },
+        {
+          "label": "B",
+          "text": "The movement of a single unpaired radical electron"
+        },
+        {
+          "label": "C",
+          "text": "The physical movement of an atomic nucleus"
+        },
+        {
+          "label": "D",
+          "text": "The movement of a pair of valence electrons from an electron source to an electron sink"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The movement of a pair of valence electrons from an electron source to an electron sink",
+      "explanation": "Curved arrows exclusively track electron pairs flowing from nucleophilic lone pairs/bonds to electrophilic centers.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q004",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Radical chain propagation",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "Which characteristic uniquely defines a propagation step in free-radical halogenation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two radicals combine to form a stable sigma bond"
+        },
+        {
+          "label": "B",
+          "text": "A radical reacts with a non-radical to yield a product and a new radical"
+        },
+        {
+          "label": "C",
+          "text": "A non-radical homolytically cleaves into two radicals"
+        },
+        {
+          "label": "D",
+          "text": "A radical is quenched by a transition metal catalyst"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A radical reacts with a non-radical to yield a product and a new radical",
+      "explanation": "Propagation steps maintain the total radical count, sustaining the chain reaction cycle.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q005",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Transition state vs intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How does a transition state differ from a reaction intermediate on an energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A transition state has fully formed covalent bonds; an intermediate has none"
+        },
+        {
+          "label": "B",
+          "text": "A transition state is a local energy maximum; an intermediate is a local energy minimum"
+        },
+        {
+          "label": "C",
+          "text": "A transition state always has zero activation energy"
+        },
+        {
+          "label": "D",
+          "text": "A transition state can be isolated in a bottle; an intermediate cannot"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A transition state is a local energy maximum; an intermediate is a local energy minimum",
+      "explanation": "Transition states are fleeting structures at energy peaks (maxima), whereas intermediates occupy energy valleys (minima).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q006",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Hammond Postulate in endothermic step",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "According to the Hammond Postulate, what does the transition state of an endothermic step most closely resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stable ground-state alkane"
+        },
+        {
+          "label": "B",
+          "text": "The starting reactant"
+        },
+        {
+          "label": "C",
+          "text": "The transition state of the reverse reaction"
+        },
+        {
+          "label": "D",
+          "text": "The high-energy intermediate or product formed in that step"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The high-energy intermediate or product formed in that step",
+      "explanation": "The transition state structure is closest in energy and geometry to the species to which it is closest in free energy.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q007",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Carbocation 1,2-hydride shift",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What drives a 1,2-hydride shift in a carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Inductive electron withdrawal by leaving groups"
+        },
+        {
+          "label": "B",
+          "text": "Repulsion between adjacent positive charges"
+        },
+        {
+          "label": "C",
+          "text": "Steric clash with solvent molecules"
+        },
+        {
+          "label": "D",
+          "text": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation",
+      "explanation": "Migrating a hydride transfers the positive charge to a more substituted or resonance-stabilized carbon center.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q008",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Electrophilic addition intermediate",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What intermediate is formed when propene is protonated by hydronium in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primary propyl carbocation (CH3CH2CH2+)"
+        },
+        {
+          "label": "B",
+          "text": "Propyl free radical"
+        },
+        {
+          "label": "C",
+          "text": "Propyl carbanion"
+        },
+        {
+          "label": "D",
+          "text": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)",
+      "explanation": "Protonation occurs at the terminal carbon to yield the more stable secondary carbocation (Markovnikov rule).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q009",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Radical termination step",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Which event represents a termination step in radical bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reaction of an alkyl radical with Br2"
+        },
+        {
+          "label": "B",
+          "text": "Attack of bromine radical on an alkane C-H bond"
+        },
+        {
+          "label": "C",
+          "text": "Homolysis of Br2 by ultraviolet light"
+        },
+        {
+          "label": "D",
+          "text": "Combination of two bromine radicals to form Br2"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Combination of two bromine radicals to form Br2",
+      "explanation": "Coupling of two radicals eliminates reactive radical species from the reaction mixture.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q010",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Curved-Arrow Archer",
+      "topic": "Nucleophile role in polar reaction",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the fundamental role of a nucleophile in a Lewis acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond"
+        },
+        {
+          "label": "B",
+          "text": "Abstracting an electron to become a radical"
+        },
+        {
+          "label": "C",
+          "text": "Stabilizing transition states through solvent cages"
+        },
+        {
+          "label": "D",
+          "text": "Accepting an electron pair into an empty orbital"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond",
+      "explanation": "Nucleophiles are Lewis bases that donate electron pairs to electron-deficient electrophiles.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "curved-arrow-archer.png"
+      ]
+    },
+    {
+      "id": "ch06_q011",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Curved arrow representation",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "In an organic mechanism, what does a standard double-barbed curved arrow represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The movement of a pair of valence electrons from an electron source to an electron sink"
+        },
+        {
+          "label": "B",
+          "text": "The movement of a single unpaired radical electron"
+        },
+        {
+          "label": "C",
+          "text": "The direction of dipole moment vectors"
+        },
+        {
+          "label": "D",
+          "text": "The physical movement of an atomic nucleus"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The movement of a pair of valence electrons from an electron source to an electron sink",
+      "explanation": "Curved arrows exclusively track electron pairs flowing from nucleophilic lone pairs/bonds to electrophilic centers.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q012",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Radical chain propagation",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "Which characteristic uniquely defines a propagation step in free-radical halogenation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A non-radical homolytically cleaves into two radicals"
+        },
+        {
+          "label": "B",
+          "text": "A radical reacts with a non-radical to yield a product and a new radical"
+        },
+        {
+          "label": "C",
+          "text": "A radical is quenched by a transition metal catalyst"
+        },
+        {
+          "label": "D",
+          "text": "Two radicals combine to form a stable sigma bond"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A radical reacts with a non-radical to yield a product and a new radical",
+      "explanation": "Propagation steps maintain the total radical count, sustaining the chain reaction cycle.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q013",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Transition state vs intermediate",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "How does a transition state differ from a reaction intermediate on an energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A transition state always has zero activation energy"
+        },
+        {
+          "label": "B",
+          "text": "A transition state is a local energy maximum; an intermediate is a local energy minimum"
+        },
+        {
+          "label": "C",
+          "text": "A transition state can be isolated in a bottle; an intermediate cannot"
+        },
+        {
+          "label": "D",
+          "text": "A transition state has fully formed covalent bonds; an intermediate has none"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A transition state is a local energy maximum; an intermediate is a local energy minimum",
+      "explanation": "Transition states are fleeting structures at energy peaks (maxima), whereas intermediates occupy energy valleys (minima).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q014",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Hammond Postulate in endothermic step",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "According to the Hammond Postulate, what does the transition state of an endothermic step most closely resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The starting reactant"
+        },
+        {
+          "label": "B",
+          "text": "A stable ground-state alkane"
+        },
+        {
+          "label": "C",
+          "text": "The high-energy intermediate or product formed in that step"
+        },
+        {
+          "label": "D",
+          "text": "The transition state of the reverse reaction"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The high-energy intermediate or product formed in that step",
+      "explanation": "The transition state structure is closest in energy and geometry to the species to which it is closest in free energy.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q015",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Carbocation 1,2-hydride shift",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What drives a 1,2-hydride shift in a carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Repulsion between adjacent positive charges"
+        },
+        {
+          "label": "B",
+          "text": "Inductive electron withdrawal by leaving groups"
+        },
+        {
+          "label": "C",
+          "text": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation"
+        },
+        {
+          "label": "D",
+          "text": "Steric clash with solvent molecules"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation",
+      "explanation": "Migrating a hydride transfers the positive charge to a more substituted or resonance-stabilized carbon center.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q016",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Electrophilic addition intermediate",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What intermediate is formed when propene is protonated by hydronium in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)"
+        },
+        {
+          "label": "B",
+          "text": "Primary propyl carbocation (CH3CH2CH2+)"
+        },
+        {
+          "label": "C",
+          "text": "Propyl free radical"
+        },
+        {
+          "label": "D",
+          "text": "Propyl carbanion"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)",
+      "explanation": "Protonation occurs at the terminal carbon to yield the more stable secondary carbocation (Markovnikov rule).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q017",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Radical termination step",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Which event represents a termination step in radical bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Attack of bromine radical on an alkane C-H bond"
+        },
+        {
+          "label": "B",
+          "text": "Combination of two bromine radicals to form Br2"
+        },
+        {
+          "label": "C",
+          "text": "Homolysis of Br2 by ultraviolet light"
+        },
+        {
+          "label": "D",
+          "text": "Reaction of an alkyl radical with Br2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Combination of two bromine radicals to form Br2",
+      "explanation": "Coupling of two radicals eliminates reactive radical species from the reaction mixture.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q018",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Nucleophile role in polar reaction",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the fundamental role of a nucleophile in a Lewis acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Abstracting an electron to become a radical"
+        },
+        {
+          "label": "B",
+          "text": "Accepting an electron pair into an empty orbital"
+        },
+        {
+          "label": "C",
+          "text": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond"
+        },
+        {
+          "label": "D",
+          "text": "Stabilizing transition states through solvent cages"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond",
+      "explanation": "Nucleophiles are Lewis bases that donate electron pairs to electron-deficient electrophiles.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q019",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Polar addition of HBr to alkene",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Which step is the rate-determining step in the electrophilic addition of HBr to ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolytic cleavage of the H-Br bond"
+        },
+        {
+          "label": "B",
+          "text": "Capture of carbocation by bromide anion"
+        },
+        {
+          "label": "C",
+          "text": "Deprotonation of the alkyl halide product"
+        },
+        {
+          "label": "D",
+          "text": "Protonation of the alkene double bond to generate the carbocation intermediate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation of the alkene double bond to generate the carbocation intermediate",
+      "explanation": "Protonation breaks the pi bond and creates a high-energy carbocation, representing the highest activation barrier.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q020",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reaction-Type Raider",
+      "topic": "Carbocation geometry",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the geometry and orbital hybridization of a simple alkyl carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trigonal pyramidal with an sp3 lone pair"
+        },
+        {
+          "label": "B",
+          "text": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital"
+        },
+        {
+          "label": "C",
+          "text": "Linear with an sp-hybridized carbon"
+        },
+        {
+          "label": "D",
+          "text": "Tetrahedral with an sp3-hybridized carbon"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital",
+      "explanation": "A carbocation has 6 valence electrons in 3 sigma bonds, adopting a planar 120° geometry with an unhybridized vacant p orbital.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "reaction-type-raider.png"
+      ]
+    },
+    {
+      "id": "ch06_q021",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Transition state vs intermediate",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "How does a transition state differ from a reaction intermediate on an energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A transition state is a local energy maximum; an intermediate is a local energy minimum"
+        },
+        {
+          "label": "B",
+          "text": "A transition state always has zero activation energy"
+        },
+        {
+          "label": "C",
+          "text": "A transition state can be isolated in a bottle; an intermediate cannot"
+        },
+        {
+          "label": "D",
+          "text": "A transition state has fully formed covalent bonds; an intermediate has none"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A transition state is a local energy maximum; an intermediate is a local energy minimum",
+      "explanation": "Transition states are fleeting structures at energy peaks (maxima), whereas intermediates occupy energy valleys (minima).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q022",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Hammond Postulate in endothermic step",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "According to the Hammond Postulate, what does the transition state of an endothermic step most closely resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A stable ground-state alkane"
+        },
+        {
+          "label": "B",
+          "text": "The transition state of the reverse reaction"
+        },
+        {
+          "label": "C",
+          "text": "The starting reactant"
+        },
+        {
+          "label": "D",
+          "text": "The high-energy intermediate or product formed in that step"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The high-energy intermediate or product formed in that step",
+      "explanation": "The transition state structure is closest in energy and geometry to the species to which it is closest in free energy.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q023",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Carbocation 1,2-hydride shift",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "What drives a 1,2-hydride shift in a carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric clash with solvent molecules"
+        },
+        {
+          "label": "B",
+          "text": "Repulsion between adjacent positive charges"
+        },
+        {
+          "label": "C",
+          "text": "Inductive electron withdrawal by leaving groups"
+        },
+        {
+          "label": "D",
+          "text": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation",
+      "explanation": "Migrating a hydride transfers the positive charge to a more substituted or resonance-stabilized carbon center.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q024",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Electrophilic addition intermediate",
+      "difficulty": "easy",
+      "question_type": "rate_determining_step",
+      "question": "What intermediate is formed when propene is protonated by hydronium in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propyl carbanion"
+        },
+        {
+          "label": "B",
+          "text": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)"
+        },
+        {
+          "label": "C",
+          "text": "Propyl free radical"
+        },
+        {
+          "label": "D",
+          "text": "Primary propyl carbocation (CH3CH2CH2+)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)",
+      "explanation": "Protonation occurs at the terminal carbon to yield the more stable secondary carbocation (Markovnikov rule).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q025",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Radical termination step",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Which event represents a termination step in radical bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Combination of two bromine radicals to form Br2"
+        },
+        {
+          "label": "B",
+          "text": "Homolysis of Br2 by ultraviolet light"
+        },
+        {
+          "label": "C",
+          "text": "Reaction of an alkyl radical with Br2"
+        },
+        {
+          "label": "D",
+          "text": "Attack of bromine radical on an alkane C-H bond"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Combination of two bromine radicals to form Br2",
+      "explanation": "Coupling of two radicals eliminates reactive radical species from the reaction mixture.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q026",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Nucleophile role in polar reaction",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the fundamental role of a nucleophile in a Lewis acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Abstracting an electron to become a radical"
+        },
+        {
+          "label": "B",
+          "text": "Accepting an electron pair into an empty orbital"
+        },
+        {
+          "label": "C",
+          "text": "Stabilizing transition states through solvent cages"
+        },
+        {
+          "label": "D",
+          "text": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond",
+      "explanation": "Nucleophiles are Lewis bases that donate electron pairs to electron-deficient electrophiles.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q027",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Polar addition of HBr to alkene",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "Which step is the rate-determining step in the electrophilic addition of HBr to ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Capture of carbocation by bromide anion"
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the alkyl halide product"
+        },
+        {
+          "label": "C",
+          "text": "Protonation of the alkene double bond to generate the carbocation intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the H-Br bond"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of the alkene double bond to generate the carbocation intermediate",
+      "explanation": "Protonation breaks the pi bond and creates a high-energy carbocation, representing the highest activation barrier.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q028",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Carbocation geometry",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "What is the geometry and orbital hybridization of a simple alkyl carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trigonal pyramidal with an sp3 lone pair"
+        },
+        {
+          "label": "B",
+          "text": "Linear with an sp-hybridized carbon"
+        },
+        {
+          "label": "C",
+          "text": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital"
+        },
+        {
+          "label": "D",
+          "text": "Tetrahedral with an sp3-hybridized carbon"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital",
+      "explanation": "A carbocation has 6 valence electrons in 3 sigma bonds, adopting a planar 120° geometry with an unhybridized vacant p orbital.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q029",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Curved arrow representation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "In an organic mechanism, what does a standard double-barbed curved arrow represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The movement of a pair of valence electrons from an electron source to an electron sink"
+        },
+        {
+          "label": "B",
+          "text": "The direction of dipole moment vectors"
+        },
+        {
+          "label": "C",
+          "text": "The movement of a single unpaired radical electron"
+        },
+        {
+          "label": "D",
+          "text": "The physical movement of an atomic nucleus"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The movement of a pair of valence electrons from an electron source to an electron sink",
+      "explanation": "Curved arrows exclusively track electron pairs flowing from nucleophilic lone pairs/bonds to electrophilic centers.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q030",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Reactive Intermediate Imp",
+      "topic": "Radical chain propagation",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "Which characteristic uniquely defines a propagation step in free-radical halogenation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A radical is quenched by a transition metal catalyst"
+        },
+        {
+          "label": "B",
+          "text": "Two radicals combine to form a stable sigma bond"
+        },
+        {
+          "label": "C",
+          "text": "A radical reacts with a non-radical to yield a product and a new radical"
+        },
+        {
+          "label": "D",
+          "text": "A non-radical homolytically cleaves into two radicals"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A radical reacts with a non-radical to yield a product and a new radical",
+      "explanation": "Propagation steps maintain the total radical count, sustaining the chain reaction cycle.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "reactive-intermediate-imp.png"
+      ]
+    },
+    {
+      "id": "ch06_q031",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Carbocation 1,2-hydride shift",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "What drives a 1,2-hydride shift in a carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Steric clash with solvent molecules"
+        },
+        {
+          "label": "B",
+          "text": "Inductive electron withdrawal by leaving groups"
+        },
+        {
+          "label": "C",
+          "text": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation"
+        },
+        {
+          "label": "D",
+          "text": "Repulsion between adjacent positive charges"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation",
+      "explanation": "Migrating a hydride transfers the positive charge to a more substituted or resonance-stabilized carbon center.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q032",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Electrophilic addition intermediate",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What intermediate is formed when propene is protonated by hydronium in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propyl free radical"
+        },
+        {
+          "label": "B",
+          "text": "Propyl carbanion"
+        },
+        {
+          "label": "C",
+          "text": "Primary propyl carbocation (CH3CH2CH2+)"
+        },
+        {
+          "label": "D",
+          "text": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)",
+      "explanation": "Protonation occurs at the terminal carbon to yield the more stable secondary carbocation (Markovnikov rule).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q033",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Radical termination step",
+      "difficulty": "easy",
+      "question_type": "curved_arrow_flow",
+      "question": "Which event represents a termination step in radical bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Combination of two bromine radicals to form Br2"
+        },
+        {
+          "label": "B",
+          "text": "Attack of bromine radical on an alkane C-H bond"
+        },
+        {
+          "label": "C",
+          "text": "Reaction of an alkyl radical with Br2"
+        },
+        {
+          "label": "D",
+          "text": "Homolysis of Br2 by ultraviolet light"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Combination of two bromine radicals to form Br2",
+      "explanation": "Coupling of two radicals eliminates reactive radical species from the reaction mixture.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q034",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Nucleophile role in polar reaction",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "What is the fundamental role of a nucleophile in a Lewis acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Abstracting an electron to become a radical"
+        },
+        {
+          "label": "B",
+          "text": "Accepting an electron pair into an empty orbital"
+        },
+        {
+          "label": "C",
+          "text": "Stabilizing transition states through solvent cages"
+        },
+        {
+          "label": "D",
+          "text": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond",
+      "explanation": "Nucleophiles are Lewis bases that donate electron pairs to electron-deficient electrophiles.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q035",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Polar addition of HBr to alkene",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "Which step is the rate-determining step in the electrophilic addition of HBr to ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deprotonation of the alkyl halide product"
+        },
+        {
+          "label": "B",
+          "text": "Homolytic cleavage of the H-Br bond"
+        },
+        {
+          "label": "C",
+          "text": "Capture of carbocation by bromide anion"
+        },
+        {
+          "label": "D",
+          "text": "Protonation of the alkene double bond to generate the carbocation intermediate"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Protonation of the alkene double bond to generate the carbocation intermediate",
+      "explanation": "Protonation breaks the pi bond and creates a high-energy carbocation, representing the highest activation barrier.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q036",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Carbocation geometry",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "What is the geometry and orbital hybridization of a simple alkyl carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Linear with an sp-hybridized carbon"
+        },
+        {
+          "label": "B",
+          "text": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital"
+        },
+        {
+          "label": "C",
+          "text": "Trigonal pyramidal with an sp3 lone pair"
+        },
+        {
+          "label": "D",
+          "text": "Tetrahedral with an sp3-hybridized carbon"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital",
+      "explanation": "A carbocation has 6 valence electrons in 3 sigma bonds, adopting a planar 120° geometry with an unhybridized vacant p orbital.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q037",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Curved arrow representation",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "In an organic mechanism, what does a standard double-barbed curved arrow represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The physical movement of an atomic nucleus"
+        },
+        {
+          "label": "B",
+          "text": "The direction of dipole moment vectors"
+        },
+        {
+          "label": "C",
+          "text": "The movement of a pair of valence electrons from an electron source to an electron sink"
+        },
+        {
+          "label": "D",
+          "text": "The movement of a single unpaired radical electron"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The movement of a pair of valence electrons from an electron source to an electron sink",
+      "explanation": "Curved arrows exclusively track electron pairs flowing from nucleophilic lone pairs/bonds to electrophilic centers.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q038",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Radical chain propagation",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "Which characteristic uniquely defines a propagation step in free-radical halogenation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two radicals combine to form a stable sigma bond"
+        },
+        {
+          "label": "B",
+          "text": "A radical reacts with a non-radical to yield a product and a new radical"
+        },
+        {
+          "label": "C",
+          "text": "A radical is quenched by a transition metal catalyst"
+        },
+        {
+          "label": "D",
+          "text": "A non-radical homolytically cleaves into two radicals"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A radical reacts with a non-radical to yield a product and a new radical",
+      "explanation": "Propagation steps maintain the total radical count, sustaining the chain reaction cycle.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q039",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Transition state vs intermediate",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "How does a transition state differ from a reaction intermediate on an energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A transition state has fully formed covalent bonds; an intermediate has none"
+        },
+        {
+          "label": "B",
+          "text": "A transition state is a local energy maximum; an intermediate is a local energy minimum"
+        },
+        {
+          "label": "C",
+          "text": "A transition state can be isolated in a bottle; an intermediate cannot"
+        },
+        {
+          "label": "D",
+          "text": "A transition state always has zero activation energy"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A transition state is a local energy maximum; an intermediate is a local energy minimum",
+      "explanation": "Transition states are fleeting structures at energy peaks (maxima), whereas intermediates occupy energy valleys (minima).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q040",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Activation Energy Adept",
+      "topic": "Hammond Postulate in endothermic step",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "According to the Hammond Postulate, what does the transition state of an endothermic step most closely resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transition state of the reverse reaction"
+        },
+        {
+          "label": "B",
+          "text": "The high-energy intermediate or product formed in that step"
+        },
+        {
+          "label": "C",
+          "text": "A stable ground-state alkane"
+        },
+        {
+          "label": "D",
+          "text": "The starting reactant"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The high-energy intermediate or product formed in that step",
+      "explanation": "The transition state structure is closest in energy and geometry to the species to which it is closest in free energy.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "activation-energy-adept.png"
+      ]
+    },
+    {
+      "id": "ch06_q041",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Radical termination step",
+      "difficulty": "easy",
+      "question_type": "mechanism_step_identification",
+      "question": "Which event represents a termination step in radical bromination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Homolysis of Br2 by ultraviolet light"
+        },
+        {
+          "label": "B",
+          "text": "Attack of bromine radical on an alkane C-H bond"
+        },
+        {
+          "label": "C",
+          "text": "Combination of two bromine radicals to form Br2"
+        },
+        {
+          "label": "D",
+          "text": "Reaction of an alkyl radical with Br2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Combination of two bromine radicals to form Br2",
+      "explanation": "Coupling of two radicals eliminates reactive radical species from the reaction mixture.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q042",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Nucleophile role in polar reaction",
+      "difficulty": "easy",
+      "question_type": "intermediate_structure",
+      "question": "What is the fundamental role of a nucleophile in a Lewis acid-base reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond"
+        },
+        {
+          "label": "B",
+          "text": "Stabilizing transition states through solvent cages"
+        },
+        {
+          "label": "C",
+          "text": "Abstracting an electron to become a radical"
+        },
+        {
+          "label": "D",
+          "text": "Accepting an electron pair into an empty orbital"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Donating a nonbonding electron pair or pi-electron pair to form a new sigma bond",
+      "explanation": "Nucleophiles are Lewis bases that donate electron pairs to electron-deficient electrophiles.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q043",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Polar addition of HBr to alkene",
+      "difficulty": "medium",
+      "question_type": "intermediate_structure",
+      "question": "Which step is the rate-determining step in the electrophilic addition of HBr to ethylene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Capture of carbocation by bromide anion"
+        },
+        {
+          "label": "B",
+          "text": "Deprotonation of the alkyl halide product"
+        },
+        {
+          "label": "C",
+          "text": "Protonation of the alkene double bond to generate the carbocation intermediate"
+        },
+        {
+          "label": "D",
+          "text": "Homolytic cleavage of the H-Br bond"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Protonation of the alkene double bond to generate the carbocation intermediate",
+      "explanation": "Protonation breaks the pi bond and creates a high-energy carbocation, representing the highest activation barrier.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q044",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Carbocation geometry",
+      "difficulty": "medium",
+      "question_type": "curved_arrow_flow",
+      "question": "What is the geometry and orbital hybridization of a simple alkyl carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trigonal pyramidal with an sp3 lone pair"
+        },
+        {
+          "label": "B",
+          "text": "Tetrahedral with an sp3-hybridized carbon"
+        },
+        {
+          "label": "C",
+          "text": "Linear with an sp-hybridized carbon"
+        },
+        {
+          "label": "D",
+          "text": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Trigonal planar with an sp2-hybridized carbon and an empty 2p orbital",
+      "explanation": "A carbocation has 6 valence electrons in 3 sigma bonds, adopting a planar 120° geometry with an unhybridized vacant p orbital.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q045",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Curved arrow representation",
+      "difficulty": "medium",
+      "question_type": "rate_determining_step",
+      "question": "In an organic mechanism, what does a standard double-barbed curved arrow represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The physical movement of an atomic nucleus"
+        },
+        {
+          "label": "B",
+          "text": "The movement of a pair of valence electrons from an electron source to an electron sink"
+        },
+        {
+          "label": "C",
+          "text": "The movement of a single unpaired radical electron"
+        },
+        {
+          "label": "D",
+          "text": "The direction of dipole moment vectors"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The movement of a pair of valence electrons from an electron source to an electron sink",
+      "explanation": "Curved arrows exclusively track electron pairs flowing from nucleophilic lone pairs/bonds to electrophilic centers.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q046",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Radical chain propagation",
+      "difficulty": "medium",
+      "question_type": "mechanism_step_identification",
+      "question": "Which characteristic uniquely defines a propagation step in free-radical halogenation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two radicals combine to form a stable sigma bond"
+        },
+        {
+          "label": "B",
+          "text": "A radical reacts with a non-radical to yield a product and a new radical"
+        },
+        {
+          "label": "C",
+          "text": "A non-radical homolytically cleaves into two radicals"
+        },
+        {
+          "label": "D",
+          "text": "A radical is quenched by a transition metal catalyst"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A radical reacts with a non-radical to yield a product and a new radical",
+      "explanation": "Propagation steps maintain the total radical count, sustaining the chain reaction cycle.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q047",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Transition state vs intermediate",
+      "difficulty": "hard",
+      "question_type": "curved_arrow_flow",
+      "question": "How does a transition state differ from a reaction intermediate on an energy diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A transition state always has zero activation energy"
+        },
+        {
+          "label": "B",
+          "text": "A transition state has fully formed covalent bonds; an intermediate has none"
+        },
+        {
+          "label": "C",
+          "text": "A transition state is a local energy maximum; an intermediate is a local energy minimum"
+        },
+        {
+          "label": "D",
+          "text": "A transition state can be isolated in a bottle; an intermediate cannot"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A transition state is a local energy maximum; an intermediate is a local energy minimum",
+      "explanation": "Transition states are fleeting structures at energy peaks (maxima), whereas intermediates occupy energy valleys (minima).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q048",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Hammond Postulate in endothermic step",
+      "difficulty": "hard",
+      "question_type": "rate_determining_step",
+      "question": "According to the Hammond Postulate, what does the transition state of an endothermic step most closely resemble?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The high-energy intermediate or product formed in that step"
+        },
+        {
+          "label": "B",
+          "text": "The transition state of the reverse reaction"
+        },
+        {
+          "label": "C",
+          "text": "A stable ground-state alkane"
+        },
+        {
+          "label": "D",
+          "text": "The starting reactant"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The high-energy intermediate or product formed in that step",
+      "explanation": "The transition state structure is closest in energy and geometry to the species to which it is closest in free energy.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q049",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Carbocation 1,2-hydride shift",
+      "difficulty": "hard",
+      "question_type": "mechanism_step_identification",
+      "question": "What drives a 1,2-hydride shift in a carbocation intermediate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Inductive electron withdrawal by leaving groups"
+        },
+        {
+          "label": "B",
+          "text": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation"
+        },
+        {
+          "label": "C",
+          "text": "Repulsion between adjacent positive charges"
+        },
+        {
+          "label": "D",
+          "text": "Steric clash with solvent molecules"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Thermodynamic relief by converting a less stable carbocation into a more stable carbocation",
+      "explanation": "Migrating a hydride transfers the positive charge to a more substituted or resonance-stabilized carbon center.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    },
+    {
+      "id": "ch06_q050",
+      "chapter": 6,
+      "chapter_title": "An Overview of Organic Reactions",
+      "boss": "Thermodynamic Titan",
+      "topic": "Electrophilic addition intermediate",
+      "difficulty": "hard",
+      "question_type": "intermediate_structure",
+      "question": "What intermediate is formed when propene is protonated by hydronium in aqueous acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Primary propyl carbocation (CH3CH2CH2+)"
+        },
+        {
+          "label": "B",
+          "text": "Propyl free radical"
+        },
+        {
+          "label": "C",
+          "text": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)"
+        },
+        {
+          "label": "D",
+          "text": "Propyl carbanion"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Secondary isopropyl carbocation (CH3-CH(+)-CH3)",
+      "explanation": "Protonation occurs at the terminal carbon to yield the more stable secondary carbocation (Markovnikov rule).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "thermodynamic-titan.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Curved-Arrow Archer",
+    "Reaction-Type Raider",
+    "Reactive Intermediate Imp",
+    "Activation Energy Adept",
+    "Thermodynamic Titan"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Curved-Arrow Archer",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "curved-arrow-archer.png"
+        ]
+      },
+      {
+        "boss": "Reaction-Type Raider",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "reaction-type-raider.png"
+        ]
+      },
+      {
+        "boss": "Reactive Intermediate Imp",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "reactive-intermediate-imp.png"
+        ]
+      },
+      {
+        "boss": "Activation Energy Adept",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "activation-energy-adept.png"
+        ]
+      },
+      {
+        "boss": "Thermodynamic Titan",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "thermodynamic-titan.png"
+        ]
+      }
+    ]
+  }
+}

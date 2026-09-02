@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 13,
+  "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+  "assigned_boss": "Chemical Shift Shield Sentinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch13_q001",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "nuclear magnetic resonance (NMR)",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “nuclear magnetic resonance (NMR)”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "B",
+          "text": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "C",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "D",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "explanation": "A accurate description of nuclear magnetic resonance (NMR) is: A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q002",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "chemical shift",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "options": [
+        {
+          "label": "A",
+          "text": "coupling constant (J)"
+        },
+        {
+          "label": "B",
+          "text": "chemical shift"
+        },
+        {
+          "label": "C",
+          "text": "DEPT NMR"
+        },
+        {
+          "label": "D",
+          "text": "spin–spin splitting"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "chemical shift",
+      "explanation": "The best match is chemical shift: The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q003",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "shielding",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “shielding”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "B",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "C",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "D",
+          "text": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "explanation": "A accurate description of shielding is: The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q004",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "deshielding",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT NMR"
+        },
+        {
+          "label": "B",
+          "text": "shielding"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "nuclear magnetic resonance (NMR)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "deshielding",
+      "explanation": "The best match is deshielding: The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q005",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "integration",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “integration”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "B",
+          "text": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "C",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "D",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "explanation": "A accurate description of integration is: The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q006",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "spin–spin splitting",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "DEPT NMR"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "coupling constant (J)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "spin–spin splitting",
+      "explanation": "The best match is spin–spin splitting: The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q007",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "n+1 rule",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "n+1 rule"
+        },
+        {
+          "label": "B",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "C",
+          "text": "chemical shift"
+        },
+        {
+          "label": "D",
+          "text": "nuclear magnetic resonance (NMR)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "n+1 rule",
+      "explanation": "This description identifies n+1 rule. The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q008",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "coupling constant (J)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "coupling constant (J) — The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "B",
+          "text": "DEPT NMR — The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "C",
+          "text": "n+1 rule — The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "D",
+          "text": "spin–spin splitting — The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "coupling constant (J) — The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "explanation": "coupling constant (J) is correctly paired with: The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q009",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "13C NMR spectroscopy",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "B",
+          "text": "n+1 rule"
+        },
+        {
+          "label": "C",
+          "text": "13C NMR spectroscopy"
+        },
+        {
+          "label": "D",
+          "text": "DEPT NMR"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "13C NMR spectroscopy",
+      "explanation": "This description identifies 13C NMR spectroscopy. An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q010",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "DEPT NMR",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "B",
+          "text": "13C NMR spectroscopy — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "C",
+          "text": "chemical shift — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "D",
+          "text": "DEPT NMR — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DEPT NMR — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "explanation": "DEPT NMR is correctly paired with: A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q011",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "shielding",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “shielding”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "B",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "C",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "D",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "explanation": "A accurate description of shielding is: The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q012",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "deshielding",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "options": [
+        {
+          "label": "A",
+          "text": "shielding"
+        },
+        {
+          "label": "B",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectroscopy"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "deshielding",
+      "explanation": "The best match is deshielding: The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q013",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "integration",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “integration”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "B",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "C",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "D",
+          "text": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "explanation": "A accurate description of integration is: The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q014",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "spin–spin splitting",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "n+1 rule"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "spin–spin splitting",
+      "explanation": "The best match is spin–spin splitting: The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q015",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "n+1 rule",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “n+1 rule”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "B",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "C",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "D",
+          "text": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "explanation": "A accurate description of n+1 rule is: The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q016",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "coupling constant (J)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "coupling constant (J)"
+        },
+        {
+          "label": "B",
+          "text": "n+1 rule"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectroscopy"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "coupling constant (J)",
+      "explanation": "This description identifies coupling constant (J). The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q017",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "13C NMR spectroscopy",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13C NMR spectroscopy — An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "B",
+          "text": "deshielding — An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "C",
+          "text": "coupling constant (J) — An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "D",
+          "text": "chemical shift — An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "13C NMR spectroscopy — An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "explanation": "13C NMR spectroscopy is correctly paired with: An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q018",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "DEPT NMR",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13C NMR spectroscopy"
+        },
+        {
+          "label": "B",
+          "text": "n+1 rule"
+        },
+        {
+          "label": "C",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "D",
+          "text": "DEPT NMR"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "DEPT NMR",
+      "explanation": "This description identifies DEPT NMR. A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q019",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "nuclear magnetic resonance (NMR)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "shielding — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "B",
+          "text": "spin–spin splitting — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "C",
+          "text": "nuclear magnetic resonance (NMR) — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "D",
+          "text": "n+1 rule — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "nuclear magnetic resonance (NMR) — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "explanation": "nuclear magnetic resonance (NMR) is correctly paired with: A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q020",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "chemical shift",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “chemical shift” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "B",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "D",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "explanation": "The distinguishing description for chemical shift is: The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q021",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "integration",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “integration”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "B",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "C",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "D",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "explanation": "A accurate description of integration is: The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q022",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "spin–spin splitting",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "options": [
+        {
+          "label": "A",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "B",
+          "text": "integration"
+        },
+        {
+          "label": "C",
+          "text": "n+1 rule"
+        },
+        {
+          "label": "D",
+          "text": "coupling constant (J)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "spin–spin splitting",
+      "explanation": "The best match is spin–spin splitting: The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q023",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "n+1 rule",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “n+1 rule”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum."
+        },
+        {
+          "label": "B",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "D",
+          "text": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "explanation": "A accurate description of n+1 rule is: The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q024",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "coupling constant (J)",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "coupling constant (J)"
+        },
+        {
+          "label": "C",
+          "text": "shielding"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectroscopy"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "coupling constant (J)",
+      "explanation": "The best match is coupling constant (J): The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q025",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "13C NMR spectroscopy",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift"
+        },
+        {
+          "label": "B",
+          "text": "shielding"
+        },
+        {
+          "label": "C",
+          "text": "integration"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectroscopy"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "13C NMR spectroscopy",
+      "explanation": "This description identifies 13C NMR spectroscopy. An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q026",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "DEPT NMR",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "n+1 rule — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "B",
+          "text": "DEPT NMR — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "C",
+          "text": "deshielding — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "D",
+          "text": "shielding — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "DEPT NMR — A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "explanation": "DEPT NMR is correctly paired with: A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q027",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "nuclear magnetic resonance (NMR)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "C",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "D",
+          "text": "n+1 rule"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "nuclear magnetic resonance (NMR)",
+      "explanation": "This description identifies nuclear magnetic resonance (NMR). A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q028",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "chemical shift",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "shielding — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "B",
+          "text": "chemical shift — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "C",
+          "text": "13C NMR spectroscopy — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "D",
+          "text": "nuclear magnetic resonance (NMR) — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "chemical shift — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "explanation": "chemical shift is correctly paired with: The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q029",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "shielding",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “shielding” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "B",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "C",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "D",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "explanation": "The distinguishing description for shielding is: The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q030",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "deshielding",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “deshielding” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "B",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "C",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "D",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "explanation": "The distinguishing description for deshielding is: The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q031",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "n+1 rule",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “n+1 rule”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "B",
+          "text": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum."
+        },
+        {
+          "label": "C",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "D",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "explanation": "A accurate description of n+1 rule is: The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q032",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "coupling constant (J)",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "coupling constant (J)"
+        },
+        {
+          "label": "C",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "D",
+          "text": "spin–spin splitting"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "coupling constant (J)",
+      "explanation": "The best match is coupling constant (J): The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q033",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "13C NMR spectroscopy",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “13C NMR spectroscopy”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "B",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "C",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "D",
+          "text": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "explanation": "A accurate description of 13C NMR spectroscopy is: An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q034",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "DEPT NMR",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "integration"
+        },
+        {
+          "label": "B",
+          "text": "spin–spin splitting"
+        },
+        {
+          "label": "C",
+          "text": "DEPT NMR"
+        },
+        {
+          "label": "D",
+          "text": "13C NMR spectroscopy"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "DEPT NMR",
+      "explanation": "This description identifies DEPT NMR. A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q035",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "nuclear magnetic resonance (NMR)",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "nuclear magnetic resonance (NMR) — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "B",
+          "text": "DEPT NMR — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "C",
+          "text": "integration — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "D",
+          "text": "chemical shift — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "nuclear magnetic resonance (NMR) — A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "explanation": "nuclear magnetic resonance (NMR) is correctly paired with: A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q036",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "chemical shift",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm). Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "chemical shift"
+        },
+        {
+          "label": "B",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "n+1 rule"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "chemical shift",
+      "explanation": "This description identifies chemical shift. The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q037",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "shielding",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "coupling constant (J) — The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "B",
+          "text": "integration — The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "C",
+          "text": "DEPT NMR — The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "D",
+          "text": "shielding — The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "shielding — The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "explanation": "shielding is correctly paired with: The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q038",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "deshielding",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “deshielding” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "B",
+          "text": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum."
+        },
+        {
+          "label": "C",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "D",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "explanation": "The distinguishing description for deshielding is: The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q039",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "integration",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “integration” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "B",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "C",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "D",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "explanation": "The distinguishing description for integration is: The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q040",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "spin–spin splitting",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “spin–spin splitting” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "B",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "C",
+          "text": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "D",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "explanation": "The distinguishing description for spin–spin splitting is: The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q041",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "13C NMR spectroscopy",
+      "difficulty": "easy",
+      "question_type": "term_to_definition",
+      "question": "Which statement most accurately describes “13C NMR spectroscopy”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "B",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        },
+        {
+          "label": "C",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "D",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "explanation": "A accurate description of 13C NMR spectroscopy is: An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q042",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "DEPT NMR",
+      "difficulty": "easy",
+      "question_type": "definition_to_term",
+      "question": "Which organic chemistry term best matches this description? A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT NMR"
+        },
+        {
+          "label": "B",
+          "text": "chemical shift"
+        },
+        {
+          "label": "C",
+          "text": "deshielding"
+        },
+        {
+          "label": "D",
+          "text": "spin–spin splitting"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "DEPT NMR",
+      "explanation": "The best match is DEPT NMR: A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q043",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "nuclear magnetic resonance (NMR)",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13C NMR spectroscopy"
+        },
+        {
+          "label": "B",
+          "text": "nuclear magnetic resonance (NMR)"
+        },
+        {
+          "label": "C",
+          "text": "n+1 rule"
+        },
+        {
+          "label": "D",
+          "text": "spin–spin splitting"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "nuclear magnetic resonance (NMR)",
+      "explanation": "This description identifies nuclear magnetic resonance (NMR). A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q044",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "chemical shift",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "nuclear magnetic resonance (NMR) — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "B",
+          "text": "coupling constant (J) — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "C",
+          "text": "13C NMR spectroscopy — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        },
+        {
+          "label": "D",
+          "text": "chemical shift — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "chemical shift — The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "explanation": "chemical shift is correctly paired with: The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q045",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "shielding",
+      "difficulty": "medium",
+      "question_type": "concept_recognition",
+      "question": "A student is reviewing a concept described as follows: The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield. Which label should the student place on this concept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "shielding"
+        },
+        {
+          "label": "B",
+          "text": "DEPT NMR"
+        },
+        {
+          "label": "C",
+          "text": "chemical shift"
+        },
+        {
+          "label": "D",
+          "text": "coupling constant (J)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "shielding",
+      "explanation": "This description identifies shielding. The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q046",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "deshielding",
+      "difficulty": "medium",
+      "question_type": "term_definition_pairing",
+      "question": "Which term–description pairing is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DEPT NMR — The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "B",
+          "text": "nuclear magnetic resonance (NMR) — The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "C",
+          "text": "deshielding — The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "D",
+          "text": "coupling constant (J) — The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "deshielding — The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "explanation": "deshielding is correctly paired with: The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q047",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "integration",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “integration” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        },
+        {
+          "label": "B",
+          "text": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum."
+        },
+        {
+          "label": "C",
+          "text": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal."
+        },
+        {
+          "label": "D",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "explanation": "The distinguishing description for integration is: The mathematical measurement of the area under an NMR peak, which is directly proportional to the relative number of equivalent nuclei producing the signal.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q048",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "spin–spin splitting",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “spin–spin splitting” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "B",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "C",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "D",
+          "text": "The position of an NMR absorption resonance relative to a reference standard (tetramethylsilane, TMS), measured in parts per million (ppm)."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "explanation": "The distinguishing description for spin–spin splitting is: The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q049",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "n+1 rule",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “n+1 rule” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A spectroscopic method detecting the absorption of radiofrequency radiation by atomic nuclei with nonzero spin placed in an external magnetic field."
+        },
+        {
+          "label": "B",
+          "text": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum."
+        },
+        {
+          "label": "C",
+          "text": "The splitting of an NMR signal into multiple peaks caused by the magnetic influence of neighboring, non-equivalent nuclei."
+        },
+        {
+          "label": "D",
+          "text": "An NMR technique recording the distinct chemical shifts of carbon-13 nuclei across an organic carbon framework."
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "explanation": "The distinguishing description for n+1 rule is: The rule predicting that a set of equivalent protons with n equivalent neighboring protons will split into n+1 peaks in a 1H NMR spectrum.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q050",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "coupling constant (J)",
+      "difficulty": "hard",
+      "question_type": "concept_discrimination",
+      "question": "You need to distinguish “coupling constant (J)” from several related chapter concepts. Which description uniquely identifies it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A distortionless enhancement by polarization transfer technique in 13C NMR that differentiates CH3, CH2, CH, and quaternary carbon signals."
+        },
+        {
+          "label": "B",
+          "text": "The reduction of the effective magnetic field experienced by a nucleus due to electron density circulating around it, shifting the resonance upfield."
+        },
+        {
+          "label": "C",
+          "text": "The decrease in local electron density surrounding a nucleus caused by electronegative atoms or magnetic anisotropy, shifting the resonance downfield."
+        },
+        {
+          "label": "D",
+          "text": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength."
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "explanation": "The distinguishing description for coupling constant (J) is: The magnetic interaction strength between coupled nuclei, measured in Hertz (Hz), which is independent of the external magnetic field strength.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chemical Shift Shield Sentinel",
+    "Multiplicity Mage",
+    "J-Coupling Juggernaut",
+    "DEPT Carbon Cartographer",
+    "Supreme NMR Oracle"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chemical Shift Shield Sentinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chemical-shift-shield-sentinel.png"
+        ]
+      },
+      {
+        "boss": "Multiplicity Mage",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "multiplicity-mage.png"
+        ]
+      },
+      {
+        "boss": "J-Coupling Juggernaut",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "j-coupling-juggernaut.png"
+        ]
+      },
+      {
+        "boss": "DEPT Carbon Cartographer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "dept-carbon-cartographer.png"
+        ]
+      },
+      {
+        "boss": "Supreme NMR Oracle",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "supreme-nmr-oracle.png"
+        ]
+      }
+    ]
+  }
+}

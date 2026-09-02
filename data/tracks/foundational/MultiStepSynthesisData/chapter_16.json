@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 16,
+  "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+  "assigned_boss": "Sigma-Complex Sentinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch16_q001",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of m-bromonitrobenzene",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which 2-step sequence converts benzene into meta-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H2SO4, SO3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. NaBH4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3; 2. HNO3, H2SO4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)",
+      "explanation": "Nitration installs the meta-directing nitro group first, directing subsequent bromination to the meta position.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q002",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of p-bromonitrobenzene",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which 2-step sequence converts benzene into para-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)"
+        },
+        {
+          "label": "D",
+          "text": "1. CH3Cl, AlCl3; 2. HNO3, H2SO4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)",
+      "explanation": "Bromination installs an ortho/para director first, directing subsequent nitration to the para position.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q003",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of propylbenzene without rearrangement",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts benzene into pure propylbenzene (PhCH2CH2CH3) without isopropylbenzene byproduct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)"
+        },
+        {
+          "label": "B",
+          "text": "1. 1-Chloropropane, AlCl3 (Friedel-Crafts alkylation)"
+        },
+        {
+          "label": "C",
+          "text": "1. Propanal, H2SO4"
+        },
+        {
+          "label": "D",
+          "text": "1. Propene, H2SO4; 2. H2, Pd"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)",
+      "explanation": "Acylation avoids carbocation rearrangement; subsequent Clemmensen reduction reduces the ketone to methylene.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q004",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of p-nitrobenzoic acid",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts toluene into para-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4, heat; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)"
+        },
+        {
+          "label": "C",
+          "text": "1. CrO3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3; 2. NaCN"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)",
+      "explanation": "Toluene's methyl group directs nitration ortho/para; subsequent oxidation converts the methyl to benzoic acid.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q005",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of m-nitrobenzoic acid",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts toluene into meta-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4; 2. KMnO4, heat"
+        },
+        {
+          "label": "C",
+          "text": "1. CH3COCl, AlCl3; 2. HNO3"
+        },
+        {
+          "label": "D",
+          "text": "1. NBS, light; 2. HNO3"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)",
+      "explanation": "Oxidizing methyl to carboxyl (-COOH) creates a meta-director prior to nitration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q006",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of p-chloroaniline",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts benzene into para-chloroaniline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NH3, AlCl3; 2. Cl2, FeCl3"
+        },
+        {
+          "label": "B",
+          "text": "1. Cl2, FeCl3; 2. HNO3, H2SO4; 3. H2, Pd"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3; 2. Cl2; 3. LiAlH4"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)",
+      "explanation": "Acetylation protects the amino group and tempers its reactivity, preventing polyhalogenation during chlorination.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q007",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of azo dye from benzene",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which multi-step route synthesizes p-(phenylazo)phenol from benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Phenol, AlCl3; 2. N2 gas; 3. NaOH"
+        },
+        {
+          "label": "B",
+          "text": "1. H2SO4; 2. Aniline; 3. NaOH"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3; 2. NaNH2; 3. Phenol"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)",
+      "explanation": "Generating arenediazonium ion allows mild electrophilic aromatic coupling with electron-rich phenoxide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q008",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of 1-bromo-3,5-dimethylbenzene",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence synthesizes 1-bromo-3,5-dimethylbenzene from mesitylene (1,3,5-trimethylbenzene)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3 directly on mesitylene"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3; 2. Br2; 3. H3PO2"
+        },
+        {
+          "label": "D",
+          "text": "1. 3 CH3Cl, AlCl3; 2. NBS"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation",
+      "explanation": "Symmetric functionalization and directing group manipulation allows selective substitution on polymethylbenzenes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q009",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of m-bromochlorobenzene",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts nitrobenzene into meta-bromochlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Fe, HCl; 2. Br2; 3. Cl2"
+        },
+        {
+          "label": "B",
+          "text": "1. Cl2, FeCl3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "C",
+          "text": "1. NaBH4; 2. Br2; 3. CuCl"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)",
+      "explanation": "Exploiting the nitro group for meta-bromination followed by reduction and Sandmeyer chlorination installs both halogens meta.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q010",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Sigma-Complex Sentinel",
+      "topic": "Synthesis of p-methoxyacetophenone",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts anisole into pure para-methoxyacetophenone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)"
+        },
+        {
+          "label": "B",
+          "text": "1. CH3MgBr; 2. PCC"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetone, H2SO4; 2. MeI"
+        },
+        {
+          "label": "D",
+          "text": "1. Acetic acid, NaOH"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)",
+      "explanation": "The strongly activating methoxy group directs acylation cleanly to the unhindered para position in high yield.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "sigma-complex-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch16_q011",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of propylbenzene without rearrangement",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts benzene into pure propylbenzene (PhCH2CH2CH3) without isopropylbenzene byproduct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Propene, H2SO4; 2. H2, Pd"
+        },
+        {
+          "label": "B",
+          "text": "1. Propanal, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. 1-Chloropropane, AlCl3 (Friedel-Crafts alkylation)"
+        },
+        {
+          "label": "D",
+          "text": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)",
+      "explanation": "Acylation avoids carbocation rearrangement; subsequent Clemmensen reduction reduces the ketone to methylene.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q012",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of p-nitrobenzoic acid",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts toluene into para-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, FeBr3; 2. NaCN"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4, heat; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)"
+        },
+        {
+          "label": "D",
+          "text": "1. CrO3; 2. HNO3, H2SO4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)",
+      "explanation": "Toluene's methyl group directs nitration ortho/para; subsequent oxidation converts the methyl to benzoic acid.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q013",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of m-nitrobenzoic acid",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts toluene into meta-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)"
+        },
+        {
+          "label": "B",
+          "text": "1. NBS, light; 2. HNO3"
+        },
+        {
+          "label": "C",
+          "text": "1. CH3COCl, AlCl3; 2. HNO3"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. KMnO4, heat"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)",
+      "explanation": "Oxidizing methyl to carboxyl (-COOH) creates a meta-director prior to nitration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q014",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of p-chloroaniline",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts benzene into para-chloroaniline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Cl2, FeCl3; 2. HNO3, H2SO4; 3. H2, Pd"
+        },
+        {
+          "label": "B",
+          "text": "1. NH3, AlCl3; 2. Cl2, FeCl3"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3; 2. Cl2; 3. LiAlH4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)",
+      "explanation": "Acetylation protects the amino group and tempers its reactivity, preventing polyhalogenation during chlorination.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q015",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of azo dye from benzene",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which multi-step route synthesizes p-(phenylazo)phenol from benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H2SO4; 2. Aniline; 3. NaOH"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)"
+        },
+        {
+          "label": "C",
+          "text": "1. Phenol, AlCl3; 2. N2 gas; 3. NaOH"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3; 2. NaNH2; 3. Phenol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)",
+      "explanation": "Generating arenediazonium ion allows mild electrophilic aromatic coupling with electron-rich phenoxide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q016",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of 1-bromo-3,5-dimethylbenzene",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence synthesizes 1-bromo-3,5-dimethylbenzene from mesitylene (1,3,5-trimethylbenzene)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3; 2. Br2; 3. H3PO2"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3 directly on mesitylene"
+        },
+        {
+          "label": "D",
+          "text": "1. 3 CH3Cl, AlCl3; 2. NBS"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation",
+      "explanation": "Symmetric functionalization and directing group manipulation allows selective substitution on polymethylbenzenes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q017",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of m-bromochlorobenzene",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts nitrobenzene into meta-bromochlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Cl2, FeCl3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. NaBH4; 2. Br2; 3. CuCl"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)"
+        },
+        {
+          "label": "D",
+          "text": "1. Fe, HCl; 2. Br2; 3. Cl2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)",
+      "explanation": "Exploiting the nitro group for meta-bromination followed by reduction and Sandmeyer chlorination installs both halogens meta.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q018",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of p-methoxyacetophenone",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts anisole into pure para-methoxyacetophenone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. CH3MgBr; 2. PCC"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetone, H2SO4; 2. MeI"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetic acid, NaOH"
+        },
+        {
+          "label": "D",
+          "text": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)",
+      "explanation": "The strongly activating methoxy group directs acylation cleanly to the unhindered para position in high yield.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q019",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of m-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which 2-step sequence converts benzene into meta-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, FeBr3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. H2SO4, SO3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)"
+        },
+        {
+          "label": "D",
+          "text": "1. NaBH4; 2. Br2, FeBr3"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)",
+      "explanation": "Nitration installs the meta-directing nitro group first, directing subsequent bromination to the meta position.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q020",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Director Duelist",
+      "topic": "Synthesis of p-bromonitrobenzene",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "Which 2-step sequence converts benzene into para-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "D",
+          "text": "1. CH3Cl, AlCl3; 2. HNO3, H2SO4"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)",
+      "explanation": "Bromination installs an ortho/para director first, directing subsequent nitration to the para position.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "director-duelist.png"
+      ]
+    },
+    {
+      "id": "ch16_q021",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of m-nitrobenzoic acid",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts toluene into meta-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4; 2. KMnO4, heat"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)"
+        },
+        {
+          "label": "C",
+          "text": "1. CH3COCl, AlCl3; 2. HNO3"
+        },
+        {
+          "label": "D",
+          "text": "1. NBS, light; 2. HNO3"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)",
+      "explanation": "Oxidizing methyl to carboxyl (-COOH) creates a meta-director prior to nitration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q022",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of p-chloroaniline",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts benzene into para-chloroaniline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Cl2, FeCl3; 2. HNO3, H2SO4; 3. H2, Pd"
+        },
+        {
+          "label": "B",
+          "text": "1. NH3, AlCl3; 2. Cl2, FeCl3"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3; 2. Cl2; 3. LiAlH4"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)",
+      "explanation": "Acetylation protects the amino group and tempers its reactivity, preventing polyhalogenation during chlorination.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q023",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of azo dye from benzene",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "Which multi-step route synthesizes p-(phenylazo)phenol from benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. H2SO4; 2. Aniline; 3. NaOH"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3; 2. NaNH2; 3. Phenol"
+        },
+        {
+          "label": "C",
+          "text": "1. Phenol, AlCl3; 2. N2 gas; 3. NaOH"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)",
+      "explanation": "Generating arenediazonium ion allows mild electrophilic aromatic coupling with electron-rich phenoxide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q024",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of 1-bromo-3,5-dimethylbenzene",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence synthesizes 1-bromo-3,5-dimethylbenzene from mesitylene (1,3,5-trimethylbenzene)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. 3 CH3Cl, AlCl3; 2. NBS"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3; 2. Br2; 3. H3PO2"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3 directly on mesitylene"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation",
+      "explanation": "Symmetric functionalization and directing group manipulation allows selective substitution on polymethylbenzenes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q025",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of m-bromochlorobenzene",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts nitrobenzene into meta-bromochlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Cl2, FeCl3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)"
+        },
+        {
+          "label": "C",
+          "text": "1. Fe, HCl; 2. Br2; 3. Cl2"
+        },
+        {
+          "label": "D",
+          "text": "1. NaBH4; 2. Br2; 3. CuCl"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)",
+      "explanation": "Exploiting the nitro group for meta-bromination followed by reduction and Sandmeyer chlorination installs both halogens meta.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q026",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of p-methoxyacetophenone",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts anisole into pure para-methoxyacetophenone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Acetone, H2SO4; 2. MeI"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetic acid, NaOH"
+        },
+        {
+          "label": "C",
+          "text": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)"
+        },
+        {
+          "label": "D",
+          "text": "1. CH3MgBr; 2. PCC"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)",
+      "explanation": "The strongly activating methoxy group directs acylation cleanly to the unhindered para position in high yield.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q027",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of m-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which 2-step sequence converts benzene into meta-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. NaBH4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "D",
+          "text": "1. H2SO4, SO3; 2. Br2, FeBr3"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)",
+      "explanation": "Nitration installs the meta-directing nitro group first, directing subsequent bromination to the meta position.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q028",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of p-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which 2-step sequence converts benzene into para-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. CH3Cl, AlCl3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)"
+        },
+        {
+          "label": "C",
+          "text": "1. H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. Br2, FeBr3"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)",
+      "explanation": "Bromination installs an ortho/para director first, directing subsequent nitration to the para position.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q029",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of propylbenzene without rearrangement",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts benzene into pure propylbenzene (PhCH2CH2CH3) without isopropylbenzene byproduct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)"
+        },
+        {
+          "label": "B",
+          "text": "1. Propanal, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. 1-Chloropropane, AlCl3 (Friedel-Crafts alkylation)"
+        },
+        {
+          "label": "D",
+          "text": "1. Propene, H2SO4; 2. H2, Pd"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)",
+      "explanation": "Acylation avoids carbocation rearrangement; subsequent Clemmensen reduction reduces the ketone to methylene.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q030",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Friedel–Crafts Forgefiend",
+      "topic": "Synthesis of p-nitrobenzoic acid",
+      "difficulty": "hard",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts toluene into para-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4, heat; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3; 2. NaCN"
+        },
+        {
+          "label": "D",
+          "text": "1. CrO3; 2. HNO3, H2SO4"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)",
+      "explanation": "Toluene's methyl group directs nitration ortho/para; subsequent oxidation converts the methyl to benzoic acid.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "friedelcrafts-forgefiend.png"
+      ]
+    },
+    {
+      "id": "ch16_q031",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of azo dye from benzene",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which multi-step route synthesizes p-(phenylazo)phenol from benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Phenol, AlCl3; 2. N2 gas; 3. NaOH"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3; 2. NaNH2; 3. Phenol"
+        },
+        {
+          "label": "C",
+          "text": "1. H2SO4; 2. Aniline; 3. NaOH"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)",
+      "explanation": "Generating arenediazonium ion allows mild electrophilic aromatic coupling with electron-rich phenoxide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q032",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of 1-bromo-3,5-dimethylbenzene",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence synthesizes 1-bromo-3,5-dimethylbenzene from mesitylene (1,3,5-trimethylbenzene)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3; 2. Br2; 3. H3PO2"
+        },
+        {
+          "label": "C",
+          "text": "1. 3 CH3Cl, AlCl3; 2. NBS"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3 directly on mesitylene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation",
+      "explanation": "Symmetric functionalization and directing group manipulation allows selective substitution on polymethylbenzenes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q033",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of m-bromochlorobenzene",
+      "difficulty": "easy",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts nitrobenzene into meta-bromochlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)"
+        },
+        {
+          "label": "B",
+          "text": "1. Fe, HCl; 2. Br2; 3. Cl2"
+        },
+        {
+          "label": "C",
+          "text": "1. Cl2, FeCl3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "D",
+          "text": "1. NaBH4; 2. Br2; 3. CuCl"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)",
+      "explanation": "Exploiting the nitro group for meta-bromination followed by reduction and Sandmeyer chlorination installs both halogens meta.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q034",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of p-methoxyacetophenone",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts anisole into pure para-methoxyacetophenone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)"
+        },
+        {
+          "label": "B",
+          "text": "1. Acetic acid, NaOH"
+        },
+        {
+          "label": "C",
+          "text": "1. CH3MgBr; 2. PCC"
+        },
+        {
+          "label": "D",
+          "text": "1. Acetone, H2SO4; 2. MeI"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)",
+      "explanation": "The strongly activating methoxy group directs acylation cleanly to the unhindered para position in high yield.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q035",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of m-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "Which 2-step sequence converts benzene into meta-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaBH4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "D",
+          "text": "1. H2SO4, SO3; 2. Br2, FeBr3"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)",
+      "explanation": "Nitration installs the meta-directing nitro group first, directing subsequent bromination to the meta position.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q036",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of p-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which 2-step sequence converts benzene into para-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "C",
+          "text": "1. H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "D",
+          "text": "1. CH3Cl, AlCl3; 2. HNO3, H2SO4"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)",
+      "explanation": "Bromination installs an ortho/para director first, directing subsequent nitration to the para position.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q037",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of propylbenzene without rearrangement",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts benzene into pure propylbenzene (PhCH2CH2CH3) without isopropylbenzene byproduct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Propanal, H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. 1-Chloropropane, AlCl3 (Friedel-Crafts alkylation)"
+        },
+        {
+          "label": "C",
+          "text": "1. Propene, H2SO4; 2. H2, Pd"
+        },
+        {
+          "label": "D",
+          "text": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)",
+      "explanation": "Acylation avoids carbocation rearrangement; subsequent Clemmensen reduction reduces the ketone to methylene.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q038",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of p-nitrobenzoic acid",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts toluene into para-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. KMnO4, heat; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "B",
+          "text": "1. CrO3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3; 2. NaCN"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)",
+      "explanation": "Toluene's methyl group directs nitration ortho/para; subsequent oxidation converts the methyl to benzoic acid.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q039",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of m-nitrobenzoic acid",
+      "difficulty": "hard",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts toluene into meta-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NBS, light; 2. HNO3"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)"
+        },
+        {
+          "label": "C",
+          "text": "1. CH3COCl, AlCl3; 2. HNO3"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3, H2SO4; 2. KMnO4, heat"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)",
+      "explanation": "Oxidizing methyl to carboxyl (-COOH) creates a meta-director prior to nitration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q040",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Benzyne & Meisenheimer Mimic",
+      "topic": "Synthesis of p-chloroaniline",
+      "difficulty": "hard",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts benzene into para-chloroaniline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NH3, AlCl3; 2. Cl2, FeCl3"
+        },
+        {
+          "label": "B",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3; 2. Cl2; 3. LiAlH4"
+        },
+        {
+          "label": "D",
+          "text": "1. Cl2, FeCl3; 2. HNO3, H2SO4; 3. H2, Pd"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)",
+      "explanation": "Acetylation protects the amino group and tempers its reactivity, preventing polyhalogenation during chlorination.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "benzyne--meisenheimer-mimic.png"
+      ]
+    },
+    {
+      "id": "ch16_q041",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of m-bromochlorobenzene",
+      "difficulty": "easy",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts nitrobenzene into meta-bromochlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaBH4; 2. Br2; 3. CuCl"
+        },
+        {
+          "label": "B",
+          "text": "1. Cl2, FeCl3; 2. Br2, FeBr3"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)"
+        },
+        {
+          "label": "D",
+          "text": "1. Fe, HCl; 2. Br2; 3. Cl2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. Br2, FeBr3 (directed meta); 2. Fe, HCl (reduce to amine); 3. NaNO2, HCl (diazotize); 4. CuCl (Sandmeyer)",
+      "explanation": "Exploiting the nitro group for meta-bromination followed by reduction and Sandmeyer chlorination installs both halogens meta.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q042",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of p-methoxyacetophenone",
+      "difficulty": "easy",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts anisole into pure para-methoxyacetophenone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. CH3MgBr; 2. PCC"
+        },
+        {
+          "label": "B",
+          "text": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)"
+        },
+        {
+          "label": "C",
+          "text": "1. Acetic acid, NaOH"
+        },
+        {
+          "label": "D",
+          "text": "1. Acetone, H2SO4; 2. MeI"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetyl chloride, AlCl3 in CH2Cl2 (Friedel-Crafts acylation, major para product)",
+      "explanation": "The strongly activating methoxy group directs acylation cleanly to the unhindered para position in high yield.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q043",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of m-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which 2-step sequence converts benzene into meta-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NaBH4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)"
+        },
+        {
+          "label": "D",
+          "text": "1. H2SO4, SO3; 2. Br2, FeBr3"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4 (nitration); 2. Br2, FeBr3 (bromination)",
+      "explanation": "Nitration installs the meta-directing nitro group first, directing subsequent bromination to the meta position.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q044",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of p-bromonitrobenzene",
+      "difficulty": "medium",
+      "question_type": "protecting_group_strategy",
+      "question": "Which 2-step sequence converts benzene into para-bromonitrobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4; 2. Br2, FeBr3"
+        },
+        {
+          "label": "B",
+          "text": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)"
+        },
+        {
+          "label": "C",
+          "text": "1. CH3Cl, AlCl3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "D",
+          "text": "1. H2SO4; 2. Br2, FeBr3"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Br2, FeBr3 (bromination); 2. HNO3, H2SO4 (nitration, separate para isomer)",
+      "explanation": "Bromination installs an ortho/para director first, directing subsequent nitration to the para position.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q045",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of propylbenzene without rearrangement",
+      "difficulty": "medium",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts benzene into pure propylbenzene (PhCH2CH2CH3) without isopropylbenzene byproduct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Propene, H2SO4; 2. H2, Pd"
+        },
+        {
+          "label": "B",
+          "text": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)"
+        },
+        {
+          "label": "C",
+          "text": "1. 1-Chloropropane, AlCl3 (Friedel-Crafts alkylation)"
+        },
+        {
+          "label": "D",
+          "text": "1. Propanal, H2SO4"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. Propanoyl chloride, AlCl3 (Friedel-Crafts acylation); 2. Zn(Hg), HCl (Clemmensen reduction)",
+      "explanation": "Acylation avoids carbocation rearrangement; subsequent Clemmensen reduction reduces the ketone to methylene.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q046",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of p-nitrobenzoic acid",
+      "difficulty": "medium",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which sequence converts toluene into para-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4, heat; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "C",
+          "text": "1. CrO3; 2. HNO3, H2SO4"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3; 2. NaCN"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. HNO3, H2SO4 (nitration, isolate para isomer); 2. KMnO4, H2O, heat (side-chain oxidation)",
+      "explanation": "Toluene's methyl group directs nitration ortho/para; subsequent oxidation converts the methyl to benzoic acid.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q047",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of m-nitrobenzoic acid",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence converts toluene into meta-nitrobenzoic acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4; 2. KMnO4, heat"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)"
+        },
+        {
+          "label": "C",
+          "text": "1. NBS, light; 2. HNO3"
+        },
+        {
+          "label": "D",
+          "text": "1. CH3COCl, AlCl3; 2. HNO3"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. KMnO4, H2O, heat (oxidize to benzoic acid); 2. HNO3, H2SO4 (nitration directed meta)",
+      "explanation": "Oxidizing methyl to carboxyl (-COOH) creates a meta-director prior to nitration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q048",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of p-chloroaniline",
+      "difficulty": "hard",
+      "question_type": "synthesis_sequence_selection",
+      "question": "Which sequence converts benzene into para-chloroaniline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. NH3, AlCl3; 2. Cl2, FeCl3"
+        },
+        {
+          "label": "B",
+          "text": "1. Cl2, FeCl3; 2. HNO3, H2SO4; 3. H2, Pd"
+        },
+        {
+          "label": "C",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3; 2. Cl2; 3. LiAlH4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl (reduce to aniline); 3. Ac2O (protect); 4. Cl2, FeCl3; 5. H3O+, heat (deprotect)",
+      "explanation": "Acetylation protects the amino group and tempers its reactivity, preventing polyhalogenation during chlorination.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q049",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of azo dye from benzene",
+      "difficulty": "hard",
+      "question_type": "retrosynthetic_disconnection",
+      "question": "Which multi-step route synthesizes p-(phenylazo)phenol from benzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)"
+        },
+        {
+          "label": "B",
+          "text": "1. Phenol, AlCl3; 2. N2 gas; 3. NaOH"
+        },
+        {
+          "label": "C",
+          "text": "1. H2SO4; 2. Aniline; 3. NaOH"
+        },
+        {
+          "label": "D",
+          "text": "1. Br2, FeBr3; 2. NaNH2; 3. Phenol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. HNO3, H2SO4; 2. Fe, HCl -> Aniline; 3. NaNO2, HCl (0°C) -> Diazonium salt; 4. Phenol, NaOH (azo coupling)",
+      "explanation": "Generating arenediazonium ion allows mild electrophilic aromatic coupling with electron-rich phenoxide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    },
+    {
+      "id": "ch16_q050",
+      "chapter": 16,
+      "chapter_title": "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+      "boss": "Polysubstituted Synthesis Sovereign",
+      "topic": "Synthesis of 1-bromo-3,5-dimethylbenzene",
+      "difficulty": "hard",
+      "question_type": "protecting_group_strategy",
+      "question": "Which sequence synthesizes 1-bromo-3,5-dimethylbenzene from mesitylene (1,3,5-trimethylbenzene)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. 3 CH3Cl, AlCl3; 2. NBS"
+        },
+        {
+          "label": "B",
+          "text": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation"
+        },
+        {
+          "label": "C",
+          "text": "1. Br2, FeBr3 directly on mesitylene"
+        },
+        {
+          "label": "D",
+          "text": "1. HNO3; 2. Br2; 3. H3PO2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. KMnO4 (oxidize 1 methyl to COOH); 2. Br2, FeBr3; 3. Decarboxylation",
+      "explanation": "Symmetric functionalization and directing group manipulation allows selective substitution on polymethylbenzenes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "polysubstituted-synthesis-sovereign.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Sigma-Complex Sentinel",
+    "Director Duelist",
+    "Friedel–Crafts Forgefiend",
+    "Benzyne & Meisenheimer Mimic",
+    "Polysubstituted Synthesis Sovereign"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Sigma-Complex Sentinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "sigma-complex-sentinel.png"
+        ]
+      },
+      {
+        "boss": "Director Duelist",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "director-duelist.png"
+        ]
+      },
+      {
+        "boss": "Friedel–Crafts Forgefiend",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "friedelcrafts-forgefiend.png"
+        ]
+      },
+      {
+        "boss": "Benzyne & Meisenheimer Mimic",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "benzyne--meisenheimer-mimic.png"
+        ]
+      },
+      {
+        "boss": "Polysubstituted Synthesis Sovereign",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "polysubstituted-synthesis-sovereign.png"
+        ]
+      }
+    ]
+  }
+}

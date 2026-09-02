@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 13,
+  "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+  "assigned_boss": "Chemical Shift Shield Sentinel",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch13_q001",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR chemical shift of aromatic protons",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In 1H NMR spectroscopy, where do benzene ring protons typically absorb?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 0.9 to 1.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current"
+        },
+        {
+          "label": "D",
+          "text": "δ 2.1 to 2.6 ppm"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current",
+      "explanation": "The induced magnetic field of circulating pi electrons strongly deshields aromatic protons outside the ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q002",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR ethyl group multiplicity",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What splitting pattern and integration ratio characterizes an isolated ethyl group (-CH2CH3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet (2H) and Triplet (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (6H) and Septet (1H)"
+        },
+        {
+          "label": "D",
+          "text": "Singlet (3H) and Singlet (2H)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Triplet (3H) and Quartet (2H)",
+      "explanation": "According to the n+1 rule, 3 methyl protons split CH2 into a quartet; 2 methylene protons split CH3 into a triplet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q003",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR isopropyl group multiplicity",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What splitting pattern in 1H NMR identifies an isopropyl group (-CH(CH3)2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (9H)"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (6H) and Septet (1H)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (3H) and Quartet (1H)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Doublet (6H) and Septet (1H)",
+      "explanation": "The single methine proton splits the 6 equivalent methyl hydrogens into a doublet; methyls split methine into a septet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q004",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR singlet of tert-butyl group",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "What signal in 1H NMR characterizes an isolated tert-butyl group (-C(CH3)3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 3-proton quartet"
+        },
+        {
+          "label": "B",
+          "text": "A 9-proton triplet"
+        },
+        {
+          "label": "C",
+          "text": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm"
+        },
+        {
+          "label": "D",
+          "text": "A 1-proton nonet"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm",
+      "explanation": "All 9 protons in a tert-butyl group are chemically equivalent with no neighboring protons, appearing as a 9H singlet.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q005",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR aldehyde proton chemical shift",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Where does an aldehyde formyl proton (R-CHO) appear in a 1H NMR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 4.5 to 6.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet"
+        },
+        {
+          "label": "C",
+          "text": "δ 1.0 to 2.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 12.0 to 14.0 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet",
+      "explanation": "Anisotropic deshielding and carbonyl electronegativity shift aldehyde protons far downfield.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q006",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "13C NMR signal count in symmetrical molecules",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How many signals appear in the broad-band decoupled 13C NMR spectrum of 1,4-dichlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 signal"
+        },
+        {
+          "label": "B",
+          "text": "6 signals"
+        },
+        {
+          "label": "C",
+          "text": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)"
+        },
+        {
+          "label": "D",
+          "text": "4 signals"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)",
+      "explanation": "Planes of symmetry make carbons equivalent: 2 identical quaternary carbons and 4 identical C-H carbons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q007",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "DEPT-135 interpretation for methylene carbons",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In a DEPT-135 13C NMR spectrum, how do methylene (-CH2-) carbons appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive signals pointing upward"
+        },
+        {
+          "label": "B",
+          "text": "Negative signals pointing downward below the baseline"
+        },
+        {
+          "label": "C",
+          "text": "Doublet peaks with coupling"
+        },
+        {
+          "label": "D",
+          "text": "No signals (completely absent)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Negative signals pointing downward below the baseline",
+      "explanation": "DEPT-135 selectively displays CH3 and CH carbons positive (up) and CH2 carbons negative (down).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q008",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "DEPT NMR quaternary carbon detection",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How can quaternary carbons (carbons with no attached hydrogens) be identified using DEPT NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)"
+        },
+        {
+          "label": "B",
+          "text": "They appear as quartets in DEPT-135"
+        },
+        {
+          "label": "C",
+          "text": "They appear as negative peaks in DEPT-90"
+        },
+        {
+          "label": "D",
+          "text": "They resonate above δ 250 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)",
+      "explanation": "DEPT polarization transfer requires attached hydrogens, leaving quaternary carbons silent.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q009",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR trans vs cis alkene coupling constants",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "How do coupling constants (J) distinguish trans-alkene protons from cis-alkene protons?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both have identical J = 7 Hz"
+        },
+        {
+          "label": "B",
+          "text": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)"
+        },
+        {
+          "label": "C",
+          "text": "trans-Alkenes have J = 2 Hz; cis-alkenes have J = 20 Hz"
+        },
+        {
+          "label": "D",
+          "text": "trans-Alkenes do not couple"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)",
+      "explanation": "Vicinal coupling across double bonds is strongly dependent on dihedral angle, being largest for trans coplanar protons.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q010",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Chemical Shift Shield Sentinel",
+      "topic": "1H NMR carboxylic acid proton signal",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What is the typical appearance and chemical shift of a carboxylic acid proton (R-COOH) in 1H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A triplet at δ 0.9 ppm"
+        },
+        {
+          "label": "B",
+          "text": "A very broad, downfield signal at δ 10.0 to 12.5 ppm"
+        },
+        {
+          "label": "C",
+          "text": "A sharp singlet at δ 2.1 ppm"
+        },
+        {
+          "label": "D",
+          "text": "A doublet at δ 7.2 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A very broad, downfield signal at δ 10.0 to 12.5 ppm",
+      "explanation": "Strong hydrogen bonding and electron withdrawal shift carboxylic acid protons to extreme downfield positions.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "chemical-shift-shield-sentinel.png"
+      ]
+    },
+    {
+      "id": "ch13_q011",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR isopropyl group multiplicity",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What splitting pattern in 1H NMR identifies an isopropyl group (-CH(CH3)2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (9H)"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (6H) and Septet (1H)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (3H) and Quartet (1H)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Doublet (6H) and Septet (1H)",
+      "explanation": "The single methine proton splits the 6 equivalent methyl hydrogens into a doublet; methyls split methine into a septet.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q012",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR singlet of tert-butyl group",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What signal in 1H NMR characterizes an isolated tert-butyl group (-C(CH3)3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm"
+        },
+        {
+          "label": "B",
+          "text": "A 9-proton triplet"
+        },
+        {
+          "label": "C",
+          "text": "A 3-proton quartet"
+        },
+        {
+          "label": "D",
+          "text": "A 1-proton nonet"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm",
+      "explanation": "All 9 protons in a tert-butyl group are chemically equivalent with no neighboring protons, appearing as a 9H singlet.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q013",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR aldehyde proton chemical shift",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Where does an aldehyde formyl proton (R-CHO) appear in a 1H NMR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 12.0 to 14.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 1.0 to 2.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "δ 4.5 to 6.5 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet",
+      "explanation": "Anisotropic deshielding and carbonyl electronegativity shift aldehyde protons far downfield.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q014",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "13C NMR signal count in symmetrical molecules",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "How many signals appear in the broad-band decoupled 13C NMR spectrum of 1,4-dichlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)"
+        },
+        {
+          "label": "B",
+          "text": "1 signal"
+        },
+        {
+          "label": "C",
+          "text": "4 signals"
+        },
+        {
+          "label": "D",
+          "text": "6 signals"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)",
+      "explanation": "Planes of symmetry make carbons equivalent: 2 identical quaternary carbons and 4 identical C-H carbons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q015",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "DEPT-135 interpretation for methylene carbons",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In a DEPT-135 13C NMR spectrum, how do methylene (-CH2-) carbons appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive signals pointing upward"
+        },
+        {
+          "label": "B",
+          "text": "Negative signals pointing downward below the baseline"
+        },
+        {
+          "label": "C",
+          "text": "No signals (completely absent)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet peaks with coupling"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Negative signals pointing downward below the baseline",
+      "explanation": "DEPT-135 selectively displays CH3 and CH carbons positive (up) and CH2 carbons negative (down).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q016",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "DEPT NMR quaternary carbon detection",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How can quaternary carbons (carbons with no attached hydrogens) be identified using DEPT NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They appear as quartets in DEPT-135"
+        },
+        {
+          "label": "B",
+          "text": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)"
+        },
+        {
+          "label": "C",
+          "text": "They appear as negative peaks in DEPT-90"
+        },
+        {
+          "label": "D",
+          "text": "They resonate above δ 250 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)",
+      "explanation": "DEPT polarization transfer requires attached hydrogens, leaving quaternary carbons silent.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q017",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR trans vs cis alkene coupling constants",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How do coupling constants (J) distinguish trans-alkene protons from cis-alkene protons?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both have identical J = 7 Hz"
+        },
+        {
+          "label": "B",
+          "text": "trans-Alkenes have J = 2 Hz; cis-alkenes have J = 20 Hz"
+        },
+        {
+          "label": "C",
+          "text": "trans-Alkenes do not couple"
+        },
+        {
+          "label": "D",
+          "text": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)",
+      "explanation": "Vicinal coupling across double bonds is strongly dependent on dihedral angle, being largest for trans coplanar protons.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q018",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR carboxylic acid proton signal",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "What is the typical appearance and chemical shift of a carboxylic acid proton (R-COOH) in 1H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A very broad, downfield signal at δ 10.0 to 12.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "A doublet at δ 7.2 ppm"
+        },
+        {
+          "label": "C",
+          "text": "A sharp singlet at δ 2.1 ppm"
+        },
+        {
+          "label": "D",
+          "text": "A triplet at δ 0.9 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A very broad, downfield signal at δ 10.0 to 12.5 ppm",
+      "explanation": "Strong hydrogen bonding and electron withdrawal shift carboxylic acid protons to extreme downfield positions.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q019",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR chemical shift of aromatic protons",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In 1H NMR spectroscopy, where do benzene ring protons typically absorb?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 2.1 to 2.6 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "δ 0.9 to 1.5 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current",
+      "explanation": "The induced magnetic field of circulating pi electrons strongly deshields aromatic protons outside the ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q020",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Multiplicity Mage",
+      "topic": "1H NMR ethyl group multiplicity",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What splitting pattern and integration ratio characterizes an isolated ethyl group (-CH2CH3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (6H) and Septet (1H)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet (2H) and Triplet (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Singlet (3H) and Singlet (2H)"
+        },
+        {
+          "label": "D",
+          "text": "Triplet (3H) and Quartet (2H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Triplet (3H) and Quartet (2H)",
+      "explanation": "According to the n+1 rule, 3 methyl protons split CH2 into a quartet; 2 methylene protons split CH3 into a triplet.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "multiplicity-mage.png"
+      ]
+    },
+    {
+      "id": "ch13_q021",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR aldehyde proton chemical shift",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "Where does an aldehyde formyl proton (R-CHO) appear in a 1H NMR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet"
+        },
+        {
+          "label": "B",
+          "text": "δ 4.5 to 6.5 ppm"
+        },
+        {
+          "label": "C",
+          "text": "δ 1.0 to 2.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 12.0 to 14.0 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet",
+      "explanation": "Anisotropic deshielding and carbonyl electronegativity shift aldehyde protons far downfield.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q022",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "13C NMR signal count in symmetrical molecules",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How many signals appear in the broad-band decoupled 13C NMR spectrum of 1,4-dichlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 signals"
+        },
+        {
+          "label": "B",
+          "text": "1 signal"
+        },
+        {
+          "label": "C",
+          "text": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)"
+        },
+        {
+          "label": "D",
+          "text": "6 signals"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)",
+      "explanation": "Planes of symmetry make carbons equivalent: 2 identical quaternary carbons and 4 identical C-H carbons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q023",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "DEPT-135 interpretation for methylene carbons",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In a DEPT-135 13C NMR spectrum, how do methylene (-CH2-) carbons appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Negative signals pointing downward below the baseline"
+        },
+        {
+          "label": "B",
+          "text": "No signals (completely absent)"
+        },
+        {
+          "label": "C",
+          "text": "Positive signals pointing upward"
+        },
+        {
+          "label": "D",
+          "text": "Doublet peaks with coupling"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Negative signals pointing downward below the baseline",
+      "explanation": "DEPT-135 selectively displays CH3 and CH carbons positive (up) and CH2 carbons negative (down).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q024",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "DEPT NMR quaternary carbon detection",
+      "difficulty": "easy",
+      "question_type": "dept_carbon_assignment",
+      "question": "How can quaternary carbons (carbons with no attached hydrogens) be identified using DEPT NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They appear as negative peaks in DEPT-90"
+        },
+        {
+          "label": "B",
+          "text": "They resonate above δ 250 ppm"
+        },
+        {
+          "label": "C",
+          "text": "They appear as quartets in DEPT-135"
+        },
+        {
+          "label": "D",
+          "text": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)",
+      "explanation": "DEPT polarization transfer requires attached hydrogens, leaving quaternary carbons silent.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q025",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR trans vs cis alkene coupling constants",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How do coupling constants (J) distinguish trans-alkene protons from cis-alkene protons?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-Alkenes have J = 2 Hz; cis-alkenes have J = 20 Hz"
+        },
+        {
+          "label": "B",
+          "text": "Both have identical J = 7 Hz"
+        },
+        {
+          "label": "C",
+          "text": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)"
+        },
+        {
+          "label": "D",
+          "text": "trans-Alkenes do not couple"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)",
+      "explanation": "Vicinal coupling across double bonds is strongly dependent on dihedral angle, being largest for trans coplanar protons.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q026",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR carboxylic acid proton signal",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What is the typical appearance and chemical shift of a carboxylic acid proton (R-COOH) in 1H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A doublet at δ 7.2 ppm"
+        },
+        {
+          "label": "B",
+          "text": "A sharp singlet at δ 2.1 ppm"
+        },
+        {
+          "label": "C",
+          "text": "A triplet at δ 0.9 ppm"
+        },
+        {
+          "label": "D",
+          "text": "A very broad, downfield signal at δ 10.0 to 12.5 ppm"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A very broad, downfield signal at δ 10.0 to 12.5 ppm",
+      "explanation": "Strong hydrogen bonding and electron withdrawal shift carboxylic acid protons to extreme downfield positions.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q027",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR chemical shift of aromatic protons",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "In 1H NMR spectroscopy, where do benzene ring protons typically absorb?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 0.9 to 1.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current"
+        },
+        {
+          "label": "C",
+          "text": "δ 2.1 to 2.6 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 9.0 to 10.0 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current",
+      "explanation": "The induced magnetic field of circulating pi electrons strongly deshields aromatic protons outside the ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q028",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR ethyl group multiplicity",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What splitting pattern and integration ratio characterizes an isolated ethyl group (-CH2CH3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (3H) and Singlet (2H)"
+        },
+        {
+          "label": "B",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (2H) and Triplet (3H)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (6H) and Septet (1H)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Triplet (3H) and Quartet (2H)",
+      "explanation": "According to the n+1 rule, 3 methyl protons split CH2 into a quartet; 2 methylene protons split CH3 into a triplet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q029",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR isopropyl group multiplicity",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What splitting pattern in 1H NMR identifies an isopropyl group (-CH(CH3)2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Singlet (9H)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet (3H) and Quartet (1H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (6H) and Septet (1H)"
+        },
+        {
+          "label": "D",
+          "text": "Triplet (3H) and Quartet (2H)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Doublet (6H) and Septet (1H)",
+      "explanation": "The single methine proton splits the 6 equivalent methyl hydrogens into a doublet; methyls split methine into a septet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q030",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "J-Coupling Juggernaut",
+      "topic": "1H NMR singlet of tert-butyl group",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "What signal in 1H NMR characterizes an isolated tert-butyl group (-C(CH3)3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 9-proton triplet"
+        },
+        {
+          "label": "B",
+          "text": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm"
+        },
+        {
+          "label": "C",
+          "text": "A 1-proton nonet"
+        },
+        {
+          "label": "D",
+          "text": "A 3-proton quartet"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm",
+      "explanation": "All 9 protons in a tert-butyl group are chemically equivalent with no neighboring protons, appearing as a 9H singlet.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "j-coupling-juggernaut.png"
+      ]
+    },
+    {
+      "id": "ch13_q031",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "DEPT-135 interpretation for methylene carbons",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In a DEPT-135 13C NMR spectrum, how do methylene (-CH2-) carbons appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No signals (completely absent)"
+        },
+        {
+          "label": "B",
+          "text": "Negative signals pointing downward below the baseline"
+        },
+        {
+          "label": "C",
+          "text": "Doublet peaks with coupling"
+        },
+        {
+          "label": "D",
+          "text": "Positive signals pointing upward"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Negative signals pointing downward below the baseline",
+      "explanation": "DEPT-135 selectively displays CH3 and CH carbons positive (up) and CH2 carbons negative (down).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q032",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "DEPT NMR quaternary carbon detection",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How can quaternary carbons (carbons with no attached hydrogens) be identified using DEPT NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)"
+        },
+        {
+          "label": "B",
+          "text": "They resonate above δ 250 ppm"
+        },
+        {
+          "label": "C",
+          "text": "They appear as quartets in DEPT-135"
+        },
+        {
+          "label": "D",
+          "text": "They appear as negative peaks in DEPT-90"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)",
+      "explanation": "DEPT polarization transfer requires attached hydrogens, leaving quaternary carbons silent.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q033",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR trans vs cis alkene coupling constants",
+      "difficulty": "easy",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "How do coupling constants (J) distinguish trans-alkene protons from cis-alkene protons?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-Alkenes do not couple"
+        },
+        {
+          "label": "B",
+          "text": "Both have identical J = 7 Hz"
+        },
+        {
+          "label": "C",
+          "text": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)"
+        },
+        {
+          "label": "D",
+          "text": "trans-Alkenes have J = 2 Hz; cis-alkenes have J = 20 Hz"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)",
+      "explanation": "Vicinal coupling across double bonds is strongly dependent on dihedral angle, being largest for trans coplanar protons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q034",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR carboxylic acid proton signal",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What is the typical appearance and chemical shift of a carboxylic acid proton (R-COOH) in 1H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A very broad, downfield signal at δ 10.0 to 12.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "A triplet at δ 0.9 ppm"
+        },
+        {
+          "label": "C",
+          "text": "A doublet at δ 7.2 ppm"
+        },
+        {
+          "label": "D",
+          "text": "A sharp singlet at δ 2.1 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "A very broad, downfield signal at δ 10.0 to 12.5 ppm",
+      "explanation": "Strong hydrogen bonding and electron withdrawal shift carboxylic acid protons to extreme downfield positions.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q035",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR chemical shift of aromatic protons",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "In 1H NMR spectroscopy, where do benzene ring protons typically absorb?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 2.1 to 2.6 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current"
+        },
+        {
+          "label": "D",
+          "text": "δ 0.9 to 1.5 ppm"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current",
+      "explanation": "The induced magnetic field of circulating pi electrons strongly deshields aromatic protons outside the ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q036",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR ethyl group multiplicity",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "What splitting pattern and integration ratio characterizes an isolated ethyl group (-CH2CH3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "B",
+          "text": "Doublet (2H) and Triplet (3H)"
+        },
+        {
+          "label": "C",
+          "text": "Singlet (3H) and Singlet (2H)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (6H) and Septet (1H)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Triplet (3H) and Quartet (2H)",
+      "explanation": "According to the n+1 rule, 3 methyl protons split CH2 into a quartet; 2 methylene protons split CH3 into a triplet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q037",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR isopropyl group multiplicity",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What splitting pattern in 1H NMR identifies an isopropyl group (-CH(CH3)2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (3H) and Quartet (1H)"
+        },
+        {
+          "label": "B",
+          "text": "Singlet (9H)"
+        },
+        {
+          "label": "C",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (6H) and Septet (1H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Doublet (6H) and Septet (1H)",
+      "explanation": "The single methine proton splits the 6 equivalent methyl hydrogens into a doublet; methyls split methine into a septet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q038",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR singlet of tert-butyl group",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What signal in 1H NMR characterizes an isolated tert-butyl group (-C(CH3)3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 1-proton nonet"
+        },
+        {
+          "label": "B",
+          "text": "A 9-proton triplet"
+        },
+        {
+          "label": "C",
+          "text": "A 3-proton quartet"
+        },
+        {
+          "label": "D",
+          "text": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm",
+      "explanation": "All 9 protons in a tert-butyl group are chemically equivalent with no neighboring protons, appearing as a 9H singlet.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q039",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "1H NMR aldehyde proton chemical shift",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "Where does an aldehyde formyl proton (R-CHO) appear in a 1H NMR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 1.0 to 2.0 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet"
+        },
+        {
+          "label": "C",
+          "text": "δ 4.5 to 6.5 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 12.0 to 14.0 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet",
+      "explanation": "Anisotropic deshielding and carbonyl electronegativity shift aldehyde protons far downfield.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q040",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "DEPT Carbon Cartographer",
+      "topic": "13C NMR signal count in symmetrical molecules",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How many signals appear in the broad-band decoupled 13C NMR spectrum of 1,4-dichlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 signal"
+        },
+        {
+          "label": "B",
+          "text": "6 signals"
+        },
+        {
+          "label": "C",
+          "text": "4 signals"
+        },
+        {
+          "label": "D",
+          "text": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)",
+      "explanation": "Planes of symmetry make carbons equivalent: 2 identical quaternary carbons and 4 identical C-H carbons.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "dept-carbon-cartographer.png"
+      ]
+    },
+    {
+      "id": "ch13_q041",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR trans vs cis alkene coupling constants",
+      "difficulty": "easy",
+      "question_type": "ir_diagnostic_peak",
+      "question": "How do coupling constants (J) distinguish trans-alkene protons from cis-alkene protons?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-Alkenes have J = 2 Hz; cis-alkenes have J = 20 Hz"
+        },
+        {
+          "label": "B",
+          "text": "trans-Alkenes do not couple"
+        },
+        {
+          "label": "C",
+          "text": "Both have identical J = 7 Hz"
+        },
+        {
+          "label": "D",
+          "text": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "trans-Alkenes have large coupling constants (J = 14-18 Hz); cis-alkenes have smaller constants (J = 6-12 Hz)",
+      "explanation": "Vicinal coupling across double bonds is strongly dependent on dihedral angle, being largest for trans coplanar protons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q042",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR carboxylic acid proton signal",
+      "difficulty": "easy",
+      "question_type": "nmr_splitting_prediction",
+      "question": "What is the typical appearance and chemical shift of a carboxylic acid proton (R-COOH) in 1H NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A triplet at δ 0.9 ppm"
+        },
+        {
+          "label": "B",
+          "text": "A very broad, downfield signal at δ 10.0 to 12.5 ppm"
+        },
+        {
+          "label": "C",
+          "text": "A sharp singlet at δ 2.1 ppm"
+        },
+        {
+          "label": "D",
+          "text": "A doublet at δ 7.2 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "A very broad, downfield signal at δ 10.0 to 12.5 ppm",
+      "explanation": "Strong hydrogen bonding and electron withdrawal shift carboxylic acid protons to extreme downfield positions.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q043",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR chemical shift of aromatic protons",
+      "difficulty": "medium",
+      "question_type": "nmr_splitting_prediction",
+      "question": "In 1H NMR spectroscopy, where do benzene ring protons typically absorb?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm"
+        },
+        {
+          "label": "C",
+          "text": "δ 0.9 to 1.5 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 2.1 to 2.6 ppm"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "δ 6.5 to 8.5 ppm due to magnetic anisotropy from the aromatic ring current",
+      "explanation": "The induced magnetic field of circulating pi electrons strongly deshields aromatic protons outside the ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q044",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR ethyl group multiplicity",
+      "difficulty": "medium",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "What splitting pattern and integration ratio characterizes an isolated ethyl group (-CH2CH3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet (6H) and Septet (1H)"
+        },
+        {
+          "label": "B",
+          "text": "Singlet (3H) and Singlet (2H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (2H) and Triplet (3H)"
+        },
+        {
+          "label": "D",
+          "text": "Triplet (3H) and Quartet (2H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Triplet (3H) and Quartet (2H)",
+      "explanation": "According to the n+1 rule, 3 methyl protons split CH2 into a quartet; 2 methylene protons split CH3 into a triplet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q045",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR isopropyl group multiplicity",
+      "difficulty": "medium",
+      "question_type": "dept_carbon_assignment",
+      "question": "What splitting pattern in 1H NMR identifies an isopropyl group (-CH(CH3)2)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triplet (3H) and Quartet (2H)"
+        },
+        {
+          "label": "B",
+          "text": "Singlet (9H)"
+        },
+        {
+          "label": "C",
+          "text": "Doublet (3H) and Quartet (1H)"
+        },
+        {
+          "label": "D",
+          "text": "Doublet (6H) and Septet (1H)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Doublet (6H) and Septet (1H)",
+      "explanation": "The single methine proton splits the 6 equivalent methyl hydrogens into a doublet; methyls split methine into a septet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q046",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR singlet of tert-butyl group",
+      "difficulty": "medium",
+      "question_type": "ir_diagnostic_peak",
+      "question": "What signal in 1H NMR characterizes an isolated tert-butyl group (-C(CH3)3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 1-proton nonet"
+        },
+        {
+          "label": "B",
+          "text": "A 3-proton quartet"
+        },
+        {
+          "label": "C",
+          "text": "A 9-proton triplet"
+        },
+        {
+          "label": "D",
+          "text": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "A sharp 9-proton singlet near δ 0.9 to 1.3 ppm",
+      "explanation": "All 9 protons in a tert-butyl group are chemically equivalent with no neighboring protons, appearing as a 9H singlet.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q047",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "1H NMR aldehyde proton chemical shift",
+      "difficulty": "hard",
+      "question_type": "mass_spec_isotope_fragment",
+      "question": "Where does an aldehyde formyl proton (R-CHO) appear in a 1H NMR spectrum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "δ 4.5 to 6.5 ppm"
+        },
+        {
+          "label": "B",
+          "text": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet"
+        },
+        {
+          "label": "C",
+          "text": "δ 1.0 to 2.0 ppm"
+        },
+        {
+          "label": "D",
+          "text": "δ 12.0 to 14.0 ppm"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "δ 9.0 to 10.0 ppm as a distinctive downfield singlet/doublet",
+      "explanation": "Anisotropic deshielding and carbonyl electronegativity shift aldehyde protons far downfield.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q048",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "13C NMR signal count in symmetrical molecules",
+      "difficulty": "hard",
+      "question_type": "dept_carbon_assignment",
+      "question": "How many signals appear in the broad-band decoupled 13C NMR spectrum of 1,4-dichlorobenzene?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 signal"
+        },
+        {
+          "label": "B",
+          "text": "6 signals"
+        },
+        {
+          "label": "C",
+          "text": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)"
+        },
+        {
+          "label": "D",
+          "text": "4 signals"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2 signals (1 for the two C-Cl carbons, 1 for the four C-H carbons)",
+      "explanation": "Planes of symmetry make carbons equivalent: 2 identical quaternary carbons and 4 identical C-H carbons.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q049",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "DEPT-135 interpretation for methylene carbons",
+      "difficulty": "hard",
+      "question_type": "ir_diagnostic_peak",
+      "question": "In a DEPT-135 13C NMR spectrum, how do methylene (-CH2-) carbons appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doublet peaks with coupling"
+        },
+        {
+          "label": "B",
+          "text": "Positive signals pointing upward"
+        },
+        {
+          "label": "C",
+          "text": "No signals (completely absent)"
+        },
+        {
+          "label": "D",
+          "text": "Negative signals pointing downward below the baseline"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Negative signals pointing downward below the baseline",
+      "explanation": "DEPT-135 selectively displays CH3 and CH carbons positive (up) and CH2 carbons negative (down).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    },
+    {
+      "id": "ch13_q050",
+      "chapter": 13,
+      "chapter_title": "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+      "boss": "Supreme NMR Oracle",
+      "topic": "DEPT NMR quaternary carbon detection",
+      "difficulty": "hard",
+      "question_type": "nmr_splitting_prediction",
+      "question": "How can quaternary carbons (carbons with no attached hydrogens) be identified using DEPT NMR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They resonate above δ 250 ppm"
+        },
+        {
+          "label": "B",
+          "text": "They appear as negative peaks in DEPT-90"
+        },
+        {
+          "label": "C",
+          "text": "They appear as quartets in DEPT-135"
+        },
+        {
+          "label": "D",
+          "text": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "They appear in normal 13C broad-band decoupled spectra but disappear in all DEPT spectra (DEPT-45, 90, 135)",
+      "explanation": "DEPT polarization transfer requires attached hydrogens, leaving quaternary carbons silent.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "supreme-nmr-oracle.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Chemical Shift Shield Sentinel",
+    "Multiplicity Mage",
+    "J-Coupling Juggernaut",
+    "DEPT Carbon Cartographer",
+    "Supreme NMR Oracle"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Chemical Shift Shield Sentinel",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "chemical-shift-shield-sentinel.png"
+        ]
+      },
+      {
+        "boss": "Multiplicity Mage",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "multiplicity-mage.png"
+        ]
+      },
+      {
+        "boss": "J-Coupling Juggernaut",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "j-coupling-juggernaut.png"
+        ]
+      },
+      {
+        "boss": "DEPT Carbon Cartographer",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "dept-carbon-cartographer.png"
+        ]
+      },
+      {
+        "boss": "Supreme NMR Oracle",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "supreme-nmr-oracle.png"
+        ]
+      }
+    ]
+  }
+}

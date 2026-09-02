@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 3,
+  "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+  "assigned_boss": "Functional Group Goblin",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch03_q001",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Complete combustion of alkane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propane (C3H8) is treated with 5 equivalents O2 / flame?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "C",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "D",
+          "text": "Staggered ethane (lowest energy)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "3 CO2 + 4 H2O",
+      "explanation": "Treating Propane (C3H8) with 5 equivalents O2 / flame yields 3 CO2 + 4 H2O. Rationale: Complete oxidation of alkane hydrocarbons under excess oxygen yields carbon dioxide and water.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q002",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Free radical monochlorination of ethane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Ethane (CH3CH3) into Chloroethane (CH3CH2Cl) + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl2 / hν (light)"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / hν (light)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Cl2 / hν (light)",
+      "explanation": "To convert Ethane (CH3CH3) into Chloroethane (CH3CH2Cl) + HCl, the appropriate reagent is Cl2 / hν (light). Rationale: Light initiates homolytic Cl-Cl cleavage, triggering a free-radical chain substitution.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q003",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Selective bromination of propane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propane (CH3CH2CH3) is treated with Br2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "B",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Bromopropane (major) + HBr",
+      "explanation": "Treating Propane (CH3CH2CH3) with Br2 / hν (light) yields 2-Bromopropane (major) + HBr. Rationale: Bromine radical selectively abstracts the weaker secondary C-H bond to generate the more stable 2° radical.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q004",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Selective bromination of isobutane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Methylpropane ((CH3)3CH) into 2-Bromo-2-methylpropane (major, >99%) + HBr?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "D",
+          "text": "5 equivalents O2 / flame"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 / hν (light)",
+      "explanation": "To convert 2-Methylpropane ((CH3)3CH) into 2-Bromo-2-methylpropane (major, >99%) + HBr, the appropriate reagent is Br2 / hν (light). Rationale: High selectivity of bromine leads almost exclusively to tertiary C-H abstraction forming 3° alkyl bromide.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q005",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Thermal cracking of alkane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Decane (C10H22) is treated with High heat / silica-alumina catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "B",
+          "text": "Staggered ethane (lowest energy)"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "D",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pentane (C5H12) + 1-Pentene (C5H10)",
+      "explanation": "Treating Decane (C10H22) with High heat / silica-alumina catalyst yields Pentane (C5H12) + 1-Pentene (C5H10). Rationale: Thermal cracking cleaves C-C bonds homolytically to yield smaller alkane and alkene fuel fragments.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q006",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Ethane conformational transition",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Eclipsed ethane into Staggered ethane (lowest energy)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "B",
+          "text": "High heat / silica-alumina catalyst"
+        },
+        {
+          "label": "C",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "D",
+          "text": "Cl2 / hν (light)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal rotation at 25°C",
+      "explanation": "To convert Eclipsed ethane into Staggered ethane (lowest energy), the appropriate reagent is Thermal rotation at 25°C. Rationale: Overcoming the 12 kJ/mol torsional strain barrier yields the stable staggered conformation.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q007",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Butane conformational equilibrium",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with C2-C3 bond rotation to yield Anti-butane (lowest energy conformer) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Gauche-butane"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylpropane ((CH3)3CH)"
+        },
+        {
+          "label": "C",
+          "text": "Hexane (C6H14)"
+        },
+        {
+          "label": "D",
+          "text": "Ethane (CH3CH3)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Gauche-butane",
+      "explanation": "Gauche-butane reacts with C2-C3 bond rotation to yield Anti-butane (lowest energy conformer). Rationale: The anti conformation minimizes steric clash between terminal methyl groups at 180° dihedral angle.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q008",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Catalytic dehydrogenation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethane (CH3CH3) is treated with Pt catalyst / 500°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene (H2C=CH2) + H2"
+        },
+        {
+          "label": "C",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane (major) + HBr"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethylene (H2C=CH2) + H2",
+      "explanation": "Treating Ethane (CH3CH3) with Pt catalyst / 500°C yields Ethylene (H2C=CH2) + H2. Rationale: High-temperature catalytic elimination of hydrogen converts saturated alkanes to alkenes.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q009",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Radical chlorination of isobutane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Cl2 / light to yield 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane (CH3CH3)"
+        },
+        {
+          "label": "B",
+          "text": "Gauche-butane"
+        },
+        {
+          "label": "C",
+          "text": "Eclipsed ethane"
+        },
+        {
+          "label": "D",
+          "text": "2-Methylpropane ((CH3)3CH)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2-Methylpropane ((CH3)3CH)",
+      "explanation": "2-Methylpropane ((CH3)3CH) reacts with Cl2 / light to yield 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%). Rationale: Chlorine's lower selectivity results in substantial primary substitution due to 9 primary vs 1 tertiary hydrogens.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q010",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Functional Group Goblin",
+      "topic": "Pyrolysis of hexane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Hexane (C6H14) is treated with Thermal cracking (700°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "B",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethylene + Propene + Methane mixture",
+      "explanation": "Treating Hexane (C6H14) with Thermal cracking (700°C) yields Ethylene + Propene + Methane mixture. Rationale: High-temperature pyrolysis fragments the carbon skeleton into commercial low-molecular-weight olefins.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "functional-group-goblin.png"
+      ]
+    },
+    {
+      "id": "ch03_q011",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Selective bromination of propane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propane (CH3CH2CH3) is treated with Br2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene (H2C=CH2) + H2"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Bromopropane (major) + HBr",
+      "explanation": "Treating Propane (CH3CH2CH3) with Br2 / hν (light) yields 2-Bromopropane (major) + HBr. Rationale: Bromine radical selectively abstracts the weaker secondary C-H bond to generate the more stable 2° radical.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q012",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Selective bromination of isobutane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Methylpropane ((CH3)3CH) into 2-Bromo-2-methylpropane (major, >99%) + HBr?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "C2-C3 bond rotation"
+        },
+        {
+          "label": "D",
+          "text": "5 equivalents O2 / flame"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 / hν (light)",
+      "explanation": "To convert 2-Methylpropane ((CH3)3CH) into 2-Bromo-2-methylpropane (major, >99%) + HBr, the appropriate reagent is Br2 / hν (light). Rationale: High selectivity of bromine leads almost exclusively to tertiary C-H abstraction forming 3° alkyl bromide.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q013",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Thermal cracking of alkane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Decane (C10H22) is treated with High heat / silica-alumina catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pentane (C5H12) + 1-Pentene (C5H10)",
+      "explanation": "Treating Decane (C10H22) with High heat / silica-alumina catalyst yields Pentane (C5H12) + 1-Pentene (C5H10). Rationale: Thermal cracking cleaves C-C bonds homolytically to yield smaller alkane and alkene fuel fragments.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q014",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Ethane conformational transition",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Eclipsed ethane into Staggered ethane (lowest energy)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "C2-C3 bond rotation"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / hν (light)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal rotation at 25°C",
+      "explanation": "To convert Eclipsed ethane into Staggered ethane (lowest energy), the appropriate reagent is Thermal rotation at 25°C. Rationale: Overcoming the 12 kJ/mol torsional strain barrier yields the stable staggered conformation.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q015",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Butane conformational equilibrium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Gauche-butane is treated with C2-C3 bond rotation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        },
+        {
+          "label": "C",
+          "text": "Staggered ethane (lowest energy)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane (major) + HBr"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Anti-butane (lowest energy conformer)",
+      "explanation": "Treating Gauche-butane with C2-C3 bond rotation yields Anti-butane (lowest energy conformer). Rationale: The anti conformation minimizes steric clash between terminal methyl groups at 180° dihedral angle.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q016",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Catalytic dehydrogenation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Pt catalyst / 500°C to yield Ethylene (H2C=CH2) + H2 as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane (CH3CH3)"
+        },
+        {
+          "label": "B",
+          "text": "Gauche-butane"
+        },
+        {
+          "label": "C",
+          "text": "Propane (CH3CH2CH3)"
+        },
+        {
+          "label": "D",
+          "text": "Propane (C3H8)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethane (CH3CH3)",
+      "explanation": "Ethane (CH3CH3) reacts with Pt catalyst / 500°C to yield Ethylene (H2C=CH2) + H2. Rationale: High-temperature catalytic elimination of hydrogen converts saturated alkanes to alkenes.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q017",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Radical chlorination of isobutane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylpropane ((CH3)3CH) is treated with Cl2 / light?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "B",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "C",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane (major) + HBr"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)",
+      "explanation": "Treating 2-Methylpropane ((CH3)3CH) with Cl2 / light yields 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%). Rationale: Chlorine's lower selectivity results in substantial primary substitution due to 9 primary vs 1 tertiary hydrogens.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q018",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Pyrolysis of hexane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Thermal cracking (700°C) to yield Ethylene + Propene + Methane mixture as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propane (CH3CH2CH3)"
+        },
+        {
+          "label": "B",
+          "text": "Hexane (C6H14)"
+        },
+        {
+          "label": "C",
+          "text": "2-Methylpropane ((CH3)3CH)"
+        },
+        {
+          "label": "D",
+          "text": "Propane (C3H8)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Hexane (C6H14)",
+      "explanation": "Hexane (C6H14) reacts with Thermal cracking (700°C) to yield Ethylene + Propene + Methane mixture. Rationale: High-temperature pyrolysis fragments the carbon skeleton into commercial low-molecular-weight olefins.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q019",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Complete combustion of alkane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propane (C3H8) is treated with 5 equivalents O2 / flame?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "B",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "C",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "D",
+          "text": "Ethylene + Propene + Methane mixture"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "3 CO2 + 4 H2O",
+      "explanation": "Treating Propane (C3H8) with 5 equivalents O2 / flame yields 3 CO2 + 4 H2O. Rationale: Complete oxidation of alkane hydrocarbons under excess oxygen yields carbon dioxide and water.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q020",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "IUPAC Nomenclature Knight",
+      "topic": "Free radical monochlorination of ethane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Ethane (CH3CH3) into Chloroethane (CH3CH2Cl) + HCl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "B",
+          "text": "High heat / silica-alumina catalyst"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / hν (light)"
+        },
+        {
+          "label": "D",
+          "text": "5 equivalents O2 / flame"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cl2 / hν (light)",
+      "explanation": "To convert Ethane (CH3CH3) into Chloroethane (CH3CH2Cl) + HCl, the appropriate reagent is Cl2 / hν (light). Rationale: Light initiates homolytic Cl-Cl cleavage, triggering a free-radical chain substitution.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "iupac-nomenclature-knight.png"
+      ]
+    },
+    {
+      "id": "ch03_q021",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Thermal cracking of alkane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Decane (C10H22) is treated with High heat / silica-alumina catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "B",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "C",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "D",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Pentane (C5H12) + 1-Pentene (C5H10)",
+      "explanation": "Treating Decane (C10H22) with High heat / silica-alumina catalyst yields Pentane (C5H12) + 1-Pentene (C5H10). Rationale: Thermal cracking cleaves C-C bonds homolytically to yield smaller alkane and alkene fuel fragments.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q022",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Ethane conformational transition",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Eclipsed ethane into Staggered ethane (lowest energy)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "D",
+          "text": "5 equivalents O2 / flame"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Thermal rotation at 25°C",
+      "explanation": "To convert Eclipsed ethane into Staggered ethane (lowest energy), the appropriate reagent is Thermal rotation at 25°C. Rationale: Overcoming the 12 kJ/mol torsional strain barrier yields the stable staggered conformation.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q023",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Butane conformational equilibrium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Gauche-butane is treated with C2-C3 bond rotation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "B",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "C",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "D",
+          "text": "Staggered ethane (lowest energy)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Anti-butane (lowest energy conformer)",
+      "explanation": "Treating Gauche-butane with C2-C3 bond rotation yields Anti-butane (lowest energy conformer). Rationale: The anti conformation minimizes steric clash between terminal methyl groups at 180° dihedral angle.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q024",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Catalytic dehydrogenation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Ethane (CH3CH3) into Ethylene (H2C=CH2) + H2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl2 / light"
+        },
+        {
+          "label": "B",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "C",
+          "text": "High heat / silica-alumina catalyst"
+        },
+        {
+          "label": "D",
+          "text": "Thermal cracking (700°C)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Pt catalyst / 500°C",
+      "explanation": "To convert Ethane (CH3CH3) into Ethylene (H2C=CH2) + H2, the appropriate reagent is Pt catalyst / 500°C. Rationale: High-temperature catalytic elimination of hydrogen converts saturated alkanes to alkenes.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q025",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Radical chlorination of isobutane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Cl2 / light to yield 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methylpropane ((CH3)3CH)"
+        },
+        {
+          "label": "B",
+          "text": "Eclipsed ethane"
+        },
+        {
+          "label": "C",
+          "text": "Ethane (CH3CH3)"
+        },
+        {
+          "label": "D",
+          "text": "2-Methylpropane ((CH3)3CH)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Methylpropane ((CH3)3CH)",
+      "explanation": "2-Methylpropane ((CH3)3CH) reacts with Cl2 / light to yield 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%). Rationale: Chlorine's lower selectivity results in substantial primary substitution due to 9 primary vs 1 tertiary hydrogens.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q026",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Pyrolysis of hexane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Hexane (C6H14) is treated with Thermal cracking (700°C)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Staggered ethane (lowest energy)"
+        },
+        {
+          "label": "B",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "C",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "D",
+          "text": "Ethylene (H2C=CH2) + H2"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethylene + Propene + Methane mixture",
+      "explanation": "Treating Hexane (C6H14) with Thermal cracking (700°C) yields Ethylene + Propene + Methane mixture. Rationale: High-temperature pyrolysis fragments the carbon skeleton into commercial low-molecular-weight olefins.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q027",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Complete combustion of alkane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 5 equivalents O2 / flame to yield 3 CO2 + 4 H2O as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propane (C3H8)"
+        },
+        {
+          "label": "B",
+          "text": "Hexane (C6H14)"
+        },
+        {
+          "label": "C",
+          "text": "Ethane (CH3CH3)"
+        },
+        {
+          "label": "D",
+          "text": "Gauche-butane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Propane (C3H8)",
+      "explanation": "Propane (C3H8) reacts with 5 equivalents O2 / flame to yield 3 CO2 + 4 H2O. Rationale: Complete oxidation of alkane hydrocarbons under excess oxygen yields carbon dioxide and water.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q028",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Free radical monochlorination of ethane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethane (CH3CH3) is treated with Cl2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "B",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "C",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "D",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Chloroethane (CH3CH2Cl) + HCl",
+      "explanation": "Treating Ethane (CH3CH3) with Cl2 / hν (light) yields Chloroethane (CH3CH2Cl) + HCl. Rationale: Light initiates homolytic Cl-Cl cleavage, triggering a free-radical chain substitution.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q029",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Selective bromination of propane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Propane (CH3CH2CH3) into 2-Bromopropane (major) + HBr?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / light"
+        },
+        {
+          "label": "D",
+          "text": "Thermal cracking (700°C)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 / hν (light)",
+      "explanation": "To convert Propane (CH3CH2CH3) into 2-Bromopropane (major) + HBr, the appropriate reagent is Br2 / hν (light). Rationale: Bromine radical selectively abstracts the weaker secondary C-H bond to generate the more stable 2° radical.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q030",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Newman Projection Phantom",
+      "topic": "Selective bromination of isobutane",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylpropane ((CH3)3CH) is treated with Br2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene (H2C=CH2) + H2"
+        },
+        {
+          "label": "B",
+          "text": "Staggered ethane (lowest energy)"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2-Bromo-2-methylpropane (major, >99%) + HBr",
+      "explanation": "Treating 2-Methylpropane ((CH3)3CH) with Br2 / hν (light) yields 2-Bromo-2-methylpropane (major, >99%) + HBr. Rationale: High selectivity of bromine leads almost exclusively to tertiary C-H abstraction forming 3° alkyl bromide.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "newman-projection-phantom.png"
+      ]
+    },
+    {
+      "id": "ch03_q031",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Butane conformational equilibrium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Gauche-butane is treated with C2-C3 bond rotation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "B",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Anti-butane (lowest energy conformer)",
+      "explanation": "Treating Gauche-butane with C2-C3 bond rotation yields Anti-butane (lowest energy conformer). Rationale: The anti conformation minimizes steric clash between terminal methyl groups at 180° dihedral angle.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q032",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Catalytic dehydrogenation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Ethane (CH3CH3) into Ethylene (H2C=CH2) + H2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "Cl2 / light"
+        },
+        {
+          "label": "D",
+          "text": "High heat / silica-alumina catalyst"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Pt catalyst / 500°C",
+      "explanation": "To convert Ethane (CH3CH3) into Ethylene (H2C=CH2) + H2, the appropriate reagent is Pt catalyst / 500°C. Rationale: High-temperature catalytic elimination of hydrogen converts saturated alkanes to alkenes.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q033",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Radical chlorination of isobutane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylpropane ((CH3)3CH) is treated with Cl2 / light?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene (H2C=CH2) + H2"
+        },
+        {
+          "label": "B",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "Ethylene + Propene + Methane mixture"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)",
+      "explanation": "Treating 2-Methylpropane ((CH3)3CH) with Cl2 / light yields 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%). Rationale: Chlorine's lower selectivity results in substantial primary substitution due to 9 primary vs 1 tertiary hydrogens.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q034",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Pyrolysis of hexane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Thermal cracking (700°C) to yield Ethylene + Propene + Methane mixture as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hexane (C6H14)"
+        },
+        {
+          "label": "B",
+          "text": "Decane (C10H22)"
+        },
+        {
+          "label": "C",
+          "text": "Propane (C3H8)"
+        },
+        {
+          "label": "D",
+          "text": "Ethane (CH3CH3)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Hexane (C6H14)",
+      "explanation": "Hexane (C6H14) reacts with Thermal cracking (700°C) to yield Ethylene + Propene + Methane mixture. Rationale: High-temperature pyrolysis fragments the carbon skeleton into commercial low-molecular-weight olefins.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q035",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Complete combustion of alkane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propane (C3H8) is treated with 5 equivalents O2 / flame?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "B",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "C",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "D",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "3 CO2 + 4 H2O",
+      "explanation": "Treating Propane (C3H8) with 5 equivalents O2 / flame yields 3 CO2 + 4 H2O. Rationale: Complete oxidation of alkane hydrocarbons under excess oxygen yields carbon dioxide and water.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q036",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Free radical monochlorination of ethane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Cl2 / hν (light) to yield Chloroethane (CH3CH2Cl) + HCl as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Gauche-butane"
+        },
+        {
+          "label": "B",
+          "text": "Hexane (C6H14)"
+        },
+        {
+          "label": "C",
+          "text": "Ethane (CH3CH3)"
+        },
+        {
+          "label": "D",
+          "text": "Ethane (CH3CH3)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethane (CH3CH3)",
+      "explanation": "Ethane (CH3CH3) reacts with Cl2 / hν (light) to yield Chloroethane (CH3CH2Cl) + HCl. Rationale: Light initiates homolytic Cl-Cl cleavage, triggering a free-radical chain substitution.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q037",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Selective bromination of propane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Propane (CH3CH2CH3) is treated with Br2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "B",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "D",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Bromopropane (major) + HBr",
+      "explanation": "Treating Propane (CH3CH2CH3) with Br2 / hν (light) yields 2-Bromopropane (major) + HBr. Rationale: Bromine radical selectively abstracts the weaker secondary C-H bond to generate the more stable 2° radical.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q038",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Selective bromination of isobutane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Methylpropane ((CH3)3CH) into 2-Bromo-2-methylpropane (major, >99%) + HBr?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl2 / hν (light)"
+        },
+        {
+          "label": "B",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "C",
+          "text": "Thermal cracking (700°C)"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / hν (light)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Br2 / hν (light)",
+      "explanation": "To convert 2-Methylpropane ((CH3)3CH) into 2-Bromo-2-methylpropane (major, >99%) + HBr, the appropriate reagent is Br2 / hν (light). Rationale: High selectivity of bromine leads almost exclusively to tertiary C-H abstraction forming 3° alkyl bromide.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q039",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Thermal cracking of alkane",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Decane (C10H22) is treated with High heat / silica-alumina catalyst?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromopropane (major) + HBr"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "C",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "D",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Pentane (C5H12) + 1-Pentene (C5H10)",
+      "explanation": "Treating Decane (C10H22) with High heat / silica-alumina catalyst yields Pentane (C5H12) + 1-Pentene (C5H10). Rationale: Thermal cracking cleaves C-C bonds homolytically to yield smaller alkane and alkene fuel fragments.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q040",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Torsional Trickster",
+      "topic": "Ethane conformational transition",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Eclipsed ethane into Staggered ethane (lowest energy)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "D",
+          "text": "Thermal cracking (700°C)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Thermal rotation at 25°C",
+      "explanation": "To convert Eclipsed ethane into Staggered ethane (lowest energy), the appropriate reagent is Thermal rotation at 25°C. Rationale: Overcoming the 12 kJ/mol torsional strain barrier yields the stable staggered conformation.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "torsional-trickster.png"
+      ]
+    },
+    {
+      "id": "ch03_q041",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Radical chlorination of isobutane",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylpropane ((CH3)3CH) is treated with Cl2 / light?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "C",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%)",
+      "explanation": "Treating 2-Methylpropane ((CH3)3CH) with Cl2 / light yields 1-Chloro-2-methylpropane (65%) + 2-Chloro-2-methylpropane (35%). Rationale: Chlorine's lower selectivity results in substantial primary substitution due to 9 primary vs 1 tertiary hydrogens.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q042",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Pyrolysis of hexane",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Hexane (C6H14) into Ethylene + Propene + Methane mixture?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / hν (light)"
+        },
+        {
+          "label": "B",
+          "text": "Thermal cracking (700°C)"
+        },
+        {
+          "label": "C",
+          "text": "High heat / silica-alumina catalyst"
+        },
+        {
+          "label": "D",
+          "text": "C2-C3 bond rotation"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Thermal cracking (700°C)",
+      "explanation": "To convert Hexane (C6H14) into Ethylene + Propene + Methane mixture, the appropriate reagent is Thermal cracking (700°C). Rationale: High-temperature pyrolysis fragments the carbon skeleton into commercial low-molecular-weight olefins.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q043",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Complete combustion of alkane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 5 equivalents O2 / flame to yield 3 CO2 + 4 H2O as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane (CH3CH3)"
+        },
+        {
+          "label": "B",
+          "text": "Propane (CH3CH2CH3)"
+        },
+        {
+          "label": "C",
+          "text": "Propane (C3H8)"
+        },
+        {
+          "label": "D",
+          "text": "Decane (C10H22)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propane (C3H8)",
+      "explanation": "Propane (C3H8) reacts with 5 equivalents O2 / flame to yield 3 CO2 + 4 H2O. Rationale: Complete oxidation of alkane hydrocarbons under excess oxygen yields carbon dioxide and water.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q044",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Free radical monochlorination of ethane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethane (CH3CH3) is treated with Cl2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene + Propene + Methane mixture"
+        },
+        {
+          "label": "B",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "C",
+          "text": "Anti-butane (lowest energy conformer)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane (major) + HBr"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Chloroethane (CH3CH2Cl) + HCl",
+      "explanation": "Treating Ethane (CH3CH3) with Cl2 / hν (light) yields Chloroethane (CH3CH2Cl) + HCl. Rationale: Light initiates homolytic Cl-Cl cleavage, triggering a free-radical chain substitution.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q045",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Selective bromination of propane",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Br2 / hν (light) to yield 2-Bromopropane (major) + HBr as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methylpropane ((CH3)3CH)"
+        },
+        {
+          "label": "B",
+          "text": "Decane (C10H22)"
+        },
+        {
+          "label": "C",
+          "text": "Propane (CH3CH2CH3)"
+        },
+        {
+          "label": "D",
+          "text": "Hexane (C6H14)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Propane (CH3CH2CH3)",
+      "explanation": "Propane (CH3CH2CH3) reacts with Br2 / hν (light) to yield 2-Bromopropane (major) + HBr. Rationale: Bromine radical selectively abstracts the weaker secondary C-H bond to generate the more stable 2° radical.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q046",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Selective bromination of isobutane",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methylpropane ((CH3)3CH) is treated with Br2 / hν (light)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        },
+        {
+          "label": "C",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        },
+        {
+          "label": "D",
+          "text": "Anti-butane (lowest energy conformer)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Bromo-2-methylpropane (major, >99%) + HBr",
+      "explanation": "Treating 2-Methylpropane ((CH3)3CH) with Br2 / hν (light) yields 2-Bromo-2-methylpropane (major, >99%) + HBr. Rationale: High selectivity of bromine leads almost exclusively to tertiary C-H abstraction forming 3° alkyl bromide.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q047",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Thermal cracking of alkane",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Decane (C10H22) into Pentane (C5H12) + 1-Pentene (C5H10)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl2 / light"
+        },
+        {
+          "label": "B",
+          "text": "Cl2 / hν (light)"
+        },
+        {
+          "label": "C",
+          "text": "High heat / silica-alumina catalyst"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / hν (light)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "High heat / silica-alumina catalyst",
+      "explanation": "To convert Decane (C10H22) into Pentane (C5H12) + 1-Pentene (C5H10), the appropriate reagent is High heat / silica-alumina catalyst. Rationale: Thermal cracking cleaves C-C bonds homolytically to yield smaller alkane and alkene fuel fragments.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q048",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Ethane conformational transition",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Eclipsed ethane is treated with Thermal rotation at 25°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Staggered ethane (lowest energy)"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        },
+        {
+          "label": "C",
+          "text": "Pentane (C5H12) + 1-Pentene (C5H10)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromopropane (major) + HBr"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Staggered ethane (lowest energy)",
+      "explanation": "Treating Eclipsed ethane with Thermal rotation at 25°C yields Staggered ethane (lowest energy). Rationale: Overcoming the 12 kJ/mol torsional strain barrier yields the stable staggered conformation.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q049",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Butane conformational equilibrium",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Gauche-butane into Anti-butane (lowest energy conformer)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermal rotation at 25°C"
+        },
+        {
+          "label": "B",
+          "text": "Pt catalyst / 500°C"
+        },
+        {
+          "label": "C",
+          "text": "5 equivalents O2 / flame"
+        },
+        {
+          "label": "D",
+          "text": "C2-C3 bond rotation"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "C2-C3 bond rotation",
+      "explanation": "To convert Gauche-butane into Anti-butane (lowest energy conformer), the appropriate reagent is C2-C3 bond rotation. Rationale: The anti conformation minimizes steric clash between terminal methyl groups at 180° dihedral angle.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    },
+    {
+      "id": "ch03_q050",
+      "chapter": 3,
+      "chapter_title": "Organic Compounds: Alkanes and Their Stereochemistry",
+      "boss": "Alkane Behemoth",
+      "topic": "Catalytic dehydrogenation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Ethane (CH3CH3) is treated with Pt catalyst / 500°C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromo-2-methylpropane (major, >99%) + HBr"
+        },
+        {
+          "label": "B",
+          "text": "3 CO2 + 4 H2O"
+        },
+        {
+          "label": "C",
+          "text": "Ethylene (H2C=CH2) + H2"
+        },
+        {
+          "label": "D",
+          "text": "Chloroethane (CH3CH2Cl) + HCl"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethylene (H2C=CH2) + H2",
+      "explanation": "Treating Ethane (CH3CH3) with Pt catalyst / 500°C yields Ethylene (H2C=CH2) + H2. Rationale: High-temperature catalytic elimination of hydrogen converts saturated alkanes to alkenes.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkane-behemoth.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Functional Group Goblin",
+    "IUPAC Nomenclature Knight",
+    "Newman Projection Phantom",
+    "Torsional Trickster",
+    "Alkane Behemoth"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Functional Group Goblin",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "functional-group-goblin.png"
+        ]
+      },
+      {
+        "boss": "IUPAC Nomenclature Knight",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "iupac-nomenclature-knight.png"
+        ]
+      },
+      {
+        "boss": "Newman Projection Phantom",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "newman-projection-phantom.png"
+        ]
+      },
+      {
+        "boss": "Torsional Trickster",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "torsional-trickster.png"
+        ]
+      },
+      {
+        "boss": "Alkane Behemoth",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "alkane-behemoth.png"
+        ]
+      }
+    ]
+  }
+}

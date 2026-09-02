@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 8,
+  "chapter_title": "Alkenes: Reactions and Synthesis",
+  "assigned_boss": "Halonium Hydra",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch08_q001",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Oxymercuration-demercuration",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexene is treated with 1. Hg(OAc)2, H2O; 2. NaBH4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "C",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "trans-1,2-Cyclohexanediol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Hexanol (Markovnikov alcohol)",
+      "explanation": "Treating 1-Hexene with 1. Hg(OAc)2, H2O; 2. NaBH4 yields 2-Hexanol (Markovnikov alcohol). Rationale: Oxymercuration forms a cyclic mercurinium ion, avoiding carbocation rearrangements and giving 2° alcohol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q002",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Hydroboration-oxidation of cyclic alkene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Methylcyclopentene into trans-2-Methylcyclopentanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O3; 2. Zn, H2O (or (CH3)2S)"
+        },
+        {
+          "label": "B",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "C",
+          "text": "Br2 / H2O"
+        },
+        {
+          "label": "D",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1. BH3•THF; 2. H2O2, NaOH",
+      "explanation": "To convert 1-Methylcyclopentene into trans-2-Methylcyclopentanol, the appropriate reagent is 1. BH3•THF; 2. H2O2, NaOH. Rationale: Concerted syn-addition of B-H places boron at the less hindered C2, which is oxidized with retention of configuration.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q003",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Bromohydrin formation on unsymmetrical alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Methylcyclohexene is treated with Br2 / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-Cyclohexanediol"
+        },
+        {
+          "label": "C",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)",
+      "explanation": "Treating 1-Methylcyclohexene with Br2 / H2O yields 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans). Rationale: Water attacks the more substituted C1 of the bromonium ion where partial positive charge is greatest.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q004",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Catalytic syn-hydrogenation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Dimethylcyclohexene into cis-1,2-Dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        },
+        {
+          "label": "B",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "C",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Pd-C"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "H2 / Pd-C",
+      "explanation": "To convert 1,2-Dimethylcyclohexene into cis-1,2-Dimethylcyclohexane, the appropriate reagent is H2 / Pd-C. Rationale: Both hydrogens add to the same face of the double bond from the metal catalyst surface.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q005",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Epoxidation with peroxy acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexene is treated with mCPBA in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "B",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "C",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1,2-Epoxycyclohexane (cyclohexene oxide)",
+      "explanation": "Treating Cyclohexene with mCPBA in CH2Cl2 yields 1,2-Epoxycyclohexane (cyclohexene oxide). Rationale: Peroxy acid delivers an electrophilic oxygen atom to the alkene in a concerted syn-addition.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q006",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Acidic anti-dihydroxylation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "B",
+          "text": "CH2I2 + Zn(Cu) in ether"
+        },
+        {
+          "label": "C",
+          "text": "1. OsO4; 2. NaHSO3, H2O"
+        },
+        {
+          "label": "D",
+          "text": "1. O3; 2. H2O2"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aqueous H3O+",
+      "explanation": "To convert 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol, the appropriate reagent is Aqueous H3O+. Rationale: Acid protonates the epoxide; water attacks from the opposite face via SN2 inversion.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q007",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Syn-dihydroxylation with osmium",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. OsO4; 2. NaHSO3, H2O to yield cis-1,2-Cyclopentanediol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Methylcyclohexene"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Dimethylcyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexene"
+        },
+        {
+          "label": "D",
+          "text": "Cyclopentene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Cyclopentene",
+      "explanation": "Cyclopentene reacts with 1. OsO4; 2. NaHSO3, H2O to yield cis-1,2-Cyclopentanediol. Rationale: Osmium tetroxide forms a cyclic osmate ester intermediate on one face, yielding the syn-diol.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q008",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Reductive ozonolysis of alkene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methyl-2-pentene is treated with 1. O3; 2. Zn, H2O (or (CH3)2S)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "C",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Cyclopentanediol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetone + Propanal",
+      "explanation": "Treating 2-Methyl-2-pentene with 1. O3; 2. Zn, H2O (or (CH3)2S) yields Acetone + Propanal. Rationale: Reductive cleavage of the double bond preserves aldehyde and ketone oxidation states.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q009",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Oxidative ozonolysis of alkene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. O3; 2. H2O2 to yield Acetone + Propanoic acid as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentene"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Dimethylcyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "2-Methyl-2-pentene"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2-Methyl-2-pentene",
+      "explanation": "2-Methyl-2-pentene reacts with 1. O3; 2. H2O2 to yield Acetone + Propanoic acid. Rationale: Oxidative workup oxidizes the aldehyde fragment to a carboxylic acid while keeping ketone intact.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q010",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Halonium Hydra",
+      "topic": "Simmons-Smith cyclopropanation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexene is treated with CH2I2 + Zn(Cu) in ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Methylcyclopentanol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Bicyclo[4.1.0]heptane (norcarane)",
+      "explanation": "Treating Cyclohexene with CH2I2 + Zn(Cu) in ether yields Bicyclo[4.1.0]heptane (norcarane). Rationale: The carbenoid ICH2ZnI transfers a methylene group to the double bond with stereospecific retention.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "halonium-hydra.png"
+      ]
+    },
+    {
+      "id": "ch08_q011",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Bromohydrin formation on unsymmetrical alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Methylcyclohexene is treated with Br2 / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "C",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        },
+        {
+          "label": "D",
+          "text": "trans-1,2-Cyclohexanediol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)",
+      "explanation": "Treating 1-Methylcyclohexene with Br2 / H2O yields 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans). Rationale: Water attacks the more substituted C1 of the bromonium ion where partial positive charge is greatest.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q012",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Catalytic syn-hydrogenation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Dimethylcyclohexene into cis-1,2-Dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Pd-C"
+        },
+        {
+          "label": "B",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        },
+        {
+          "label": "C",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / H2O"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H2 / Pd-C",
+      "explanation": "To convert 1,2-Dimethylcyclohexene into cis-1,2-Dimethylcyclohexane, the appropriate reagent is H2 / Pd-C. Rationale: Both hydrogens add to the same face of the double bond from the metal catalyst surface.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q013",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Epoxidation with peroxy acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexene is treated with mCPBA in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "C",
+          "text": "trans-1,2-Cyclohexanediol"
+        },
+        {
+          "label": "D",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "1,2-Epoxycyclohexane (cyclohexene oxide)",
+      "explanation": "Treating Cyclohexene with mCPBA in CH2Cl2 yields 1,2-Epoxycyclohexane (cyclohexene oxide). Rationale: Peroxy acid delivers an electrophilic oxygen atom to the alkene in a concerted syn-addition.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q014",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Acidic anti-dihydroxylation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Br2 / H2O"
+        },
+        {
+          "label": "B",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "C",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "D",
+          "text": "1. O3; 2. H2O2"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aqueous H3O+",
+      "explanation": "To convert 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol, the appropriate reagent is Aqueous H3O+. Rationale: Acid protonates the epoxide; water attacks from the opposite face via SN2 inversion.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q015",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Syn-dihydroxylation with osmium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentene is treated with 1. OsO4; 2. NaHSO3, H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone + Propanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "C",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Cyclopentanediol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-1,2-Cyclopentanediol",
+      "explanation": "Treating Cyclopentene with 1. OsO4; 2. NaHSO3, H2O yields cis-1,2-Cyclopentanediol. Rationale: Osmium tetroxide forms a cyclic osmate ester intermediate on one face, yielding the syn-diol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q016",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Reductive ozonolysis of alkene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. O3; 2. Zn, H2O (or (CH3)2S) to yield Acetone + Propanal as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Dimethylcyclohexene"
+        },
+        {
+          "label": "B",
+          "text": "1-Methylcyclopentene"
+        },
+        {
+          "label": "C",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "D",
+          "text": "2-Methyl-2-pentene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Methyl-2-pentene",
+      "explanation": "2-Methyl-2-pentene reacts with 1. O3; 2. Zn, H2O (or (CH3)2S) to yield Acetone + Propanal. Rationale: Reductive cleavage of the double bond preserves aldehyde and ketone oxidation states.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q017",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Oxidative ozonolysis of alkene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methyl-2-pentene is treated with 1. O3; 2. H2O2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "C",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "Acetone + Propanoic acid"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetone + Propanoic acid",
+      "explanation": "Treating 2-Methyl-2-pentene with 1. O3; 2. H2O2 yields Acetone + Propanoic acid. Rationale: Oxidative workup oxidizes the aldehyde fragment to a carboxylic acid while keeping ketone intact.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q018",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Simmons-Smith cyclopropanation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with CH2I2 + Zn(Cu) in ether to yield Bicyclo[4.1.0]heptane (norcarane) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "B",
+          "text": "1-Hexene"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "1,2-Dimethylcyclohexene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cyclohexene",
+      "explanation": "Cyclohexene reacts with CH2I2 + Zn(Cu) in ether to yield Bicyclo[4.1.0]heptane (norcarane). Rationale: The carbenoid ICH2ZnI transfers a methylene group to the double bond with stereospecific retention.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q019",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Oxymercuration-demercuration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexene is treated with 1. Hg(OAc)2, H2O; 2. NaBH4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-Cyclohexanediol"
+        },
+        {
+          "label": "C",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Cyclopentanediol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Hexanol (Markovnikov alcohol)",
+      "explanation": "Treating 1-Hexene with 1. Hg(OAc)2, H2O; 2. NaBH4 yields 2-Hexanol (Markovnikov alcohol). Rationale: Oxymercuration forms a cyclic mercurinium ion, avoiding carbocation rearrangements and giving 2° alcohol.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q020",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Oxymercuration Mage",
+      "topic": "Hydroboration-oxidation of cyclic alkene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Methylcyclopentene into trans-2-Methylcyclopentanol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O3; 2. Zn, H2O (or (CH3)2S)"
+        },
+        {
+          "label": "B",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "C",
+          "text": "1. OsO4; 2. NaHSO3, H2O"
+        },
+        {
+          "label": "D",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. BH3•THF; 2. H2O2, NaOH",
+      "explanation": "To convert 1-Methylcyclopentene into trans-2-Methylcyclopentanol, the appropriate reagent is 1. BH3•THF; 2. H2O2, NaOH. Rationale: Concerted syn-addition of B-H places boron at the less hindered C2, which is oxidized with retention of configuration.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "oxymercuration-mage.png"
+      ]
+    },
+    {
+      "id": "ch08_q021",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Epoxidation with peroxy acid",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexene is treated with mCPBA in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "B",
+          "text": "Acetone + Propanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "D",
+          "text": "trans-1,2-Cyclohexanediol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1,2-Epoxycyclohexane (cyclohexene oxide)",
+      "explanation": "Treating Cyclohexene with mCPBA in CH2Cl2 yields 1,2-Epoxycyclohexane (cyclohexene oxide). Rationale: Peroxy acid delivers an electrophilic oxygen atom to the alkene in a concerted syn-addition.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q022",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Acidic anti-dihydroxylation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "B",
+          "text": "1. OsO4; 2. NaHSO3, H2O"
+        },
+        {
+          "label": "C",
+          "text": "mCPBA in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aqueous H3O+",
+      "explanation": "To convert 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol, the appropriate reagent is Aqueous H3O+. Rationale: Acid protonates the epoxide; water attacks from the opposite face via SN2 inversion.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q023",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Syn-dihydroxylation with osmium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentene is treated with 1. OsO4; 2. NaHSO3, H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        },
+        {
+          "label": "B",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "C",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Cyclopentanediol"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-1,2-Cyclopentanediol",
+      "explanation": "Treating Cyclopentene with 1. OsO4; 2. NaHSO3, H2O yields cis-1,2-Cyclopentanediol. Rationale: Osmium tetroxide forms a cyclic osmate ester intermediate on one face, yielding the syn-diol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q024",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Reductive ozonolysis of alkene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Methyl-2-pentene into Acetone + Propanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O3; 2. Zn, H2O (or (CH3)2S)"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / H2O"
+        },
+        {
+          "label": "C",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "D",
+          "text": "Aqueous H3O+"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1. O3; 2. Zn, H2O (or (CH3)2S)",
+      "explanation": "To convert 2-Methyl-2-pentene into Acetone + Propanal, the appropriate reagent is 1. O3; 2. Zn, H2O (or (CH3)2S). Rationale: Reductive cleavage of the double bond preserves aldehyde and ketone oxidation states.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q025",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Oxidative ozonolysis of alkene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. O3; 2. H2O2 to yield Acetone + Propanoic acid as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Epoxycyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "1-Methylcyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "2-Methyl-2-pentene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Methyl-2-pentene",
+      "explanation": "2-Methyl-2-pentene reacts with 1. O3; 2. H2O2 to yield Acetone + Propanoic acid. Rationale: Oxidative workup oxidizes the aldehyde fragment to a carboxylic acid while keeping ketone intact.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q026",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Simmons-Smith cyclopropanation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexene is treated with CH2I2 + Zn(Cu) in ether?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "B",
+          "text": "Acetone + Propanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Bicyclo[4.1.0]heptane (norcarane)",
+      "explanation": "Treating Cyclohexene with CH2I2 + Zn(Cu) in ether yields Bicyclo[4.1.0]heptane (norcarane). Rationale: The carbenoid ICH2ZnI transfers a methylene group to the double bond with stereospecific retention.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q027",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Oxymercuration-demercuration",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. Hg(OAc)2, H2O; 2. NaBH4 to yield 2-Hexanol (Markovnikov alcohol) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Hexene"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "C",
+          "text": "1,2-Epoxycyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Hexene",
+      "explanation": "1-Hexene reacts with 1. Hg(OAc)2, H2O; 2. NaBH4 to yield 2-Hexanol (Markovnikov alcohol). Rationale: Oxymercuration forms a cyclic mercurinium ion, avoiding carbocation rearrangements and giving 2° alcohol.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q028",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Hydroboration-oxidation of cyclic alkene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Methylcyclopentene is treated with 1. BH3•THF; 2. H2O2, NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone + Propanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "D",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-Methylcyclopentanol",
+      "explanation": "Treating 1-Methylcyclopentene with 1. BH3•THF; 2. H2O2, NaOH yields trans-2-Methylcyclopentanol. Rationale: Concerted syn-addition of B-H places boron at the less hindered C2, which is oxidized with retention of configuration.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q029",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Bromohydrin formation on unsymmetrical alkene",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1-Methylcyclohexene into 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / H2O"
+        },
+        {
+          "label": "C",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        },
+        {
+          "label": "D",
+          "text": "H2 / Pd-C"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Br2 / H2O",
+      "explanation": "To convert 1-Methylcyclohexene into 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans), the appropriate reagent is Br2 / H2O. Rationale: Water attacks the more substituted C1 of the bromonium ion where partial positive charge is greatest.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q030",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Hydroboration Hunter",
+      "topic": "Catalytic syn-hydrogenation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,2-Dimethylcyclohexene is treated with H2 / Pd-C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        },
+        {
+          "label": "D",
+          "text": "trans-2-Methylcyclopentanol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "cis-1,2-Dimethylcyclohexane",
+      "explanation": "Treating 1,2-Dimethylcyclohexene with H2 / Pd-C yields cis-1,2-Dimethylcyclohexane. Rationale: Both hydrogens add to the same face of the double bond from the metal catalyst surface.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "hydroboration-hunter.png"
+      ]
+    },
+    {
+      "id": "ch08_q031",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Syn-dihydroxylation with osmium",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclopentene is treated with 1. OsO4; 2. NaHSO3, H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "cis-1,2-Cyclopentanediol",
+      "explanation": "Treating Cyclopentene with 1. OsO4; 2. NaHSO3, H2O yields cis-1,2-Cyclopentanediol. Rationale: Osmium tetroxide forms a cyclic osmate ester intermediate on one face, yielding the syn-diol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q032",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Reductive ozonolysis of alkene",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 2-Methyl-2-pentene into Acetone + Propanal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "B",
+          "text": "Br2 / H2O"
+        },
+        {
+          "label": "C",
+          "text": "1. O3; 2. Zn, H2O (or (CH3)2S)"
+        },
+        {
+          "label": "D",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1. O3; 2. Zn, H2O (or (CH3)2S)",
+      "explanation": "To convert 2-Methyl-2-pentene into Acetone + Propanal, the appropriate reagent is 1. O3; 2. Zn, H2O (or (CH3)2S). Rationale: Reductive cleavage of the double bond preserves aldehyde and ketone oxidation states.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q033",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Oxidative ozonolysis of alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methyl-2-pentene is treated with 1. O3; 2. H2O2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "Acetone + Propanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Cyclopentanediol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetone + Propanoic acid",
+      "explanation": "Treating 2-Methyl-2-pentene with 1. O3; 2. H2O2 yields Acetone + Propanoic acid. Rationale: Oxidative workup oxidizes the aldehyde fragment to a carboxylic acid while keeping ketone intact.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q034",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Simmons-Smith cyclopropanation",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with CH2I2 + Zn(Cu) in ether to yield Bicyclo[4.1.0]heptane (norcarane) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "B",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "1-Methylcyclopentene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Cyclohexene",
+      "explanation": "Cyclohexene reacts with CH2I2 + Zn(Cu) in ether to yield Bicyclo[4.1.0]heptane (norcarane). Rationale: The carbenoid ICH2ZnI transfers a methylene group to the double bond with stereospecific retention.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q035",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Oxymercuration-demercuration",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Hexene is treated with 1. Hg(OAc)2, H2O; 2. NaBH4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "C",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "D",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "2-Hexanol (Markovnikov alcohol)",
+      "explanation": "Treating 1-Hexene with 1. Hg(OAc)2, H2O; 2. NaBH4 yields 2-Hexanol (Markovnikov alcohol). Rationale: Oxymercuration forms a cyclic mercurinium ion, avoiding carbocation rearrangements and giving 2° alcohol.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q036",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Hydroboration-oxidation of cyclic alkene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. BH3•THF; 2. H2O2, NaOH to yield trans-2-Methylcyclopentanol as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-Methylcyclopentene"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Epoxycyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexene"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "1-Methylcyclopentene",
+      "explanation": "1-Methylcyclopentene reacts with 1. BH3•THF; 2. H2O2, NaOH to yield trans-2-Methylcyclopentanol. Rationale: Concerted syn-addition of B-H places boron at the less hindered C2, which is oxidized with retention of configuration.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q037",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Bromohydrin formation on unsymmetrical alkene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Methylcyclohexene is treated with Br2 / H2O?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "D",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)",
+      "explanation": "Treating 1-Methylcyclohexene with Br2 / H2O yields 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans). Rationale: Water attacks the more substituted C1 of the bromonium ion where partial positive charge is greatest.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q038",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Catalytic syn-hydrogenation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Dimethylcyclohexene into cis-1,2-Dimethylcyclohexane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "H2 / Pd-C"
+        },
+        {
+          "label": "B",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        },
+        {
+          "label": "C",
+          "text": "mCPBA in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / H2O"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "H2 / Pd-C",
+      "explanation": "To convert 1,2-Dimethylcyclohexene into cis-1,2-Dimethylcyclohexane, the appropriate reagent is H2 / Pd-C. Rationale: Both hydrogens add to the same face of the double bond from the metal catalyst surface.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q039",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Epoxidation with peroxy acid",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when Cyclohexene is treated with mCPBA in CH2Cl2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "B",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "C",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "D",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1,2-Epoxycyclohexane (cyclohexene oxide)",
+      "explanation": "Treating Cyclohexene with mCPBA in CH2Cl2 yields 1,2-Epoxycyclohexane (cyclohexene oxide). Rationale: Peroxy acid delivers an electrophilic oxygen atom to the alkene in a concerted syn-addition.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q040",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Ozonolysis Overreaper",
+      "topic": "Acidic anti-dihydroxylation",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. O3; 2. Zn, H2O (or (CH3)2S)"
+        },
+        {
+          "label": "B",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        },
+        {
+          "label": "C",
+          "text": "Aqueous H3O+"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / H2O"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Aqueous H3O+",
+      "explanation": "To convert 1,2-Epoxycyclohexane into trans-1,2-Cyclohexanediol, the appropriate reagent is Aqueous H3O+. Rationale: Acid protonates the epoxide; water attacks from the opposite face via SN2 inversion.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "ozonolysis-overreaper.png"
+      ]
+    },
+    {
+      "id": "ch08_q041",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Oxidative ozonolysis of alkene",
+      "difficulty": "easy",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methyl-2-pentene is treated with 1. O3; 2. H2O2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone + Propanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans)"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetone + Propanoic acid",
+      "explanation": "Treating 2-Methyl-2-pentene with 1. O3; 2. H2O2 yields Acetone + Propanoic acid. Rationale: Oxidative workup oxidizes the aldehyde fragment to a carboxylic acid while keeping ketone intact.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q042",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Simmons-Smith cyclopropanation",
+      "difficulty": "easy",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclohexene into Bicyclo[4.1.0]heptane (norcarane)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. OsO4; 2. NaHSO3, H2O"
+        },
+        {
+          "label": "B",
+          "text": "CH2I2 + Zn(Cu) in ether"
+        },
+        {
+          "label": "C",
+          "text": "mCPBA in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "1. O3; 2. Zn, H2O (or (CH3)2S)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CH2I2 + Zn(Cu) in ether",
+      "explanation": "To convert Cyclohexene into Bicyclo[4.1.0]heptane (norcarane), the appropriate reagent is CH2I2 + Zn(Cu) in ether. Rationale: The carbenoid ICH2ZnI transfers a methylene group to the double bond with stereospecific retention.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q043",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Oxymercuration-demercuration",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with 1. Hg(OAc)2, H2O; 2. NaBH4 to yield 2-Hexanol (Markovnikov alcohol) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2-Methyl-2-pentene"
+        },
+        {
+          "label": "B",
+          "text": "Cyclopentene"
+        },
+        {
+          "label": "C",
+          "text": "1-Hexene"
+        },
+        {
+          "label": "D",
+          "text": "Cyclohexene"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "1-Hexene",
+      "explanation": "1-Hexene reacts with 1. Hg(OAc)2, H2O; 2. NaBH4 to yield 2-Hexanol (Markovnikov alcohol). Rationale: Oxymercuration forms a cyclic mercurinium ion, avoiding carbocation rearrangements and giving 2° alcohol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q044",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Hydroboration-oxidation of cyclic alkene",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1-Methylcyclopentene is treated with 1. BH3•THF; 2. H2O2, NaOH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "B",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "D",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-2-Methylcyclopentanol",
+      "explanation": "Treating 1-Methylcyclopentene with 1. BH3•THF; 2. H2O2, NaOH yields trans-2-Methylcyclopentanol. Rationale: Concerted syn-addition of B-H places boron at the less hindered C2, which is oxidized with retention of configuration.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q045",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Bromohydrin formation on unsymmetrical alkene",
+      "difficulty": "medium",
+      "question_type": "starting_material_deduction",
+      "question": "Which starting material will react with Br2 / H2O to yield 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans) as the major product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cyclopentene"
+        },
+        {
+          "label": "B",
+          "text": "1-Methylcyclohexene"
+        },
+        {
+          "label": "C",
+          "text": "Cyclohexene"
+        },
+        {
+          "label": "D",
+          "text": "1-Methylcyclopentene"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1-Methylcyclohexene",
+      "explanation": "1-Methylcyclohexene reacts with Br2 / H2O to yield 2-Bromo-1-methylcyclohexanol (OH at C1, Br at C2, trans). Rationale: Water attacks the more substituted C1 of the bromonium ion where partial positive charge is greatest.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q046",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Catalytic syn-hydrogenation",
+      "difficulty": "medium",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,2-Dimethylcyclohexene is treated with H2 / Pd-C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-Cyclohexanediol"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Cyclopentanediol"
+        },
+        {
+          "label": "D",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "cis-1,2-Dimethylcyclohexane",
+      "explanation": "Treating 1,2-Dimethylcyclohexene with H2 / Pd-C yields cis-1,2-Dimethylcyclohexane. Rationale: Both hydrogens add to the same face of the double bond from the metal catalyst surface.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q047",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Epoxidation with peroxy acid",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclohexene into 1,2-Epoxycyclohexane (cyclohexene oxide)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1. Hg(OAc)2, H2O; 2. NaBH4"
+        },
+        {
+          "label": "B",
+          "text": "1. OsO4; 2. NaHSO3, H2O"
+        },
+        {
+          "label": "C",
+          "text": "mCPBA in CH2Cl2"
+        },
+        {
+          "label": "D",
+          "text": "Aqueous H3O+"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "mCPBA in CH2Cl2",
+      "explanation": "To convert Cyclohexene into 1,2-Epoxycyclohexane (cyclohexene oxide), the appropriate reagent is mCPBA in CH2Cl2. Rationale: Peroxy acid delivers an electrophilic oxygen atom to the alkene in a concerted syn-addition.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q048",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Acidic anti-dihydroxylation",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 1,2-Epoxycyclohexane is treated with Aqueous H3O+?",
+      "options": [
+        {
+          "label": "A",
+          "text": "trans-2-Methylcyclopentanol"
+        },
+        {
+          "label": "B",
+          "text": "trans-1,2-Cyclohexanediol"
+        },
+        {
+          "label": "C",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "D",
+          "text": "Bicyclo[4.1.0]heptane (norcarane)"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "trans-1,2-Cyclohexanediol",
+      "explanation": "Treating 1,2-Epoxycyclohexane with Aqueous H3O+ yields trans-1,2-Cyclohexanediol. Rationale: Acid protonates the epoxide; water attacks from the opposite face via SN2 inversion.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q049",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Syn-dihydroxylation with osmium",
+      "difficulty": "hard",
+      "question_type": "reagent_selection",
+      "question": "Which reagent or set of reaction conditions will best accomplish the transformation of Cyclopentene into cis-1,2-Cyclopentanediol?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CH2I2 + Zn(Cu) in ether"
+        },
+        {
+          "label": "B",
+          "text": "1. OsO4; 2. NaHSO3, H2O"
+        },
+        {
+          "label": "C",
+          "text": "1. BH3•THF; 2. H2O2, NaOH"
+        },
+        {
+          "label": "D",
+          "text": "Br2 / H2O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "1. OsO4; 2. NaHSO3, H2O",
+      "explanation": "To convert Cyclopentene into cis-1,2-Cyclopentanediol, the appropriate reagent is 1. OsO4; 2. NaHSO3, H2O. Rationale: Osmium tetroxide forms a cyclic osmate ester intermediate on one face, yielding the syn-diol.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    },
+    {
+      "id": "ch08_q050",
+      "chapter": 8,
+      "chapter_title": "Alkenes: Reactions and Synthesis",
+      "boss": "Alkene Synthesis Grandmaster",
+      "topic": "Reductive ozonolysis of alkene",
+      "difficulty": "hard",
+      "question_type": "product_prediction",
+      "question": "What is the expected major product when 2-Methyl-2-pentene is treated with 1. O3; 2. Zn, H2O (or (CH3)2S)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetone + Propanal"
+        },
+        {
+          "label": "B",
+          "text": "1,2-Epoxycyclohexane (cyclohexene oxide)"
+        },
+        {
+          "label": "C",
+          "text": "cis-1,2-Dimethylcyclohexane"
+        },
+        {
+          "label": "D",
+          "text": "2-Hexanol (Markovnikov alcohol)"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetone + Propanal",
+      "explanation": "Treating 2-Methyl-2-pentene with 1. O3; 2. Zn, H2O (or (CH3)2S) yields Acetone + Propanal. Rationale: Reductive cleavage of the double bond preserves aldehyde and ketone oxidation states.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "alkene-synthesis-grandmaster.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Halonium Hydra",
+    "Oxymercuration Mage",
+    "Hydroboration Hunter",
+    "Ozonolysis Overreaper",
+    "Alkene Synthesis Grandmaster"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Halonium Hydra",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "halonium-hydra.png"
+        ]
+      },
+      {
+        "boss": "Oxymercuration Mage",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "oxymercuration-mage.png"
+        ]
+      },
+      {
+        "boss": "Hydroboration Hunter",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "hydroboration-hunter.png"
+        ]
+      },
+      {
+        "boss": "Ozonolysis Overreaper",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "ozonolysis-overreaper.png"
+        ]
+      },
+      {
+        "boss": "Alkene Synthesis Grandmaster",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "alkene-synthesis-grandmaster.png"
+        ]
+      }
+    ]
+  }
+}

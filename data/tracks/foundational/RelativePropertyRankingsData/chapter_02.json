@@ -1,0 +1,2212 @@
+{
+  "schema_version": 2.0,
+  "chapter": 2,
+  "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+  "assigned_boss": "Electronegativity Enchanter",
+  "question_count": 50,
+  "questions": [
+    {
+      "id": "ch02_q001",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Carboxylic acid substituent acidity ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which list correctly ranks these acids in order of increasing acidity (lowest pKa last)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trichloroacetic acid < Dichloroacetic acid < Chloroacetic acid < Acetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid < Trichloroacetic acid < Chloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Chloroacetic acid < Acetic acid < Trichloroacetic acid < Dichloroacetic acid"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid",
+      "explanation": "Electronegative chlorine atoms stabilize the conjugate carboxylate base through inductive electron withdrawal.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q002",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Alcohol vs phenol vs carboxylic acid acidity",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders compounds from least acidic to most acidic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trifluoroacetic acid < Acetic acid < Phenol < Ethanol"
+        },
+        {
+          "label": "B",
+          "text": "Ethanol < Acetic acid < Phenol < Trifluoroacetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)"
+        },
+        {
+          "label": "D",
+          "text": "Phenol < Ethanol < Acetic acid < Trifluoroacetic acid"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)",
+      "explanation": "Acidity increases as conjugate base stabilization increases: alkoxide < resonance-stabilized phenoxide < carboxylate < trifluorocarboxylate.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q003",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Hydrocarbon hybridization acidity ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders hydrocarbons in increasing order of C-H acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene < Ethane < Acetylene"
+        },
+        {
+          "label": "C",
+          "text": "Ethane < Acetylene < Ethylene"
+        },
+        {
+          "label": "D",
+          "text": "Acetylene < Ethylene < Ethane"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)",
+      "explanation": "Higher s-character holds electrons closer to the nucleus, stabilizing the conjugate carbanion: sp3 (25% s) < sp2 (33% s) < sp (50% s).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q004",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Substituted phenol acidity ranking",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders substituted phenols in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol < 4-Methoxyphenol < 4-Nitrophenol < 4-Chlorophenol"
+        },
+        {
+          "label": "B",
+          "text": "4-Nitrophenol < 4-Chlorophenol < Phenol < 4-Methoxyphenol"
+        },
+        {
+          "label": "C",
+          "text": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol"
+        },
+        {
+          "label": "D",
+          "text": "4-Chlorophenol < 4-Methoxyphenol < Phenol < 4-Nitrophenol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol",
+      "explanation": "Electron-donating methoxy deactivates phenoxide stability; electron-withdrawing nitro strongly stabilizes phenoxide by resonance.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q005",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Amine basicity ranking in water",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders bases in order of increasing basicity in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline < Pyridine < Ammonia < Methylamine"
+        },
+        {
+          "label": "B",
+          "text": "Aniline < Ammonia < Pyridine < Methylamine"
+        },
+        {
+          "label": "C",
+          "text": "Methylamine < Pyridine < Ammonia < Aniline"
+        },
+        {
+          "label": "D",
+          "text": "Ammonia < Aniline < Methylamine < Pyridine"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aniline < Ammonia < Pyridine < Methylamine",
+      "explanation": "Alkyl inductive donation enhances aliphatic amine basicity; aniline lone pair is delocalized into the aromatic ring.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q006",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Periodic trend in binary acid acidity",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders binary hydrides in order of increasing acidity across a period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CH4 < NH3 < H2O < HF"
+        },
+        {
+          "label": "B",
+          "text": "HF < H2O < NH3 < CH4"
+        },
+        {
+          "label": "C",
+          "text": "CH4 < H2O < NH3 < HF"
+        },
+        {
+          "label": "D",
+          "text": "NH3 < CH4 < HF < H2O"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "CH4 < NH3 < H2O < HF",
+      "explanation": "Across a periodic row, electronegativity of the central atom increases, increasing conjugate base stability.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q007",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Binary halide acidity down a group",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders hydrogen halides in order of increasing acidity down a group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF < HI < HBr < HCl"
+        },
+        {
+          "label": "B",
+          "text": "HI < HBr < HCl < HF"
+        },
+        {
+          "label": "C",
+          "text": "HF < HCl < HBr < HI"
+        },
+        {
+          "label": "D",
+          "text": "HCl < HF < HBr < HI"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "HF < HCl < HBr < HI",
+      "explanation": "Down a group, bond strength decreases and halide ionic size increases, making HI the strongest acid (pKa -10).",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q008",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Inductive distance effect on acidity",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders chlorobutanoic acids in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "Butanoic acid < 2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "3-Chlorobutanoic acid < 4-Chlorobutanoic acid < 2-Chlorobutanoic acid < Butanoic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid",
+      "explanation": "Inductive electron withdrawal diminishes rapidly with distance from the carboxylate center.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q009",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Carbanion stability ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders carbanions in order of increasing stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl carbanion < Methyl carbanion < Ethyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl carbanion < Methyl carbanion < tert-Butyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion"
+        },
+        {
+          "label": "D",
+          "text": "Methyl carbanion < Ethyl carbanion < Isopropyl carbanion < tert-Butyl carbanion"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion",
+      "explanation": "Alkyl groups donate electron density, destabilizing negatively charged carbanions: 3° < 2° < 1° < methyl.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q010",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Electronegativity Enchanter",
+      "topic": "Boiling points of constitutional isomers",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders isomeric C5H12 pentanes in order of increasing boiling point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane < 2-Methylbutane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylbutane < Pentane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dimethylpropane < Pentane < 2-Methylbutane"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)",
+      "explanation": "Linear unbranched alkanes have larger surface areas for London dispersion interactions, leading to higher boiling points.",
+      "spells": [
+        20,
+        30,
+        45
+      ],
+      "health": [
+        100
+      ],
+      "images": [
+        "electronegativity-enchanter.png"
+      ]
+    },
+    {
+      "id": "ch02_q011",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Hydrocarbon hybridization acidity ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders hydrocarbons in increasing order of C-H acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetylene < Ethylene < Ethane"
+        },
+        {
+          "label": "B",
+          "text": "Ethane < Acetylene < Ethylene"
+        },
+        {
+          "label": "C",
+          "text": "Ethylene < Ethane < Acetylene"
+        },
+        {
+          "label": "D",
+          "text": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)",
+      "explanation": "Higher s-character holds electrons closer to the nucleus, stabilizing the conjugate carbanion: sp3 (25% s) < sp2 (33% s) < sp (50% s).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q012",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Substituted phenol acidity ranking",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders substituted phenols in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol"
+        },
+        {
+          "label": "B",
+          "text": "4-Chlorophenol < 4-Methoxyphenol < Phenol < 4-Nitrophenol"
+        },
+        {
+          "label": "C",
+          "text": "Phenol < 4-Methoxyphenol < 4-Nitrophenol < 4-Chlorophenol"
+        },
+        {
+          "label": "D",
+          "text": "4-Nitrophenol < 4-Chlorophenol < Phenol < 4-Methoxyphenol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol",
+      "explanation": "Electron-donating methoxy deactivates phenoxide stability; electron-withdrawing nitro strongly stabilizes phenoxide by resonance.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q013",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Amine basicity ranking in water",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders bases in order of increasing basicity in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline < Ammonia < Pyridine < Methylamine"
+        },
+        {
+          "label": "B",
+          "text": "Methylamine < Pyridine < Ammonia < Aniline"
+        },
+        {
+          "label": "C",
+          "text": "Ammonia < Aniline < Methylamine < Pyridine"
+        },
+        {
+          "label": "D",
+          "text": "Aniline < Pyridine < Ammonia < Methylamine"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Aniline < Ammonia < Pyridine < Methylamine",
+      "explanation": "Alkyl inductive donation enhances aliphatic amine basicity; aniline lone pair is delocalized into the aromatic ring.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q014",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Periodic trend in binary acid acidity",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders binary hydrides in order of increasing acidity across a period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF < H2O < NH3 < CH4"
+        },
+        {
+          "label": "B",
+          "text": "CH4 < NH3 < H2O < HF"
+        },
+        {
+          "label": "C",
+          "text": "CH4 < H2O < NH3 < HF"
+        },
+        {
+          "label": "D",
+          "text": "NH3 < CH4 < HF < H2O"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "CH4 < NH3 < H2O < HF",
+      "explanation": "Across a periodic row, electronegativity of the central atom increases, increasing conjugate base stability.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q015",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Binary halide acidity down a group",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders hydrogen halides in order of increasing acidity down a group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HCl < HF < HBr < HI"
+        },
+        {
+          "label": "B",
+          "text": "HF < HCl < HBr < HI"
+        },
+        {
+          "label": "C",
+          "text": "HI < HBr < HCl < HF"
+        },
+        {
+          "label": "D",
+          "text": "HF < HI < HBr < HCl"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "HF < HCl < HBr < HI",
+      "explanation": "Down a group, bond strength decreases and halide ionic size increases, making HI the strongest acid (pKa -10).",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q016",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Inductive distance effect on acidity",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders chlorobutanoic acids in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "3-Chlorobutanoic acid < 4-Chlorobutanoic acid < 2-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "Butanoic acid < 2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid",
+      "explanation": "Inductive electron withdrawal diminishes rapidly with distance from the carboxylate center.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q017",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Carbanion stability ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders carbanions in order of increasing stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl carbanion < Ethyl carbanion < Isopropyl carbanion < tert-Butyl carbanion"
+        },
+        {
+          "label": "B",
+          "text": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl carbanion < Methyl carbanion < tert-Butyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl carbanion < Methyl carbanion < Ethyl carbanion < Isopropyl carbanion"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion",
+      "explanation": "Alkyl groups donate electron density, destabilizing negatively charged carbanions: 3° < 2° < 1° < methyl.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q018",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Boiling points of constitutional isomers",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders isomeric C5H12 pentanes in order of increasing boiling point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane < 2-Methylbutane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylbutane < Pentane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dimethylpropane < Pentane < 2-Methylbutane"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)",
+      "explanation": "Linear unbranched alkanes have larger surface areas for London dispersion interactions, leading to higher boiling points.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q019",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Carboxylic acid substituent acidity ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which list correctly ranks these acids in order of increasing acidity (lowest pKa last)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloroacetic acid < Acetic acid < Trichloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Trichloroacetic acid < Dichloroacetic acid < Chloroacetic acid < Acetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid < Trichloroacetic acid < Chloroacetic acid < Dichloroacetic acid"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid",
+      "explanation": "Electronegative chlorine atoms stabilize the conjugate carboxylate base through inductive electron withdrawal.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q020",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Dipole Duelist",
+      "topic": "Alcohol vs phenol vs carboxylic acid acidity",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders compounds from least acidic to most acidic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)"
+        },
+        {
+          "label": "B",
+          "text": "Phenol < Ethanol < Acetic acid < Trifluoroacetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Ethanol < Acetic acid < Phenol < Trifluoroacetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Trifluoroacetic acid < Acetic acid < Phenol < Ethanol"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)",
+      "explanation": "Acidity increases as conjugate base stabilization increases: alkoxide < resonance-stabilized phenoxide < carboxylate < trifluorocarboxylate.",
+      "spells": [
+        25,
+        35,
+        50
+      ],
+      "health": [
+        200
+      ],
+      "images": [
+        "dipole-duelist.png"
+      ]
+    },
+    {
+      "id": "ch02_q021",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Amine basicity ranking in water",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders bases in order of increasing basicity in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methylamine < Pyridine < Ammonia < Aniline"
+        },
+        {
+          "label": "B",
+          "text": "Ammonia < Aniline < Methylamine < Pyridine"
+        },
+        {
+          "label": "C",
+          "text": "Aniline < Pyridine < Ammonia < Methylamine"
+        },
+        {
+          "label": "D",
+          "text": "Aniline < Ammonia < Pyridine < Methylamine"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Aniline < Ammonia < Pyridine < Methylamine",
+      "explanation": "Alkyl inductive donation enhances aliphatic amine basicity; aniline lone pair is delocalized into the aromatic ring.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q022",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Periodic trend in binary acid acidity",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders binary hydrides in order of increasing acidity across a period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CH4 < H2O < NH3 < HF"
+        },
+        {
+          "label": "B",
+          "text": "NH3 < CH4 < HF < H2O"
+        },
+        {
+          "label": "C",
+          "text": "CH4 < NH3 < H2O < HF"
+        },
+        {
+          "label": "D",
+          "text": "HF < H2O < NH3 < CH4"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CH4 < NH3 < H2O < HF",
+      "explanation": "Across a periodic row, electronegativity of the central atom increases, increasing conjugate base stability.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q023",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Binary halide acidity down a group",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders hydrogen halides in order of increasing acidity down a group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HCl < HF < HBr < HI"
+        },
+        {
+          "label": "B",
+          "text": "HF < HCl < HBr < HI"
+        },
+        {
+          "label": "C",
+          "text": "HF < HI < HBr < HCl"
+        },
+        {
+          "label": "D",
+          "text": "HI < HBr < HCl < HF"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "HF < HCl < HBr < HI",
+      "explanation": "Down a group, bond strength decreases and halide ionic size increases, making HI the strongest acid (pKa -10).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q024",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Inductive distance effect on acidity",
+      "difficulty": "easy",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders chlorobutanoic acids in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "Butanoic acid < 2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "3-Chlorobutanoic acid < 4-Chlorobutanoic acid < 2-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid < Butanoic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid",
+      "explanation": "Inductive electron withdrawal diminishes rapidly with distance from the carboxylate center.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q025",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Carbanion stability ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders carbanions in order of increasing stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion"
+        },
+        {
+          "label": "B",
+          "text": "Ethyl carbanion < Methyl carbanion < tert-Butyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "C",
+          "text": "Methyl carbanion < Ethyl carbanion < Isopropyl carbanion < tert-Butyl carbanion"
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl carbanion < Methyl carbanion < Ethyl carbanion < Isopropyl carbanion"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion",
+      "explanation": "Alkyl groups donate electron density, destabilizing negatively charged carbanions: 3° < 2° < 1° < methyl.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q026",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Boiling points of constitutional isomers",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders isomeric C5H12 pentanes in order of increasing boiling point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,2-Dimethylpropane < Pentane < 2-Methylbutane"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylbutane < Pentane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "C",
+          "text": "Pentane < 2-Methylbutane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)",
+      "explanation": "Linear unbranched alkanes have larger surface areas for London dispersion interactions, leading to higher boiling points.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q027",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Carboxylic acid substituent acidity ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Which list correctly ranks these acids in order of increasing acidity (lowest pKa last)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid < Trichloroacetic acid < Chloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Chloroacetic acid < Acetic acid < Trichloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Trichloroacetic acid < Dichloroacetic acid < Chloroacetic acid < Acetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid",
+      "explanation": "Electronegative chlorine atoms stabilize the conjugate carboxylate base through inductive electron withdrawal.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q028",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Alcohol vs phenol vs carboxylic acid acidity",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders compounds from least acidic to most acidic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol < Ethanol < Acetic acid < Trifluoroacetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)"
+        },
+        {
+          "label": "C",
+          "text": "Ethanol < Acetic acid < Phenol < Trifluoroacetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Trifluoroacetic acid < Acetic acid < Phenol < Ethanol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)",
+      "explanation": "Acidity increases as conjugate base stabilization increases: alkoxide < resonance-stabilized phenoxide < carboxylate < trifluorocarboxylate.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q029",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Hydrocarbon hybridization acidity ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders hydrocarbons in increasing order of C-H acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethylene < Ethane < Acetylene"
+        },
+        {
+          "label": "B",
+          "text": "Ethane < Acetylene < Ethylene"
+        },
+        {
+          "label": "C",
+          "text": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)"
+        },
+        {
+          "label": "D",
+          "text": "Acetylene < Ethylene < Ethane"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)",
+      "explanation": "Higher s-character holds electrons closer to the nucleus, stabilizing the conjugate carbanion: sp3 (25% s) < sp2 (33% s) < sp (50% s).",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q030",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Resonance Wraith",
+      "topic": "Substituted phenol acidity ranking",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders substituted phenols in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Nitrophenol < 4-Chlorophenol < Phenol < 4-Methoxyphenol"
+        },
+        {
+          "label": "B",
+          "text": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol"
+        },
+        {
+          "label": "C",
+          "text": "4-Chlorophenol < 4-Methoxyphenol < Phenol < 4-Nitrophenol"
+        },
+        {
+          "label": "D",
+          "text": "Phenol < 4-Methoxyphenol < 4-Nitrophenol < 4-Chlorophenol"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol",
+      "explanation": "Electron-donating methoxy deactivates phenoxide stability; electron-withdrawing nitro strongly stabilizes phenoxide by resonance.",
+      "spells": [
+        30,
+        40,
+        55
+      ],
+      "health": [
+        300
+      ],
+      "images": [
+        "resonance-wraith.png"
+      ]
+    },
+    {
+      "id": "ch02_q031",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Binary halide acidity down a group",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders hydrogen halides in order of increasing acidity down a group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF < HI < HBr < HCl"
+        },
+        {
+          "label": "B",
+          "text": "HI < HBr < HCl < HF"
+        },
+        {
+          "label": "C",
+          "text": "HF < HCl < HBr < HI"
+        },
+        {
+          "label": "D",
+          "text": "HCl < HF < HBr < HI"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "HF < HCl < HBr < HI",
+      "explanation": "Down a group, bond strength decreases and halide ionic size increases, making HI the strongest acid (pKa -10).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q032",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Inductive distance effect on acidity",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders chlorobutanoic acids in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3-Chlorobutanoic acid < 4-Chlorobutanoic acid < 2-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "Butanoic acid < 2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid",
+      "explanation": "Inductive electron withdrawal diminishes rapidly with distance from the carboxylate center.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q033",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Carbanion stability ranking",
+      "difficulty": "easy",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders carbanions in order of increasing stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "tert-Butyl carbanion < Methyl carbanion < Ethyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "B",
+          "text": "Methyl carbanion < Ethyl carbanion < Isopropyl carbanion < tert-Butyl carbanion"
+        },
+        {
+          "label": "C",
+          "text": "Ethyl carbanion < Methyl carbanion < tert-Butyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion",
+      "explanation": "Alkyl groups donate electron density, destabilizing negatively charged carbanions: 3° < 2° < 1° < methyl.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q034",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Boiling points of constitutional isomers",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders isomeric C5H12 pentanes in order of increasing boiling point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane < 2-Methylbutane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "B",
+          "text": "2-Methylbutane < Pentane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "C",
+          "text": "2,2-Dimethylpropane < Pentane < 2-Methylbutane"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)",
+      "explanation": "Linear unbranched alkanes have larger surface areas for London dispersion interactions, leading to higher boiling points.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q035",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Carboxylic acid substituent acidity ranking",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which list correctly ranks these acids in order of increasing acidity (lowest pKa last)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chloroacetic acid < Acetic acid < Trichloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Acetic acid < Trichloroacetic acid < Chloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Trichloroacetic acid < Dichloroacetic acid < Chloroacetic acid < Acetic acid"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid",
+      "explanation": "Electronegative chlorine atoms stabilize the conjugate carboxylate base through inductive electron withdrawal.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q036",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Alcohol vs phenol vs carboxylic acid acidity",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders compounds from least acidic to most acidic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethanol < Acetic acid < Phenol < Trifluoroacetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Trifluoroacetic acid < Acetic acid < Phenol < Ethanol"
+        },
+        {
+          "label": "C",
+          "text": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)"
+        },
+        {
+          "label": "D",
+          "text": "Phenol < Ethanol < Acetic acid < Trifluoroacetic acid"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)",
+      "explanation": "Acidity increases as conjugate base stabilization increases: alkoxide < resonance-stabilized phenoxide < carboxylate < trifluorocarboxylate.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q037",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Hydrocarbon hybridization acidity ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders hydrocarbons in increasing order of C-H acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetylene < Ethylene < Ethane"
+        },
+        {
+          "label": "B",
+          "text": "Ethane < Acetylene < Ethylene"
+        },
+        {
+          "label": "C",
+          "text": "Ethylene < Ethane < Acetylene"
+        },
+        {
+          "label": "D",
+          "text": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)",
+      "explanation": "Higher s-character holds electrons closer to the nucleus, stabilizing the conjugate carbanion: sp3 (25% s) < sp2 (33% s) < sp (50% s).",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q038",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Substituted phenol acidity ranking",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders substituted phenols in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phenol < 4-Methoxyphenol < 4-Nitrophenol < 4-Chlorophenol"
+        },
+        {
+          "label": "B",
+          "text": "4-Nitrophenol < 4-Chlorophenol < Phenol < 4-Methoxyphenol"
+        },
+        {
+          "label": "C",
+          "text": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol"
+        },
+        {
+          "label": "D",
+          "text": "4-Chlorophenol < 4-Methoxyphenol < Phenol < 4-Nitrophenol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol",
+      "explanation": "Electron-donating methoxy deactivates phenoxide stability; electron-withdrawing nitro strongly stabilizes phenoxide by resonance.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q039",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Amine basicity ranking in water",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders bases in order of increasing basicity in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ammonia < Aniline < Methylamine < Pyridine"
+        },
+        {
+          "label": "B",
+          "text": "Aniline < Ammonia < Pyridine < Methylamine"
+        },
+        {
+          "label": "C",
+          "text": "Aniline < Pyridine < Ammonia < Methylamine"
+        },
+        {
+          "label": "D",
+          "text": "Methylamine < Pyridine < Ammonia < Aniline"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aniline < Ammonia < Pyridine < Methylamine",
+      "explanation": "Alkyl inductive donation enhances aliphatic amine basicity; aniline lone pair is delocalized into the aromatic ring.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q040",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "pKa Prowler",
+      "topic": "Periodic trend in binary acid acidity",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders binary hydrides in order of increasing acidity across a period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CH4 < H2O < NH3 < HF"
+        },
+        {
+          "label": "B",
+          "text": "NH3 < CH4 < HF < H2O"
+        },
+        {
+          "label": "C",
+          "text": "HF < H2O < NH3 < CH4"
+        },
+        {
+          "label": "D",
+          "text": "CH4 < NH3 < H2O < HF"
+        }
+      ],
+      "correct_option": "D",
+      "correct_answer": "CH4 < NH3 < H2O < HF",
+      "explanation": "Across a periodic row, electronegativity of the central atom increases, increasing conjugate base stability.",
+      "spells": [
+        35,
+        45,
+        60
+      ],
+      "health": [
+        400
+      ],
+      "images": [
+        "pka-prowler.png"
+      ]
+    },
+    {
+      "id": "ch02_q041",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Carbanion stability ranking",
+      "difficulty": "easy",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders carbanions in order of increasing stability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethyl carbanion < Methyl carbanion < tert-Butyl carbanion < Isopropyl carbanion"
+        },
+        {
+          "label": "B",
+          "text": "Methyl carbanion < Ethyl carbanion < Isopropyl carbanion < tert-Butyl carbanion"
+        },
+        {
+          "label": "C",
+          "text": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion"
+        },
+        {
+          "label": "D",
+          "text": "tert-Butyl carbanion < Methyl carbanion < Ethyl carbanion < Isopropyl carbanion"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "tert-Butyl carbanion < Isopropyl carbanion < Ethyl carbanion < Methyl carbanion",
+      "explanation": "Alkyl groups donate electron density, destabilizing negatively charged carbanions: 3° < 2° < 1° < methyl.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q042",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Boiling points of constitutional isomers",
+      "difficulty": "easy",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders isomeric C5H12 pentanes in order of increasing boiling point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pentane < 2-Methylbutane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "B",
+          "text": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)"
+        },
+        {
+          "label": "C",
+          "text": "2-Methylbutane < Pentane < 2,2-Dimethylpropane"
+        },
+        {
+          "label": "D",
+          "text": "2,2-Dimethylpropane < Pentane < 2-Methylbutane"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "2,2-Dimethylpropane (neopentane, 9.5°C) < 2-Methylbutane (isopentane, 28°C) < Pentane (n-pentane, 36°C)",
+      "explanation": "Linear unbranched alkanes have larger surface areas for London dispersion interactions, leading to higher boiling points.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q043",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Carboxylic acid substituent acidity ranking",
+      "difficulty": "medium",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which list correctly ranks these acids in order of increasing acidity (lowest pKa last)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid"
+        },
+        {
+          "label": "B",
+          "text": "Trichloroacetic acid < Dichloroacetic acid < Chloroacetic acid < Acetic acid"
+        },
+        {
+          "label": "C",
+          "text": "Acetic acid < Trichloroacetic acid < Chloroacetic acid < Dichloroacetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Chloroacetic acid < Acetic acid < Trichloroacetic acid < Dichloroacetic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Acetic acid < Chloroacetic acid < Dichloroacetic acid < Trichloroacetic acid",
+      "explanation": "Electronegative chlorine atoms stabilize the conjugate carboxylate base through inductive electron withdrawal.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q044",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Alcohol vs phenol vs carboxylic acid acidity",
+      "difficulty": "medium",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders compounds from least acidic to most acidic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trifluoroacetic acid < Acetic acid < Phenol < Ethanol"
+        },
+        {
+          "label": "B",
+          "text": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)"
+        },
+        {
+          "label": "C",
+          "text": "Phenol < Ethanol < Acetic acid < Trifluoroacetic acid"
+        },
+        {
+          "label": "D",
+          "text": "Ethanol < Acetic acid < Phenol < Trifluoroacetic acid"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ethanol (pKa 16) < Phenol (pKa 10) < Acetic acid (pKa 4.75) < Trifluoroacetic acid (pKa 0.2)",
+      "explanation": "Acidity increases as conjugate base stabilization increases: alkoxide < resonance-stabilized phenoxide < carboxylate < trifluorocarboxylate.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q045",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Hydrocarbon hybridization acidity ranking",
+      "difficulty": "medium",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders hydrocarbons in increasing order of C-H acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)"
+        },
+        {
+          "label": "B",
+          "text": "Ethylene < Ethane < Acetylene"
+        },
+        {
+          "label": "C",
+          "text": "Acetylene < Ethylene < Ethane"
+        },
+        {
+          "label": "D",
+          "text": "Ethane < Acetylene < Ethylene"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Ethane (sp3, pKa 50) < Ethylene (sp2, pKa 44) < Acetylene (sp, pKa 25)",
+      "explanation": "Higher s-character holds electrons closer to the nucleus, stabilizing the conjugate carbanion: sp3 (25% s) < sp2 (33% s) < sp (50% s).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q046",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Substituted phenol acidity ranking",
+      "difficulty": "medium",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders substituted phenols in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Nitrophenol < 4-Chlorophenol < Phenol < 4-Methoxyphenol"
+        },
+        {
+          "label": "B",
+          "text": "Phenol < 4-Methoxyphenol < 4-Nitrophenol < 4-Chlorophenol"
+        },
+        {
+          "label": "C",
+          "text": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol"
+        },
+        {
+          "label": "D",
+          "text": "4-Chlorophenol < 4-Methoxyphenol < Phenol < 4-Nitrophenol"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "4-Methoxyphenol < Phenol < 4-Chlorophenol < 4-Nitrophenol",
+      "explanation": "Electron-donating methoxy deactivates phenoxide stability; electron-withdrawing nitro strongly stabilizes phenoxide by resonance.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q047",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Amine basicity ranking in water",
+      "difficulty": "hard",
+      "question_type": "reactivity_ladder_ranking",
+      "question": "Which ranking correctly orders bases in order of increasing basicity in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methylamine < Pyridine < Ammonia < Aniline"
+        },
+        {
+          "label": "B",
+          "text": "Aniline < Ammonia < Pyridine < Methylamine"
+        },
+        {
+          "label": "C",
+          "text": "Ammonia < Aniline < Methylamine < Pyridine"
+        },
+        {
+          "label": "D",
+          "text": "Aniline < Pyridine < Ammonia < Methylamine"
+        }
+      ],
+      "correct_option": "B",
+      "correct_answer": "Aniline < Ammonia < Pyridine < Methylamine",
+      "explanation": "Alkyl inductive donation enhances aliphatic amine basicity; aniline lone pair is delocalized into the aromatic ring.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q048",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Periodic trend in binary acid acidity",
+      "difficulty": "hard",
+      "question_type": "boiling_point_ranking",
+      "question": "Which ranking correctly orders binary hydrides in order of increasing acidity across a period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HF < H2O < NH3 < CH4"
+        },
+        {
+          "label": "B",
+          "text": "NH3 < CH4 < HF < H2O"
+        },
+        {
+          "label": "C",
+          "text": "CH4 < NH3 < H2O < HF"
+        },
+        {
+          "label": "D",
+          "text": "CH4 < H2O < NH3 < HF"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "CH4 < NH3 < H2O < HF",
+      "explanation": "Across a periodic row, electronegativity of the central atom increases, increasing conjugate base stability.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q049",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Binary halide acidity down a group",
+      "difficulty": "hard",
+      "question_type": "acidity_basicity_ranking",
+      "question": "Which ranking correctly orders hydrogen halides in order of increasing acidity down a group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HI < HBr < HCl < HF"
+        },
+        {
+          "label": "B",
+          "text": "HF < HI < HBr < HCl"
+        },
+        {
+          "label": "C",
+          "text": "HF < HCl < HBr < HI"
+        },
+        {
+          "label": "D",
+          "text": "HCl < HF < HBr < HI"
+        }
+      ],
+      "correct_option": "C",
+      "correct_answer": "HF < HCl < HBr < HI",
+      "explanation": "Down a group, bond strength decreases and halide ionic size increases, making HI the strongest acid (pKa -10).",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    },
+    {
+      "id": "ch02_q050",
+      "chapter": 2,
+      "chapter_title": "Polar Covalent Bonds; Acids and Bases",
+      "boss": "Lewis Acid-Base Leviathan",
+      "topic": "Inductive distance effect on acidity",
+      "difficulty": "hard",
+      "question_type": "carbocation_stability_ranking",
+      "question": "Which ranking correctly orders chlorobutanoic acids in order of increasing acidity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid"
+        },
+        {
+          "label": "B",
+          "text": "Butanoic acid < 2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "3-Chlorobutanoic acid < 4-Chlorobutanoic acid < 2-Chlorobutanoic acid < Butanoic acid"
+        },
+        {
+          "label": "D",
+          "text": "2-Chlorobutanoic acid < 3-Chlorobutanoic acid < 4-Chlorobutanoic acid < Butanoic acid"
+        }
+      ],
+      "correct_option": "A",
+      "correct_answer": "Butanoic acid < 4-Chlorobutanoic acid < 3-Chlorobutanoic acid < 2-Chlorobutanoic acid",
+      "explanation": "Inductive electron withdrawal diminishes rapidly with distance from the carboxylate center.",
+      "spells": [
+        40,
+        50,
+        65
+      ],
+      "health": [
+        500
+      ],
+      "images": [
+        "lewis-acid-base-leviathan.png"
+      ]
+    }
+  ],
+  "bosses": [
+    "Electronegativity Enchanter",
+    "Dipole Duelist",
+    "Resonance Wraith",
+    "pKa Prowler",
+    "Lewis Acid-Base Leviathan"
+  ],
+  "boss_strategy": {
+    "description": "Progressive difficulty across five bosses",
+    "progression": "Easy questions decrease by 1 per boss, Medium questions remain at 4, Hard questions increase by 1 per boss.",
+    "distribution": [
+      {
+        "boss": "Electronegativity Enchanter",
+        "easy": 6,
+        "medium": 4,
+        "hard": 0,
+        "total": 10,
+        "spells": [
+          20,
+          30,
+          45
+        ],
+        "health": [
+          100
+        ],
+        "images": [
+          "electronegativity-enchanter.png"
+        ]
+      },
+      {
+        "boss": "Dipole Duelist",
+        "easy": 5,
+        "medium": 4,
+        "hard": 1,
+        "total": 10,
+        "spells": [
+          25,
+          35,
+          50
+        ],
+        "health": [
+          200
+        ],
+        "images": [
+          "dipole-duelist.png"
+        ]
+      },
+      {
+        "boss": "Resonance Wraith",
+        "easy": 4,
+        "medium": 4,
+        "hard": 2,
+        "total": 10,
+        "spells": [
+          30,
+          40,
+          55
+        ],
+        "health": [
+          300
+        ],
+        "images": [
+          "resonance-wraith.png"
+        ]
+      },
+      {
+        "boss": "pKa Prowler",
+        "easy": 3,
+        "medium": 4,
+        "hard": 3,
+        "total": 10,
+        "spells": [
+          35,
+          45,
+          60
+        ],
+        "health": [
+          400
+        ],
+        "images": [
+          "pka-prowler.png"
+        ]
+      },
+      {
+        "boss": "Lewis Acid-Base Leviathan",
+        "easy": 2,
+        "medium": 4,
+        "hard": 4,
+        "total": 10,
+        "spells": [
+          40,
+          50,
+          65
+        ],
+        "health": [
+          500
+        ],
+        "images": [
+          "lewis-acid-base-leviathan.png"
+        ]
+      }
+    ]
+  }
+}
