@@ -1152,9 +1152,310 @@ function bindDomEvents() {
     }
   });
 
+  // --- Track Selection Screen Management ---
+  let selectedTrackId = localStorage.getItem('organic_battles_selected_track') || 'adv-outcomes';
+  let trackFilterCurriculum = 'all';
+  let trackSearchQuery = '';
+
+  function getCustomFolders() {
+    try {
+      return JSON.parse(localStorage.getItem('organic_battles_track_folders') || '{}');
+    } catch (_) {
+      return {};
+    }
+  }
+
+  function saveCustomFolder(trackId, folderPath) {
+    const folders = getCustomFolders();
+    if (folderPath && folderPath.trim()) {
+      folders[trackId] = folderPath.trim();
+    } else {
+      delete folders[trackId];
+    }
+    localStorage.setItem('organic_battles_track_folders', JSON.stringify(folders));
+  }
+
+  function getTrackDataFolder(track) {
+    const custom = getCustomFolders();
+    return custom[track.id] || track.data_folder;
+  }
+
+  function getTracksList() {
+    return (typeof TRACKS !== 'undefined' ? TRACKS : (window.TRACKS || []));
+  }
+
+  function showTrackSelectionScreen(avatarId = null) {
+    $('#boot')?.classList.add('hidden');
+    $('#auth-screen')?.classList.add('hidden');
+    $('#avatar-creator')?.classList.add('hidden');
+    $('#game-shell')?.classList.add('hidden');
+    $('#track-screen')?.classList.remove('hidden');
+
+    const charId = avatarId || session?.avatar?.character || selectedAvatar;
+    const char = charId && CHARACTERS[charId] ? CHARACTERS[charId] : null;
+    const companionName = char ? char.name : 'Alchemist';
+    const initials = companionName.split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase() || 'AL';
+
+    const avatarEl = $('#track-player-avatar');
+    const nameEl = $('#track-player-name');
+    if (avatarEl) avatarEl.textContent = initials;
+    if (nameEl) nameEl.textContent = companionName;
+
+    renderTrackSelection();
+  }
+
+  function renderTrackSelection() {
+    const gallery = $('#track-gallery');
+    const emptyState = $('#track-empty-state');
+    const availableCount = $('#track-available-count');
+    const tracks = getTracksList();
+    if (!gallery) return;
+
+    const query = trackSearchQuery.trim().toLowerCase();
+    const filtered = tracks.filter((t) => {
+      const matchesCurriculum = trackFilterCurriculum === 'all' || t.curriculum === trackFilterCurriculum;
+      const matchesQuery = !query || `${t.title} ${t.detail} ${t.boss}`.toLowerCase().includes(query);
+      return matchesCurriculum && matchesQuery;
+    });
+
+    if (availableCount) {
+      availableCount.textContent = `${filtered.length} TRACKS AVAILABLE`;
+    }
+
+    const clearBtn = $('#track-search-clear');
+    if (clearBtn) {
+      clearBtn.classList.toggle('hidden', !trackSearchQuery);
+    }
+
+    if (!tracks.some((t) => t.id === selectedTrackId)) {
+      selectedTrackId = tracks[0]?.id || 'adv-outcomes';
+    }
+
+    if (filtered.length === 0) {
+      gallery.classList.add('hidden');
+      emptyState?.classList.remove('hidden');
+    } else {
+      gallery.classList.remove('hidden');
+      emptyState?.classList.add('hidden');
+
+      gallery.innerHTML = '';
+      filtered.forEach((track, index) => {
+        const isSelected = track.id === selectedTrackId;
+        const card = document.createElement('div');
+        card.className = `track-card ${isSelected ? 'selected' : ''}`;
+        card.dataset.trackId = track.id;
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+
+        const isAdv = track.curriculum === 'advanced';
+        const curTagClass = isAdv ? 'adv' : 'found';
+        const curTagLetter = isAdv ? 'A' : 'F';
+        const waterIndex = String(index + 1).padStart(2, '0');
+
+        card.innerHTML = `
+          <div class="track-card-header">
+            <span class="curriculum-tag ${curTagClass}" title="${isAdv ? 'Advanced Mechanistic Mastery' : 'Foundational Open'}">${curTagLetter}</span>
+            <div class="track-card-actions">
+              <button type="button" class="track-tile-config-btn" title="Configure JSON folder location for ${track.title}">⚙ PATH</button>
+              <span class="track-check-indicator">✓</span>
+            </div>
+          </div>
+          <div class="track-card-body">
+            <div class="track-card-title">${track.title}</div>
+            <div class="track-card-detail">${track.detail}</div>
+            <div class="track-card-boss">⚔ Archetype: ${track.boss}</div>
+          </div>
+          <span class="track-watermark" aria-hidden="true">${waterIndex}</span>
+        `;
+
+        card.querySelector('.track-tile-config-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openTrackFolderModal(track.id);
+        });
+
+        card.addEventListener('click', () => {
+          selectedTrackId = track.id;
+          localStorage.setItem('organic_battles_selected_track', track.id);
+          renderTrackSelection();
+        });
+
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            selectedTrackId = track.id;
+            localStorage.setItem('organic_battles_selected_track', track.id);
+            renderTrackSelection();
+          }
+        });
+
+        gallery.appendChild(card);
+      });
+    }
+
+    // Update Loadout Preview Box
+    const activeTrack = tracks.find((t) => t.id === selectedTrackId) || tracks[0];
+    if (activeTrack) {
+      const isAdv = activeTrack.curriculum === 'advanced';
+      const badge = $('#loadout-curriculum-badge');
+      if (badge) {
+        badge.textContent = isAdv ? 'A' : 'F';
+        badge.style.background = isAdv ? 'var(--cyan)' : 'var(--violet)';
+        badge.style.color = '#06111b';
+      }
+      const titleEl = $('#loadout-track-title');
+      if (titleEl) titleEl.textContent = activeTrack.title;
+      const curEl = $('#loadout-track-curriculum');
+      if (curEl) curEl.textContent = `${isAdv ? 'ADVANCED' : 'FOUNDATIONAL'} · ${activeTrack.questions.toLocaleString()} QUESTIONS`;
+      const detailEl = $('#loadout-track-detail');
+      if (detailEl) detailEl.textContent = activeTrack.detail;
+      const folderEl = $('#loadout-folder-path');
+      if (folderEl) folderEl.textContent = getTrackDataFolder(activeTrack);
+      const poolEl = $('#loadout-pool-count');
+      if (poolEl) poolEl.innerHTML = `${activeTrack.questions.toLocaleString()} <span class="stat-unit">questions</span>`;
+    }
+  }
+
+  function openTrackFolderModal(trackId) {
+    const tracks = getTracksList();
+    const track = tracks.find((t) => t.id === trackId);
+    if (!track) return;
+
+    const modal = $('#track-folder-modal');
+    if (!modal) return;
+
+    $('#folder-modal-track-id').value = track.id;
+    $('#folder-modal-track-name').value = track.title;
+    $('#folder-modal-path-input').value = getTrackDataFolder(track);
+
+    const status = $('#folder-modal-status');
+    if (status) {
+      status.textContent = '';
+      status.className = 'admin-modal-status';
+    }
+
+    modal.classList.remove('hidden');
+    $('#folder-modal-path-input')?.focus();
+  }
+
+  function closeTrackFolderModal() {
+    $('#track-folder-modal')?.classList.add('hidden');
+  }
+
+  function bindTrackEvents() {
+    $('#track-search-input')?.addEventListener('input', (e) => {
+      trackSearchQuery = e.target.value;
+      renderTrackSelection();
+    });
+
+    $('#track-search-clear')?.addEventListener('click', () => {
+      trackSearchQuery = '';
+      const input = $('#track-search-input');
+      if (input) input.value = '';
+      renderTrackSelection();
+    });
+
+    $('#track-curriculum-select')?.addEventListener('change', (e) => {
+      trackFilterCurriculum = e.target.value;
+      renderTrackSelection();
+    });
+
+    $('#track-reset-filters-btn')?.addEventListener('click', () => {
+      trackSearchQuery = '';
+      trackFilterCurriculum = 'all';
+      const input = $('#track-search-input');
+      if (input) input.value = '';
+      const select = $('#track-curriculum-select');
+      if (select) select.value = 'all';
+      renderTrackSelection();
+    });
+
+    $('#loadout-configure-folder-btn')?.addEventListener('click', () => {
+      openTrackFolderModal(selectedTrackId);
+    });
+
+    $('#track-folder-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const trackId = $('#folder-modal-track-id').value;
+      const newPath = $('#folder-modal-path-input').value;
+      const status = $('#folder-modal-status');
+
+      saveCustomFolder(trackId, newPath);
+      if (status) {
+        status.textContent = 'Folder path saved successfully!';
+        status.className = 'admin-modal-status success';
+      }
+      renderTrackSelection();
+      setTimeout(() => {
+        closeTrackFolderModal();
+      }, 500);
+    });
+
+    $('#reset-folder-path-btn')?.addEventListener('click', () => {
+      const trackId = $('#folder-modal-track-id').value;
+      const tracks = getTracksList();
+      const track = tracks.find((t) => t.id === trackId);
+      if (!track) return;
+
+      saveCustomFolder(trackId, '');
+      $('#folder-modal-path-input').value = track.data_folder;
+      const status = $('#folder-modal-status');
+      if (status) {
+        status.textContent = 'Reset to default folder.';
+        status.className = 'admin-modal-status hint';
+      }
+      renderTrackSelection();
+    });
+
+    $('#cancel-folder-modal-btn')?.addEventListener('click', closeTrackFolderModal);
+    $('#track-folder-modal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'track-folder-modal') closeTrackFolderModal();
+    });
+
+    $('#start-battle-button')?.addEventListener('click', async () => {
+      const startBtn = $('#start-battle-button');
+      if (!startBtn) return;
+
+      startBtn.disabled = true;
+      startBtn.innerHTML = `<span>PREPARING ARENA…</span>`;
+
+      try {
+        const tracks = getTracksList();
+        const activeTrack = tracks.find((t) => t.id === selectedTrackId) || tracks[0];
+        const folderPath = getTrackDataFolder(activeTrack);
+
+        if (session?.session_id) {
+          try {
+            await api('/api/game/track', {
+              session_id: session.session_id,
+              track_id: selectedTrackId,
+              data_folder: folderPath,
+            });
+          } catch (trackErr) {
+            console.warn('Track config API warning:', trackErr);
+          }
+        }
+
+        $('#track-screen')?.classList.add('hidden');
+        $('#game-shell')?.classList.remove('hidden');
+        startPhaser();
+        render(session);
+      } catch (err) {
+        console.error('Failed to start duel:', err);
+        startBtn.disabled = false;
+        startBtn.innerHTML = `<span>START THE BATTLE</span> <span class="btn-arrow">→</span>`;
+      }
+    });
+
+    $('#back-to-avatar-button')?.addEventListener('click', () => {
+      $('#track-screen')?.classList.add('hidden');
+      $('#avatar-creator')?.classList.remove('hidden');
+    });
+  }
 
   $('#keep-avatar')?.addEventListener('click', () => {
-    $('#avatar-creator')?.classList.add('hidden'); $('#game-shell')?.classList.remove('hidden'); startPhaser(); render(session);
+    $('#avatar-creator')?.classList.add('hidden');
+    showTrackSelectionScreen(session.avatar?.character || selectedAvatar);
   });
 
   const acceptButton = $('#accept-avatar');
@@ -1163,21 +1464,19 @@ function bindDomEvents() {
       if (!selectedAvatar) return;
       if (session.finalized && selectedAvatar === session.avatar?.character) {
         $('#avatar-creator')?.classList.add('hidden');
-        $('#game-shell')?.classList.remove('hidden');
-        startPhaser();
-        render(session);
+        showTrackSelectionScreen(selectedAvatar);
         return;
       }
       acceptButton.disabled = true;
-      acceptButton.textContent = 'ENTERING BATTLEFIELD…';
+      acceptButton.textContent = 'CONFIRMING COMPANION…';
       try {
         const avatar = { character: selectedAvatar, body: 'arc', config: { ...DEFAULT_AVATAR_CONFIG, baseCharacter: selectedAvatar } };
         session = await api('/api/avatar/finalize', { session_id: session.session_id, ...avatar });
         playerAvatar = null;
+        acceptButton.disabled = false;
+        acceptButton.textContent = 'CONTINUE TO BATTLEFIELD';
         $('#avatar-creator')?.classList.add('hidden');
-        $('#game-shell')?.classList.remove('hidden');
-        startPhaser();
-        render(session);
+        showTrackSelectionScreen(selectedAvatar);
       } catch (error) {
         acceptButton.disabled = false;
         acceptButton.textContent = 'CONTINUE TO BATTLEFIELD';
@@ -1205,6 +1504,7 @@ function bindDomEvents() {
     });
   }
 
+  bindTrackEvents();
   ensureExplanationUi();
   bindAuthEvents();
   bindAdminEvents();

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Organic Battles V4P</title>
 
-  <link rel="stylesheet" href="/static/css/game.css?v=13">
+  <link rel="stylesheet" href="/static/css/game.css?v=14">
 
 
 
@@ -68,7 +68,172 @@
     </div>
   </div>
 
-  <div id="game-shell" class="hidden">
+  <!-- Track Selection Screen (Theme matched to Avatar Selection Screen) -->
+  <section id="track-screen" class="hidden">
+    <div class="track-screen-container">
+      <header class="track-header">
+        <div class="brand">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
+        <div class="track-header-meta">
+          <span class="track-setup-tag">BATTLE SETUP // 02</span>
+          <div id="track-player-badge" class="track-player-badge" title="Selected Companion">
+            <span id="track-player-avatar" class="track-player-avatar">AL</span>
+            <span id="track-player-name" class="track-player-name">Alchemist</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="track-layout">
+        <!-- Main Column: Hero, Filters, Track Grid -->
+        <div class="track-main-content">
+          <div class="track-hero">
+            <div class="track-hero-text">
+              <div class="eyebrow">◈ ORGO // CHOOSE YOUR MATCHUP</div>
+              <h1>PICK A TRACK.<br><span>ENTER SHARPER.</span></h1>
+              <p>Every battle starts with a deliberate choice. Choose one track to set the chemistry of your next duel.</p>
+            </div>
+            <div class="track-schema-card">
+              <div class="schema-icon">⚗</div>
+              <div class="schema-badge">SCHEMA 2.0</div>
+              <div class="schema-count">27,050 MCQs</div>
+            </div>
+          </div>
+
+          <!-- Search and Curriculum Filter Toolbar -->
+          <div class="track-toolbar">
+            <div class="track-search-wrapper">
+              <span class="track-search-icon">🔍</span>
+              <input type="search" id="track-search-input" placeholder="Search 19 tracks by topic, pattern, or boss…" autocomplete="off">
+              <button type="button" id="track-search-clear" class="track-search-clear hidden" aria-label="Clear search">✕</button>
+            </div>
+            <div class="track-filter-wrapper">
+              <label for="track-curriculum-select" class="sr-only">Filter by curriculum</label>
+              <select id="track-curriculum-select">
+                <option value="all">All Curricula (19 Tracks)</option>
+                <option value="advanced">Advanced Mechanistic Mastery (12 Tracks)</option>
+                <option value="foundational">Foundational Open (7 Tracks)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Counter and Status -->
+          <div class="track-status-bar">
+            <span id="track-available-count" class="track-count-available">19 TRACKS AVAILABLE</span>
+            <span id="track-selection-count" class="track-count-selected">1 / 1 SELECTED</span>
+          </div>
+
+          <!-- Grid of Track Tiles -->
+          <div id="track-gallery" class="track-grid" aria-label="Chemistry Tracks"></div>
+
+          <!-- Empty Search State -->
+          <div id="track-empty-state" class="track-empty-state hidden">
+            <div class="empty-sigil">◈</div>
+            <h3>No tracks match that query</h3>
+            <p>Try searching another topic, concept, or reset your filters.</p>
+            <button type="button" id="track-reset-filters-btn" class="secondary">RESET ALL FILTERS</button>
+          </div>
+        </div>
+
+        <!-- Sticky Sidebar: Battle Loadout Rail -->
+        <aside class="track-sidebar" aria-label="Battle Loadout">
+          <div class="track-loadout-card">
+            <div class="loadout-header">
+              <div>
+                <div class="eyebrow">YOUR BATTLE LOADOUT</div>
+                <h2 class="loadout-title">SELECTED TRACK</h2>
+              </div>
+              <div class="loadout-shield-badge" aria-hidden="true">🛡</div>
+            </div>
+
+            <!-- Active Track Summary Card -->
+            <div id="loadout-preview-box" class="loadout-preview-box">
+              <div class="loadout-preview-top">
+                <span id="loadout-curriculum-badge" class="loadout-curriculum-badge">A</span>
+                <div class="loadout-preview-details">
+                  <div id="loadout-track-title" class="loadout-track-title">Reaction Outcomes</div>
+                  <div id="loadout-track-curriculum" class="loadout-track-curriculum">ADVANCED · 1,350 QUESTIONS</div>
+                </div>
+              </div>
+              <div id="loadout-track-detail" class="loadout-track-detail">50 / 30 / 20 outcome weighting</div>
+              
+              <!-- Data Folder Path Tag & Config Trigger -->
+              <div class="loadout-data-info">
+                <span class="loadout-folder-label">DATA FOLDER:</span>
+                <code id="loadout-folder-path" class="loadout-folder-path">data/tracks/ReactionOutComeTypesData</code>
+                <button type="button" id="loadout-configure-folder-btn" class="loadout-folder-btn" title="Configure JSON folder location for this track">⚙ CONFIGURE PATH</button>
+              </div>
+            </div>
+
+            <div class="loadout-divider"></div>
+
+            <div class="loadout-stats-row">
+              <div>
+                <div class="loadout-stat-label">BATTLE POOL</div>
+                <div id="loadout-pool-count" class="loadout-stat-value">1,350 <span class="stat-unit">questions</span></div>
+              </div>
+              <div class="loadout-sparkle-icon">✨</div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="loadout-actions">
+              <button id="start-battle-button" class="primary track-cta-btn" type="button">
+                <span>START THE BATTLE</span>
+                <span class="btn-arrow">→</span>
+              </button>
+              <button id="back-to-avatar-button" class="secondary track-back-btn" type="button">
+                ← CHANGE COMPANION
+              </button>
+            </div>
+
+            <div class="loadout-footnote">
+              🔒 YOU CAN CHANGE THIS TRACK ANYTIME
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Curriculum Stats Footer -->
+      <footer class="track-footer">
+        <div class="footer-curriculum-stat">
+          <strong>ADVANCED MECHANISTIC MASTERY</strong> / 16,200 Qs · 27 CHAPTERS · 135 BOSSES
+        </div>
+        <div class="footer-curriculum-stat">
+          <strong>FOUNDATIONAL OPEN</strong> / 10,850 Qs · 31 CHAPTERS · 155 BOSSES
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Track Data JSON Location Config Modal -->
+  <div id="track-folder-modal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+    <div class="modal-card" style="max-width: 520px;">
+      <div class="eyebrow">CONFIGURATION // TILE DATA MAPPING</div>
+      <h2 id="folder-modal-title">CONFIGURE DATA PATH</h2>
+      <p id="folder-modal-subtitle">Specify the directory path where the 27 chapter JSON files are stored for this track.</p>
+      
+      <form id="track-folder-form">
+        <input type="hidden" id="folder-modal-track-id" value="">
+        
+        <label>TRACK
+          <input type="text" id="folder-modal-track-name" readonly disabled style="opacity: 0.75; cursor: not-allowed;">
+        </label>
+        
+        <label style="margin-top: 14px;">CHAPTER JSON FOLDER LOCATION
+          <input type="text" id="folder-modal-path-input" required placeholder="e.g. data/tracks/ReactionOutComeTypesData" style="font-family: 'DM Mono', monospace; font-size: 0.85rem;">
+        </label>
+        <div class="folder-hint" style="margin-top: 6px; font-size: 0.68rem; color: var(--muted); line-height: 1.4;">
+          Path can be relative to project root (e.g. <code>data/tracks/ReactionOutComeTypesData</code>) or absolute. The system loads <code>chapter_01.json</code> through <code>chapter_27.json</code> from this folder.
+        </div>
+
+        <div id="folder-modal-status" class="admin-modal-status" style="min-height: 18px; margin-top: 12px; font-size: 0.72rem;"></div>
+
+        <div class="modal-actions" style="margin-top: 20px; display: flex; gap: 10px;">
+          <button type="submit" class="primary" id="save-folder-path-btn">SAVE FOLDER LOCATION</button>
+          <button type="button" class="secondary" id="reset-folder-path-btn">RESET TO DEFAULT</button>
+          <button type="button" class="secondary" id="cancel-folder-modal-btn">CANCEL</button>
+        </div>
+      </form>
+    </div>
+  </div>
     <header>
       <div class="brand">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
 
@@ -421,7 +586,8 @@
     </div>
   </div>
 </main>
-<script type="module" src="/static/js/main.js?v=16"></script>
+<script src="/static/js/tracks-config.js"></script>
+<script type="module" src="/static/js/main.js?v=17"></script>
 
 
 

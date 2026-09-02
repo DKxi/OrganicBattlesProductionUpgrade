@@ -6,14 +6,21 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.orm import Session as DBSession
 
+from app.settings import settings
 from app.api.deps import get_db, get_current_user, get_content_bundle
 from app.infrastructure.database.models import User, GameSession
 from app.infrastructure.database.repositories import SessionRepository
 from app.domain.content.resolver import resolve_content_source
-from app.domain.content.loader import json_available_spells
+from app.domain.content.loader import json_available_spells, load_tracks_config, load_track_bundle
 from app.domain.combat.spells import SPELL_CATALOG
 
 router = APIRouter(tags=["Game Session"])
+
+
+class SetTrackRequest(BaseModel):
+    session_id: Optional[str] = None
+    track_id: str
+    data_folder: Optional[str] = None
 
 
 class FinalizeAvatarRequest(BaseModel):
@@ -245,3 +252,39 @@ def finalize_avatar(
     db.commit()
 
     return format_game_state(game_session, current_user)
+
+
+@router.get("/game/tracks")
+def get_tracks():
+    """Retrieve full tracks and curricula configuration."""
+    return load_tracks_config(settings.root_dir)
+
+
+@router.post("/game/track")
+def set_track(
+    body: SetTrackRequest,
+    current_user: User = Depends(get_current_user),
+    db: DBSession = Depends(get_db),
+):
+    """
+    Select active track for user's game session and configure custom question folder.
+    """
+    session_repo = SessionRepository(db)
+    game_session = (
+        session_repo.get_by_id(body.session_id)
+        if body.session_id
+        else session_repo.get_by_user_id(current_user.id)
+    )
+    if not game_session:
+        raise HTTPException(404, "Session not found")
+
+    bundle = load_track_bundle(settings.root_dir, body.track_id, body.data_folder)
+    return {
+        "status": "success",
+        "track_id": body.track_id,
+        "data_folder": body.data_folder,
+        "chapter_count": len(bundle.chapters),
+        "question_count": len(bundle.questions),
+        "session": format_game_state(game_session, current_user),
+    }
+

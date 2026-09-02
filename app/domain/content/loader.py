@@ -3,7 +3,7 @@ import logging
 import os
 import re
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
 from app.settings import settings
 from app.domain.content.entities import ContentBundle
 
@@ -121,13 +121,52 @@ def load_app_bundle() -> ContentBundle:
     )
 
 
-def load_json_bundle(root_dir: Path) -> ContentBundle:
-    manifest_path = root_dir / "data" / "manifest.json"
-    if not manifest_path.is_file():
+def load_json_bundle(root_dir: Path, data_dir: Optional[Path] = None) -> ContentBundle:
+    target_dir = data_dir if data_dir and data_dir.is_dir() else root_dir / "data"
+    manifest_path = target_dir / "manifest.json"
+    
+    # If target folder has no manifest, look for chapter_*.json files directly
+    entries = []
+    if manifest_path.is_file():
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            entries = manifest.get("chapters", [])
+        except Exception as exc:
+            logger.error("Error reading manifest at %s: %s", manifest_path, exc)
+    
+    if not entries:
+        # Scan for chapter_XX.json in target_dir
+        chapter_files = sorted(list(target_dir.glob("chapter_*.json")))
+        if not chapter_files and target_dir != (root_dir / "data"):
+            # Fall back to root_dir / data
+            logger.info("No chapter files found in %s, falling back to data/", target_dir)
+            target_dir = root_dir / "data"
+            manifest_path = target_dir / "manifest.json"
+            if manifest_path.is_file():
+                manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+                entries = manifest.get("chapters", [])
+            else:
+                chapter_files = sorted(list(target_dir.glob("chapter_*.json")))
+
+        if not entries and chapter_files:
+            for ch_file in chapter_files:
+                try:
+                    data = json.loads(ch_file.read_text(encoding="utf-8"))
+                    ch_num = int(data.get("chapter", 1))
+                    entries.append({
+                        "chapter": ch_num,
+                        "title": data.get("chapter_title", f"Chapter {ch_num}"),
+                        "file": ch_file.name,
+                        "boss": data.get("assigned_boss", "Organic Chemistry Boss"),
+                        "question_count": len(data.get("questions", [])),
+                    })
+                except Exception:
+                    continue
+
+    if not entries and not manifest_path.is_file():
         return load_app_bundle()
 
     try:
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         chapters = []
         question_bank = {}
         question_boss_bank = {}
@@ -137,12 +176,12 @@ def load_json_bundle(root_dir: Path) -> ContentBundle:
         spell_values = {}
         spell_damage = {}
 
-        for entry in manifest.get("chapters", []):
-            chapter_file = root_dir / "data" / entry["file"]
+        for entry in entries:
+            chapter_file = target_dir / entry["file"]
             if not chapter_file.is_file():
                 continue
             chapter_data = json.loads(chapter_file.read_text(encoding="utf-8"))
-            chapter_id = int(chapter_data["chapter"])
+            chapter_id = int(chapter_data.get("chapter", entry.get("chapter", 1)))
             questions = []
             boss_groups = {}
             for item in chapter_data.get("questions", []):
@@ -187,7 +226,7 @@ def load_json_bundle(root_dir: Path) -> ContentBundle:
             json_spells = {spell_id: (name, kind, spell_damage.get(damage, damage), cooldown, description) for spell_id, (name, kind, damage, cooldown, description) in json_spells.items()}
 
         return ContentBundle(
-            source_name="json",
+            source_name=f"json:{target_dir.name}",
             chapters=chapters,
             questions=[q for q_list in question_bank.values() for q in q_list],
             question_bank_by_chapter=question_bank,
@@ -200,6 +239,50 @@ def load_json_bundle(root_dir: Path) -> ContentBundle:
             json_spell_damage=spell_damage,
         )
     except Exception as exc:
-        logger.error("Error loading JSON bundle: %s", exc)
+        logger.error("Error loading JSON bundle from %s: %s", target_dir, exc)
         return load_app_bundle()
+
+
+def load_tracks_config(root_dir: Path) -> dict:
+    """Load tracks and curricula from data/tracks_config.json."""
+    config_path = root_dir / "data" / "tracks_config.json"
+    if config_path.is_file():
+        try:
+            return json.loads(config_path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            logger.error("Error reading tracks_config.json: %s", exc)
+    return {"curricula": [], "tracks": []}
+
+
+def get_track_config(root_dir: Path, track_id: str) -> Optional[dict]:
+    """Retrieve metadata for a specific track ID."""
+    config = load_tracks_config(root_dir)
+    for t in config.get("tracks", []):
+        if t.get("id") == track_id:
+            return t
+    return None
+
+
+def load_track_bundle(root_dir: Path, track_id: str, custom_folder: Optional[str] = None) -> ContentBundle:
+    """
+    Load a ContentBundle for a specific track, using its configured data_folder.
+    If custom_folder is provided (configured by user), it overrides the default track path.
+    Gracefully falls back to data/ if the target folder does not exist or has no chapters.
+    """
+    track_cfg = get_track_config(root_dir, track_id)
+    folder_str = custom_folder or (track_cfg.get("data_folder") if track_cfg else None)
+    if folder_str:
+        folder_path = Path(folder_str)
+        if not folder_path.is_absolute():
+            folder_path = root_dir / folder_str
+        if folder_path.is_dir():
+            bundle = load_json_bundle(root_dir, data_dir=folder_path)
+            bundle.source_name = f"track:{track_id}"
+            return bundle
+
+    # Default fallback to master data/ directory
+    bundle = load_json_bundle(root_dir)
+    bundle.source_name = f"track:{track_id}"
+    return bundle
+
 
