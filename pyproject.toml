@@ -20,3 +20,8 @@ dependencies = [
     "slowapi>=0.1.9",
     "eval_type_backport",
 ]
+
+[tool.pytest.ini_options]
+markers = [
+    "e2e: End-to-end browser and UI tests",
+]
