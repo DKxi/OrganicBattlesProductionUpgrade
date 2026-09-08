@@ -166,7 +166,48 @@ The repository includes **76 custom boss illustrations** and **1 vector fallback
 
 ---
 
-## 4. Processing, Optimization & Quality Standards
+## 4. Curricula & Track Asset Resolution Architecture
+
+The game's 20 tracks across 2 curricula organize their content and boss assets with a hierarchical resolution cascade:
+
+### 4.1 Track Content Hierarchy (`data/tracks/`)
+
+1. **Foundational Curriculum (8 Tracks)**:
+   - `default`: Core 27-chapter curriculum with boss assets in `data/tracks/default/bosses/` (and shared static assets in `static/assets/bosses/`).
+   - `found-nomenclature`: Chemical nomenclature, IUPAC naming conventions, and structural representations.
+   - `found-stereochem`: Chiral centers, enantiomers, diastereomers, and R/S configuration trials.
+   - `found-acidbase`: pKa comparisons, conjugate pairs, and acid-base equilibria.
+   - `found-structure`: Lewis structures, resonance contributors, hybridization, and bonding properties.
+   - `found-alkanes`: Conformational analysis, Newman projections, and ring strain.
+   - `found-reactivity`: Nucleophiles, electrophiles, reaction coordinate diagrams, and transition states.
+   - `found-alkylhalides`: SN1, SN2, E1, and E2 mechanisms and stereochemical outcomes.
+
+2. **Advanced Mechanistic Mastery Curriculum (12 Tracks)**:
+   - `adv-vocab`: Advanced vocabulary, terminology, and spectroscopic definitions (`VocabularyConceptsData`).
+   - `adv-mechanisms`: Arrow-pushing cascades, polar reaction mechanisms, and intermediates (`MechanismsData`).
+   - `adv-synthesis`: Retrosynthetic disconnections, protecting groups, and multi-step synthesis.
+   - `adv-reagents`: Organometallic reagents, oxidizing/reducing agents, and catalyst selectivity.
+   - `adv-acidbase`: Non-aqueous equilibria, thermodynamic vs kinetic acidity, and base catalysts.
+   - `adv-stereochem`: Dynamic stereocontrol, Cram's chelate model, and chiral auxiliaries.
+   - `adv-spectroscopy`: Combined 1D/2D NMR, IR diagnostic bands, and mass spectrometry fragmentation.
+   - `adv-carbonyl`: Nucleophilic additions, enols, enolates, aldol/Claisen condensations, and conjugate additions.
+   - `adv-aromatic`: EAS, NAS, benzyne intermediates, and Hückel/antiaromatic stability.
+   - `adv-pericyclic`: Diels-Alder, electrocyclic, sigmatropic shifts, and orbital symmetry (FMO analysis).
+   - `adv-outcomes`: Predicting major vs minor products, regioselectivity, and stereoselectivity.
+   - `adv-radicals`: Radical chain mechanisms, halogenation selectivity, and single-electron transfers.
+
+Detailed lore and chemical concepts for each creature are documented in [`FoundationalBestiary.md`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/FoundationalBestiary.md) and [`AdvancedBestiary.md`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/AdvancedBestiary.md).
+
+### 4.2 Asset Resolution Cascade
+When the loader (`app/domain/content/loader.py`) prepares boss illustrations for a duel, it traverses:
+1. **Track-Specific Boss Folder**: `data/tracks/{track_id}/bosses/` (or configured `boss_folder` from `OB_tracks`).
+2. **Default Track Boss Folder**: `data/tracks/default/bosses/`.
+3. **Global Static Boss Assets**: `static/assets/bosses/` and `bosses/`.
+4. **Universal Fallback**: `static/assets/bosses/boss-placeholder.svg`.
+
+---
+
+## 5. Processing, Optimization & Quality Standards
 
 1. **Contiguous Alpha Channels**: All companion and boss PNGs have been cleaned to remove extraneous border artifacts and cropped tightly to the character bounding box with smooth transparency.
 2. **Asynchronous & Lazy Loading**: HTML5 `<img loading="lazy" decoding="async">` attributes ensure zero main-thread blockage during high-speed turn interactions.

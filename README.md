@@ -49,22 +49,26 @@ flowchart TB
     end
 
     subgraph Persistence["Storage & Data"]
-        subgraph DB["Relational Database (SQLite3 / PostgreSQL)"]
-            UsersTable[("users")]
-            SessionsTable[("game_sessions")]
-            AuthTable[("auth_sessions")]
-            OTPTable[("verification_codes")]
+        subgraph DB["Relational Database (PostgreSQL / SQLite3)"]
+            UsersTable[("OB_users")]
+            SessionsTable[("OB_game_sessions")]
+            AuthTable[("OB_auth_sessions")]
+            OTPTable[("OB_verification_codes")]
+            CurriculaTable[("OB_curricula")]
+            TracksTable[("OB_tracks")]
+            QuestionsTable[("OB_questions<br/>(27,000 Questions)")]
         end
 
-        subgraph ContentFiles["Content Archive (data/)"]
-            ManifestFile["data/manifest.json"]
-            ChapterJSONs["data/chapter_01.json ... chapter_27.json<br/>(1,350 Questions · 135 Bosses)"]
+        subgraph ContentFiles["Content Archive (data/tracks/)"]
+            ConfigJSON["data/tracks_config.json"]
+            TrackDirs["data/tracks/*<br/>(20 Tracks · 2 Curricula · 27 Chapters each)"]
         end
     end
 
     Client <-->|"REST API / JSON / Bearer & Cookies"| Router
     Repositories <--> DB
-    ContentEngine <--> ContentFiles
+    ContentEngine <--> DB
+    ContentEngine -.->|"Fallback"| TrackDirs
 ```
 
 ### Core Technologies
@@ -74,14 +78,14 @@ flowchart TB
 | **Backend Framework** | **FastAPI** | `0.115.6` | High-performance async REST API with automatic OpenAPI docs and dependency injection. |
 | **Settings & Validation** | **Pydantic V2 & Settings** | `2.10.4` | Strictly typed environment validation (`pydantic-settings`) and request/response serialization (`model_dump`). |
 | **ASGI Server** | **Uvicorn** | `0.34.0` | Production ASGI web server supporting hot-reloading and multi-worker execution. |
-| **Database & ORM** | **SQLAlchemy** | `2.0.36` | ORM repositories managing `User`, `GameSession`, `VerificationCode`, and `AuthSession`. |
-| **Database Engine** | **SQLite3 / PostgreSQL** | Native / `psycopg2` | Default local SQLite (`organic_battles.sqlite3`) with zero-downtime PostgreSQL compatibility. |
+| **Database & ORM** | **SQLAlchemy** | `2.0.36` | ORM repositories managing `OB_users`, `OB_game_sessions`, `OB_auth_sessions`, `OB_verification_codes`, `OB_curricula`, `OB_tracks`, and `OB_questions`. |
+| **Database Engine** | **PostgreSQL / SQLite3** | `psycopg2` / Native | Default PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`) with connection pooling (`pool_size=10`, `max_overflow=20`) and local SQLite3 support with live bidirectional migration. |
 | **Audio Synthesizer** | **Web Audio API** | Native Browser | Procedural, zero-download low-latency SFX engine in [`static/js/audio.js`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/static/js/audio.js). |
 | **Frontend Framework** | **Vanilla JS (ES Modules)** | ES2022+ | Modular JavaScript (`main.js`, `avatars.js`, `audio.js`) without heavy node build toolchains. |
-| **Styling** | **Vanilla CSS3** | Custom Theme | Glassmorphism, neon HUD accents, responsive cards, modals, and dynamic battle arena. |
+| **Styling** | **Vanilla CSS3** | Custom Theme | Glassmorphism, neon HUD accents, responsive cards, 4-tab admin portal, and dynamic battle arena. |
 | **Game Engine** | **Phaser 3** | `3.60.0` (CDN) | 2D WebGL/Canvas arena rendering dynamic chapter auras and particle effects. |
 | **Rate Limiting** | **Slowapi** | `0.1.9` | Token-bucket rate limiter protecting auth, signup, and combat endpoints. |
-| **Test Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | 41 automated unit, domain, combat, audio, and boss-strategy tests. |
+| **Test Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | Automated test suite verifying combat rules, question sequential parity, tracks, PostgreSQL database, and admin management. |
 
 ---
 
@@ -305,19 +309,25 @@ Located in [`static/js/audio.js`](file:///Users/nkoneru/Downloads/AI%20Apps/Orga
 | Endpoint | Method | Payload | Response | Description |
 |---|---|---|---|---|
 | `/api/v1/admin/login` | `POST` | `{ "username": str, "password": str }` | `200 OK` | Authenticates administrator (`admin` / `admin`). |
-| `/api/v1/admin/users` | `GET` | *None* | `200 OK` | Lists all user accounts, active modes, and verification statuses. |
-| `/api/v1/admin/users/{id}/config` | `POST` | `{ "content_source": "app" \| "json" \| null }` | `200 OK` | Updates a user's individual content engine mode. |
+| `/api/v1/admin/users` | `GET` | *None* | `200 OK` | Lists all user accounts, companion avatars, and verification statuses. |
 | `/api/v1/admin/users/{id}/credentials` | `POST` | `{ "username": str?, "password": str? }` | `200 OK` | Renames username or resets user password securely. |
+| `/api/v1/admin/users/clean-test` | `POST` | *None* | `200 OK` | Safely purges automated test accounts and associated session cascades. |
 | `/api/v1/admin/sessions` | `GET` | *None* | `200 OK` | Lists all active gameplay sessions across users. |
 | `/api/v1/admin/sessions/{id}/reset` | `POST` | `{ "chapter": int }` | `200 OK` | Resets a session to Boss 1 of the chosen chapter with full health. |
 | `/api/v1/admin/sessions/{id}` | `DELETE`| *None* | `200 OK` | Deletes a gameplay session and resets player progress. |
+| `/api/v1/admin/storage/stats` | `GET` | *None* | `200 OK` | Returns database engine dialect, pooler host/port, and table row counts. |
+| `/api/v1/admin/system/stats` | `GET` | *None* | `200 OK` | Returns host server uptime, OS platform, memory RSS/VMS, and CPU load. |
+| `/api/v1/admin/migrate-db` | `POST` | *None* | `200 OK` | Triggers background bidirectional migration between SQLite and PostgreSQL. |
+| `/api/v1/admin/migrate-db/status` | `GET` | *None* | `200 OK` | Polls active migration status, progress percentage, and copied row counts. |
+| `/api/v1/admin/tracks` | `GET` | *None* | `200 OK` | Lists all 20 configured tracks across curricula from the database. |
+| `/api/v1/admin/curricula` | `GET` | *None* | `200 OK` | Lists all curricula (`foundational`, `advanced`) and track counts. |
 
 
 ---
 
 ## 6. Environment Configuration & Setup
 
-Configuration is validated via Pydantic Settings in [`app/settings.py`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/app/settings.py). Create a `.env` file in the project root:
+Configuration is validated via Pydantic Settings in [`app/settings.py`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/app/settings.py). Create an `env` or `.env` file in the project root:
 
 ```ini
 # --- Application Environment ---
@@ -327,11 +337,14 @@ PORT=8000
 SECRET_KEY=change-this-to-a-secure-random-32-character-secret
 
 # --- Content Engine ---
-# Options: "json" (Default - 27 Chapters) or "app" (Builtin - 3 Chapters)
-GAME_CONTENT_SOURCE=json
+# Questions are resolved dynamically based on user track selection
 
-# --- Database ---
-DATABASE_URL=sqlite:///./organic_battles.sqlite3
+# --- Database Configuration ---
+# Option 1: PostgreSQL / Supabase IPv4 Pooler (Default):
+DATABASE_URL=postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[REDACTED-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+
+# Option 2: SQLite (Local file database):
+# DATABASE_URL=sqlite:///./organic_battles.sqlite3
 
 # --- Admin Credentials ---
 ADMIN_USERNAME=admin
@@ -366,18 +379,12 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your web browser.
 
 ### 7.2 Running the Full Automated Test Suite
 ```bash
-# Run all 41 unit, domain, combat, audio, and boss strategy tests
+# Run full automated test suite
 pytest
 
-# Run with verbose output and coverage
+# Run with verbose output
 pytest -v
-```
 
-```text
-============================== 41 passed in 2.95s ==============================
-tests/test_audio.py .....                                                [ 12%]
-tests/test_boss_strategy.py ...                                          [ 19%]
-tests/test_domain_combat.py .......                                      [ 36%]
-tests/test_email_config.py ..                                            [ 41%]
-tests/test_game.py ........................                              [100%]
+# Run targeted question parity and database tests
+pytest tests/test_question_parity.py tests/test_tracks_postgresql.py -v
 ```

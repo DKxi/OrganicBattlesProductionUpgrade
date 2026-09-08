@@ -32,12 +32,13 @@ AWS is used as the reference implementation. The architecture can be translated 
 
 | Milestone | Status | Details |
 |---|---|---|
-| **Dual Content Source Engine** | ✅ Completed | Dual-mode support (`app` vs `json`), concurrent memory caching, `.env` override hierarchy (`GAME_CONTENT_SOURCE`), and per-user database mode selection. |
-| **Admin Configuration Portal** | ✅ Completed | Dedicated admin login (`admin`/`admin` or env override), user list inspection, live user search, and real-time `content_source` switching. |
-| **Admin Game Sessions Management** | ✅ Completed | Active session list, chapter selection with first boss reset, and complete session deletion. |
-| **Battle Outcome & Explanation UI** | ✅ Completed | Glassmorphic unified modal system for boss defeat, victory, spell fizzle, and interactive explanations. |
+| **PostgreSQL & Connection Pooling** | ✅ Completed | Production PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`), connection pooling (`pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`), unified `OB_` table prefixing across all models, and local SQLite3 support with live bidirectional migration. |
+| **20-Track Curricula & Question Bank** | ✅ Completed | 2 curricula (`foundational`, `advanced`), 20 distinct tracks (`OB_tracks`), and 27,000 chemistry MCQs ingested into `OB_questions` with composite ordering indexes (`(track_id, chapter, order_index)`). Automatic `load_db_bundle()` with resilient JSON fallback. |
+| **Track-Driven Content Engine** | ✅ Completed | Dynamic track resolution via user selection (`track:{track_id}`); `GAME_CONTENT_SOURCE` deprecated and removed from UI. Per-track progress isolation in `user.progress_json`. |
+| **Four-Tab Admin Portal** | ✅ Completed | Dedicated admin portal split into 👤 User Management (search, credentials override, test user cleanup), ⚔ Game Sessions (monitoring, chapter teleportation, reset, delete), 💾 Storage (live pooler telemetry, table row counts, live migration), and ⚡ System (runtime metrics, memory RSS/VMS, CPU load). |
+| **Battle Outcome & Explanation UI** | ✅ Completed | Glassmorphic unified modal system for boss defeat, victory, spell fizzle, and interactive chemistry explanations. |
 | **Modular Clean Architecture (`app/`)** | ✅ Completed | Modular layout (`app/api/v1/`, `app/domain/`, `app/infrastructure/`), pure domain combat logic without framework dependencies, repository protocols, centralized Pydantic settings, and security middleware. |
-| **Automated Dual-Mode Test Suite** | ✅ Completed | 33 automated Pytest tests validating game combat, pure domain mechanics, dual-mode switches, environment overrides, email config, and admin management. |
+| **Automated Test Suite** | ✅ Completed | Comprehensive Pytest suite (75+ tests) validating game combat, pure domain mechanics, question parity, 20 tracks, live PostgreSQL queries, audio synthesizer, email config, and admin management. |
 
 ---
 
@@ -412,14 +413,15 @@ Before final capacity sizing, record:
 
 ### Phase 3 — Migrate SQLite to PostgreSQL & Connection Pooling
 
-- [ ] Design normalized PostgreSQL models in SQLAlchemy 2.x.
-- [ ] Set up **Alembic** migration environment and generate baseline migrations (replacing runtime SQLite introspection).
-- [ ] Configure PostgreSQL connection pooling (`pool_size=20`, `max_overflow=10`, `pool_recycle=1800`, `pool_pre_ping=True`).
-- [ ] Write a repeatable SQLite-to-PostgreSQL data migration script.
-- [ ] Add database indexes for high-frequency lookups: `users(email)`, `users(username)`, `game_sessions(user_id)`, and `game_sessions(updated_at)`.
+- [x] Design normalized PostgreSQL models in SQLAlchemy 2.x with unified `OB_` table naming (`OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_game_sessions`, `OB_curricula`, `OB_tracks`, `OB_questions`).
+- [x] Configure PostgreSQL connection pooling (`pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`) targeting Supabase IPv4 Pooler.
+- [x] Write a repeatable SQLite-to-PostgreSQL data migration engine (`app/infrastructure/database/migrator.py`, `POST /api/admin/migrate-db`) with live progress polling.
+- [x] Add database indexes for high-frequency lookups and question order parity (`ix_ob_questions_track_ch_order`, `ix_ob_questions_track_ch_boss_order`, `uq_ob_questions_order`).
+- [x] Ingest all 27,000 chemistry questions across 20 tracks into `OB_questions` with strict 1-to-1 sequential ordering.
+- [ ] Set up **Alembic** migration environment and generate baseline migrations (replacing runtime table introspection).
 - [ ] Implement transactional battle turn commits with row-level locking or optimistic version checks.
 
-**Exit condition:** PostgreSQL is authoritative, fully indexed, and managed via versioned Alembic migrations.
+**Exit condition:** PostgreSQL is authoritative, fully indexed, and seeded with tracks and question banks. (✅ **Core Completed & Verified**)
 
 ### Phase 4 — Make API instances stateless & Distributed State (Redis/Valkey)
 

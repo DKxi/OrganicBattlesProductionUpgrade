@@ -35,8 +35,8 @@ Organic chemistry is traditionally considered one of the most intellectually dem
 |                           ORGANIC BATTLES (V4P)                         |
 |   "Enter the Labyrinth. Master the Electron. Vanquish the Reaction."    |
 +-------------------------------------------------------------------------+
-|  27 Chapters           19 Distinct Tracks         27,050 Chemistry MCQs |
-|  155 Boss Creatures    Dynamic Spell Ranks        Dual-Storage Engines  |
+|  27 Chapters           20 Distinct Tracks         27,000 Chemistry MCQs |
+|  155 Boss Creatures    Dynamic Spell Ranks        PostgreSQL / SQLite   |
 +-------------------------------------------------------------------------+
 ```
 
@@ -50,13 +50,13 @@ Organic chemistry is traditionally considered one of the most intellectually dem
 | :--- | :--- | :--- |
 | **Backend API** | **FastAPI (Python 3.12)** | Asynchronous high-throughput ASGI framework, native OpenAPI documentation, strict Pydantic v2 schemas. |
 | **Domain Logic** | **Pure Python Functional Core** | Zero-dependency combat mathematics (`evaluate_combat_turn`), isolated from database and HTTP layers for deterministic testing. |
-| **ORM / Storage** | **SQLAlchemy 2.0 / SQLite (Target: PostgreSQL)** | Declarative models, relational foreign keys with cascading deletes, JSON blob persistence, transaction isolation. |
+| **ORM / Storage** | **SQLAlchemy 2.0 / PostgreSQL (Default) & SQLite3** | Default PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com`), connection pooling (`pool_size=10`, `max_overflow=20`), `OB_` table prefixes, and local SQLite3 offline support with live bidirectional migration. |
 | **Rate Limiting** | **SlowAPI / Limiter** | IP and user-based throttling on sensitive authentication and combat endpoints (disabled dynamically in test suites). |
 | **Frontend Framework** | **Vanilla HTML5 & CSS3** | Zero build-step overhead, zero node_modules in production frontend, custom glassmorphism design system, retro-cyberpunk alchemical typography. |
 | **Client Logic** | **Modular ES6+ JavaScript** | Event-driven UI controller, native DOM routing, dynamic track searching and filtering, asynchronous `fetch` wrappers. |
 | **Game Canvas / VFX** | **Phaser 3 (v3.80.1)** | High-performance WebGL/Canvas rendering, sprite scaling, particle emitters, camera shake, and reactive boss damage tweens. |
 | **Procedural Audio** | **Web Audio API** | Real-time procedural harmonic synthesis (fanfares, strike bursts, backfire hums, click responses) requiring zero external sound assets. |
-| **Tooling & Test** | **`uv`, `pytest`, `pytest-anyio`** | Blazing-fast dependency management (`uv.lock`), 198+ automated unit, integration, and contract tests. |
+| **Tooling & Test** | **`uv`, `pytest`, `pytest-anyio`** | Blazing-fast dependency management (`uv.lock`), comprehensive automated unit, domain, combat, question parity, and database migration tests. |
 
 ---
 
@@ -263,30 +263,34 @@ Each track points to a directory containing `chapter_01.json` through `chapter_2
 |                 /               \                                  |
 |               YES                NO                                |
 |               /                   \                                |
-|    Return cached instance       Read data/tracks_config.json       |
+|    Return cached instance       Query PostgreSQL (OB_tracks)       |
 |                                    |                               |
 |                                    v                               |
-|                            Resolve directories:                    |
-|                            - data_folder                           |
-|                            - boss_folder                           |
+|                           1. Try load_db_bundle():                 |
+|                           - Query OB_questions for track_id        |
+|                           - Order strictly by (chapter, order_idx) |
+|                           - Populate question_bank & boss_banks    |
+|                           - Load spell damages & boss metadata     |
 |                                    |                               |
-|                                    v                               |
-|                            Load 27 Chapter JSONs                   |
-|                            Build:                                  |
-|                            - question_bank                         |
-|                            - question_boss_bank                    |
-|                            - explanations                          |
-|                            - boss_spell_values                     |
+|                        Questions found in DB?                      |
+|                            /               \                       |
+|                          YES                NO (Fallback)          |
+|                          /                   \                     |
+|                 Return DB Bundle       2. load_json_bundle():      |
+|                                        - Read chapter_*.json files |
+|                                        - Read boss files from disk |
 |                                    |                               |
 |                                    v                               |
 |                            Store in TRACK_BUNDLES[track_id]        |
 +--------------------------------------------------------------------+
 ```
 
-#### Hot-Swapping & Unloading Logic
-- Bundles are stored in `app.api.deps.TRACK_BUNDLES` (`Dict[str, ContentBundle]`).
-- When a user changes track or overrides folders via the `/api/game/track` endpoint, the bundle is compiled on demand and immediately cached.
-- **Graceful Fallback**: If a track points to a missing custom folder or incomplete chapters, the loader seamlessly falls back to `data/tracks/default/` and default bosses, preventing runtime crashes.
+#### Database Ingestion & Parity
+- **Ingestion Script**: `scripts/ingest_questions_to_postgres.py` ingests questions from `data/tracks/**/chapter_*.json` into the `OB_questions` PostgreSQL table.
+- **Capacity**: All 20 tracks have been fully ingested (27 chapters × 50 questions = 1,350 questions per track; **27,000 questions** total).
+- **Sequential Parity**: The `order_index` column guarantees that question presentation in battles matches original textbook/chapter ordering 1-to-1 without drift.
+- **Runtime Caching**: Bundles are lazily loaded and cached in `app.api.deps.TRACK_BUNDLES` (`Dict[str, ContentBundle]`).
+- **Resilient Fallback**: If a track's database questions are unavailable, `load_track_bundle` gracefully falls back to `load_json_bundle()` reading local JSON files directly.
 
 ---
 
@@ -336,11 +340,13 @@ The Advanced Mechanistic Track transforms graduate-level organic principles into
 
 ```mermaid
 erDiagram
-    User ||--o{ VerificationCode : has
-    User ||--o{ AuthSession : maintains
-    User ||--o{ GameSession : plays
+    OB_users ||--o{ OB_verification_codes : has
+    OB_users ||--o{ OB_auth_sessions : maintains
+    OB_users ||--o{ OB_game_sessions : plays
+    OB_curricula ||--o{ OB_tracks : organizes
+    OB_tracks ||--o{ OB_questions : contains
 
-    User {
+    OB_users {
         string id PK
         string email UK
         string username UK
@@ -352,7 +358,7 @@ erDiagram
         int created_at
     }
 
-    VerificationCode {
+    OB_verification_codes {
         int id PK
         string user_id FK
         string code_hash
@@ -361,14 +367,14 @@ erDiagram
         int created_at
     }
 
-    AuthSession {
+    OB_auth_sessions {
         string token_hash PK
         string user_id FK
         int expires_at
         int created_at
     }
 
-    GameSession {
+    OB_game_sessions {
         string id PK
         string user_id FK,UK
         string content_source
@@ -386,6 +392,53 @@ erDiagram
         string rewards_json
         string question_cursors_json
         int version
+        int updated_at
+    }
+
+    OB_curricula {
+        string id PK
+        string name
+        string code
+        int total_questions
+        int chapters
+        int bosses
+        int display_order
+    }
+
+    OB_tracks {
+        string id PK
+        string curriculum_id FK
+        string title
+        string detail
+        string data_folder
+        string boss_folder
+        int questions
+        int chapters
+        string accent
+        int display_order
+    }
+
+    OB_questions {
+        bigint id PK
+        string track_id FK
+        string raw_id
+        int chapter
+        string chapter_title
+        string boss_name
+        string boss_slug
+        int order_index
+        string topic
+        string difficulty
+        string question_type
+        text prompt
+        text options_json
+        string correct_option
+        text correct_answer
+        text explanation
+        text spells_json
+        text health_json
+        text images_json
+        int created_at
         int updated_at
     }
 ```
@@ -436,7 +489,7 @@ graph TD
     AuthCheck -->|Yes| AvatarCheck{Avatar Finalized?}
     Auth -->|Success| AvatarCheck
     AvatarCheck -->|No| Avatar[3. Avatar Creator: Select Companion & Body]
-    AvatarCheck -->|Yes| TrackScreen[4. Track Selection Screen: 19 Tracks]
+    AvatarCheck -->|Yes| TrackScreen[4. Track Selection Screen: 20 Tracks across 2 Curricula]
     Avatar -->|Finalize| TrackScreen
     TrackScreen -->|Select Track & Start| MidChapterGate{Chapter In Progress?}
     MidChapterGate -->|Yes & Switching Track| BlockedModal[Modal: Chapter In Progress - Complete First!]
@@ -481,7 +534,7 @@ Avatar preferences are stored in `user.avatar_json` and rendered as the companio
 
 ### 6.4 Comprehensive Administrator Configuration Portal & System Controls
 
-The Administrator Configuration Portal (implemented in [app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py) and accessible via the `⚙ ADMIN CONFIG` triggers on the boot, auth, and game screens) provides course instructors, game directors, and DevOps engineers with direct control over player state, content sources, and battle sessions.
+The Administrator Configuration Portal (implemented in [app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py) and accessible via the `⚙ ADMIN CONFIG` triggers on the boot, auth, and game screens) provides course instructors, game directors, and DevOps engineers with direct control over player state, content tracks, database storage, and system telemetry.
 
 #### 1. Administrative Authentication & Security
 - **Access Endpoint**: `POST /api/admin/login` (rate-limited via SlowAPI to 10 requests/minute).
@@ -490,57 +543,31 @@ The Administrator Configuration Portal (implemented in [app/api/v1/admin.py](fil
 - **Cookie Security**: Emits an `admin_token` cookie with flags `HttpOnly; SameSite=Lax; Secure` (in production).
 - **Logout Endpoint**: `POST /api/admin/logout` immediately invalidates the in-memory token hash and clears the browser cookie.
 
-#### 2. System Status & Global Telemetry (`GET /api/admin/status`)
-Returns real-time operational metrics:
-- Total registered player count in SQLite/PostgreSQL.
-- Total active game sessions.
-- Process environment override status (`settings.game_content_source`).
-- Active default content mode (`app` or `json`).
+#### 2. Portal Layout & Four-Tab Navigation Architecture
+The Admin Dashboard (`#admin-dashboard-view`) utilizes a responsive, zero-overflow fullscreen modal split into four dedicated operational tabs:
 
-#### 3. Player Identity & Content Source Configuration (`GET /api/admin/users`, `POST /api/admin/users/{user_id}/config`)
-- **Player Registry**: Displays a searchable list of all registered users, including user ID, username, email, email verification status, database content source, and effective runtime mode.
-- **Dynamic Content Switching**: Administrators can toggle any player's content source between:
-  - `"app"`: Legacy hardcoded 3-chapter alchemical campaign.
-  - `"json"`: Standard 27-chapter comprehensive curriculum.
-  - `"track:{track_id}"`: Direct override to any of the 19 specialized tracks.
-- **Automatic Battle Session Synchronization**: When an administrator modifies a player's content mode, the engine automatically checks their active `GameSession`:
-  - If the player was in Chapter 14 of a 27-chapter track and is switched to a 3-chapter bundle, the engine automatically resets the session to Chapter 1, Boss 0, and restores initial HP to prevent out-of-bounds crashes.
-  - Clears any pending questions, active spells, and stale turn IDs to prevent state desynchronization.
+1. **👤 User Management (`#admin-tab-users`)**:
+   - **Player Registry (`GET /api/admin/users`)**: Searchable list of registered accounts displaying user ID, username, email, email verification status, companion avatar, and registration date.
+   - **Credential Management (`POST /api/admin/users/{user_id}/credentials`)**: Modal interface (`#admin-cred-modal`) allowing administrators to update a player's username (validated for 3–24 characters and global uniqueness) and securely override their password (minimum 8 characters, hashed with PBKDF2/bcrypt) without requiring legacy passwords. Emails remain immutable to protect audit integrity.
+   - **Test User Cleanup (`POST /api/admin/users/clean-test`)**: Administrative utility to identify and safely purge automated test accounts (`test_*@example.com`, `playwright_*`, etc.) and associated session cascades.
 
-#### 4. Player Credentials Override Subsystem (`POST /api/admin/users/{user_id}/credentials`)
-Allows administrators to manage account recovery without requiring direct database access:
-- **Username Modification**: Allows updating a player's username (validated for 3–24 characters and uniqueness across all users).
-- **Password Override**: Re-hashes and updates a player's password (minimum 8 characters, hashed with PBKDF2/bcrypt) without needing the previous password.
-- **Read-Only Email Integrity**: Email addresses are immutable in the credential modal to preserve audit trails.
+2. **⚔ Game Sessions (`#admin-tab-sessions`)**:
+   - **Live Arena Monitoring (`GET /api/admin/sessions`)**: Real-time inspection of active duels, tracking Player HP vs Max HP, Boss Name, Boss HP vs Max HP, Chapter number/title, and completed bosses count.
+   - **Chapter Teleportation & Stage Reset (`POST /api/admin/sessions/{session_id}/reset`)**: Jump a session to any chapter 1–27. Restores player to max HP (150), instantiates that chapter's first boss at max HP, resets spell cooldowns, clears pending questions/turns, appends an administrative audit log entry, and commits updated user progress.
+   - **Session Purge / Wipe (`DELETE /api/admin/sessions/{session_id}`)**: Permanently removes corrupted or stalled battle sessions and resets track progress to allow clean re-entry.
 
-#### 5. Live Game Session Telemetry & Chapter Jump Controls (`GET /api/admin/sessions`, `POST /api/admin/sessions/{session_id}/reset`)
-- **Live Arena Monitoring**: Displays real-time status for every active duel:
-  - Current Player HP vs Max HP.
-  - Current Boss Name, Boss HP, and Max HP.
-  - Chapter number, Chapter title, and Boss stage index.
-  - Completed bosses count in the active session.
-- **Chapter Teleportation & Stage Reset (`SessionResetRequest`)**:
-  - Administrators can select any chapter from 1 to 27 and trigger an immediate session reset.
-  - **Reset Actions**:
-    1. Sets `game_session.chapter = target_chapter` and `game_session.boss_index = 0`.
-    2. Instantly restores `player_hp` to `player_max_hp` (150).
-    3. Loads the target chapter's first boss and sets `boss_hp` to that boss's max HP.
-    4. Clears `active_question_json`, `active_spell`, `turn_id`, and resets `cooldowns_json` to `{}`.
-    5. Appends an administrative audit message to the battle log: `"Battle reset by Administrator to Chapter {X} ({Boss Name})."`
-    6. Synchronizes `user.progress_json` with the new chapter and boss indices.
-- **Session Purge / Wipe (`DELETE /api/admin/sessions/{session_id}`)**:
-  - Permanently removes a corrupted or stalled battle session.
-  - Nullifies `user.progress_json` so the player begins fresh on their next login.
+3. **💾 Storage (`#admin-tab-storage`)**:
+   - **Database Status & Telemetry (`GET /api/admin/storage/stats`)**: Displays active engine dialect (PostgreSQL pooler vs SQLite), connection target host, port, active pool configuration (`pool_size=10`, `max_overflow=20`), and live connection health status.
+   - **Table Row Counts**: Live count inspection across all application tables: `OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_game_sessions`, `OB_curricula`, `OB_tracks`, and `OB_questions`.
+   - **Bidirectional Database Migrator (`POST /api/admin/migrate-db`, `GET /api/admin/migrate-db/status`)**: Initiates asynchronous migration copying all accounts, curricula, tracks, and 27,000 questions between SQLite and PostgreSQL with live progress polling and completion reporting.
 
-#### 6. Admin Portal UI Components & Modal Interfaces
-- **Sub-View 1: `#admin-login-view`**: Sleek glassmorphic login card with dark cyber-alchemical borders and shake animations on failed credentials.
-- **Sub-View 2: `#admin-dashboard-view`**:
-  - Tabbed interface switching between **👤 USER CONFIGURATION** and **⚔ GAME SESSIONS**.
-  - Real-time client-side search filtering across both tabs.
-  - Environmental warning banner indicating if `GAME_CONTENT_SOURCE` is overriding database selections.
-  - Action buttons: "Edit Credentials", "Switch Mode", "Reset Battle", and "Delete Session".
-- **Sub-View 3: `#admin-cred-modal`**: Dedicated modal dialog for editing player username and entering a replacement password.
-- **Feedback Toast (`#admin-feedback-toast`)**: Displays dynamic success and error notifications with timed auto-dismissal.
+4. **⚡ System (`#admin-tab-system`)**:
+   - **System Telemetry (`GET /api/admin/system/stats`)**: Real-time process metrics including server uptime, Python version, operating system, host memory usage (RSS / VMS), CPU load, and active database connection pool utilization.
+   - **Configuration Audit**: Inspects active verification code TTL, session durations, cookie flags, and environment mode.
+
+#### 3. Modal & UI State Management
+- **Fullscreen Fit & Scroll Containment**: Tab containers use flexbox layouts with independent vertical scrolling, preventing double scrollbars and ensuring all tables and metric cards remain fully visible on standard laptop displays.
+- **Feedback Toast (`#admin-feedback-toast`)**: Dynamic feedback notifications for successful credential updates, battle resets, and migration actions.
 
 ---
 
