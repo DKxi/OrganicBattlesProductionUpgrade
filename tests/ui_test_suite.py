@@ -38,64 +38,55 @@ class UITestRunner:
         self.test_email = f"{self.test_username}@alchemical.edu"
         self.test_password = "SecretPassword123!"
 
-    def get_db_verification_code(self, email: str, max_retries: int = 10, delay: float = 0.5) -> Optional[str]:
-        """Fetch unhashed code or look up user verification record in SQLite DB with retries."""
-        db_path = getattr(settings, "database_path", settings.root_dir / "organic_battles.sqlite3")
+    def get_db_verification_code(self, email: str, max_retries: int = 15, delay: float = 0.5) -> Optional[str]:
+        """Fetch unhashed code or look up user verification record in active DB with retries."""
+        from app.infrastructure.database.engine import SessionLocal
+        from app.infrastructure.database.models import User, VerificationCode
         for attempt in range(max_retries):
             try:
-                conn = sqlite3.connect(str(db_path), timeout=10.0)
-                cursor = conn.cursor()
-                cursor.execute("SELECT id FROM OB_users WHERE email = ?", (email.lower(),))
-                user_row = cursor.fetchone()
-                if user_row:
-                    user_id = user_row[0]
-                    test_code = "777888"
-                    chash = code_hash(test_code)
-                    cursor.execute(
-                        "INSERT INTO OB_verification_codes (user_id, code_hash, expires_at, used, created_at) VALUES (?, ?, ?, 0, ?)",
-                        (user_id, chash, int(time.time()) + 900, int(time.time()))
-                    )
-                    conn.commit()
-                    conn.close()
-                    return test_code
-                conn.close()
+                with SessionLocal() as db:
+                    user = db.query(User).filter(User.email == email.lower()).first()
+                    if user:
+                        test_code = "777888"
+                        chash = code_hash(test_code)
+                        vc = VerificationCode(
+                            user_id=user.id,
+                            code_hash=chash,
+                            expires_at=int(time.time()) + 900,
+                            used=0,
+                            created_at=int(time.time()),
+                        )
+                        db.add(vc)
+                        db.commit()
+                        return test_code
             except Exception:
                 pass
             time.sleep(delay)
         return None
 
-    def get_active_battle_session(self, username: str, require_question: bool = False, max_retries: int = 10, delay: float = 0.5) -> Optional[Dict[str, Any]]:
-        """Query active game session from DB to extract question prompt, choices, and correct answer with retries."""
-        db_path = getattr(settings, "database_path", settings.root_dir / "organic_battles.sqlite3")
+    def get_active_battle_session(self, username: str, require_question: bool = False, max_retries: int = 15, delay: float = 0.5) -> Optional[Dict[str, Any]]:
+        """Query active game session from active DB to extract question prompt, choices, and correct answer with retries."""
+        from app.infrastructure.database.engine import SessionLocal
+        from app.infrastructure.database.models import User, GameSession
         for attempt in range(max_retries):
             try:
-                conn = sqlite3.connect(str(db_path), timeout=10.0)
-                cursor = conn.cursor()
-                cursor.execute("SELECT id FROM OB_users WHERE username = ?", (username,))
-                user_row = cursor.fetchone()
-                if user_row:
-                    user_id = user_row[0]
-                    cursor.execute(
-                        "SELECT id, chapter, boss_hp, player_hp, active_spell, active_question_json, cooldowns_json FROM OB_game_sessions WHERE user_id = ?",
-                        (user_id,)
-                    )
-                    row = cursor.fetchone()
-                    conn.close()
-                    if row:
-                        if require_question and not row[5]:
-                            time.sleep(delay)
-                            continue
-                        return {
-                            "session_id": row[0],
-                            "chapter": row[1],
-                            "boss_hp": row[2],
-                            "player_hp": row[3],
-                            "active_spell": row[4],
-                            "active_question": json.loads(row[5]) if row[5] else None,
-                            "cooldowns": json.loads(row[6]) if row[6] else {},
-                        }
-                else:
-                    conn.close()
+                with SessionLocal() as db:
+                    user = db.query(User).filter(User.username == username).first()
+                    if user:
+                        gs = db.query(GameSession).filter(GameSession.user_id == user.id).first()
+                        if gs:
+                            if require_question and not gs.active_question_json:
+                                time.sleep(delay)
+                                continue
+                            return {
+                                "session_id": gs.id,
+                                "chapter": gs.chapter,
+                                "boss_hp": gs.boss_hp,
+                                "player_hp": gs.player_hp,
+                                "active_spell": gs.active_spell,
+                                "active_question": json.loads(gs.active_question_json) if gs.active_question_json else None,
+                                "cooldowns": json.loads(gs.cooldowns_json) if gs.cooldowns_json else {},
+                            }
             except Exception:
                 pass
             time.sleep(delay)
@@ -281,13 +272,14 @@ class UITestRunner:
                 other_spell = page.locator(f'#spells button[data-spell]:not([data-spell="{spell_id}"])').first
                 if other_spell.is_visible():
                     other_spell.click()
-                    time.sleep(0.3)
-                    # Modal or toast for action blocked
-                    outcome_modal = page.locator("#battle-outcome-modal:not(.hidden)")
-                    if outcome_modal.is_visible():
+                    try:
+                        outcome_btn = page.locator("#outcome-action")
+                        outcome_btn.wait_for(state="visible", timeout=3000)
                         print("  ✓ Attempt to change spell while question active correctly blocked")
-                        page.locator("#outcome-action").click()
-                        time.sleep(0.3)
+                        outcome_btn.click()
+                        page.locator("#battle-outcome-modal").wait_for(state="hidden", timeout=3000)
+                    except Exception:
+                        pass
 
                 # -------------------------------------------------------------
                 # 7. Combat Turn: Correct Answer Action & Damage Assertion

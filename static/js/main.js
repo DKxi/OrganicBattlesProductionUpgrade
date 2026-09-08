@@ -82,7 +82,11 @@ function showUsernameTakenModal() {
 }
 
 function showAvatarOnboarding(existingAvatar = null) {
-  $('#boot')?.classList.add('hidden'); $('#auth-screen')?.classList.add('hidden'); $('#avatar-creator')?.classList.remove('hidden');
+  $('#boot')?.classList.add('hidden');
+  $('#auth-screen')?.classList.add('hidden');
+  $('#track-screen')?.classList.add('hidden');
+  $('#game-shell')?.classList.add('hidden');
+  $('#avatar-creator')?.classList.remove('hidden');
   const returning = Boolean(existingAvatar?.character && CHARACTERS[existingAvatar.character]?.type === 'player');
   const initialAvatar = returning ? existingAvatar.character : null;
   selectedAvatar = initialAvatar;
@@ -328,7 +332,7 @@ function showBattleModal({ eyebrow = 'ORGO // BATTLE REPORT', title, copy, actio
   if (!modal) {
     modal = document.createElement('div');
     modal.id = 'battle-outcome-modal';
-    modal.className = 'hidden';
+    modal.className = 'modal-backdrop hidden';
     modal.innerHTML = `<div class="modal-card outcome-card"><div class="eyebrow" id="outcome-eyebrow">ORGO // BATTLE REPORT</div><h2 id="outcome-title"></h2><p id="outcome-copy" class="modal-question"></p><button id="outcome-action" class="primary"></button></div>`;
     $('#app').append(modal);
   }
