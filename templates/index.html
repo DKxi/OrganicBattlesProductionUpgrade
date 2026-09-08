@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Organic Battles V4P</title>
 
-  <link rel="stylesheet" href="/static/css/game.css?v=14">
+  <link rel="stylesheet" href="/static/css/game.css?v=20">
 
 
 
@@ -308,7 +308,8 @@
       <div class="admin-tab-nav">
         <button id="admin-tab-users" class="admin-tab-btn active" type="button">👤 USER CONFIGURATION</button>
         <button id="admin-tab-sessions" class="admin-tab-btn" type="button">⚔ GAME SESSIONS</button>
-        <button id="admin-tab-system" class="admin-tab-btn" type="button">⚙ SYSTEM &amp; STORAGE</button>
+        <button id="admin-tab-storage" class="admin-tab-btn" type="button">🗄 STORAGE &amp; DATABASE</button>
+        <button id="admin-tab-system" class="admin-tab-btn" type="button">⚙ SYSTEM &amp; LOGGING</button>
       </div>
 
       <div class="admin-status-banner" id="admin-env-status"></div>
@@ -344,7 +345,7 @@
       <div id="admin-sessions-tab-content" class="admin-tab-content hidden">
         <div class="admin-toolbar">
           <input type="search" id="admin-session-search" placeholder="Search sessions by username, boss, or chapter…">
-          <div class="admin-stats" id="admin-session-stats-summary"></div>
+          <div class="admin-session-stats" id="admin-session-stats-summary"></div>
         </div>
 
         <div class="admin-user-table-container">
@@ -367,8 +368,8 @@
         </div>
       </div>
 
-      <!-- System & Storage Tab View -->
-      <div id="admin-system-tab-content" class="admin-tab-content hidden">
+      <!-- Storage & Database Tab View -->
+      <div id="admin-storage-tab-content" class="admin-tab-content hidden">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 10px;">
           
           <!-- Left Column: Database Switch -->
@@ -429,8 +430,14 @@
             </form>
           </div>
 
-          <!-- Row 2: Observability & Logging Configuration (Full Width) -->
-          <div class="admin-card" style="grid-column: 1 / -1; width: 100%; margin: 0; box-sizing: border-box;">
+        </div>
+      </div>
+
+      <!-- System & Logging Tab View -->
+      <div id="admin-system-tab-content" class="admin-tab-content hidden">
+        <div style="margin-top: 10px;">
+          <!-- Observability & Logging Configuration (Full Width) -->
+          <div class="admin-card" style="width: 100%; margin: 0; box-sizing: border-box;">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
               <div>
                 <div class="eyebrow">OBSERVABILITY // TELEMETRY &amp; LOGS</div>
@@ -509,8 +516,6 @@
               <pre id="admin-log-console" style="background: #040d12; border: 1px solid #1a3b45; border-radius: 8px; padding: 12px; color: #a4e5d9; font-family: 'JetBrains Mono', monospace, Consolas; font-size: 0.75rem; height: 220px; overflow-y: auto; white-space: pre-wrap; word-break: break-all; margin: 0;"></pre>
             </div>
           </div>
-
-
         </div>
       </div>
 
@@ -752,7 +757,7 @@
   </div>
 </main>
 <script src="/static/js/tracks-config.js"></script>
-<script type="module" src="/static/js/main.js?v=17"></script>
+<script type="module" src="/static/js/main.js?v=20"></script>
 
 
 

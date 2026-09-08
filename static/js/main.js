@@ -728,8 +728,10 @@ async function loadAdminDashboard() {
   renderAdminStatus();
   renderAdminUsers($('#admin-user-search')?.value || '');
   renderAdminSessions($('#admin-session-search')?.value || '');
-  if (currentAdminTab === 'system') {
-    loadSystemStorageConfig();
+  if (currentAdminTab === 'storage') {
+    loadStorageConfig();
+  } else if (currentAdminTab === 'system') {
+    loadLoggingConfig();
   }
 }
 
@@ -737,28 +739,39 @@ function switchAdminTab(tabName) {
   currentAdminTab = tabName;
   const isUsers = tabName === 'users';
   const isSessions = tabName === 'sessions';
+  const isStorage = tabName === 'storage';
   const isSystem = tabName === 'system';
 
   $('#admin-tab-users')?.classList.toggle('active', isUsers);
   $('#admin-tab-sessions')?.classList.toggle('active', isSessions);
+  $('#admin-tab-storage')?.classList.toggle('active', isStorage);
   $('#admin-tab-system')?.classList.toggle('active', isSystem);
 
   $('#admin-users-tab-content')?.classList.toggle('hidden', !isUsers);
   $('#admin-sessions-tab-content')?.classList.toggle('hidden', !isSessions);
+  $('#admin-storage-tab-content')?.classList.toggle('hidden', !isStorage);
   $('#admin-system-tab-content')?.classList.toggle('hidden', !isSystem);
 
-  const activeContent = isUsers ? $('#admin-users-tab-content') : isSessions ? $('#admin-sessions-tab-content') : $('#admin-system-tab-content');
+  const activeContent = isUsers
+    ? $('#admin-users-tab-content')
+    : isSessions
+    ? $('#admin-sessions-tab-content')
+    : isStorage
+    ? $('#admin-storage-tab-content')
+    : $('#admin-system-tab-content');
   if (activeContent) {
     activeContent.scrollTop = 0;
   }
   $('#admin-screen')?.scrollTo({ top: 0, behavior: 'instant' });
 
-  if (isSystem) {
-    loadSystemStorageConfig();
+  if (isStorage) {
+    loadStorageConfig();
+  } else if (isSystem) {
+    loadLoggingConfig();
   }
 }
 
-async function loadSystemStorageConfig() {
+async function loadStorageConfig() {
   try {
     const res = await adminApi('/api/admin/system/config', {}, 'GET');
     if (!res) return;
@@ -794,12 +807,14 @@ async function loadSystemStorageConfig() {
       };
       select.dispatchEvent(new Event('change'));
     }
-
-    // Load logging telemetry & live logs
-    await loadLoggingConfig();
   } catch (err) {
-    console.error('Failed to load system storage config:', err);
+    console.error('Failed to load storage config:', err);
   }
+}
+
+async function loadSystemStorageConfig() {
+  await loadStorageConfig();
+  await loadLoggingConfig();
 }
 
 async function loadLoggingConfig() {
@@ -1190,6 +1205,7 @@ function bindAdminEvents() {
 
   $('#admin-tab-users')?.addEventListener('click', () => switchAdminTab('users'));
   $('#admin-tab-sessions')?.addEventListener('click', () => switchAdminTab('sessions'));
+  $('#admin-tab-storage')?.addEventListener('click', () => switchAdminTab('storage'));
   $('#admin-tab-system')?.addEventListener('click', () => switchAdminTab('system'));
 
   document.querySelectorAll('input[name="db_dialect"]').forEach(r => {
@@ -1227,7 +1243,7 @@ function bindAdminEvents() {
         status.className = 'admin-modal-status hint';
       }
       showAdminToast(`Database switched to ${res.dialect.toUpperCase()}`);
-      loadSystemStorageConfig();
+      loadStorageConfig();
       loadAdminDashboard().catch(() => {});
     } catch (err) {
       if (status) {
@@ -1255,7 +1271,7 @@ function bindAdminEvents() {
         status.className = 'admin-modal-status hint';
       }
       showAdminToast('Content folders updated');
-      loadSystemStorageConfig();
+      loadStorageConfig();
     } catch (err) {
       if (status) {
         status.textContent = `Error: ${err.message}`;

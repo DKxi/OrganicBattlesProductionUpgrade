@@ -378,7 +378,16 @@ class UITestRunner:
 
                 page.wait_for_selector("#admin-dashboard-view", state="visible", timeout=5000)
                 page.wait_for_selector("#admin-env-status span", timeout=5000)
-                # Switch to System & Storage tab
+                # Switch to Storage & Database tab
+                page.click("#admin-tab-storage")
+                page.wait_for_selector("#admin-tab-storage.active", timeout=5000)
+                page.wait_for_selector("#admin-storage-tab-content", state="visible", timeout=5000)
+                page.wait_for_selector("#admin-db-switch-form", state="visible", timeout=5000)
+                time.sleep(0.3)
+                page.screenshot(path=str(self.artifacts_dir / "09_admin_portal_storage.png"))
+                print("  ✓ Admin Storage & Database tab verified")
+
+                # Switch to System & Logging tab
                 page.click("#admin-tab-system")
                 page.wait_for_selector("#admin-tab-system.active", timeout=5000)
                 page.wait_for_selector("#admin-system-tab-content", state="visible", timeout=5000)

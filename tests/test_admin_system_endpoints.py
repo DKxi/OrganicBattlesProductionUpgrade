@@ -195,16 +195,20 @@ def test_admin_switch_folders(admin_client):
 
 
 def test_admin_dashboard_template_contains_system_storage_tab():
-    """Verify that index.html contains the System & Storage admin tab and configuration forms."""
+    """Verify that index.html contains both Storage and System admin tabs and configuration forms."""
     client = TestClient(app)
     res = client.get("/")
     assert res.status_code == 200
     html = res.text
+    assert 'id="admin-tab-storage"' in html
+    assert 'id="admin-storage-tab-content"' in html
     assert 'id="admin-tab-system"' in html
     assert 'id="admin-system-tab-content"' in html
     assert 'id="admin-db-switch-form"' in html
     assert 'id="admin-folder-switch-form"' in html
     assert 'id="admin-db-uri-input"' in html
     assert 'id="admin-folder-track-select"' in html
+    assert 'id="admin-logging-form"' in html
+    assert 'id="admin-log-console"' in html
 
 
