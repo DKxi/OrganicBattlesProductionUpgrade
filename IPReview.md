@@ -12,7 +12,7 @@
 This comprehensive review evaluates **Organic Battles (V4P)** from three interdependent dimensions:
 1. **Engineering and Architecture Implementation**: Assessing the live codebase, domain rules, state persistence, content loaders, test suites, and security controls.
 2. **Pedagogical and Game Design**: Evaluating the educational efficacy, combat mechanics, difficulty progression, active recall systems, and mastery tracking.
-3. **Intellectual Property (IP) and Freedom-to-Operate (FTO)**: Investigating potential infringement of copyright, patent, trademark, trade dress, and terms-of-service claims with respect to **Prodigy Education Inc.** (creators of *Prodigy Math* and *Prodigy English*), related educational turn-based combat games, and foundational academic textbooks (David Klein, John McMurry, OpenStax).
+3. **Intellectual Property (IP) and Freedom-to-Operate (FTO)**: Investigating potential infringement of copyright, patent, trademark, trade dress, and terms-of-service claims with respect to **Prodigy Education Inc.** (creators of *Prodigy Math* and *Prodigy English*), related educational turn-based combat games, and foundational academic textbooks and standard syllabi.
 
 ### Principal Findings
 - **No Direct Copyright Infringement Established**: The core gameplay mechanism—answering educational questions to cast combat spells against animated monsters—is an unprotectable idea and system of operation under **17 U.S.C. § 102(b)** and established judicial precedent (*Baker v. Selden*, *Atari v. North American Philips*, *Tetris Holding v. Xio Interactive*, *DaVinci Editrice v. Ziko Games*). The expressive audiovisual elements of Organic Battles (dark alchemical fantasy, glassmorphism, mature cyber-fantasy art, procedural Web Audio synthesis) bear zero substantial similarity to Prodigy’s proprietary chibi/cartoon 2D pixel aesthetics.
@@ -225,7 +225,7 @@ Applying the multi-factor *Polaroid* / *Sleekcraft* test:
 
 ### 3.5 Academic Textbook Alignment & Fair Use (17 U.S.C. § 107)
 
-Organic Battles aligns its curricular chapters with standard organic chemistry syllabi, specifically referencing David Klein (*Organic Chemistry*, 5th Ed., Wiley), John McMurry, and OpenStax.
+Organic Battles aligns its curricular chapters with standard university organic chemistry curricula and syllabi.
 
 #### Legal Analysis of Scientific Curricula
 1. **Uncopyrightability of Facts and Scientific Laws**:

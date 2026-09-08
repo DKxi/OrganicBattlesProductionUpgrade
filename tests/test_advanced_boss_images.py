@@ -1,6 +1,6 @@
 """
 test_boss_images.py - Verifies that all boss asset images specified in
-david_klein_organic_chemistry_boss_bestiary.md exist in the 'bosses' directory.
+AdvancedBestiary.md exist in the 'bosses' directory.
 """
 
 import os
@@ -13,7 +13,7 @@ BOSSES_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "tracks", "ad
 
 def get_boss_images_from_bestiary(bestiary_path=BESTIARY_PATH):
     """
-    Parses david_klein_organic_chemistry_boss_bestiary.md to extract all boss names
+    Parses AdvancedBestiary.md to extract all boss names
     and their corresponding 'Asset Image' filenames.
     Returns a list of dicts: [{'boss': str, 'image': str, 'chapter': str, 'tier': str}]
     """

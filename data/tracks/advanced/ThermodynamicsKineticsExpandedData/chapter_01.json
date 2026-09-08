@@ -91,28 +91,28 @@
       "topic": "BDE Enthalpy Calculation for H2 + Cl2",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (ΔH°rxn) for H₂ + Cl₂ → 2 HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+          "text": "ΔH°rxn = 0 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+          "text": "ΔH°rxn = -432 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+          "text": "ΔH°rxn = +185 kJ/mol (Endothermic)."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+          "text": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
-      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "correct_answer": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "ΔH°rxn = Σ(BDE bonds broken) - Σ(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
       "spells": [
         20,
         30,
@@ -133,28 +133,28 @@
       "topic": "Gibbs Free Energy and Equilibrium Constant",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "question": "At 298 K (25°C), if a reaction has ΔG° = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol·K)",
       "options": [
         {
           "label": "A",
-          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+          "text": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100)."
         },
         {
           "label": "B",
-          "text": "Keq \u2248 0.01."
+          "text": "Keq ≈ 0.01."
         },
         {
           "label": "C",
-          "text": "Keq \u2248 1.0."
+          "text": "Keq ≈ 1.0."
         },
         {
           "label": "D",
-          "text": "Keq \u2248 10,000."
+          "text": "Keq ≈ 10,000."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
-      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "correct_answer": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative ΔG° at 298 K increases Keq by a factor of 10; ΔG° = -11.4 kJ/mol gives Keq = 10² = 100.",
       "spells": [
         20,
         30,
@@ -175,7 +175,7 @@
       "topic": "Entropy and Temperature Threshold",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "question": "For a cracking reaction with ΔH° = +80 kJ/mol and ΔS° = +200 J/mol·K, at what temperature does the reaction become exergonic (ΔG° < 0)?",
       "options": [
         {
           "label": "A",
@@ -187,7 +187,7 @@
         },
         {
           "label": "C",
-          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+          "text": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K)."
         },
         {
           "label": "D",
@@ -195,8 +195,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
-      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "correct_answer": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K).",
+      "explanation": "Setting ΔG° = ΔH° - TΔS° = 0 gives the crossover temperature T = ΔH°/ΔS° = 80,000 / 200 = 400 K.",
       "spells": [
         20,
         30,
@@ -233,12 +233,12 @@
         },
         {
           "label": "D",
-          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
-      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25°C increases the reaction rate by e^(25000 / [8.314 × 298]) ≈ 2.4 × 10⁴ fold.",
       "spells": [
         20,
         30,
@@ -259,7 +259,7 @@
       "topic": "Primary Kinetic Isotope Effect Magnitude",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25°C?",
       "options": [
         {
           "label": "A",
@@ -280,7 +280,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
-      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "explanation": "The zero-point energy difference between C-H (ν ~ 2900 cm⁻¹) and C-D (ν ~ 2100 cm⁻¹) creates a theoretical maximum primary KIE of ~6.5–7.0 at 298 K.",
       "spells": [
         20,
         30,
@@ -301,28 +301,28 @@
       "topic": "BDE Enthalpy for Methane Monochlorination",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "question": "Using BDEs (CH₃-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH₃-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated ΔH° for the net reaction CH₄ + Cl₂ → CH₃Cl + HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0 = -243 kJ/mol."
+          "text": "ΔH° = -243 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+          "text": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0 = -50 kJ/mol."
+          "text": "ΔH° = -50 kJ/mol."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0 = +101 kJ/mol."
+          "text": "ΔH° = +101 kJ/mol."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
-      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "correct_answer": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "ΔH° = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
       "spells": [
         20,
         30,
@@ -343,11 +343,11 @@
       "topic": "First-Order Half-Life Calculation",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s⁻¹ at 25°C, what is the half-life (t_1/2) of the reactant?",
       "options": [
         {
           "label": "A",
-          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s)."
         },
         {
           "label": "B",
@@ -363,7 +363,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s).",
       "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
       "spells": [
         20,
@@ -385,7 +385,7 @@
       "topic": "Secondary Kinetic Isotope Effect Hybridization",
       "difficulty": "medium",
       "question_type": "kinetic_isotope_effect",
-      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D ≈ 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
       "options": [
         {
           "label": "A",
@@ -397,16 +397,16 @@
         },
         {
           "label": "C",
-          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+          "text": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
         },
         {
           "label": "D",
-          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+          "text": "An sp³ to sp² rehybridization with carbocation formation."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
-      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "correct_answer": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp² to sp³ increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
       "spells": [
         20,
         30,
@@ -427,7 +427,7 @@
       "topic": "Temperature Doubling Rule of Thumb Math",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "question": "Why does reaction rate roughly double for every 10°C increase in temperature around room temperature (25°C)?",
       "options": [
         {
           "label": "A",
@@ -435,7 +435,7 @@
         },
         {
           "label": "B",
-          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0."
         },
         {
           "label": "C",
@@ -443,12 +443,12 @@
         },
         {
           "label": "D",
-          "text": "Because molecular velocity doubles every 10\u00b0C."
+          "text": "Because molecular velocity doubles every 10°C."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
-      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea ≈ 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] × [10 / (298 × 308)]) = e^0.654 ≈ 1.92 ≈ 2.0.",
       "spells": [
         20,
         30,
@@ -469,7 +469,7 @@
       "topic": "Thermodynamic Equilibrium Ratio from Delta G",
       "difficulty": "medium",
       "question_type": "gibbs_equilibrium_math",
-      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (ΔG° = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
       "options": [
         {
           "label": "A",
@@ -490,7 +490,7 @@
       ],
       "correct_option": "B",
       "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
-      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "explanation": "At 298 K, ΔG° = -5.7 kJ/mol corresponds to Keq = 10¹ = 10, meaning [B]/[A] = 10:1 (90.9% B).",
       "spells": [
         20,
         30,
@@ -511,28 +511,28 @@
       "topic": "BDE Enthalpy Calculation for H2 + Cl2",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (ΔH°rxn) for H₂ + Cl₂ → 2 HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+          "text": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol)."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+          "text": "ΔH°rxn = 0 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+          "text": "ΔH°rxn = -432 kJ/mol."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+          "text": "ΔH°rxn = +185 kJ/mol (Endothermic)."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
-      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "correct_answer": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "ΔH°rxn = Σ(BDE bonds broken) - Σ(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
       "spells": [
         25,
         35,
@@ -553,28 +553,28 @@
       "topic": "Gibbs Free Energy and Equilibrium Constant",
       "difficulty": "easy",
       "question_type": "kinetic_isotope_effect",
-      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "question": "At 298 K (25°C), if a reaction has ΔG° = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol·K)",
       "options": [
         {
           "label": "A",
-          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+          "text": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100)."
         },
         {
           "label": "B",
-          "text": "Keq \u2248 10,000."
+          "text": "Keq ≈ 10,000."
         },
         {
           "label": "C",
-          "text": "Keq \u2248 1.0."
+          "text": "Keq ≈ 1.0."
         },
         {
           "label": "D",
-          "text": "Keq \u2248 0.01."
+          "text": "Keq ≈ 0.01."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
-      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "correct_answer": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative ΔG° at 298 K increases Keq by a factor of 10; ΔG° = -11.4 kJ/mol gives Keq = 10² = 100.",
       "spells": [
         25,
         35,
@@ -595,7 +595,7 @@
       "topic": "Entropy and Temperature Threshold",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "question": "For a cracking reaction with ΔH° = +80 kJ/mol and ΔS° = +200 J/mol·K, at what temperature does the reaction become exergonic (ΔG° < 0)?",
       "options": [
         {
           "label": "A",
@@ -611,12 +611,12 @@
         },
         {
           "label": "D",
-          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+          "text": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
-      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "correct_answer": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K).",
+      "explanation": "Setting ΔG° = ΔH° - TΔS° = 0 gives the crossover temperature T = ΔH°/ΔS° = 80,000 / 200 = 400 K.",
       "spells": [
         25,
         35,
@@ -641,7 +641,7 @@
       "options": [
         {
           "label": "A",
-          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000)."
         },
         {
           "label": "B",
@@ -657,8 +657,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
-      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25°C increases the reaction rate by e^(25000 / [8.314 × 298]) ≈ 2.4 × 10⁴ fold.",
       "spells": [
         25,
         35,
@@ -679,7 +679,7 @@
       "topic": "Primary Kinetic Isotope Effect Magnitude",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25°C?",
       "options": [
         {
           "label": "A",
@@ -700,7 +700,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
-      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "explanation": "The zero-point energy difference between C-H (ν ~ 2900 cm⁻¹) and C-D (ν ~ 2100 cm⁻¹) creates a theoretical maximum primary KIE of ~6.5–7.0 at 298 K.",
       "spells": [
         25,
         35,
@@ -721,28 +721,28 @@
       "topic": "BDE Enthalpy for Methane Monochlorination",
       "difficulty": "medium",
       "question_type": "kinetic_isotope_effect",
-      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "question": "Using BDEs (CH₃-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH₃-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated ΔH° for the net reaction CH₄ + Cl₂ → CH₃Cl + HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+          "text": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0 = -50 kJ/mol."
+          "text": "ΔH° = -50 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0 = -243 kJ/mol."
+          "text": "ΔH° = -243 kJ/mol."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0 = +101 kJ/mol."
+          "text": "ΔH° = +101 kJ/mol."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
-      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "correct_answer": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "ΔH° = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
       "spells": [
         25,
         35,
@@ -763,11 +763,11 @@
       "topic": "First-Order Half-Life Calculation",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s⁻¹ at 25°C, what is the half-life (t_1/2) of the reactant?",
       "options": [
         {
           "label": "A",
-          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s)."
         },
         {
           "label": "B",
@@ -783,7 +783,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s).",
       "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
       "spells": [
         25,
@@ -805,7 +805,7 @@
       "topic": "Secondary Kinetic Isotope Effect Hybridization",
       "difficulty": "medium",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D ≈ 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
       "options": [
         {
           "label": "A",
@@ -813,7 +813,7 @@
         },
         {
           "label": "B",
-          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+          "text": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
         },
         {
           "label": "C",
@@ -821,12 +821,12 @@
         },
         {
           "label": "D",
-          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+          "text": "An sp³ to sp² rehybridization with carbocation formation."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
-      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "correct_answer": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp² to sp³ increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
       "spells": [
         25,
         35,
@@ -847,7 +847,7 @@
       "topic": "Temperature Doubling Rule of Thumb Math",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "question": "Why does reaction rate roughly double for every 10°C increase in temperature around room temperature (25°C)?",
       "options": [
         {
           "label": "A",
@@ -855,11 +855,11 @@
         },
         {
           "label": "B",
-          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0."
         },
         {
           "label": "C",
-          "text": "Because molecular velocity doubles every 10\u00b0C."
+          "text": "Because molecular velocity doubles every 10°C."
         },
         {
           "label": "D",
@@ -867,8 +867,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
-      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea ≈ 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] × [10 / (298 × 308)]) = e^0.654 ≈ 1.92 ≈ 2.0.",
       "spells": [
         25,
         35,
@@ -889,7 +889,7 @@
       "topic": "Thermodynamic Equilibrium Ratio from Delta G",
       "difficulty": "hard",
       "question_type": "kinetic_isotope_effect",
-      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (ΔG° = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
       "options": [
         {
           "label": "A",
@@ -910,7 +910,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
-      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "explanation": "At 298 K, ΔG° = -5.7 kJ/mol corresponds to Keq = 10¹ = 10, meaning [B]/[A] = 10:1 (90.9% B).",
       "spells": [
         25,
         35,
@@ -931,28 +931,28 @@
       "topic": "BDE Enthalpy Calculation for H2 + Cl2",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (ΔH°rxn) for H₂ + Cl₂ → 2 HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+          "text": "ΔH°rxn = -432 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+          "text": "ΔH°rxn = 0 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+          "text": "ΔH°rxn = +185 kJ/mol (Endothermic)."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+          "text": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
-      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "correct_answer": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "ΔH°rxn = Σ(BDE bonds broken) - Σ(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
       "spells": [
         30,
         40,
@@ -973,28 +973,28 @@
       "topic": "Gibbs Free Energy and Equilibrium Constant",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "question": "At 298 K (25°C), if a reaction has ΔG° = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol·K)",
       "options": [
         {
           "label": "A",
-          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+          "text": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100)."
         },
         {
           "label": "B",
-          "text": "Keq \u2248 1.0."
+          "text": "Keq ≈ 1.0."
         },
         {
           "label": "C",
-          "text": "Keq \u2248 0.01."
+          "text": "Keq ≈ 0.01."
         },
         {
           "label": "D",
-          "text": "Keq \u2248 10,000."
+          "text": "Keq ≈ 10,000."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
-      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "correct_answer": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative ΔG° at 298 K increases Keq by a factor of 10; ΔG° = -11.4 kJ/mol gives Keq = 10² = 100.",
       "spells": [
         30,
         40,
@@ -1015,7 +1015,7 @@
       "topic": "Entropy and Temperature Threshold",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "question": "For a cracking reaction with ΔH° = +80 kJ/mol and ΔS° = +200 J/mol·K, at what temperature does the reaction become exergonic (ΔG° < 0)?",
       "options": [
         {
           "label": "A",
@@ -1027,7 +1027,7 @@
         },
         {
           "label": "C",
-          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+          "text": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K)."
         },
         {
           "label": "D",
@@ -1035,8 +1035,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
-      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "correct_answer": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K).",
+      "explanation": "Setting ΔG° = ΔH° - TΔS° = 0 gives the crossover temperature T = ΔH°/ΔS° = 80,000 / 200 = 400 K.",
       "spells": [
         30,
         40,
@@ -1073,12 +1073,12 @@
         },
         {
           "label": "D",
-          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
-      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25°C increases the reaction rate by e^(25000 / [8.314 × 298]) ≈ 2.4 × 10⁴ fold.",
       "spells": [
         30,
         40,
@@ -1099,7 +1099,7 @@
       "topic": "Primary Kinetic Isotope Effect Magnitude",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25°C?",
       "options": [
         {
           "label": "A",
@@ -1120,7 +1120,7 @@
       ],
       "correct_option": "C",
       "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
-      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "explanation": "The zero-point energy difference between C-H (ν ~ 2900 cm⁻¹) and C-D (ν ~ 2100 cm⁻¹) creates a theoretical maximum primary KIE of ~6.5–7.0 at 298 K.",
       "spells": [
         30,
         40,
@@ -1141,28 +1141,28 @@
       "topic": "BDE Enthalpy for Methane Monochlorination",
       "difficulty": "medium",
       "question_type": "gibbs_equilibrium_math",
-      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "question": "Using BDEs (CH₃-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH₃-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated ΔH° for the net reaction CH₄ + Cl₂ → CH₃Cl + HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0 = +101 kJ/mol."
+          "text": "ΔH° = +101 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+          "text": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0 = -50 kJ/mol."
+          "text": "ΔH° = -50 kJ/mol."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0 = -243 kJ/mol."
+          "text": "ΔH° = -243 kJ/mol."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
-      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "correct_answer": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "ΔH° = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
       "spells": [
         30,
         40,
@@ -1183,11 +1183,11 @@
       "topic": "First-Order Half-Life Calculation",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s⁻¹ at 25°C, what is the half-life (t_1/2) of the reactant?",
       "options": [
         {
           "label": "A",
-          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s)."
         },
         {
           "label": "B",
@@ -1203,7 +1203,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s).",
       "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
       "spells": [
         30,
@@ -1225,7 +1225,7 @@
       "topic": "Secondary Kinetic Isotope Effect Hybridization",
       "difficulty": "medium",
       "question_type": "kinetic_isotope_effect",
-      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D ≈ 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
       "options": [
         {
           "label": "A",
@@ -1233,7 +1233,7 @@
         },
         {
           "label": "B",
-          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+          "text": "An sp³ to sp² rehybridization with carbocation formation."
         },
         {
           "label": "C",
@@ -1241,12 +1241,12 @@
         },
         {
           "label": "D",
-          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+          "text": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
-      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "correct_answer": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp² to sp³ increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
       "spells": [
         30,
         40,
@@ -1267,7 +1267,7 @@
       "topic": "Temperature Doubling Rule of Thumb Math",
       "difficulty": "hard",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "question": "Why does reaction rate roughly double for every 10°C increase in temperature around room temperature (25°C)?",
       "options": [
         {
           "label": "A",
@@ -1279,16 +1279,16 @@
         },
         {
           "label": "C",
-          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0."
         },
         {
           "label": "D",
-          "text": "Because molecular velocity doubles every 10\u00b0C."
+          "text": "Because molecular velocity doubles every 10°C."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
-      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea ≈ 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] × [10 / (298 × 308)]) = e^0.654 ≈ 1.92 ≈ 2.0.",
       "spells": [
         30,
         40,
@@ -1309,7 +1309,7 @@
       "topic": "Thermodynamic Equilibrium Ratio from Delta G",
       "difficulty": "hard",
       "question_type": "gibbs_equilibrium_math",
-      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (ΔG° = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
       "options": [
         {
           "label": "A",
@@ -1330,7 +1330,7 @@
       ],
       "correct_option": "A",
       "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
-      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "explanation": "At 298 K, ΔG° = -5.7 kJ/mol corresponds to Keq = 10¹ = 10, meaning [B]/[A] = 10:1 (90.9% B).",
       "spells": [
         30,
         40,
@@ -1351,28 +1351,28 @@
       "topic": "BDE Enthalpy Calculation for H2 + Cl2",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (ΔH°rxn) for H₂ + Cl₂ → 2 HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+          "text": "ΔH°rxn = -432 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+          "text": "ΔH°rxn = 0 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+          "text": "ΔH°rxn = +185 kJ/mol (Endothermic)."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+          "text": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
-      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "correct_answer": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "ΔH°rxn = Σ(BDE bonds broken) - Σ(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
       "spells": [
         35,
         45,
@@ -1393,28 +1393,28 @@
       "topic": "Gibbs Free Energy and Equilibrium Constant",
       "difficulty": "easy",
       "question_type": "kinetic_isotope_effect",
-      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "question": "At 298 K (25°C), if a reaction has ΔG° = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol·K)",
       "options": [
         {
           "label": "A",
-          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+          "text": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100)."
         },
         {
           "label": "B",
-          "text": "Keq \u2248 10,000."
+          "text": "Keq ≈ 10,000."
         },
         {
           "label": "C",
-          "text": "Keq \u2248 1.0."
+          "text": "Keq ≈ 1.0."
         },
         {
           "label": "D",
-          "text": "Keq \u2248 0.01."
+          "text": "Keq ≈ 0.01."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
-      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "correct_answer": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative ΔG° at 298 K increases Keq by a factor of 10; ΔG° = -11.4 kJ/mol gives Keq = 10² = 100.",
       "spells": [
         35,
         45,
@@ -1435,11 +1435,11 @@
       "topic": "Entropy and Temperature Threshold",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "question": "For a cracking reaction with ΔH° = +80 kJ/mol and ΔS° = +200 J/mol·K, at what temperature does the reaction become exergonic (ΔG° < 0)?",
       "options": [
         {
           "label": "A",
-          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+          "text": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K)."
         },
         {
           "label": "B",
@@ -1455,8 +1455,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
-      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "correct_answer": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K).",
+      "explanation": "Setting ΔG° = ΔH° - TΔS° = 0 gives the crossover temperature T = ΔH°/ΔS° = 80,000 / 200 = 400 K.",
       "spells": [
         35,
         45,
@@ -1481,7 +1481,7 @@
       "options": [
         {
           "label": "A",
-          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000)."
         },
         {
           "label": "B",
@@ -1497,8 +1497,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
-      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25°C increases the reaction rate by e^(25000 / [8.314 × 298]) ≈ 2.4 × 10⁴ fold.",
       "spells": [
         35,
         45,
@@ -1519,7 +1519,7 @@
       "topic": "Primary Kinetic Isotope Effect Magnitude",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25°C?",
       "options": [
         {
           "label": "A",
@@ -1540,7 +1540,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
-      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "explanation": "The zero-point energy difference between C-H (ν ~ 2900 cm⁻¹) and C-D (ν ~ 2100 cm⁻¹) creates a theoretical maximum primary KIE of ~6.5–7.0 at 298 K.",
       "spells": [
         35,
         45,
@@ -1561,28 +1561,28 @@
       "topic": "BDE Enthalpy for Methane Monochlorination",
       "difficulty": "medium",
       "question_type": "kinetic_isotope_effect",
-      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "question": "Using BDEs (CH₃-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH₃-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated ΔH° for the net reaction CH₄ + Cl₂ → CH₃Cl + HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0 = +101 kJ/mol."
+          "text": "ΔH° = +101 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0 = -243 kJ/mol."
+          "text": "ΔH° = -243 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+          "text": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0 = -50 kJ/mol."
+          "text": "ΔH° = -50 kJ/mol."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
-      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "correct_answer": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "ΔH° = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
       "spells": [
         35,
         45,
@@ -1603,7 +1603,7 @@
       "topic": "First-Order Half-Life Calculation",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s⁻¹ at 25°C, what is the half-life (t_1/2) of the reactant?",
       "options": [
         {
           "label": "A",
@@ -1619,11 +1619,11 @@
         },
         {
           "label": "D",
-          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s).",
       "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
       "spells": [
         35,
@@ -1645,7 +1645,7 @@
       "topic": "Secondary Kinetic Isotope Effect Hybridization",
       "difficulty": "hard",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D ≈ 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
       "options": [
         {
           "label": "A",
@@ -1653,11 +1653,11 @@
         },
         {
           "label": "B",
-          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+          "text": "An sp³ to sp² rehybridization with carbocation formation."
         },
         {
           "label": "C",
-          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+          "text": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
         },
         {
           "label": "D",
@@ -1665,8 +1665,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
-      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "correct_answer": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp² to sp³ increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
       "spells": [
         35,
         45,
@@ -1687,15 +1687,15 @@
       "topic": "Temperature Doubling Rule of Thumb Math",
       "difficulty": "hard",
       "question_type": "arrhenius_activation_energy",
-      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "question": "Why does reaction rate roughly double for every 10°C increase in temperature around room temperature (25°C)?",
       "options": [
         {
           "label": "A",
-          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0."
         },
         {
           "label": "B",
-          "text": "Because molecular velocity doubles every 10\u00b0C."
+          "text": "Because molecular velocity doubles every 10°C."
         },
         {
           "label": "C",
@@ -1707,8 +1707,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
-      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea ≈ 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] × [10 / (298 × 308)]) = e^0.654 ≈ 1.92 ≈ 2.0.",
       "spells": [
         35,
         45,
@@ -1729,7 +1729,7 @@
       "topic": "Thermodynamic Equilibrium Ratio from Delta G",
       "difficulty": "hard",
       "question_type": "kinetic_isotope_effect",
-      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (ΔG° = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
       "options": [
         {
           "label": "A",
@@ -1750,7 +1750,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
-      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "explanation": "At 298 K, ΔG° = -5.7 kJ/mol corresponds to Keq = 10¹ = 10, meaning [B]/[A] = 10:1 (90.9% B).",
       "spells": [
         35,
         45,
@@ -1771,28 +1771,28 @@
       "topic": "BDE Enthalpy Calculation for H2 + Cl2",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (\u0394H\u00b0rxn) for H\u2082 + Cl\u2082 \u2192 2 HCl?",
+      "question": "Using standard BDEs (H-H: 436 kJ/mol, Cl-Cl: 243 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated enthalpy of reaction (ΔH°rxn) for H₂ + Cl₂ → 2 HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = -432 kJ/mol."
+          "text": "ΔH°rxn = -432 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol)."
+          "text": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol)."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = +185 kJ/mol (Endothermic)."
+          "text": "ΔH°rxn = +185 kJ/mol (Endothermic)."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = 0 kJ/mol."
+          "text": "ΔH°rxn = 0 kJ/mol."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394H\u00b0rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 \u00d7 432] = 679 - 864 = -185 kJ/mol).",
-      "explanation": "\u0394H\u00b0rxn = \u03a3(BDE bonds broken) - \u03a3(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
+      "correct_answer": "ΔH°rxn = -185 kJ/mol (Exothermic: [436 + 243] - [2 × 432] = 679 - 864 = -185 kJ/mol).",
+      "explanation": "ΔH°rxn = Σ(BDE bonds broken) - Σ(BDE bonds formed) = (436 + 243) - 2(432) = 679 - 864 = -185 kJ/mol.",
       "spells": [
         40,
         50,
@@ -1813,28 +1813,28 @@
       "topic": "Gibbs Free Energy and Equilibrium Constant",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "At 298 K (25\u00b0C), if a reaction has \u0394G\u00b0 = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol\u00b7K)",
+      "question": "At 298 K (25°C), if a reaction has ΔG° = -11.4 kJ/mol, what is the equilibrium constant Keq? (R = 8.314 J/mol·K)",
       "options": [
         {
           "label": "A",
-          "text": "Keq \u2248 0.01."
+          "text": "Keq ≈ 0.01."
         },
         {
           "label": "B",
-          "text": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100)."
+          "text": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100)."
         },
         {
           "label": "C",
-          "text": "Keq \u2248 10,000."
+          "text": "Keq ≈ 10,000."
         },
         {
           "label": "D",
-          "text": "Keq \u2248 1.0."
+          "text": "Keq ≈ 1.0."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "Keq \u2248 100 (Keq = e^(-\u0394G\u00b0/RT) = e^(11400 / [8.314 \u00d7 298]) = e^4.60 \u2248 100).",
-      "explanation": "Every ~5.7 kJ/mol of negative \u0394G\u00b0 at 298 K increases Keq by a factor of 10; \u0394G\u00b0 = -11.4 kJ/mol gives Keq = 10\u00b2 = 100.",
+      "correct_answer": "Keq ≈ 100 (Keq = e^(-ΔG°/RT) = e^(11400 / [8.314 × 298]) = e^4.60 ≈ 100).",
+      "explanation": "Every ~5.7 kJ/mol of negative ΔG° at 298 K increases Keq by a factor of 10; ΔG° = -11.4 kJ/mol gives Keq = 10² = 100.",
       "spells": [
         40,
         50,
@@ -1855,7 +1855,7 @@
       "topic": "Entropy and Temperature Threshold",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "For a cracking reaction with \u0394H\u00b0 = +80 kJ/mol and \u0394S\u00b0 = +200 J/mol\u00b7K, at what temperature does the reaction become exergonic (\u0394G\u00b0 < 0)?",
+      "question": "For a cracking reaction with ΔH° = +80 kJ/mol and ΔS° = +200 J/mol·K, at what temperature does the reaction become exergonic (ΔG° < 0)?",
       "options": [
         {
           "label": "A",
@@ -1863,7 +1863,7 @@
         },
         {
           "label": "B",
-          "text": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K)."
+          "text": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K)."
         },
         {
           "label": "C",
@@ -1875,8 +1875,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "Above T = 400 K (127\u00b0C) (T = \u0394H\u00b0 / \u0394S\u00b0 = 80,000 J/mol / 200 J/mol\u00b7K = 400 K).",
-      "explanation": "Setting \u0394G\u00b0 = \u0394H\u00b0 - T\u0394S\u00b0 = 0 gives the crossover temperature T = \u0394H\u00b0/\u0394S\u00b0 = 80,000 / 200 = 400 K.",
+      "correct_answer": "Above T = 400 K (127°C) (T = ΔH° / ΔS° = 80,000 J/mol / 200 J/mol·K = 400 K).",
+      "explanation": "Setting ΔG° = ΔH° - TΔS° = 0 gives the crossover temperature T = ΔH°/ΔS° = 80,000 / 200 = 400 K.",
       "spells": [
         40,
         50,
@@ -1913,12 +1913,12 @@
         },
         {
           "label": "D",
-          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000)."
+          "text": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(\u0394Ea / RT) = e^(25000 / 2478) \u2248 e^10.09 \u2248 24,000).",
-      "explanation": "A 25 kJ/mol reduction in activation energy at 25\u00b0C increases the reaction rate by e^(25000 / [8.314 \u00d7 298]) \u2248 2.4 \u00d7 10\u2074 fold.",
+      "correct_answer": "Reaction A is approximately 24,000 times faster than Reaction B (k_A / k_B = e^(ΔEa / RT) = e^(25000 / 2478) ≈ e^10.09 ≈ 24,000).",
+      "explanation": "A 25 kJ/mol reduction in activation energy at 25°C increases the reaction rate by e^(25000 / [8.314 × 298]) ≈ 2.4 × 10⁴ fold.",
       "spells": [
         40,
         50,
@@ -1939,7 +1939,7 @@
       "topic": "Primary Kinetic Isotope Effect Magnitude",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25\u00b0C?",
+      "question": "What value of the primary deuterium kinetic isotope effect (k_H / k_D) is diagnostic for rate-limiting C-H bond cleavage at 25°C?",
       "options": [
         {
           "label": "A",
@@ -1960,7 +1960,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "k_H / k_D = 6.0 to 7.5 (due to the difference in zero-point vibrational energies between C-H and C-D bonds).",
-      "explanation": "The zero-point energy difference between C-H (\u03bd ~ 2900 cm\u207b\u00b9) and C-D (\u03bd ~ 2100 cm\u207b\u00b9) creates a theoretical maximum primary KIE of ~6.5\u20137.0 at 298 K.",
+      "explanation": "The zero-point energy difference between C-H (ν ~ 2900 cm⁻¹) and C-D (ν ~ 2100 cm⁻¹) creates a theoretical maximum primary KIE of ~6.5–7.0 at 298 K.",
       "spells": [
         40,
         50,
@@ -1981,28 +1981,28 @@
       "topic": "BDE Enthalpy for Methane Monochlorination",
       "difficulty": "medium",
       "question_type": "gibbs_equilibrium_math",
-      "question": "Using BDEs (CH\u2083-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH\u2083-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated \u0394H\u00b0 for the net reaction CH\u2084 + Cl\u2082 \u2192 CH\u2083Cl + HCl?",
+      "question": "Using BDEs (CH₃-H: 439 kJ/mol, Cl-Cl: 243 kJ/mol, CH₃-Cl: 351 kJ/mol, H-Cl: 432 kJ/mol), what is the calculated ΔH° for the net reaction CH₄ + Cl₂ → CH₃Cl + HCl?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0 = +101 kJ/mol."
+          "text": "ΔH° = +101 kJ/mol."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0 = -243 kJ/mol."
+          "text": "ΔH° = -243 kJ/mol."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
+          "text": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol)."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0 = -50 kJ/mol."
+          "text": "ΔH° = -50 kJ/mol."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "\u0394H\u00b0 = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
-      "explanation": "\u0394H\u00b0 = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
+      "correct_answer": "ΔH° = -101 kJ/mol (Exothermic: [439 + 243] - [351 + 432] = 682 - 783 = -101 kJ/mol).",
+      "explanation": "ΔH° = (BDE CH3-H + BDE Cl-Cl) - (BDE CH3-Cl + BDE H-Cl) = (439 + 243) - (351 + 432) = 682 - 783 = -101 kJ/mol.",
       "spells": [
         40,
         50,
@@ -2023,7 +2023,7 @@
       "topic": "First-Order Half-Life Calculation",
       "difficulty": "hard",
       "question_type": "arrhenius_activation_energy",
-      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s\u207b\u00b9 at 25\u00b0C, what is the half-life (t_1/2) of the reactant?",
+      "question": "If a unimolecular SN1 ionization has a first-order rate constant k = 0.0231 s⁻¹ at 25°C, what is the half-life (t_1/2) of the reactant?",
       "options": [
         {
           "label": "A",
@@ -2031,7 +2031,7 @@
         },
         {
           "label": "B",
-          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s)."
+          "text": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s)."
         },
         {
           "label": "C",
@@ -2043,7 +2043,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s\u207b\u00b9 = 30.0 s).",
+      "correct_answer": "t_1/2 = 30.0 seconds (t_1/2 = ln(2) / k = 0.693 / 0.0231 s⁻¹ = 30.0 s).",
       "explanation": "For a first-order reaction, half-life is independent of initial concentration: t_1/2 = 0.693 / k = 0.693 / 0.0231 = 30.0 s.",
       "spells": [
         40,
@@ -2065,7 +2065,7 @@
       "topic": "Secondary Kinetic Isotope Effect Hybridization",
       "difficulty": "hard",
       "question_type": "kinetic_isotope_effect",
-      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D \u2248 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
+      "question": "What does an inverse secondary kinetic isotope effect (k_H / k_D ≈ 0.85 to 0.90) indicate about the hybridization change at carbon in the transition state?",
       "options": [
         {
           "label": "A",
@@ -2077,16 +2077,16 @@
         },
         {
           "label": "C",
-          "text": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
+          "text": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies."
         },
         {
           "label": "D",
-          "text": "An sp\u00b3 to sp\u00b2 rehybridization with carbocation formation."
+          "text": "An sp³ to sp² rehybridization with carbocation formation."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "An sp\u00b2 (planar) to sp\u00b3 (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
-      "explanation": "Rehybridizing from sp\u00b2 to sp\u00b3 increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
+      "correct_answer": "An sp² (planar) to sp³ (tetrahedral) rehybridization during the rate-determining step, increasing steric crowding and out-of-plane bending frequencies.",
+      "explanation": "Rehybridizing from sp² to sp³ increases C-H/C-D out-of-plane bending force constants, favoring the heavier isotope (inverse secondary KIE < 1).",
       "spells": [
         40,
         50,
@@ -2107,11 +2107,11 @@
       "topic": "Temperature Doubling Rule of Thumb Math",
       "difficulty": "hard",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Why does reaction rate roughly double for every 10\u00b0C increase in temperature around room temperature (25\u00b0C)?",
+      "question": "Why does reaction rate roughly double for every 10°C increase in temperature around room temperature (25°C)?",
       "options": [
         {
           "label": "A",
-          "text": "Because molecular velocity doubles every 10\u00b0C."
+          "text": "Because molecular velocity doubles every 10°C."
         },
         {
           "label": "B",
@@ -2119,7 +2119,7 @@
         },
         {
           "label": "C",
-          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0."
+          "text": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0."
         },
         {
           "label": "D",
@@ -2127,8 +2127,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea\u00b7\u0394T / [R\u00b7T\u2081\u00b7T\u2082]) \u2248 2.0.",
-      "explanation": "Applying the Arrhenius equation with typical Ea \u2248 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] \u00d7 [10 / (298 \u00d7 308)]) = e^0.654 \u2248 1.92 \u2248 2.0.",
+      "correct_answer": "A 10 K rise increases the fraction of molecules possessing energy exceeding a typical activation barrier (Ea ~ 50 kJ/mol) by a factor of e^(Ea·ΔT / [R·T₁·T₂]) ≈ 2.0.",
+      "explanation": "Applying the Arrhenius equation with typical Ea ≈ 50 kJ/mol gives k(308K)/k(298K) = e^([50000/8.314] × [10 / (298 × 308)]) = e^0.654 ≈ 1.92 ≈ 2.0.",
       "spells": [
         40,
         50,
@@ -2149,7 +2149,7 @@
       "topic": "Thermodynamic Equilibrium Ratio from Delta G",
       "difficulty": "hard",
       "question_type": "gibbs_equilibrium_math",
-      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (\u0394G\u00b0 = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
+      "question": "At 298 K, if product B is 5.7 kJ/mol more stable than isomer A (ΔG° = -5.7 kJ/mol), what is the equilibrium ratio of [B]/[A]?",
       "options": [
         {
           "label": "A",
@@ -2170,7 +2170,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "Ratio [B]/[A] = 10:1 (90.9% B, 9.1% A).",
-      "explanation": "At 298 K, \u0394G\u00b0 = -5.7 kJ/mol corresponds to Keq = 10\u00b9 = 10, meaning [B]/[A] = 10:1 (90.9% B).",
+      "explanation": "At 298 K, ΔG° = -5.7 kJ/mol corresponds to Keq = 10¹ = 10, meaning [B]/[A] = 10:1 (90.9% B).",
       "spells": [
         40,
         50,

@@ -1096,7 +1096,7 @@ Keep chemistry wording educational rather than intentionally tricky.
 
 Use concepts taught in:
 
-**Klein Organic Chemistry, 5e Integrated Student Study Guide and Solutions Manual**
+**Standard Undergraduate Organic Chemistry Curriculum and Study Guides**
 
 However:
 

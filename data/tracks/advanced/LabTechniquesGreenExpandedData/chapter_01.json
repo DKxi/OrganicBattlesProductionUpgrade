@@ -99,7 +99,7 @@
         },
         {
           "label": "B",
-          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
+          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
         },
         {
           "label": "C",
@@ -111,8 +111,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
-      "explanation": "Weak base NaHCO\u2083 (pKa of H\u2082CO\u2083 = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4\u20135) without deprotonating phenols (pKa ~ 10).",
+      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
+      "explanation": "Weak base NaHCO₃ (pKa of H₂CO₃ = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4–5) without deprotonating phenols (pKa ~ 10).",
       "spells": [
         20,
         30,
@@ -175,7 +175,7 @@
       "topic": "Vacuum Distillation for High-Boiling Compounds",
       "difficulty": "easy",
       "question_type": "distillation_selection",
-      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200\u00b0C)?",
+      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200°C)?",
       "options": [
         {
           "label": "A",
@@ -217,7 +217,7 @@
       "topic": "Green Chemistry Atom Economy Calculation",
       "difficulty": "easy",
       "question_type": "green_chemistry_metrics",
-      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B \u2192 C (where no side products or byproducts are generated)?",
+      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B → C (where no side products or byproducts are generated)?",
       "options": [
         {
           "label": "A",
@@ -225,7 +225,7 @@
         },
         {
           "label": "B",
-          "text": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%)."
+          "text": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%)."
         },
         {
           "label": "C",
@@ -237,7 +237,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%).",
+      "correct_answer": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%).",
       "explanation": "Reactions where all reactant atoms are incorporated into the target product (e.g., Diels-Alder, catalytic hydrogenation) have 100% Atom Economy.",
       "spells": [
         20,
@@ -301,7 +301,7 @@
       "topic": "Rotary Evaporator (Rotovap) Mechanism",
       "difficulty": "easy",
       "question_type": "chromatography_rf_prediction",
-      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH\u2082Cl\u2082 or diethyl ether) from a reaction mixture at low temperatures?",
+      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH₂Cl₂ or diethyl ether) from a reaction mixture at low temperatures?",
       "options": [
         {
           "label": "A",
@@ -313,7 +313,7 @@
         },
         {
           "label": "C",
-          "text": "By heating the flask with an open flame to 500\u00b0C."
+          "text": "By heating the flask with an open flame to 500°C."
         },
         {
           "label": "D",
@@ -343,7 +343,7 @@
       "topic": "Steam Distillation of Insoluble Essential Oils",
       "difficulty": "medium",
       "question_type": "distillation_selection",
-      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254\u00b0C) be distilled with steam below 100\u00b0C at 1 atm?",
+      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254°C) be distilled with steam below 100°C at 1 atm?",
       "options": [
         {
           "label": "A",
@@ -351,7 +351,7 @@
         },
         {
           "label": "B",
-          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C)."
+          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C)."
         },
         {
           "label": "C",
@@ -363,8 +363,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C).",
-      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100\u00b0C.",
+      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C).",
+      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100°C.",
       "spells": [
         20,
         30,
@@ -427,7 +427,7 @@
       "topic": "Column Chromatography Eluent Gradient",
       "difficulty": "medium",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes \u2192 10% EtOAc \u2192 50% EtOAc) used in silica column chromatography?",
+      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes → 10% EtOAc → 50% EtOAc) used in silica column chromatography?",
       "options": [
         {
           "label": "A",
@@ -469,7 +469,7 @@
       "topic": "Drying Agents (Anhydrous MgSO4 vs Na2SO4)",
       "difficulty": "medium",
       "question_type": "chromatography_rf_prediction",
-      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO\u2084) to an organic extraction layer prior to solvent evaporation?",
+      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO₄) to an organic extraction layer prior to solvent evaporation?",
       "options": [
         {
           "label": "A",
@@ -477,7 +477,7 @@
         },
         {
           "label": "B",
-          "text": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
+          "text": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
         },
         {
           "label": "C",
@@ -489,7 +489,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
+      "correct_answer": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
       "explanation": "Anhydrous inorganic salts coordinate water into solid crystal hydrates, rendering the organic extract completely dry.",
       "spells": [
         20,
@@ -527,12 +527,12 @@
         },
         {
           "label": "D",
-          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
+          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
-      "explanation": "Weak base NaHCO\u2083 (pKa of H\u2082CO\u2083 = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4\u20135) without deprotonating phenols (pKa ~ 10).",
+      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
+      "explanation": "Weak base NaHCO₃ (pKa of H₂CO₃ = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4–5) without deprotonating phenols (pKa ~ 10).",
       "spells": [
         25,
         35,
@@ -595,7 +595,7 @@
       "topic": "Vacuum Distillation for High-Boiling Compounds",
       "difficulty": "easy",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200\u00b0C)?",
+      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200°C)?",
       "options": [
         {
           "label": "A",
@@ -637,7 +637,7 @@
       "topic": "Green Chemistry Atom Economy Calculation",
       "difficulty": "easy",
       "question_type": "chromatography_rf_prediction",
-      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B \u2192 C (where no side products or byproducts are generated)?",
+      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B → C (where no side products or byproducts are generated)?",
       "options": [
         {
           "label": "A",
@@ -653,11 +653,11 @@
         },
         {
           "label": "D",
-          "text": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%)."
+          "text": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%).",
+      "correct_answer": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%).",
       "explanation": "Reactions where all reactant atoms are incorporated into the target product (e.g., Diels-Alder, catalytic hydrogenation) have 100% Atom Economy.",
       "spells": [
         25,
@@ -721,11 +721,11 @@
       "topic": "Rotary Evaporator (Rotovap) Mechanism",
       "difficulty": "medium",
       "question_type": "green_chemistry_metrics",
-      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH\u2082Cl\u2082 or diethyl ether) from a reaction mixture at low temperatures?",
+      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH₂Cl₂ or diethyl ether) from a reaction mixture at low temperatures?",
       "options": [
         {
           "label": "A",
-          "text": "By heating the flask with an open flame to 500\u00b0C."
+          "text": "By heating the flask with an open flame to 500°C."
         },
         {
           "label": "B",
@@ -763,11 +763,11 @@
       "topic": "Steam Distillation of Insoluble Essential Oils",
       "difficulty": "medium",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254\u00b0C) be distilled with steam below 100\u00b0C at 1 atm?",
+      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254°C) be distilled with steam below 100°C at 1 atm?",
       "options": [
         {
           "label": "A",
-          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C)."
+          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C)."
         },
         {
           "label": "B",
@@ -783,8 +783,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C).",
-      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100\u00b0C.",
+      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C).",
+      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100°C.",
       "spells": [
         25,
         35,
@@ -847,7 +847,7 @@
       "topic": "Column Chromatography Eluent Gradient",
       "difficulty": "medium",
       "question_type": "distillation_selection",
-      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes \u2192 10% EtOAc \u2192 50% EtOAc) used in silica column chromatography?",
+      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes → 10% EtOAc → 50% EtOAc) used in silica column chromatography?",
       "options": [
         {
           "label": "A",
@@ -889,7 +889,7 @@
       "topic": "Drying Agents (Anhydrous MgSO4 vs Na2SO4)",
       "difficulty": "hard",
       "question_type": "green_chemistry_metrics",
-      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO\u2084) to an organic extraction layer prior to solvent evaporation?",
+      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO₄) to an organic extraction layer prior to solvent evaporation?",
       "options": [
         {
           "label": "A",
@@ -897,7 +897,7 @@
         },
         {
           "label": "B",
-          "text": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
+          "text": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
         },
         {
           "label": "C",
@@ -909,7 +909,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
+      "correct_answer": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
       "explanation": "Anhydrous inorganic salts coordinate water into solid crystal hydrates, rendering the organic extract completely dry.",
       "spells": [
         25,
@@ -947,12 +947,12 @@
         },
         {
           "label": "D",
-          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
+          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
-      "explanation": "Weak base NaHCO\u2083 (pKa of H\u2082CO\u2083 = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4\u20135) without deprotonating phenols (pKa ~ 10).",
+      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
+      "explanation": "Weak base NaHCO₃ (pKa of H₂CO₃ = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4–5) without deprotonating phenols (pKa ~ 10).",
       "spells": [
         30,
         40,
@@ -1015,7 +1015,7 @@
       "topic": "Vacuum Distillation for High-Boiling Compounds",
       "difficulty": "easy",
       "question_type": "distillation_selection",
-      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200\u00b0C)?",
+      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200°C)?",
       "options": [
         {
           "label": "A",
@@ -1057,11 +1057,11 @@
       "topic": "Green Chemistry Atom Economy Calculation",
       "difficulty": "easy",
       "question_type": "green_chemistry_metrics",
-      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B \u2192 C (where no side products or byproducts are generated)?",
+      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B → C (where no side products or byproducts are generated)?",
       "options": [
         {
           "label": "A",
-          "text": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%)."
+          "text": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%)."
         },
         {
           "label": "B",
@@ -1077,7 +1077,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%).",
+      "correct_answer": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%).",
       "explanation": "Reactions where all reactant atoms are incorporated into the target product (e.g., Diels-Alder, catalytic hydrogenation) have 100% Atom Economy.",
       "spells": [
         30,
@@ -1141,7 +1141,7 @@
       "topic": "Rotary Evaporator (Rotovap) Mechanism",
       "difficulty": "medium",
       "question_type": "chromatography_rf_prediction",
-      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH\u2082Cl\u2082 or diethyl ether) from a reaction mixture at low temperatures?",
+      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH₂Cl₂ or diethyl ether) from a reaction mixture at low temperatures?",
       "options": [
         {
           "label": "A",
@@ -1153,7 +1153,7 @@
         },
         {
           "label": "C",
-          "text": "By heating the flask with an open flame to 500\u00b0C."
+          "text": "By heating the flask with an open flame to 500°C."
         },
         {
           "label": "D",
@@ -1183,7 +1183,7 @@
       "topic": "Steam Distillation of Insoluble Essential Oils",
       "difficulty": "medium",
       "question_type": "distillation_selection",
-      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254\u00b0C) be distilled with steam below 100\u00b0C at 1 atm?",
+      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254°C) be distilled with steam below 100°C at 1 atm?",
       "options": [
         {
           "label": "A",
@@ -1199,12 +1199,12 @@
         },
         {
           "label": "D",
-          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C)."
+          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C)."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C).",
-      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100\u00b0C.",
+      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C).",
+      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100°C.",
       "spells": [
         30,
         40,
@@ -1267,7 +1267,7 @@
       "topic": "Column Chromatography Eluent Gradient",
       "difficulty": "hard",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes \u2192 10% EtOAc \u2192 50% EtOAc) used in silica column chromatography?",
+      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes → 10% EtOAc → 50% EtOAc) used in silica column chromatography?",
       "options": [
         {
           "label": "A",
@@ -1309,7 +1309,7 @@
       "topic": "Drying Agents (Anhydrous MgSO4 vs Na2SO4)",
       "difficulty": "hard",
       "question_type": "chromatography_rf_prediction",
-      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO\u2084) to an organic extraction layer prior to solvent evaporation?",
+      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO₄) to an organic extraction layer prior to solvent evaporation?",
       "options": [
         {
           "label": "A",
@@ -1317,7 +1317,7 @@
         },
         {
           "label": "B",
-          "text": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
+          "text": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
         },
         {
           "label": "C",
@@ -1329,7 +1329,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
+      "correct_answer": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
       "explanation": "Anhydrous inorganic salts coordinate water into solid crystal hydrates, rendering the organic extract completely dry.",
       "spells": [
         30,
@@ -1359,7 +1359,7 @@
         },
         {
           "label": "B",
-          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
+          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
         },
         {
           "label": "C",
@@ -1371,8 +1371,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
-      "explanation": "Weak base NaHCO\u2083 (pKa of H\u2082CO\u2083 = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4\u20135) without deprotonating phenols (pKa ~ 10).",
+      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
+      "explanation": "Weak base NaHCO₃ (pKa of H₂CO₃ = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4–5) without deprotonating phenols (pKa ~ 10).",
       "spells": [
         35,
         45,
@@ -1435,7 +1435,7 @@
       "topic": "Vacuum Distillation for High-Boiling Compounds",
       "difficulty": "easy",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200\u00b0C)?",
+      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200°C)?",
       "options": [
         {
           "label": "A",
@@ -1477,7 +1477,7 @@
       "topic": "Green Chemistry Atom Economy Calculation",
       "difficulty": "medium",
       "question_type": "chromatography_rf_prediction",
-      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B \u2192 C (where no side products or byproducts are generated)?",
+      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B → C (where no side products or byproducts are generated)?",
       "options": [
         {
           "label": "A",
@@ -1485,7 +1485,7 @@
         },
         {
           "label": "B",
-          "text": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%)."
+          "text": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%)."
         },
         {
           "label": "C",
@@ -1497,7 +1497,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%).",
+      "correct_answer": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%).",
       "explanation": "Reactions where all reactant atoms are incorporated into the target product (e.g., Diels-Alder, catalytic hydrogenation) have 100% Atom Economy.",
       "spells": [
         35,
@@ -1561,7 +1561,7 @@
       "topic": "Rotary Evaporator (Rotovap) Mechanism",
       "difficulty": "medium",
       "question_type": "green_chemistry_metrics",
-      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH\u2082Cl\u2082 or diethyl ether) from a reaction mixture at low temperatures?",
+      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH₂Cl₂ or diethyl ether) from a reaction mixture at low temperatures?",
       "options": [
         {
           "label": "A",
@@ -1569,7 +1569,7 @@
         },
         {
           "label": "B",
-          "text": "By heating the flask with an open flame to 500\u00b0C."
+          "text": "By heating the flask with an open flame to 500°C."
         },
         {
           "label": "C",
@@ -1603,7 +1603,7 @@
       "topic": "Steam Distillation of Insoluble Essential Oils",
       "difficulty": "medium",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254\u00b0C) be distilled with steam below 100\u00b0C at 1 atm?",
+      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254°C) be distilled with steam below 100°C at 1 atm?",
       "options": [
         {
           "label": "A",
@@ -1611,7 +1611,7 @@
         },
         {
           "label": "B",
-          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C)."
+          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C)."
         },
         {
           "label": "C",
@@ -1623,8 +1623,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C).",
-      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100\u00b0C.",
+      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C).",
+      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100°C.",
       "spells": [
         35,
         45,
@@ -1687,7 +1687,7 @@
       "topic": "Column Chromatography Eluent Gradient",
       "difficulty": "hard",
       "question_type": "distillation_selection",
-      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes \u2192 10% EtOAc \u2192 50% EtOAc) used in silica column chromatography?",
+      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes → 10% EtOAc → 50% EtOAc) used in silica column chromatography?",
       "options": [
         {
           "label": "A",
@@ -1729,11 +1729,11 @@
       "topic": "Drying Agents (Anhydrous MgSO4 vs Na2SO4)",
       "difficulty": "hard",
       "question_type": "green_chemistry_metrics",
-      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO\u2084) to an organic extraction layer prior to solvent evaporation?",
+      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO₄) to an organic extraction layer prior to solvent evaporation?",
       "options": [
         {
           "label": "A",
-          "text": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
+          "text": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
         },
         {
           "label": "B",
@@ -1749,7 +1749,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
+      "correct_answer": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
       "explanation": "Anhydrous inorganic salts coordinate water into solid crystal hydrates, rendering the organic extract completely dry.",
       "spells": [
         35,
@@ -1779,7 +1779,7 @@
         },
         {
           "label": "B",
-          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
+          "text": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol."
         },
         {
           "label": "C",
@@ -1791,8 +1791,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO\u2083, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
-      "explanation": "Weak base NaHCO\u2083 (pKa of H\u2082CO\u2083 = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4\u20135) without deprotonating phenols (pKa ~ 10).",
+      "correct_answer": "Saturated aqueous sodium bicarbonate (5% NaHCO₃, pH ~ 8), which deprotonates strong benzoic acid but is too weak to deprotonate phenol.",
+      "explanation": "Weak base NaHCO₃ (pKa of H₂CO₃ = 6.35) selectively deprotonates carboxylic acids (pKa ~ 4–5) without deprotonating phenols (pKa ~ 10).",
       "spells": [
         40,
         50,
@@ -1855,7 +1855,7 @@
       "topic": "Vacuum Distillation for High-Boiling Compounds",
       "difficulty": "medium",
       "question_type": "distillation_selection",
-      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200\u00b0C)?",
+      "question": "Why is vacuum distillation (reduced pressure, 10 mmHg) preferred over simple atmospheric distillation for isolating high-boiling compounds (bp > 200°C)?",
       "options": [
         {
           "label": "A",
@@ -1897,7 +1897,7 @@
       "topic": "Green Chemistry Atom Economy Calculation",
       "difficulty": "medium",
       "question_type": "green_chemistry_metrics",
-      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B \u2192 C (where no side products or byproducts are generated)?",
+      "question": "What is the Atom Economy (AE) of a 100% yielding reaction: A + B → C (where no side products or byproducts are generated)?",
       "options": [
         {
           "label": "A",
@@ -1909,7 +1909,7 @@
         },
         {
           "label": "C",
-          "text": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%)."
+          "text": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%)."
         },
         {
           "label": "D",
@@ -1917,7 +1917,7 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "100% Atom Economy (AE = [MW of desired product / \u03a3 MW of all reactants] \u00d7 100% = 100%).",
+      "correct_answer": "100% Atom Economy (AE = [MW of desired product / Σ MW of all reactants] × 100% = 100%).",
       "explanation": "Reactions where all reactant atoms are incorporated into the target product (e.g., Diels-Alder, catalytic hydrogenation) have 100% Atom Economy.",
       "spells": [
         40,
@@ -1981,7 +1981,7 @@
       "topic": "Rotary Evaporator (Rotovap) Mechanism",
       "difficulty": "medium",
       "question_type": "chromatography_rf_prediction",
-      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH\u2082Cl\u2082 or diethyl ether) from a reaction mixture at low temperatures?",
+      "question": "How does a rotary evaporator rapidly remove volatile organic solvents (e.g., CH₂Cl₂ or diethyl ether) from a reaction mixture at low temperatures?",
       "options": [
         {
           "label": "A",
@@ -1993,7 +1993,7 @@
         },
         {
           "label": "C",
-          "text": "By heating the flask with an open flame to 500\u00b0C."
+          "text": "By heating the flask with an open flame to 500°C."
         },
         {
           "label": "D",
@@ -2023,11 +2023,11 @@
       "topic": "Steam Distillation of Insoluble Essential Oils",
       "difficulty": "hard",
       "question_type": "distillation_selection",
-      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254\u00b0C) be distilled with steam below 100\u00b0C at 1 atm?",
+      "question": "Why can water-insoluble, high-boiling organic essential oils (e.g., eugenol, bp 254°C) be distilled with steam below 100°C at 1 atm?",
       "options": [
         {
           "label": "A",
-          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C)."
+          "text": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C)."
         },
         {
           "label": "B",
@@ -2043,8 +2043,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100\u00b0C).",
-      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100\u00b0C.",
+      "correct_answer": "In immiscible mixtures, total vapor pressure equals the sum of individual vapor pressures (P_total = P_water + P_oil); boiling occurs when P_total reaches 1 atm (always < 100°C).",
+      "explanation": "Immiscible liquids boil when the sum of their independent vapor pressures reaches atmospheric pressure, allowing distillation at T < 100°C.",
       "spells": [
         40,
         50,
@@ -2107,7 +2107,7 @@
       "topic": "Column Chromatography Eluent Gradient",
       "difficulty": "hard",
       "question_type": "acid_base_extraction_flowchart",
-      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes \u2192 10% EtOAc \u2192 50% EtOAc) used in silica column chromatography?",
+      "question": "Why is a step-gradient of increasing solvent polarity (e.g., pure hexanes → 10% EtOAc → 50% EtOAc) used in silica column chromatography?",
       "options": [
         {
           "label": "A",
@@ -2149,7 +2149,7 @@
       "topic": "Drying Agents (Anhydrous MgSO4 vs Na2SO4)",
       "difficulty": "hard",
       "question_type": "chromatography_rf_prediction",
-      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO\u2084) to an organic extraction layer prior to solvent evaporation?",
+      "question": "What is the chemical function of adding anhydrous magnesium sulfate (MgSO₄) to an organic extraction layer prior to solvent evaporation?",
       "options": [
         {
           "label": "A",
@@ -2161,7 +2161,7 @@
         },
         {
           "label": "C",
-          "text": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
+          "text": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent."
         },
         {
           "label": "D",
@@ -2169,7 +2169,7 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "It forms insoluble crystalline hydrates (MgSO\u2084\u00b77H\u2082O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
+      "correct_answer": "It forms insoluble crystalline hydrates (MgSO₄·7H₂O), removing residual dissolved and suspended microscopic water droplets from the organic solvent.",
       "explanation": "Anhydrous inorganic salts coordinate water into solid crystal hydrates, rendering the organic extract completely dry.",
       "spells": [
         40,

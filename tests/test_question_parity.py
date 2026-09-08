@@ -181,3 +181,25 @@ def test_migrator_includes_questions():
     stats = migrate_sqlite_to_postgres(test_src, test_dst)
     assert "questions" in stats
     assert stats["questions"] > 0
+
+
+def test_zero_textbook_author_references_in_db():
+    """Verify that no database question prompts or explanations cite Klein, David, McMurry, or McCurry."""
+    from sqlalchemy import text
+    with SessionLocal() as db:
+        for term in ["david", "klein", "mcmurry", "mccurry"]:
+            count = db.execute(
+                text("SELECT COUNT(*) FROM questions WHERE LOWER(prompt) LIKE :t OR LOWER(explanation) LIKE :t"),
+                {"t": f"%{term}%"}
+            ).scalar()
+            assert count == 0, f"Found {count} questions in DB matching prohibited author reference: {term}"
+
+
+def test_zero_textbook_author_references_in_manifests():
+    """Verify that all track manifests have been sanitized of textbook/author names."""
+    manifest_paths = list(Path("data/tracks").glob("**/manifest.json"))
+    assert len(manifest_paths) > 0
+    for path in manifest_paths:
+        content = path.read_text(encoding="utf-8").lower()
+        for term in ["david", "klein", "mcmurry", "mccurry"]:
+            assert term not in content, f"Prohibited term '{term}' found in manifest: {path}"

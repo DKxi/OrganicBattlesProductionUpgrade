@@ -116,7 +116,7 @@ def test_content_source_priority_resolution_pure():
     assert resolve_content_source("json") == "json"
     assert resolve_content_source("app") == "app"
 
-    # Priority 3: default is json (Klein chapters)
+    # Priority 3: default is json (default chapters)
     assert resolve_content_source(None) == "json"
     assert resolve_content_source("invalid") == "json"
 

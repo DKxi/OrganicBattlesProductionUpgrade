@@ -91,27 +91,27 @@
       "topic": "Ch05 Enthalpy of Reaction Calculation",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (ΔH°rxn) calculated?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+          "text": "ΔH°rxn = Σ(BDE formed) - Σ(BDE broken)."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05."
+          "text": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+          "text": "ΔH°rxn = Product MW - Reactant MW."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+          "text": "ΔH°rxn = Gas constant R × Temperature."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05.",
+      "correct_answer": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05.",
       "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
       "spells": [
         20,
@@ -133,27 +133,27 @@
       "topic": "Ch05 Gibbs Free Energy Equilibrium Relation",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 05?",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (ΔG°) to the equilibrium constant (Keq) in Chapter 05?",
       "options": [
         {
           "label": "A",
-          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+          "text": "Keq = ΔG° - TΔS°."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05."
+          "text": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+          "text": "ΔG° = ΔH° / Keq."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = +RT Keq."
+          "text": "ΔG° = +RT Keq."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05.",
+      "correct_answer": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05.",
       "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
       "spells": [
         20,
@@ -187,7 +187,7 @@
         },
         {
           "label": "C",
-          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05."
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05."
         },
         {
           "label": "D",
@@ -195,7 +195,7 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05.",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05.",
       "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
       "spells": [
         20,
@@ -229,7 +229,7 @@
         },
         {
           "label": "C",
-          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05."
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05."
         },
         {
           "label": "D",
@@ -237,8 +237,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05.",
-      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05.",
+      "explanation": "Primary KIE values of 5–8 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
       "spells": [
         20,
         30,
@@ -271,16 +271,16 @@
         },
         {
           "label": "C",
-          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
+          "text": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
         },
         {
           "label": "D",
-          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+          "text": "An sp² to sp³ rehybridization."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
-      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "correct_answer": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
+      "explanation": "Rehybridization from sp³ to sp² loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
       "spells": [
         20,
         30,
@@ -309,7 +309,7 @@
         },
         {
           "label": "B",
-          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+          "text": "The overall reaction enthalpy ΔH°rxn exclusively."
         },
         {
           "label": "C",
@@ -317,12 +317,12 @@
         },
         {
           "label": "D",
-          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05."
+          "text": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05.",
-      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "correct_answer": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05.",
+      "explanation": "The free energy barrier ΔG‡ (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
       "spells": [
         20,
         30,
@@ -343,7 +343,7 @@
       "topic": "Ch05 Activation Entropy (Delta S-Double Dagger) Interpretation",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 05 mechanism?",
+      "question": "What does a large negative activation entropy (ΔS‡ = -100 to -150 J/mol·K) signify for a Chapter 05 mechanism?",
       "options": [
         {
           "label": "A",
@@ -364,7 +364,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 05.",
-      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "explanation": "Large negative ΔS‡ values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
       "spells": [
         20,
         30,
@@ -385,7 +385,7 @@
       "topic": "Ch05 Hammond Postulate Reaction Coordinate Math",
       "difficulty": "medium",
       "question_type": "kinetic_isotope_effect",
-      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
+      "question": "In an endergonic elementary step (ΔG° > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
       "options": [
         {
           "label": "A",
@@ -427,11 +427,11 @@
       "topic": "Ch05 Kinetic vs Thermodynamic Ratio Math",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by ΔΔG‡ = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
       "options": [
         {
           "label": "A",
-          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05."
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05."
         },
         {
           "label": "B",
@@ -447,8 +447,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05.",
-      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25°C produces a 100:1 kinetic selectivity ratio between competing pathways.",
       "spells": [
         20,
         30,
@@ -469,28 +469,28 @@
       "topic": "Ch05 Quantitative pKa and Delta G Connection",
       "difficulty": "medium",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 05 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "question": "What mathematical relationship connects the pKa difference (ΔpKa) in a Chapter 05 acid-base equilibrium to standard free energy (ΔG°)?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+          "text": "ΔG° = -2.303 RT / ΔpKa."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+          "text": "ΔG° = ΔpKa / RT."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
+          "text": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 is independent of pKa."
+          "text": "ΔG° is independent of pKa."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
-      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "correct_answer": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT ≈ 5.7 kJ/mol of free energy at 25°C.",
       "spells": [
         20,
         30,
@@ -511,27 +511,27 @@
       "topic": "Ch05 Enthalpy of Reaction Calculation",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (ΔH°rxn) calculated?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+          "text": "ΔH°rxn = Σ(BDE formed) - Σ(BDE broken)."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+          "text": "ΔH°rxn = Product MW - Reactant MW."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05."
+          "text": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+          "text": "ΔH°rxn = Gas constant R × Temperature."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05.",
+      "correct_answer": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05.",
       "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
       "spells": [
         25,
@@ -553,27 +553,27 @@
       "topic": "Ch05 Gibbs Free Energy Equilibrium Relation",
       "difficulty": "easy",
       "question_type": "kinetic_isotope_effect",
-      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 05?",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (ΔG°) to the equilibrium constant (Keq) in Chapter 05?",
       "options": [
         {
           "label": "A",
-          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+          "text": "Keq = ΔG° - TΔS°."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = +RT Keq."
+          "text": "ΔG° = +RT Keq."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+          "text": "ΔG° = ΔH° / Keq."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05."
+          "text": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05.",
+      "correct_answer": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05.",
       "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
       "spells": [
         25,
@@ -603,7 +603,7 @@
         },
         {
           "label": "B",
-          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05."
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05."
         },
         {
           "label": "C",
@@ -615,7 +615,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05.",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05.",
       "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
       "spells": [
         25,
@@ -645,7 +645,7 @@
         },
         {
           "label": "B",
-          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05."
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05."
         },
         {
           "label": "C",
@@ -657,8 +657,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05.",
-      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05.",
+      "explanation": "Primary KIE values of 5–8 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
       "spells": [
         25,
         35,
@@ -687,11 +687,11 @@
         },
         {
           "label": "B",
-          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+          "text": "An sp² to sp³ rehybridization."
         },
         {
           "label": "C",
-          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
+          "text": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
         },
         {
           "label": "D",
@@ -699,8 +699,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
-      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "correct_answer": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
+      "explanation": "Rehybridization from sp³ to sp² loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
       "spells": [
         25,
         35,
@@ -725,11 +725,11 @@
       "options": [
         {
           "label": "A",
-          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+          "text": "The overall reaction enthalpy ΔH°rxn exclusively."
         },
         {
           "label": "B",
-          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05."
+          "text": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05."
         },
         {
           "label": "C",
@@ -741,8 +741,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05.",
-      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "correct_answer": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05.",
+      "explanation": "The free energy barrier ΔG‡ (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
       "spells": [
         25,
         35,
@@ -763,7 +763,7 @@
       "topic": "Ch05 Activation Entropy (Delta S-Double Dagger) Interpretation",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 05 mechanism?",
+      "question": "What does a large negative activation entropy (ΔS‡ = -100 to -150 J/mol·K) signify for a Chapter 05 mechanism?",
       "options": [
         {
           "label": "A",
@@ -784,7 +784,7 @@
       ],
       "correct_option": "D",
       "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 05.",
-      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "explanation": "Large negative ΔS‡ values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
       "spells": [
         25,
         35,
@@ -805,7 +805,7 @@
       "topic": "Ch05 Hammond Postulate Reaction Coordinate Math",
       "difficulty": "medium",
       "question_type": "gibbs_equilibrium_math",
-      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
+      "question": "In an endergonic elementary step (ΔG° > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
       "options": [
         {
           "label": "A",
@@ -847,11 +847,11 @@
       "topic": "Ch05 Kinetic vs Thermodynamic Ratio Math",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by ΔΔG‡ = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
       "options": [
         {
           "label": "A",
-          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05."
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05."
         },
         {
           "label": "B",
@@ -867,8 +867,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05.",
-      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25°C produces a 100:1 kinetic selectivity ratio between competing pathways.",
       "spells": [
         25,
         35,
@@ -889,28 +889,28 @@
       "topic": "Ch05 Quantitative pKa and Delta G Connection",
       "difficulty": "hard",
       "question_type": "kinetic_isotope_effect",
-      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 05 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "question": "What mathematical relationship connects the pKa difference (ΔpKa) in a Chapter 05 acid-base equilibrium to standard free energy (ΔG°)?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
+          "text": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 is independent of pKa."
+          "text": "ΔG° is independent of pKa."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+          "text": "ΔG° = -2.303 RT / ΔpKa."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+          "text": "ΔG° = ΔpKa / RT."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
-      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "correct_answer": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT ≈ 5.7 kJ/mol of free energy at 25°C.",
       "spells": [
         25,
         35,
@@ -931,27 +931,27 @@
       "topic": "Ch05 Enthalpy of Reaction Calculation",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (ΔH°rxn) calculated?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05."
+          "text": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+          "text": "ΔH°rxn = Product MW - Reactant MW."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+          "text": "ΔH°rxn = Gas constant R × Temperature."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+          "text": "ΔH°rxn = Σ(BDE formed) - Σ(BDE broken)."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05.",
+      "correct_answer": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05.",
       "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
       "spells": [
         30,
@@ -973,27 +973,27 @@
       "topic": "Ch05 Gibbs Free Energy Equilibrium Relation",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 05?",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (ΔG°) to the equilibrium constant (Keq) in Chapter 05?",
       "options": [
         {
           "label": "A",
-          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+          "text": "Keq = ΔG° - TΔS°."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05."
+          "text": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = +RT Keq."
+          "text": "ΔG° = +RT Keq."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+          "text": "ΔG° = ΔH° / Keq."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05.",
+      "correct_answer": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05.",
       "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
       "spells": [
         30,
@@ -1023,7 +1023,7 @@
         },
         {
           "label": "B",
-          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05."
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05."
         },
         {
           "label": "C",
@@ -1035,7 +1035,7 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05.",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05.",
       "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
       "spells": [
         30,
@@ -1061,7 +1061,7 @@
       "options": [
         {
           "label": "A",
-          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05."
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05."
         },
         {
           "label": "B",
@@ -1077,8 +1077,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05.",
-      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05.",
+      "explanation": "Primary KIE values of 5–8 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
       "spells": [
         30,
         40,
@@ -1103,7 +1103,7 @@
       "options": [
         {
           "label": "A",
-          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
+          "text": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
         },
         {
           "label": "B",
@@ -1111,7 +1111,7 @@
         },
         {
           "label": "C",
-          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+          "text": "An sp² to sp³ rehybridization."
         },
         {
           "label": "D",
@@ -1119,8 +1119,8 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
-      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "correct_answer": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
+      "explanation": "Rehybridization from sp³ to sp² loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
       "spells": [
         30,
         40,
@@ -1145,7 +1145,7 @@
       "options": [
         {
           "label": "A",
-          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+          "text": "The overall reaction enthalpy ΔH°rxn exclusively."
         },
         {
           "label": "B",
@@ -1153,7 +1153,7 @@
         },
         {
           "label": "C",
-          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05."
+          "text": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05."
         },
         {
           "label": "D",
@@ -1161,8 +1161,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05.",
-      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "correct_answer": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05.",
+      "explanation": "The free energy barrier ΔG‡ (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
       "spells": [
         30,
         40,
@@ -1183,7 +1183,7 @@
       "topic": "Ch05 Activation Entropy (Delta S-Double Dagger) Interpretation",
       "difficulty": "medium",
       "question_type": "arrhenius_activation_energy",
-      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 05 mechanism?",
+      "question": "What does a large negative activation entropy (ΔS‡ = -100 to -150 J/mol·K) signify for a Chapter 05 mechanism?",
       "options": [
         {
           "label": "A",
@@ -1204,7 +1204,7 @@
       ],
       "correct_option": "C",
       "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 05.",
-      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "explanation": "Large negative ΔS‡ values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
       "spells": [
         30,
         40,
@@ -1225,7 +1225,7 @@
       "topic": "Ch05 Hammond Postulate Reaction Coordinate Math",
       "difficulty": "medium",
       "question_type": "kinetic_isotope_effect",
-      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
+      "question": "In an endergonic elementary step (ΔG° > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
       "options": [
         {
           "label": "A",
@@ -1267,7 +1267,7 @@
       "topic": "Ch05 Kinetic vs Thermodynamic Ratio Math",
       "difficulty": "hard",
       "question_type": "bde_enthalpy_calculation",
-      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by ΔΔG‡ = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
       "options": [
         {
           "label": "A",
@@ -1279,7 +1279,7 @@
         },
         {
           "label": "C",
-          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05."
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05."
         },
         {
           "label": "D",
@@ -1287,8 +1287,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05.",
-      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25°C produces a 100:1 kinetic selectivity ratio between competing pathways.",
       "spells": [
         30,
         40,
@@ -1309,28 +1309,28 @@
       "topic": "Ch05 Quantitative pKa and Delta G Connection",
       "difficulty": "hard",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 05 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "question": "What mathematical relationship connects the pKa difference (ΔpKa) in a Chapter 05 acid-base equilibrium to standard free energy (ΔG°)?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+          "text": "ΔG° = -2.303 RT / ΔpKa."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
+          "text": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 is independent of pKa."
+          "text": "ΔG° is independent of pKa."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+          "text": "ΔG° = ΔpKa / RT."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
-      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "correct_answer": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT ≈ 5.7 kJ/mol of free energy at 25°C.",
       "spells": [
         30,
         40,
@@ -1351,27 +1351,27 @@
       "topic": "Ch05 Enthalpy of Reaction Calculation",
       "difficulty": "easy",
       "question_type": "arrhenius_activation_energy",
-      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (ΔH°rxn) calculated?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05."
+          "text": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+          "text": "ΔH°rxn = Product MW - Reactant MW."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+          "text": "ΔH°rxn = Gas constant R × Temperature."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+          "text": "ΔH°rxn = Σ(BDE formed) - Σ(BDE broken)."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05.",
+      "correct_answer": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05.",
       "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
       "spells": [
         35,
@@ -1393,27 +1393,27 @@
       "topic": "Ch05 Gibbs Free Energy Equilibrium Relation",
       "difficulty": "easy",
       "question_type": "kinetic_isotope_effect",
-      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 05?",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (ΔG°) to the equilibrium constant (Keq) in Chapter 05?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05."
+          "text": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05."
         },
         {
           "label": "B",
-          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+          "text": "Keq = ΔG° - TΔS°."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+          "text": "ΔG° = ΔH° / Keq."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = +RT Keq."
+          "text": "ΔG° = +RT Keq."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05.",
+      "correct_answer": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05.",
       "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
       "spells": [
         35,
@@ -1439,7 +1439,7 @@
       "options": [
         {
           "label": "A",
-          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05."
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05."
         },
         {
           "label": "B",
@@ -1455,7 +1455,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05.",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05.",
       "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
       "spells": [
         35,
@@ -1493,12 +1493,12 @@
         },
         {
           "label": "D",
-          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05."
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05.",
-      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05.",
+      "explanation": "Primary KIE values of 5–8 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
       "spells": [
         35,
         45,
@@ -1531,16 +1531,16 @@
         },
         {
           "label": "C",
-          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
+          "text": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
         },
         {
           "label": "D",
-          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+          "text": "An sp² to sp³ rehybridization."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
-      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "correct_answer": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
+      "explanation": "Rehybridization from sp³ to sp² loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
       "spells": [
         35,
         45,
@@ -1569,11 +1569,11 @@
         },
         {
           "label": "B",
-          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05."
+          "text": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05."
         },
         {
           "label": "C",
-          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+          "text": "The overall reaction enthalpy ΔH°rxn exclusively."
         },
         {
           "label": "D",
@@ -1581,8 +1581,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05.",
-      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "correct_answer": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05.",
+      "explanation": "The free energy barrier ΔG‡ (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
       "spells": [
         35,
         45,
@@ -1603,7 +1603,7 @@
       "topic": "Ch05 Activation Entropy (Delta S-Double Dagger) Interpretation",
       "difficulty": "medium",
       "question_type": "bde_enthalpy_calculation",
-      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 05 mechanism?",
+      "question": "What does a large negative activation entropy (ΔS‡ = -100 to -150 J/mol·K) signify for a Chapter 05 mechanism?",
       "options": [
         {
           "label": "A",
@@ -1624,7 +1624,7 @@
       ],
       "correct_option": "A",
       "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 05.",
-      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "explanation": "Large negative ΔS‡ values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
       "spells": [
         35,
         45,
@@ -1645,7 +1645,7 @@
       "topic": "Ch05 Hammond Postulate Reaction Coordinate Math",
       "difficulty": "hard",
       "question_type": "gibbs_equilibrium_math",
-      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
+      "question": "In an endergonic elementary step (ΔG° > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
       "options": [
         {
           "label": "A",
@@ -1687,7 +1687,7 @@
       "topic": "Ch05 Kinetic vs Thermodynamic Ratio Math",
       "difficulty": "hard",
       "question_type": "arrhenius_activation_energy",
-      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by ΔΔG‡ = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
       "options": [
         {
           "label": "A",
@@ -1695,7 +1695,7 @@
         },
         {
           "label": "B",
-          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05."
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05."
         },
         {
           "label": "C",
@@ -1707,8 +1707,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05.",
-      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25°C produces a 100:1 kinetic selectivity ratio between competing pathways.",
       "spells": [
         35,
         45,
@@ -1729,28 +1729,28 @@
       "topic": "Ch05 Quantitative pKa and Delta G Connection",
       "difficulty": "hard",
       "question_type": "kinetic_isotope_effect",
-      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 05 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "question": "What mathematical relationship connects the pKa difference (ΔpKa) in a Chapter 05 acid-base equilibrium to standard free energy (ΔG°)?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+          "text": "ΔG° = -2.303 RT / ΔpKa."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+          "text": "ΔG° = ΔpKa / RT."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
+          "text": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 is independent of pKa."
+          "text": "ΔG° is independent of pKa."
         }
       ],
       "correct_option": "C",
-      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
-      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "correct_answer": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT ≈ 5.7 kJ/mol of free energy at 25°C.",
       "spells": [
         35,
         45,
@@ -1771,27 +1771,27 @@
       "topic": "Ch05 Enthalpy of Reaction Calculation",
       "difficulty": "easy",
       "question_type": "bde_enthalpy_calculation",
-      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (\u0394H\u00b0rxn) calculated?",
+      "question": "Using standard BDE tables for Chapter 05 chemical transformations, how is the reaction enthalpy (ΔH°rxn) calculated?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394H\u00b0rxn = Gas constant R \u00d7 Temperature."
+          "text": "ΔH°rxn = Gas constant R × Temperature."
         },
         {
           "label": "B",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05."
+          "text": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05."
         },
         {
           "label": "C",
-          "text": "\u0394H\u00b0rxn = Product MW - Reactant MW."
+          "text": "ΔH°rxn = Product MW - Reactant MW."
         },
         {
           "label": "D",
-          "text": "\u0394H\u00b0rxn = \u03a3(BDE formed) - \u03a3(BDE broken)."
+          "text": "ΔH°rxn = Σ(BDE formed) - Σ(BDE broken)."
         }
       ],
       "correct_option": "B",
-      "correct_answer": "\u0394H\u00b0rxn = \u03a3(BDE of all bonds broken in reactants) - \u03a3(BDE of all bonds formed in products) for Chapter 05.",
+      "correct_answer": "ΔH°rxn = Σ(BDE of all bonds broken in reactants) - Σ(BDE of all bonds formed in products) for Chapter 05.",
       "explanation": "Enthalpy change equals the energy invested to homolytically break reactant bonds minus energy released forming product bonds.",
       "spells": [
         40,
@@ -1813,27 +1813,27 @@
       "topic": "Ch05 Gibbs Free Energy Equilibrium Relation",
       "difficulty": "easy",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What exact mathematical equation relates standard Gibbs free energy (\u0394G\u00b0) to the equilibrium constant (Keq) in Chapter 05?",
+      "question": "What exact mathematical equation relates standard Gibbs free energy (ΔG°) to the equilibrium constant (Keq) in Chapter 05?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05."
+          "text": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05."
         },
         {
           "label": "B",
-          "text": "Keq = \u0394G\u00b0 - T\u0394S\u00b0."
+          "text": "Keq = ΔG° - TΔS°."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 = +RT Keq."
+          "text": "ΔG° = +RT Keq."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = \u0394H\u00b0 / Keq."
+          "text": "ΔG° = ΔH° / Keq."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394G\u00b0 = -RT ln(Keq) or Keq = exp(-\u0394G\u00b0 / RT) (where R = 8.314 J/mol\u00b7K and T is in Kelvin) for Chapter 05.",
+      "correct_answer": "ΔG° = -RT ln(Keq) or Keq = exp(-ΔG° / RT) (where R = 8.314 J/mol·K and T is in Kelvin) for Chapter 05.",
       "explanation": "The fundamental thermodynamic relationship connects standard free energy to the equilibrium constant Keq.",
       "spells": [
         40,
@@ -1859,7 +1859,7 @@
       "options": [
         {
           "label": "A",
-          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05."
+          "text": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05."
         },
         {
           "label": "B",
@@ -1875,7 +1875,7 @@
         }
       ],
       "correct_option": "A",
-      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old \u00d7 e^(-10000 / 2478) \u2248 0.018 \u00d7 k_old) in Chapter 05.",
+      "correct_answer": "It decreases the rate constant k by a factor of ~55 at 298 K (k_new = k_old × e^(-10000 / 2478) ≈ 0.018 × k_old) in Chapter 05.",
       "explanation": "Higher activation energy exponentially suppresses the fraction of molecular collisions possessing sufficient kinetic energy to react.",
       "spells": [
         40,
@@ -1913,12 +1913,12 @@
         },
         {
           "label": "D",
-          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05."
+          "text": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05."
         }
       ],
       "correct_option": "D",
-      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25\u00b0C in Chapter 05.",
-      "explanation": "Primary KIE values of 5\u20138 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
+      "correct_answer": "A primary isotope effect of k_H / k_D between 5.0 and 8.0 at 25°C in Chapter 05.",
+      "explanation": "Primary KIE values of 5–8 indicate that the zero-point vibrational energy of the C-H bond is lost in the rate-determining transition state.",
       "spells": [
         40,
         50,
@@ -1943,11 +1943,11 @@
       "options": [
         {
           "label": "A",
-          "text": "An sp\u00b2 to sp\u00b3 rehybridization."
+          "text": "An sp² to sp³ rehybridization."
         },
         {
           "label": "B",
-          "text": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
+          "text": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05."
         },
         {
           "label": "C",
@@ -1959,8 +1959,8 @@
         }
       ],
       "correct_option": "B",
-      "correct_answer": "An sp\u00b3 (tetrahedral) to sp\u00b2 (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
-      "explanation": "Rehybridization from sp\u00b3 to sp\u00b2 loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
+      "correct_answer": "An sp³ (tetrahedral) to sp² (planar carbocation) hybridization change in the rate-determining step in Chapter 05.",
+      "explanation": "Rehybridization from sp³ to sp² loosens out-of-plane bending vibrations, accelerating the lighter protium isotopologue (normal secondary KIE > 1).",
       "spells": [
         40,
         50,
@@ -1985,7 +1985,7 @@
       "options": [
         {
           "label": "A",
-          "text": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05."
+          "text": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05."
         },
         {
           "label": "B",
@@ -1997,12 +1997,12 @@
         },
         {
           "label": "D",
-          "text": "The overall reaction enthalpy \u0394H\u00b0rxn exclusively."
+          "text": "The overall reaction enthalpy ΔH°rxn exclusively."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "The standard Gibbs free energy of activation (\u0394G\u2021 = \u0394H\u2021 - T\u0394S\u2021), where k = (k_B\u00b7T / h) exp(-\u0394G\u2021 / RT) in Chapter 05.",
-      "explanation": "The free energy barrier \u0394G\u2021 (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
+      "correct_answer": "The standard Gibbs free energy of activation (ΔG‡ = ΔH‡ - TΔS‡), where k = (k_B·T / h) exp(-ΔG‡ / RT) in Chapter 05.",
+      "explanation": "The free energy barrier ΔG‡ (including both activation enthalpy and activation entropy) controls the absolute rate constant.",
       "spells": [
         40,
         50,
@@ -2023,7 +2023,7 @@
       "topic": "Ch05 Activation Entropy (Delta S-Double Dagger) Interpretation",
       "difficulty": "hard",
       "question_type": "arrhenius_activation_energy",
-      "question": "What does a large negative activation entropy (\u0394S\u2021 = -100 to -150 J/mol\u00b7K) signify for a Chapter 05 mechanism?",
+      "question": "What does a large negative activation entropy (ΔS‡ = -100 to -150 J/mol·K) signify for a Chapter 05 mechanism?",
       "options": [
         {
           "label": "A",
@@ -2044,7 +2044,7 @@
       ],
       "correct_option": "A",
       "correct_answer": "An associative, highly ordered transition state where two or more molecules combine with severe loss of translational and rotational freedom in Chapter 05.",
-      "explanation": "Large negative \u0394S\u2021 values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
+      "explanation": "Large negative ΔS‡ values are diagnostic for bimolecular associative transition states (e.g., Diels-Alder, SN2).",
       "spells": [
         40,
         50,
@@ -2065,7 +2065,7 @@
       "topic": "Ch05 Hammond Postulate Reaction Coordinate Math",
       "difficulty": "hard",
       "question_type": "kinetic_isotope_effect",
-      "question": "In an endergonic elementary step (\u0394G\u00b0 > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
+      "question": "In an endergonic elementary step (ΔG° > 0) in Chapter 05, how does the transition state location (x_TS) correlate with energy?",
       "options": [
         {
           "label": "A",
@@ -2107,7 +2107,7 @@
       "topic": "Ch05 Kinetic vs Thermodynamic Ratio Math",
       "difficulty": "hard",
       "question_type": "bde_enthalpy_calculation",
-      "question": "At 298 K, if two competing pathways differ in activation barrier by \u0394\u0394G\u2021 = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
+      "question": "At 298 K, if two competing pathways differ in activation barrier by ΔΔG‡ = 11.4 kJ/mol in Chapter 05, what is the kinetic product ratio?",
       "options": [
         {
           "label": "A",
@@ -2119,7 +2119,7 @@
         },
         {
           "label": "C",
-          "text": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05."
+          "text": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05."
         },
         {
           "label": "D",
@@ -2127,8 +2127,8 @@
         }
       ],
       "correct_option": "C",
-      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k\u2081 / k\u2082 = exp(\u0394\u0394G\u2021 / RT) = exp(11400 / 2478) \u2248 100) in Chapter 05.",
-      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25\u00b0C produces a 100:1 kinetic selectivity ratio between competing pathways.",
+      "correct_answer": "The faster pathway yields a 100:1 kinetic product ratio (k₁ / k₂ = exp(ΔΔG‡ / RT) = exp(11400 / 2478) ≈ 100) in Chapter 05.",
+      "explanation": "A difference in activation barrier of 11.4 kJ/mol at 25°C produces a 100:1 kinetic selectivity ratio between competing pathways.",
       "spells": [
         40,
         50,
@@ -2149,28 +2149,28 @@
       "topic": "Ch05 Quantitative pKa and Delta G Connection",
       "difficulty": "hard",
       "question_type": "gibbs_equilibrium_math",
-      "question": "What mathematical relationship connects the pKa difference (\u0394pKa) in a Chapter 05 acid-base equilibrium to standard free energy (\u0394G\u00b0)?",
+      "question": "What mathematical relationship connects the pKa difference (ΔpKa) in a Chapter 05 acid-base equilibrium to standard free energy (ΔG°)?",
       "options": [
         {
           "label": "A",
-          "text": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
+          "text": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05."
         },
         {
           "label": "B",
-          "text": "\u0394G\u00b0 = \u0394pKa / RT."
+          "text": "ΔG° = ΔpKa / RT."
         },
         {
           "label": "C",
-          "text": "\u0394G\u00b0 is independent of pKa."
+          "text": "ΔG° is independent of pKa."
         },
         {
           "label": "D",
-          "text": "\u0394G\u00b0 = -2.303 RT / \u0394pKa."
+          "text": "ΔG° = -2.303 RT / ΔpKa."
         }
       ],
       "correct_option": "A",
-      "correct_answer": "\u0394G\u00b0 = 2.303 RT \u00d7 \u0394pKa \u2248 5.7 kJ/mol \u00d7 (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
-      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT \u2248 5.7 kJ/mol of free energy at 25\u00b0C.",
+      "correct_answer": "ΔG° = 2.303 RT × ΔpKa ≈ 5.7 kJ/mol × (pKa_reactant_acid - pKa_product_acid) at 298 K in Chapter 05.",
+      "explanation": "Each unit difference in pKa (factor of 10 in Ka) corresponds to 2.303 RT ≈ 5.7 kJ/mol of free energy at 25°C.",
       "spells": [
         40,
         50,

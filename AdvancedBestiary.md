@@ -1,7 +1,7 @@
-# 🐉 Master Thematic Boss Bestiary: *Organic Chemistry* (3rd Edition) — David Klein
+# 🐉 Master Thematic Boss Bestiary: Advanced Organic Chemistry
 
 > [!NOTE]
-> **Curriculum Source:** *Organic Chemistry* (3rd Edition) by David Klein (ISBN: `978-1-119-33835-2`)  
+> **Curriculum Source:** Standard Comprehensive Upper-Level Organic Chemistry Curriculum  
 > **Architecture:** 27 Chapters $\times$ 5 Progressive Boss Tiers = **135 Unique Thematic Chemistry Bosses**  
 > **Pedagogical Standard:** 50 Questions per Chapter (10 Questions per Boss) with calibrated difficulty and combat mechanics.
 

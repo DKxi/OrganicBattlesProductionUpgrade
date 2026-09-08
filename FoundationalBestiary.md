@@ -1,6 +1,6 @@
-# Organic Battles: OpenStax Edition — The 31 Chapters & Boss Bestiary Field Guide
+# Organic Battles: Foundational Edition — The 31 Chapters & Boss Bestiary Field Guide
 
-Welcome to the official bestiary and pedagogical combat guide for **Organic Battles: OpenStax Edition**, aligned directly with the 31 chapters of the **OpenStax Organic Chemistry (John McMurry)** curriculum. 
+Welcome to the official bestiary and pedagogical combat guide for **Organic Battles: Foundational Edition**, aligned directly with the 31 chapters of the standard foundational organic chemistry curriculum. 
 
 In this realm, chemical principles, reactive intermediates, spectral signals, and complex mechanisms are manifested as guardians within the great **Alchemical Labyrinth**. Students and players do not merely memorize reactions—they battle living manifestations of molecular forces to master the science of carbon.
 

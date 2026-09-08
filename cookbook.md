@@ -501,7 +501,7 @@ Returns real-time operational metrics:
 - **Player Registry**: Displays a searchable list of all registered users, including user ID, username, email, email verification status, database content source, and effective runtime mode.
 - **Dynamic Content Switching**: Administrators can toggle any player's content source between:
   - `"app"`: Legacy hardcoded 3-chapter alchemical campaign.
-  - `"json"`: Standard 27-chapter Klein 5e curriculum.
+  - `"json"`: Standard 27-chapter comprehensive curriculum.
   - `"track:{track_id}"`: Direct override to any of the 19 specialized tracks.
 - **Automatic Battle Session Synchronization**: When an administrator modifies a player's content mode, the engine automatically checks their active `GameSession`:
   - If the player was in Chapter 14 of a 27-chapter track and is switched to a 3-chapter bundle, the engine automatically resets the session to Chapter 1, Boss 0, and restores initial HP to prevent out-of-bounds crashes.
