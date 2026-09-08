@@ -377,10 +377,13 @@ class UITestRunner:
                 page.click('#admin-login-form button[type="submit"]')
 
                 page.wait_for_selector("#admin-dashboard-view", state="visible", timeout=5000)
+                page.wait_for_selector("#admin-env-status span", timeout=5000)
                 # Switch to System & Storage tab
                 page.click("#admin-tab-system")
+                page.wait_for_selector("#admin-tab-system.active", timeout=5000)
                 page.wait_for_selector("#admin-system-tab-content", state="visible", timeout=5000)
                 page.wait_for_selector("#admin-log-console", state="visible", timeout=5000)
+                time.sleep(0.3)
                 admin_ms = self.measure("9_admin_portal_load_and_telemetry", t0)
                 page.screenshot(path=str(self.artifacts_dir / "09_admin_portal_system.png"))
                 print(f"  ✓ Admin Console opened, authenticated & System tab verified in {admin_ms}ms")

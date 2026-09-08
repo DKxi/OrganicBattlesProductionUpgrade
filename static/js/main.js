@@ -713,6 +713,7 @@ function showAdminLogin() {
 async function loadAdminDashboard() {
   $('#admin-login-view')?.classList.add('hidden');
   $('#admin-dashboard-view')?.classList.remove('hidden');
+  $('#admin-screen')?.scrollTo({ top: 0, behavior: 'instant' });
 
   const [status, usersResp, sessionsResp] = await Promise.all([
     adminApi('/api/admin/status', {}, 'GET'),
@@ -745,6 +746,12 @@ function switchAdminTab(tabName) {
   $('#admin-users-tab-content')?.classList.toggle('hidden', !isUsers);
   $('#admin-sessions-tab-content')?.classList.toggle('hidden', !isSessions);
   $('#admin-system-tab-content')?.classList.toggle('hidden', !isSystem);
+
+  const activeContent = isUsers ? $('#admin-users-tab-content') : isSessions ? $('#admin-sessions-tab-content') : $('#admin-system-tab-content');
+  if (activeContent) {
+    activeContent.scrollTop = 0;
+  }
+  $('#admin-screen')?.scrollTo({ top: 0, behavior: 'instant' });
 
   if (isSystem) {
     loadSystemStorageConfig();
