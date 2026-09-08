@@ -306,6 +306,7 @@
       <div class="admin-tab-nav">
         <button id="admin-tab-users" class="admin-tab-btn active" type="button">👤 USER CONFIGURATION</button>
         <button id="admin-tab-sessions" class="admin-tab-btn" type="button">⚔ GAME SESSIONS</button>
+        <button id="admin-tab-system" class="admin-tab-btn" type="button">⚙ SYSTEM &amp; STORAGE</button>
       </div>
 
       <div class="admin-status-banner" id="admin-env-status"></div>
@@ -361,6 +362,71 @@
               <!-- Populated dynamically via JS -->
             </tbody>
           </table>
+        </div>
+      </div>
+
+      <!-- System & Storage Tab View -->
+      <div id="admin-system-tab-content" class="admin-tab-content hidden">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 10px;">
+          
+          <!-- Left Column: Database Switch -->
+          <div class="admin-card" style="width: 100%; margin: 0; box-sizing: border-box;">
+            <div class="eyebrow">STORAGE // ENGINE LOCATION</div>
+            <h3 style="color: var(--cyan); margin: 10px 0 6px; font-size: 1.25rem;">DATABASE ENGINE</h3>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; line-height: 1.4;">
+              Switch the runtime database engine between local SQLite and network/cloud PostgreSQL.
+            </p>
+
+            <form id="admin-db-switch-form">
+              <div style="display: flex; gap: 16px; margin: 12px 0; flex-wrap: wrap;">
+                <label style="cursor: pointer; display: flex; align-items: center; gap: 6px; color: var(--ink);">
+                  <input type="radio" name="db_dialect" value="sqlite"> SQLite (Local File)
+                </label>
+                <label style="cursor: pointer; display: flex; align-items: center; gap: 6px; color: var(--ink);">
+                  <input type="radio" name="db_dialect" value="postgresql"> PostgreSQL (Production DB)
+                </label>
+              </div>
+
+              <label style="margin-top: 10px;">CONNECTION URI
+                <input type="text" id="admin-db-uri-input" placeholder="postgresql+psycopg2://user:pass@localhost:5432/organic_battles" style="font-family: monospace; font-size: 0.8rem;">
+              </label>
+
+              <label style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; color: var(--ink);">
+                <input type="checkbox" id="admin-db-migrate-check" checked>
+                <span>Copy existing records to new database on switch</span>
+              </label>
+
+              <button type="submit" class="primary" style="margin-top: 18px; width: 100%;">APPLY DATABASE SWITCH</button>
+              <div id="admin-db-status" class="admin-modal-status" style="min-height: 18px; margin-top: 10px;"></div>
+            </form>
+          </div>
+
+          <!-- Right Column: Track Folders Switch -->
+          <div class="admin-card" style="width: 100%; margin: 0; box-sizing: border-box;">
+            <div class="eyebrow">CONTENT // DIRECTORY MAPPINGS</div>
+            <h3 style="color: var(--cyan); margin: 10px 0 6px; font-size: 1.25rem;">CONTENT FOLDERS</h3>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; line-height: 1.4;">
+              Configure where chapter JSON files and boss image artwork are loaded from on the server.
+            </p>
+
+            <form id="admin-folder-switch-form">
+              <label>SELECT TRACK
+                <select id="admin-folder-track-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 12px; font: 400 0.9rem 'Space Grotesk',sans-serif; width: 100%;"></select>
+              </label>
+
+              <label style="margin-top: 10px;">CHAPTER DATA FOLDER
+                <input type="text" id="admin-folder-data-input" placeholder="e.g. data/tracks/default" style="font-family: monospace; font-size: 0.8rem;" required>
+              </label>
+
+              <label style="margin-top: 10px;">BOSS IMAGES FOLDER
+                <input type="text" id="admin-folder-boss-input" placeholder="e.g. data/tracks/default/bosses" style="font-family: monospace; font-size: 0.8rem;">
+              </label>
+
+              <button type="submit" class="primary" style="margin-top: 18px; width: 100%;">UPDATE FOLDER PATHS</button>
+              <div id="admin-folder-status" class="admin-modal-status" style="min-height: 18px; margin-top: 10px;"></div>
+            </form>
+          </div>
+
         </div>
       </div>
 

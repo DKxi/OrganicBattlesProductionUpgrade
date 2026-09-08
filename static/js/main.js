@@ -722,16 +722,69 @@ async function loadAdminDashboard() {
   renderAdminStatus();
   renderAdminUsers($('#admin-user-search')?.value || '');
   renderAdminSessions($('#admin-session-search')?.value || '');
+  if (currentAdminTab === 'system') {
+    loadSystemStorageConfig();
+  }
 }
 
 function switchAdminTab(tabName) {
   currentAdminTab = tabName;
   const isUsers = tabName === 'users';
+  const isSessions = tabName === 'sessions';
+  const isSystem = tabName === 'system';
+
   $('#admin-tab-users')?.classList.toggle('active', isUsers);
-  $('#admin-tab-sessions')?.classList.toggle('active', !isUsers);
+  $('#admin-tab-sessions')?.classList.toggle('active', isSessions);
+  $('#admin-tab-system')?.classList.toggle('active', isSystem);
 
   $('#admin-users-tab-content')?.classList.toggle('hidden', !isUsers);
-  $('#admin-sessions-tab-content')?.classList.toggle('hidden', isUsers);
+  $('#admin-sessions-tab-content')?.classList.toggle('hidden', !isSessions);
+  $('#admin-system-tab-content')?.classList.toggle('hidden', !isSystem);
+
+  if (isSystem) {
+    loadSystemStorageConfig();
+  }
+}
+
+async function loadSystemStorageConfig() {
+  try {
+    const res = await adminApi('/api/admin/system/config', {}, 'GET');
+    if (!res) return;
+
+    // Set Database Radio & URI
+    const isPg = res.active_database.dialect === 'postgresql';
+    const radio = document.querySelector(`input[name="db_dialect"][value="${res.active_database.dialect}"]`);
+    if (radio) radio.checked = true;
+    const uriInput = $('#admin-db-uri-input');
+    if (uriInput) {
+      uriInput.value = isPg ? res.active_database.url : '';
+      uriInput.placeholder = isPg
+        ? 'postgresql+psycopg2://user:pass@host:5432/dbname'
+        : 'sqlite:///organic_battles.sqlite3 (leave blank for default)';
+    }
+
+    // Populate Track Select
+    const select = $('#admin-folder-track-select');
+    if (select && res.tracks) {
+      const currentSelected = select.value;
+      select.innerHTML = res.tracks.map(t => `<option value="${t.id}">${t.title} (${t.id})</option>`).join('');
+      if (currentSelected && res.tracks.some(t => t.id === currentSelected)) {
+        select.value = currentSelected;
+      }
+      select.onchange = () => {
+        const trk = res.tracks.find(t => t.id === select.value);
+        if (trk) {
+          const dataInput = $('#admin-folder-data-input');
+          const bossInput = $('#admin-folder-boss-input');
+          if (dataInput) dataInput.value = trk.data_folder || '';
+          if (bossInput) bossInput.value = trk.boss_folder || '';
+        }
+      };
+      select.dispatchEvent(new Event('change'));
+    }
+  } catch (err) {
+    console.error('Failed to load system storage config:', err);
+  }
 }
 
 function renderAdminStatus() {
@@ -1084,6 +1137,75 @@ function bindAdminEvents() {
 
   $('#admin-tab-users')?.addEventListener('click', () => switchAdminTab('users'));
   $('#admin-tab-sessions')?.addEventListener('click', () => switchAdminTab('sessions'));
+  $('#admin-tab-system')?.addEventListener('click', () => switchAdminTab('system'));
+
+  document.querySelectorAll('input[name="db_dialect"]').forEach(r => {
+    r.addEventListener('change', (e) => {
+      const uriInput = $('#admin-db-uri-input');
+      if (!uriInput) return;
+      if (e.target.value === 'sqlite') {
+        uriInput.placeholder = 'sqlite:///organic_battles.sqlite3 (leave blank for default)';
+      } else {
+        uriInput.placeholder = 'postgresql+psycopg2://user:pass@host:5432/dbname';
+      }
+    });
+  });
+
+  $('#admin-db-switch-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const dialect = document.querySelector('input[name="db_dialect"]:checked')?.value || 'sqlite';
+    const connection_url = $('#admin-db-uri-input')?.value.trim() || undefined;
+    const migrate_data = $('#admin-db-migrate-check')?.checked || false;
+    const status = $('#admin-db-status');
+
+    if (status) {
+      status.textContent = 'Switching database…';
+      status.className = 'admin-modal-status hint';
+    }
+    try {
+      const res = await adminApi('/api/admin/system/database', { dialect, connection_url, migrate_data }, 'POST');
+      if (status) {
+        const migMsg = res.migration ? ` (${res.migration.users || 0} users copied)` : '';
+        status.textContent = `Switched to ${res.dialect.toUpperCase()} successfully!${migMsg}`;
+        status.className = 'admin-modal-status hint';
+      }
+      showAdminToast(`Database switched to ${res.dialect.toUpperCase()}`);
+      loadSystemStorageConfig();
+      loadAdminDashboard().catch(() => {});
+    } catch (err) {
+      if (status) {
+        status.textContent = `Error: ${err.message}`;
+        status.className = 'admin-modal-status error';
+      }
+    }
+  });
+
+  $('#admin-folder-switch-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const track_id = $('#admin-folder-track-select')?.value;
+    const data_folder = $('#admin-folder-data-input')?.value.trim();
+    const boss_folder = $('#admin-folder-boss-input')?.value.trim() || undefined;
+    const status = $('#admin-folder-status');
+
+    if (status) {
+      status.textContent = 'Updating paths…';
+      status.className = 'admin-modal-status hint';
+    }
+    try {
+      await adminApi('/api/admin/system/folders', { track_id, data_folder, boss_folder }, 'POST');
+      if (status) {
+        status.textContent = 'Folders updated and cache cleared!';
+        status.className = 'admin-modal-status hint';
+      }
+      showAdminToast('Content folders updated');
+      loadSystemStorageConfig();
+    } catch (err) {
+      if (status) {
+        status.textContent = `Error: ${err.message}`;
+        status.className = 'admin-modal-status error';
+      }
+    }
+  });
 
   $('#admin-login-form')?.addEventListener('submit', async (event) => {
     event.preventDefault();

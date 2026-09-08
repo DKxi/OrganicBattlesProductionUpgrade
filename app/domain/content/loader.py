@@ -272,8 +272,32 @@ def load_json_bundle(
         return load_app_bundle()
 
 
-def load_tracks_config(root_dir: Path) -> dict:
-    """Load tracks and curricula from data/tracks_config.json."""
+def load_tracks_config(root_dir: Path, db: Optional[Any] = None) -> dict:
+    """
+    Load tracks and curricula from database (PostgreSQL/SQLite) with fallback to data/tracks_config.json.
+    """
+    if db is not None:
+        try:
+            from app.infrastructure.database.tracks_repo import TracksRepository
+            repo = TracksRepository(db)
+            cfg = repo.get_tracks_config()
+            if cfg.get("tracks"):
+                return cfg
+        except Exception as exc:
+            logger.debug("Database load_tracks_config note: %s", exc)
+    else:
+        try:
+            from app.infrastructure.database.engine import SessionLocal
+            from app.infrastructure.database.tracks_repo import TracksRepository
+            with SessionLocal() as session:
+                repo = TracksRepository(session)
+                cfg = repo.get_tracks_config()
+                if cfg.get("tracks"):
+                    return cfg
+        except Exception as exc:
+            logger.debug("Database session load_tracks_config note: %s", exc)
+
+    # Fallback to data/tracks_config.json
     config_path = root_dir / "data" / "tracks_config.json"
     if config_path.is_file():
         try:
@@ -283,13 +307,14 @@ def load_tracks_config(root_dir: Path) -> dict:
     return {"curricula": [], "tracks": []}
 
 
-def get_track_config(root_dir: Path, track_id: str) -> Optional[dict]:
-    """Retrieve metadata for a specific track ID."""
-    config = load_tracks_config(root_dir)
+def get_track_config(root_dir: Path, track_id: str, db: Optional[Any] = None) -> Optional[dict]:
+    """Retrieve metadata for a specific track ID from database or config."""
+    config = load_tracks_config(root_dir, db=db)
     for t in config.get("tracks", []):
         if t.get("id") == track_id:
             return t
     return None
+
 
 
 def load_track_bundle(

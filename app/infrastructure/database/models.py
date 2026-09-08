@@ -70,3 +70,35 @@ class GameSession(Base):
     updated_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
 
     user = relationship("User", back_populates="game_sessions")
+
+
+class Curriculum(Base):
+    __tablename__ = "curricula"
+
+    id = Column(String, primary_key=True)
+    name = Column(String, nullable=False)
+    code = Column(String, nullable=True)
+    total_questions = Column(Integer, nullable=False, default=0)
+    chapters = Column(Integer, nullable=False, default=0)
+    bosses = Column(Integer, nullable=False, default=0)
+    display_order = Column(Integer, nullable=False, default=0)
+
+    tracks = relationship("Track", back_populates="curriculum", cascade="all, delete-orphan")
+
+
+class Track(Base):
+    __tablename__ = "tracks"
+
+    id = Column(String, primary_key=True)
+    curriculum_id = Column(String, ForeignKey("curricula.id", ondelete="CASCADE"), nullable=False)
+    title = Column(String, nullable=False)
+    detail = Column(String, nullable=True)
+    data_folder = Column(String, nullable=False)
+    boss_folder = Column(String, nullable=True)
+    questions = Column(Integer, nullable=False, default=0)
+    chapters = Column(Integer, nullable=False, default=0)
+    accent = Column(String, nullable=False, default="amber")
+    display_order = Column(Integer, nullable=False, default=0)
+
+    curriculum = relationship("Curriculum", back_populates="tracks")
+

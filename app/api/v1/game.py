@@ -267,9 +267,10 @@ def finalize_avatar(
 
 
 @router.get("/game/tracks")
-def get_tracks():
-    """Retrieve full tracks and curricula configuration."""
-    return load_tracks_config(settings.root_dir)
+def get_tracks(db: DBSession = Depends(get_db)):
+    """Retrieve full tracks and curricula configuration from database."""
+    return load_tracks_config(settings.root_dir, db=db)
+
 
 
 @router.post("/game/track")

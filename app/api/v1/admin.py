@@ -1,18 +1,24 @@
 import json
 import time
 import secrets
-from typing import Optional, Dict, Any
+import logging
+from typing import Optional, Dict, Any, List
 from fastapi import APIRouter, Request, Response, Depends, HTTPException, Header, Cookie
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session as DBSession
 
 from app.settings import settings
 from app.api.deps import get_db, auth_admin, limiter, get_content_bundle
-from app.infrastructure.database.models import User, GameSession
+from app.infrastructure.database.models import User, GameSession, Base
 from app.infrastructure.identity.crypto import code_hash, hash_password
 from app.infrastructure.cache.memory import set_admin_token, revoke_admin_token
 from app.domain.content.resolver import resolve_content_source
+from app.domain.content.loader import load_tracks_config
+import app.infrastructure.database.engine as db_engine
+from app.infrastructure.database.engine import switch_database, build_engine
+from app.infrastructure.database.migrator import migrate_sqlite_to_postgres
 
+logger = logging.getLogger("organicbattles.admin")
 router = APIRouter(tags=["Admin Management"])
 
 
@@ -31,8 +37,30 @@ class AdminUserCredentialsRequest(BaseModel):
 
 
 class SessionResetRequest(BaseModel):
-
     chapter: int = Field(..., ge=1, description="Target chapter to reset battle session to")
+
+
+class DatabaseSwitchRequest(BaseModel):
+    dialect: str  # "sqlite" or "postgresql"
+    connection_url: Optional[str] = None
+    migrate_data: bool = False
+
+
+class FolderSwitchRequest(BaseModel):
+    track_id: Optional[str] = None  # None for default/all, or specific track
+    data_folder: str
+    boss_folder: Optional[str] = None
+
+
+class TrackUpdateRequest(BaseModel):
+    title: Optional[str] = None
+    detail: Optional[str] = None
+    data_folder: Optional[str] = None
+    boss_folder: Optional[str] = None
+    questions: Optional[int] = None
+    chapters: Optional[int] = None
+    accent: Optional[str] = None
+
 
 
 @router.post("/admin/login")
@@ -322,6 +350,142 @@ def admin_delete_session(
     db.commit()
 
     return {"status": "ok", "message": "Session deleted successfully", "session_id": session_id}
+
+
+@router.get("/admin/system/config")
+def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    """Return active database dialect and all track folder mappings from database."""
+    cur_url = db_engine.current_db_url
+    dialect = "postgresql" if "postgresql" in cur_url else "sqlite"
+    display_url = cur_url.split("@")[-1] if "@" in cur_url else cur_url
+    if "@" in cur_url:
+        display_url = f"postgresql://***:***@{display_url}"
+
+    from app.infrastructure.database.tracks_repo import TracksRepository
+    tracks_cfg = TracksRepository(db).get_tracks_config()
+
+    return {
+        "active_database": {
+            "dialect": dialect,
+            "url": display_url,
+        },
+        "tracks": tracks_cfg.get("tracks", []),
+        "curricula": tracks_cfg.get("curricula", []),
+    }
+
+
+@router.post("/admin/system/database")
+def admin_switch_database(
+    body: DatabaseSwitchRequest,
+    admin_info: dict = Depends(auth_admin),
+):
+    """Switch active database between SQLite and PostgreSQL with optional live data migration."""
+    dialect_clean = body.dialect.strip().lower()
+    if dialect_clean == "sqlite":
+        target_url = body.connection_url or f"sqlite:///{settings.root_dir / 'organic_battles.sqlite3'}"
+    elif dialect_clean == "postgresql":
+        default_pg = "postgresql+psycopg2://postgres:postgres@localhost:5432/organic_battles"
+        target_url = body.connection_url or default_pg
+    else:
+        raise HTTPException(400, "Unsupported dialect. Choose 'sqlite' or 'postgresql'.")
+
+    old_url = db_engine.current_db_url
+    migration_stats = None
+    if body.migrate_data and old_url != target_url:
+        source_engine = build_engine(old_url)
+        target_engine = build_engine(target_url)
+        Base.metadata.create_all(bind=target_engine)
+        migration_stats = migrate_sqlite_to_postgres(source_engine, target_engine)
+
+    result = switch_database(target_url)
+    if migration_stats is not None:
+        result["migration"] = migration_stats
+    return result
+
+
+@router.post("/admin/system/folders")
+def admin_switch_folders(
+    body: FolderSwitchRequest,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """Update data_folder and boss_folder paths in PostgreSQL database and tracks_config.json."""
+    from app.infrastructure.database.tracks_repo import TracksRepository
+    repo = TracksRepository(db)
+    updated_in_db = repo.update_track_folders(body.track_id, body.data_folder, body.boss_folder)
+
+    # Also synchronize to tracks_config.json if it exists
+    config_path = settings.root_dir / "data" / "tracks_config.json"
+    if config_path.exists():
+        try:
+            cfg = json.loads(config_path.read_text(encoding="utf-8"))
+            json_updated = False
+            for t in cfg.get("tracks", []):
+                if not body.track_id or t.get("id") == body.track_id:
+                    t["data_folder"] = body.data_folder
+                    if body.boss_folder:
+                        t["boss_folder"] = body.boss_folder
+                    json_updated = True
+            if json_updated:
+                config_path.write_text(json.dumps(cfg, indent=2), encoding="utf-8")
+        except Exception as e:
+            logger.warning("Failed to sync json file on folder switch: %s", e)
+
+    if not updated_in_db and body.track_id:
+        raise HTTPException(404, f"Track '{body.track_id}' not found")
+
+    # Invalidate in-memory cache so new paths are loaded immediately
+    from app.api.deps import TRACK_BUNDLES
+    TRACK_BUNDLES.clear()
+
+    return {"status": "ok", "message": "Folder locations updated in database and bundle cache refreshed"}
+
+
+@router.get("/admin/tracks")
+def admin_get_tracks(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    """Retrieve all tracks with relational properties from database."""
+    from app.infrastructure.database.tracks_repo import TracksRepository
+    repo = TracksRepository(db)
+    return {"tracks": repo.get_tracks_config()["tracks"]}
+
+
+@router.put("/admin/tracks/{track_id}")
+def admin_update_track(
+    track_id: str,
+    body: TrackUpdateRequest,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """Update specific track metadata in PostgreSQL database."""
+    from app.infrastructure.database.tracks_repo import TracksRepository
+    repo = TracksRepository(db)
+    track = repo.get_track(track_id)
+    if not track:
+        raise HTTPException(404, f"Track '{track_id}' not found")
+
+    updates = body.model_dump(exclude_unset=True)
+    if not updates:
+        raise HTTPException(400, "No fields provided to update")
+
+    for k, v in updates.items():
+        if v is not None:
+            setattr(track, k, v)
+    db.commit()
+    db.refresh(track)
+
+    from app.api.deps import TRACK_BUNDLES
+    TRACK_BUNDLES.clear()
+
+    return {"status": "ok", "message": f"Track '{track_id}' updated successfully", "track": repo.get_track_dict(track_id)}
+
+
+@router.get("/admin/curricula")
+def admin_get_curricula(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    """Retrieve all curricula registered in database."""
+    from app.infrastructure.database.tracks_repo import TracksRepository
+    repo = TracksRepository(db)
+    return {"curricula": repo.get_tracks_config()["curricula"]}
+
 
 
 @router.post("/admin/logout")
