@@ -294,15 +294,14 @@ def test_user_content_mode_database_switching(client_instance, auth_headers, mon
     import app as app_mod
     app_mod.sync_global_content_views()
 
-    # 1. Check default is json mode (data/chapters)
+    # 1. Check default is track:default mode
     me_res = client_instance.get("/api/auth/me", headers=auth_headers).json()
     assert me_res["user"]["content_source"] is None
-    assert me_res["user"]["effective_mode"] == "json"
+    assert me_res["user"]["effective_mode"] == "track:default"
 
-    # Start game, verify json boss
+    # Start game, verify boss
     s = start(client_instance, auth_headers)
     assert s["boss"]["name"] == "Orbital Ogre"
-    assert s["mode"] == "json"
 
     # 2. Switch user to APP mode in database
     switch_res = client_instance.post("/api/user/mode", json={"mode": "app"}, headers=auth_headers)
@@ -322,48 +321,31 @@ def test_user_content_mode_database_switching(client_instance, auth_headers, mon
     state_res = client_instance.get("/api/game/state", params={"session_id": s["session_id"]}, headers=auth_headers).json()
     assert state_res["boss"]["name"] == "Hybridization Goblin"
 
-    # 3. Switch user back to JSON mode in database
+    # 3. Switch user back to json (track:default) in database
     switch_back = client_instance.post("/api/user/content-source", json={"content_source": "json"}, headers=auth_headers)
     assert switch_back.status_code == 200
     data_back = switch_back.json()
     assert data_back["content_source"] == "json"
-    assert data_back["effective_mode"] == "json"
+    assert data_back["effective_mode"] == "track:default"
     assert data_back["state"]["boss"]["name"] == "Orbital Ogre"
 
 
 
 def test_env_priority_overrides_database_user_setting(client_instance, auth_headers, monkeypatch):
-    import app as app_mod
-    # 1. Set user in DB to "json" mode
-    monkeypatch.delenv("GAME_CONTENT_SOURCE", raising=False)
-    client_instance.post("/api/user/mode", json={"mode": "json"}, headers=auth_headers)
+    """Verify GAME_CONTENT_SOURCE is completely ignored and user track/db setting is respected."""
+    # 1. Set user in DB to "app" mode
+    client_instance.post("/api/user/mode", json={"mode": "app"}, headers=auth_headers)
 
-    # 2. Set .env / process env to "app" -> should OVERRIDE DB user setting
-    monkeypatch.setenv("GAME_CONTENT_SOURCE", "app")
-    app_mod.sync_global_content_views()
+    # 2. Set .env / process env to "json" -> GAME_CONTENT_SOURCE is ignored, user's app mode is preserved
+    monkeypatch.setenv("GAME_CONTENT_SOURCE", "json")
 
     me_res = client_instance.get("/api/auth/me", headers=auth_headers).json()
-    assert me_res["user"]["content_source"] == "json"  # DB value preserved
-    assert me_res["user"]["effective_mode"] == "app"   # .env override applied
+    assert me_res["user"]["content_source"] == "app"
+    assert me_res["user"]["effective_mode"] == "app"  # Ignored GAME_CONTENT_SOURCE
 
     s = start(client_instance, auth_headers)
     assert s["boss"]["name"] == "Hybridization Goblin"
     assert s["mode"] == "app"
-
-    # 3. Set user in DB to "app" mode, but .env to "json" -> should OVERRIDE DB user setting
-    monkeypatch.delenv("GAME_CONTENT_SOURCE", raising=False)
-    client_instance.post("/api/user/mode", json={"mode": "app"}, headers=auth_headers)
-
-    monkeypatch.setenv("GAME_CONTENT_SOURCE", "json")
-    app_mod.sync_global_content_views()
-
-    me_res2 = client_instance.get("/api/auth/me", headers=auth_headers).json()
-    assert me_res2["user"]["content_source"] == "app"  # DB value preserved
-    assert me_res2["user"]["effective_mode"] == "json"  # .env override applied
-
-    s2 = start(client_instance, auth_headers)
-    assert s2["boss"]["name"] == "Orbital Ogre"
-    assert s2["mode"] == "json"
 
 
 def test_user_mode_validation_errors(client_instance, auth_headers):
@@ -440,12 +422,11 @@ def test_admin_change_user_content_source(client_instance, auth_headers, monkeyp
     )
     assert update_res.status_code == 200
     assert update_res.json()["content_source"] == "json"
-    assert update_res.json()["effective_mode"] == "json"
+    assert update_res.json()["effective_mode"] == "track:default"
 
-    # User starts game and receives JSON boss
+    # User starts game and receives default track boss
     s = start(client_instance, auth_headers)
     assert s["boss"]["name"] == "Orbital Ogre"
-    assert s["mode"] == "json"
 
     # Admin changes user back to "app" mode
     update_res2 = client_instance.post(

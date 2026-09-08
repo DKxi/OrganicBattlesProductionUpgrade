@@ -376,8 +376,7 @@ class UITestRunner:
                 page.fill('#admin-login-form input[name="admin_password"]', "admin")
                 page.click('#admin-login-form button[type="submit"]')
 
-                page.wait_for_selector("#admin-dashboard-view", state="visible", timeout=5000)
-                page.wait_for_selector("#admin-env-status span", timeout=5000)
+                page.wait_for_selector("#admin-stats-summary", timeout=5000)
                 # Switch to Storage & Database tab
                 page.click("#admin-tab-storage")
                 page.wait_for_selector("#admin-tab-storage.active", timeout=5000)

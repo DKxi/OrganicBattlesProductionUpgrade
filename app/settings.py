@@ -41,13 +41,16 @@ def get_config_value(environment_name: str, *secret_path: str, default: Any = No
     return current if current is not None else default
 
 
+DEFAULT_POSTGRES_URL = "postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[REDACTED-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres"
+
+
 class Settings(BaseModel):
     """Centralized, validated application configuration."""
     project_name: str = "Organic Battles"
     environment: str = Field(default_factory=lambda: os.getenv("ENVIRONMENT", "development"))
-    database_url: str = Field(default_factory=lambda: get_config_value("DATABASE_URL", default=f"sqlite:///{ROOT_DIR / 'organic_battles.sqlite3'}"))
+    database_url: str = Field(default_factory=lambda: get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
     database_path: Path = Field(default_factory=lambda: Path(get_config_value("DATABASE_PATH", default=str(ROOT_DIR / "organic_battles.sqlite3"))))
-    game_content_source: Optional[str] = Field(default_factory=lambda: os.getenv("GAME_CONTENT_SOURCE"))
+    game_content_source: Optional[str] = None
     
     # Auth & Security
     verification_code_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("VERIFICATION_CODE_TTL_SECONDS", default=900)))

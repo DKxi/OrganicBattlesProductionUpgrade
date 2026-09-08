@@ -14,7 +14,7 @@ from app.infrastructure.database.models import User, GameSession, Base
 from app.infrastructure.identity.crypto import code_hash, hash_password
 from app.infrastructure.cache.memory import set_admin_token, revoke_admin_token
 from app.domain.content.resolver import resolve_content_source
-from app.domain.content.loader import load_tracks_config
+from app.domain.content.loader import load_tracks_config, get_track_config
 import app.infrastructure.database.engine as db_engine
 from app.infrastructure.database.engine import switch_database, build_engine
 from app.infrastructure.database.migrator import migrate_sqlite_to_postgres
@@ -34,23 +34,29 @@ class AdminUserConfigRequest(BaseModel):
 
 class AdminUserCredentialsRequest(BaseModel):
     username: Optional[str] = None
+    email: Optional[str] = None
     password: Optional[str] = None
 
 
 class SessionResetRequest(BaseModel):
-    chapter: int = Field(..., ge=1, description="Target chapter to reset battle session to")
+    chapter: Optional[int] = None
+    boss_index: Optional[int] = None
 
 
 class DatabaseSwitchRequest(BaseModel):
-    dialect: str  # "sqlite" or "postgresql"
+    dialect: str
     connection_url: Optional[str] = None
     migrate_data: bool = False
 
 
 class FolderSwitchRequest(BaseModel):
-    track_id: Optional[str] = None  # None for default/all, or specific track
     data_folder: str
     boss_folder: Optional[str] = None
+    track_id: Optional[str] = None  # None for default/all, or specific track
+
+
+class LoggingConfigRequest(BaseModel):
+    levels: Dict[str, str]  # e.g. {"root": "INFO", "organicbattles.api": "DEBUG"}
 
 
 class TrackUpdateRequest(BaseModel):
@@ -63,25 +69,27 @@ class TrackUpdateRequest(BaseModel):
     accent: Optional[str] = None
 
 
-
 @router.post("/admin/login")
 @limiter.limit("10/minute")
 def admin_login(request: Request, body: AdminLoginRequest, response: Response):
     if body.username != settings.admin_username or body.password != settings.admin_password:
+        logger.warning("Admin authentication failed for username: %s", body.username)
         raise HTTPException(401, "Incorrect admin username or password")
 
     token = secrets.token_urlsafe(40)
     thash = code_hash(token)
-    set_admin_token(thash, settings.admin_session_ttl_hours * 3600)
+    ttl_seconds = settings.admin_session_ttl_hours * 3600
+    set_admin_token(thash, ttl_seconds)
 
     response.set_cookie(
         "admin_token",
         token,
         httponly=True,
-        samesite=settings.cookie_samesite,
-        secure=settings.cookie_secure,
-        max_age=settings.admin_session_ttl_hours * 3600,
+        samesite="lax",
+        secure=False,
+        max_age=ttl_seconds,
     )
+    logger.info("Admin user '%s' authenticated successfully", body.username)
     return {"token": token, "username": settings.admin_username, "status": "ok"}
 
 
@@ -92,8 +100,6 @@ def admin_status(admin_info: dict = Depends(auth_admin), db: DBSession = Depends
     return {
         "status": "ok",
         "admin_user": admin_info["username"],
-        "env_content_source": settings.game_content_source,
-        "default_mode": "app",
         "total_users": total_users,
         "total_sessions": total_sessions,
     }
@@ -106,13 +112,18 @@ def admin_get_users(admin_info: dict = Depends(auth_admin), db: DBSession = Depe
     result = []
     for u in users:
         sess = sessions.get(u.id)
-        effective = resolve_content_source(u.content_source)
+        effective = resolve_content_source(u.content_source if u.content_source else (sess.content_source if sess else None))
+        track_id = effective.replace("track:", "")
+        track_cfg = get_track_config(settings.root_dir, track_id)
+        track_name = track_cfg.get("title", track_id.title()) if track_cfg else track_id.title()
         result.append({
             "id": u.id,
             "username": u.username,
             "email": u.email,
             "verified": bool(u.verified),
             "content_source": u.content_source,
+            "track_id": track_id,
+            "track_name": track_name,
             "effective_mode": effective,
             "chapter": sess.chapter if sess else 1,
             "boss_index": sess.boss_index if sess else 0,
@@ -135,8 +146,8 @@ def admin_update_user_config(
 
     if body.content_source is not None:
         target = body.content_source.strip().lower() if body.content_source else None
-        if target and target not in ("app", "json"):
-            raise HTTPException(400, "content_source must be 'app', 'json', or null")
+        if target and target not in ("app", "json") and not target.startswith("track:"):
+            raise HTTPException(400, "content_source must be 'app', 'json', or a valid track ID")
         user.content_source = target
 
         # Synchronize game session if present
@@ -164,13 +175,17 @@ def admin_update_user_config(
     db.refresh(user)
 
     effective = resolve_content_source(user.content_source)
+    track_id = effective.replace("track:", "")
+    track_cfg = get_track_config(settings.root_dir, track_id)
+    track_name = track_cfg.get("title", track_id.title()) if track_cfg else track_id.title()
     return {
         "status": "ok",
         "user_id": user.id,
         "username": user.username,
         "content_source": user.content_source,
+        "track_id": track_id,
+        "track_name": track_name,
         "effective_mode": effective,
-        "env_override": bool(settings.game_content_source),
     }
 
 
@@ -231,6 +246,9 @@ def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = D
     for s in game_sessions:
         u = users.get(s.user_id)
         effective = resolve_content_source(u.content_source if u else s.content_source)
+        track_id = effective.replace("track:", "")
+        track_cfg = get_track_config(settings.root_dir, track_id)
+        track_name = track_cfg.get("title", track_id.title()) if track_cfg else track_id.title()
         bundle = get_content_bundle(effective)
         chapters = bundle.chapters
         ch_idx = max(0, min(s.chapter - 1, len(chapters) - 1))
@@ -249,6 +267,8 @@ def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = D
             "username": u.username if u else "Unknown User",
             "email": u.email if u else "Unknown",
             "content_source": s.content_source,
+            "track_id": track_id,
+            "track_name": track_name,
             "effective_mode": effective,
             "chapter": s.chapter,
             "chapter_name": ch_data["name"],

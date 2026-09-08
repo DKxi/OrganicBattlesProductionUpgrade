@@ -1,25 +1,26 @@
-import os
 from typing import Optional
 
 
 def resolve_content_source(user_content_source: Optional[str] = None) -> str:
     """
-    Priority Resolution Order:
-    1. .env / process env (GAME_CONTENT_SOURCE)
-    2. user_content_source from database ('app' or 'json')
-    3. default "json" mode (default comprehensive chapters with all bosses and questions)
-    """
-    env_override = os.getenv("GAME_CONTENT_SOURCE")
-    if env_override and env_override.strip():
-        val = env_override.strip().lower()
-        if val in ("app", "json") or val.startswith("track:"):
-            return val
+    Questions are based on track selection.
+    GAME_CONTENT_SOURCE is completely ignored.
 
+    Priority:
+    1. user_content_source from database / session (e.g. 'track:default', 'track:adv-outcomes', or track ID)
+    2. Fallback to default track: "track:default"
+    """
     if user_content_source and user_content_source.strip():
         val = user_content_source.strip().lower()
-        if val in ("app", "json") or val.startswith("track:"):
+        if val.startswith("track:"):
             return val
-        if val == "default" or val.startswith("adv-") or val.startswith("found-"):
+        if val in ("default", "json"):
+            return "track:default"
+        if val.startswith("adv-") or val.startswith("found-"):
             return f"track:{val}"
+        if val == "app":
+            return "app"
+        return f"track:{val}"
 
-    return "json"
+    return "track:default"
+

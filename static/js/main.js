@@ -856,24 +856,6 @@ async function fetchLiveLogs() {
 
 
 function renderAdminStatus() {
-  const banner = $('#admin-env-status');
-  if (!banner || !adminStatusData) return;
-
-  const envVal = adminStatusData.env_content_source;
-  if (envVal) {
-    banner.className = 'admin-status-banner override-active';
-    banner.innerHTML = `
-      <span>⚡ <strong>GLOBAL .ENV OVERRIDE ACTIVE</strong>: <code>GAME_CONTENT_SOURCE="${envVal}"</code> (All users will play in <strong>${envVal.toUpperCase()}</strong> mode until .env is cleared).</span>
-      <span class="status-badge active">PRIORITY 1 ACTIVE</span>
-    `;
-  } else {
-    banner.className = 'admin-status-banner';
-    banner.innerHTML = `
-      <span>✔ <strong>DYNAMIC HIERARCHY ACTIVE</strong>: Individual user database settings apply. Default mode: <code>APP</code>.</span>
-      <span class="status-badge normal">DATABASE CONTROL ACTIVE</span>
-    `;
-  }
-
   const stats = $('#admin-stats-summary');
   if (stats) {
     stats.textContent = `Total Users: ${adminUsersData.length} | Sessions: ${adminStatusData.total_sessions || 0}`;
@@ -888,19 +870,12 @@ function renderAdminUsers(filterText = '') {
   const filtered = adminUsersData.filter((u) => !query || u.username.toLowerCase().includes(query) || u.email.toLowerCase().includes(query) || u.id.toLowerCase().includes(query));
 
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">No users found matching '${filterText}'.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--muted); padding: 30px;">No users found matching '${filterText}'.</td></tr>`;
     return;
   }
 
-  const envOverride = adminStatusData?.env_content_source;
-
   tbody.innerHTML = filtered.map((u) => {
-    const isOverride = Boolean(envOverride && envOverride !== (u.content_source || 'app'));
-    const effectiveClass = u.effective_mode === 'json' ? 'mode-json' : 'mode-app';
-    const effectiveLabel = isOverride ? `${u.effective_mode.toUpperCase()} (via .env)` : u.effective_mode.toUpperCase();
-    const effectiveBadge = isOverride ? 'pill-effective overridden' : `pill-effective ${effectiveClass}`;
-
-    const dbMode = u.content_source || '';
+    const trackLabel = u.track_name || (u.track_id ? u.track_id.toUpperCase() : 'Default Track');
 
     return `
       <tr data-user-id="${u.id}">
@@ -915,31 +890,23 @@ function renderAdminUsers(filterText = '') {
           </span>
         </td>
         <td>
+          <span class="pill-effective mode-json" style="font-size: 0.7rem;" title="Track: ${trackLabel}">
+            ${trackLabel}
+          </span>
+        </td>
+        <td>
           <span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan);">
             Ch ${u.chapter} // Boss ${u.boss_index + 1}
           </span>
         </td>
         <td>
-          <div class="mode-toggle-group">
-            <button type="button" class="mode-toggle-btn ${dbMode === 'app' ? 'selected' : ''}" data-set-mode="app" title="Force App Mode for this user">APP</button>
-            <button type="button" class="mode-toggle-btn ${dbMode === 'json' ? 'selected-json' : ''}" data-set-mode="json" title="Force JSON Mode for this user">JSON</button>
-            <button type="button" class="mode-toggle-btn ${!dbMode ? 'selected-default' : ''}" data-set-mode="" title="Clear DB setting (use default)">DEFAULT</button>
-          </div>
-        </td>
-        <td>
-          <span class="${effectiveBadge}">${effectiveLabel}</span>
-        </td>
-        <td>
-          <div style="display: flex; gap: 6px; align-items: center;">
-            <button type="button" class="admin-save-btn" data-save-user="${u.id}">APPLY</button>
-            <button type="button" class="admin-cred-btn" data-edit-cred="${u.id}" title="Edit Username or Password">🔑 CREDENTIALS</button>
-          </div>
+          <button type="button" class="admin-cred-btn" data-edit-cred="${u.id}" title="Edit Username or Password">🔑 CREDENTIALS</button>
         </td>
       </tr>
     `;
   }).join('');
 
-  // Bind toggle & save buttons
+  // Bind Credentials action
   tbody.querySelectorAll('tr').forEach((row) => {
     const userId = row.dataset.userId;
     const user = adminUsersData.find((u) => u.id === userId);
@@ -949,45 +916,6 @@ function renderAdminUsers(filterText = '') {
     if (credBtn) {
       credBtn.onclick = () => openAdminCredentialsModal(user);
     }
-
-    let selectedMode = user.content_source;
-
-    const modeBtns = row.querySelectorAll('[data-set-mode]');
-    const saveBtn = row.querySelector('[data-save-user]');
-
-
-    modeBtns.forEach((btn) => {
-      btn.onclick = () => {
-        selectedMode = btn.dataset.setMode || null;
-        modeBtns.forEach((b) => {
-          b.className = 'mode-toggle-btn';
-        });
-        if (selectedMode === 'app') btn.className = 'mode-toggle-btn selected';
-        else if (selectedMode === 'json') btn.className = 'mode-toggle-btn selected-json';
-        else btn.className = 'mode-toggle-btn selected-default';
-      };
-    });
-
-    saveBtn.onclick = async () => {
-      saveBtn.disabled = true;
-      saveBtn.textContent = 'SAVING…';
-      try {
-        const resp = await adminApi(`/api/admin/users/${userId}/config`, { content_source: selectedMode }, 'POST');
-        user.content_source = resp.content_source;
-        user.effective_mode = resp.effective_mode;
-        showAdminToast(`✓ User '${user.username}' set to ${resp.content_source ? resp.content_source.toUpperCase() : 'DEFAULT (APP)'}`);
-        renderAdminUsers($('#admin-user-search')?.value || '');
-      } catch (err) {
-        showBattleModal({
-          eyebrow: 'ADMIN // ERROR',
-          title: 'CONFIG UPDATE FAILED',
-          copy: err.message,
-          action: 'DISMISS',
-        });
-        saveBtn.disabled = false;
-        saveBtn.textContent = 'APPLY';
-      }
-    };
   });
 }
 
@@ -1009,8 +937,7 @@ function renderAdminSessions(filterText = '') {
   }
 
   tbody.innerHTML = filtered.map((s) => {
-    const effectiveClass = s.effective_mode === 'json' ? 'mode-json' : 'mode-app';
-    const effectiveBadge = `pill-effective ${effectiveClass}`;
+    const trackLabel = s.track_name || (s.track_id ? s.track_id.toUpperCase() : 'Default Track');
     const chapters = s.available_chapters || [{ id: 1, name: 'Chapter 1' }];
 
     const chapterOptions = chapters.map((ch) => `<option value="${ch.id}" ${ch.id === s.chapter ? 'selected' : ''}>Ch ${ch.id}: ${ch.name.slice(0, 18)}…</option>`).join('');
@@ -1022,7 +949,7 @@ function renderAdminSessions(filterText = '') {
           <div class="user-cell-id">${s.session_id.slice(0, 8)}…</div>
         </td>
         <td>
-          <span class="${effectiveBadge}">${s.effective_mode.toUpperCase()}</span>
+          <span class="pill-effective mode-json" style="font-size: 0.7rem;" title="Track: ${trackLabel}">${trackLabel}</span>
         </td>
         <td>
           <div style="font-weight: 600; color: var(--ink);">Ch ${s.chapter}: ${s.chapter_name}</div>

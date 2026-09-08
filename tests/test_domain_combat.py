@@ -105,18 +105,17 @@ def test_cooldown_management_pure_domain():
 
 
 def test_content_source_priority_resolution_pure():
-    # Priority 1: env override
+    # GAME_CONTENT_SOURCE is completely ignored
     import os
     os.environ["GAME_CONTENT_SOURCE"] = "json"
-    assert resolve_content_source("app") == "json"
-    assert resolve_content_source(None) == "json"
-
-    del os.environ["GAME_CONTENT_SOURCE"]
-    # Priority 2: user database setting
-    assert resolve_content_source("json") == "json"
+    assert resolve_content_source("track:adv-outcomes") == "track:adv-outcomes"
+    assert resolve_content_source("track:default") == "track:default"
     assert resolve_content_source("app") == "app"
 
-    # Priority 3: default is json (default chapters)
-    assert resolve_content_source(None) == "json"
-    assert resolve_content_source("invalid") == "json"
+    del os.environ["GAME_CONTENT_SOURCE"]
+    # Track selection resolution
+    assert resolve_content_source("track:adv-outcomes") == "track:adv-outcomes"
+    assert resolve_content_source("adv-outcomes") == "track:adv-outcomes"
+    assert resolve_content_source("default") == "track:default"
+    assert resolve_content_source(None) == "track:default"
 
