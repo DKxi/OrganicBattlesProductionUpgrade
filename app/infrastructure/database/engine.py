@@ -47,6 +47,12 @@ engine: Engine = build_engine(current_db_url)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
+def get_active_engine() -> Engine:
+    """Return the currently active database engine."""
+    return engine
+
+
+
 def _migrate_sqlite_columns(url: str) -> None:
     """Run SQLite auto-migrations for missing columns if SQLite database file exists."""
     db_file = url.replace("sqlite:///", "")

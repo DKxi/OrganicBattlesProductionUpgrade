@@ -2,6 +2,7 @@ import json
 import time
 import secrets
 import random
+import logging
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
@@ -16,7 +17,9 @@ from app.domain.combat.spells import SPELL_CATALOG, get_spell
 from app.domain.combat.rules import evaluate_combat_turn, decrement_cooldowns, apply_spell_cooldown
 from app.api.v1.game import format_game_state
 
+logger = logging.getLogger("organicbattles.battle")
 router = APIRouter(tags=["Combat"])
+
 
 
 class SelectSpellRequest(BaseModel):
@@ -89,6 +92,16 @@ def select_spell(
     game_session.turn_id = secrets.token_hex(8)
     game_session.updated_at = int(time.time())
     db.commit()
+
+    logger.info(
+        "Spell selected: '%s' by user %s vs %s (chapter=%d, turn_id=%s, cursor_q_idx=%d)",
+        spell_id,
+        current_user.username,
+        boss_slug,
+        game_session.chapter,
+        game_session.turn_id,
+        q_idx,
+    )
 
     return format_game_state(game_session, current_user)
 
@@ -179,6 +192,22 @@ def answer_question(
     if turn_result.defeat:
         log.append("Defeat! Your aura has faded. Regroup and retry the battle.")
 
+    logger.info(
+        "Combat turn: user %s answered correct=%s (spell=%s, damage=%d, boss_hp: %d->%d, player_hp: %d->%d)",
+        current_user.username,
+        turn_result.correct,
+        game_session.active_spell,
+        turn_result.damage,
+        game_session.boss_hp,
+        new_boss_hp,
+        game_session.player_hp,
+        new_player_hp,
+    )
+    if turn_result.defeated:
+        logger.info("Boss DEFEATED: %s beaten by user %s (chapter=%d)", boss_slug, current_user.username, game_session.chapter)
+    elif turn_result.defeat:
+        logger.warning("Player DEFEATED: %s fell to boss %s (chapter=%d)", current_user.username, boss_slug, game_session.chapter)
+
     # Save back to database
     game_session.player_hp = new_player_hp
     game_session.boss_hp = new_boss_hp
@@ -190,6 +219,7 @@ def answer_question(
     game_session.version += 1
     game_session.updated_at = int(time.time())
     db.commit()
+
 
     # Format battle response
     state = format_game_state(game_session, current_user)

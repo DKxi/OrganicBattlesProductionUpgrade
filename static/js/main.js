@@ -782,10 +782,51 @@ async function loadSystemStorageConfig() {
       };
       select.dispatchEvent(new Event('change'));
     }
+
+    // Load logging telemetry & live logs
+    await loadLoggingConfig();
   } catch (err) {
     console.error('Failed to load system storage config:', err);
   }
 }
+
+async function loadLoggingConfig() {
+  try {
+    const res = await adminApi('/api/admin/system/logging', {}, 'GET');
+    if (!res || !res.levels) return;
+
+    if ($('#admin-log-level-root')) $('#admin-log-level-root').value = res.levels.root || 'INFO';
+    if ($('#admin-log-level-api')) $('#admin-log-level-api').value = res.levels['organicbattles.api'] || 'INFO';
+    if ($('#admin-log-level-battle')) $('#admin-log-level-battle').value = res.levels['organicbattles.battle'] || 'INFO';
+    if ($('#admin-log-level-auth')) $('#admin-log-level-auth').value = res.levels['organicbattles.auth'] || 'INFO';
+    if ($('#admin-log-level-database')) $('#admin-log-level-database').value = res.levels['organicbattles.database'] || 'INFO';
+
+    const badge = $('#admin-log-file-badge');
+    if (badge) badge.textContent = res.log_file_relative || 'logs/organic_battles.log';
+
+    const sizeLabel = $('#admin-log-size-label');
+    if (sizeLabel) sizeLabel.textContent = `SIZE: ${res.file_size_formatted || '0 KB'}`;
+
+    await fetchLiveLogs();
+  } catch (err) {
+    console.error('Failed to load logging config:', err);
+  }
+}
+
+async function fetchLiveLogs() {
+  const consoleEl = $('#admin-log-console');
+  if (!consoleEl) return;
+  try {
+    const res = await adminApi('/api/admin/system/logging/tail?lines=100', {}, 'GET');
+    if (res && res.lines) {
+      consoleEl.textContent = res.lines.join('');
+      consoleEl.scrollTop = consoleEl.scrollHeight;
+    }
+  } catch (err) {
+    consoleEl.textContent = `[Failed to read live logs: ${err.message}]`;
+  }
+}
+
 
 function renderAdminStatus() {
   const banner = $('#admin-env-status');
@@ -1207,7 +1248,44 @@ function bindAdminEvents() {
     }
   });
 
+  $('#admin-logging-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const levels = {
+      root: $('#admin-log-level-root')?.value || 'INFO',
+      'organicbattles.api': $('#admin-log-level-api')?.value || 'INFO',
+      'organicbattles.battle': $('#admin-log-level-battle')?.value || 'INFO',
+      'organicbattles.auth': $('#admin-log-level-auth')?.value || 'INFO',
+      'organicbattles.database': $('#admin-log-level-database')?.value || 'INFO',
+    };
+    const status = $('#admin-logging-status');
+    if (status) {
+      status.textContent = 'Saving logging thresholds…';
+      status.className = 'admin-modal-status hint';
+    }
+
+    try {
+      const res = await adminApi('/api/admin/system/logging', { levels }, 'POST');
+      if (status) {
+        status.textContent = 'Logging thresholds updated & persisted!';
+        status.className = 'admin-modal-status hint';
+      }
+      showAdminToast('Logging thresholds updated');
+      await loadLoggingConfig();
+    } catch (err) {
+      if (status) {
+        status.textContent = `Error: ${err.message}`;
+        status.className = 'admin-modal-status error';
+      }
+    }
+  });
+
+  $('#admin-refresh-logs-btn')?.addEventListener('click', async () => {
+    await fetchLiveLogs();
+    showAdminToast('Live logs refreshed');
+  });
+
   $('#admin-login-form')?.addEventListener('submit', async (event) => {
+
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const username = formData.get('admin_username');

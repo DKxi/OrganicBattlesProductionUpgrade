@@ -1,6 +1,7 @@
 import json
 import time
 import secrets
+import logging
 from typing import Optional, Dict, Any
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
@@ -14,7 +15,9 @@ from app.domain.content.resolver import resolve_content_source
 from app.domain.content.loader import json_available_spells, load_tracks_config, load_track_bundle, get_track_config
 from app.domain.combat.spells import SPELL_CATALOG
 
+logger = logging.getLogger("organicbattles.game")
 router = APIRouter(tags=["Game Session"])
+
 
 
 class SetTrackRequest(BaseModel):
@@ -194,8 +197,10 @@ def new_game(
         db.add(game_session)
         db.commit()
         db.refresh(game_session)
+        logger.info("New game session initialized for user %s (source=%s, chapter=1)", current_user.username, current_user.content_source)
 
     return format_game_state(game_session, current_user)
+
 
 
 @router.get("/game/state")
@@ -401,6 +406,13 @@ def set_track(
     game_session.updated_at = int(time.time())
     db.commit()
     db.refresh(game_session)
+    logger.info(
+        "User %s switched track to '%s' (chapter=%d, boss_index=%d)",
+        current_user.username,
+        body.track_id,
+        game_session.chapter,
+        game_session.boss_index,
+    )
 
     return {
         "status": "success",
@@ -411,4 +423,5 @@ def set_track(
         "question_count": len(bundle.questions),
         "session": format_game_state(game_session, current_user),
     }
+
 

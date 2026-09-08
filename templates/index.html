@@ -427,6 +427,88 @@
             </form>
           </div>
 
+          <!-- Row 2: Observability & Logging Configuration (Full Width) -->
+          <div class="admin-card" style="grid-column: 1 / -1; width: 100%; margin: 0; box-sizing: border-box;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <div class="eyebrow">OBSERVABILITY // TELEMETRY &amp; LOGS</div>
+                <h3 style="color: var(--cyan); margin: 6px 0 2px; font-size: 1.25rem;">LOGGING &amp; LOG FILE CONFIGURATION</h3>
+              </div>
+              <div id="admin-log-file-badge" style="font-family: monospace; font-size: 0.75rem; background: #071923; padding: 4px 10px; border-radius: 6px; border: 1px solid #204b56; color: var(--gold);">
+                logs/organic_battles.log
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--muted); margin: 6px 0 16px; line-height: 1.4;">
+              Manage logging thresholds for system components, persist settings to <code>logging.properties</code>, and monitor live streaming server logs.
+            </p>
+
+            <form id="admin-logging-form">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 16px;">
+                <label>GLOBAL ROOT LEVEL
+                  <select id="admin-log-level-root" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+                    <option value="DEBUG">DEBUG (Verbose)</option>
+                    <option value="INFO" selected>INFO (Standard)</option>
+                    <option value="WARNING">WARNING (Alerts)</option>
+                    <option value="ERROR">ERROR (Failures)</option>
+                    <option value="CRITICAL">CRITICAL (Fatal)</option>
+                  </select>
+                </label>
+
+                <label>API &amp; HTTP LEVEL
+                  <select id="admin-log-level-api" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+                    <option value="DEBUG">DEBUG</option>
+                    <option value="INFO" selected>INFO</option>
+                    <option value="WARNING">WARNING</option>
+                    <option value="ERROR">ERROR</option>
+                  </select>
+                </label>
+
+                <label>BATTLE &amp; COMBAT LEVEL
+                  <select id="admin-log-level-battle" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+                    <option value="DEBUG">DEBUG</option>
+                    <option value="INFO" selected>INFO</option>
+                    <option value="WARNING">WARNING</option>
+                    <option value="ERROR">ERROR</option>
+                  </select>
+                </label>
+
+                <label>AUTH &amp; SECURITY LEVEL
+                  <select id="admin-log-level-auth" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+                    <option value="DEBUG">DEBUG</option>
+                    <option value="INFO" selected>INFO</option>
+                    <option value="WARNING">WARNING</option>
+                    <option value="ERROR">ERROR</option>
+                  </select>
+                </label>
+
+                <label>DATABASE &amp; MIGRATION LEVEL
+                  <select id="admin-log-level-database" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+                    <option value="DEBUG">DEBUG</option>
+                    <option value="INFO" selected>INFO</option>
+                    <option value="WARNING">WARNING</option>
+                    <option value="ERROR">ERROR</option>
+                  </select>
+                </label>
+              </div>
+
+              <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                <button type="submit" class="primary" style="padding: 10px 18px;">APPLY LOGGING CONFIGURATION</button>
+                <button type="button" id="admin-refresh-logs-btn" class="secondary" style="padding: 10px 18px;">REFRESH LIVE LOGS</button>
+                <span id="admin-logging-status" class="admin-modal-status" style="font-size: 0.8rem; margin: 0;"></span>
+              </div>
+            </form>
+
+            <!-- Live Terminal Log Stream -->
+            <div style="margin-top: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <span style="font-size: 0.75rem; color: var(--muted); font-family: monospace;">LIVE LOG STREAM (LAST 100 LINES)</span>
+                <span id="admin-log-size-label" style="font-size: 0.75rem; color: var(--cyan); font-family: monospace;">SIZE: 0 KB</span>
+              </div>
+              <pre id="admin-log-console" style="background: #040d12; border: 1px solid #1a3b45; border-radius: 8px; padding: 12px; color: #a4e5d9; font-family: 'JetBrains Mono', monospace, Consolas; font-size: 0.75rem; height: 220px; overflow-y: auto; white-space: pre-wrap; word-break: break-all; margin: 0;"></pre>
+            </div>
+          </div>
+
+
         </div>
       </div>
 

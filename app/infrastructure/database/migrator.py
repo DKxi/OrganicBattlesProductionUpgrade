@@ -10,6 +10,7 @@ from app.infrastructure.database.models import (
     GameSession,
     Curriculum,
     Track,
+    Question,
 )
 from app.infrastructure.database.engine import build_engine
 
@@ -27,7 +28,7 @@ def migrate_sqlite_to_postgres(
 ) -> Dict[str, int]:
     """
     Copy all user accounts, credentials, auth tokens, battle sessions,
-    curricula, and track configurations from source engine into target engine
+    curricula, track configurations, and question banks from source engine into target engine
     with preserved foreign keys and relationships.
     Idempotent: merges/updates existing records without creating duplicates.
     """
@@ -46,6 +47,7 @@ def migrate_sqlite_to_postgres(
         "game_sessions": 0,
         "curricula": 0,
         "tracks": 0,
+        "questions": 0,
     }
 
     with Session(source_engine) as src, Session(target_engine) as dst:
@@ -62,7 +64,7 @@ def migrate_sqlite_to_postgres(
                     setattr(existing_c, k, v)
         dst.commit()
 
-        # 2. Tracks (FK: curricula.id)
+        # 3. Tracks (FK: curricula.id)
         tracks = src.query(Track).all()
         for t in tracks:
             t_data = _row_to_dict(Track, t)
@@ -75,7 +77,33 @@ def migrate_sqlite_to_postgres(
                     setattr(existing_t, k, v)
         dst.commit()
 
-        # 3. Users (Primary account entity)
+        # 4. Questions (FK: tracks.id)
+        q_count = src.query(Question).count()
+        if q_count > 0:
+            logger.info("Migrating %d questions in batches of 1000...", q_count)
+            # Clear target questions if re-migrating to avoid duplicates
+            dst.query(Question).delete()
+            dst.commit()
+
+            offset = 0
+            batch_size = 1000
+            while offset < q_count:
+                q_rows = (
+                    src.query(Question)
+                    .order_by(Question.id.asc())
+                    .offset(offset)
+                    .limit(batch_size)
+                    .all()
+                )
+                if not q_rows:
+                    break
+                mappings = [_row_to_dict(Question, q) for q in q_rows]
+                dst.bulk_insert_mappings(Question, mappings)
+                dst.commit()
+                stats["questions"] += len(mappings)
+                offset += len(q_rows)
+
+        # 5. Users (Primary account entity)
         users = src.query(User).all()
         for u in users:
             u_data = _row_to_dict(User, u)
@@ -88,8 +116,7 @@ def migrate_sqlite_to_postgres(
                     setattr(existing_user, k, v)
         dst.commit()
 
-
-        # 2. Verification Codes (FK: users.id)
+        # 6. Verification Codes (FK: users.id)
         codes = src.query(VerificationCode).all()
         for vc in codes:
             vc_data = _row_to_dict(VerificationCode, vc)
@@ -104,7 +131,7 @@ def migrate_sqlite_to_postgres(
                     setattr(existing_vc, k, v)
         dst.commit()
 
-        # 3. Auth Sessions (FK: users.id)
+        # 7. Auth Sessions (FK: users.id)
         sessions = src.query(AuthSession).all()
         for s in sessions:
             s_data = _row_to_dict(AuthSession, s)
@@ -119,7 +146,7 @@ def migrate_sqlite_to_postgres(
                     setattr(existing_session, k, v)
         dst.commit()
 
-        # 4. Game Sessions (FK: users.id, unique: user_id)
+        # 8. Game Sessions (FK: users.id, unique: user_id)
         game_sessions = src.query(GameSession).all()
         for gs in game_sessions:
             gs_data = _row_to_dict(GameSession, gs)
@@ -144,11 +171,20 @@ def migrate_sqlite_to_postgres(
                     "  coalesce((SELECT max(id) FROM verification_codes), 1)"
                     ");"
                 ))
+                conn.execute(text(
+                    "SELECT setval("
+                    "  pg_get_serial_sequence('questions', 'id'), "
+                    "  coalesce((SELECT max(id) FROM questions), 1)"
+                    ");"
+                ))
         except Exception as seq_err:
             logger.warning("Could not synchronize PostgreSQL sequence: %s", seq_err)
 
     logger.info(
-        "Successfully migrated data to target: %d users, %d codes, %d auth sessions, %d game sessions.",
+        "Successfully migrated data to target: %d curricula, %d tracks, %d questions, %d users, %d codes, %d auth sessions, %d game sessions.",
+        stats["curricula"],
+        stats["tracks"],
+        stats["questions"],
         stats["users"],
         stats["verification_codes"],
         stats["auth_sessions"],
@@ -159,3 +195,4 @@ def migrate_sqlite_to_postgres(
 
 # Alias for general cross-database migration
 migrate_database = migrate_sqlite_to_postgres
+

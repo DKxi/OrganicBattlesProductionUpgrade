@@ -1,7 +1,10 @@
+import logging
 from typing import Optional, Any
 from fastapi import Request, HTTPException
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
+
+logger = logging.getLogger("organicbattles.api")
 
 
 class AppException(Exception):
@@ -26,6 +29,13 @@ def format_error_response(code: str, message: str, status_code: int, details: An
 
 
 async def app_exception_handler(request: Request, exc: AppException) -> JSONResponse:
+    req_id = getattr(request.state, "request_id", "none")
+    log_msg = f"AppException [{exc.code} {exc.status_code}] on {request.method} {request.url.path} [req:{req_id}]: {exc.message}"
+    if exc.status_code >= 500:
+        logger.error(log_msg, exc_info=True)
+    else:
+        logger.warning(log_msg)
+
     return JSONResponse(
         status_code=exc.status_code,
         content=format_error_response(exc.code, exc.message, exc.status_code, exc.details),
@@ -44,6 +54,14 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
     }
     code = code_map.get(exc.status_code, "ERROR")
     msg = exc.detail if isinstance(exc.detail, str) else str(exc.detail)
+    req_id = getattr(request.state, "request_id", "none")
+
+    log_msg = f"HTTPException [{code} {exc.status_code}] on {request.method} {request.url.path} [req:{req_id}]: {msg}"
+    if exc.status_code >= 500:
+        logger.error(log_msg, exc_info=True)
+    else:
+        logger.warning(log_msg)
+
     return JSONResponse(
         status_code=exc.status_code,
         content=format_error_response(code, msg, exc.status_code),
@@ -54,8 +72,12 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
 async def validation_exception_handler(request: Request, exc: RequestValidationError) -> JSONResponse:
     first_error = exc.errors()[0] if exc.errors() else {}
     msg = first_error.get("msg", "Invalid request payload")
+    req_id = getattr(request.state, "request_id", "none")
+    logger.warning("Validation error on %s %s [req:%s]: %s (details: %s)", request.method, request.url.path, req_id, msg, exc.errors())
+
     return JSONResponse(
         status_code=422,
         content=format_error_response("VALIDATION_ERROR", msg, 422, exc.errors()),
     )
+
 

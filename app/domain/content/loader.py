@@ -317,20 +317,180 @@ def get_track_config(root_dir: Path, track_id: str, db: Optional[Any] = None) ->
 
 
 
+def invalidate_bundle_cache(track_id: Optional[str] = None) -> None:
+    """Invalidate in-memory cached content bundles."""
+    try:
+        from app.api import deps
+        if track_id:
+            deps.TRACK_BUNDLES.pop(track_id, None)
+            deps.TRACK_BUNDLES.pop(f"track:{track_id}", None)
+        else:
+            deps.TRACK_BUNDLES.clear()
+    except Exception as exc:
+        logger.debug("Cache invalidation note: %s", exc)
+
+
+def load_db_bundle(
+    track_id: str,
+    db: Optional[Any] = None,
+    root_dir: Optional[Path] = None,
+    data_dir: Optional[Path] = None,
+    boss_dir: Optional[Path] = None,
+) -> Optional[ContentBundle]:
+    """
+    Build a ContentBundle directly from database questions table.
+    Preserves exact order_index sequence for question_boss_bank.
+    """
+    from app.infrastructure.database.models import Question
+    from app.infrastructure.database.engine import SessionLocal
+
+    def _fetch_questions(session):
+        return (
+            session.query(Question)
+            .filter(Question.track_id == track_id)
+            .order_by(Question.chapter.asc(), Question.order_index.asc())
+            .all()
+        )
+
+    questions_rows = []
+    if db is not None:
+        try:
+            questions_rows = _fetch_questions(db)
+        except Exception as exc:
+            logger.debug("Database load_db_bundle note: %s", exc)
+    else:
+        try:
+            with SessionLocal() as session:
+                questions_rows = _fetch_questions(session)
+        except Exception as exc:
+            logger.debug("SessionLocal load_db_bundle note: %s", exc)
+
+    if not questions_rows:
+        return None
+
+    try:
+        chapters_map: Dict[int, Dict[str, Any]] = {}
+        question_bank: Dict[int, List[Tuple[str, List[str], str]]] = {}
+        question_boss_bank: Dict[Any, List[Tuple[str, List[str], str]]] = {}
+        boss_spell_values: Dict[Any, List[int]] = {}
+        explanations: Dict[str, str] = {}
+        boss_images: Dict[str, str] = {}
+        spell_values: Dict[Any, List[int]] = {}
+        spell_damage: Dict[int, int] = {}
+
+        for q in questions_rows:
+            ch_id = q.chapter
+            options_data = json.loads(q.options_json) if q.options_json else []
+            choices = [opt["text"] for opt in options_data if isinstance(opt, dict) and "text" in opt]
+            prompt = q.prompt
+            correct = q.correct_answer or (choices[0] if choices else "")
+            q_tuple = (prompt, choices, correct)
+
+            explanations[prompt] = q.explanation or f"The correct answer is {correct}."
+
+            images = json.loads(q.images_json) if q.images_json else []
+            boss_image = images[0] if images else f"{q.boss_slug}.png"
+            boss_images[prompt] = boss_image
+            boss_images[q.boss_slug] = boss_image
+            boss_images[q.boss_name] = boss_image
+
+            sp_vals = [int(v) for v in (json.loads(q.spells_json) if q.spells_json else [20, 30, 45])]
+            spell_values[(ch_id, q.boss_slug, prompt)] = sp_vals
+            spell_values.setdefault(prompt, sp_vals)
+            for dmg in sp_vals:
+                spell_damage[int(dmg)] = int(dmg)
+
+            # STRICT ORDER PRESERVATION:
+            # Questions are sorted by order_index ASC, appending retains deterministic sequence
+            question_bank.setdefault(ch_id, []).append(q_tuple)
+            question_boss_bank.setdefault((ch_id, q.boss_slug), []).append(q_tuple)
+            question_boss_bank.setdefault(q.boss_slug, []).append(q_tuple)
+            boss_spell_values.setdefault((ch_id, q.boss_slug), sp_vals)
+            boss_spell_values.setdefault(q.boss_slug, sp_vals)
+
+            if ch_id not in chapters_map:
+                chapters_map[ch_id] = {
+                    "id": ch_id,
+                    "name": q.chapter_title,
+                    "subtitle": "PostgreSQL Neural Archive",
+                    "color": ["#27d9cb", "#9a7cff", "#e34dff", "#ff9f5a"][(ch_id - 1) % 4],
+                    "bosses_map": {},
+                }
+
+            b_map = chapters_map[ch_id]["bosses_map"]
+            if q.boss_slug not in b_map:
+                health_vals = [int(h) for h in (json.loads(q.health_json) if q.health_json else [100])]
+                health = max(health_vals) if health_vals else 100
+                b_map[q.boss_slug] = {
+                    "id": q.boss_slug,
+                    "name": q.boss_name,
+                    "health": health,
+                    "turn_timer": 15,
+                    "rank": "Mini-Boss",
+                    "description": f"{q.chapter_title} // {q.topic or 'Organic Chemistry'}",
+                    "image": boss_image,
+                }
+
+        # Build chapter structures with last boss designated as MAJOR BOSS
+        chapters = []
+        for ch_id in sorted(chapters_map.keys()):
+            ch_info = chapters_map[ch_id]
+            b_items = list(ch_info["bosses_map"].values())
+            if b_items:
+                b_items[-1]["rank"] = "MAJOR BOSS"
+            formatted_bosses = [
+                (b["id"], b["name"], b["health"], b["turn_timer"], b["rank"], b["description"], b["image"])
+                for b in b_items
+            ]
+            chapters.append({
+                "id": ch_id,
+                "name": ch_info["name"],
+                "subtitle": ch_info["subtitle"],
+                "color": ch_info["color"],
+                "bosses": formatted_bosses,
+            })
+
+        json_spells = dict(BUILTIN_SPELLS)
+        if spell_damage:
+            json_spells = {
+                s_id: (name, kind, spell_damage.get(damage, damage), cooldown, desc)
+                for s_id, (name, kind, damage, cooldown, desc) in json_spells.items()
+            }
+
+        return ContentBundle(
+            source_name=f"track:{track_id}",
+            chapters=chapters,
+            questions=[q for q_list in question_bank.values() for q in q_list],
+            question_bank_by_chapter=question_bank,
+            question_boss_bank=question_boss_bank,
+            boss_spell_values=boss_spell_values,
+            explanations=explanations,
+            boss_images=boss_images,
+            spell_values=spell_values,
+            spells=json_spells,
+            json_spell_damage=spell_damage,
+            data_dir=data_dir,
+            boss_dir=boss_dir,
+        )
+    except Exception as exc:
+        logger.error("Error loading database bundle for track %s: %s", track_id, exc)
+        return None
+
+
 def load_track_bundle(
     root_dir: Path,
     track_id: str,
     custom_folder: Optional[str] = None,
     custom_boss_folder: Optional[str] = None,
+    db: Optional[Any] = None,
 ) -> ContentBundle:
     """
-    Load a ContentBundle for a specific track, using its configured data_folder and boss_folder.
-    If custom_folder or custom_boss_folder are provided, they override the track config paths.
-    Gracefully falls back to data/ and default boss directories on any missing folder or mismatch.
+    Load a ContentBundle for a specific track.
+    Prioritizes PostgreSQL/database questions table when available.
+    Gracefully falls back to data/tracks/ and chapter_*.json files if not in database.
     """
-    track_cfg = get_track_config(root_dir, track_id)
+    track_cfg = get_track_config(root_dir, track_id, db=db)
 
-    # Resolve default fallback directories: data/tracks/default and data/tracks/default/bosses
     default_data_dir = root_dir / "data" / "tracks" / "default"
     if not (default_data_dir.is_dir() and list(default_data_dir.glob("chapter_*.json"))):
         default_data_dir = root_dir / "data"
@@ -339,7 +499,6 @@ def load_track_bundle(
     if not default_boss_dir.is_dir():
         default_boss_dir = root_dir / "bosses" if (root_dir / "bosses").is_dir() else root_dir / "data"
 
-    # 1. Resolve data_folder
     folder_str = custom_folder or (track_cfg.get("data_folder") if track_cfg else None)
     target_data_dir = default_data_dir
     if folder_str:
@@ -347,7 +506,6 @@ def load_track_bundle(
         if folder_path.is_dir() and ((folder_path / "manifest.json").is_file() or list(folder_path.glob("chapter_*.json"))):
             target_data_dir = folder_path
 
-    # 2. Resolve boss_folder
     boss_str = custom_boss_folder or (track_cfg.get("boss_folder") if track_cfg else None)
     target_boss_dir = default_boss_dir
     if boss_str:
@@ -355,8 +513,22 @@ def load_track_bundle(
         if boss_path.is_dir():
             target_boss_dir = boss_path
 
+    # 1. Try loading from database if no custom folder override was requested
+    if not custom_folder:
+        db_bundle = load_db_bundle(
+            track_id,
+            db=db,
+            root_dir=root_dir,
+            data_dir=target_data_dir,
+            boss_dir=target_boss_dir,
+        )
+        if db_bundle and db_bundle.questions:
+            return db_bundle
+
+    # 2. Fallback to filesystem JSON bundle loading
     bundle = load_json_bundle(root_dir, data_dir=target_data_dir, boss_dir=target_boss_dir)
     bundle.source_name = f"track:{track_id}"
     return bundle
+
 
 

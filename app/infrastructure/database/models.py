@@ -1,5 +1,5 @@
 import time
-from sqlalchemy import Column, String, Integer, ForeignKey, Index
+from sqlalchemy import Column, String, Integer, BigInteger, Text, ForeignKey, Index, UniqueConstraint
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
@@ -101,4 +101,40 @@ class Track(Base):
     display_order = Column(Integer, nullable=False, default=0)
 
     curriculum = relationship("Curriculum", back_populates="tracks")
+    questions_rel = relationship("Question", back_populates="track", cascade="all, delete-orphan", order_by="Question.order_index")
+
+
+class Question(Base):
+    __tablename__ = "questions"
+
+    id = Column(BigInteger().with_variant(Integer, "sqlite"), primary_key=True, autoincrement=True)
+    track_id = Column(String, ForeignKey("tracks.id", ondelete="CASCADE"), nullable=False, index=True)
+    raw_id = Column(String, nullable=False)
+    chapter = Column(Integer, nullable=False)
+    chapter_title = Column(String, nullable=False)
+    boss_name = Column(String, nullable=False)
+    boss_slug = Column(String, nullable=False)
+    order_index = Column(Integer, nullable=False)  # Strict sequential order matching JSON array
+    topic = Column(String, nullable=True)
+    difficulty = Column(String, nullable=True)
+    question_type = Column(String, nullable=False, default="Multiple Choice")
+    prompt = Column(Text, nullable=False)
+    options_json = Column(Text, nullable=False)    # JSON serialized list of options [{label, text}]
+    correct_option = Column(String, nullable=False)
+    correct_answer = Column(Text, nullable=False)
+    explanation = Column(Text, nullable=False)
+    spells_json = Column(Text, nullable=False, default="[20, 30, 45]")
+    health_json = Column(Text, nullable=False, default="[100]")
+    images_json = Column(Text, nullable=False, default="[]")
+    created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+    updated_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+
+    track = relationship("Track", back_populates="questions_rel")
+
+    __table_args__ = (
+        Index("ix_questions_track_ch_order", "track_id", "chapter", "order_index"),
+        Index("ix_questions_track_ch_boss_order", "track_id", "chapter", "boss_slug", "order_index"),
+        UniqueConstraint("track_id", "chapter", "order_index", name="uq_questions_order"),
+    )
+
 

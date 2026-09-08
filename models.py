@@ -8,6 +8,9 @@ from app.infrastructure.database.models import (
     AuthSession,
     VerificationCode,
     GameSession,
+    Curriculum,
+    Track,
+    Question,
 )
 
 __all__ = [
@@ -16,4 +19,8 @@ __all__ = [
     "AuthSession",
     "VerificationCode",
     "GameSession",
+    "Curriculum",
+    "Track",
+    "Question",
 ]
+

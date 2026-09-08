@@ -1,4 +1,5 @@
 import time
+import logging
 from typing import Optional
 from fastapi import APIRouter, Request, Response, Depends, HTTPException, Header, Cookie
 from pydantic import BaseModel, EmailStr, Field
@@ -19,7 +20,9 @@ from app.infrastructure.messaging.smtp import send_verification_code_email
 from app.domain.accounts.entities import to_public_user
 from app.domain.content.resolver import resolve_content_source
 
+logger = logging.getLogger("organicbattles.auth")
 router = APIRouter(tags=["Authentication"])
+
 
 
 class SignupRequest(BaseModel):
@@ -56,8 +59,10 @@ def signup(request: Request, body: SignupRequest, db: DBSession = Depends(get_db
     auth_repo = AuthRepository(db)
 
     if user_repo.get_by_email(email):
+        logger.warning("Signup conflict: email already registered (%s)", email)
         raise HTTPException(409, "An account with that email already exists")
     if user_repo.get_by_username(body.username):
+        logger.warning("Signup conflict: username already taken (%s)", body.username)
         raise HTTPException(409, "Username taken, choose a different one")
 
     pwd_hash = hash_password(body.password)
@@ -71,6 +76,7 @@ def signup(request: Request, body: SignupRequest, db: DBSession = Depends(get_db
     root_mod = sys.modules.get("app")
     sender_func = getattr(root_mod, "send_verification_email", send_verification_code_email) if root_mod else send_verification_code_email
     sender_func(user.email, user.username, code)
+    logger.info("New user registered: %s (%s), verification code dispatched", user.username, user.email)
 
     return {
         "status": "pending_verification",
@@ -92,13 +98,14 @@ def verify_code(request: Request, body: VerifyRequest, response: Response, db: D
     chash = code_hash(code_str)
     record = auth_repo.get_valid_verification_code(chash)
     if not record:
+        logger.warning("Failed verification: invalid or expired code")
         raise HTTPException(400, "Invalid confirmation code")
 
     auth_repo.mark_code_used(record.id)
 
     user = user_repo.get_by_id(record.user_id)
     if not user:
-
+        logger.error("Verification failed: associated user ID %s not found", record.user_id)
         raise HTTPException(404, "User not found")
 
     user.verified = 1
@@ -118,6 +125,7 @@ def verify_code(request: Request, body: VerifyRequest, response: Response, db: D
     )
 
     effective = resolve_content_source(user.content_source)
+    logger.info("Account verified successfully: %s (%s)", user.username, user.email)
     return {
         "token": token,
         "user": to_public_user(user, effective),
@@ -138,14 +146,15 @@ def login(request: Request, body: LoginRequest, response: Response, db: DBSessio
     # Support login by username or email
     user = user_repo.get_by_username(identifier) or user_repo.get_by_email(identifier.lower())
     if not user or not verify_password(body.password, user.password_hash):
+        logger.warning("Failed login attempt for identifier: '%s'", identifier)
         raise HTTPException(401, "Incorrect username or password")
     if not user.verified:
+        logger.warning("Login rejected for unverified account: %s", user.username)
         raise HTTPException(403, "Account not verified. Please verify your email first.")
 
     token = generate_session_token()
     thash = code_hash(token)
     auth_repo.create_session(user.id, thash, settings.auth_session_ttl_days)
-
 
     response.set_cookie(
         "session_token",
@@ -157,6 +166,7 @@ def login(request: Request, body: LoginRequest, response: Response, db: DBSessio
     )
 
     effective = resolve_content_source(user.content_source)
+    logger.info("User login successful: %s (%s)", user.username, user.id)
     return {
         "token": token,
         "user": to_public_user(user, effective),
@@ -178,6 +188,7 @@ def resend_code(request: Request, email: str, db: DBSession = Depends(get_db)):
 
     user = user_repo.get_by_email(email)
     if not user:
+        logger.warning("Resend code failed: email %s not found", email)
         raise HTTPException(404, "User not found")
 
     code = generate_verification_code()
@@ -185,6 +196,7 @@ def resend_code(request: Request, email: str, db: DBSession = Depends(get_db)):
     auth_repo.create_verification_code(user.id, chash, settings.verification_code_ttl_seconds)
 
     send_verification_code_email(user.email, user.username, code)
+    logger.info("Resent confirmation code to %s", user.email)
 
     return {"status": "ok", "message": f"Fresh confirmation code sent to {user.email}"}
 
@@ -206,6 +218,8 @@ def logout(
         thash = code_hash(raw)
         auth_repo = AuthRepository(db)
         auth_repo.delete_session(thash)
+        logger.info("Session destroyed on logout")
 
     response.delete_cookie("session_token")
     return {"status": "ok"}
+

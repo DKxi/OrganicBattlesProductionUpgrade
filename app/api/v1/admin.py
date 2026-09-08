@@ -488,7 +488,51 @@ def admin_get_curricula(admin_info: dict = Depends(auth_admin), db: DBSession = 
 
 
 
+class LoggingConfigRequest(BaseModel):
+    levels: Dict[str, str] = Field(default_factory=dict)
+    log_file_path: Optional[str] = None
+
+
+@router.get("/admin/system/logging")
+def admin_get_logging_config(admin_info: dict = Depends(auth_admin)):
+    """Retrieve active logging configuration and log file information."""
+    from app.observability.logging import get_logging_config
+    return get_logging_config()
+
+
+@router.post("/admin/system/logging")
+def admin_update_logging_config(
+    body: LoggingConfigRequest,
+    admin_info: dict = Depends(auth_admin),
+):
+    """Update active logging levels dynamically and persist to logging.properties."""
+    from app.observability.logging import update_logging_config
+    cfg = update_logging_config(levels=body.levels, log_file_path=body.log_file_path)
+    logger.info("Admin updated logging configuration: %s", body.levels)
+    return {
+        "status": "ok",
+        "message": "Logging configuration updated and persisted",
+        "config": cfg,
+    }
+
+
+@router.get("/admin/system/logging/tail")
+def admin_tail_logs(
+    lines: int = 100,
+    admin_info: dict = Depends(auth_admin),
+):
+    """Retrieve recent log lines from active log file for dashboard console."""
+    from app.observability.logging import tail_log_file, DEFAULT_LOG_FILE
+    log_lines = tail_log_file(lines=min(max(1, lines), 1000))
+    return {
+        "log_file": str(DEFAULT_LOG_FILE),
+        "lines_count": len(log_lines),
+        "lines": log_lines,
+    }
+
+
 @router.post("/admin/logout")
+
 def admin_logout(
     response: Response,
     authorization: Optional[str] = Header(default=None),
