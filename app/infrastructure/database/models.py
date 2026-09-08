@@ -6,7 +6,7 @@ Base = declarative_base()
 
 
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "OB_users"
 
     id = Column(String, primary_key=True)
     email = Column(String, unique=True, nullable=False, index=True)
@@ -24,10 +24,10 @@ class User(Base):
 
 
 class VerificationCode(Base):
-    __tablename__ = "verification_codes"
+    __tablename__ = "OB_verification_codes"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    user_id = Column(String, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(String, ForeignKey("OB_users.id", ondelete="CASCADE"), nullable=False)
     code_hash = Column(String, nullable=False)
     expires_at = Column(Integer, nullable=False)
     used = Column(Integer, nullable=False, default=0)
@@ -37,10 +37,10 @@ class VerificationCode(Base):
 
 
 class AuthSession(Base):
-    __tablename__ = "auth_sessions"
+    __tablename__ = "OB_auth_sessions"
 
     token_hash = Column(String, primary_key=True)
-    user_id = Column(String, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(String, ForeignKey("OB_users.id", ondelete="CASCADE"), nullable=False)
     expires_at = Column(Integer, nullable=False)
     created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
 
@@ -48,10 +48,10 @@ class AuthSession(Base):
 
 
 class GameSession(Base):
-    __tablename__ = "game_sessions"
+    __tablename__ = "OB_game_sessions"
 
     id = Column(String, primary_key=True)
-    user_id = Column(String, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, unique=True)
+    user_id = Column(String, ForeignKey("OB_users.id", ondelete="CASCADE"), nullable=False, unique=True)
     content_source = Column(String, nullable=True, default=None)
     chapter = Column(Integer, nullable=False, default=1)
     boss_index = Column(Integer, nullable=False, default=0)
@@ -73,7 +73,7 @@ class GameSession(Base):
 
 
 class Curriculum(Base):
-    __tablename__ = "curricula"
+    __tablename__ = "OB_curricula"
 
     id = Column(String, primary_key=True)
     name = Column(String, nullable=False)
@@ -87,10 +87,10 @@ class Curriculum(Base):
 
 
 class Track(Base):
-    __tablename__ = "tracks"
+    __tablename__ = "OB_tracks"
 
     id = Column(String, primary_key=True)
-    curriculum_id = Column(String, ForeignKey("curricula.id", ondelete="CASCADE"), nullable=False)
+    curriculum_id = Column(String, ForeignKey("OB_curricula.id", ondelete="CASCADE"), nullable=False)
     title = Column(String, nullable=False)
     detail = Column(String, nullable=True)
     data_folder = Column(String, nullable=False)
@@ -105,10 +105,10 @@ class Track(Base):
 
 
 class Question(Base):
-    __tablename__ = "questions"
+    __tablename__ = "OB_questions"
 
     id = Column(BigInteger().with_variant(Integer, "sqlite"), primary_key=True, autoincrement=True)
-    track_id = Column(String, ForeignKey("tracks.id", ondelete="CASCADE"), nullable=False, index=True)
+    track_id = Column(String, ForeignKey("OB_tracks.id", ondelete="CASCADE"), nullable=False, index=True)
     raw_id = Column(String, nullable=False)
     chapter = Column(Integer, nullable=False)
     chapter_title = Column(String, nullable=False)
@@ -132,9 +132,9 @@ class Question(Base):
     track = relationship("Track", back_populates="questions_rel")
 
     __table_args__ = (
-        Index("ix_questions_track_ch_order", "track_id", "chapter", "order_index"),
-        Index("ix_questions_track_ch_boss_order", "track_id", "chapter", "boss_slug", "order_index"),
-        UniqueConstraint("track_id", "chapter", "order_index", name="uq_questions_order"),
+        Index("ix_ob_questions_track_ch_order", "track_id", "chapter", "order_index"),
+        Index("ix_ob_questions_track_ch_boss_order", "track_id", "chapter", "boss_slug", "order_index"),
+        UniqueConstraint("track_id", "chapter", "order_index", name="uq_ob_questions_order"),
     )
 
 

@@ -12,7 +12,7 @@ from app.infrastructure.database.models import (
     Track,
     Question,
 )
-from app.infrastructure.database.engine import build_engine
+from app.infrastructure.database.engine import build_engine, _migrate_legacy_table_names
 
 logger = logging.getLogger("organicbattles.migration")
 
@@ -37,7 +37,8 @@ def migrate_sqlite_to_postgres(
     if isinstance(target_engine, str):
         target_engine = build_engine(target_engine)
 
-    # Ensure schema exists on target database
+    # Ensure schema exists on target database (rename legacy tables first if present)
+    _migrate_legacy_table_names(target_engine)
     Base.metadata.create_all(bind=target_engine)
 
     stats = {
@@ -167,14 +168,14 @@ def migrate_sqlite_to_postgres(
             with target_engine.begin() as conn:
                 conn.execute(text(
                     "SELECT setval("
-                    "  pg_get_serial_sequence('verification_codes', 'id'), "
-                    "  coalesce((SELECT max(id) FROM verification_codes), 1)"
+                    "  pg_get_serial_sequence('OB_verification_codes', 'id'), "
+                    "  coalesce((SELECT max(id) FROM OB_verification_codes), 1)"
                     ");"
                 ))
                 conn.execute(text(
                     "SELECT setval("
-                    "  pg_get_serial_sequence('questions', 'id'), "
-                    "  coalesce((SELECT max(id) FROM questions), 1)"
+                    "  pg_get_serial_sequence('OB_questions', 'id'), "
+                    "  coalesce((SELECT max(id) FROM OB_questions), 1)"
                     ");"
                 ))
         except Exception as seq_err:

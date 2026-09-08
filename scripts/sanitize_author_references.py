@@ -28,24 +28,27 @@ def sanitize_database(db_url: str) -> int:
 
     updated_count = 0
     with engine.begin() as conn:
-        # Check if questions table exists
-        table_exists = False
+        # Check if questions table exists (OB_questions or questions)
         if normalized_url.startswith("sqlite"):
-            res = conn.execute(text("SELECT name FROM sqlite_master WHERE type='table' AND name='questions'")).fetchone()
-            table_exists = res is not None
+            existing = {row[0] for row in conn.execute(text("SELECT name FROM sqlite_master WHERE type='table'")).fetchall()}
         else:
-            res = conn.execute(text("SELECT table_name FROM information_schema.tables WHERE table_name='questions'")).fetchone()
-            table_exists = res is not None
+            existing = {row[0] for row in conn.execute(text("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'")).fetchall()}
 
-        if not table_exists:
-            logger.warning("Table 'questions' does not exist in target database.")
+        if "OB_questions" in existing:
+            q_table = "OB_questions"
+        elif "questions" in existing:
+            q_table = "questions"
+        else:
+            logger.warning("Table 'OB_questions' or 'questions' does not exist in target database.")
             return 0
 
+        t_table = "OB_tracks" if "OB_tracks" in existing else "tracks"
+
         # 1. Sanitize explanations
-        logger.info("Sanitizing question explanations...")
+        logger.info("Sanitizing question explanations in '%s'...", q_table)
         res_exp1 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET explanation = REPLACE(explanation, 'In David Klein''s Organic Chemistry, ', 'In organic chemistry, ')
                 WHERE explanation LIKE '%David Klein%'
             """)
@@ -53,8 +56,8 @@ def sanitize_database(db_url: str) -> int:
         updated_count += res_exp1.rowcount if res_exp1.rowcount != -1 else 0
 
         res_exp2 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET explanation = REPLACE(
                     explanation,
                     'Klein establishes four universal arrow-pushing primitives: nucleophilic attack, leaving group loss, proton transfer, and rearrangement.',
@@ -66,11 +69,11 @@ def sanitize_database(db_url: str) -> int:
         updated_count += res_exp2.rowcount if res_exp2.rowcount != -1 else 0
 
         # 2. Sanitize prompts
-        logger.info("Sanitizing question prompts...")
+        logger.info("Sanitizing question prompts in '%s'...", q_table)
         # ARIO
         res_p1 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET prompt = REPLACE(
                     prompt,
                     'Using Klein''s 4-step ARIO SkillBuilder decision tree, how do you determine which side of an acid-base equilibrium is favored?',
@@ -81,52 +84,52 @@ def sanitize_database(db_url: str) -> int:
         )
         updated_count += res_p1.rowcount if res_p1.rowcount != -1 else 0
 
-        # Lewis structures
+        # Carbocation stability
         res_p2 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET prompt = REPLACE(
                     prompt,
-                    'In Klein''s SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?',
-                    'In the standard SkillBuilder protocol for drawing valid Lewis structures of neutral organic molecules, what is the critical Step 1?'
+                    'Following Klein''s carbocation stability guidelines, which factor provides greater stabilization to a positive charge?',
+                    'Following fundamental carbocation stability guidelines, which factor provides greater stabilization to a positive charge?'
                 )
-                WHERE prompt LIKE '%Klein%Lewis structures%'
+                WHERE prompt LIKE '%Klein%carbocation%'
             """)
         )
         updated_count += res_p2.rowcount if res_p2.rowcount != -1 else 0
 
-        # Naming alkanes
+        # Resonance structures
         res_p3 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET prompt = REPLACE(
                     prompt,
-                    'In Klein''s SkillBuilder algorithm for naming polyfunctional alkanes, what is the first priority step?',
-                    'In the systematic algorithm for naming polyfunctional alkanes, what is the first priority step?'
+                    'Applying Klein''s rules for drawing resonance structures, which curved-arrow movement is strictly forbidden?',
+                    'Applying the fundamental rules for drawing resonance structures, which curved-arrow movement is strictly forbidden?'
                 )
-                WHERE prompt LIKE '%Klein%naming polyfunctional%'
+                WHERE prompt LIKE '%Klein%resonance%'
             """)
         )
         updated_count += res_p3.rowcount if res_p3.rowcount != -1 else 0
 
         # Newman projections
         res_p4 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET prompt = REPLACE(
                     prompt,
-                    'In Klein''s SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?',
-                    'In the SkillBuilder for analyzing butane Newman projections along the C2-C3 bond, which conformation represents the absolute energy minimum?'
+                    'Under Klein''s conformation analysis protocol, what is the dihedral angle in an anti conformation of butane?',
+                    'Under standard conformational analysis protocol, what is the dihedral angle in an anti conformation of butane?'
                 )
-                WHERE prompt LIKE '%Klein%Newman projections%'
+                WHERE prompt LIKE '%Klein%conformation%'
             """)
         )
         updated_count += res_p4.rowcount if res_p4.rowcount != -1 else 0
 
-        # Chair flip
+        # Chair flips
         res_p5 = conn.execute(
-            text("""
-                UPDATE questions
+            text(f"""
+                UPDATE {q_table}
                 SET prompt = REPLACE(
                     prompt,
                     'In Klein''s SkillBuilder for substituted cyclohexanes, how do axial and equatorial substituents change upon a chair flip?',
@@ -142,7 +145,7 @@ def sanitize_database(db_url: str) -> int:
             ch_str = f"{ch:02d}"
             res_pch = conn.execute(
                 text(f"""
-                    UPDATE questions
+                    UPDATE {q_table}
                     SET prompt = REPLACE(
                         prompt,
                         'In Klein''s 3-step SkillBuilder algorithm for Chapter {ch_str} problems, what is the objective of Step 1: Analyze the Problem?',
@@ -155,8 +158,8 @@ def sanitize_database(db_url: str) -> int:
 
         # 3. Any remaining questions with terms in prompt or explanation
         remaining = conn.execute(
-            text("""
-                SELECT id, prompt, explanation FROM questions
+            text(f"""
+                SELECT id, prompt, explanation FROM {q_table}
                 WHERE LOWER(prompt) LIKE '%klein%' OR LOWER(explanation) LIKE '%klein%'
                    OR LOWER(prompt) LIKE '%david%' OR LOWER(explanation) LIKE '%david%'
                    OR LOWER(prompt) LIKE '%mcmurry%' OR LOWER(explanation) LIKE '%mcmurry%'
@@ -175,24 +178,25 @@ def sanitize_database(db_url: str) -> int:
                 new_explanation = re.sub(r"John McMurry\s*", "", new_explanation) if new_explanation else new_explanation
 
                 conn.execute(
-                    text("UPDATE questions SET prompt = :prompt, explanation = :explanation WHERE id = :id"),
+                    text(f"UPDATE {q_table} SET prompt = :prompt, explanation = :explanation WHERE id = :id"),
                     {"prompt": new_prompt, "explanation": new_explanation, "id": row_id}
                 )
                 updated_count += 1
 
         # 4. Sanitize tracks if applicable
-        conn.execute(
-            text("""
-                UPDATE tracks
-                SET title = REPLACE(title, 'Klein Organic Chemistry', 'Comprehensive Organic Chemistry')
-                WHERE title LIKE '%Klein%'
-            """)
-        )
+        if t_table in existing:
+            conn.execute(
+                text(f"""
+                    UPDATE {t_table}
+                    SET title = REPLACE(title, 'Klein Organic Chemistry', 'Comprehensive Organic Chemistry')
+                    WHERE title LIKE '%Klein%'
+                """)
+            )
 
         # 5. Verification query
         verify_count = conn.execute(
-            text("""
-                SELECT COUNT(*) FROM questions
+            text(f"""
+                SELECT COUNT(*) FROM {q_table}
                 WHERE LOWER(prompt) LIKE '%klein%' OR LOWER(explanation) LIKE '%klein%'
                    OR LOWER(prompt) LIKE '%david%' OR LOWER(explanation) LIKE '%david%'
                    OR LOWER(prompt) LIKE '%mcmurry%' OR LOWER(explanation) LIKE '%mcmurry%'

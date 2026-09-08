@@ -168,8 +168,9 @@ def test_tracks_postgresql_live_seeding_and_query():
 
     resolved_url = resolve_postgres_url(db_url)
     pg_engine = build_engine(resolved_url)
-
+    from app.infrastructure.database.engine import _migrate_legacy_table_names
     # Ensure schema on PostgreSQL
+    _migrate_legacy_table_names(pg_engine)
     Base.metadata.create_all(bind=pg_engine)
 
     with Session(pg_engine) as db:

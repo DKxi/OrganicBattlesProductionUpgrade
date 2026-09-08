@@ -53,6 +53,32 @@ def get_active_engine() -> Engine:
 
 
 
+def _migrate_legacy_table_names(eng: Engine) -> None:
+    """Rename legacy un-prefixed tables to OB_ prefix if present."""
+    try:
+        with eng.begin() as conn:
+            if eng.dialect.name == "sqlite":
+                existing = {row[0] for row in conn.execute(text("SELECT name FROM sqlite_master WHERE type='table'")).fetchall()}
+            else:
+                existing = {row[0] for row in conn.execute(text("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'")).fetchall()}
+
+            table_renames = [
+                ("curricula", "OB_curricula"),
+                ("tracks", "OB_tracks"),
+                ("questions", "OB_questions"),
+                ("users", "OB_users"),
+                ("verification_codes", "OB_verification_codes"),
+                ("auth_sessions", "OB_auth_sessions"),
+                ("game_sessions", "OB_game_sessions"),
+            ]
+            for old_tbl, new_tbl in table_renames:
+                if old_tbl in existing and new_tbl not in existing:
+                    logger.info("Migrating legacy table name %s -> %s", old_tbl, new_tbl)
+                    conn.execute(text(f'ALTER TABLE "{old_tbl}" RENAME TO "{new_tbl}"'))
+    except Exception as exc:
+        logger.warning("Table prefix rename check note: %s", exc)
+
+
 def _migrate_sqlite_columns(url: str) -> None:
     """Run SQLite auto-migrations for missing columns if SQLite database file exists."""
     db_file = url.replace("sqlite:///", "")
@@ -60,19 +86,21 @@ def _migrate_sqlite_columns(url: str) -> None:
         try:
             conn = sqlite3.connect(db_file)
             cursor = conn.cursor()
-            cursor.execute("PRAGMA table_info(users)")
+            cursor.execute("PRAGMA table_info(OB_users)")
             user_cols = [row[1] for row in cursor.fetchall()]
-            if "content_source" not in user_cols:
-                cursor.execute("ALTER TABLE users ADD COLUMN content_source TEXT")
-            if "progress_json" not in user_cols:
-                cursor.execute("ALTER TABLE users ADD COLUMN progress_json TEXT")
+            if user_cols:
+                if "content_source" not in user_cols:
+                    cursor.execute("ALTER TABLE OB_users ADD COLUMN content_source TEXT")
+                if "progress_json" not in user_cols:
+                    cursor.execute("ALTER TABLE OB_users ADD COLUMN progress_json TEXT")
 
-            cursor.execute("PRAGMA table_info(game_sessions)")
+            cursor.execute("PRAGMA table_info(OB_game_sessions)")
             sess_cols = [row[1] for row in cursor.fetchall()]
-            if "content_source" not in sess_cols:
-                cursor.execute("ALTER TABLE game_sessions ADD COLUMN content_source TEXT")
-            if "turn_id" not in sess_cols:
-                cursor.execute("ALTER TABLE game_sessions ADD COLUMN turn_id TEXT")
+            if sess_cols:
+                if "content_source" not in sess_cols:
+                    cursor.execute("ALTER TABLE OB_game_sessions ADD COLUMN content_source TEXT")
+                if "turn_id" not in sess_cols:
+                    cursor.execute("ALTER TABLE OB_game_sessions ADD COLUMN turn_id TEXT")
             conn.commit()
             conn.close()
         except Exception as e:
@@ -97,7 +125,8 @@ def switch_database(new_url: str) -> Dict[str, Any]:
         test_engine.dispose()
         raise
 
-    # 2. Auto-create schema on target database
+    # 2. Rename legacy tables if present, then auto-create schema on target database
+    _migrate_legacy_table_names(test_engine)
     Base.metadata.create_all(bind=test_engine)
 
     # If target is SQLite, run schema column migrations
@@ -129,7 +158,8 @@ def _seed_tracks_if_empty() -> None:
 
 
 def ensure_db_schema() -> None:
-    """Ensure database tables exist, SQLite columns are up to date, and tracks are seeded."""
+    """Ensure legacy tables are renamed, database tables exist, SQLite columns are up to date, and tracks are seeded."""
+    _migrate_legacy_table_names(engine)
     Base.metadata.create_all(bind=engine)
     if current_db_url.startswith("sqlite"):
         _migrate_sqlite_columns(current_db_url)

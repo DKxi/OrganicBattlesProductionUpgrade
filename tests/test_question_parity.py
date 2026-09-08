@@ -49,8 +49,8 @@ def test_question_model_and_indexes():
 
     # Verify composite index exists
     index_names = {idx.name for idx in table.indexes}
-    assert "ix_questions_track_ch_boss_order" in index_names
-    assert "ix_questions_track_ch_order" in index_names
+    assert "ix_ob_questions_track_ch_boss_order" in index_names or "ix_questions_track_ch_boss_order" in index_names
+    assert "ix_ob_questions_track_ch_order" in index_names or "ix_questions_track_ch_order" in index_names
 
 
 def test_question_sequential_order_parity():
@@ -189,7 +189,7 @@ def test_zero_textbook_author_references_in_db():
     with SessionLocal() as db:
         for term in ["david", "klein", "mcmurry", "mccurry"]:
             count = db.execute(
-                text("SELECT COUNT(*) FROM questions WHERE LOWER(prompt) LIKE :t OR LOWER(explanation) LIKE :t"),
+                text("SELECT COUNT(*) FROM OB_questions WHERE LOWER(prompt) LIKE :t OR LOWER(explanation) LIKE :t"),
                 {"t": f"%{term}%"}
             ).scalar()
             assert count == 0, f"Found {count} questions in DB matching prohibited author reference: {term}"

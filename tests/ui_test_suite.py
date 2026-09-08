@@ -45,14 +45,14 @@ class UITestRunner:
             try:
                 conn = sqlite3.connect(str(db_path), timeout=10.0)
                 cursor = conn.cursor()
-                cursor.execute("SELECT id FROM users WHERE email = ?", (email.lower(),))
+                cursor.execute("SELECT id FROM OB_users WHERE email = ?", (email.lower(),))
                 user_row = cursor.fetchone()
                 if user_row:
                     user_id = user_row[0]
                     test_code = "777888"
                     chash = code_hash(test_code)
                     cursor.execute(
-                        "INSERT INTO verification_codes (user_id, code_hash, expires_at, used, created_at) VALUES (?, ?, ?, 0, ?)",
+                        "INSERT INTO OB_verification_codes (user_id, code_hash, expires_at, used, created_at) VALUES (?, ?, ?, 0, ?)",
                         (user_id, chash, int(time.time()) + 900, int(time.time()))
                     )
                     conn.commit()
@@ -71,12 +71,12 @@ class UITestRunner:
             try:
                 conn = sqlite3.connect(str(db_path), timeout=10.0)
                 cursor = conn.cursor()
-                cursor.execute("SELECT id FROM users WHERE username = ?", (username,))
+                cursor.execute("SELECT id FROM OB_users WHERE username = ?", (username,))
                 user_row = cursor.fetchone()
                 if user_row:
                     user_id = user_row[0]
                     cursor.execute(
-                        "SELECT id, chapter, boss_hp, player_hp, active_spell, active_question_json, cooldowns_json FROM game_sessions WHERE user_id = ?",
+                        "SELECT id, chapter, boss_hp, player_hp, active_spell, active_question_json, cooldowns_json FROM OB_game_sessions WHERE user_id = ?",
                         (user_id,)
                     )
                     row = cursor.fetchone()
