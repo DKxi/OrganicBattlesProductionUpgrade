@@ -181,4 +181,32 @@ def test_tracks_postgresql_live_seeding_and_query():
         assert len(cfg["curricula"]) >= 2
         assert len(cfg["tracks"]) == 20
 
+        # Verify OB_questions table is populated in PostgreSQL
+        from app.infrastructure.database.models import Question
+        q_count = db.query(Question).count()
+        assert q_count >= 27000, f"Expected at least 27,000 questions in live PostgreSQL, got {q_count}"
+
+    pg_engine.dispose()
+
+
+def test_ob_questions_table_populated_in_postgres():
+    """Verify that live PostgreSQL database has OB_questions populated across all 20 tracks."""
+    values = get_database_env()
+    db_url = values.get("DATABASE_URL")
+    if not db_url or "postgresql" not in db_url.lower():
+        pytest.skip("PostgreSQL not configured in env")
+
+    resolved_url = resolve_postgres_url(db_url)
+    pg_engine = build_engine(resolved_url)
+    with Session(pg_engine) as db:
+        from app.infrastructure.database.models import Question, Track
+        total = db.query(Question).count()
+        assert total >= 27000, f"Expected at least 27,000 questions in PostgreSQL, found {total}"
+
+        tracks = db.query(Track).all()
+        assert len(tracks) == 20
+        for trk in tracks:
+            trk_count = db.query(Question).filter(Question.track_id == trk.id).count()
+            assert trk_count >= 1350, f"Track {trk.id} has {trk_count} questions in PostgreSQL, expected >= 1350"
+
     pg_engine.dispose()

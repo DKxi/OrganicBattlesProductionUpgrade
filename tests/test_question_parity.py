@@ -53,6 +53,36 @@ def test_question_model_and_indexes():
     assert "ix_ob_questions_track_ch_order" in index_names or "ix_questions_track_ch_order" in index_names
 
 
+def test_ob_questions_table_populated():
+    """Verify that OB_questions table is populated with questions in the active database."""
+    with SessionLocal() as db:
+        total_questions = db.query(Question).count()
+        assert total_questions > 0, "OB_questions table must not be empty! Questions must be ingested."
+        assert total_questions >= 1350, f"Expected at least 1,350 ingested questions in active DB, found {total_questions}"
+
+        # Verify default track has complete question set
+        default_count = db.query(Question).filter(Question.track_id == "default").count()
+        assert default_count >= 1350, f"Expected default track to have at least 1,350 questions, found {default_count}"
+
+        # Verify question data integrity
+        sample_q = db.query(Question).filter(Question.track_id == "default").first()
+        assert sample_q is not None
+        assert sample_q.prompt
+        assert sample_q.options_json
+        assert sample_q.correct_answer
+        assert sample_q.chapter >= 1
+
+
+def test_load_db_bundle_loads_from_database():
+    """Verify load_db_bundle reads questions directly from database table."""
+    with SessionLocal() as db:
+        db_bundle = load_db_bundle("default", db=db, root_dir=settings.root_dir)
+        assert db_bundle is not None, "DB bundle should load for track 'default'"
+        assert len(db_bundle.questions) >= 1350, f"Expected at least 1,350 questions in bundle, got {len(db_bundle.questions)}"
+        assert len(db_bundle.chapters) == 27
+        assert len(db_bundle.question_bank_by_chapter[1]) == 50
+
+
 def test_question_sequential_order_parity():
     """
     Critical Test: Ensure that questions in PostgreSQL are returned
