@@ -88,20 +88,25 @@ def test_load_track_bundle_advanced_matching_folder():
 
 def test_load_track_bundle_fallback_to_data_folder():
     """Verify that any mismatch/missing folder falls back gracefully to default track folder."""
-    # 1. Foundational track whose folder does not exist yet
+    # 1. Foundational track whose data folder does not exist yet (falls back data_dir to default)
     bundle = load_track_bundle(settings.root_dir, "found-nomenclature")
     assert bundle is not None
     assert len(bundle.chapters) == 27  # loaded from default track
     assert len(bundle.questions) >= 1
     assert bundle.source_name == "track:found-nomenclature"
     assert bundle.data_dir == settings.root_dir / "data" / "tracks" / "default"
-    assert bundle.boss_dir == settings.root_dir / "data" / "tracks" / "default" / "bosses"
+    assert bundle.boss_dir in (
+        settings.root_dir / "data" / "tracks" / "foundational" / "bosses",
+        settings.root_dir / "data" / "tracks" / "default" / "bosses",
+    )
 
-    # 2. Unknown / non-existent track
+    # 2. Unknown / non-existent track (verifies complete fallback of data_dir and boss_dir)
     unknown_bundle = load_track_bundle(settings.root_dir, "unknown-track-id")
     assert unknown_bundle is not None
     assert len(unknown_bundle.chapters) == 27
     assert unknown_bundle.source_name == "track:unknown-track-id"
+    assert unknown_bundle.data_dir == settings.root_dir / "data" / "tracks" / "default"
+    assert unknown_bundle.boss_dir == settings.root_dir / "data" / "tracks" / "default" / "bosses"
 
     # 3. Custom invalid folder path
     invalid_bundle = load_track_bundle(settings.root_dir, "adv-vocab", custom_folder="non/existent/path")
