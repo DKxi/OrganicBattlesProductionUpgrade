@@ -15,6 +15,7 @@ from app.api.errors import (
     app_exception_handler,
     http_exception_handler,
     validation_exception_handler,
+    generic_exception_handler,
 )
 from app.api.deps import limiter
 from app.api.v1.router import api_v1_router
@@ -41,6 +42,7 @@ def create_app() -> FastAPI:
     application.add_exception_handler(AppException, app_exception_handler)
     application.add_exception_handler(HTTPException, http_exception_handler)
     application.add_exception_handler(RequestValidationError, validation_exception_handler)
+    application.add_exception_handler(Exception, generic_exception_handler)
 
     # Attach Security & Observability Middleware
     application.add_middleware(SecurityAndObservabilityMiddleware)

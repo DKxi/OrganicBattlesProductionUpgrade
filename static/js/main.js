@@ -59,7 +59,8 @@ const adminApi = async (path, body = {}, method = 'POST') => {
   });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
-    const error = new Error(data.detail || 'Admin action unavailable');
+    const errorMsg = data.detail || (data.error && data.error.message) || data.message || `Admin action failed (HTTP ${response.status}: ${response.statusText || 'Error'})`;
+    const error = new Error(errorMsg);
     error.status = response.status;
     throw error;
   }
@@ -759,7 +760,7 @@ async function loadSystemStorageConfig() {
     if (uriInput) {
       uriInput.value = isPg ? res.active_database.url : '';
       uriInput.placeholder = isPg
-        ? 'postgresql+psycopg2://user:pass@host:5432/dbname'
+        ? 'postgresql+psycopg2://user:pass@host:5432/dbname (leave blank for configured default)'
         : 'sqlite:///organic_battles.sqlite3 (leave blank for default)';
     }
 
@@ -1184,10 +1185,11 @@ function bindAdminEvents() {
     r.addEventListener('change', (e) => {
       const uriInput = $('#admin-db-uri-input');
       if (!uriInput) return;
+      uriInput.value = '';
       if (e.target.value === 'sqlite') {
         uriInput.placeholder = 'sqlite:///organic_battles.sqlite3 (leave blank for default)';
       } else {
-        uriInput.placeholder = 'postgresql+psycopg2://user:pass@host:5432/dbname';
+        uriInput.placeholder = 'postgresql+psycopg2://user:pass@host:5432/dbname (leave blank for configured default)';
       }
     });
   });
@@ -1195,7 +1197,10 @@ function bindAdminEvents() {
   $('#admin-db-switch-form')?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const dialect = document.querySelector('input[name="db_dialect"]:checked')?.value || 'sqlite';
-    const connection_url = $('#admin-db-uri-input')?.value.trim() || undefined;
+    let connection_url = $('#admin-db-uri-input')?.value.trim() || undefined;
+    if (connection_url && connection_url.includes('***:***')) {
+      connection_url = undefined;
+    }
     const migrate_data = $('#admin-db-migrate-check')?.checked || false;
     const status = $('#admin-db-status');
 

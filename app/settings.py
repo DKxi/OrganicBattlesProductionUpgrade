@@ -10,6 +10,13 @@ except ImportError:
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SECRETS_PATH = ROOT_DIR / "secrets.toml"
+try:
+    from dotenv import load_dotenv
+    _env_file = ROOT_DIR / "env" if (ROOT_DIR / "env").exists() else ROOT_DIR / ".env"
+    if _env_file.exists():
+        load_dotenv(_env_file)
+except ImportError:
+    pass
 
 try:
     with SECRETS_PATH.open("rb") as secrets_file:

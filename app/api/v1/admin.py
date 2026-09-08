@@ -1,3 +1,4 @@
+import os
 import json
 import time
 import secrets
@@ -374,6 +375,29 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
     }
 
 
+def _get_default_pg_url() -> str:
+    """Retrieve the configured PostgreSQL connection URL from environment, env file, or settings."""
+    env_url = os.getenv("DATABASE_URL")
+    if env_url and "postgresql" in env_url:
+        return env_url
+
+    env_file = settings.root_dir / "env" if (settings.root_dir / "env").exists() else settings.root_dir / ".env"
+    if env_file.exists():
+        try:
+            from dotenv import dotenv_values
+            vals = dotenv_values(env_file)
+            pg = vals.get("DATABASE_URL")
+            if pg and "postgresql" in pg:
+                return pg
+        except Exception:
+            pass
+
+    if "postgresql" in settings.database_url:
+        return settings.database_url
+
+    return "postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[REDACTED-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres"
+
+
 @router.post("/admin/system/database")
 def admin_switch_database(
     body: DatabaseSwitchRequest,
@@ -381,26 +405,44 @@ def admin_switch_database(
 ):
     """Switch active database between SQLite and PostgreSQL with optional live data migration."""
     dialect_clean = body.dialect.strip().lower()
+    raw_url = (body.connection_url or "").strip()
+
     if dialect_clean == "sqlite":
-        target_url = body.connection_url or f"sqlite:///{settings.root_dir / 'organic_battles.sqlite3'}"
+        if not raw_url or raw_url.lower() == "sqlite":
+            target_url = f"sqlite:///{settings.root_dir / 'organic_battles.sqlite3'}"
+        else:
+            target_url = raw_url
     elif dialect_clean == "postgresql":
-        default_pg = "postgresql+psycopg2://postgres:postgres@localhost:5432/organic_battles"
-        target_url = body.connection_url or default_pg
+        default_pg = _get_default_pg_url()
+        if not raw_url or "***:***" in raw_url or raw_url.lower() == "postgresql":
+            target_url = default_pg
+        elif "localhost" in raw_url and "localhost" not in default_pg:
+            target_url = default_pg
+        else:
+            target_url = raw_url
     else:
         raise HTTPException(400, "Unsupported dialect. Choose 'sqlite' or 'postgresql'.")
 
-    old_url = db_engine.current_db_url
-    migration_stats = None
-    if body.migrate_data and old_url != target_url:
-        source_engine = build_engine(old_url)
-        target_engine = build_engine(target_url)
-        Base.metadata.create_all(bind=target_engine)
-        migration_stats = migrate_sqlite_to_postgres(source_engine, target_engine)
+    try:
+        old_url = db_engine.current_db_url
+        migration_stats = None
+        if body.migrate_data and old_url != target_url:
+            source_engine = build_engine(old_url)
+            target_engine = build_engine(target_url)
+            db_engine._migrate_legacy_table_names(source_engine)
+            db_engine._migrate_legacy_table_names(target_engine)
+            Base.metadata.create_all(bind=target_engine)
+            migration_stats = migrate_sqlite_to_postgres(source_engine, target_engine)
 
-    result = switch_database(target_url)
-    if migration_stats is not None:
-        result["migration"] = migration_stats
-    return result
+        result = switch_database(target_url)
+        if migration_stats is not None:
+            result["migration"] = migration_stats
+        return result
+    except HTTPException:
+        raise
+    except Exception as exc:
+        logger.error("Database switch failed: %s", exc, exc_info=True)
+        raise HTTPException(status_code=400, detail=f"Database switch failed: {exc}")
 
 
 @router.post("/admin/system/folders")

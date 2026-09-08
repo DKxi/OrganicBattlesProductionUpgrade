@@ -99,6 +99,53 @@ def test_admin_switch_database_with_migration(admin_client, tmp_path):
         assert db_engine.current_db_url == initial_url
 
 
+def test_admin_switch_database_postgres_and_sqlite(admin_client):
+    """Verify switching between SQLite and PostgreSQL using empty or masked connection URLs."""
+    initial_url = db_engine.current_db_url
+
+    try:
+        # 1. Switch to PostgreSQL with no connection_url specified (uses configured default)
+        pg_res = admin_client.post(
+            "/api/v1/admin/system/database",
+            json={"dialect": "postgresql", "migrate_data": False},
+        )
+        assert pg_res.status_code == 200
+        pg_data = pg_res.json()
+        assert pg_data["status"] == "ok"
+        assert pg_data["dialect"] == "postgresql"
+        assert "postgresql" in db_engine.current_db_url
+
+        # 2. Verify config returns masked URL
+        cfg_res = admin_client.get("/api/v1/admin/system/config")
+        assert cfg_res.status_code == 200
+        masked_url = cfg_res.json()["active_database"]["url"]
+        assert "***:***" in masked_url
+
+        # 3. Switch to PostgreSQL passing the masked URL (e.g. from UI form submission)
+        pg_masked_res = admin_client.post(
+            "/api/v1/admin/system/database",
+            json={"dialect": "postgresql", "connection_url": masked_url, "migrate_data": False},
+        )
+        assert pg_masked_res.status_code == 200
+
+        # 4. Switch back to SQLite with empty URL
+        sqlite_res = admin_client.post(
+            "/api/v1/admin/system/database",
+            json={"dialect": "sqlite", "migrate_data": False},
+        )
+        assert sqlite_res.status_code == 200
+        assert sqlite_res.json()["dialect"] == "sqlite"
+        assert "sqlite" in db_engine.current_db_url
+
+    finally:
+        # Restore initial URL
+        admin_client.post(
+            "/api/v1/admin/system/database",
+            json={"dialect": "sqlite" if "sqlite" in initial_url else "postgresql", "connection_url": initial_url, "migrate_data": False},
+        )
+
+
+
 def test_admin_switch_folders(admin_client):
     """Verify POST /admin/system/folders updates track data_folder and boss_folder."""
     config_path = settings.root_dir / "data" / "tracks_config.json"
