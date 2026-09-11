@@ -47,6 +47,12 @@ class SharedTrackCacheManager:
         self._load_durations_ms: Dict[str, float] = {}
         self._bundle_sizes_bytes: Dict[str, int] = {}
 
+        # Content source, version, and fallback status telemetry
+        self._content_sources: Dict[str, str] = {}
+        self._content_versions: Dict[str, str] = {}
+        self._fallback_statuses: Dict[str, str] = {}
+        self._database_available: bool = True
+
         # Redis connection setup
         self._redis_client = None
         if self.redis_url:
@@ -199,6 +205,10 @@ class SharedTrackCacheManager:
     def clear(self) -> None:
         """Clear all cached bundles across tiers."""
         self.local_cache.clear()
+        self._content_sources.clear()
+        self._content_versions.clear()
+        self._fallback_statuses.clear()
+        self._database_available = True
         if self._redis_client is not None:
             try:
                 keys = self._redis_client.keys("bundle:*")
@@ -254,6 +264,110 @@ class SharedTrackCacheManager:
             "load_durations_ms": dict(self._load_durations_ms),
             "bundle_sizes_bytes": dict(self._bundle_sizes_bytes),
             "cached_tracks": list(self.local_cache.keys()),
+        }
+
+    def record_content_status(
+        self,
+        track_id: str,
+        source: str,
+        version: str,
+        fallback_status: str,
+        database_available: bool = True,
+    ) -> None:
+        """Record content source, version, and fallback status for health tracking."""
+        self._content_sources[track_id] = source
+        self._content_versions[track_id] = version
+        self._fallback_statuses[track_id] = fallback_status
+        self._database_available = database_available
+
+    def get_content_status(self, track_id: str) -> Dict[str, Any]:
+        """Get the recorded status for a specific track."""
+        return {
+            "source": self._content_sources.get(track_id, "unknown"),
+            "version": self._content_versions.get(track_id, "unknown"),
+            "fallback_status": self._fallback_statuses.get(track_id, "unknown"),
+            "status": "degraded" if self._fallback_statuses.get(track_id) in ("cache_degraded", "json_fallback") else "healthy",
+            "release_id": self._content_versions.get(track_id, "unknown"),
+        }
+
+    def is_degraded(self) -> bool:
+        """Check if any track is serving degraded fallback or database is down."""
+        if not self._database_available:
+            return True
+        return any(fb in ("cache_degraded", "json_fallback") for fb in self._fallback_statuses.values())
+
+    def get_any_validated(self, track_id: str) -> Optional[Tuple[str, Any]]:
+        """Look up any validated cached bundle for track_id in local cache or Redis."""
+        # 1. Check local_cache for matching track_id prefix
+        for key in list(self.local_cache.keys()):
+            if key == track_id or key.startswith(f"{track_id}:"):
+                bundle = self.local_cache.get(key)
+                if bundle is not None:
+                    version = key.split(":", 1)[1] if ":" in key else "cached"
+                    return version, bundle
+
+        # 2. Check Redis if available
+        if self._redis_client is not None:
+            try:
+                pattern = f"bundle:{track_id}:*"
+                keys = self._redis_client.keys(pattern)
+                if keys:
+                    first_key = keys[0].decode("utf-8") if isinstance(keys[0], bytes) else str(keys[0])
+                    raw = self._redis_client.get(first_key)
+                    if raw:
+                        decompressed = zlib.decompress(raw)
+                        bundle = pickle.loads(decompressed)
+                        version = first_key.split(":")[-1]
+                        return version, bundle
+            except Exception as exc:
+                logger.debug("Redis get_any_validated note: %s", exc)
+
+        return None
+
+    def has_any_validated_cache(self) -> bool:
+        """Returns True if any track bundles are currently cached in memory or Redis."""
+        if len(self.local_cache) > 0:
+            return True
+        if self._redis_client is not None:
+            try:
+                keys = self._redis_client.keys("bundle:*")
+                if keys:
+                    return True
+            except Exception:
+                pass
+        return False
+
+    def get_health_metrics(self) -> Dict[str, Any]:
+        """Comprehensive health information and metrics for internal diagnostics."""
+        if not self._database_available:
+            if self.has_any_validated_cache():
+                readiness = "degraded"
+            else:
+                readiness = "unavailable"
+        elif any(fb in ("cache_degraded", "json_fallback") for fb in self._fallback_statuses.values()):
+            readiness = "degraded"
+        else:
+            readiness = "ready"
+
+        overall_fallback = "none"
+        if any(fb == "unavailable" for fb in self._fallback_statuses.values()):
+            overall_fallback = "unavailable"
+        elif any(fb == "cache_degraded" for fb in self._fallback_statuses.values()):
+            overall_fallback = "cache_degraded"
+        elif any(fb == "json_fallback" for fb in self._fallback_statuses.values()):
+            overall_fallback = "json_fallback"
+
+        return {
+            "readiness": readiness,
+            "database_available": self._database_available,
+            "has_cached_content": self.has_any_validated_cache(),
+            "degraded_mode": readiness == "degraded",
+            "overall_fallback": overall_fallback,
+            "allow_json_fallback": settings.allow_json_fallback,
+            "content_sources": dict(self._content_sources),
+            "content_versions": dict(self._content_versions),
+            "fallback_statuses": dict(self._fallback_statuses),
+            "cache_stats": self.stats(),
         }
 
 

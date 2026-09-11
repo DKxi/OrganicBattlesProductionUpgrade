@@ -8,6 +8,7 @@ _test_db_path = Path(tempfile.gettempdir()) / "test_organic_battles.sqlite3"
 _test_db_path.unlink(missing_ok=True)
 os.environ["DATABASE_URL"] = f"sqlite:///{_test_db_path}"
 os.environ["DATABASE_PATH"] = str(_test_db_path)
+os.environ["ALLOW_JSON_FALLBACK"] = "true"
 
 sys.path.insert(0, str(Path(__file__).parents[1]))
 

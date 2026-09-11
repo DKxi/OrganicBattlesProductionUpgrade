@@ -394,6 +394,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
         "tracks": tracks_cfg.get("tracks", []),
         "curricula": tracks_cfg.get("curricula", []),
         "track_cache": shared_track_cache.stats(),
+        "health": shared_track_cache.get_health_metrics(),
     }
 
 

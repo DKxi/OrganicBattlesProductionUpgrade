@@ -58,6 +58,7 @@ class Settings(BaseModel):
     redis_url: Optional[str] = Field(default_factory=lambda: get_config_value("REDIS_URL", default=None))
     warm_tracks_on_startup: bool = Field(default_factory=lambda: get_config_value("WARM_TRACKS_ON_STARTUP", default="0") == "1")
     popular_tracks_to_warm: str = Field(default_factory=lambda: str(get_config_value("POPULAR_TRACKS", default="default,adv-vocab,found-nomenclature")))
+    allow_json_fallback: bool = Field(default_factory=lambda: str(get_config_value("ALLOW_JSON_FALLBACK", default="0")).lower() in ("1", "true", "yes"))
     
     # Auth & Security
     verification_code_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("VERIFICATION_CODE_TTL_SECONDS", default=900)))

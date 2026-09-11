@@ -4,6 +4,7 @@ import os
 import re
 from pathlib import Path
 from typing import Dict, Any, List, Tuple, Optional
+from fastapi import HTTPException
 from app.settings import settings
 from app.domain.content.entities import ContentBundle
 
@@ -555,17 +556,80 @@ def load_track_bundle(
 
     # 1. Try loading from database if no custom folder override was requested
     if not custom_folder:
-        db_bundle = load_db_bundle(
-            track_id,
-            db=db,
-            root_dir=root_dir,
-            data_dir=target_data_dir,
-            boss_dir=target_boss_dir,
-        )
+        db_available = True
+        db_bundle = None
+        try:
+            db_bundle = load_db_bundle(
+                track_id,
+                db=db,
+                root_dir=root_dir,
+                data_dir=target_data_dir,
+                boss_dir=target_boss_dir,
+            )
+        except Exception as exc:
+            db_available = False
+            logger.warning("Database error loading track '%s': %s", track_id, exc)
+
         if db_bundle and db_bundle.questions:
+            from app.infrastructure.cache.shared_cache import shared_track_cache
+            rel_id = shared_track_cache.get_content_version(track_id, db=db)
+            shared_track_cache.record_content_status(
+                track_id=track_id,
+                source="database",
+                version=rel_id,
+                fallback_status="none",
+                database_available=True,
+            )
             return db_bundle
 
-    # 2. Fallback to filesystem JSON bundle loading
+        # Database is unavailable or has no questions for this track
+        from app.infrastructure.cache.shared_cache import shared_track_cache
+        cached = shared_track_cache.get_any_validated(track_id)
+        if cached:
+            cached_version, cached_bundle = cached
+            shared_track_cache.record_content_status(
+                track_id=track_id,
+                source="cache",
+                version=cached_version,
+                fallback_status="cache_degraded",
+                database_available=db_available,
+            )
+            logger.warning(
+                "Database unavailable or empty for track '%s'; serving validated cache (version=%s, readiness degraded)",
+                track_id,
+                cached_version,
+            )
+            return cached_bundle
+
+        # No validated cache exists. Only allow JSON fallback if explicitly configured
+        if not settings.allow_json_fallback:
+            shared_track_cache.record_content_status(
+                track_id=track_id,
+                source="none",
+                version="none",
+                fallback_status="unavailable",
+                database_available=db_available,
+            )
+            logger.error(
+                "Database unavailable and no validated cache exists for track '%s'. JSON fallback disallowed in production (ALLOW_JSON_FALLBACK=false)",
+                track_id,
+            )
+            raise HTTPException(
+                status_code=503,
+                detail=f"Service Unavailable: Database is unavailable and no validated cache exists for track '{track_id}'.",
+            )
+
+        # Explicit JSON fallback permitted
+        shared_track_cache.record_content_status(
+            track_id=track_id,
+            source="filesystem_json",
+            version="json_v1",
+            fallback_status="json_fallback",
+            database_available=db_available,
+        )
+        logger.warning("Serving filesystem JSON for track '%s' under explicit ALLOW_JSON_FALLBACK=true", track_id)
+
+    # 2. Filesystem JSON bundle loading (either custom folder override or explicit JSON fallback)
     bundle = load_json_bundle(root_dir, data_dir=target_data_dir, boss_dir=target_boss_dir)
     bundle.source_name = f"track:{track_id}"
     return bundle

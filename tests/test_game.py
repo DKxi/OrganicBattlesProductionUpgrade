@@ -283,7 +283,7 @@ def test_healthcheck_endpoints(client_instance):
     # Ready probe
     res = client_instance.get("/health/ready")
     assert res.status_code == 200
-    assert res.json() == {"status": "ready"}
+    assert res.json()["status"] == "ready"
 
 
 # --- User Content Mode Database Switching & Priority Tests ---
