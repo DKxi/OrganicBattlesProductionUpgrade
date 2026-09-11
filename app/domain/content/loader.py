@@ -599,6 +599,12 @@ def load_track_bundle(
                 track_id,
                 cached_version,
             )
+            from app.observability.metrics import metrics_registry
+            metrics_registry.record_content_version_mismatch(
+                track_id=track_id,
+                requested_version="active_database",
+                active_version=cached_version,
+            )
             return cached_bundle
 
         # No validated cache exists. Only allow JSON fallback if explicitly configured
@@ -628,6 +634,8 @@ def load_track_bundle(
             database_available=db_available,
         )
         logger.warning("Serving filesystem JSON for track '%s' under explicit ALLOW_JSON_FALLBACK=true", track_id)
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_json_fallback(track_id)
 
     # 2. Filesystem JSON bundle loading (either custom folder override or explicit JSON fallback)
     bundle = load_json_bundle(root_dir, data_dir=target_data_dir, boss_dir=target_boss_dir)

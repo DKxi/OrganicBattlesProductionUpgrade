@@ -1,13 +1,71 @@
 import os
 import sqlite3
 import logging
+import time
 from typing import Generator, Dict, Any, Optional
-from sqlalchemy import create_engine, Engine, text
+from sqlalchemy import create_engine, Engine, text, event
 from sqlalchemy.orm import sessionmaker, Session as DBSession
 from app.settings import settings
 from app.infrastructure.database.models import Base
 
 logger = logging.getLogger("organicbattles.database")
+
+
+@event.listens_for(Engine, "before_cursor_execute")
+def _before_cursor_execute(conn, cursor, statement, parameters, context, executemany):
+    context._query_start_time = time.time()
+
+
+@event.listens_for(Engine, "after_cursor_execute")
+def _after_cursor_execute(conn, cursor, statement, parameters, context, executemany):
+    start = getattr(context, "_query_start_time", None)
+    if start is not None:
+        duration_ms = (time.time() - start) * 1000.0
+        try:
+            from app.observability.metrics import metrics_registry
+            metrics_registry.record_query_latency(duration_ms, statement)
+        except Exception:
+            pass
+
+
+def get_connection_pool_status(eng: Optional[Engine] = None) -> Dict[str, Any]:
+    """Inspect active connection pool utilization."""
+    target_engine = eng or globals().get("engine")
+    if not target_engine:
+        return {"status": "unavailable"}
+
+    pool = getattr(target_engine, "pool", None)
+    if not pool:
+        return {"status": "no_pool"}
+
+    size = getattr(pool, "size", lambda: 0)()
+    checked_in = getattr(pool, "checkedin", lambda: 0)()
+    checked_out = getattr(pool, "checkedout", lambda: 0)()
+    overflow = getattr(pool, "overflow", lambda: 0)()
+    total_capacity = size + max(0, overflow)
+    utilization_pct = round((checked_out / total_capacity * 100), 2) if total_capacity > 0 else 0.0
+
+    dialect = "sqlite" if str(target_engine.url).startswith("sqlite") else "postgresql"
+    return {
+        "dialect": dialect,
+        "pool_type": pool.__class__.__name__,
+        "size": size,
+        "checked_in": checked_in,
+        "checked_out": checked_out,
+        "overflow": overflow,
+        "total_capacity": total_capacity,
+        "utilization_pct": utilization_pct,
+    }
+
+
+def _ensure_postgres_extensions(eng: Engine) -> None:
+    """Ensure required PostgreSQL extensions like pg_trgm are enabled."""
+    if eng.dialect.name == "postgresql":
+        try:
+            with eng.begin() as conn:
+                conn.execute(text("CREATE EXTENSION IF NOT EXISTS pg_trgm"))
+        except Exception as exc:
+            logger.debug("pg_trgm extension initialization note: %s", exc)
 
 
 def normalize_db_url(url: str) -> str:
@@ -220,6 +278,7 @@ def switch_database(new_url: str) -> Dict[str, Any]:
         raise
 
     # 2. Rename legacy tables if present, then auto-create schema on target database
+    _ensure_postgres_extensions(test_engine)
     _migrate_legacy_table_names(test_engine)
     Base.metadata.create_all(bind=test_engine)
 
@@ -253,6 +312,7 @@ def _seed_tracks_if_empty() -> None:
 
 def ensure_db_schema() -> None:
     """Ensure legacy tables are renamed, database tables exist, SQLite columns are up to date, and tracks are seeded."""
+    _ensure_postgres_extensions(engine)
     _migrate_legacy_table_names(engine)
     Base.metadata.create_all(bind=engine)
     if current_db_url.startswith("sqlite"):

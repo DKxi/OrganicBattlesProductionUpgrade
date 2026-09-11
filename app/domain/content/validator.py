@@ -6,7 +6,13 @@ SAFE_IMAGE_REGEX = re.compile(r"^[\w\-\–\—]+\.(png|jpg|jpeg|svg|webp)$", re.
 
 class QuestionValidationError(ValueError):
     """Raised when question schema, choices, spells, health, or images fail validation."""
-    pass
+    def __init__(self, message: str, *args):
+        super().__init__(message, *args)
+        try:
+            from app.observability.metrics import metrics_registry
+            metrics_registry.record_ingestion_validation_failure({"error": message})
+        except Exception:
+            pass
 
 
 def validate_question_payload(

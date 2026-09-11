@@ -81,10 +81,27 @@ def admin_get_track_questions(
     if difficulty:
         query = query.filter(Question.difficulty == difficulty)
     if search:
-        search_filter = f"%{search.strip()}%"
-        query = query.filter(
-            (Question.prompt.ilike(search_filter)) | (Question.topic.ilike(search_filter))
-        )
+        clean_search = search.strip()
+        bind = db.get_bind()
+        dialect_name = getattr(getattr(bind, "dialect", None), "name", "")
+        if dialect_name == "postgresql":
+            from sqlalchemy import func, or_
+            ts_query = func.plainto_tsquery("english", clean_search)
+            prompt_ts = func.to_tsvector("english", Question.prompt)
+            topic_ts = func.to_tsvector("english", func.coalesce(Question.topic, ""))
+            query = query.filter(
+                or_(
+                    prompt_ts.bool_op("@@")(ts_query),
+                    topic_ts.bool_op("@@")(ts_query),
+                    Question.prompt.ilike(f"%{clean_search}%"),
+                    Question.topic.ilike(f"%{clean_search}%"),
+                )
+            )
+        else:
+            search_filter = f"%{clean_search}%"
+            query = query.filter(
+                (Question.prompt.ilike(search_filter)) | (Question.topic.ilike(search_filter))
+            )
 
     total = query.count()
     items = (

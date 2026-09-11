@@ -160,6 +160,18 @@ class Question(Base):
         Index("ix_ob_questions_track_ch_order", "track_id", "chapter", "order_index"),
         Index("ix_ob_questions_track_ch_boss_order", "track_id", "chapter", "boss_slug", "order_index"),
         Index("ix_ob_questions_track_release_ch_order", "track_id", "release_id", "chapter", "order_index"),
+        Index(
+            "ix_ob_questions_prompt_trgm",
+            "prompt",
+            postgresql_using="gin",
+            postgresql_ops={"prompt": "gin_trgm_ops"},
+        ),
+        Index(
+            "ix_ob_questions_topic_trgm",
+            "topic",
+            postgresql_using="gin",
+            postgresql_ops={"topic": "gin_trgm_ops"},
+        ),
         UniqueConstraint("track_id", "release_id", "chapter", "order_index", name="uq_ob_questions_order"),
     )
 

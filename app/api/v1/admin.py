@@ -385,6 +385,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
     from app.infrastructure.database.tracks_repo import TracksRepository
     from app.infrastructure.cache.shared_cache import shared_track_cache
     from app.infrastructure.database.engine import get_pool_config_summary
+    from app.observability.metrics import metrics_registry
     tracks_cfg = TracksRepository(db).get_tracks_config()
 
     return {
@@ -397,7 +398,15 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
         "curricula": tracks_cfg.get("curricula", []),
         "track_cache": shared_track_cache.stats(),
         "health": shared_track_cache.get_health_metrics(),
+        "metrics": metrics_registry.get_system_metrics(),
     }
+
+
+@router.get("/admin/system/metrics")
+def get_system_metrics(admin_info: dict = Depends(auth_admin)):
+    """Return all 9 dimensions of observability and performance metrics."""
+    from app.observability.metrics import metrics_registry
+    return metrics_registry.get_system_metrics()
 
 
 def _get_default_pg_url() -> str:

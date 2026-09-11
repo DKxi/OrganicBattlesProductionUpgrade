@@ -117,6 +117,8 @@ def select_spell(
     db.commit()
 
     if updated_rows == 0:
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_combat_concurrency_conflict(game_session.id, "concurrent_select_spell")
         raise HTTPException(409, "Conflict selecting spell due to concurrent action. Please refresh state.")
 
     db.refresh(game_session)
@@ -161,13 +163,19 @@ def answer_question(
 
     # Validate turn_id matching & consumption
     if not game_session.turn_id:
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_combat_concurrency_conflict(game_session.id, "consumed_or_inactive_turn_id")
         raise HTTPException(409, "Turn ID has already been consumed or is not active. Please refresh state.")
 
     if game_session.turn_id != submitted_turn_id:
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_combat_concurrency_conflict(game_session.id, "invalid_or_consumed_turn_id")
         raise HTTPException(409, "Invalid or previously consumed turn ID. Please refresh state.")
 
     # Validate expiration
     if (time.time() - (game_session.updated_at or 0)) > TURN_EXPIRATION_SECONDS:
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_combat_concurrency_conflict(game_session.id, "turn_id_expired")
         raise HTTPException(409, "Turn has expired. Please select a spell again.")
 
     active_q = json.loads(game_session.active_question_json)
@@ -256,6 +264,8 @@ def answer_question(
     # Optimistic Concurrency Update
     expected_version = body.expected_version if body.expected_version is not None else game_session.version
     if game_session.version != expected_version:
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_combat_concurrency_conflict(game_session.id, "optimistic_version_mismatch")
         raise HTTPException(
             status_code=409,
             detail="Combat session was modified by a concurrent turn. Please refresh your state.",
@@ -283,6 +293,8 @@ def answer_question(
     db.commit()
 
     if updated_rows == 0:
+        from app.observability.metrics import metrics_registry
+        metrics_registry.record_combat_concurrency_conflict(game_session.id, "concurrent_update_race")
         raise HTTPException(
             status_code=409,
             detail="Combat session was modified by a concurrent turn. Please refresh your state.",
