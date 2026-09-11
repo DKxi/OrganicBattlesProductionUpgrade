@@ -384,6 +384,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
 
     from app.infrastructure.database.tracks_repo import TracksRepository
     from app.infrastructure.cache.shared_cache import shared_track_cache
+    from app.infrastructure.database.engine import get_pool_config_summary
     tracks_cfg = TracksRepository(db).get_tracks_config()
 
     return {
@@ -391,6 +392,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
             "dialect": dialect,
             "url": display_url,
         },
+        "database_pool": get_pool_config_summary(),
         "tracks": tracks_cfg.get("tracks", []),
         "curricula": tracks_cfg.get("curricula", []),
         "track_cache": shared_track_cache.stats(),

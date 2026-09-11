@@ -1,7 +1,7 @@
 import os
 import sqlite3
 import logging
-from typing import Generator, Dict, Any
+from typing import Generator, Dict, Any, Optional
 from sqlalchemy import create_engine, Engine, text
 from sqlalchemy.orm import sessionmaker, Session as DBSession
 from app.settings import settings
@@ -22,6 +22,90 @@ def normalize_db_url(url: str) -> str:
     return trimmed
 
 
+def is_supabase_pooler(url: str) -> bool:
+    """Detect whether database connection points to a Supabase pooler or proxy."""
+    if not url:
+        return False
+    normalized = url.lower()
+    return "pooler.supabase.com" in normalized or "supabase.co" in normalized
+
+
+def get_pool_config_summary(url: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Calculate deployment-aware database connection pool metrics.
+    Applies conservative defaults (3 to 5 connections) for Supabase poolers,
+    calculates cluster-wide maximum connections, and validates against service limits.
+    """
+    target_url = normalize_db_url(url or globals().get("current_db_url", settings.database_url))
+    is_sqlite = target_url.startswith("sqlite")
+    supabase_pooler = is_supabase_pooler(target_url)
+
+    # 1. Determine pool_size
+    if settings.db_pool_size is not None:
+        pool_size = settings.db_pool_size
+    elif supabase_pooler:
+        # Conservative default: 3 connections per application worker
+        pool_size = 3
+    elif is_sqlite:
+        pool_size = 5
+    else:
+        pool_size = 5
+
+    # 2. Determine max_overflow
+    if settings.db_max_overflow is not None:
+        max_overflow = settings.db_max_overflow
+    elif supabase_pooler:
+        # Conservative burst: 2 overflow connections (total 5 peak per worker)
+        max_overflow = 2
+    elif is_sqlite:
+        max_overflow = 0
+    else:
+        max_overflow = 10
+
+    # 3. Calculate deployment scale
+    workers = max(1, settings.web_concurrency)
+    replicas = max(1, settings.app_replicas)
+    total_workers = workers * replicas
+
+    max_connections_per_worker = pool_size + max_overflow
+    max_connection_total = max_connections_per_worker * total_workers
+    service_limit = settings.db_max_connections_limit
+
+    within_service_limit = max_connection_total <= service_limit
+    if not within_service_limit and not is_sqlite:
+        logger.warning(
+            "Calculated maximum database connection total (%d) exceeds configured service limit (%d) "
+            "(pool_size=%d, max_overflow=%d, workers=%d, replicas=%d). Adjust DB_POOL_SIZE/DB_MAX_OVERFLOW or cluster sizing.",
+            max_connection_total,
+            service_limit,
+            pool_size,
+            max_overflow,
+            workers,
+            replicas,
+        )
+
+    dialect = "sqlite" if is_sqlite else "postgresql"
+    status = "healthy" if within_service_limit else "warning_exceeds_service_limit"
+
+    return {
+        "dialect": dialect,
+        "is_supabase_pooler": supabase_pooler,
+        "pool_size": pool_size,
+        "max_overflow": max_overflow,
+        "pool_timeout": settings.db_pool_timeout,
+        "pool_recycle": settings.db_pool_recycle,
+        "pool_pre_ping": True,
+        "web_concurrency": workers,
+        "app_replicas": replicas,
+        "total_workers": total_workers,
+        "max_connections_per_instance": max_connections_per_worker,
+        "max_connection_total": max_connection_total,
+        "service_limit": service_limit,
+        "within_service_limit": within_service_limit,
+        "status": status,
+    }
+
+
 def build_engine(url: str) -> Engine:
     """Build a SQLAlchemy engine with dialect-specific connection pool settings."""
     normalized = normalize_db_url(url)
@@ -32,12 +116,16 @@ def build_engine(url: str) -> Engine:
             connect_args=connect_args,
             pool_pre_ping=True,
         )
+
+    summary = get_pool_config_summary(normalized)
     return create_engine(
         normalized,
         connect_args=connect_args,
-        pool_pre_ping=True,
-        pool_size=10,
-        max_overflow=20,
+        pool_pre_ping=summary["pool_pre_ping"],
+        pool_size=summary["pool_size"],
+        max_overflow=summary["max_overflow"],
+        pool_timeout=summary["pool_timeout"],
+        pool_recycle=summary["pool_recycle"],
     )
 
 

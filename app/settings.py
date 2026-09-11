@@ -52,6 +52,15 @@ class Settings(BaseModel):
     database_path: Path = Field(default_factory=lambda: Path(get_config_value("DATABASE_PATH", default=str(ROOT_DIR / "organic_battles.sqlite3"))))
     game_content_source: Optional[str] = None
     
+    # Database Connection Pooling & Deployment Scale
+    db_pool_size: Optional[int] = Field(default_factory=lambda: int(os.environ["DB_POOL_SIZE"]) if os.environ.get("DB_POOL_SIZE") else None)
+    db_max_overflow: Optional[int] = Field(default_factory=lambda: int(os.environ["DB_MAX_OVERFLOW"]) if os.environ.get("DB_MAX_OVERFLOW") else None)
+    db_pool_timeout: int = Field(default_factory=lambda: int(get_config_value("DB_POOL_TIMEOUT", default=30)))
+    db_pool_recycle: int = Field(default_factory=lambda: int(get_config_value("DB_POOL_RECYCLE", default=1800)))
+    web_concurrency: int = Field(default_factory=lambda: int(os.getenv("WEB_CONCURRENCY", os.getenv("WORKERS", "1"))))
+    app_replicas: int = Field(default_factory=lambda: int(os.getenv("APP_REPLICAS", os.getenv("REPLICAS", "1"))))
+    db_max_connections_limit: int = Field(default_factory=lambda: int(get_config_value("DB_MAX_CONNECTIONS_LIMIT", default=60)))
+    
     # Content & Cache Management
     max_cached_tracks: int = Field(default_factory=lambda: int(get_config_value("MAX_CACHED_TRACKS", default=4)))
     track_cache_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("TRACK_CACHE_TTL_SECONDS", default=3600)))
