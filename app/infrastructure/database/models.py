@@ -102,6 +102,27 @@ class Track(Base):
 
     curriculum = relationship("Curriculum", back_populates="tracks")
     questions_rel = relationship("Question", back_populates="track", cascade="all, delete-orphan", order_by="Question.order_index")
+    releases = relationship("ContentRelease", back_populates="track", cascade="all, delete-orphan", order_by="ContentRelease.version.desc()")
+
+
+class ContentRelease(Base):
+    __tablename__ = "OB_content_releases"
+
+    id = Column(String, primary_key=True)
+    track_id = Column(String, ForeignKey("OB_tracks.id", ondelete="CASCADE"), nullable=False, index=True)
+    version = Column(Integer, nullable=False, default=1)
+    status = Column(String, nullable=False, default="draft")  # draft, published, archived
+    checksum = Column(String, nullable=True)
+    created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+    published_at = Column(Integer, nullable=True)
+
+    track = relationship("Track", back_populates="releases")
+    questions = relationship("Question", back_populates="release")
+
+    __table_args__ = (
+        Index("ix_ob_content_releases_track_ver", "track_id", "version"),
+        Index("ix_ob_content_releases_track_status", "track_id", "status"),
+    )
 
 
 class Question(Base):
@@ -109,6 +130,7 @@ class Question(Base):
 
     id = Column(BigInteger().with_variant(Integer, "sqlite"), primary_key=True, autoincrement=True)
     track_id = Column(String, ForeignKey("OB_tracks.id", ondelete="CASCADE"), nullable=False, index=True)
+    release_id = Column(String, ForeignKey("OB_content_releases.id", ondelete="SET NULL"), nullable=True, index=True)
     raw_id = Column(String, nullable=False)
     chapter = Column(Integer, nullable=False)
     chapter_title = Column(String, nullable=False)
@@ -130,11 +152,13 @@ class Question(Base):
     updated_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
 
     track = relationship("Track", back_populates="questions_rel")
+    release = relationship("ContentRelease", back_populates="questions")
 
     __table_args__ = (
         Index("ix_ob_questions_track_ch_order", "track_id", "chapter", "order_index"),
         Index("ix_ob_questions_track_ch_boss_order", "track_id", "chapter", "boss_slug", "order_index"),
-        UniqueConstraint("track_id", "chapter", "order_index", name="uq_ob_questions_order"),
+        Index("ix_ob_questions_track_release_ch_order", "track_id", "release_id", "chapter", "order_index"),
+        UniqueConstraint("track_id", "release_id", "chapter", "order_index", name="uq_ob_questions_order"),
     )
 
 

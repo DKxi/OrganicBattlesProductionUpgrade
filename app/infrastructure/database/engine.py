@@ -101,6 +101,12 @@ def _migrate_sqlite_columns(url: str) -> None:
                     cursor.execute("ALTER TABLE OB_game_sessions ADD COLUMN content_source TEXT")
                 if "turn_id" not in sess_cols:
                     cursor.execute("ALTER TABLE OB_game_sessions ADD COLUMN turn_id TEXT")
+
+            cursor.execute("PRAGMA table_info(OB_questions)")
+            q_cols = [row[1] for row in cursor.fetchall()]
+            if q_cols:
+                if "release_id" not in q_cols:
+                    cursor.execute("ALTER TABLE OB_questions ADD COLUMN release_id TEXT")
             conn.commit()
             conn.close()
         except Exception as e:
@@ -163,6 +169,12 @@ def ensure_db_schema() -> None:
     Base.metadata.create_all(bind=engine)
     if current_db_url.startswith("sqlite"):
         _migrate_sqlite_columns(current_db_url)
+    else:
+        try:
+            with engine.begin() as conn:
+                conn.execute(text('ALTER TABLE "OB_questions" ADD COLUMN IF NOT EXISTS "release_id" VARCHAR'))
+        except Exception as exc:
+            logger.debug("PostgreSQL column migration note: %s", exc)
     _seed_tracks_if_empty()
 
 

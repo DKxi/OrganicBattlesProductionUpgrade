@@ -383,7 +383,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
         display_url = f"postgresql://***:***@{display_url}"
 
     from app.infrastructure.database.tracks_repo import TracksRepository
-    from app.api.deps import TRACK_BUNDLES
+    from app.infrastructure.cache.shared_cache import shared_track_cache
     tracks_cfg = TracksRepository(db).get_tracks_config()
 
     return {
@@ -393,7 +393,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
         },
         "tracks": tracks_cfg.get("tracks", []),
         "curricula": tracks_cfg.get("curricula", []),
-        "track_cache": TRACK_BUNDLES.stats() if hasattr(TRACK_BUNDLES, "stats") else {},
+        "track_cache": shared_track_cache.stats(),
     }
 
 
@@ -593,6 +593,68 @@ def admin_tail_logs(
         "lines_count": len(log_lines),
         "lines": log_lines,
     }
+
+
+@router.post("/admin/system/cache/warm")
+def admin_warm_cache(
+    tracks: Optional[str] = None,
+    admin_info: dict = Depends(auth_admin),
+):
+    """Warm cache for specified tracks or configured popular tracks."""
+    from app.infrastructure.cache.shared_cache import shared_track_cache
+    track_ids = [t.strip() for t in tracks.split(",") if t.strip()] if tracks else None
+    results = shared_track_cache.warm_tracks(settings.root_dir, track_ids)
+    return {"status": "ok", "results": results, "stats": shared_track_cache.stats()}
+
+
+@router.get("/admin/tracks/{track_id}/releases")
+def admin_get_track_releases(
+    track_id: str,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """Retrieve versioned content releases for a track."""
+    from app.infrastructure.database.releases_repo import ReleasesRepository
+    repo = ReleasesRepository(db)
+    releases = repo.get_track_releases(track_id)
+    return {
+        "track_id": track_id,
+        "releases": [
+            {
+                "id": r.id,
+                "version": r.version,
+                "status": r.status,
+                "checksum": r.checksum,
+                "created_at": r.created_at,
+                "published_at": r.published_at,
+            }
+            for r in releases
+        ],
+    }
+
+
+@router.post("/admin/tracks/{track_id}/releases/{version}/rollback")
+def admin_rollback_track_release(
+    track_id: str,
+    version: int,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """Roll back active track questions to a previous release version."""
+    from app.infrastructure.database.releases_repo import ReleasesRepository
+    from app.infrastructure.cache.shared_cache import shared_track_cache
+    repo = ReleasesRepository(db)
+    try:
+        active = repo.rollback_to_release(track_id, version)
+        shared_track_cache.invalidate_track(track_id)
+        return {
+            "status": "ok",
+            "message": f"Track '{track_id}' rolled back to release {active.id} (v{version})",
+            "active_release": active.id,
+            "version": active.version,
+        }
+    except ValueError as exc:
+        raise HTTPException(404, str(exc))
 
 
 @router.post("/admin/logout")

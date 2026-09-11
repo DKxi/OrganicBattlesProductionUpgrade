@@ -35,15 +35,42 @@ TRACK_BUNDLES: BoundedTrackCache = BoundedTrackCache(
 )
 
 
+from app.infrastructure.cache.shared_cache import shared_track_cache
+
+
 def get_content_bundle(mode: str) -> ContentBundle:
-    """Retrieve preloaded content bundle, including dynamic track bundles with bounded caching."""
+    """Retrieve preloaded content bundle, including dynamic track bundles with bounded versioned caching."""
     if mode.startswith("track:") or mode == "default" or mode.startswith("adv-") or mode.startswith("found-"):
         track_id = mode[6:] if mode.startswith("track:") else mode
-        if track_id not in TRACK_BUNDLES:
-            with TRACK_BUNDLES._lock:
-                if track_id not in TRACK_BUNDLES:
-                    TRACK_BUNDLES[track_id] = load_track_bundle(settings.root_dir, track_id)
-        return TRACK_BUNDLES[track_id]
+
+        # If explicitly cached in TRACK_BUNDLES (e.g. custom folder override), return directly
+        if track_id in TRACK_BUNDLES:
+            return TRACK_BUNDLES[track_id]
+
+        # 1. Resolve active release version for this track
+        rel_id = shared_track_cache.get_content_version(track_id)
+
+        # 2. Check shared/bounded cache by (track_id, release_id)
+        bundle = shared_track_cache.get(track_id, rel_id)
+        if bundle is not None:
+            return bundle
+
+        # 3. Cache miss: acquire per-track rebuild lock (prevents concurrent duplicate builds)
+        lock = shared_track_cache.get_track_rebuild_lock(track_id)
+        with lock:
+            # Double check if another worker/thread completed the build
+            bundle = shared_track_cache.get(track_id, rel_id)
+            if bundle is not None:
+                return bundle
+
+            start_t = time.time()
+            bundle = load_track_bundle(settings.root_dir, track_id)
+            duration_ms = (time.time() - start_t) * 1000.0
+
+            shared_track_cache.set(track_id, rel_id, bundle, load_duration_ms=duration_ms)
+            TRACK_BUNDLES[track_id] = bundle
+
+        return bundle
     return JSON_DATA if mode == "json" else APP_DATA
 
 

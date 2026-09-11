@@ -89,9 +89,13 @@ def ingest_questions_data(
         chapter_files.sort(key=_extract_ch_num)
         logger.info("Ingesting track '%s' from %s (%d files)...", track.id, track_dir, len(chapter_files))
 
-        # Idempotently remove existing questions for this track
+        from app.infrastructure.database.releases_repo import ReleasesRepository
+        from app.infrastructure.cache.shared_cache import shared_track_cache
         db.query(Question).filter(Question.track_id == track.id).delete()
         db.commit()
+
+        releases_repo = ReleasesRepository(db)
+        draft_rel = releases_repo.create_draft_release(track.id)
 
         buffer: List[Dict[str, Any]] = []
         track_q_count = 0
@@ -123,6 +127,7 @@ def ingest_questions_data(
 
                 buffer.append({
                     "track_id": track.id,
+                    "release_id": draft_rel.id,
                     "raw_id": str(q_data.get("id", f"ch{ch_num:02d}_q{current_order:03d}")),
                     "chapter": ch_num,
                     "chapter_title": ch_title,
@@ -156,14 +161,19 @@ def ingest_questions_data(
             track_q_count += len(buffer)
             buffer.clear()
 
-        # Update question count in Track record
-        track.questions = track_q_count
-        track.chapters = len(chapter_files)
-        db.commit()
+        # Validate count before atomic activation
+        if track_q_count > 0:
+            releases_repo.publish_release(draft_rel.id)
+            track.questions = track_q_count
+            track.chapters = len(chapter_files)
+            db.commit()
+            shared_track_cache.invalidate_track(track.id)
+            logger.info("Track '%s' atomically activated under release %s (%d questions).", track.id, draft_rel.id, track_q_count)
+        else:
+            logger.warning("Track '%s' yielded 0 questions; draft %s discarded.", track.id, draft_rel.id)
 
         total_ingested += track_q_count
         tracks_processed += 1
-        logger.info("Track '%s': %d questions ingested.", track.id, track_q_count)
 
     logger.info("Total ingested across %d tracks: %d questions.", tracks_processed, total_ingested)
     return {"total_questions": total_ingested, "tracks_processed": tracks_processed}

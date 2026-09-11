@@ -55,6 +55,9 @@ class Settings(BaseModel):
     # Content & Cache Management
     max_cached_tracks: int = Field(default_factory=lambda: int(get_config_value("MAX_CACHED_TRACKS", default=4)))
     track_cache_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("TRACK_CACHE_TTL_SECONDS", default=3600)))
+    redis_url: Optional[str] = Field(default_factory=lambda: get_config_value("REDIS_URL", default=None))
+    warm_tracks_on_startup: bool = Field(default_factory=lambda: get_config_value("WARM_TRACKS_ON_STARTUP", default="0") == "1")
+    popular_tracks_to_warm: str = Field(default_factory=lambda: str(get_config_value("POPULAR_TRACKS", default="default,adv-vocab,found-nomenclature")))
     
     # Auth & Security
     verification_code_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("VERIFICATION_CODE_TTL_SECONDS", default=900)))

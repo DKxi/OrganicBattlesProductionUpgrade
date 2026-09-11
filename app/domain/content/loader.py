@@ -318,14 +318,17 @@ def get_track_config(root_dir: Path, track_id: str, db: Optional[Any] = None) ->
 
 
 def invalidate_bundle_cache(track_id: Optional[str] = None) -> None:
-    """Invalidate in-memory cached content bundles."""
+    """Invalidate cached content bundles across local and shared cache tiers."""
     try:
         from app.api import deps
+        from app.infrastructure.cache.shared_cache import shared_track_cache
         if track_id:
             deps.TRACK_BUNDLES.pop(track_id, None)
             deps.TRACK_BUNDLES.pop(f"track:{track_id}", None)
+            shared_track_cache.invalidate_track(track_id)
         else:
             deps.TRACK_BUNDLES.clear()
+            shared_track_cache.clear()
     except Exception as exc:
         logger.debug("Cache invalidation note: %s", exc)
 
@@ -336,34 +339,46 @@ def load_db_bundle(
     root_dir: Optional[Path] = None,
     data_dir: Optional[Path] = None,
     boss_dir: Optional[Path] = None,
+    release_id: Optional[str] = None,
 ) -> Optional[ContentBundle]:
     """
     Build a ContentBundle directly from database questions table.
+    Filters by active content release when available.
     Preserves exact order_index sequence for question_boss_bank.
     """
     from app.infrastructure.database.models import Question
     from app.infrastructure.database.engine import SessionLocal
+    from app.infrastructure.database.releases_repo import ReleasesRepository
 
     def _fetch_questions(session):
-        return (
-            session.query(
-                Question.chapter,
-                Question.options_json,
-                Question.prompt,
-                Question.correct_answer,
-                Question.explanation,
-                Question.images_json,
-                Question.boss_slug,
-                Question.boss_name,
-                Question.spells_json,
-                Question.chapter_title,
-                Question.health_json,
-                Question.topic,
-            )
-            .filter(Question.track_id == track_id)
-            .order_by(Question.chapter.asc(), Question.order_index.asc())
-            .all()
-        )
+        target_rel_id = release_id
+        if not target_rel_id:
+            releases_repo = ReleasesRepository(session)
+            active_rel = releases_repo.get_active_release(track_id)
+            if active_rel:
+                target_rel_id = active_rel.id
+
+        q = session.query(
+            Question.chapter,
+            Question.options_json,
+            Question.prompt,
+            Question.correct_answer,
+            Question.explanation,
+            Question.images_json,
+            Question.boss_slug,
+            Question.boss_name,
+            Question.spells_json,
+            Question.chapter_title,
+            Question.health_json,
+            Question.topic,
+        ).filter(Question.track_id == track_id)
+
+        if target_rel_id:
+            # First check if questions exist for this release_id
+            if session.query(Question.id).filter(Question.track_id == track_id, Question.release_id == target_rel_id).first():
+                q = q.filter(Question.release_id == target_rel_id)
+
+        return q.order_by(Question.chapter.asc(), Question.order_index.asc()).all()
 
     questions_rows = []
     if db is not None:

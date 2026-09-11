@@ -15,6 +15,7 @@ from app.infrastructure.database.models import (
     Curriculum,
     Track,
     Question,
+    ContentRelease,
 )
 from app.infrastructure.database.engine import _migrate_legacy_table_names, SessionLocal
 
@@ -27,12 +28,13 @@ EXPECTED_OB_TABLES = {
     "OB_curricula",
     "OB_tracks",
     "OB_questions",
+    "OB_content_releases",
 }
 
 
 def test_all_models_have_ob_prefix():
     """Verify all declarative models have __tablename__ prefixed with 'OB_'."""
-    models = [User, VerificationCode, AuthSession, GameSession, Curriculum, Track, Question]
+    models = [User, VerificationCode, AuthSession, GameSession, Curriculum, Track, Question, ContentRelease]
     for model in models:
         table_name = model.__tablename__
         assert table_name.startswith("OB_"), f"Model {model.__name__} has un-prefixed table name: {table_name}"
