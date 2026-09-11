@@ -10,11 +10,24 @@ except ImportError:
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SECRETS_PATH = ROOT_DIR / "secrets.toml"
+_loaded_env_file = None
 try:
     from dotenv import load_dotenv
-    _env_file = ROOT_DIR / "env" if (ROOT_DIR / "env").exists() else ROOT_DIR / ".env"
-    if _env_file.exists():
-        load_dotenv(_env_file)
+
+    # Prioritize local.env over legacy env, .env, and prod.env
+    _custom_env = os.getenv("ENV_FILE")
+    _candidates = [
+        ROOT_DIR / _custom_env if _custom_env else None,
+        ROOT_DIR / "local.env",
+        ROOT_DIR / "env",
+        ROOT_DIR / ".env",
+        ROOT_DIR / "prod.env",
+    ]
+    for _cand in _candidates:
+        if _cand and _cand.exists():
+            load_dotenv(_cand, override=False)
+            _loaded_env_file = _cand
+            break
 except ImportError:
     pass
 

@@ -6,7 +6,11 @@ import psycopg2
 from sqlalchemy import create_engine, text
 
 ROOT_DIR = Path(__file__).parents[1]
-ENV_FILE = ROOT_DIR / "env" if (ROOT_DIR / "env").exists() else ROOT_DIR / ".env"
+ENV_FILE = (
+    ROOT_DIR / "local.env"
+    if (ROOT_DIR / "local.env").exists()
+    else (ROOT_DIR / "env" if (ROOT_DIR / "env").exists() else ROOT_DIR / ".env")
+)
 
 
 def get_database_env():
