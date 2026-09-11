@@ -163,28 +163,29 @@ def test_admin_update_question(client, admin_headers):
 
 
 def test_admin_reorder_questions(client, admin_headers):
-    """Test reordering questions in a chapter."""
+    """Test reordering questions scoped to a boss."""
     with SessionLocal() as db:
         qs = (
             db.query(Question)
-            .filter(Question.track_id == "default", Question.chapter == 1)
+            .filter(Question.track_id == "default", Question.chapter == 1, Question.boss_slug == "orbital-ogre")
             .order_by(Question.order_index.asc())
-            .limit(3)
             .all()
         )
-        assert len(qs) == 3
+        assert len(qs) > 0
         ids = [q.id for q in qs]
 
-    # Swap first two using admin reorder endpoint
-    reordered_ids = [ids[1], ids[0], ids[2]]
+    # Swap first two using admin reorder endpoint scoped to boss
+    reordered_ids = list(ids)
+    reordered_ids[0], reordered_ids[1] = reordered_ids[1], reordered_ids[0]
     resp = client.post(
-        "/api/admin/tracks/default/chapters/1/reorder",
+        "/api/admin/tracks/default/chapters/1/bosses/orbital-ogre/reorder",
         json={"question_ids": reordered_ids},
         headers=admin_headers,
     )
     assert resp.status_code == 200
     data = resp.json()
-    assert data["reordered_count"] == 3
+    assert data["reordered_count"] == len(ids)
+    assert "release_id" in data
 
     with SessionLocal() as db:
         q1 = db.query(Question).filter(Question.id == ids[1]).first()
@@ -192,9 +193,9 @@ def test_admin_reorder_questions(client, admin_headers):
         assert q1.order_index == 0
         assert q0.order_index == 1
 
-    # Restore original order using endpoint to exercise two-phase update
+    # Restore original order using endpoint to exercise single transaction update
     restore_resp = client.post(
-        "/api/admin/tracks/default/chapters/1/reorder",
+        "/api/admin/tracks/default/chapters/1/bosses/orbital-ogre/reorder",
         json={"question_ids": ids},
         headers=admin_headers,
     )

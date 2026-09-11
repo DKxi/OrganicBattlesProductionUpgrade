@@ -44,7 +44,7 @@ class ReleasesRepository:
             .all()
         )
 
-    def create_draft_release(self, track_id: str, checksum: Optional[str] = None) -> ContentRelease:
+    def create_draft_release(self, track_id: str, checksum: Optional[str] = None, commit: bool = True) -> ContentRelease:
         """Create a new draft content release with an incremented version number."""
         next_ver = self.get_latest_version(track_id) + 1
         release_id = f"{track_id}_v{next_ver}"
@@ -65,12 +65,15 @@ class ReleasesRepository:
             published_at=None,
         )
         self.db.add(release)
-        self.db.commit()
-        self.db.refresh(release)
+        if commit:
+            self.db.commit()
+            self.db.refresh(release)
+        else:
+            self.db.flush()
         logger.info("Created draft content release %s (v%d) for track %s", release_id, next_ver, track_id)
         return release
 
-    def publish_release(self, release_id: str) -> ContentRelease:
+    def publish_release(self, release_id: str, commit: bool = True) -> ContentRelease:
         """
         Atomically publish a release:
         - Sets any previously published releases for this track to 'archived'.
@@ -91,8 +94,11 @@ class ReleasesRepository:
 
         release.status = "published"
         release.published_at = int(time.time())
-        self.db.commit()
-        self.db.refresh(release)
+        if commit:
+            self.db.commit()
+            self.db.refresh(release)
+        else:
+            self.db.flush()
         logger.info("Atomically published release %s (v%d) for track %s", release.id, release.version, track_id)
         return release
 

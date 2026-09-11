@@ -1,12 +1,15 @@
 import json
 import logging
-from typing import Optional, List, Dict, Any
+import time
+from typing import Optional, List, Dict, Any, Literal
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field, ConfigDict
 from sqlalchemy.orm import Session as DBSession
 
 from app.api.deps import get_db, auth_admin
 from app.infrastructure.database.models import Question, Track
+from app.infrastructure.database.releases_repo import ReleasesRepository
+from app.infrastructure.cache.shared_cache import shared_track_cache
 from app.domain.content.loader import invalidate_bundle_cache
 
 from app.domain.content.validator import validate_question_payload, QuestionValidationError
@@ -44,7 +47,11 @@ class QuestionUpdateRequest(BaseModel):
 
 
 class ReorderQuestionsRequest(BaseModel):
-    question_ids: List[int] = Field(..., min_length=1, description="Ordered list of question primary key IDs")
+    boss_slug: Optional[str] = Field(None, description="Optional boss slug to scope the reorder operation")
+    question_ids: Optional[List[int]] = Field(None, description="Complete ordered permutation of question IDs for this scope")
+    move_question_id: Optional[int] = Field(None, description="ID of question to move")
+    target_question_id: Optional[int] = Field(None, description="ID of reference question to move before/after")
+    position: Optional[Literal["before", "after"]] = Field(None, description="Placement relative to target ('before' or 'after')")
 
 
 class IngestQuestionsRequest(BaseModel):
@@ -208,10 +215,12 @@ def admin_update_question(
     if body.difficulty is not None:
         q.difficulty = body.difficulty
 
+    q.updated_at = int(time.time())
     db.commit()
     db.refresh(q)
 
-    # Invalidate in-memory bundle cache for this track
+    # Invalidate caches for this track
+    shared_track_cache.invalidate_track(q.track_id)
     invalidate_bundle_cache(q.track_id)
 
     return {
@@ -222,49 +231,176 @@ def admin_update_question(
     }
 
 
-@router.post("/admin/tracks/{track_id}/chapters/{chapter}/reorder")
-def admin_reorder_questions(
+def _execute_reorder(
     track_id: str,
     chapter: int,
+    boss_slug: Optional[str],
     body: ReorderQuestionsRequest,
-    admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
-):
-    """
-    Reorder questions within a specific track chapter.
-    Assigns sequential order_index (0, 1, 2, ...) to preserve exact delivery order.
-    Uses two-phase update to prevent intermediate unique constraint collisions.
-    """
+    db: DBSession,
+) -> dict:
     track = db.query(Track).filter(Track.id == track_id).first()
     if not track:
         raise HTTPException(404, f"Track '{track_id}' not found")
 
-    # Phase 1: Set temporary negative order_index
-    for temp_idx, q_id in enumerate(body.question_ids):
+    effective_boss_slug = boss_slug or body.boss_slug
+
+    q_filter = [Question.track_id == track_id, Question.chapter == chapter]
+    if effective_boss_slug:
+        q_filter.append(Question.boss_slug == effective_boss_slug)
+
+    existing_questions = (
+        db.query(Question)
+        .filter(*q_filter)
+        .order_by(Question.order_index.asc(), Question.id.asc())
+        .all()
+    )
+
+    if not existing_questions:
+        scope_desc = f"track '{track_id}', chapter {chapter}" + (f", boss '{effective_boss_slug}'" if effective_boss_slug else "")
+        raise HTTPException(404, f"No questions found for {scope_desc}")
+
+    existing_id_list = [q.id for q in existing_questions]
+    existing_id_set = set(existing_id_list)
+
+    final_ordered_ids: List[int] = []
+
+    if body.move_question_id is not None or body.target_question_id is not None or body.position is not None:
+        if body.move_question_id is None or body.target_question_id is None or body.position is None:
+            raise HTTPException(400, "move_question_id, target_question_id, and position ('before' or 'after') must all be provided for move operations.")
+
+        if body.move_question_id not in existing_id_set:
+            raise HTTPException(400, f"move_question_id {body.move_question_id} not found in scoped questions")
+        if body.target_question_id not in existing_id_set:
+            raise HTTPException(400, f"target_question_id {body.target_question_id} not found in scoped questions")
+        if body.move_question_id == body.target_question_id:
+            raise HTTPException(400, "move_question_id and target_question_id must be different")
+
+        working_ids = [qid for qid in existing_id_list if qid != body.move_question_id]
+        target_idx = working_ids.index(body.target_question_id)
+        insert_idx = target_idx if body.position == "before" else target_idx + 1
+        working_ids.insert(insert_idx, body.move_question_id)
+        final_ordered_ids = working_ids
+
+    elif body.question_ids is not None:
+        if len(body.question_ids) != len(set(body.question_ids)):
+            raise HTTPException(400, "Duplicate question IDs are not permitted in reorder request")
+
+        submitted_set = set(body.question_ids)
+        unknown_ids = submitted_set - existing_id_set
+        if unknown_ids:
+            raise HTTPException(400, f"Unknown question ID(s) for this scope: {sorted(list(unknown_ids))}")
+
+        missing_ids = existing_id_set - submitted_set
+        if missing_ids:
+            raise HTTPException(
+                400,
+                f"Incomplete question ID set. Expected complete permutation of {len(existing_id_set)} questions for this scope, missing: {sorted(list(missing_ids))}"
+            )
+
+        final_ordered_ids = body.question_ids
+    else:
+        raise HTTPException(400, "Must provide either 'question_ids' (complete set) or 'move_question_id', 'target_question_id', and 'position'.")
+
+    base_order = min(q.order_index for q in existing_questions)
+    now_ts = int(time.time())
+
+    try:
+        releases_repo = ReleasesRepository(db)
+        draft_rel = releases_repo.create_draft_release(track_id, commit=False)
+
+        # Temporary positive offset within transaction to prevent unique constraint collisions
+        temp_offset = 1000000 + base_order
+        for idx, q_id in enumerate(final_ordered_ids):
+            db.query(Question).filter(Question.id == q_id).update({
+                "order_index": temp_offset + idx,
+            }, synchronize_session=False)
+
+        db.flush()
+
+        # Final sequential order_index, new release_id, and updated_at
+        for new_idx, q_id in enumerate(final_ordered_ids):
+            db.query(Question).filter(Question.id == q_id).update({
+                "order_index": base_order + new_idx,
+                "release_id": draft_rel.id,
+                "updated_at": now_ts,
+            }, synchronize_session=False)
+
+        # Update remaining track questions to new release
         db.query(Question).filter(
-            Question.id == q_id, Question.track_id == track_id, Question.chapter == chapter
-        ).update({"order_index": -(temp_idx + 100000)})
-    db.commit()
+            Question.track_id == track_id,
+            ~Question.id.in_(final_ordered_ids),
+        ).update({
+            "release_id": draft_rel.id,
+        }, synchronize_session=False)
 
-    # Phase 2: Set final sequential order_index
-    updated_count = 0
-    for new_idx, q_id in enumerate(body.question_ids):
-        affected = (
-            db.query(Question)
-            .filter(Question.id == q_id, Question.track_id == track_id, Question.chapter == chapter)
-            .update({"order_index": new_idx})
-        )
-        updated_count += affected
+        # Publish release
+        releases_repo.publish_release(draft_rel.id, commit=False)
 
-    db.commit()
+        # Single transaction commit
+        db.commit()
+
+    except Exception as exc:
+        db.rollback()
+        logger.error("Failed to reorder questions in track '%s', chapter %d: %s", track_id, chapter, exc)
+        raise HTTPException(500, f"Reorder operation failed and was rolled back: {exc}")
+
+    # Invalidate distributed cluster cache and local cache only after commit
+    shared_track_cache.invalidate_track(track_id)
     invalidate_bundle_cache(track_id)
 
     return {
         "status": "ok",
         "track_id": track_id,
         "chapter": chapter,
-        "reordered_count": updated_count,
+        "boss_slug": effective_boss_slug,
+        "reordered_count": len(final_ordered_ids),
+        "release_id": draft_rel.id,
+        "new_version": draft_rel.version,
     }
+
+
+@router.post("/admin/tracks/{track_id}/chapters/{chapter}/bosses/{boss_slug}/reorder")
+def admin_reorder_questions_by_boss(
+    track_id: str,
+    chapter: int,
+    boss_slug: str,
+    body: ReorderQuestionsRequest,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """
+    Reorder questions scoped to a specific track, chapter, and boss.
+    Requires either a complete ordered set or an explicit move-before/after operation.
+    """
+    return _execute_reorder(
+        track_id=track_id,
+        chapter=chapter,
+        boss_slug=boss_slug,
+        body=body,
+        db=db,
+    )
+
+
+@router.post("/admin/tracks/{track_id}/chapters/{chapter}/reorder")
+def admin_reorder_questions(
+    track_id: str,
+    chapter: int,
+    body: ReorderQuestionsRequest,
+    boss_slug: Optional[str] = Query(None, description="Optional boss slug to scope reorder"),
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """
+    Reorder questions within a specific track chapter (and optionally boss).
+    Assigns sequential order_index in a single transaction with atomic release publishing.
+    """
+    return _execute_reorder(
+        track_id=track_id,
+        chapter=chapter,
+        boss_slug=boss_slug,
+        body=body,
+        db=db,
+    )
 
 
 @router.post("/admin/questions/ingest")
