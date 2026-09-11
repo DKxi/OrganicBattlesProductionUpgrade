@@ -406,9 +406,21 @@ def load_db_bundle(
         spell_values: Dict[Any, List[int]] = {}
         spell_damage: Dict[int, int] = {}
 
+        def _parse_json(val: Any, default: Any) -> Any:
+            if val is None:
+                return default
+            if isinstance(val, (list, dict)):
+                return val
+            if isinstance(val, str):
+                try:
+                    return json.loads(val)
+                except Exception:
+                    return default
+            return default
+
         for q in questions_rows:
             ch_id = q.chapter
-            options_data = json.loads(q.options_json) if q.options_json else []
+            options_data = _parse_json(q.options_json, [])
             choices = [opt["text"] for opt in options_data if isinstance(opt, dict) and "text" in opt]
             prompt = q.prompt
             correct = q.correct_answer or (choices[0] if choices else "")
@@ -416,13 +428,13 @@ def load_db_bundle(
 
             explanations[prompt] = q.explanation or f"The correct answer is {correct}."
 
-            images = json.loads(q.images_json) if q.images_json else []
+            images = _parse_json(q.images_json, [])
             boss_image = images[0] if images else f"{q.boss_slug}.png"
             boss_images[prompt] = boss_image
             boss_images[q.boss_slug] = boss_image
             boss_images[q.boss_name] = boss_image
 
-            sp_vals = [int(v) for v in (json.loads(q.spells_json) if q.spells_json else [20, 30, 45])]
+            sp_vals = [int(v) for v in _parse_json(q.spells_json, [20, 30, 45])]
             spell_values[(ch_id, q.boss_slug, prompt)] = sp_vals
             spell_values.setdefault(prompt, sp_vals)
             for dmg in sp_vals:
@@ -447,7 +459,7 @@ def load_db_bundle(
 
             b_map = chapters_map[ch_id]["bosses_map"]
             if q.boss_slug not in b_map:
-                health_vals = [int(h) for h in (json.loads(q.health_json) if q.health_json else [100])]
+                health_vals = [int(h) for h in _parse_json(q.health_json, [100])]
                 health = max(health_vals) if health_vals else 100
                 b_map[q.boss_slug] = {
                     "id": q.boss_slug,

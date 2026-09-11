@@ -1,7 +1,9 @@
 import time
-from sqlalchemy import Column, String, Integer, BigInteger, Text, ForeignKey, Index, UniqueConstraint
+from sqlalchemy import Column, String, Integer, BigInteger, Text, ForeignKey, Index, UniqueConstraint, JSON
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import declarative_base, relationship
 
+JSON_VARIANT = JSON().with_variant(JSONB, "postgresql")
 Base = declarative_base()
 
 
@@ -141,13 +143,13 @@ class Question(Base):
     difficulty = Column(String, nullable=True)
     question_type = Column(String, nullable=False, default="Multiple Choice")
     prompt = Column(Text, nullable=False)
-    options_json = Column(Text, nullable=False)    # JSON serialized list of options [{label, text}]
+    options_json = Column(JSON_VARIANT, nullable=False)    # JSON/JSONB serialized list of options [{label, text}]
     correct_option = Column(String, nullable=False)
     correct_answer = Column(Text, nullable=False)
     explanation = Column(Text, nullable=False)
-    spells_json = Column(Text, nullable=False, default="[20, 30, 45]")
-    health_json = Column(Text, nullable=False, default="[100]")
-    images_json = Column(Text, nullable=False, default="[]")
+    spells_json = Column(JSON_VARIANT, nullable=False, default=lambda: [20, 30, 45])
+    health_json = Column(JSON_VARIANT, nullable=False, default=lambda: [100])
+    images_json = Column(JSON_VARIANT, nullable=False, default=list)
     created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
     updated_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
 

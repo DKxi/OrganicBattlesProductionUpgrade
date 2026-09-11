@@ -19,6 +19,7 @@ from app.infrastructure.database.engine import SessionLocal, get_active_engine
 from app.infrastructure.database.models import Base, Curriculum, Track, Question
 from app.infrastructure.database.tracks_repo import TracksRepository
 from app.domain.content.loader import _slug
+from app.domain.content.validator import validate_question_payload, QuestionValidationError
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("organicbattles.ingest")
@@ -125,6 +126,15 @@ def ingest_questions_data(
                 health_list = q_data.get("health", [100])
                 images_list = q_data.get("images", [f"{boss_slug}.png"])
 
+                v_opts, v_c_opt, v_c_ans, v_spells, v_health, v_images = validate_question_payload(
+                    options=options_list,
+                    correct_option=str(q_data.get("correct_option", "A")),
+                    correct_answer=str(correct_ans),
+                    spells=spells_list,
+                    health=health_list,
+                    images=images_list,
+                )
+
                 buffer.append({
                     "track_id": track.id,
                     "release_id": draft_rel.id,
@@ -138,13 +148,13 @@ def ingest_questions_data(
                     "difficulty": q_data.get("difficulty", "Medium"),
                     "question_type": q_data.get("question_type", "Multiple Choice"),
                     "prompt": q_data.get("question", ""),
-                    "options_json": json.dumps(options_list),
-                    "correct_option": str(q_data.get("correct_option", "A")),
-                    "correct_answer": str(correct_ans),
+                    "options_json": v_opts,
+                    "correct_option": v_c_opt,
+                    "correct_answer": v_c_ans,
                     "explanation": str(q_data.get("explanation", "Review the concept carefully.")),
-                    "spells_json": json.dumps(spells_list),
-                    "health_json": json.dumps(health_list),
-                    "images_json": json.dumps(images_list),
+                    "spells_json": v_spells,
+                    "health_json": v_health,
+                    "images_json": v_images,
                     "created_at": now_ts,
                     "updated_at": now_ts,
                 })

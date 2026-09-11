@@ -2,28 +2,45 @@ import json
 import logging
 from typing import Optional, List, Dict, Any
 from fastapi import APIRouter, Depends, HTTPException, Query
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from sqlalchemy.orm import Session as DBSession
 
 from app.api.deps import get_db, auth_admin
 from app.infrastructure.database.models import Question, Track
 from app.domain.content.loader import invalidate_bundle_cache
 
+from app.domain.content.validator import validate_question_payload, QuestionValidationError
+
 logger = logging.getLogger("organicbattles.questions_admin")
 router = APIRouter(tags=["Admin Questions Management"])
 
 
+def _to_json_obj(val: Any, default: Any) -> Any:
+    if val is None:
+        return default
+    if isinstance(val, (list, dict)):
+        return val
+    if isinstance(val, str):
+        try:
+            return json.loads(val)
+        except Exception:
+            return default
+    return default
+
+
 class QuestionUpdateRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     prompt: Optional[str] = None
     options: Optional[List[Dict[str, str]]] = None
-    options_json: Optional[str] = None
     correct_option: Optional[str] = None
     correct_answer: Optional[str] = None
     explanation: Optional[str] = None
     topic: Optional[str] = None
     difficulty: Optional[str] = None
     spells: Optional[List[int]] = None
-    spells_json: Optional[str] = None
+    health: Optional[List[int]] = None
+    images: Optional[List[str]] = None
 
 
 class ReorderQuestionsRequest(BaseModel):
@@ -72,14 +89,8 @@ def admin_get_track_questions(
 
     formatted_items = []
     for q in items:
-        try:
-            opts = json.loads(q.options_json) if q.options_json else []
-        except Exception:
-            opts = []
-        try:
-            spells = json.loads(q.spells_json) if q.spells_json else []
-        except Exception:
-            spells = []
+        opts = _to_json_obj(q.options_json, [])
+        spells = _to_json_obj(q.spells_json, [])
 
         formatted_items.append({
             "id": q.id,
@@ -135,12 +146,13 @@ def admin_get_question_by_id(
         "difficulty": q.difficulty,
         "question_type": q.question_type,
         "prompt": q.prompt,
-        "options": json.loads(q.options_json) if q.options_json else [],
+        "options": _to_json_obj(q.options_json, []),
         "correct_option": q.correct_option,
         "correct_answer": q.correct_answer,
         "explanation": q.explanation,
-        "spells": json.loads(q.spells_json) if q.spells_json else [],
-        "images": json.loads(q.images_json) if q.images_json else [],
+        "spells": _to_json_obj(q.spells_json, []),
+        "health": _to_json_obj(q.health_json, []),
+        "images": _to_json_obj(q.images_json, []),
     }
 
 
@@ -156,26 +168,45 @@ def admin_update_question(
     if not q:
         raise HTTPException(404, f"Question with ID {question_id} not found")
 
+    current_options = _to_json_obj(q.options_json, [])
+    current_spells = _to_json_obj(q.spells_json, [20, 30, 45])
+    current_health = _to_json_obj(q.health_json, [100])
+    current_images = _to_json_obj(q.images_json, [])
+
+    candidate_options = body.options if body.options is not None else current_options
+    candidate_correct_opt = body.correct_option if body.correct_option is not None else q.correct_option
+    candidate_correct_ans = body.correct_answer if body.correct_answer is not None else q.correct_answer
+    candidate_spells = body.spells if body.spells is not None else current_spells
+    candidate_health = body.health if body.health is not None else current_health
+    candidate_images = body.images if body.images is not None else current_images
+
+    try:
+        v_opts, v_c_opt, v_c_ans, v_spells, v_health, v_images = validate_question_payload(
+            options=candidate_options,
+            correct_option=candidate_correct_opt,
+            correct_answer=candidate_correct_ans,
+            spells=candidate_spells,
+            health=candidate_health,
+            images=candidate_images,
+        )
+    except QuestionValidationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+
     if body.prompt is not None:
-        q.prompt = body.prompt
-    if body.options is not None:
-        q.options_json = json.dumps(body.options)
-    elif body.options_json is not None:
-        q.options_json = body.options_json
-    if body.correct_option is not None:
-        q.correct_option = body.correct_option
-    if body.correct_answer is not None:
-        q.correct_answer = body.correct_answer
+        q.prompt = body.prompt.strip()
+    q.options_json = v_opts
+    q.correct_option = v_c_opt
+    q.correct_answer = v_c_ans
+    q.spells_json = v_spells
+    q.health_json = v_health
+    q.images_json = v_images
+
     if body.explanation is not None:
         q.explanation = body.explanation
     if body.topic is not None:
         q.topic = body.topic
     if body.difficulty is not None:
         q.difficulty = body.difficulty
-    if body.spells is not None:
-        q.spells_json = json.dumps(body.spells)
-    elif body.spells_json is not None:
-        q.spells_json = body.spells_json
 
     db.commit()
     db.refresh(q)

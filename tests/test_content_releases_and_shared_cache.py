@@ -65,13 +65,13 @@ def test_atomic_content_releases_lifecycle():
             difficulty="Easy",
             question_type="Multiple Choice",
             prompt="Atomic release test prompt?",
-            options_json=json.dumps([{"label": "A", "text": "Correct"}]),
+            options_json=[{"label": "A", "text": "Correct"}, {"label": "B", "text": "Incorrect"}],
             correct_option="A",
             correct_answer="Correct",
             explanation="Test explanation",
-            spells_json="[20, 30, 45]",
-            health_json="[100]",
-            images_json="[]",
+            spells_json=[20, 30, 45],
+            health_json=[100],
+            images_json=[],
         )
         db.add(test_q)
         db.commit()
