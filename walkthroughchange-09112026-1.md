@@ -563,6 +563,54 @@ The system needed a long-term data model separation supporting:
   - **317 passed, 1 skipped in 52.08s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
 
+---
+
+# Walkthrough: Environment Configurations (local.env & prod.env) and Settings Priority
+
+## Problem Summary
+1. The application previously relied on an unversioned single `env` file or default in-code fallbacks, lacking clearly delineated configuration templates tailored for local development vs. production cluster deployment.
+2. Connection pooling, worker concurrency, cache sizing, cookie security, and fallback policies require distinct defaults depending on whether the system is running on a developer workstation or in production.
+3. `settings.py` needed an explicit priority loading mechanism that checks and prefers `local.env` when present.
+
+## Key Changes Implemented
+
+### 1. `local.env` Configuration Template
+- Created [local.env](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/local.env) with local development defaults:
+  - `ENVIRONMENT=development`, `DEBUG=true`, `PORT=8000`.
+  - `DATABASE_URL=postgresql+psycopg2://...` with SQLite file alternative documented.
+  - Connection pooling: `DB_POOL_SIZE=3`, `DB_MAX_OVERFLOW=2`, `WEB_CONCURRENCY=1`, `APP_REPLICAS=1`.
+  - Cache & content: `MAX_CACHED_TRACKS=4`, `TRACK_CACHE_TTL_SECONDS=3600`, `WARM_TRACKS_ON_STARTUP=0`, `ALLOW_JSON_FALLBACK=true`.
+  - Security: `COOKIE_SECURE=0`, `COOKIE_SAMESITE=lax`, `ADMIN_PASSWORD=admin`.
+
+### 2. `prod.env` Configuration Template
+- Created [prod.env](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/prod.env) with production deployment defaults:
+  - `ENVIRONMENT=production`, `DEBUG=false`, `PORT=8000`.
+  - `DATABASE_URL=postgresql+psycopg2://...` (Supabase IPv4 Pooler port 5432).
+  - Connection pooling: `DB_POOL_SIZE=4`, `DB_MAX_OVERFLOW=2`, `WEB_CONCURRENCY=2`, `APP_REPLICAS=2` (24 max connections $\le 60$ service limit).
+  - Shared Cache: `MAX_CACHED_TRACKS=16`, `TRACK_CACHE_TTL_SECONDS=86400`, `WARM_TRACKS_ON_STARTUP=1`, `ALLOW_JSON_FALLBACK=false`.
+  - Security: `COOKIE_SECURE=1`, `COOKIE_SAMESITE=lax`, `ADMIN_PASSWORD=ChangeThisStrongAdminPasswordInProduction!2026`, `ADMIN_SESSION_TTL_HOURS=12`.
+
+### 3. Priority Loading in `settings.py`
+- In [app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py):
+  - Updated dotenv discovery to enforce priority:
+    1. Explicit `ENV_FILE` if specified in process environment.
+    2. `local.env` (highest local priority).
+    3. `env` (legacy file).
+    4. `.env`.
+    5. `prod.env`.
+  - Updated [tests/test_database_connection.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_database_connection.py) to check `local.env` first.
+
+### 4. Automated Verification & Regression Suite
+- Created [tests/test_env_files_and_priority.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_env_files_and_priority.py):
+  - **`test_env_files_exist`**: Verified existence of both `local.env` and `prod.env`.
+  - **`test_local_env_defaults`**: Verified local development settings (`DEBUG=true`, `COOKIE_SECURE=0`, `ALLOW_JSON_FALLBACK=true`, single worker).
+  - **`test_prod_env_defaults`**: Verified production cluster settings (`DEBUG=false`, `COOKIE_SECURE=1`, `ALLOW_JSON_FALLBACK=false`, cluster connection sizing).
+  - **`test_settings_priority_prefers_local_env`**: Verified `settings.py` chooses `local.env` as the top priority candidate.
+- **Full Test Suite (`uv run pytest`)**:
+  - **321 passed, 1 skipped in 51.21s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+
 
 
 
