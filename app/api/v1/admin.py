@@ -128,9 +128,32 @@ def admin_get_users(admin_info: dict = Depends(auth_admin), db: DBSession = Depe
             "chapter": sess.chapter if sess else 1,
             "boss_index": sess.boss_index if sess else 0,
             "player_hp": sess.player_hp if sess else 150,
+            "session_id": sess.id if sess else None,
             "created_at": u.created_at,
         })
     return {"users": result, "total": len(result)}
+
+
+@router.post("/admin/users/{user_id}/verify")
+def admin_toggle_user_verification(
+    user_id: str,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """Toggle verified status for a user."""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(404, "User not found")
+    user.verified = 0 if user.verified else 1
+    db.commit()
+    db.refresh(user)
+    return {
+        "status": "ok",
+        "user_id": user.id,
+        "username": user.username,
+        "verified": bool(user.verified),
+        "message": f"User '{user.username}' is now {'verified' if user.verified else 'unverified'}",
+    }
 
 
 @router.post("/admin/users/{user_id}/config")
@@ -257,9 +280,19 @@ def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = D
         b_idx = max(0, min(s.boss_index, len(bosses) - 1))
         boss = bosses[b_idx]
         try:
-            completed_list = json.loads(s.completed_json)
+            completed_list = json.loads(s.completed_json) if s.completed_json else []
         except Exception:
             completed_list = []
+
+        try:
+            log_list = json.loads(s.log_json) if s.log_json else []
+        except Exception:
+            log_list = []
+
+        try:
+            cooldowns_dict = json.loads(s.cooldowns_json) if s.cooldowns_json else {}
+        except Exception:
+            cooldowns_dict = {}
 
         result.append({
             "session_id": s.id,
@@ -279,6 +312,12 @@ def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = D
             "player_hp": s.player_hp,
             "player_max_hp": s.player_max_hp,
             "completed_count": len(completed_list),
+            "turn_id": s.turn_id,
+            "version": s.version,
+            "has_active_question": bool(s.active_question_json),
+            "active_spell": s.active_spell,
+            "log": log_list,
+            "cooldowns": cooldowns_dict,
             "updated_at": s.updated_at,
             "available_chapters": [{"id": ch["id"], "name": ch["name"]} for ch in chapters],
         })
@@ -388,12 +427,29 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
     from app.observability.metrics import metrics_registry
     tracks_cfg = TracksRepository(db).get_tracks_config()
 
+    max_cluster_conns = (
+        (settings.db_pool_size or 5) + (settings.db_max_overflow or 10)
+    ) * (settings.web_concurrency * settings.app_replicas)
+
+    runtime_env = {
+        "environment": settings.environment,
+        "debug": os.getenv("DEBUG", "false").lower() in ("1", "true", "yes"),
+        "cookie_secure": settings.cookie_secure,
+        "allow_json_fallback": settings.allow_json_fallback,
+        "loaded_env_file": settings.loaded_env_file_name or "in-memory defaults",
+        "web_concurrency": settings.web_concurrency,
+        "app_replicas": settings.app_replicas,
+        "max_cluster_connections": max_cluster_conns,
+        "db_max_connections_limit": settings.db_max_connections_limit,
+    }
+
     return {
         "active_database": {
             "dialect": dialect,
             "url": display_url,
         },
         "database_pool": get_pool_config_summary(),
+        "runtime_environment": runtime_env,
         "tracks": tracks_cfg.get("tracks", []),
         "curricula": tracks_cfg.get("curricula", []),
         "track_cache": shared_track_cache.stats(),

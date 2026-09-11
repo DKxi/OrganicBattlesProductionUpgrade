@@ -610,6 +610,56 @@ The system needed a long-term data model separation supporting:
   - **321 passed, 1 skipped in 51.21s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
 
+---
+
+# Walkthrough: Comprehensive Multi-Tab Admin Portal Architecture
+
+## Problem Summary
+1. The Admin Console previously only supported 4 basic tabs (Users, Sessions, Storage, Logging), omitting critical backend systems developed for production: content release management, atomic rollbacks, batch question ingestion, in-place question authoring, 9-dimension observability metrics, and pedagogical learning analytics.
+2. Administrators lacked UI tools to inspect live combat state (active turn IDs, optimistic locking version clashes, cooldowns), toggle user account verification, or warm track bundle caches on demand.
+3. System configuration did not surface runtime process properties (active environment, loaded env file, cluster pool demand vs. service ceiling).
+
+## Key Changes Implemented
+
+### 1. Backend API Enhancements
+- **Settings Transparency** ([app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py)):
+  - Exposes `loaded_env_file_name` on `Settings` instance to identify whether `local.env`, `prod.env`, or environment defaults are loaded.
+- **Enriched Admin Endpoints** ([app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py)):
+  - `GET /api/v1/admin/users`: Now includes `session_id` to directly navigate between users and their live game sessions.
+  - `POST /api/v1/admin/users/{user_id}/verify`: Toggles student verification status (`0` $\leftrightarrow$ `1`).
+  - `GET /api/v1/admin/sessions`: Enriched with `turn_id`, `version`, `active_spell`, `cooldowns`, and `log` event list.
+  - `GET /api/v1/admin/system/config`: Enriched with `runtime_environment` block detailing `environment`, `loaded_env_file`, `debug`, `cookie_secure`, `allow_json_fallback`, `web_concurrency`, `app_replicas`, and `max_cluster_connections`.
+
+### 2. Multi-Tab Admin Navigation & Screens
+- Expanded Admin navigation to 8 specialized tabs in [templates/index.html](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/templates/index.html):
+  1. **`👤 USERS`**: User configuration with search, verified status chips, account verification toggle, and direct links to live sessions and mastery analytics.
+  2. **`⚔ SESSIONS`**: Live combat telemetry displaying Chapter, Boss, HP pools, `turn_id`, optimistic locking `version`, Reset Chapter/Boss actions, Delete Session, and "INSPECT" combat state modal.
+  3. **`📚 QUESTION BANK`**: Full-text / trigram question search, track/chapter/difficulty filters, pagination, and sequential atomic reordering (▲ Up / ▼ Down) scoped by track and boss.
+  4. **`📦 DATA & RELEASES`**: On-demand batch question ingestion trigger (`POST /api/admin/questions/ingest`) and immutable content release history table with 1-click atomic rollback (`POST /api/admin/tracks/{track_id}/releases/{version}/rollback`).
+  5. **`📊 OBSERVABILITY`**: Real-time 9-dimension telemetry KPI dashboard cards (Query Latency, Pool Utilization, Track Load Time, Cache Hit Ratio %, Cache Memory Footprint, JSON Fallbacks, Ingestion Failures, Version Mismatches, Combat Conflicts), cache warming trigger, and auto-refresh timer.
+  6. **`🧠 LEARNING ANALYTICS`**: Cohort performance overview (Total attempts, accuracy %, unique learners), "Struggling Questions" table (< 70% accuracy), and student misconception distractor analysis.
+  7. **`🗄 STORAGE`**: Database dialect switch (SQLite $\leftrightarrow$ PostgreSQL) with live data migration option and track folder path configurations.
+  8. **`⚙ LOGGING & RUNTIME`**: Active runtime profile banner (environment, config file, debug mode, cookie security, cluster pool demand), component log level selectors, and 100-line live streaming log console.
+
+### 3. Interactive Modals & Data Authoring
+- Added 4 responsive modal dialogues:
+  - **`#admin-question-editor-modal`**: Full question authoring form (Prompt, Topic, Difficulty, Choices A-D, Correct Option radio, Pedagogical Explanation, Spell damage costs, Boss Health) validated against schema before saving.
+  - **`#admin-question-analytics-modal`**: Option distractor selection distribution breakdown (green for correct, red for misleading distractors).
+  - **`#admin-session-inspect-modal`**: Diagnostic inspection modal displaying active turn tokens, state version, spell cooldowns, and combat event logs.
+  - **`#admin-user-mastery-modal`**: Player spaced repetition progress and retention summary.
+
+### 4. Automated Verification & Regression Suite
+- Created [tests/test_admin_multitab_portal.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_admin_multitab_portal.py):
+  - **`test_admin_users_and_verification_toggle`**: Verified user list includes `session_id` and verification status toggles cleanly.
+  - **`test_admin_sessions_enriched_state`**: Verified sessions return `turn_id`, `version`, `cooldowns`, and `log`.
+  - **`test_admin_system_config_and_runtime_environment`**: Verified `runtime_environment` block and cluster pool calculation.
+  - **`test_admin_question_bank_and_releases_contract`**: Verified question search and content release listings.
+  - **`test_admin_cache_warm_endpoint`**: Verified on-demand cache warming.
+- **Full Test Suite (`uv run pytest`)**:
+  - **326 passed, 1 skipped in 49.86s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+
 
 
 

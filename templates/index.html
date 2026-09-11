@@ -306,10 +306,14 @@
       </header>
 
       <div class="admin-tab-nav">
-        <button id="admin-tab-users" class="admin-tab-btn active" type="button">👤 USER CONFIGURATION</button>
-        <button id="admin-tab-sessions" class="admin-tab-btn" type="button">⚔ GAME SESSIONS</button>
-        <button id="admin-tab-storage" class="admin-tab-btn" type="button">🗄 STORAGE &amp; DATABASE</button>
-        <button id="admin-tab-system" class="admin-tab-btn" type="button">⚙ SYSTEM &amp; LOGGING</button>
+        <button id="admin-tab-users" class="admin-tab-btn active" type="button">👤 USERS</button>
+        <button id="admin-tab-sessions" class="admin-tab-btn" type="button">⚔ SESSIONS</button>
+        <button id="admin-tab-questions" class="admin-tab-btn" type="button">📚 QUESTION BANK</button>
+        <button id="admin-tab-releases" class="admin-tab-btn" type="button">📦 DATA &amp; RELEASES</button>
+        <button id="admin-tab-observability" class="admin-tab-btn" type="button">📊 OBSERVABILITY</button>
+        <button id="admin-tab-analytics" class="admin-tab-btn" type="button">🧠 LEARNING ANALYTICS</button>
+        <button id="admin-tab-storage" class="admin-tab-btn" type="button">🗄 STORAGE</button>
+        <button id="admin-tab-system" class="admin-tab-btn" type="button">⚙ LOGGING &amp; RUNTIME</button>
       </div>
 
       <!-- Users Tab View -->
@@ -353,6 +357,7 @@
                 <th>ACTIVE TRACK</th>
                 <th>CURRENT BATTLE</th>
                 <th>HP STATUS</th>
+                <th>TURN &amp; VER</th>
                 <th>COMPLETED</th>
                 <th>RESET CHAPTER &amp; BOSS</th>
                 <th>ACTIONS</th>
@@ -362,6 +367,254 @@
               <!-- Populated dynamically via JS -->
             </tbody>
           </table>
+        </div>
+      </div>
+
+      <!-- Question Bank Tab View -->
+      <div id="admin-questions-tab-content" class="admin-tab-content hidden">
+        <div class="admin-toolbar" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
+          <select id="admin-qb-track-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 12px; font: 500 0.8rem 'Space Grotesk',sans-serif;"></select>
+          <select id="admin-qb-chapter-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 12px; font: 500 0.8rem 'Space Grotesk',sans-serif;">
+            <option value="">All Chapters</option>
+          </select>
+          <select id="admin-qb-difficulty-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 12px; font: 500 0.8rem 'Space Grotesk',sans-serif;">
+            <option value="">All Difficulties</option>
+            <option value="intro">Intro</option>
+            <option value="standard">Standard</option>
+            <option value="challenge">Challenge</option>
+          </select>
+          <input type="search" id="admin-qb-search-input" placeholder="Search prompt or topic (FTS / trigram)…" style="flex: 1; min-width: 180px;">
+          <button type="button" id="admin-qb-search-btn" class="secondary" style="padding: 8px 14px;">SEARCH</button>
+          <div class="admin-stats" id="admin-qb-stats-summary">0 questions</div>
+        </div>
+
+        <div class="admin-user-table-container">
+          <table class="admin-user-table">
+            <thead>
+              <tr>
+                <th style="width: 50px;">ORDER</th>
+                <th>CHAPTER / BOSS</th>
+                <th>PROMPT</th>
+                <th>TOPIC</th>
+                <th>DIFFICULTY</th>
+                <th>SPELLS</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="admin-qb-tbody">
+              <!-- Populated dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="admin-pagination">
+          <button type="button" id="admin-qb-prev-btn" class="secondary" style="padding: 6px 14px;">◀ PREVIOUS</button>
+          <span id="admin-qb-page-info">Page 1 of 1</span>
+          <button type="button" id="admin-qb-next-btn" class="secondary" style="padding: 6px 14px;">NEXT ▶</button>
+        </div>
+      </div>
+
+      <!-- Data Loads & Content Releases Tab View -->
+      <div id="admin-releases-tab-content" class="admin-tab-content hidden" style="overflow-y: auto; padding-right: 8px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 10px;">
+          
+          <!-- Batch Ingestion Card -->
+          <div class="admin-card" style="width: 100%; margin: 0; box-sizing: border-box;">
+            <div class="eyebrow">DATA LOADS // BATCH INGESTION</div>
+            <h3 style="color: var(--cyan); margin: 10px 0 6px; font-size: 1.25rem;">JSON QUESTION INGESTION</h3>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; line-height: 1.4;">
+              Re-parse chapter JSON question files, validate payload schemas, and atomically publish a new release into PostgreSQL.
+            </p>
+
+            <form id="admin-ingest-form">
+              <label>TARGET TRACK
+                <select id="admin-ingest-track-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+                  <option value="">All Registered Tracks</option>
+                </select>
+              </label>
+
+              <label style="margin-top: 12px;">BATCH SIZE
+                <input type="number" id="admin-ingest-batch-size" value="1000" min="100" max="5000" style="font-family: monospace; font-size: 0.85rem;">
+              </label>
+
+              <button type="submit" id="admin-ingest-btn" class="primary" style="margin-top: 18px; width: 100%;">START BATCH INGESTION</button>
+              <div id="admin-ingest-status" class="admin-modal-status" style="min-height: 20px; margin-top: 10px;"></div>
+            </form>
+          </div>
+
+          <!-- Content Releases Card -->
+          <div class="admin-card" style="width: 100%; margin: 0; box-sizing: border-box;">
+            <div class="eyebrow">CONTENT // ATOMIC RELEASES &amp; ROLLBACK</div>
+            <h3 style="color: var(--cyan); margin: 10px 0 6px; font-size: 1.25rem;">PUBLISHED RELEASES</h3>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; line-height: 1.4;">
+              Browse immutable release history per track and restore any previous version with zero downtime.
+            </p>
+
+            <div style="margin-bottom: 14px;">
+              <label>FILTER TRACK
+                <select id="admin-releases-track-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;"></select>
+              </label>
+            </div>
+
+            <div class="admin-user-table-container" style="max-height: 260px; overflow-y: auto;">
+              <table class="admin-user-table">
+                <thead>
+                  <tr>
+                    <th>VER</th>
+                    <th>STATUS</th>
+                    <th>CHECKSUM</th>
+                    <th>PUBLISHED</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-releases-tbody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+            <div id="admin-releases-status" class="admin-modal-status" style="min-height: 20px; margin-top: 10px;"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Observability & Telemetry Tab View -->
+      <div id="admin-observability-tab-content" class="admin-tab-content hidden" style="overflow-y: auto; padding-right: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0 16px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div class="eyebrow">OBSERVABILITY // 9-DIMENSION TELEMETRY</div>
+            <h3 style="color: var(--cyan); margin: 4px 0 0; font-size: 1.25rem;">SYSTEM PERFORMANCE &amp; CLUSTER METRICS</h3>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <label style="font: 500 0.72rem 'DM Mono', monospace; color: var(--muted); display: flex; align-items: center; gap: 6px;">AUTO-REFRESH:
+              <select id="admin-obs-autorefresh" style="border: 1px solid #2b515b; border-radius: 6px; background: #081822; color: var(--ink); padding: 4px 8px; font: 500 0.72rem 'DM Mono', monospace;">
+                <option value="0">Off</option>
+                <option value="5000">5s</option>
+                <option value="15000" selected>15s</option>
+                <option value="30000">30s</option>
+              </select>
+            </label>
+            <button type="button" id="admin-obs-refresh-btn" class="secondary" style="padding: 6px 12px; font-size: 0.7rem;">↻ REFRESH METRICS</button>
+            <button type="button" id="admin-obs-warm-btn" class="primary" style="padding: 6px 12px; font-size: 0.7rem;">⚡ WARM CACHE</button>
+          </div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card" id="kpi-query-latency">
+            <div class="kpi-eyebrow">1. DB QUERY LATENCY</div>
+            <div class="kpi-val" id="kpi-val-query-latency">-- ms</div>
+            <div class="kpi-sub" id="kpi-sub-query-latency">Avg: -- ms | Max: -- ms</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-pool-utilization">
+            <div class="kpi-eyebrow">2. CONNECTION POOL</div>
+            <div class="kpi-val" id="kpi-val-pool-utilization">-- / --</div>
+            <div class="kpi-sub" id="kpi-sub-pool-utilization">Checked out vs max pool size</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-track-load">
+            <div class="kpi-eyebrow">3. TRACK BUNDLE LOAD</div>
+            <div class="kpi-val" id="kpi-val-track-load">-- ms</div>
+            <div class="kpi-sub" id="kpi-sub-track-load">Bundle build &amp; parse duration</div>
+          </div>
+
+          <div class="kpi-card good" id="kpi-cache-ratio">
+            <div class="kpi-eyebrow">4. CACHE HIT RATIO</div>
+            <div class="kpi-val" id="kpi-val-cache-ratio">--%</div>
+            <div class="kpi-sub" id="kpi-sub-cache-ratio">Hits: -- | Misses: --</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-cache-memory">
+            <div class="kpi-eyebrow">5. CACHE MEMORY FOOTPRINT</div>
+            <div class="kpi-val" id="kpi-val-cache-memory">-- KB</div>
+            <div class="kpi-sub" id="kpi-sub-cache-memory">Estimated in-memory bundle size</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-json-fallbacks">
+            <div class="kpi-eyebrow">6. JSON FALLBACK COUNT</div>
+            <div class="kpi-val" id="kpi-val-json-fallbacks">0</div>
+            <div class="kpi-sub" id="kpi-sub-json-fallbacks">Target: 0 in production</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-ingestion-failures">
+            <div class="kpi-eyebrow">7. INGESTION FAILURES</div>
+            <div class="kpi-val" id="kpi-val-ingestion-failures">0</div>
+            <div class="kpi-sub" id="kpi-sub-ingestion-failures">Rejected question schemas</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-version-mismatches">
+            <div class="kpi-eyebrow">8. VERSION MISMATCHES</div>
+            <div class="kpi-val" id="kpi-val-version-mismatches">0</div>
+            <div class="kpi-sub" id="kpi-sub-version-mismatches">Stale client release warnings</div>
+          </div>
+
+          <div class="kpi-card" id="kpi-combat-conflicts">
+            <div class="kpi-eyebrow">9. COMBAT UPDATE CONFLICTS</div>
+            <div class="kpi-val" id="kpi-val-combat-conflicts">0</div>
+            <div class="kpi-sub" id="kpi-sub-combat-conflicts">Optimistic locking concurrency clashes</div>
+          </div>
+        </div>
+
+        <div id="admin-obs-status" class="admin-modal-status" style="min-height: 18px; margin-top: 6px;"></div>
+      </div>
+
+      <!-- Learning Analytics Tab View -->
+      <div id="admin-analytics-tab-content" class="admin-tab-content hidden" style="overflow-y: auto; padding-right: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0 16px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div class="eyebrow">RESEARCH // PEDAGOGICAL ANALYTICS</div>
+            <h3 style="color: var(--cyan); margin: 4px 0 0; font-size: 1.25rem;">LEARNER MASTERY &amp; STRUGGLING CONCEPTS</h3>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <select id="admin-analytics-track-select" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 8px 12px; font: 500 0.8rem 'Space Grotesk',sans-serif;">
+              <option value="">All Tracks</option>
+            </select>
+            <button type="button" id="admin-analytics-refresh-btn" class="secondary" style="padding: 6px 12px; font-size: 0.7rem;">↻ REFRESH</button>
+          </div>
+        </div>
+
+        <div class="kpi-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="kpi-card">
+            <div class="kpi-eyebrow">TOTAL ANSWER ATTEMPTS</div>
+            <div class="kpi-val" id="analytics-total-attempts">0</div>
+            <div class="kpi-sub">Across all track arenas</div>
+          </div>
+          <div class="kpi-card good">
+            <div class="kpi-eyebrow">COHORT ACCURACY</div>
+            <div class="kpi-val" id="analytics-cohort-accuracy">0%</div>
+            <div class="kpi-sub" id="analytics-correct-attempts">0 correct</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-eyebrow">UNIQUE LEARNERS</div>
+            <div class="kpi-val" id="analytics-unique-players">0</div>
+            <div class="kpi-sub">Registered accounts tested</div>
+          </div>
+        </div>
+
+        <div class="admin-card" style="width: 100%; margin: 10px 0 0; box-sizing: border-box;">
+          <div class="eyebrow">ATTENTION NEEDED // ACCURACY &lt; 70%</div>
+          <h3 style="color: #ff8e88; margin: 8px 0 4px; font-size: 1.15rem;">TOP STRUGGLING QUESTIONS &amp; MISCONCEPTIONS</h3>
+          <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 14px; line-height: 1.4;">
+            Questions where students struggle most frequently. Click &ldquo;Inspect Distractors&rdquo; to analyze option selection patterns or edit directly.
+          </p>
+
+          <div class="admin-user-table-container">
+            <table class="admin-user-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px;">ID</th>
+                  <th>QUESTION PROMPT</th>
+                  <th>TOPIC</th>
+                  <th>ATTEMPTS</th>
+                  <th>ACCURACY</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody id="admin-analytics-struggling-tbody">
+                <!-- Populated dynamically -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -433,6 +686,38 @@
       <!-- System & Logging Tab View -->
       <div id="admin-system-tab-content" class="admin-tab-content hidden">
         <div style="margin-top: 10px;">
+          <!-- Runtime Process Environment Banner -->
+          <div class="admin-card" style="width: 100%; margin: 0 0 16px 0; box-sizing: border-box;">
+            <div class="eyebrow">APPLICATION RUNTIME // PROCESS PROFILE</div>
+            <h3 style="color: var(--cyan); margin: 6px 0 14px; font-size: 1.25rem;">RUNTIME CONFIGURATION</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px;">
+              <div>
+                <div class="kpi-eyebrow">ENVIRONMENT</div>
+                <div id="runtime-env-mode" style="font: 700 1.1rem 'Space Grotesk', sans-serif; color: var(--cyan);">--</div>
+              </div>
+              <div>
+                <div class="kpi-eyebrow">LOADED ENV FILE</div>
+                <div id="runtime-env-file" style="font: 600 0.85rem 'DM Mono', monospace; color: var(--gold);">--</div>
+              </div>
+              <div>
+                <div class="kpi-eyebrow">DEBUG MODE</div>
+                <div id="runtime-env-debug" style="font: 600 0.85rem 'DM Mono', monospace; color: var(--ink);">--</div>
+              </div>
+              <div>
+                <div class="kpi-eyebrow">COOKIE SECURITY</div>
+                <div id="runtime-env-cookie" style="font: 600 0.85rem 'DM Mono', monospace; color: var(--ink);">--</div>
+              </div>
+              <div>
+                <div class="kpi-eyebrow">JSON FALLBACK</div>
+                <div id="runtime-env-fallback" style="font: 600 0.85rem 'DM Mono', monospace; color: var(--ink);">--</div>
+              </div>
+              <div>
+                <div class="kpi-eyebrow">CLUSTER POOL DEMAND</div>
+                <div id="runtime-env-cluster" style="font: 600 0.85rem 'DM Mono', monospace; color: var(--cyan);">-- / 60 max</div>
+              </div>
+            </div>
+          </div>
+
           <!-- Observability & Logging Configuration (Full Width) -->
           <div class="admin-card" style="width: 100%; margin: 0; box-sizing: border-box;">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
@@ -543,6 +828,168 @@
           <button type="button" class="secondary" id="admin-cred-cancel-btn">CANCEL</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- Admin Question Editor Modal -->
+  <div id="admin-question-editor-modal" class="modal-backdrop hidden">
+    <div class="modal-card" style="max-width: 620px; max-height: 90vh; overflow-y: auto;">
+      <div class="eyebrow">QUESTION BANK // CONTENT AUTHORING</div>
+      <h2 id="admin-qe-title">EDIT QUESTION</h2>
+      <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 14px;">
+        Modify question prompt, answer choices, explanation, or spell damages. All changes are strictly validated before committing.
+      </p>
+
+      <form id="admin-qe-form">
+        <input type="hidden" id="admin-qe-question-id" value="">
+        <input type="hidden" id="admin-qe-track-id" value="">
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 12px;">
+          <label>TOPIC
+            <input type="text" id="admin-qe-topic" placeholder="e.g. SN1 vs SN2 Mechanism" required>
+          </label>
+          <label>DIFFICULTY
+            <select id="admin-qe-difficulty" style="border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 10px; font: 400 0.85rem 'Space Grotesk',sans-serif; width: 100%;">
+              <option value="intro">Intro</option>
+              <option value="standard">Standard</option>
+              <option value="challenge">Challenge</option>
+            </select>
+          </label>
+        </div>
+
+        <label style="margin-top: 10px;">QUESTION PROMPT
+          <textarea id="admin-qe-prompt" rows="3" style="width: 100%; border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 10px; font: 400 0.85rem 'Space Grotesk',sans-serif;" required></textarea>
+        </label>
+
+        <!-- Options A, B, C, D -->
+        <div style="margin-top: 12px;">
+          <div class="kpi-eyebrow">ANSWER CHOICES (SELECT CORRECT OPTION RADIO)</div>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <input type="radio" name="qe_correct_option" value="A" id="qe-radio-a" required>
+              <span style="font-weight: 700; color: var(--cyan); width: 20px;">A:</span>
+              <input type="text" id="admin-qe-opt-a" placeholder="Option A text…" style="flex: 1;" required>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <input type="radio" name="qe_correct_option" value="B" id="qe-radio-b">
+              <span style="font-weight: 700; color: var(--cyan); width: 20px;">B:</span>
+              <input type="text" id="admin-qe-opt-b" placeholder="Option B text…" style="flex: 1;" required>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <input type="radio" name="qe_correct_option" value="C" id="qe-radio-c">
+              <span style="font-weight: 700; color: var(--cyan); width: 20px;">C:</span>
+              <input type="text" id="admin-qe-opt-c" placeholder="Option C text…" style="flex: 1;">
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <input type="radio" name="qe_correct_option" value="D" id="qe-radio-d">
+              <span style="font-weight: 700; color: var(--cyan); width: 20px;">D:</span>
+              <input type="text" id="admin-qe-opt-d" placeholder="Option D text…" style="flex: 1;">
+            </div>
+          </div>
+        </div>
+
+        <label style="margin-top: 12px;">PEDAGOGICAL EXPLANATION
+          <textarea id="admin-qe-explanation" rows="3" style="width: 100%; border: 1px solid #2b515b; border-radius: 8px; background: #081822; color: var(--ink); padding: 10px; font: 400 0.85rem 'Space Grotesk',sans-serif;" placeholder="Explain why the correct answer is valid…"></textarea>
+        </label>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px;">
+          <label>SPELL DAMAGE COSTS
+            <input type="text" id="admin-qe-spells" placeholder="20, 30, 45" style="font-family: monospace;">
+          </label>
+          <label>BOSS HP VALUES
+            <input type="text" id="admin-qe-health" placeholder="100" style="font-family: monospace;">
+          </label>
+        </div>
+
+        <div id="admin-qe-status" class="admin-modal-status" style="min-height: 20px; margin-top: 10px;"></div>
+
+        <div class="modal-actions" style="margin-top: 16px; display: flex; gap: 10px;">
+          <button type="submit" class="primary" id="admin-qe-save-btn">SAVE QUESTION</button>
+          <button type="button" class="secondary" id="admin-qe-cancel-btn">CANCEL</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Question Distractor Analytics Modal -->
+  <div id="admin-question-analytics-modal" class="modal-backdrop hidden">
+    <div class="modal-card" style="max-width: 520px;">
+      <div class="eyebrow">PEDAGOGY // DISTRACTOR ANALYSIS</div>
+      <h2 id="admin-qa-title">STUDENT RESPONSE DISTRIBUTION</h2>
+      <p id="admin-qa-prompt" style="font-size: 0.85rem; color: var(--ink); margin: 10px 0 16px; line-height: 1.4;"></p>
+
+      <div style="display: flex; justify-content: space-between; margin-bottom: 16px; padding: 10px 14px; background: #081822; border-radius: 8px; border: 1px solid #1a3c48;">
+        <div><span class="kpi-eyebrow">TOTAL ATTEMPTS</span><div id="admin-qa-attempts" style="font: 700 1.2rem 'Space Grotesk'; color: var(--cyan);">0</div></div>
+        <div><span class="kpi-eyebrow">ACCURACY</span><div id="admin-qa-accuracy" style="font: 700 1.2rem 'Space Grotesk'; color: var(--gold);">0%</div></div>
+        <div><span class="kpi-eyebrow">CORRECT OPTION</span><div id="admin-qa-correct" style="font: 700 1.2rem 'Space Grotesk'; color: #34d399;">--</div></div>
+      </div>
+
+      <div class="kpi-eyebrow" style="margin-bottom: 8px;">CHOICE SELECTION BREAKDOWN</div>
+      <div id="admin-qa-distractor-bars">
+        <!-- Bars dynamically generated -->
+      </div>
+
+      <div class="modal-actions" style="margin-top: 20px; display: flex; justify-content: flex-end;">
+        <button type="button" class="secondary" id="admin-qa-close-btn">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Session Inspect Modal -->
+  <div id="admin-session-inspect-modal" class="modal-backdrop hidden">
+    <div class="modal-card" style="max-width: 560px; max-height: 85vh; overflow-y: auto;">
+      <div class="eyebrow">COMBAT TELEMETRY // SESSION INSPECT</div>
+      <h2 id="admin-si-user">SESSION STATE</h2>
+      <p id="admin-si-id" style="font-family: monospace; font-size: 0.75rem; color: var(--cyan); margin-bottom: 14px;"></p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+        <div style="background: #081822; padding: 10px; border-radius: 8px; border: 1px solid #1a3c48;">
+          <div class="kpi-eyebrow">ACTIVE TURN ID</div>
+          <div id="admin-si-turn" style="font-family: monospace; font-size: 0.8rem; color: var(--gold); word-break: break-all;">--</div>
+        </div>
+        <div style="background: #081822; padding: 10px; border-radius: 8px; border: 1px solid #1a3c48;">
+          <div class="kpi-eyebrow">STATE VERSION</div>
+          <div id="admin-si-version" style="font: 700 1rem 'Space Grotesk'; color: var(--cyan);">v1</div>
+        </div>
+      </div>
+
+      <div class="kpi-eyebrow">COMBAT EVENT LOG</div>
+      <pre id="admin-si-log" style="background: #040d12; border: 1px solid #1a3b45; border-radius: 8px; padding: 10px; color: #a4e5d9; font-family: monospace; font-size: 0.75rem; max-height: 140px; overflow-y: auto; white-space: pre-wrap; margin: 6px 0 14px;"></pre>
+
+      <div class="kpi-eyebrow">SPELL COOLDOWNS</div>
+      <div id="admin-si-cooldowns" style="font-family: monospace; font-size: 0.8rem; color: var(--muted); margin: 6px 0 14px;">None</div>
+
+      <div class="modal-actions" style="display: flex; justify-content: flex-end;">
+        <button type="button" class="secondary" id="admin-si-close-btn">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin User Mastery Modal -->
+  <div id="admin-user-mastery-modal" class="modal-backdrop hidden">
+    <div class="modal-card" style="max-width: 520px;">
+      <div class="eyebrow">PEDAGOGY // STUDENT MASTERY</div>
+      <h2 id="admin-um-username">PLAYER MASTERY</h2>
+      <p id="admin-um-id" style="font-family: monospace; font-size: 0.72rem; color: var(--cyan); margin-bottom: 14px;"></p>
+
+      <div class="kpi-grid" style="grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px;">
+        <div class="kpi-card" style="padding: 12px;">
+          <div class="kpi-eyebrow">TOTAL ANSWERED</div>
+          <div class="kpi-val" id="admin-um-total" style="font-size: 1.3rem;">0</div>
+        </div>
+        <div class="kpi-card good" style="padding: 12px;">
+          <div class="kpi-eyebrow">MASTERED</div>
+          <div class="kpi-val" id="admin-um-mastered" style="font-size: 1.3rem;">0</div>
+        </div>
+        <div class="kpi-card" style="padding: 12px;">
+          <div class="kpi-eyebrow">ACCURACY</div>
+          <div class="kpi-val" id="admin-um-accuracy" style="font-size: 1.3rem;">0%</div>
+        </div>
+      </div>
+
+      <div class="modal-actions" style="display: flex; justify-content: flex-end;">
+        <button type="button" class="secondary" id="admin-um-close-btn">CLOSE</button>
+      </div>
     </div>
   </div>
 

@@ -101,6 +101,7 @@ class Settings(BaseModel):
     smtp_from: Optional[str] = Field(default_factory=lambda: get_config_value("SMTP_FROM", "gmail", "sender"))
 
     root_dir: Path = ROOT_DIR
+    loaded_env_file_name: Optional[str] = Field(default_factory=lambda: _loaded_env_file.name if _loaded_env_file else None)
 
 
 settings = Settings()

@@ -802,42 +802,618 @@ async function loadAdminDashboard() {
     loadStorageConfig();
   } else if (currentAdminTab === 'system') {
     loadLoggingConfig();
+    loadRuntimeProfile();
+  } else if (currentAdminTab === 'questions') {
+    loadQuestionBank();
+  } else if (currentAdminTab === 'releases') {
+    loadReleasesTab();
+  } else if (currentAdminTab === 'observability') {
+    loadObservabilityMetrics();
+  } else if (currentAdminTab === 'analytics') {
+    loadLearningAnalytics();
   }
 }
 
+let adminObsInterval = null;
+let qbCurrentTrack = 'default';
+let qbCurrentPage = 1;
+let qbTotalPages = 1;
+let adminTracksList = [];
+
 function switchAdminTab(tabName) {
   currentAdminTab = tabName;
-  const isUsers = tabName === 'users';
-  const isSessions = tabName === 'sessions';
-  const isStorage = tabName === 'storage';
-  const isSystem = tabName === 'system';
+  if (adminObsInterval) {
+    clearInterval(adminObsInterval);
+    adminObsInterval = null;
+  }
 
-  $('#admin-tab-users')?.classList.toggle('active', isUsers);
-  $('#admin-tab-sessions')?.classList.toggle('active', isSessions);
-  $('#admin-tab-storage')?.classList.toggle('active', isStorage);
-  $('#admin-tab-system')?.classList.toggle('active', isSystem);
+  const allTabs = ['users', 'sessions', 'questions', 'releases', 'observability', 'analytics', 'storage', 'system'];
+  allTabs.forEach((t) => {
+    $(`#admin-tab-${t}`)?.classList.toggle('active', t === tabName);
+    $(`#admin-${t}-tab-content`)?.classList.toggle('hidden', t !== tabName);
+  });
 
-  $('#admin-users-tab-content')?.classList.toggle('hidden', !isUsers);
-  $('#admin-sessions-tab-content')?.classList.toggle('hidden', !isSessions);
-  $('#admin-storage-tab-content')?.classList.toggle('hidden', !isStorage);
-  $('#admin-system-tab-content')?.classList.toggle('hidden', !isSystem);
-
-  const activeContent = isUsers
-    ? $('#admin-users-tab-content')
-    : isSessions
-    ? $('#admin-sessions-tab-content')
-    : isStorage
-    ? $('#admin-storage-tab-content')
-    : $('#admin-system-tab-content');
+  const activeContent = $(`#admin-${tabName}-tab-content`);
   if (activeContent) {
     activeContent.scrollTop = 0;
   }
   $('#admin-screen')?.scrollTo({ top: 0, behavior: 'instant' });
 
-  if (isStorage) {
+  if (tabName === 'questions') {
+    loadQuestionBank();
+  } else if (tabName === 'releases') {
+    loadReleasesTab();
+  } else if (tabName === 'observability') {
+    loadObservabilityMetrics();
+    setupObsAutoRefresh();
+  } else if (tabName === 'analytics') {
+    loadLearningAnalytics();
+  } else if (tabName === 'storage') {
     loadStorageConfig();
-  } else if (isSystem) {
+  } else if (tabName === 'system') {
     loadLoggingConfig();
+    loadRuntimeProfile();
+  }
+}
+
+async function ensureTracksLoaded() {
+  if (adminTracksList.length > 0) return adminTracksList;
+  try {
+    const res = await adminApi('/api/admin/tracks', {}, 'GET');
+    if (res && res.tracks) {
+      adminTracksList = res.tracks;
+      populateTrackSelects();
+    }
+  } catch (err) {
+    console.error('Failed to load tracks list:', err);
+  }
+  return adminTracksList;
+}
+
+function populateTrackSelects() {
+  const qbSelect = $('#admin-qb-track-select');
+  const relSelect = $('#admin-releases-track-select');
+  const ingSelect = $('#admin-ingest-track-select');
+  const anaSelect = $('#admin-analytics-track-select');
+
+  const options = adminTracksList.map(t => `<option value="${t.id}">${t.title || t.id.toUpperCase()}</option>`).join('');
+
+  if (qbSelect && !qbSelect.innerHTML.trim()) {
+    qbSelect.innerHTML = options;
+    qbSelect.value = qbCurrentTrack;
+  }
+  if (relSelect && !relSelect.innerHTML.trim()) {
+    relSelect.innerHTML = options;
+  }
+  if (ingSelect && ingSelect.options.length <= 1) {
+    ingSelect.innerHTML = '<option value="">All Registered Tracks</option>' + options;
+  }
+  if (anaSelect && anaSelect.options.length <= 1) {
+    anaSelect.innerHTML = '<option value="">All Tracks</option>' + options;
+  }
+}
+
+async function loadQuestionBank() {
+  await ensureTracksLoaded();
+  const trackId = $('#admin-qb-track-select')?.value || qbCurrentTrack;
+  qbCurrentTrack = trackId;
+  const chapter = $('#admin-qb-chapter-select')?.value || '';
+  const diff = $('#admin-qb-difficulty-select')?.value || '';
+  const search = $('#admin-qb-search-input')?.value.trim() || '';
+
+  const params = new URLSearchParams({
+    page: String(qbCurrentPage),
+    limit: '20',
+  });
+  if (chapter) params.append('chapter', chapter);
+  if (diff) params.append('difficulty', diff);
+  if (search) params.append('search', search);
+
+  const tbody = $('#admin-qb-tbody');
+  if (tbody) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">Loading questions…</td></tr>`;
+  }
+
+  try {
+    const res = await adminApi(`/api/admin/tracks/${trackId}/questions?${params.toString()}`, {}, 'GET');
+    if (!res) return;
+
+    qbTotalPages = res.pages || 1;
+    const stats = $('#admin-qb-stats-summary');
+    if (stats) stats.textContent = `${res.total} questions (Page ${res.page} of ${qbTotalPages})`;
+
+    const pageInfo = $('#admin-qb-page-info');
+    if (pageInfo) pageInfo.textContent = `Page ${res.page} of ${qbTotalPages}`;
+
+    const prevBtn = $('#admin-qb-prev-btn');
+    if (prevBtn) prevBtn.disabled = res.page <= 1;
+    const nextBtn = $('#admin-qb-next-btn');
+    if (nextBtn) nextBtn.disabled = res.page >= qbTotalPages;
+
+    renderQuestionBankRows(res.items || [], trackId);
+  } catch (err) {
+    if (tbody) {
+      tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: #ff8e88; padding: 30px;">Error loading questions: ${err.message}</td></tr>`;
+    }
+  }
+}
+
+function renderQuestionBankRows(items, trackId) {
+  const tbody = $('#admin-qb-tbody');
+  if (!tbody) return;
+
+  if (!items.length) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">No questions found.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = items.map((q) => {
+    const diffClass = q.difficulty === 'challenge' ? 'diff-challenge' : q.difficulty === 'intro' ? 'diff-intro' : 'diff-standard';
+    const promptShort = q.prompt.length > 85 ? q.prompt.slice(0, 85) + '…' : q.prompt;
+    const spellsText = (q.spells && q.spells.length) ? q.spells.join(', ') : '20, 30, 45';
+
+    return `
+      <tr data-question-id="${q.id}">
+        <td style="font-family: 'DM Mono', monospace; font-weight: 700; color: var(--cyan);">${q.order_index}</td>
+        <td>
+          <div style="font-weight: 600; color: var(--ink);">Ch ${q.chapter}: ${q.chapter_title || ''}</div>
+          <div style="font: 500 0.68rem 'DM Mono', monospace; color: var(--orange); margin-top: 2px;">Boss: ${q.boss_name || q.boss_slug || ''}</div>
+        </td>
+        <td>
+          <div style="font-size: 0.8rem; color: var(--ink); line-height: 1.35;">${promptShort}</div>
+          <div style="font: 500 0.68rem 'DM Mono', monospace; color: var(--muted); margin-top: 3px;">Ans: <strong>${q.correct_option}</strong> (${q.correct_answer || ''})</div>
+        </td>
+        <td><span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted);">${q.topic || 'General'}</span></td>
+        <td><span class="badge-difficulty ${diffClass}">${(q.difficulty || 'standard').toUpperCase()}</span></td>
+        <td><span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan);">${spellsText}</span></td>
+        <td>
+          <div style="display: flex; gap: 6px; align-items: center;">
+            <button type="button" class="btn-action-sm" data-edit-question="${q.id}">✏ EDIT</button>
+            <button type="button" class="btn-action-sm" data-reorder-up="${q.id}" data-chapter="${q.chapter}" data-boss="${q.boss_slug || ''}" title="Move Up">▲</button>
+            <button type="button" class="btn-action-sm" data-reorder-down="${q.id}" data-chapter="${q.chapter}" data-boss="${q.boss_slug || ''}" title="Move Down">▼</button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  tbody.querySelectorAll('[data-edit-question]').forEach((btn) => {
+    btn.onclick = () => openQuestionEditor(btn.dataset.editQuestion, trackId);
+  });
+
+  tbody.querySelectorAll('[data-reorder-up]').forEach((btn) => {
+    btn.onclick = () => handleQuestionReorder(trackId, parseInt(btn.dataset.chapter, 10), btn.dataset.boss, parseInt(btn.dataset.reorderUp, 10), 'up');
+  });
+
+  tbody.querySelectorAll('[data-reorder-down]').forEach((btn) => {
+    btn.onclick = () => handleQuestionReorder(trackId, parseInt(btn.dataset.chapter, 10), btn.dataset.boss, parseInt(btn.dataset.reorderDown, 10), 'down');
+  });
+}
+
+async function handleQuestionReorder(trackId, chapter, bossSlug, qId, direction) {
+  try {
+    const params = new URLSearchParams({ chapter: String(chapter), limit: '100' });
+    if (bossSlug) params.append('boss_slug', bossSlug);
+    const res = await adminApi(`/api/admin/tracks/${trackId}/questions?${params.toString()}`, {}, 'GET');
+    if (!res || !res.items || res.items.length < 2) {
+      showAdminToast('Not enough questions to reorder.');
+      return;
+    }
+
+    const ids = res.items.map(q => q.id);
+    const currentIdx = ids.indexOf(qId);
+    if (currentIdx === -1) return;
+
+    let targetIdx = direction === 'up' ? currentIdx - 1 : currentIdx + 1;
+    if (targetIdx < 0 || targetIdx >= ids.length) {
+      showAdminToast(`Already at the ${direction === 'up' ? 'top' : 'bottom'} of this group.`);
+      return;
+    }
+
+    const targetId = ids[targetIdx];
+    const position = direction === 'up' ? 'before' : 'after';
+
+    const url = bossSlug
+      ? `/api/admin/tracks/${trackId}/chapters/${chapter}/bosses/${bossSlug}/reorder`
+      : `/api/admin/tracks/${trackId}/chapters/${chapter}/reorder`;
+
+    await adminApi(url, {
+      move_question_id: qId,
+      target_question_id: targetId,
+      position: position,
+    }, 'POST');
+
+    showAdminToast(`✓ Question moved ${direction}`);
+    loadQuestionBank();
+  } catch (err) {
+    showAdminToast(`Reorder failed: ${err.message}`);
+  }
+}
+
+async function openQuestionEditor(questionId, trackId) {
+  const modal = $('#admin-question-editor-modal');
+  if (!modal) return;
+
+  const status = $('#admin-qe-status');
+  if (status) { status.textContent = 'Loading question details…'; status.className = 'admin-modal-status hint'; }
+  modal.classList.remove('hidden');
+
+  try {
+    const q = await adminApi(`/api/admin/questions/${questionId}`, {}, 'GET');
+    if (!q) return;
+
+    $('#admin-qe-question-id').value = q.id;
+    $('#admin-qe-track-id').value = q.track_id || trackId || 'default';
+    $('#admin-qe-topic').value = q.topic || '';
+    $('#admin-qe-difficulty').value = q.difficulty || 'standard';
+    $('#admin-qe-prompt').value = q.prompt || '';
+    $('#admin-qe-explanation').value = q.explanation || '';
+    $('#admin-qe-spells').value = (q.spells || [20, 30, 45]).join(', ');
+    $('#admin-qe-health').value = (q.health || [100]).join(', ');
+
+    const opts = q.options || [];
+    const getOptText = (label) => {
+      const found = opts.find(o => (o.label || '').toUpperCase() === label);
+      return found ? found.text : '';
+    };
+
+    $('#admin-qe-opt-a').value = getOptText('A');
+    $('#admin-qe-opt-b').value = getOptText('B');
+    $('#admin-qe-opt-c').value = getOptText('C');
+    $('#admin-qe-opt-d').value = getOptText('D');
+
+    const correct = (q.correct_option || 'A').toUpperCase();
+    const radio = document.querySelector(`input[name="qe_correct_option"][value="${correct}"]`);
+    if (radio) radio.checked = true;
+
+    if (status) { status.textContent = ''; status.className = 'admin-modal-status'; }
+  } catch (err) {
+    if (status) { status.textContent = `Failed to load: ${err.message}`; status.className = 'admin-modal-status error'; }
+  }
+}
+
+function closeQuestionEditor() {
+  $('#admin-question-editor-modal')?.classList.add('hidden');
+}
+
+async function loadReleasesTab() {
+  await ensureTracksLoaded();
+  const trackId = $('#admin-releases-track-select')?.value || qbCurrentTrack;
+  const tbody = $('#admin-releases-tbody');
+
+  if (tbody) {
+    tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--muted); padding: 20px;">Loading releases…</td></tr>`;
+  }
+
+  try {
+    const res = await adminApi(`/api/admin/tracks/${trackId}/releases`, {}, 'GET');
+    if (!res || !res.releases) return;
+
+    if (!res.releases.length) {
+      tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--muted); padding: 20px;">No releases found for track "${trackId}".</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = res.releases.map((r) => {
+      const isPub = r.status === 'published';
+      const badgeClass = isPub ? 'badge-published' : r.status === 'draft' ? 'badge-draft' : 'badge-archived';
+      const checksumShort = r.checksum ? r.checksum.slice(0, 10) + '…' : '--';
+      const pubDate = r.published_at ? new Date(r.published_at * 1000).toLocaleString() : '--';
+
+      return `
+        <tr>
+          <td style="font-family: 'DM Mono', monospace; font-weight: 700; color: var(--cyan);">v${r.version}</td>
+          <td><span class="badge-status ${badgeClass}">${r.status}</span></td>
+          <td><span style="font-family: monospace; font-size: 0.72rem; color: var(--muted);">${checksumShort}</span></td>
+          <td><span style="font-size: 0.72rem; color: var(--muted);">${pubDate}</span></td>
+          <td>
+            ${!isPub ? `<button type="button" class="btn-action-sm" data-rollback-version="${r.version}" data-track="${trackId}">ROLLBACK</button>` : `<span style="font-size: 0.7rem; color: #34d399; font-weight: 600;">ACTIVE</span>`}
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    tbody.querySelectorAll('[data-rollback-version]').forEach((btn) => {
+      btn.onclick = async () => {
+        const ver = btn.dataset.rollbackVersion;
+        const trk = btn.dataset.track;
+        btn.disabled = true;
+        btn.textContent = 'REVERTING…';
+        try {
+          const result = await adminApi(`/api/admin/tracks/${trk}/releases/${ver}/rollback`, {}, 'POST');
+          showAdminToast(`✓ ${result.message}`);
+          loadReleasesTab();
+        } catch (err) {
+          showAdminToast(`Rollback failed: ${err.message}`);
+          btn.disabled = false;
+          btn.textContent = 'ROLLBACK';
+        }
+      };
+    });
+  } catch (err) {
+    if (tbody) {
+      tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #ff8e88; padding: 20px;">Error: ${err.message}</td></tr>`;
+    }
+  }
+}
+
+async function loadObservabilityMetrics() {
+  try {
+    const [metrics, config] = await Promise.all([
+      adminApi('/api/admin/system/metrics', {}, 'GET'),
+      adminApi('/api/admin/system/config', {}, 'GET'),
+    ]);
+    if (!metrics) return;
+
+    // 1. Query Latency
+    const ql = metrics.database_query_latency || {};
+    const qlVal = $('#kpi-val-query-latency');
+    if (qlVal) qlVal.textContent = `${ql.avg_duration_ms || 0} ms`;
+    const qlSub = $('#kpi-sub-query-latency');
+    if (qlSub) qlSub.textContent = `Avg: ${ql.avg_duration_ms || 0} ms | Max: ${ql.max_duration_ms || 0} ms`;
+
+    // 2. Pool Utilization
+    const pool = config?.database_pool || {};
+    const poolVal = $('#kpi-val-pool-utilization');
+    if (poolVal) poolVal.textContent = `${pool.checked_out || 0} / ${pool.pool_size || 5}`;
+    const poolSub = $('#kpi-sub-pool-utilization');
+    if (poolSub) poolSub.textContent = `Overflow: ${pool.overflow || 0} / ${pool.max_overflow || 10}`;
+
+    // 3. Track Load Time
+    const tl = metrics.track_bundle_load_time || {};
+    const tlVal = $('#kpi-val-track-load');
+    if (tlVal) tlVal.textContent = `${tl.avg_duration_ms || 0} ms`;
+
+    // 4. Cache Hit Ratio
+    const cache = config?.track_cache || {};
+    const ratio = Math.round((cache.hit_ratio || 0) * 100);
+    const crVal = $('#kpi-val-cache-ratio');
+    if (crVal) crVal.textContent = `${ratio}%`;
+    const crSub = $('#kpi-sub-cache-ratio');
+    if (crSub) crSub.textContent = `Hits: ${cache.hits || 0} | Misses: ${cache.misses || 0}`;
+
+    // 5. Cache Memory
+    const cm = metrics.cache_memory_consumption || {};
+    const cmVal = $('#kpi-val-cache-memory');
+    if (cmVal) cmVal.textContent = `${cm.total_bundle_memory_kb || 0} KB`;
+
+    // 6. JSON Fallbacks
+    const jf = metrics.json_fallback_count || 0;
+    const jfVal = $('#kpi-val-json-fallbacks');
+    if (jfVal) jfVal.textContent = jf;
+    $('#kpi-json-fallbacks')?.classList.toggle('alert', jf > 0);
+
+    // 7. Ingestion Failures
+    const ivf = metrics.ingestion_validation_failures || 0;
+    const ivfVal = $('#kpi-val-ingestion-failures');
+    if (ivfVal) ivfVal.textContent = ivf;
+    $('#kpi-ingestion-failures')?.classList.toggle('alert', ivf > 0);
+
+    // 8. Version Mismatches
+    const cvm = metrics.content_version_mismatches || 0;
+    const cvmVal = $('#kpi-val-version-mismatches');
+    if (cvmVal) cvmVal.textContent = cvm;
+    $('#kpi-version-mismatches')?.classList.toggle('alert', cvm > 0);
+
+    // 9. Combat Conflicts
+    const ccu = metrics.concurrent_combat_update_conflicts || 0;
+    const ccuVal = $('#kpi-val-combat-conflicts');
+    if (ccuVal) ccuVal.textContent = ccu;
+    $('#kpi-combat-conflicts')?.classList.toggle('alert', ccu > 0);
+
+    // Runtime profile banner
+    if (config?.runtime_environment) {
+      const re = config.runtime_environment;
+      if ($('#runtime-env-mode')) $('#runtime-env-mode').textContent = (re.environment || 'development').toUpperCase();
+      if ($('#runtime-env-file')) $('#runtime-env-file').textContent = re.loaded_env_file || '--';
+      if ($('#runtime-env-debug')) $('#runtime-env-debug').textContent = re.debug ? 'Active (Verbose)' : 'Disabled (Prod)';
+      if ($('#runtime-env-cookie')) $('#runtime-env-cookie').textContent = re.cookie_secure ? 'Strict HTTPS' : 'Lax (HTTP Dev)';
+      if ($('#runtime-env-fallback')) $('#runtime-env-fallback').textContent = re.allow_json_fallback ? 'Permitted' : 'Strict DB Only';
+      if ($('#runtime-env-cluster')) $('#runtime-env-cluster').textContent = `${re.max_cluster_connections} conns (limit: ${re.db_max_connections_limit})`;
+    }
+  } catch (err) {
+    console.error('Failed to load observability metrics:', err);
+  }
+}
+
+function setupObsAutoRefresh() {
+  if (adminObsInterval) clearInterval(adminObsInterval);
+  const select = $('#admin-obs-autorefresh');
+  const ms = select ? parseInt(select.value, 10) : 15000;
+  if (ms > 0) {
+    adminObsInterval = setInterval(() => {
+      if (currentAdminTab === 'observability') {
+        loadObservabilityMetrics();
+      }
+    }, ms);
+  }
+}
+
+async function loadRuntimeProfile() {
+  try {
+    const config = await adminApi('/api/admin/system/config', {}, 'GET');
+    if (config?.runtime_environment) {
+      const re = config.runtime_environment;
+      if ($('#runtime-env-mode')) $('#runtime-env-mode').textContent = (re.environment || 'development').toUpperCase();
+      if ($('#runtime-env-file')) $('#runtime-env-file').textContent = re.loaded_env_file || '--';
+      if ($('#runtime-env-debug')) $('#runtime-env-debug').textContent = re.debug ? 'Active (Verbose)' : 'Disabled (Prod)';
+      if ($('#runtime-env-cookie')) $('#runtime-env-cookie').textContent = re.cookie_secure ? 'Strict HTTPS' : 'Lax (HTTP Dev)';
+      if ($('#runtime-env-fallback')) $('#runtime-env-fallback').textContent = re.allow_json_fallback ? 'Permitted' : 'Strict DB Only';
+      if ($('#runtime-env-cluster')) $('#runtime-env-cluster').textContent = `${re.max_cluster_connections} conns (limit: ${re.db_max_connections_limit})`;
+    }
+  } catch (err) {
+    console.error('Failed to load runtime profile:', err);
+  }
+}
+
+async function loadLearningAnalytics() {
+  await ensureTracksLoaded();
+  const trackId = $('#admin-analytics-track-select')?.value || '';
+  const url = trackId ? `/api/admin/analytics/overview?track_id=${trackId}` : '/api/admin/analytics/overview';
+
+  try {
+    const res = await adminApi(url, {}, 'GET');
+    if (!res) return;
+
+    if ($('#analytics-total-attempts')) $('#analytics-total-attempts').textContent = res.total_attempts || 0;
+    if ($('#analytics-cohort-accuracy')) $('#analytics-cohort-accuracy').textContent = `${Math.round((res.overall_accuracy || 0) * 100)}%`;
+    if ($('#analytics-correct-attempts')) $('#analytics-correct-attempts').textContent = `${res.correct_attempts || 0} correct attempts`;
+    if ($('#analytics-unique-players')) $('#analytics-unique-players').textContent = res.unique_players || 0;
+
+    const tbody = $('#admin-analytics-struggling-tbody');
+    if (!tbody) return;
+
+    const questions = res.struggling_questions || [];
+    if (!questions.length) {
+      tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--muted); padding: 24px;">No struggling questions found (all questions &ge; 70% accuracy).</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = questions.map((q) => {
+      const accPercent = Math.round((q.accuracy || 0) * 100);
+      return `
+        <tr>
+          <td style="font-family: 'DM Mono', monospace; font-weight: 700; color: var(--cyan);">${q.question_id}</td>
+          <td style="font-size: 0.8rem; line-height: 1.35; color: var(--ink);">${q.prompt}</td>
+          <td><span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted);">${q.topic || 'General'}</span></td>
+          <td style="font-family: 'DM Mono', monospace; font-size: 0.75rem;">${q.total_attempts}</td>
+          <td>
+            <span style="font-weight: 700; font-family: 'DM Mono', monospace; color: #ff8e88;">${accPercent}%</span>
+          </td>
+          <td>
+            <div style="display: flex; gap: 6px;">
+              <button type="button" class="btn-action-sm" data-inspect-distractors="${q.question_id}">DISTRACTORS</button>
+              <button type="button" class="btn-action-sm" data-edit-in-bank="${q.question_id}">EDIT</button>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    tbody.querySelectorAll('[data-inspect-distractors]').forEach((btn) => {
+      btn.onclick = () => openDistractorAnalytics(btn.dataset.inspectDistractors);
+    });
+
+    tbody.querySelectorAll('[data-edit-in-bank]').forEach((btn) => {
+      btn.onclick = () => {
+        switchAdminTab('questions');
+        openQuestionEditor(btn.dataset.editInBank);
+      };
+    });
+  } catch (err) {
+    console.error('Failed to load learning analytics:', err);
+  }
+}
+
+async function openDistractorAnalytics(questionId) {
+  const modal = $('#admin-question-analytics-modal');
+  if (!modal) return;
+
+  try {
+    const res = await adminApi(`/api/admin/analytics/questions/${questionId}`, {}, 'GET');
+    if (!res) return;
+
+    if ($('#admin-qa-prompt')) $('#admin-qa-prompt').textContent = res.prompt || '';
+    if ($('#admin-qa-attempts')) $('#admin-qa-attempts').textContent = res.total_attempts || 0;
+    if ($('#admin-qa-accuracy')) $('#admin-qa-accuracy').textContent = `${Math.round((res.accuracy || 0) * 100)}%`;
+    if ($('#admin-qa-correct')) $('#admin-qa-correct').textContent = `${res.correct_option} (${res.correct_answer || ''})`;
+
+    const container = $('#admin-qa-distractor-bars');
+    if (container) {
+      const dist = res.option_distribution || {};
+      const total = res.total_attempts || 1;
+      const opts = ['A', 'B', 'C', 'D'];
+
+      container.innerHTML = opts.map((opt) => {
+        const count = dist[opt] || 0;
+        const pct = Math.round((count / total) * 100);
+        const isCorr = opt === (res.correct_option || '').toUpperCase();
+        const barClass = isCorr ? 'distractor-correct' : 'distractor-wrong';
+
+        return `
+          <div class="distractor-row">
+            <div class="distractor-label">
+              <span><strong>Option ${opt}</strong> ${isCorr ? '<span style="color: #34d399;">(Correct)</span>' : ''}</span>
+              <span>${count} picks (${pct}%)</span>
+            </div>
+            <div class="distractor-bar-container">
+              <div class="distractor-bar-fill ${barClass}" style="width: ${pct}%;"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    modal.classList.remove('hidden');
+  } catch (err) {
+    showAdminToast(`Failed to load distractor data: ${err.message}`);
+  }
+}
+
+function closeDistractorAnalytics() {
+  $('#admin-question-analytics-modal')?.classList.add('hidden');
+}
+
+async function openUserMasteryModal(userId, username) {
+  const modal = $('#admin-user-mastery-modal');
+  if (!modal) return;
+
+  if ($('#admin-um-username')) $('#admin-um-username').textContent = `MASTERY: ${username}`;
+  if ($('#admin-um-id')) $('#admin-um-id').textContent = `User ID: ${userId}`;
+
+  try {
+    const res = await adminApi(`/api/admin/analytics/users/${userId}/mastery`, {}, 'GET');
+    const s = res?.summary || {};
+
+    if ($('#admin-um-total')) $('#admin-um-total').textContent = s.total_tracked_questions || 0;
+    if ($('#admin-um-mastered')) $('#admin-um-mastered').textContent = s.mastered_count || 0;
+    if ($('#admin-um-accuracy')) $('#admin-um-accuracy').textContent = `${Math.round((s.overall_accuracy || 0) * 100)}%`;
+
+    modal.classList.remove('hidden');
+  } catch (err) {
+    showAdminToast(`Failed to load mastery data: ${err.message}`);
+  }
+}
+
+function closeUserMasteryModal() {
+  $('#admin-user-mastery-modal')?.classList.add('hidden');
+}
+
+function openSessionInspectModal(sessionObj) {
+  const modal = $('#admin-session-inspect-modal');
+  if (!modal) return;
+
+  if ($('#admin-si-user')) $('#admin-si-user').textContent = `SESSION: ${sessionObj.username} (${sessionObj.track_name || sessionObj.track_id})`;
+  if ($('#admin-si-id')) $('#admin-si-id').textContent = `ID: ${sessionObj.session_id}`;
+  if ($('#admin-si-turn')) $('#admin-si-turn').textContent = sessionObj.turn_id || 'None (No active question pending)';
+  if ($('#admin-si-version')) $('#admin-si-version').textContent = `v${sessionObj.version || 1}`;
+
+  const logEl = $('#admin-si-log');
+  if (logEl) {
+    logEl.textContent = (sessionObj.log && sessionObj.log.length) ? sessionObj.log.join('\n') : '[No events recorded]';
+  }
+
+  const cdEl = $('#admin-si-cooldowns');
+  if (cdEl) {
+    cdEl.textContent = JSON.stringify(sessionObj.cooldowns || {}, null, 2);
+  }
+
+  modal.classList.remove('hidden');
+}
+
+function closeSessionInspectModal() {
+  $('#admin-session-inspect-modal')?.classList.add('hidden');
+}
+
+async function toggleUserVerification(userId) {
+  try {
+    const res = await adminApi(`/api/admin/users/${userId}/verify`, {}, 'POST');
+    showAdminToast(`✓ ${res.message}`);
+    const user = adminUsersData.find(u => u.id === userId);
+    if (user) user.verified = res.verified ? 1 : 0;
+    renderAdminUsers($('#admin-user-search')?.value || '');
+  } catch (err) {
+    showAdminToast(`Verification update failed: ${err.message}`);
   }
 }
 
@@ -920,6 +1496,7 @@ async function fetchLiveLogs() {
       consoleEl.scrollTop = consoleEl.scrollHeight;
     }
   } catch (err) {
+    console.error('Failed to read live logs:', err);
     consoleEl.textContent = `[Failed to read live logs: ${err.message}]`;
   }
 }
@@ -970,21 +1547,42 @@ function renderAdminUsers(filterText = '') {
           </span>
         </td>
         <td>
-          <button type="button" class="admin-cred-btn" data-edit-cred="${u.id}" title="Edit Username or Password">🔑 CREDENTIALS</button>
+          <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
+            <button type="button" class="btn-action-sm" data-toggle-verify="${u.id}">${u.verified ? 'UNVERIFY' : 'VERIFY'}</button>
+            <button type="button" class="btn-action-sm" data-user-mastery="${u.id}" data-username="${u.username}">MASTERY</button>
+            ${u.session_id ? `<button type="button" class="btn-action-sm" data-user-session="${u.session_id}">BATTLE</button>` : ''}
+            <button type="button" class="admin-cred-btn" data-edit-cred="${u.id}" title="Edit Username or Password">🔑 CREDENTIALS</button>
+          </div>
         </td>
       </tr>
     `;
   }).join('');
 
-  // Bind Credentials action
-  tbody.querySelectorAll('tr').forEach((row) => {
-    const userId = row.dataset.userId;
-    const user = adminUsersData.find((u) => u.id === userId);
-    if (!user) return;
+  // Bind Actions
+  tbody.querySelectorAll('[data-toggle-verify]').forEach((btn) => {
+    btn.onclick = () => toggleUserVerification(btn.dataset.toggleVerify);
+  });
 
-    const credBtn = row.querySelector('[data-edit-cred]');
-    if (credBtn) {
-      credBtn.onclick = () => openAdminCredentialsModal(user);
+  tbody.querySelectorAll('[data-user-mastery]').forEach((btn) => {
+    btn.onclick = () => openUserMasteryModal(btn.dataset.userMastery, btn.dataset.username);
+  });
+
+  tbody.querySelectorAll('[data-user-session]').forEach((btn) => {
+    btn.onclick = () => {
+      switchAdminTab('sessions');
+      const search = $('#admin-session-search');
+      if (search) {
+        search.value = btn.dataset.userSession.slice(0, 8);
+        renderAdminSessions(search.value);
+      }
+    };
+  });
+
+  tbody.querySelectorAll('[data-edit-cred]').forEach((btn) => {
+    const userId = btn.dataset.editCred;
+    const user = adminUsersData.find((u) => u.id === userId);
+    if (user) {
+      btn.onclick = () => openAdminCredentialsModal(user);
     }
   });
 }
@@ -994,7 +1592,7 @@ function renderAdminSessions(filterText = '') {
   if (!tbody) return;
 
   const query = filterText.toLowerCase().trim();
-  const filtered = adminSessionsData.filter((s) => !query || s.username.toLowerCase().includes(query) || s.email.toLowerCase().includes(query) || s.boss_name.toLowerCase().includes(query) || String(s.chapter).includes(query));
+  const filtered = adminSessionsData.filter((s) => !query || s.username.toLowerCase().includes(query) || s.email.toLowerCase().includes(query) || s.boss_name.toLowerCase().includes(query) || String(s.chapter).includes(query) || s.session_id.includes(query));
 
   const stats = $('#admin-session-stats-summary');
   if (stats) {
@@ -1002,7 +1600,7 @@ function renderAdminSessions(filterText = '') {
   }
 
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">No game sessions found matching '${filterText}'.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--muted); padding: 30px;">No game sessions found matching '${filterText}'.</td></tr>`;
     return;
   }
 
@@ -1034,6 +1632,10 @@ function renderAdminSessions(filterText = '') {
           </div>
         </td>
         <td>
+          <div style="font: 600 0.72rem 'DM Mono', monospace; color: var(--cyan);">v${s.version || 1}</div>
+          <div style="font: 500 0.65rem 'DM Mono', monospace; color: var(--muted);" title="${s.turn_id || 'No turn'}">Turn: ${s.turn_id ? s.turn_id.slice(0, 8) + '…' : 'None'}</div>
+        </td>
+        <td>
           <span class="badge-verified">${s.completed_count} Defeated</span>
         </td>
         <td>
@@ -1045,13 +1647,16 @@ function renderAdminSessions(filterText = '') {
           </div>
         </td>
         <td>
-          <button type="button" class="btn-danger" data-delete-session="${s.session_id}">🗑 DELETE</button>
+          <div style="display: flex; gap: 6px; align-items: center;">
+            <button type="button" class="btn-action-sm" data-inspect-session="${s.session_id}">INSPECT</button>
+            <button type="button" class="btn-danger" data-delete-session="${s.session_id}">🗑 DELETE</button>
+          </div>
         </td>
       </tr>
     `;
   }).join('');
 
-  // Bind Reset & Delete actions
+  // Bind Reset, Delete, and Inspect actions
   tbody.querySelectorAll('tr').forEach((row) => {
     const sessionId = row.dataset.sessionId;
     const sessionObj = adminSessionsData.find((s) => s.session_id === sessionId);
@@ -1060,6 +1665,11 @@ function renderAdminSessions(filterText = '') {
     const chapterSelect = row.querySelector('[data-chapter-select]');
     const resetBtn = row.querySelector('[data-reset-session]');
     const deleteBtn = row.querySelector('[data-delete-session]');
+    const inspectBtn = row.querySelector('[data-inspect-session]');
+
+    if (inspectBtn) {
+      inspectBtn.onclick = () => openSessionInspectModal(sessionObj);
+    }
 
     resetBtn.onclick = async () => {
       const targetChapter = parseInt(chapterSelect.value, 10);
@@ -1202,6 +1812,10 @@ function bindAdminEvents() {
 
   $('#admin-tab-users')?.addEventListener('click', () => switchAdminTab('users'));
   $('#admin-tab-sessions')?.addEventListener('click', () => switchAdminTab('sessions'));
+  $('#admin-tab-questions')?.addEventListener('click', () => switchAdminTab('questions'));
+  $('#admin-tab-releases')?.addEventListener('click', () => switchAdminTab('releases'));
+  $('#admin-tab-observability')?.addEventListener('click', () => switchAdminTab('observability'));
+  $('#admin-tab-analytics')?.addEventListener('click', () => switchAdminTab('analytics'));
   $('#admin-tab-storage')?.addEventListener('click', () => switchAdminTab('storage'));
   $('#admin-tab-system')?.addEventListener('click', () => switchAdminTab('system'));
 
@@ -1362,6 +1976,140 @@ function bindAdminEvents() {
 
   $('#admin-session-search')?.addEventListener('input', (event) => {
     renderAdminSessions(event.target.value);
+  });
+
+  $('#admin-qb-track-select')?.addEventListener('change', () => { qbCurrentPage = 1; loadQuestionBank(); });
+  $('#admin-qb-chapter-select')?.addEventListener('change', () => { qbCurrentPage = 1; loadQuestionBank(); });
+  $('#admin-qb-difficulty-select')?.addEventListener('change', () => { qbCurrentPage = 1; loadQuestionBank(); });
+  $('#admin-qb-search-btn')?.addEventListener('click', () => { qbCurrentPage = 1; loadQuestionBank(); });
+  $('#admin-qb-search-input')?.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); qbCurrentPage = 1; loadQuestionBank(); } });
+  $('#admin-qb-prev-btn')?.addEventListener('click', () => { if (qbCurrentPage > 1) { qbCurrentPage--; loadQuestionBank(); } });
+  $('#admin-qb-next-btn')?.addEventListener('click', () => { if (qbCurrentPage < qbTotalPages) { qbCurrentPage++; loadQuestionBank(); } });
+
+  $('#admin-qe-cancel-btn')?.addEventListener('click', closeQuestionEditor);
+  $('#admin-qe-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const qId = $('#admin-qe-question-id')?.value;
+    const status = $('#admin-qe-status');
+    const saveBtn = $('#admin-qe-save-btn');
+
+    const prompt = $('#admin-qe-prompt')?.value.trim();
+    const topic = $('#admin-qe-topic')?.value.trim();
+    const difficulty = $('#admin-qe-difficulty')?.value;
+    const explanation = $('#admin-qe-explanation')?.value.trim();
+
+    const optA = $('#admin-qe-opt-a')?.value.trim();
+    const optB = $('#admin-qe-opt-b')?.value.trim();
+    const optC = $('#admin-qe-opt-c')?.value.trim();
+    const optD = $('#admin-qe-opt-d')?.value.trim();
+    const correctOpt = document.querySelector('input[name="qe_correct_option"]:checked')?.value || 'A';
+
+    const options = [
+      { label: 'A', text: optA },
+      { label: 'B', text: optB },
+    ];
+    if (optC) options.push({ label: 'C', text: optC });
+    if (optD) options.push({ label: 'D', text: optD });
+
+    let spells = [20, 30, 45];
+    const rawSpells = $('#admin-qe-spells')?.value.trim();
+    if (rawSpells) {
+      spells = rawSpells.split(',').map(s => parseInt(s.trim(), 10)).filter(n => !isNaN(n));
+    }
+
+    let health = [100];
+    const rawHealth = $('#admin-qe-health')?.value.trim();
+    if (rawHealth) {
+      health = rawHealth.split(',').map(h => parseInt(h.trim(), 10)).filter(n => !isNaN(n));
+    }
+
+    const corrObj = options.find(o => o.label === correctOpt);
+    const correctAnswer = corrObj ? corrObj.text : (options[0] ? options[0].text : '');
+
+    if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = 'SAVING…'; }
+    if (status) { status.textContent = 'Validating and saving question…'; status.className = 'admin-modal-status hint'; }
+
+    try {
+      const res = await adminApi(`/api/admin/questions/${qId}`, {
+        prompt,
+        topic,
+        difficulty,
+        explanation,
+        options,
+        correct_option: correctOpt,
+        correct_answer: correctAnswer,
+        spells,
+        health,
+      }, 'PUT');
+
+      showAdminToast(`✓ ${res.message}`);
+      closeQuestionEditor();
+      loadQuestionBank();
+    } catch (err) {
+      if (status) { status.textContent = `Error: ${err.message}`; status.className = 'admin-modal-status error'; }
+      if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = 'SAVE QUESTION'; }
+    }
+  });
+
+  $('#admin-qa-close-btn')?.addEventListener('click', closeDistractorAnalytics);
+  $('#admin-si-close-btn')?.addEventListener('click', closeSessionInspectModal);
+  $('#admin-um-close-btn')?.addEventListener('click', closeUserMasteryModal);
+
+  $('#admin-ingest-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const track_id = $('#admin-ingest-track-select')?.value || null;
+    const batch_size = parseInt($('#admin-ingest-batch-size')?.value, 10) || 1000;
+    const status = $('#admin-ingest-status');
+    const btn = $('#admin-ingest-btn');
+
+    if (btn) { btn.disabled = true; btn.textContent = 'INGESTING…'; }
+    if (status) { status.textContent = 'Parsing and ingesting questions into draft release…'; status.className = 'admin-modal-status hint'; }
+
+    try {
+      const res = await adminApi('/api/admin/questions/ingest', { track_id, batch_size }, 'POST');
+      if (status) {
+        status.textContent = `Successfully processed ${res.total_questions} questions across ${res.tracks_processed} track(s)!`;
+        status.className = 'admin-modal-status hint';
+      }
+      showAdminToast(`✓ Ingested ${res.total_questions} questions`);
+      loadReleasesTab();
+    } catch (err) {
+      if (status) {
+        status.textContent = `Ingestion failed: ${err.message}`;
+        status.className = 'admin-modal-status error';
+      }
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = 'START BATCH INGESTION'; }
+    }
+  });
+
+  $('#admin-releases-track-select')?.addEventListener('change', loadReleasesTab);
+
+  $('#admin-obs-refresh-btn')?.addEventListener('click', () => {
+    loadObservabilityMetrics();
+    showAdminToast('Observability metrics refreshed');
+  });
+
+  $('#admin-obs-warm-btn')?.addEventListener('click', async () => {
+    const btn = $('#admin-obs-warm-btn');
+    if (btn) { btn.disabled = true; btn.textContent = 'WARMING…'; }
+    try {
+      const res = await adminApi('/api/admin/system/cache/warm', {}, 'POST');
+      showAdminToast(`✓ Warmed ${Object.keys(res.results || {}).length} tracks`);
+      loadObservabilityMetrics();
+    } catch (err) {
+      showAdminToast(`Cache warming failed: ${err.message}`);
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = '⚡ WARM CACHE'; }
+    }
+  });
+
+  $('#admin-obs-autorefresh')?.addEventListener('change', setupObsAutoRefresh);
+
+  $('#admin-analytics-track-select')?.addEventListener('change', loadLearningAnalytics);
+  $('#admin-analytics-refresh-btn')?.addEventListener('click', () => {
+    loadLearningAnalytics();
+    showAdminToast('Analytics refreshed');
   });
 }
 
