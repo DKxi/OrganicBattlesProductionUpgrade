@@ -37,6 +37,12 @@ class AnswerRequest(BaseModel):
     expected_version: Optional[int] = None
 
 
+class RetryRequest(BaseModel):
+    session_id: Optional[str] = None
+    mode: Optional[str] = "defeat"  # "defeat" | "practice" | "restart"
+    reset_cursor: Optional[bool] = True
+
+
 @router.post("/battle/select-spell")
 def select_spell(
     body: SelectSpellRequest,
@@ -431,21 +437,48 @@ def next_turn(
 
 @router.post("/battle/retry")
 def retry_battle(
+    body: Optional[RetryRequest] = None,
     session_id: Optional[str] = None,
+    mode: Optional[str] = None,
     current_user: User = Depends(get_current_user),
     db: DBSession = Depends(get_db),
 ):
+    target_sid = (body.session_id if body else None) or session_id
+    target_mode = (body.mode if body and body.mode else None) or mode or "defeat"
+
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=session_id)
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=target_sid)
+
+    if game_session.boss_hp <= 0:
+        raise HTTPException(400, "The boss is already defeated. Proceed to the next arena.")
+
+    if target_mode == "defeat":
+        if game_session.player_hp > 0:
+            raise HTTPException(
+                status_code=400,
+                detail="Cannot retry an active battle unless defeated. Use practice restart if you wish to reset.",
+            )
 
     effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
     bundle = get_content_bundle(effective)
     chapters = bundle.chapters
     ch_idx = max(0, min(game_session.chapter - 1, len(chapters) - 1))
     boss = chapters[ch_idx]["bosses"][max(0, min(game_session.boss_index, len(chapters[ch_idx]["bosses"]) - 1))]
+    boss_slug = boss[0]
+
+    # Reset question cursor specifically for this chapter and boss
+    cursors = json.loads(game_session.question_cursors_json) if game_session.question_cursors_json else {}
+    cursor_key = f"{game_session.chapter}:{boss_slug}"
+    cursors[cursor_key] = 0
 
     expected_version = game_session.version
     now_ts = int(time.time())
+
+    log_msg = (
+        f"Regrouped after defeat. Battle with {boss[1]} restarted!"
+        if target_mode == "defeat"
+        else f"Practice restart. Battle with {boss[1]} restarted!"
+    )
 
     updated_rows = db.query(GameSession).filter(
         GameSession.id == game_session.id,
@@ -457,9 +490,10 @@ def retry_battle(
             GameSession.boss_hp: boss[2],
             GameSession.active_spell: None,
             GameSession.active_question_json: None,
-            GameSession.cooldowns_json: "{}",
-            GameSession.log_json: json.dumps([f"Regrouped. Battle with {boss[1]} restarted!"]),
             GameSession.turn_id: None,
+            GameSession.cooldowns_json: "{}",
+            GameSession.question_cursors_json: json.dumps(cursors),
+            GameSession.log_json: json.dumps([log_msg]),
             GameSession.version: GameSession.version + 1,
             GameSession.updated_at: now_ts,
         },
@@ -473,3 +507,23 @@ def retry_battle(
     db.refresh(game_session)
 
     return format_game_state(game_session, current_user)
+
+
+@router.post("/battle/restart")
+def restart_battle(
+    body: Optional[RetryRequest] = None,
+    session_id: Optional[str] = None,
+    current_user: User = Depends(get_current_user),
+    db: DBSession = Depends(get_db),
+):
+    """Practice restart: reset current chapter boss encounter at any time without requiring player defeat."""
+    req_body = body or RetryRequest(session_id=session_id, mode="practice")
+    if not req_body.mode or req_body.mode == "defeat":
+        req_body.mode = "practice"
+    return retry_battle(
+        body=req_body,
+        session_id=session_id,
+        mode="practice",
+        current_user=current_user,
+        db=db,
+    )
