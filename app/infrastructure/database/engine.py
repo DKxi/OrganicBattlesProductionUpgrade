@@ -310,6 +310,17 @@ def _seed_tracks_if_empty() -> None:
         logger.warning("Auto tracks seed note: %s", e)
 
 
+def _seed_bosses_if_empty() -> None:
+    """Populate OB_bosses and default question assignments if empty."""
+    try:
+        from app.infrastructure.database.bosses_repo import BossesRepository
+        with SessionLocal() as db_session:
+            repo = BossesRepository(db_session)
+            repo.seed_default_bosses("organic1")
+    except Exception as e:
+        logger.debug("Auto bosses seed note: %s", e)
+
+
 def ensure_db_schema() -> None:
     """Ensure legacy tables are renamed, database tables exist, SQLite columns are up to date, and tracks are seeded."""
     _ensure_postgres_extensions(engine)
@@ -324,6 +335,7 @@ def ensure_db_schema() -> None:
         except Exception as exc:
             logger.debug("PostgreSQL column migration note: %s", exc)
     _seed_tracks_if_empty()
+    _seed_bosses_if_empty()
 
 
 def get_db() -> Generator[DBSession, None, None]:

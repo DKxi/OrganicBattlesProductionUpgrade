@@ -302,6 +302,39 @@ def answer_question(
 
     db.refresh(game_session)
 
+    # Record answer attempt and update player mastery & spaced repetition progress
+    try:
+        from app.infrastructure.database.progress_repo import ProgressRepository
+        from app.infrastructure.database.models import Question
+        track_id = effective.replace("track:", "") if effective else "default"
+        q_row = db.query(Question.id, Question.release_id).filter(Question.track_id == track_id, Question.prompt == q_prompt).first()
+        q_id = q_row[0] if q_row else None
+        q_release = q_row[1] if q_row else None
+        if q_id:
+            prog_repo = ProgressRepository(db)
+            prog_repo.record_attempt(
+                user_id=current_user.id,
+                question_id=q_id,
+                track_id=track_id,
+                boss_slug=boss_slug,
+                selected_option=body.answer,
+                is_correct=turn_result.correct,
+                session_id=game_session.id,
+                release_id=q_release,
+                spell_id=game_session.active_spell,
+                damage_dealt=turn_result.damage,
+                damage_taken=turn_result.self_damage if not turn_result.correct else turn_result.boss_counterattack_damage,
+            )
+            prog_repo.update_progress(
+                user_id=current_user.id,
+                question_id=q_id,
+                track_id=track_id,
+                is_correct=turn_result.correct,
+            )
+            db.commit()
+    except Exception as exc:
+        logger.debug("Progress logging note: %s", exc)
+
     # Format battle response
     state = format_game_state(game_session, current_user)
     return {
