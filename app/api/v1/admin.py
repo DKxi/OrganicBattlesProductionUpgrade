@@ -4,7 +4,7 @@ import time
 import secrets
 import logging
 from typing import Optional, Dict, Any, List
-from fastapi import APIRouter, Request, Response, Depends, HTTPException, Header, Cookie
+from fastapi import APIRouter, Request, Response, Depends, HTTPException, Header, Cookie, Query
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session as DBSession
 
@@ -71,15 +71,44 @@ class TrackUpdateRequest(BaseModel):
 
 @router.post("/admin/login")
 @limiter.limit("10/minute")
-def admin_login(request: Request, body: AdminLoginRequest, response: Response):
-    if body.username != settings.admin_username or body.password != settings.admin_password:
-        logger.warning("Admin authentication failed for username: %s", body.username)
+def admin_login(
+    request: Request,
+    body: AdminLoginRequest,
+    response: Response,
+    db: DBSession = Depends(get_db),
+):
+    from app.infrastructure.database.admin_repo import AdminRepository
+    admin_repo = AdminRepository(db)
+    client_ip = request.client.host if request.client else "unknown"
+    user_agent = request.headers.get("user-agent", "unknown")
+
+    admin_user = admin_repo.verify_admin_credentials(body.username, body.password)
+    if not admin_user:
+        logger.warning("[ADMIN_AUTH_FAIL] Admin authentication failed for username '%s' from IP %s", body.username, client_ip)
         raise HTTPException(401, "Incorrect admin username or password")
 
     token = secrets.token_urlsafe(40)
     thash = code_hash(token)
     ttl_seconds = settings.admin_session_ttl_hours * 3600
+
+    admin_repo.create_session(
+        admin_user_id=admin_user.id,
+        token_hash=thash,
+        ttl_seconds=ttl_seconds,
+        ip_address=client_ip,
+        user_agent=user_agent,
+    )
     set_admin_token(thash, ttl_seconds)
+
+    admin_repo.log_action(
+        admin_user_id=admin_user.id,
+        admin_username=admin_user.username,
+        action="LOGIN",
+        target_type="auth",
+        target_id=admin_user.id,
+        details={"ip": client_ip, "user_agent": user_agent},
+        ip_address=client_ip,
+    )
 
     response.set_cookie(
         "admin_token",
@@ -89,8 +118,9 @@ def admin_login(request: Request, body: AdminLoginRequest, response: Response):
         secure=False,
         max_age=ttl_seconds,
     )
-    logger.info("Admin user '%s' authenticated successfully", body.username)
-    return {"token": token, "username": settings.admin_username, "status": "ok"}
+    logger.info("[ADMIN_AUTH] Admin user '%s' (ID: %s) authenticated successfully from IP %s", admin_user.username, admin_user.id, client_ip)
+    return {"token": token, "username": admin_user.username, "admin_id": admin_user.id, "status": "ok"}
+
 
 
 @router.get("/admin/status")
@@ -147,6 +177,20 @@ def admin_toggle_user_verification(
     user.verified = 0 if user.verified else 1
     db.commit()
     db.refresh(user)
+
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) toggled verification for user '%s' (ID: %s) to %s", admin_username, admin_id, user.username, user.id, user.verified)
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="TOGGLE_VERIFICATION",
+        target_type="user",
+        target_id=user.id,
+        details={"username": user.username, "verified": bool(user.verified)},
+    )
+
     return {
         "status": "ok",
         "user_id": user.id,
@@ -196,6 +240,10 @@ def admin_update_user_config(
 
     db.commit()
     db.refresh(user)
+
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) updated config for user '%s' (ID: %s) to %s", admin_username, admin_id, user.username, user.id, user.content_source)
 
     effective = resolve_content_source(user.content_source)
     track_id = effective.replace("track:", "")
@@ -249,6 +297,20 @@ def admin_update_user_credentials(
 
     db.commit()
     db.refresh(user)
+
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) updated credentials for user '%s' (ID: %s): %s", admin_username, admin_id, user.username, user.id, updated_fields)
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="UPDATE_USER_CREDENTIALS",
+        target_type="user",
+        target_id=user.id,
+        details={"username": user.username, "updated_fields": updated_fields},
+    )
+
 
     return {
         "status": "ok",
@@ -379,6 +441,19 @@ def admin_reset_session(
     db.commit()
     db.refresh(game_session)
 
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) reset session '%s' to Chapter %d (%s)", admin_username, admin_id, session_id, target_chapter, first_boss[1])
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="RESET_SESSION",
+        target_type="session",
+        target_id=session_id,
+        details={"chapter": target_chapter, "boss": first_boss[1], "user_id": game_session.user_id},
+    )
+
     return {
         "status": "ok",
         "message": f"Session reset to Chapter {target_chapter} ({first_boss[1]})",
@@ -405,6 +480,19 @@ def admin_delete_session(
     user = db.query(User).filter(User.id == game_session.user_id).first()
     if user:
         user.progress_json = None
+
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) deleted session '%s'", admin_username, admin_id, session_id)
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="DELETE_SESSION",
+        target_type="session",
+        target_id=session_id,
+        details={"user_id": game_session.user_id},
+    )
 
     db.delete(game_session)
     db.commit()
@@ -527,6 +615,9 @@ def admin_switch_database(
         result = switch_database(target_url)
         if migration_stats is not None:
             result["migration"] = migration_stats
+        admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+        admin_username = admin_info.get("username", "admin")
+        logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) switched database dialect to '%s'", admin_username, admin_id, dialect_clean)
         return result
     except HTTPException:
         raise
@@ -569,6 +660,19 @@ def admin_switch_folders(
     # Invalidate in-memory cache so new paths are loaded immediately
     from app.api.deps import TRACK_BUNDLES
     TRACK_BUNDLES.clear()
+
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) updated folders for track '%s' (data: %s, boss: %s)", admin_username, admin_id, body.track_id, body.data_folder, body.boss_folder)
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="SWITCH_FOLDERS",
+        target_type="storage",
+        details={"track_id": body.track_id, "data_folder": body.data_folder, "boss_folder": body.boss_folder},
+    )
+
 
     return {"status": "ok", "message": "Folder locations updated in database and bundle cache refreshed"}
 
@@ -640,7 +744,9 @@ def admin_update_logging_config(
     """Update active logging levels dynamically and persist to logging.properties."""
     from app.observability.logging import update_logging_config
     cfg = update_logging_config(levels=body.levels, log_file_path=body.log_file_path)
-    logger.info("Admin updated logging configuration: %s", body.levels)
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) updated logging configuration: %s", admin_username, admin_id, body.levels)
     return {
         "status": "ok",
         "message": "Logging configuration updated and persisted",
@@ -651,13 +757,16 @@ def admin_update_logging_config(
 @router.get("/admin/system/logging/tail")
 def admin_tail_logs(
     lines: int = 100,
+    log_type: str = Query("admin", description="'admin' for logs/admin.log or 'player' for logs/organic_battles.log"),
     admin_info: dict = Depends(auth_admin),
 ):
     """Retrieve recent log lines from active log file for dashboard console."""
-    from app.observability.logging import tail_log_file, DEFAULT_LOG_FILE
-    log_lines = tail_log_file(lines=min(max(1, lines), 1000))
+    from app.observability.logging import tail_log_file, DEFAULT_LOG_FILE, ADMIN_LOG_FILE
+    target_file = ADMIN_LOG_FILE if log_type == "admin" else DEFAULT_LOG_FILE
+    log_lines = tail_log_file(lines=min(max(1, lines), 1000), log_type=log_type)
     return {
-        "log_file": str(DEFAULT_LOG_FILE),
+        "log_file": str(target_file),
+        "log_type": log_type,
         "lines_count": len(log_lines),
         "lines": log_lines,
     }
@@ -670,6 +779,9 @@ def admin_warm_cache(
 ):
     """Warm cache for specified tracks or configured popular tracks."""
     from app.infrastructure.cache.shared_cache import shared_track_cache
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) triggered cache warming for tracks: %s", admin_username, admin_id, tracks)
     track_ids = [t.strip() for t in tracks.split(",") if t.strip()] if tracks else None
     results = shared_track_cache.warm_tracks(settings.root_dir, track_ids)
     return {"status": "ok", "results": results, "stats": shared_track_cache.stats()}
@@ -715,6 +827,20 @@ def admin_rollback_track_release(
     try:
         active = repo.rollback_to_release(track_id, version)
         shared_track_cache.invalidate_track(track_id)
+
+        admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+        admin_username = admin_info.get("username", "admin")
+        logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) rolled back track '%s' to release %s (v%d)", admin_username, admin_id, track_id, active.id, version)
+        from app.infrastructure.database.admin_repo import AdminRepository
+        AdminRepository(db).log_action(
+            admin_user_id=admin_id,
+            admin_username=admin_username,
+            action="ROLLBACK_RELEASE",
+            target_type="release",
+            target_id=active.id,
+            details={"track_id": track_id, "version": version, "release_id": active.id},
+        )
+
         return {
             "status": "ok",
             "message": f"Track '{track_id}' rolled back to release {active.id} (v{version})",
@@ -725,16 +851,85 @@ def admin_rollback_track_release(
         raise HTTPException(404, str(exc))
 
 
-@router.post("/admin/logout")
+class AdminCreateUserRequest(BaseModel):
+    username: str
+    password: str
+    role: Optional[str] = "admin"
 
+
+@router.post("/admin/manage/users")
+def admin_create_admin_user(
+    body: AdminCreateUserRequest,
+    admin_info: dict = Depends(auth_admin),
+    db: DBSession = Depends(get_db),
+):
+    """Create a new administrator account (admin-only workflow)."""
+    from app.infrastructure.database.admin_repo import AdminRepository
+    from app.infrastructure.database.repositories import UserRepository
+    admin_repo = AdminRepository(db)
+    user_repo = UserRepository(db)
+
+    clean_uname = body.username.strip().lower()
+    if len(clean_uname) < 3 or len(clean_uname) > 24:
+        raise HTTPException(400, "Admin username must be between 3 and 24 characters")
+    if len(body.password) < 5:
+        raise HTTPException(400, "Password must be at least 5 characters")
+
+    if admin_repo.get_by_username(clean_uname):
+        raise HTTPException(409, f"Admin user '{clean_uname}' already exists")
+    if user_repo.get_by_username(clean_uname):
+        raise HTTPException(409, f"Username '{clean_uname}' is already in use by a player account")
+
+    pwd_hash = hash_password(body.password)
+    new_admin = admin_repo.create_admin(username=clean_uname, password_hash=pwd_hash, role=body.role or "admin")
+
+    creator_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    creator_uname = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) created new admin user '%s' (ID: %s, role: %s)", creator_uname, creator_id, new_admin.username, new_admin.id, new_admin.role)
+    admin_repo.log_action(
+        admin_user_id=creator_id,
+        admin_username=creator_uname,
+        action="CREATE_ADMIN_USER",
+        target_type="admin_user",
+        target_id=new_admin.id,
+        details={"username": new_admin.username, "role": new_admin.role},
+    )
+
+    return {
+        "status": "ok",
+        "admin_id": new_admin.id,
+        "username": new_admin.username,
+        "role": new_admin.role,
+        "message": f"Admin user '{new_admin.username}' created successfully",
+    }
+
+
+@router.post("/admin/logout")
 def admin_logout(
     response: Response,
     authorization: Optional[str] = Header(default=None),
     admin_token: Optional[str] = Cookie(default=None),
+    db: DBSession = Depends(get_db),
 ):
     raw = admin_token or (authorization[7:].strip() if authorization and authorization.lower().startswith("bearer ") else None)
     if raw:
         thash = code_hash(raw)
+        from app.infrastructure.database.admin_repo import AdminRepository
+        admin_repo = AdminRepository(db)
+        admin_sess = admin_repo.get_session(thash)
+        if admin_sess:
+            admin_user = admin_repo.get_by_id(admin_sess.admin_user_id)
+            uname = admin_user.username if admin_user else "admin"
+            logger.info("[ADMIN_ACTION] Admin user '%s' (ID: %s) logged out", uname, admin_sess.admin_user_id)
+            admin_repo.log_action(
+                admin_user_id=admin_sess.admin_user_id,
+                admin_username=uname,
+                action="LOGOUT",
+                target_type="auth",
+                target_id=admin_sess.admin_user_id,
+            )
+            admin_repo.delete_session(thash)
         revoke_admin_token(thash)
     response.delete_cookie("admin_token")
     return {"status": "ok"}
+

@@ -58,6 +58,13 @@ def signup(request: Request, body: SignupRequest, db: DBSession = Depends(get_db
     user_repo = UserRepository(db)
     auth_repo = AuthRepository(db)
 
+    clean_username = body.username.strip().lower()
+    from app.infrastructure.database.admin_repo import AdminRepository
+    admin_repo = AdminRepository(db)
+    if admin_repo.get_by_username(clean_username) or clean_username in ("admin", "admin1", "root", "administrator"):
+        logger.warning("Signup rejected: username '%s' is reserved for administrators", body.username)
+        raise HTTPException(400, "Username is reserved for administrators and cannot be registered as a player")
+
     if user_repo.get_by_email(email):
         logger.warning("Signup conflict: email already registered (%s)", email)
         raise HTTPException(409, "An account with that email already exists")

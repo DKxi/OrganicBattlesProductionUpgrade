@@ -107,8 +107,9 @@ def auth_admin(
     authorization: Optional[str] = Header(default=None),
     admin_token: Optional[str] = Cookie(default=None),
     session_token: Optional[str] = Cookie(default=None),
+    db: DBSession = Depends(get_db),
 ) -> Dict[str, Any]:
-    """Validate administrator access."""
+    """Validate administrator access against database-stored admin users and sessions."""
     raw = None
     if authorization and authorization.lower().startswith("bearer "):
         raw = authorization[7:].strip()
@@ -121,8 +122,43 @@ def auth_admin(
         raise HTTPException(401, "Admin authentication required")
 
     thash = code_hash(raw)
-    expiry = get_admin_token_expiry(thash)
-    if not expiry or expiry < time.time():
-        raise HTTPException(401, "Admin session expired or invalid")
+    from app.infrastructure.database.admin_repo import AdminRepository
+    admin_repo = AdminRepository(db)
+    admin_session = admin_repo.get_session(thash)
 
-    return {"username": settings.admin_username, "is_admin": True}
+    if not admin_session:
+        # Fallback to in-memory check for backwards compatibility if needed
+        expiry = get_admin_token_expiry(thash)
+        if not expiry or expiry < time.time():
+            raise HTTPException(401, "Admin session expired or invalid")
+        admin = admin_repo.get_by_username("admin")
+        if admin:
+            return {
+                "id": admin.id,
+                "admin_id": admin.id,
+                "username": admin.username,
+                "role": admin.role,
+                "is_admin": True,
+            }
+        return {
+            "id": "admin_default",
+            "admin_id": "admin_default",
+            "username": "admin",
+            "role": "superadmin",
+            "is_admin": True,
+        }
+
+    admin_user = admin_repo.get_by_id(admin_session.admin_user_id)
+    if not admin_user or not admin_user.is_active:
+        raise HTTPException(401, "Admin account disabled or not found")
+
+    admin_repo.update_session_activity(thash)
+
+    return {
+        "id": admin_user.id,
+        "admin_id": admin_user.id,
+        "username": admin_user.username,
+        "role": admin_user.role,
+        "is_admin": True,
+    }
+

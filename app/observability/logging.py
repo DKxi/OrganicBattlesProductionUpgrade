@@ -10,11 +10,14 @@ from app.settings import settings
 
 DEFAULT_LOG_DIR = settings.root_dir / "logs"
 DEFAULT_LOG_FILE = DEFAULT_LOG_DIR / "organic_battles.log"
+PLAYER_LOG_FILE = DEFAULT_LOG_FILE
+ADMIN_LOG_FILE = DEFAULT_LOG_DIR / "admin.log"
 PROPERTIES_FILE = settings.root_dir / "logging.properties"
 
 KNOWN_LOGGERS = [
     "root",
     "organicbattles",
+    "organicbattles.admin",
     "organicbattles.api",
     "organicbattles.battle",
     "organicbattles.auth",
@@ -36,9 +39,10 @@ def ensure_logs_directory(log_file_path: Optional[Path] = None) -> Path:
 def setup_logging(config_path: Optional[Path] = None) -> None:
     """
     Initialize logging configuration from logging.properties if available.
-    Ensures logs/ folder exists and falls back gracefully to standard console + file handlers.
+    Ensures logs/ folder exists and sets up separate handlers for player and admin logs.
     """
-    ensure_logs_directory()
+    ensure_logs_directory(DEFAULT_LOG_FILE)
+    ensure_logs_directory(ADMIN_LOG_FILE)
     prop_path = config_path or PROPERTIES_FILE
 
     if prop_path.is_file():
@@ -48,6 +52,7 @@ def setup_logging(config_path: Optional[Path] = None) -> None:
                 str(prop_path),
                 disable_existing_loggers=False,
             )
+            _ensure_admin_file_handler()
             return
         except Exception as exc:
             print(f"[Logging] Error loading {prop_path}: {exc}. Using fallback configuration.", file=sys.stderr)
@@ -81,11 +86,43 @@ def setup_logging(config_path: Optional[Path] = None) -> None:
             file_handler.setFormatter(fmt)
             root_logger.addHandler(file_handler)
         except Exception as file_err:
-            print(f"[Logging] Could not attach file handler: {file_err}", file=sys.stderr)
+            print(f"[Logging] Could not attach player file handler: {file_err}", file=sys.stderr)
+
+    _ensure_admin_file_handler()
+
+
+def _ensure_admin_file_handler() -> None:
+    """Ensure organicbattles.admin logger writes to logs/admin.log."""
+    from logging.handlers import RotatingFileHandler
+
+    admin_logger = logging.getLogger("organicbattles.admin")
+    admin_logger.setLevel(logging.DEBUG)
+
+    # Check if handler already attached to avoid duplicate logging
+    for h in admin_logger.handlers:
+        if isinstance(h, RotatingFileHandler) and Path(h.baseFilename) == ADMIN_LOG_FILE:
+            return
+
+    try:
+        admin_fmt = logging.Formatter(
+            "%(asctime)s [%(levelname)s] [%(name)s] %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S",
+        )
+        admin_handler = RotatingFileHandler(
+            str(ADMIN_LOG_FILE),
+            maxBytes=10 * 1024 * 1024,
+            backupCount=5,
+            encoding="utf-8",
+        )
+        admin_handler.setLevel(logging.DEBUG)
+        admin_handler.setFormatter(admin_fmt)
+        admin_logger.addHandler(admin_handler)
+    except Exception as exc:
+        print(f"[Logging] Could not attach admin file handler: {exc}", file=sys.stderr)
 
 
 def get_logging_config() -> Dict[str, Any]:
-    """Retrieve current logging levels and log file metadata."""
+    """Retrieve current logging levels and log file metadata for player and admin logs."""
     levels = {}
     for name in KNOWN_LOGGERS:
         lg = logging.getLogger() if name == "root" else logging.getLogger(name)
@@ -96,11 +133,18 @@ def get_logging_config() -> Dict[str, Any]:
     file_exists = active_file.is_file()
     file_size = active_file.stat().st_size if file_exists else 0
 
+    admin_file_exists = ADMIN_LOG_FILE.is_file()
+    admin_file_size = ADMIN_LOG_FILE.stat().st_size if admin_file_exists else 0
+
     return {
         "properties_file": str(PROPERTIES_FILE),
         "properties_exists": PROPERTIES_FILE.is_file(),
         "log_file": str(active_file),
         "log_file_relative": str(active_file.relative_to(settings.root_dir)) if active_file.is_relative_to(settings.root_dir) else str(active_file),
+        "admin_log_file": str(ADMIN_LOG_FILE),
+        "admin_log_file_relative": str(ADMIN_LOG_FILE.relative_to(settings.root_dir)) if ADMIN_LOG_FILE.is_relative_to(settings.root_dir) else str(ADMIN_LOG_FILE),
+        "admin_file_exists": admin_file_exists,
+        "admin_file_size_bytes": admin_file_size,
         "file_exists": file_exists,
         "file_size_bytes": file_size,
         "file_size_formatted": f"{file_size / (1024 * 1024):.2f} MB" if file_size else "0 KB",
@@ -137,6 +181,7 @@ def update_logging_config(
     section_map = {
         "root": "logger_root",
         "organicbattles": "logger_organicbattles",
+        "organicbattles.admin": "logger_admin",
         "organicbattles.api": "logger_api",
         "organicbattles.battle": "logger_battle",
         "organicbattles.auth": "logger_auth",
@@ -160,11 +205,18 @@ def update_logging_config(
     return get_logging_config()
 
 
-def tail_log_file(lines: int = 100, log_file: Optional[Path] = None) -> List[str]:
+def tail_log_file(lines: int = 100, log_file: Optional[Path] = None, log_type: str = "player") -> List[str]:
     """
     Safely extract the last N lines from the active log file for the Admin dashboard.
+    log_type: 'admin' for logs/admin.log or 'player' for logs/organic_battles.log.
     """
-    target = log_file or DEFAULT_LOG_FILE
+    if log_file:
+        target = log_file
+    elif log_type == "admin":
+        target = ADMIN_LOG_FILE
+    else:
+        target = DEFAULT_LOG_FILE
+
     if not target.is_file():
         return [f"[Logging] No log file found at {target}"]
 
@@ -174,3 +226,4 @@ def tail_log_file(lines: int = 100, log_file: Optional[Path] = None) -> List[str
             return all_lines[-lines:] if len(all_lines) > lines else all_lines
     except Exception as exc:
         return [f"[Logging] Error reading log file: {exc}"]
+

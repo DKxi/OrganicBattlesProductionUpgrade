@@ -321,6 +321,17 @@ def _seed_bosses_if_empty() -> None:
         logger.debug("Auto bosses seed note: %s", e)
 
 
+def _seed_admin_users_if_empty() -> None:
+    """Seed initial default admin users (admin / admin and admin1 / admin2) if not present."""
+    try:
+        from app.infrastructure.database.admin_repo import AdminRepository
+        with SessionLocal() as db_session:
+            repo = AdminRepository(db_session)
+            repo.seed_default_admins()
+    except Exception as exc:
+        logger.debug("Auto admin seed note: %s", exc)
+
+
 def ensure_db_schema() -> None:
     """Ensure legacy tables are renamed, database tables exist, SQLite columns are up to date, and tracks are seeded."""
     _ensure_postgres_extensions(engine)
@@ -336,6 +347,8 @@ def ensure_db_schema() -> None:
             logger.debug("PostgreSQL column migration note: %s", exc)
     _seed_tracks_if_empty()
     _seed_bosses_if_empty()
+    _seed_admin_users_if_empty()
+
 
 
 def get_db() -> Generator[DBSession, None, None]:

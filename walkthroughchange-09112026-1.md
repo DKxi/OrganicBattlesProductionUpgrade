@@ -659,6 +659,91 @@ The system needed a long-term data model separation supporting:
   - **326 passed, 1 skipped in 49.86s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
 
+---
+
+# Walkthrough: Database-Backed Admin User Security, Session Management, and Separate Audit Logging
+
+## Problem Summary
+1. Administrator authentication previously relied on static environment variables (`ADMIN_USERNAME` and `ADMIN_PASSWORD` in `.env` / `settings.py`), creating a security bottleneck without multi-admin provisioning, credential rotation, or database isolation.
+2. Admin sessions were stored purely in an in-memory dictionary (`ADMIN_TOKENS`), causing sessions to vanish upon process restarts and failing cluster synchronization across multi-worker deployments.
+3. Administrator operations—especially Question Bank edits, reorders, batch ingestion, player verification toggles, and session resets—were not audited with the performing `admin_user_id`.
+4. Logs for all subsystems (combat, player auth, admin operations) were combined in `logs/organic_battles.log`, lacking isolated audit logging for administrative activity.
+5. Player registration lacked validation preventing players from registering with reserved administrator usernames.
+
+## Key Changes Implemented
+
+### 1. Dedicated Database Models (`OB_` Prefix)
+In [app/infrastructure/database/models.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/models.py):
+- **`AdminUser` (`OB_admin_users`)**:
+  - Primary key `id` (e.g. `admin_` + hex).
+  - Columns: `username` (unique, indexed), `password_hash` (PBKDF2-HMAC-SHA256), `role`, `is_active`, `created_at`, `updated_at`.
+- **`AdminSession` (`OB_admin_sessions`)**:
+  - Primary key `token_hash` (SHA-256 of session bearer token).
+  - Columns: `admin_user_id` (foreign key to `OB_admin_users.id`, cascade delete), `ip_address`, `user_agent`, `expires_at` (indexed), `created_at`, `last_activity_at`.
+- **`AdminAuditLog` (`OB_admin_audit_logs`)**:
+  - Primary key `id` (BigInteger autoincrement).
+  - Columns: `admin_user_id` (foreign key to `OB_admin_users.id`), `admin_username`, `action`, `target_type`, `target_id`, `details_json` (JSONB), `ip_address`, `created_at` (indexed).
+
+### 2. Admin Repository & Default Admin Provisioning
+In [app/infrastructure/database/admin_repo.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/admin_repo.py):
+- **`AdminRepository`**:
+  - `get_by_id`, `get_by_username`, `create_admin`, and `verify_admin_credentials`.
+  - `create_session`, `get_session`, `update_session_activity`, and `delete_session`.
+  - `log_action`: Writes structured audit events to `OB_admin_audit_logs`.
+  - `seed_default_admins`: Automatically provisions the required initial accounts:
+    1. `user="admin"`, `password="admin"` (role: `superadmin`)
+    2. `user="admin1"`, `password="admin2"` (role: `admin`)
+- In [app/infrastructure/database/engine.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/engine.py):
+  - Hooked `_seed_admin_users_if_empty()` into `ensure_db_schema()`.
+
+### 3. Isolated Admin Logging (`logs/admin.log`)
+In [app/observability/logging.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/logging.py):
+- Defined `ADMIN_LOG_FILE = DEFAULT_LOG_DIR / "admin.log"`.
+- Dedicated rotating file handler attached to `organicbattles.admin` logger writing directly to `logs/admin.log`.
+- Updated `tail_log_file` and `/api/v1/admin/system/logging/tail` to support `log_type="admin"`, enabling real-time inspection of admin logs in the console.
+- Player combat and auth operations remain isolated in `logs/organic_battles.log`.
+
+### 4. Admin vs. Player Registration & Authentication Isolation
+- **Player Signup Protection** ([app/api/v1/auth.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/auth.py)):
+  - `/auth/signup` checks `AdminRepository(db).get_by_username()` and reserved list (`admin`, `admin1`, `root`, `administrator`).
+  - Rejects attempts with `HTTP 400 Bad Request` ("Username is reserved for administrators and cannot be registered as a player").
+- **Admin Authentication & Dependency** ([app/api/deps.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/deps.py)):
+  - `auth_admin` dependency strictly validates tokens against `OB_admin_sessions` and `OB_admin_users`.
+  - Returns `{"id": admin_user.id, "admin_id": admin_user.id, "username": admin_user.username, "role": admin_user.role, "is_admin": True}`.
+- **Admin Management API** ([app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py)):
+  - Added `POST /api/v1/admin/manage/users` allowing administrators to create new admin users.
+  - Rejects usernames already taken by either players or administrators.
+- **Login Separation**:
+  - `/api/v1/admin/login` only checks `OB_admin_users` and creates `OB_admin_sessions` entries.
+  - `/api/v1/auth/login` only checks `OB_users`. Player and admin credentials cannot cross-authenticate.
+
+### 5. Audit Logging with `admin_user_id` Across Question Bank & Admin Operations
+All sensitive mutations log to `logs/admin.log` and record entries in `OB_admin_audit_logs`:
+- **Question Updates**: `PUT /api/v1/admin/questions/{id}` records `UPDATE_QUESTION` with `admin_user_id` and updated field list.
+- **Question Reordering**: `POST /api/v1/admin/tracks/.../reorder` records `REORDER_QUESTIONS` with `admin_user_id` and new release ID.
+- **Question Ingestion**: `POST /api/v1/admin/questions/ingest` records `INGEST_QUESTIONS` with `admin_user_id`.
+- **Release Rollback**: `POST /api/v1/admin/tracks/.../rollback` records `ROLLBACK_RELEASE` with `admin_user_id`.
+- **User Verification & Credentials**: `POST /api/v1/admin/users/{id}/verify` and `/credentials` record `TOGGLE_VERIFICATION` and `UPDATE_USER_CREDENTIALS` with `admin_user_id`.
+- **Session Reset & Deletion**: `POST /api/v1/admin/sessions/{id}/reset` and `DELETE /sessions/{id}` record `RESET_SESSION` and `DELETE_SESSION` with `admin_user_id`.
+- **Storage & Folders**: `POST /api/v1/admin/system/folders` records `SWITCH_FOLDERS` with `admin_user_id`.
+- **Admin Auth**: `POST /api/v1/admin/login` and `/logout` record `LOGIN` and `LOGOUT` with `admin_user_id` and client IP.
+
+### 6. Automated Verification & Regression Suite
+- Created [tests/test_admin_security_and_sessions.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_admin_security_and_sessions.py):
+  - **`test_default_admin_users_seeded`**: Verifies `admin` (pw `admin`) and `admin1` (pw `admin2`) exist in `OB_admin_users` with valid PBKDF2 hashes.
+  - **`test_database_admin_login_and_session_tracking`**: Verifies login generates a DB-persisted session in `OB_admin_sessions`.
+  - **`test_player_cannot_login_as_admin_and_vice_versa`**: Verifies cross-portal authentication fails with HTTP 401.
+  - **`test_player_cannot_signup_with_admin_username`**: Verifies player signup rejects admin usernames with HTTP 400.
+  - **`test_admin_question_bank_changes_logged_with_admin_id`**: Verifies question bank modifications create structured logs with `admin_user_id` in `logs/admin.log` and `OB_admin_audit_logs`.
+  - **`test_admin_logs_separated_from_player_logs`**: Verifies admin operations log to `logs/admin.log` and the admin tail endpoint returns admin lines.
+  - **`test_admin_logout_revokes_db_session`**: Verifies logout deletes the database session and revokes access.
+- Updated [tests/test_ob_table_prefix.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_ob_table_prefix.py):
+  - Added `OB_admin_users`, `OB_admin_sessions`, and `OB_admin_audit_logs` to prefix verification tests.
+- **Full Test Suite (`uv run pytest`)**:
+  - **333 passed, 1 skipped in 58.00s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+
 
 
 

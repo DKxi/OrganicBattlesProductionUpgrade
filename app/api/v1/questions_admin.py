@@ -236,6 +236,19 @@ def admin_update_question(
     db.commit()
     db.refresh(q)
 
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) updated question %d in track '%s' (prompt: %.50s...)", admin_username, admin_id, q.id, q.track_id, q.prompt)
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="UPDATE_QUESTION",
+        target_type="question",
+        target_id=str(q.id),
+        details={"track_id": q.track_id, "chapter": q.chapter, "boss_slug": q.boss_slug, "updated_fields": list(body.model_dump(exclude_unset=True).keys())},
+    )
+
     # Invalidate caches for this track
     shared_track_cache.invalidate_track(q.track_id)
     invalidate_bundle_cache(q.track_id)
@@ -248,12 +261,14 @@ def admin_update_question(
     }
 
 
+
 def _execute_reorder(
     track_id: str,
     chapter: int,
     boss_slug: Optional[str],
     body: ReorderQuestionsRequest,
     db: DBSession,
+    admin_info: Optional[dict] = None,
 ) -> dict:
     track = db.query(Track).filter(Track.id == track_id).first()
     if not track:
@@ -365,6 +380,20 @@ def _execute_reorder(
     shared_track_cache.invalidate_track(track_id)
     invalidate_bundle_cache(track_id)
 
+    if admin_info:
+        admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+        admin_username = admin_info.get("username", "admin")
+        logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) reordered questions for track '%s', chapter %d, boss '%s' (release: %s)", admin_username, admin_id, track_id, chapter, effective_boss_slug, draft_rel.id)
+        from app.infrastructure.database.admin_repo import AdminRepository
+        AdminRepository(db).log_action(
+            admin_user_id=admin_id,
+            admin_username=admin_username,
+            action="REORDER_QUESTIONS",
+            target_type="track_questions",
+            target_id=f"{track_id}:{chapter}:{effective_boss_slug}",
+            details={"track_id": track_id, "chapter": chapter, "boss_slug": effective_boss_slug, "release_id": draft_rel.id, "reordered_count": len(final_ordered_ids)},
+        )
+
     return {
         "status": "ok",
         "track_id": track_id,
@@ -395,6 +424,7 @@ def admin_reorder_questions_by_boss(
         boss_slug=boss_slug,
         body=body,
         db=db,
+        admin_info=admin_info,
     )
 
 
@@ -417,6 +447,7 @@ def admin_reorder_questions(
         boss_slug=boss_slug,
         body=body,
         db=db,
+        admin_info=admin_info,
     )
 
 
@@ -431,6 +462,19 @@ def admin_ingest_questions(
     """
     from scripts.ingest_questions_to_postgres import ingest_questions_data
     from app.settings import settings
+
+    admin_id = admin_info.get("id") or admin_info.get("admin_id") or "unknown"
+    admin_username = admin_info.get("username", "admin")
+    logger.info("[ADMIN_ACTION] Admin '%s' (ID: %s) triggered question ingestion for track '%s'", admin_username, admin_id, body.track_id)
+    from app.infrastructure.database.admin_repo import AdminRepository
+    AdminRepository(db).log_action(
+        admin_user_id=admin_id,
+        admin_username=admin_username,
+        action="INGEST_QUESTIONS",
+        target_type="track",
+        target_id=body.track_id or "all",
+        details={"track_id": body.track_id, "batch_size": body.batch_size},
+    )
 
     stats = ingest_questions_data(
         db=db,

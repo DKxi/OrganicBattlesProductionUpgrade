@@ -20,6 +20,9 @@ from app.infrastructure.database.models import (
     BossQuestionAssignment,
     PlayerQuestionProgress,
     AnswerAttempt,
+    AdminUser,
+    AdminSession,
+    AdminAuditLog,
 )
 from app.infrastructure.database.engine import _migrate_legacy_table_names, SessionLocal
 
@@ -37,6 +40,9 @@ EXPECTED_OB_TABLES = {
     "OB_boss_question_assignments",
     "OB_player_question_progress",
     "OB_answer_attempts",
+    "OB_admin_users",
+    "OB_admin_sessions",
+    "OB_admin_audit_logs",
 }
 
 
@@ -55,6 +61,9 @@ def test_all_models_have_ob_prefix():
         BossQuestionAssignment,
         PlayerQuestionProgress,
         AnswerAttempt,
+        AdminUser,
+        AdminSession,
+        AdminAuditLog,
     ]
     for model in models:
         table_name = model.__tablename__
@@ -63,6 +72,7 @@ def test_all_models_have_ob_prefix():
 
     # Check Base metadata table collection
     assert set(Base.metadata.tables.keys()) == EXPECTED_OB_TABLES
+
 
 
 def test_foreign_key_references_use_ob_prefix():

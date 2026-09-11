@@ -283,3 +283,49 @@ class AnswerAttempt(Base):
     )
 
 
+class AdminUser(Base):
+    __tablename__ = "OB_admin_users"
+
+    id = Column(String, primary_key=True)
+    username = Column(String, unique=True, nullable=False, index=True)
+    password_hash = Column(String, nullable=False)
+    role = Column(String, nullable=False, default="admin")
+    is_active = Column(Integer, nullable=False, default=1)
+    created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+    updated_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+
+    sessions = relationship("AdminSession", back_populates="admin_user", cascade="all, delete-orphan")
+    audit_logs = relationship("AdminAuditLog", back_populates="admin_user", cascade="all, delete-orphan")
+
+
+class AdminSession(Base):
+    __tablename__ = "OB_admin_sessions"
+
+    token_hash = Column(String, primary_key=True)
+    admin_user_id = Column(String, ForeignKey("OB_admin_users.id", ondelete="CASCADE"), nullable=False, index=True)
+    ip_address = Column(String, nullable=True)
+    user_agent = Column(String, nullable=True)
+    expires_at = Column(Integer, nullable=False, index=True)
+    created_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+    last_activity_at = Column(Integer, nullable=False, default=lambda: int(time.time()))
+
+    admin_user = relationship("AdminUser", back_populates="sessions")
+
+
+class AdminAuditLog(Base):
+    __tablename__ = "OB_admin_audit_logs"
+
+    id = Column(BigInteger().with_variant(Integer, "sqlite"), primary_key=True, autoincrement=True)
+    admin_user_id = Column(String, ForeignKey("OB_admin_users.id", ondelete="CASCADE"), nullable=False, index=True)
+    admin_username = Column(String, nullable=False)
+    action = Column(String, nullable=False, index=True)
+    target_type = Column(String, nullable=False)
+    target_id = Column(String, nullable=True)
+    details_json = Column(JSON_VARIANT, nullable=True)
+    ip_address = Column(String, nullable=True)
+    created_at = Column(Integer, nullable=False, default=lambda: int(time.time()), index=True)
+
+    admin_user = relationship("AdminUser", back_populates="audit_logs")
+
+
+
