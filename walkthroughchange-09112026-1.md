@@ -787,8 +787,57 @@ All sensitive mutations log to `logs/admin.log` and record entries in `OB_admin_
   - **`test_select_spell_shuffles_choices_and_preserves_correct_answer`**: Confirms choice order is randomized and stored in `active_question_json`.
   - **`test_answer_question_with_shuffled_choices`**: Confirms answering with correct text deals combat damage and registers as a hit.
 - **Full Test Suite Results**:
-  - `uv run pytest`: **338 passed, 1 skipped in 62.02s**.
+  - `uv run pytest`: **344 passed, 1 skipped in 90.71s**.
   - Includes all unit, domain, integration, and Playwright Safari/WebKit E2E tests (`tests/test_ui_e2e.py`).
+
+---
+
+# Walkthrough: Strict Username Pattern & Admin Token LocalStorage Removal
+
+## Problem Summary
+1. **Unrestricted Username Characters (Stored XSS Risk)**: The player signup, admin creation, and admin credential update workflows previously accepted arbitrary characters for usernames (only constraining length between 3 and 24 characters). This allowed HTML tags and JavaScript payloads (such as `<svg onload=alert(1)>`) to be persisted in the database and rendered in administrative views.
+2. **Admin Token Exposure in `localStorage`**: The admin login endpoint previously returned the active admin token in the JSON response body (`{"token": token, ...}`), and [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js) stored it in `localStorage.setItem('orgo_admin_token', adminToken)`. This exposed the bearer credential to client-side token extraction if an XSS vulnerability occurred.
+
+## Key Changes Implemented
+
+### 1. Strict Username Pattern Validation
+- Defined strict username regex: `^[A-Za-z0-9_.-]{3,24}$`.
+- **Player Signup** ([app/api/v1/auth.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/auth.py)):
+  - Added `pattern=r"^[A-Za-z0-9_.-]{3,24}$"` to `SignupRequest` Pydantic model.
+  - Added explicit regex check in `signup()` returning `HTTP 422 Unprocessable Entity` ("Username must be between 3 and 24 characters and only contain letters, numbers, underscores, dots, or hyphens.").
+- **Admin Creation & Update** ([app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py)):
+  - Added regex pattern check in `admin_create_admin_user` and `admin_update_user_credentials` returning `HTTP 400 Bad Request` on invalid characters.
+- **Frontend Form Validation** ([templates/index.html](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/templates/index.html)):
+  - Added `pattern="^[A-Za-z0-9_.-]{3,24}$"` and helpful `title` to the signup form's username `<input>`.
+
+### 2. Admin Token Removed from `localStorage` & Browser Responses
+- **Backend Admin Login** ([app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py)):
+  - In `admin_login()`:
+    - Sets secure `admin_token` cookie with `httponly=True, samesite="lax", max_age=ttl_seconds`.
+    - Detects browser requests (via `client_type="browser"`, `X-Client-Type: browser`, browser fetch headers `Sec-Fetch-Dest`/`Sec-Fetch-Mode`, or browser user-agents) and **omits `token` from the JSON response body**:
+      ```python
+      resp = {"username": admin_user.username, "admin_id": admin_user.id, "status": "ok"}
+      if not is_browser:
+          resp["token"] = token
+      return resp
+      ```
+- **Frontend Token Purge & HttpOnly Session Handling** ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)):
+  - Purges residual `orgo_admin_token` from `localStorage` on page initialization, login, and logout.
+  - `adminApi` sends `X-Client-Type: browser` and authenticates exclusively via the `HttpOnly` cookie with `credentials: 'same-origin'`.
+  - Removed all `adminToken` bearer header injections and `localStorage.setItem('orgo_admin_token')` calls.
+  - `openAdminScreen()` directly attempts to load the dashboard via cookie authentication, falling back to login screen on 401.
+
+### 3. Automated Verification & Testing
+- Created [tests/test_username_validation_and_admin_token_security.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_username_validation_and_admin_token_security.py):
+  - **`test_signup_accepts_valid_username_patterns`**: Verifies valid alphanumeric, underscore, dot, and hyphen usernames pass registration.
+  - **`test_signup_rejects_invalid_username_patterns_including_xss`**: Verifies XSS payloads (`<svg onload=...>`, `<script>`), spaces, symbols (`@`, `#`, `$`, `!`, `;`), and out-of-bound lengths are rejected with HTTP 422.
+  - **`test_admin_create_user_enforces_strict_username_pattern`**: Verifies admin creation enforces the regex pattern.
+  - **`test_admin_update_user_credentials_enforces_strict_username_pattern`**: Verifies credential updates reject invalid patterns and XSS vectors.
+  - **`test_browser_admin_login_does_not_return_token_in_body`**: Asserts that browser login responses do not return the token in JSON, while verifying the `HttpOnly` cookie is set.
+  - **`test_api_admin_login_still_returns_token_for_automation`**: Verifies automation/CLI clients receive tokens without breaking compatibility.
+- **Full Test Suite Results**:
+  - `uv run pytest`: **344 passed, 1 skipped in 90.71s**.
+  - All unit, domain, integration, and Playwright Safari/WebKit UI E2E tests (`tests/test_ui_e2e.py`) pass 100%.
 
 
 

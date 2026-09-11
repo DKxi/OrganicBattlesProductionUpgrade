@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import time
 import secrets
@@ -22,10 +23,13 @@ from app.infrastructure.database.migrator import migrate_sqlite_to_postgres
 logger = logging.getLogger("organicbattles.admin")
 router = APIRouter(tags=["Admin Management"])
 
+USERNAME_REGEX = r"^[A-Za-z0-9_.-]{3,24}$"
+
 
 class AdminLoginRequest(BaseModel):
     username: str
     password: str
+    client_type: Optional[str] = None
 
 
 class AdminUserConfigRequest(BaseModel):
@@ -119,7 +123,23 @@ def admin_login(
         max_age=ttl_seconds,
     )
     logger.info("[ADMIN_AUTH] Admin user '%s' (ID: %s) authenticated successfully from IP %s", admin_user.username, admin_user.id, client_ip)
-    return {"token": token, "username": admin_user.username, "admin_id": admin_user.id, "status": "ok"}
+
+    is_browser = (
+        body.client_type == "browser"
+        or request.headers.get("x-client-type") == "browser"
+        or request.headers.get("sec-fetch-dest") is not None
+        or request.headers.get("sec-fetch-mode") is not None
+        or "Mozilla" in user_agent
+    )
+
+    resp = {
+        "username": admin_user.username,
+        "admin_id": admin_user.id,
+        "status": "ok",
+    }
+    if not is_browser:
+        resp["token"] = token
+    return resp
 
 
 
@@ -276,8 +296,8 @@ def admin_update_user_credentials(
     # 1. Update Username if requested
     if body.username is not None and body.username.strip():
         new_username = body.username.strip()
-        if len(new_username) < 3 or len(new_username) > 24:
-            raise HTTPException(400, "Username must be between 3 and 24 characters")
+        if not re.match(USERNAME_REGEX, new_username):
+            raise HTTPException(400, "Username must be between 3 and 24 characters and only contain letters, numbers, underscores, dots, or hyphens.")
         existing = db.query(User).filter(User.username == new_username, User.id != user.id).first()
         if existing:
             raise HTTPException(400, f"Username '{new_username}' is already taken")
@@ -852,7 +872,7 @@ def admin_rollback_track_release(
 
 
 class AdminCreateUserRequest(BaseModel):
-    username: str
+    username: str = Field(..., min_length=3, max_length=24, pattern=USERNAME_REGEX)
     password: str
     role: Optional[str] = "admin"
 
@@ -870,8 +890,8 @@ def admin_create_admin_user(
     user_repo = UserRepository(db)
 
     clean_uname = body.username.strip().lower()
-    if len(clean_uname) < 3 or len(clean_uname) > 24:
-        raise HTTPException(400, "Admin username must be between 3 and 24 characters")
+    if not re.match(USERNAME_REGEX, clean_uname):
+        raise HTTPException(400, "Admin username must be between 3 and 24 characters and only contain letters, numbers, underscores, dots, or hyphens.")
     if len(body.password) < 5:
         raise HTTPException(400, "Password must be at least 5 characters")
 

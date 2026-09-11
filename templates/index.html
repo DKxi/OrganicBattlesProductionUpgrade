@@ -39,7 +39,7 @@
       </form>
       <form id="signup-form" class="hidden">
         <label>EMAIL ADDRESS<input name="email" type="email" autocomplete="email" required></label>
-        <label>USERNAME<input name="username" autocomplete="username" required minlength="3" maxlength="24"></label>
+        <label>USERNAME<input name="username" autocomplete="username" required minlength="3" maxlength="24" pattern="^[A-Za-z0-9_.-]{3,24}$" title="3-24 characters: letters, numbers, underscores, dots, or hyphens"></label>
         <label>PASSWORD<input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
         <button class="primary" type="submit">SEND CONFIRMATION CODE</button>
         <button class="link-button" type="button" id="show-login">I ALREADY HAVE AN ACCOUNT</button>

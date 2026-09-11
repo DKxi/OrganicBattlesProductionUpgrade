@@ -1,3 +1,4 @@
+import re
 import time
 import logging
 from typing import Optional
@@ -23,11 +24,13 @@ from app.domain.content.resolver import resolve_content_source
 logger = logging.getLogger("organicbattles.auth")
 router = APIRouter(tags=["Authentication"])
 
+USERNAME_REGEX = r"^[A-Za-z0-9_.-]{3,24}$"
+USERNAME_PATTERN = re.compile(USERNAME_REGEX)
 
 
 class SignupRequest(BaseModel):
     email: str = Field(..., min_length=5)
-    username: str = Field(..., min_length=3, max_length=24)
+    username: str = Field(..., min_length=3, max_length=24, pattern=USERNAME_REGEX)
     password: str = Field(..., min_length=8)
 
 
@@ -50,8 +53,8 @@ def signup(request: Request, body: SignupRequest, db: DBSession = Depends(get_db
     email = body.email.strip().lower()
     if "@" not in email or "." not in email.split("@")[-1] or len(email) < 5:
         raise HTTPException(422, "Please enter a valid email address.")
-    if len(body.username) < 3 or len(body.username) > 24:
-        raise HTTPException(422, "Username must be between 3 and 24 characters")
+    if not USERNAME_PATTERN.match(body.username):
+        raise HTTPException(422, "Username must be between 3 and 24 characters and only contain letters, numbers, underscores, dots, or hyphens.")
     if len(body.password) < 8:
         raise HTTPException(422, "Password must be at least 8 characters")
 
