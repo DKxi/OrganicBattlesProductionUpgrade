@@ -27,6 +27,7 @@ TURN_EXPIRATION_SECONDS = 300  # 5 minutes TTL for active battle turns
 
 class SelectSpellRequest(BaseModel):
     spell_id: str
+    session_id: Optional[str] = None
 
 
 class AnswerRequest(BaseModel):
@@ -44,12 +45,8 @@ def select_spell(
     db: DBSession = Depends(get_db),
 ):
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(session_id) if session_id else session_repo.get_by_user_id(current_user.id)
-    if not game_session:
-        raise HTTPException(404, "Session not found")
-
-    if game_session.user_id != current_user.id:
-        raise HTTPException(403, "Not authorized to access this session")
+    target_sid = body.session_id or session_id
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=target_sid)
 
     if game_session.player_hp <= 0:
         raise HTTPException(400, "Your aura has faded. Please retry the battle to regroup.")
@@ -102,6 +99,7 @@ def select_spell(
     # Optimistic lock: ensure active_spell is null and version matches expected_version
     updated_rows = db.query(GameSession).filter(
         GameSession.id == game_session.id,
+        GameSession.user_id == current_user.id,
         GameSession.version == expected_version,
         GameSession.active_spell.is_(None),
     ).update(
@@ -145,12 +143,7 @@ def answer_question(
 ):
     target_sid = body.session_id or session_id
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(target_sid) if target_sid else session_repo.get_by_user_id(current_user.id)
-    if not game_session:
-        raise HTTPException(404, "Session not found")
-
-    if game_session.user_id != current_user.id:
-        raise HTTPException(403, "Not authorized to access this session")
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=target_sid)
 
     # Validate turn_id presence
     submitted_turn_id = (body.turn_id or "").strip()
@@ -274,6 +267,7 @@ def answer_question(
 
     updated_rows = db.query(GameSession).filter(
         GameSession.id == game_session.id,
+        GameSession.user_id == current_user.id,
         GameSession.version == expected_version,
     ).update(
         {
@@ -358,12 +352,7 @@ def next_turn(
     db: DBSession = Depends(get_db),
 ):
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(session_id) if session_id else session_repo.get_by_user_id(current_user.id)
-    if not game_session:
-        raise HTTPException(404, "Session not found")
-
-    if game_session.user_id != current_user.id:
-        raise HTTPException(403, "Not authorized to access this session")
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=session_id)
 
     effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
     bundle = get_content_bundle(effective)
@@ -409,6 +398,7 @@ def next_turn(
 
     updated_rows = db.query(GameSession).filter(
         GameSession.id == game_session.id,
+        GameSession.user_id == current_user.id,
         GameSession.version == expected_version,
     ).update(
         {
@@ -446,12 +436,7 @@ def retry_battle(
     db: DBSession = Depends(get_db),
 ):
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(session_id) if session_id else session_repo.get_by_user_id(current_user.id)
-    if not game_session:
-        raise HTTPException(404, "Session not found")
-
-    if game_session.user_id != current_user.id:
-        raise HTTPException(403, "Not authorized to access this session")
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=session_id)
 
     effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
     bundle = get_content_bundle(effective)
@@ -464,6 +449,7 @@ def retry_battle(
 
     updated_rows = db.query(GameSession).filter(
         GameSession.id == game_session.id,
+        GameSession.user_id == current_user.id,
         GameSession.version == expected_version,
     ).update(
         {

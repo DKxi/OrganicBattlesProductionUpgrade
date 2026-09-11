@@ -213,12 +213,7 @@ def get_state(
     db: DBSession = Depends(get_db),
 ):
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(session_id) if session_id else session_repo.get_by_user_id(current_user.id)
-
-    if not game_session:
-        raise HTTPException(404, "Session not found")
-    if game_session.user_id != current_user.id:
-        raise HTTPException(403, "Not authorized to access this session")
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=session_id)
 
     return format_game_state(game_session, current_user)
 
@@ -231,7 +226,12 @@ def finalize_avatar(
     db: DBSession = Depends(get_db),
 ):
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(session_id) if session_id else session_repo.get_by_user_id(current_user.id)
+    if session_id:
+        game_session = session_repo.get_by_id(session_id, user_id=current_user.id)
+        if not game_session and session_repo.exists(session_id):
+            raise HTTPException(403, "Not authorized to access this session")
+    else:
+        game_session = session_repo.get_by_user_id(current_user.id)
 
     if not game_session:
         effective = resolve_content_source(current_user.content_source)
@@ -290,13 +290,7 @@ def set_track(
     Select active track for user's game session and configure custom question/boss folders.
     """
     session_repo = SessionRepository(db)
-    game_session = (
-        session_repo.get_by_id(body.session_id)
-        if body.session_id
-        else session_repo.get_by_user_id(current_user.id)
-    )
-    if not game_session:
-        raise HTTPException(404, "Session not found")
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=body.session_id)
 
     target_source = f"track:{body.track_id}"
     current_effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)

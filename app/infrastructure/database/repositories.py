@@ -48,23 +48,46 @@ class UserRepository:
         return self.db.query(User).order_by(User.created_at.desc()).all()
 
 
+from fastapi import HTTPException
+
+
 class SessionRepository:
     def __init__(self, db: DBSession):
         self.db = db
 
-    def get_by_id(self, session_id: str) -> Optional[GameSession]:
-        return self.db.query(GameSession).filter(GameSession.id == session_id).first()
+    def get_by_id(self, session_id: str, user_id: Optional[str] = None) -> Optional[GameSession]:
+        query = self.db.query(GameSession).filter(GameSession.id == session_id)
+        if user_id is not None:
+            query = query.filter(GameSession.user_id == user_id)
+        return query.first()
+
+    def exists(self, session_id: str) -> bool:
+        return self.db.query(GameSession.id).filter(GameSession.id == session_id).first() is not None
 
     def get_by_user_id(self, user_id: str) -> Optional[GameSession]:
         return self.db.query(GameSession).filter(GameSession.user_id == user_id).first()
+
+    def get_for_user_or_raise(self, user_id: str, session_id: Optional[str] = None) -> GameSession:
+        if session_id:
+            session_row = self.get_by_id(session_id, user_id=user_id)
+            if session_row:
+                return session_row
+            if self.exists(session_id):
+                raise HTTPException(status_code=403, detail="Not authorized to access this session")
+            raise HTTPException(status_code=404, detail="Session not found")
+        else:
+            session_row = self.get_by_user_id(user_id)
+            if not session_row:
+                raise HTTPException(status_code=404, detail="Session not found")
+            return session_row
 
     def create_or_update(self, session_obj: GameSession) -> GameSession:
         self.db.merge(session_obj)
         self.db.commit()
         return session_obj
 
-    def delete(self, session_id: str) -> bool:
-        session_row = self.get_by_id(session_id)
+    def delete(self, session_id: str, user_id: Optional[str] = None) -> bool:
+        session_row = self.get_by_id(session_id, user_id=user_id)
         if not session_row:
             return False
         user = self.db.query(User).filter(User.id == session_row.user_id).first()
