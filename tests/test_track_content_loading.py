@@ -278,7 +278,8 @@ def test_user_choice_switches_spells_health_and_boss_end_to_end():
         # Submit correct answer
         ans_res = client.post("/api/battle/answer", headers=headers, json={
             "session_id": sid,
-            "answer": correct_answer
+            "answer": correct_answer,
+            "turn_id": sel_res.json()["turn_id"],
         })
         assert ans_res.status_code == 200
         combat_data = ans_res.json()
@@ -382,7 +383,8 @@ def test_custom_data_folder_override_loads_custom_spells_and_health(tmp_path):
 
         ans = client.post("/api/battle/answer", headers=headers, json={
             "session_id": sid,
-            "answer": "Rate = k"
+            "answer": "Rate = k",
+            "turn_id": sel.json()["turn_id"],
         })
         assert ans.status_code == 200
         ans_data = ans.json()
@@ -454,7 +456,8 @@ def test_switch_track_from_advanced_to_foundational_fallback():
     prompt1 = sel_res1.json()["question"]["prompt"]
     ans_res1 = client.post("/api/battle/answer", headers=headers1, json={
         "session_id": sid1,
-        "answer": ans_key_adv[prompt1]
+        "answer": ans_key_adv[prompt1],
+        "turn_id": sel_res1.json()["turn_id"],
     })
     assert ans_res1.status_code == 200
     assert ans_res1.json()["correct"] is True
@@ -525,7 +528,8 @@ def test_switch_track_from_advanced_to_foundational_fallback():
 
     ans_res2 = client.post("/api/battle/answer", headers=headers2, json={
         "session_id": sid2,
-        "answer": ans_key_found[prompt2]
+        "answer": ans_key_found[prompt2],
+        "turn_id": sel_res2.json()["turn_id"],
     })
     assert ans_res2.status_code == 200
     assert ans_res2.json()["correct"] is True
@@ -587,6 +591,8 @@ def test_default_track_direct_selection_and_combat():
     ans_res = client.post("/api/battle/answer", headers=headers, json={
         "session_id": sid,
         "answer": ans_key_def[prompt]
+,
+        "turn_id": sel_res.json()["turn_id"],
     })
     assert ans_res.status_code == 200
     combat = ans_res.json()
@@ -626,7 +632,7 @@ def test_track_switch_blocked_while_chapter_in_progress():
 
     sel_res = client.post("/api/battle/select-spell", headers=headers, json={"session_id": sid, "spell_id": "fire-spark"})
     prompt = sel_res.json()["question"]["prompt"]
-    client.post("/api/battle/answer", headers=headers, json={"session_id": sid, "answer": ans_key[prompt]})
+    client.post("/api/battle/answer", headers=headers, json={"session_id": sid, "answer": ans_key[prompt], "turn_id": sel_res.json()["turn_id"]})
 
     # Attempt to switch to 'default' track while Chapter 1 is in progress
     blocked_res = client.post("/api/game/track", headers=headers, json={"session_id": sid, "track_id": "default"})

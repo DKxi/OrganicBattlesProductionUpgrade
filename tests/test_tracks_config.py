@@ -208,7 +208,7 @@ def test_track_available_spells_and_incorrect_answer_explanation():
 
     # 4. Incorrect answer returns full explanation and correct answer
     wrong_answer = "Completely Incorrect Chemistry Distractor"
-    ans_res = client.post("/api/battle/answer", headers=headers, json={"session_id": sid, "answer": wrong_answer})
+    ans_res = client.post("/api/battle/answer", headers=headers, json={"session_id": sid, "answer": wrong_answer, "turn_id": good_spell_res.json()["turn_id"]})
     assert ans_res.status_code == 200
     ans_data = ans_res.json()
     assert ans_data["correct"] is False

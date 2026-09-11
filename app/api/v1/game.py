@@ -131,6 +131,8 @@ def format_game_state(game_session: GameSession, user: User) -> Dict[str, Any]:
 
     return {
         "session_id": game_session.id,
+        "version": getattr(game_session, "version", 1),
+        "turn_id": getattr(game_session, "turn_id", None),
         "username": user.username if user else "Alchemist",
         "chapter": game_session.chapter,
         "chapter_name": ch_data["name"],

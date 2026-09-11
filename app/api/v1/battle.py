@@ -22,12 +22,18 @@ router = APIRouter(tags=["Combat"])
 
 
 
+TURN_EXPIRATION_SECONDS = 300  # 5 minutes TTL for active battle turns
+
+
 class SelectSpellRequest(BaseModel):
     spell_id: str
 
 
 class AnswerRequest(BaseModel):
     answer: str
+    turn_id: str
+    session_id: Optional[str] = None
+    expected_version: Optional[int] = None
 
 
 @router.post("/battle/select-spell")
@@ -42,6 +48,9 @@ def select_spell(
     if not game_session:
         raise HTTPException(404, "Session not found")
 
+    if game_session.user_id != current_user.id:
+        raise HTTPException(403, "Not authorized to access this session")
+
     if game_session.player_hp <= 0:
         raise HTTPException(400, "Your aura has faded. Please retry the battle to regroup.")
 
@@ -54,7 +63,6 @@ def select_spell(
     spell_id = body.spell_id
     if spell_id not in SPELL_CATALOG:
         raise HTTPException(400, f"Invalid spell '{spell_id}'")
-
 
     cooldowns = json.loads(game_session.cooldowns_json) if game_session.cooldowns_json else {}
     if cooldowns.get(spell_id, 0) > time.time():
@@ -87,11 +95,31 @@ def select_spell(
     q_idx = cursors.get(cursor_key, 0) % len(bank)
     q_tuple = bank[q_idx]
 
-    game_session.active_spell = spell_id
-    game_session.active_question_json = json.dumps(q_tuple)
-    game_session.turn_id = secrets.token_hex(8)
-    game_session.updated_at = int(time.time())
+    expected_version = game_session.version
+    new_turn_id = secrets.token_hex(8)
+    now_ts = int(time.time())
+
+    # Optimistic lock: ensure active_spell is null and version matches expected_version
+    updated_rows = db.query(GameSession).filter(
+        GameSession.id == game_session.id,
+        GameSession.version == expected_version,
+        GameSession.active_spell.is_(None),
+    ).update(
+        {
+            GameSession.active_spell: spell_id,
+            GameSession.active_question_json: json.dumps(q_tuple),
+            GameSession.turn_id: new_turn_id,
+            GameSession.version: GameSession.version + 1,
+            GameSession.updated_at: now_ts,
+        },
+        synchronize_session=False,
+    )
     db.commit()
+
+    if updated_rows == 0:
+        raise HTTPException(409, "Conflict selecting spell due to concurrent action. Please refresh state.")
+
+    db.refresh(game_session)
 
     logger.info(
         "Spell selected: '%s' by user %s vs %s (chapter=%d, turn_id=%s, cursor_q_idx=%d)",
@@ -113,13 +141,34 @@ def answer_question(
     current_user: User = Depends(get_current_user),
     db: DBSession = Depends(get_db),
 ):
+    target_sid = body.session_id or session_id
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_by_id(session_id) if session_id else session_repo.get_by_user_id(current_user.id)
+    game_session = session_repo.get_by_id(target_sid) if target_sid else session_repo.get_by_user_id(current_user.id)
     if not game_session:
         raise HTTPException(404, "Session not found")
 
+    if game_session.user_id != current_user.id:
+        raise HTTPException(403, "Not authorized to access this session")
+
+    # Validate turn_id presence
+    submitted_turn_id = (body.turn_id or "").strip()
+    if not submitted_turn_id:
+        raise HTTPException(400, "Missing turn_id. A valid server-issued turn_id is required.")
+
+    # Validate active turn state
     if not game_session.active_spell or not game_session.active_question_json:
         raise HTTPException(400, "No active question. Select a spell first.")
+
+    # Validate turn_id matching & consumption
+    if not game_session.turn_id:
+        raise HTTPException(409, "Turn ID has already been consumed or is not active. Please refresh state.")
+
+    if game_session.turn_id != submitted_turn_id:
+        raise HTTPException(409, "Invalid or previously consumed turn ID. Please refresh state.")
+
+    # Validate expiration
+    if (time.time() - (game_session.updated_at or 0)) > TURN_EXPIRATION_SECONDS:
+        raise HTTPException(409, "Turn has expired. Please select a spell again.")
 
     active_q = json.loads(game_session.active_question_json)
     q_prompt, choices, correct_answer = active_q[0], active_q[1], active_q[2]
@@ -153,7 +202,6 @@ def answer_question(
     else:
         custom_dmg = None
 
-
     # Evaluate pure combat turn
     turn_result, new_player_hp, new_boss_hp = evaluate_combat_turn(
         spell_id=game_session.active_spell,
@@ -173,9 +221,6 @@ def answer_question(
     # Advance question cursor sequentially
     cursors = json.loads(game_session.question_cursors_json) if hasattr(game_session, "question_cursors_json") and game_session.question_cursors_json else {}
     cursors[cursor_key] = cursors.get(cursor_key, 0) + 1
-    game_session.question_cursors_json = json.dumps(cursors)
-
-
 
     # Log entries
     log = json.loads(game_session.log_json) if game_session.log_json else []
@@ -208,18 +253,42 @@ def answer_question(
     elif turn_result.defeat:
         logger.warning("Player DEFEATED: %s fell to boss %s (chapter=%d)", current_user.username, boss_slug, game_session.chapter)
 
-    # Save back to database
-    game_session.player_hp = new_player_hp
-    game_session.boss_hp = new_boss_hp
-    game_session.cooldowns_json = json.dumps(cooldowns)
-    game_session.log_json = json.dumps(log[-10:])
-    game_session.active_spell = None
-    game_session.active_question_json = None
-    game_session.turn_id = None
-    game_session.version += 1
-    game_session.updated_at = int(time.time())
+    # Optimistic Concurrency Update
+    expected_version = body.expected_version if body.expected_version is not None else game_session.version
+    if game_session.version != expected_version:
+        raise HTTPException(
+            status_code=409,
+            detail="Combat session was modified by a concurrent turn. Please refresh your state.",
+        )
+    now_ts = int(time.time())
+
+    updated_rows = db.query(GameSession).filter(
+        GameSession.id == game_session.id,
+        GameSession.version == expected_version,
+    ).update(
+        {
+            GameSession.player_hp: new_player_hp,
+            GameSession.boss_hp: new_boss_hp,
+            GameSession.cooldowns_json: json.dumps(cooldowns),
+            GameSession.question_cursors_json: json.dumps(cursors),
+            GameSession.log_json: json.dumps(log[-10:]),
+            GameSession.active_spell: None,
+            GameSession.active_question_json: None,
+            GameSession.turn_id: None,
+            GameSession.version: GameSession.version + 1,
+            GameSession.updated_at: now_ts,
+        },
+        synchronize_session=False,
+    )
     db.commit()
 
+    if updated_rows == 0:
+        raise HTTPException(
+            status_code=409,
+            detail="Combat session was modified by a concurrent turn. Please refresh your state.",
+        )
+
+    db.refresh(game_session)
 
     # Format battle response
     state = format_game_state(game_session, current_user)
@@ -248,6 +317,9 @@ def next_turn(
     if not game_session:
         raise HTTPException(404, "Session not found")
 
+    if game_session.user_id != current_user.id:
+        raise HTTPException(403, "Not authorized to access this session")
+
     effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
     bundle = get_content_bundle(effective)
     chapters = bundle.chapters
@@ -260,35 +332,62 @@ def next_turn(
     completed = json.loads(game_session.completed_json) if game_session.completed_json else []
     if current_boss_slug not in completed:
         completed.append(current_boss_slug)
-    game_session.completed_json = json.dumps(completed)
+
+    new_chapter = game_session.chapter
+    new_boss_index = game_session.boss_index
+    new_boss_hp = game_session.boss_hp
+    new_player_hp = game_session.player_hp
 
     # Advance boss or chapter
     if game_session.boss_index + 1 < len(bosses):
-        game_session.boss_index += 1
-        next_boss = bosses[game_session.boss_index]
-        game_session.boss_hp = next_boss[2]
-        game_session.player_hp = game_session.player_max_hp
-        game_session.cooldowns_json = "{}"
-        log = [f"Approaching Boss {game_session.boss_index + 1}: {next_boss[1]}."]
+        new_boss_index = game_session.boss_index + 1
+        next_boss = bosses[new_boss_index]
+        new_boss_hp = next_boss[2]
+        new_player_hp = game_session.player_max_hp
+        log = [f"Approaching Boss {new_boss_index + 1}: {next_boss[1]}."]
         victory = False
     elif game_session.chapter < len(chapters):
-        game_session.chapter += 1
-        game_session.boss_index = 0
-        next_ch = chapters[game_session.chapter - 1]
+        new_chapter = game_session.chapter + 1
+        new_boss_index = 0
+        next_ch = chapters[new_chapter - 1]
         next_boss = next_ch["bosses"][0]
-        game_session.boss_hp = next_boss[2]
-        game_session.player_hp = game_session.player_max_hp
-        game_session.cooldowns_json = "{}"
-        log = [f"Entered Chapter {game_session.chapter}: {next_ch['name']}. Face {next_boss[1]}!"]
+        new_boss_hp = next_boss[2]
+        new_player_hp = game_session.player_max_hp
+        log = [f"Entered Chapter {new_chapter}: {next_ch['name']}. Face {next_boss[1]}!"]
         victory = False
     else:
         victory = True
         log = ["Victory! All chapters and bosses have been vanquished!"]
 
-    game_session.log_json = json.dumps(log)
-    game_session.version += 1
-    game_session.updated_at = int(time.time())
+    expected_version = game_session.version
+    now_ts = int(time.time())
+
+    updated_rows = db.query(GameSession).filter(
+        GameSession.id == game_session.id,
+        GameSession.version == expected_version,
+    ).update(
+        {
+            GameSession.chapter: new_chapter,
+            GameSession.boss_index: new_boss_index,
+            GameSession.boss_hp: new_boss_hp,
+            GameSession.player_hp: new_player_hp,
+            GameSession.cooldowns_json: "{}",
+            GameSession.completed_json: json.dumps(completed),
+            GameSession.log_json: json.dumps(log),
+            GameSession.active_spell: None,
+            GameSession.active_question_json: None,
+            GameSession.turn_id: None,
+            GameSession.version: GameSession.version + 1,
+            GameSession.updated_at: now_ts,
+        },
+        synchronize_session=False,
+    )
     db.commit()
+
+    if updated_rows == 0:
+        raise HTTPException(409, "Combat session was updated concurrently. Please refresh state.")
+
+    db.refresh(game_session)
 
     state = format_game_state(game_session, current_user)
     state["victory"] = victory
@@ -306,20 +405,40 @@ def retry_battle(
     if not game_session:
         raise HTTPException(404, "Session not found")
 
+    if game_session.user_id != current_user.id:
+        raise HTTPException(403, "Not authorized to access this session")
+
     effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
     bundle = get_content_bundle(effective)
     chapters = bundle.chapters
     ch_idx = max(0, min(game_session.chapter - 1, len(chapters) - 1))
     boss = chapters[ch_idx]["bosses"][max(0, min(game_session.boss_index, len(chapters[ch_idx]["bosses"]) - 1))]
 
-    game_session.player_hp = game_session.player_max_hp
-    game_session.boss_hp = boss[2]
-    game_session.active_spell = None
-    game_session.active_question_json = None
-    game_session.cooldowns_json = "{}"
-    game_session.log_json = json.dumps([f"Regrouped. Battle with {boss[1]} restarted!"])
-    game_session.version += 1
-    game_session.updated_at = int(time.time())
+    expected_version = game_session.version
+    now_ts = int(time.time())
+
+    updated_rows = db.query(GameSession).filter(
+        GameSession.id == game_session.id,
+        GameSession.version == expected_version,
+    ).update(
+        {
+            GameSession.player_hp: game_session.player_max_hp,
+            GameSession.boss_hp: boss[2],
+            GameSession.active_spell: None,
+            GameSession.active_question_json: None,
+            GameSession.cooldowns_json: "{}",
+            GameSession.log_json: json.dumps([f"Regrouped. Battle with {boss[1]} restarted!"]),
+            GameSession.turn_id: None,
+            GameSession.version: GameSession.version + 1,
+            GameSession.updated_at: now_ts,
+        },
+        synchronize_session=False,
+    )
     db.commit()
+
+    if updated_rows == 0:
+        raise HTTPException(409, "Combat session was updated concurrently. Please refresh state.")
+
+    db.refresh(game_session)
 
     return format_game_state(game_session, current_user)

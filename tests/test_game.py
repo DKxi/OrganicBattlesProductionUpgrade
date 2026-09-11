@@ -90,7 +90,7 @@ def test_correct_answer_deals_damage(client_instance, auth_headers):
     client_instance.post('/api/avatar/finalize', params={'session_id':sid}, json=avatar(), headers=auth_headers)
     q = client_instance.post('/api/battle/select-spell', params={'session_id':sid}, json={'spell_id':'fire-spark'}, headers=auth_headers).json()
     answer = find_correct_answer(q['question']['prompt'])
-    result = client_instance.post('/api/battle/answer', params={'session_id':sid}, json={'answer':answer}, headers=auth_headers).json()
+    result = client_instance.post('/api/battle/answer', params={'session_id':sid}, json={'answer':answer, 'turn_id': q['turn_id']}, headers=auth_headers).json()
     assert result['correct'] is True
     assert result['damage'] > 0
 
@@ -140,7 +140,7 @@ def test_avatar_customization_does_not_change_damage_or_cooldowns(client_instanc
             client_instance.post('/api/avatar/finalize', params={'session_id': sid}, json={**avatar(), 'config': config}, headers=headers)
             q = client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'fire-spark'}, headers=headers).json()
             answer = find_correct_answer(q['question']['prompt'])
-            result = client_instance.post('/api/battle/answer', params={'session_id': sid}, json={'answer': answer}, headers=headers).json()
+            result = client_instance.post('/api/battle/answer', params={'session_id': sid}, json={'answer': answer, 'turn_id': q['turn_id']}, headers=headers).json()
             outcomes.append((result['damage'], result['correct'], round(result['cooldowns']['fire-spark'])))
             
     assert outcomes[0] == outcomes[1]
@@ -264,7 +264,7 @@ def test_battle_flow_cooldown_and_duplicate_spells(client_instance, auth_headers
 
     # 3. Answer correctly
     answer = find_correct_answer(q1['question']['prompt'])
-    ans_res = client_instance.post('/api/battle/answer', params={'session_id':sid}, json={'answer':answer}, headers=auth_headers).json()
+    ans_res = client_instance.post('/api/battle/answer', params={'session_id':sid}, json={'answer':answer, 'turn_id': q1['turn_id']}, headers=auth_headers).json()
     assert ans_res["correct"] is True
     assert ans_res["damage"] > 0
 
@@ -461,7 +461,7 @@ def test_admin_sessions_management_and_reset(client_instance, auth_headers):
     # Damage the boss and answer a question to dirty session state
     q = client_instance.post('/api/battle/select-spell', params={'session_id': sid}, json={'spell_id': 'fire-spark'}, headers=auth_headers).json()
     ans = find_correct_answer(q['question']['prompt'])
-    client_instance.post('/api/battle/answer', params={'session_id': sid}, json={'answer': ans}, headers=auth_headers)
+    client_instance.post('/api/battle/answer', params={'session_id': sid}, json={'answer': ans, 'turn_id': q['turn_id']}, headers=auth_headers)
 
     # 2. Log in as admin
     admin_login = client_instance.post("/api/admin/login", json={"username": "admin", "password": "admin"}).json()

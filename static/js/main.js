@@ -542,7 +542,12 @@ function renderQuestion(s) {
   document.querySelectorAll('[data-answer]').forEach((button) => {
     button.onclick = async () => {
       try {
-        const result = await api('/api/battle/answer', { session_id: session.session_id, answer: button.dataset.answer });
+        const result = await api('/api/battle/answer', {
+          session_id: session.session_id,
+          answer: button.dataset.answer,
+          turn_id: session.turn_id,
+          expected_version: session.version,
+        });
         render(result);
         showOutcome(result);
       } catch (error) {
@@ -552,6 +557,10 @@ function renderQuestion(s) {
           copy: error.message,
           action: 'CONTINUE',
         });
+        try {
+          const refreshed = await api('/api/game/state', { session_id: session.session_id });
+          render(refreshed);
+        } catch (_) {}
       }
     };
   });
