@@ -516,6 +516,54 @@ The system needed a long-term data model separation supporting:
   - **315 passed, 1 skipped in 56.21s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
 
+---
+
+# Walkthrough: Explanation Surfacing, Staleness Elimination & Defeat Explanation Access
+
+## Problem Summary
+1. The frontend previously only surfaced "VIEW EXPLANATION" on failure. Correct answers primarily received combat feedback ("DIRECT HIT"), leaving the explanation path inaccessible even though learners benefit from understanding why an answer was correct.
+2. `window.lastExplanation` stored the latest failure globally and remained available across subsequent correct answers, new games, or track changes, leading to stale feedback from old questions.
+3. Fatal wrong answers prioritized retry via a single "RETRY BATTLE" modal action, requiring the player to retry immediately or hunt for the top header button to view the explanation.
+
+## Key Changes Implemented
+
+### 1. Multi-Action Battle Outcome Modal & Explanation Access on Defeat
+- In [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js):
+  - Upgraded `showBattleModal` to support `secondaryAction` and `onSecondary` callback alongside the primary action.
+  - In `showOutcome(r)` when `r.defeat`:
+    - Set primary action to `'RETRY BATTLE'` (`onDone: () => api('/api/battle/retry', ...)`).
+    - Set secondary action to `'VIEW EXPLANATION'` (`onSecondary: () => showExplanation(r)`).
+    - Learners can now read the fatal concept review directly before retrying!
+
+### 2. Explanation Surfacing for Correct Answers
+- In [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js):
+  - Track-qualify and persist `window.lastExplanation` on all answers returning an explanation (`r.explanation`).
+  - Activate the header `#view-explanation` button on correct answers.
+  - Added `secondaryAction: 'VIEW EXPLANATION'` to `DIRECT HIT` and `VICTORY` modals.
+  - In `showExplanation(result)`, dynamically set title:
+    - `"WHY THIS ANSWER IS CORRECT"` when `result.correct` is true.
+    - `"WHY THIS ANSWER?"` when `result.correct` is false.
+  - Continued using safe `.textContent` assignments for prompt, answer, and explanation.
+
+### 3. Staleness Prevention Across Tracks, New Games, and Sessions
+- Implemented `clearExplanation()`:
+  - Resets `window.lastExplanation = null`.
+  - Hides `#view-explanation` button in header.
+  - Closes any open explanation modal.
+- Invoked `clearExplanation()`:
+  - Upon track change (`POST /api/game/track`).
+  - Upon starting a new verified game (`POST /api/game/new`).
+  - Within `render(s)` if `window.lastExplanation.track_id !== s.track_id` or `window.lastExplanation.session_id !== s.session_id`.
+
+### 4. Automated Verification & Regression Suite
+- Created [tests/test_explanation_flow_and_staleness.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_explanation_flow_and_staleness.py):
+  - **`test_backend_returns_explanation_on_correct_and_incorrect_answers`**: Verified backend battle responses include `explanation`, `correct_answer`, and `question_prompt` for both wrong answers and correct answers.
+  - **`test_frontend_js_explanation_contract`**: Verified `main.js` declares `clearExplanation()`, sets `textContent`, adapts title for correct answers, handles secondary actions in `showBattleModal`, and purges stale explanations on track/session changes.
+- **Full Test Suite (`uv run pytest`)**:
+  - **317 passed, 1 skipped in 52.08s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+
 
 
 
