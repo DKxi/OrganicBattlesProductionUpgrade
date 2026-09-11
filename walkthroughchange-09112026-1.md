@@ -477,6 +477,45 @@ The system needed a long-term data model separation supporting:
   - **310 passed, 1 skipped in 53.08s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
 
+---
+
+# Walkthrough: Fix P1 Unrestricted Retry & State Reset
+
+## Problem Summary
+1. Retry previously did not require player defeat, allowing learners to invoke retry mid-fight at will to reset HP pools while preserving the question cursor.
+2. When retry was invoked, question cursors were preserved rather than reset for the encounter, and stale server-issued `turn_id` values could linger.
+3. The system lacked an explicit distinction between a **Defeat Retry** (which must require the player to have 0 HP) and a **Practice Restart** (voluntary reset during practice).
+4. The retry must be strictly scoped to the chapter and boss the user is currently pointing to, never rolling back to Chapter 1 of the track.
+
+## Key Changes Implemented
+
+### 1. Defeat Retry vs. Practice Restart API Contract
+- In [app/api/v1/battle.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/battle.py):
+  - Declared `RetryRequest`:
+    - Fields: `session_id: Optional[str]`, `mode: Optional[str] = "defeat"` (`"defeat"` | `"practice"` | `"restart"`), `reset_cursor: Optional[bool] = True`.
+  - **Defeat Retry (`POST /api/battle/retry`)**:
+    - **Defeat Enforcement**: Validates that `game_session.player_hp <= 0`. If invoked while `player_hp > 0`, strictly raises `HTTPException(400, "Cannot retry an active battle unless defeated. Use practice restart if you wish to reset.")`.
+    - **Live Boss Check**: Validates that `game_session.boss_hp > 0`. If the boss is already defeated, raises `HTTPException(400, "The boss is already defeated. Proceed to the next arena.")`.
+    - **Chapter & Boss Index Preservation**: Strictly preserves the player's active `chapter` and `boss_index`. Does NOT roll back to Chapter 1.
+    - **Boss Question Cursor Reset**: Resets the question cursor specifically for the current chapter and boss encounter (`cursors[f"{chapter}:{boss_slug}"] = 0`), ensuring questions restart afresh for this boss while preserving other chapters' cursors.
+    - **Stale `turn_id` Invalidation**: Clears `turn_id = None`, `active_spell = None`, and `active_question_json = None`, neutralizing stale turn reuse.
+    - **Full State Restoration**: Restores `player_hp = player_max_hp`, `boss_hp = boss_max_hp`, `cooldowns_json = "{}"`, and sets defeat recovery combat log.
+  - **Practice Restart (`POST /api/battle/restart` or `/api/battle/retry` with `mode="practice"`)**:
+    - Allows voluntary restarts mid-battle when `player_hp > 0`.
+    - Preserves chapter and boss index.
+    - Resets boss HP, player HP, question cursor, cooldowns, and invalidates active turn tokens.
+
+### 2. Automated Verification & Regression Suite
+- Created [tests/test_battle_retry_and_restart.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_battle_retry_and_restart.py):
+  - **`test_defeat_retry_rejected_when_player_not_defeated`**: Verified calling `/battle/retry` while `player_hp > 0` returns `HTTP 400 Bad Request`.
+  - **`test_defeat_retry_rejected_when_boss_already_defeated`**: Verified calling `/battle/retry` when `boss_hp <= 0` returns `HTTP 400 Bad Request`.
+  - **`test_defeat_retry_resets_current_boss_state_and_cursor`**: Verified that on defeat, retry restores HP pools, resets the specific boss's question cursor to 0, clears turn tokens, and invalidates old turn IDs so answering with old `turn_id` is rejected.
+  - **`test_retry_preserves_current_chapter_and_does_not_rollback_to_chapter_1`**: Configured user session at Chapter 2, Boss 0 with defeat. Verified that retry preserves `chapter == 2` and `boss_index == 0`, restoring Chapter 2 boss HP and resetting only Chapter 2's cursor without rolling back to Chapter 1.
+  - **`test_practice_restart_allowed_mid_battle`**: Verified practice restart via `/battle/restart` and `mode="practice"` succeeds while `player_hp > 0` and preserves current chapter.
+- **Full Test Suite (`uv run pytest`)**:
+  - **315 passed, 1 skipped in 56.21s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
 
 
 
