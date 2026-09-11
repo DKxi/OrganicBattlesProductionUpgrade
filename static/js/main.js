@@ -13,7 +13,8 @@ let pendingEmail = '';
 let pendingUsername = '';
 let selectedAvatar = null;
 
-let adminToken = localStorage.getItem('orgo_admin_token') || null;
+// Remove any residual admin token from localStorage
+try { localStorage.removeItem('orgo_admin_token'); } catch (_) {}
 let adminUsersData = [];
 let adminSessionsData = [];
 let adminStatusData = null;
@@ -47,10 +48,7 @@ const authApi = async (path, body = {}, method = 'POST') => {
 };
 
 const adminApi = async (path, body = {}, method = 'POST') => {
-  const headers = { 'Content-Type': 'application/json' };
-  if (adminToken) {
-    headers['Authorization'] = `Bearer ${adminToken}`;
-  }
+  const headers = { 'Content-Type': 'application/json', 'X-Client-Type': 'browser' };
   const response = await fetch(path, {
     method,
     credentials: 'same-origin',
@@ -757,15 +755,9 @@ function showAdminToast(message) {
 
 function openAdminScreen() {
   $('#admin-screen')?.classList.remove('hidden');
-  if (adminToken) {
-    loadAdminDashboard().catch(() => {
-      adminToken = null;
-      localStorage.removeItem('orgo_admin_token');
-      showAdminLogin();
-    });
-  } else {
+  loadAdminDashboard().catch(() => {
     showAdminLogin();
-  }
+  });
 }
 
 function closeAdminScreen() {
@@ -1941,9 +1933,8 @@ function bindAdminEvents() {
       status.className = 'hint';
     }
     try {
-      const data = await adminApi('/api/admin/login', { username, password }, 'POST');
-      adminToken = data.token;
-      localStorage.setItem('orgo_admin_token', adminToken);
+      await adminApi('/api/admin/login', { username, password, client_type: 'browser' }, 'POST');
+      try { localStorage.removeItem('orgo_admin_token'); } catch (_) {}
       if (status) {
         status.textContent = 'Access granted.';
         status.className = 'success';
@@ -1967,8 +1958,7 @@ function bindAdminEvents() {
     try {
       await adminApi('/api/admin/logout', {}, 'POST');
     } catch (_) {}
-    adminToken = null;
-    localStorage.removeItem('orgo_admin_token');
+    try { localStorage.removeItem('orgo_admin_token'); } catch (_) {}
     showAdminLogin();
   });
 
