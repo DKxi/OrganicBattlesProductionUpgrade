@@ -369,3 +369,65 @@ SQLAlchemy connection pooling was previously hardcoded (`pool_size=10, max_overf
 - **Full Test Suite (`uv run pytest`)**:
   - **302 passed, 1 skipped in 49.95s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+---
+
+# Walkthrough: Long-Term Relational Data Model & Learning Analytics
+
+## Problem Summary
+The system needed a long-term data model separation supporting:
+1. **Spaced Repetition & Mastery Tracking**: Storing individual player mastery scores, SM-2 ease factors, review intervals, and recall streak progression per question.
+2. **First-Class Boss Entities**: Relational `OB_bosses` storing identity, image, health, element, and battle rules.
+3. **Decoupled Question Assignments**: Relational `OB_boss_question_assignments` junction table enabling shared questions across curricula, custom boss sequences, and retirement of questions without corrupting historical progress.
+4. **Learning Analytics & Research Data**: Relational `OB_answer_attempts` immutable event stream capturing player responses, selection distributions, item discrimination, damage, and reaction times for academic learning-outcome research and teacher analytics.
+
+## Key Changes Implemented
+
+### 1. Database Schema & Declarative Models
+- In [app/infrastructure/database/models.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/models.py):
+  - **`Boss` (`OB_bosses`)**:
+    - Columns: `id`, `slug`, `track_id`, `chapter`, `order_index`, `name`, `image_file`, `health`, `element`, `strategy_json`, `created_at`.
+    - Constraints: `UniqueConstraint("track_id", "chapter", "order_index")`, index on `(track_id, chapter, order_index)`.
+  - **`BossQuestionAssignment` (`OB_boss_question_assignments`)**:
+    - Columns: `id`, `boss_id`, `question_id`, `track_id`, `release_id`, `order_index`, `weight`, `created_at`.
+    - Constraints: `UniqueConstraint("boss_id", "question_id", "release_id")`, index on `(boss_id, order_index)` and `(track_id, release_id)`.
+  - **`PlayerQuestionProgress` (`OB_player_question_progress`)**:
+    - Columns: `id`, `user_id`, `question_id`, `track_id`, `mastery_score`, `ease_factor`, `interval_days`, `repetitions`, `total_attempts`, `correct_attempts`, `last_attempt_at`, `next_review_at`, `created_at`, `updated_at`.
+    - Constraints: `UniqueConstraint("user_id", "question_id")`, indexes on `(user_id, next_review_at)` and `(user_id, track_id, mastery_score)`.
+  - **`AnswerAttempt` (`OB_answer_attempts`)**:
+    - Columns: `id`, `session_id`, `user_id`, `question_id`, `track_id`, `release_id`, `boss_slug`, `spell_id`, `selected_option`, `is_correct`, `damage_dealt`, `damage_taken`, `time_taken_ms`, `created_at`.
+    - Indexes: `(user_id, created_at)`, `(question_id, is_correct)`, `(track_id, created_at)`, `(boss_slug, created_at)`.
+
+### 2. Repositories
+- **`ProgressRepository`** ([app/infrastructure/database/progress_repo.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/progress_repo.py)):
+  - Implements the **SM-2 Spaced Repetition Algorithm**:
+    - Consecutive correct answers: advances repetition streak, computes exponentially scaled intervals based on `ease_factor`, and increments progressive mastery (`mastery_score`).
+    - Incorrect answers: resets streak to 0, sets interval to 1 day, lowers ease factor and mastery score.
+    - Computes `next_review_at` timestamp.
+  - `record_attempt`: Writes immutable answer attempts to `OB_answer_attempts`.
+  - `get_user_progress_summary`: Aggregates total tracked questions, mastered questions ($\ge 0.75$), due for review, average mastery, and accuracy.
+- **`BossesRepository`** ([app/infrastructure/database/bosses_repo.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/bosses_repo.py)):
+  - Manages boss entity CRUD and boss-question assignment mappings.
+  - Automatically seeds default bosses from built-in curricula on empty databases.
+
+### 3. Combat Integration & Analytics APIs
+- **Battle Turn Recording** ([app/api/v1/battle.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/battle.py)):
+  - `submit_answer` writes every combat answer attempt directly to `OB_answer_attempts` and triggers `update_progress` on `OB_player_question_progress`.
+- **Analytics Admin Endpoints** ([app/api/v1/analytics_admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/analytics_admin.py)):
+  - `GET /api/v1/admin/analytics/overview`: Overall attempts, accuracy, unique players, and struggling questions list.
+  - `GET /api/v1/admin/analytics/questions/{question_id}`: Question accuracy and option distribution frequency.
+  - `GET /api/v1/admin/analytics/users/{user_id}/mastery`: User mastery summary.
+
+### 4. Automated Verification & Regression Suite
+- Created [tests/test_long_term_data_model.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_long_term_data_model.py):
+  - Verified 4 new tables created in active database (`test_long_term_tables_exist`).
+  - Verified `Boss` and `BossQuestionAssignment` CRUD and relationship mapping (`test_boss_model_and_question_assignment`).
+  - Verified SM-2 spaced repetition calculations across multiple attempts and streak resets (`test_player_question_progress_sm2_algorithm`).
+  - Verified immutable answer attempt logging (`test_answer_attempt_recording`).
+  - Verified combat flow creates attempt and progress records (`test_battle_answer_creates_attempt_and_progress`).
+  - Verified admin analytics overview, question analytics, and user mastery endpoints (`test_admin_analytics_endpoints`).
+- Updated [tests/test_ob_table_prefix.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_ob_table_prefix.py):
+  - Verified all 12 tables and foreign keys strictly adhere to `OB_` prefix rules.
+- **Full Test Suite (`uv run pytest`)**:
+  - **308 passed, 1 skipped in 51.91s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
