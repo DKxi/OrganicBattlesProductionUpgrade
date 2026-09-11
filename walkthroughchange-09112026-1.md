@@ -432,6 +432,52 @@ The system needed a long-term data model separation supporting:
   - **308 passed, 1 skipped in 51.91s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
 
+---
+
+# Walkthrough: Fix P0 Session Ownership Missing
+
+## Problem Summary
+1. Battle selection (`/battle/select-spell`), answer (`/battle/answer`), next-turn (`/battle/next-turn`), and retry (`/battle/retry`) previously used `get_by_id(session_id)` without comparing the session owner with the authenticated user directly in SQL queries.
+2. The `SessionRepository` lacked ownership filtering, allowing another user's session to be loaded into the database session identity map.
+3. Other game session endpoints (`/avatar/finalize`, `/game/track`, `/game/state`) accepted foreign session IDs without validating or filtering against the authenticated user.
+
+## Key Changes Implemented
+
+### 1. Repository-Level SQL Ownership Filtering
+- In [app/infrastructure/database/repositories.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/repositories.py):
+  - **`SessionRepository.get_by_id(session_id: str, user_id: Optional[str] = None)`**: Enforces `WHERE id = :session_id AND user_id = :user_id` directly in the database query when `user_id` is supplied.
+  - **`SessionRepository.exists(session_id: str) -> bool`**: Quick boolean check `query(GameSession.id).filter(GameSession.id == session_id).first() is not None` to distinguish between non-existent sessions and unauthorized foreign sessions.
+  - **`SessionRepository.get_for_user_or_raise(user_id: str, session_id: Optional[str] = None) -> GameSession`**: Centralized helper that queries by session ID AND user ID. Returns the session if owned, raises `HTTPException(403, "Not authorized to access this session")` if foreign, and raises `HTTPException(404, "Session not found")` if non-existent.
+  - **`SessionRepository.delete(session_id: str, user_id: Optional[str] = None) -> bool`**: Scoped deletion filtering by `user_id`.
+- In [app/domain/interfaces.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/interfaces.py):
+  - Updated `ISessionRepository` protocol to declare `get_by_id(session_id, user_id=None)`, `exists(session_id)`, and `get_for_user_or_raise(user_id, session_id=None)`.
+
+### 2. Battle and Game API Hardening
+- In [app/api/v1/battle.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/battle.py):
+  - Added `session_id: Optional[str] = None` to `SelectSpellRequest` so session IDs can be cleanly passed and parsed in JSON body or query param.
+  - Updated `select_spell`, `answer_question`, `next_turn`, and `retry_battle` to fetch active sessions via `session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=...)`.
+  - Added `GameSession.user_id == current_user.id` to all optimistic concurrency update queries (`UPDATE "OB_game_sessions" ... WHERE id = :id AND user_id = :user_id AND version = :expected_version`) to guarantee database-level row isolation.
+- In [app/api/v1/game.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/game.py):
+  - Updated `get_state` and `set_track` to use `session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=...)`.
+  - Hardened `finalize_avatar`: if a foreign `session_id` is supplied, it strictly raises `HTTPException(403, "Not authorized to access this session")`.
+
+### 3. Automated Verification & Regression Suite
+- Created [tests/test_session_ownership_security.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_session_ownership_security.py):
+  - **`test_repository_ownership_filtering`**: Verified SQL-level user ID filtering, non-disclosure on foreign user ID query, `exists()` check, `get_for_user_or_raise` 403 vs 404 distinction, and owner-scoped deletion.
+  - **`test_cross_user_battle_and_game_access_rejected_with_403`**: Created two authenticated users (Owner and Attacker). Verified that Attacker attempting to access Owner's `session_id` is strictly rejected with `HTTP 403 Forbidden` across:
+    - `GET /api/game/state?session_id=...`
+    - `POST /api/battle/select-spell`
+    - `POST /api/battle/answer`
+    - `POST /api/battle/next-turn`
+    - `POST /api/battle/retry`
+    - `POST /api/avatar/finalize`
+    - `POST /api/game/track`
+    And verified non-existent session IDs return `HTTP 404 Not Found`, while Owner operations return `HTTP 200 OK`.
+- **Full Test Suite (`uv run pytest`)**:
+  - **310 passed, 1 skipped in 53.08s**.
+  - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+
 
 
 
