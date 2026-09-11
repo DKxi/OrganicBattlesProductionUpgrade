@@ -346,7 +346,20 @@ def load_db_bundle(
 
     def _fetch_questions(session):
         return (
-            session.query(Question)
+            session.query(
+                Question.chapter,
+                Question.options_json,
+                Question.prompt,
+                Question.correct_answer,
+                Question.explanation,
+                Question.images_json,
+                Question.boss_slug,
+                Question.boss_name,
+                Question.spells_json,
+                Question.chapter_title,
+                Question.health_json,
+                Question.topic,
+            )
             .filter(Question.track_id == track_id)
             .order_by(Question.chapter.asc(), Question.order_index.asc())
             .all()

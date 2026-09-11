@@ -52,6 +52,10 @@ class Settings(BaseModel):
     database_path: Path = Field(default_factory=lambda: Path(get_config_value("DATABASE_PATH", default=str(ROOT_DIR / "organic_battles.sqlite3"))))
     game_content_source: Optional[str] = None
     
+    # Content & Cache Management
+    max_cached_tracks: int = Field(default_factory=lambda: int(get_config_value("MAX_CACHED_TRACKS", default=4)))
+    track_cache_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("TRACK_CACHE_TTL_SECONDS", default=3600)))
+    
     # Auth & Security
     verification_code_ttl_seconds: int = Field(default_factory=lambda: int(get_config_value("VERIFICATION_CODE_TTL_SECONDS", default=900)))
     auth_session_ttl_days: int = Field(default_factory=lambda: int(get_config_value("AUTH_SESSION_TTL_DAYS", default=30)))

@@ -18,6 +18,8 @@ from app.domain.content.resolver import resolve_content_source
 import os
 import sys
 
+from app.infrastructure.cache.track_cache import BoundedTrackCache
+
 # Initialize rate limiter (disabled automatically during pytest test runs)
 limiter = Limiter(
     key_func=get_remote_address,
@@ -27,20 +29,20 @@ limiter = Limiter(
 # Preload bundles in memory
 APP_DATA: ContentBundle = load_app_bundle()
 JSON_DATA: ContentBundle = load_json_bundle(settings.root_dir)
-TRACK_BUNDLES: Dict[str, ContentBundle] = {}
+TRACK_BUNDLES: BoundedTrackCache = BoundedTrackCache(
+    max_size=settings.max_cached_tracks,
+    ttl_seconds=settings.track_cache_ttl_seconds,
+)
 
 
 def get_content_bundle(mode: str) -> ContentBundle:
-    """Retrieve preloaded content bundle, including dynamic track bundles."""
-    if mode.startswith("track:"):
-        track_id = mode.split(":", 1)[1]
+    """Retrieve preloaded content bundle, including dynamic track bundles with bounded caching."""
+    if mode.startswith("track:") or mode == "default" or mode.startswith("adv-") or mode.startswith("found-"):
+        track_id = mode[6:] if mode.startswith("track:") else mode
         if track_id not in TRACK_BUNDLES:
-            TRACK_BUNDLES[track_id] = load_track_bundle(settings.root_dir, track_id)
-        return TRACK_BUNDLES[track_id]
-    if mode == "default" or mode.startswith("adv-") or mode.startswith("found-"):
-        track_id = mode
-        if track_id not in TRACK_BUNDLES:
-            TRACK_BUNDLES[track_id] = load_track_bundle(settings.root_dir, track_id)
+            with TRACK_BUNDLES._lock:
+                if track_id not in TRACK_BUNDLES:
+                    TRACK_BUNDLES[track_id] = load_track_bundle(settings.root_dir, track_id)
         return TRACK_BUNDLES[track_id]
     return JSON_DATA if mode == "json" else APP_DATA
 

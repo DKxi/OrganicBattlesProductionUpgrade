@@ -383,6 +383,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
         display_url = f"postgresql://***:***@{display_url}"
 
     from app.infrastructure.database.tracks_repo import TracksRepository
+    from app.api.deps import TRACK_BUNDLES
     tracks_cfg = TracksRepository(db).get_tracks_config()
 
     return {
@@ -392,6 +393,7 @@ def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = De
         },
         "tracks": tracks_cfg.get("tracks", []),
         "curricula": tracks_cfg.get("curricula", []),
+        "track_cache": TRACK_BUNDLES.stats() if hasattr(TRACK_BUNDLES, "stats") else {},
     }
 
 
