@@ -150,6 +150,7 @@ function renderAvatarSelection(returning = false, initialAvatar = null) {
 }
 
 async function beginVerifiedGame() {
+  clearExplanation();
   session = await api('/api/game/new', {});
   showAvatarOnboarding(session.finalized ? session.avatar : null);
 }
@@ -311,6 +312,16 @@ function closeExplanation() {
   $('#explanation-modal')?.classList.add('hidden');
 }
 
+function clearExplanation() {
+  window.lastExplanation = null;
+  const headerButton = $('#view-explanation');
+  if (headerButton) {
+    headerButton.classList.add('hidden');
+    headerButton.classList.remove('available');
+  }
+  closeExplanation();
+}
+
 function showExplanation(result) {
   if (!result) return;
   window.lastExplanation = result;
@@ -321,31 +332,60 @@ function showExplanation(result) {
     headerButton.classList.remove('hidden');
     headerButton.classList.add('available');
   }
+  const titleEl = $('#explanation-title');
+  if (titleEl) {
+    titleEl.textContent = result.correct ? 'WHY THIS ANSWER IS CORRECT' : 'WHY THIS ANSWER?';
+  }
   $('#explanation-question').textContent = result.question_prompt || 'Review the chemistry concept from the last trial.';
-  $('#explanation-answer').textContent = result.correct_answer;
-  $('#explanation-copy').textContent = result.explanation;
+  $('#explanation-answer').textContent = result.correct_answer || '';
+  $('#explanation-copy').textContent = result.explanation || 'No detailed explanation provided for this question.';
   $('#explanation-modal').classList.remove('hidden');
 }
 
-function showBattleModal({ eyebrow = 'ORGO // BATTLE REPORT', title, copy, action = 'CONTINUE', onDone }) {
+function showBattleModal({ eyebrow = 'ORGO // BATTLE REPORT', title, copy, action = 'CONTINUE', secondaryAction = null, onDone, onSecondary }) {
   let modal = $('#battle-outcome-modal');
   if (!modal) {
     modal = document.createElement('div');
     modal.id = 'battle-outcome-modal';
     modal.className = 'modal-backdrop hidden';
-    modal.innerHTML = `<div class="modal-card outcome-card"><div class="eyebrow" id="outcome-eyebrow">ORGO // BATTLE REPORT</div><h2 id="outcome-title"></h2><p id="outcome-copy" class="modal-question"></p><button id="outcome-action" class="primary"></button></div>`;
+    modal.innerHTML = `<div class="modal-card outcome-card">
+      <div class="eyebrow" id="outcome-eyebrow">ORGO // BATTLE REPORT</div>
+      <h2 id="outcome-title"></h2>
+      <p id="outcome-copy" class="modal-question"></p>
+      <div class="modal-actions" style="display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap;">
+        <button id="outcome-action" class="primary"></button>
+        <button id="outcome-secondary" class="secondary hidden"></button>
+      </div>
+    </div>`;
     $('#app').append(modal);
   }
   const eyebrowEl = modal.querySelector('.eyebrow');
   if (eyebrowEl) eyebrowEl.textContent = eyebrow;
   $('#outcome-title').textContent = title;
   $('#outcome-copy').textContent = copy;
+
   const button = $('#outcome-action');
   button.textContent = action;
   button.onclick = () => {
     modal.classList.add('hidden');
     if (onDone) onDone();
   };
+
+  const secButton = $('#outcome-secondary');
+  if (secButton) {
+    if (secondaryAction) {
+      secButton.textContent = secondaryAction;
+      secButton.classList.remove('hidden');
+      secButton.onclick = () => {
+        modal.classList.add('hidden');
+        if (onSecondary) onSecondary();
+      };
+    } else {
+      secButton.classList.add('hidden');
+      secButton.onclick = null;
+    }
+  }
+
   modal.onclick = (event) => {
     if (event.target === modal) {
       modal.classList.add('hidden');
@@ -386,11 +426,20 @@ function render(s) {
   renderAvatars(s);
 
   if (window.lastExplanation) {
-    const headerButton = $('#view-explanation');
-    if (headerButton) {
-      headerButton.textContent = 'VIEW EXPLANATION';
-      headerButton.classList.remove('hidden');
-      headerButton.classList.add('available');
+    // Invalidate stale explanations across different tracks or sessions
+    if (
+      (window.lastExplanation.track_id && s.track_id && window.lastExplanation.track_id !== s.track_id) ||
+      (window.lastExplanation.session_id && s.session_id && window.lastExplanation.session_id !== s.session_id)
+    ) {
+      clearExplanation();
+    } else {
+      ensureExplanationUi();
+      const headerButton = $('#view-explanation');
+      if (headerButton) {
+        headerButton.textContent = 'VIEW EXPLANATION';
+        headerButton.classList.remove('hidden');
+        headerButton.classList.add('available');
+      }
     }
   }
 }
@@ -576,22 +625,32 @@ function showOutcome(r) {
         ? `DIRECT HIT — ${r.damage} damage. ${r.boss_hit ? 'Counterattack!' : 'Boss missed!'}`
         : `SPELL FIZZLE — correct answer: ${r.correct_answer}`;
 
+  // Track-qualify and persist latest explanation for both correct and incorrect answers
+  if (r.explanation) {
+    window.lastExplanation = {
+      ...r,
+      session_id: session?.session_id,
+      track_id: session?.track_id,
+      chapter: session?.chapter,
+      boss_id: session?.boss?.id,
+    };
+    ensureExplanationUi();
+    const headerButton = $('#view-explanation');
+    if (headerButton) {
+      headerButton.textContent = 'VIEW EXPLANATION';
+      headerButton.classList.remove('hidden');
+      headerButton.classList.add('available');
+    }
+  }
+
   if (r.defeat) {
     soundEngine.playDefeat();
-    if (!r.correct) {
-      window.lastExplanation = r;
-      ensureExplanationUi();
-      const headerButton = $('#view-explanation');
-      if (headerButton) {
-        headerButton.textContent = 'VIEW EXPLANATION';
-        headerButton.classList.remove('hidden');
-        headerButton.classList.add('available');
-      }
-    }
     showBattleModal({
       title: 'DEFEAT',
       copy: `Your aura has faded. Regroup and try the battle again.${!r.correct ? ` (Correct answer: ${r.correct_answer})` : ''}`,
       action: 'RETRY BATTLE',
+      secondaryAction: r.explanation ? 'VIEW EXPLANATION' : null,
+      onSecondary: () => showExplanation(window.lastExplanation || r),
       onDone: () => api('/api/battle/retry', { session_id: session.session_id }).then(render),
     });
     return;
@@ -603,6 +662,8 @@ function showOutcome(r) {
       title: 'VICTORY',
       copy: `${r.boss.name} defeated.`,
       action: 'CONTINUE',
+      secondaryAction: r.explanation ? 'VIEW EXPLANATION' : null,
+      onSecondary: () => showExplanation(window.lastExplanation || r),
       onDone: () => api('/api/battle/next-turn', { session_id: session.session_id }).then((nextState) => {
         if (nextState.victory) showBattleModal({ title: 'SPECTRAL CHAMPION', copy: 'All chapters complete.', action: 'CLOSE' });
         else render(nextState);
@@ -614,19 +675,13 @@ function showOutcome(r) {
   if (!r.correct) {
     soundEngine.playSpellFizzle();
     setTimeout(() => soundEngine.playPlayerHit(), 300);
-    window.lastExplanation = r;
-    ensureExplanationUi();
-    const headerButton = $('#view-explanation');
-    if (headerButton) {
-      headerButton.textContent = 'VIEW EXPLANATION';
-      headerButton.classList.remove('hidden');
-      headerButton.classList.add('available');
-    }
     showBattleModal({
       title: 'SPELL FIZZLE',
       copy: `The spell fizzled and backfired for ${r.self_damage} damage. Correct answer: ${r.correct_answer}`,
       action: 'VIEW EXPLANATION',
-      onDone: () => showExplanation(r),
+      secondaryAction: 'CONTINUE BATTLE',
+      onDone: () => showExplanation(window.lastExplanation || r),
+      onSecondary: () => $('#battle-outcome-modal')?.classList.add('hidden'),
     });
     return;
   }
@@ -638,7 +693,13 @@ function showOutcome(r) {
     setTimeout(() => soundEngine.playBossMiss(), 350);
   }
 
-  showBattleModal({ title: 'DIRECT HIT', copy: msg, action: 'BACK TO BATTLE' });
+  showBattleModal({
+    title: 'DIRECT HIT',
+    copy: msg,
+    action: 'BACK TO BATTLE',
+    secondaryAction: r.explanation ? 'VIEW EXPLANATION' : null,
+    onSecondary: () => showExplanation(window.lastExplanation || r),
+  });
 }
 
 
@@ -1640,6 +1701,7 @@ function bindDomEvents() {
               data_folder: folderPath,
               boss_folder: activeTrack?.boss_folder,
             });
+            clearExplanation();
             if (res && res.session) {
               session = res.session;
             }
