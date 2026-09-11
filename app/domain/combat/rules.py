@@ -1,13 +1,38 @@
 import time
 import random
-from typing import Dict, Tuple, Optional
+from typing import Dict, Tuple, Optional, List
 from app.domain.combat.entities import TurnResult
 from app.domain.combat.spells import get_spell
 
 
-def grade_answer(submitted_answer: str, correct_answer: str) -> bool:
-    """Pure domain rule comparing player's submitted answer with correct answer."""
-    return submitted_answer.strip().lower() == correct_answer.strip().lower()
+def grade_answer(
+    submitted_answer: str,
+    correct_answer: str,
+    choices: Optional[List[str]] = None,
+) -> bool:
+    """
+    Pure domain rule comparing player's submitted answer with correct answer.
+    Validates by correct answer text rather than static option position.
+    Also supports resolving an option letter ('A', 'B', 'C', 'D') against the choices list.
+    """
+    if not submitted_answer or not correct_answer:
+        return False
+
+    clean_sub = submitted_answer.strip().lower()
+    clean_cor = correct_answer.strip().lower()
+
+    # 1. Primary validation: match submitted text against correct answer text
+    if clean_sub == clean_cor:
+        return True
+
+    # 2. Option letter resolution: if submitted answer is 'A', 'B', 'C', 'D'
+    sub_upper = submitted_answer.strip().upper()
+    if choices and len(sub_upper) == 1 and sub_upper in "ABCD":
+        idx = "ABCD".index(sub_upper)
+        if idx < len(choices):
+            return choices[idx].strip().lower() == clean_cor
+
+    return False
 
 
 def evaluate_combat_turn(
@@ -21,6 +46,7 @@ def evaluate_combat_turn(
     custom_spell_damage: Optional[Dict[str, int]] = None,
     rng_roll: Optional[float] = None,
     counterattack_damage: Optional[int] = None,
+    choices: Optional[List[str]] = None,
 ) -> Tuple[TurnResult, int, int]:
     """
     Pure Python combat evaluation.
@@ -29,7 +55,8 @@ def evaluate_combat_turn(
     spell = get_spell(spell_id)
     base_damage = custom_spell_damage.get(spell_id, spell.damage) if custom_spell_damage else spell.damage
 
-    is_correct = grade_answer(submitted_answer, correct_answer)
+    is_correct = grade_answer(submitted_answer, correct_answer, choices=choices)
+
 
     if rng_roll is None:
         rng_roll = random.random()

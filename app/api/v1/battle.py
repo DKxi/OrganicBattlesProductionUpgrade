@@ -98,6 +98,11 @@ def select_spell(
     q_idx = cursors.get(cursor_key, 0) % len(bank)
     q_tuple = bank[q_idx]
 
+    # Choice shuffle: randomize choice order for this encounter turn
+    shuffled_choices = list(q_tuple[1])
+    random.shuffle(shuffled_choices)
+    active_q_tuple = (q_tuple[0], shuffled_choices, q_tuple[2])
+
     expected_version = game_session.version
     new_turn_id = secrets.token_hex(8)
     now_ts = int(time.time())
@@ -111,7 +116,7 @@ def select_spell(
     ).update(
         {
             GameSession.active_spell: spell_id,
-            GameSession.active_question_json: json.dumps(q_tuple),
+            GameSession.active_question_json: json.dumps(active_q_tuple),
             GameSession.turn_id: new_turn_id,
             GameSession.version: GameSession.version + 1,
             GameSession.updated_at: now_ts,
@@ -219,6 +224,7 @@ def answer_question(
         current_player_hp=game_session.player_hp,
         current_boss_hp=game_session.boss_hp,
         custom_spell_damage=custom_dmg,
+        choices=choices,
     )
 
     # Cooldown updates

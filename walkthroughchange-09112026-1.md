@@ -740,8 +740,55 @@ All sensitive mutations log to `logs/admin.log` and record entries in `OB_admin_
 - Updated [tests/test_ob_table_prefix.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_ob_table_prefix.py):
   - Added `OB_admin_users`, `OB_admin_sessions`, and `OB_admin_audit_logs` to prefix verification tests.
 - **Full Test Suite (`uv run pytest`)**:
-  - **333 passed, 1 skipped in 58.00s**.
+  - **338 passed, 1 skipped in 62.02s**.
   - **Playwright WebKit / Safari E2E UI tests**: **100% passed**.
+
+---
+
+# Walkthrough: Question Choice Shuffling & Correct Answer Text Validation
+
+## Problem Summary
+1. **Source Order Static Choices**: Previously, `renderQuestion` in `static/js/main.js` mapped `q.choices` directly into A/B/C/D buttons in raw source order without shuffling. In curriculum tracks, correct answers or distractors could follow predictable positional patterns (e.g. correct answer always being in the first slot or memorized by letter).
+2. **Positional/Option Dependency**: Validations relying on static option letters or indices rather than true `correct_answer` text risked grading failures if choices were reordered or randomized.
+3. **Double-Click Vulnerability**: Answer buttons lacked an in-flight guard, allowing multi-clicks while an answer request was in transit.
+
+## Key Changes Implemented
+
+### 1. Server-Side Choice Shuffling on Encounter Turn Generation
+- In [app/api/v1/battle.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/battle.py):
+  - In `select_spell`: Randomizes choice order using `random.shuffle(shuffled_choices)` before saving into `GameSession.active_question_json`:
+    ```python
+    shuffled_choices = list(q_tuple[1])
+    random.shuffle(shuffled_choices)
+    active_q_tuple = (q_tuple[0], shuffled_choices, q_tuple[2])
+    ```
+  - This ensures that every time a player selects a spell, choices arrive in randomized A/B/C/D order.
+
+### 2. Validation by True Correct Answer Text
+- In [app/domain/combat/rules.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/combat/rules.py):
+  - Updated `grade_answer(submitted_answer, correct_answer, choices=None)`:
+    - Primary check validates submitted answer text directly against `correct_answer` text (case-insensitive and trimmed).
+    - Added option letter fallback (`"A"`, `"B"`, `"C"`, `"D"`): If an option letter is submitted, resolves against `choices[idx]` and verifies the resolved text matches `correct_answer`.
+  - Updated `evaluate_combat_turn`: Accepts and passes `choices=choices` to `grade_answer`.
+- In [app/domain/content/loader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/content/loader.py):
+  - Updated both JSON loader and Database bundle loader so `correct` is always resolved to the exact answer string, even if questions only provide `correct_option`.
+
+### 3. Frontend In-Flight Double-Click Guard
+- In [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js):
+  - In `renderQuestion(s)`:
+    - Immediately disables all `#question button.answer` elements when an answer is clicked, preventing race conditions or duplicate submissions.
+    - Re-enables answer buttons if the request fails, allowing the player to retry.
+
+### 4. Verification & Testing
+- Created [tests/test_choice_shuffle_and_answer_validation.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_choice_shuffle_and_answer_validation.py):
+  - **`test_grade_answer_validates_by_correct_answer_text`**: Confirms text matching works across whitespace and case variations and rejects incorrect text.
+  - **`test_grade_answer_resolves_option_letter_with_choices`**: Confirms option letter resolution maps correctly to the choice list.
+  - **`test_evaluate_combat_turn_with_choices`**: Confirms combat evaluation succeeds with both text and resolved option letters.
+  - **`test_select_spell_shuffles_choices_and_preserves_correct_answer`**: Confirms choice order is randomized and stored in `active_question_json`.
+  - **`test_answer_question_with_shuffled_choices`**: Confirms answering with correct text deals combat damage and registers as a hit.
+- **Full Test Suite Results**:
+  - `uv run pytest`: **338 passed, 1 skipped in 62.02s**.
+  - Includes all unit, domain, integration, and Playwright Safari/WebKit E2E tests (`tests/test_ui_e2e.py`).
 
 
 

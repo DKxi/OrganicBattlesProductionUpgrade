@@ -214,7 +214,12 @@ def load_json_bundle(
             for item in chapter_data.get("questions", []):
                 choices = [option["text"] for option in item.get("options", [])]
                 prompt = item.get("question", "")
-                correct = item.get("correct_answer", choices[0] if choices else "")
+                correct = item.get("correct_answer")
+                if not correct and "correct_option" in item:
+                    opt_map = {opt.get("label", "").upper(): opt.get("text", "") for opt in item.get("options", []) if isinstance(opt, dict)}
+                    correct = opt_map.get(str(item["correct_option"]).upper().strip(), "")
+                if not correct:
+                    correct = choices[0] if choices else ""
                 questions.append((prompt, choices, correct))
                 explanations[prompt] = item.get("explanation", "Review the chemistry concept and compare each answer carefully.")
                 boss_image = (item.get("images") or [None])[0]
@@ -424,7 +429,12 @@ def load_db_bundle(
             options_data = _parse_json(q.options_json, [])
             choices = [opt["text"] for opt in options_data if isinstance(opt, dict) and "text" in opt]
             prompt = q.prompt
-            correct = q.correct_answer or (choices[0] if choices else "")
+            correct = q.correct_answer
+            if not correct and q.correct_option:
+                opt_map = {opt.get("label", "").upper(): opt.get("text", "") for opt in options_data if isinstance(opt, dict)}
+                correct = opt_map.get(str(q.correct_option).upper().strip(), "")
+            if not correct:
+                correct = choices[0] if choices else ""
             q_tuple = (prompt, choices, correct)
 
             explanations[prompt] = q.explanation or f"The correct answer is {correct}."
