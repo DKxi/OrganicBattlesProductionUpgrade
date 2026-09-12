@@ -839,6 +839,59 @@ All sensitive mutations log to `logs/admin.log` and record entries in `OB_admin_
   - `uv run pytest`: **344 passed, 1 skipped in 90.71s**.
   - All unit, domain, integration, and Playwright Safari/WebKit UI E2E tests (`tests/test_ui_e2e.py`) pass 100%.
 
+---
+
+# Walkthrough: Untrusted innerHTML Elimination, DOM Node Construction & Sanitization
+
+## Problem Summary
+1. Dynamic user, database, and content strings were interpolated into `innerHTML` across multiple frontend components (question trial prompts, answer choices, battle logs, player/boss HP panels, track cards, avatar customizers, and admin dashboards).
+2. Chemistry curriculum questions routinely contain mathematical and chemical notation such as `< 50°C`, `->`, and `<=>`. When parsed as `innerHTML`, browsers treat `< 50°C` as unclosed malformed HTML tags, causing prompt corruption, missing content, and potential XSS execution vulnerabilities.
+
+## Key Changes Implemented
+
+### 1. Vendored DOMPurify for Client-Side Sanitization
+- Downloaded and vendored minified DOMPurify to [static/vendor/purify.min.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/vendor/purify.min.js) (21 KB).
+- Included `<script src="/static/vendor/purify.min.js"></script>` in [templates/index.html](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/templates/index.html) before `main.js`.
+
+### 2. DOM Construction & Sanitization Utilities
+- In [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js), defined reusable DOM and sanitization helpers:
+  - `sanitizeHtml(dirty)`: Sanitizes HTML using DOMPurify with fallback text escaping.
+  - `escapeHtml(str)`: Escapes special characters (`&`, `<`, `>`, `"`, `'`).
+  - `createEl(tag, props, children)`: Creates DOM elements safely, assigning text nodes via `document.createTextNode` and setting attributes/events without `innerHTML`.
+
+### 3. Eliminated Unsafe `innerHTML` Across All Frontend Components
+- **`renderQuestion(s)`** ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)):
+  - Defeat and victory status cards built with `createEl` and `replaceChildren()`.
+  - Question prompts and answers rendered using `createEl` and `document.createTextNode()`, preserving chemistry expressions (`< 50°C`, `<=>`) without tag drops.
+- **`render(s)`** ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)):
+  - `avatarPanel` player name and HP built via safe DOM nodes and `textContent`.
+  - `log` battle lines built with `createEl('div', { className: 'log-line' }, message)` and `replaceChildren()`.
+- **`renderSpells(s)`** ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)):
+  - Spell grid constructed using `createEl` buttons, titles, and damage metadata.
+- **Admin Dashboard Tables** ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)):
+  - `renderAdminUsers(filterText)`: Table rows, action buttons, usernames, emails, and filter queries rendered safely with `textContent`.
+  - `renderAdminSessions(filterText)`: Sessions table rows, player/boss HP tags, chapter selects, and search queries rendered safely with `textContent`.
+  - `renderQuestionBankRows(items, trackId)`: Question prompts, topics, difficulties, and answers safely constructed as DOM elements.
+  - `loadReleasesTab(trackId)`: Release versions, status badges, and rollback buttons safely constructed as DOM elements.
+  - `loadLearningAnalytics()` & `openDistractorAnalytics(questionId)`: Struggling question rows and distractor distribution bars built via safe DOM nodes.
+  - `populateTrackSelects()` & storage dropdowns: Option elements created via `createEl('option', ...)` and `replaceChildren()`.
+- **Avatar System & Track Selection** ([static/js/avatars.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/avatars.js), [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)):
+  - Avatar frame and fallback span in `Avatar()` created safely without `node.innerHTML`.
+  - `renderAvatarSelection` and `ensureAvatarCreatorUi` build choices and action buttons via DOM elements.
+  - `renderTracks` gallery cards, config buttons, and loadout pool count rendered safely via DOM nodes.
+
+### 4. Automated Testing & Verification
+- Created [tests/test_xss_prevention_and_dom_safety.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_xss_prevention_and_dom_safety.py):
+  - **`test_dompurify_vendored_and_included`**: Verifies DOMPurify is vendored and loaded in `index.html` prior to `main.js`.
+  - **`test_no_unsafe_inner_html_interpolation_in_main_js`**: Regex validation verifying zero dynamic variable interpolation in `innerHTML`.
+  - **`test_avatars_js_does_not_use_inner_html`**: Asserts absence of `innerHTML` in `avatars.js`.
+  - **`test_frontend_routes_serve_clean_assets`**: Asserts HTTP 200 on `/static/vendor/purify.min.js` and `/`.
+  - **`test_chemistry_notation_preservation`**: Verifies chemistry strings (`< 50°C`, `K > 1.0 x 10^5`, `A + B <=> C + D -> E`) are safely handled.
+- **Full Test Suite Results**:
+  - `uv run pytest`: **349 passed, 1 skipped in 70.44s**.
+  - All unit, integration, and Playwright Safari/WebKit E2E tests pass 100%.
+
+
 
 
 

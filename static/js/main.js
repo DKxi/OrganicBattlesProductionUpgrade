@@ -2,6 +2,46 @@ const $ = (selector) => document.querySelector(selector);
 import { Avatar, CHARACTERS, createAvatarStage, setAvatarState, DEFAULT_AVATAR_CONFIG, PLAYER_AVATAR_OPTIONS, normalizeAvatarConfig } from './avatars.js?v=3';
 import { soundEngine } from './audio.js?v=1';
 
+// DOM Construction & Sanitization Utilities
+function sanitizeHtml(dirty) {
+  if (typeof DOMPurify !== 'undefined' && DOMPurify.sanitize) {
+    return DOMPurify.sanitize(dirty);
+  }
+  const div = document.createElement('div');
+  div.textContent = dirty;
+  return div.innerHTML;
+}
+
+function escapeHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function createEl(tag, props = {}, children = []) {
+  const el = document.createElement(tag);
+  for (const [key, val] of Object.entries(props)) {
+    if (key === 'className') el.className = val;
+    else if (key === 'dataset') Object.assign(el.dataset, val);
+    else if (key === 'style' && typeof val === 'object') Object.assign(el.style, val);
+    else if (key.startsWith('on') && typeof val === 'function') el.addEventListener(key.slice(2).toLowerCase(), val);
+    else el.setAttribute(key, val);
+  }
+  const childArray = Array.isArray(children) ? children : [children];
+  for (const child of childArray) {
+    if (child == null) continue;
+    if (typeof child === 'string' || typeof child === 'number') {
+      el.appendChild(document.createTextNode(String(child)));
+    } else if (child instanceof Node) {
+      el.appendChild(child);
+    }
+  }
+  return el;
+}
 
 let session = null;
 let game = null;
@@ -133,7 +173,19 @@ function renderAvatarSelection(returning = false, initialAvatar = null) {
     status.className = 'avatar-selection-status success';
   };
 
-  gallery.innerHTML = options.map(([id, avatar]) => `<button type="button" class="avatar-choice" data-avatar-id="${id}" aria-label="Choose ${avatar.name}"><span class="avatar-choice-art"><img src="${avatar.asset}" alt="${avatar.name}" loading="lazy"></span><span class="avatar-choice-name">${avatar.name}</span></button>`).join('');
+  gallery.replaceChildren(...options.map(([id, avatar]) => {
+    return createEl('button', {
+      type: 'button',
+      className: 'avatar-choice',
+      dataset: { avatarId: id },
+      'aria-label': `Choose ${avatar.name}`
+    }, [
+      createEl('span', { className: 'avatar-choice-art' }, [
+        createEl('img', { src: avatar.asset, alt: avatar.name, loading: 'lazy' })
+      ]),
+      createEl('span', { className: 'avatar-choice-name' }, avatar.name)
+    ]);
+  }));
 
   gallery.querySelectorAll('.avatar-choice').forEach((choice) => {
     const image = choice.querySelector('img');
@@ -228,16 +280,22 @@ function ensureAvatarCreatorUi() {
   const form = $('.avatar-form');
   if (!form || form.dataset.v3Ready) return;
   form.dataset.v3Ready = 'true';
-  form.innerHTML = Object.entries(PLAYER_AVATAR_OPTIONS).map(([category, values]) => `<label>${optionLabels[category].toUpperCase()} <select data-avatar-option="${category}">${values.map((value) => `<option value="${value}">${value.replaceAll('-', ' ')}</option>`).join('')}</select></label>`).join('');
+  form.replaceChildren(...Object.entries(PLAYER_AVATAR_OPTIONS).map(([category, values]) => {
+    const select = createEl('select', { dataset: { avatarOption: category } },
+      values.map((value) => createEl('option', { value }, value.replaceAll('-', ' ')))
+    );
+    return createEl('label', {}, [`${optionLabels[category].toUpperCase()} `, select]);
+  }));
   form.querySelectorAll('[data-avatar-option]').forEach((select) => {
     const category = select.dataset.avatarOption;
     select.value = readConfigValue(optionKeys[category]);
     select.addEventListener('change', () => { setConfigValue(optionKeys[category], select.value); updateAvatarPreview(); });
   });
 
-  const actions = document.createElement('div');
-  actions.className = 'avatar-creator-actions';
-  actions.innerHTML = '<button type="button" id="randomize-avatar" class="secondary">RANDOMIZE</button><button type="button" id="reset-avatar" class="secondary">RESET</button>';
+  const actions = createEl('div', { className: 'avatar-creator-actions' }, [
+    createEl('button', { type: 'button', id: 'randomize-avatar', className: 'secondary' }, 'RANDOMIZE'),
+    createEl('button', { type: 'button', id: 'reset-avatar', className: 'secondary' }, 'RESET')
+  ]);
   form.parentElement.insertBefore(actions, form.nextSibling);
   $('#randomize-avatar').onclick = () => {
     const random = (values) => values[Math.floor(Math.random() * values.length)];
@@ -400,21 +458,22 @@ function render(s) {
 
   const avatarPanel = $('#avatar-panel');
   if (avatarPanel) {
-    avatarPanel.innerHTML = '';
+    avatarPanel.replaceChildren();
     const card = document.createElement('div');
     card.className = 'avatar-card';
     const panelArt = Avatar({ character: s.avatar?.character || 'organic-apprentice', state: 'idle', size: 'panel', config: s.avatar?.config || s.avatar });
     panelArt.classList.add('avatar-panel-art');
     const info = document.createElement('div');
-    info.innerHTML = `<div class="avatar-name"></div><div class="avatar-sub">${s.player.hp} / ${s.player.max_hp} HP</div>`;
-    info.querySelector('.avatar-name').textContent = s.username || 'ALCHEMIST';
+    const nameEl = createEl('div', { className: 'avatar-name' }, s.username || 'ALCHEMIST');
+    const subEl = createEl('div', { className: 'avatar-sub' }, `${s.player.hp} / ${s.player.max_hp} HP`);
+    info.append(nameEl, subEl);
     card.append(panelArt, info);
     avatarPanel.append(card);
   }
 
   const log = $('#log');
   if (log) {
-    log.innerHTML = s.log.map((message) => `<div class="log-line">${message}</div>`).join('');
+    log.replaceChildren(...s.log.map((message) => createEl('div', { className: 'log-line' }, message)));
     requestAnimationFrame(() => { log.scrollTop = log.scrollHeight; });
   }
 
@@ -515,12 +574,26 @@ function renderSpells(s) {
     });
   };
 
-  spellsContainer.innerHTML = `<div class="control-panel"><div class="control-title">ARSENAL // SELECT A SPELL</div><div class="spell-grid">${orderedSpells.map(([id, name, type, damage]) => {
-    const cd = Math.max(0, Math.round((remaining[id] || 0) * 10) / 10);
-    const unavailable = Boolean(s.spell_damage && Object.keys(s.spell_damage).length && !s.spell_damage[id]);
-    const activeDamage = s.spell_damage?.[id] ? `${s.spell_damage[id]} DMG` : damage;
-    return `<button class="spell" data-spell="${id}" ${cd > 0 || unavailable || isDefeated || isVictory ? 'disabled' : ''}><div class="spell-name">${name}</div><div class="spell-meta">${type} · ${unavailable ? 'NOT AVAILABLE' : cd > 0 ? cd.toFixed(1) + 's' : activeDamage}</div></button>`;
-  }).join('')}</div></div>`;
+  spellsContainer.replaceChildren(
+    createEl('div', { className: 'control-panel' }, [
+      createEl('div', { className: 'control-title' }, 'ARSENAL // SELECT A SPELL'),
+      createEl('div', { className: 'spell-grid' }, orderedSpells.map(([id, name, type, damage]) => {
+        const cd = Math.max(0, Math.round((remaining[id] || 0) * 10) / 10);
+        const unavailable = Boolean(s.spell_damage && Object.keys(s.spell_damage).length && !s.spell_damage[id]);
+        const activeDamage = s.spell_damage?.[id] ? `${s.spell_damage[id]} DMG` : damage;
+        const isDisabled = cd > 0 || unavailable || isDefeated || isVictory;
+        const btnProps = {
+          className: 'spell',
+          dataset: { spell: id },
+        };
+        if (isDisabled) btnProps.disabled = 'true';
+        return createEl('button', btnProps, [
+          createEl('div', { className: 'spell-name' }, name),
+          createEl('div', { className: 'spell-meta' }, `${type} · ${unavailable ? 'NOT AVAILABLE' : cd > 0 ? cd.toFixed(1) + 's' : activeDamage}`)
+        ]);
+      }))
+    ])
+  );
 
   const hasCooldowns = Object.values(remaining).some((v) => v > 0);
   if (hasCooldowns && !isDefeated && !isVictory) {
@@ -563,13 +636,25 @@ function renderQuestion(s) {
   if (!container) return;
 
   if (s.player.hp <= 0) {
-    container.innerHTML = `<div class="control-panel"><div class="control-title">BATTLE STATUS // DEFEAT</div><div class="question">Your aura has faded. Regroup and retry the battle.</div><button id="retry-battle-btn" class="primary" style="margin-top:10px">RETRY BATTLE</button></div>`;
+    container.replaceChildren(
+      createEl('div', { className: 'control-panel' }, [
+        createEl('div', { className: 'control-title' }, 'BATTLE STATUS // DEFEAT'),
+        createEl('div', { className: 'question' }, 'Your aura has faded. Regroup and retry the battle.'),
+        createEl('button', { id: 'retry-battle-btn', className: 'primary', style: { marginTop: '10px' } }, 'RETRY BATTLE')
+      ])
+    );
     $('#retry-battle-btn').onclick = () => api('/api/battle/retry', { session_id: session.session_id }).then(render);
     return;
   }
 
   if (s.boss.hp <= 0) {
-    container.innerHTML = `<div class="control-panel"><div class="control-title">BATTLE STATUS // VICTORY</div><div class="question">${s.boss.name} has been defeated!</div><button id="next-turn-btn" class="primary" style="margin-top:10px">PROCEED TO NEXT ARENA</button></div>`;
+    container.replaceChildren(
+      createEl('div', { className: 'control-panel' }, [
+        createEl('div', { className: 'control-title' }, 'BATTLE STATUS // VICTORY'),
+        createEl('div', { className: 'question' }, `${s.boss.name} has been defeated!`),
+        createEl('button', { id: 'next-turn-btn', className: 'primary', style: { marginTop: '10px' } }, 'PROCEED TO NEXT ARENA')
+      ])
+    );
     $('#next-turn-btn').onclick = () => api('/api/battle/next-turn', { session_id: session.session_id }).then((nextState) => {
       if (nextState.victory) showBattleModal({ title: 'SPECTRAL CHAMPION', copy: 'All chapters complete.', action: 'CLOSE' });
       else render(nextState);
@@ -584,7 +669,30 @@ function renderQuestion(s) {
     return trackObj?.title || 'Chemistry Trial';
   })()).toUpperCase();
 
-  container.innerHTML = `<div class="control-panel">${q ? `<div class="control-title">${trackName} // ONE ATTEMPT</div><div class="question">${q.prompt}</div><div class="answers">${q.choices.map((answer, index) => `<button class="answer" data-answer="${answer}"><span class="hint">${'ABCD'[index]}</span><br>${answer}</button>`).join('')}</div>` : `<div class="control-title">BATTLE STATUS</div><div class="question">${s.boss.name} awaits your next spell.</div><div class="hint">Choose a spell above to reveal a chemistry trial.</div>`}</div>`;
+  if (q) {
+    const answersContainer = createEl('div', { className: 'answers' }, q.choices.map((answer, index) => {
+      const btn = createEl('button', { className: 'answer', dataset: { answer } });
+      const hint = createEl('span', { className: 'hint' }, 'ABCD'[index] || '');
+      btn.append(hint, document.createElement('br'), document.createTextNode(answer));
+      return btn;
+    }));
+
+    container.replaceChildren(
+      createEl('div', { className: 'control-panel' }, [
+        createEl('div', { className: 'control-title' }, `${trackName} // ONE ATTEMPT`),
+        createEl('div', { className: 'question' }, q.prompt),
+        answersContainer
+      ])
+    );
+  } else {
+    container.replaceChildren(
+      createEl('div', { className: 'control-panel' }, [
+        createEl('div', { className: 'control-title' }, 'BATTLE STATUS'),
+        createEl('div', { className: 'question' }, `${s.boss.name} awaits your next spell.`),
+        createEl('div', { className: 'hint' }, 'Choose a spell above to reveal a chemistry trial.')
+      ])
+    );
+  }
 
   document.querySelectorAll('#question button.answer').forEach((button) => {
     button.onclick = async () => {
@@ -870,20 +978,20 @@ function populateTrackSelects() {
   const ingSelect = $('#admin-ingest-track-select');
   const anaSelect = $('#admin-analytics-track-select');
 
-  const options = adminTracksList.map(t => `<option value="${t.id}">${t.title || t.id.toUpperCase()}</option>`).join('');
+  const createOptions = () => adminTracksList.map(t => createEl('option', { value: t.id }, t.title || t.id.toUpperCase()));
 
-  if (qbSelect && !qbSelect.innerHTML.trim()) {
-    qbSelect.innerHTML = options;
+  if (qbSelect && !qbSelect.options.length) {
+    qbSelect.replaceChildren(...createOptions());
     qbSelect.value = qbCurrentTrack;
   }
-  if (relSelect && !relSelect.innerHTML.trim()) {
-    relSelect.innerHTML = options;
+  if (relSelect && !relSelect.options.length) {
+    relSelect.replaceChildren(...createOptions());
   }
   if (ingSelect && ingSelect.options.length <= 1) {
-    ingSelect.innerHTML = '<option value="">All Registered Tracks</option>' + options;
+    ingSelect.replaceChildren(createEl('option', { value: '' }, 'All Registered Tracks'), ...createOptions());
   }
   if (anaSelect && anaSelect.options.length <= 1) {
-    anaSelect.innerHTML = '<option value="">All Tracks</option>' + options;
+    anaSelect.replaceChildren(createEl('option', { value: '' }, 'All Tracks'), ...createOptions());
   }
 }
 
@@ -905,7 +1013,11 @@ async function loadQuestionBank() {
 
   const tbody = $('#admin-qb-tbody');
   if (tbody) {
-    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">Loading questions…</td></tr>`;
+    tbody.replaceChildren(
+      createEl('tr', {}, [
+        createEl('td', { colspan: '7', style: { textAlign: 'center', color: 'var(--muted)', padding: '30px' } }, 'Loading questions…')
+      ])
+    );
   }
 
   try {
@@ -927,7 +1039,11 @@ async function loadQuestionBank() {
     renderQuestionBankRows(res.items || [], trackId);
   } catch (err) {
     if (tbody) {
-      tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: #ff8e88; padding: 30px;">Error loading questions: ${err.message}</td></tr>`;
+      tbody.replaceChildren(
+        createEl('tr', {}, [
+          createEl('td', { colspan: '7', style: { textAlign: 'center', color: '#ff8e88', padding: '30px' } }, `Error loading questions: ${err.message}`)
+        ])
+      );
     }
   }
 }
@@ -937,39 +1053,51 @@ function renderQuestionBankRows(items, trackId) {
   if (!tbody) return;
 
   if (!items.length) {
-    tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--muted); padding: 30px;">No questions found.</td></tr>`;
+    tbody.replaceChildren(
+      createEl('tr', {}, [
+        createEl('td', { colspan: '7', style: { textAlign: 'center', color: 'var(--muted)', padding: '30px' } }, 'No questions found.')
+      ])
+    );
     return;
   }
 
-  tbody.innerHTML = items.map((q) => {
+  tbody.replaceChildren(...items.map((q) => {
     const diffClass = q.difficulty === 'challenge' ? 'diff-challenge' : q.difficulty === 'intro' ? 'diff-intro' : 'diff-standard';
     const promptShort = q.prompt.length > 85 ? q.prompt.slice(0, 85) + '…' : q.prompt;
     const spellsText = (q.spells && q.spells.length) ? q.spells.join(', ') : '20, 30, 45';
 
-    return `
-      <tr data-question-id="${q.id}">
-        <td style="font-family: 'DM Mono', monospace; font-weight: 700; color: var(--cyan);">${q.order_index}</td>
-        <td>
-          <div style="font-weight: 600; color: var(--ink);">Ch ${q.chapter}: ${q.chapter_title || ''}</div>
-          <div style="font: 500 0.68rem 'DM Mono', monospace; color: var(--orange); margin-top: 2px;">Boss: ${q.boss_name || q.boss_slug || ''}</div>
-        </td>
-        <td>
-          <div style="font-size: 0.8rem; color: var(--ink); line-height: 1.35;">${promptShort}</div>
-          <div style="font: 500 0.68rem 'DM Mono', monospace; color: var(--muted); margin-top: 3px;">Ans: <strong>${q.correct_option}</strong> (${q.correct_answer || ''})</div>
-        </td>
-        <td><span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted);">${q.topic || 'General'}</span></td>
-        <td><span class="badge-difficulty ${diffClass}">${(q.difficulty || 'standard').toUpperCase()}</span></td>
-        <td><span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan);">${spellsText}</span></td>
-        <td>
-          <div style="display: flex; gap: 6px; align-items: center;">
-            <button type="button" class="btn-action-sm" data-edit-question="${q.id}">✏ EDIT</button>
-            <button type="button" class="btn-action-sm" data-reorder-up="${q.id}" data-chapter="${q.chapter}" data-boss="${q.boss_slug || ''}" title="Move Up">▲</button>
-            <button type="button" class="btn-action-sm" data-reorder-down="${q.id}" data-chapter="${q.chapter}" data-boss="${q.boss_slug || ''}" title="Move Down">▼</button>
-          </div>
-        </td>
-      </tr>
-    `;
-  }).join('');
+    return createEl('tr', { dataset: { questionId: String(q.id) } }, [
+      createEl('td', { style: { fontFamily: "'DM Mono', monospace", fontWeight: '700', color: 'var(--cyan)' } }, String(q.order_index)),
+      createEl('td', {}, [
+        createEl('div', { style: { fontWeight: '600', color: 'var(--ink)' } }, `Ch ${q.chapter}: ${q.chapter_title || ''}`),
+        createEl('div', { style: { font: "500 0.68rem 'DM Mono', monospace", color: 'var(--orange)', marginTop: '2px' } }, `Boss: ${q.boss_name || q.boss_slug || ''}`)
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { fontSize: '0.8rem', color: 'var(--ink)', lineHeight: '1.35' } }, promptShort),
+        createEl('div', { style: { font: "500 0.68rem 'DM Mono', monospace", color: 'var(--muted)', marginTop: '3px' } }, [
+          'Ans: ',
+          createEl('strong', {}, String(q.correct_option)),
+          ` (${q.correct_answer || ''})`
+        ])
+      ]),
+      createEl('td', {}, [
+        createEl('span', { style: { fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', color: 'var(--muted)' } }, q.topic || 'General')
+      ]),
+      createEl('td', {}, [
+        createEl('span', { className: `badge-difficulty ${diffClass}` }, (q.difficulty || 'standard').toUpperCase())
+      ]),
+      createEl('td', {}, [
+        createEl('span', { style: { fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', color: 'var(--cyan)' } }, spellsText)
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { display: 'flex', gap: '6px', alignItems: 'center' } }, [
+          createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { editQuestion: String(q.id) } }, '✏ EDIT'),
+          createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { reorderUp: String(q.id), chapter: String(q.chapter), boss: q.boss_slug || '' }, title: 'Move Up' }, '▲'),
+          createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { reorderDown: String(q.id), chapter: String(q.chapter), boss: q.boss_slug || '' }, title: 'Move Down' }, '▼')
+        ])
+      ])
+    ]);
+  }));
 
   tbody.querySelectorAll('[data-edit-question]').forEach((btn) => {
     btn.onclick = () => openQuestionEditor(btn.dataset.editQuestion, trackId);
@@ -1076,7 +1204,11 @@ async function loadReleasesTab() {
   const tbody = $('#admin-releases-tbody');
 
   if (tbody) {
-    tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--muted); padding: 20px;">Loading releases…</td></tr>`;
+    tbody.replaceChildren(
+      createEl('tr', {}, [
+        createEl('td', { colspan: '5', style: { textAlign: 'center', color: 'var(--muted)', padding: '20px' } }, 'Loading releases…')
+      ])
+    );
   }
 
   try {
@@ -1084,28 +1216,38 @@ async function loadReleasesTab() {
     if (!res || !res.releases) return;
 
     if (!res.releases.length) {
-      tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--muted); padding: 20px;">No releases found for track "${trackId}".</td></tr>`;
+      tbody.replaceChildren(
+        createEl('tr', {}, [
+          createEl('td', { colspan: '5', style: { textAlign: 'center', color: 'var(--muted)', padding: '20px' } }, `No releases found for track "${trackId}".`)
+        ])
+      );
       return;
     }
 
-    tbody.innerHTML = res.releases.map((r) => {
+    tbody.replaceChildren(...res.releases.map((r) => {
       const isPub = r.status === 'published';
       const badgeClass = isPub ? 'badge-published' : r.status === 'draft' ? 'badge-draft' : 'badge-archived';
       const checksumShort = r.checksum ? r.checksum.slice(0, 10) + '…' : '--';
       const pubDate = r.published_at ? new Date(r.published_at * 1000).toLocaleString() : '--';
 
-      return `
-        <tr>
-          <td style="font-family: 'DM Mono', monospace; font-weight: 700; color: var(--cyan);">v${r.version}</td>
-          <td><span class="badge-status ${badgeClass}">${r.status}</span></td>
-          <td><span style="font-family: monospace; font-size: 0.72rem; color: var(--muted);">${checksumShort}</span></td>
-          <td><span style="font-size: 0.72rem; color: var(--muted);">${pubDate}</span></td>
-          <td>
-            ${!isPub ? `<button type="button" class="btn-action-sm" data-rollback-version="${r.version}" data-track="${trackId}">ROLLBACK</button>` : `<span style="font-size: 0.7rem; color: #34d399; font-weight: 600;">ACTIVE</span>`}
-          </td>
-        </tr>
-      `;
-    }).join('');
+      return createEl('tr', {}, [
+        createEl('td', { style: { fontFamily: "'DM Mono', monospace", fontWeight: '700', color: 'var(--cyan)' } }, `v${r.version}`),
+        createEl('td', {}, [
+          createEl('span', { className: `badge-status ${badgeClass}` }, r.status)
+        ]),
+        createEl('td', {}, [
+          createEl('span', { style: { fontFamily: 'monospace', fontSize: '0.72rem', color: 'var(--muted)' } }, checksumShort)
+        ]),
+        createEl('td', {}, [
+          createEl('span', { style: { fontSize: '0.72rem', color: 'var(--muted)' } }, pubDate)
+        ]),
+        createEl('td', {}, [
+          !isPub
+            ? createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { rollbackVersion: String(r.version), track: trackId } }, 'ROLLBACK')
+            : createEl('span', { style: { fontSize: '0.7rem', color: '#34d399', fontWeight: '600' } }, 'ACTIVE')
+        ])
+      ]);
+    }));
 
     tbody.querySelectorAll('[data-rollback-version]').forEach((btn) => {
       btn.onclick = async () => {
@@ -1126,7 +1268,11 @@ async function loadReleasesTab() {
     });
   } catch (err) {
     if (tbody) {
-      tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #ff8e88; padding: 20px;">Error: ${err.message}</td></tr>`;
+      tbody.replaceChildren(
+        createEl('tr', {}, [
+          createEl('td', { colspan: '5', style: { textAlign: 'center', color: '#ff8e88', padding: '20px' } }, `Error: ${err.message}`)
+        ])
+      );
     }
   }
 }
@@ -1259,30 +1405,34 @@ async function loadLearningAnalytics() {
 
     const questions = res.struggling_questions || [];
     if (!questions.length) {
-      tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--muted); padding: 24px;">No struggling questions found (all questions &ge; 70% accuracy).</td></tr>`;
+      tbody.replaceChildren(
+        createEl('tr', {}, [
+          createEl('td', { colspan: '6', style: { textAlign: 'center', color: 'var(--muted)', padding: '24px' } }, 'No struggling questions found (all questions ≥ 70% accuracy).')
+        ])
+      );
       return;
     }
 
-    tbody.innerHTML = questions.map((q) => {
+    tbody.replaceChildren(...questions.map((q) => {
       const accPercent = Math.round((q.accuracy || 0) * 100);
-      return `
-        <tr>
-          <td style="font-family: 'DM Mono', monospace; font-weight: 700; color: var(--cyan);">${q.question_id}</td>
-          <td style="font-size: 0.8rem; line-height: 1.35; color: var(--ink);">${q.prompt}</td>
-          <td><span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted);">${q.topic || 'General'}</span></td>
-          <td style="font-family: 'DM Mono', monospace; font-size: 0.75rem;">${q.total_attempts}</td>
-          <td>
-            <span style="font-weight: 700; font-family: 'DM Mono', monospace; color: #ff8e88;">${accPercent}%</span>
-          </td>
-          <td>
-            <div style="display: flex; gap: 6px;">
-              <button type="button" class="btn-action-sm" data-inspect-distractors="${q.question_id}">DISTRACTORS</button>
-              <button type="button" class="btn-action-sm" data-edit-in-bank="${q.question_id}">EDIT</button>
-            </div>
-          </td>
-        </tr>
-      `;
-    }).join('');
+      return createEl('tr', {}, [
+        createEl('td', { style: { fontFamily: "'DM Mono', monospace", fontWeight: '700', color: 'var(--cyan)' } }, String(q.question_id)),
+        createEl('td', { style: { fontSize: '0.8rem', lineHeight: '1.35', color: 'var(--ink)' } }, q.prompt),
+        createEl('td', {}, [
+          createEl('span', { style: { fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', color: 'var(--muted)' } }, q.topic || 'General')
+        ]),
+        createEl('td', { style: { fontFamily: "'DM Mono', monospace", fontSize: '0.75rem' } }, String(q.total_attempts)),
+        createEl('td', {}, [
+          createEl('span', { style: { fontWeight: '700', fontFamily: "'DM Mono', monospace", color: '#ff8e88' } }, `${accPercent}%`)
+        ]),
+        createEl('td', {}, [
+          createEl('div', { style: { display: 'flex', gap: '6px' } }, [
+            createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { inspectDistractors: String(q.question_id) } }, 'DISTRACTORS'),
+            createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { editInBank: String(q.question_id) } }, 'EDIT')
+          ])
+        ])
+      ]);
+    }));
 
     tbody.querySelectorAll('[data-inspect-distractors]').forEach((btn) => {
       btn.onclick = () => openDistractorAnalytics(btn.dataset.inspectDistractors);
@@ -1318,24 +1468,28 @@ async function openDistractorAnalytics(questionId) {
       const total = res.total_attempts || 1;
       const opts = ['A', 'B', 'C', 'D'];
 
-      container.innerHTML = opts.map((opt) => {
+      container.replaceChildren(...opts.map((opt) => {
         const count = dist[opt] || 0;
         const pct = Math.round((count / total) * 100);
         const isCorr = opt === (res.correct_option || '').toUpperCase();
         const barClass = isCorr ? 'distractor-correct' : 'distractor-wrong';
 
-        return `
-          <div class="distractor-row">
-            <div class="distractor-label">
-              <span><strong>Option ${opt}</strong> ${isCorr ? '<span style="color: #34d399;">(Correct)</span>' : ''}</span>
-              <span>${count} picks (${pct}%)</span>
-            </div>
-            <div class="distractor-bar-container">
-              <div class="distractor-bar-fill ${barClass}" style="width: ${pct}%;"></div>
-            </div>
-          </div>
-        `;
-      }).join('');
+        const labelLeftChildren = [createEl('strong', {}, `Option ${opt}`)];
+        if (isCorr) {
+          labelLeftChildren.push(document.createTextNode(' '));
+          labelLeftChildren.push(createEl('span', { style: { color: '#34d399' } }, '(Correct)'));
+        }
+
+        return createEl('div', { className: 'distractor-row' }, [
+          createEl('div', { className: 'distractor-label' }, [
+            createEl('span', {}, labelLeftChildren),
+            createEl('span', {}, `${count} picks (${pct}%)`)
+          ]),
+          createEl('div', { className: 'distractor-bar-container' }, [
+            createEl('div', { className: `distractor-bar-fill ${barClass}`, style: { width: `${pct}%` } })
+          ])
+        ]);
+      }));
     }
 
     modal.classList.remove('hidden');
@@ -1432,7 +1586,7 @@ async function loadStorageConfig() {
     const select = $('#admin-folder-track-select');
     if (select && res.tracks) {
       const currentSelected = select.value;
-      select.innerHTML = res.tracks.map(t => `<option value="${t.id}">${t.title} (${t.id})</option>`).join('');
+      select.replaceChildren(...res.tracks.map(t => createEl('option', { value: t.id }, `${t.title} (${t.id})`)));
       if (currentSelected && res.tracks.some(t => t.id === currentSelected)) {
         select.value = currentSelected;
       }
@@ -1511,46 +1665,48 @@ function renderAdminUsers(filterText = '') {
   const filtered = adminUsersData.filter((u) => !query || u.username.toLowerCase().includes(query) || u.email.toLowerCase().includes(query) || u.id.toLowerCase().includes(query));
 
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--muted); padding: 30px;">No users found matching '${filterText}'.</td></tr>`;
+    tbody.replaceChildren(
+      createEl('tr', {}, [
+        createEl('td', { colspan: '6', style: { textAlign: 'center', color: 'var(--muted)', padding: '30px' } }, `No users found matching '${filterText}'.`)
+      ])
+    );
     return;
   }
 
-  tbody.innerHTML = filtered.map((u) => {
+  tbody.replaceChildren(...filtered.map((u) => {
     const trackLabel = u.track_name || (u.track_id ? u.track_id.toUpperCase() : 'Default Track');
 
-    return `
-      <tr data-user-id="${u.id}">
-        <td>
-          <div class="user-cell-name">${u.username}</div>
-          <div class="user-cell-id">${u.id.slice(0, 8)}…</div>
-        </td>
-        <td><span style="color: var(--muted);">${u.email}</span></td>
-        <td>
-          <span class="${u.verified ? 'badge-verified' : 'badge-unverified'}">
-            ${u.verified ? 'VERIFIED' : 'UNVERIFIED'}
-          </span>
-        </td>
-        <td>
-          <span class="pill-effective mode-json" style="font-size: 0.7rem;" title="Track: ${trackLabel}">
-            ${trackLabel}
-          </span>
-        </td>
-        <td>
-          <span style="font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan);">
-            Ch ${u.chapter} // Boss ${u.boss_index + 1}
-          </span>
-        </td>
-        <td>
-          <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
-            <button type="button" class="btn-action-sm" data-toggle-verify="${u.id}">${u.verified ? 'UNVERIFY' : 'VERIFY'}</button>
-            <button type="button" class="btn-action-sm" data-user-mastery="${u.id}" data-username="${u.username}">MASTERY</button>
-            ${u.session_id ? `<button type="button" class="btn-action-sm" data-user-session="${u.session_id}">BATTLE</button>` : ''}
-            <button type="button" class="admin-cred-btn" data-edit-cred="${u.id}" title="Edit Username or Password">🔑 CREDENTIALS</button>
-          </div>
-        </td>
-      </tr>
-    `;
-  }).join('');
+    const actions = [
+      createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { toggleVerify: u.id } }, u.verified ? 'UNVERIFY' : 'VERIFY'),
+      createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { userMastery: u.id, username: u.username } }, 'MASTERY')
+    ];
+    if (u.session_id) {
+      actions.push(createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { userSession: u.session_id } }, 'BATTLE'));
+    }
+    actions.push(createEl('button', { type: 'button', className: 'admin-cred-btn', dataset: { editCred: u.id }, title: 'Edit Username or Password' }, '🔑 CREDENTIALS'));
+
+    return createEl('tr', { dataset: { userId: u.id } }, [
+      createEl('td', {}, [
+        createEl('div', { className: 'user-cell-name' }, u.username),
+        createEl('div', { className: 'user-cell-id' }, `${u.id.slice(0, 8)}…`)
+      ]),
+      createEl('td', {}, [
+        createEl('span', { style: { color: 'var(--muted)' } }, u.email)
+      ]),
+      createEl('td', {}, [
+        createEl('span', { className: u.verified ? 'badge-verified' : 'badge-unverified' }, u.verified ? 'VERIFIED' : 'UNVERIFIED')
+      ]),
+      createEl('td', {}, [
+        createEl('span', { className: 'pill-effective mode-json', style: { fontSize: '0.7rem' }, title: `Track: ${trackLabel}` }, trackLabel)
+      ]),
+      createEl('td', {}, [
+        createEl('span', { style: { fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', color: 'var(--cyan)' } }, `Ch ${u.chapter} // Boss ${u.boss_index + 1}`)
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' } }, actions)
+      ])
+    ]);
+  }));
 
   // Bind Actions
   tbody.querySelectorAll('[data-toggle-verify]').forEach((btn) => {
@@ -1594,61 +1750,66 @@ function renderAdminSessions(filterText = '') {
   }
 
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--muted); padding: 30px;">No game sessions found matching '${filterText}'.</td></tr>`;
+    tbody.replaceChildren(
+      createEl('tr', {}, [
+        createEl('td', { colspan: '8', style: { textAlign: 'center', color: 'var(--muted)', padding: '30px' } }, `No game sessions found matching '${filterText}'.`)
+      ])
+    );
     return;
   }
 
-  tbody.innerHTML = filtered.map((s) => {
+  tbody.replaceChildren(...filtered.map((s) => {
     const trackLabel = s.track_name || (s.track_id ? s.track_id.toUpperCase() : 'Default Track');
     const chapters = s.available_chapters || [{ id: 1, name: 'Chapter 1' }];
 
-    const chapterOptions = chapters.map((ch) => `<option value="${ch.id}" ${ch.id === s.chapter ? 'selected' : ''}>Ch ${ch.id}: ${ch.name.slice(0, 18)}…</option>`).join('');
+    const chapterSelect = createEl('select', { className: 'admin-chapter-select', dataset: { chapterSelect: 'true' } },
+      chapters.map((ch) => {
+        const opt = createEl('option', { value: String(ch.id) }, `Ch ${ch.id}: ${ch.name.slice(0, 18)}…`);
+        if (ch.id === s.chapter) opt.selected = true;
+        return opt;
+      })
+    );
 
-    return `
-      <tr data-session-id="${s.session_id}">
-        <td>
-          <div class="user-cell-name">${s.username}</div>
-          <div class="user-cell-id">${s.session_id.slice(0, 8)}…</div>
-        </td>
-        <td>
-          <span class="pill-effective mode-json" style="font-size: 0.7rem;" title="Track: ${trackLabel}">${trackLabel}</span>
-        </td>
-        <td>
-          <div style="font-weight: 600; color: var(--ink);">Ch ${s.chapter}: ${s.chapter_name}</div>
-          <div style="font: 500 0.68rem 'DM Mono', monospace; color: var(--orange); margin-top: 3px;">
-            Boss ${s.boss_index + 1}: ${s.boss_name}
-          </div>
-        </td>
-        <td>
-          <div class="session-hp-tag">
-            <span class="hp-player">Player: ${s.player_hp}/${s.player_max_hp} HP</span>
-            <span class="hp-boss">Boss: ${s.boss_hp}/${s.boss_max_hp} HP</span>
-          </div>
-        </td>
-        <td>
-          <div style="font: 600 0.72rem 'DM Mono', monospace; color: var(--cyan);">v${s.version || 1}</div>
-          <div style="font: 500 0.65rem 'DM Mono', monospace; color: var(--muted);" title="${s.turn_id || 'No turn'}">Turn: ${s.turn_id ? s.turn_id.slice(0, 8) + '…' : 'None'}</div>
-        </td>
-        <td>
-          <span class="badge-verified">${s.completed_count} Defeated</span>
-        </td>
-        <td>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <select class="admin-chapter-select" data-chapter-select>
-              ${chapterOptions}
-            </select>
-            <button type="button" class="btn-reset" data-reset-session="${s.session_id}">⟲ RESET</button>
-          </div>
-        </td>
-        <td>
-          <div style="display: flex; gap: 6px; align-items: center;">
-            <button type="button" class="btn-action-sm" data-inspect-session="${s.session_id}">INSPECT</button>
-            <button type="button" class="btn-danger" data-delete-session="${s.session_id}">🗑 DELETE</button>
-          </div>
-        </td>
-      </tr>
-    `;
-  }).join('');
+    return createEl('tr', { dataset: { sessionId: s.session_id } }, [
+      createEl('td', {}, [
+        createEl('div', { className: 'user-cell-name' }, s.username),
+        createEl('div', { className: 'user-cell-id' }, `${s.session_id.slice(0, 8)}…`)
+      ]),
+      createEl('td', {}, [
+        createEl('span', { className: 'pill-effective mode-json', style: { fontSize: '0.7rem' }, title: `Track: ${trackLabel}` }, trackLabel)
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { fontWeight: '600', color: 'var(--ink)' } }, `Ch ${s.chapter}: ${s.chapter_name}`),
+        createEl('div', { style: { font: "500 0.68rem 'DM Mono', monospace", color: 'var(--orange)', marginTop: '3px' } }, `Boss ${s.boss_index + 1}: ${s.boss_name}`)
+      ]),
+      createEl('td', {}, [
+        createEl('div', { className: 'session-hp-tag' }, [
+          createEl('span', { className: 'hp-player' }, `Player: ${s.player_hp}/${s.player_max_hp} HP`),
+          document.createTextNode(' '),
+          createEl('span', { className: 'hp-boss' }, `Boss: ${s.boss_hp}/${s.boss_max_hp} HP`)
+        ])
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { font: "600 0.72rem 'DM Mono', monospace", color: 'var(--cyan)' } }, `v${s.version || 1}`),
+        createEl('div', { style: { font: "500 0.65rem 'DM Mono', monospace", color: 'var(--muted)' }, title: s.turn_id || 'No turn' }, `Turn: ${s.turn_id ? s.turn_id.slice(0, 8) + '…' : 'None'}`)
+      ]),
+      createEl('td', {}, [
+        createEl('span', { className: 'badge-verified' }, `${s.completed_count} Defeated`)
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { display: 'flex', alignItems: 'center', gap: '8px' } }, [
+          chapterSelect,
+          createEl('button', { type: 'button', className: 'btn-reset', dataset: { resetSession: s.session_id } }, '⟲ RESET')
+        ])
+      ]),
+      createEl('td', {}, [
+        createEl('div', { style: { display: 'flex', gap: '6px', alignItems: 'center' } }, [
+          createEl('button', { type: 'button', className: 'btn-action-sm', dataset: { inspectSession: s.session_id } }, 'INSPECT'),
+          createEl('button', { type: 'button', className: 'btn-danger', dataset: { deleteSession: s.session_id } }, '🗑 DELETE')
+        ])
+      ])
+    ]);
+  }));
 
   // Bind Reset, Delete, and Inspect actions
   tbody.querySelectorAll('tr').forEach((row) => {
@@ -2234,36 +2395,34 @@ function bindDomEvents() {
       gallery.classList.remove('hidden');
       emptyState?.classList.add('hidden');
 
-      gallery.innerHTML = '';
-      filtered.forEach((track, index) => {
+      gallery.replaceChildren(...filtered.map((track, index) => {
         const isSelected = track.id === selectedTrackId;
-        const card = document.createElement('div');
-        card.className = `track-card ${isSelected ? 'selected' : ''}`;
-        card.dataset.trackId = track.id;
-        card.setAttribute('role', 'button');
-        card.setAttribute('tabindex', '0');
-        card.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
-
         const isAdv = track.curriculum === 'advanced';
         const curTagClass = isAdv ? 'adv' : 'found';
         const curTagLetter = isAdv ? 'A' : 'F';
         const waterIndex = String(index + 1).padStart(2, '0');
 
-        card.innerHTML = `
-          <div class="track-card-header">
-            <span class="curriculum-tag ${curTagClass}" title="${isAdv ? 'Advanced Mechanistic Mastery' : 'Foundational Open'}">${curTagLetter}</span>
-            <div class="track-card-actions">
-              <button type="button" class="track-tile-config-btn" title="Configure JSON folder location for ${track.title}">⚙ PATH</button>
-              <span class="track-check-indicator">✓</span>
-            </div>
-          </div>
-          <div class="track-card-body">
-            <div class="track-card-title">${track.title}</div>
-            <div class="track-card-detail">${track.detail}</div>
-            <div class="track-card-boss">⚔ Archetype: ${track.boss}</div>
-          </div>
-          <span class="track-watermark" aria-hidden="true">${waterIndex}</span>
-        `;
+        const card = createEl('div', {
+          className: `track-card ${isSelected ? 'selected' : ''}`,
+          dataset: { trackId: track.id },
+          role: 'button',
+          tabindex: '0',
+          'aria-pressed': isSelected ? 'true' : 'false'
+        }, [
+          createEl('div', { className: 'track-card-header' }, [
+            createEl('span', { className: `curriculum-tag ${curTagClass}`, title: isAdv ? 'Advanced Mechanistic Mastery' : 'Foundational Open' }, curTagLetter),
+            createEl('div', { className: 'track-card-actions' }, [
+              createEl('button', { type: 'button', className: 'track-tile-config-btn', title: `Configure JSON folder location for ${track.title}` }, '⚙ PATH'),
+              createEl('span', { className: 'track-check-indicator' }, '✓')
+            ])
+          ]),
+          createEl('div', { className: 'track-card-body' }, [
+            createEl('div', { className: 'track-card-title' }, track.title),
+            createEl('div', { className: 'track-card-detail' }, track.detail),
+            createEl('div', { className: 'track-card-boss' }, `⚔ Archetype: ${track.boss}`)
+          ]),
+          createEl('span', { className: 'track-watermark', 'aria-hidden': 'true' }, waterIndex)
+        ]);
 
         card.querySelector('.track-tile-config-btn').addEventListener('click', (e) => {
           e.stopPropagation();
@@ -2285,8 +2444,8 @@ function bindDomEvents() {
           }
         });
 
-        gallery.appendChild(card);
-      });
+        return card;
+      }));
     }
 
     // Update Loadout Preview Box
@@ -2308,7 +2467,12 @@ function bindDomEvents() {
       const folderEl = $('#loadout-folder-path');
       if (folderEl) folderEl.textContent = getTrackDataFolder(activeTrack);
       const poolEl = $('#loadout-pool-count');
-      if (poolEl) poolEl.innerHTML = `${activeTrack.questions.toLocaleString()} <span class="stat-unit">questions</span>`;
+      if (poolEl) {
+        poolEl.replaceChildren(
+          document.createTextNode(`${activeTrack.questions.toLocaleString()} `),
+          createEl('span', { className: 'stat-unit' }, 'questions')
+        );
+      }
     }
   }
 
@@ -2426,7 +2590,7 @@ function bindDomEvents() {
       if (!startBtn) return;
 
       startBtn.disabled = true;
-      startBtn.innerHTML = `<span>PREPARING ARENA…</span>`;
+      startBtn.replaceChildren(createEl('span', {}, 'PREPARING ARENA…'));
 
       try {
         const tracks = getTracksList();
@@ -2453,7 +2617,11 @@ function bindDomEvents() {
             }
             $('#track-blocked-modal')?.classList.remove('hidden');
             startBtn.disabled = false;
-            startBtn.innerHTML = `<span>START THE BATTLE</span> <span class="btn-arrow">→</span>`;
+            startBtn.replaceChildren(
+              createEl('span', {}, 'START THE BATTLE'),
+              document.createTextNode(' '),
+              createEl('span', { className: 'btn-arrow' }, '→')
+            );
             return;
           }
         }
@@ -2465,7 +2633,11 @@ function bindDomEvents() {
       } catch (err) {
         console.error('Failed to start duel:', err);
         startBtn.disabled = false;
-        startBtn.innerHTML = `<span>START THE BATTLE</span> <span class="btn-arrow">→</span>`;
+        startBtn.replaceChildren(
+          createEl('span', {}, 'START THE BATTLE'),
+          document.createTextNode(' '),
+          createEl('span', { className: 'btn-arrow' }, '→')
+        );
       }
     });
 

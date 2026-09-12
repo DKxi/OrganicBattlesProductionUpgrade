@@ -76,9 +76,36 @@ export function Avatar({ character = 'organic-apprentice', state = 'idle', size 
   node.setAttribute('aria-label', label || CHARACTERS[safeCharacter].name);
   const imageAsset = asset || CHARACTERS[safeCharacter].asset;
   const imageName = displayName || CHARACTERS[safeCharacter].name;
-  node.dataset.asset = imageAsset;
-  node.innerHTML = `<div class="avatar-art-frame"><img class="avatar-art" src="${imageAsset}" alt="${imageName}" decoding="async" draggable="false"><span class="avatar-fallback" aria-hidden="true">${imageName}</span></div><div class="avatar-effects" aria-hidden="true"><span class="effect-aura"></span><span class="effect-spark spark-one"></span><span class="effect-spark spark-two"></span><span class="effect-accessory">${safeConfig.accessory === 'benzene-pin' ? '⌬' : safeConfig.accessory === 'periodic-table-badge' ? 'C' : safeConfig.accessory === 'molecule-brooch' ? '⌘' : safeConfig.accessory === 'reaction-arrow-pin' ? '↗' : safeConfig.accessory === 'chemist-gloves' ? '✦' : '◈'}</span></div>`;
-  const image = node.querySelector('.avatar-art');
+  const artFrame = document.createElement('div');
+  artFrame.className = 'avatar-art-frame';
+  const img = document.createElement('img');
+  img.className = 'avatar-art';
+  img.src = imageAsset;
+  img.alt = imageName;
+  img.decoding = 'async';
+  img.draggable = false;
+  const fallbackSpan = document.createElement('span');
+  fallbackSpan.className = 'avatar-fallback';
+  fallbackSpan.setAttribute('aria-hidden', 'true');
+  fallbackSpan.textContent = imageName;
+  artFrame.append(img, fallbackSpan);
+
+  const effects = document.createElement('div');
+  effects.className = 'avatar-effects';
+  effects.setAttribute('aria-hidden', 'true');
+  const aura = document.createElement('span');
+  aura.className = 'effect-aura';
+  const spark1 = document.createElement('span');
+  spark1.className = 'effect-spark spark-one';
+  const spark2 = document.createElement('span');
+  spark2.className = 'effect-spark spark-two';
+  const accessory = document.createElement('span');
+  accessory.className = 'effect-accessory';
+  accessory.textContent = safeConfig.accessory === 'benzene-pin' ? '⌬' : safeConfig.accessory === 'periodic-table-badge' ? 'C' : safeConfig.accessory === 'molecule-brooch' ? '⌘' : safeConfig.accessory === 'reaction-arrow-pin' ? '↗' : safeConfig.accessory === 'chemist-gloves' ? '✦' : '◈';
+  effects.append(aura, spark1, spark2, accessory);
+
+  node.append(artFrame, effects);
+  const image = img;
   image.addEventListener('error', () => {
     if (asset && !image.dataset.retry) {
       image.dataset.retry = 'true';
