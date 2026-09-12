@@ -164,10 +164,16 @@ def get_pool_config_summary(url: Optional[str] = None) -> Dict[str, Any]:
     }
 
 
-def build_engine(url: str) -> Engine:
+def build_engine(url: str, poolclass: Optional[Any] = None) -> Engine:
     """Build a SQLAlchemy engine with dialect-specific connection pool settings."""
     normalized = normalize_db_url(url)
     connect_args = {"check_same_thread": False} if normalized.startswith("sqlite") else {}
+    if poolclass is not None:
+        return create_engine(
+            normalized,
+            connect_args=connect_args,
+            poolclass=poolclass,
+        )
     if normalized.startswith("sqlite"):
         return create_engine(
             normalized,
