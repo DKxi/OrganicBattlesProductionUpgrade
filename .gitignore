@@ -2,17 +2,20 @@ organic_battles.sqlite3
 *.sqlite3-shm
 *.sqlite3-wal
 *.db
+
 .env
+.env.*
+local.env
+prod.env
 env
 secrets.toml
+
+# The placeholder template is safe to commit.
+!.env.example
+
 .pytest_cache/
 .venv/
 __pycache__/
 .DS_Store
 *.log
 logs/
-
-
-
-
-
