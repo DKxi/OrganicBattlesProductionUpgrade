@@ -18,7 +18,7 @@ Current inventory:
 | Real curricula | 2 (`advanced`, `foundational`) |
 | Chapter JSON files | 568 |
 | Source questions | 28,400 |
-| Database tables | 14, all prefixed `OB_` |
+| Database tables | 15, all prefixed `OB_` |
 | Test files | 34 |
 | Front end | Vanilla JavaScript, CSS, Phaser 3.80.1 |
 
@@ -108,6 +108,10 @@ Recommended production practice: inject environment variables through the deploy
 | `ENV_FILE` | Explicit dotenv filename | Otherwise uses first file in the order above |
 | `ENVIRONMENT` | Environment label | `development` |
 | `DATABASE_URL` | SQLAlchemy connection URL | Must be supplied securely |
+| `DATABASE_URL_PLAYER` | Player/auth/game API database identity | Recommended replacement for player routes |
+| `DATABASE_URL_ADMIN` | Admin API database identity | Recommended replacement for admin routes |
+| `DATABASE_URL_INGEST` | Content import/release identity | Recommended for controlled import jobs only |
+| `DATABASE_URL_MIGRATION` | Schema-owner migration identity | Recommended for deployment jobs only |
 | `DATABASE_PATH` | SQLite path fallback | `organic_battles.sqlite3` |
 | `DB_POOL_SIZE` | Connections retained per process | Supabase 3; other PostgreSQL 5; SQLite 5 |
 | `DB_MAX_OVERFLOW` | Burst connections per process | Supabase 2; other PostgreSQL 10; SQLite 0 |
@@ -136,6 +140,445 @@ Connection capacity is approximately:
 ```
 
 Leave room for migrations, administrative tools, background jobs, and provider-reserved connections.
+
+### Supabase password and environment-file remediation
+
+The Supabase password found in the reviewed repository must be treated as compromised. Removing it from the current branch does not invalidate it and does not remove it from Git history. The safe order is:
+
+1. Configure the existing connection string as a secret in the FastAPI hosting platform so the application no longer depends on a tracked file.
+2. Remove every hardcoded URL and password from application code and tracked environment files.
+3. Deploy that code and confirm it reads the runtime secret successfully.
+4. Reset the database password in Supabase.
+5. Replace the deployed secret immediately and restart every FastAPI worker and replica.
+6. Verify the new password works and the old password fails.
+7. Decide whether repository history must be rewritten after the credential has been revoked.
+
+Supabase recommends creating a separate database user for every external service instead of sharing the powerful `postgres` account. It also notes that external applications must be updated manually after the project password changes. See [Supabase Postgres roles](https://supabase.com/docs/guides/database/postgres/roles).
+
+#### Remove the hardcoded connection strings
+
+At the reviewed revision, the credential appeared in:
+
+- `local.env`
+- `prod.env`
+- `app/settings.py` as `DEFAULT_POSTGRES_URL`
+- `app/api/v1/admin.py` as a PostgreSQL fallback
+
+Delete both code fallbacks. Production should fail during startup if its database secret is absent:
+
+```python
+def resolve_database_url() -> str:
+    database_url = os.getenv("DATABASE_URL")
+    if database_url:
+        return database_url
+
+    if os.getenv("ENVIRONMENT", "development") == "production":
+        raise RuntimeError("DATABASE_URL must be configured in production")
+
+    return f"sqlite:///{ROOT_DIR / 'organic_battles.sqlite3'}"
+```
+
+Do not expose the resolved URL through an API response, admin configuration page, exception message, metric, or log. The production runtime database-switching endpoint should be removed; at minimum, it must never accept or return raw credentials.
+
+#### Protect environment files
+
+Add these rules to `.gitignore`:
+
+```gitignore
+.env
+.env.*
+local.env
+prod.env
+env
+secrets.toml
+
+# The placeholder template is safe to commit.
+!.env.example
+```
+
+Stop tracking files that are already committed:
+
+```bash
+git rm --cached local.env prod.env env
+git add .gitignore
+git commit -m "Remove database credentials from tracked environment files"
+```
+
+Name only files that actually exist. Commit a placeholder-only `.env.example`:
+
+```dotenv
+ENVIRONMENT=development
+DATABASE_URL_PLAYER=postgresql+psycopg2://PLAYER_ROLE:PASSWORD@HOST:5432/postgres
+DATABASE_URL_ADMIN=postgresql+psycopg2://ADMIN_ROLE:PASSWORD@HOST:5432/postgres
+DATABASE_URL_INGEST=postgresql+psycopg2://INGEST_ROLE:PASSWORD@HOST:5432/postgres
+DATABASE_URL_MIGRATION=postgresql+psycopg2://MIGRATION_ROLE:PASSWORD@HOST:5432/postgres
+ALLOW_JSON_FALLBACK=true
+COOKIE_SECURE=0
+```
+
+Real local values may be stored in an ignored `.env`; production values belong in the hosting platform's secret store. Never bake them into the Docker image. Generate every password independently with a password manager.
+
+#### Rotate the Supabase project password
+
+1. Open the Organic Battles project in Supabase.
+2. Open **Project Settings → Database**.
+3. Reset the database password.
+4. Store the new password in a password manager.
+5. Open **Connect** and copy the correct direct or pooler host information.
+6. Update the hosting secret and restart all application processes.
+7. Test readiness, login, question loading, answer submission, and an authorized admin update.
+
+Reserved password characters must be percent-encoded when placed inside a connection URL. A safer code pattern is to store components separately and construct the URL with SQLAlchemy:
+
+```dotenv
+PLAYER_DB_HOST=HOST_FROM_SUPABASE_CONNECT
+PLAYER_DB_PORT=5432
+PLAYER_DB_NAME=postgres
+PLAYER_DB_USER=ob_player_api.PROJECT_REF
+PLAYER_DB_PASSWORD=GENERATED_SECRET
+```
+
+```python
+from sqlalchemy import URL
+
+player_url = URL.create(
+    drivername="postgresql+psycopg2",
+    username=os.environ["PLAYER_DB_USER"],
+    password=os.environ["PLAYER_DB_PASSWORD"],
+    host=os.environ["PLAYER_DB_HOST"],
+    port=int(os.getenv("PLAYER_DB_PORT", "5432")),
+    database=os.getenv("PLAYER_DB_NAME", "postgres"),
+    query={"sslmode": "require"},
+)
+```
+
+For a shared Supabase pooler, a custom database role uses the username `[ROLE].[PROJECT-REF]`. Persistent VMs and long-running containers can use the direct connection when IPv6 is available; the session pooler on port 5432 is the normal IPv4 alternative. Copy the host rather than constructing it. See [Supabase database connections](https://supabase.com/docs/guides/database/connecting-to-postgres).
+
+#### Remove the old secret from Git history
+
+Rotate first. GitHub explains that history rewriting changes commit hashes, affects pull requests and collaborators, and can be re-contaminated by an old clone. See [GitHub's sensitive-data removal guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
+
+For a coordinated cleanup from a fresh mirror clone, remove the tracked secret files with `git-filter-repo`:
+
+```bash
+git filter-repo --sensitive-data-removal \
+  --invert-paths \
+  --path local.env \
+  --path prod.env
+```
+
+Because the URL also appeared in Python source, use `git filter-repo --replace-text` with a protected local replacement file containing the old credential. Do not delete `app/settings.py` or `app/api/v1/admin.py` from history. Coordinate the force-push, close or merge open pull requests first, and require collaborators to re-clone. Enable GitHub secret scanning, push protection, and Gitleaks afterward.
+
+### Least-privilege Supabase database identities
+
+Organic Battles should not run its web application as Supabase's `postgres` role. Use four separate login roles:
+
+| Database role | Used by | Intended access |
+|---|---|---|
+| `ob_player_api` | Player auth, game, and battle routes | Read published content; write player account/session/progress rows only |
+| `ob_admin_api` | Authenticated admin routes | Read and update application/admin/content records; no schema ownership or DDL |
+| `ob_content_ingest` | Question import and release job | Content catalog and release DML only; no player credentials or admin accounts |
+| `ob_migrator` | Alembic/deployment job | Schema changes; never loaded by the web process |
+
+Use an additional `ob_owner` role with `NOLOGIN` as the owner of Organic Battles tables. Only `ob_migrator` may temporarily assume it during a controlled migration. This prevents a stolen web password from altering table definitions even if a grant is accidentally widened.
+
+The existing Supabase roles `anon`, `authenticated`, `authenticator`, and `service_role` belong to Supabase's Data API/Auth model. Do not repurpose them as SQLAlchemy login accounts. Create custom roles for the FastAPI server. Supabase distinguishes grants, which decide which operations a role may attempt, from RLS policies, which decide which rows the operation may affect. Both are required for strong isolation. See [Supabase RLS guidance](https://supabase.com/docs/guides/database/postgres/row-level-security).
+
+#### Step 1: Create the login roles
+
+Run the role creation through a controlled migration or the Supabase SQL Editor while connected as `postgres`. Create the roles without passwords first:
+
+```sql
+create role ob_owner
+  nologin nosuperuser nocreatedb nocreaterole noinherit noreplication;
+
+create role ob_player_api
+  login nosuperuser nocreatedb nocreaterole noinherit noreplication
+  connection limit 30;
+
+create role ob_admin_api
+  login nosuperuser nocreatedb nocreaterole noinherit noreplication
+  connection limit 8;
+
+create role ob_content_ingest
+  login nosuperuser nocreatedb nocreaterole noinherit noreplication
+  connection limit 2;
+
+create role ob_migrator
+  login nosuperuser nocreatedb nocreaterole noinherit noreplication
+  connection limit 2;
+
+grant ob_owner to ob_migrator;
+grant create on schema public to ob_owner;
+```
+
+Set independent passwords without placing them in committed SQL. From an interactive `psql` session, `\password ob_player_api` prompts without echoing the password; repeat for the other roles. Store the resulting connection strings as four separate deployment secrets.
+
+#### Step 2: Remove inherited/default access
+
+Test this first on staging. These statements concern only Organic Battles tables and do not alter Supabase-managed schemas:
+
+```sql
+revoke all on table
+  public."OB_users",
+  public."OB_verification_codes",
+  public."OB_auth_sessions",
+  public."OB_game_sessions",
+  public."OB_curricula",
+  public."OB_tracks",
+  public."OB_content_releases",
+  public."OB_questions",
+  public."OB_bosses",
+  public."OB_boss_question_assignments",
+  public."OB_player_question_progress",
+  public."OB_answer_attempts",
+  public."OB_admin_users",
+  public."OB_admin_sessions",
+  public."OB_admin_audit_logs"
+from public, anon, authenticated,
+     ob_player_api, ob_admin_api, ob_content_ingest;
+
+grant connect on database postgres
+  to ob_player_api, ob_admin_api, ob_content_ingest, ob_migrator;
+
+grant usage on schema public
+  to ob_player_api, ob_admin_api, ob_content_ingest, ob_migrator;
+```
+
+Do not grant `CREATE` on `public` to any web role. Do not grant `SUPERUSER`, `CREATEDB`, `CREATEROLE`, `REPLICATION`, or `BYPASSRLS` to player or admin identities.
+
+#### Step 3: Grant player-route privileges
+
+Player routes need read-only access to published learning content:
+
+```sql
+grant select on table
+  public."OB_curricula",
+  public."OB_tracks",
+  public."OB_content_releases",
+  public."OB_questions",
+  public."OB_bosses",
+  public."OB_boss_question_assignments"
+to ob_player_api;
+```
+
+Grant only the operations used by signup, login, verification, gameplay, and learning records:
+
+```sql
+grant select, insert, update on table public."OB_users"
+  to ob_player_api;
+
+grant select, insert, update, delete on table
+  public."OB_verification_codes",
+  public."OB_auth_sessions"
+to ob_player_api;
+
+grant select, insert, update on table
+  public."OB_game_sessions",
+  public."OB_player_question_progress"
+to ob_player_api;
+
+grant select, insert on table public."OB_answer_attempts"
+  to ob_player_api;
+```
+
+Do not grant player routes any privilege on `OB_admin_users`, `OB_admin_sessions`, or `OB_admin_audit_logs`. Do not grant content `INSERT`, `UPDATE`, or `DELETE`.
+
+If an existing code path actually requires another operation, do not add a blanket grant. Identify the exact query, decide whether the operation belongs in that route, and add one narrowly tested privilege.
+
+#### Step 4: Grant admin-route privileges
+
+The admin web identity may inspect all application records but still must not own tables or execute DDL:
+
+```sql
+grant select on table
+  public."OB_users",
+  public."OB_verification_codes",
+  public."OB_auth_sessions",
+  public."OB_game_sessions",
+  public."OB_curricula",
+  public."OB_tracks",
+  public."OB_content_releases",
+  public."OB_questions",
+  public."OB_bosses",
+  public."OB_boss_question_assignments",
+  public."OB_player_question_progress",
+  public."OB_answer_attempts",
+  public."OB_admin_users",
+  public."OB_admin_sessions",
+  public."OB_admin_audit_logs"
+to ob_admin_api;
+
+grant insert, update, delete on table
+  public."OB_users",
+  public."OB_verification_codes",
+  public."OB_auth_sessions",
+  public."OB_game_sessions",
+  public."OB_tracks",
+  public."OB_content_releases",
+  public."OB_questions",
+  public."OB_bosses",
+  public."OB_boss_question_assignments",
+  public."OB_player_question_progress",
+  public."OB_admin_users",
+  public."OB_admin_sessions",
+  public."OB_admin_audit_logs"
+to ob_admin_api;
+```
+
+Keep `OB_answer_attempts` append-only for ordinary application behavior. If administrators must correct attempts, implement an audited, narrowly scoped stored procedure instead of granting general update/delete.
+
+#### Step 5: Grant ingestion privileges
+
+Do not run `scripts/ingest_questions_to_postgres.py` with the web-admin password:
+
+```sql
+grant select on table
+  public."OB_curricula",
+  public."OB_tracks",
+  public."OB_content_releases",
+  public."OB_questions",
+  public."OB_bosses",
+  public."OB_boss_question_assignments"
+to ob_content_ingest;
+
+grant insert, update, delete on table
+  public."OB_curricula",
+  public."OB_tracks",
+  public."OB_content_releases",
+  public."OB_questions",
+  public."OB_bosses",
+  public."OB_boss_question_assignments"
+to ob_content_ingest;
+```
+
+Transfer each Organic Battles table and its associated sequences to `ob_owner` in a reviewed migration, then have the migration connection execute `SET ROLE ob_owner` while Alembic runs. Do not use `REASSIGN OWNED BY postgres`, because the Supabase `postgres` role owns objects outside this application. The migration identity must be used by a one-shot deployment job, not by Uvicorn and not by the admin portal.
+
+For identity/serial columns, inspect the sequences used by the tables above and grant `USAGE, SELECT` only to roles that insert into the corresponding table. Do not grant access to every sequence blindly.
+
+#### Step 6: Add row-level protection for player data
+
+Table grants prevent a player route from editing questions or admin accounts, but every player request still uses the same `ob_player_api` database login. Without RLS, a missing `WHERE user_id = ...` condition could touch another player's row.
+
+Enable RLS on player-owned tables:
+
+- `OB_users`
+- `OB_auth_sessions`
+- `OB_game_sessions`
+- `OB_player_question_progress`
+- `OB_answer_attempts`
+- `OB_verification_codes` when it can be tied safely to a user or signup identity
+
+Example for game sessions:
+
+```sql
+alter table public."OB_game_sessions" enable row level security;
+alter table public."OB_game_sessions" force row level security;
+
+create policy player_select_own_game_session
+on public."OB_game_sessions"
+for select to ob_player_api
+using (
+  user_id::text = current_setting('app.current_user_id', true)
+);
+
+create policy player_insert_own_game_session
+on public."OB_game_sessions"
+for insert to ob_player_api
+with check (
+  user_id::text = current_setting('app.current_user_id', true)
+);
+
+create policy player_update_own_game_session
+on public."OB_game_sessions"
+for update to ob_player_api
+using (
+  user_id::text = current_setting('app.current_user_id', true)
+)
+with check (
+  user_id::text = current_setting('app.current_user_id', true)
+);
+
+create policy admin_manage_game_sessions
+on public."OB_game_sessions"
+for all to ob_admin_api
+using (true)
+with check (true);
+```
+
+Create separate policies for `SELECT`, `INSERT`, `UPDATE`, and `DELETE` on each protected table. Add indexes whose leading column is `user_id`; otherwise RLS filtering can cause expensive scans.
+
+Organic Battles uses its own authentication rather than a Supabase JWT. After authenticating the request, set the user identity transaction-locally before player-data queries:
+
+```python
+from sqlalchemy import text
+
+db.execute(
+    text("select set_config('app.current_user_id', :user_id, true)"),
+    {"user_id": str(current_user.id)},
+)
+```
+
+The final `true` makes the value transaction-local, which is essential with pooled connections. Use one database transaction per request. A commit ends the setting; if a route commits and continues querying, begin a new transaction and set the identity again. Never use a persistent session setting on a pooled connection.
+
+Authentication lookup occurs before `current_user` is known. Handle this with one of these designs:
+
+1. Preferred: a narrowly scoped `ob_auth_api` role or `SECURITY DEFINER` function that resolves a hashed session token and returns only the user ID needed to establish the player transaction.
+2. Transitional: allow `ob_player_api` only the exact token-hash lookup required by the authentication repository, then set the RLS context immediately. Keep the database credential server-only.
+
+RLS protects against application query mistakes. It does not make a shared server credential safe to expose: anyone holding `ob_player_api` credentials may be able to manipulate custom settings. Never send these connection strings to the browser.
+
+#### Step 7: Split SQLAlchemy engines and dependencies
+
+Create separate engines and session factories:
+
+```python
+player_engine = create_engine(settings.database_url_player, pool_pre_ping=True)
+admin_engine = create_engine(settings.database_url_admin, pool_pre_ping=True)
+
+PlayerSessionLocal = sessionmaker(bind=player_engine, autoflush=False)
+AdminSessionLocal = sessionmaker(bind=admin_engine, autoflush=False)
+```
+
+Then enforce dependency boundaries:
+
+- Auth, user, game, and battle routers use `get_player_db`.
+- Admin, questions-admin, and analytics-admin routers use `get_admin_db`.
+- The ingest script reads only `DATABASE_URL_INGEST`.
+- Alembic/deployment schema jobs read only `DATABASE_URL_MIGRATION`.
+- Repositories receive a session explicitly; they must not import a global `SessionLocal`.
+- Remove runtime schema creation and database migration from FastAPI startup.
+
+The total database connection ceiling is now the sum of every role's application pools across all processes and replicas. Keep admin pools small and use `NullPool` for one-shot ingest/migration jobs when appropriate.
+
+#### Step 8: Test allow and deny behavior
+
+Run privilege tests as every role. Required assertions include:
+
+| Test | Expected result |
+|---|---|
+| Player selects a published question | Allowed |
+| Player updates a question or content release | Denied with `42501` |
+| Player reads `OB_admin_users` | Denied with `42501` |
+| Player updates own game session after setting identity | Allowed |
+| Player selects or updates another user's game session | No rows or denied |
+| Player deletes an answer attempt | Denied |
+| Admin updates a user or question | Allowed and audited |
+| Admin creates/drops a table | Denied |
+| Ingest role reads player password/session data | Denied |
+| Migration role is used by a web request | Test/configuration failure |
+
+Inspect the resulting grants:
+
+```sql
+select grantee, table_name, privilege_type
+from information_schema.role_table_grants
+where table_schema = 'public'
+  and table_name like 'OB\_%' escape '\'
+order by grantee, table_name, privilege_type;
+```
+
+Add automated negative tests before switching production traffic. A least-privilege rollout is successful only when permitted operations pass and prohibited operations fail.
 
 ## 5. Database model
 
@@ -385,6 +828,7 @@ This table is the refreshed status, including the most recent changes.
 | Username accepted stored-XSS characters | Fixed | — | Strict allowlist is enforced for signup and admin credential changes |
 | Browser admin token stored in `localStorage` | Fixed | — | Browser login now uses HttpOnly cookies and removes the legacy stored token |
 | PostgreSQL credential is committed in settings/env files and Git history | Open | Critical | Rotate/revoke immediately; remove the default URL; purge history if required; enable secret scanning; inject at runtime |
+| Player, admin, import, and migration work share an overly powerful database identity | Open | Critical | Create separate custom login roles, apply explicit table grants and RLS, and route each workload through its own SQLAlchemy engine |
 | Predictable seeded admin accounts/passwords | Open | Critical | Remove automatic production seeding; require one-time bootstrap secret; force password change; invalidate existing sessions |
 | Admin system API can switch the database at runtime | Open | Critical | Remove from production builds or require step-up auth, strict destination allowlist, no raw password response, and audited approval |
 | User-controlled custom content folders can escape intended content flow and poison cache | Open | High | Remove from player API; accept only server-side track IDs; resolve/validate paths under an allowlisted root; key cache by source |
@@ -411,6 +855,7 @@ Do not call the current Dockerfile production-ready. It copies the whole reposit
 Before production:
 
 - Rotate the exposed database credential and remove every committed secret/default password.
+- Replace the shared `postgres` application connection with separate player, admin, ingestion, and migration identities; verify both allow and deny cases.
 - Disable automatic admin seeding and bootstrap the first admin out of band.
 - Fix the four content-integrity issues: custom folder input, non-atomic import, cross-release fallback, and prompt-based identity.
 - Fix boss advancement authorization and Redis serialization.
@@ -438,12 +883,13 @@ Before production:
 ## 15. Recommended implementation order
 
 1. Rotate secrets, remove committed defaults, and secure administrator bootstrap.
-2. Remove runtime database switching and user-supplied content paths from production APIs.
-3. Enforce boss state transitions and stable question identity.
-4. Make releases immutable and imports transactional, with checksums and atomic activation.
-5. Replace pickle and correct cache key isolation.
-6. Add Alembic plus isolated PostgreSQL integration tests.
-7. Harden admin cookies/RBAC, error responses, diagnostics, rate limits, CSP, and the container.
-8. Add repeatable CI security gates and a documented incident/restore runbook.
+2. Create separate player, admin, ingestion, and migration database identities; add explicit grants and RLS tests.
+3. Remove runtime database switching and user-supplied content paths from production APIs.
+4. Enforce boss state transitions and stable question identity.
+5. Make releases immutable and imports transactional, with checksums and atomic activation.
+6. Replace pickle and correct cache key isolation.
+7. Add Alembic plus isolated PostgreSQL integration tests.
+8. Harden admin cookies/RBAC, error responses, diagnostics, rate limits, CSP, and the container.
+9. Add repeatable CI security gates and a documented incident/restore runbook.
 
 That order closes direct credential and authorization risks first, then protects question integrity and learning analytics, and finally strengthens deployment and operations.
