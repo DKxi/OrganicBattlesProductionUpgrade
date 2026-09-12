@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field, ConfigDict
 from sqlalchemy.orm import Session as DBSession
 
-from app.api.deps import get_db, auth_admin
+from app.api.deps import get_admin_db, auth_admin
 from app.infrastructure.database.models import Question, Track
 from app.infrastructure.database.releases_repo import ReleasesRepository
 from app.infrastructure.cache.shared_cache import shared_track_cache
@@ -69,7 +69,7 @@ def admin_get_track_questions(
     page: int = Query(1, ge=1),
     limit: int = Query(50, ge=1, le=200),
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Retrieve paginated questions for a specific track, ordered sequentially."""
     query = db.query(Question).filter(Question.track_id == track_id)
@@ -150,7 +150,7 @@ def admin_get_track_questions(
 def admin_get_question_by_id(
     question_id: int,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Retrieve full details of a single question."""
     q = db.query(Question).filter(Question.id == question_id).first()
@@ -185,7 +185,7 @@ def admin_update_question(
     question_id: int,
     body: QuestionUpdateRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Update question text, choices, explanations, or spell values."""
     q = db.query(Question).filter(Question.id == question_id).first()
@@ -412,7 +412,7 @@ def admin_reorder_questions_by_boss(
     boss_slug: str,
     body: ReorderQuestionsRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """
     Reorder questions scoped to a specific track, chapter, and boss.
@@ -435,7 +435,7 @@ def admin_reorder_questions(
     body: ReorderQuestionsRequest,
     boss_slug: Optional[str] = Query(None, description="Optional boss slug to scope reorder"),
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """
     Reorder questions within a specific track chapter (and optionally boss).
@@ -455,7 +455,7 @@ def admin_reorder_questions(
 def admin_ingest_questions(
     body: IngestQuestionsRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """
     Trigger batch re-ingestion of question banks from JSON into the database.

@@ -31,20 +31,31 @@ def get_alembic_config(connection=None, target_url: Optional[str] = None) -> Con
 def run_alembic_migrations(target_engine: Optional[Engine] = None, target_url: Optional[str] = None) -> None:
     """
     Execute all pending Alembic migrations up to 'head'.
-    Replaces Base.metadata.create_all() as the production schema mechanism.
+    Runs with deployment migrator privileges and NullPool for one-shot jobs.
     """
+    from sqlalchemy.pool import NullPool
+    from app.infrastructure.database.engine import build_engine
+
     try:
-        if target_engine is not None:
-            logger.info("Executing Alembic migrations on target engine (%s)...", target_engine.dialect.name)
-            with target_engine.begin() as connection:
-                cfg = get_alembic_config(connection=connection, target_url=target_url)
-                command.upgrade(cfg, "head")
-        else:
-            logger.info("Executing Alembic migrations using application engine settings...")
-            from app.infrastructure.database.engine import engine
-            with engine.begin() as connection:
-                cfg = get_alembic_config(connection=connection, target_url=target_url)
-                command.upgrade(cfg, "head")
+        eng = target_engine
+        if eng is None:
+            mig_url = target_url or settings.database_url_migration or settings.database_url
+            logger.info("Building one-shot migration engine with NullPool for %s...", mig_url.split("@")[-1] if "@" in mig_url else mig_url)
+            eng = build_engine(mig_url, poolclass=NullPool)
+
+        logger.info("Executing Alembic migrations on target engine (%s)...", eng.dialect.name)
+        with eng.begin() as connection:
+            # Assume table ownership role on PostgreSQL if ob_owner exists
+            if connection.dialect.name == "postgresql":
+                try:
+                    connection.execute(text("SET ROLE ob_owner;"))
+                    logger.info("Assumed role 'ob_owner' for migration execution.")
+                except Exception as role_exc:
+                    logger.debug("Could not assume ob_owner role (skipping if not yet provisioned): %s", role_exc)
+
+            cfg = get_alembic_config(connection=connection, target_url=target_url)
+            command.upgrade(cfg, "head")
+
         logger.info("Alembic migrations completed successfully.")
     except Exception as exc:
         logger.error("Alembic migration failed: %s", exc, exc_info=True)

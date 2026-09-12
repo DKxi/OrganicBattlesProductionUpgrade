@@ -71,7 +71,7 @@ def select_spell(
     if cooldowns.get(spell_id, 0) > time.time():
         raise HTTPException(409, "Spell is cooling down")
 
-    effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
+    effective = resolve_content_source((current_user.content_source if current_user and current_user.content_source else None) or game_session.content_source)
     bundle = get_content_bundle(effective)
 
     chapters = bundle.chapters
@@ -185,7 +185,7 @@ def answer_question(
     active_q = json.loads(game_session.active_question_json)
     q_prompt, choices, correct_answer = active_q[0], active_q[1], active_q[2]
 
-    effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
+    effective = resolve_content_source((current_user.content_source if current_user and current_user.content_source else None) or game_session.content_source)
     is_json_like = (effective != "app")
     bundle = get_content_bundle(effective)
     explanation = bundle.explanations.get(q_prompt, f"The correct answer is {correct_answer}.")
@@ -366,7 +366,7 @@ def next_turn(
     session_repo = SessionRepository(db)
     game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=session_id)
 
-    effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
+    effective = resolve_content_source((current_user.content_source if current_user and current_user.content_source else None) or game_session.content_source)
     bundle = get_content_bundle(effective)
     chapters = bundle.chapters
 
@@ -465,7 +465,7 @@ def retry_battle(
                 detail="Cannot retry an active battle unless defeated. Use practice restart if you wish to reset.",
             )
 
-    effective = resolve_content_source(current_user.content_source if current_user else game_session.content_source)
+    effective = resolve_content_source((current_user.content_source if current_user and current_user.content_source else None) or game_session.content_source)
     bundle = get_content_bundle(effective)
     chapters = bundle.chapters
     ch_idx = max(0, min(game_session.chapter - 1, len(chapters) - 1))

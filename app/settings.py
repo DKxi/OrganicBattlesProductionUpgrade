@@ -62,6 +62,10 @@ class Settings(BaseModel):
     project_name: str = "Organic Battles"
     environment: str = Field(default_factory=lambda: os.getenv("ENVIRONMENT", "development"))
     database_url: str = Field(default_factory=lambda: get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
+    database_url_player: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_PLAYER", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
+    database_url_admin: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_ADMIN", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
+    database_url_ingest: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_INGEST", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
+    database_url_migration: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_MIGRATION", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
     database_path: Path = Field(default_factory=lambda: Path(get_config_value("DATABASE_PATH", default=str(ROOT_DIR / "organic_battles.sqlite3"))))
     game_content_source: Optional[str] = None
     

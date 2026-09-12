@@ -981,6 +981,69 @@ Created 7 ordered, reproducible migrations in `migrations/versions/`:
 - **Full Test Suite (`uv run pytest`)**:
   - **356 passed, 1 skipped in 71.97s** (100% green across all 38 test suites).
 
+---
+
+## Phase 9: Least-Privilege Supabase Database Identities & Row-Level Security (RLS)
+
+### 1. Role Provisioning & Security Script
+Created [scripts/setup_supabase_least_privilege_roles.sql](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/scripts/setup_supabase_least_privilege_roles.sql) establishing all 6 steps required for PostgreSQL / Supabase least-privilege architecture:
+- **`ob_owner` (`NOLOGIN`)**: Dedicated schema and table owner. Prevents any application runtime credential from altering table schemas, altering columns, or running DDL.
+- **`ob_player_api` (`LOGIN`)**: Used by player authentication, gameplay, and combat battle routes.
+  - Granted `SELECT` on curriculum/catalog tables (`OB_curricula`, `OB_tracks`, `OB_questions`, `OB_bosses`, `OB_boss_question_assignments`, `OB_content_releases`).
+  - Granted `SELECT`, `INSERT`, `UPDATE`, `DELETE` on player data tables (`OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_game_sessions`, `OB_player_question_progress`, `OB_answer_attempts`).
+  - Strict `REVOKE` from admin tables (`OB_admin_users`, `OB_admin_sessions`, `OB_admin_audit_logs`).
+- **`ob_admin_api` (`LOGIN`)**: Used by authenticated administrator portal routes.
+  - Granted `SELECT`, `INSERT`, `UPDATE`, `DELETE` on all application, admin, and content records.
+  - Revoked all DDL / schema modification rights (`CREATE`, `DROP`, `ALTER`).
+- **`ob_content_ingest` (`LOGIN`)**: Dedicated question catalog import and release publication job.
+  - Granted `SELECT`, `INSERT`, `UPDATE`, `DELETE` on content catalog and release tables (`OB_curricula`, `OB_tracks`, `OB_questions`, `OB_bosses`, `OB_boss_question_assignments`, `OB_content_releases`).
+  - Revoked all access to player credentials, user accounts, and admin accounts.
+- **`ob_migrator` (`LOGIN`)**: Deployment migration job.
+  - Granted `ob_owner` role membership: assumes `SET ROLE ob_owner;` during migration runs only.
+  - Zero application routes use this role.
+- **Public & Supabase Default Revocations**:
+  - `REVOKE ALL ON SCHEMA public FROM PUBLIC, anon, authenticated;`
+  - Explicit grants ensured for `postgres` and default privileges set for future tables.
+
+### 2. PostgreSQL Row-Level Security (RLS) & Alembic Migration
+- Created [migrations/versions/0008_least_privilege_roles_and_rls.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/migrations/versions/0008_least_privilege_roles_and_rls.py):
+  - Enables RLS on `OB_game_sessions`, `OB_player_question_progress`, `OB_answer_attempts`, and `OB_auth_sessions`.
+  - Defines tenant-isolated policies checking `(user_id = NULLIF(current_setting('app.current_user_id', true), ''))`.
+  - Grants bypass / administrative inspection access to `ob_admin_api` via `ob_admin_access_*` policies.
+  - Safe pass-through on SQLite (batch/no-op) so local development and CI testing remain seamless.
+
+### 3. Application Settings & Engine Isolation
+- Updated [app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py):
+  - Added role-specific connection configurations: `database_url_player`, `database_url_admin`, `database_url_ingest`, `database_url_migration`, with sensible fallbacks to `database_url`.
+- Updated [app/infrastructure/database/engine.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/engine.py):
+  - Managed `player_engine` and `admin_engine` with dedicated `PlayerSessionLocal` and `AdminSessionLocal`.
+  - Exported dependencies `get_player_db()`, `get_admin_db()`, and aliased `get_db = get_player_db` to share the identical request session cache across FastAPI dependencies.
+  - Implemented `set_session_user_context(db, user_id)` to set transaction-local player identity (`app.current_user_id`) on PostgreSQL connections.
+- Updated [app/api/deps.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/deps.py):
+  - `get_current_user` establishes RLS player context via `set_session_user_context(db, user.id)`.
+  - `auth_admin` uses `get_admin_db`.
+- Updated [app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py), [app/api/v1/questions_admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/questions_admin.py), and [app/api/v1/analytics_admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/analytics_admin.py) to inject `get_admin_db`.
+
+### 4. Zero DDL in Web Application Startup & Job Isolation
+- Updated [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py):
+  - Removed runtime schema creation and database migrations from FastAPI startup.
+- Updated [scripts/ingest_questions_to_postgres.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/scripts/ingest_questions_to_postgres.py):
+  - Configured with `settings.database_url_ingest` and `NullPool`.
+  - Removed `Base.metadata.create_all()` calls.
+- Updated [app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py):
+  - Configured with `settings.database_url_migration` and `NullPool`.
+  - Sets `SET ROLE ob_owner;` when connecting to PostgreSQL.
+
+### 5. Automated Verification
+- Created [tests/test_least_privilege_database_roles.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_least_privilege_database_roles.py):
+  - Validates all 5 roles, grants, revokes, and RLS policies in SQL script.
+  - Verifies engine and session separation, FastAPI dependencies, `NullPool` on ingest and migration jobs, and RLS user context setting.
+- Updated [tests/test_alembic_migrations.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_alembic_migrations.py):
+  - Verified migration head `0008_least_privilege_roles_and_rls` and schema upgrade idempotency.
+- **Full Test Suite (`uv run pytest`)**:
+  - **364 passed, 1 skipped in 73.12s** (100% green across all 365 tests).
+
+
 
 
 

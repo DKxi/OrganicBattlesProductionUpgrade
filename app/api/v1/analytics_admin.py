@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session as DBSession
 from sqlalchemy import func, desc
 
-from app.api.deps import get_db, auth_admin
+from app.api.deps import get_admin_db, auth_admin
 from app.infrastructure.database.models import AnswerAttempt, PlayerQuestionProgress, Question, User
 from app.infrastructure.database.progress_repo import ProgressRepository
 
@@ -16,7 +16,7 @@ router = APIRouter(tags=["Admin Learning Analytics & Research"])
 def get_analytics_overview(
     track_id: Optional[str] = Query(None, description="Optional filter by track"),
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ) -> Dict[str, Any]:
     """Retrieve macro-level learning analytics across player attempts."""
     query = db.query(AnswerAttempt)
@@ -77,7 +77,7 @@ def get_analytics_overview(
 def get_question_analytics(
     question_id: int,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ) -> Dict[str, Any]:
     """Retrieve detailed research analytics and option distribution for a specific question."""
     q_row = db.query(Question).filter(Question.id == question_id).first()
@@ -115,7 +115,7 @@ def get_user_mastery_analytics(
     user_id: str,
     track_id: Optional[str] = Query(None, description="Optional track filter"),
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ) -> Dict[str, Any]:
     """Retrieve per-player mastery and spaced repetition state."""
     repo = ProgressRepository(db)

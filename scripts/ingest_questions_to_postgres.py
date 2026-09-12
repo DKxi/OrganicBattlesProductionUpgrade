@@ -15,7 +15,10 @@ from typing import Optional, List, Dict, Any
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT_DIR))
 
-from app.infrastructure.database.engine import SessionLocal, get_active_engine
+from sqlalchemy.pool import NullPool
+from sqlalchemy.orm import sessionmaker
+from app.settings import settings
+from app.infrastructure.database.engine import build_engine, SessionLocal
 from app.infrastructure.database.models import Base, Curriculum, Track, Question
 from app.infrastructure.database.tracks_repo import TracksRepository
 from app.domain.content.loader import _slug
@@ -195,12 +198,17 @@ def main():
     parser.add_argument("--batch-size", type=int, default=1000, help="Batch insert size (default: 1000)")
     args = parser.parse_args()
 
-    engine = get_active_engine()
-    Base.metadata.create_all(bind=engine)
+    ingest_url = settings.database_url_ingest or settings.database_url
+    logger.info("Connecting to database for ingestion via role ob_content_ingest (%s)...", ingest_url.split("@")[-1] if "@" in ingest_url else ingest_url)
+    engine = build_engine(ingest_url, poolclass=NullPool)
+    IngestSession = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-    with SessionLocal() as db:
-        stats = ingest_questions_data(db, target_track_id=args.track, batch_size=args.batch_size)
-        print(f"Ingestion complete: {stats['total_questions']} questions across {stats['tracks_processed']} tracks.")
+    try:
+        with IngestSession() as db:
+            stats = ingest_questions_data(db, target_track_id=args.track, batch_size=args.batch_size)
+            print(f"Ingestion complete: {stats['total_questions']} questions across {stats['tracks_processed']} tracks.")
+    finally:
+        engine.dispose()
 
 
 if __name__ == "__main__":

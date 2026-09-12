@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session as DBSession
 
 from app.settings import settings
-from app.api.deps import get_db, auth_admin, limiter, get_content_bundle
+from app.api.deps import get_admin_db, auth_admin, limiter, get_content_bundle
 from app.infrastructure.database.models import User, GameSession, Base
 from app.infrastructure.identity.crypto import code_hash, hash_password
 from app.infrastructure.cache.memory import set_admin_token, revoke_admin_token
@@ -79,7 +79,7 @@ def admin_login(
     request: Request,
     body: AdminLoginRequest,
     response: Response,
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     from app.infrastructure.database.admin_repo import AdminRepository
     admin_repo = AdminRepository(db)
@@ -144,7 +144,7 @@ def admin_login(
 
 
 @router.get("/admin/status")
-def admin_status(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def admin_status(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     total_users = db.query(User).count()
     total_sessions = db.query(GameSession).count()
     return {
@@ -156,7 +156,7 @@ def admin_status(admin_info: dict = Depends(auth_admin), db: DBSession = Depends
 
 
 @router.get("/admin/users")
-def admin_get_users(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def admin_get_users(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     users = db.query(User).order_by(User.created_at.desc()).all()
     sessions = {s.user_id: s for s in db.query(GameSession).all()}
     result = []
@@ -188,7 +188,7 @@ def admin_get_users(admin_info: dict = Depends(auth_admin), db: DBSession = Depe
 def admin_toggle_user_verification(
     user_id: str,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Toggle verified status for a user."""
     user = db.query(User).filter(User.id == user_id).first()
@@ -225,7 +225,7 @@ def admin_update_user_config(
     user_id: str,
     body: AdminUserConfigRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
@@ -285,7 +285,7 @@ def admin_update_user_credentials(
     user_id: str,
     body: AdminUserCredentialsRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
@@ -344,7 +344,7 @@ def admin_update_user_credentials(
 
 
 @router.get("/admin/sessions")
-def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def admin_get_sessions(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     game_sessions = db.query(GameSession).order_by(GameSession.updated_at.desc()).all()
     users = {u.id: u for u in db.query(User).all()}
     result = []
@@ -411,7 +411,7 @@ def admin_reset_session(
     session_id: str,
     body: SessionResetRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     game_session = db.query(GameSession).filter(GameSession.id == session_id).first()
     if not game_session:
@@ -491,7 +491,7 @@ def admin_reset_session(
 def admin_delete_session(
     session_id: str,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     game_session = db.query(GameSession).filter(GameSession.id == session_id).first()
     if not game_session:
@@ -521,7 +521,7 @@ def admin_delete_session(
 
 
 @router.get("/admin/system/config")
-def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def get_system_config(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     """Return active database dialect and all track folder mappings from database."""
     cur_url = db_engine.current_db_url
     dialect = "postgresql" if "postgresql" in cur_url else "sqlite"
@@ -574,7 +574,7 @@ def get_system_metrics(admin_info: dict = Depends(auth_admin)):
 
 
 @router.get("/admin/system/health")
-def get_system_health(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def get_system_health(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     """Comprehensive health and readiness diagnostic endpoint for the Admin Health Tab."""
     import time
     import shutil
@@ -756,7 +756,7 @@ def admin_switch_database(
 def admin_switch_folders(
     body: FolderSwitchRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Update data_folder and boss_folder paths in PostgreSQL database and tracks_config.json."""
     from app.infrastructure.database.tracks_repo import TracksRepository
@@ -804,7 +804,7 @@ def admin_switch_folders(
 
 
 @router.get("/admin/tracks")
-def admin_get_tracks(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def admin_get_tracks(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     """Retrieve all tracks with relational properties from database."""
     from app.infrastructure.database.tracks_repo import TracksRepository
     repo = TracksRepository(db)
@@ -816,7 +816,7 @@ def admin_update_track(
     track_id: str,
     body: TrackUpdateRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Update specific track metadata in PostgreSQL database."""
     from app.infrastructure.database.tracks_repo import TracksRepository
@@ -842,7 +842,7 @@ def admin_update_track(
 
 
 @router.get("/admin/curricula")
-def admin_get_curricula(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+def admin_get_curricula(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_admin_db)):
     """Retrieve all curricula registered in database."""
     from app.infrastructure.database.tracks_repo import TracksRepository
     repo = TracksRepository(db)
@@ -917,7 +917,7 @@ def admin_warm_cache(
 def admin_get_track_releases(
     track_id: str,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Retrieve versioned content releases for a track."""
     from app.infrastructure.database.releases_repo import ReleasesRepository
@@ -944,7 +944,7 @@ def admin_rollback_track_release(
     track_id: str,
     version: int,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Roll back active track questions to a previous release version."""
     from app.infrastructure.database.releases_repo import ReleasesRepository
@@ -987,7 +987,7 @@ class AdminCreateUserRequest(BaseModel):
 def admin_create_admin_user(
     body: AdminCreateUserRequest,
     admin_info: dict = Depends(auth_admin),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     """Create a new administrator account (admin-only workflow)."""
     from app.infrastructure.database.admin_repo import AdminRepository
@@ -1035,7 +1035,7 @@ def admin_logout(
     response: Response,
     authorization: Optional[str] = Header(default=None),
     admin_token: Optional[str] = Cookie(default=None),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ):
     raw = admin_token or (authorization[7:].strip() if authorization and authorization.lower().startswith("bearer ") else None)
     if raw:

@@ -33,14 +33,15 @@ def test_credential_independent_alembic_config():
 
 
 def test_migration_chain_and_revisions():
-    """Verify all 7 required migration revisions exist and are correctly ordered."""
+    """Verify all required migration revisions exist and are correctly ordered."""
     cfg = get_alembic_config()
     script = ScriptDirectory.from_config(cfg)
     heads = script.get_heads()
-    assert heads == ["0007_search_indexes"]
+    assert heads == ["0008_least_privilege_roles_and_rls"]
 
     revisions = [rev.revision for rev in script.walk_revisions()]
     expected_order = [
+        "0008_least_privilege_roles_and_rls",
         "0007_search_indexes",
         "0006_optimistic_locking",
         "0005_game_session_active_question_identity",
@@ -55,7 +56,7 @@ def test_migration_chain_and_revisions():
 def test_migration_upgrade_and_schema_verification():
     """
     Verify complete migration execution from base to head on a fresh database,
-    verifying all 7 architectural capabilities:
+    verifying all 8 architectural capabilities:
     1. Base tables creation without create_all()
     2. JSON/JSONB types on question/boss metadata
     3. Content releases table and release_id columns
@@ -63,6 +64,7 @@ def test_migration_upgrade_and_schema_verification():
     5. Game-session active question ID and version
     6. Optimistic locking version
     7. Search indexes
+    8. Least-privilege roles and RLS policies
     """
     with tempfile.NamedTemporaryFile(suffix=".sqlite3", delete=False) as f:
         temp_db_path = f.name
@@ -75,7 +77,7 @@ def test_migration_upgrade_and_schema_verification():
 
         # 1. Revision check
         current_rev = get_current_migration_revision(target_engine=engine)
-        assert current_rev == "0007_search_indexes"
+        assert current_rev == "0008_least_privilege_roles_and_rls"
 
         inspector = inspect(engine)
         tables = set(inspector.get_table_names())
@@ -135,7 +137,7 @@ def test_migration_upgrade_and_schema_verification():
 
         # 5. Idempotency check: running migrations again on head must be a clean no-op
         run_alembic_migrations(target_engine=engine)
-        assert get_current_migration_revision(target_engine=engine) == "0007_search_indexes"
+        assert get_current_migration_revision(target_engine=engine) == "0008_least_privilege_roles_and_rls"
 
     finally:
         if os.path.exists(temp_db_path):

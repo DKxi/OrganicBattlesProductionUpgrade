@@ -24,7 +24,6 @@ from app.api.v1.router import api_v1_router
 def create_app() -> FastAPI:
     """FastAPI application factory."""
     setup_logging()
-    ensure_db_schema()
 
     application = FastAPI(
         title="Organic Battles V3",

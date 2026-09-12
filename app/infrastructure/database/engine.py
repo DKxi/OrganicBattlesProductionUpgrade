@@ -192,6 +192,29 @@ current_db_url: str = normalize_db_url(settings.database_url)
 engine: Engine = build_engine(current_db_url)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
+# Role-specific database engines & session factories (Player & Admin)
+player_db_url: str = normalize_db_url(settings.database_url_player) if settings.database_url_player else current_db_url
+admin_db_url: str = normalize_db_url(settings.database_url_admin) if settings.database_url_admin else current_db_url
+
+player_engine: Engine = build_engine(player_db_url) if player_db_url != current_db_url else engine
+admin_engine: Engine = build_engine(admin_db_url) if admin_db_url != current_db_url else engine
+
+PlayerSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=player_engine)
+AdminSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=admin_engine)
+
+
+def set_session_user_context(db: DBSession, user_id: str) -> None:
+    """Set transaction-local player identity for PostgreSQL Row-Level Security (RLS)."""
+    try:
+        bind = db.get_bind()
+        if bind and bind.dialect.name == "postgresql":
+            db.execute(
+                text("select set_config('app.current_user_id', :user_id, true)"),
+                {"user_id": str(user_id)},
+            )
+    except Exception as exc:
+        logger.debug("Could not set transaction-local user context: %s", exc)
+
 
 def get_active_engine() -> Engine:
     """Return the currently active database engine."""
@@ -264,7 +287,7 @@ def switch_database(new_url: str) -> Dict[str, Any]:
     Live-switch the active database engine and session factory.
     Creates schema tables on target if not present.
     """
-    global engine, current_db_url
+    global engine, current_db_url, player_engine, admin_engine
     normalized_url = normalize_db_url(new_url)
     logger.info("Switching database from %s to %s", current_db_url, normalized_url)
 
@@ -293,9 +316,18 @@ def switch_database(new_url: str) -> Dict[str, Any]:
 
     # 3. Dispose old engine and rebind sessionmaker
     engine.dispose()
+    if player_engine != engine:
+        player_engine.dispose()
+    if admin_engine != engine:
+        admin_engine.dispose()
+
     engine = test_engine
+    player_engine = test_engine
+    admin_engine = test_engine
     current_db_url = normalized_url
     SessionLocal.configure(bind=engine)
+    PlayerSessionLocal.configure(bind=player_engine)
+    AdminSessionLocal.configure(bind=admin_engine)
 
     # 4. Seed tracks if newly targeted database is empty
     _seed_tracks_if_empty()
@@ -355,12 +387,26 @@ def ensure_db_schema() -> None:
 
 
 
-def get_db() -> Generator[DBSession, None, None]:
-    """FastAPI dependency yielding a thread-safe database session."""
-    db = SessionLocal()
+def get_player_db() -> Generator[DBSession, None, None]:
+    """FastAPI dependency yielding a player-scoped database session."""
+    db = PlayerSessionLocal()
     try:
         yield db
     finally:
         db.close()
+
+
+def get_admin_db() -> Generator[DBSession, None, None]:
+    """FastAPI dependency yielding an admin-scoped database session."""
+    db = AdminSessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+# Default database dependency aliases get_player_db to share the exact same session instance across dependencies
+get_db = get_player_db
+
 
 

@@ -6,7 +6,7 @@ from slowapi import Limiter
 from slowapi.util import get_remote_address
 
 from app.settings import settings
-from app.infrastructure.database.engine import get_db
+from app.infrastructure.database.engine import get_db, get_player_db, get_admin_db, set_session_user_context
 from app.infrastructure.database.models import User
 from app.infrastructure.database.repositories import UserRepository, AuthRepository
 from app.infrastructure.identity.crypto import code_hash
@@ -77,7 +77,7 @@ def get_content_bundle(mode: str) -> ContentBundle:
 def get_current_user(
     authorization: Optional[str] = Header(default=None),
     session_token: Optional[str] = Cookie(default=None),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_player_db),
 ) -> User:
     """Validate user authentication via Bearer token or HttpOnly session_token cookie."""
     raw = None
@@ -100,6 +100,8 @@ def get_current_user(
     if not user:
         raise HTTPException(401, "User not found")
 
+    # Establish transaction-local RLS player context
+    set_session_user_context(db, user.id)
     return user
 
 
@@ -107,7 +109,7 @@ def auth_admin(
     authorization: Optional[str] = Header(default=None),
     admin_token: Optional[str] = Cookie(default=None),
     session_token: Optional[str] = Cookie(default=None),
-    db: DBSession = Depends(get_db),
+    db: DBSession = Depends(get_admin_db),
 ) -> Dict[str, Any]:
     """Validate administrator access against database-stored admin users and sessions."""
     raw = None
