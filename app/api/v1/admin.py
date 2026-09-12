@@ -573,6 +573,109 @@ def get_system_metrics(admin_info: dict = Depends(auth_admin)):
     return metrics_registry.get_system_metrics()
 
 
+@router.get("/admin/system/health")
+def get_system_health(admin_info: dict = Depends(auth_admin), db: DBSession = Depends(get_db)):
+    """Comprehensive health and readiness diagnostic endpoint for the Admin Health Tab."""
+    import time
+    import shutil
+    import platform
+    from sqlalchemy import text
+    from app.infrastructure.database.engine import get_pool_config_summary
+    from app.infrastructure.cache.shared_cache import shared_track_cache
+
+    # 1. Measure DB Ping
+    ping_start = time.perf_counter()
+    db_connected = False
+    db_error = None
+    try:
+        db.execute(text("SELECT 1"))
+        db_connected = True
+    except Exception as e:
+        db_error = str(e)
+    ping_ms = round((time.perf_counter() - ping_start) * 1000, 2)
+
+    # 2. Probe status
+    metrics = shared_track_cache.get_health_metrics()
+    has_cache = shared_track_cache.has_any_validated_cache()
+
+    liveness_status = "alive"
+    if db_connected:
+        readiness_status = "ready" if metrics.get("overall_fallback", "none") == "none" else "degraded"
+    elif has_cache:
+        readiness_status = "degraded"
+    else:
+        readiness_status = "unavailable"
+
+    # 3. Connection pool summary
+    pool_summary = get_pool_config_summary()
+
+    # 4. Dialect and masked URL
+    cur_url = db_engine.current_db_url
+    dialect = "postgresql" if "postgresql" in cur_url else "sqlite"
+    display_url = cur_url.split("@")[-1] if "@" in cur_url else cur_url
+    if "@" in cur_url:
+        display_url = f"postgresql://***:***@{display_url}"
+
+    # 5. Host & resource stats
+    disk_path = settings.root_dir
+    disk_usage = shutil.disk_usage(disk_path)
+    free_disk_gb = round(disk_usage.free / (1024 ** 3), 2)
+    total_disk_gb = round(disk_usage.total / (1024 ** 3), 2)
+
+    # Memory usage RSS
+    rss_mb = 0
+    try:
+        import resource
+        usage = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        if platform.system() == "Darwin":
+            rss_mb = round(usage / (1024 * 1024), 1)
+        else:
+            rss_mb = round(usage / 1024, 1)
+    except Exception:
+        pass
+
+    # 6. Overall verdict
+    if db_connected and readiness_status == "ready":
+        verdict = "HEALTHY"
+    elif db_connected and readiness_status == "degraded":
+        verdict = "DEGRADED"
+    else:
+        verdict = "CRITICAL"
+
+    return {
+        "verdict": verdict,
+        "timestamp": int(time.time()),
+        "probes": {
+            "liveness": liveness_status,
+            "readiness": readiness_status,
+        },
+        "database": {
+            "connected": db_connected,
+            "dialect": dialect,
+            "display_url": display_url,
+            "ping_ms": ping_ms,
+            "error": db_error,
+        },
+        "pool": pool_summary,
+        "cache": {
+            "stats": shared_track_cache.stats(),
+            "health_metrics": metrics,
+            "degraded_mode": metrics.get("degraded_mode", False),
+            "fallback_status": metrics.get("overall_fallback", "none"),
+        },
+        "system": {
+            "python_version": platform.python_version(),
+            "platform": platform.platform(),
+            "free_disk_gb": free_disk_gb,
+            "total_disk_gb": total_disk_gb,
+            "rss_mb": rss_mb,
+            "environment": settings.environment,
+            "web_concurrency": settings.web_concurrency,
+            "app_replicas": settings.app_replicas,
+        },
+    }
+
+
 def _get_default_pg_url() -> str:
     """Retrieve the configured PostgreSQL connection URL from environment, env file, or settings."""
     env_url = os.getenv("DATABASE_URL")

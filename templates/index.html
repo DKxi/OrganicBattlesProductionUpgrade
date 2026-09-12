@@ -313,6 +313,7 @@
         <button id="admin-tab-releases" class="admin-tab-btn" type="button">📦 DATA &amp; RELEASES</button>
         <button id="admin-tab-observability" class="admin-tab-btn" type="button">📊 OBSERVABILITY</button>
         <button id="admin-tab-analytics" class="admin-tab-btn" type="button">🧠 LEARNING ANALYTICS</button>
+        <button id="admin-tab-health" class="admin-tab-btn" type="button">🩺 HEALTH</button>
         <button id="admin-tab-storage" class="admin-tab-btn" type="button">🗄 STORAGE</button>
         <button id="admin-tab-system" class="admin-tab-btn" type="button">⚙ LOGGING &amp; RUNTIME</button>
       </div>
@@ -617,6 +618,116 @@
             </table>
           </div>
         </div>
+      </div>
+
+      <!-- System Health Diagnostics Tab View -->
+      <div id="admin-health-tab-content" class="admin-tab-content hidden" style="overflow-y: auto; padding-right: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0 16px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div class="eyebrow">HEALTH &amp; PROBES // REAL-TIME DIAGNOSTICS</div>
+            <div style="display: flex; align-items: center; gap: 12px; margin-top: 4px;">
+              <h3 style="color: var(--cyan); margin: 0; font-size: 1.25rem;">SYSTEM HEALTH &amp; SERVICE STATUS</h3>
+              <span id="health-overall-badge" class="badge-verified" style="font-size: 0.75rem; padding: 3px 8px;">CHECKING…</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <label style="font: 500 0.72rem 'DM Mono', monospace; color: var(--muted); display: flex; align-items: center; gap: 6px;">AUTO-REFRESH:
+              <select id="admin-health-autorefresh" style="border: 1px solid #2b515b; border-radius: 6px; background: #081822; color: var(--ink); padding: 4px 8px; font: 500 0.72rem 'DM Mono', monospace;">
+                <option value="0">Off</option>
+                <option value="5000">5s</option>
+                <option value="15000" selected>15s</option>
+                <option value="30000">30s</option>
+              </select>
+            </label>
+            <button type="button" id="admin-health-refresh-btn" class="primary" style="padding: 6px 14px; font-size: 0.72rem;">🩺 RUN HEALTH CHECK</button>
+          </div>
+        </div>
+
+        <!-- Health KPI Cards Grid -->
+        <div class="kpi-grid">
+          <div class="kpi-card" id="health-card-liveness">
+            <div class="kpi-eyebrow">1. LIVENESS PROBE (/health/live)</div>
+            <div class="kpi-val" id="health-val-liveness">--</div>
+            <div class="kpi-sub" id="health-sub-liveness">Status: --</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-readiness">
+            <div class="kpi-eyebrow">2. READINESS PROBE (/health/ready)</div>
+            <div class="kpi-val" id="health-val-readiness">--</div>
+            <div class="kpi-sub" id="health-sub-readiness">Status: --</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-db">
+            <div class="kpi-eyebrow">3. DATABASE PING LATENCY</div>
+            <div class="kpi-val" id="health-val-db-ping">-- ms</div>
+            <div class="kpi-sub" id="health-sub-db-status">Engine: --</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-pool">
+            <div class="kpi-eyebrow">4. CONNECTION POOL HEALTH</div>
+            <div class="kpi-val" id="health-val-pool">-- / --</div>
+            <div class="kpi-sub" id="health-sub-pool">Overflow in use: --</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-cache">
+            <div class="kpi-eyebrow">5. CACHE INTEGRITY</div>
+            <div class="kpi-val" id="health-val-cache">--</div>
+            <div class="kpi-sub" id="health-sub-cache">Fallback: none</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-memory">
+            <div class="kpi-eyebrow">6. PROCESS MEMORY (RSS)</div>
+            <div class="kpi-val" id="health-val-memory">-- MB</div>
+            <div class="kpi-sub" id="health-sub-memory">Python runtime usage</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-disk">
+            <div class="kpi-eyebrow">7. STORAGE DISK SPACE</div>
+            <div class="kpi-val" id="health-val-disk">-- GB</div>
+            <div class="kpi-sub" id="health-sub-disk">Free space available</div>
+          </div>
+
+          <div class="kpi-card" id="health-card-workers">
+            <div class="kpi-eyebrow">8. WORKERS &amp; REPLICAS</div>
+            <div class="kpi-val" id="health-val-workers">--</div>
+            <div class="kpi-sub" id="health-sub-workers">Active concurrency</div>
+          </div>
+        </div>
+
+        <!-- Detailed Diagnostics Breakdown -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 16px;">
+          <div class="admin-card" style="margin: 0;">
+            <div class="eyebrow">SERVICE DIAGNOSTICS</div>
+            <h4 style="color: var(--cyan); margin: 6px 0 12px; font-size: 1rem;">DATABASE CONNECTION DETAIL</h4>
+            <div style="font: 500 0.75rem 'DM Mono', monospace; line-height: 1.8; color: var(--ink);">
+              <div>DIALECT: <span id="health-detail-dialect" style="color: var(--cyan);">--</span></div>
+              <div>ENDPOINT: <span id="health-detail-url" style="color: var(--muted); word-break: break-all;">--</span></div>
+              <div>PING ROUND-TRIP: <span id="health-detail-ping" style="color: #34d399;">-- ms</span></div>
+              <div>POOL STATUS: <span id="health-detail-pool-status" style="color: var(--cyan);">--</span></div>
+            </div>
+          </div>
+
+          <div class="admin-card" style="margin: 0;">
+            <div class="eyebrow">CACHE &amp; HOST DETAIL</div>
+            <h4 style="color: var(--cyan); margin: 6px 0 12px; font-size: 1rem;">RUNTIME ENVIRONMENT</h4>
+            <div style="font: 500 0.75rem 'DM Mono', monospace; line-height: 1.8; color: var(--ink);">
+              <div>ENVIRONMENT: <span id="health-detail-env" style="color: var(--orange);">--</span></div>
+              <div>PLATFORM: <span id="health-detail-platform" style="color: var(--muted);">--</span></div>
+              <div>PYTHON: <span id="health-detail-python" style="color: var(--cyan);">--</span></div>
+              <div>CACHE BACKEND: <span id="health-detail-cache-backend" style="color: var(--cyan);">--</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Probe Activity Log Console -->
+        <div style="margin-top: 16px;">
+          <div class="eyebrow" style="margin-bottom: 6px;">PROBE ACTIVITY LOG</div>
+          <div id="health-probe-log" style="background: #040d14; border: 1px solid #1a3c48; border-radius: 8px; padding: 12px; max-height: 140px; overflow-y: auto; font: 500 0.72rem 'DM Mono', monospace; color: var(--muted);">
+            <div>Waiting for first health check execution…</div>
+          </div>
+        </div>
+
+        <div id="admin-health-status" class="admin-modal-status" style="min-height: 18px; margin-top: 6px;"></div>
       </div>
 
       <!-- Storage & Database Tab View -->

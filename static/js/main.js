@@ -913,10 +913,13 @@ async function loadAdminDashboard() {
     loadObservabilityMetrics();
   } else if (currentAdminTab === 'analytics') {
     loadLearningAnalytics();
+  } else if (currentAdminTab === 'health') {
+    loadHealthDiagnostics();
   }
 }
 
 let adminObsInterval = null;
+let adminHealthInterval = null;
 let qbCurrentTrack = 'default';
 let qbCurrentPage = 1;
 let qbTotalPages = 1;
@@ -928,8 +931,12 @@ function switchAdminTab(tabName) {
     clearInterval(adminObsInterval);
     adminObsInterval = null;
   }
+  if (adminHealthInterval) {
+    clearInterval(adminHealthInterval);
+    adminHealthInterval = null;
+  }
 
-  const allTabs = ['users', 'sessions', 'questions', 'releases', 'observability', 'analytics', 'storage', 'system'];
+  const allTabs = ['users', 'sessions', 'questions', 'releases', 'observability', 'analytics', 'health', 'storage', 'system'];
   allTabs.forEach((t) => {
     $(`#admin-tab-${t}`)?.classList.toggle('active', t === tabName);
     $(`#admin-${t}-tab-content`)?.classList.toggle('hidden', t !== tabName);
@@ -950,6 +957,9 @@ function switchAdminTab(tabName) {
     setupObsAutoRefresh();
   } else if (tabName === 'analytics') {
     loadLearningAnalytics();
+  } else if (tabName === 'health') {
+    loadHealthDiagnostics();
+    setupHealthAutoRefresh();
   } else if (tabName === 'storage') {
     loadStorageConfig();
   } else if (tabName === 'system') {
@@ -1364,6 +1374,134 @@ function setupObsAutoRefresh() {
     adminObsInterval = setInterval(() => {
       if (currentAdminTab === 'observability') {
         loadObservabilityMetrics();
+      }
+    }, ms);
+  }
+}
+
+async function loadHealthDiagnostics() {
+  const statusEl = $('#admin-health-status');
+  try {
+    const data = await adminApi('/api/admin/system/health', {}, 'GET');
+    if (!data) return;
+
+    // Overall verdict badge
+    const verdictBadge = $('#health-overall-badge');
+    if (verdictBadge) {
+      verdictBadge.textContent = data.verdict || 'UNKNOWN';
+      verdictBadge.style.background = data.verdict === 'HEALTHY' ? '#064e3b' : (data.verdict === 'DEGRADED' ? '#78350f' : '#7f1d1d');
+      verdictBadge.style.color = data.verdict === 'HEALTHY' ? '#34d399' : (data.verdict === 'DEGRADED' ? '#fbbf24' : '#f87171');
+    }
+
+    // 1. Liveness Probe
+    const liveness = data.probes?.liveness || 'unknown';
+    if ($('#health-val-liveness')) $('#health-val-liveness').textContent = liveness.toUpperCase();
+    if ($('#health-sub-liveness')) $('#health-sub-liveness').textContent = `Process status: ${liveness}`;
+    $('#health-card-liveness')?.classList.toggle('alert', liveness !== 'alive');
+
+    // 2. Readiness Probe
+    const readiness = data.probes?.readiness || 'unknown';
+    if ($('#health-val-readiness')) $('#health-val-readiness').textContent = readiness.toUpperCase();
+    if ($('#health-sub-readiness')) $('#health-sub-readiness').textContent = `Traffic gate: ${readiness}`;
+    $('#health-card-readiness')?.classList.toggle('alert', readiness !== 'ready');
+
+    // 3. Database Ping
+    const dbInfo = data.database || {};
+    if ($('#health-val-db-ping')) $('#health-val-db-ping').textContent = dbInfo.connected ? `${dbInfo.ping_ms} ms` : 'ERR';
+    if ($('#health-sub-db-status')) $('#health-sub-db-status').textContent = `Engine: ${dbInfo.dialect || 'unknown'}`;
+    $('#health-card-db')?.classList.toggle('alert', !dbInfo.connected || (dbInfo.ping_ms > 100));
+
+    // 4. Connection Pool
+    const pool = data.pool || {};
+    if ($('#health-val-pool')) {
+      const checkedIn = pool.checked_in !== undefined ? pool.checked_in : '--';
+      const poolSize = pool.pool_size !== undefined ? pool.pool_size : '--';
+      $('#health-val-pool').textContent = `${checkedIn} / ${poolSize}`;
+    }
+    if ($('#health-sub-pool')) {
+      const overflow = pool.overflow_in_use !== undefined ? pool.overflow_in_use : (pool.checked_out || 0);
+      $('#health-sub-pool').textContent = `Checked out: ${overflow}`;
+    }
+
+    // 5. Cache
+    const cache = data.cache || {};
+    const cacheHealthy = !cache.degraded_mode && (cache.fallback_status === 'none');
+    if ($('#health-val-cache')) $('#health-val-cache').textContent = cacheHealthy ? 'HEALTHY' : 'FALLBACK';
+    if ($('#health-sub-cache')) $('#health-sub-cache').textContent = `Fallback: ${cache.fallback_status || 'none'}`;
+    $('#health-card-cache')?.classList.toggle('alert', !cacheHealthy);
+
+    // 6. Memory RSS
+    const sys = data.system || {};
+    const rss = sys.rss_mb || 0;
+    if ($('#health-val-memory')) $('#health-val-memory').textContent = `${rss} MB`;
+    if ($('#health-sub-memory')) $('#health-sub-memory').textContent = 'Process memory RSS';
+    $('#health-card-memory')?.classList.toggle('alert', rss > 500);
+
+    // 7. Disk Space
+    const freeDisk = sys.free_disk_gb !== undefined ? `${sys.free_disk_gb} GB` : '-- GB';
+    if ($('#health-val-disk')) $('#health-val-disk').textContent = freeDisk;
+    if ($('#health-sub-disk')) {
+      const totalDisk = sys.total_disk_gb !== undefined ? `${sys.total_disk_gb} GB` : '--';
+      $('#health-sub-disk').textContent = `Free of ${totalDisk}`;
+    }
+    $('#health-card-disk')?.classList.toggle('alert', (sys.free_disk_gb !== undefined && sys.free_disk_gb < 2));
+
+    // 8. Workers
+    if ($('#health-val-workers')) $('#health-val-workers').textContent = `${sys.web_concurrency || 1} workers`;
+    if ($('#health-sub-workers')) $('#health-sub-workers').textContent = `Replicas: ${sys.app_replicas || 1}`;
+
+    // Detailed breakdown
+    if ($('#health-detail-dialect')) $('#health-detail-dialect').textContent = dbInfo.dialect || '--';
+    if ($('#health-detail-url')) $('#health-detail-url').textContent = dbInfo.display_url || '--';
+    if ($('#health-detail-ping')) $('#health-detail-ping').textContent = `${dbInfo.ping_ms || 0} ms`;
+    if ($('#health-detail-pool-status')) {
+      $('#health-detail-pool-status').textContent = `Size: ${pool.pool_size ?? '--'}, Checked In: ${pool.checked_in ?? '--'}, Checked Out: ${pool.checked_out ?? '--'}`;
+    }
+    if ($('#health-detail-env')) $('#health-detail-env').textContent = (sys.environment || 'development').toUpperCase();
+    if ($('#health-detail-platform')) $('#health-detail-platform').textContent = sys.platform || '--';
+    if ($('#health-detail-python')) $('#health-detail-python').textContent = sys.python_version || '--';
+    if ($('#health-detail-cache-backend')) $('#health-detail-cache-backend').textContent = `In-Memory Shared (Fallback: ${cache.fallback_status || 'none'})`;
+
+    // Activity log entry
+    const logContainer = $('#health-probe-log');
+    if (logContainer) {
+      const entry = document.createElement('div');
+      const timeStr = new Date().toLocaleTimeString();
+      entry.style.marginBottom = '4px';
+      entry.textContent = `[${timeStr}] Verdict: ${data.verdict} | Ping: ${dbInfo.ping_ms}ms | Liveness: ${liveness} | Readiness: ${readiness} | Mem: ${rss}MB`;
+      if (logContainer.firstElementChild && logContainer.firstElementChild.textContent.startsWith('Waiting for')) {
+        logContainer.replaceChildren();
+      }
+      logContainer.insertBefore(entry, logContainer.firstChild);
+      while (logContainer.children.length > 20) {
+        logContainer.removeChild(logContainer.lastChild);
+      }
+    }
+
+    if (statusEl) {
+      statusEl.textContent = `Diagnostics refreshed at ${new Date().toLocaleTimeString()}`;
+      statusEl.className = 'admin-modal-status success';
+    }
+  } catch (err) {
+    console.error('Failed to load health diagnostics:', err);
+    if (statusEl) {
+      statusEl.textContent = `Failed to load diagnostics: ${err.message || err}`;
+      statusEl.className = 'admin-modal-status error';
+    }
+  }
+}
+
+function setupHealthAutoRefresh() {
+  if (adminHealthInterval) {
+    clearInterval(adminHealthInterval);
+    adminHealthInterval = null;
+  }
+  const select = $('#admin-health-autorefresh');
+  const ms = select ? parseInt(select.value, 10) : 15000;
+  if (ms > 0) {
+    adminHealthInterval = setInterval(() => {
+      if (currentAdminTab === 'health') {
+        loadHealthDiagnostics();
       }
     }, ms);
   }
@@ -1971,6 +2109,7 @@ function bindAdminEvents() {
   $('#admin-tab-releases')?.addEventListener('click', () => switchAdminTab('releases'));
   $('#admin-tab-observability')?.addEventListener('click', () => switchAdminTab('observability'));
   $('#admin-tab-analytics')?.addEventListener('click', () => switchAdminTab('analytics'));
+  $('#admin-tab-health')?.addEventListener('click', () => switchAdminTab('health'));
   $('#admin-tab-storage')?.addEventListener('click', () => switchAdminTab('storage'));
   $('#admin-tab-system')?.addEventListener('click', () => switchAdminTab('system'));
 
@@ -2264,6 +2403,12 @@ function bindAdminEvents() {
     loadLearningAnalytics();
     showAdminToast('Analytics refreshed');
   });
+
+  $('#admin-health-refresh-btn')?.addEventListener('click', () => {
+    loadHealthDiagnostics();
+    showAdminToast('Health check diagnostics refreshed');
+  });
+  $('#admin-health-autorefresh')?.addEventListener('change', setupHealthAutoRefresh);
 }
 
 

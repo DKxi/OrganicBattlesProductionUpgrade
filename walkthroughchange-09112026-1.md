@@ -891,6 +891,52 @@ All sensitive mutations log to `logs/admin.log` and record entries in `OB_admin_
   - `uv run pytest`: **349 passed, 1 skipped in 70.44s**.
   - All unit, integration, and Playwright Safari/WebKit E2E tests pass 100%.
 
+---
+
+# Walkthrough: Dedicated Health Tab in Admin Config Portal
+
+## Problem Summary
+Administrators previously lacked a consolidated, real-time diagnostic portal to verify service health, liveness and readiness probe states, live database ping latency, connection pool allocation, cache fallback integrity, and host resources (memory RSS, disk space, and worker concurrency).
+
+## Key Changes Implemented
+
+### 1. Diagnostic Backend Endpoint (`GET /api/v1/admin/system/health`)
+- Added to [app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py):
+  - Protected with `auth_admin` dependency (rejects unauthorized access with HTTP 401).
+  - Measures live round-trip DB ping (`SELECT 1`) latency in milliseconds.
+  - Queries probe states (`liveness: "alive"`, `readiness: "ready" | "degraded" | "unavailable"`).
+  - Retrieves active connection pool metrics (`size`, `checked_in`, `checked_out`, `overflow_in_use`).
+  - Audits cache status and fallback mode (`shared_track_cache.stats()`).
+  - Reports host resources: Python version, OS platform, memory RSS (macOS/Linux calibrated), free and total disk capacity, and worker concurrency.
+  - Computes overall system verdict: `HEALTHY`, `DEGRADED`, or `CRITICAL`.
+
+### 2. Admin UI: Dedicated Health Tab (`#admin-tab-health`)
+- Added to [templates/index.html](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/templates/index.html):
+  - `#admin-tab-health` tab navigation button in `.admin-tab-nav`.
+  - `#admin-health-tab-content` container with:
+    - Overall verdict badge (`#health-overall-badge`).
+    - 8 Diagnostic KPI Cards: Liveness probe, readiness probe, DB ping latency, connection pool health, cache integrity, process memory RSS, storage disk capacity, and active worker count.
+    - Detailed breakdown tables for Database Connection and Host Environment.
+    - Probe activity log console (`#health-probe-log`) recording history of recent health evaluations.
+    - Interactive controls: Auto-refresh rate selector (`#admin-health-autorefresh`: Off, 5s, 15s, 30s) and on-demand trigger button (`#admin-health-refresh-btn`).
+
+### 3. Client-Side Controller & Safe DOM Rendering
+- Implemented in [static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js):
+  - `loadHealthDiagnostics()`: Fetches diagnostic payload and updates cards and log entries safely using `textContent` and `createElement` (100% free of unsafe `innerHTML`).
+  - `setupHealthAutoRefresh()`: Manages background polling timer, clearing intervals on tab switch to prevent collisions.
+  - `switchAdminTab('health')`: Handles tab switching, content display, and automatic refresh triggering.
+  - Event listeners in `bindAdminEvents()` for tab selection, refresh button, and interval changes.
+
+### 4. Automated Verification & Regression Testing
+- Created [tests/test_admin_health_tab.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_admin_health_tab.py):
+  - `test_admin_system_health_requires_auth`: Confirms 401 Unauthorized for unauthenticated callers.
+  - `test_admin_system_health_authorized`: Validates complete diagnostic payload schema.
+  - `test_admin_health_ui_elements_in_template`: Validates presence of all tab IDs and KPI containers in `templates/index.html`.
+  - `test_admin_health_js_bindings`: Validates controllers and event bindings in `static/js/main.js`.
+- **Full Test Suite (`uv run pytest`)**:
+  - **353 passed, 1 skipped in 66.66s** (100% green across all 37 test suites).
+
+
 
 
 
