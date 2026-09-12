@@ -26,8 +26,9 @@ BEGIN
     END IF;
 END $$;
 
--- Allow migrator to assume ob_owner during controlled schema migrations
+-- Allow migrator and postgres administrator to assume ob_owner during setup and migrations
 GRANT ob_owner TO ob_migrator;
+GRANT ob_owner TO postgres;
 GRANT CREATE ON SCHEMA public TO ob_owner;
 
 -- Note: Set strong, independent passwords interactively or via deployment secrets:
@@ -166,6 +167,13 @@ ALTER TABLE public."OB_answer_attempts" OWNER TO ob_owner;
 ALTER TABLE public."OB_admin_users" OWNER TO ob_owner;
 ALTER TABLE public."OB_admin_sessions" OWNER TO ob_owner;
 ALTER TABLE public."OB_admin_audit_logs" OWNER TO ob_owner;
+
+DO $$
+BEGIN
+    IF EXISTS (SELECT 1 FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'alembic_version') THEN
+        ALTER TABLE public.alembic_version OWNER TO ob_owner;
+    END IF;
+END $$;
 
 
 -- ============================================================================
