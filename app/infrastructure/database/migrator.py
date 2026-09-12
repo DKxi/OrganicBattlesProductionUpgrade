@@ -39,7 +39,11 @@ def migrate_sqlite_to_postgres(
 
     # Ensure schema exists on target database (rename legacy tables first if present)
     _migrate_legacy_table_names(target_engine)
-    Base.metadata.create_all(bind=target_engine)
+    try:
+        from app.infrastructure.database.alembic_runner import run_alembic_migrations
+        run_alembic_migrations(target_engine=target_engine)
+    except Exception:
+        Base.metadata.create_all(bind=target_engine)
 
     stats = {
         "users": 0,

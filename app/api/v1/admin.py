@@ -731,8 +731,11 @@ def admin_switch_database(
             source_engine = build_engine(old_url)
             target_engine = build_engine(target_url)
             db_engine._migrate_legacy_table_names(source_engine)
-            db_engine._migrate_legacy_table_names(target_engine)
-            Base.metadata.create_all(bind=target_engine)
+            try:
+                from app.infrastructure.database.alembic_runner import run_alembic_migrations
+                run_alembic_migrations(target_engine=target_engine)
+            except Exception:
+                Base.metadata.create_all(bind=target_engine)
             migration_stats = migrate_sqlite_to_postgres(source_engine, target_engine)
 
         result = switch_database(target_url)

@@ -277,10 +277,15 @@ def switch_database(new_url: str) -> Dict[str, Any]:
         test_engine.dispose()
         raise
 
-    # 2. Rename legacy tables if present, then auto-create schema on target database
+    # 2. Rename legacy tables if present, then run Alembic migrations on target database
     _ensure_postgres_extensions(test_engine)
     _migrate_legacy_table_names(test_engine)
-    Base.metadata.create_all(bind=test_engine)
+    try:
+        from app.infrastructure.database.alembic_runner import run_alembic_migrations
+        run_alembic_migrations(target_engine=test_engine)
+    except Exception as m_exc:
+        logger.warning("Alembic migration note during switch: %s", m_exc)
+        Base.metadata.create_all(bind=test_engine)
 
     # If target is SQLite, run schema column migrations
     if normalized_url.startswith("sqlite"):
@@ -333,18 +338,17 @@ def _seed_admin_users_if_empty() -> None:
 
 
 def ensure_db_schema() -> None:
-    """Ensure legacy tables are renamed, database tables exist, SQLite columns are up to date, and tracks are seeded."""
+    """Ensure legacy tables are renamed, database tables are migrated via Alembic, and seeds are populated."""
     _ensure_postgres_extensions(engine)
     _migrate_legacy_table_names(engine)
-    Base.metadata.create_all(bind=engine)
+    try:
+        from app.infrastructure.database.alembic_runner import run_alembic_migrations
+        run_alembic_migrations(target_engine=engine)
+    except Exception as m_exc:
+        logger.warning("Alembic migration note on startup: %s. Falling back to metadata ensure.", m_exc)
+        Base.metadata.create_all(bind=engine)
     if current_db_url.startswith("sqlite"):
         _migrate_sqlite_columns(current_db_url)
-    else:
-        try:
-            with engine.begin() as conn:
-                conn.execute(text('ALTER TABLE "OB_questions" ADD COLUMN IF NOT EXISTS "release_id" VARCHAR'))
-        except Exception as exc:
-            logger.debug("PostgreSQL column migration note: %s", exc)
     _seed_tracks_if_empty()
     _seed_bosses_if_empty()
     _seed_admin_users_if_empty()

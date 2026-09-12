@@ -61,6 +61,8 @@ class GameSession(Base):
     player_max_hp = Column(Integer, nullable=False, default=150)
     boss_hp = Column(Integer, nullable=False, default=0)
     active_question_json = Column(String, nullable=True)
+    active_question_id = Column(BigInteger().with_variant(Integer, "sqlite"), nullable=True)
+    active_question_release_id = Column(String, nullable=True)
     active_spell = Column(String, nullable=True)
     turn_id = Column(String, nullable=True)
     cooldowns_json = Column(String, nullable=False, default="{}")

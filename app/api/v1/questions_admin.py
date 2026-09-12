@@ -14,7 +14,7 @@ from app.domain.content.loader import invalidate_bundle_cache
 
 from app.domain.content.validator import validate_question_payload, QuestionValidationError
 
-logger = logging.getLogger("organicbattles.questions_admin")
+logger = logging.getLogger("organicbattles.admin.questions")
 router = APIRouter(tags=["Admin Questions Management"])
 
 

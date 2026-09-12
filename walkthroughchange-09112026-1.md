@@ -936,6 +936,51 @@ Administrators previously lacked a consolidated, real-time diagnostic portal to 
 - **Full Test Suite (`uv run pytest`)**:
   - **353 passed, 1 skipped in 66.66s** (100% green across all 37 test suites).
 
+---
+
+# Walkthrough: Production Alembic Migrations System
+
+## Problem Summary
+1. The application previously relied on `Base.metadata.create_all()` as the primary schema initialization mechanism, which cannot safely evolve production PostgreSQL schemas, apply column constraints, or manage forward/backward data migrations.
+2. The system lacked an explicit, version-controlled Alembic migration history covering JSONB conversions, content releases, stable question identities, game session question versioning, optimistic locking, and search indexing.
+
+## Key Changes Implemented
+
+### 1. Credential-Independent Alembic Configuration
+- [alembic.ini](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/alembic.ini):
+  - Configured with `sqlalchemy.url = ` leaving connection resolution entirely to runtime.
+  - Contains zero credentials, passwords, or deployment secrets.
+- [migrations/env.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/migrations/env.py):
+  - Resolves target database URL dynamically from application settings / active engine.
+  - Supports passing active `Engine` or `Connection` object via `config.attributes["connection"]`.
+  - Configures `render_as_batch=True` for SQLite compatibility during constraint and column migrations.
+  - Preserves application logger configurations with `disable_existing_loggers=False`.
+
+### 2. Versioned Migration Tree (7 Capabilities)
+Created 7 ordered, reproducible migrations in `migrations/versions/`:
+- **`0001_initial_schema`**: Baseline schema establishing all foundational tables (`OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_curricula`, `OB_tracks`, `OB_questions`, `OB_bosses`, `OB_boss_question_assignments`, `OB_player_question_progress`, `OB_answer_attempts`, `OB_admin_users`, `OB_admin_sessions`, `OB_admin_audit_logs`).
+- **`0002_jsonb_conversion`**: Enforces PostgreSQL `JSONB` on `options_json`, `spells_json`, `health_json`, `images_json` (`OB_questions`), `strategy_json` (`OB_bosses`), and `details_json` (`OB_admin_audit_logs`).
+- **`0003_content_releases`**: Establishes `OB_content_releases` table and indexes (`ix_ob_content_releases_track_ver`, `ix_ob_content_releases_track_status`), adding `release_id` foreign keys to `OB_questions`, `OB_boss_question_assignments`, and `OB_answer_attempts`.
+- **`0004_stable_question_identity_constraints`**: Adds unique constraint `uq_ob_questions_order` on `(track_id, release_id, chapter, order_index)` and composite indexes `ix_ob_questions_track_release_ch_order`, `ix_ob_questions_track_ch_order`, and `ix_ob_questions_track_ch_boss_order`.
+- **`0005_game_session_active_question_identity`**: Adds `active_question_id` and `active_question_release_id` columns to `OB_game_sessions` with index `ix_ob_game_sessions_active_q`.
+- **`0006_optimistic_locking`**: Enforces non-null `version` column with server default `1` and `updated_at` on `OB_game_sessions` with index `ix_ob_game_sessions_user_version`.
+- **`0007_search_indexes`**: Adds `pg_trgm` PostgreSQL extension, GIN trigram indexes (`ix_ob_questions_prompt_trgm`, `ix_ob_questions_topic_trgm`), and search B-tree indexes on `OB_users(username, email)` and `OB_answer_attempts`.
+
+### 3. Retired `create_all()` in Production
+- Created [app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py) providing `run_alembic_migrations(target_engine)` and `get_current_migration_revision()`.
+- Updated [app/infrastructure/database/engine.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/engine.py):
+  - `ensure_db_schema()` runs `run_alembic_migrations(target_engine=engine)`.
+  - `switch_database()` runs `run_alembic_migrations(target_engine=test_engine)`.
+- Updated [app/infrastructure/database/migrator.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/migrator.py) and [app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py) to use `run_alembic_migrations`.
+
+### 4. Automated Verification & Regression Testing
+- Created [tests/test_alembic_migrations.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_alembic_migrations.py):
+  - Verifies `alembic.ini` contains no credentials or database secrets.
+  - Verifies full migration revision chain: `0001` through `0007 (head)`.
+  - Verifies complete fresh execution on temporary database, table presence, column creation, index creation, and idempotency.
+- **Full Test Suite (`uv run pytest`)**:
+  - **356 passed, 1 skipped in 71.97s** (100% green across all 38 test suites).
+
 
 
 
