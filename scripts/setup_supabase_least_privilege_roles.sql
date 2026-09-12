@@ -83,11 +83,7 @@ GRANT SELECT, INSERT, UPDATE ON TABLE public."OB_game_sessions", public."OB_play
 GRANT SELECT, INSERT ON TABLE public."OB_answer_attempts" TO ob_player_api;
 
 -- Sequence access for tables where player routes insert records
-GRANT USAGE, SELECT ON SEQUENCE 
-    public."OB_verification_codes_id_seq",
-    public."OB_player_question_progress_id_seq",
-    public."OB_answer_attempts_id_seq"
-TO ob_player_api;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO ob_player_api;
 
 
 -- ============================================================================
@@ -149,10 +145,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
     public."OB_boss_question_assignments"
 TO ob_content_ingest;
 
-GRANT USAGE, SELECT ON SEQUENCE 
-    public."OB_questions_id_seq",
-    public."OB_boss_question_assignments_id_seq"
-TO ob_content_ingest;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO ob_content_ingest;
+
+-- Ensure future sequences automatically grant usage to application roles
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT USAGE, SELECT ON SEQUENCES TO ob_player_api, ob_admin_api, ob_content_ingest, ob_migrator;
 
 -- Transfer table ownership to ob_owner
 ALTER TABLE public."OB_users" OWNER TO ob_owner;
