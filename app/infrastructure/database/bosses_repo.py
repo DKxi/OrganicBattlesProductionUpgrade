@@ -1,6 +1,6 @@
 import time
 import logging
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Tuple
 from sqlalchemy.orm import Session as DBSession
 
 from app.infrastructure.database.models import Boss, BossQuestionAssignment, Question, Track
@@ -45,6 +45,12 @@ class BossesRepository:
         strategy: Optional[Dict[str, Any]] = None,
     ) -> Boss:
         boss = self.get_boss(boss_id)
+        if not boss:
+            boss = (
+                self.db.query(Boss)
+                .filter(Boss.track_id == track_id, Boss.chapter == chapter, Boss.order_index == order_index)
+                .first()
+            )
         if not boss:
             boss = Boss(
                 id=boss_id,
@@ -105,16 +111,114 @@ class BossesRepository:
             assignment.weight = weight
         return assignment
 
-    def seed_default_bosses(self, track_id: str = "organic1") -> int:
+    def sync_bosses_from_questions(
+        self,
+        track_id: Optional[str] = None,
+        release_id: Optional[str] = None,
+    ) -> Dict[str, int]:
+        """
+        Scan questions in database and synchronize OB_bosses and OB_boss_question_assignments.
+        Extracts unique (track_id, chapter, boss_slug), determines chapter-level ordering,
+        creates/updates Boss records, and assigns questions to each corresponding boss.
+        """
+        query = self.db.query(Question)
+        if track_id:
+            query = query.filter(Question.track_id == track_id)
+        if release_id:
+            query = query.filter(Question.release_id == release_id)
+
+        questions = query.order_by(
+            Question.track_id.asc(),
+            Question.chapter.asc(),
+            Question.order_index.asc(),
+        ).all()
+
+        if not questions:
+            return {"bosses": 0, "assignments": 0}
+
+        from collections import OrderedDict
+        track_chapter_groups: Dict[Tuple[str, int], List[Question]] = OrderedDict()
+        for q in questions:
+            key = (q.track_id, q.chapter)
+            track_chapter_groups.setdefault(key, []).append(q)
+
+        bosses_synced = 0
+        assignments_synced = 0
+
+        for (t_id, ch_num), ch_questions in track_chapter_groups.items():
+            # Find distinct bosses in this chapter preserving order of appearance
+            seen_bosses: Dict[str, Question] = OrderedDict()
+            for q in ch_questions:
+                slug = q.boss_slug or "boss"
+                if slug not in seen_bosses:
+                    seen_bosses[slug] = q
+
+            for b_idx, (slug, sample_q) in enumerate(seen_bosses.items()):
+                boss_id = f"{t_id}_ch{ch_num}_{slug}"
+                b_name = sample_q.boss_name or slug.replace("-", " ").title()
+
+                health_val = 100
+                if sample_q.health_json:
+                    if isinstance(sample_q.health_json, list) and sample_q.health_json:
+                        health_val = int(sample_q.health_json[0])
+                    elif isinstance(sample_q.health_json, (int, float)):
+                        health_val = int(sample_q.health_json)
+
+                image_val = f"{slug}.png"
+                if sample_q.images_json:
+                    if isinstance(sample_q.images_json, list) and sample_q.images_json:
+                        image_val = str(sample_q.images_json[0])
+                    elif isinstance(sample_q.images_json, str):
+                        image_val = sample_q.images_json
+
+                boss = self.create_or_update_boss(
+                    boss_id=boss_id,
+                    slug=slug,
+                    track_id=t_id,
+                    chapter=ch_num,
+                    order_index=b_idx,
+                    name=b_name,
+                    image_file=image_val,
+                    health=health_val,
+                    element=sample_q.topic or "Organic",
+                    strategy={"chapter_title": sample_q.chapter_title},
+                )
+                bosses_synced += 1
+
+            self.db.flush()
+
+            # Assign questions to bosses
+            for q in ch_questions:
+                slug = q.boss_slug or "boss"
+                boss = self.get_boss_by_slug(t_id, slug)
+                if boss:
+                    self.assign_question_to_boss(
+                        boss_id=boss.id,
+                        question_id=q.id,
+                        track_id=t_id,
+                        release_id=q.release_id,
+                        order_index=q.order_index,
+                    )
+                    assignments_synced += 1
+
+        self.db.commit()
+        return {"bosses": bosses_synced, "assignments": assignments_synced}
+
+    def seed_default_bosses(self, track_id: str = "default") -> int:
         """Seed default boss entries and auto-assign questions for the track."""
-        seeded = 0
-        now_ts = int(time.time())
+        # Check if questions exist to sync directly from database
+        q_count = self.db.query(Question).filter(Question.track_id == track_id).count()
+        if q_count > 0:
+            stats = self.sync_bosses_from_questions(track_id=track_id)
+            return stats["bosses"]
 
         # Check if already seeded
         existing_count = self.db.query(Boss).filter(Boss.track_id == track_id).count()
         if existing_count > 0:
             return existing_count
 
+        now_ts = int(time.time())
+        seeded = 0
         for ch in BUILTIN_CHAPTERS:
             ch_num = ch["id"]
             for idx, boss_info in enumerate(ch["bosses"]):
@@ -138,21 +242,6 @@ class BossesRepository:
                 )
                 self.db.add(boss)
                 seeded += 1
-
-        self.db.flush()
-
-        # Link questions to bosses
-        questions = self.db.query(Question).filter(Question.track_id == track_id).all()
-        for q in questions:
-            boss = self.get_boss_by_slug(track_id, q.boss_slug)
-            if boss:
-                self.assign_question_to_boss(
-                    boss_id=boss.id,
-                    question_id=q.id,
-                    track_id=track_id,
-                    release_id=q.release_id,
-                    order_index=q.order_index,
-                )
 
         self.db.commit()
         return seeded

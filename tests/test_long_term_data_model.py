@@ -324,3 +324,111 @@ def test_admin_analytics_endpoints(admin_client):
     u_data = u_res.json()
     assert "summary" in u_data
     assert u_data["summary"]["total_tracked"] >= 1
+
+    # Clean up test question and invalidate cache so later tests are unaffected
+    with SessionLocal() as db:
+        db.query(Question).filter(Question.raw_id == "q_battle_sync").delete()
+        db.commit()
+    from app.infrastructure.cache.shared_cache import shared_track_cache
+    shared_track_cache.invalidate_track("default")
+    from app.api.deps import TRACK_BUNDLES
+    TRACK_BUNDLES.clear()
+
+
+def test_sync_bosses_from_questions():
+    """Verify that sync_bosses_from_questions extracts distinct bosses and populates OB_bosses and assignments."""
+    from app.infrastructure.database.models import Track
+    try:
+        with SessionLocal() as db:
+            # Create test track if not present
+            test_track = db.query(Track).filter(Track.id == "sync_test_track").first()
+            if not test_track:
+                test_track = Track(
+                    id="sync_test_track",
+                    curriculum_id="foundational",
+                    title="Sync Test Track",
+                    detail="Testing boss sync",
+                    data_folder="data/tracks/sync",
+                    boss_folder="data/tracks/sync/bosses",
+                    questions=2,
+                    chapters=1,
+                )
+                db.add(test_track)
+                db.commit()
+
+            # Insert two questions with distinct bosses in chapter 1
+            q1 = Question(
+                track_id="sync_test_track",
+                raw_id="sync_q1",
+                chapter=1,
+                chapter_title="Sync Chapter 1",
+                boss_name="Sync Ogre",
+                boss_slug="sync-ogre",
+                order_index=1,
+                topic="Bonding",
+                difficulty="Easy",
+                prompt="Question 1 for Sync Ogre",
+                options_json=[{"label": "A", "text": "Ans A"}, {"label": "B", "text": "Ans B"}],
+                correct_option="A",
+                correct_answer="Ans A",
+                explanation="Explanation 1",
+                health_json=[100],
+                images_json=["sync-ogre.png"],
+            )
+            q2 = Question(
+                track_id="sync_test_track",
+                raw_id="sync_q2",
+                chapter=1,
+                chapter_title="Sync Chapter 1",
+                boss_name="Sync Dragon",
+                boss_slug="sync-dragon",
+                order_index=2,
+                topic="Kinetics",
+                difficulty="Medium",
+                prompt="Question 2 for Sync Dragon",
+                options_json=[{"label": "A", "text": "Ans A"}, {"label": "B", "text": "Ans B"}],
+                correct_option="A",
+                correct_answer="Ans A",
+                explanation="Explanation 2",
+                health_json=[150],
+                images_json=["sync-dragon.png"],
+            )
+            db.add_all([q1, q2])
+            db.commit()
+
+            boss_repo = BossesRepository(db)
+            stats = boss_repo.sync_bosses_from_questions(track_id="sync_test_track")
+            assert stats["bosses"] >= 2
+            assert stats["assignments"] >= 2
+
+            # Verify bosses created in OB_bosses
+            bosses = boss_repo.get_bosses_for_track("sync_test_track", chapter=1)
+            assert len(bosses) == 2
+            slugs = [b.slug for b in bosses]
+            assert "sync-ogre" in slugs
+            assert "sync-dragon" in slugs
+
+            ogre = boss_repo.get_boss_by_slug("sync_test_track", "sync-ogre")
+            assert ogre.name == "Sync Ogre"
+            assert ogre.health == 100
+            assert ogre.image_file == "sync-ogre.png"
+            assert len(ogre.question_assignments) >= 1
+
+            dragon = boss_repo.get_boss_by_slug("sync_test_track", "sync-dragon")
+            assert dragon.name == "Sync Dragon"
+            assert dragon.health == 150
+            assert dragon.image_file == "sync-dragon.png"
+            assert len(dragon.question_assignments) >= 1
+
+            # Test idempotency (syncing again shouldn't fail or duplicate)
+            stats_repeat = boss_repo.sync_bosses_from_questions(track_id="sync_test_track")
+            assert stats_repeat["bosses"] >= 2
+            assert len(boss_repo.get_bosses_for_track("sync_test_track", chapter=1)) == 2
+    finally:
+        with SessionLocal() as clean_db:
+            clean_db.query(BossQuestionAssignment).filter(BossQuestionAssignment.track_id == "sync_test_track").delete()
+            clean_db.query(Boss).filter(Boss.track_id == "sync_test_track").delete()
+            clean_db.query(Question).filter(Question.track_id == "sync_test_track").delete()
+            clean_db.query(Track).filter(Track.id == "sync_test_track").delete()
+            clean_db.commit()
+

@@ -182,6 +182,12 @@ def ingest_questions_data(
             db.commit()
             shared_track_cache.invalidate_track(track.id)
             logger.info("Track '%s' atomically activated under release %s (%d questions).", track.id, draft_rel.id, track_q_count)
+
+            # Synchronize OB_bosses and OB_boss_question_assignments
+            from app.infrastructure.database.bosses_repo import BossesRepository
+            bosses_repo = BossesRepository(db)
+            b_stats = bosses_repo.sync_bosses_from_questions(track_id=track.id, release_id=draft_rel.id)
+            logger.info("Track '%s': synchronized %d bosses and %d assignments in OB_bosses.", track.id, b_stats["bosses"], b_stats["assignments"])
         else:
             logger.warning("Track '%s' yielded 0 questions; draft %s discarded.", track.id, draft_rel.id)
 
