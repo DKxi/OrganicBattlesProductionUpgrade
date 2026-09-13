@@ -68,43 +68,43 @@ graph TD
     end
 ```
 
-### Phase 1: Move Boss Images to Cloud Storage / CDN
+### Phase 1: Move Boss Images to Cloud Storage / CDN - [FIXED]
 Currently, boss PNG images are stored on disk in `data/tracks/.../bosses/`.
 
-- **Option A (Supabase Storage - Recommended)**:
-  1. In Supabase Dashboard $\rightarrow$ **Storage**, create a public bucket named `bosses`.
-  2. Upload all images from `data/tracks/**/bosses/*.png`.
-  3. In the database (`OB_bosses.image_url` / `Question.images_json`), update the image references to the public URL:
-     `https://<project-ref>.supabase.co/storage/v1/object/public/bosses/<filename>.png`
-  4. The browser loads boss images directly from Supabase Storage CDN, with zero load or disk dependency on the Python backend.
+- **Option A (Supabase Storage - Recommended)** - [FIXED]:
+  1. [FIXED] In Supabase Dashboard $\rightarrow$ **Storage**, create a public bucket named `bosses` (implemented across `DefaultBosses`, `AdvancedBosses`, and `FoundationalBosses`).
+  2. [FIXED] Upload all images from `data/tracks/**/bosses/*.png`.
+  3. [FIXED] In the database (`OB_bosses.image_url` / `Question.images_json`) and config (`tracks_config.json`, `tracks-config.js`), update the image references to the public URL:
+     `https://<project-ref>.supabase.co/storage/v1/object/public/bosses/<filename>.png` (and 307 temporary redirects in `app/main.py`).
+  4. [FIXED] The browser loads boss images directly from Supabase Storage CDN, with zero load or disk dependency on the Python backend.
 - **Option B (Static Folder)**:
   Move boss images into `static/images/bosses/` alongside other static assets (`static/audio/`, `static/css/`), retiring the `data/` directory search logic.
 
-### Phase 2: Move Track & Curriculum Seeding into Alembic Migration
+### Phase 2: Move Track & Curriculum Seeding into Alembic Migration - [PARTIALLY FIXED / IN PROGRESS]
 Currently, `app/infrastructure/database/engine.py` reads `data/tracks_config.json` on startup if tables are empty.
 
-1. Create an Alembic migration (e.g., `0009_seed_curricula_and_tracks.py`) or run a one-time migration script using `ob_migrator` that inserts the contents of `tracks_config.json` directly into `OB_curricula` and `OB_tracks`.
-2. Once `OB_tracks` is populated in PostgreSQL, `load_tracks_config(db=db)` always reads from PostgreSQL and never looks for `data/tracks_config.json`.
-3. Remove `_seed_tracks_if_empty()` from web process startup.
+1. [TODO] Create an Alembic migration (e.g., `0009_seed_curricula_and_tracks.py`) or run a one-time migration script using `ob_migrator` that inserts the contents of `tracks_config.json` directly into `OB_curricula` and `OB_tracks`. *(Note: Strategy currently retains small 8 KB `data/tracks_config.json` in repo).*
+2. [FIXED] Once `OB_tracks` is populated in PostgreSQL, `load_tracks_config(db=db)` always reads from PostgreSQL and never looks for `data/tracks_config.json`.
+3. [TODO] Remove `_seed_tracks_if_empty()` from web process startup.
 
-### Phase 3: Decouple Question Ingestion from Runtime Web Containers
+### Phase 3: Decouple Question Ingestion from Runtime Web Containers - [FIXED]
 Questions already live in the PostgreSQL database (`OB_questions` and `OB_content_releases`).
 
-1. Add `data/` to `.dockerignore`.
-2. The production web container runs with **zero local question JSON files**.
-3. The web application only runs `get_content_bundle(mode)` $\rightarrow$ which reads from `shared_track_cache` and `load_db_bundle()` from PostgreSQL.
-4. The question authoring JSON files remain in source control for content creators, but question releases are pushed to PostgreSQL via a standalone CI/CD ingestion task (`ob_content_ingest`).
+1. [FIXED] Add `data/` to `.dockerignore` (added `data/tracks/` to `.dockerignore` and `.gitignore`).
+2. [FIXED] The production web container runs with **zero local question JSON files**.
+3. [FIXED] The web application only runs `get_content_bundle(mode)` $\rightarrow$ which reads from `shared_track_cache` and `load_db_bundle()` from PostgreSQL.
+4. [FIXED] The question authoring JSON files remain in source control for content creators, but question releases are pushed to PostgreSQL via a standalone CI/CD ingestion task (`ob_content_ingest` / S3 streaming in `scripts/ingest_questions_to_postgres.py`).
 
-### Phase 4: Clean Up Legacy Files
-- Delete the legacy file `data/organic_battles.db` (which is an obsolete SQLite database that is no longer used).
+### Phase 4: Clean Up Legacy Files - [TODO]
+- [TODO] Delete the legacy file `data/organic_battles.db` (which is an obsolete SQLite database that is no longer used).
 
 ---
 
 ## 4. Summary Checklist
 
-| Component | Current Disk Dependency | Target Solution | Benefit |
-| :--- | :--- | :--- | :--- |
-| **Boss Images** | `data/tracks/.../bosses/*.png` | Supabase Storage public bucket / CDN | Instant caching, browser-direct CDN delivery, 0 MB in web container |
-| **Track Metadata** | `data/tracks_config.json` | PostgreSQL `OB_tracks` table via Alembic | 100% database-driven; no runtime file read on boot |
-| **Question Catalog** | `data/tracks/**/*.json` | PostgreSQL `OB_questions` via `ob_content_ingest` | Atomic releases; web process requires zero local JSON files |
-| **Legacy Database** | `data/organic_battles.db` | Deleted | Removes obsolete SQLite database artifact |
+| Component | Current Disk Dependency | Target Solution | Benefit | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Boss Images** | `data/tracks/.../bosses/*.png` | Supabase Storage public bucket / CDN | Instant caching, browser-direct CDN delivery, 0 MB in web container | **FIXED** |
+| **Track Metadata** | `data/tracks_config.json` | PostgreSQL `OB_tracks` table via Alembic | 100% database-driven; no runtime file read on boot | **TODO** (Kept 8KB file in repo) |
+| **Question Catalog** | `data/tracks/**/*.json` | PostgreSQL `OB_questions` via `ob_content_ingest` | Atomic releases; web process requires zero local JSON files | **FIXED** |
+| **Legacy Database** | `data/organic_battles.db` | Deleted | Removes obsolete SQLite database artifact | **TODO** |
