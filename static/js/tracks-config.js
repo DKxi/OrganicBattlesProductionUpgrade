@@ -33,7 +33,7 @@ const TRACKS = [
     title: 'Default Track',
     detail: 'core curriculum · comprehensive chemistry',
     boss: 'Orbital Ogre',
-    boss_folder: 'data/tracks/default/bosses',
+    boss_folder: 'https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/DefaultBosses',
     questions: 1350,
     chapters: 27,
     accent: 'amber',

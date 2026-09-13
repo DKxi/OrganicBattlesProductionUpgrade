@@ -112,8 +112,9 @@ class Settings(BaseModel):
     s3_access_key_id: str = Field(default_factory=lambda: get_config_value("S3_ACCESS_KEY_ID", default=""))
     s3_secret_access_key: str = Field(default_factory=lambda: get_config_value("S3_SECRET_ACCESS_KEY", default=""))
     s3_advanced_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_ADVANCED_BOSSES_BUCKET", default="AdvancedBosses"))
+    s3_default_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_DEFAULT_BOSSES_BUCKET", default="DefaultBosses"))
     supabase_storage_public_url: Optional[str] = Field(default_factory=lambda: get_config_value("SUPABASE_STORAGE_PUBLIC_URL", default=None))
-    use_supabase_boss_storage: bool = Field(default_factory=lambda: get_config_value("USE_SUPABASE_BOSS_STORAGE", default=True, env_type=bool))
+    use_supabase_boss_storage: bool = Field(default_factory=lambda: str(get_config_value("USE_SUPABASE_BOSS_STORAGE", default="1")).lower() in ("1", "true", "yes"))
 
     @property
     def supabase_public_storage_base_url(self) -> str:
@@ -127,6 +128,19 @@ class Settings(BaseModel):
                 ref = m.group(1)
                 return f"https://{ref}.supabase.co/storage/v1/object/public/{self.s3_advanced_bosses_bucket}"
         return f"https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/{self.s3_advanced_bosses_bucket}"
+
+    @property
+    def supabase_default_bosses_base_url(self) -> str:
+        """Returns the public Supabase storage base URL for DefaultBosses."""
+        if self.supabase_storage_public_url:
+            return f"{self.supabase_storage_public_url.rstrip('/')}/{self.s3_default_bosses_bucket}"
+        if self.s3_endpoint_url:
+            import re
+            m = re.search(r"https?://([a-zA-Z0-9_-]+)\.storage\.supabase\.co", self.s3_endpoint_url)
+            if m:
+                ref = m.group(1)
+                return f"https://{ref}.supabase.co/storage/v1/object/public/{self.s3_default_bosses_bucket}"
+        return f"https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/{self.s3_default_bosses_bucket}"
 
 
 settings = Settings()

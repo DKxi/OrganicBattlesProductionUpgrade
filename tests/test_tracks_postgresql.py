@@ -45,7 +45,7 @@ def test_tracks_and_curricula_seeded_in_database():
         assert default_track.title == "Default Track"
         assert default_track.curriculum_id == "foundational"
         assert default_track.data_folder == "data/tracks/default"
-        assert default_track.boss_folder == "data/tracks/default/bosses"
+        assert "DefaultBosses" in default_track.boss_folder or default_track.boss_folder == "data/tracks/default/bosses"
 
 
 def test_tracks_repository_operations():

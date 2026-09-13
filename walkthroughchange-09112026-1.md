@@ -1266,3 +1266,63 @@ These documents contained action items, defect findings, and diagrams that were 
 - Updates committed and pushed to `origin/main`:
   - `fd48f9c`: `docs(temp): mark action items as FIXED or TODO and update diagrams to latest architecture`
   - `a37fffb`: `feat(storage): integrate Supabase S3 public storage CDN for Advanced Bosses (Approach 1)`
+
+---
+
+# Update 09/12/2026: Supabase S3 Public Storage Integration for Default Bosses (`DefaultBosses`)
+
+## Summary of Changes
+
+Following the migration of Advanced Bosses to Supabase Storage, the user uploaded the 76 default boss illustrations to a dedicated Supabase S3 bucket named `DefaultBosses`.
+
+The system has been updated across configuration, domain loaders, routing, environment profiles, and test suites to point to this new bucket when `Default/Bosses` are referenced, while strictly preserving the existing foundational track configuration (`"boss_folder": "data/tracks/foundational/bosses"`, which falls back gracefully to default).
+
+### 1. Environment & Configuration Settings
+- In [app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py):
+  - Added `s3_default_bosses_bucket: str = "DefaultBosses"` configurable via `S3_DEFAULT_BOSSES_BUCKET`.
+  - Added `supabase_default_bosses_base_url` property returning `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/DefaultBosses`.
+  - Normalized `use_supabase_boss_storage` boolean parsing from environment string (`"1"`, `"true"`, `"yes"`).
+- In [local.env](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/local.env) & [prod.env](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/prod.env):
+  - Added `S3_DEFAULT_BOSSES_BUCKET=DefaultBosses`.
+
+### 2. Domain Content Loader Catalog
+- In [app/domain/content/loader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/content/loader.py):
+  - Added `get_default_boss_names(root_dir: Optional[Path] = None) -> set`:
+    - Reads local directory if present or falls back to a static catalog of all 76 core default boss images (`orbital-ogre.png`, `acetylide-archer.png`, etc.).
+  - Added `is_default_boss_image(filename: str, root_dir: Optional[Path] = None) -> bool`.
+
+### 3. Image Routing & Fallback Preservation
+- In [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py):
+  - Updated `serve_boss_image(filename: str)`:
+    - If `raw_name` matches `is_default_boss_image(...)` and `settings.use_supabase_boss_storage` is true, issues an HTTP `307 Temporary Redirect` to:
+      `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/DefaultBosses/{raw_name}`
+    - Advanced bosses continue redirecting to `AdvancedBosses`.
+    - Local directory checks are performed for local track paths (such as `data/tracks/foundational/bosses`).
+    - Graceful fallback hierarchy is preserved: fallback search through local folders and final fallback to `boss-placeholder.svg`.
+
+### 4. Track Configuration Updates
+- In [data/tracks_config.json](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks_config.json) & [static/js/tracks-config.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/tracks-config.js):
+  - Updated `boss_folder` for the `default` track to:
+    `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/DefaultBosses`
+  - **Foundational Tracks Preserved**: Kept `"boss_folder": "data/tracks/foundational/bosses"` untouched per requirements. When foundational tracks request boss images (e.g. `orbital-ogre.png`), the catalog detects them as default boss images and routes them to `DefaultBosses`.
+
+### 5. Automated Tests Updated
+- In [tests/test_tracks_config.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_tracks_config.py):
+  - Updated default track assertion: `assert "DefaultBosses" in track["boss_folder"]`.
+  - Added test for default boss image redirection to `DefaultBosses/orbital-ogre.png`.
+- In [tests/test_track_content_loading.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_track_content_loading.py):
+  - Updated foundational track and default track boss image assertions to handle both `200 OK` (local) and `307 Temporary Redirect` to `DefaultBosses`.
+  - Passed `follow_redirects=False` in `client.get(...)` to properly inspect redirection headers.
+- In [tests/test_tracks_postgresql.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_tracks_postgresql.py):
+  - Updated `default_track.boss_folder` assertion to accept `DefaultBosses`.
+
+## Verification & Test Results
+
+### 1. Live S3 Bucket Probe
+- Validated via `curl -I`:
+  - `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/DefaultBosses/orbital-ogre.png` &rarr; **HTTP/2 200 OK** (3.09 MB)
+  - `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/DefaultBosses/acetylide-archer.png` &rarr; **HTTP/2 200 OK** (2.48 MB)
+
+### 2. Pytest Test Suites
+- `tests/test_tracks_config.py`: **8 passed in 0.41s**
+- `tests/test_track_content_loading.py`: **9 passed in 1.12s**

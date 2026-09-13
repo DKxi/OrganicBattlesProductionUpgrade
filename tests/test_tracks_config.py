@@ -50,7 +50,7 @@ def test_default_track_config_and_bundle_loading():
     assert track is not None
     assert track["id"] == "default"
     assert track["data_folder"] == "data/tracks/default"
-    assert track["boss_folder"] == "data/tracks/default/bosses"
+    assert "DefaultBosses" in track["boss_folder"]
 
     # Verify bundle loads from data/tracks/default
     bundle = load_track_bundle(settings.root_dir, "default")
@@ -147,6 +147,14 @@ def test_serve_boss_image_from_track_boss_folder():
         assert "AdvancedBosses/carbocation-colossus.png" in res2.headers.get("location", "")
     else:
         assert "image" in res2.headers.get("content-type", "")
+
+    # Default boss image redirects to Supabase S3 DefaultBosses
+    res_def = client.get("/static/assets/bosses/orbital-ogre.png")
+    assert res_def.status_code in (200, 307)
+    if res_def.status_code == 307:
+        assert "DefaultBosses/orbital-ogre.png" in res_def.headers.get("location", "")
+    else:
+        assert "image" in res_def.headers.get("content-type", "")
 
     # 2. Image from fallback static folder
     res3 = client.get("/static/assets/bosses/boss-placeholder.svg")

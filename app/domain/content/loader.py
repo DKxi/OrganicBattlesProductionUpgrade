@@ -728,4 +728,59 @@ def is_advanced_boss_image(filename: str, root_dir: Optional[Path] = None) -> bo
     return name in get_advanced_boss_names(root_dir)
 
 
+_DEFAULT_BOSS_NAMES = None
+
+def get_default_boss_names(root_dir: Optional[Path] = None) -> set:
+    """Returns the set of image filenames belonging to the Default Bosses catalog."""
+    global _DEFAULT_BOSS_NAMES
+    if _DEFAULT_BOSS_NAMES is not None:
+        return _DEFAULT_BOSS_NAMES
+
+    names = set()
+    root = root_dir or settings.root_dir
+    default_dir = root / "data" / "tracks" / "default" / "bosses"
+    if default_dir.is_dir():
+        for p in default_dir.glob("*.*"):
+            if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".svg"}:
+                names.add(p.name)
+
+    # Static fallback set of 76 default boss images in case local directory is removed
+    if not names:
+        names = {
+            "acetylide-archer.png", "addition-reaction-titan.png", "alcohol-alchemist.png",
+            "alkane-marauder.png", "alkene-charger.png", "alkyne-overlord.png",
+            "bondbreaker-brute.png", "carbocation-shapeshifter.png", "chain-reaction-colossus.png",
+            "chemical-shift-seer.png", "chiral-chimera.png", "conformation-mimic.png",
+            "conformation-seer.png", "conformer-imp.png", "conjugate-basilisk.png",
+            "coupling-conjurer.png", "curved-arrow-trickster.png", "cycloalkane-crusher.png",
+            "dehydration-djinn.png", "diastereomer-duelist.png", "e1-sorcerer.png",
+            "e2-executioner.png", "electrophile-warden.png", "enantiomer-elf.png",
+            "epoxide-ambusher.png", "equilibrium-lich.png", "ether-enchanter.png",
+            "fingerprint-fiend.png", "fragmentation-phantom.png", "functional-group-golem.png",
+            "halogenation-hunter.png", "halohydrin-hydra.png", "hybridization-goblin.png",
+            "hydration-harpy.png", "hydroboration-ranger.png", "hydroxyl-golem.png",
+            "initiation-imp.png", "integration-illusionist.png", "ir-specter.png",
+            "lewis-rune-knight-boss.png", "lewis-rune-knight.png", "markovnikov-marauder.png",
+            "mass-spec-behemoth.png", "mechanism-titan.png", "molecular-mapmaster.png",
+            "molecular-property-titan.png", "newman-sentinel.png", "nmr-oracle.png",
+            "nucleophile-raider.png", "orbital-ogre.png", "oxidation-ogre.png",
+            "phenol-phantom.png", "pka-warlock.png", "polarity-phantom.png",
+            "propagation-phantom.png", "proton-prowler.png", "radical-reaper.png",
+            "reagent-alchemist.png", "reduction-reaver.png", "resonance-wraith.png",
+            "retrosynthesis-rogue.png", "ring-opening-rogue.png", "ring-strain-behemoth.png",
+            "skeletal-sketcher.png", "sn1-knight.png", "sn2-assassin.png",
+            "splitting-sorcerer.png", "stereochemistry-overlord.png", "sulfide-sentinel.png",
+            "synthesis-grandmaster.png", "synthetic-pathweaver.png", "thiol-trickster.png",
+            "transformation-tactician.png", "transition-state-wraith.png",
+            "triple-bond-basilisk.png", "vibration-wraith.png"
+        }
+    _DEFAULT_BOSS_NAMES = names
+    return _DEFAULT_BOSS_NAMES
+
+def is_default_boss_image(filename: str, root_dir: Optional[Path] = None) -> bool:
+    """Check if a filename corresponds to a default boss image."""
+    name = Path(filename).name
+    return name in get_default_boss_names(root_dir)
+
+
 

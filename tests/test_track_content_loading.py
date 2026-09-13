@@ -440,7 +440,7 @@ def test_switch_track_from_advanced_to_foundational_fallback():
     assert adv_session["boss"]["image"] == "valence-vanguard.png"
 
     # Verify advanced boss image is served via static route
-    adv_img_res = client.get(f"/static/assets/bosses/{adv_session['boss']['image']}")
+    adv_img_res = client.get(f"/static/assets/bosses/{adv_session['boss']['image']}", follow_redirects=False)
     assert adv_img_res.status_code in (200, 307)
     if adv_img_res.status_code == 307:
         assert "AdvancedBosses" in adv_img_res.headers.get("location", "")
@@ -501,15 +501,18 @@ def test_switch_track_from_advanced_to_foundational_fallback():
     assert found_session["boss"]["max_hp"] == 100
     assert found_session["boss"]["image"] == "orbital-ogre.png"
 
-    # B. Boss image served from data/tracks/foundational/bosses or default bosses
-    found_img_res = client.get(f"/static/assets/bosses/{found_session['boss']['image']}")
-    assert found_img_res.status_code == 200
-    expected_default_img = settings.root_dir / "data" / "tracks" / "default" / "bosses" / "orbital-ogre.png"
-    expected_found_img = settings.root_dir / "data" / "tracks" / "foundational" / "bosses" / "orbital-ogre.png"
-    valid_sizes = [expected_default_img.stat().st_size]
-    if expected_found_img.is_file():
-        valid_sizes.append(expected_found_img.stat().st_size)
-    assert len(found_img_res.content) in valid_sizes
+    # B. Boss image served from DefaultBosses (Supabase redirect) or data/tracks/foundational/bosses
+    found_img_res = client.get(f"/static/assets/bosses/{found_session['boss']['image']}", follow_redirects=False)
+    assert found_img_res.status_code in (200, 307)
+    if found_img_res.status_code == 307:
+        assert "DefaultBosses/orbital-ogre.png" in found_img_res.headers.get("location", "")
+    else:
+        expected_default_img = settings.root_dir / "data" / "tracks" / "default" / "bosses" / "orbital-ogre.png"
+        expected_found_img = settings.root_dir / "data" / "tracks" / "foundational" / "bosses" / "orbital-ogre.png"
+        valid_sizes = [expected_default_img.stat().st_size]
+        if expected_found_img.is_file():
+            valid_sizes.append(expected_found_img.stat().st_size)
+        assert len(found_img_res.content) in valid_sizes
 
     # C. Domain bundle loader verifies data_dir falls back to default and boss_dir resolves properly
     bundle_found = load_track_bundle(settings.root_dir, "found-nomenclature")
@@ -574,11 +577,14 @@ def test_default_track_direct_selection_and_combat():
     assert sess["boss"]["name"] == "Orbital Ogre"
     assert sess["boss"]["image"] == "orbital-ogre.png"
 
-    # Verify boss image served from data/tracks/default/bosses
-    img_res = client.get(f"/static/assets/bosses/{sess['boss']['image']}")
-    assert img_res.status_code == 200
-    default_img_file = settings.root_dir / "data" / "tracks" / "default" / "bosses" / "orbital-ogre.png"
-    assert len(img_res.content) == default_img_file.stat().st_size
+    # Verify boss image served from DefaultBosses (Supabase redirect) or data/tracks/default/bosses
+    img_res = client.get(f"/static/assets/bosses/{sess['boss']['image']}", follow_redirects=False)
+    assert img_res.status_code in (200, 307)
+    if img_res.status_code == 307:
+        assert "DefaultBosses/orbital-ogre.png" in img_res.headers.get("location", "")
+    else:
+        default_img_file = settings.root_dir / "data" / "tracks" / "default" / "bosses" / "orbital-ogre.png"
+        assert len(img_res.content) == default_img_file.stat().st_size
 
     # Play combat turn in default track
     bundle_def = load_track_bundle(settings.root_dir, "default")

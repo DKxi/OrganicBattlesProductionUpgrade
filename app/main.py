@@ -54,7 +54,7 @@ def create_app() -> FastAPI:
     application.include_router(health.router)
 
 
-    from app.domain.content.loader import load_tracks_config, is_advanced_boss_image
+    from app.domain.content.loader import load_tracks_config, is_advanced_boss_image, is_default_boss_image
 
     @application.get("/static/assets/bosses/{filename:path}")
     @application.get("/bosses/{filename:path}")
@@ -63,9 +63,11 @@ def create_app() -> FastAPI:
         Dynamically serve boss images.
         1. If the image belongs to the Advanced Bosses catalog and Supabase S3 / Storage is active,
            redirects (307 Temporary Redirect) to Supabase Storage public CDN (Approach 1).
-        2. Configured track boss folders from tracks_config.json
-        3. Fallback search through data/tracks/default/bosses, bosses/, data/bosses, static/assets/bosses
-        4. Final fallback to static/assets/bosses/boss-placeholder.svg
+        2. If the image belongs to the Default Bosses catalog and Supabase S3 / Storage is active,
+           redirects (307 Temporary Redirect) to Supabase Storage DefaultBosses public CDN.
+        3. Configured track boss folders from tracks_config.json (local files).
+        4. Fallback search through data/tracks/default/bosses, bosses/, data/bosses, static/assets/bosses
+        5. Final fallback to static/assets/bosses/boss-placeholder.svg
         """
         raw_name = Path(filename).name
 
@@ -74,7 +76,7 @@ def create_app() -> FastAPI:
         if Path(raw_name).suffix.lower() not in allowed_exts:
             raise HTTPException(404, f"Invalid image format for '{raw_name}'")
 
-        # Approach 1: Redirect to Supabase Public Storage CDN for Advanced Bosses
+        # Redirect to Supabase Public Storage CDN for Advanced Bosses
         if settings.use_supabase_boss_storage and is_advanced_boss_image(raw_name, settings.root_dir):
             public_url = f"{settings.supabase_public_storage_base_url}/{raw_name}"
             return RedirectResponse(
@@ -83,29 +85,25 @@ def create_app() -> FastAPI:
                 headers={"Cache-Control": "public, max-age=86400"}
             )
 
+        # Redirect to Supabase Public Storage CDN for Default Bosses
+        if settings.use_supabase_boss_storage and is_default_boss_image(raw_name, settings.root_dir):
+            public_url = f"{settings.supabase_default_bosses_base_url}/{raw_name}"
+            return RedirectResponse(
+                url=public_url,
+                status_code=307,
+                headers={"Cache-Control": "public, max-age=86400"}
+            )
+
         config = load_tracks_config(settings.root_dir)
 
-        # 1. Configured track boss folders
+        # 1. Configured track boss folders (local directories)
         for t in config.get("tracks", []):
             bf = t.get("boss_folder")
-            if bf:
-                if bf.startswith("http://") or bf.startswith("https://"):
-                    return RedirectResponse(
-                        url=f"{bf.rstrip('/')}/{raw_name}",
-                        status_code=307,
-                        headers={"Cache-Control": "public, max-age=86400"}
-                    )
-                elif bf.startswith("s3://"):
-                    return RedirectResponse(
-                        url=f"{settings.supabase_public_storage_base_url}/{raw_name}",
-                        status_code=307,
-                        headers={"Cache-Control": "public, max-age=86400"}
-                    )
-                else:
-                    bf_path = Path(bf) if Path(bf).is_absolute() else settings.root_dir / bf
-                    target_file = bf_path / raw_name
-                    if target_file.is_file():
-                        return FileResponse(target_file)
+            if bf and not (bf.startswith("http://") or bf.startswith("https://") or bf.startswith("s3://")):
+                bf_path = Path(bf) if Path(bf).is_absolute() else settings.root_dir / bf
+                target_file = bf_path / raw_name
+                if target_file.is_file():
+                    return FileResponse(target_file)
 
         # 2. Fallback to default track bosses folder data/tracks/default/bosses
         default_bosses = settings.root_dir / "data" / "tracks" / "default" / "bosses" / raw_name
