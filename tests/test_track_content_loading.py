@@ -441,8 +441,11 @@ def test_switch_track_from_advanced_to_foundational_fallback():
 
     # Verify advanced boss image is served via static route
     adv_img_res = client.get(f"/static/assets/bosses/{adv_session['boss']['image']}")
-    assert adv_img_res.status_code == 200
-    assert len(adv_img_res.content) > 0
+    assert adv_img_res.status_code in (200, 307)
+    if adv_img_res.status_code == 307:
+        assert "AdvancedBosses" in adv_img_res.headers.get("location", "")
+    else:
+        assert len(adv_img_res.content) > 0
 
     # Play a turn in advanced track
     bundle_adv = load_track_bundle(settings.root_dir, "adv-vocab")

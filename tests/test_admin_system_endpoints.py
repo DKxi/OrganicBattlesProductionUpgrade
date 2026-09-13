@@ -187,7 +187,7 @@ def test_admin_switch_folders(admin_client):
             t = db.query(Track).filter_by(id="adv-vocab").first()
             if t:
                 t.data_folder = "data/tracks/advanced/VocabularyConceptsData"
-                t.boss_folder = "data/tracks/advanced/bosses"
+                t.boss_folder = "https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/AdvancedBosses"
                 db.commit()
         from app.api.deps import TRACK_BUNDLES
         TRACK_BUNDLES.clear()

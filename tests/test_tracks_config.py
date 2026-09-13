@@ -41,7 +41,7 @@ def test_get_track_config():
     assert track["curriculum"] == "advanced"
     assert track["chapters"] == 27
     assert track["data_folder"] == "data/tracks/advanced/ReactionOutComeTypesData"
-    assert track["boss_folder"] == "data/tracks/advanced/bosses"
+    assert "AdvancedBosses" in track["boss_folder"]
 
 
 def test_default_track_config_and_bundle_loading():

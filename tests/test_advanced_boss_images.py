@@ -47,8 +47,9 @@ BOSS_ENTRIES = get_boss_images_from_bestiary()
 
 
 def test_bosses_folder_exists():
-    """Verify that the 'bosses' directory exists in the workspace."""
-    assert os.path.isdir(BOSSES_DIR), f"Bosses directory '{BOSSES_DIR}' does not exist."
+    """Verify that the 'bosses' directory exists in the workspace or the Supabase catalog is registered."""
+    from app.domain.content.loader import get_advanced_boss_names
+    assert os.path.isdir(BOSSES_DIR) or len(get_advanced_boss_names()) >= 135
 
 
 def test_bestiary_boss_count():
@@ -58,11 +59,14 @@ def test_bestiary_boss_count():
 
 def test_all_boss_images_exist():
     """
-    Master check: Verifies all 135 boss asset images exist in the bosses/ folder.
+    Master check: Verifies all 135 boss asset images exist in the bosses/ folder or Supabase catalog.
     Reports all missing files and near-match suggestions in a single detailed assertion error.
     """
-    assert os.path.isdir(BOSSES_DIR), f"Bosses directory '{BOSSES_DIR}' not found."
-    existing_files = set(os.listdir(BOSSES_DIR))
+    from app.domain.content.loader import get_advanced_boss_names
+    if os.path.isdir(BOSSES_DIR):
+        existing_files = set(os.listdir(BOSSES_DIR))
+    else:
+        existing_files = get_advanced_boss_names()
 
     missing = []
     near_matches = []
