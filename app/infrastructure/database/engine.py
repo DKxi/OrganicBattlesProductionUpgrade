@@ -211,12 +211,12 @@ SessionLocal = PlayerSessionLocal
 
 
 def set_session_user_context(db: DBSession, user_id: str) -> None:
-    """Set connection player identity for PostgreSQL Row-Level Security (RLS)."""
+    """Set transaction-local player identity for PostgreSQL Row-Level Security (RLS)."""
     try:
         bind = db.get_bind()
         if bind and bind.dialect.name == "postgresql":
             db.execute(
-                text("select set_config('app.current_user_id', :user_id, false)"),
+                text("select set_config('app.current_user_id', :user_id, true)"),
                 {"user_id": str(user_id)},
             )
     except Exception as exc:
