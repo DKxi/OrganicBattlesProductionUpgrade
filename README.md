@@ -1,390 +1,571 @@
 # Organic Battles — Technical Documentation & Architecture Reference
 
-**Organic Battles** is a browser-based educational role-playing game (RPG) designed to reinforce organic chemistry concepts through boss battles. Players choose alchemist companion avatars, cast chemistry spells across progressive difficulty tiers, and answer chapter-aligned chemistry vocabulary trials to defeat bosses and progress through 27 organic chemistry chapters.
+**Organic Battles** is a production-grade, browser-based educational role-playing game (RPG) designed to teach and master organic chemistry through turn-based boss battles. Players select companion avatars, cast tiered chemistry spells, and answer curriculum-aligned multiple-choice questions to defeat bosses and progress across 20 distinct curriculum tracks spanning 27 chapters and over 27,000 questions.
 
 ---
 
-## 1. System Overview & Technology Stack
+## Table of Contents
+1. [System Architecture & High-Level Topology](#1-system-architecture--high-level-topology)
+2. [Technology Stack & Runtime Dependencies](#2-technology-stack--runtime-dependencies)
+3. [Repository Directory & Modular Structure](#3-repository-directory--modular-structure)
+4. [Architecture Flow Diagrams](#4-architecture-flow-diagrams)
+   - [4.1 End-to-End System & Asset Delivery Topology](#41-end-to-end-system--asset-delivery-topology)
+   - [4.2 Turn-Based Combat & Concurrency State Machine](#42-turn-based-combat--concurrency-state-machine)
+   - [4.3 Content Ingestion, Validation & Atomic Release Lifecycle](#43-content-ingestion-validation--atomic-release-lifecycle)
+   - [4.4 Least-Privilege Database Role Access Flow](#44-least-privilege-database-role-access-flow)
+   - [4.5 Boss Image S3 CDN Resolution & Browser CSP Flow](#45-boss-image-s3-cdn-resolution--browser-csp-flow)
+5. [Core Engineering Subsystems](#5-core-engineering-subsystems)
+   - [5.1 Pure Domain Combat Engine & P0 Invariant Guards](#51-pure-domain-combat-engine--p0-invariant-guards)
+   - [5.2 Versioned Content Releases & Shared Cache Manager](#52-versioned-content-releases--shared-cache-manager)
+   - [5.3 Database Connection Pooling & Least-Privilege Roles](#53-database-connection-pooling--least-privilege-roles)
+   - [5.4 S3 Storage Asset Decoupling & Lean Containers](#54-s3-storage-asset-decoupling--lean-containers)
+   - [5.5 Security Hardening & Observability Telemetry](#55-security-hardening--observability-telemetry)
+6. [REST API Reference (`/api/v1/`)](#6-rest-api-reference-apiv1)
+7. [Design Pros and Cons](#7-design-pros-and-cons)
+8. [Points to Remember & Operational Guidelines](#8-points-to-remember--operational-guidelines)
+9. [Local Development, Environment Setup & Testing](#9-local-development-environment-setup--testing)
+
+---
+
+## 1. System Architecture & High-Level Topology
 
 ```mermaid
 flowchart TB
-    subgraph Client["Client Browser (Single Page Application)"]
-        UI["HTML5 UI & DOM Controls<br/>(main.js · avatars.js · game.css)"]
-        Phaser["Phaser 3 Visual Arena<br/>(2D WebGL/Canvas · Dynamic Aura FX)"]
-        AudioEngine["Web Audio Synthesizer<br/>(audio.js · Procedural SFX · Mute)"]
-        AdminUI["Admin Configuration Portal<br/>(Users · Sessions · Reset/Delete)"]
+    subgraph ClientLayer["Client Layer (Modern Browsers: Safari · Chrome · Firefox · Edge)"]
+        UI["HTML5 Glassmorphic UI<br/>(static/js/main.js · static/css/game.css)"]
+        Phaser["Phaser 3 Visual Arena<br/>(Dynamic Chapter Auras · RESIZE Scale)"]
+        Audio["Web Audio Synthesizer<br/>(static/js/audio.js · Zero External Assets)"]
         UI <--> Phaser
-        UI --> AudioEngine
-        UI --- AdminUI
+        UI --> Audio
     end
 
-    subgraph Server["FastAPI Modular Backend (app/)"]
-        Router["FastAPI Application Layer (app/main.py)"]
-        SecurityMW["Security & Rate Limiting Middleware<br/>(HSTS · CSP · X-Frame · Slowapi)"]
+    subgraph EdgeLayer["Edge Delivery & Storage Layer"]
+        SupabaseS3[("Supabase S3 Object Storage<br/>Buckets: DefaultBosses · AdvancedBosses · FoundationalBosses")]
+        CloudCDN["Public HTTPS CDN Edge<br/>(*.supabase.co / *.storage.supabase.co)"]
+        SupabaseS3 --> CloudCDN
+    end
+
+    subgraph WebCompute["Stateless Modular Monolith (FastAPI)"]
+        SecurityMW["Security Middleware<br/>(CSP · HSTS · X-Frame · X-Content-Type · Slowapi)"]
+        RouterLayer["API Router Layer (/api/v1/)<br/>(auth.py · battle.py · game.py · admin.py)"]
+        DomainLayer["Pure Domain Rules<br/>(app/domain/combat/rules.py · spells.py)"]
+        SharedCache["SharedTrackCacheManager<br/>(Versioned (track_id, release_id) Keys · Lock Protection)"]
+        Metrics["Prometheus Metrics Registry<br/>(Query Latency · Saturation · Fallbacks)"]
         
-        subgraph APILayer["API / Router Layer (app/api/v1/)"]
-            AuthRouter["auth.py<br/>(/api/v1/auth/*)"]
-            BattleRouter["battle.py<br/>(/api/v1/battle/*)"]
-            GameRouter["game.py<br/>(/api/v1/game/*)"]
-            AdminRouter["admin.py<br/>(/api/v1/admin/*)"]
-        end
-
-        subgraph DomainLayer["Pure Domain Logic (app/domain/)"]
-            CombatRules["combat/rules.py & spells.py<br/>(Pure Python · 0 Framework Dependencies)"]
-            ContentEngine["content/loader.py & resolver.py<br/>(27 Chapters · Boss Strategy Engine)"]
-            AccountRules["accounts/entities.py"]
-        end
-
-        subgraph InfraLayer["Infrastructure Layer (app/infrastructure/)"]
-            DBModels["database/models.py & session.py"]
-            Repositories["database/repositories.py<br/>(UserRepository · SessionRepository)"]
-            EmailService["messaging/smtp.py<br/>(Async SMTP / Worker Queue)"]
-        end
-
-        Router --> SecurityMW --> APILayer
-        AuthRouter --> Repositories & EmailService
-        BattleRouter --> CombatRules & Repositories & ContentEngine
-        GameRouter --> ContentEngine & Repositories
-        AdminRouter --> Repositories & ContentEngine
+        SecurityMW --> RouterLayer
+        RouterLayer --> DomainLayer
+        RouterLayer --> SharedCache
+        RouterLayer --> Metrics
     end
 
-    subgraph Persistence["Storage & Data"]
-        subgraph DB["Relational Database (PostgreSQL / SQLite3)"]
-            UsersTable[("OB_users")]
-            SessionsTable[("OB_game_sessions")]
-            AuthTable[("OB_auth_sessions")]
-            OTPTable[("OB_verification_codes")]
-            CurriculaTable[("OB_curricula")]
-            TracksTable[("OB_tracks")]
-            QuestionsTable[("OB_questions<br/>(27,000 Questions)")]
-        end
-
-        subgraph ContentFiles["Content Archive (data/tracks/)"]
-            ConfigJSON["data/tracks_config.json"]
-            TrackDirs["data/tracks/*<br/>(20 Tracks · 2 Curricula · 27 Chapters each)"]
-        end
+    subgraph DataPlane["Data & Persistence Layer"]
+        Pooler["Supabase IPv4 Pooler (:5432 / :6543)<br/>(QueuePool: pool_size=10 · max_overflow=20)"]
+        PostgreSQL[("PostgreSQL 15+ Database<br/>Unified OB_ Table Prefix · Alembic Migrations 0001-0009")]
+        LocalCache[("Redis / Valkey / Bounded Memory Cache")]
+        
+        Pooler --> PostgreSQL
     end
 
-    Client <-->|"REST API / JSON / Bearer & Cookies"| Router
-    Repositories <--> DB
-    ContentEngine <--> DB
-    ContentEngine -.->|"Fallback"| TrackDirs
+    ClientLayer <-->|"REST API / JSON / HttpOnly Cookies"| SecurityMW
+    ClientLayer <-->|"Direct Boss Image Fetch"| CloudCDN
+    WebCompute <--> Pooler
+    SharedCache <--> LocalCache
+    RouterLayer -.->|"307 Redirect (/static/assets/bosses/*)"| CloudCDN
 ```
-
-### Core Technologies
-
-| Layer | Technology | Version | Purpose |
-|---|---|---|---|
-| **Backend Framework** | **FastAPI** | `0.115.6` | High-performance async REST API with automatic OpenAPI docs and dependency injection. |
-| **Settings & Validation** | **Pydantic V2 & Settings** | `2.10.4` | Strictly typed environment validation (`pydantic-settings`) and request/response serialization (`model_dump`). |
-| **ASGI Server** | **Uvicorn** | `0.34.0` | Production ASGI web server supporting hot-reloading and multi-worker execution. |
-| **Database & ORM** | **SQLAlchemy** | `2.0.36` | ORM repositories managing `OB_users`, `OB_game_sessions`, `OB_auth_sessions`, `OB_verification_codes`, `OB_curricula`, `OB_tracks`, and `OB_questions`. |
-| **Database Engine** | **PostgreSQL / SQLite3** | `psycopg2` / Native | Default PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`) with connection pooling (`pool_size=10`, `max_overflow=20`) and local SQLite3 support with live bidirectional migration. |
-| **Audio Synthesizer** | **Web Audio API** | Native Browser | Procedural, zero-download low-latency SFX engine in [`static/js/audio.js`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/static/js/audio.js). |
-| **Frontend Framework** | **Vanilla JS (ES Modules)** | ES2022+ | Modular JavaScript (`main.js`, `avatars.js`, `audio.js`) without heavy node build toolchains. |
-| **Styling** | **Vanilla CSS3** | Custom Theme | Glassmorphism, neon HUD accents, responsive cards, 4-tab admin portal, and dynamic battle arena. |
-| **Game Engine** | **Phaser 3** | `3.60.0` (CDN) | 2D WebGL/Canvas arena rendering dynamic chapter auras and particle effects. |
-| **Rate Limiting** | **Slowapi** | `0.1.9` | Token-bucket rate limiter protecting auth, signup, and combat endpoints. |
-| **Test Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | Automated test suite verifying combat rules, question sequential parity, tracks, PostgreSQL database, and admin management. |
 
 ---
 
-## 2. Directory & Modular Architecture
+## 2. Technology Stack & Runtime Dependencies
 
-The application is structured according to **Clean / Domain-Driven Architecture**, cleanly separating API controllers, pure domain rules, and infrastructure implementations:
+| Layer | Technology | Version | Purpose & Description |
+|---|---|---|---|
+| **Backend Framework** | **FastAPI** | `0.115.6` | High-performance asynchronous API server with modular routers and OpenAPI documentation. |
+| **Validation & Settings** | **Pydantic V2 & Settings** | `2.10.4` | Strictly typed environment validation ([app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py)) and schema serialization (`model_dump`). |
+| **ASGI Web Server** | **Uvicorn** | `0.34.0` | Production ASGI server supporting multi-worker execution and keep-alive connections. |
+| **Database & ORM** | **SQLAlchemy 2.x** | `2.0.36` | Fully typed models with unified `OB_` table naming and native `JSONB` column variants. |
+| **Database Engine** | **PostgreSQL / SQLite3** | `psycopg2` / Native | Managed PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`) with connection pooling and local SQLite3 fallback. |
+| **Schema Migrations** | **Alembic** | `1.14.1` | Programmatic migration engine ([app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py)) managing revisions `0001` through `0009`. |
+| **Object Storage** | **AWS S3 / Supabase Storage** | `boto3` `1.36.3` | Direct streaming reader ([app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py)) for track chapters and public CDN buckets for boss PNGs. |
+| **Distributed Cache** | **Redis / In-Memory Tier** | `redis` `5.2.1` | Versioned caching keyed by `(track_id, release_id)` with zlib compression and thundering-herd lock protection. |
+| **Audio Synthesizer** | **Web Audio API** | Native Browser | Procedural, zero-download sound engine in [static/js/audio.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/audio.js). |
+| **Game Engine** | **Phaser 3** | `3.60.0` (CDN) | 2D WebGL/Canvas arena rendering dynamic chapter auras and responsive canvas scaling (`Phaser.AUTO`, `Phaser.Scale.RESIZE`). |
+| **Rate Limiting** | **Slowapi** | `0.1.9` | Token-bucket rate limiting defending `/auth/signup`, `/auth/login`, and `/admin/login`. |
+| **Testing Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | 384 automated tests covering combat mechanics, concurrency, security, database roles, and UI rendering. |
+
+---
+
+## 3. Repository Directory & Modular Structure
+
+The codebase is organized as a **Clean Modular Monolith**:
 
 ```text
 OrganicBattles/
-├── app/                                # Modular Application Package
-│   ├── main.py                         # FastAPI application factory, middleware, router mounts
-│   ├── settings.py                     # Centralized Pydantic Settings (.env validator)
-│   ├── api/                            # API Controller Layer
-│   │   ├── deps.py                     # Dependency injection (get_db, get_current_user, get_bundle)
-│   │   └── v1/                         # API Version 1 Routers
-│   │       ├── auth.py                 # Signup, Login, Email OTP Verification, Logout
-│   │       ├── battle.py               # Spell selection, Question answering, Next-turn, Retry
-│   │       ├── game.py                 # New game initialization, State query, Avatar finalization
-│   │       └── admin.py                # Admin auth, user content mode switcher, session manager
-│   ├── domain/                         # Pure Business Logic (Zero Framework / DB Dependencies)
-│   │   ├── accounts/                   # User entities, password hashing, session tokens
-│   │   ├── combat/                     # Combat engine, spell catalog, turn damage grader, cooldowns
-│   │   │   ├── entities.py             # Spell, CombatTurnResult dataclasses
-│   │   │   ├── rules.py                # Pure evaluate_combat_turn, grade_answer, decrement_cooldowns
-│   │   │   └── spells.py               # 9-spell catalog, tier categorization, damage defaults
-│   │   ├── content/                    # Content engine and chapter loader
-│   │   │   ├── entities.py             # ContentBundle dataclass
-│   │   │   ├── loader.py               # JSON manifest & Chapter parser, builtin app bundle loader
-│   │   │   └── resolver.py             # Content source resolution hierarchy
-│   │   └── progression/                # Chapter advancing, boss progression, rewards
-│   ├── infrastructure/                 # External Integrations & Data Layer
-│   │   ├── database/                   # SQLAlchemy engine, session maker, declarative models
-│   │   │   ├── models.py               # User, GameSession, AuthSession, VerificationCode models
-│   │   │   ├── session.py              # Engine factory, get_db generator
-│   │   │   └── repositories.py         # UserRepository, SessionRepository, AuthRepository
-│   │   └── messaging/                  # SMTP email delivery, background workers
-│   │       └── smtp.py                 # send_verification_code_email with console fallback
-│   ├── observability/                  # Logging, telemetry, and health probes
-│   │   ├── logging.py                  # Structured logging configuration
-│   │   └── metrics.py                  # Live and ready health check probes
-│   └── workers/                        # Async background job workers
-│       └── email.py                    # Threaded/Async email delivery worker
-├── data/                               # 27 Organic Chemistry Chapters (1,350 Questions · 135 Bosses)
-│   ├── manifest.json                   # Master manifest mapping all 27 chapters
-│   ├── chapter_01.json                 # Chapter 1: Foundations, Electrons, Bonds, Properties
-│   ├── chapter_02.json                 # Chapter 2: Molecular Structure & Representations
-│   └── ...                             # chapter_03.json through chapter_27.json
-├── static/                             # Static Frontend Assets
-│   ├── css/
-│   │   └── game.css                    # Complete RPG design system, arena styling, admin portal
+├── app/                                        # Modular Application Core
+│   ├── main.py                                 # FastAPI factory, CORS, CSP middleware, boss 307 redirects
+│   ├── settings.py                             # Centralized Pydantic Settings & environment resolver
+│   ├── api/                                    # Controller Layer
+│   │   ├── deps.py                             # Dependency injection (get_db, auth_admin, limiter)
+│   │   └── v1/                                 # Version 1 API Endpoints
+│   │       ├── auth.py                         # Account registration, login, verification, logout
+│   │       ├── battle.py                       # Spell selection, question grading, advance, retry
+│   │       ├── game.py                         # Active session state, curriculum track catalog
+│   │       ├── admin.py                        # Admin telemetry, user credentials, live DB switch
+│   │       └── questions_admin.py              # Schema-validated question CRUD operations
+│   ├── domain/                                 # Pure Business Logic (Zero Framework / DB Dependencies)
+│   │   ├── combat/                             # Turn resolution, 9-spell catalog, cooldowns, damage
+│   │   │   ├── entities.py                     # Spell, CombatTurnResult dataclasses
+│   │   │   ├── rules.py                        # evaluate_combat_turn, grade_answer, P0 invariant guards
+│   │   │   └── spells.py                       # Spell tier configurations and damage profiles
+│   │   ├── content/                            # Question parsing, schema validation, bundle loading
+│   │   │   ├── entities.py                     # ContentBundle dataclass
+│   │   │   ├── loader.py                       # load_db_bundle, S3 & DB track resolution
+│   │   │   └── validator.py                    # validate_question_payload (options, health, spells)
+│   │   └── progression/                        # Progression tracking and boss victory rules
+│   ├── infrastructure/                         # External I/O and Persistence Layer
+│   │   ├── database/                           # Database engine and ORM repositories
+│   │   │   ├── models.py                       # Unified OB_ declarative models with JSONB variants
+│   │   │   ├── engine.py                       # Pooler setup, connection pooling, NullPool runners
+│   │   │   ├── migrator.py                     # Repeatable SQLite <-> PostgreSQL migration engine
+│   │   │   ├── alembic_runner.py               # Standalone programmatic Alembic execution
+│   │   │   ├── releases_repo.py                # ReleasesRepository (draft, publish, rollback)
+│   │   │   ├── session_repository.py           # GameSessionRepository with optimistic locking
+│   │   │   └── tracks_repo.py                  # TracksRepository (curricula and track metadata)
+│   │   ├── cache/                              # Caching Subsystem
+│   │   │   ├── shared_cache.py                 # SharedTrackCacheManager (versioned keying, locks)
+│   │   │   ├── track_cache.py                  # Bounded in-memory LRU track cache
+│   │   │   └── memory.py                       # In-memory admin tokens and verification codes
+│   │   ├── storage/                            # Cloud Object Storage Subsystem
+│   │   │   └── s3_reader.py                    # Boto3 reader for S3 chapter streaming and buckets
+│   │   ├── identity/                           # Cryptography & Token Helpers
+│   │   │   └── crypto.py                       # PBKDF2-HMAC-SHA256 (310k rounds), token generator
+│   │   └── messaging/                          # SMTP & Notifications
+│   │       └── smtp.py                         # Asynchronous SMTP delivery with console fallback
+│   └── observability/                          # Observability & Diagnostics
+│       ├── middleware.py                       # Security headers (CSP, HSTS) & request latency logger
+│       └── metrics.py                          # MetricsRegistry (query latency, pool saturation, RED)
+├── migrations/                                 # Alembic Database Migrations
+│   ├── env.py                                  # Dynamic Alembic environment runner
+│   └── versions/                               # Migration revisions 0001 through 0009
+├── scripts/                                    # Standalone Maintenance & Ingestion Tools
+│   ├── ingest_questions_to_postgres.py         # S3 streaming question ingestion & atomic publishing
+│   ├── warm_cache.py                           # Standalone cache warming CLI
+│   └── setup_supabase_least_privilege_roles.sql# SQL script establishing 5 least-privilege DB roles
+├── static/                                     # Static Browser Frontend
+│   ├── css/game.css                            # Glassmorphic RPG design system and arena styling
 │   ├── js/
-│   │   ├── main.js                     # Core application orchestrator, DOM event router, battle UI
-│   │   ├── avatars.js                  # Companion avatar engine, customizable equipment, sprite states
-│   │   └── audio.js                    # Web Audio procedural sound synthesizer (SFX & Mute)
-│   └── assets/
-│       ├── battle-arena.png            # High-resolution battle arena background
-│       └── bosses/                     # 76+ boss illustrations (.png) and fallback SVG placeholder
-├── templates/
-│   └── index.html                      # Single-page app shell, HUD, combat modals, admin console
-├── tests/                              # Automated Test Suite (41 Tests)
-│   ├── conftest.py                     # Shared test fixtures, in-memory DB setup, auth helpers
-│   ├── test_audio.py                   # 5 Web Audio & SFX integration tests
-│   ├── test_boss_strategy.py           # 3 Boss Strategy mathematical distribution tests
-│   ├── test_domain_combat.py           # 7 Pure Python domain combat & grading unit tests
-│   ├── test_email_config.py            # 2 SMTP & configuration validation tests
-│   └── test_game.py                    # 24 Full API integration, concurrency, and admin tests
-├── pyproject.toml                      # Project metadata & Pytest configuration
-├── requirements.txt                    # Pinned Python package dependencies
-├── ProdUpgradeTasks.md                 # Production upgrade roadmap and completion checklist
-└── README.md                           # Comprehensive architecture and technical documentation
+│   │   ├── main.js                             # Game orchestrator, DOM event routing, modal renderer
+│   │   ├── avatars.js                          # Companion avatar customizer and sprite renderer
+│   │   ├── audio.js                            # Web Audio procedural synthesizer (SFX & mute)
+│   │   └── tracks-config.js                    # Client track catalog and S3 boss CDN URL mappings
+│   └── assets/                                 # Arena backgrounds and fallback SVG placeholders
+├── templates/index.html                        # Single-Page Application HTML shell
+├── tests/                                      # 384 Automated Regression Tests
+├── ProdUpgradeTasks.md                         # Audited production roadmap with [FIXED] / [TODO] tags
+└── GetawayfromDatafolder.md                    # Data folder decoupling audit with [FIXED] / [TODO] tags
 ```
 
 ---
 
-## 3. System Architecture & Workflows
+## 4. Architecture Flow Diagrams
 
-### 3.1 Content Mode Priority & Resolution Flow
-
-Organic Battles supports both **Manifest-Driven JSON Content** (27 chapters, 135 bosses, 1,350 questions) and **Built-in App Content** (3 chapters, 14 bosses). Mode resolution occurs in strict order:
+### 4.1 End-to-End System & Asset Delivery Topology
 
 ```mermaid
 flowchart TD
-    Req["Incoming API Request"] --> CheckEnv{"Is GAME_CONTENT_SOURCE<br/>set in environment / .env?"}
+    Player["Player Browser<br/>(Safari / Chrome / Firefox)"]
+    
+    subgraph CDNNetwork["Supabase Storage S3 Edge"]
+        DefaultBosses["DefaultBosses Bucket"]
+        AdvancedBosses["AdvancedBosses Bucket"]
+        FoundationalBosses["FoundationalBosses Bucket"]
+    end
 
-    CheckEnv -- Yes --> EnvPriority["Priority 1 (.env Override):<br/>Apply global mode (e.g. 'json' or 'app')"]
-    CheckEnv -- No --> CheckDB{"Is content_source set<br/>on User record in DB?"}
+    subgraph AppServer["FastAPI Modular Application Layer"]
+        MainApp["app/main.py"]
+        BossRoute["GET /static/assets/bosses/{filename}.png"]
+        CSPFilter["Observability Middleware (CSP Header)"]
+        CombatAPI["POST /api/v1/battle/*"]
+        AdminAPI["POST /api/v1/admin/*"]
+    end
 
-    CheckDB -- Yes --> DBUser["Priority 2 (Database Setting):<br/>Apply user.content_source ('json' or 'app')"]
-    CheckDB -- No --> DefaultMode["Priority 3 (Default Mode):<br/>Default to 'json' (27 Chapters Archive)"]
+    subgraph StorageLayer["Database & Cache Engine"]
+        Pooler["Supabase IPv4 Pooler (:5432)"]
+        PostgresDB[("PostgreSQL Database<br/>OB_users · OB_game_sessions · OB_questions")]
+        RedisCache[("Redis / Local Shared Cache")]
+    end
 
-    EnvPriority --> LoadBundle["Retrieve Bundle from Memory Cache<br/>(JSON_BUNDLE or APP_BUNDLE)"]
-    DBUser --> LoadBundle
-    DefaultMode --> LoadBundle
+    Player -->|"1. Request boss image"| BossRoute
+    BossRoute -->|"2. 307 Temporary Redirect"| MainApp
+    MainApp -->|"3. Redirect URL"| Player
+    Player -->|"4. Direct GET from CDN"| CDNNetwork
+    CDNNetwork -->|"5. Serve PNG Image"| Player
 
-    LoadBundle --> ServeState["Serve Game State with Resolved Chapter, Boss & Dynamic Spells"]
+    Player -->|"Combat action"| CSPFilter
+    CSPFilter --> CombatAPI
+    CombatAPI --> Pooler --> PostgresDB
+    CombatAPI <--> RedisCache
 ```
 
 ---
 
-### 3.2 Boss Strategy & Difficulty Progression Engine
+### 4.2 Turn-Based Combat & Concurrency State Machine
 
-Every chapter file in `data/chapter_*.json` defines an explicit `boss_strategy` object governing difficulty distribution and scaling across 5 consecutive bosses:
+```mermaid
+stateDiagram-v2
+    [*] --> IdleAwaitingSpell: Battle Initialized (Player HP: 150)
 
-$$\text{Strategy Rule:} \quad \text{Easy} = 6 - i, \quad \text{Medium} = 4, \quad \text{Hard} = i \quad (i \in [0, 4])$$
+    IdleAwaitingSpell --> QuestionRevealed: Player selects spell (POST /battle/select-spell)
+    note right of QuestionRevealed: Question primed from bank.<br/>Correct answer secret stripped server-side.
+
+    QuestionRevealed --> AnswerGrading: Player submits answer (POST /battle/answer)
+    
+    state AnswerGrading {
+        [*] --> CheckOptimisticLock: Compare expected_version with DB
+        CheckOptimisticLock --> Conflict409: Version mismatch
+        CheckOptimisticLock --> EvaluateAnswer: Version match
+        
+        EvaluateAnswer --> CorrectTurn: Submitted choice matches answer
+        EvaluateAnswer --> FizzleTurn: Submitted choice incorrect
+        
+        CorrectTurn --> ApplyBossDamage: Boss HP -= Spell Damage
+        ApplyBossDamage --> BossCounterattack: 50% chance boss strikes
+        
+        FizzleTurn --> ApplySelfDamage: Player HP -= Spell Power (Backfire)
+    }
+
+    AnswerGrading --> BossDefeated: Boss HP <= 0
+    AnswerGrading --> PlayerDefeated: Player HP <= 0
+    AnswerGrading --> IdleAwaitingSpell: Both alive, cooldowns updated, version++
+
+    state BossDefeated {
+        [*] --> DefeatedAwaitingAdvance
+        DefeatedAwaitingAdvance --> AdvanceTurn: POST /battle/next-turn
+    }
+
+    state AdvanceTurn {
+        [*] --> ValidateDefeatGuard: Invariant check (Boss HP <= 0, Player HP > 0)
+        ValidateDefeatGuard --> Reject400: Boss still alive or Player dead
+        ValidateDefeatGuard --> AdvanceBoss: Record victory, advance cursor, restore Player HP to 150
+    }
+
+    AdvanceBoss --> IdleAwaitingSpell: Next Boss Arena Ready
+    
+    PlayerDefeated --> DefeatModal: Show DEFEAT & Unlock Retry
+    DefeatModal --> IdleAwaitingSpell: POST /battle/retry (Reset HP & Cooldowns)
+```
+
+---
+
+### 4.3 Content Ingestion, Validation & Atomic Release Lifecycle
 
 ```mermaid
 flowchart LR
-    subgraph Chapter["Chapter Structure (50 Questions · 5 Bosses)"]
-        B1["Boss 1 (e.g. Orbital Ogre)<br/>HP: 100 · Spells: [20, 30, 45]<br/>6 Easy · 4 Med · 0 Hard"]
-        B2["Boss 2 (e.g. Bondbreaker Brute)<br/>HP: 200 · Spells: [25, 35, 50]<br/>5 Easy · 4 Med · 1 Hard"]
-        B3["Boss 3 (e.g. Hybridization Goblin)<br/>HP: 300 · Spells: [30, 40, 55]<br/>4 Easy · 4 Med · 2 Hard"]
-        B4["Boss 4 (e.g. Polarity Phantom)<br/>HP: 400 · Spells: [35, 45, 60]<br/>3 Easy · 4 Med · 3 Hard"]
-        B5["Boss 5 (e.g. Molecular Property Titan)<br/>HP: 500 · Spells: [40, 50, 65]<br/>2 Easy · 4 Med · 4 Hard"]
+    subgraph IngestionSource["Question Source"]
+        S3Buckets["S3 Buckets:<br/>DefaultTracks<br/>AdvancedTracks<br/>FoundationalTracks"]
     end
 
-    B1 -->|Defeated| B2 -->|Defeated| B3 -->|Defeated| B4 -->|Defeated| B5
+    subgraph IngestionPipeline["Standalone Ingestion (scripts/ingest_questions_to_postgres.py)"]
+        StreamJSON["Stream chapter_*.json via boto3"]
+        Validator["validate_question_payload()<br/>(>=2 choices · unique labels · safe images · valid numbers)"]
+        DraftRelease["Create Draft Release in OB_content_releases<br/>(status = 'draft')"]
+        BatchInsert["Batch Insert into OB_questions<br/>(linked to release_id)"]
+        Publish["Atomically set status = 'published'<br/>(prior releases archived)"]
+    end
+
+    subgraph RuntimeServing["Active Serving Layer"]
+        CacheMgr["SharedTrackCacheManager<br/>Key: (track_id, release_id)"]
+        Players["Connected Players"]
+    end
+
+    S3Buckets --> StreamJSON --> Validator --> DraftRelease --> BatchInsert --> Publish
+    Publish -->|"Cache Key Advances Cluster-Wide"| CacheMgr --> Players
+    Publish -.->|"Instant Rollback if needed"| DraftRelease
 ```
 
 ---
 
-### 3.3 Combat & Turn Lifecycle Sequence
+### 4.4 Least-Privilege Database Role Access Flow
+
+```mermaid
+flowchart TD
+    subgraph Roles["PostgreSQL Database Roles (SUPABASE_LEAST_PRIVILEGE_SETUP.md)"]
+        OB_Owner["ob_owner (NOLOGIN)<br/>Schema & DDL Owner"]
+        OB_Player["ob_player (LOGIN)<br/>Web Application Pool"]
+        OB_Admin["ob_admin (LOGIN)<br/>Admin Portal Pool"]
+        OB_Ingest["ob_content_ingest (LOGIN)<br/>Standalone Ingestion CLI"]
+        OB_Migrator["ob_migrator (LOGIN)<br/>CI/CD Alembic Runner"]
+    end
+
+    subgraph Tables["Database Tables (Unified OB_ Prefix)"]
+        ContentTables["Content Tables:<br/>OB_curricula · OB_tracks<br/>OB_questions · OB_bosses<br/>OB_content_releases"]
+        PlayerTables["Player Gameplay Tables:<br/>OB_users · OB_game_sessions<br/>OB_auth_sessions · OB_verification_codes<br/>OB_answer_attempts"]
+        MigrationTables["Migration Tables:<br/>alembic_version"]
+    end
+
+    OB_Player -->|"SELECT, INSERT, UPDATE, DELETE"| PlayerTables
+    OB_Player -->|"SELECT ONLY"| ContentTables
+
+    OB_Admin -->|"SELECT, INSERT, UPDATE, DELETE"| PlayerTables
+    OB_Admin -->|"SELECT, INSERT, UPDATE, DELETE"| ContentTables
+
+    OB_Ingest -->|"SELECT, INSERT, UPDATE, DELETE"| ContentTables
+    OB_Ingest -.->|"NO ACCESS"| PlayerTables
+
+    OB_Migrator -->|"DDL & Migrations (MEMBER OF ob_owner)"| ContentTables & PlayerTables & MigrationTables
+```
+
+---
+
+### 4.5 Boss Image S3 CDN Resolution & Browser CSP Flow
 
 ```mermaid
 sequenceDiagram
     autonumber
-    actor Player as Player (Browser)
-    participant UI as main.js & audio.js
-    participant API as FastAPI (/api/v1/battle/*)
-    participant Domain as Combat Domain (rules.py)
-    participant DB as SQLite / PostgreSQL
+    actor Browser as Player Browser (Safari / Chrome)
+    participant Server as FastAPI Server (app/main.py)
+    participant CSP as Security Middleware (app/observability/middleware.py)
+    participant CDN as Supabase S3 CDN (DefaultBosses / AdvancedBosses / FoundationalBosses)
 
-    Player->>UI: Clicks Spell (e.g. 'fire-spark')
-    UI->>UI: soundEngine.playSpellCast('basic')
-    UI->>API: POST /api/v1/battle/select-spell { spell_id: "fire-spark" }
-    API->>DB: Fetch GameSession & Validate (HP > 0, Cooldown expired)
-    API->>API: Fetch sequential question from Chapter/Boss bank via cursor
-    API->>DB: Save active_question_json, active_spell, turn_id
-    API-->>UI: Return Question Prompt + 4 Choices (Answer secret stripped)
-    UI->>Player: Render Vocabulary Trial Panel
+    Browser->>Server: GET /static/assets/bosses/orbital-ogre.png
+    Server->>Server: Resolve bucket priority: DefaultBosses -> FoundationalBosses -> AdvancedBosses
+    Server-->>Browser: HTTP 307 Temporary Redirect<br/>Location: https://aamwrwbsrmorllisdffc.supabase.co/.../orbital-ogre.png
 
-    Player->>UI: Selects Answer Choice
-    UI->>UI: soundEngine.playClick()
-    UI->>API: POST /api/v1/battle/answer { answer: "Choice B" }
-    API->>Domain: evaluate_combat_turn(spell_id, answer, secret, current_hp)
-    Domain-->>API: CombatTurnResult (correct, damage, self_damage, boss_hit, defeat, defeated)
+    Browser->>CSP: Check Content-Security-Policy (img-src)
+    note over CSP: CSP includes: 'self' data: https://*.supabase.co https://*.storage.supabase.co
+    CSP-->>Browser: CSP Check Passed (Whitelisted)
 
-    alt Correct Answer
-        API->>DB: Apply damage to Boss HP, increment question cursor, apply cooldown
-        API-->>UI: Return Result (correct: True, damage dealt, remaining boss HP)
-        UI->>UI: soundEngine.playBossHit()
-        alt Counterattack Lands
-            UI->>UI: soundEngine.playPlayerHit()
-        else Counterattack Misses
-            UI->>UI: soundEngine.playBossMiss()
-        end
-        UI->>Player: Trigger Attack Animation & Battle Report Modal
-    else Incorrect Answer (Fizzle)
-        API->>DB: Apply self_damage to Player HP, increment question cursor, apply cooldown
-        API-->>UI: Return Result (correct: False, self_damage, explanation, defeat flag)
-        UI->>UI: soundEngine.playSpellFizzle()
-        UI->>UI: soundEngine.playPlayerHit()
-        alt Player Depleted (Defeat)
-            UI->>UI: soundEngine.playDefeat()
-            UI->>Player: Show DEFEAT Modal & Unlock [ RETRY BATTLE ] button
-        else Player Survives
-            UI->>Player: Show SPELL FIZZLE Modal with [ VIEW EXPLANATION ]
-        end
-    end
+    Browser->>CDN: GET https://aamwrwbsrmorllisdffc.supabase.co/.../orbital-ogre.png
+    CDN-->>Browser: HTTP 200 OK (image/png) with Cache-Control headers
+    Browser->>Browser: Render Boss Asset on Phaser Arena Stage
 ```
 
 ---
 
-## 4. Web Audio Procedural Sound Engine
+## 5. Core Engineering Subsystems
 
-Located in [`static/js/audio.js`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/static/js/audio.js), the audio engine generates procedural sound effects via the Web Audio API with zero external media files:
+### 5.1 Pure Domain Combat Engine & P0 Invariant Guards
+- **Zero Framework Dependency**: Combat logic in [app/domain/combat/rules.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/combat/rules.py) is pure Python with zero imports of FastAPI, Starlette, or SQLAlchemy, enabling ultra-fast unit testing.
+- **P0 Advance Without Victory Invariant**:
+  - `POST /api/v1/battle/next-turn` is protected by strict pre-condition checks and atomic database filters.
+  - Advancing requires:
+    1. `game_session.boss_hp <= 0` (current boss must be dead; returns `HTTP 400` if alive).
+    2. `game_session.player_hp > 0` (player must be alive; returns `HTTP 400` if defeated).
+    3. `game_session.active_spell is None and turn_id is None` (no question turn may be in flight).
+  - The database `UPDATE` executes with an atomic predicate:
+    ```python
+    stmt = (
+        update(GameSession)
+        .where(
+            GameSession.id == session_id,
+            GameSession.boss_hp <= 0,
+            GameSession.player_hp > 0,
+            GameSession.version == expected_version,
+        )
+        ...
+    )
+    ```
+- **Optimistic Concurrency Control**:
+  - Every combat mutation (`select-spell`, `answer`, `next-turn`) requires matching the `version` column.
+  - Concurrent submissions or double-clicks produce a clean `HTTP 409 Conflict` rather than corrupted game state.
 
-- **Mute Control**: Persistent toggle mapped to the `#mute` button; saved in browser `localStorage` (`orgo_audio_muted`).
-- **Power Optimization**: Automatically suspends `AudioContext` on `document.visibilitychange` when the tab is hidden and resumes when active.
-- **Synthesized SFX Roster**:
-  - `playClick()`: High-frequency UI tap ($800\text{ Hz}$).
-  - `playSpellCast(tier)`: Rising exponential sweep ($180\text{ Hz} \to 720\text{ Hz}$) scaled by spell rank.
-  - `playBossHit()`: Low-frequency impact punch ($140\text{ Hz} \to 40\text{ Hz}$).
-  - `playPlayerHit()`: Combat damage pulse ($120\text{ Hz} \to 60\text{ Hz}$).
-  - `playSpellFizzle()`: Descending sawtooth backfire buzz ($320\text{ Hz} \to 90\text{ Hz}$).
-  - `playBossMiss()`: Air whoosh sweep ($500\text{ Hz} \to 200\text{ Hz}$).
-  - `playVictory()`: Ascending 4-note major fanfare ($C_5 \to E_5 \to G_5 \to C_6$).
-  - `playDefeat()`: Descending 4-note minor sequence ($F_4 \to D_4 \to B\flat_3 \to A_3$).
+### 5.2 Versioned Content Releases & Shared Cache Manager
+- **Immutable Releases**: Managed via `OB_content_releases` and [app/infrastructure/database/releases_repo.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/releases_repo.py). Questions are imported into draft releases and validated prior to activation.
+- **Cluster-Wide Invalidation**: [app/infrastructure/cache/shared_cache.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/cache/shared_cache.py) keys cached track bundles by `(track_id, release_id)`. Publishing or rolling back a release instantly changes the key across all instances with zero cache invalidation drift.
+- **Thundering-Herd Defense**: Thread-safe locks ensure only one worker rebuilds a given track bundle on cache miss. Concurrent requests await the single build and read from the freshly populated cache.
+
+### 5.3 Database Connection Pooling & Least-Privilege Roles
+- **Production Connection Pooler**: Configured in [app/infrastructure/database/engine.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/engine.py) to target the Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`) with:
+  - `pool_size=10`
+  - `max_overflow=20`
+  - `pool_pre_ping=True` (verifies connection liveness before checkout)
+  - `pool_recycle=1800` (recycles connections every 30 minutes to prevent stale TCP drops)
+- **Role Isolation**:
+  - `ob_player`: DML on user sessions; read-only on question catalogs.
+  - `ob_admin`: User and session administration; storage management.
+  - `ob_content_ingest`: Full access to content releases and question banks; zero access to user credentials.
+  - `ob_migrator`: Executes Alembic migrations via NullPool as a member of `ob_owner`.
+
+### 5.4 S3 Storage Asset Decoupling & Lean Containers
+- **Zero Local Question Footprint**: Production Docker images exclude `data/tracks/` via `.dockerignore`.
+- **Untracked Binaries**: 216 boss PNGs and 568 `chapter_*.json` files are excluded in `.gitignore` and untracked from Git, keeping repository clones lightweight.
+- **Direct S3 Streaming**: [app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py) streams questions directly from Supabase/AWS S3 buckets (`DefaultTracks`, `AdvancedTracks`, `FoundationalTracks`).
+
+### 5.5 Security Hardening & Observability Telemetry
+- **Content-Security-Policy (CSP)**: Configured in [app/observability/middleware.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/middleware.py) with explicit whitelists for Supabase CDN:
+  ```python
+  "img-src 'self' data: https://*.supabase.co https://*.storage.supabase.co;"
+  ```
+- **Security Headers**: Enforces `HSTS`, `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, and secure cookie attributes (`HttpOnly`, `SameSite=Lax`, `Secure`).
+- **Prometheus Metrics Registry**: [app/observability/metrics.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/metrics.py) tracks query latency, slow queries (>100ms), pool utilization, JSON fallback counts, and combat concurrency conflicts.
 
 ---
 
-## 5. REST API Reference (`/api/v1/`)
+## 6. REST API Reference (`/api/v1/`)
 
 ### Authentication (`/api/v1/auth`)
-
 | Endpoint | Method | Payload | Response | Description |
 |---|---|---|---|---|
-| `/api/v1/auth/signup` | `POST` | `{ "email": str, "username": str, "password": str }` | `200 OK` | Registers a new account and sends a 6-digit confirmation code via SMTP. |
-| `/api/v1/auth/verify` | `POST` | `{ "code": str }` | `200 OK` | Verifies the OTP, activates the account, and issues a session token. |
-| `/api/v1/auth/login` | `POST` | `{ "username": str (or "email"), "password": str }` | `200 OK` | Authenticates by username or email and returns a session cookie and token. |
-| `/api/v1/auth/logout` | `POST` | *None* | `200 OK` | Invalidates the active auth session and clears the cookie. |
+| `/api/v1/auth/signup` | `POST` | `{"email": str, "username": str, "password": str}` | `200 OK` | Registers a new player and dispatches a 6-digit OTP code via SMTP. |
+| `/api/v1/auth/verify` | `POST` | `{"code": str}` | `200 OK` | Validates OTP, activates account, and issues `session_token` cookie. |
+| `/api/v1/auth/login` | `POST` | `{"username": str, "password": str}` | `200 OK` | Authenticates user; sets `HttpOnly` session cookie and returns token. |
+| `/api/v1/auth/logout` | `POST` | *None* | `200 OK` | Revokes the active session token in the database and clears the cookie. |
 
-### Game & Avatar (`/api/v1/game`, `/api/v1/avatar`)
-
+### Gameplay & Tracks (`/api/v1/game`, `/api/v1/avatar`)
 | Endpoint | Method | Payload | Response | Description |
 |---|---|---|---|---|
-| `/api/v1/game/new` | `POST` | *None* | `200 OK` | Initializes or retrieves the player's active chapter and boss session. |
-| `/api/v1/game/state` | `GET` | *None* (or `session_id`) | `200 OK` | Returns full formatted game state (HP, Boss, Active Spells, Cooldowns). |
-| `/api/v1/avatar/finalize` | `POST` | `{ "character": str, "config": dict }` | `200 OK` | Selects or updates the player's active companion avatar. |
+| `/api/v1/game/new` | `POST` | *None* | `200 OK` | Creates or loads the player's active chapter and boss session. |
+| `/api/v1/game/state` | `GET` | *None* | `200 OK` | Returns authoritative battle state (HP, boss info, active spells, version). |
+| `/api/v1/game/tracks` | `GET` | *None* | `200 OK` | Lists all 20 configured tracks across curricula from the database. |
+| `/api/v1/avatar/finalize` | `POST` | `{"character": str, "config": dict}` | `200 OK` | Selects and equips companion avatar equipment. |
 
-### Battle & Combat (`/api/v1/battle`)
-
+### Combat & Turns (`/api/v1/battle`)
 | Endpoint | Method | Payload | Response | Description |
 |---|---|---|---|---|
-| `/api/v1/battle/select-spell`| `POST` | `{ "spell_id": str }` | `200 OK` | Validates cooldowns and primes the next sequential chemistry trial question. |
-| `/api/v1/battle/answer` | `POST` | `{ "answer": str }` | `200 OK` | Evaluates the submitted answer, calculates damage, and advances turn state. |
-| `/api/v1/battle/next-turn` | `POST` | *None* | `200 OK` | Advances to the next boss in the chapter or triggers chapter completion. |
-| `/api/v1/battle/retry` | `POST` | *None* | `200 OK` | Resets player HP to 150, restores boss HP, and clears cooldowns after defeat. |
+| `/api/v1/battle/select-spell` | `POST` | `{"spell_id": str, "expected_version": int?}` | `200 OK` | Verifies cooldowns and primes the next sequential chemistry question. |
+| `/api/v1/battle/answer` | `POST` | `{"answer": str, "expected_version": int?}` | `200 OK` | Grades submitted choice, resolves damage, and advances turn version. |
+| `/api/v1/battle/next-turn` | `POST` | `{"expected_version": int?}` | `200 OK` | **Requires defeated boss.** Advances to next boss and restores player HP. |
+| `/api/v1/battle/retry` | `POST` | *None* | `200 OK` | Restores player to 150 HP, resets boss HP, and clears cooldowns after defeat. |
 
 ### Admin Management (`/api/v1/admin`)
-
 | Endpoint | Method | Payload | Response | Description |
 |---|---|---|---|---|
-| `/api/v1/admin/login` | `POST` | `{ "username": str, "password": str }` | `200 OK` | Authenticates administrator (`admin` / `admin`). |
-| `/api/v1/admin/users` | `GET` | *None* | `200 OK` | Lists all user accounts, companion avatars, and verification statuses. |
-| `/api/v1/admin/users/{id}/credentials` | `POST` | `{ "username": str?, "password": str? }` | `200 OK` | Renames username or resets user password securely. |
-| `/api/v1/admin/users/clean-test` | `POST` | *None* | `200 OK` | Safely purges automated test accounts and associated session cascades. |
-| `/api/v1/admin/sessions` | `GET` | *None* | `200 OK` | Lists all active gameplay sessions across users. |
-| `/api/v1/admin/sessions/{id}/reset` | `POST` | `{ "chapter": int }` | `200 OK` | Resets a session to Boss 1 of the chosen chapter with full health. |
-| `/api/v1/admin/sessions/{id}` | `DELETE`| *None* | `200 OK` | Deletes a gameplay session and resets player progress. |
-| `/api/v1/admin/storage/stats` | `GET` | *None* | `200 OK` | Returns database engine dialect, pooler host/port, and table row counts. |
-| `/api/v1/admin/system/stats` | `GET` | *None* | `200 OK` | Returns host server uptime, OS platform, memory RSS/VMS, and CPU load. |
-| `/api/v1/admin/migrate-db` | `POST` | *None* | `200 OK` | Triggers background bidirectional migration between SQLite and PostgreSQL. |
-| `/api/v1/admin/migrate-db/status` | `GET` | *None* | `200 OK` | Polls active migration status, progress percentage, and copied row counts. |
-| `/api/v1/admin/tracks` | `GET` | *None* | `200 OK` | Lists all 20 configured tracks across curricula from the database. |
-| `/api/v1/admin/curricula` | `GET` | *None* | `200 OK` | Lists all curricula (`foundational`, `advanced`) and track counts. |
-
+| `/api/v1/admin/login` | `POST` | `{"username": str, "password": str}` | `200 OK` | Authenticates administrator; issues `admin_token` cookie. |
+| `/api/v1/admin/users` | `GET` | *None* | `200 OK` | Lists registered users with companion avatars and verification statuses. |
+| `/api/v1/admin/sessions` | `GET` | *None* | `200 OK` | Real-time monitoring of active gameplay sessions. |
+| `/api/v1/admin/storage/stats` | `GET` | *None* | `200 OK` | Reports database dialect, connection pool telemetry, and row counts. |
+| `/api/v1/admin/system/stats` | `GET` | *None* | `200 OK` | Reports server uptime, OS platform, memory RSS/VMS, and CPU utilization. |
+| `/api/v1/admin/tracks/{id}/releases` | `GET` | *None* | `200 OK` | Lists all immutable content releases for a track. |
+| `/api/v1/admin/tracks/{id}/releases/{ver}/rollback` | `POST` | *None* | `200 OK` | Instantly rolls back active questions to a previous release version. |
 
 ---
 
-## 6. Environment Configuration & Setup
+## 7. Design Pros and Cons
 
-Configuration is validated via Pydantic Settings in [`app/settings.py`](file:///Users/nkoneru/Downloads/AI%20Apps/OrganicBattles/app/settings.py). Create an `env` or `.env` file in the project root:
+### 1. Stateless Modular Monolith vs Microservices
+* **Pros**:
+  - High operational velocity: Single codebase, single test suite, single deployment pipeline.
+  - Zero inter-service network latency or distributed transaction overhead.
+  - Strict domain boundaries ([app/domain/](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/)) allow future extraction into microservices if scaling requires it.
+* **Cons**:
+  - Resource scaling is coupled: Scaling background workloads or heavy admin queries scales the web API.
+  - Single process failure point if an unhandled exception or native memory leak occurs.
+
+### 2. S3 Object Storage & Cloud CDN vs Local Filesystem Assets
+* **Pros**:
+  - Container images are lean (<100 MB vs >1 GB with assets).
+  - Web browsers load images directly from CDN edge caches, reducing server network egress and CPU load to zero.
+  - Content can be updated, versioned, and rolled back without redeploying container images.
+* **Cons**:
+  - Requires reliable external S3 connectivity during content ingestion.
+  - Local requests require an initial 307 temporary redirect hop to the CDN.
+
+### 3. Optimistic Concurrency Control vs Pessimistic DB Locking
+* **Pros**:
+  - Maximum database throughput: Transactions never hold row locks while waiting for client input.
+  - Eliminates database deadlocks during high-concurrency combat sessions.
+  - Clean client error semantics via `HTTP 409 Conflict`.
+* **Cons**:
+  - Rapid double-clicks or concurrent requests from multiple tabs will abort the second request, requiring client-side retry or notification.
+
+### 4. Versioned Content Releases (`OB_content_releases`) vs Direct In-Place Table Updates
+* **Pros**:
+  - Zero partial imports: Questions are staged and validated in draft releases before atomic activation.
+  - Zero cache invalidation drift: Cluster-wide cache keys automatically change upon release publication.
+  - Instant rollback capability without redeploying code.
+* **Cons**:
+  - Requires additional database rows and foreign keys linking questions to releases.
+  - Older draft and archived releases require periodic background pruning.
+
+### 5. Least-Privilege Database Roles vs Single Superuser Connection
+* **Pros**:
+  - Hardened security blast radius: A compromised web request (`ob_player`) cannot drop tables, alter schemas, or tamper with question banks.
+  - Administrative operations and schema migrations are strictly compartmentalized.
+* **Cons**:
+  - Requires managing multiple connection string secrets (`DATABASE_URL_PLAYER`, `DATABASE_URL_ADMIN`, `DATABASE_URL_INGEST`, `DATABASE_URL_MIGRATION`).
+
+---
+
+## 8. Points to Remember & Operational Guidelines
+
+> [!IMPORTANT]
+> **1. P0 Advance Without Victory Guard**: Never call `POST /api/v1/battle/next-turn` while the current boss has HP remaining (`boss_hp > 0`), the player is defeated (`player_hp <= 0`), or a question turn is in progress. The API will reject the request with `HTTP 400 Bad Request`.
+
+> [!WARNING]
+> **2. Content Security Policy (CSP) Whitelisting**: If you introduce new asset storage buckets or CDN domains, you **must** update the `img-src` directive in [app/observability/middleware.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/middleware.py). Failing to whitelist a domain will cause browsers (especially Safari and Chrome) to block boss images with `net::ERR_BLOCKED_BY_CSP`.
+
+> [!NOTE]
+> **3. Bucket Name Case Sensitivity**: Supabase Storage buckets are strictly case-sensitive:
+> - `DefaultBosses`
+> - `AdvancedBosses`
+> - `FoundationalBosses`
+> Ensure all references in `.env`, [app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py), and `tracks_config.json` match this exact casing.
+
+> [!TIP]
+> **4. Decoupled Data Folder**: Never commit `data/tracks/` files back to Git. Both `.gitignore` and `.dockerignore` intentionally exclude this directory. Question releases must be published to PostgreSQL via `scripts/ingest_questions_to_postgres.py`.
+
+> [!CAUTION]
+> **5. Database Migrations via `ob_migrator`**: Always run Alembic migrations using `app.infrastructure.database.alembic_runner` with `DATABASE_URL_MIGRATION` (`ob_migrator` role). Running migrations under `ob_player` will fail with permission denied on `alembic_version` or DDL operations.
+
+---
+
+## 9. Local Development, Environment Setup & Testing
+
+### 9.1 Prerequisites
+- **Python 3.11+**
+- **uv** (recommended package runner) or standard `pip`
+- **PostgreSQL 15+** (or default Supabase connection)
+
+### 9.2 Environment Configuration
+Copy the template or configure your local environment file (`local.env` or `env`):
 
 ```ini
 # --- Application Environment ---
 ENVIRONMENT=development
-DEBUG=true
 PORT=8000
 SECRET_KEY=change-this-to-a-secure-random-32-character-secret
 
-# --- Content Engine ---
-# Questions are resolved dynamically based on user track selection
+# --- Database Connections (Least-Privilege Roles) ---
+DATABASE_URL=postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+DATABASE_URL_PLAYER=postgresql+psycopg2://ob_player:[PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+DATABASE_URL_ADMIN=postgresql+psycopg2://ob_admin:[PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+DATABASE_URL_INGEST=postgresql+psycopg2://ob_content_ingest:[PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+DATABASE_URL_MIGRATION=postgresql+psycopg2://ob_migrator:[PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
 
-# --- Database Configuration ---
-# Option 1: PostgreSQL / Supabase IPv4 Pooler (Default):
-DATABASE_URL=postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[YOUR-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+# --- S3 Object Storage Configuration ---
+S3_ENDPOINT_URL=https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/s3
+S3_REGION=us-west-2
+S3_ACCESS_KEY_ID=[ACCESS-KEY]
+S3_SECRET_ACCESS_KEY=[SECRET-KEY]
+S3_DEFAULT_BOSSES_BUCKET=DefaultBosses
+S3_ADVANCED_BOSSES_BUCKET=AdvancedBosses
+S3_FOUNDATIONAL_BOSSES_BUCKET=FoundationalBosses
 
-# Option 2: SQLite (Local file database):
-# DATABASE_URL=sqlite:///./organic_battles.sqlite3
-
-# --- Admin Credentials ---
+# --- Admin Portal Credentials ---
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=admin
 ADMIN_SESSION_TTL_HOURS=24
-
-# --- SMTP / Email Configuration ---
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASSWORD=your-gmail-app-password
-SMTP_FROM=Organic Battles <your-email@gmail.com>
-SMTP_TLS=true
 ```
 
----
-
-## 7. Running the Application & Automated Tests
-
-### 7.1 Local Development Server
+### 9.3 Launching the Server
 ```bash
-# 1. Activate virtual environment
-source .venv/bin/activate
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Start Uvicorn ASGI server with live reload
-uvicorn app.main:app --reload --port 8000
+# Run with live reload
+uv run uvicorn app.main:app --reload --port 8000
 ```
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your web browser.
+Open [http://localhost:8000](http://localhost:8000) in your web browser.
 
-### 7.2 Running the Full Automated Test Suite
+### 9.4 Running the Test Suite
+The repository includes 384 automated unit, integration, and UI tests:
+
 ```bash
-# Run full automated test suite
-pytest
+# Run complete test suite
+uv run pytest
 
-# Run with verbose output
-pytest -v
+# Run quick summary
+uv run pytest -q
 
-# Run targeted question parity and database tests
-pytest tests/test_question_parity.py tests/test_tracks_postgresql.py -v
+# Run targeted combat concurrency tests
+uv run pytest tests/test_combat_concurrency_and_optimistic_locking.py -v
+
+# Run targeted battle retry and advance tests
+uv run pytest tests/test_battle_retry_and_restart.py -v
 ```
