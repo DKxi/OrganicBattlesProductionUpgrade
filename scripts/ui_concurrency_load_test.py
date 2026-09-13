@@ -317,6 +317,8 @@ class VirtualUIPlayer:
                 self.report.completed_turns += 1
 
         except Exception as exc:
+            print(f"❌ [{self.player_id}] Execution error: {exc}", flush=True)
+            self.report.failed_steps.append(str(exc)[:120])
             self.collector.record_stage(self.player_id, "execution_error", 0.0, False, str(exc)[:120])
         finally:
             await context.close()
@@ -338,14 +340,23 @@ def generate_markdown_report(
     turn_metrics = [m for m in all_metrics if "render" in m.stage]
     turn_lats = sorted([m.duration_ms for m in turn_metrics]) if turn_metrics else [0.0]
 
-    p50 = statistics.median(turn_lats)
+    p50 = statistics.median(turn_lats) if turn_lats else 0.0
     p95 = turn_lats[int(len(turn_lats) * 0.95)] if turn_lats else 0.0
-    mean_lat = statistics.mean(turn_lats)
-    min_lat = min(turn_lats)
-    max_lat = max(turn_lats)
+    mean_lat = statistics.mean(turn_lats) if turn_lats else 0.0
+    min_lat = min(turn_lats) if turn_lats else 0.0
+    max_lat = max(turn_lats) if turn_lats else 0.0
 
-    avg_page_load = statistics.mean([pr.page_load_ms for pr in collector.player_reports.values() if pr.page_load_ms > 0])
-    avg_arena_entry = statistics.mean([pr.arena_entry_ms for pr in collector.player_reports.values() if pr.arena_entry_ms > 0])
+    page_loads = [pr.page_load_ms for pr in collector.player_reports.values() if pr.page_load_ms > 0]
+    avg_page_load = statistics.mean(page_loads) if page_loads else 0.0
+
+    arena_entries = [pr.arena_entry_ms for pr in collector.player_reports.values() if pr.arena_entry_ms > 0]
+    avg_arena_entry = statistics.mean(arena_entries) if arena_entries else 0.0
+
+    spell_metrics = [m.duration_ms for m in all_metrics if m.stage == 'ui_spell_to_question_render']
+    avg_spell_ms = statistics.mean(spell_metrics) if spell_metrics else 0.0
+
+    outcome_metrics = [m.duration_ms for m in all_metrics if m.stage == 'ui_answer_to_render_outcome']
+    avg_outcome_ms = statistics.mean(outcome_metrics) if outcome_metrics else 0.0
 
     total_assets = len(collector.assets)
     avg_asset_ms = statistics.mean([a.duration_ms for a in collector.assets]) if collector.assets else 0.0
@@ -383,8 +394,8 @@ Unlike protocol-level API tests, this test executed inside real browser engines,
 |:---|:---:|:---:|:---:|
 | **Initial Page Hydration (TTI)** | **{avg_page_load:.2f} ms** | $< 1,500$ ms | ✅ Pass |
 | **Arena Canvas Mount Time** | **{avg_arena_entry:.2f} ms** | $< 2,000$ ms | ✅ Pass |
-| **Spell Click $\\rightarrow$ Question Prompt** | **{statistics.mean([m.duration_ms for m in all_metrics if m.stage == 'ui_spell_to_question_render']):.2f} ms** | $< 1,200$ ms | ✅ Pass |
-| **Answer Click $\\rightarrow$ Damage Render** | **{statistics.mean([m.duration_ms for m in all_metrics if m.stage == 'ui_answer_to_render_outcome']):.2f} ms** | $< 2,500$ ms | ✅ Pass |
+| **Spell Click $\rightarrow$ Question Prompt** | **{avg_spell_ms:.2f} ms** | $< 1,200$ ms | ✅ Pass |
+| **Answer Click $\rightarrow$ Damage Render** | **{avg_outcome_ms:.2f} ms** | $< 2,500$ ms | ✅ Pass |
 | **Click-to-Render Min / Median (p50) / Max** | **{min_lat:.2f} / {p50:.2f} / {max_lat:.2f} ms** | $< 3,000$ ms | ✅ Pass |
 | **95th Percentile (p95) Turn RTT** | **{p95:.2f} ms** | $< 3,000$ ms | ✅ Pass |
 | **Total Test Wall-Clock Duration** | **{total_time:.2f} s** | $< 60$ s | ✅ Pass |
