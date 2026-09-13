@@ -1401,8 +1401,46 @@ The system has been updated across configuration, domain loaders, routing, envir
 - Connected `S3_FOUNDATIONAL_BOSSES_BUCKET=FoundationalBosses` in `local.env`, `prod.env`, and `app/settings.py`.
 - Updated all 7 foundational tracks in `data/tracks_config.json` and `static/js/tracks-config.js` to point `boss_folder` directly to:
   `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/FoundationalBosses`
-- Updated `app/domain/content/loader.py` and `app/main.py` to route foundational boss image requests to the Supabase CDN.
-- Updated `.gitignore` to ignore `data/tracks/` to prevent committing raw question JSONs or assets, while keeping `data/tracks_config.json` tracked.
-- Created `.dockerignore` excluding `data/tracks/` so production containers stay lightweight and bundle zero local question files.
+- Updated `app/domain/content/loader.py` and `app/main.py` with prioritized S3 boss image resolution:
+  1. **`DefaultBosses`**: All 76 core default boss assets (e.g., `orbital-ogre.png`, `alkene-charger.png`).
+  2. **`FoundationalBosses`**: Foundational catalog assets (`amino-assassin.png`).
+  3. **`AdvancedBosses`**: All 138 advanced bestiary assets (`valence-vanguard.png`, `carbocation-colossus.png`).
+  4. **Placeholder Fallback**: If an image is not found in any S3 bucket or local folder, gracefully returns `static/assets/bosses/boss-placeholder.svg` (`200 OK`).
+- Verified fallback behavior: If a foundational track references a boss not in `FoundationalBosses`, the engine automatically searches and redirects to `DefaultBosses`.
+
+### 4. Complete `/data/tracks/` Repository Decoupling
+- **Git Ignore Rules (`.gitignore`)**:
+  - Excluded `data/tracks/` from tracking while explicitly preserving `data/tracks_config.json` (8 KB metadata) and `.gitkeep` directory sentinels:
+    ```gitignore
+    data/tracks/
+    !data/tracks_config.json
+    !data/tracks/**/.gitkeep
+    ```
+- **Docker Image Decoupling (`.dockerignore`)**:
+  - Excluded `data/tracks/`, `.env`, `local.env`, and `env` from Docker build contexts. Production containers now have zero local question JSON footprint.
+- **Untracked 216 Boss Images (`git rm --cached`)**:
+  - Removed all boss image assets from git index while preserving 100% of files on local disk:
+    - `data/tracks/advanced/bosses/` (138 image files)
+    - `data/tracks/default/bosses/` (76 image files)
+    - `data/tracks/foundational/bosses/` (2 image files)
+  - Added `.gitkeep` files in each folder so directory structures are created in fresh checkouts without heavy binaries.
+- **Untracked 568 Question Bank JSON Files (`git rm --cached`)**:
+  - Removed all 568 `chapter_*.json` question files across `data/tracks/default/`, `data/tracks/advanced/`, and `data/tracks/foundational/` from git index.
+  - All 568 files remain completely intact on the local developer disk for lightning-fast offline `pytest` fixtures.
+
+### 5. Final Verification & Green Test Suite
+- **Runtime Dependency Audit**:
+  - Verified `data/tracks_config.json` loads 3 curricula and 20 tracks cleanly.
+  - Verified fallback boss catalogs (76 default, 138 advanced, foundational) function without filesystem directory scanning.
+  - Verified 307 temporary redirects to Supabase CDN for all track categories.
+  - Verified `/api/v1/game/tracks` returns all 20 tracks.
+- **Full Automated Regression Suite**:
+  - Command: `uv run pytest`
+  - Output: **378 passed, 1 skipped in 89.73s** (100% green).
+- **Git Status**:
+  - Verified with `git status` $\rightarrow$ **Clean (0 untracked files)**.
+  - Verified with `git ls-files "data/tracks/**/chapter*.json"` $\rightarrow$ **0 files**.
+  - Verified with `git ls-files | grep -E "data/tracks/.*/bosses/.*\.png"` $\rightarrow$ **0 files**.
+  - All commits pushed to `origin main`.
 
 
