@@ -83,18 +83,18 @@ def create_app() -> FastAPI:
         if Path(raw_name).suffix.lower() not in allowed_exts:
             raise HTTPException(404, f"Invalid image format for '{raw_name}'")
 
-        # 1. Redirect to Supabase Public Storage CDN for Foundational Bosses
-        if settings.use_supabase_boss_storage and is_foundational_boss_image(raw_name, settings.root_dir):
-            public_url = f"{settings.supabase_foundational_bosses_base_url}/{raw_name}"
+        # 1. Redirect to Supabase Public Storage CDN for Default Bosses (core default & shared bosses)
+        if settings.use_supabase_boss_storage and is_default_boss_image(raw_name, settings.root_dir):
+            public_url = f"{settings.supabase_default_bosses_base_url}/{raw_name}"
             return RedirectResponse(
                 url=public_url,
                 status_code=307,
                 headers={"Cache-Control": "public, max-age=86400"}
             )
 
-        # 2. Redirect to Supabase Public Storage CDN for Default Bosses (fallback for foundational/shared bosses)
-        if settings.use_supabase_boss_storage and is_default_boss_image(raw_name, settings.root_dir):
-            public_url = f"{settings.supabase_default_bosses_base_url}/{raw_name}"
+        # 2. Redirect to Supabase Public Storage CDN for Foundational Bosses
+        if settings.use_supabase_boss_storage and is_foundational_boss_image(raw_name, settings.root_dir):
+            public_url = f"{settings.supabase_foundational_bosses_base_url}/{raw_name}"
             return RedirectResponse(
                 url=public_url,
                 status_code=307,
