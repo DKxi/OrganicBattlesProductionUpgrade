@@ -1152,5 +1152,117 @@ Created [scripts/setup_supabase_least_privilege_roles.sql](file:///Users/nkoneru
 - **Command**: `uv run python scripts/run_ui_tests.py --browser webkit`
 - **Result**: **8/8 modules passed (100%)**. Boot screen, authentication, confirmation code, avatar creator, track selection, combat spells, damage evaluation, counterattacks, and admin portal verified without errors.
 
+---
 
+# Walkthrough: Markdown Analysis & Action Item Reconciliation Across `/temp/`
 
+## Problem Summary
+The project documentation in `/temp/` contained historical architectural reviews and vulnerability assessments:
+1. `OrganicBattles_Security_and_Vulnerability_Assessment.md`
+2. `OrganicBattles_Cookbook_Updated.md`
+3. `OrganicBattles_PostgreSQL_Question_Loading_Review.md`
+4. `IP_ReviewVer2.md`
+
+These documents contained action items, defect findings, and diagrams that were out of date relative to recent production upgrades (least-privilege roles, RLS policies, optimistic turn locking, pickle elimination, bounded LRU cache, and session ownership). Action items needed to be classified as **`FIXED`** or **`TODO`**, and diagrams updated to reflect the latest codebase without altering any other prose.
+
+## Key Changes Implemented
+
+### 1. Status Reconciliation Across Audit Tables and Headings
+- **[OrganicBattles_Security_and_Vulnerability_Assessment.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/temp/OrganicBattles_Security_and_Vulnerability_Assessment.md)**:
+  - "What changed" table: Marked C-01, C-02, H-01, Bounded cache, JSON fallback restriction, and JSONB field validation as `FIXED`. Marked open items (seeded default admin passwords, arbitrary DB switch endpoint, custom folder removal, living boss advance check, atomic release publication) as `TODO`.
+  - Severity findings headings: Marked C-01, C-02, and H-05 (Redis pickle RCE) as `FIXED`. Marked C-03, C-04, H-01 (default admins), H-02, H-03, H-04, H-06, H-07, and M-01 to M-09 as `TODO`.
+- **[OrganicBattles_Cookbook_Updated.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/temp/OrganicBattles_Cookbook_Updated.md)**:
+  - Table 12 ("Production Implementation Status"): Marked completed items (Credential rotation, DB least-privilege roles & RLS, XSS escaping, admin localStorage token removal, Redis pickle deserialization, Alembic baseline & migrations 0001–0008) as `FIXED`. Marked remaining roadmap items as `TODO`.
+- **[OrganicBattles_PostgreSQL_Question_Loading_Review.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/temp/OrganicBattles_PostgreSQL_Question_Loading_Review.md)**:
+  - Disadvantages and Risks headings: Marked Critical credential, 2 (Process-local invalidation), 3 (Silent JSON fallback), 4 (JSONB validation), 9 (Combat concurrency), 10 (Connection pooling), 12 (`create_all` migration), and 13 (Broad exception handling) as `FIXED`. Marked remaining items as `TODO`.
+  - Prioritized Recommendations & Implementation Sequence: Added `Status` column; marked Phase 0, 1, 4, 5, 6, 8, 9, 10 as `FIXED` and Phase 2, 3, 7, 9 as `TODO`.
+- **[IP_ReviewVer2.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/temp/IP_ReviewVer2.md)**:
+  - Section 4 (Critical progression & authorization defects): Added `Status` column; marked Session ownership, Old question advance cleanup, Atomic turn consumption, and Defeat retry as `FIXED`; marked Living boss advance check as `TODO`.
+  - Section 5 (Gate A, Gate B, Gate C, and Consolidated Sequence): Added `Status` column to all engineering release tables distinguishing verified fixes (`FIXED`) from pending items (`TODO`).
+
+### 2. Mermaid Diagram Architectural Updates
+- Flowcharts in `OrganicBattles_Security_and_Vulnerability_Assessment.md` and `OrganicBattles_PostgreSQL_Question_Loading_Review.md`:
+  - Updated to reflect: `ob_player` least-privilege DB role, Redis cache with `ob:` prefix and JSON schema validation, isolated cache key `{track}:{source_id}:{rel}`, single-use `turn_id` with 300s TTL, and DB fallback only if `source_identity == 'db'`.
+- ER Diagram in `OrganicBattles_Cookbook_Updated.md`:
+  - Updated to include admin models: `OB_admin_users`, `OB_admin_sessions`, and `OB_admin_audit_logs`.
+- Target Architecture Diagram in `OrganicBattles_PostgreSQL_Question_Loading_Review.md`:
+  - Updated to show PostgreSQL source of truth (`ob_player` / `ob_admin_api` + RLS), Redis shared cache (`ob:` prefix, zlib JSON) + bounded LRU, FastAPI workers, active question with turn ID & optimistic concurrency, and non-blocking cache invalidation (`scan_iter` + LRU clear).
+
+---
+
+# Walkthrough: Supabase S3 Public Storage CDN Integration for Advanced Bosses (Approach 1)
+
+## Problem Summary
+1. The repository stored 138 large transparent boss PNG images on disk under `data/tracks/advanced/bosses/` (totaling dozens of megabytes).
+2. Serving large binary assets directly through the Python FastAPI web process consumes excessive server bandwidth and memory, blocks event loop workers, and risks path traversal or configuration leaks (e.g. `chapter_01.json`).
+3. The user provisioned an S3-compatible bucket (`AdvancedBosses`) on Supabase Storage (`https://aamwrwbsrmorllisdffc.storage.supabase.co/storage/v1/s3`) and manually uploaded all 138 advanced boss images.
+4. The system needed to replace `/data/advanced/bosses` using **Approach 1** (Public Bucket / Direct CDN Caching & Redirect) without breaking existing frontend code or local fallback paths.
+
+## Key Changes Implemented
+
+### 1. Supabase S3 & Public Storage Settings
+- In [app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py):
+  - Corrected class indentation for S3 fields: `s3_endpoint_url`, `s3_region`, `s3_access_key_id`, `s3_secret_access_key`, and `s3_advanced_bosses_bucket`.
+  - Added `use_supabase_boss_storage` (boolean, defaults to `True`).
+  - Added `supabase_storage_public_url` (optional string override).
+  - Added property `supabase_public_storage_base_url`: automatically parses the Supabase project reference (`aamwrwbsrmorllisdffc`) from `s3_endpoint_url` and constructs the public CDN URL:
+    `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/AdvancedBosses`
+- In [local.env](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/local.env):
+  - Added configuration keys for `S3_ENDPOINT_URL`, `S3_REGION`, `S3_ACCESS_KEY_ID`, `S3_SECRET_ACCESS_KEY`, and `S3_ADVANCED_BOSSES_BUCKET`.
+
+### 2. Advanced Boss Image Catalog & Static Fallback
+- In [app/domain/content/loader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/content/loader.py):
+  - Implemented `get_advanced_boss_names(root_dir)`: inspects `data/tracks/advanced/bosses/` if present, with a static fallback set of all 138 known advanced boss image filenames (e.g., `1-3-diaxial-dreadnought.png`, `acetal-aegis.png`, `carbocation-colossus.png`).
+  - Implemented `is_advanced_boss_image(filename, root_dir)`: checks if a requested image belongs to the advanced boss catalog, ensuring accurate routing even if local files are absent in production container images.
+
+### 3. Dynamic Boss Image Serving with Approach 1 Redirect
+- In [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py):
+  - **Security Filter**: Enforced strict image extension validation (`.png`, `.jpg`, `.jpeg`, `.webp`, `.svg`). Any request for `.json`, `.py`, or `.env` paths immediately returns `HTTP 404`, eliminating file disclosure risks.
+  - **Approach 1 Redirect**: When `is_advanced_boss_image()` matches and `settings.use_supabase_boss_storage` is active, the endpoint issues a `307 Temporary Redirect` to the Supabase Cloudflare CDN URL with `Cache-Control: public, max-age=86400`:
+    `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/AdvancedBosses/{raw_name}`
+  - **Fallback Preservation**: If the image is not in `AdvancedBosses`, the endpoint falls back gracefully to:
+    1. Configured track folders or remote URLs (supports `http://`, `https://`, and `s3://`).
+    2. Default track bosses folder (`data/tracks/default/bosses`).
+    3. Root `bosses/` and `data/bosses/`.
+    4. Static assets folder (`static/assets/bosses/`).
+    5. SVG placeholder (`static/assets/bosses/boss-placeholder.svg`).
+
+### 4. Track Configuration Updates
+- In [data/tracks_config.json](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks_config.json) & [static/js/tracks-config.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/tracks-config.js):
+  - Updated `boss_folder` for all 12 advanced tracks (`adv-vocab`, `adv-outcomes`, `adv-arrows`, `adv-stereo`, `adv-rankings`, `adv-spectra`, `adv-retro`, `adv-mo`, `adv-thermo`, `adv-medicinal`, `adv-lab`, `adv-trees`) from `data/tracks/advanced/bosses` to:
+    `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/AdvancedBosses`
+
+### 5. Automated Tests
+- In [tests/test_tracks_config.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_tracks_config.py):
+  - Updated `test_serve_boss_image_from_track_boss_folder`:
+    - Verified `valence-vanguard.png` and `carbocation-colossus.png` return `307 Temporary Redirect` pointing to `AdvancedBosses`.
+    - Verified `boss-placeholder.svg` returns `200 OK`.
+    - Verified unknown images fall back to placeholder SVG (`200 OK`).
+    - Verified non-image paths (`/bosses/chapter_01.json`) return `404 Not Found`.
+
+## Verification & Test Results
+
+### 1. Direct Supabase Storage Live Verification
+- Executed `curl -I` against the public Supabase bucket for advanced boss assets:
+  - `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/AdvancedBosses/1-3-diaxial-dreadnought.png`:
+    - **HTTP/2 200 OK**
+    - `content-type: image/png`
+    - `content-length: 2333826` (2.33 MB)
+    - `server: cloudflare`
+  - `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/AdvancedBosses/acetal-aegis.png`:
+    - **HTTP/2 200 OK**
+    - `content-type: image/png`
+    - `content-length: 2826017` (2.82 MB)
+- Non-existent objects return `HTTP/2 400` from Supabase, triggering fallback to local placeholder SVG.
+
+### 2. Python Code Compilation & Syntax Validation
+- Executed `python3 -m py_compile` across:
+  - `app/settings.py` (✅ PASS)
+  - `app/domain/content/loader.py` (✅ PASS)
+  - `app/main.py` (✅ PASS)
+  - `tests/test_tracks_config.py` (✅ PASS)
+
+### 3. Git Commits & Remote Synchronization
+- Updates committed and pushed to `origin/main`:
+  - `fd48f9c`: `docs(temp): mark action items as FIXED or TODO and update diagrams to latest architecture`
+  - `a37fffb`: `feat(storage): integrate Supabase S3 public storage CDN for Advanced Bosses (Approach 1)`
