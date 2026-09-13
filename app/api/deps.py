@@ -41,25 +41,33 @@ from app.infrastructure.cache.shared_cache import shared_track_cache
 def get_content_bundle(mode: str) -> ContentBundle:
     """Retrieve preloaded content bundle, including dynamic track bundles with bounded versioned caching."""
     if mode.startswith("track:") or mode == "default" or mode.startswith("adv-") or mode.startswith("found-"):
-        track_id = mode[6:] if mode.startswith("track:") else mode
+        raw_track = mode[6:] if mode.startswith("track:") else mode
+        if ":" in raw_track:
+            parts = raw_track.split(":", 1)
+            track_id = parts[0]
+            source_identity = parts[1]
+        else:
+            track_id = raw_track
+            source_identity = "db"
 
-        # If explicitly cached in TRACK_BUNDLES (e.g. custom folder override), return directly
-        if track_id in TRACK_BUNDLES:
-            return TRACK_BUNDLES[track_id]
+        # Check in-memory process dictionary first
+        cache_lookup_key = f"{track_id}:{source_identity}" if source_identity != "db" else track_id
+        if cache_lookup_key in TRACK_BUNDLES:
+            return TRACK_BUNDLES[cache_lookup_key]
 
         # 1. Resolve active release version for this track
-        rel_id = shared_track_cache.get_content_version(track_id)
+        rel_id = shared_track_cache.get_content_version(track_id) if source_identity == "db" else "custom"
 
-        # 2. Check shared/bounded cache by (track_id, release_id)
-        bundle = shared_track_cache.get(track_id, rel_id)
+        # 2. Check shared/bounded cache by (track_id, source_identity, release_id)
+        bundle = shared_track_cache.get(track_id, rel_id, source_identity=source_identity)
         if bundle is not None:
             return bundle
 
         # 3. Cache miss: acquire per-track rebuild lock (prevents concurrent duplicate builds)
-        lock = shared_track_cache.get_track_rebuild_lock(track_id)
+        lock = shared_track_cache.get_track_rebuild_lock(track_id, source_identity=source_identity)
         with lock:
             # Double check if another worker/thread completed the build
-            bundle = shared_track_cache.get(track_id, rel_id)
+            bundle = shared_track_cache.get(track_id, rel_id, source_identity=source_identity)
             if bundle is not None:
                 return bundle
 
@@ -67,8 +75,14 @@ def get_content_bundle(mode: str) -> ContentBundle:
             bundle = load_track_bundle(settings.root_dir, track_id)
             duration_ms = (time.time() - start_t) * 1000.0
 
-            shared_track_cache.set(track_id, rel_id, bundle, load_duration_ms=duration_ms)
-            TRACK_BUNDLES[track_id] = bundle
+            shared_track_cache.set(
+                track_id,
+                rel_id,
+                bundle,
+                load_duration_ms=duration_ms,
+                source_identity=source_identity,
+            )
+            TRACK_BUNDLES[cache_lookup_key] = bundle
 
         return bundle
     return JSON_DATA if mode == "json" else APP_DATA

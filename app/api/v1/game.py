@@ -292,11 +292,19 @@ def set_track(
     session_repo = SessionRepository(db)
     game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=body.session_id)
 
-    target_source = f"track:{body.track_id}"
+    import hashlib
+    if body.data_folder:
+        source_identity = f"custom_{hashlib.sha256(body.data_folder.encode()).hexdigest()[:12]}"
+        target_source = f"track:{body.track_id}:{source_identity}"
+    else:
+        source_identity = "db"
+        target_source = f"track:{body.track_id}"
+
     current_effective = resolve_content_source((current_user.content_source if current_user and current_user.content_source else None) or game_session.content_source)
+    current_track = current_effective.replace("track:", "").split(":")[0]
 
     # Check if switching to a different track while current chapter is in progress
-    if current_effective != target_source and current_effective != body.track_id:
+    if current_track != body.track_id:
         current_bundle = get_content_bundle(current_effective)
         if current_bundle and current_bundle.chapters:
             ch_idx = max(0, min(game_session.chapter - 1, len(current_bundle.chapters) - 1))
@@ -318,7 +326,7 @@ def set_track(
                 )
 
                 if is_in_progress:
-                    old_track_id = current_effective.replace("track:", "")
+                    old_track_id = current_track
                     track_cfg = get_track_config(settings.root_dir, old_track_id)
                     track_title = track_cfg.get("title", old_track_id.title()) if track_cfg else old_track_id.title()
                     ch_name = ch_data.get("name", f"Chapter {game_session.chapter}")
@@ -332,7 +340,7 @@ def set_track(
                     )
 
     # 1. Archive outgoing track state into current_user.progress_json
-    old_track_id = current_effective.replace("track:", "")
+    old_track_id = current_track
     user_progress = {}
     if current_user and current_user.progress_json:
         try:
@@ -355,7 +363,7 @@ def set_track(
         game_session.chapter = incoming_saved.get("chapter", 1)
         game_session.boss_index = incoming_saved.get("boss_index", 0)
         game_session.completed_json = json.dumps(incoming_saved.get("completed", []))
-    elif current_effective != target_source and current_effective != body.track_id:
+    elif current_track != body.track_id:
         game_session.chapter = 1
         game_session.boss_index = 0
         game_session.completed_json = "[]"
@@ -370,9 +378,14 @@ def set_track(
         custom_boss_folder=body.boss_folder,
     )
 
-    # Cache the bundle in deps.TRACK_BUNDLES
+    # Isolated caching: custom folders must not overwrite the normal track bundle in global TRACK_BUNDLES
     from app.api.deps import TRACK_BUNDLES
-    TRACK_BUNDLES[body.track_id] = bundle
+    cache_lookup_key = f"{body.track_id}:{source_identity}" if source_identity != "db" else body.track_id
+    TRACK_BUNDLES[cache_lookup_key] = bundle
+
+    from app.infrastructure.cache.shared_cache import shared_track_cache
+    rel_id = shared_track_cache.get_content_version(body.track_id) if source_identity == "db" else "custom"
+    shared_track_cache.set(body.track_id, rel_id, bundle, source_identity=source_identity)
 
     # Persist content source on game session and user
     game_session.content_source = target_source

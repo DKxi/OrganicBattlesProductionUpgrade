@@ -1,9 +1,10 @@
 import time
 import sys
 import zlib
-import pickle
+import json
 import logging
 import threading
+import urllib.parse
 from typing import Optional, Dict, Any, List, Tuple
 from pathlib import Path
 
@@ -13,12 +14,104 @@ from app.infrastructure.cache.track_cache import BoundedTrackCache
 logger = logging.getLogger("organicbattles.cache.shared")
 
 
+def mask_redis_url(url: str) -> str:
+    """Mask credentials in Redis URL for safe logging and metrics."""
+    try:
+        parsed = urllib.parse.urlsplit(url)
+        if parsed.password:
+            user_part = f"{parsed.username or ''}:***@"
+            host_part = parsed.hostname or ""
+            if parsed.port:
+                host_part += f":{parsed.port}"
+            netloc = f"{user_part}{host_part}"
+            return urllib.parse.urlunsplit((parsed.scheme, netloc, parsed.path, parsed.query, parsed.fragment))
+        return url
+    except Exception:
+        return "<masked_redis_url>"
+
+
+def serialize_bundle(bundle: Any) -> bytes:
+    """
+    Safely serialize bundle to schema-validated JSON payload compressed with zlib.
+    Eliminates deserialization vulnerabilities (arbitrary code execution).
+    """
+    from app.domain.content.entities import ContentBundle
+
+    if isinstance(bundle, ContentBundle) or hasattr(bundle, "to_dict"):
+        payload = {
+            "_type": "ContentBundle",
+            "version": 1,
+            "data": bundle.to_dict(),
+        }
+    elif isinstance(bundle, dict):
+        payload = {
+            "_type": "dict",
+            "version": 1,
+            "data": bundle,
+        }
+    elif isinstance(bundle, (list, str, int, float, bool, type(None))):
+        payload = {
+            "_type": "primitive",
+            "version": 1,
+            "data": bundle,
+        }
+    else:
+        raise ValueError(f"Unsupported bundle type for schema-validated serialization: {type(bundle)}")
+
+    json_bytes = json.dumps(payload, separators=(",", ":")).encode("utf-8")
+    return zlib.compress(json_bytes, level=3)
+
+
+def deserialize_bundle(raw: bytes) -> Any:
+    """
+    Safely deserialize bundle from zlib-compressed JSON payload.
+    Reconstructs ContentBundle if payload type is ContentBundle or contains questions/chapters schema.
+    Rejects any unvalidated pickle streams.
+    """
+    from app.domain.content.entities import ContentBundle
+
+    decompressed = zlib.decompress(raw)
+    payload = json.loads(decompressed.decode("utf-8"))
+
+    if not isinstance(payload, dict):
+        return payload
+
+    obj_type = payload.get("_type")
+    data = payload.get("data", payload)
+
+    if obj_type == "ContentBundle":
+        return ContentBundle.from_dict(data)
+    elif obj_type == "primitive":
+        return data
+    elif obj_type == "dict":
+        if (
+            isinstance(data, dict)
+            and "questions" in data
+            and "chapters" in data
+            and isinstance(data.get("questions"), list)
+            and len(data.get("questions", [])) > 0
+            and isinstance(data.get("questions")[0], (list, tuple))
+        ):
+            return ContentBundle.from_dict(data)
+        return data
+
+    if isinstance(data, dict) and "questions" in data and "chapters" in data:
+        try:
+            return ContentBundle.from_dict(data)
+        except Exception:
+            return data
+
+    return data
+
+
 class SharedTrackCacheManager:
     """
-    Shared cache manager implementing Option A:
-    - Bounded memory caching with TTL.
-    - Versioned keys: (track_id, content_release_id).
+    Shared cache manager implementing Option A with strict security hardening:
+    - Bounded memory caching with TTL (LRU).
+    - Versioned keys: {track_id}:{source_identity}:{content_release_id}.
     - Redis support with automatic fallback to local synchronized cache.
+    - Redis hardening: key prefixing ('ob:'), non-blocking SCAN iteration, TLS checks, credential masking.
+    - Safe schema-validated JSON serialization eliminating pickle deserialization vulnerabilities.
     - Distributed/concurrency rebuild locks to eliminate duplicate simultaneous builds (thundering herd).
     - Telemetry tracking: hit ratio, bundle size in bytes, load duration in ms.
     - Deployment cache warming for popular tracks.
@@ -29,15 +122,17 @@ class SharedTrackCacheManager:
         max_cached_tracks: int = 4,
         ttl_seconds: int = 3600,
         redis_url: Optional[str] = None,
+        redis_key_prefix: str = "ob:",
     ):
         self.max_cached_tracks = max_cached_tracks
         self.ttl_seconds = ttl_seconds
         self.redis_url = redis_url
+        self.redis_key_prefix = redis_key_prefix
 
         # Primary in-memory tier (bounded LRU with TTL)
         self.local_cache = BoundedTrackCache(max_size=max_cached_tracks, ttl_seconds=ttl_seconds)
 
-        # Thread-safe rebuild locks per track
+        # Thread-safe rebuild locks per track and source identity
         self._rebuild_locks: Dict[str, threading.Lock] = {}
         self._rebuild_locks_mutex = threading.Lock()
 
@@ -61,6 +156,14 @@ class SharedTrackCacheManager:
     def _init_redis(self) -> None:
         try:
             import redis
+            masked = mask_redis_url(self.redis_url)
+            if not self.redis_url.startswith("rediss://"):
+                logger.warning(
+                    "Redis connection '%s' does not use TLS ('rediss://'). "
+                    "Production deployments should enforce TLS, network isolation, and dedicated ACLs.",
+                    masked,
+                )
+
             client = redis.Redis.from_url(
                 self.redis_url,
                 socket_timeout=1.5,
@@ -68,7 +171,7 @@ class SharedTrackCacheManager:
             )
             client.ping()
             self._redis_client = client
-            logger.info("SharedTrackCacheManager successfully connected to Redis: %s", self.redis_url)
+            logger.info("SharedTrackCacheManager successfully connected to Redis: %s", masked)
         except Exception as exc:
             logger.warning("Redis connection failed, continuing with local shared cache fallback: %s", exc)
             self._redis_client = None
@@ -77,17 +180,27 @@ class SharedTrackCacheManager:
     def backend(self) -> str:
         return "redis" if self._redis_client is not None else "memory"
 
-    def get_track_rebuild_lock(self, track_id: str) -> threading.Lock:
-        """Get or create reentrant/thread lock for rebuilding a specific track."""
+    def get_track_rebuild_lock(self, track_id: str, source_identity: str = "db") -> threading.Lock:
+        """Get or create reentrant/thread lock for rebuilding a specific track and source."""
+        lock_key = f"{track_id}:{source_identity}"
         with self._rebuild_locks_mutex:
-            if track_id not in self._rebuild_locks:
-                self._rebuild_locks[track_id] = threading.Lock()
-            return self._rebuild_locks[track_id]
+            if lock_key not in self._rebuild_locks:
+                self._rebuild_locks[lock_key] = threading.Lock()
+            return self._rebuild_locks[lock_key]
 
-    def format_cache_key(self, track_id: str, release_id: Optional[str] = None) -> str:
-        """Construct versioned cache key: {track_id}:v{release_id}."""
+    def format_cache_key(
+        self,
+        track_id: str,
+        release_id: Optional[str] = None,
+        source_identity: str = "db",
+    ) -> str:
+        """
+        Construct isolated versioned cache key: {track_id}:{source_identity}:{release_id}.
+        Guarantees custom-folder bundles never share cache entries with normal track bundles.
+        """
         rel = release_id or "default"
-        return f"{track_id}:{rel}"
+        src = source_identity or "db"
+        return f"{track_id}:{src}:{rel}"
 
     def get_content_version(self, track_id: str, db: Optional[Any] = None) -> str:
         """
@@ -97,7 +210,7 @@ class SharedTrackCacheManager:
         # 1. Try checking Redis version key if active
         if self._redis_client is not None:
             try:
-                cached_ver = self._redis_client.get(f"content_release:{track_id}")
+                cached_ver = self._redis_client.get(f"{self.redis_key_prefix}content_release:{track_id}")
                 if cached_ver:
                     return cached_ver.decode("utf-8") if isinstance(cached_ver, bytes) else str(cached_ver)
             except Exception as e:
@@ -131,16 +244,25 @@ class SharedTrackCacheManager:
         new_ver_id = f"{track_id}_v{int(time.time())}"
         if self._redis_client is not None:
             try:
-                self._redis_client.set(f"content_release:{track_id}", new_ver_id, ex=self.ttl_seconds)
+                self._redis_client.set(
+                    f"{self.redis_key_prefix}content_release:{track_id}",
+                    new_ver_id,
+                    ex=self.ttl_seconds,
+                )
             except Exception as e:
                 logger.warning("Redis increment_content_version failed: %s", e)
 
         self.invalidate_track(track_id)
         return new_ver_id
 
-    def get(self, track_id: str, release_id: Optional[str] = None) -> Optional[Any]:
-        """Look up bundle by (track_id, release_id) across local and Redis tiers."""
-        cache_key = self.format_cache_key(track_id, release_id)
+    def get(
+        self,
+        track_id: str,
+        release_id: Optional[str] = None,
+        source_identity: str = "db",
+    ) -> Optional[Any]:
+        """Look up bundle by (track_id, source_identity, release_id) across local and Redis tiers."""
+        cache_key = self.format_cache_key(track_id, release_id, source_identity)
 
         # 1. Local Bounded Cache check
         if cache_key in self.local_cache:
@@ -150,10 +272,10 @@ class SharedTrackCacheManager:
         # 2. Redis check if available
         if self._redis_client is not None:
             try:
-                raw = self._redis_client.get(f"bundle:{cache_key}")
+                redis_key = f"{self.redis_key_prefix}bundle:{cache_key}"
+                raw = self._redis_client.get(redis_key)
                 if raw:
-                    decompressed = zlib.decompress(raw)
-                    bundle = pickle.loads(decompressed)
+                    bundle = deserialize_bundle(raw)
                     # Populate local tier
                     self.local_cache[cache_key] = bundle
                     self._hits += 1
@@ -164,20 +286,27 @@ class SharedTrackCacheManager:
         self._misses += 1
         return None
 
-    def set(self, track_id: str, release_id: Optional[str], bundle: Any, load_duration_ms: float = 0.0) -> None:
+    def set(
+        self,
+        track_id: str,
+        release_id: Optional[str],
+        bundle: Any,
+        load_duration_ms: float = 0.0,
+        source_identity: str = "db",
+    ) -> None:
         """Cache bundle in local bounded cache and Redis with TTL and telemetry."""
-        cache_key = self.format_cache_key(track_id, release_id)
+        cache_key = self.format_cache_key(track_id, release_id, source_identity)
         self.local_cache[cache_key] = bundle
 
-        # Measure / estimate bundle size
+        # Measure / estimate bundle size with safe schema-validated serialization
         try:
-            pickled = pickle.dumps(bundle, protocol=pickle.HIGHEST_PROTOCOL)
-            compressed = zlib.compress(pickled, level=3)
+            compressed = serialize_bundle(bundle)
             size_bytes = len(compressed)
             self._bundle_sizes_bytes[track_id] = size_bytes
 
             if self._redis_client is not None:
-                self._redis_client.setex(f"bundle:{cache_key}", self.ttl_seconds, compressed)
+                redis_key = f"{self.redis_key_prefix}bundle:{cache_key}"
+                self._redis_client.setex(redis_key, self.ttl_seconds, compressed)
         except Exception as exc:
             # Fallback size estimation
             self._bundle_sizes_bytes[track_id] = sys.getsizeof(bundle)
@@ -188,15 +317,18 @@ class SharedTrackCacheManager:
     def invalidate_track(self, track_id: str) -> None:
         """Invalidate all cached bundles for a track across tiers."""
         # Evict matching local keys
-        keys_to_evict = [k for k in list(self.local_cache.keys()) if k.startswith(f"{track_id}:") or k == track_id]
+        keys_to_evict = [
+            k for k in list(self.local_cache.keys())
+            if k == track_id or k.startswith(f"{track_id}:")
+        ]
         for k in keys_to_evict:
             self.local_cache.pop(k, None)
 
-        # Evict from Redis if connected
+        # Evict from Redis if connected using non-blocking scan_iter
         if self._redis_client is not None:
             try:
-                pattern = f"bundle:{track_id}:*"
-                keys = self._redis_client.keys(pattern)
+                pattern = f"{self.redis_key_prefix}bundle:{track_id}:*"
+                keys = list(self._redis_client.scan_iter(match=pattern, count=100))
                 if keys:
                     self._redis_client.delete(*keys)
             except Exception as exc:
@@ -211,7 +343,8 @@ class SharedTrackCacheManager:
         self._database_available = True
         if self._redis_client is not None:
             try:
-                keys = self._redis_client.keys("bundle:*")
+                pattern = f"{self.redis_key_prefix}bundle:*"
+                keys = list(self._redis_client.scan_iter(match=pattern, count=100))
                 if keys:
                     self._redis_client.delete(*keys)
             except Exception as exc:
@@ -233,13 +366,13 @@ class SharedTrackCacheManager:
             start_t = time.time()
             rel_id = self.get_content_version(tid)
             # Rebuild lock prevents race condition during warmup
-            lock = self.get_track_rebuild_lock(tid)
+            lock = self.get_track_rebuild_lock(tid, source_identity="db")
             with lock:
-                bundle = self.get(tid, rel_id)
+                bundle = self.get(tid, rel_id, source_identity="db")
                 if not bundle:
                     bundle = load_track_bundle(root_dir, tid)
                     duration_ms = (time.time() - start_t) * 1000.0
-                    self.set(tid, rel_id, bundle, load_duration_ms=duration_ms)
+                    self.set(tid, rel_id, bundle, load_duration_ms=duration_ms, source_identity="db")
                     results[tid] = {"status": "warmed", "duration_ms": round(duration_ms, 2), "release_id": rel_id}
                 else:
                     results[tid] = {"status": "already_cached", "release_id": rel_id}
@@ -296,42 +429,60 @@ class SharedTrackCacheManager:
             return True
         return any(fb in ("cache_degraded", "json_fallback") for fb in self._fallback_statuses.values())
 
-    def get_any_validated(self, track_id: str) -> Optional[Tuple[str, Any]]:
-        """Look up any validated cached bundle for track_id in local cache or Redis."""
-        # 1. Check local_cache for matching track_id prefix
+    def get_any_validated(
+        self,
+        track_id: str,
+        source_identity: str = "db",
+    ) -> Optional[Tuple[str, Any]]:
+        """
+        Look up any validated cached bundle for track_id in local cache or Redis.
+        Strictly restricts lookup to source_identity ("db" by default) so custom-folder
+        bundles can never pollute or be served as normal track cache.
+        """
+        # 1. Check local_cache
         for key in list(self.local_cache.keys()):
-            if key == track_id or key.startswith(f"{track_id}:"):
+            parts = key.split(":")
+            if len(parts) >= 3 and parts[0] == track_id:
+                if parts[1] == source_identity:
+                    bundle = self.local_cache.get(key)
+                    if bundle is not None:
+                        return parts[2], bundle
+            elif source_identity == "db" and (key == track_id or (key.startswith(f"{track_id}:") and len(parts) == 2)):
                 bundle = self.local_cache.get(key)
                 if bundle is not None:
-                    version = key.split(":", 1)[1] if ":" in key else "cached"
+                    version = parts[1] if len(parts) == 2 else "cached"
                     return version, bundle
 
-        # 2. Check Redis if available
+        # 2. Check Redis if available using non-blocking scan_iter
         if self._redis_client is not None:
             try:
-                pattern = f"bundle:{track_id}:*"
-                keys = self._redis_client.keys(pattern)
-                if keys:
-                    first_key = keys[0].decode("utf-8") if isinstance(keys[0], bytes) else str(keys[0])
-                    raw = self._redis_client.get(first_key)
+                pattern = f"{self.redis_key_prefix}bundle:{track_id}:{source_identity}:*"
+                for key_b in self._redis_client.scan_iter(match=pattern, count=10):
+                    raw = self._redis_client.get(key_b)
                     if raw:
-                        decompressed = zlib.decompress(raw)
-                        bundle = pickle.loads(decompressed)
-                        version = first_key.split(":")[-1]
+                        bundle = deserialize_bundle(raw)
+                        key_str = key_b.decode("utf-8") if isinstance(key_b, bytes) else str(key_b)
+                        parts = key_str.split(":")
+                        version = parts[-1] if parts else "cached"
                         return version, bundle
             except Exception as exc:
                 logger.debug("Redis get_any_validated note: %s", exc)
 
         return None
 
-    def has_any_validated_cache(self) -> bool:
-        """Returns True if any track bundles are currently cached in memory or Redis."""
-        if len(self.local_cache) > 0:
-            return True
+    def has_any_validated_cache(self, source_identity: str = "db") -> bool:
+        """Returns True if any track bundles for the given source identity are cached."""
+        for key in list(self.local_cache.keys()):
+            parts = key.split(":")
+            if len(parts) >= 3 and parts[1] == source_identity:
+                return True
+            if source_identity == "db" and len(parts) <= 2:
+                return True
+
         if self._redis_client is not None:
             try:
-                keys = self._redis_client.keys("bundle:*")
-                if keys:
+                pattern = f"{self.redis_key_prefix}bundle:*:{source_identity}:*"
+                for _ in self._redis_client.scan_iter(match=pattern, count=1):
                     return True
             except Exception:
                 pass

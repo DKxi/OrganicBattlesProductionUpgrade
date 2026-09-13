@@ -1093,4 +1093,64 @@ Created [scripts/setup_supabase_least_privilege_roles.sql](file:///Users/nkoneru
 - **Latency Scorecard**: Flow coverage 8/8 modules passed (100%), all visual artifacts and screenshots saved to `tests/ui_artifacts/`.
 - **Regression Suite (`uv run pytest`)**: 365 passed, 1 skipped in 74.49s.
 
+---
+
+# Walkthrough: Shared Cache Hardening, Pickle Elimination & Cache Key Isolation
+
+## Problem Summary
+1. **RCE Deserialization Vulnerability**: Redis cached bundles were previously serialized with Python `pickle.dumps` and deserialized with `pickle.loads`. If an attacker or unauthorized principal was able to write keys to Redis, `pickle.loads` could execute arbitrary system commands.
+2. **Cache Key Collision & Poisoning**: Normal track bundles and custom-folder bundles previously shared the same cache key format (`{track_id}:{release_id}`). When custom-folder bundles were loaded, they could pollute or overwrite normal track bundles in memory and shared cache.
+3. **Redis Operational & Network Security**: Redis cache keys had no namespace prefix (risking collisions with other applications), invalidation used blocking `KEYS` commands (which can stall single-threaded Redis clusters), Redis URLs with passwords were logged unmasked, and TLS was not validated.
+
+## Key Changes Implemented
+
+### 1. Safe Schema-Validated JSON Serialization
+- In [app/domain/content/entities.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/content/entities.py):
+  - Added `to_dict()` and `from_dict()` methods to `ContentBundle`.
+  - Fully supports complex dataclass structures: questions `(prompt, choices, answer)` tuples, list structures, and tuple-keyed dictionaries `(chapter, boss)` in `question_boss_bank`, `boss_spell_values`, and `spell_values`.
+- In [app/infrastructure/cache/shared_cache.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/cache/shared_cache.py):
+  - Completely removed `pickle` import and all `pickle.dumps` / `pickle.loads` invocations.
+  - Implemented `serialize_bundle(bundle)`: encodes schema-validated JSON payload with type tags (`_type="ContentBundle"`, `_type="dict"`, etc.) and compresses with `zlib`.
+  - Implemented `deserialize_bundle(raw)`: decompresses `zlib` stream, parses JSON, and reconstructs `ContentBundle`. Safely rejects any raw or unvalidated pickle payloads without executing code.
+
+### 2. Cache Key Isolation with `source_identity`
+- In [app/infrastructure/cache/shared_cache.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/cache/shared_cache.py):
+  - Updated key formatting to `{track_id}:{source_identity}:{release_id}` (e.g. `default:db:v1` vs `default:custom_a1b2c3d4:custom`).
+  - Added `source_identity` parameter to `get()`, `set()`, `format_cache_key()`, and `get_track_rebuild_lock()`.
+  - `get_any_validated(track_id, source_identity="db")`: restricted to `source_identity="db"` so custom-folder bundles can never be served as fallback for standard track bundles.
+- In [app/api/deps.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/deps.py):
+  - Updated `get_content_bundle()` to isolate track cache lookups and rebuild locks by `source_identity`.
+- In [app/api/v1/game.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/game.py):
+  - In `set_track()`: generated unique `source_identity` from hashed custom folder paths. Scoped `TRACK_BUNDLES` and `shared_track_cache` keys to prevent custom folders from polluting global track bundles.
+- In [app/domain/content/loader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/content/loader.py):
+  - Enforced `source_identity="db"` when retrieving previously validated cache during database outages.
+
+### 3. Redis Security Hardening
+- In [app/infrastructure/cache/shared_cache.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/cache/shared_cache.py):
+  - **Key Prefixing**: Prepended `ob:` prefix (e.g., `ob:bundle:...`, `ob:content_release:...`) to all Redis keys to support Redis ACLs and multi-tenant isolation.
+  - **Non-Blocking SCAN**: Replaced blocking `redis.keys()` with cursor-based non-blocking `redis.scan_iter(match=..., count=100)` during `invalidate_track()`, `clear()`, and `get_any_validated()`.
+  - **Credential Masking**: Added `mask_redis_url()` to redact passwords from logs (e.g., `redis://:***@redis.example.com:6379/0`).
+  - **TLS Verification**: Added high-visibility warning if Redis URL in production does not enforce TLS (`rediss://`).
+
+## Verification & Test Results
+
+### 1. Automated Security & Isolation Test Suite
+- Created [tests/test_cache_security_and_key_isolation.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_cache_security_and_key_isolation.py) (7/7 passed):
+  - `test_pickle_is_not_imported_or_used`: Verified `pickle` is 100% eliminated from `shared_cache.py`.
+  - `test_schema_validated_bundle_serialization_round_trip`: Verified full tuple-key fidelity round-trip.
+  - `test_malicious_pickle_payload_rejected_safely`: Confirmed malicious pickle payload with RCE command execution is rejected safely without execution.
+  - `test_cache_key_isolation_custom_folder_vs_db`: Verified custom folder vs normal bundles key isolation.
+  - `test_redis_url_credential_masking`: Verified password redaction in log strings.
+  - `test_redis_prefix_and_scan_iter_used_on_invalidation`: Verified non-blocking SCAN and `ob:` prefixes.
+  - `test_fallback_serves_validated_cache_when_db_unavailable`: Confirmed validated cache serving.
+
+### 2. Full Regression Suite
+- **Command**: `uv run pytest`
+- **Result**: **372 passed, 1 skipped in 72.29s (100% green)**.
+
+### 3. End-to-End WebKit UI Test Suite
+- **Command**: `uv run python scripts/run_ui_tests.py --browser webkit`
+- **Result**: **8/8 modules passed (100%)**. Boot screen, authentication, confirmation code, avatar creator, track selection, combat spells, damage evaluation, counterattacks, and admin portal verified without errors.
+
+
 

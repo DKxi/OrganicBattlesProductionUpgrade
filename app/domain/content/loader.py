@@ -594,7 +594,7 @@ def load_track_bundle(
 
         # Database is unavailable or has no questions for this track
         from app.infrastructure.cache.shared_cache import shared_track_cache
-        cached = shared_track_cache.get_any_validated(track_id)
+        cached = shared_track_cache.get_any_validated(track_id, source_identity="db")
         if cached:
             cached_version, cached_bundle = cached
             shared_track_cache.record_content_status(
