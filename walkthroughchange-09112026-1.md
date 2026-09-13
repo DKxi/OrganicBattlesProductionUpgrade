@@ -1519,5 +1519,56 @@ The system has been updated across configuration, domain loaders, routing, envir
 - **Full Health Restoration**:
   - Vanquishing the boss (reducing boss HP to 0) and advancing to the next arena automatically restores the player to full **150 / 150 HP**.
 
+---
 
+# Walkthrough: Source Code Audit & Task Classification for `GetawayfromDatafolder.md` and `ProdUpgradeTasks.md`
 
+## 1. Audit of `GetawayfromDatafolder.md`
+- **Objective**: Analyze the 4 phases and summary checklist in [GetawayfromDatafolder.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/GetawayfromDatafolder.md) against the active codebase and classify actionable items as `[FIXED]` or `[TODO]`.
+- **Classification Findings**:
+  - **Phase 1: Move Boss Images to Cloud Storage / CDN** $\rightarrow$ `[FIXED]`
+    - Created and populated public Supabase S3 buckets: `DefaultBosses`, `AdvancedBosses`, and `FoundationalBosses`.
+    - Boss image references in `tracks_config.json`, `static/js/tracks-config.js`, and database entries route directly to public CDN URLs.
+    - [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py) issues `307 Temporary Redirect` to Supabase CDN for `/static/assets/bosses/*.png`.
+  - **Phase 2: Move Track & Curriculum Seeding into Alembic Migration** $\rightarrow$ `[PARTIALLY FIXED / IN PROGRESS]`
+    - `load_tracks_config(db=db)` reads authoritative data from PostgreSQL.
+    - Preserves lightweight `data/tracks_config.json` (8 KB) in source control as the metadata source of truth.
+  - **Phase 3: Decouple Question Ingestion from Runtime Web Containers** $\rightarrow$ `[FIXED]`
+    - Excluded `data/tracks/` in `.dockerignore` and `.gitignore`.
+    - Untracked all 568 `chapter_*.json` question files and 216 boss PNG images from git index while preserving disk files.
+    - Question ingestion pipeline ([scripts/ingest_questions_to_postgres.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/scripts/ingest_questions_to_postgres.py)) streams directly from S3 buckets ([app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py)).
+  - **Phase 4: Clean Up Legacy Files** $\rightarrow$ `[TODO]`
+    - Retained `data/organic_battles.db` pending final archival.
+
+---
+
+## 2. Audit of `ProdUpgradeTasks.md`
+- **Objective**: Thoroughly evaluate all 142 actionable checklist items across 16 sections/phases in [ProdUpgradeTasks.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/ProdUpgradeTasks.md) against active code, tagging each step `[FIXED]` or `[TODO]` without altering any underlying text, diagrams, or structure.
+- **Detailed Audit Results**:
+
+| Section / Phase | Total Tasks | `[FIXED]` | `[TODO]` | Key Status Highlights |
+|:---|:---:|:---:|:---:|:---|
+| **Section 3: Browser & Mobile** | 17 | 9 | 8 | `Phaser.AUTO`, `Phaser.Scale.RESIZE`, touch targets, accessible HTML overlay controls, `prefers-reduced-motion`, user-gesture audio unlock, and `visibilitychange` pause are `[FIXED]`. Safe areas, pointer events, texture fallbacks, and chapter preloading are `[TODO]`. |
+| **Phase 0: Targets & Baseline** | 6 | 2 | 4 | Real-time observability instrumentation (`app/observability/metrics.py`) and characterization test suite (384 tests) are `[FIXED]`. Concurrent player and latency approvals are `[TODO]`. |
+| **Phase 1: Repository Alignment** | 9 | 8 | 1 | Pydantic V2, correlation IDs, UTF-8 fixes, Docker version alignment, health probes (`/health/live`, `/health/ready`), and admin portal are `[FIXED]`. Startup production secrets guardrail is `[TODO]`. |
+| **Phase 2: Modular Architecture** | 8 | 8 | 0 | Modular directory structure (`app/api/v1`, `app/domain`, `app/infrastructure`), pure domain combat engine (`rules.py`), repository interfaces, error envelopes, and security middleware (CSP, HSTS) are `[FIXED]`. |
+| **Phase 3: Database & Pooling** | 7 | 7 | 0 | Unified `OB_` table prefixing, Supabase pooler configuration, SQLite-to-PostgreSQL migrator, Alembic baseline migrations (`0001`–`0009`), composite ordering indexes, and optimistic locking (`version` checks) are `[FIXED]`. |
+| **Phase 4: Stateless API & Redis** | 6 | 0 | 6 | `ADMIN_TOKENS` and Slowapi currently use memory backends; Redis-backed distributed locks and hot session caching remain `[TODO]`. |
+| **Phase 5: Background Workers** | 6 | 0 | 6 | Worker queue (Celery/ARQ/SQS), transactional outbox, and managed SES/SendGrid integration remain `[TODO]`. |
+| **Phase 6: Auth & Identity** | 4 | 1 | 3 | `HttpOnly`, `SameSite=Lax`, and `Secure` cookies are `[FIXED]`. Argon2id hashing (currently PBKDF2 with 310k rounds), Cognito/OIDC, and account lockout are `[TODO]`. |
+| **Phase 7: Content Pipeline** | 10 | 9 | 1 | 27 chapters, boss strategy validation, stripped answers, procedural Web Audio SFX, S3 boss storage CDN, question validation CLI, immutable `OB_content_releases`, and `(track_id, release_id)` caching are `[FIXED]`. Orphaned asset alerting is `[TODO]`. |
+| **Phase 8: CDN & Static Assets** | 7 | 0 | 7 | Reproducible frontend bundles, CloudFront OAC, and WebP/AVIF generation remain `[TODO]`. |
+| **Phase 9: Cloud Infrastructure** | 10 | 0 | 10 | Terraform/CDK, VPC subnets, ALB multi-AZ, Aurora, and Secrets Manager remain `[TODO]`. |
+| **Phase 10: CI/CD & Safety** | 9 | 0 | 9 | GitHub Actions workflows, staging smoke tests, and canary deployments remain `[TODO]`. |
+| **Phase 11: Observability** | 8 | 3 | 5 | RED metrics, saturation metrics, and gameplay metrics are `[FIXED]`. OpenTelemetry traces, Grafana dashboards, and centralized logs remain `[TODO]`. |
+| **Phase 12: Load & Stress Testing** | 11 | 1 | 10 | Telemetry profiling of queries and cache hit rate is `[FIXED]`. Locust/k6 load scripts and failover chaos testing remain `[TODO]`. |
+| **Phase 13: Security & Launch** | 9 | 4 | 5 | HTTPS/cookies, CSP/HSTS headers, DB least-privilege roles (`ob_player`, `ob_admin`, `ob_content_ingest`, `ob_migrator`, `ob_owner`) are `[FIXED]`. Threat modeling and WAF rules are `[TODO]`. |
+| **Phase 14: Controlled Launch** | 7 | 1 | 6 | Release rollback capability is `[FIXED]`. Staged rollout and canary monitoring remain `[TODO]`. |
+| **Phase 15: Disaster Recovery** | 8 | 0 | 8 | Warm standby, cross-region replication, and failover automation remain `[TODO]`. |
+
+---
+
+## 3. Automated Test Suite Validation
+- Command: `uv run pytest -q`
+- Result: **383 passed, 1 skipped in 93.48s** (100% green).
+- Confirmed zero regressions across combat mechanics, database connection pooling, Alembic migration tests, and security middleware.
