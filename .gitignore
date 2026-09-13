@@ -24,3 +24,4 @@ logs/
 # (Stored in and seeded directly from S3 buckets: DefaultTracks, AdvancedTracks, FoundationalTracks)
 data/tracks/
 !data/tracks_config.json
+!data/tracks/**/.gitkeep
