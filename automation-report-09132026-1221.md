@@ -178,3 +178,30 @@ uv run python scripts/load_test_concurrency.py --base-url http://127.0.0.1:8000 
 ```bash
 uv run python scripts/load_test_concurrency.py --base-url https://staging.organicbattles.com --players 15 --turns 8 --max-p95-ms 150.0
 ```
+
+---
+
+## 7. Scope & Test Methodology: Pure API vs. Browser Testing
+
+This load test harness operates strictly at the **API Protocol & Backend Infrastructure Layer**.
+
+### What the Concurrency Test Measures (Pure API Layer)
+- **Direct Protocol Dispatch**: Simulates virtual players by firing asynchronous HTTP/REST requests (`httpx.AsyncClient`) directly to application routers (`/api/game/new`, `/api/avatar/finalize`, `/api/battle/select-spell`, `/api/battle/answer`, `/api/game/state`).
+- **No Client Browser Overhead**: Does not launch browser binaries (Chrome/Safari/WebKit) or render the HTML5 / Phaser 3 game canvas.
+- **Backend & Database Stress**: Isolates and characterises backend performance without client-side rendering bottlenecks:
+  - Multi-tier connection pool saturation (`SessionLocal` / `PlayerSessionLocal`).
+  - Row-Level Security (RLS) evaluation under concurrent player contexts.
+  - Race conditions and optimistic locking enforcement (`GameSession.version`).
+  - Redis / in-memory cache thundering herd protection.
+  - Rate limiting, middleware latency, and correlation tracking.
+
+### Architectural Comparison
+
+| Dimension | `load_test_concurrency.py` (This Test) | `ui_test_suite.py` (E2E Test) |
+|:---|:---|:---|
+| **Mechanism** | **Asynchronous HTTP REST Protocol** (`httpx`) | **Headless Browser Execution** (Playwright WebKit / Safari) |
+| **Primary Goal** | Server concurrency, throughput, database lock contention, and latency SLA verification. | End-to-end user experience, DOM rendering, Phaser 3 canvas animations, button clicks, and visual regression. |
+| **Scalability** | High ($10$ to $100+$ simultaneous players with negligible CPU footprint). | Low ($1$ to $5$ concurrent browser contexts before host RAM/CPU saturation). |
+| **Memory Footprint** | Extremely lightweight (~30MB total). | Heavy (~300MB+ per active browser context). |
+| **Testing Scope** | API routers, SQLAlchemy ORM, PostgreSQL connection pools, Redis cache. | Full stack including client-side JavaScript, assets, CSS layouts, and audio unlocking. |
+
