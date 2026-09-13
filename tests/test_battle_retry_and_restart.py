@@ -193,3 +193,109 @@ class TestBattleRetryAndRestart:
         )
         assert res_mode.status_code == 200
         assert res_mode.json()["chapter"] == 2
+
+
+class TestBattleNextTurnProgression:
+    def test_next_turn_rejected_when_boss_alive_full_hp(self, monkeypatch):
+        """Cannot advance to next turn if current boss is at full health."""
+        client = TestClient(app)
+        uid = uuid.uuid4().hex[:8]
+        headers = _get_auth_headers(client, monkeypatch, f"test_nt_alive_{uid}@test.com", f"user_{uid}")
+
+        start_res = client.post("/api/game/new", headers=headers)
+        assert start_res.status_code == 200
+        sid = start_res.json()["session_id"]
+        assert start_res.json()["boss"]["hp"] > 0
+
+        # Attempting next-turn on an alive boss must fail with 400 Bad Request
+        res = client.post("/api/battle/next-turn", headers=headers, json={"session_id": sid})
+        assert res.status_code == 400
+        assert "Current boss is still alive" in res.json()["detail"]
+
+    def test_next_turn_rejected_when_boss_alive_mid_hp(self, monkeypatch):
+        """Cannot advance to next turn if current boss is partially damaged but alive."""
+        client = TestClient(app)
+        uid = uuid.uuid4().hex[:8]
+        headers = _get_auth_headers(client, monkeypatch, f"test_nt_mid_{uid}@test.com", f"user_{uid}")
+
+        start_res = client.post("/api/game/new", headers=headers)
+        sid = start_res.json()["session_id"]
+
+        with SessionLocal() as db:
+            gs = db.query(GameSession).filter(GameSession.id == sid).first()
+            gs.boss_hp = 35
+            db.commit()
+
+        res = client.post("/api/battle/next-turn", headers=headers, json={"session_id": sid})
+        assert res.status_code == 400
+        assert "Current boss is still alive (35 HP remaining)" in res.json()["detail"]
+
+    def test_next_turn_rejected_when_player_defeated(self, monkeypatch):
+        """Cannot advance if player is defeated even if boss is defeated."""
+        client = TestClient(app)
+        uid = uuid.uuid4().hex[:8]
+        headers = _get_auth_headers(client, monkeypatch, f"test_nt_pdef_{uid}@test.com", f"user_{uid}")
+
+        start_res = client.post("/api/game/new", headers=headers)
+        sid = start_res.json()["session_id"]
+
+        with SessionLocal() as db:
+            gs = db.query(GameSession).filter(GameSession.id == sid).first()
+            gs.boss_hp = 0
+            gs.player_hp = 0
+            db.commit()
+
+        res = client.post("/api/battle/next-turn", headers=headers, json={"session_id": sid})
+        assert res.status_code == 400
+        assert "Player has been defeated" in res.json()["detail"]
+
+    def test_next_turn_rejected_when_turn_in_progress(self, monkeypatch):
+        """Cannot advance while a combat question turn is actively pending."""
+        client = TestClient(app)
+        uid = uuid.uuid4().hex[:8]
+        headers = _get_auth_headers(client, monkeypatch, f"test_nt_turn_{uid}@test.com", f"user_{uid}")
+
+        start_res = client.post("/api/game/new", headers=headers)
+        sid = start_res.json()["session_id"]
+
+        with SessionLocal() as db:
+            gs = db.query(GameSession).filter(GameSession.id == sid).first()
+            gs.boss_hp = 0
+            gs.turn_id = "test_pending_turn_123"
+            gs.active_spell = "fire-spark"
+            db.commit()
+
+        res = client.post("/api/battle/next-turn", headers=headers, json={"session_id": sid})
+        assert res.status_code == 400
+        assert "question turn is in progress" in res.json()["detail"]
+
+    def test_next_turn_succeeds_when_boss_defeated_and_prevents_replay(self, monkeypatch):
+        """Advance succeeds when boss is defeated (boss_hp <= 0), and sequential call is blocked."""
+        client = TestClient(app)
+        uid = uuid.uuid4().hex[:8]
+        headers = _get_auth_headers(client, monkeypatch, f"test_nt_win_{uid}@test.com", f"user_{uid}")
+
+        start_res = client.post("/api/game/new", headers=headers)
+        sid = start_res.json()["session_id"]
+        initial_boss_slug = start_res.json()["boss"]["id"]
+
+        # Simulate legitimate boss defeat
+        with SessionLocal() as db:
+            gs = db.query(GameSession).filter(GameSession.id == sid).first()
+            gs.boss_hp = 0
+            gs.turn_id = None
+            gs.active_spell = None
+            db.commit()
+
+        # Legitimate next-turn call succeeds
+        res = client.post("/api/battle/next-turn", headers=headers, json={"session_id": sid})
+        assert res.status_code == 200
+        state = res.json()
+        assert state["boss"]["hp"] == state["boss"]["max_hp"]
+        assert state["player"]["hp"] == state["player"]["max_hp"]
+        assert initial_boss_slug in state["completed"]
+
+        # Second call immediately after advancing must fail because next boss has full HP!
+        res_repeat = client.post("/api/battle/next-turn", headers=headers, json={"session_id": sid})
+        assert res_repeat.status_code == 400
+        assert "Current boss is still alive" in res_repeat.json()["detail"]

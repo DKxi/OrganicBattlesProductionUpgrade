@@ -37,6 +37,11 @@ class AnswerRequest(BaseModel):
     expected_version: Optional[int] = None
 
 
+class NextTurnRequest(BaseModel):
+    session_id: Optional[str] = None
+    expected_version: Optional[int] = None
+
+
 class RetryRequest(BaseModel):
     session_id: Optional[str] = None
     mode: Optional[str] = "defeat"  # "defeat" | "practice" | "restart"
@@ -359,12 +364,35 @@ def answer_question(
 
 @router.post("/battle/next-turn")
 def next_turn(
+    body: Optional[NextTurnRequest] = None,
     session_id: Optional[str] = None,
     current_user: User = Depends(get_current_user),
     db: DBSession = Depends(get_db),
 ):
+    target_sid = (body.session_id if body else None) or session_id
     session_repo = SessionRepository(db)
-    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=session_id)
+    game_session = session_repo.get_for_user_or_raise(user_id=current_user.id, session_id=target_sid)
+
+    # Invariant Guard 1: The current boss must be defeated (boss_hp <= 0)
+    if game_session.boss_hp > 0:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Cannot advance: Current boss is still alive ({game_session.boss_hp} HP remaining). Defeat the boss before advancing.",
+        )
+
+    # Invariant Guard 2: The player cannot advance if defeated (player_hp <= 0)
+    if game_session.player_hp <= 0:
+        raise HTTPException(
+            status_code=400,
+            detail="Cannot advance: Player has been defeated. Please retry or restart the battle.",
+        )
+
+    # Invariant Guard 3: Cannot advance while a question turn is actively in progress
+    if game_session.active_spell is not None or game_session.turn_id is not None:
+        raise HTTPException(
+            status_code=400,
+            detail="Cannot advance while a question turn is in progress. Complete the turn first.",
+        )
 
     effective = resolve_content_source((current_user.content_source if current_user and current_user.content_source else None) or game_session.content_source)
     bundle = get_content_bundle(effective)
@@ -405,13 +433,15 @@ def next_turn(
         victory = True
         log = ["Victory! All chapters and bosses have been vanquished!"]
 
-    expected_version = game_session.version
+    expected_version = (body.expected_version if body and body.expected_version is not None else None) or game_session.version
     now_ts = int(time.time())
 
     updated_rows = db.query(GameSession).filter(
         GameSession.id == game_session.id,
         GameSession.user_id == current_user.id,
         GameSession.version == expected_version,
+        GameSession.boss_hp <= 0,
+        GameSession.player_hp > 0,
     ).update(
         {
             GameSession.chapter: new_chapter,
@@ -432,7 +462,17 @@ def next_turn(
     db.commit()
 
     if updated_rows == 0:
-        raise HTTPException(409, "Combat session was updated concurrently. Please refresh state.")
+        current_sess = db.query(GameSession.version, GameSession.boss_hp, GameSession.player_hp).filter(
+            GameSession.id == game_session.id,
+            GameSession.user_id == current_user.id,
+        ).first()
+        if not current_sess or current_sess[0] != expected_version:
+            raise HTTPException(409, "Combat session was updated concurrently. Please refresh state.")
+        if current_sess[1] > 0:
+            raise HTTPException(400, f"Cannot advance: Current boss is still alive ({current_sess[1]} HP remaining).")
+        if current_sess[2] <= 0:
+            raise HTTPException(400, "Cannot advance: Player has been defeated. Please retry or restart the battle.")
+        raise HTTPException(409, "Combat session state changed. Please refresh state.")
 
     db.refresh(game_session)
 

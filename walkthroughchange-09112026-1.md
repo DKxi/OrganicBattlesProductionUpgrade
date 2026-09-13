@@ -1443,4 +1443,43 @@ The system has been updated across configuration, domain loaders, routing, envir
   - Verified with `git ls-files | grep -E "data/tracks/.*/bosses/.*\.png"` $\rightarrow$ **0 files**.
   - All commits pushed to `origin main`.
 
+---
+
+# Walkthrough: Resolution of P0: Advance Without Victory
+
+## Problem Summary
+* **Vulnerability**: In `POST /api/battle/next-turn`, the endpoint immediately marked the current boss as defeated in `completed_json` and advanced `boss_index`/`chapter` without verifying if the boss was actually defeated, if the player was alive, or if a turn was currently in flight.
+* **Exploit Impact**: An attacker or client could skip every battle and curriculum in the game by repeatedly calling `/battle/next-turn` on full-health bosses without answering questions.
+
+## Implementation Details
+1. **Input Schema (`NextTurnRequest`)**:
+   - In [app/api/v1/battle.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/battle.py):
+     - Added `NextTurnRequest(session_id: Optional[str] = None, expected_version: Optional[int] = None)`.
+     - Supports both JSON request body and URL query parameters for full backward compatibility.
+2. **Invariant Pre-Condition Guards**:
+   - **Boss Defeat**: Rejects call with `HTTP 400 Bad Request` if `game_session.boss_hp > 0`:
+     `"Cannot advance: Current boss is still alive ({boss_hp} HP remaining). Defeat the boss before advancing."`
+   - **Player Survival**: Rejects call with `HTTP 400 Bad Request` if `game_session.player_hp <= 0`:
+     `"Cannot advance: Player has been defeated. Please retry or restart the battle."`
+   - **Turn In-Flight**: Rejects call with `HTTP 400 Bad Request` if `active_spell is not None` or `turn_id is not None`:
+     `"Cannot advance while a question turn is in progress. Complete the turn first."`
+3. **Atomic SQL Predicate & Concurrency Protection**:
+   - In the database `UPDATE` statement, added filters:
+     ```python
+     GameSession.boss_hp <= 0,
+     GameSession.player_hp > 0,
+     ```
+   - Prevents race conditions and duplicate sequential advancement.
+4. **Automated Regression Suite**:
+   - In [tests/test_battle_retry_and_restart.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_battle_retry_and_restart.py), added `TestBattleNextTurnProgression`:
+     - `test_next_turn_rejected_when_boss_alive_full_hp` $\rightarrow$ verifies 400 on full-health boss.
+     - `test_next_turn_rejected_when_boss_alive_mid_hp` $\rightarrow$ verifies 400 on partially damaged boss.
+     - `test_next_turn_rejected_when_player_defeated` $\rightarrow$ verifies 400 when player HP is 0.
+     - `test_next_turn_rejected_when_turn_in_progress` $\rightarrow$ verifies 400 when question turn is active.
+     - `test_next_turn_succeeds_when_boss_defeated_and_prevents_replay` $\rightarrow$ verifies 200 on legitimate defeat, and immediate 400 on second sequential call.
+
+## Test Results
+- **Unit & Integration Tests**: `uv run pytest tests/test_battle_retry_and_restart.py` $\rightarrow$ **10 passed in 0.62s**.
+- **Full Project Suite**: `uv run pytest` $\rightarrow$ **383 passed, 1 skipped in 92.72s** (100% green).
+
 

@@ -57,13 +57,13 @@ class TestExplanationFlowAndStaleness:
             active_q = json.loads(gs.active_question_json)
             # active_q is (prompt, choices, correct_letter, explanation)
             correct_letter = active_q[2]
-            wrong_letter = "B" if correct_letter != "B" else "A"
 
-        # Submit INCORRECT answer
+        # Submit INCORRECT answer (non-matching string ensures incorrect grading regardless of choice shuffle)
+        wrong_answer = "Definitely Wrong Answer 123"
         ans_wrong = client.post(
             "/api/battle/answer",
             headers=headers,
-            json={"session_id": sid, "turn_id": t1, "answer": wrong_letter},
+            json={"session_id": sid, "turn_id": t1, "answer": wrong_answer},
         )
         assert ans_wrong.status_code == 200
         data_wrong = ans_wrong.json()
