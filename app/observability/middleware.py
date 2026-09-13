@@ -63,7 +63,7 @@ class SecurityAndObservabilityMiddleware(BaseHTTPMiddleware):
             "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; "
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
             "font-src 'self' https://fonts.gstatic.com; "
-            "img-src 'self' data:;"
+            "img-src 'self' data: https://*.supabase.co https://*.storage.supabase.co;"
         )
 
         if settings.cookie_secure:

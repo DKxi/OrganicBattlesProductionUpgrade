@@ -72,9 +72,9 @@ export function Avatar({ character = 'organic-apprentice', state = 'idle', size 
   node.className = `avatar ${safeCharacter} avatar-${size} state-${safeState} skin-${safeConfig.skinTone} hair-style-${safeConfig.hair.style} hair-color-${safeConfig.hair.color} glasses-${safeConfig.glasses} coat-${safeConfig.coat} shirt-${safeConfig.shirt} pants-${safeConfig.pants} shoes-${safeConfig.shoes} satchel-${safeConfig.satchel} flask-${safeConfig.flask} accessory-${safeConfig.accessory} accent-${safeConfig.accentColor} ${direction === 'left' ? 'face-left' : ''} ${className}`.trim();
   node.dataset.character = safeCharacter;
   node.dataset.state = safeState;
-  node.dataset.avatarConfig = JSON.stringify(safeConfig);
-  node.setAttribute('aria-label', label || CHARACTERS[safeCharacter].name);
   const imageAsset = asset || CHARACTERS[safeCharacter].asset;
+  node.dataset.asset = imageAsset;
+  node.setAttribute('aria-label', label || CHARACTERS[safeCharacter].name);
   const imageName = displayName || CHARACTERS[safeCharacter].name;
   const artFrame = document.createElement('div');
   artFrame.className = 'avatar-art-frame';
