@@ -678,23 +678,31 @@ def get_system_health(admin_info: dict = Depends(auth_admin), db: DBSession = De
 
 def _get_default_pg_url() -> str:
     """Retrieve the configured PostgreSQL connection URL from environment, env file, or settings."""
-    env_url = os.getenv("DATABASE_URL")
+    env_url = os.getenv("DATABASE_URL_ADMIN") or os.getenv("DATABASE_URL")
     if env_url and "postgresql" in env_url:
         return env_url
 
-    env_file = settings.root_dir / "env" if (settings.root_dir / "env").exists() else settings.root_dir / ".env"
-    if env_file.exists():
-        try:
-            from dotenv import dotenv_values
-            vals = dotenv_values(env_file)
-            pg = vals.get("DATABASE_URL")
-            if pg and "postgresql" in pg:
-                return pg
-        except Exception:
-            pass
+    candidates = [
+        settings.root_dir / "local.env",
+        settings.root_dir / "env",
+        settings.root_dir / ".env",
+        settings.root_dir / "prod.env",
+    ]
+    for env_file in candidates:
+        if env_file.exists():
+            try:
+                from dotenv import dotenv_values
+                vals = dotenv_values(env_file)
+                pg = vals.get("DATABASE_URL_ADMIN") or vals.get("DATABASE_URL")
+                if pg and "postgresql" in pg:
+                    return pg
+            except Exception:
+                pass
 
     if "postgresql" in settings.database_url:
         return settings.database_url
+    if "postgresql" in getattr(settings, "database_url_admin", ""):
+        return settings.database_url_admin
 
     return ""
 
