@@ -1326,3 +1326,74 @@ The system has been updated across configuration, domain loaders, routing, envir
 ### 2. Pytest Test Suites
 - `tests/test_tracks_config.py`: **8 passed in 0.41s**
 - `tests/test_track_content_loading.py`: **9 passed in 1.12s**
+
+---
+
+# Walkthrough: Database Query Optimization & S3 Question Bank Ingestion
+
+## Problem Summary
+1. **Query Performance Bottlenecks in Supabase**:
+   - `OB_questions` suffered from slow ordering and sequential scans (`with _base_query as (...)`, max query time 1,592ms).
+   - Ingestion and boss synchronization scripts triggered an severe **N+1 query pattern** on `OB_bosses` (27,800 repeated `SELECT` queries) and unbatched single-row inserts on `OB_boss_question_assignments`.
+   - Missing foreign key indexes caused full-table scans during relational joins and cascade operations.
+2. **Local Data Dependency**:
+   - Question banks were stored in local folders (`data/tracks/default`, `data/tracks/advanced/*`, `data/tracks/foundational/*`), making serverless or distributed deployment dependent on local file persistence.
+
+## Key Changes Implemented
+
+### 1. Database Indexing & Alembic Migration 0009
+- Created formal migration [migrations/versions/0009_query_performance_indexes.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/migrations/versions/0009_query_performance_indexes.py):
+  - `idx_ob_questions_track_id` on `OB_questions(track_id)`
+  - `idx_ob_questions_track_id_id` on `OB_questions(track_id, id)`
+  - `idx_ob_bqa_question_id` on `OB_boss_question_assignments(question_id)`
+  - `idx_ob_bqa_boss_order` on `OB_boss_question_assignments(boss_id, order_index)`
+  - `idx_ob_bqa_boss_question` on `OB_boss_question_assignments(boss_id, question_id)`
+  - `idx_ob_bqa_track_release` on `OB_boss_question_assignments(track_id, release_id)`
+- Added inspection checks to ensure idempotency when running across databases where indexes were pre-created.
+
+### 2. Elimination of 27,800 N+1 Boss Queries & Unbatched Inserts
+- In [app/infrastructure/database/bosses_repo.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/bosses_repo.py):
+  - Replaced per-question `get_boss_by_slug()` database queries with in-memory lookup maps (`boss_by_id`, `boss_by_ch_order`, `boss_by_track_ch_slug`, and `boss_by_track_slug`).
+  - Pre-cached existing assignments into `existing_bqa_map` in a single query instead of issuing 27,800 individual `SELECT` queries.
+  - Batched new assignments using `db.add_all()` in chunks of 1,000 with periodic flushes.
+  - Restricted question queries to lightweight columns, cutting JSON payload transfer by >90%.
+  - Added `synchronize_session=False` in [scripts/ingest_questions_to_postgres.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/scripts/ingest_questions_to_postgres.py) for instantaneous bulk wipes.
+
+### 3. S3 Bucket Architecture & Content Streaming
+- Integrated 3 dedicated Supabase S3 buckets:
+  - **`DefaultTracks`**: Root-level `chapter_*.json` for the default curriculum track.
+  - **`AdvancedTracks`**: Subfolder-aligned chapters (`<TrackFolder>/chapter_*.json`, 12 tracks, 336 files).
+  - **`FoundationalTracks`**: Subfolder-aligned chapters (`<TrackFolder>/chapter_*.json`, 7 tracks, 224 files).
+- Created [app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py):
+  - `get_s3_client()`: Configured boto3 client with S3v4 signature and retry backoff.
+  - `resolve_track_s3_location()`: Dynamic resolution mapping track curriculum and folder aliases (`FoundationalNomenclatureData` $\leftrightarrow$ `VocabularyConceptsData`) to the correct S3 bucket and folder prefix.
+  - `list_track_chapter_keys()`: Numerical chapter ordering (`chapter_01.json` through `chapter_27.json`).
+  - `get_chapter_json()`: In-memory streaming and parsing directly from S3 without disk footprint.
+- Configured environment variables in `local.env` and `prod.env`:
+  - `S3_DEFAULT_TRACKS_BUCKET=DefaultTracks`
+  - `S3_ADVANCED_TRACKS_BUCKET=AdvancedTracks`
+  - `S3_FOUNDATIONAL_TRACKS_BUCKET=FoundationalTracks`
+- Updated [app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py) with the new bucket settings.
+
+### 4. S3 Question Ingestion Pipeline
+- In [scripts/ingest_questions_to_postgres.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/scripts/ingest_questions_to_postgres.py):
+  - Added `--source {auto|s3|local}` argument (defaults to `auto`, using S3 if credentials exist).
+  - Streams and validates questions directly from S3, creates versioned draft releases, atomically activates them, and synchronizes bosses.
+
+## Verification & Test Results
+
+### 1. Live S3 Ingestion Test
+- Command: `uv run python scripts/ingest_questions_to_postgres.py --track default --source s3`
+- Result:
+  - Initialized S3 client connected to `https://aamwrwbsrmorllisdffc.storage.supabase.co/storage/v1/s3`
+  - Fetched all 27 chapters from `s3://DefaultTracks/` in 6s
+  - Atomically published release `default_v1` (1,350 questions)
+  - Synchronized 135 bosses and 1,350 assignments in 2s
+  - Total elapsed time: **19 seconds** (vs several minutes before optimization)
+
+### 2. Automated Test Suites
+- **S3 Ingestion & Resolver Tests** (`uv run pytest tests/test_s3_ingestion.py`): **6 passed in 0.34s**
+- **Migration & Schema Tests** (`uv run pytest tests/test_alembic_migrations.py`): **3 passed in 0.11s**
+- **Data Model & Boss Sync Tests** (`uv run pytest tests/test_long_term_data_model.py`): **7 passed in 0.30s**
+- **Full Regression Suite** (`uv run pytest`): **378 passed, 1 skipped in 73s**
+

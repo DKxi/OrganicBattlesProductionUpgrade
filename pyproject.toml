@@ -19,6 +19,7 @@ dependencies = [
     "redis>=5.0.0",
     "slowapi>=0.1.9",
     "eval_type_backport",
+    "boto3>=1.43.93",
 ]
 
 [tool.pytest.ini_options]

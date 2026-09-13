@@ -113,6 +113,9 @@ class Settings(BaseModel):
     s3_secret_access_key: str = Field(default_factory=lambda: get_config_value("S3_SECRET_ACCESS_KEY", default=""))
     s3_advanced_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_ADVANCED_BOSSES_BUCKET", default="AdvancedBosses"))
     s3_default_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_DEFAULT_BOSSES_BUCKET", default="DefaultBosses"))
+    s3_default_tracks_bucket: str = Field(default_factory=lambda: get_config_value("S3_DEFAULT_TRACKS_BUCKET", default="DefaultTracks"))
+    s3_advanced_tracks_bucket: str = Field(default_factory=lambda: get_config_value("S3_ADVANCED_TRACKS_BUCKET", default="AdvancedTracks"))
+    s3_foundational_tracks_bucket: str = Field(default_factory=lambda: get_config_value("S3_FOUNDATIONAL_TRACKS_BUCKET", default="FoundationalTracks"))
     supabase_storage_public_url: Optional[str] = Field(default_factory=lambda: get_config_value("SUPABASE_STORAGE_PUBLIC_URL", default=None))
     use_supabase_boss_storage: bool = Field(default_factory=lambda: str(get_config_value("USE_SUPABASE_BOSS_STORAGE", default="1")).lower() in ("1", "true", "yes"))
 

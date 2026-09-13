@@ -119,9 +119,23 @@ class BossesRepository:
         """
         Scan questions in database and synchronize OB_bosses and OB_boss_question_assignments.
         Extracts unique (track_id, chapter, boss_slug), determines chapter-level ordering,
-        creates/updates Boss records, and assigns questions to each corresponding boss.
+        creates/updates Boss records, and assigns questions to each corresponding boss in batch.
+        Uses in-memory caches to eliminate N+1 round-trips against OB_bosses and OB_boss_question_assignments.
         """
-        query = self.db.query(Question)
+        # Select only required lightweight columns to avoid loading megabytes of JSON text
+        query = self.db.query(
+            Question.id,
+            Question.track_id,
+            Question.release_id,
+            Question.chapter,
+            Question.order_index,
+            Question.boss_slug,
+            Question.boss_name,
+            Question.topic,
+            Question.chapter_title,
+            Question.health_json,
+            Question.images_json,
+        )
         if track_id:
             query = query.filter(Question.track_id == track_id)
         if release_id:
@@ -137,7 +151,7 @@ class BossesRepository:
             return {"bosses": 0, "assignments": 0}
 
         from collections import OrderedDict
-        track_chapter_groups: Dict[Tuple[str, int], List[Question]] = OrderedDict()
+        track_chapter_groups: Dict[Tuple[str, int], List[Any]] = OrderedDict()
         for q in questions:
             key = (q.track_id, q.chapter)
             track_chapter_groups.setdefault(key, []).append(q)
@@ -145,9 +159,26 @@ class BossesRepository:
         bosses_synced = 0
         assignments_synced = 0
 
+        # Step 1: Pre-cache existing bosses for the scoped track
+        boss_query = self.db.query(Boss)
+        if track_id:
+            boss_query = boss_query.filter(Boss.track_id == track_id)
+        existing_bosses = boss_query.all()
+
+        boss_by_id: Dict[str, Boss] = {b.id: b for b in existing_bosses}
+        boss_by_ch_order: Dict[Tuple[str, int, int], Boss] = {
+            (b.track_id, b.chapter, b.order_index): b for b in existing_bosses
+        }
+        boss_by_track_ch_slug: Dict[Tuple[str, int, str], Boss] = {
+            (b.track_id, b.chapter, b.slug): b for b in existing_bosses
+        }
+        boss_by_track_slug: Dict[Tuple[str, str], Boss] = {
+            (b.track_id, b.slug): b for b in existing_bosses
+        }
+
+        # Step 2: Ensure bosses exist and are up to date
         for (t_id, ch_num), ch_questions in track_chapter_groups.items():
-            # Find distinct bosses in this chapter preserving order of appearance
-            seen_bosses: Dict[str, Question] = OrderedDict()
+            seen_bosses: Dict[str, Any] = OrderedDict()
             for q in ch_questions:
                 slug = q.boss_slug or "boss"
                 if slug not in seen_bosses:
@@ -171,35 +202,81 @@ class BossesRepository:
                     elif isinstance(sample_q.images_json, str):
                         image_val = sample_q.images_json
 
-                boss = self.create_or_update_boss(
-                    boss_id=boss_id,
-                    slug=slug,
-                    track_id=t_id,
-                    chapter=ch_num,
-                    order_index=b_idx,
-                    name=b_name,
-                    image_file=image_val,
-                    health=health_val,
-                    element=sample_q.topic or "Organic",
-                    strategy={"chapter_title": sample_q.chapter_title},
-                )
+                boss = boss_by_id.get(boss_id) or boss_by_ch_order.get((t_id, ch_num, b_idx))
+                if not boss:
+                    boss = Boss(
+                        id=boss_id,
+                        slug=slug,
+                        track_id=t_id,
+                        chapter=ch_num,
+                        order_index=b_idx,
+                        name=b_name,
+                        image_file=image_val,
+                        health=health_val,
+                        element=sample_q.topic or "Organic",
+                        strategy_json={"chapter_title": sample_q.chapter_title},
+                    )
+                    self.db.add(boss)
+                    boss_by_id[boss_id] = boss
+                    boss_by_ch_order[(t_id, ch_num, b_idx)] = boss
+                else:
+                    boss.slug = slug
+                    boss.track_id = t_id
+                    boss.chapter = ch_num
+                    boss.order_index = b_idx
+                    boss.name = b_name
+                    boss.image_file = image_val
+                    boss.health = health_val
+                    boss.element = sample_q.topic or "Organic"
+                    boss.strategy_json = {"chapter_title": sample_q.chapter_title}
+
+                boss_by_track_ch_slug[(t_id, ch_num, slug)] = boss
+                boss_by_track_slug[(t_id, slug)] = boss
                 bosses_synced += 1
 
-            self.db.flush()
+        self.db.flush()
 
-            # Assign questions to bosses
+        # Step 3: Pre-cache existing assignments for the scope
+        bqa_query = self.db.query(BossQuestionAssignment)
+        if track_id:
+            bqa_query = bqa_query.filter(BossQuestionAssignment.track_id == track_id)
+        if release_id:
+            bqa_query = bqa_query.filter(BossQuestionAssignment.release_id == release_id)
+
+        existing_bqa_map: Dict[Tuple[str, int, Optional[str]], BossQuestionAssignment] = {
+            (a.boss_id, a.question_id, a.release_id): a for a in bqa_query.all()
+        }
+
+        # Step 4: Link questions to bosses via fast in-memory lookups
+        new_assignments: List[BossQuestionAssignment] = []
+        for (t_id, ch_num), ch_questions in track_chapter_groups.items():
             for q in ch_questions:
                 slug = q.boss_slug or "boss"
-                boss = self.get_boss_by_slug(t_id, slug)
+                boss = boss_by_track_ch_slug.get((t_id, ch_num, slug)) or boss_by_track_slug.get((t_id, slug))
                 if boss:
-                    self.assign_question_to_boss(
-                        boss_id=boss.id,
-                        question_id=q.id,
-                        track_id=t_id,
-                        release_id=q.release_id,
-                        order_index=q.order_index,
-                    )
+                    bqa_key = (boss.id, q.id, q.release_id)
+                    existing_bqa = existing_bqa_map.get(bqa_key)
+                    if existing_bqa:
+                        existing_bqa.order_index = q.order_index
+                        existing_bqa.weight = 1.0
+                    else:
+                        new_bqa = BossQuestionAssignment(
+                            boss_id=boss.id,
+                            question_id=q.id,
+                            track_id=t_id,
+                            release_id=q.release_id,
+                            order_index=q.order_index,
+                            weight=1.0,
+                        )
+                        new_assignments.append(new_bqa)
+                        existing_bqa_map[bqa_key] = new_bqa
                     assignments_synced += 1
+
+        if new_assignments:
+            BATCH_SIZE = 1000
+            for i in range(0, len(new_assignments), BATCH_SIZE):
+                self.db.add_all(new_assignments[i : i + BATCH_SIZE])
+                self.db.flush()
 
         self.db.commit()
         return {"bosses": bosses_synced, "assignments": assignments_synced}

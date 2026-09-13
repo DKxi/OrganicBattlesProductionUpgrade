@@ -23,6 +23,13 @@ from app.infrastructure.database.models import Base, Curriculum, Track, Question
 from app.infrastructure.database.tracks_repo import TracksRepository
 from app.domain.content.loader import _slug
 from app.domain.content.validator import validate_question_payload, QuestionValidationError
+from app.infrastructure.storage.s3_reader import (
+    get_s3_client,
+    resolve_track_s3_location,
+    list_track_chapter_keys,
+    get_chapter_json,
+    extract_chapter_num_from_key,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("organicbattles.ingest")
@@ -45,9 +52,10 @@ def ingest_questions_data(
     target_track_id: Optional[str] = None,
     root_dir: Optional[Path] = None,
     batch_size: int = 1000,
+    source: str = "auto",
 ) -> Dict[str, Any]:
     """
-    Ingest questions from JSON files into the active database session.
+    Ingest questions from S3 buckets (or local JSON fallback) into the active database session.
     Preserves strict sequential order_index per (track_id, chapter, boss_slug).
     """
     root = root_dir or ROOT_DIR
@@ -62,40 +70,87 @@ def ingest_questions_data(
         logger.warning("No tracks found to ingest questions for.")
         return {"total_questions": 0, "tracks_processed": 0}
 
+    # Determine whether S3 is active
+    use_s3 = False
+    s3_client = None
+    if source in ("s3", "auto"):
+        if settings.s3_access_key_id and settings.s3_secret_access_key:
+            try:
+                s3_client = get_s3_client()
+                use_s3 = True
+                logger.info("S3 storage client initialized (Endpoint: %s, Region: %s).", settings.s3_endpoint_url or "AWS", settings.s3_region)
+            except Exception as s3_err:
+                logger.warning("Could not initialize S3 client (%s). Falling back to local files.", s3_err)
+                if source == "s3":
+                    raise
+
     total_ingested = 0
     tracks_processed = 0
 
     for track in tracks:
-        folder_str = track.data_folder
-        track_dir = Path(folder_str) if Path(folder_str).is_absolute() else root / folder_str
-        
-        # Fallback to data/tracks/default if specified folder doesn't exist
-        if not track_dir.is_dir() or not list(track_dir.glob("chapter_*.json")):
-            fallback_dir = root / "data" / "tracks" / "default"
-            if fallback_dir.is_dir() and list(fallback_dir.glob("chapter_*.json")):
-                track_dir = fallback_dir
-            else:
-                track_dir = root / "data"
+        chapter_payloads: List[Dict[str, Any]] = []
+        source_desc = "unknown"
 
-        chapter_files = list(track_dir.glob("chapter_*.json"))
-        if not chapter_files:
-            logger.warning("No chapter_*.json found for track '%s' in %s", track.id, track_dir)
+        if use_s3 and s3_client is not None:
+            bucket, prefix = resolve_track_s3_location(track.id, curriculum=track.curriculum_id, data_folder=track.data_folder)
+            try:
+                keys = list_track_chapter_keys(bucket, prefix=prefix, s3_client=s3_client)
+                if keys:
+                    source_desc = f"s3://{bucket}/{prefix} ({len(keys)} chapters)"
+                    logger.info("Fetching track '%s' chapters from %s...", track.id, source_desc)
+                    for k in keys:
+                        payload = get_chapter_json(bucket, k, s3_client=s3_client)
+                        if "chapter" not in payload:
+                            payload["chapter"] = extract_chapter_num_from_key(k)
+                        chapter_payloads.append(payload)
+            except Exception as s3_fetch_err:
+                logger.warning("Error fetching track '%s' from S3 (%s). Checking local fallback...", track.id, s3_fetch_err)
+
+        if not chapter_payloads:
+            # Fallback to local data folder
+            folder_str = track.data_folder or ""
+            track_dir = Path(folder_str) if Path(folder_str).is_absolute() else root / folder_str
+            
+            # Fallback to data/tracks/default if specified folder doesn't exist
+            if not track_dir.is_dir() or not list(track_dir.glob("chapter_*.json")):
+                fallback_dir = root / "data" / "tracks" / "default"
+                if fallback_dir.is_dir() and list(fallback_dir.glob("chapter_*.json")):
+                    track_dir = fallback_dir
+                else:
+                    track_dir = root / "data"
+
+            local_files = list(track_dir.glob("chapter_*.json"))
+            if local_files:
+                def _extract_ch_num(f: Path) -> int:
+                    stem = f.stem.replace("chapter_", "")
+                    try:
+                        return int(stem)
+                    except ValueError:
+                        return 999
+
+                local_files.sort(key=_extract_ch_num)
+                source_desc = f"local file://{track_dir} ({len(local_files)} files)"
+                logger.info("Fetching track '%s' chapters from %s...", track.id, source_desc)
+                for f in local_files:
+                    try:
+                        p = json.loads(f.read_text(encoding="utf-8"))
+                        if "chapter" not in p:
+                            p["chapter"] = _extract_ch_num(f)
+                        chapter_payloads.append(p)
+                    except Exception as exc:
+                        logger.error("Failed to parse JSON %s: %s", f, exc)
+
+        if not chapter_payloads:
+            logger.warning("No chapters found for track '%s' across S3 and local storage.", track.id)
             continue
 
-        # Sort chapter files numerically: extract integer from filename
-        def _extract_ch_num(f: Path) -> int:
-            stem = f.stem.replace("chapter_", "")
-            try:
-                return int(stem)
-            except ValueError:
-                return 999
-
-        chapter_files.sort(key=_extract_ch_num)
-        logger.info("Ingesting track '%s' from %s (%d files)...", track.id, track_dir, len(chapter_files))
+        # Sort chapter payloads by chapter number
+        chapter_payloads.sort(key=lambda p: int(p.get("chapter", 999)))
+        logger.info("Ingesting track '%s' from %s...", track.id, source_desc)
 
         from app.infrastructure.database.releases_repo import ReleasesRepository
         from app.infrastructure.cache.shared_cache import shared_track_cache
-        db.query(Question).filter(Question.track_id == track.id).delete()
+        db.query(Question).filter(Question.track_id == track.id).delete(synchronize_session=False)
         db.commit()
 
         releases_repo = ReleasesRepository(db)
@@ -105,14 +160,8 @@ def ingest_questions_data(
         track_q_count = 0
         now_ts = int(time.time())
 
-        for ch_file in chapter_files:
-            try:
-                payload = json.loads(ch_file.read_text(encoding="utf-8"))
-            except Exception as exc:
-                logger.error("Failed to parse JSON %s: %s", ch_file, exc)
-                continue
-
-            ch_num = int(payload.get("chapter", _extract_ch_num(ch_file)))
+        for payload in chapter_payloads:
+            ch_num = int(payload.get("chapter", 1))
             ch_title = payload.get("chapter_title", f"Chapter {ch_num}")
             default_boss = payload.get("assigned_boss", "Organic Chemistry Boss")
             raw_questions = payload.get("questions", [])
@@ -178,7 +227,7 @@ def ingest_questions_data(
         if track_q_count > 0:
             releases_repo.publish_release(draft_rel.id)
             track.questions = track_q_count
-            track.chapters = len(chapter_files)
+            track.chapters = len(chapter_payloads)
             db.commit()
             shared_track_cache.invalidate_track(track.id)
             logger.info("Track '%s' atomically activated under release %s (%d questions).", track.id, draft_rel.id, track_q_count)
@@ -202,6 +251,7 @@ def main():
     parser = argparse.ArgumentParser(description="Batch Ingest Question Banks to Database")
     parser.add_argument("--track", type=str, default=None, help="Optional track ID to ingest (default: all)")
     parser.add_argument("--batch-size", type=int, default=1000, help="Batch insert size (default: 1000)")
+    parser.add_argument("--source", type=str, choices=["auto", "s3", "local"], default="auto", help="Content source: auto, s3, or local (default: auto)")
     args = parser.parse_args()
 
     ingest_url = settings.database_url_ingest or settings.database_url
@@ -211,7 +261,12 @@ def main():
 
     try:
         with IngestSession() as db:
-            stats = ingest_questions_data(db, target_track_id=args.track, batch_size=args.batch_size)
+            stats = ingest_questions_data(
+                db,
+                target_track_id=args.track,
+                batch_size=args.batch_size,
+                source=args.source,
+            )
             print(f"Ingestion complete: {stats['total_questions']} questions across {stats['tracks_processed']} tracks.")
     finally:
         engine.dispose()

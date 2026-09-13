@@ -37,10 +37,11 @@ def test_migration_chain_and_revisions():
     cfg = get_alembic_config()
     script = ScriptDirectory.from_config(cfg)
     heads = script.get_heads()
-    assert heads == ["0008_least_privilege_roles_and_rls"]
+    assert heads == ["0009_query_performance_indexes"]
 
     revisions = [rev.revision for rev in script.walk_revisions()]
     expected_order = [
+        "0009_query_performance_indexes",
         "0008_least_privilege_roles_and_rls",
         "0007_search_indexes",
         "0006_optimistic_locking",
@@ -77,7 +78,7 @@ def test_migration_upgrade_and_schema_verification():
 
         # 1. Revision check
         current_rev = get_current_migration_revision(target_engine=engine)
-        assert current_rev == "0008_least_privilege_roles_and_rls"
+        assert current_rev == "0009_query_performance_indexes"
 
         inspector = inspect(engine)
         tables = set(inspector.get_table_names())
@@ -130,6 +131,14 @@ def test_migration_upgrade_and_schema_verification():
         q_indexes = {idx["name"] for idx in inspector.get_indexes("OB_questions")}
         assert "ix_ob_questions_track_ch_order" in q_indexes
         assert "ix_ob_questions_track_release_ch_order" in q_indexes
+        assert "idx_ob_questions_track_id" in q_indexes
+        assert "idx_ob_questions_track_id_id" in q_indexes
+
+        bqa_indexes = {idx["name"] for idx in inspector.get_indexes("OB_boss_question_assignments")}
+        assert "idx_ob_bqa_question_id" in bqa_indexes
+        assert "idx_ob_bqa_boss_order" in bqa_indexes
+        assert "idx_ob_bqa_boss_question" in bqa_indexes
+        assert "idx_ob_bqa_track_release" in bqa_indexes
 
         user_indexes = {idx["name"] for idx in inspector.get_indexes("OB_users")}
         assert "ix_ob_users_username" in user_indexes
@@ -137,7 +146,7 @@ def test_migration_upgrade_and_schema_verification():
 
         # 5. Idempotency check: running migrations again on head must be a clean no-op
         run_alembic_migrations(target_engine=engine)
-        assert get_current_migration_revision(target_engine=engine) == "0008_least_privilege_roles_and_rls"
+        assert get_current_migration_revision(target_engine=engine) == "0009_query_performance_indexes"
 
     finally:
         if os.path.exists(temp_db_path):
