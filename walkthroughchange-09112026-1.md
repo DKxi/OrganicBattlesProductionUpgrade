@@ -1077,14 +1077,20 @@ Created [scripts/setup_supabase_least_privilege_roles.sql](file:///Users/nkoneru
   - Installed via `npx skills add supabase/agent-skills` (`supabase`, `supabase-postgres-best-practices`).
 - **Reference Guides Created**:
   - [SUPABASE_LEAST_PRIVILEGE_SETUP.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/SUPABASE_LEAST_PRIVILEGE_SETUP.md): Step-by-step role provisioning and connection string configuration guide.
-  - [changeconn.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/changeconn.md): Supabase connection pooling strings for session mode (port 5432).
-  - [GetawayfromDatafolder.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/GetawayfromDatafolder.md): Comprehensive analysis of `/data/` usage and 4-phase decoupling roadmap.
-
-
-
-
-
-
-
+### 8. End-to-End WebKit UI Test Suite Verification (100% Pass)
+- **Suite Runner**: `uv run python scripts/run_ui_tests.py --browser webkit`
+- **Execution Engine**: Headless WebKit (Apple Safari engine) targeting live server on `http://127.0.0.1:8000`.
+- **9/9 Stages Verified (100% Pass)**:
+  1. **Boot Screen Initial Load & Asset Hydration**: Interactive in 312.04ms (✅ PASS).
+  2. **Boot &rarr; Auth Screen Toggle & Validation Errors**: Auth rendered in 24.66ms; bad credentials rejected (HTTP 401); short password rejected; user registered (✅ PASS).
+  3. **6-Digit Confirmation Code Verification**: Out-of-band code fetched via `ob_admin_api`; invalid code rejected (HTTP 400); correct code verified & navigated in 4405.04ms (✅ PASS).
+  4. **Avatar Companion Selection & Gallery**: 7 archetypes inspected; choice confirmed in 1867.69ms (✅ PASS).
+  5. **Track Selection, Search & Filtering**: 20 tracks loaded; search filter tested; battle arena entered in 3009.13ms (✅ PASS).
+  6. **Combat Spell Selection & Lockout**: Initial status Boss HP=100, Player HP=150; spell selected & question prompted in 2289.72ms; mid-question switch locked out (✅ PASS).
+  7. **Correct Answer Action & Boss Damage**: Correct answer submitted; Boss HP reduced by 20 to 80 in 1246.09ms; battle modal cleanly dismissed (✅ PASS).
+  8. **Incorrect Answer Action & Player Counterattack**: Incorrect answer submitted; Player HP reduced by 20 to 130 in 1239.43ms; turn outcome & explanation modals cleanly dismissed (✅ PASS).
+  9. **Admin Portal Access, Telemetry & Logout**: Admin authenticated; Storage tab & DB switch verified; Logging & runtime verified in 11282.25ms; modal closed; player session logged out & storage cleared (✅ PASS).
+- **Latency Scorecard**: Flow coverage 8/8 modules passed (100%), all visual artifacts and screenshots saved to `tests/ui_artifacts/`.
+- **Regression Suite (`uv run pytest`)**: 365 passed, 1 skipped in 74.49s.
 
 
