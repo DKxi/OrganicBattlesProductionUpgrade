@@ -149,18 +149,18 @@ def test_serve_boss_image_from_track_boss_folder():
         assert "image" in res2.headers.get("content-type", "")
 
     # Default boss image redirects to Supabase S3 DefaultBosses
-    res_def = client.get("/static/assets/bosses/orbital-ogre.png")
+    res_def = client.get("/static/assets/bosses/alkene-charger.png")
     assert res_def.status_code in (200, 307)
     if res_def.status_code == 307:
-        assert "DefaultBosses/orbital-ogre.png" in res_def.headers.get("location", "")
+        assert "DefaultBosses/alkene-charger.png" in res_def.headers.get("location", "")
     else:
         assert "image" in res_def.headers.get("content-type", "")
 
-    # Foundational boss image redirects to Supabase S3 (FoundationalBosses or AdvancedBosses)
+    # Foundational boss image redirects to Supabase S3 FoundationalBosses
     res_found = client.get("/static/assets/bosses/amino-assassin.png")
     assert res_found.status_code in (200, 307)
     if res_found.status_code == 307:
-        assert any(b in res_found.headers.get("location", "") for b in ["FoundationalBosses", "AdvancedBosses"])
+        assert "FoundationalBosses/amino-assassin.png" in res_found.headers.get("location", "")
     else:
         assert "image" in res_found.headers.get("content-type", "")
 
