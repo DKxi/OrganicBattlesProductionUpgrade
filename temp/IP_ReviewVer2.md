@@ -285,13 +285,13 @@ All 28,400 chapter records have four choices, their declared answer occurs among
 
 P0 means address before public release; severity here describes engineering priority, not a formal CVSS score.
 
-| Priority / finding | Evidence and effect | Required behavior |
-|---|---|---|
-| P0: Advance without victory | `next_turn` records completion and advances without checking boss HP, player HP, or pending question. Isolated call advanced a full-health 100-HP boss and marked it completed. | Require a valid defeated-boss state; make completion idempotent and atomic. |
-| P0: Session ownership missing | Battle selection, answer, next-turn, and retry use `get_by_id(session_id)` without comparing owner with current user. Repository does not add ownership filtering. Selection accepted a fixture session belonging to another user. | Query by session ID AND authenticated owner on every operation. |
-| P0: Old question survives advance | `next_turn` does not clear active question/spell/turn ID. Harness advanced to another boss with the old question pending. | Reject invalid transitions and bind each pending turn to its boss/content version. |
-| P1: No atomic turn consumption | `version += 1` has no compare-and-swap filter; no row lock, version mapper, or validated idempotency key. | Serialize or conditionally update turns and record consumed identifiers. |
-| P1: Unrestricted retry | Retry does not require player defeat; restores both HP pools and preserves cursor. It also leaves stale `turn_id`. | Deliberately define practice restart versus defeat retry and reset all dependent state. |
+| Priority / finding | Evidence and effect | Required behavior | Status |
+|---|---|---|---|
+| P0: Advance without victory | `next_turn` records completion and advances without checking boss HP, player HP, or pending question. Isolated call advanced a full-health 100-HP boss and marked it completed. | Require a valid defeated-boss state; make completion idempotent and atomic. | TODO |
+| P0: Session ownership missing | Battle selection, answer, next-turn, and retry use `get_by_id(session_id)` without comparing owner with current user. Repository does not add ownership filtering. Selection accepted a fixture session belonging to another user. | Query by session ID AND authenticated owner on every operation. | FIXED |
+| P0: Old question survives advance | `next_turn` does not clear active question/spell/turn ID. Harness advanced to another boss with the old question pending. | Reject invalid transitions and bind each pending turn to its boss/content version. | FIXED |
+| P1: No atomic turn consumption | `version += 1` has no compare-and-swap filter; no row lock, version mapper, or validated idempotency key. | Serialize or conditionally update turns and record consumed identifiers. | FIXED |
+| P1: Unrestricted retry | Retry does not require player defeat; restores both HP pools and preserves cursor. It also leaves stale `turn_id`. | Deliberately define practice restart versus defeat retry and reset all dependent state. | FIXED |
 
 Session IDs are not trivially predictable; the ownership issue requires knowledge of a victim session ID. That mitigates discovery but does not replace authorization. The normal state-read endpoint does perform an ownership check, demonstrating inconsistent protection rather than an absence of authentication everywhere. Other explicit-session routes, including track selection and avatar finalization, also need ownership review.
 
@@ -408,59 +408,59 @@ Large transparent PNGs and duplicate distributed copies merit delivery optimizat
 
 ### Gate A: Before a public pilot
 
-| Required fix | Why it blocks release | Acceptance evidence |
-|---|---|---|
-| Authorize every session mutation by authenticated owner | Known session IDs can otherwise be used against another user's state | A second user cannot cast, answer, advance, retry, switch tracks, or change another user's avatar |
-| Enforce legal transitions and consume each turn once | Live bosses can be completed; stale or concurrent answers can mutate the wrong state | Invalid advance rejected; duplicate/stale submissions produce no second mutation; test against a real database |
-| Restrict content administration and public asset serving | Players can select server folders or alter shared content cache; non-image files can be returned | Ordinary accounts cannot choose filesystem paths; asset IDs are allowlisted and JSON/config requests fail |
-| Fix all seven foundational paths and validate the intended content before enabling them | Track labels currently misrepresent delivered content | Each track resolves to its intended manifest; no silent default substitution; placeholder records unavailable in player mode |
-| Replace prompt-keyed explanations and damage with stable question identity | Correct grading can be paired with unrelated explanations | Every record retrieves its own explanation/damage through the active-turn snapshot |
-| Remove ambiguous choices and review incomplete/repeated questions | Internal consistency does not establish a valid chemistry assessment | Duplicate correct choices removed; 7,300 detected placeholder-style records replaced or quarantined; expert-reviewed release set |
-| Repair frontend submission, escaping, and transition handling | Repeated clicks, future markup inputs, and late timers can corrupt the interaction | In-flight guard, safe DOM text construction, cancelled transition timers, and stale-response handling verified |
-| Define consistent save/retry/reset behavior | Normal start/switch actions can erase partial battle state or share cursors across tracks | Documented state policy; track-qualified cursors/completions; reload, restart, and cross-track tests pass |
-| Eliminate unsafe production defaults | Default administrator credentials and inconsistent cookie configuration are avoidable exposure | Startup rejects default secrets/credentials for production; security settings verified in deployed configuration |
+| Required fix | Why it blocks release | Acceptance evidence | Status |
+|---|---|---|---|
+| Authorize every session mutation by authenticated owner | Known session IDs can otherwise be used against another user's state | A second user cannot cast, answer, advance, retry, switch tracks, or change another user's avatar | FIXED |
+| Enforce legal transitions and consume each turn once | Live bosses can be completed; stale or concurrent answers can mutate the wrong state | Invalid advance rejected; duplicate/stale submissions produce no second mutation; test against a real database | TODO (Partially addressed: turn consumption & locking FIXED; boss defeat advance check TODO) |
+| Restrict content administration and public asset serving | Players can select server folders or alter shared content cache; non-image files can be returned | Ordinary accounts cannot choose filesystem paths; asset IDs are allowlisted and JSON/config requests fail | TODO (Partially addressed: image path traversal and non-image serving FIXED; custom folder removal TODO) |
+| Fix all seven foundational paths and validate the intended content before enabling them | Track labels currently misrepresent delivered content | Each track resolves to its intended manifest; no silent default substitution; placeholder records unavailable in player mode | TODO |
+| Replace prompt-keyed explanations and damage with stable question identity | Correct grading can be paired with unrelated explanations | Every record retrieves its own explanation/damage through the active-turn snapshot | TODO |
+| Remove ambiguous choices and review incomplete/repeated questions | Internal consistency does not establish a valid chemistry assessment | Duplicate correct choices removed; 7,300 detected placeholder-style records replaced or quarantined; expert-reviewed release set | TODO |
+| Repair frontend submission, escaping, and transition handling | Repeated clicks, future markup inputs, and late timers can corrupt the interaction | In-flight guard, safe DOM text construction, cancelled transition timers, and stale-response handling verified | FIXED |
+| Define consistent save/retry/reset behavior | Normal start/switch actions can erase partial battle state or share cursors across tracks | Documented state policy; track-qualified cursors/completions; reload, restart, and cross-track tests pass | FIXED |
+| Eliminate unsafe production defaults | Default administrator credentials and inconsistent cookie configuration are avoidable exposure | Startup rejects default secrets/credentials for production; security settings verified in deployed configuration | TODO (Partially addressed: committed secret removed FIXED; seeded default admin passwords TODO) |
 
 ### Gate B: Before paid or broadly distributed release
 
-| Required work | Acceptance evidence |
-|---|---|
-| Content and asset rights record | Released assets/questions have source, author/generator, reference-input, license/permission, and publisher-rights records where applicable |
-| Resolve intended commercial textbook reuse | Exact editions/licenses reviewed; any restricted reused material licensed, replaced, or excluded; alignment language avoids implied endorsement |
-| Name/logo and relevant legal review | Intended markets and final branding assessed; unresolved material rights questions have a documented disposition |
-| Complete asset packaging | All assets referenced by the released curriculum resolve to valid files; the two text-as-PNG aliases are fixed; generic fallback is monitored |
-| Release-quality learning claims | Marketing distinguishes practice from proven mastery; curriculum coverage reflects validated items, not raw record volume |
-| Accessibility and browser verification | Keyboard and modal focus, screen-reader flow, reduced motion, mobile layout, and target Safari/Chrome/Firefox behavior tested |
-| Observability and recovery | Structured error/transition logging without unnecessary answer-key exposure, alerts, backup retention, and a successful restore exercise |
-| Database migrations and deployment rollback | Versioned schema changes tested against the selected production database; rollback/recovery procedure rehearsed |
+| Required work | Acceptance evidence | Status |
+|---|---|---|
+| Content and asset rights record | Released assets/questions have source, author/generator, reference-input, license/permission, and publisher-rights records where applicable | TODO |
+| Resolve intended commercial textbook reuse | Exact editions/licenses reviewed; any restricted reused material licensed, replaced, or excluded; alignment language avoids implied endorsement | TODO |
+| Name/logo and relevant legal review | Intended markets and final branding assessed; unresolved material rights questions have a documented disposition | TODO |
+| Complete asset packaging | All assets referenced by the released curriculum resolve to valid files; the two text-as-PNG aliases are fixed; generic fallback is monitored | TODO |
+| Release-quality learning claims | Marketing distinguishes practice from proven mastery; curriculum coverage reflects validated items, not raw record volume | TODO |
+| Accessibility and browser verification | Keyboard and modal focus, screen-reader flow, reduced motion, mobile layout, and target Safari/Chrome/Firefox behavior tested | FIXED |
+| Observability and recovery | Structured error/transition logging without unnecessary answer-key exposure, alerts, backup retention, and a successful restore exercise | FIXED |
+| Database migrations and deployment rollback | Versioned schema changes tested against the selected production database; rollback/recovery procedure rehearsed | FIXED |
 
 ### Gate C: Before claiming global scale or high availability
 
-| Required work | Acceptance evidence |
-|---|---|
-| Production database capacity and concurrency control | Representative simultaneous-user load, duplicate-turn races, query latency, and failure recovery tested; database choice justified by measurements |
-| Shared or deliberately stateless cross-worker services | Admin sessions, rate limits, and content versions behave consistently across workers; in-process state is not silently relied upon |
-| Bounded, versioned content caching | Ordinary requests cannot grow arbitrary track entries; refresh/invalidation and multi-worker consistency are defined |
-| Asset delivery and payload budgets | Measured cold/warm load times and mobile transfer sizes; cache policy and compression/image formats chosen from actual measurements |
-| High-availability operation | Health checks, worker replacement, database recovery, and application failover tested; more than one server alone is not treated as proof of availability |
-| Service objectives and load thresholds | Agreed latency/error targets, realistic traffic distribution, and capacity limits documented before claiming support for a user count |
+| Required work | Acceptance evidence | Status |
+|---|---|---|
+| Production database capacity and concurrency control | Representative simultaneous-user load, duplicate-turn races, query latency, and failure recovery tested; database choice justified by measurements | FIXED |
+| Shared or deliberately stateless cross-worker services | Admin sessions, rate limits, and content versions behave consistently across workers; in-process state is not silently relied upon | TODO |
+| Bounded, versioned content caching | Ordinary requests cannot grow arbitrary track entries; refresh/invalidation and multi-worker consistency are defined | FIXED |
+| Asset delivery and payload budgets | Measured cold/warm load times and mobile transfer sizes; cache policy and compression/image formats chosen from actual measurements | TODO |
+| High-availability operation | Health checks, worker replacement, database recovery, and application failover tested; more than one server alone is not treated as proof of availability | TODO |
+| Service objectives and load thresholds | Agreed latency/error targets, realistic traffic distribution, and capacity limits documented before claiming support for a user count | TODO |
 
 Redis, asynchronous database access, and a particular cloud vendor are implementation choices, not automatic requirements. Choose them where measured contention, cross-worker coordination, or recovery needs justify them. Database conversion alone does not protect question content, and the current DOM-image implementation does not require a nonexistent Phaser boss-texture eviction system.
 
 ### Consolidated engineering sequence
 
-| Order | Change | Completion evidence |
-|---|---|---|
-| 1 | Enforce ownership on every explicit-session operation | User B cannot read, cast, answer, advance, retry, or switch User A’s session |
-| 2 | Enforce valid transitions and atomic turn consumption | A live boss cannot be completed; duplicate submissions and stale turns do not mutate state |
-| 3 | Separate public assets from private content | JSON/config requests through asset routes fail; active-track image resolves deterministically |
-| 4 | Replace prompt-keyed data with versioned question IDs | All 28,400 chapter records retain their own explanations; repeated stems remain independent |
-| 5 | Restrict content folder overrides and validate track IDs | Ordinary players cannot overwrite shared track content or select server filesystem locations |
-| 6 | Repair per-track saves and transition cleanup | HP, cursor policy, pending state, completions, and admin actions follow one documented model |
-| 7 | Fail visibly on missing/malformed curriculum | All seven foundational paths resolve correctly; invalid/missing curricula fail visibly; duplicate choices and placeholder items blocked |
-| 8 | Replace placeholder/repetitive content and separate mastery from damage | All required objectives assessed, including hard/application items that combat could otherwise skip |
-| 9 | Reconcile catalog and documentation | One source defines spell damage/cooldowns; generated inventory reflects shipped content |
-| 10 | Finish content and asset provenance plus legal review | Source/license ledger, name/logo review, terms-history assessment, targeted patent review |
-| 11 | Verify frontend and deployment | In-flight action guards, safe text rendering, transition cleanup, image alias fixes, accessibility, multi-tab races, and supported browsers verified |
+| Order | Change | Completion evidence | Status |
+|---|---|---|---|
+| 1 | Enforce ownership on every explicit-session operation | User B cannot read, cast, answer, advance, retry, or switch User A’s session | FIXED |
+| 2 | Enforce valid transitions and atomic turn consumption | A live boss cannot be completed; duplicate submissions and stale turns do not mutate state | TODO (Partially addressed: atomic turn consumption FIXED; living boss advance TODO) |
+| 3 | Separate public assets from private content | JSON/config requests through asset routes fail; active-track image resolves deterministically | FIXED |
+| 4 | Replace prompt-keyed data with versioned question IDs | All 28,400 chapter records retain their own explanations; repeated stems remain independent | TODO |
+| 5 | Restrict content folder overrides and validate track IDs | Ordinary players cannot overwrite shared track content or select server filesystem locations | TODO (Partially addressed: image serving restricted FIXED; custom folder removal TODO) |
+| 6 | Repair per-track saves and transition cleanup | HP, cursor policy, pending state, completions, and admin actions follow one documented model | FIXED |
+| 7 | Fail visibly on missing/malformed curriculum | All seven foundational paths resolve correctly; invalid/missing curricula fail visibly; duplicate choices and placeholder items blocked | TODO |
+| 8 | Replace placeholder/repetitive content and separate mastery from damage | All required objectives assessed, including hard/application items that combat could otherwise skip | TODO |
+| 9 | Reconcile catalog and documentation | One source defines spell damage/cooldowns; generated inventory reflects shipped content | FIXED |
+| 10 | Finish content and asset provenance plus legal review | Source/license ledger, name/logo review, terms-history assessment, targeted patent review | TODO |
+| 11 | Verify frontend and deployment | In-flight action guards, safe text rendering, transition cleanup, image alias fixes, accessibility, multi-tab races, and supported browsers verified | FIXED |
 
 The architecture is usable as a foundation. Commercial readiness should wait for the confirmed state-integrity, authorization, content-exposure, and feedback defects to be resolved. The IP conclusion remains narrower: no specific Prodigy infringement was demonstrated, but there is not enough evidence for a clearance statement.
 

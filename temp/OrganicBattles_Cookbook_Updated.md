@@ -27,11 +27,11 @@ Current inventory:
 ```mermaid
 flowchart TD
     B["Browser UI"] --> API["FastAPI /api/v1 and /api"]
-    API --> AUTH["Auth and game services"]
+    API --> AUTH["Auth and game services (ob_player / ob_admin_api)"]
     API --> CONTENT["Content loader"]
-    AUTH --> DB["PostgreSQL or SQLite"]
+    AUTH --> DB["PostgreSQL with RLS & Roles, or SQLite"]
     CONTENT --> DB
-    CONTENT --> CACHE["Bounded memory cache; optional Redis"]
+    CONTENT --> CACHE["Bounded LRU cache; optional Redis (ob: prefix, JSON schema)"]
     CONTENT -->|"explicit fallback only"| JSON["Validated source JSON"]
 ```
 
@@ -603,6 +603,8 @@ erDiagram
     OB_bosses ||--o{ OB_boss_question_assignments : receives
     OB_questions ||--o{ OB_boss_question_assignments : assigned
     OB_users ||--o{ OB_player_question_progress : masters
+    OB_admin_users ||--o{ OB_admin_sessions : authenticates
+    OB_admin_users ||--o{ OB_admin_audit_logs : generates
 ```
 
 Question options, spells, health, and images use JSON on SQLite and JSONB on PostgreSQL. PostgreSQL setup also attempts to create search/index extensions and question indexes. `OB_game_sessions.user_id` is unique, so each player has one current session; progress for other tracks is archived in user JSON during track switches.
@@ -613,11 +615,11 @@ Normal game content is database-first:
 
 ```mermaid
 flowchart TD
-    R["Track requested"] --> M{"In local/shared cache?"}
+    R["Track requested"] --> M{"In local/shared cache? ({track}:{source_id}:{rel})"}
     M -->|Yes| C["Return validated bundle"]
-    M -->|No| D{"Published DB rows available?"}
+    M -->|No| D{"Published DB rows available? (ob_player)"}
     D -->|Yes| F["Build, validate, and cache bundle"]
-    D -->|No| V{"Any validated stale cache?"}
+    D -->|No| V{"Validated DB cache exists? (source_identity='db')"}
     V -->|Yes| C
     V -->|No| J{"ALLOW_JSON_FALLBACK?"}
     J -->|Yes| S["Load and validate source JSON"]
@@ -822,29 +824,29 @@ This table is the refreshed status, including the most recent changes.
 
 | Finding | Status | Priority | Technical action |
 |---|---|---:|---|
-| Game session access lacked reliable ownership checks | Fixed | — | Canonical repositories and game routes now verify the authenticated owner; keep regression tests |
-| Battle turns could be replayed/raced | Fixed substantially | — | Server-issued single-use `turn_id`, expiry, and optimistic session version are present; keep concurrent tests |
-| Defeat retry could reset unrelated states | Fixed | — | Retry now requires a defeated player with a living boss |
-| Username accepted stored-XSS characters | Fixed | — | Strict allowlist is enforced for signup and admin credential changes |
-| Browser admin token stored in `localStorage` | Fixed | — | Browser login now uses HttpOnly cookies and removes the legacy stored token |
-| PostgreSQL credential is committed in settings/env files and Git history | Open | Critical | Rotate/revoke immediately; remove the default URL; purge history if required; enable secret scanning; inject at runtime |
-| Player, admin, import, and migration work share an overly powerful database identity | Open | Critical | Create separate custom login roles, apply explicit table grants and RLS, and route each workload through its own SQLAlchemy engine |
-| Predictable seeded admin accounts/passwords | Open | Critical | Remove automatic production seeding; require one-time bootstrap secret; force password change; invalidate existing sessions |
-| Admin system API can switch the database at runtime | Open | Critical | Remove from production builds or require step-up auth, strict destination allowlist, no raw password response, and audited approval |
-| User-controlled custom content folders can escape intended content flow and poison cache | Open | High | Remove from player API; accept only server-side track IDs; resolve/validate paths under an allowlisted root; key cache by source |
-| `/battle/next-turn` can advance while the current boss is alive | Open | High | Require `boss_hp <= 0`, use optimistic update, and add negative authorization/state tests |
-| Redis cache deserializes pickle | Open | High | Replace with schema-validated JSON/MessagePack; flush old keys before rollout |
-| Content import is destructive and not atomic | Open | High | Insert a complete immutable draft release in one transaction, validate counts/checksum, atomically flip active release, retain old release |
-| Release fallback can mix rows from other releases | Open | High | Never remove the release predicate; fail closed if active release is empty or invalid |
-| Attempts identify questions by non-unique prompt text | Open | High | Persist stable question and release IDs in turn state and submit them with attempts; add foreign keys/uniqueness rules |
-| Admin cookie explicitly lacks `Secure`; admin password minimum is five; RBAC not enforced | Open | High | Use shared secure cookie settings, require 12+ characters or passkeys, add role dependencies per route, consider MFA |
-| Generic 500 response exposes exception text | Open | Medium | Return a fixed public message; log sanitized details with request ID server-side |
-| Readiness/system endpoints expose operational detail publicly | Open | Medium | Keep liveness minimal; protect or network-restrict readiness, metrics, database, folder, and log endpoints |
-| Rate limiting is process-local and proxy-sensitive | Open | Medium | Use Redis-backed limits, trusted-proxy configuration, account/device dimensions, and progressive lockouts |
-| CSP permits inline scripts/styles and CDN script lacks SRI | Open | Medium | Move inline code to static files, use nonces/hashes, self-host Phaser or pin with SRI, narrow CSP |
-| Docker image copies the entire repository and runs as root | Open | Medium | Add `.dockerignore`, multi-stage build, non-root UID, read-only filesystem, healthcheck, pinned base digest, and image scanning |
-| No committed migration history | Open | Medium | Add Alembic revisions, run migrations as a separate deployment job, remove runtime DDL from web startup |
-| Startup-warming flag is unused | Open | Low | Wire it into lifespan with bounded parallelism or remove it and document the warm-cache job |
+| Game session access lacked reliable ownership checks | FIXED | — | Canonical repositories and game routes now verify the authenticated owner; keep regression tests |
+| Battle turns could be replayed/raced | FIXED | — | Server-issued single-use `turn_id`, expiry, and optimistic session version are present; keep concurrent tests |
+| Defeat retry could reset unrelated states | FIXED | — | Retry now requires a defeated player with a living boss |
+| Username accepted stored-XSS characters | FIXED | — | Strict allowlist is enforced for signup and admin credential changes; DOMPurify and escapeHtml implemented |
+| Browser admin token stored in `localStorage` | FIXED | — | Browser login now uses HttpOnly cookies and removes the legacy stored token |
+| PostgreSQL credential is committed in settings/env files and Git history | FIXED | Critical | Rotated, removed from `settings.py`, `admin.py`, `README.md`, environment files untracked, and Git history rewritten with git-filter-repo |
+| Player, admin, import, and migration work share an overly powerful database identity | FIXED | Critical | Least-privilege roles (`ob_player`, `ob_admin_api`, `ob_content_ingest`, `ob_migrator`) provisioned in Supabase, table grants/RLS policies enforced, and dedicated role URLs routed |
+| Predictable seeded admin accounts/passwords | TODO | Critical | Remove automatic production seeding; require one-time bootstrap secret; force password change; invalidate existing sessions |
+| Admin system API can switch the database at runtime | TODO | Critical | Remove from production builds or require step-up auth, strict destination allowlist, no raw password response, and audited approval |
+| User-controlled custom content folders can escape intended content flow and poison cache | TODO / PARTIALLY FIXED | High | Cache key poisoning is **FIXED** by `{track_id}:{source_identity}:{release_id}` isolation; removing custom folder input from player API remains a **TODO** |
+| `/battle/next-turn` can advance while the current boss is alive | TODO | High | Require `boss_hp <= 0`, use optimistic update, and add negative authorization/state tests |
+| Redis cache deserializes pickle | FIXED | High | Replaced with schema-validated JSON with zlib; `ob:` key prefixing, non-blocking SCAN, credential masking, and TLS verification enforced |
+| Content import is destructive and not atomic | TODO | High | Insert a complete immutable draft release in one transaction, validate counts/checksum, atomically flip active release, retain old release |
+| Release fallback can mix rows from other releases | TODO | High | Never remove the release predicate; fail closed if active release is empty or invalid |
+| Attempts identify questions by non-unique prompt text | TODO | High | Persist stable question and release IDs in turn state and submit them with attempts; add foreign keys/uniqueness rules |
+| Admin cookie explicitly lacks `Secure`; admin password minimum is five; RBAC not enforced | TODO | High | Use shared secure cookie settings, require 12+ characters or passkeys, add role dependencies per route, consider MFA |
+| Generic 500 response exposes exception text | TODO | Medium | Return a fixed public message; log sanitized details with request ID server-side |
+| Readiness/system endpoints expose operational detail publicly | TODO | Medium | Keep liveness minimal; protect or network-restrict readiness, metrics, database, folder, and log endpoints |
+| Rate limiting is process-local and proxy-sensitive | TODO | Medium | Use Redis-backed limits, trusted-proxy configuration, account/device dimensions, and progressive lockouts |
+| CSP permits inline scripts/styles and CDN script lacks SRI | TODO | Medium | Move inline code to static files, use nonces/hashes, self-host Phaser or pin with SRI, narrow CSP |
+| Docker image copies the entire repository and runs as root | TODO | Medium | Add `.dockerignore`, multi-stage build, non-root UID, read-only filesystem, healthcheck, pinned base digest, and image scanning |
+| No committed migration history | FIXED | Medium | Added Alembic migration revisions (0001 through 0008) covering least-privilege roles, RLS, and schema baselines |
+| Startup-warming flag is unused | TODO | Low | Wire it into lifespan with bounded parallelism or remove it and document the warm-cache job |
 
 These statuses come from source/configuration review and the available test suite. They are not a penetration-test certification.
 

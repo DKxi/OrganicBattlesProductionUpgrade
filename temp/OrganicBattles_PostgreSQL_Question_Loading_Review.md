@@ -20,13 +20,13 @@ This is a good transitional design. It protects the complete question banks from
 
 ```mermaid
 flowchart TD
-    A[Player selects track] --> B{Track bundle cached?}
-    B -- No --> C[Load all track questions from OB_questions]
-    C --> D[Build in-memory ContentBundle]
-    D --> E[Cache bundle in application process]
+    A[Player selects track] --> B{SharedTrackCache hit? (LRU / Redis)}
+    B -- No --> C[Query OB_questions via ob_player role]
+    C --> D[Validate JSONB schemas & build ContentBundle]
+    D --> E[Cache in BoundedTrackCache + Redis (ob: prefix, zlib JSON)]
     B -- Yes --> E
-    E --> F[Select next question from Python list]
-    F --> G[Store active question in OB_game_sessions]
+    E --> F[Select next question + generate turn_id]
+    F --> G[Store active question & turn_id in OB_game_sessions with version check]
 ```
 
 ### Active database
@@ -136,7 +136,7 @@ The repository tests compare database content and ordering with the original JSO
 
 ## Disadvantages and Risks
 
-### Critical: committed PostgreSQL credential
+### Critical: committed PostgreSQL credential (Status: FIXED)
 
 `app/settings.py` contains a live-looking Supabase PostgreSQL URL, username, and password as a default value. Because the repository is public, this credential must be treated as compromised.
 
@@ -163,7 +163,7 @@ database_url: str = Field(
 
 Production should fail startup if `DATABASE_URL` is missing instead of falling back to a real production credential.
 
-### 1. Every worker loads its own full copy
+### 1. Every worker loads its own full copy (Status: TODO)
 
 The application calls `.all()` for every question in a selected track. Each Uvicorn worker and every application replica has its own `TRACK_BUNDLES` cache.
 
@@ -175,13 +175,13 @@ questions × tracks accessed × worker processes × application replicas
 
 The present dataset is still manageable, but the design will become increasingly wasteful as questions, tracks, languages, and application instances increase.
 
-### 2. Cache invalidation is process-local
+### 2. Cache invalidation is process-local (Status: FIXED)
 
 When an administrator edits or reorders a question, only the worker handling that request clears its cache. Other workers and servers can continue serving stale content.
 
 Players could therefore receive different question text or ordering depending on which server processes the request.
 
-### 3. Silent JSON fallback can create inconsistent content
+### 3. Silent JSON fallback can create inconsistent content (Status: FIXED)
 
 If PostgreSQL fails, the application silently loads JSON. That improves short-term availability but creates correctness problems:
 
@@ -191,13 +191,13 @@ If PostgreSQL fails, the application silently loads JSON. That improves short-te
 - Production configuration failures may remain unnoticed.
 - Old content can be served while health checks appear successful.
 
-### 4. PostgreSQL JSON capabilities are unused
+### 4. PostgreSQL JSON capabilities are unused (Status: FIXED)
 
 `options_json`, `spells_json`, `health_json`, and `images_json` are stored as `Text`. This requires repeated `json.loads()` calls and permits malformed JSON strings to enter the database.
 
 The admin update API also accepts raw JSON strings, weakening validation.
 
-### 5. Correct answers are duplicated in session state
+### 5. Correct answers are duplicated in session state (Status: TODO)
 
 The cached question tuple contains:
 
@@ -207,7 +207,7 @@ The cached question tuple contains:
 
 That full tuple is serialized into `active_question_json`. It is not returned to the browser before the player answers, which is good, but duplicating the answer in session state makes auditing, editing, and content-version management harder.
 
-### 6. No content release/version model
+### 6. No content release/version model (Status: TODO)
 
 If an administrator edits or reorders questions during an active battle:
 
@@ -217,7 +217,7 @@ If an administrator edits or reorders questions during an active battle:
 - The explanation may be resolved from a newer bundle.
 - Different workers may use different content versions.
 
-### 7. Re-ingestion is not atomic
+### 7. Re-ingestion is not atomic (Status: TODO)
 
 The ingestion script deletes all questions for a track and commits before inserting the replacement data. It then commits each batch.
 
@@ -230,7 +230,7 @@ During ingestion, players may observe:
 
 If ingestion fails halfway through, the database remains incomplete.
 
-### 8. Reorder endpoint is fragile
+### 8. Reorder endpoint is fragile (Status: TODO)
 
 The reorder API commits temporary negative indexes before assigning final indexes.
 
@@ -243,7 +243,7 @@ Risks include:
 - The operation is scoped to a chapter but not a boss.
 - Multiple individual updates increase overhead.
 
-### 9. Combat concurrency is not protected
+### 9. Combat concurrency is not protected (Status: FIXED)
 
 `GameSession.version` is incremented, but it is not used in an optimistic locking condition. Two concurrent requests can read the same session, process the same turn, and overwrite one another.
 
@@ -255,7 +255,7 @@ This can occur because of:
 - Network retransmission
 - Concurrent requests routed to different workers
 
-### 10. Fixed pool sizes multiply across workers
+### 10. Fixed pool sizes multiply across workers (Status: FIXED)
 
 Each process configures:
 
@@ -266,7 +266,7 @@ max_overflow = 20
 
 Eight workers could theoretically create up to 240 database connections. Multiple replicas multiply that total, potentially exceeding a managed PostgreSQL or Supabase connection limit.
 
-### 11. Admin search will eventually slow down
+### 11. Admin search will eventually slow down (Status: TODO)
 
 Admin search uses leading-wildcard matching:
 
@@ -277,15 +277,15 @@ OR topic ILIKE '%search%'
 
 Ordinary B-tree indexes cannot efficiently serve this search pattern. The current dataset may remain acceptable, but performance will decline as the content catalog grows.
 
-### 12. `create_all()` is not a production migration system
+### 12. `create_all()` is not a production migration system (Status: FIXED)
 
 `Base.metadata.create_all()` creates missing tables but does not safely evolve existing PostgreSQL schemas. It cannot replace controlled migrations for column changes, constraint changes, data conversions, and rollback.
 
-### 13. Broad exception handling hides failures
+### 13. Broad exception handling hides failures (Status: FIXED)
 
 `load_db_bundle()` catches broad exceptions and returns `None`, which can trigger JSON fallback. Database outages, invalid JSON, schema mismatches, authentication errors, and programming defects should not all be treated identically.
 
-### 14. Prompt text is used as a metadata key
+### 14. Prompt text is used as a metadata key (Status: TODO)
 
 Explanations, images, and spell information are mapped partly by prompt text. Duplicate prompts or prompt edits can cause collisions and inconsistent metadata. Stable question IDs should be used instead.
 
@@ -293,12 +293,12 @@ Explanations, images, and spell information are mapped partly by prompt text. Du
 
 ```mermaid
 flowchart TD
-    A[PostgreSQL source of truth] --> B[Versioned question service]
-    B --> C[Redis shared cache]
+    A[PostgreSQL source of truth (ob_player / ob_admin_api + RLS)] --> B[Versioned question service]
+    B --> C[Redis shared cache (ob: prefix, zlib JSON) & Bounded LRU]
     C --> D[FastAPI workers]
-    D --> E[One active question response]
-    F[Admin publish] --> A
-    F --> G[Cache invalidation event]
+    D --> E[Active question response with turn_id & optimistic locking]
+    F[Admin publish / Release change] --> A
+    F --> G[Cache invalidation event (scan_iter + LRU clear)]
     G --> C
 ```
 
@@ -306,7 +306,7 @@ PostgreSQL should remain the authoritative content store. Redis or another distr
 
 ## Prioritized Recommendations
 
-### Priority 0: Rotate and remove the exposed database credential
+### Priority 0: Rotate and remove the exposed database credential (Status: FIXED)
 
 This must happen before any other production work.
 
@@ -316,7 +316,7 @@ This must happen before any other production work.
 - Store it only as a deployment secret.
 - Use a least-privilege database account.
 
-### Priority 1: Make content ingestion atomic and versioned
+### Priority 1: Make content ingestion atomic and versioned (Status: TODO)
 
 Introduce a content-release table:
 
@@ -344,7 +344,7 @@ Recommended publishing flow:
 
 Players never see a partial import under this model.
 
-### Priority 2: Add stable question identity and content versions
+### Priority 2: Add stable question identity and content versions (Status: TODO)
 
 Add a unique constraint such as:
 
@@ -362,7 +362,7 @@ Store these fields in the game session:
 
 Do not use prompt text as a unique key.
 
-### Priority 3: Use validated JSONB
+### Priority 3: Use validated JSONB (Status: FIXED)
 
 Use PostgreSQL `JSONB` for options, spells, health, and images. If SQLite compatibility is required, use SQLAlchemy's generic JSON type with a PostgreSQL `JSONB` variant.
 
@@ -377,7 +377,7 @@ Validate that:
 
 Remove raw `options_json` and `spells_json` string inputs from the admin API.
 
-### Priority 4: Adopt a shared cache strategy
+### Priority 4: Adopt a shared cache strategy (Status: FIXED)
 
 For the current scale, either of these is reasonable.
 
@@ -417,7 +417,7 @@ LIMIT 1;
 
 The existing composite index is close to what this query requires.
 
-### Priority 5: Protect combat updates from concurrency
+### Priority 5: Protect combat updates from concurrency (Status: FIXED)
 
 Use either row locking or optimistic concurrency.
 
@@ -447,7 +447,7 @@ Require the current `turn_id` with an answer:
 
 Reject missing, expired, or previously consumed turn IDs.
 
-### Priority 6: Replace silent production fallback
+### Priority 6: Replace silent production fallback (Status: FIXED)
 
 Recommended behavior:
 
@@ -458,7 +458,7 @@ Recommended behavior:
 
 Production servers should not silently serve different content versions.
 
-### Priority 7: Correct the reorder and administration APIs
+### Priority 7: Correct the reorder and administration APIs (Status: TODO)
 
 For reorder operations:
 
@@ -472,7 +472,7 @@ For reorder operations:
 - Publish changes as a new content release.
 - Invalidate distributed cache only after a successful commit.
 
-### Priority 8: Add Alembic migrations
+### Priority 8: Add Alembic migrations (Status: FIXED)
 
 Create migrations for:
 
@@ -486,7 +486,7 @@ Create migrations for:
 
 Do not use `create_all()` as the production schema migration mechanism.
 
-### Priority 9: Make connection pooling deployment-aware
+### Priority 9: Make connection pooling deployment-aware (Status: FIXED)
 
 Configure through environment variables:
 
@@ -499,7 +499,7 @@ DB_POOL_RECYCLE
 
 Calculate the maximum connection total across all workers and replicas. When using a Supabase pooler, start conservatively, such as three to five connections per application instance, and confirm the service limit.
 
-### Priority 10: Improve search and observability
+### Priority 10: Improve search and observability (Status: FIXED)
 
 For admin search, add PostgreSQL trigram or full-text indexing.
 
@@ -541,19 +541,19 @@ This separation supports:
 
 ## Recommended Implementation Sequence
 
-| Phase | Work | Priority |
-|---|---|---|
-| 0 | Rotate exposed credential and remove it from source | Immediate |
-| 1 | Add Alembic and baseline the current schema | Mandatory |
-| 2 | Add content releases and atomic ingestion | Mandatory |
-| 3 | Add stable question IDs and session content versions | Mandatory |
-| 4 | Add optimistic combat locking and turn-ID validation | Mandatory |
-| 5 | Convert structured text fields to validated JSONB | High |
-| 6 | Introduce Redis/shared cache invalidation | High |
-| 7 | Cache boss-level banks instead of all tracks | High |
-| 8 | Restrict JSON fallback and expose degraded health | High |
-| 9 | Correct the reorder and admin update workflows | High |
-| 10 | Tune connection pools and add metrics | Production readiness |
+| Phase | Work | Priority | Status |
+|---|---|---|---|
+| 0 | Rotate exposed credential and remove it from source | Immediate | FIXED |
+| 1 | Add Alembic and baseline the current schema | Mandatory | FIXED |
+| 2 | Add content releases and atomic ingestion | Mandatory | TODO |
+| 3 | Add stable question IDs and session content versions | Mandatory | TODO |
+| 4 | Add optimistic combat locking and turn-ID validation | Mandatory | FIXED |
+| 5 | Convert structured text fields to validated JSONB | High | FIXED |
+| 6 | Introduce Redis/shared cache invalidation | High | FIXED |
+| 7 | Cache boss-level banks instead of all tracks | High | TODO |
+| 8 | Restrict JSON fallback and expose degraded health | High | FIXED |
+| 9 | Correct the reorder and admin update workflows | High | TODO |
+| 10 | Tune connection pools and add metrics | Production readiness | FIXED |
 
 ## Final Assessment
 
