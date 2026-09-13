@@ -196,7 +196,6 @@ def build_engine(url: str, poolclass: Optional[Any] = None) -> Engine:
 # Global active engine and session factory
 current_db_url: str = normalize_db_url(settings.database_url)
 engine: Engine = build_engine(current_db_url)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Role-specific database engines & session factories (Player & Admin)
 player_db_url: str = normalize_db_url(settings.database_url_player) if settings.database_url_player else current_db_url
@@ -207,6 +206,8 @@ admin_engine: Engine = build_engine(admin_db_url) if admin_db_url != current_db_
 
 PlayerSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=player_engine)
 AdminSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=admin_engine)
+# Standard SessionLocal defaults to least-privilege player session factory
+SessionLocal = PlayerSessionLocal
 
 
 def set_session_user_context(db: DBSession, user_id: str) -> None:

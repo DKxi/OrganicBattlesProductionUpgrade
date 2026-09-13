@@ -7,7 +7,6 @@ from slowapi.errors import RateLimitExceeded
 from slowapi import _rate_limit_exceeded_handler
 
 from app.settings import settings
-from app.infrastructure.database.engine import ensure_db_schema
 from app.observability.logging import setup_logging
 from app.observability.middleware import SecurityAndObservabilityMiddleware
 from app.api.errors import (

@@ -19,7 +19,7 @@ def get_target_url() -> str:
     if not url:
         from app.settings import settings
         import app.infrastructure.database.engine as db_engine
-        url = db_engine.current_db_url or settings.database_url
+        url = settings.database_url_migration or db_engine.current_db_url or settings.database_url
     return url
 
 
@@ -64,6 +64,13 @@ def run_migrations_online() -> None:
     connectable = build_engine(url)
 
     with connectable.connect() as connection:
+        if connection.dialect.name == "postgresql":
+            from sqlalchemy import text
+            try:
+                connection.execute(text("SET ROLE ob_owner;"))
+            except Exception:
+                pass
+
         context.configure(
             connection=connection,
             target_metadata=target_metadata,
