@@ -54,18 +54,18 @@ def get_config_value(environment_name: str, *secret_path: str, default: Any = No
     return current if current is not None else default
 
 
-DEFAULT_POSTGRES_URL = "postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[REDACTED-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres"
+DEFAULT_DATABASE_URL = f"sqlite:///{ROOT_DIR / 'organic_battles.sqlite3'}"
 
 
 class Settings(BaseModel):
     """Centralized, validated application configuration."""
     project_name: str = "Organic Battles"
     environment: str = Field(default_factory=lambda: os.getenv("ENVIRONMENT", "development"))
-    database_url: str = Field(default_factory=lambda: get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
-    database_url_player: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_PLAYER", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
-    database_url_admin: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_ADMIN", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
-    database_url_ingest: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_INGEST", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
-    database_url_migration: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_MIGRATION", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_POSTGRES_URL))
+    database_url: str = Field(default_factory=lambda: get_config_value("DATABASE_URL", default=DEFAULT_DATABASE_URL))
+    database_url_player: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_PLAYER", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_DATABASE_URL))
+    database_url_admin: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_ADMIN", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_DATABASE_URL))
+    database_url_ingest: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_INGEST", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_DATABASE_URL))
+    database_url_migration: str = Field(default_factory=lambda: get_config_value("DATABASE_URL_MIGRATION", default=None) or get_config_value("DATABASE_URL", default=DEFAULT_DATABASE_URL))
     database_path: Path = Field(default_factory=lambda: Path(get_config_value("DATABASE_PATH", default=str(ROOT_DIR / "organic_battles.sqlite3"))))
     game_content_source: Optional[str] = None
     

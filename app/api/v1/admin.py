@@ -696,7 +696,7 @@ def _get_default_pg_url() -> str:
     if "postgresql" in settings.database_url:
         return settings.database_url
 
-    return "postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[REDACTED-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres"
+    return ""
 
 
 @router.post("/admin/system/database")

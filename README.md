@@ -341,7 +341,7 @@ SECRET_KEY=change-this-to-a-secure-random-32-character-secret
 
 # --- Database Configuration ---
 # Option 1: PostgreSQL / Supabase IPv4 Pooler (Default):
-DATABASE_URL=postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[REDACTED-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
+DATABASE_URL=postgresql+psycopg2://postgres.aamwrwbsrmorllisdffc:[YOUR-PASSWORD]@aws-0-us-west-2.pooler.supabase.com:5432/postgres
 
 # Option 2: SQLite (Local file database):
 # DATABASE_URL=sqlite:///./organic_battles.sqlite3
