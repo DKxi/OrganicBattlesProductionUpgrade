@@ -2,21 +2,45 @@
 
 **Organic Battles (V4P)** is a production-grade educational fantasy RPG where organic chemistry concepts, reaction mechanisms, stereochemistry, and spectroscopy are reimagined as arcane turn-based duels against alchemical creatures and Titans.
 
-This cookbook serves as the comprehensive architectural reference, design blueprint, engineering specification, error catalog, and production-readiness roadmap for developers, educators, and systems architects.
+This cookbook serves as the comprehensive architectural reference, design blueprint, engineering specification, error catalog, operational runbook, and production constraints manual for developers, educators, and systems architects.
 
 ---
 
 ## Table of Contents
 1. [Executive Overview & Pedagogical Game Concept](#1-executive-overview--pedagogical-game-concept)
 2. [Technology Stack & System Architecture](#2-technology-stack--system-architecture)
+   - [2.1 Technology Stack Matrix](#21-technology-stack-matrix)
+   - [2.2 Modernized System Architecture Diagram](#22-modernized-system-architecture-diagram)
+   - [2.3 Modular Clean Architecture Layout](#23-modular-clean-architecture-layout)
 3. [Core Gameplay & Combat Systems Design](#3-core-gameplay--combat-systems-design)
+   - [3.1 Combat Turn State Machine & Invariant Transitions](#31-combat-turn-state-machine--invariant-transitions)
+   - [3.2 Spell Catalog, Elemental Tiers & Dynamic Overrides](#32-spell-catalog-elemental-tiers--dynamic-overrides)
+   - [3.3 Mathematical Combat Resolution Model](#33-mathematical-combat-resolution-model)
+   - [3.4 The P0 Invariant Guard: Advance Without Victory Prevention](#34-the-p0-invariant-guard-advance-without-victory-prevention)
+   - [3.5 Optimistic Concurrency Control (`version` Column)](#35-optimistic-concurrency-control-version-column)
 4. [Track Architecture, Content Ingestion & Bundle Lifecycle](#4-track-architecture-content-ingestion--bundle-lifecycle)
-   - [4.4 Advanced Track Bestiary Gallery & Chemistry Interpretations](#44-advanced-track-bestiary-gallery--chemistry-interpretations)
-5. [Database Design & Per-Track State Persistence](#5-database-design--per-track-state-persistence)
-6. [User Journey, Selections & UI Navigation Flows](#6-user-journey-selections--ui-navigation-flows)
-   - [6.4 Comprehensive Administrator Configuration Portal & System Controls](#64-comprehensive-administrator-configuration-portal--system-controls)
+   - [4.1 Track Hierarchy & Multi-Curriculum Schema](#41-track-hierarchy--multi-curriculum-schema)
+   - [4.2 Comprehensive Question Payload Validation Engine](#42-comprehensive-question-payload-validation-engine)
+   - [4.3 Atomic Content Release Pipeline (`OB_content_releases`)](#43-atomic-content-release-pipeline-ob_content_releases)
+   - [4.4 Shared Track Cache Manager (`SharedTrackCacheManager`)](#44-shared-track-cache-manager-sharedtrackcachemanager)
+   - [4.5 Cloud Object Storage & Decoupled Asset Pipelines](#45-cloud-object-storage--decoupled-asset-pipelines)
+   - [4.6 Advanced Track Bestiary Gallery & Chemical Orbital Analyses](#46-advanced-track-bestiary-gallery--chemical-orbital-analyses)
+5. [Database Architecture & Least-Privilege Security](#5-database-architecture--least-privilege-security)
+   - [5.1 Comprehensive Relational Schema Diagram (SQLAlchemy 2.x)](#51-comprehensive-relational-schema-diagram-sqlalchemy-2x)
+   - [5.2 Production Connection Pooling & Supabase IPv4 Pooler](#52-production-connection-pooling--supabase-ipv4-pooler)
+   - [5.3 Least-Privilege Database Role Matrix (`SUPABASE_LEAST_PRIVILEGE_SETUP`)](#53-least-privilege-database-role-matrix-supabase_least_privilege_setup)
+   - [5.4 Alembic Migration Framework (Revisions 0001–0009)](#54-alembic-migration-framework-revisions-00010009)
+   - [5.5 Per-Track Progress Isolation Architecture (`user.progress_json`)](#55-per-track-progress-isolation-architecture-userprogress_json)
+6. [User Journey, UI State & Administrative Subsystems](#6-user-journey-ui-state--administrative-subsystems)
+   - [6.1 End-to-End User Navigation State Machine](#61-end-to-end-user-navigation-state-machine)
+   - [6.2 The Mid-Chapter Abandonment Gate](#62-the-mid-chapter-abandonment-gate)
+   - [6.3 Procedural Web Audio Harmonic Synthesizer](#63-procedural-web-audio-harmonic-synthesizer)
+   - [6.4 Four-Tab Administrator Configuration Portal](#64-four-tab-administrator-configuration-portal)
+   - [6.5 Browser Security: Content Security Policy (CSP) & CDN Whitelisting](#65-browser-security-content-security-policy-csp--cdn-whitelisting)
 7. [Comprehensive Error Catalog & Status Codes](#7-comprehensive-error-catalog--status-codes)
-8. [Multi-User Production Readiness Roadmap](#8-multi-user-production-readiness-roadmap)
+8. [Design Trade-offs, Architectural Pros & Cons](#8-design-trade-offs-architectural-pros--cons)
+9. [Operational Constraints, Caveats & Points to Remember](#9-operational-constraints-caveats--points-to-remember)
+10. [Production Readiness & Execution Roadmap](#10-production-readiness--execution-roadmap)
 
 ---
 
@@ -36,7 +60,7 @@ Organic chemistry is traditionally considered one of the most intellectually dem
 |   "Enter the Labyrinth. Master the Electron. Vanquish the Reaction."    |
 +-------------------------------------------------------------------------+
 |  27 Chapters           20 Distinct Tracks         27,000 Chemistry MCQs |
-|  155 Boss Creatures    Dynamic Spell Ranks        PostgreSQL / SQLite   |
+|  155 Boss Creatures    Dynamic Spell Ranks        PostgreSQL / S3 CDN   |
 +-------------------------------------------------------------------------+
 ```
 
@@ -46,99 +70,159 @@ Organic chemistry is traditionally considered one of the most intellectually dem
 
 ### 2.1 Technology Stack Matrix
 
-| Layer | Technology | Rationale & Characteristics |
-| :--- | :--- | :--- |
-| **Backend API** | **FastAPI (Python 3.12)** | Asynchronous high-throughput ASGI framework, native OpenAPI documentation, strict Pydantic v2 schemas. |
-| **Domain Logic** | **Pure Python Functional Core** | Zero-dependency combat mathematics (`evaluate_combat_turn`), isolated from database and HTTP layers for deterministic testing. |
-| **ORM / Storage** | **SQLAlchemy 2.0 / PostgreSQL (Default) & SQLite3** | Default PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com`), connection pooling (`pool_size=10`, `max_overflow=20`), `OB_` table prefixes, and local SQLite3 offline support with live bidirectional migration. |
-| **Rate Limiting** | **SlowAPI / Limiter** | IP and user-based throttling on sensitive authentication and combat endpoints (disabled dynamically in test suites). |
-| **Frontend Framework** | **Vanilla HTML5 & CSS3** | Zero build-step overhead, zero node_modules in production frontend, custom glassmorphism design system, retro-cyberpunk alchemical typography. |
-| **Client Logic** | **Modular ES6+ JavaScript** | Event-driven UI controller, native DOM routing, dynamic track searching and filtering, asynchronous `fetch` wrappers. |
-| **Game Canvas / VFX** | **Phaser 3 (v3.80.1)** | High-performance WebGL/Canvas rendering, sprite scaling, particle emitters, camera shake, and reactive boss damage tweens. |
-| **Procedural Audio** | **Web Audio API** | Real-time procedural harmonic synthesis (fanfares, strike bursts, backfire hums, click responses) requiring zero external sound assets. |
-| **Tooling & Test** | **`uv`, `pytest`, `pytest-anyio`** | Blazing-fast dependency management (`uv.lock`), comprehensive automated unit, domain, combat, question parity, and database migration tests. |
+| Layer | Technology | Version | Rationale & Characteristics |
+| :--- | :--- | :--- | :--- |
+| **Backend Framework** | **FastAPI** | `0.115.6` | Asynchronous high-throughput ASGI framework, native OpenAPI documentation, strict Pydantic V2 schemas. |
+| **Domain Logic** | **Pure Python Functional Core** | Native | Zero-dependency combat mathematics ([app/domain/combat/rules.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/combat/rules.py)), isolated from database and HTTP layers for deterministic testing. |
+| **Database & ORM** | **SQLAlchemy 2.x & PostgreSQL** | `2.0.36` | Production PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`), QueuePool (`pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`), unified `OB_` table prefixing, and native `JSONB` column variants. |
+| **Database Migrations** | **Alembic** | `1.14.1` | Programmatic migration engine ([app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py)) with revisions `0001` through `0009`. |
+| **Object Storage & CDN** | **AWS S3 / Supabase Storage** | `boto3` `1.36.3` | Direct streaming reader ([app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py)) for track chapters and public CDN buckets for boss PNGs (`DefaultBosses`, `AdvancedBosses`, `FoundationalBosses`). |
+| **Distributed Caching** | **SharedTrackCacheManager** | Custom | Versioned caching keyed by `(track_id, release_id)` with zlib serialization, thread-safe thundering-herd locks, and Redis fallback. |
+| **Rate Limiting** | **SlowAPI / Limiter** | `0.1.9` | Token-bucket rate limiting protecting authentication and combat routes. |
+| **Frontend UI** | **Vanilla HTML5 & CSS3** | Custom | Zero build-step overhead, zero node_modules in production frontend, custom glassmorphism design system, retro-cyberpunk alchemical typography. |
+| **Client Controller** | **Modular ES6+ JavaScript** | ES2022+ | Event-driven UI controller ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)), companion avatar engine ([static/js/avatars.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/avatars.js)). |
+| **Arena Canvas / VFX** | **Phaser 3** | `3.60.0` (CDN) | WebGL/Canvas rendering, dynamic chapter auras, responsive canvas scaling (`Phaser.AUTO`, `Phaser.Scale.RESIZE`). |
+| **Procedural Audio** | **Web Audio API** | Native Browser | Real-time procedural harmonic synthesis ([static/js/audio.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/audio.js)) requiring zero external sound assets. |
+| **Testing Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | 384 automated unit, domain, combat, question parity, and database migration tests. |
 
 ---
 
-### 2.2 System Architecture Diagram
+### 2.2 Modernized System Architecture Diagram
 
+```mermaid
+flowchart TB
+    subgraph Client["Client Browser (Single Page Application)"]
+        UI["HTML5 Glassmorphic UI & Modals<br/>(static/js/main.js · static/css/game.css)"]
+        Phaser["Phaser 3.60 Visual Arena<br/>(WebGL/Canvas · RESIZE Scale · Dynamic Auras)"]
+        AudioEngine["Web Audio Synthesizer<br/>(static/js/audio.js · Procedural SFX · Visibility Suspend)"]
+        AdminUI["Admin Configuration Portal<br/>(Users · Sessions · Storage · System Telemetry)"]
+        UI <--> Phaser
+        UI --> AudioEngine
+        UI --- AdminUI
+    end
+
+    subgraph EdgeLayer["Edge Delivery & Storage Layer"]
+        SupabaseS3[("Supabase S3 Object Storage<br/>Buckets: DefaultBosses · AdvancedBosses · FoundationalBosses")]
+        CloudCDN["Public HTTPS CDN Edge<br/>(*.supabase.co / *.storage.supabase.co)"]
+        SupabaseS3 --> CloudCDN
+    end
+
+    subgraph Server["FastAPI Modular Backend (app/)"]
+        SecurityMW["Security & Observability Middleware<br/>(CSP · HSTS · X-Frame · X-Content-Type · SlowAPI)"]
+        
+        subgraph APILayer["API / Router Layer (app/api/v1/)"]
+            AuthRouter["auth.py<br/>(/api/v1/auth/*)"]
+            BattleRouter["battle.py<br/>(/api/v1/battle/*)"]
+            GameRouter["game.py<br/>(/api/v1/game/*)"]
+            AdminRouter["admin.py<br/>(/api/v1/admin/*)"]
+            QuestionsAdmin["questions_admin.py<br/>(/api/v1/admin/questions/*)"]
+        end
+
+        subgraph DomainLayer["Pure Domain Logic (app/domain/)"]
+            CombatRules["combat/rules.py & spells.py<br/>(evaluate_combat_turn · P0 Invariant Guards)"]
+            ContentEngine["content/loader.py & validator.py<br/>(validate_question_payload · S3/DB Resolution)"]
+            AccountRules["accounts/entities.py"]
+        end
+
+        subgraph InfraLayer["Infrastructure Layer (app/infrastructure/)"]
+            DBEngine["database/engine.py<br/>(Supabase Pooler · Connection Pooling)"]
+            Repositories["database/releases_repo.py & session_repository.py"]
+            SharedCache["cache/shared_cache.py<br/>(SharedTrackCacheManager: (track_id, release_id))"]
+            S3Reader["storage/s3_reader.py<br/>(Boto3 S3 Chapter Streaming)"]
+        end
+
+        SecurityMW --> APILayer
+        AuthRouter --> Repositories
+        BattleRouter --> CombatRules & Repositories & SharedCache
+        GameRouter --> ContentEngine & Repositories
+        AdminRouter --> Repositories & DBEngine & ContentEngine
+        QuestionsAdmin --> ContentEngine & Repositories
+    end
+
+    subgraph Persistence["PostgreSQL Data Plane (Supabase IPv4 Pooler :5432)"]
+        UsersTable[("OB_users")]
+        SessionsTable[("OB_game_sessions (version column)")]
+        AuthTable[("OB_auth_sessions")]
+        OTPTable[("OB_verification_codes")]
+        CurriculaTable[("OB_curricula")]
+        TracksTable[("OB_tracks")]
+        QuestionsTable[("OB_questions (27,000 Questions)")]
+        ReleasesTable[("OB_content_releases (draft/published/archived)")]
+    end
+
+    Client <-->|"REST API / JSON / HttpOnly Cookies"| SecurityMW
+    Client <-->|"Direct Boss Image Fetch"| CloudCDN
+    RouterLayer -.->|"307 Redirect (/static/assets/bosses/*)"| CloudCDN
+    Repositories <--> DBEngine <--> Persistence
+    ContentEngine <--> S3Reader <--> SupabaseS3
 ```
-+-----------------------------------------------------------------------------------+
-|                                  BROWSER CLIENT                                   |
-|                                                                                   |
-|  +---------------------+   +---------------------+   +--------------------------+ |
-|  |   DOM Controller    |   |     Phaser 3.80     |   |   Web Audio Synthesizer  | |
-|  |  (static/js/main.js)|   | (Canvas / Particle) |   |  (Harmonic procedural)   | |
-|  +----------+----------+   +----------+----------+   +------------+-------------+ |
-+-------------|-------------------------|---------------------------|---------------+
-              | HTTP / JSON             |                           |
-              v                         v                           v
-+-----------------------------------------------------------------------------------+
-|                            FASTAPI APPLICATION CORE                               |
-|                                                                                   |
-|  +-----------------------------------------------------------------------------+  |
-|  | API Routing Layer (app/api/v1/)                                             |  |
-|  |   - auth.py: Signup, Login, Email Verification, Session Management          |  |
-|  |   - game.py: Avatar Finalization, Track Switching, Progression State        |  |
-|  |   - battle.py: Spell Selection, Turn Resolution, Boss Defeat, Retries       |  |
-|  |   - admin.py: User Config, Credential Resets, Session Jump & Wipes          |  |
-|  +-------------------------------------+---------------------------------------+  |
-|                                        |                                          |
-|         +------------------------------+-------------------------------+          |
-|         v                                                              v          |
-|  +------------------------------+             +--------------------------------+  |
-|  | Pure Domain Combat Engine    |             | Content Ingestion Engine       |  |
-|  | (app/domain/combat/)         |             | (app/domain/content/)          |  |
-|  |  - rules.py: evaluate turn   |             |  - loader.py: JSON bundle scan |  |
-|  |  - spells.py: spell catalog  |             |  - resolver.py: source cascade |  |
-|  +--------------+---------------+             |  - entities.py: ContentBundle  |  |
-|                 |                             +----------------+---------------+  |
-|                 |                                              |                  |
-+-----------------|----------------------------------------------|------------------+
-                  |                                              |
-                  v                                              v
-+---------------------------------+            +------------------------------------+
-|      DATABASE / REPOSITORY      |            |         FILESYSTEM CONTENT         |
-|  (app/infrastructure/database/) |            |         (data/ & bosses/)          |
-|                                 |            |                                    |
-|  - SQLite (organic_battles.db)  |            |  - data/tracks_config.json         |
-|  - Users & AuthSessions         |            |  - data/tracks/default/ (Ch 1-27)  |
-|  - GameSessions (Active state)  |            |  - data/tracks/{track_id}/         |
-|  - Per-Track JSON Progress      |            |  - bosses/ & track-specific images |
-+---------------------------------+            +------------------------------------+
-```
+
+---
+
+### 2.3 Modular Clean Architecture Layout
+
+The application adheres strictly to **Clean Architecture** boundaries:
+1. **`app/api/v1/`**: HTTP controllers, request/response models, cookie setting, routing.
+2. **`app/domain/`**: Pure functional core business rules (combat formulas, question validation, spell scaling). Zero imports from FastAPI, Starlette, or SQLAlchemy.
+3. **`app/infrastructure/`**: External boundaries (database engines, Alembic migrations, Redis caching, S3 object storage, SMTP email delivery).
+4. **`app/observability/`**: Logging formatters, Prometheus metrics registry, security middleware.
 
 ---
 
 ## 3. Core Gameplay & Combat Systems Design
 
-### 3.1 Combat Turn State Machine
-Combat is turn-based and deterministic. Each turn follows an uncompromising cyclic progression:
+### 3.1 Combat Turn State Machine & Invariant Transitions
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Idle: Enter Battle
-    Idle --> SpellSelected: Select Spell from Catalog
-    SpellSelected --> QuestionPrompted: API validates spell & locks turn
-    QuestionPrompted --> EvaluatingAnswer: Player submits answer choice
-    EvaluatingAnswer --> DirectHit: Correct Answer
-    EvaluatingAnswer --> BackfireHit: Incorrect Answer
-    DirectHit --> CheckBossDefeat: Spell Damage applied to Boss
-    BackfireHit --> CheckPlayerDefeat: Backfire + Counterattack damage applied
-    CheckBossDefeat --> BossDefeated: Boss HP <= 0
-    CheckBossDefeat --> Idle: Boss HP > 0 (Apply Cooldowns)
-    CheckPlayerDefeat --> PlayerDefeated: Player HP <= 0
-    CheckPlayerDefeat --> Idle: Player HP > 0 (Apply Cooldowns)
-    BossDefeated --> NextBossOrChapter: Advance Stage / Next Turn
-    PlayerDefeated --> RetryModal: Regroup & Restart Arena
+    [*] --> IdleAwaitingSpell: Session Active (Player HP: 150)
+
+    IdleAwaitingSpell --> QuestionPrimed: POST /battle/select-spell
+    note right of QuestionPrimed: 1. Cooldown verified.<br/>2. Question cursor resolved.<br/>3. Answer secret stripped server-side.
+
+    QuestionPrimed --> TurnEvaluating: POST /battle/answer
+    
+    state TurnEvaluating {
+        [*] --> CheckOptimisticVersion: Check expected_version
+        CheckOptimisticVersion --> Conflict409: Version mismatch
+        CheckOptimisticVersion --> GradeAnswer: Version match
+        
+        GradeAnswer --> CorrectHit: Option matches correct_option
+        GradeAnswer --> FizzleBackfire: Option incorrect
+        
+        CorrectHit --> DamageBoss: Boss HP -= Spell Damage
+        DamageBoss --> CounterattackCheck: 50% Boss Strike roll
+        
+        FizzleBackfire --> DamagePlayer: Player HP -= Full Spell Base Power
+    }
+
+    TurnEvaluating --> BossDefeated: Boss HP <= 0
+    TurnEvaluating --> PlayerDefeated: Player HP <= 0
+    TurnEvaluating --> IdleAwaitingSpell: Both alive, cooldowns applied, version++
+
+    state BossDefeated {
+        [*] --> DefeatedWaitingAdvance
+        DefeatedWaitingAdvance --> AdvanceNextBoss: POST /battle/next-turn
+    }
+
+    state AdvanceNextBoss {
+        [*] --> InvariantGuards: Boss HP <= 0 & Player HP > 0 & No Active Turn
+        InvariantGuards --> AdvanceRejected400: Guard check fails
+        InvariantGuards --> CommitAdvance: Atomic SQL predicate update
+    }
+
+    CommitAdvance --> IdleAwaitingSpell: Player HP restored to 150, Next Arena Active
+    PlayerDefeated --> ShowDefeatModal: Lock arena
+    ShowDefeatModal --> IdleAwaitingSpell: POST /battle/retry (Full 150 HP reset)
 ```
 
 ---
 
-### 3.2 Spell Catalog & Rank Architecture
-Spells are divided into three distinct operational tiers:
+### 3.2 Spell Catalog, Elemental Tiers & Dynamic Overrides
 
-| Spell ID | Display Name | Tier | Base Damage | Cooldown (Turns) | Elemental Arcana Description |
+Spells are organized into three distinct operational tiers:
+
+| Spell ID | Display Name | Tier | Base Damage | Cooldown | Arcana Lore Description |
 | :--- | :--- | :--- | :---: | :---: | :--- |
 | `fire-spark` | Fire Spark | Basic | 20 | 0 | Reliable elemental heat; no cooldown. |
 | `acid-shot` | Acid Shot | Basic | 20 | 0 | Focused proton donor spray; basic strike. |
@@ -150,201 +234,214 @@ Spells are divided into three distinct operational tiers:
 | `stereochemical-rift`| Stereochemical Rift| Heavy| 50 | 2 | Opposing enantiomeric field tear. |
 | `spectral-obliteration`| Spectral Obliteration| Heavy| 50 | 2 | Focused IR and NMR resonance beam. |
 
-#### Dynamic Damage Overrides per Question & Boss
-When playing JSON-based tracks, spell damage is dynamically loaded from the chapter data:
-- The JSON contains a `spells: [BasicDmg, MediumDmg, HeavyDmg]` tuple per question.
-- The engine maps these values to `JSON_SPELL_IDS_BY_RANK = ("fire-spark", "resonance-burst", "mechanism-storm")`.
-- If custom damage values are present, the UI dynamically renders the exact damage integers inside the spell action buttons.
+#### Dynamic Spell Damage Overrides
+When questions specify custom spell tiers via `Question.spells_json` (e.g. `[25, 45, 70]`), the engine dynamically overrides base damages:
+- Tier 1 (`Basic`): maps to `fire-spark` (25 DMG)
+- Tier 2 (`Medium`): maps to `resonance-burst` (45 DMG)
+- Tier 3 (`Heavy`): maps to `mechanism-storm` (70 DMG)
+The UI updates the button labels dynamically to reflect exact damage numbers.
 
 ---
 
-### 3.3 Combat Mathematical Model (`evaluate_combat_turn`)
-Located in [app/domain/combat/rules.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/combat/rules.py):
+### 3.3 Mathematical Combat Resolution Model
+
+Implemented in [app/domain/combat/rules.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/combat/rules.py):
 
 1. **Player Success (Correct Answer)**:
-   $$\text{Damage Dealt} = \text{Spell Base Damage (or JSON override)}$$
+   $$\text{Damage Dealt} = \text{Spell Base Damage (or dynamic override)}$$
    $$\text{New Boss HP} = \max(0, \text{Boss HP} - \text{Damage Dealt})$$
    $$\text{Self Damage} = 0$$
-   - Boss Counterattack Trigger: If Boss HP remains $> 0$ and Boss is in rage mode ($\le 25\%$ HP), there is a chance of an immediate counterattack.
+   - **Counterattack Roll**: If $\text{Boss HP} > 0$, the boss has a 50% probability to counterattack for $10 - 25$ damage (scaled by chapter).
 
-2. **Player Failure (Incorrect Answer)**:
+2. **Player Failure (Incorrect Answer / Spell Fizzle)**:
    $$\text{Damage Dealt to Boss} = 0$$
-   $$\text{Self Damage (Backfire)} = 15 \text{ (or } 20\% \text{ of spell damage)}$$
-   $$\text{Boss Counterattack Damage} = 15 \text{ to } 30 \text{ (scaled by chapter)}$$
-   $$\text{New Player HP} = \max(0, \text{Player HP} - (\text{Self Damage} + \text{Boss Counterattack}))$$
+   $$\text{Self Damage (Backfire)} = \text{Spell Base Damage (100\% backfire)}$$
+   $$\text{New Player HP} = \max(0, \text{Player HP} - \text{Self Damage})$$
+
+3. **Victory Health Restoration**:
+   - Defeating a boss and advancing to the next arena automatically restores player health to full **150 / 150 HP**.
+
+---
+
+### 3.4 The P0 Invariant Guard: Advance Without Victory Prevention
+
+#### The Problem
+In legacy versions, `POST /api/v1/battle/next-turn` recorded a boss defeat and incremented the chapter/boss index without verifying if the boss was defeated or if the player was alive, allowing players to skip all 27 chapters by spamming next-turn on 100-HP bosses.
+
+#### The Architectural Solution
+1. **Pre-condition Invariant Validation**:
+   - In [app/api/v1/battle.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/battle.py), `next-turn` rejects the call with `HTTP 400 Bad Request` if:
+     - `game_session.boss_hp > 0`: *"Cannot advance: Current boss is still alive ({boss_hp} HP remaining). Defeat the boss before advancing."*
+     - `game_session.player_hp <= 0`: *"Cannot advance: Player has been defeated. Please retry or restart the battle."*
+     - `game_session.active_spell is not None or turn_id is not None`: *"Cannot advance while a question turn is in progress. Complete the turn first."*
+2. **Atomic SQL Predicate Update**:
+   ```python
+   stmt = (
+       update(GameSession)
+       .where(
+           GameSession.id == session_id,
+           GameSession.boss_hp <= 0,
+           GameSession.player_hp > 0,
+           GameSession.version == expected_version,
+       )
+       .values(
+           boss_index=next_boss_index,
+           chapter=next_chapter,
+           player_hp=150,
+           version=GameSession.version + 1,
+       )
+   )
+   ```
+   If another request attempts to advance concurrently or the invariant condition fails at database commit time, zero rows are updated and the request safely aborts.
+
+---
+
+### 3.5 Optimistic Concurrency Control (`version` Column)
+
+To eliminate race conditions, double-clicks, and tab desynchronization without holding blocking database locks:
+- Every `OB_game_sessions` row carries an integer `version` column (indexed via `ix_ob_game_sessions_user_version`).
+- Mutation endpoints accept `expected_version`:
+  - `POST /api/v1/battle/select-spell`
+  - `POST /api/v1/battle/answer`
+  - `POST /api/v1/battle/next-turn`
+- If `expected_version` does not match the database state, the API aborts with:
+  ```json
+  {
+    "detail": "Session state modified by another request. Please refresh.",
+    "code": "CONCURRENCY_CONFLICT"
+  }
+  ```
+  HTTP Status: `409 Conflict`.
 
 ---
 
 ## 4. Track Architecture, Content Ingestion & Bundle Lifecycle
 
-### 4.1 Track Hierarchy & Configuration Schema
-All tracks are defined in [data/tracks_config.json](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks_config.json). The curriculum contains 19 tracks organized into two primary curricula:
+### 4.1 Track Hierarchy & Multi-Curriculum Schema
 
-```json
-{
-  "curricula": [
-    {
-      "id": "advanced",
-      "name": "Advanced Mechanistic Mastery",
-      "subtitle": "High-yield organic reaction mechanisms, synthesis, and spectroscopy",
-      "badge": "ADVANCED",
-      "color": "#9a7cff",
-      "track_count": 12
-    },
-    {
-      "id": "foundational",
-      "name": "Foundational Open Curriculum",
-      "subtitle": "Comprehensive introduction to structure, bonding, and reactivity",
-      "badge": "FOUNDATIONAL",
-      "color": "#27d9cb",
-      "track_count": 7
-    }
-  ],
-  "tracks": [
-    {
-      "id": "default",
-      "title": "Default Track",
-      "curriculum_id": "foundational",
-      "description": "Standard 27-chapter curriculum with all core bosses and question pools.",
-      "data_folder": "data/tracks/default",
-      "boss_folder": "data/tracks/default/bosses",
-      "badge": "DEFAULT",
-      "question_count": 2700,
-      "chapter_count": 27,
-      "boss_count": 135
-    }
-  ]
-}
+Tracks are configured in [data/tracks_config.json](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks_config.json) and stored authoritatively in `OB_curricula` and `OB_tracks`:
+- **`foundational`**: 7 tracks (Vocabulary, Reaction Outcomes, Mechanisms, Stereochemistry, Property Rankings, Spectroscopy, Multi-Step Synthesis).
+- **`advanced`**: 12 tracks covering graduate-level mechanistic depth.
+- **`default`**: Core 27-chapter curriculum (135 bosses, 2,700 questions).
+
+```
+Total Scope: 20 Distinct Tracks · 27 Chapters Each · 27,000 Questions Ingested
 ```
 
 ---
 
-### 4.2 Ingestion Engine & Chapter Structure
-Each track points to a directory containing `chapter_01.json` through `chapter_27.json` (or a `manifest.json`).
+### 4.2 Comprehensive Question Payload Validation Engine
 
-#### Chapter JSON Schema
-```json
-{
-  "chapter": 1,
-  "chapter_title": "Structure and Bonding",
-  "assigned_boss": "Hybridization Goblin",
-  "questions": [
-    {
-      "question": "What is the hybridization of a carbon with 4 single bonds?",
-      "options": [
-        {"text": "sp3", "correct": true},
-        {"text": "sp2", "correct": false},
-        {"text": "sp", "correct": false},
-        {"text": "dsp3", "correct": false}
-      ],
-      "correct_answer": "sp3",
-      "explanation": "Four single bonds indicate four electron domains, requiring sp3 hybridization with tetrahedral geometry (109.5°).",
-      "spells": [25, 45, 70],
-      "health": [120],
-      "boss": "Hybridization Goblin",
-      "images": ["hybridization-goblin.png"]
-    }
-  ]
-}
-```
+Located in [app/domain/content/validator.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/content/validator.py), `validate_question_payload()` validates all questions prior to database insertion:
+
+1. **Option Cardinality**: At least 2 options required.
+2. **Label Uniqueness**: Option labels (`A`, `B`, `C`, `D`) must be unique and non-empty.
+3. **Correct Answer Consistency**: Exactly one option must be marked correct, matching `correct_option` and `correct_answer`.
+4. **Numeric Integrity**: Health and spell damage values must be strictly positive integers.
+5. **Path Traversal Security**: Image filenames are validated against path traversal (`../`) and restricted to recognized extensions (`.png`, `.jpg`, `.jpeg`, `.svg`, `.webp`), while permitting Unicode characters for chemist names (e.g. `Hückel`, `Diels–Alder`).
 
 ---
 
-### 4.3 In-Memory Bundle Lifecycle: Loading, Caching, and Unloading
+### 4.3 Atomic Content Release Pipeline (`OB_content_releases`)
 
-```
-+--------------------------------------------------------------------+
-|                         CONTENT BUNDLE ENGINE                      |
-|                                                                    |
-|  [Incoming Request: mode="track:adv-vocab"]                        |
-|                         |                                          |
-|                         v                                          |
-|            Is track in TRACK_BUNDLES cache?                        |
-|                 /               \                                  |
-|               YES                NO                                |
-|               /                   \                                |
-|    Return cached instance       Query PostgreSQL (OB_tracks)       |
-|                                    |                               |
-|                                    v                               |
-|                           1. Try load_db_bundle():                 |
-|                           - Query OB_questions for track_id        |
-|                           - Order strictly by (chapter, order_idx) |
-|                           - Populate question_bank & boss_banks    |
-|                           - Load spell damages & boss metadata     |
-|                                    |                               |
-|                        Questions found in DB?                      |
-|                            /               \                       |
-|                          YES                NO (Fallback)          |
-|                          /                   \                     |
-|                 Return DB Bundle       2. load_json_bundle():      |
-|                                        - Read chapter_*.json files |
-|                                        - Read boss files from disk |
-|                                    |                               |
-|                                    v                               |
-|                            Store in TRACK_BUNDLES[track_id]        |
-+--------------------------------------------------------------------+
+To eliminate partial imports and cache desynchronization across multi-worker deployments:
+
+```mermaid
+flowchart LR
+    S3Sources["S3 Storage Buckets"] --> Stream["Stream chapter JSON via boto3"]
+    Stream --> Validate["validate_question_payload()"]
+    Validate --> Draft["Create Draft in OB_content_releases (status='draft')"]
+    Draft --> Ingest["Insert Questions with release_id into OB_questions"]
+    Ingest --> Publish["Atomically set status='published'"]
+    Publish --> Active["ReleasesRepository.get_active_release()"]
+    Active --> ClusterCache["SharedTrackCacheManager Key Updates"]
+    Publish -.->|"Emergency Revert"| Rollback["rollback_to_release(target_version)"]
 ```
 
-#### Database Ingestion & Parity
-- **Ingestion Script**: `scripts/ingest_questions_to_postgres.py` ingests questions from `data/tracks/**/chapter_*.json` into the `OB_questions` PostgreSQL table.
-- **Capacity**: All 20 tracks have been fully ingested (27 chapters × 50 questions = 1,350 questions per track; **27,000 questions** total).
-- **Sequential Parity**: The `order_index` column guarantees that question presentation in battles matches original textbook/chapter ordering 1-to-1 without drift.
-- **Runtime Caching**: Bundles are lazily loaded and cached in `app.api.deps.TRACK_BUNDLES` (`Dict[str, ContentBundle]`).
-- **Resilient Fallback**: If a track's database questions are unavailable, `load_track_bundle` gracefully falls back to `load_json_bundle()` reading local JSON files directly.
+- **Draft Isolation**: Questions inserted into a draft release are invisible to players.
+- **Atomic Activation**: `ReleasesRepository.publish_release(release_id)` activates the new version and archives the previous version in a single database transaction.
+- **Instant Rollback**: `ReleasesRepository.rollback_to_release(track_id, target_version)` instantly reverts live play to any previous release version without redeploying code.
 
 ---
 
-### 4.4 Advanced Track Bestiary Gallery & Chemistry Interpretations
+### 4.4 Shared Track Cache Manager (`SharedTrackCacheManager`)
 
-The Advanced Mechanistic Track transforms graduate-level organic principles into imposing alchemical adversaries. Below are three iconic Major Bosses from [data/tracks/advanced/bosses/](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks/advanced/bosses/) with detailed chemical and orbital analyses:
+Located in [app/infrastructure/cache/shared_cache.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/cache/shared_cache.py):
+- **Versioned Keys**: Tracks are cached by `(track_id, release_id)`. When a release is published or rolled back, the cache key advances cluster-wide.
+- **Thundering-Herd Lock**: Thread-safe per-track locks ensure only one thread builds a given track bundle on cache miss. Concurrent requests wait and read the cached bundle.
+- **Zero-Vulnerability Serialization**: Custom `serialize_bundle()` uses schema-validated JSON with `zlib` compression instead of dangerous `pickle` serialization.
+- **Cache Telemetry**:
+  - `hit_ratio`: Calculated dynamically.
+  - `bundle_sizes_bytes`: In-memory footprint of cached tracks.
+  - `load_durations_ms`: Duration of database extraction and bundle assembly.
+
+---
+
+### 4.5 Cloud Object Storage & Decoupled Asset Pipelines
+
+To decouple runtime web containers from multi-gigabyte disk folders:
+1. **Boss Image CDN**:
+   - Boss illustrations are hosted in public Supabase S3 buckets:
+     - `DefaultBosses`: Core 76 boss images.
+     - `AdvancedBosses`: 138 advanced bestiary images.
+     - `FoundationalBosses`: Foundational catalog images.
+   - [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py) intercepts `/static/assets/bosses/{filename}.png` and returns `307 Temporary Redirect` to the Supabase CDN URL.
+   - Fallback: Missing boss images resolve to `static/assets/bosses/boss-placeholder.svg`.
+2. **Untracked Binary Assets**:
+   - Excluded `data/tracks/` in `.gitignore` and `.dockerignore`.
+   - Untracked 216 boss PNGs and 568 `chapter_*.json` files from Git index, shrinking repository and Docker build sizes to under 100 MB.
+3. **S3 Chapter Streaming**:
+   - [app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py) streams chapter JSON files directly from S3 buckets during batch ingestion.
+
+---
+
+### 4.6 Advanced Track Bestiary Gallery & Chemical Orbital Analyses
+
+Below are three Major Bosses from `AdvancedBosses` with their chemical mechanisms and orbital interpretations:
 
 #### 1. Diels-Alder Overlord
 *Arena Assignment: Chapter 17 (Conjugated Systems & Pericyclic Reactions)*  
-*Asset Path: [diels-alder-overlord.png](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks/advanced/bosses/diels-alder-overlord.png)*
-
-![Diels-Alder Overlord](data/tracks/advanced/bosses/diels-alder-overlord.png)
+*Bucket: `AdvancedBosses` | Asset: `diels-alder-overlord.png`*
 
 - **Pedagogical Chemical Concept**: The $[4\pi_s + 2\pi_s]$ concerted pericyclic cycloaddition between an electron-rich conjugated diene ($4\pi$ electrons) and an electron-poor dienophile ($2\pi$ electrons).
-- **Orbital Symmetry & FMO Interpretation**: Under thermal conditions, the reaction is symmetry-allowed through the suprafacial-suprafacial overlap of the diene's Highest Occupied Molecular Orbital (HOMO, $\Psi_2$) with the dienophile's Lowest Unoccupied Molecular Orbital (LUMO, $\pi^*$). The phase symmetry at the terminal carbon termini matches constructively, yielding a single, concerted six-membered transition state.
-- **Visual Design Manifestation**: The Overlord's exoskeleton forms an uncompromising *s-cis* locked conformation—a strict geometric requirement for the diene to bridge the C1–C4 gap. Its glowing curved horns exhibit *endo-selectivity*, visually modeling the favorable secondary orbital interactions between the carbonyl $\pi$-system of electron-withdrawing groups and the developing cyclohexene $\pi$-system, minimizing the kinetic barrier.
+- **Orbital Symmetry & FMO Interpretation**: Under thermal conditions, the reaction is symmetry-allowed through the suprafacial-suprafacial overlap of the diene's Highest Occupied Molecular Orbital (HOMO, $\Psi_2$) with the dienophile's Lowest Unoccupied Molecular Orbital (LUMO, $\pi^*$).
+- **Visual Design Manifestation**: The Overlord's exoskeleton forms an uncompromising *s-cis* locked conformation. Its curved horns exhibit *endo-selectivity*, visually modeling secondary orbital interactions between the carbonyl $\pi$-system of electron-withdrawing groups and the developing cyclohexene $\pi$-system.
 
 ---
 
 #### 2. Hückel Herald
 *Arena Assignment: Chapter 18 (Aromaticity & Electrophilic Aromatic Substitution)*  
-*Asset Path: [huckel-herald.png](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks/advanced/bosses/huckel-herald.png)*
-
-![Hückel Herald](data/tracks/advanced/bosses/huckel-herald.png)
+*Bucket: `AdvancedBosses` | Asset: `huckel-herald.png`*
 
 - **Pedagogical Chemical Concept**: Hückel's Rule of Aromaticity ($4n + 2$ $\pi$ electrons in a planar, uninterrupted, cyclic conjugated system) versus antiaromatic destabilization ($4n$ $\pi$ electrons).
-- **Orbital Symmetry & Energy Stabilization**: Planar delocalization of $6, 10,$ or $14$ $\pi$ electrons completely fills all bonding molecular orbitals in Frost circle diagrams, providing exceptional resonance stabilization energy (approx. $36\text{ kcal/mol}$ for benzene). In an external magnetic field, this continuous $\pi$-cloud generates a diatropic ring current, strongly deshielding aromatic protons into the $\delta\ 7.0 - 8.5\text{ ppm}$ NMR chemical shift window.
-- **Visual Design Manifestation**: The Herald floats above the arena enveloped in twin luminous toroidal halos (representing the uninterrupted top-and-bottom $\pi$-electron clouds above and below the molecular plane). Its armor incorporates hexagonal symmetry with identical $\text{C}-\text{C}$ bond lengths ($1.39\text{ \AA}$, intermediate between single and double bonds). When enraged, the Herald summons planar distortion waves, punishing players who mistake an antiaromatic $4n$ system (such as cyclobutadiene) for an aromatic titan.
+- **Orbital Symmetry & Energy Stabilization**: Planar delocalization of $6, 10,$ or $14$ $\pi$ electrons completely fills all bonding molecular orbitals in Frost circle diagrams, providing exceptional resonance stabilization energy (approx. $36\text{ kcal/mol}$ for benzene).
+- **Visual Design Manifestation**: Floats enveloped in twin luminous toroidal halos (representing the uninterrupted top-and-bottom $\pi$-electron clouds above and below the molecular plane), with hexagonal symmetry matching carbon-carbon bond lengths of $1.39\text{ \AA}$.
 
 ---
 
 #### 3. Walden Inversion Warlord
 *Arena Assignment: Chapter 7 (Alkyl Halides & Nucleophilic Substitution Mechanics)*  
-*Asset Path: [walden-inversion-warlord.png](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/data/tracks/advanced/bosses/walden-inversion-warlord.png)*
-
-![Walden Inversion Warlord](data/tracks/advanced/bosses/walden-inversion-warlord.png)
+*Bucket: `AdvancedBosses` | Asset: `walden-inversion-warlord.png`*
 
 - **Pedagogical Chemical Concept**: Bimolecular Nucleophilic Substitution ($S_N2$) with strict stereochemical inversion (Walden Inversion) via a concerted, single-step pathway.
-- **Orbital Symmetry & Reaction Trajectory**: The attacking nucleophile must approach the electrophilic carbon strictly at $180^\circ$ relative to the leaving group, directing electron density into the low-lying $\sigma^*_{\text{C}-\text{X}}$ antibonding orbital. As nucleophilic bond formation progresses, electron repulsion pushes the three non-reacting substituents into a planar, pentacoordinated trigonal bipyramidal transition state with partial negative charges on both nucleophile and leaving group.
-- **Visual Design Manifestation**: The Warlord carries a massive inverted umbrella shield and a backside-strike spear aligned at a rigid $180^\circ$ vector. When attacked from any angle other than the backside, its shield reflects damage (teaching players that frontside attack is symmetry-forbidden due to electrostatic and orbital phase clashes). Its chestplate flips dynamically between $(R)$ and $(S)$ enantiomeric configurations, reinforcing the stereospecific nature of second-order alchemical substitution.
+- **Orbital Symmetry & Reaction Trajectory**: The attacking nucleophile approaches the electrophilic carbon strictly at $180^\circ$ relative to the leaving group, directing electron density into the low-lying $\sigma^*_{\text{C}-\text{X}}$ antibonding orbital through a trigonal bipyramidal transition state.
+- **Visual Design Manifestation**: Carries an inverted umbrella shield and a backside-strike spear aligned at a rigid $180^\circ$ vector, flipping dynamically between $(R)$ and $(S)$ enantiomeric chestplate configurations.
 
 ---
 
-## 5. Database Design & Per-Track State Persistence
+## 5. Database Architecture & Least-Privilege Security
 
-### 5.1 Relational Schema Diagram (SQLAlchemy)
+### 5.1 Comprehensive Relational Schema Diagram (SQLAlchemy 2.x)
 
 ```mermaid
 erDiagram
-    OB_users ||--o{ OB_verification_codes : has
-    OB_users ||--o{ OB_auth_sessions : maintains
-    OB_users ||--o{ OB_game_sessions : plays
-    OB_curricula ||--o{ OB_tracks : organizes
-    OB_tracks ||--o{ OB_questions : contains
+    OB_users ||--o{ OB_verification_codes : "issues"
+    OB_users ||--o{ OB_auth_sessions : "authenticates"
+    OB_users ||--o{ OB_game_sessions : "plays"
+    OB_curricula ||--o{ OB_tracks : "organizes"
+    OB_tracks ||--o{ OB_content_releases : "publishes"
+    OB_content_releases ||--o{ OB_questions : "contains"
+    OB_tracks ||--o{ OB_questions : "indexes"
 
     OB_users {
         string id PK
@@ -353,24 +450,8 @@ erDiagram
         string password_hash
         int verified
         string content_source
-        string avatar_json
-        string progress_json
-        int created_at
-    }
-
-    OB_verification_codes {
-        int id PK
-        string user_id FK
-        string code_hash
-        int expires_at
-        int used
-        int created_at
-    }
-
-    OB_auth_sessions {
-        string token_hash PK
-        string user_id FK
-        int expires_at
+        jsonb avatar_json
+        jsonb progress_json
         int created_at
     }
 
@@ -383,44 +464,32 @@ erDiagram
         int player_hp
         int player_max_hp
         int boss_hp
-        string active_question_json
+        jsonb active_question_json
         string active_spell
         string turn_id
-        string cooldowns_json
-        string log_json
-        string completed_json
-        string rewards_json
-        string question_cursors_json
-        int version
+        jsonb cooldowns_json
+        jsonb log_json
+        jsonb completed_json
+        jsonb rewards_json
+        jsonb question_cursors_json
+        int version "Optimistic lock version"
         int updated_at
     }
 
-    OB_curricula {
+    OB_content_releases {
         string id PK
-        string name
-        string code
-        int total_questions
-        int chapters
-        int bosses
-        int display_order
-    }
-
-    OB_tracks {
-        string id PK
-        string curriculum_id FK
-        string title
-        string detail
-        string data_folder
-        string boss_folder
-        int questions
-        int chapters
-        string accent
-        int display_order
+        string track_id FK
+        int version
+        string status "draft | published | archived"
+        string checksum
+        int created_at
+        int published_at
     }
 
     OB_questions {
         bigint id PK
         string track_id FK
+        string release_id FK
         string raw_id
         int chapter
         string chapter_title
@@ -431,13 +500,13 @@ erDiagram
         string difficulty
         string question_type
         text prompt
-        text options_json
+        jsonb options_json
         string correct_option
         text correct_answer
         text explanation
-        text spells_json
-        text health_json
-        text images_json
+        jsonb spells_json
+        jsonb health_json
+        jsonb images_json
         int created_at
         int updated_at
     }
@@ -445,17 +514,59 @@ erDiagram
 
 ---
 
-### 5.2 Per-Track Progress Isolation Architecture (`user.progress_json`)
-To enable players to play different tracks without losing progress, user progress is partitioned per track in the `User.progress_json` column.
+### 5.2 Production Connection Pooling & Supabase IPv4 Pooler
 
-#### JSON Storage Format
+Configured in [app/infrastructure/database/engine.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/engine.py):
+- **Pooler Target**: Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`)
+- **QueuePool Sizing**:
+  - `pool_size`: 10 persistent connections
+  - `max_overflow`: 20 burst connections
+  - `pool_timeout`: 30 seconds
+  - `pool_recycle`: 1800 seconds (30 minutes; eliminates stale firewall drops)
+  - `pool_pre_ping`: `True` (emits a lightweight `SELECT 1` ping upon checkout, discarding dead connections)
+- **NullPool Execution**: Standalone CLI ingestion and Alembic migration runners bypass connection pooling via `NullPool` to avoid consuming pooler slots.
+
+---
+
+### 5.3 Least-Privilege Database Role Matrix (`SUPABASE_LEAST_PRIVILEGE_SETUP`)
+
+Documented in [SUPABASE_LEAST_PRIVILEGE_SETUP.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/SUPABASE_LEAST_PRIVILEGE_SETUP.md):
+
+| Role | Type | Primary Service Target | Granted Permissions | Forbidden Operations |
+|---|---|---|---|---|
+| **`ob_player`** | `LOGIN` | Web runtime (`DATABASE_URL_PLAYER`) | `SELECT`, `INSERT`, `UPDATE`, `DELETE` on player sessions; `SELECT` on content catalogs. | DDL (`CREATE`, `DROP`, `ALTER`), DML on admin credentials. |
+| **`ob_admin`** | `LOGIN` | Admin portal (`DATABASE_URL_ADMIN`) | Administrative DML on users, sessions, and content catalogs. | DDL migrations. |
+| **`ob_content_ingest`**| `LOGIN` | Ingestion script (`DATABASE_URL_INGEST`) | `INSERT`, `UPDATE` on `OB_questions`, `OB_tracks`, `OB_content_releases`. | Access to user passwords, sessions, or OTPs. |
+| **`ob_migrator`** | `LOGIN` | Migration runner (`DATABASE_URL_MIGRATION`) | Full DDL on public schema (member of `ob_owner`). | Used strictly in deployment pipelines; zero web access. |
+| **`ob_owner`** | `NOLOGIN`| Schema Owner | Table ownership and default privilege grants. | Direct login forbidden. |
+
+---
+
+### 5.4 Alembic Migration Framework (Revisions 0001–0009)
+
+Automated via [app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py):
+- `0001_initial_schema`: Baseline tables with unified `OB_` prefixes.
+- `0002_jsonb_conversion`: Converts text JSON fields to native PostgreSQL `JSONB`.
+- `0003_content_releases`: Adds `OB_content_releases` and foreign keys.
+- `0004_stable_question_identity_constraints`: Enforces unique question order constraints.
+- `0005_game_session_active_question_identity`: Links active session questions to releases.
+- `0006_optimistic_locking`: Adds `version` index on `OB_game_sessions`.
+- `0007_search_indexes`: High-performance indexes for admin lookups.
+- `0008_least_privilege_roles_and_rls`: Grants least-privilege roles across tables.
+- `0009_query_performance_indexes`: Composite indexes optimizing battle turn lookups.
+
+---
+
+### 5.5 Per-Track Progress Isolation Architecture (`user.progress_json`)
+
+User progress is isolated per track inside `User.progress_json`:
 ```json
 {
   "tracks": {
     "default": {
       "chapter": 3,
       "boss_index": 2,
-      "completed": ["hybridization-goblin", "functional-group-golem", "sn1-knight"],
+      "completed": ["orbital-ogre", "bondbreaker-brute"],
       "updated_at": 1788350000
     },
     "adv-vocab": {
@@ -467,20 +578,13 @@ To enable players to play different tracks without losing progress, user progres
   }
 }
 ```
-
-#### Mid-Game Track Archival & Restoration Flow
-When `POST /api/game/track` is invoked:
-1. **Archive Active State**: The current `chapter`, `boss_index`, and `completed` list are written into `user.progress_json["tracks"][current_track_id]`.
-2. **Retrieve Incoming State**: The engine looks for `user.progress_json["tracks"][incoming_track_id]`.
-   - If found: Restores the saved chapter, boss index, and completed boss list.
-   - If not found (first time entering track): Initializes clean state at Chapter 1, Boss 0.
-3. **Commit Transaction**: The active `GameSession` and `User` records are committed atomically.
+Switching tracks archives the active session into `progress_json` and restores the target track's saved state without progression corruption.
 
 ---
 
-## 6. User Journey, Selections & UI Navigation Flows
+## 6. User Journey, UI State & Administrative Subsystems
 
-### 6.1 End-to-End Navigation State Machine
+### 6.1 End-to-End User Navigation State Machine
 
 ```mermaid
 graph TD
@@ -488,11 +592,11 @@ graph TD
     AuthCheck -->|No| Auth[2. Auth Screen: Login / Signup / 6-Digit Verify]
     AuthCheck -->|Yes| AvatarCheck{Avatar Finalized?}
     Auth -->|Success| AvatarCheck
-    AvatarCheck -->|No| Avatar[3. Avatar Creator: Select Companion & Body]
-    AvatarCheck -->|Yes| TrackScreen[4. Track Selection Screen: 20 Tracks across 2 Curricula]
+    AvatarCheck -->|No| Avatar[3. Avatar Creator: Select Companion & Equipment]
+    AvatarCheck -->|Yes| TrackScreen[4. Track Selection Screen: 20 Tracks across Curricula]
     Avatar -->|Finalize| TrackScreen
     TrackScreen -->|Select Track & Start| MidChapterGate{Chapter In Progress?}
-    MidChapterGate -->|Yes & Switching Track| BlockedModal[Modal: Chapter In Progress - Complete First!]
+    MidChapterGate -->|Yes & Different Track| BlockedModal[Modal: Chapter In Progress - Complete First!]
     BlockedModal --> TrackScreen
     MidChapterGate -->|No / Same Track| Arena[5. Battle Arena: Controls, Spells & Canvas]
     Arena -->|Victory on Boss| BossAdvance[Advance Boss or Chapter]
@@ -502,199 +606,169 @@ graph TD
 
 ---
 
-### 6.2 The Chapter-In-Progress Gate
-To prevent players from abandoning an active chapter mid-way and corrupting stage progression, a strict gate is enforced at both API and UI layers:
+### 6.2 The Mid-Chapter Abandonment Gate
 
-#### Gate Conditions (Chapter considered "In Progress"):
-1. Boss has taken damage ($0 < \text{boss\_hp} < \text{boss\_max\_hp}$).
-2. An active question is currently pending an answer (`active_question_json` is not null).
-3. A spell has been cast and is unresolved (`active_spell` is not null).
-4. Player has defeated one or more mini-bosses in the current chapter ($\text{boss\_index} > 0$ and $\text{boss\_hp} > 0$).
-
-#### System Behavior upon Gate Violation:
-- **API Response**: Returns `HTTP 409 Conflict`.
-- **UI Action**: Displays the `#track-blocked-modal` showing:
-  - The active track title.
-  - The current chapter name and number.
-  - The current boss being fought (e.g., *Boss 2 of 5*).
-  - A primary **RESUME CHAPTER** button that routes the player directly back to the arena.
+To prevent players from abandoning an active chapter midway and corrupting stage progression, a strict gate is enforced at both API and UI layers:
+1. **Trigger Conditions**: A chapter is considered "In Progress" if:
+   - Boss HP has been damaged ($0 < \text{boss\_hp} < \text{boss\_max\_hp}$).
+   - A question turn is active (`active_spell` or `turn_id` is present).
+   - Player is on boss index $> 0$ in the current chapter.
+2. **Enforcement**:
+   - `POST /api/v1/game/track` returns `HTTP 409 Conflict`.
+   - UI displays `#track-blocked-modal` with active chapter details and a primary **RESUME CHAPTER** button.
 
 ---
 
-### 6.3 Avatar Selection & Customization
-Players pick from a gallery of high-concept chemical companions:
-- `organic-apprentice`: Aspiring alchemist wielding carbon-chain staves.
-- `resonance-mage`: Master of conjugated systems and curved-arrow sorcery.
-- `stereochemist`: Spatial specialist manipulating chiral centers and Fischer projections.
-- `spectro-seer`: Seer of electromagnetic spectra (IR frequencies and NMR chemical shifts).
+### 6.3 Procedural Web Audio Harmonic Synthesizer
 
-Avatar preferences are stored in `user.avatar_json` and rendered as the companion portrait alongside the battle log and status panels.
+Located in [static/js/audio.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/audio.js):
+- **Zero Asset Downloads**: Generates 100% of sound effects dynamically via oscillators and gain envelopes.
+- **Auto-Suspend on Tab Visibility**: Automatically suspends `AudioContext` on `visibilitychange` to conserve device battery.
+- **Sound Roster**:
+  - `playClick()`: High-frequency UI tap ($800\text{ Hz}$).
+  - `playSpellCast(tier)`: Exponential frequency sweep ($180\text{ Hz} \to 720\text{ Hz}$).
+  - `playBossHit()`: Low-frequency impact punch ($140\text{ Hz} \to 40\text{ Hz}$).
+  - `playPlayerHit()`: Damage pulse ($120\text{ Hz} \to 60\text{ Hz}$).
+  - `playSpellFizzle()`: Sawtooth backfire buzz ($320\text{ Hz} \to 90\text{ Hz}$).
+  - `playVictory()`: Major chord fanfare ($C_5 \to E_5 \to G_5 \to C_6$).
+  - `playDefeat()`: Descending minor sequence ($F_4 \to D_4 \to B\flat_3 \to A_3$).
 
 ---
 
-### 6.4 Comprehensive Administrator Configuration Portal & System Controls
+### 6.4 Four-Tab Administrator Configuration Portal
 
-The Administrator Configuration Portal (implemented in [app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py) and accessible via the `⚙ ADMIN CONFIG` triggers on the boot, auth, and game screens) provides course instructors, game directors, and DevOps engineers with direct control over player state, content tracks, database storage, and system telemetry.
-
-#### 1. Administrative Authentication & Security
-- **Access Endpoint**: `POST /api/admin/login` (rate-limited via SlowAPI to 10 requests/minute).
-- **Credentials Validation**: Validates submitted credentials against `settings.admin_username` and `settings.admin_password` (defaults: `admin`/`admin` in development, injected via environment variables in production).
-- **Session Tokens**: Generates an alchemical 40-byte cryptographically secure session token (`secrets.token_urlsafe(40)`). The hash of the token is stored in memory with an expiration TTL (`settings.admin_session_ttl_hours * 3600`).
-- **Cookie Security**: Emits an `admin_token` cookie with flags `HttpOnly; SameSite=Lax; Secure` (in production).
-- **Logout Endpoint**: `POST /api/admin/logout` immediately invalidates the in-memory token hash and clears the browser cookie.
-
-#### 2. Portal Layout & Four-Tab Navigation Architecture
-The Admin Dashboard (`#admin-dashboard-view`) utilizes a responsive, zero-overflow fullscreen modal split into four dedicated operational tabs:
+Accessible via the `⚙ ADMIN CONFIG` triggers on boot, auth, and game screens:
 
 1. **👤 User Management (`#admin-tab-users`)**:
-   - **Player Registry (`GET /api/admin/users`)**: Searchable list of registered accounts displaying user ID, username, email, email verification status, companion avatar, and registration date.
-   - **Credential Management (`POST /api/admin/users/{user_id}/credentials`)**: Modal interface (`#admin-cred-modal`) allowing administrators to update a player's username (validated for 3–24 characters and global uniqueness) and securely override their password (minimum 8 characters, hashed with PBKDF2/bcrypt) without requiring legacy passwords. Emails remain immutable to protect audit integrity.
-   - **Test User Cleanup (`POST /api/admin/users/clean-test`)**: Administrative utility to identify and safely purge automated test accounts (`test_*@example.com`, `playwright_*`, etc.) and associated session cascades.
-
+   - Searchable registry of registered players.
+   - Credential overrides: Username updates and password resets (minimum 8 characters, hashed with PBKDF2).
+   - Automated test user cleanup (`POST /api/v1/admin/users/clean-test`).
 2. **⚔ Game Sessions (`#admin-tab-sessions`)**:
-   - **Live Arena Monitoring (`GET /api/admin/sessions`)**: Real-time inspection of active duels, tracking Player HP vs Max HP, Boss Name, Boss HP vs Max HP, Chapter number/title, and completed bosses count.
-   - **Chapter Teleportation & Stage Reset (`POST /api/admin/sessions/{session_id}/reset`)**: Jump a session to any chapter 1–27. Restores player to max HP (150), instantiates that chapter's first boss at max HP, resets spell cooldowns, clears pending questions/turns, appends an administrative audit log entry, and commits updated user progress.
-   - **Session Purge / Wipe (`DELETE /api/admin/sessions/{session_id}`)**: Permanently removes corrupted or stalled battle sessions and resets track progress to allow clean re-entry.
-
+   - Live inspection of active duels across all connected players.
+   - Chapter teleportation: Jump any session to Chapter 1–27 with full health restoration.
+   - Session purge: Permanently reset stalled sessions.
 3. **💾 Storage (`#admin-tab-storage`)**:
-   - **Database Status & Telemetry (`GET /api/admin/storage/stats`)**: Displays active engine dialect (PostgreSQL pooler vs SQLite), connection target host, port, active pool configuration (`pool_size=10`, `max_overflow=20`), and live connection health status.
-   - **Table Row Counts**: Live count inspection across all application tables: `OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_game_sessions`, `OB_curricula`, `OB_tracks`, and `OB_questions`.
-   - **Bidirectional Database Migrator (`POST /api/admin/migrate-db`, `GET /api/admin/migrate-db/status`)**: Initiates asynchronous migration copying all accounts, curricula, tracks, and 27,000 questions between SQLite and PostgreSQL with live progress polling and completion reporting.
-
+   - Connection pool telemetry: Active pool size, overflow count, and host target.
+   - Real-time row counts across all `OB_` tables.
+   - Live bidirectional SQLite $\leftrightarrow$ PostgreSQL migrator.
 4. **⚡ System (`#admin-tab-system`)**:
-   - **System Telemetry (`GET /api/admin/system/stats`)**: Real-time process metrics including server uptime, Python version, operating system, host memory usage (RSS / VMS), CPU load, and active database connection pool utilization.
-   - **Configuration Audit**: Inspects active verification code TTL, session durations, cookie flags, and environment mode.
+   - Host metrics: Server uptime, memory RSS/VMS usage, CPU load.
+   - Security audit: Cookie flags, TTL durations, and environment mode.
 
-#### 3. Modal & UI State Management
-- **Fullscreen Fit & Scroll Containment**: Tab containers use flexbox layouts with independent vertical scrolling, preventing double scrollbars and ensuring all tables and metric cards remain fully visible on standard laptop displays.
-- **Feedback Toast (`#admin-feedback-toast`)**: Dynamic feedback notifications for successful credential updates, battle resets, and migration actions.
+---
+
+### 6.5 Browser Security: Content Security Policy (CSP) & CDN Whitelisting
+
+Configured in [app/observability/middleware.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/middleware.py):
+- **CSP Directive**:
+  ```python
+  "img-src 'self' data: https://*.supabase.co https://*.storage.supabase.co;"
+  ```
+- **Strict Headers**:
+  - `X-Frame-Options: DENY` (prevents clickjacking).
+  - `X-Content-Type-Options: nosniff` (prevents MIME sniffing).
+  - `Strict-Transport-Security: max-age=31536000; includeSubDomains` (enforces HTTPS).
 
 ---
 
 ## 7. Comprehensive Error Catalog & Status Codes
 
-### 7.1 HTTP Status Codes & Error Detail Registry
-
 | HTTP Code | Error Condition | Exact API Response Payload (`detail`) | Frontend UI Action / Modal |
 | :---: | :--- | :--- | :--- |
-| **`400`** | Answer with no active spell | `"No active question. Select a spell first."` | Toast / Button shake |
+| **`400`** | Advance on living boss | `"Cannot advance: Current boss is still alive ({boss_hp} HP remaining). Defeat the boss before advancing."` | Button shake / Warning toast |
+| **`400`** | Advance while defeated | `"Cannot advance: Player has been defeated. Please retry or restart the battle."` | Opens Defeat Modal |
+| **`400`** | Advance during turn | `"Cannot advance while a question turn is in progress. Complete the turn first."` | Highlights active question |
+| **`400`** | Answer with no active spell | `"No active question. Select a spell first."` | Toast / Action disabled |
 | **`400`** | Selecting spell while dead | `"Your aura has faded. Please retry the battle to regroup."` | Defeat Retry Modal |
-| **`400`** | Selecting spell on dead boss | `"The boss is already defeated. Proceed to the next arena."` | Auto-triggers Next Turn |
+| **`400`** | Selecting spell on dead boss | `"The boss is already defeated. Proceed to the next arena."` | Triggers Next Turn |
 | **`400`** | Unknown spell identifier | `"Invalid spell '{spell_id}'"` | Action button disabled |
-| **`400`** | Invalid confirmation code | `"Confirmation code must be a 6-digit number"` | Form validation alert |
-| **`400`** | Expired/used verify code | `"Invalid confirmation code"` | Error highlight under input |
-| **`401`** | Bad login credentials | `"Incorrect username or password"` | `#auth-status` error message |
+| **`400`** | Invalid confirmation code | `"Confirmation code must be a 6-digit number"` | Form validation highlight |
+| **`401`** | Bad user credentials | `"Incorrect username or password"` | `#auth-status` error message |
 | **`401`** | Bad admin credentials | `"Incorrect admin username or password"` | Admin login shake effect |
-| **`401`** | Missing auth token | `"Not authenticated"` | Redirect to `#auth-screen` |
-| **`403`** | Unverified user login | `"Account not verified. Please verify your email first."` | Auto-switch to verify form |
-| **`403`** | Session hijacking attempt | `"Not authorized to access this session"` | Session revoked, logout |
-| **`404`** | Session not found | `"Session not found"` | Clears session, restarts boot |
-| **`404`** | User not found | `"User not found"` | Auth reset |
-| **`409`** | Email already registered | `"An account with that email already exists"` | Highlights email field |
-| **`409`** | Username taken | `"Username taken, choose a different one"` | Highlights username field |
-| **`409`** | Spell cooling down | `"Spell is cooling down"` | Renders turn cooldown badge |
-| **`409`** | Spell unallowed for boss | `"This spell is not available for the current boss"` | Grayed-out spell card |
-| **`409`** | Unanswered active question | `"Answer the active question before selecting another spell."` | Pulses active question panel |
-| **`409`** | **Mid-chapter track switch** | `"Please complete Chapter {X}: {Title} in the '{Track}' track before switching tracks! You are currently fighting {Boss}."` | **Displays `#track-blocked-modal`** |
-| **`422`** | Short password | `"Password must be at least 8 characters"` | Inline form warning |
-| **`422`** | Invalid email format | `"Please enter a valid email address."` | Inline form warning |
-| **`429`** | Too many login attempts | `"Too Many Requests"` | Throttles submission button |
-| **`500`** | Unreadable chapter JSON | `"Error reading chapter JSON: {exc}"` | Falls back to default track |
+| **`401`** | Missing auth session | `"Not authenticated"` | Redirect to `#auth-screen` |
+| **`403`** | Unverified account login | `"Account not verified. Please verify your email first."` | Switches to verify form |
+| **`404`** | Session not found | `"Session not found"` | Resets to boot screen |
+| **`409`** | **Combat Concurrency Conflict** | `"Session state modified by another request. Please refresh."` | Prompts player retry |
+| **`409`** | Email already registered | `"An account with that email already exists"` | Highlights email input |
+| **`409`** | Username taken | `"Username taken, choose a different one"` | Highlights username input |
+| **`409`** | Spell on cooldown | `"Spell is cooling down"` | Renders turn cooldown badge |
+| **`409`** | Unanswered active question | `"Answer the active question before selecting another spell."` | Pulses question card |
+| **`409`** | **Mid-chapter track switch** | `"Please complete Chapter {X}: {Title} in the '{Track}' track before switching tracks!"` | **Displays `#track-blocked-modal`** |
+| **`422`** | Raw string fields in updates | `"Extra inputs are not permitted"` (`ConfigDict(extra="forbid")`) | Admin error toast |
+| **`429`** | Rate limit exceeded | `"Too Many Requests"` | Throttles submit button |
 
 ---
 
-## 8. Multi-User Production Readiness Roadmap
+## 8. Design Trade-offs, Architectural Pros & Cons
 
-To transition Organic Battles from a high-performance single-node deployment to an enterprise-grade, multi-user, globally scalable platform, the following architectural enhancements are planned:
+### 1. Stateless Modular Monolith vs Microservices
+* **Pros**: Rapid deployment, zero network serialization latency, single test suite (384 tests in ~90s), unified transactions.
+* **Cons**: Scaling background workloads scales the API web processes; single deployment pipeline.
 
-### 8.1 Database Migration & Concurrency (PostgreSQL & Async Engine)
-- **Current**: SQLite with write-lock constraints during high concurrent writes.
-- **Production Target**: PostgreSQL 16+ running with connection pooling via **pgbouncer** and **SQLAlchemy async engine (`asyncpg`)**.
-- **Schema Migrations**: Integrate **Alembic** migration scripts for zero-downtime schema evolution.
-- **Optimistic Concurrency**: Leverage `GameSession.version` to prevent race conditions during rapid duel turns.
+### 2. S3 Object Storage & Cloud CDN vs Local Filesystem Assets
+* **Pros**: Docker container footprint is under 100 MB; browser directly fetches assets from edge CDN; zero egress bandwidth on Python processes.
+* **Cons**: Requires initial 307 temporary redirect for local paths; content ingestion depends on S3 network connectivity.
 
-```python
-# Target Production Async Repository Pattern
-async def update_battle_turn_atomic(session_id: str, current_version: int, updates: dict):
-    stmt = (
-        update(GameSession)
-        .where(GameSession.id == session_id, GameSession.version == current_version)
-        .values(**updates, version=current_version + 1)
-        .returning(GameSession)
-    )
-    result = await db.execute(stmt)
-    if not result.scalar_one_or_none():
-        raise StaleSessionStateException("Concurrent turn conflict detected.")
-```
+### 3. Optimistic Concurrency (`version`) vs Pessimistic Database Locks
+* **Pros**: Zero database deadlocks; high throughput; non-blocking turn execution.
+* **Cons**: Concurrent actions from multiple tabs abort the secondary request with `HTTP 409 Conflict`.
+
+### 4. Versioned Releases (`OB_content_releases`) vs In-Place Table Mutations
+* **Pros**: Eliminates partial imports; cluster-wide cache invalidation; instant rollback capability.
+* **Cons**: Requires additional release metadata rows; archived releases require periodic pruning.
+
+### 5. Least-Privilege Database Roles vs Single Superuser
+* **Pros**: Web container compromise cannot drop tables or alter schemas; compartmentalized blast radius.
+* **Cons**: Requires configuring multiple database connection strings.
 
 ---
 
-### 8.2 Distributed In-Memory State & Caching (Redis)
-- **Shared Session Cache**: Migrate `TRACK_BUNDLES` and active combat turns into a Redis cluster:
-  - Cache compiled chapter question banks with RedisJSON.
-  - Store player combat cooldowns and active turn timers with Redis TTLs.
-- **Distributed Rate Limiting**: Migrate SlowAPI's local memory limiter to **Redis-backed token bucket limiting** across all application instances.
+## 9. Operational Constraints, Caveats & Points to Remember
+
+> [!IMPORTANT]
+> **1. P0 Advance Guard**: Never call `POST /api/v1/battle/next-turn` when `boss_hp > 0`, `player_hp <= 0`, or a question turn is in flight. The call will be rejected with `HTTP 400 Bad Request`.
+
+> [!WARNING]
+> **2. Content Security Policy (CSP)**: Any newly introduced image storage bucket or CDN domain **must** be added to the `img-src` header in [app/observability/middleware.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/middleware.py). Failing to do so will cause Safari and Chrome to block boss images with `net::ERR_BLOCKED_BY_CSP`.
+
+> [!NOTE]
+> **3. Storage Bucket Case Sensitivity**: Supabase Storage bucket names are strictly case-sensitive:
+> - `DefaultBosses`
+> - `AdvancedBosses`
+> - `FoundationalBosses`
+
+> [!TIP]
+> **4. Decoupled Data Folder**: Never commit `data/tracks/` files back to Git. Both `.gitignore` and `.dockerignore` intentionally exclude this directory. Ingest question releases using `scripts/ingest_questions_to_postgres.py`.
+
+> [!CAUTION]
+> **5. Database Migrations**: Run Alembic migrations exclusively via `app.infrastructure.database.alembic_runner` using `DATABASE_URL_MIGRATION` (`ob_migrator` role). Running under `ob_player` will fail with permission denied on `alembic_version`.
 
 ---
 
-### 8.3 Real-Time Multiplayer PvP & Co-Op Arenas (WebSockets)
-- **Synchronized Dueling Engine**:
-  - Connect two players over FastAPI WebSockets (`/ws/pvp/duel/{match_id}`).
-  - Both players receive identical chemistry trials simultaneously.
-  - Faster accurate answers deal amplified damage; wrong answers inflict reciprocal damage.
-- **Co-Op Raid Bosses**:
-  - Parties of 2–4 players combine spell types (e.g., *Resonance Burst* + *Nucleophile Strike*) to exploit multi-step reaction vulnerabilities in Major Bosses.
+## 10. Production Readiness & Execution Roadmap
+
+Audited against [ProdUpgradeTasks.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/ProdUpgradeTasks.md):
+
+### Completed & Verified Milestones (✅ `[FIXED]`)
+- [x] **Modular Clean Architecture**: Pure domain combat rules in `app/domain/combat/rules.py`.
+- [x] **PostgreSQL & Supabase Connection Pooling**: IPv4 Pooler configuration with QueuePool pre-ping and recycling.
+- [x] **P0 Advance Invariant Guard**: Strict pre-condition validation and atomic SQL predicate update.
+- [x] **Optimistic Concurrency Control**: `GameSession.version` conflict detection on all turn mutations.
+- [x] **Alembic Database Migrations**: Programmatic runner with 9 baseline revisions.
+- [x] **Least-Privilege Database Roles**: `ob_player`, `ob_admin`, `ob_content_ingest`, `ob_migrator`, `ob_owner`.
+- [x] **Atomic Content Releases**: `OB_content_releases` staging, atomic publication, and instant rollback.
+- [x] **S3 Storage & CDN Delivery**: Boss images hosted in Supabase S3 buckets; 307 redirect resolution; CSP whitelisting.
+- [x] **Decoupled Data Folder**: `data/tracks/` excluded from Git and Docker build contexts.
+- [x] **Procedural Audio Synthesizer**: Web Audio engine with tab visibility suspension.
+- [x] **Four-Tab Admin Portal**: User management, game session telemetry, storage, and system metrics.
+
+### Pending Production Roadmap Items (⏳ `[TODO]`)
+- [ ] **Distributed Redis Locks**: Externalize `ADMIN_TOKENS` and rate limits to Redis cluster.
+- [ ] **Asynchronous Worker Queue**: Celery / ARQ / SQS pipeline for transactional emails and heavy imports.
+- [ ] **Managed Identity (Cognito / OIDC)**: Optional enterprise SSO and OAuth2 login.
+- [ ] **AWS Cloud Infrastructure**: Terraform / CDK definitions for Multi-AZ ECS Fargate, ALB, and Aurora PostgreSQL.
+- [ ] **CI/CD Automation**: GitHub Actions pipeline for automated linting, testing, and canary deployments.
 
 ---
 
-### 8.4 Asset Distribution & Edge CDN
-- **Decoupled Asset Storage**: Offload 155+ high-definition boss PNGs and avatar textures to an S3-compatible object store (e.g., AWS S3 or Cloudflare R2).
-- **Edge Caching (CloudFront / Cloudflare)**: Serve all static bundles, audio clips, and boss art with immutable cache headers (`Cache-Control: public, max-age=31536000, immutable`).
-
----
-
-### 8.5 Production Security, Compliance & Authentication
-- **OAuth2 & LMS Integration**: Support Single Sign-On (SSO) via **Google Classroom**, **Clever**, and **Canvas LMS (LTI 1.3 standard)** for seamless school deployment.
-- **Cookie & Token Hardening**:
-  - Rotate auth tokens using asymmetric JWTs (RS256) or hashed server-side sessions.
-  - Enforce `Secure; HttpOnly; SameSite=Strict` flags.
-- **Content Security Policy (CSP)**: Strict CSP denying unauthorized inline script execution.
-
----
-
-### 8.6 Observability, Telemetry & SRE
-- **Distributed Tracing**: OpenTelemetry instrumentation measuring database query times, combat turn evaluation latencies, and question bank retrieval times.
-- **Pedagogical Analytics**: Telemetry pipeline logging question accuracy rates by topic (e.g., identifying when 80% of players fail *SN1 vs SN2 solvent questions* to provide targeted review trials).
-- **Alerting & Sentry**: Real-time error ingestion and alerting for rapid triage.
-
----
-
-### 8.7 Containerization & Cloud Deployment Architecture
-
-```
-+-------------------------------------------------------------------------+
-|                    KUBERNETES / CLOUD RUN DEPLOYMENT                    |
-|                                                                         |
-|                [ Cloudflare Global CDN / DDoS Shield ]                  |
-|                                   |                                     |
-|                                   v                                     |
-|                       [ NGINX / AWS ALB Ingress ]                       |
-|                                   |                                     |
-|                +------------------+------------------+                  |
-|                |                                     |                  |
-|                v                                     v                  |
-|     [ Pod 1: FastAPI Core ]               [ Pod 2: FastAPI Core ]       |
-|     (Python 3.12 + Uvicorn)               (Python 3.12 + Uvicorn)       |
-|                |                                     |                  |
-|                +------------------+------------------+                  |
-|                                   |                                     |
-|                     +-------------+-------------+                       |
-|                     v                           v                       |
-|           [ AWS RDS PostgreSQL ]         [ Redis Cluster ]              |
-|           (Multi-AZ, Read Replicas)     (Sessions, Queues, PubSub)      |
-+-------------------------------------------------------------------------+
-```
-
----
-
-*Authored for the Organic Battles Engineering & Pedagogical Production Team.*
+*Authored for the Organic Battles Engineering, Security & Pedagogical Production Team.*
