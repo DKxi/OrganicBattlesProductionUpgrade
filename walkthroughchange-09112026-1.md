@@ -1482,4 +1482,42 @@ The system has been updated across configuration, domain loaders, routing, envir
 - **Unit & Integration Tests**: `uv run pytest tests/test_battle_retry_and_restart.py` $\rightarrow$ **10 passed in 0.62s**.
 - **Full Project Suite**: `uv run pytest` $\rightarrow$ **383 passed, 1 skipped in 92.72s** (100% green).
 
+---
+
+# Walkthrough: Content Security Policy (CSP) S3 CDN Whitelisting & Battle Gameplay Verification
+
+## 1. Browser Content Security Policy (CSP) Whitelisting for Supabase CDN
+- **Problem**: When boss images were redirected (`307 Temporary Redirect`) to public Supabase S3 storage buckets (`DefaultBosses`, `AdvancedBosses`, `FoundationalBosses`), modern browsers (Safari, Chrome) blocked image loading because the security middleware in [app/observability/middleware.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/middleware.py) strictly restricted `img-src` to `'self' data:;`.
+- **Fix**:
+  - Updated `Content-Security-Policy` header in [app/observability/middleware.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/observability/middleware.py):
+    ```python
+    "img-src 'self' data: https://*.supabase.co https://*.storage.supabase.co;"
+    ```
+  - Added `node.dataset.asset = imageAsset;` in [static/js/avatars.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/avatars.js) to reliably track active boss assets in the DOM and avoid redundant avatar re-renders.
+- **Verification**:
+  - Direct HTTP verification via curl:
+    ```bash
+    curl -i -s http://localhost:8000/static/assets/bosses/valence-vanguard.png
+    ```
+    Verified headers return `307 Temporary Redirect` to Supabase CDN with the updated CSP whitelist.
+  - Live browser verification in Safari: Boss assets (`Valence Vanguard`, `Orbital Ogre`, etc.) load and display immediately on the arena stage without errors.
+
+## 2. Turn-Based Combat Flow & HP Damage Mechanics Verification
+- **Turn Initialization**:
+  - Combat starts in the idle state (`Valence Vanguard awaits your next spell`).
+  - Selecting an offensive spell from the **Arsenal** (`Fire Spark` [20 DMG], `Resonance Burst` [30 DMG], or `Mechanism Storm` [45 DMG]) invokes `POST /api/battle/select-spell` and reveals the chemistry question and multiple-choice options.
+- **Combat Math & Damage Resolution**:
+  - **Starting Player Health**: 150 / 150 HP.
+  - **Turn 1 (Correct Answer with Mechanism Storm)**:
+    - Player deals 45 damage to Valence Vanguard.
+    - Boss rolls a 50% counterattack for 13 damage $\rightarrow$ Player HP: $150 - 13 = \mathbf{137\text{ HP}}$.
+  - **Turn 2 (Incorrect Answer with Mechanism Storm)**:
+    - Spell fizzles and backfires directly on the player for the spell's full base power (45 damage) $\rightarrow$ Player HP: $137 - 45 = \mathbf{92\text{ HP}}$.
+  - **Turn 3 (Correct Answer with Resonance Burst)**:
+    - Player deals 30 damage to Valence Vanguard.
+    - Boss counterattacks for 23 damage $\rightarrow$ Player HP: $92 - 23 = \mathbf{69\text{ HP}}$.
+- **Full Health Restoration**:
+  - Vanquishing the boss (reducing boss HP to 0) and advancing to the next arena automatically restores the player to full **150 / 150 HP**.
+
+
 
