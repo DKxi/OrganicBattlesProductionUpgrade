@@ -3,7 +3,7 @@ import logging
 from typing import List, Optional, Dict, Any, Tuple
 from sqlalchemy.orm import Session as DBSession
 
-from app.infrastructure.database.models import Boss, BossQuestionAssignment, Question, Track
+from app.infrastructure.database.models import Boss, BossQuestionAssignment, Question
 from app.domain.content.loader import BUILTIN_CHAPTERS
 
 logger = logging.getLogger("organicbattles.bosses")

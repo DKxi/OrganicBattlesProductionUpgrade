@@ -14,7 +14,7 @@ from app.infrastructure.database.repositories import SessionRepository
 from app.domain.content.resolver import resolve_content_source
 from app.domain.content.loader import JSON_SPELL_IDS_BY_RANK, json_available_spells
 from app.domain.combat.spells import SPELL_CATALOG, get_spell
-from app.domain.combat.rules import evaluate_combat_turn, decrement_cooldowns, apply_spell_cooldown
+from app.domain.combat.rules import evaluate_combat_turn, apply_spell_cooldown
 from app.api.v1.game import format_game_state
 
 logger = logging.getLogger("organicbattles.battle")

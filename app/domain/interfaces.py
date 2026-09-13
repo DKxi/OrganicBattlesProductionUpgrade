@@ -1,4 +1,4 @@
-from typing import Protocol, Optional, List, Dict, Any
+from typing import Protocol, Optional, List, Any
 
 
 class IUserRepository(Protocol):

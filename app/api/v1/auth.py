@@ -1,9 +1,8 @@
 import re
-import time
 import logging
 from typing import Optional
 from fastapi import APIRouter, Request, Response, Depends, HTTPException, Header, Cookie
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session as DBSession
 
 from app.settings import settings

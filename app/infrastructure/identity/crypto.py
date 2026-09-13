@@ -1,7 +1,6 @@
 import hashlib
 import hmac
 import secrets
-from typing import Tuple
 
 PBKDF2_ITERATIONS = 310_000
 

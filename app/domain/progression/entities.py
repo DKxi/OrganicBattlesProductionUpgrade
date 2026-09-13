@@ -1,7 +1,6 @@
 import uuid
-from typing import Optional, Dict, Any, List, Set, Tuple
+from typing import Optional, Dict, List, Set, Tuple
 from pydantic import BaseModel, Field
-from app.domain.combat.entities import TurnResult
 
 
 class Avatar(BaseModel):

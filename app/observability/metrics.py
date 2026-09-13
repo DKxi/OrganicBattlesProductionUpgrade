@@ -1,6 +1,6 @@
 import time
 import threading
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, Optional
 from collections import deque
 
 
@@ -139,7 +139,7 @@ class MetricsRegistry:
     def get_system_metrics(self) -> Dict[str, Any]:
         """Assembles all 9 monitored production telemetry dimensions."""
         from app.infrastructure.cache.shared_cache import shared_track_cache
-        from app.infrastructure.database.engine import get_pool_config_summary, get_connection_pool_status
+        from app.infrastructure.database.engine import get_connection_pool_status
 
         cache_stats = shared_track_cache.stats()
         bundle_sizes = cache_stats.get("bundle_sizes_bytes", {})

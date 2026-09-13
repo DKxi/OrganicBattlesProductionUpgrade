@@ -91,7 +91,7 @@ def test_combat_turn_fizzle_backfires_on_player():
 
 
 def test_cooldown_management_pure_domain():
-    from app.domain.combat.rules import is_spell_on_cooldown, apply_spell_cooldown
+    from app.domain.combat.rules import is_spell_on_cooldown
     fixed_time = 1000.0
     cooldowns = {}
     assert is_spell_on_cooldown(cooldowns, "resonance-burst", current_time=fixed_time) is False

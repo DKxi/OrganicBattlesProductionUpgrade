@@ -2,7 +2,6 @@ import time
 import logging
 from typing import Optional, Dict, Any, List
 from sqlalchemy.orm import Session as DBSession
-from sqlalchemy import func
 
 from app.infrastructure.database.models import PlayerQuestionProgress, AnswerAttempt
 

@@ -4,7 +4,7 @@ import json
 import time
 import secrets
 import logging
-from typing import Optional, Dict, Any, List
+from typing import Optional, Dict
 from fastapi import APIRouter, Request, Response, Depends, HTTPException, Header, Cookie, Query
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session as DBSession
@@ -15,7 +15,7 @@ from app.infrastructure.database.models import User, GameSession, Base
 from app.infrastructure.identity.crypto import code_hash, hash_password
 from app.infrastructure.cache.memory import set_admin_token, revoke_admin_token
 from app.domain.content.resolver import resolve_content_source
-from app.domain.content.loader import load_tracks_config, get_track_config
+from app.domain.content.loader import get_track_config
 import app.infrastructure.database.engine as db_engine
 from app.infrastructure.database.engine import switch_database, build_engine
 from app.infrastructure.database.migrator import migrate_sqlite_to_postgres
@@ -60,7 +60,8 @@ class FolderSwitchRequest(BaseModel):
 
 
 class LoggingConfigRequest(BaseModel):
-    levels: Dict[str, str]  # e.g. {"root": "INFO", "organicbattles.api": "DEBUG"}
+    levels: Dict[str, str] = Field(default_factory=dict)  # e.g. {"root": "INFO", "organicbattles.api": "DEBUG"}
+    log_file_path: Optional[str] = None
 
 
 class TrackUpdateRequest(BaseModel):
@@ -856,11 +857,6 @@ def admin_get_curricula(admin_info: dict = Depends(auth_admin), db: DBSession = 
     repo = TracksRepository(db)
     return {"curricula": repo.get_tracks_config()["curricula"]}
 
-
-
-class LoggingConfigRequest(BaseModel):
-    levels: Dict[str, str] = Field(default_factory=dict)
-    log_file_path: Optional[str] = None
 
 
 @router.get("/admin/system/logging")

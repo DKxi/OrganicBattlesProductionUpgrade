@@ -1,11 +1,11 @@
 import logging
-from typing import Optional, Dict, Any, List
+from typing import Optional, Dict, Any
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session as DBSession
-from sqlalchemy import func, desc
+from sqlalchemy import func
 
 from app.api.deps import get_admin_db, auth_admin
-from app.infrastructure.database.models import AnswerAttempt, PlayerQuestionProgress, Question, User
+from app.infrastructure.database.models import AnswerAttempt, Question
 from app.infrastructure.database.progress_repo import ProgressRepository
 
 logger = logging.getLogger("organicbattles.analytics")

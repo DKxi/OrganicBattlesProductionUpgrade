@@ -2,7 +2,7 @@ import time
 import threading
 from collections import OrderedDict
 from collections.abc import MutableMapping
-from typing import Any, Dict, Iterator, Optional, Tuple
+from typing import Any, Dict, Iterator, Tuple
 
 
 class BoundedTrackCache(MutableMapping):

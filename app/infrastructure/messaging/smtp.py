@@ -1,7 +1,6 @@
 import logging
 import smtplib
 from email.message import EmailMessage
-from typing import Optional
 from app.settings import settings
 
 logger = logging.getLogger("organicbattles.messaging")

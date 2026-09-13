@@ -26,3 +26,32 @@ dependencies = [
 markers = [
     "e2e: End-to-end browser and UI tests",
 ]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+exclude = [
+    ".git",
+    ".venv",
+    ".pytest_cache",
+    "__pycache__",
+    "migrations/versions",
+    "data",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = [
+    "E501",  # line length > 120 (handled for long SQL / schema strings)
+    "E402",  # module import not at top of file (needed for scripts sys.path inserts)
+    "W291",  # trailing whitespace
+    "W293",  # blank line contains whitespace
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"app.py" = ["F401"]
+"app/api/deps.py" = ["F401"]
+"migrations/*" = ["F401"]
+"scripts/*" = ["E402", "F401"]
+"tests/**" = ["F841", "E702", "F401", "F541"]
