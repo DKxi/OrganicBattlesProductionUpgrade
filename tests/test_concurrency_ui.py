@@ -43,8 +43,9 @@ def live_test_server():
     if not _is_server_listening(url):
         env = os.environ.copy()
         env["TESTING"] = "1"
+        uvicorn_bin = str(ROOT_DIR / ".venv" / "bin" / "uvicorn")
         server_proc = subprocess.Popen(
-            [sys.executable, "-m", "uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8000"],
+            [uvicorn_bin, "app.main:app", "--host", "127.0.0.1", "--port", "8000"],
             cwd=str(ROOT_DIR),
             env=env,
             stdout=subprocess.PIPE,
@@ -61,6 +62,7 @@ def live_test_server():
                 server_proc.wait(timeout=3)
             except subprocess.TimeoutExpired:
                 server_proc.kill()
+            time.sleep(0.5)
 
 
 @pytest.mark.e2e
