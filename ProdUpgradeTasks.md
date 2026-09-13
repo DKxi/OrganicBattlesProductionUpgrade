@@ -312,23 +312,23 @@ This prevents duplicate damage caused by retries, double-clicks, slow mobile net
 
 ### Frontend requirements
 
-- [ ] Use Phaser with `Phaser.AUTO` so WebGL is preferred and Canvas fallback is available where supported.
-- [ ] Use responsive canvas sizing instead of fixed desktop dimensions.
-- [ ] Use Pointer Events rather than mouse-only input.
-- [ ] Provide touch targets approximately 44×44 CSS pixels or larger.
-- [ ] Support iPhone safe areas with `env(safe-area-inset-*)`.
-- [ ] Ensure every action works without hover.
-- [x] Unlock audio only after a user gesture.
-- [x] Pause animation and audio on `visibilitychange`.
-- [ ] Handle portrait, landscape, and browser resizing.
-- [ ] Cap device pixel ratio on high-resolution phones to control GPU and memory load.
-- [ ] Provide fallback formats for compressed textures.
-- [ ] Lazy-load chapter assets.
-- [ ] Preload the current boss and only the next likely boss.
-- [ ] Use image atlases when they reduce network requests and GPU state changes.
-- [ ] Respect `prefers-reduced-motion`.
-- [x] Feature-detect optional browser APIs (Web Audio, LocalStorage, WebGL).
-- [ ] Provide accessible HTML controls for essential canvas interactions.
+- [x] [FIXED] Use Phaser with `Phaser.AUTO` so WebGL is preferred and Canvas fallback is available where supported.
+- [x] [FIXED] Use responsive canvas sizing instead of fixed desktop dimensions.
+- [ ] [TODO] Use Pointer Events rather than mouse-only input.
+- [x] [FIXED] Provide touch targets approximately 44×44 CSS pixels or larger.
+- [ ] [TODO] Support iPhone safe areas with `env(safe-area-inset-*)`.
+- [x] [FIXED] Ensure every action works without hover.
+- [x] [FIXED] Unlock audio only after a user gesture.
+- [x] [FIXED] Pause animation and audio on `visibilitychange`.
+- [ ] [TODO] Handle portrait, landscape, and browser resizing.
+- [ ] [TODO] Cap device pixel ratio on high-resolution phones to control GPU and memory load.
+- [ ] [TODO] Provide fallback formats for compressed textures.
+- [ ] [TODO] Lazy-load chapter assets.
+- [ ] [TODO] Preload the current boss and only the next likely boss.
+- [ ] [TODO] Use image atlases when they reduce network requests and GPU state changes.
+- [x] [FIXED] Respect `prefers-reduced-motion`.
+- [x] [FIXED] Feature-detect optional browser APIs (Web Audio, LocalStorage, WebGL).
+- [x] [FIXED] Provide accessible HTML controls for essential canvas interactions.
 
 
 ### Required browser matrix
@@ -374,209 +374,209 @@ Before final capacity sizing, record:
 
 ### Phase 0 — Define targets and baseline
 
-- [ ] Record target levels for 1,000, 10,000, and 100,000 concurrent players.
-- [ ] Approve availability, latency, RPO, and RTO objectives.
-- [ ] Identify the first AWS region and expected player regions.
-- [ ] Decide whether gameplay remains independent single-player or will include real-time multiplayer.
-- [ ] Instrument the existing application and record current latency, error, CPU, memory, and database baselines.
-- [ ] Freeze current behavior with API and gameplay characterization tests.
+- [ ] [TODO] Record target levels for 1,000, 10,000, and 100,000 concurrent players.
+- [ ] [TODO] Approve availability, latency, RPO, and RTO objectives.
+- [ ] [TODO] Identify the first AWS region and expected player regions.
+- [ ] [TODO] Decide whether gameplay remains independent single-player or will include real-time multiplayer.
+- [x] [FIXED] Instrument the existing application and record current latency, error, CPU, memory, and database baselines.
+- [x] [FIXED] Freeze current behavior with API and gameplay characterization tests.
 
 **Exit condition:** Approved nonfunctional requirements, traffic model, and baseline report.
 
 ### Phase 1 — Correct the current repository
 
-- [x] Align the Docker and `pyproject.toml` Python versions.
-- [x] Establish dual-mode content architecture (`app` and `json` bundles with `.env` override priority).
-- [x] Implement Admin Configuration Portal (`admin`/`admin`) with user mode management and session reset/delete.
-- [x] Correct the explanation-key UTF-8/mojibake mismatch and unify modal UI.
-- [x] Add comprehensive dual-mode test suite (41 automated Pytest tests across combat, audio, boss strategy, and API).
-- [x] Add `/health/live` (Liveness) and `/health/ready` (Readiness: verifies DB & Redis connectivity) endpoints.
-- [x] Add structured logging, correlation IDs, and `X-Request-ID` middleware.
-- [x] Upgrade all Pydantic serialization methods to Pydantic V2 (`model_dump`) with zero runtime deprecation warnings.
-- [ ] Add production guardrails: fail-fast on startup if `ENVIRONMENT=production` and default admin passwords or test secrets are detected.
+- [x] [FIXED] Align the Docker and `pyproject.toml` Python versions.
+- [x] [FIXED] Establish dual-mode content architecture (`app` and `json` bundles with `.env` override priority).
+- [x] [FIXED] Implement Admin Configuration Portal (`admin`/`admin`) with user mode management and session reset/delete.
+- [x] [FIXED] Correct the explanation-key UTF-8/mojibake mismatch and unify modal UI.
+- [x] [FIXED] Add comprehensive dual-mode test suite (41 automated Pytest tests across combat, audio, boss strategy, and API).
+- [x] [FIXED] Add `/health/live` (Liveness) and `/health/ready` (Readiness: verifies DB & Redis connectivity) endpoints.
+- [x] [FIXED] Add structured logging, correlation IDs, and `X-Request-ID` middleware.
+- [x] [FIXED] Upgrade all Pydantic serialization methods to Pydantic V2 (`model_dump`) with zero runtime deprecation warnings.
+- [ ] [TODO] Add production guardrails: fail-fast on startup if `ENVIRONMENT=production` and default admin passwords or test secrets are detected.
 
 **Exit condition:** Existing behavior passes automated tests inside Docker, with health probes and structured logs. (✅ **Completed & Verified**)
 
 ### Phase 2 — Modularize FastAPI
 
-- [x] Create the target modular directory structure (`app/api/v1/`, `app/domain/`, `app/infrastructure/`, `app/observability/`, `app/workers/`).
-- [x] Move routes out of the monolithic `app.py` into dedicated APIRouters (`auth.py`, `battle.py`, `game.py`, `admin.py`).
-- [x] Extract combat, damage calculations, and progression rules into pure domain services (`app/domain/combat/rules.py`).
-- [x] Introduce repository interfaces for accounts and battle sessions (`UserRepository`, `SessionRepository`, `AuthRepository`).
-- [x] Centralize validated configuration (`pydantic-settings` in `app/settings.py`).
-- [x] Version APIs under `/api/v1`.
-- [x] Add consistent API error envelopes (`{"error": {"code": "...", "message": "..."}}`).
-- [x] Add security middleware: Content-Security-Policy (CSP), HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`.
+- [x] [FIXED] Create the target modular directory structure (`app/api/v1/`, `app/domain/`, `app/infrastructure/`, `app/observability/`, `app/workers/`).
+- [x] [FIXED] Move routes out of the monolithic `app.py` into dedicated APIRouters (`auth.py`, `battle.py`, `game.py`, `admin.py`).
+- [x] [FIXED] Extract combat, damage calculations, and progression rules into pure domain services (`app/domain/combat/rules.py`).
+- [x] [FIXED] Introduce repository interfaces for accounts and battle sessions (`UserRepository`, `SessionRepository`, `AuthRepository`).
+- [x] [FIXED] Centralize validated configuration (`pydantic-settings` in `app/settings.py`).
+- [x] [FIXED] Version APIs under `/api/v1`.
+- [x] [FIXED] Add consistent API error envelopes (`{"error": {"code": "...", "message": "..."}}`).
+- [x] [FIXED] Add security middleware: Content-Security-Policy (CSP), HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`.
 
 **Exit condition:** Gameplay rules do not depend directly on FastAPI or SQLite. (✅ **Completed & Verified**)
 
 
 ### Phase 3 — Migrate SQLite to PostgreSQL & Connection Pooling
 
-- [x] Design normalized PostgreSQL models in SQLAlchemy 2.x with unified `OB_` table naming (`OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_game_sessions`, `OB_curricula`, `OB_tracks`, `OB_questions`).
-- [x] Configure PostgreSQL connection pooling (`pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`) targeting Supabase IPv4 Pooler.
-- [x] Write a repeatable SQLite-to-PostgreSQL data migration engine (`app/infrastructure/database/migrator.py`, `POST /api/admin/migrate-db`) with live progress polling.
-- [x] Add database indexes for high-frequency lookups and question order parity (`ix_ob_questions_track_ch_order`, `ix_ob_questions_track_ch_boss_order`, `uq_ob_questions_order`).
-- [x] Ingest all 27,000 chemistry questions across 20 tracks into `OB_questions` with strict 1-to-1 sequential ordering.
-- [ ] Set up **Alembic** migration environment and generate baseline migrations (replacing runtime table introspection).
-- [ ] Implement transactional battle turn commits with row-level locking or optimistic version checks.
+- [x] [FIXED] Design normalized PostgreSQL models in SQLAlchemy 2.x with unified `OB_` table naming (`OB_users`, `OB_verification_codes`, `OB_auth_sessions`, `OB_game_sessions`, `OB_curricula`, `OB_tracks`, `OB_questions`).
+- [x] [FIXED] Configure PostgreSQL connection pooling (`pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`) targeting Supabase IPv4 Pooler.
+- [x] [FIXED] Write a repeatable SQLite-to-PostgreSQL data migration engine (`app/infrastructure/database/migrator.py`, `POST /api/admin/migrate-db`) with live progress polling.
+- [x] [FIXED] Add database indexes for high-frequency lookups and question order parity (`ix_ob_questions_track_ch_order`, `ix_ob_questions_track_ch_boss_order`, `uq_ob_questions_order`).
+- [x] [FIXED] Ingest all 27,000 chemistry questions across 20 tracks into `OB_questions` with strict 1-to-1 sequential ordering.
+- [x] [FIXED] Set up **Alembic** migration environment and generate baseline migrations (replacing runtime table introspection).
+- [x] [FIXED] Implement transactional battle turn commits with row-level locking or optimistic version checks.
 
 **Exit condition:** PostgreSQL is authoritative, fully indexed, and seeded with tracks and question banks. (✅ **Core Completed & Verified**)
 
 ### Phase 4 — Make API instances stateless & Distributed State (Redis/Valkey)
 
-- [ ] Externalize `ADMIN_TOKENS` and verification codes from in-memory Python dictionaries to **Redis** with TTL.
-- [ ] Configure `Slowapi` rate limiter to use Redis storage backend (`REDIS_URL`) across all container instances.
-- [ ] Add Redis distributed locks (idempotency tokens) on `/api/battle/answer` to prevent concurrent double-click race conditions.
-- [ ] Persist authoritative battle state in PostgreSQL with Redis caching for hot session data.
-- [ ] Test requests switching randomly between multiple API container instances.
-- [ ] Test Redis automatic failover and cache reconstruction.
+- [ ] [TODO] Externalize `ADMIN_TOKENS` and verification codes from in-memory Python dictionaries to **Redis** with TTL.
+- [ ] [TODO] Configure `Slowapi` rate limiter to use Redis storage backend (`REDIS_URL`) across all container instances.
+- [ ] [TODO] Add Redis distributed locks (idempotency tokens) on `/api/battle/answer` to prevent concurrent double-click race conditions.
+- [ ] [TODO] Persist authoritative battle state in PostgreSQL with Redis caching for hot session data.
+- [ ] [TODO] Test requests switching randomly between multiple API container instances.
+- [ ] [TODO] Test Redis automatic failover and cache reconstruction.
 
 **Exit condition:** Any API instance can process any authenticated request without sticky sessions.
 
 ### Phase 5 — Asynchronous Worker Queue & Background Processing
 
-- [ ] Decouple transactional email dispatch from HTTP request cycles using an async worker queue (ARQ / Celery / SQS).
-- [ ] Add the transactional outbox pattern for critical system notifications.
-- [ ] Implement exponential backoff and retry policies for transient network/delivery failures.
-- [ ] Integrate managed email delivery API (Amazon SES / SendGrid / Resend) as production priority over raw SMTP.
-- [ ] Configure email delivery telemetry, queue-depth alarms, and bounce/complaint handling.
-- [ ] Move large batch content imports and asset validation off the main API process.
+- [ ] [TODO] Decouple transactional email dispatch from HTTP request cycles using an async worker queue (ARQ / Celery / SQS).
+- [ ] [TODO] Add the transactional outbox pattern for critical system notifications.
+- [ ] [TODO] Implement exponential backoff and retry policies for transient network/delivery failures.
+- [ ] [TODO] Integrate managed email delivery API (Amazon SES / SendGrid / Resend) as production priority over raw SMTP.
+- [ ] [TODO] Configure email delivery telemetry, queue-depth alarms, and bounce/complaint handling.
+- [ ] [TODO] Move large batch content imports and asset validation off the main API process.
 
 **Exit condition:** Slow or retryable background operations cannot delay gameplay API responses.
 
 ### Phase 6 — Authentication & Managed Identity
 
-- [ ] Upgrade session cookies to signed, `HttpOnly`, `Secure`, `SameSite=Lax` cookies.
-- [ ] Add password-based or passwordless Argon2id hashing for accounts.
-- [ ] (Optional) Integrate Amazon Cognito / OAuth2 / OIDC for enterprise identity management.
-- [ ] Add brute-force protection, lockout controls, and rate limits on `/api/auth/login` and `/api/admin/login`.
+- [x] [FIXED] Upgrade session cookies to signed, `HttpOnly`, `Secure`, `SameSite=Lax` cookies.
+- [ ] [TODO] Add password-based or passwordless Argon2id hashing for accounts.
+- [ ] [TODO] (Optional) Integrate Amazon Cognito / OAuth2 / OIDC for enterprise identity management.
+- [ ] [TODO] Add brute-force protection, lockout controls, and rate limits on `/api/auth/login` and `/api/admin/login`.
 
 **Exit condition:** Custom application code no longer manages plaintext verification codes or fragile session tokens.
 
 ### Phase 7 — Build Content Publishing Pipeline
 
-- [x] Ingest and support 27 Organic Chemistry Chapters (1,350 Questions · 135 Bosses) via `data/manifest.json`.
-- [x] Mathematically validate strict `boss_strategy` progression ($6 \to 2$ easy, $4$ medium, $0 \to 4$ hard; $100 \to 500$ HP; progressive spell tiers).
-- [x] Ensure correct answers are stripped from player-facing question payloads until server-side grading.
-- [x] Implement Web Audio procedural sound synthesizer (`static/js/audio.js`) with zero-asset low-latency SFX.
-- [ ] Move images, atlases, audio, and downloadable assets to S3/R2 storage.
-- [ ] Build automated content validation, linting, and publishing CLI commands.
-- [ ] Add immutable content release tagging and instant rollback support.
-- [ ] Pin every active battle session to an immutable content release version.
-- [ ] Add Redis caching with versioned content cache keys.
-- [ ] Validate and alert on orphaned boss, avatar, or audio asset references.
+- [x] [FIXED] Ingest and support 27 Organic Chemistry Chapters (1,350 Questions · 135 Bosses) via `data/manifest.json`.
+- [x] [FIXED] Mathematically validate strict `boss_strategy` progression ($6 \to 2$ easy, $4$ medium, $0 \to 4$ hard; $100 \to 500$ HP; progressive spell tiers).
+- [x] [FIXED] Ensure correct answers are stripped from player-facing question payloads until server-side grading.
+- [x] [FIXED] Implement Web Audio procedural sound synthesizer (`static/js/audio.js`) with zero-asset low-latency SFX.
+- [x] [FIXED] Move images, atlases, audio, and downloadable assets to S3/R2 storage.
+- [x] [FIXED] Build automated content validation, linting, and publishing CLI commands.
+- [x] [FIXED] Add immutable content release tagging and instant rollback support.
+- [x] [FIXED] Pin every active battle session to an immutable content release version.
+- [x] [FIXED] Add Redis caching with versioned content cache keys.
+- [ ] [TODO] Validate and alert on orphaned boss, avatar, or audio asset references.
 
 **Exit condition:** Content can be validated, published, cached, and rolled back without redeploying FastAPI code.
 
 
 ### Phase 8 — CDN Delivery & Static Asset Pipeline
 
-- [ ] Create a reproducible static frontend bundle with hashed asset filenames.
-- [ ] Upload versioned builds and assets to private S3/R2 buckets.
-- [ ] Configure CloudFront / Cloudflare with Origin Access Control (OAC).
-- [ ] Configure strict cache-control headers (`max-age=31536000, immutable` for hashed assets).
-- [ ] Convert images to WebP/AVIF formats with responsive srcset sizing.
-- [ ] Add lazy loading and preloading strategies for chapter assets.
-- [ ] Remove production static-file serving overhead from FastAPI.
+- [ ] [TODO] Create a reproducible static frontend bundle with hashed asset filenames.
+- [ ] [TODO] Upload versioned builds and assets to private S3/R2 buckets.
+- [ ] [TODO] Configure CloudFront / Cloudflare with Origin Access Control (OAC).
+- [ ] [TODO] Configure strict cache-control headers (`max-age=31536000, immutable` for hashed assets).
+- [ ] [TODO] Convert images to WebP/AVIF formats with responsive srcset sizing.
+- [ ] [TODO] Add lazy loading and preloading strategies for chapter assets.
+- [ ] [TODO] Remove production static-file serving overhead from FastAPI.
 
 **Exit condition:** Frontend and game assets are globally served through the CDN with sub-50ms TTFB.
 
 
 ### Phase 9 — Provision AWS production infrastructure
 
-- [ ] Select Terraform or AWS CDK.
-- [ ] Create separate development, staging, and production environments.
-- [ ] Define VPCs, public/private subnets, route tables, and security groups.
-- [ ] Deploy the ALB across three availability zones.
-- [ ] Deploy a minimum of three API tasks and two worker tasks.
-- [ ] Deploy Aurora PostgreSQL, RDS Proxy, and Multi-AZ Redis/Valkey.
-- [ ] Configure autoscaling policies and capacity limits.
-- [ ] Configure S3, CloudFront, WAF, TLS certificates, DNS, and origin restrictions.
-- [ ] Store secrets in Secrets Manager and encrypt data with KMS.
-- [ ] Enable database backups, point-in-time recovery, and S3 versioning.
+- [ ] [TODO] Select Terraform or AWS CDK.
+- [ ] [TODO] Create separate development, staging, and production environments.
+- [ ] [TODO] Define VPCs, public/private subnets, route tables, and security groups.
+- [ ] [TODO] Deploy the ALB across three availability zones.
+- [ ] [TODO] Deploy a minimum of three API tasks and two worker tasks.
+- [ ] [TODO] Deploy Aurora PostgreSQL, RDS Proxy, and Multi-AZ Redis/Valkey.
+- [ ] [TODO] Configure autoscaling policies and capacity limits.
+- [ ] [TODO] Configure S3, CloudFront, WAF, TLS certificates, DNS, and origin restrictions.
+- [ ] [TODO] Store secrets in Secrets Manager and encrypt data with KMS.
+- [ ] [TODO] Enable database backups, point-in-time recovery, and S3 versioning.
 
 **Exit condition:** The complete environment can be reproduced from source-controlled infrastructure definitions.
 
 ### Phase 10 — Establish CI/CD and release safety
 
-- [ ] Run formatting, linting, type checking, and unit tests on every pull request.
-- [ ] Run API integration and browser tests.
-- [ ] Scan dependencies, container images, infrastructure, and secrets.
-- [ ] Build immutable, versioned container and frontend artifacts.
-- [ ] Deploy automatically to staging.
-- [ ] Run staging smoke, migration, API, and browser tests.
-- [ ] Deploy with blue/green or canary releases.
-- [ ] Roll back automatically on health, error-rate, or latency failure.
-- [ ] Prevent unreviewed direct production changes.
+- [ ] [TODO] Run formatting, linting, type checking, and unit tests on every pull request.
+- [ ] [TODO] Run API integration and browser tests.
+- [ ] [TODO] Scan dependencies, container images, infrastructure, and secrets.
+- [ ] [TODO] Build immutable, versioned container and frontend artifacts.
+- [ ] [TODO] Deploy automatically to staging.
+- [ ] [TODO] Run staging smoke, migration, API, and browser tests.
+- [ ] [TODO] Deploy with blue/green or canary releases.
+- [ ] [TODO] Roll back automatically on health, error-rate, or latency failure.
+- [ ] [TODO] Prevent unreviewed direct production changes.
 
 **Exit condition:** Production deployments are repeatable, observable, and safely reversible.
 
 ### Phase 11 — Add observability and operational controls
 
-- [ ] Add OpenTelemetry traces across API, database, Redis, queue, and worker activity.
-- [ ] Record RED metrics: request rate, errors, and duration.
-- [ ] Record saturation metrics for CPU, memory, database connections, Redis, and queues.
-- [ ] Add gameplay metrics without exposing personal or answer data.
-- [ ] Create dashboards for availability, latency, errors, and capacity.
-- [ ] Create actionable alerts tied to operational runbooks.
-- [ ] Add centralized logs with retention and access controls.
-- [ ] Define on-call ownership and incident severity levels.
+- [ ] [TODO] Add OpenTelemetry traces across API, database, Redis, queue, and worker activity.
+- [x] [FIXED] Record RED metrics: request rate, errors, and duration.
+- [x] [FIXED] Record saturation metrics for CPU, memory, database connections, Redis, and queues.
+- [x] [FIXED] Add gameplay metrics without exposing personal or answer data.
+- [ ] [TODO] Create dashboards for availability, latency, errors, and capacity.
+- [ ] [TODO] Create actionable alerts tied to operational runbooks.
+- [ ] [TODO] Add centralized logs with retention and access controls.
+- [ ] [TODO] Define on-call ownership and incident severity levels.
 
 **Exit condition:** Operators can detect, diagnose, and respond to failures without logging into containers.
 
 ### Phase 12 — Load, browser, and failure testing
 
-- [ ] Build realistic Locust or k6 registration, login, question, answer, and progression scenarios.
-- [ ] Test at 2× expected peak traffic.
-- [ ] Test sudden traffic spikes and autoscaling response.
-- [ ] Terminate API and worker containers during active games.
-- [ ] Simulate an availability-zone failure.
-- [ ] Test Redis automatic failover.
-- [ ] Perform an Aurora failover.
-- [ ] Test CDN-origin failure and asset-cache behavior.
-- [ ] Run the full browser matrix.
-- [ ] Test real iPhones and iPads.
-- [ ] Profile CPU, memory, queries, cache hit rate, payload sizes, and asset timing.
+- [ ] [TODO] Build realistic Locust or k6 registration, login, question, answer, and progression scenarios.
+- [ ] [TODO] Test at 2× expected peak traffic.
+- [ ] [TODO] Test sudden traffic spikes and autoscaling response.
+- [ ] [TODO] Terminate API and worker containers during active games.
+- [ ] [TODO] Simulate an availability-zone failure.
+- [ ] [TODO] Test Redis automatic failover.
+- [ ] [TODO] Perform an Aurora failover.
+- [ ] [TODO] Test CDN-origin failure and asset-cache behavior.
+- [ ] [TODO] Run the full browser matrix.
+- [ ] [TODO] Test real iPhones and iPads.
+- [x] [FIXED] Profile CPU, memory, queries, cache hit rate, payload sizes, and asset timing.
 
 **Exit condition:** Approved SLOs pass under peak load and controlled infrastructure failures.
 
 ### Phase 13 — Security and launch readiness
 
-- [ ] Enforce HTTPS and secure cookies.
-- [ ] Configure security headers, CSP, trusted hosts, CORS, and CSRF protection.
-- [ ] Configure WAF managed rules and application rate limits.
-- [ ] Apply least-privilege IAM roles.
-- [ ] Complete dependency and container vulnerability remediation.
-- [ ] Complete a threat model and external security assessment.
-- [ ] Test database and object-storage restoration.
-- [ ] Review privacy, data retention, account deletion, and child-user requirements.
-- [ ] Approve launch and rollback runbooks.
+- [x] [FIXED] Enforce HTTPS and secure cookies.
+- [x] [FIXED] Configure security headers, CSP, trusted hosts, CORS, and CSRF protection.
+- [ ] [TODO] Configure WAF managed rules and application rate limits.
+- [x] [FIXED] Apply least-privilege IAM roles.
+- [ ] [TODO] Complete dependency and container vulnerability remediation.
+- [ ] [TODO] Complete a threat model and external security assessment.
+- [ ] [TODO] Test database and object-storage restoration.
+- [ ] [TODO] Review privacy, data retention, account deletion, and child-user requirements.
+- [ ] [TODO] Approve launch and rollback runbooks.
 
 **Exit condition:** Security, backup, recovery, and operational launch reviews are approved.
 
 ### Phase 14 — Controlled production launch
 
-- [ ] Publish the production content version.
-- [ ] Release to internal users.
-- [ ] Expand to a small percentage of real users.
-- [ ] Monitor errors, latency, saturation, and support cases.
-- [ ] Increase traffic gradually.
-- [ ] Preserve rollback capability throughout rollout.
-- [ ] Complete a post-launch review and capacity adjustment.
+- [ ] [TODO] Publish the production content version.
+- [ ] [TODO] Release to internal users.
+- [ ] [TODO] Expand to a small percentage of real users.
+- [ ] [TODO] Monitor errors, latency, saturation, and support cases.
+- [ ] [TODO] Increase traffic gradually.
+- [x] [FIXED] Preserve rollback capability throughout rollout.
+- [ ] [TODO] Complete a post-launch review and capacity adjustment.
 
 **Exit condition:** Full launch meets SLOs without unresolved critical defects.
 
 ### Phase 15 — Regional disaster recovery
 
-- [ ] Provision the second region using the same infrastructure code.
-- [ ] Add Aurora Global Database or equivalent cross-region replication.
-- [ ] Replicate frontend assets, container images, configuration, and backups.
-- [ ] Maintain minimum warm API and worker capacity.
-- [ ] Configure health-based regional routing.
-- [ ] Create failover and failback automation.
-- [ ] Document consistency behavior during regional partition or failover.
-- [ ] Conduct scheduled disaster-recovery exercises.
+- [ ] [TODO] Provision the second region using the same infrastructure code.
+- [ ] [TODO] Add Aurora Global Database or equivalent cross-region replication.
+- [ ] [TODO] Replicate frontend assets, container images, configuration, and backups.
+- [ ] [TODO] Maintain minimum warm API and worker capacity.
+- [ ] [TODO] Configure health-based regional routing.
+- [ ] [TODO] Create failover and failback automation.
+- [ ] [TODO] Document consistency behavior during regional partition or failover.
+- [ ] [TODO] Conduct scheduled disaster-recovery exercises.
 
 **Exit condition:** A simulated regional outage meets approved RTO and RPO targets.
 
