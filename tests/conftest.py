@@ -7,6 +7,10 @@ from pathlib import Path
 _test_db_path = Path(tempfile.gettempdir()) / "test_organic_battles.sqlite3"
 _test_db_path.unlink(missing_ok=True)
 os.environ["DATABASE_URL"] = f"sqlite:///{_test_db_path}"
+os.environ["DATABASE_URL_PLAYER"] = f"sqlite:///{_test_db_path}"
+os.environ["DATABASE_URL_ADMIN"] = f"sqlite:///{_test_db_path}"
+os.environ["DATABASE_URL_INGEST"] = f"sqlite:///{_test_db_path}"
+os.environ["DATABASE_URL_MIGRATION"] = f"sqlite:///{_test_db_path}"
 os.environ["DATABASE_PATH"] = str(_test_db_path)
 os.environ["ALLOW_JSON_FALLBACK"] = "true"
 
