@@ -127,20 +127,26 @@ def test_track_content_source_resolution_and_bundle_cache():
 
 
 def test_serve_boss_image_from_track_boss_folder():
-    """Verify boss images from data/tracks/advanced/bosses are served over HTTP."""
+    """Verify boss images from AdvancedBosses (Supabase S3 redirect) or local fallback are served."""
     from fastapi.testclient import TestClient
     from app.main import app
 
-    client = TestClient(app)
+    client = TestClient(app, follow_redirects=False)
 
-    # 1. Image from advanced bosses folder
+    # 1. Advanced boss image redirects to Supabase S3 public storage (Approach 1)
     res1 = client.get("/static/assets/bosses/valence-vanguard.png")
-    assert res1.status_code == 200
-    assert "image" in res1.headers.get("content-type", "")
+    assert res1.status_code in (200, 307)
+    if res1.status_code == 307:
+        assert "AdvancedBosses/valence-vanguard.png" in res1.headers.get("location", "")
+    else:
+        assert "image" in res1.headers.get("content-type", "")
 
     res2 = client.get("/bosses/carbocation-colossus.png")
-    assert res2.status_code == 200
-    assert "image" in res2.headers.get("content-type", "")
+    assert res2.status_code in (200, 307)
+    if res2.status_code == 307:
+        assert "AdvancedBosses/carbocation-colossus.png" in res2.headers.get("location", "")
+    else:
+        assert "image" in res2.headers.get("content-type", "")
 
     # 2. Image from fallback static folder
     res3 = client.get("/static/assets/bosses/boss-placeholder.svg")
@@ -150,6 +156,10 @@ def test_serve_boss_image_from_track_boss_folder():
     res4 = client.get("/static/assets/bosses/completely-unknown-boss.png")
     assert res4.status_code == 200
     assert "svg" in res4.headers.get("content-type", "")
+
+    # 4. Security check: Non-image extensions are rejected
+    res5 = client.get("/bosses/chapter_01.json")
+    assert res5.status_code == 404
 
 
 def test_track_available_spells_and_incorrect_answer_explanation():

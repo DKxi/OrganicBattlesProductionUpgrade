@@ -1,7 +1,7 @@
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.exceptions import RequestValidationError
 from slowapi.errors import RateLimitExceeded
 from slowapi import _rate_limit_exceeded_handler
@@ -42,10 +42,10 @@ def create_app() -> FastAPI:
     application.add_exception_handler(RequestValidationError, validation_exception_handler)
     application.add_exception_handler(Exception, generic_exception_handler)
 
-    # Attach Security & Observability Middleware
+    # Observability & Security Middleware
     application.add_middleware(SecurityAndObservabilityMiddleware)
 
-    # Register API routes under both /api/v1 and /api (for frontend backward compatibility)
+    # Mount API Routers (under both /api/v1 and /api for compatibility)
     application.include_router(api_v1_router, prefix="/api/v1")
     application.include_router(api_v1_router, prefix="/api")
 
@@ -54,32 +54,58 @@ def create_app() -> FastAPI:
     application.include_router(health.router)
 
 
-    from app.domain.content.loader import load_tracks_config
+    from app.domain.content.loader import load_tracks_config, is_advanced_boss_image
 
     @application.get("/static/assets/bosses/{filename:path}")
     @application.get("/bosses/{filename:path}")
     def serve_boss_image(filename: str):
         """
         Dynamically serve boss images.
-        Checks:
-        1. Configured boss_folder directories from tracks_config.json (e.g. data/tracks/advanced/bosses)
-        2. data/bosses/
-        3. data/
-        4. bosses/
-        5. static/assets/bosses/
-        6. Fallback to static/assets/bosses/boss-placeholder.svg
+        1. If the image belongs to the Advanced Bosses catalog and Supabase S3 / Storage is active,
+           redirects (307 Temporary Redirect) to Supabase Storage public CDN (Approach 1).
+        2. Configured track boss folders from tracks_config.json
+        3. Fallback search through data/tracks/default/bosses, bosses/, data/bosses, static/assets/bosses
+        4. Final fallback to static/assets/bosses/boss-placeholder.svg
         """
         raw_name = Path(filename).name
+
+        # Security: Only allow image extensions
+        allowed_exts = {".png", ".jpg", ".jpeg", ".webp", ".svg"}
+        if Path(raw_name).suffix.lower() not in allowed_exts:
+            raise HTTPException(404, f"Invalid image format for '{raw_name}'")
+
+        # Approach 1: Redirect to Supabase Public Storage CDN for Advanced Bosses
+        if settings.use_supabase_boss_storage and is_advanced_boss_image(raw_name, settings.root_dir):
+            public_url = f"{settings.supabase_public_storage_base_url}/{raw_name}"
+            return RedirectResponse(
+                url=public_url,
+                status_code=307,
+                headers={"Cache-Control": "public, max-age=86400"}
+            )
+
         config = load_tracks_config(settings.root_dir)
 
         # 1. Configured track boss folders
         for t in config.get("tracks", []):
             bf = t.get("boss_folder")
             if bf:
-                bf_path = Path(bf) if Path(bf).is_absolute() else settings.root_dir / bf
-                target_file = bf_path / raw_name
-                if target_file.is_file():
-                    return FileResponse(target_file)
+                if bf.startswith("http://") or bf.startswith("https://"):
+                    return RedirectResponse(
+                        url=f"{bf.rstrip('/')}/{raw_name}",
+                        status_code=307,
+                        headers={"Cache-Control": "public, max-age=86400"}
+                    )
+                elif bf.startswith("s3://"):
+                    return RedirectResponse(
+                        url=f"{settings.supabase_public_storage_base_url}/{raw_name}",
+                        status_code=307,
+                        headers={"Cache-Control": "public, max-age=86400"}
+                    )
+                else:
+                    bf_path = Path(bf) if Path(bf).is_absolute() else settings.root_dir / bf
+                    target_file = bf_path / raw_name
+                    if target_file.is_file():
+                        return FileResponse(target_file)
 
         # 2. Fallback to default track bosses folder data/tracks/default/bosses
         default_bosses = settings.root_dir / "data" / "tracks" / "default" / "bosses" / raw_name
@@ -91,22 +117,22 @@ def create_app() -> FastAPI:
         if root_bosses.is_file():
             return FileResponse(root_bosses)
 
-        # 3. Fallback to data/bosses
+        # 4. Fallback to data/bosses
         data_bosses = settings.root_dir / "data" / "bosses" / raw_name
         if data_bosses.is_file():
             return FileResponse(data_bosses)
 
-        # 4. Fallback to data/
+        # 5. Fallback to data/
         data_file = settings.root_dir / "data" / raw_name
         if data_file.is_file():
             return FileResponse(data_file)
 
-        # 5. Fallback to static/assets/bosses
+        # 6. Fallback to static/assets/bosses
         static_boss = settings.root_dir / "static" / "assets" / "bosses" / raw_name
         if static_boss.is_file():
             return FileResponse(static_boss)
 
-        # 6. Fallback to SVG placeholder
+        # 7. Fallback to SVG placeholder
         placeholder = settings.root_dir / "static" / "assets" / "bosses" / "boss-placeholder.svg"
         if placeholder.is_file():
             return FileResponse(placeholder, media_type="image/svg+xml")

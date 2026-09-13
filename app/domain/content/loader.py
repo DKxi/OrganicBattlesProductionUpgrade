@@ -653,4 +653,79 @@ def load_track_bundle(
     return bundle
 
 
+_ADVANCED_BOSS_NAMES = None
+
+def get_advanced_boss_names(root_dir: Optional[Path] = None) -> set:
+    """Returns the set of image filenames belonging to the Advanced Bosses catalog."""
+    global _ADVANCED_BOSS_NAMES
+    if _ADVANCED_BOSS_NAMES is not None:
+        return _ADVANCED_BOSS_NAMES
+
+    names = set()
+    root = root_dir or settings.root_dir
+    adv_dir = root / "data" / "tracks" / "advanced" / "bosses"
+    if adv_dir.is_dir():
+        for p in adv_dir.glob("*.*"):
+            if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".svg"}:
+                names.add(p.name)
+
+    # Static fallback set of 138 advanced boss images in case local directory is removed
+    if not names:
+        names = {
+            "1-3-diaxial-dreadnought.png", "1-4-addition-anomaly.png", "13-diaxial-dreadnought.png",
+            "14-addition-anomaly.png", "acetal-aegis.png", "acetylide-assassin.png",
+            "acid-chloride-assassin.png", "acyl-transfer-sovereign.png", "aldol-alchemist.png",
+            "aldose-apparition.png", "alkoxy-ape.png", "allylic-radical-archer.png",
+            "amino-assassin.png", "anhydride-archon.png", "anisotropic-archon.png",
+            "annulene-abomination.png", "anomeric-archer.png", "arenium-archer.png",
+            "ario-archmage.png", "aromaticity-overlord.png", "autooxidation-sovereign.png",
+            "baeyer-villiger-banshee.png", "benzene-basilisk.png", "benzyne-behemoth.png",
+            "birch-berserker.png", "bromination-behemoth.png", "bromonium-berserker.png",
+            "cahn-ingold-prelog-captain.png", "carbenoid-cyclops.png", "carbocation-colossus.png",
+            "carbon-chain-centaur.png", "carbonyl-chimera.png", "carbonyl-peak-corsair.png",
+            "carboxylate-captain.png", "chair-flip-champion.png", "chemical-shift-sprite.png",
+            "chirality-cerberus.png", "chlorination-cyclops.png", "chromic-acid-crusher.png",
+            "claisen-centurion.png", "conjugate-chimera.png", "copolymer-colossus.png",
+            "coupling-constant-conqueror.png", "cross-coupling-conqueror.png", "crosslink-commander.png",
+            "delocalization-overlord.png", "dept-demon.png", "diastereomer-duelist.png",
+            "diazonium-dragon.png", "diels-alder-overlord.png", "diene-demon.png",
+            "dipole-dragon.png", "disconnection-duelist.png", "dissolving-metal-dragon.png",
+            "edman-executioner.png", "electronegativity-elemental.png", "enantiomer-enchanter.png",
+            "endo-exo-executor.png", "enthalpy-elemental.png", "entropy-spectre.png",
+            "epoxide-enchanter.png", "equilibrium-sovereign.png", "fatty-acid-fiend.png",
+            "fgi-footman.png", "formal-charge-fiend.png", "friedel-crafts-fiend.png",
+            "gabriel-gargoyle.png", "gibbs-free-energy-sovereign.png", "gilman-guardian.png",
+            "grignard-guardian.png", "halide-hound.png", "hckel-herald.png",
+            "hofmann-hunter.png", "homolytic-harpy.png", "huckel-herald.png",
+            "hybridization-hydra.png", "hydroboration-harrier.png", "hydroxyl-hydra.png",
+            "imine-enamine-imp.png", "inductive-imp.png", "inversion-imp.png",
+            "isotope-inquisitor.png", "iupac-infantry.png", "keto-enol-karkinos.png",
+            "kiliani-fischer-knight.png", "lda-lancer.png", "lindlar-lancer.png",
+            "lone-pair-phantom.png", "macromolecule-monarch.png", "markovnikov-minotaur.png",
+            "mclafferty-mage.png", "meisenheimer-marauder.png", "merrifield-mage.png",
+            "meso-monarch.png", "micelle-minion.png", "molecular-ion-monarch.png",
+            "molecular-orbital-monarch.png", "monomer-marauder.png", "newman-nightmare.png",
+            "ortho-para-oracle.png", "oxirane-opener.png", "ozonolysis-overlord.png",
+            "phenol-phantom.png", "phospholipid-patriarch.png", "pi-bond-paladin.png",
+            "polypeptide-sovereign.png", "polysaccharide-pharaoh.png", "proton-pixie.png",
+            "pyranose-phantom.png", "resonance-reaver.png", "retrosynthesis-sovereign.png",
+            "robinson-annulation-regent.png", "skeletal-sentry.png", "sn1-shapeshifter.png",
+            "sn2-striker.png", "splitting-sentry.png", "steroid-shifter.png",
+            "stille-specter.png", "strecker-striker.png", "suzuki-sorcerer.png",
+            "swern-pcc-sovereign.png", "synthon-shapeshifter.png", "tautomer-troll.png",
+            "terpene-tracker.png", "tetrahedral-titan.png", "thiol-crown-tyrant.png",
+            "torsional-titan.png", "transition-state-trickster.png", "triple-bond-troll.png",
+            "valence-vanguard.png", "walden-inversion-warlord.png", "wavenumber-wraith.png",
+            "williamson-warden.png", "wittig-warlock.png", "woodward-hoffmann-wyrm.png",
+            "zaitsev-hofmann-zealot.png", "ziegler-natta-zealot.png", "zwitterion-zealot.png"
+        }
+    _ADVANCED_BOSS_NAMES = names
+    return _ADVANCED_BOSS_NAMES
+
+def is_advanced_boss_image(filename: str, root_dir: Optional[Path] = None) -> bool:
+    """Check if a filename corresponds to an advanced boss image."""
+    name = Path(filename).name
+    return name in get_advanced_boss_names(root_dir)
+
+
 

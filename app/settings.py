@@ -107,5 +107,26 @@ class Settings(BaseModel):
     root_dir: Path = ROOT_DIR
     loaded_env_file_name: Optional[str] = Field(default_factory=lambda: _loaded_env_file.name if _loaded_env_file else None)
 
+    s3_endpoint_url: str = Field(default_factory=lambda: get_config_value("S3_ENDPOINT_URL", default=""))
+    s3_region: str = Field(default_factory=lambda: get_config_value("S3_REGION", default="us-west-2"))
+    s3_access_key_id: str = Field(default_factory=lambda: get_config_value("S3_ACCESS_KEY_ID", default=""))
+    s3_secret_access_key: str = Field(default_factory=lambda: get_config_value("S3_SECRET_ACCESS_KEY", default=""))
+    s3_advanced_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_ADVANCED_BOSSES_BUCKET", default="AdvancedBosses"))
+    supabase_storage_public_url: Optional[str] = Field(default_factory=lambda: get_config_value("SUPABASE_STORAGE_PUBLIC_URL", default=None))
+    use_supabase_boss_storage: bool = Field(default_factory=lambda: get_config_value("USE_SUPABASE_BOSS_STORAGE", default=True, env_type=bool))
+
+    @property
+    def supabase_public_storage_base_url(self) -> str:
+        """Returns the public Supabase storage base URL for AdvancedBosses."""
+        if self.supabase_storage_public_url:
+            return self.supabase_storage_public_url.rstrip("/")
+        if self.s3_endpoint_url:
+            import re
+            m = re.search(r"https?://([a-zA-Z0-9_-]+)\.storage\.supabase\.co", self.s3_endpoint_url)
+            if m:
+                ref = m.group(1)
+                return f"https://{ref}.supabase.co/storage/v1/object/public/{self.s3_advanced_bosses_bucket}"
+        return f"https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/{self.s3_advanced_bosses_bucket}"
+
 
 settings = Settings()
