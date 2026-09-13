@@ -783,4 +783,32 @@ def is_default_boss_image(filename: str, root_dir: Optional[Path] = None) -> boo
     return name in get_default_boss_names(root_dir)
 
 
+_FOUNDATIONAL_BOSS_NAMES = None
+
+def get_foundational_boss_names(root_dir: Optional[Path] = None) -> set:
+    """Returns the set of image filenames belonging to the Foundational Bosses catalog."""
+    global _FOUNDATIONAL_BOSS_NAMES
+    if _FOUNDATIONAL_BOSS_NAMES is not None:
+        return _FOUNDATIONAL_BOSS_NAMES
+
+    names = set()
+    root = root_dir or settings.root_dir
+    found_dir = root / "data" / "tracks" / "foundational" / "bosses"
+    if found_dir.is_dir():
+        for p in found_dir.glob("*.*"):
+            if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".svg"}:
+                names.add(p.name)
+
+    # Static fallback set of foundational boss images
+    if not names:
+        names = {"amino-assassin.png", "orbital-ogre.png"}
+    _FOUNDATIONAL_BOSS_NAMES = names
+    return _FOUNDATIONAL_BOSS_NAMES
+
+def is_foundational_boss_image(filename: str, root_dir: Optional[Path] = None) -> bool:
+    """Check if a filename corresponds to a foundational boss image."""
+    name = Path(filename).name
+    return name in get_foundational_boss_names(root_dir)
+
+
 

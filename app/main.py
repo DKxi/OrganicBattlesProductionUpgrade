@@ -54,7 +54,12 @@ def create_app() -> FastAPI:
     application.include_router(health.router)
 
 
-    from app.domain.content.loader import load_tracks_config, is_advanced_boss_image, is_default_boss_image
+    from app.domain.content.loader import (
+        load_tracks_config,
+        is_advanced_boss_image,
+        is_default_boss_image,
+        is_foundational_boss_image,
+    )
 
     @application.get("/static/assets/bosses/{filename:path}")
     @application.get("/bosses/{filename:path}")
@@ -65,9 +70,11 @@ def create_app() -> FastAPI:
            redirects (307 Temporary Redirect) to Supabase Storage public CDN (Approach 1).
         2. If the image belongs to the Default Bosses catalog and Supabase S3 / Storage is active,
            redirects (307 Temporary Redirect) to Supabase Storage DefaultBosses public CDN.
-        3. Configured track boss folders from tracks_config.json (local files).
-        4. Fallback search through data/tracks/default/bosses, bosses/, data/bosses, static/assets/bosses
-        5. Final fallback to static/assets/bosses/boss-placeholder.svg
+        3. If the image belongs to the Foundational Bosses catalog and Supabase S3 / Storage is active,
+           redirects (307 Temporary Redirect) to Supabase Storage FoundationalBosses public CDN.
+        4. Configured track boss folders from tracks_config.json (local files).
+        5. Fallback search through data/tracks/default/bosses, bosses/, data/bosses, static/assets/bosses
+        6. Final fallback to static/assets/bosses/boss-placeholder.svg
         """
         raw_name = Path(filename).name
 
@@ -88,6 +95,15 @@ def create_app() -> FastAPI:
         # Redirect to Supabase Public Storage CDN for Default Bosses
         if settings.use_supabase_boss_storage and is_default_boss_image(raw_name, settings.root_dir):
             public_url = f"{settings.supabase_default_bosses_base_url}/{raw_name}"
+            return RedirectResponse(
+                url=public_url,
+                status_code=307,
+                headers={"Cache-Control": "public, max-age=86400"}
+            )
+
+        # Redirect to Supabase Public Storage CDN for Foundational Bosses
+        if settings.use_supabase_boss_storage and is_foundational_boss_image(raw_name, settings.root_dir):
+            public_url = f"{settings.supabase_foundational_bosses_base_url}/{raw_name}"
             return RedirectResponse(
                 url=public_url,
                 status_code=307,

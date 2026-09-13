@@ -1395,5 +1395,14 @@ The system has been updated across configuration, domain loaders, routing, envir
 - **S3 Ingestion & Resolver Tests** (`uv run pytest tests/test_s3_ingestion.py`): **6 passed in 0.34s**
 - **Migration & Schema Tests** (`uv run pytest tests/test_alembic_migrations.py`): **3 passed in 0.11s**
 - **Data Model & Boss Sync Tests** (`uv run pytest tests/test_long_term_data_model.py`): **7 passed in 0.30s**
-- **Full Regression Suite** (`uv run pytest`): **378 passed, 1 skipped in 73s**
+- **Full Regression Suite** (`uv run pytest`): **378 passed, 1 skipped in 91s**
+
+### 3. Foundational Bosses S3 Migration & Asset Decoupling
+- Connected `S3_FOUNDATIONAL_BOSSES_BUCKET=FoundationalBosses` in `local.env`, `prod.env`, and `app/settings.py`.
+- Updated all 7 foundational tracks in `data/tracks_config.json` and `static/js/tracks-config.js` to point `boss_folder` directly to:
+  `https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/FoundationalBosses`
+- Updated `app/domain/content/loader.py` and `app/main.py` to route foundational boss image requests to the Supabase CDN.
+- Updated `.gitignore` to ignore `data/tracks/` to prevent committing raw question JSONs or assets, while keeping `data/tracks_config.json` tracked.
+- Created `.dockerignore` excluding `data/tracks/` so production containers stay lightweight and bundle zero local question files.
+
 

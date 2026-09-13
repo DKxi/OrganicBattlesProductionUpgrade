@@ -112,6 +112,7 @@ class Settings(BaseModel):
     s3_access_key_id: str = Field(default_factory=lambda: get_config_value("S3_ACCESS_KEY_ID", default=""))
     s3_secret_access_key: str = Field(default_factory=lambda: get_config_value("S3_SECRET_ACCESS_KEY", default=""))
     s3_advanced_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_ADVANCED_BOSSES_BUCKET", default="AdvancedBosses"))
+    s3_foundational_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_FOUNDATIONAL_BOSSES_BUCKET", default="FoundationalBosses"))
     s3_default_bosses_bucket: str = Field(default_factory=lambda: get_config_value("S3_DEFAULT_BOSSES_BUCKET", default="DefaultBosses"))
     s3_default_tracks_bucket: str = Field(default_factory=lambda: get_config_value("S3_DEFAULT_TRACKS_BUCKET", default="DefaultTracks"))
     s3_advanced_tracks_bucket: str = Field(default_factory=lambda: get_config_value("S3_ADVANCED_TRACKS_BUCKET", default="AdvancedTracks"))
@@ -144,6 +145,19 @@ class Settings(BaseModel):
                 ref = m.group(1)
                 return f"https://{ref}.supabase.co/storage/v1/object/public/{self.s3_default_bosses_bucket}"
         return f"https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/{self.s3_default_bosses_bucket}"
+
+    @property
+    def supabase_foundational_bosses_base_url(self) -> str:
+        """Returns the public Supabase storage base URL for FoundationalBosses."""
+        if self.supabase_storage_public_url:
+            return f"{self.supabase_storage_public_url.rstrip('/')}/{self.s3_foundational_bosses_bucket}"
+        if self.s3_endpoint_url:
+            import re
+            m = re.search(r"https?://([a-zA-Z0-9_-]+)\.storage\.supabase\.co", self.s3_endpoint_url)
+            if m:
+                ref = m.group(1)
+                return f"https://{ref}.supabase.co/storage/v1/object/public/{self.s3_foundational_bosses_bucket}"
+        return f"https://aamwrwbsrmorllisdffc.supabase.co/storage/v1/object/public/{self.s3_foundational_bosses_bucket}"
 
 
 settings = Settings()
