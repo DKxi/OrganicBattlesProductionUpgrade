@@ -1572,3 +1572,127 @@ The system has been updated across configuration, domain loaders, routing, envir
 - Command: `uv run pytest -q`
 - Result: **383 passed, 1 skipped in 93.48s** (100% green).
 - Confirmed zero regressions across combat mechanics, database connection pooling, Alembic migration tests, and security middleware.
+
+---
+
+# Walkthrough: GitHub Actions Automated Linting Pipeline & Code Quality Enforcement
+
+## 1. Overview & Objectives
+- Implemented automated code quality and linting verification for continuous integration on GitHub.
+- Configured Astral `ruff` targeting Python 3.12 to enforce clean imports, syntax integrity, and bug-free code across the repository.
+- Gated pushes and pull requests to `main` with concurrency cancellation to prevent obsolete builds.
+- Ensured zero linting regressions while preserving critical framework patterns (FastAPI dependency injection re-exports in `app/api/deps.py` and CLI script runtime paths).
+
+---
+
+## 2. GitHub Actions Workflow Configuration
+Created [`.github/workflows/lint.yml`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/.github/workflows/lint.yml):
+- **Triggers**:
+  - `push: branches: [main]`
+  - `pull_request: branches: [main]`
+  - `workflow_dispatch` (manual on-demand triggers from GitHub Actions UI)
+- **Concurrency**:
+  - `group: ${{ github.workflow }}-${{ github.ref }}`
+  - `cancel-in-progress: true` (cancels superseded in-flight runs when new commits are pushed)
+- **Job Specification (`ruff-lint`)**:
+  - Environment: `ubuntu-latest`
+  - Actions:
+    1. `actions/checkout@v4` — Clones repository code.
+    2. `astral-sh/setup-uv@v5` — Installs latest `uv` with runner caching enabled.
+    3. `uv python install 3.12` — Sets up native Python 3.12 runtime.
+    4. `uvx ruff check --output-format=github .` — Executes Ruff linting with GitHub problem matchers for inline PR file annotations.
+
+```yaml
+name: Lint & Code Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ruff-lint:
+    name: Ruff Linter
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Run Ruff Linter
+        run: uvx ruff check --output-format=github .
+```
+
+---
+
+## 3. Ruff Configuration in `pyproject.toml`
+Updated [`pyproject.toml`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/pyproject.toml) with tailored project rules:
+- **Target Version**: `py312`
+- **Line Length**: `120`
+- **Exclusions**: `.git`, `.venv`, `.pytest_cache`, `__pycache__`, `migrations/versions`, `data`
+- **Rule Selection**: `E` (pycodestyle errors), `F` (Pyflakes errors), `W` (pycodestyle warnings)
+- **Ignored Codes**:
+  - `E501`: Line length limit (permits multiline SQL strings and regex schemas)
+  - `E402`: Module imports not at top of file (permits CLI scripts using `sys.path.insert(0, str(ROOT_DIR))`)
+  - `W291` & `W293`: Trailing and blank line whitespace
+- **Per-File Ignores (`[tool.ruff.lint.per-file-ignores]`)**:
+  - `app/api/deps.py`: Ignores `F401` to protect intentional re-exports (`get_db`, `resolve_content_source`) used across router dependencies.
+  - `app.py`: Ignores `F401` for application root exports.
+  - `__init__.py`: Ignores `F401` for package index re-exports.
+  - `migrations/*`: Ignores `F401` for Alembic `env.py` engine utilities.
+  - `scripts/*`: Ignores `E402` and `F401` for standalone maintenance tasks.
+  - `tests/**`: Ignores `F841`, `E702`, `F401`, and `F541` for test assertions, test fixtures, and UI mock data.
+
+---
+
+## 4. Codebase Bug Fixes & Refactoring
+1. **Consolidated `LoggingConfigRequest` in Admin Router** ([app/api/v1/admin.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/api/v1/admin.py)):
+   - Removed conflicting duplicate class definition at line 858.
+   - Enhanced unified model at line 62 with default factory and optional log file path:
+     ```python
+     class LoggingConfigRequest(BaseModel):
+         levels: Dict[str, str] = Field(default_factory=dict)
+         log_file_path: Optional[str] = None
+     ```
+2. **Fixed Duplicate Import in Combat Tests** ([tests/test_domain_combat.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/tests/test_domain_combat.py)):
+   - Removed duplicate `apply_spell_cooldown` import in `test_cooldown_management_pure_domain()`.
+3. **Cleaned Unused Imports**:
+   - Removed 31 obsolete imports across `app/api/`, `app/domain/`, `app/infrastructure/`, `app/observability/`, and `app/workers/` to achieve clean static analysis.
+
+---
+
+## 5. Automated Verification Results
+1. **Static Analysis & Linting**:
+   - Command: `uvx ruff check .`
+   - Output: `All checks passed!` (Exit code 0).
+2. **Full Regression Test Suite**:
+   - Command: `uv run pytest -q`
+   - Output: `383 passed, 1 skipped in 94.90s (0:01:34)` (100% green).
+   - Confirmed complete test suite stability across combat rules, authentication, session ownership security, curriculum loading, and PostgreSQL migration checks.
+
+---
+
+## 6. Git Version Control Status
+- **Commit `856e163` (Pushed to `origin/main`)**:
+  - `refactor(lint): resolve ruff lint errors and configure ruff in pyproject.toml`
+  - Includes all 22 code refactors, bug fixes, and `pyproject.toml` configuration.
+- **Commit `05dc943` (Committed locally on `main`)**:
+  - `ci: add GitHub Actions workflow for automated Ruff linting`
+  - Includes `.github/workflows/lint.yml`.
+  - Ready for push via `git push origin main` once the GitHub Personal Access Token is configured with the `workflow` scope.
+
