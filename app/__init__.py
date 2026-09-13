@@ -2,6 +2,8 @@
 Organic Battles - Modular Backend Package
 Re-exports the application instance and domain symbols.
 """
+__version__ = "1.0.0"
+
 import smtplib
 from app.main import app, create_app
 from app.settings import settings
@@ -46,6 +48,7 @@ sync_global_content_views()
 
 
 __all__ = [
+    "__version__",
     "app",
     "create_app",
     "settings",
