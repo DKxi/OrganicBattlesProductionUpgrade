@@ -211,16 +211,16 @@ SessionLocal = PlayerSessionLocal
 
 
 def set_session_user_context(db: DBSession, user_id: str) -> None:
-    """Set transaction-local player identity for PostgreSQL Row-Level Security (RLS)."""
+    """Set connection player identity for PostgreSQL Row-Level Security (RLS)."""
     try:
         bind = db.get_bind()
         if bind and bind.dialect.name == "postgresql":
             db.execute(
-                text("select set_config('app.current_user_id', :user_id, true)"),
+                text("select set_config('app.current_user_id', :user_id, false)"),
                 {"user_id": str(user_id)},
             )
     except Exception as exc:
-        logger.debug("Could not set transaction-local user context: %s", exc)
+        logger.debug("Could not set user context: %s", exc)
 
 
 def get_active_engine() -> Engine:
@@ -369,7 +369,7 @@ def _seed_admin_users_if_empty() -> None:
     """Seed initial default admin users (admin / admin and admin1 / admin2) if not present."""
     try:
         from app.infrastructure.database.admin_repo import AdminRepository
-        with SessionLocal() as db_session:
+        with AdminSessionLocal() as db_session:
             repo = AdminRepository(db_session)
             repo.seed_default_admins()
     except Exception as exc:
@@ -400,6 +400,12 @@ def get_player_db() -> Generator[DBSession, None, None]:
     try:
         yield db
     finally:
+        try:
+            bind = db.get_bind()
+            if bind and bind.dialect.name == "postgresql":
+                db.execute(text("select set_config('app.current_user_id', '', false)"))
+        except Exception:
+            pass
         db.close()
 
 

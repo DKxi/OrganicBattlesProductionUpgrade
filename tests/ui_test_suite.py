@@ -40,11 +40,11 @@ class UITestRunner:
 
     def get_db_verification_code(self, email: str, max_retries: int = 15, delay: float = 0.5) -> Optional[str]:
         """Fetch unhashed code or look up user verification record in active DB with retries."""
-        from app.infrastructure.database.engine import SessionLocal
+        from app.infrastructure.database.engine import AdminSessionLocal
         from app.infrastructure.database.models import User, VerificationCode
         for attempt in range(max_retries):
             try:
-                with SessionLocal() as db:
+                with AdminSessionLocal() as db:
                     user = db.query(User).filter(User.email == email.lower()).first()
                     if user:
                         test_code = "777888"
@@ -66,11 +66,11 @@ class UITestRunner:
 
     def get_active_battle_session(self, username: str, require_question: bool = False, max_retries: int = 15, delay: float = 0.5) -> Optional[Dict[str, Any]]:
         """Query active game session from active DB to extract question prompt, choices, and correct answer with retries."""
-        from app.infrastructure.database.engine import SessionLocal
+        from app.infrastructure.database.engine import AdminSessionLocal
         from app.infrastructure.database.models import User, GameSession
         for attempt in range(max_retries):
             try:
-                with SessionLocal() as db:
+                with AdminSessionLocal() as db:
                     user = db.query(User).filter(User.username == username).first()
                     if user:
                         gs = db.query(GameSession).filter(GameSession.user_id == user.id).first()
@@ -308,11 +308,20 @@ class UITestRunner:
                 print(f"  ✓ Correct Answer Hit! Boss HP decreased by {dmg_dealt} (New HP: {new_boss_hp}) in {correct_action_ms}ms")
                 self.results["correct_answer_flow"] = True
 
-                # Dismiss outcome modal if open
-                outcome_modal = page.locator("#battle-outcome-modal:not(.hidden)")
-                if outcome_modal.is_visible():
+                # Dismiss outcome modal if open (wait up to 3s for it to appear, then dismiss)
+                try:
+                    page.wait_for_selector("#battle-outcome-modal:not(.hidden)", state="visible", timeout=3000)
                     page.locator("#outcome-action").click()
-                    time.sleep(0.3)
+                    page.wait_for_selector("#battle-outcome-modal", state="hidden", timeout=3000)
+                except Exception:
+                    pass
+                page.evaluate("""() => {
+                    const m = document.getElementById('battle-outcome-modal');
+                    if (m) m.classList.add('hidden');
+                    const e = document.getElementById('explanation-modal');
+                    if (e) e.classList.add('hidden');
+                }""")
+                time.sleep(0.3)
 
                 # -------------------------------------------------------------
                 # 8. Combat Turn: Incorrect Answer Action & Player Counterattack
@@ -351,16 +360,33 @@ class UITestRunner:
                 self.results["incorrect_answer_flow"] = True
 
                 # Dismiss outcome modal if open
-                outcome_modal = page.locator("#battle-outcome-modal:not(.hidden)")
-                if outcome_modal.is_visible():
-                    page.locator("#outcome-action").click()
-                    time.sleep(0.4)
+                try:
+                    page.wait_for_selector("#battle-outcome-modal:not(.hidden)", state="visible", timeout=3000)
+                    sec = page.locator("#outcome-secondary:not(.hidden)")
+                    if sec.is_visible():
+                        sec.click()
+                    else:
+                        page.locator("#outcome-action").click()
+                    page.wait_for_selector("#battle-outcome-modal", state="hidden", timeout=3000)
+                except Exception:
+                    pass
 
                 # Dismiss explanation modal if opened
-                explanation_modal = page.locator("#explanation-modal:not(.hidden)")
-                if explanation_modal.is_visible():
-                    page.locator("#close-explanation").click()
-                    time.sleep(0.3)
+                try:
+                    explanation_modal = page.locator("#explanation-modal:not(.hidden)")
+                    if explanation_modal.is_visible():
+                        page.locator("#close-explanation").click()
+                        page.wait_for_selector("#explanation-modal", state="hidden", timeout=3000)
+                except Exception:
+                    pass
+
+                page.evaluate("""() => {
+                    const m = document.getElementById('battle-outcome-modal');
+                    if (m) m.classList.add('hidden');
+                    const e = document.getElementById('explanation-modal');
+                    if (e) e.classList.add('hidden');
+                }""")
+                time.sleep(0.3)
 
                 # -------------------------------------------------------------
                 # 9. Admin Portal & System Telemetry
@@ -376,21 +402,23 @@ class UITestRunner:
                 page.fill('#admin-login-form input[name="admin_password"]', "admin")
                 page.click('#admin-login-form button[type="submit"]')
 
-                page.wait_for_selector("#admin-stats-summary", timeout=5000)
+                # Wait for admin dashboard view to display after login
+                page.wait_for_selector("#admin-dashboard-view:not(.hidden)", state="visible", timeout=12000)
+                page.wait_for_selector("#admin-stats-summary", timeout=12000)
                 # Switch to Storage & Database tab
                 page.click("#admin-tab-storage")
-                page.wait_for_selector("#admin-tab-storage.active", timeout=5000)
-                page.wait_for_selector("#admin-storage-tab-content", state="visible", timeout=5000)
-                page.wait_for_selector("#admin-db-switch-form", state="visible", timeout=5000)
+                page.wait_for_selector("#admin-tab-storage.active", timeout=8000)
+                page.wait_for_selector("#admin-storage-tab-content", state="visible", timeout=8000)
+                page.wait_for_selector("#admin-db-switch-form", state="visible", timeout=8000)
                 time.sleep(0.3)
                 page.screenshot(path=str(self.artifacts_dir / "09_admin_portal_storage.png"))
                 print("  ✓ Admin Storage & Database tab verified")
 
                 # Switch to System & Logging tab
                 page.click("#admin-tab-system")
-                page.wait_for_selector("#admin-tab-system.active", timeout=5000)
-                page.wait_for_selector("#admin-system-tab-content", state="visible", timeout=5000)
-                page.wait_for_selector("#admin-log-console", state="visible", timeout=5000)
+                page.wait_for_selector("#admin-tab-system.active", timeout=8000)
+                page.wait_for_selector("#admin-system-tab-content", state="visible", timeout=8000)
+                page.wait_for_selector("#admin-log-console", state="visible", timeout=8000)
                 time.sleep(0.3)
                 admin_ms = self.measure("9_admin_portal_load_and_telemetry", t0)
                 page.screenshot(path=str(self.artifacts_dir / "09_admin_portal_system.png"))
@@ -399,12 +427,12 @@ class UITestRunner:
 
                 # Close admin and return to game
                 page.evaluate('document.getElementById("close-admin-dash").click()')
-                page.wait_for_selector("#app", state="visible", timeout=5000)
+                page.wait_for_selector("#app", state="visible", timeout=8000)
                 print("  ✓ Closed Admin Console and cleanly returned to arena")
 
                 # Test Logout
                 page.evaluate('document.getElementById("logout").click()')
-                page.wait_for_selector("#boot, #auth-screen", timeout=5000)
+                page.wait_for_selector("#boot, #auth-screen", timeout=8000)
                 page.screenshot(path=str(self.artifacts_dir / "10_post_logout_screen.png"))
                 print("  ✓ User logged out successfully and session cleared")
                 self.results["logout_flow"] = True

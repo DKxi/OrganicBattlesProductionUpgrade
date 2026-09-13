@@ -80,7 +80,7 @@ TO ob_player_api;
 -- Scoped DML on player accounts, verification, sessions, and progress
 GRANT SELECT, INSERT, UPDATE ON TABLE public."OB_users" TO ob_player_api;
 GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE public."OB_verification_codes", public."OB_auth_sessions" TO ob_player_api;
-GRANT SELECT, INSERT, UPDATE ON TABLE public."OB_game_sessions", public."OB_player_question_progress" TO ob_player_api;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE public."OB_game_sessions", public."OB_player_question_progress" TO ob_player_api;
 GRANT SELECT, INSERT ON TABLE public."OB_answer_attempts" TO ob_player_api;
 
 -- Sequence access for tables where player routes insert records
@@ -200,6 +200,11 @@ CREATE POLICY player_update_own_game_session ON public."OB_game_sessions"
     USING (user_id::text = current_setting('app.current_user_id', true))
     WITH CHECK (user_id::text = current_setting('app.current_user_id', true));
 
+DROP POLICY IF EXISTS player_delete_own_game_session ON public."OB_game_sessions";
+CREATE POLICY player_delete_own_game_session ON public."OB_game_sessions"
+    FOR DELETE TO ob_player_api
+    USING (user_id::text = current_setting('app.current_user_id', true));
+
 DROP POLICY IF EXISTS admin_manage_game_sessions ON public."OB_game_sessions";
 CREATE POLICY admin_manage_game_sessions ON public."OB_game_sessions"
     FOR ALL TO ob_admin_api
@@ -213,7 +218,7 @@ DROP POLICY IF EXISTS player_select_own_user ON public."OB_users";
 CREATE POLICY player_select_own_user ON public."OB_users"
     FOR SELECT TO ob_player_api
     USING (
-        current_setting('app.current_user_id', true) IS NULL OR
+        NULLIF(current_setting('app.current_user_id', true), '') IS NULL OR
         id::text = current_setting('app.current_user_id', true)
     );
 
@@ -225,8 +230,14 @@ CREATE POLICY player_insert_own_user ON public."OB_users"
 DROP POLICY IF EXISTS player_update_own_user ON public."OB_users";
 CREATE POLICY player_update_own_user ON public."OB_users"
     FOR UPDATE TO ob_player_api
-    USING (id::text = current_setting('app.current_user_id', true))
-    WITH CHECK (id::text = current_setting('app.current_user_id', true));
+    USING (
+        NULLIF(current_setting('app.current_user_id', true), '') IS NULL OR
+        id::text = current_setting('app.current_user_id', true)
+    )
+    WITH CHECK (
+        NULLIF(current_setting('app.current_user_id', true), '') IS NULL OR
+        id::text = current_setting('app.current_user_id', true)
+    );
 
 DROP POLICY IF EXISTS admin_manage_users ON public."OB_users";
 CREATE POLICY admin_manage_users ON public."OB_users"
@@ -241,11 +252,11 @@ DROP POLICY IF EXISTS player_manage_auth_sessions ON public."OB_auth_sessions";
 CREATE POLICY player_manage_auth_sessions ON public."OB_auth_sessions"
     FOR ALL TO ob_player_api
     USING (
-        current_setting('app.current_user_id', true) IS NULL OR
+        NULLIF(current_setting('app.current_user_id', true), '') IS NULL OR
         user_id::text = current_setting('app.current_user_id', true)
     )
     WITH CHECK (
-        current_setting('app.current_user_id', true) IS NULL OR
+        NULLIF(current_setting('app.current_user_id', true), '') IS NULL OR
         user_id::text = current_setting('app.current_user_id', true)
     );
 
@@ -273,6 +284,11 @@ CREATE POLICY player_update_progress ON public."OB_player_question_progress"
     FOR UPDATE TO ob_player_api
     USING (user_id::text = current_setting('app.current_user_id', true))
     WITH CHECK (user_id::text = current_setting('app.current_user_id', true));
+
+DROP POLICY IF EXISTS player_delete_own_progress ON public."OB_player_question_progress";
+CREATE POLICY player_delete_own_progress ON public."OB_player_question_progress"
+    FOR DELETE TO ob_player_api
+    USING (user_id::text = current_setting('app.current_user_id', true));
 
 DROP POLICY IF EXISTS admin_manage_progress ON public."OB_player_question_progress";
 CREATE POLICY admin_manage_progress ON public."OB_player_question_progress"

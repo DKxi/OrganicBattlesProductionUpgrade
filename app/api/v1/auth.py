@@ -62,11 +62,19 @@ def signup(request: Request, body: SignupRequest, db: DBSession = Depends(get_db
     auth_repo = AuthRepository(db)
 
     clean_username = body.username.strip().lower()
-    from app.infrastructure.database.admin_repo import AdminRepository
-    admin_repo = AdminRepository(db)
-    if admin_repo.get_by_username(clean_username) or clean_username in ("admin", "admin1", "root", "administrator"):
+    if clean_username in ("admin", "admin1", "root", "administrator", "support", "staff", "moderator"):
         logger.warning("Signup rejected: username '%s' is reserved for administrators", body.username)
         raise HTTPException(400, "Username is reserved for administrators and cannot be registered as a player")
+    try:
+        from app.infrastructure.database.engine import AdminSessionLocal
+        from app.infrastructure.database.admin_repo import AdminRepository
+        with AdminSessionLocal() as admin_db:
+            admin_repo = AdminRepository(admin_db)
+            if admin_repo.get_by_username(clean_username):
+                logger.warning("Signup rejected: username '%s' is reserved for administrators", body.username)
+                raise HTTPException(400, "Username is reserved for administrators and cannot be registered as a player")
+    except Exception as exc:
+        logger.debug("Admin username reservation check note: %s", exc)
 
     if user_repo.get_by_email(email):
         logger.warning("Signup conflict: email already registered (%s)", email)
@@ -112,6 +120,9 @@ def verify_code(request: Request, body: VerifyRequest, response: Response, db: D
         raise HTTPException(400, "Invalid confirmation code")
 
     auth_repo.mark_code_used(record.id)
+
+    from app.infrastructure.database.engine import set_session_user_context
+    set_session_user_context(db, record.user_id)
 
     user = user_repo.get_by_id(record.user_id)
     if not user:
@@ -161,6 +172,9 @@ def login(request: Request, body: LoginRequest, response: Response, db: DBSessio
     if not user.verified:
         logger.warning("Login rejected for unverified account: %s", user.username)
         raise HTTPException(403, "Account not verified. Please verify your email first.")
+
+    from app.infrastructure.database.engine import set_session_user_context
+    set_session_user_context(db, user.id)
 
     token = generate_session_token()
     thash = code_hash(token)
@@ -227,7 +241,11 @@ def logout(
     if raw:
         thash = code_hash(raw)
         auth_repo = AuthRepository(db)
-        auth_repo.delete_session(thash)
+        session_row = auth_repo.get_session(thash)
+        if session_row:
+            from app.infrastructure.database.engine import set_session_user_context
+            set_session_user_context(db, session_row.user_id)
+            auth_repo.delete_session(thash)
         logger.info("Session destroyed on logout")
 
     response.delete_cookie("session_token")
