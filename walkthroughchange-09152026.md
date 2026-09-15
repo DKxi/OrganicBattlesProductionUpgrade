@@ -68,10 +68,14 @@ Updated **[app/api/deps.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattle
 ### 2.5 Documentation Artifacts & References
 - Created **[changesforgunicorn.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/changesforgunicorn.md)**: Detailed migration roadmap, architectural analysis, operational guidelines, and verification blueprint.
 - Created **[walkthroughchange-09152026.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/walkthroughchange-09152026.md)**: This document.
+- Created **[alembichelp.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/alembichelp.md)**: Comprehensive guide on Alembic schema migrations, application usage, and safe operation against network-separated Supabase databases.
+- Created **[QuestionsContentUpdate.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdate.md)**: Step-by-step instructions for updating questions/answers from `chapter_xx.json` without schema changes, and Admin Console gap analysis.
+- Created **[QuestionsContentUpdateS3.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdateS3.md)**: End-to-end guide on S3/Supabase storage updates, architectural rationale for the 2-step trigger workflow, and zero-downtime cache invalidation.
 - Updated **[README.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/README.md)**: Added Gunicorn + UvicornWorker to Technology Stack Matrix, added production server launch instructions, Docker execution commands, and updated automated test suite totals to 391.
 - Updated **[cookbook.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/cookbook.md)**: Added Production Web Server layer to Technology Stack Matrix with multi-worker details and test count updates.
 - Updated **[startupsteps.txt](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/startupsteps.txt)**: Added production multi-worker execution command alongside local development reload commands.
-- Updated **[todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/todo.md)**: Marked Gunicorn supervision active with database session persistence.
+- Updated **[todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/todo.md)**: Completed comprehensive status audit marking 77 `[FIXED]` and 15 `[TODO]` items.
+
 
 ---
 
@@ -199,4 +203,42 @@ Reference Document: [todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBatt
    - Connect to AWS Secrets Manager or HashiCorp Vault in place of `.env` files for production credential injection.
 7. **Cloud Infrastructure & Autoscaling**:
    - Configure Cloudflare CDN / load balancer, container orchestration autoscaling (ECS / Cloud Run / Kubernetes HPA), automated database point-in-time recovery restore drills, and CI/CD blue-green deployment pipelines.
+
+---
+
+## 7. Database Migration Safety & Content Ingestion Operational Guides
+
+### 7.1 Alembic Schema Migrations & Remote Supabase Safety
+Reference Document: [alembichelp.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/alembichelp.md)
+
+- **Zero DDL on Server Startup**: The application factory `create_app()` in [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py) explicitly does **not** execute DDL migrations or `create_all()` when the server boots.
+- **Least-Privilege Runtime Mode**: Gunicorn and Uvicorn workers execute only application queries (`SELECT`, `INSERT`, `UPDATE`), ensuring zero risk of schema mutation on live databases.
+- **Existing Supabase Data is 100% Safe**: When connecting to a physically network-separated Supabase host, the application reads existing records in `OB_tracks`, `OB_curricula`, `OB_content_releases`, `OB_questions`, and `OB_users` without dropping, truncating, or altering existing data.
+- **Additive & Non-Destructive Migrations**: All 9 Alembic revisions in `migrations/versions/` use `IF NOT EXISTS` constructs and state tracking via `alembic_version`.
+
+### 7.2 Question & Answer Content Updates Without Schema Changes
+Reference Document: [QuestionsContentUpdate.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdate.md)
+
+- **Atomic Content Release Architecture**: Question updates from `chapter_xx.json` are ingested into draft releases in `OB_content_releases`, validated for integrity, and atomically published.
+- **Zero Downtime & Zero Migrations**: Updates to questions, options, answers, explanations, damage spells, boss health, or boss names never alter database table schemas.
+- **Admin Console Capabilities**:
+  - Batch re-ingestion trigger (`POST /api/v1/admin/questions/ingest`).
+  - Individual question search & inline editing (`PUT /api/v1/admin/questions/{id}`).
+  - Question reordering with atomic release publishing.
+  - One-click release rollback.
+- **Feature Gap Analysis**: Documented future enhancements for in-browser drag-and-drop file upload, single-chapter update scoping, and pre-flight schema diff validation.
+
+### 7.3 S3 / Object Storage Content Update Workflow
+Reference Document: [QuestionsContentUpdateS3.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdateS3.md)
+
+- **The Core Question Answered**: Uploading a `chapter_xx.json` file to S3 does **not** passively auto-update live gameplay on its own.
+- **The Intentional 2-Step Workflow**:
+  1. **Upload to S3**: Place the file at `s3://<bucket>/tracks/<track_id>/chapter_xx.json` (via AWS CLI, Supabase Storage dashboard, or script).
+  2. **Trigger Ingestion**: Click **START BATCH INGESTION** in the Admin Console (or run `uv run python scripts/ingest_questions_to_postgres.py --track <id> --source s3`).
+- **Architectural Rationale**:
+  - *Partial Upload Guard*: Prevents players from seeing half-uploaded or incomplete chapters.
+  - *Sub-2ms Gameplay Latency*: Live combat serves from PostgreSQL and cluster RAM cache rather than incurring 100–300ms S3 network latency on every turn.
+  - *S3 API Cost Elimination*: Eliminates millions of S3 `GET` request fees.
+  - *Cluster Cache Invalidation*: Triggering ingestion executes `shared_track_cache.invalidate_track()`, notifying all Gunicorn workers simultaneously with zero downtime.
+
 
