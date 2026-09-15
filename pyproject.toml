@@ -20,6 +20,7 @@ dependencies = [
     "slowapi>=0.1.9",
     "eval_type_backport",
     "boto3>=1.43.93",
+    "gunicorn>=23.0.0",
 ]
 
 [tool.pytest.ini_options]

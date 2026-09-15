@@ -20,9 +20,10 @@ import sys
 
 from app.infrastructure.cache.track_cache import BoundedTrackCache
 
-# Initialize rate limiter (disabled automatically during pytest test runs)
+# Initialize rate limiter (distributed via Redis when REDIS_URL is configured, in-memory otherwise; disabled in tests)
 limiter = Limiter(
     key_func=get_remote_address,
+    storage_uri=settings.redis_url if settings.redis_url else "memory://",
     enabled=False if ("pytest" in sys.modules or os.getenv("TESTING") == "1" or os.getenv("PYTEST_CURRENT_TEST")) else True,
 )
 
