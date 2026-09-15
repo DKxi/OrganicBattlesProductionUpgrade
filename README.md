@@ -24,6 +24,11 @@
 7. [Design Pros and Cons](#7-design-pros-and-cons)
 8. [Points to Remember & Operational Guidelines](#8-points-to-remember--operational-guidelines)
 9. [Local Development, Environment Setup & Testing](#9-local-development-environment-setup--testing)
+10. [Database Migration Safety & Content Ingestion Operational Guides](#10-database-migration-safety--content-ingestion-operational-guides)
+   - [10.1 Alembic Schema Migrations & Remote Supabase Safety](#101-alembic-schema-migrations--remote-supabase-safety)
+   - [10.2 Question & Answer Content Updates (`chapter_xx.json`)](#102-question--answer-content-updates-chapter_xxjson)
+   - [10.3 S3 / Object Storage Content Update Workflow](#103-s3--object-storage-content-update-workflow)
+   - [10.4 Architecture Scalability Scorecard & Roadmap Status](#104-architecture-scalability-scorecard--roadmap-status)
 
 ---
 
@@ -595,3 +600,48 @@ uv run pytest tests/test_combat_concurrency_and_optimistic_locking.py -v
 # Run targeted battle retry and advance tests
 uv run pytest tests/test_battle_retry_and_restart.py -v
 ```
+
+---
+
+## 10. Database Migration Safety & Content Ingestion Operational Guides
+
+Detailed standalone guides have been established to ensure safe production database operations, zero-downtime content delivery, and architectural auditability:
+
+### 10.1 Alembic Schema Migrations & Remote Supabase Safety
+*Reference Document: [alembichelp.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/alembichelp.md)*
+
+- **Zero DDL on Server Boot**: The application factory `create_app()` in [app/main.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/main.py) explicitly does **not** execute DDL migrations or `create_all()` when the server boots.
+- **Least-Privilege Runtime Mode**: Gunicorn and Uvicorn workers execute only application queries (`SELECT`, `INSERT`, `UPDATE`), ensuring zero risk of accidental schema alterations on production databases.
+- **Existing Supabase Data is 100% Preserved**: When connecting to a physically network-separated Supabase host, the application reads existing records in `OB_tracks`, `OB_curricula`, `OB_content_releases`, `OB_questions`, and `OB_users` without dropping, truncating, or altering existing data.
+- **Additive & Non-Destructive Migrations**: All 9 Alembic revisions in `migrations/versions/` use `IF NOT EXISTS` constructs and state tracking via the `alembic_version` table.
+
+### 10.2 Question & Answer Content Updates (`chapter_xx.json`)
+*Reference Document: [QuestionsContentUpdate.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdate.md)*
+
+- **Atomic Content Release Architecture**: Question updates from `chapter_xx.json` are ingested into draft releases in `OB_content_releases`, validated for integrity, and atomically published.
+- **Zero Downtime & Zero Migrations**: Updates to questions, options, answers, explanations, damage spells, boss health, or boss names never alter database table schemas.
+- **Admin Console Capabilities**:
+  - Batch re-ingestion trigger (`POST /api/v1/admin/questions/ingest`).
+  - Individual question search & inline editing (`PUT /api/v1/admin/questions/{id}`).
+  - Question reordering with atomic release publishing.
+  - One-click release rollback.
+- **Feature Gap Analysis**: Documents future enhancements for in-browser drag-and-drop file upload, single-chapter update scoping, and pre-flight schema diff validation.
+
+### 10.3 S3 / Object Storage Content Update Workflow
+*Reference Document: [QuestionsContentUpdateS3.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdateS3.md)*
+
+- **Passive S3 Drops Do Not Auto-Update Live Gameplay**: Uploading a `chapter_xx.json` file to S3 does not auto-update live gameplay on its own. Content is served from PostgreSQL and RAM caches for sub-2ms combat latency and S3 cost control.
+- **The Intentional 2-Step Workflow**:
+  1. **Upload to S3**: Place the file at `s3://<bucket>/tracks/<track_id>/chapter_xx.json` (via AWS CLI, Supabase Storage dashboard, or script).
+  2. **Trigger Ingestion**: Click **START BATCH INGESTION** in the Admin Console (or run `uv run python scripts/ingest_questions_to_postgres.py --track <id> --source s3`).
+- **Architectural Protections**:
+  - *Partial Upload Guard*: Prevents players from seeing half-uploaded or incomplete chapters.
+  - *Cluster Cache Invalidation*: Triggering ingestion executes `shared_track_cache.invalidate_track()`, notifying all Gunicorn workers simultaneously with zero downtime.
+
+### 10.4 Architecture Scalability Scorecard & Roadmap Status
+*Reference Document: [todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/todo.md) & [walkthroughchange-09152026.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/walkthroughchange-09152026.md)*
+
+- **Audit Metrics**: 77 items `[FIXED]` vs 15 items `[TODO]` (**83.7%** production readiness achieved).
+- **Key Completed Subsystems**: In-memory state externalization to PostgreSQL `OB_sessions`, optimistic locking (`state_version`), Gunicorn multi-worker orchestration (`gunicorn.conf.py`), Alembic migrations, S3 CDN boss decoupling, and 391 green automated tests.
+- **Pending Roadmap**: Background email outbox task worker, self-service password reset, dedicated CSRF token header, non-root Docker user, and cloud secret manager integration.
+
