@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Organic Battles V4P</title>
+  <link rel="icon" type="image/png" href="/avatars/logo-4.png">
+  <link rel="apple-touch-icon" href="/avatars/logo-4.png">
 
-  <link rel="stylesheet" href="/static/css/game.css?v=21">
+  <link rel="stylesheet" href="/static/css/game.css?v=22">
 
 
 
@@ -15,6 +17,9 @@
 <body>
 <main id="app">
   <div id="boot">
+    <div class="boot-logo-wrap">
+      <img src="/avatars/logo-4.png" alt="Organic Battles" class="boot-logo">
+    </div>
     <div class="sigil">◈</div>
     <div class="eyebrow">ORGO // FIELD STUDY 02</div>
     <h1>ORGANIC<br><span>BATTLES</span></h1>
@@ -29,6 +34,9 @@
 
   <section id="auth-screen" class="hidden">
     <div class="auth-card">
+      <div class="auth-logo-wrap">
+        <img src="/avatars/logo-4.png" alt="Organic Battles" class="auth-card-logo">
+      </div>
       <div class="eyebrow">ORGO // PLAYER IDENTITY</div>
       <h2 id="auth-title">WELCOME, ALCHEMIST</h2>
       <p id="auth-copy">Log in to continue your journey, or create a verified account.</p>
@@ -73,7 +81,7 @@
   <section id="track-screen" class="hidden">
     <div class="track-screen-container">
       <header class="track-header">
-        <div class="brand">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
+        <div class="brand"><img src="/avatars/logo-4.png" alt="Logo" class="brand-logo-icon">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
         <div class="track-header-meta">
           <span class="track-setup-tag">BATTLE SETUP // 02</span>
           <div id="track-player-badge" class="track-player-badge" title="Selected Companion">
@@ -252,7 +260,7 @@
 
   <div id="game-shell" class="hidden">
     <header>
-      <div class="brand">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
+      <div class="brand"><img src="/avatars/logo-4.png" alt="Logo" class="brand-logo-icon">ORGANIC <span>BATTLES</span> <i>V4P</i></div>
 
       <div id="chapter-label"></div>
       <button id="view-explanation" class="header-help hidden" type="button">VIEW EXPLANATION</button>
@@ -295,9 +303,12 @@
     <!-- Admin Dashboard Sub-view -->
     <div id="admin-dashboard-view" class="admin-dashboard-card hidden">
       <header class="admin-dash-header">
-        <div>
-          <div class="eyebrow">ARCHIVE SYSTEM // USER MANAGEMENT</div>
-          <h2>USER CONFIGURATION PANEL</h2>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <img src="/avatars/logo-4.png" alt="Logo" class="admin-header-logo">
+          <div>
+            <div class="eyebrow">ARCHIVE SYSTEM // USER MANAGEMENT</div>
+            <h2>USER CONFIGURATION PANEL</h2>
+          </div>
         </div>
         <div class="admin-dash-actions">
           <button id="admin-refresh-btn" class="secondary" type="button">↻ REFRESH</button>
@@ -1116,7 +1127,7 @@
 
         <!-- Logo / Title -->
         <div class="credits-title-block">
-          <div class="credits-sigil">◈</div>
+          <img src="/avatars/logo-4.png" alt="Organic Battles" class="credits-logo">
           <h1 class="credits-main-title">ORGANIC BATTLES</h1>
           <div class="credits-subtitle">A CHEMISTRY-FANTASY ADVENTURE</div>
           <div class="credits-version">VERSION 4P // PRODUCTION UPGRADE</div>

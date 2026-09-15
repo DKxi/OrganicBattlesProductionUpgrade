@@ -1332,3 +1332,78 @@
   color: var(--muted);
 }
 
+/* ==========================================================================
+   Game Logo Styling (/avatars/logo-4.png)
+   ========================================================================== */
+.boot-logo-wrap {
+  margin: 0 auto 18px;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+}
+.boot-logo {
+  max-width: min(85vw, 360px);
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(54, 229, 208, 0.45)) drop-shadow(0 12px 25px rgba(0, 0, 0, 0.6));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  animation: floatLogo 5s ease-in-out infinite;
+}
+.boot-logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 45px rgba(54, 229, 208, 0.7)) drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
+}
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-logo-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(54, 229, 208, 0.5));
+  border-radius: 6px;
+  transition: transform 0.25s ease;
+}
+.brand:hover .brand-logo-icon {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.auth-logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.auth-card-logo {
+  max-width: min(75vw, 220px);
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(54, 229, 208, 0.4));
+  transition: transform 0.3s ease;
+}
+.auth-card-logo:hover {
+  transform: scale(1.04);
+}
+
+.admin-header-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(54, 229, 208, 0.4));
+  border-radius: 8px;
+}
+
+.credits-logo {
+  max-width: min(80vw, 300px);
+  height: auto;
+  margin: 0 auto 16px;
+  display: block;
+  filter: drop-shadow(0 0 25px rgba(54, 229, 208, 0.5));
+  animation: floatLogo 5s ease-in-out infinite;
+}
+
+
