@@ -239,6 +239,22 @@ Reference Document: [QuestionsContentUpdateS3.md](file:///Users/nkoneru/Download
   - *Partial Upload Guard*: Prevents players from seeing half-uploaded or incomplete chapters.
   - *Sub-2ms Gameplay Latency*: Live combat serves from PostgreSQL and cluster RAM cache rather than incurring 100–300ms S3 network latency on every turn.
   - *S3 API Cost Elimination*: Eliminates millions of S3 `GET` request fees.
-  - *Cluster Cache Invalidation*: Triggering ingestion executes `shared_track_cache.invalidate_track()`, notifying all Gunicorn workers simultaneously with zero downtime.
+---
+
+## 8. Game Logo (`logo-4.png`) UI Integration
+
+### 8.1 Asset Placement & Serving
+- Placed and tracked [`avatars/logo-4.png`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/avatars/logo-4.png) and mirrored to [`static/assets/logo-4.png`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/assets/logo-4.png).
+- Served dynamically over HTTP at `/avatars/logo-4.png` (via FastAPI static mounts).
+
+### 8.2 UI Placements & Styling ([static/css/game.css](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/css/game.css))
+1. **Favicon & Apple Touch Icon**: Linked in `<head>` of [templates/index.html](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/templates/index.html).
+2. **Boot Landing Screen**: Added `.boot-logo` featuring smooth floating animation (`@keyframes floatLogo`) and cyan glow filter drop shadows.
+3. **Player Authentication Card**: Added `.auth-card-logo` at the top of the login/signup modal.
+4. **Track Selection Header**: Integrated `.brand-logo-icon` next to the `ORGANIC BATTLES V4P` brand header.
+5. **Combat Arena Header**: Integrated `.brand-logo-icon` in the battle game shell navigation bar.
+6. **Admin Configuration Header**: Integrated `.admin-header-logo` in the user configuration dashboard.
+7. **Credits Modal**: Prominently featured `.credits-logo` above the game production credits.
+
 
 
