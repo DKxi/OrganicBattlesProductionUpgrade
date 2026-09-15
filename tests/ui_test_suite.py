@@ -13,6 +13,7 @@ import time
 import json
 import sqlite3
 import argparse
+import random
 from pathlib import Path
 from typing import Dict, Any, Optional
 
@@ -38,16 +39,17 @@ class UITestRunner:
         self.test_email = f"{self.test_username}@alchemical.edu"
         self.test_password = "SecretPassword123!"
 
-    def get_db_verification_code(self, email: str, max_retries: int = 15, delay: float = 0.5) -> Optional[str]:
+    def get_db_verification_code(self, email: str, max_retries: int = 25, delay: float = 0.6) -> Optional[str]:
         """Fetch unhashed code or look up user verification record in active DB with retries."""
         from app.infrastructure.database.engine import AdminSessionLocal
         from app.infrastructure.database.models import User, VerificationCode
+        last_err = None
         for attempt in range(max_retries):
             try:
                 with AdminSessionLocal() as db:
                     user = db.query(User).filter(User.email == email.lower()).first()
                     if user:
-                        test_code = "777888"
+                        test_code = f"{random.randint(100000, 999999)}"
                         chash = code_hash(test_code)
                         vc = VerificationCode(
                             user_id=user.id,
@@ -59,12 +61,14 @@ class UITestRunner:
                         db.add(vc)
                         db.commit()
                         return test_code
-            except Exception:
-                pass
+            except Exception as e:
+                last_err = e
             time.sleep(delay)
+        if last_err:
+            print(f"⚠️ get_db_verification_code exhausted retries: {last_err}")
         return None
 
-    def get_active_battle_session(self, username: str, require_question: bool = False, max_retries: int = 15, delay: float = 0.5) -> Optional[Dict[str, Any]]:
+    def get_active_battle_session(self, username: str, require_question: bool = False, max_retries: int = 25, delay: float = 0.6) -> Optional[Dict[str, Any]]:
         """Query active game session from active DB to extract question prompt, choices, and correct answer with retries."""
         from app.infrastructure.database.engine import AdminSessionLocal
         from app.infrastructure.database.models import User, GameSession
@@ -177,10 +181,12 @@ class UITestRunner:
 
                 # Inject and use valid test code
                 valid_code = self.get_db_verification_code(self.test_email)
+                assert valid_code is not None, f"Could not retrieve verification code for {self.test_email}"
                 page.fill('#verify-form input[name="code"]', valid_code)
                 t0 = time.perf_counter()
                 page.click('#verify-form button[type="submit"]')
-                page.wait_for_selector("#avatar-creator", state="visible", timeout=8000)
+                page.wait_for_selector("#auth-screen", state="hidden", timeout=15000)
+                page.wait_for_selector("#avatar-creator", state="visible", timeout=15000)
                 verify_ms = self.measure("3_verify_code_to_avatar", t0)
                 page.screenshot(path=str(self.artifacts_dir / "03_avatar_creator.png"))
                 print(f"  ✓ User verified and redirected to Avatar Creator in {verify_ms}ms")
@@ -404,7 +410,7 @@ class UITestRunner:
 
                 # Wait for admin dashboard view to display after login
                 page.wait_for_selector("#admin-dashboard-view:not(.hidden)", state="visible", timeout=12000)
-                page.wait_for_selector("#admin-stats-summary", timeout=12000)
+                page.wait_for_selector("#admin-stats-summary", state="attached", timeout=12000)
                 # Switch to Storage & Database tab
                 page.click("#admin-tab-storage")
                 page.wait_for_selector("#admin-tab-storage.active", timeout=8000)

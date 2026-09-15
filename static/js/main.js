@@ -897,6 +897,7 @@ async function loadAdminDashboard() {
   adminUsersData = usersResp.users || [];
   adminSessionsData = sessionsResp.sessions || [];
 
+  switchAdminTab(currentAdminTab || 'users');
   renderAdminStatus();
   renderAdminUsers($('#admin-user-search')?.value || '');
   renderAdminSessions($('#admin-session-search')?.value || '');

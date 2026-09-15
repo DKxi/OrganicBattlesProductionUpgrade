@@ -247,6 +247,7 @@ Reference Document: [QuestionsContentUpdateS3.md](file:///Users/nkoneru/Download
 - Placed and tracked [`avatars/logo-4.png`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/avatars/logo-4.png) and mirrored to [`static/assets/logo-4.png`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/assets/logo-4.png).
 - Served dynamically over HTTP at `/avatars/logo-4.png` (via FastAPI static mounts).
 
+
 ### 8.2 UI Placements & Styling ([static/css/game.css](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/css/game.css))
 1. **Favicon & Apple Touch Icon**: Linked in `<head>` of [templates/index.html](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/templates/index.html).
 2. **Boot Landing Screen**: Added `.boot-logo` featuring smooth floating animation (`@keyframes floatLogo`) and cyan glow filter drop shadows.
@@ -256,5 +257,41 @@ Reference Document: [QuestionsContentUpdateS3.md](file:///Users/nkoneru/Download
 6. **Admin Configuration Header**: Integrated `.admin-header-logo` in the user configuration dashboard.
 7. **Credits Modal**: Prominently featured `.credits-logo` above the game production credits.
 
+---
 
+## 9. Logo Transparency Fix & Boot Screen Scrollbar Elimination
 
+### 9.1 Root Cause Analysis: Why Were Gray and White/Black Boxes Visible?
+- Image analysis (`sips -g all avatars/logo-4.png`) revealed the source file had `samplesPerPixel: 3, hasAlpha: no, space: RGB`.
+- The image was saved or exported as an opaque RGB image without an alpha channel. The alternating light gray (`#D0CFD0`) and medium gray (`#939092`) checkerboard squares (standard in graphics software to represent transparent canvas) were literally baked into the raster pixels themselves.
+- Because there was no alpha transparency channel, the browser rendered those pixels as opaque gray and white squares.
+
+### 9.2 Transparency Conversion & Defringing
+- Processed [`avatars/logo-4.png`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/avatars/logo-4.png) and [`static/assets/logo-4.png`](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/assets/logo-4.png) using Python Pillow:
+  1. Converted from `RGB` to true 4-channel `RGBA` (`samplesPerPixel: 4, hasAlpha: yes`).
+  2. Identified border and enclosed checkerboard background regions through BFS flood-filling and connected component analysis of neutral gray pixel patterns (`|R-G| <= 8, |R-B| <= 8, |G-B| <= 8`).
+  3. Executed 2-pass edge defringing on boundary pixels to eliminate gray halos and preserve crisp, anti-aliased character outlines.
+  4. Verified with `sips -g all avatars/logo-4.png`: confirmed `hasAlpha: yes`.
+
+### 9.3 Elimination of First-Page (`#boot`) Vertical Scrollbar
+- **Viewport Height Constraint**:
+  - Configured `#boot` in [static/css/game.css](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/css/game.css) with `height: 100vh; height: 100dvh; max-height: 100vh; max-height: 100dvh; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; box-sizing: border-box;`.
+- **Proportional Scaling & Centering**:
+  - Re-scaled `.boot-logo`: `max-height: clamp(130px, 24vh, 210px); max-width: min(82vw, 290px); width: auto; height: auto; object-fit: contain; margin: 0 auto;`.
+  - Harmonized typography on `#boot`:
+    - `.sigil`: `font-size: clamp(1.1rem, 2.6vh, 1.8rem);`
+    - `.eyebrow`: `font-size: clamp(0.58rem, 1.2vh, 0.72rem);`
+    - `h1`: `font-size: clamp(1.8rem, 5vh, 3.6rem); line-height: 0.88; margin: clamp(4px, 1.1vh, 8px) 0;`
+    - `p`: `font-size: clamp(0.78rem, 1.8vh, 0.95rem); margin: 0 0 clamp(10px, 2vh, 18px);`
+    - `#start`: `padding: clamp(9px, 1.5vh, 13px) clamp(20px, 3vw, 28px);`
+    - `.boot-links`: `margin-top: clamp(6px, 1.3vh, 12px) !important;`
+  - Total vertical height of all elements combined is under 65% of viewport height, completely eliminating vertical scrollbars across desktop and compact screens (tested down to 640px height).
+
+### 9.4 Verification & Test Results
+1. **Playwright Viewport Testing**:
+   - `1280x750` viewport: `hasVerticalScroll: False`, `bootScrollHeight == 750`, `windowInnerHeight == 750`.
+   - `1024x640` viewport: `hasVerticalScroll: False`, `bootScrollHeight == 640`, `windowInnerHeight == 640`.
+2. **Full Playwright WebKit UI Test Suite**:
+   - `uv run python tests/ui_test_suite.py --browser webkit`: All 9 scenarios passed (100% flow coverage).
+3. **Automated Pytest Suite**:
+   - `pytest tests/test_ui_e2e.py`: Passed cleanly with zero regressions.
