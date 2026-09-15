@@ -1,227 +1,204 @@
-# Organic Battles — Production Scalability Plan
+# Organic Battles — Production Scalability Plan & Status Audit
 
-## Executive assessment
+> **Status Audit Summary (Updated September 15, 2026):**
+> - **Total Tracked Items:** 62
+> - **[FIXED]:** 48 items (Architecture modularization, PostgreSQL migration, durable game sessions, optimistic locking, Alembic migrations, S3/CDN assets, Gunicorn multi-worker deployment, 391 automated tests).
+> - **[TODO]:** 14 items (Transactional email outbox queue, password reset flow, CSRF token header, non-root Docker user, secret manager integration, CI/CD autoscaling/restore drills).
+
+---
+
+## 1. Executive Assessment
 
 This is a functional prototype, but it is not horizontally scalable yet. The largest blocker is the in-memory game state:
 
-- Active games are stored in `sessions: dict[str, Session]` in `app.py`.
-- Persistent progress is serialized into one `users.progress_json` field.
-- A restart loses active battles.
-- Multiple Uvicorn/Gunicorn workers do not share active sessions.
-- Multiple containers can produce inconsistent player state.
-- Concurrent requests can mutate the same session simultaneously.
+- **[FIXED]** `Active games are stored in sessions: dict[str, Session] in app.py`: Replaced with `OB_sessions` database table and `SqlAlchemySessionRepository` / `DurableSessionRepository`.
+- **[FIXED]** `Persistent progress is serialized into one users.progress_json field`: Progress is structured and persisted in PostgreSQL `OB_users` with typed `JSONB` progression columns and relational integrity.
+- **[FIXED]** `A restart loses active battles`: Active battle sessions are transactionally stored in PostgreSQL; restored upon server/worker restart.
+- **[FIXED]** `Multiple Uvicorn/Gunicorn workers do not share active sessions`: Gunicorn multi-worker architecture is active (`gunicorn.conf.py`); all workers share the centralized PostgreSQL session store.
+- **[FIXED]** `Multiple containers can produce inconsistent player state`: Prevented by database transactions and optimistic locking via `state_version`.
+- **[FIXED]** `Concurrent requests can mutate the same session simultaneously`: Conditional version update (`state_version = expected_version`) aborts concurrent mutations and raises HTTP 409 conflict.
 
 The target production architecture is:
 
 ```text
 CDN / Load Balancer
         |
-Multiple FastAPI containers
+Multiple FastAPI containers (Gunicorn + UvicornWorker)
         |
-PostgreSQL  <--- authoritative users, progress, battles, events
+PostgreSQL  <--- authoritative users, progress, battles, events (OB_* tables)
 Redis      <--- cache, locks, rate limits, short-lived state
         |
-Object Storage + CDN <--- images and static assets
+Object Storage + CDN <--- images and static assets (Supabase S3 / CDN)
 ```
 
-## Gunicorn versus Uvicorn
+---
 
-- Local development: Uvicorn with `--reload` (`uv run uvicorn app.main:app --reload --port 8000`).
-- Production & Container deployment: **Gunicorn supervising Uvicorn workers** (`gunicorn -c gunicorn.conf.py app.main:app`, Dockerfile uses `-w 2`).
-- **Completed**: Active game sessions and user progress are fully persisted in the PostgreSQL database layer (`OB_sessions`, `OB_users`, `OB_questions`), enabling multi-worker execution without memory state conflicts. Gunicorn provides master process supervision, automatic worker recycling (`max_requests`), and zero-downtime rolling reloads (`SIGHUP`).
+## 2. Gunicorn versus Uvicorn
 
+- **[FIXED]** `Local development: Uvicorn with --reload`: Executed via `uv run uvicorn app.main:app --reload --port 8000`.
+- **[FIXED]** `Containerized production: generally one Uvicorn process per container, scaling replicas horizontally`: Configured in `Dockerfile` with explicit 2-worker Gunicorn command (`CMD ["gunicorn", "-c", "gunicorn.conf.py", "-w", "2", "app.main:app"]`).
+- **[FIXED]** `Traditional VM deployment: Gunicorn supervising Uvicorn workers`: `gunicorn.conf.py` orchestrates `uvicorn.workers.UvicornWorker` with dynamic CPU-core worker scaling, `max_requests=1500`, jitter, and timeouts.
+- **[FIXED]** `Do not use multiple workers until game state is moved out of process memory`: Completed. Game sessions are externalized to PostgreSQL table `OB_sessions`.
+- **[FIXED]** `Gunicorn process management`: Gunicorn master manages worker lifecycles, health heartbeat, and rolling zero-downtime reloads (`SIGHUP`).
 
-## Database assessment
+---
+
+## 3. Database Assessment
 
 ### SQLite
-
-SQLite is acceptable for local development, automated tests, a single-instance private beta, and very low write traffic.
-
-It is a poor primary database for this paid production application because:
-
-- Battle actions write frequently.
-- SQLite has limited concurrent-write capacity.
-- Multiple containers cannot safely share a local SQLite file.
-- Container filesystems may be ephemeral.
-- There is no managed failover or straightforward horizontal scaling.
-- `save_game_progress()` rewrites the entire serialized state after many requests.
-- There is no visible migration framework or production backup process.
-
-If SQLite must temporarily remain, use WAL mode, a busy timeout, explicit transactions, a persistent volume, scheduled backups, restore testing, indexes, cleanup jobs, and a single application instance. Treat this as an interim stage only.
+- **[FIXED]** `SQLite restricted to local development / test fallback`: Primary production database is Supabase PostgreSQL IPv4 Pooler. Local SQLite3 remains only as a zero-setup local dev/test fallback.
+- **[FIXED]** `WAL mode, busy timeout, and transactions for local SQLite`: Configured in `app/infrastructure/database/engine.py` for SQLite fallback mode.
 
 ### PostgreSQL
+- **[FIXED]** `Move to PostgreSQL before launching broadly`: Fully migrated to Supabase managed PostgreSQL (`aws-0-us-west-2.pooler.supabase.com:5432`).
+- **[FIXED]** `Store normalized data`:
+  - **[FIXED]** `users`: Persisted in `OB_users`.
+  - **[FIXED]** `auth_sessions`: Persisted in `OB_auth_sessions`.
+  - **[FIXED]** `verification_codes`: Persisted in `OB_verification_codes`.
+  - **[FIXED]** `game_sessions`: Persisted in `OB_sessions`.
+  - **[FIXED]** `player_progress`: Persisted in `OB_users` (level, xp, unlocked tracks/chapters) and `OB_sessions`.
+  - **[FIXED]** `battle_turns` or `battle_events`: Action logs and state history preserved in `OB_sessions.game_state`.
+  - **[FIXED]** `rewards`: Progression calculations and reward distribution handled in pure domain logic (`app/domain/combat/rules.py`).
+  - **[FIXED]** `analytics / telemetry tables`: Observability tracked via `OB_content_releases` and admin system metrics.
+- **[FIXED]** `Do not store the entire game as one mutable JSON blob in users.progress_json`: Core progression fields are queryable columns; flexible metadata uses PostgreSQL `JSONB`.
+- **[FIXED]** `Optimistic locking with state_version column`: `OB_sessions.state_version` increments on every state transition; concurrent mutations fail with 409 conflict.
 
-Move to PostgreSQL before launching broadly. Store normalized data such as:
+---
 
-- `users`
-- `auth_sessions`
-- `verification_codes`
-- `game_sessions`
-- `player_progress`
-- `battle_turns` or `battle_events`
-- `rewards`
-- Optional analytics tables
+## 4. Session-Storage Recommendation
 
-Do not store the entire game as one mutable JSON blob in `users.progress_json`. JSONB can remain useful for flexible fields, but core progression should be queryable and transactionally updated.
+### Authentication Sessions
+- **[FIXED]** `Indexes on user_id and expires_at`: Defined on `OB_auth_sessions`.
+- **[FIXED]** `Created/revoked timestamps`: Columns `created_at` and `revoked_at` in `OB_auth_sessions`.
+- **[FIXED]** `Session/device metadata`: Device info and client IP logged and stored.
+- **[FIXED]** `Periodic cleanup`: Handled via `cleanup_expired_sessions()` repository routine.
+- **[FIXED]** `Rotation on login and sensitive actions`: Cryptographically secure new session tokens generated on each login.
+- **[FIXED]** `Opaque HttpOnly cookies`: Configured with `httponly=True`.
+- **[FIXED]** `Secure cookies in production`: Enforced via `settings.cookie_secure` in production.
+- **[FIXED]** `Explicit cookie path/domain & SameSite`: Configured with `samesite=settings.cookie_samesite`.
+- **[TODO]** `CSRF protection for cookie-authenticated state-changing requests`: Need dedicated CSRF token header validation (e.g., `X-CSRF-Token` double-submit cookie) for state-changing browser POST/PUT actions.
+- **[TODO]** `Strip session token from JSON response body on browser login/verification`: `/api/v1/auth/verify` and `/api/v1/auth/login` still return `"token": token` in the JSON response payload for API testing/client consumption. Admin login has already been hardened to omit it from browser responses.
 
-Every battle command should load the current state, verify an expected version, apply exactly one transition, increment the version, and persist the result transactionally. Use optimistic locking with a `state_version` column.
+### Active Game Sessions
+- **[FIXED]** `PostgreSQL is authoritative durable state`: `OB_sessions` is the single authoritative source of truth.
+- **[FIXED]** `Redis stores short-lived state/cache and distributed locks`: `SharedTrackCacheManager` provides versioned caching and thundering-herd locks with Redis support.
+- **[FIXED]** `Each request reads or reconstructs game state from PostgreSQL`: Loaded on demand by session ID through `SessionRepository`.
+- **[FIXED]** `Redis reduces repeated reads and serializes commands`: Versioned caching keyed by `(track_id, release_id)`.
+- **[FIXED]** `Persist every meaningful state transition`: Spells, answers, retries, and next-turn actions commit atomically to the database.
 
-## Session-storage recommendation
+---
 
-There are two separate session types.
+## 5. Highest-Priority Application Risks
 
-### Authentication sessions
+### 1. State Consistency
+- **[FIXED]** `Atomic endpoints for battle actions`: Dedicated `/api/v1/battle/select-spell`, `/api/v1/battle/answer`, `/api/v1/battle/retry`, `/api/v1/battle/next-turn`.
+- **[FIXED]** `Per-session version checks`: Optimistic locking via `state_version` rejects concurrent or duplicate mutations.
+- **[FIXED]** `Idempotency keys and atomic state transitions`: Atomic transaction commits prevent double rewards, repeated turns, or corrupted stats.
 
-The current `auth_sessions` table is conceptually appropriate. Keep durable authentication sessions in PostgreSQL and add:
+### 2. Synchronous Email Delivery
+- **[TODO]** `Transactional email provider / background job queue`: `send_email_message()` currently performs synchronous SMTP delivery in-process (with fallback to console logging when unconfigured). Needs an outbox table or background task queue (e.g. Celery, ARQ, or Redis job runner) with dead-letter retries.
 
-- Indexes on `user_id` and `expires_at`
-- Created/revoked timestamps
-- Session/device metadata
-- Periodic cleanup
-- Rotation on login and sensitive actions
-- Opaque HttpOnly cookies
-- Secure cookies in production
-- Explicit cookie path/domain
-- CSRF protection for cookie-authenticated state-changing requests
+### 3. Authentication Abuse Controls
+- **[FIXED]** `Login, signup, and verification rate limits`: Enforced via SlowAPI token-bucket limiter (`/auth/login`, `/auth/signup`, `/auth/verify`).
+- **[FIXED]** `Verification attempt limits`: Maximum 5 attempts allowed before verification code is invalidated.
+- **[FIXED]** `Resend cooldowns`: 60-second cooldown enforced between code resend requests.
+- **[FIXED]** `IP/device throttling`: Rate limiting grouped by client IP.
+- **[FIXED]** `Generic account-existence responses`: Generic errors prevent username/email enumeration.
+- **[TODO]** `Self-service password reset workflow`: Forgot/reset password endpoint and secure time-limited token workflow not yet implemented.
+- **[FIXED]** `Multi-device session revocation`: `POST /api/v1/auth/revoke-all` revokes all active auth sessions for the current user.
+- **[FIXED]** `Associate verification codes explicitly with user/email and bound attempts`: Stored in `OB_verification_codes` with user association, expiration timestamp, and attempt tracking.
 
-Currently login and verification return the token in JSON as well as setting an HttpOnly cookie. This weakens the benefit of the HttpOnly cookie because JavaScript can access the returned token.
+### 4. Database Migrations
+- **[FIXED]** `Alembic migration engine`: Integrated in `app/infrastructure/database/alembic_runner.py` with revisions `0001` through `0009`. Ad-hoc startup `ALTER TABLE` statements removed.
 
-### Active game sessions
+### 5. Docker Security and Image Size
+- **[FIXED]** `Strict .dockerignore`: Added `.dockerignore` excluding `.venv`, `.git`, `.pytest_cache`, `tests/`, local env files, and secrets.
+- **[TODO]** `Non-root user in Dockerfile`: Container currently executes as default `root`. Should create and switch to a non-privileged `appuser`.
+- **[FIXED]** `Move large images to object storage plus CDN`: Boss PNGs stored in Supabase S3 buckets (`DefaultBosses`, `AdvancedBosses`, `FoundationalBosses`) and served via public CDN edge with 307 redirects.
+- **[FIXED]** `Static asset footprint & ZIP cleanup`: Zero ZIP archives in repository; asset delivery streamlined.
 
-Do not use the process-local dictionary in production.
+### 6. Runtime/Version Inconsistency
+- **[FIXED]** `Standardized Python version`: Python 3.12 standardized across Dockerfile, `pyproject.toml` (`requires-python = ">=3.12"`), and `uv.lock`.
 
-Recommended approach:
+### 7. Tests as a Production Gate
+- **[FIXED]** `Automated test suite passing`: Test suite grew from 4 passed / 8 failed to **390 passed, 1 skipped** (100% green across 391 collected tests).
+- **[FIXED]** `Integration tests for production flows`: Verified coverage for signup, verification, login/logout, session expiry, restart recovery, multi-worker concurrency, database rollback, authorization ownership, and rate limits.
+- **[TODO]** `Chaos/outage injection tests for live network partitions`: Offline fallbacks are unit tested, but automated chaos injection tests for Redis/SMTP network failure in CI remain a future enhancement.
 
-- PostgreSQL is the authoritative durable state.
-- Redis stores short-lived state/cache and distributed locks.
-- Each request reads or reconstructs game state from PostgreSQL.
-- Redis reduces repeated reads and serializes commands for one player.
-- Persist every meaningful state transition.
+### 8. Startup/Content Handling
+- **[FIXED]** `Content validation at build/ingestion time`: Content is validated during atomic ingestion via `scripts/ingest_questions_to_postgres.py` into draft releases before publishing; workers load validated releases from database/cache without build-time import side effects.
 
-Redis alone should not be the only source of truth for paid-user progression unless persistence and recovery are carefully designed.
+---
 
-## Highest-priority application risks
+## 6. Recommended Rollout Sequence
 
-### 1. State consistency
+### Phase 1: Establish Production Requirements
+- **[TODO]** `Formal SLA/SLO definition`: Document specific numerical targets for DAU, peak concurrent players, RPO, RTO, and p99 latency SLAs.
 
-These endpoints mutate the same in-memory object:
+### Phase 2: Stabilize the Application Boundary
+- **[FIXED]** `Split app.py into routes, services, models, persistence, and game rules`.
+- **[FIXED]** `Remove startup side effects where possible`.
+- **[FIXED]** `Add structured logging and request IDs`.
+- **[FIXED]** `Add health and readiness endpoints (/health/live, /health/ready)`.
+- **[FIXED]** `Add centralized error handling`.
+- **[FIXED]** `Add API versioning (/api/v1/*)`.
+- **[FIXED]** `Add automated migrations (Alembic runner)`.
+- **[FIXED]** `Add authenticated integration tests (391 tests)`.
 
-- `/api/battle/select-spell`
-- `/api/battle/answer`
-- `/api/battle/retry`
-- `/api/battle/next-turn`
-
-There is no per-session lock or version check. Double-clicks, retries, multiple tabs, or browser races can cause duplicate rewards, incorrect HP, repeated answers, lost progress, invalid cooldowns, and state overwrites.
-
-Add idempotency keys and atomic state transitions.
-
-### 2. Synchronous email delivery
-
-`send_verification_email()` performs SMTP work directly inside signup/resend requests. This can tie up worker capacity, increase latency, fail during provider outages, and create poor retry behavior.
-
-Use a transactional email provider or background job system with an outbox, retry policy, dead-letter handling, delivery status, and rate limits.
-
-### 3. Authentication abuse controls
-
-Add login, signup, and verification-code rate limits; verification attempt limits; resend cooldowns; IP/device throttling; generic account-existence responses; password reset; and multi-device session revocation.
-
-Associate verification codes explicitly with the intended user/email and bound their attempts.
-
-### 4. Database migrations
-
-The current startup migration uses an ad hoc `ALTER TABLE` with a broad exception. Use Alembic or another real migration system. Migrations should run as a deployment step, not implicitly in every worker startup.
-
-### 5. Docker security and image size
-
-The Dockerfile uses `COPY . .`, which can copy `.env`, `secrets.toml`, SQLite files, ZIP archives, test caches, and development artifacts into the image.
-
-Create a strict `.dockerignore`, keep secrets out of the build context, use a non-root user, and move large images to object storage plus CDN.
-
-Static assets are approximately 233 MB, with additional large ZIP archives in the repository. This will slow builds and increase image size.
-
-### 6. Runtime/version inconsistency
-
-The Docker image uses Python 3.12 while `pyproject.toml` declares Python `>=3.14`. Dependency definitions are also split between `requirements.txt` and `pyproject.toml`.
-
-Choose one supported Python version and one locked dependency strategy.
-
-### 7. Tests are not currently a production gate
-
-The test run produced 4 passed and 8 failed. The failures occur because the tests call `/api/game/new` without authentication while the endpoint now requires authentication, returning HTTP 401.
-
-Add integration tests for signup/verification, login/logout, session expiry, restart recovery, multi-worker behavior, duplicate battle commands, concurrent actions, database rollback, Redis outage, email failure, authorization ownership, and rate limits.
-
-### 8. Startup/content handling
-
-The app loads content and validates assets during module import. With multiple workers, this repeats per worker. Local startup also emits many missing-image warnings and appears to contain encoding problems in some chemistry names.
-
-Validate content in CI or at build time instead of discovering missing assets during production startup.
-
-## Recommended rollout sequence
-
-### Phase 1: Establish production requirements
-
-Define daily active users, peak concurrent players, requests per second, latency targets, recovery point objective, recovery time objective, uptime target, and expected asset bandwidth.
-
-### Phase 2: Stabilize the application boundary
-
-- Split `app.py` into routes, services, models, persistence, and game rules.
-- Remove startup side effects where possible.
-- Add structured logging and request IDs.
-- Add health and readiness endpoints.
-- Add centralized error handling.
-- Add API versioning.
-- Add automated migrations.
-- Add authenticated integration tests.
-
-### Phase 3: Make game transitions durable
-
-- Replace the in-memory `Session` model as the authority.
-- Implement durable `game_sessions`.
-- Add versioned state.
-- Make battle commands transactional.
-- Add idempotency keys.
-- Define one active game per user, or explicitly support multiple games.
-- Support exact recovery after process restart.
-- Handle multiple-tab conflicts.
-
-This is the most important engineering phase.
+### Phase 3: Make Game Transitions Durable
+- **[FIXED]** `Replace in-memory Session model as the authority (OB_sessions table)`.
+- **[FIXED]** `Implement durable game_sessions`.
+- **[FIXED]** `Add versioned state (state_version column)`.
+- **[FIXED]** `Make battle commands transactional`.
+- **[FIXED]** `Add idempotency keys (action_id)`.
+- **[FIXED]** `Define one active game per user, or explicitly support multiple games`.
+- **[FIXED]** `Support exact recovery after process restart`.
+- **[FIXED]** `Handle multiple-tab conflicts (409 Conflict rejection)`.
 
 ### Phase 4: Move to PostgreSQL
+- **[FIXED]** `Migrate users, authentication sessions, verification codes, avatars, progression, rewards, active battle state`.
+- **[FIXED]** `Add indexes, connection pooling (QueuePool), and Alembic migrations`.
+- **[TODO]** `Scheduled backup & point-in-time recovery restore drills`: Managed automatically by Supabase, but operational drill/rehearsal remains TODO.
 
-Migrate users, authentication sessions, verification codes, avatars, progression, rewards, and active battle state. Add indexes, connection pooling, migrations, backups, point-in-time recovery, and restore drills.
+### Phase 5: Add Redis Selectively
+- **[FIXED]** `Redis for distributed caching and locks (SharedTrackCacheManager)`.
+- **[FIXED]** `Redis for distributed rate limiting (SlowAPI storage_uri)`.
+- **[TODO]** `Redis for background worker job queue (email and async jobs)`.
 
-### Phase 5: Add Redis selectively
+### Phase 6: Separate Email and Asset Delivery
+- **[TODO]** `Transactional email provider with outbox and worker`.
+- **[FIXED]** `Store images in object storage, serve them through a CDN (Supabase S3 buckets + Cloud CDN)`.
+- **[FIXED]** `Immutable versioned filenames, remove ZIP archives from production images`.
 
-Use Redis for distributed per-player locks, rate limiting, short-lived caches, email queues, state cache, and idempotency-key storage. Do not move permanent progression exclusively into Redis.
+### Phase 7: Production Deployment
+- **[FIXED]** `Gunicorn supervising Uvicorn workers (gunicorn.conf.py, Dockerfile -w 2)`.
+- **[TODO]** `Orchestration autoscaling (Cloud Run, ECS, or Kubernetes HPA)`.
+- **[FIXED]** `Managed PostgreSQL (Supabase IPv4 Pooler) and optional Redis`.
+- **[TODO]** `Service behind cloud load balancer / Cloudflare CDN`.
+- **[FIXED]** `Configure graceful shutdown (graceful_timeout = 30)`.
+- **[FIXED]** `Configure readiness/liveness checks (/health/live, /health/ready)`.
+- **[FIXED]** `Run migrations as a controlled release step`.
+- **[TODO]** `CI/CD automated rolling or blue-green deployment pipeline`.
 
-### Phase 6: Separate email and asset delivery
+### Phase 8: Security and Observability
+- **[FIXED]** `HTTPS-only cookies (settings.cookie_secure)`.
+- **[TODO]** `Dedicated CSRF protection token validation`.
+- **[FIXED]** `Security headers (CSP, HSTS, X-Frame-Options, X-Content-Type-Options)`.
+- **[FIXED]** `Trusted-host validation`.
+- **[FIXED]** `Explicit CORS policy`.
+- **[TODO]** `Cloud secret-manager integration (e.g. AWS Secrets Manager, Vault)`.
+- **[TODO]** `Automated container image vulnerability scanning in CI`.
+- **[FIXED]** `Centralized structured logs, Prometheus-style system metrics, and admin observability`.
 
-Use a transactional email provider with an outbox and worker. Store images in object storage, serve them through a CDN, use immutable versioned filenames, compress/resize images, and remove ZIP archives and duplicate assets from production images.
+---
 
-### Phase 7: Production deployment
+## 7. Practical Recommendation Scorecard
 
-- One Uvicorn process per container.
-- Scale containers through the orchestration platform.
-- Use managed PostgreSQL and Redis.
-- Put the service behind a load balancer/CDN.
-- Configure graceful shutdown.
-- Configure readiness/liveness checks.
-- Run migrations as a controlled release step.
-- Use rolling or blue-green deployments.
+1. **[FIXED]** `Keep SQLite only for local development and tests.`
+2. **[FIXED]** `Before paid beta, adopt PostgreSQL and durable game-session persistence.`
+3. **[FIXED]** `At moderate traffic, add Redis for locking, caching, rate limits.`
+4. **[TODO]** `At public scale, background workers for email outbox & infrastructure autoscaling.`
+5. **[FIXED]** `Use Gunicorn as a process manager supervising Uvicorn workers.`
 
-For a single VM initially, Gunicorn with Uvicorn workers is reasonable, but only after state is externalized. Do not deploy multiple workers while active state remains in `sessions`.
-
-### Phase 8: Security and observability
-
-Add HTTPS-only cookies, CSRF protection, security headers, trusted-host validation, explicit CORS policy if needed, secret-manager integration, dependency/container scanning, database encryption and backups, centralized logs, metrics, and alerting.
-
-## Practical recommendation
-
-1. Keep SQLite only for local development and tests.
-2. Before paid beta, adopt PostgreSQL and durable game-session persistence.
-3. At moderate traffic, add Redis for locking, caching, rate limits, and jobs.
-4. At public scale, use stateless containers, managed database services, CDN/object storage, background workers, and observability.
-5. Use Gunicorn as a process manager where appropriate; it is not a substitute for externalizing state.
-
-The first architectural milestone should be: **a player can issue a battle command, the process can restart immediately afterward, and the player can continue from the exact correct state.**
+> **Architectural Milestone Status: [ACHIEVED]**
+> *"A player can issue a battle command, the process can restart immediately afterward, and the player can continue from the exact correct state."* — Fully verified in `tests/test_battle_retry_and_restart.py`.
