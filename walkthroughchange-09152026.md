@@ -57,7 +57,7 @@ Updated **[Dockerfile](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/Doc
   with the production Gunicorn configuration:
   ```dockerfile
   # Updated:
-  CMD ["sh", "-c", "gunicorn -c gunicorn.conf.py app.main:app"]
+  CMD ["gunicorn", "-c", "gunicorn.conf.py", "-w", "2", "app.main:app"]
   ```
 
 ### 2.4 Distributed Rate Limiter
@@ -65,9 +65,13 @@ Updated **[app/api/deps.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattle
 - Updated the SlowAPI `Limiter` instantiation to utilize `storage_uri=settings.redis_url if settings.redis_url else "memory://"`.
 - When `REDIS_URL` is set, rate-limit buckets are synchronized across all Gunicorn worker processes.
 
-### 2.5 Documentation Artifacts
+### 2.5 Documentation Artifacts & References
 - Created **[changesforgunicorn.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/changesforgunicorn.md)**: Detailed migration roadmap, architectural analysis, operational guidelines, and verification blueprint.
 - Created **[walkthroughchange-09152026.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/walkthroughchange-09152026.md)**: This document.
+- Updated **[README.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/README.md)**: Added Gunicorn + UvicornWorker to Technology Stack Matrix, added production server launch instructions, Docker execution commands, and updated automated test suite totals to 391.
+- Updated **[cookbook.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/cookbook.md)**: Added Production Web Server layer to Technology Stack Matrix with multi-worker details and test count updates.
+- Updated **[startupsteps.txt](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/startupsteps.txt)**: Added production multi-worker execution command alongside local development reload commands.
+- Updated **[todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/todo.md)**: Marked Gunicorn supervision active with database session persistence.
 
 ---
 

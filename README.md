@@ -81,7 +81,7 @@ flowchart TB
 |---|---|---|---|
 | **Backend Framework** | **FastAPI** | `0.115.6` | High-performance asynchronous API server with modular routers and OpenAPI documentation. |
 | **Validation & Settings** | **Pydantic V2 & Settings** | `2.10.4` | Strictly typed environment validation ([app/settings.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/settings.py)) and schema serialization (`model_dump`). |
-| **ASGI Web Server** | **Uvicorn** | `0.34.0` | Production ASGI server supporting multi-worker execution and keep-alive connections. |
+| **Production Web Server** | **Gunicorn + Uvicorn Workers** | `gunicorn 26.2.0` / `uvicorn 0.34.0` | Production multi-worker process manager supervising high-performance `uvloop` ASGI workers with process self-healing, automatic memory leak mitigation (`max_requests`), and zero-downtime rolling reloads (`SIGHUP`). |
 | **Database & ORM** | **SQLAlchemy 2.x** | `2.0.36` | Fully typed models with unified `OB_` table naming and native `JSONB` column variants. |
 | **Database Engine** | **PostgreSQL / SQLite3** | `psycopg2` / Native | Managed PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`) with connection pooling and local SQLite3 fallback. |
 | **Schema Migrations** | **Alembic** | `1.14.1` | Programmatic migration engine ([app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py)) managing revisions `0001` through `0009`. |
@@ -89,8 +89,8 @@ flowchart TB
 | **Distributed Cache** | **Redis / In-Memory Tier** | `redis` `5.2.1` | Versioned caching keyed by `(track_id, release_id)` with zlib compression and thundering-herd lock protection. |
 | **Audio Synthesizer** | **Web Audio API** | Native Browser | Procedural, zero-download sound engine in [static/js/audio.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/audio.js). |
 | **Game Engine** | **Phaser 3** | `3.60.0` (CDN) | 2D WebGL/Canvas arena rendering dynamic chapter auras and responsive canvas scaling (`Phaser.AUTO`, `Phaser.Scale.RESIZE`). |
-| **Rate Limiting** | **Slowapi** | `0.1.9` | Token-bucket rate limiting defending `/auth/signup`, `/auth/login`, and `/admin/login`. |
-| **Testing Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | 384 automated tests covering combat mechanics, concurrency, security, database roles, and UI rendering. |
+| **Rate Limiting** | **Slowapi** | `0.1.9` | Token-bucket rate limiting defending `/auth/signup`, `/auth/login`, and `/admin/login` with multi-worker Redis/memory backend. |
+| **Testing Suite** | **Pytest & Playwright** | `8.3.4` / `0.9.0` | 391 automated tests covering combat mechanics, concurrency, security, Gunicorn multi-worker lifecycle, database roles, and UI rendering. |
 
 ---
 
@@ -547,14 +547,37 @@ ADMIN_SESSION_TTL_HOURS=24
 ```
 
 ### 9.3 Launching the Server
+
+#### Production Deployment (Gunicorn Multi-Worker)
 ```bash
-# Run with live reload
+# Launch with production Gunicorn process manager (default dynamic worker scaling)
+uv run gunicorn -c gunicorn.conf.py app.main:app
+
+# Or specify 2 workers explicitly via CLI flag:
+uv run gunicorn -c gunicorn.conf.py -w 2 app.main:app
+
+# Or override worker count and port via environment variables:
+WEB_CONCURRENCY=4 PORT=8000 uv run gunicorn -c gunicorn.conf.py app.main:app
+```
+
+#### Docker Container Execution
+```bash
+# Build production Docker container
+docker build -t organicbattles:latest .
+
+# Run container (runs Gunicorn with 2 workers by default as defined in Dockerfile)
+docker run -p 8000:8000 organicbattles:latest
+```
+
+#### Local Development (Live Reload)
+```bash
+# Run with single-process live reload for fast development iteration
 uv run uvicorn app.main:app --reload --port 8000
 ```
 Open [http://localhost:8000](http://localhost:8000) in your web browser.
 
 ### 9.4 Running the Test Suite
-The repository includes 384 automated unit, integration, and UI tests:
+The repository includes 391 automated unit, integration, concurrency, and UI tests:
 
 ```bash
 # Run complete test suite
@@ -562,6 +585,9 @@ uv run pytest
 
 # Run quick summary
 uv run pytest -q
+
+# Run targeted Gunicorn configuration and multi-worker lifecycle tests
+uv run pytest tests/test_gunicorn_config.py -v
 
 # Run targeted combat concurrency tests
 uv run pytest tests/test_combat_concurrency_and_optimistic_locking.py -v

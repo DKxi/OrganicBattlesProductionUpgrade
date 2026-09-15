@@ -26,16 +26,10 @@ Object Storage + CDN <--- images and static assets
 
 ## Gunicorn versus Uvicorn
 
-“Unicorn” likely means **Gunicorn**.
+- Local development: Uvicorn with `--reload` (`uv run uvicorn app.main:app --reload --port 8000`).
+- Production & Container deployment: **Gunicorn supervising Uvicorn workers** (`gunicorn -c gunicorn.conf.py app.main:app`, Dockerfile uses `-w 2`).
+- **Completed**: Active game sessions and user progress are fully persisted in the PostgreSQL database layer (`OB_sessions`, `OB_users`, `OB_questions`), enabling multi-worker execution without memory state conflicts. Gunicorn provides master process supervision, automatic worker recycling (`max_requests`), and zero-downtime rolling reloads (`SIGHUP`).
 
-- Local development: Uvicorn with `--reload`.
-- Containerized production: generally one Uvicorn process per container, scaling replicas horizontally.
-- Traditional VM deployment: Gunicorn supervising Uvicorn workers.
-- Do not use multiple workers until game state is moved out of process memory.
-
-Gunicorn improves process management and concurrency, but it does not solve the current architecture. Every worker would still have its own independent `sessions` dictionary.
-
-The official Uvicorn deployment guidance recommends Gunicorn for production, while noting that the older `uvicorn.workers` module is being deprecated in favor of the separate `uvicorn-worker` package.
 
 ## Database assessment
 

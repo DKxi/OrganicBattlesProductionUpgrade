@@ -73,17 +73,18 @@ Organic chemistry is traditionally considered one of the most intellectually dem
 | Layer | Technology | Version | Rationale & Characteristics |
 | :--- | :--- | :--- | :--- |
 | **Backend Framework** | **FastAPI** | `0.115.6` | Asynchronous high-throughput ASGI framework, native OpenAPI documentation, strict Pydantic V2 schemas. |
+| **Production Web Server** | **Gunicorn + Uvicorn Workers** | `gunicorn 26.2.0` / `uvicorn 0.34.0` | Multi-worker process manager supervising `uvicorn.workers.UvicornWorker` processes with self-healing, `max_requests` memory mitigation, and zero-downtime rolling reload. |
 | **Domain Logic** | **Pure Python Functional Core** | Native | Zero-dependency combat mathematics ([app/domain/combat/rules.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/domain/combat/rules.py)), isolated from database and HTTP layers for deterministic testing. |
 | **Database & ORM** | **SQLAlchemy 2.x & PostgreSQL** | `2.0.36` | Production PostgreSQL via Supabase IPv4 Pooler (`aws-0-us-west-2.pooler.supabase.com:5432`), QueuePool (`pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`), unified `OB_` table prefixing, and native `JSONB` column variants. |
 | **Database Migrations** | **Alembic** | `1.14.1` | Programmatic migration engine ([app/infrastructure/database/alembic_runner.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/database/alembic_runner.py)) with revisions `0001` through `0009`. |
 | **Object Storage & CDN** | **AWS S3 / Supabase Storage** | `boto3` `1.36.3` | Direct streaming reader ([app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py)) for track chapters and public CDN buckets for boss PNGs (`DefaultBosses`, `AdvancedBosses`, `FoundationalBosses`). |
 | **Distributed Caching** | **SharedTrackCacheManager** | Custom | Versioned caching keyed by `(track_id, release_id)` with zlib serialization, thread-safe thundering-herd locks, and Redis fallback. |
-| **Rate Limiting** | **SlowAPI / Limiter** | `0.1.9` | Token-bucket rate limiting protecting authentication and combat routes. |
+| **Rate Limiting** | **SlowAPI / Limiter** | `0.1.9` | Token-bucket rate limiting protecting authentication and combat routes with Redis / memory distributed backend. |
 | **Frontend UI** | **Vanilla HTML5 & CSS3** | Custom | Zero build-step overhead, zero node_modules in production frontend, custom glassmorphism design system, retro-cyberpunk alchemical typography. |
 | **Client Controller** | **Modular ES6+ JavaScript** | ES2022+ | Event-driven UI controller ([static/js/main.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/main.js)), companion avatar engine ([static/js/avatars.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/avatars.js)). |
 | **Arena Canvas / VFX** | **Phaser 3** | `3.60.0` (CDN) | WebGL/Canvas rendering, dynamic chapter auras, responsive canvas scaling (`Phaser.AUTO`, `Phaser.Scale.RESIZE`). |
 | **Procedural Audio** | **Web Audio API** | Native Browser | Real-time procedural harmonic synthesis ([static/js/audio.js](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/static/js/audio.js)) requiring zero external sound assets. |
-| **Testing Suite** | **Pytest & HTTPX** | `8.3.4` / `0.28.1` | 384 automated unit, domain, combat, question parity, and database migration tests. |
+| **Testing Suite** | **Pytest & Playwright** | `8.3.4` / `0.9.0` | 391 automated unit, domain, combat, question parity, multi-worker Gunicorn lifecycle, and UI tests. |
 
 ---
 

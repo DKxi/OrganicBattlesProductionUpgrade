@@ -4,15 +4,20 @@ uv venv
 uv add pip
 
 pip install -r requirements.txt
-uvicorn app:app --reload
 
+# Local Development (Live Reload):
+uv run uvicorn app.main:app --reload --port 8000
+
+# Production Multi-Worker (Gunicorn + UvicornWorker):
+uv run gunicorn -c gunicorn.conf.py -w 2 app.main:app
 
 
 If you already ran it before:
-
 
 cd ..                 (to get out of organicbattlesv2)
 .venv\Scripts\activate
 cd .\OrganicBattlesV2\
 pip install -r requirements.txt
-uvicorn app:app --reload
+
+# Run Production Server:
+uv run gunicorn -c gunicorn.conf.py -w 2 app.main:app
