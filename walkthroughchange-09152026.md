@@ -164,3 +164,39 @@ To reload code or config in a live production environment without dropping activ
 kill -HUP <gunicorn_master_pid>
 ```
 Gunicorn will start new workers with the updated configuration/code and gracefully terminate old workers once they finish inflight requests.
+
+---
+
+## 6. Architecture Scalability Scorecard & Pending Roadmap
+
+Reference Document: [todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/todo.md)
+
+### 6.1 Audit Scorecard Summary
+
+| Category | Total Items | `[FIXED]` | `[TODO]` | Key Highlights |
+|---|:---:|:---:|:---:|---|
+| **1. Executive Assessment** | 6 | **6** | 0 | In-memory session state fully migrated to PostgreSQL `OB_sessions` with optimistic locking (`state_version`), atomic transitions, and restart durability. |
+| **2. Gunicorn vs Uvicorn** | 5 | **5** | 0 | `gunicorn.conf.py` supervising `uvicorn.workers.UvicornWorker` with dynamic CPU scaling, `max_requests=1500`, and `Dockerfile` explicit 2-worker CMD (`-w 2`). |
+| **3. Database Assessment** | 13 | **13** | 0 | Supabase managed PostgreSQL IPv4 Pooler live; models `OB_users`, `OB_auth_sessions`, `OB_verification_codes`, `OB_sessions`, `OB_questions`, `OB_content_releases` in place with QueuePool and Alembic migrations. |
+| **4. Session Storage** | 15 | **13** | **2** | Auth and battle sessions durable in DB with HttpOnly/Secure cookies. **TODO**: Dedicated CSRF token header for state-changing browser requests; strip session token from user JSON login payload. |
+| **5. High-Priority Risks** | 18 | **14** | **4** | State consistency, SlowAPI rate limiting, Alembic migrations, Python 3.12, S3/CDN assets, and 391 green tests verified. **TODO**: Transactional email background outbox worker queue; self-service password reset; non-root Docker user; chaos network partition tests. |
+| **6. Rollout Phases (1–8)** | 35 | **26** | **9** | Modular architecture, durable battle sessions, S3 boss images, health probes, and structured logs complete. **TODO**: Formal SLA documentation, Redis background job queue, Kubernetes/ECS autoscaling, CI/CD blue-green pipeline, and Vault/AWS Secrets Manager integration. |
+| **Total** | **92** | **77** | **15** | **83.7% of all production architectural milestones achieved.** |
+
+### 6.2 Summary of Pending `[TODO]` Roadmap Items
+
+1. **Transactional Email Outbox / Background Job Queue**:
+   - Decouple synchronous SMTP email delivery using a database outbox table or Redis task worker (ARQ / Celery) with retry policies and dead-letter handling.
+2. **Self-Service Password Reset**:
+   - Add forgot/reset password API endpoint, time-limited single-use reset tokens, and email notifications.
+3. **Dedicated CSRF Protection Header**:
+   - Add double-submit CSRF token header validation (`X-CSRF-Token`) for state-changing browser actions authenticated via cookies.
+4. **Non-Root Docker User**:
+   - Add a non-privileged system user (`appuser`) in [Dockerfile](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/Dockerfile) to adhere to container security hardening guidelines.
+5. **Token Stripping on User Auth**:
+   - Omit the session token from the JSON response body on browser user login/verification (already completed for admin portal).
+6. **Cloud Secret Manager Integration**:
+   - Connect to AWS Secrets Manager or HashiCorp Vault in place of `.env` files for production credential injection.
+7. **Cloud Infrastructure & Autoscaling**:
+   - Configure Cloudflare CDN / load balancer, container orchestration autoscaling (ECS / Cloud Run / Kubernetes HPA), automated database point-in-time recovery restore drills, and CI/CD blue-green deployment pipelines.
+
