@@ -1,201 +1,311 @@
-# Question & Answer Content Update Guide via S3 / Object Storage
+# S3 & Supabase Storage Content Update Guide
 
 **Date:** September 15, 2026  
-**Topic:** End-to-End Workflow for Updating `chapter_xx.json` in S3 / Supabase Storage, Ingesting Content to PostgreSQL, and Delivering to Live Players Without Schema Changes  
+**Topic:** Accurate S3 Bucket Structures, Path Hierarchies, and End-to-End Workflow for Ingesting `chapter_xx.json` Questions into PostgreSQL and Delivering to Live Players  
 
 ---
 
-## 1. Executive Answer: Does S3 Auto-Update Live Gameplay?
+## 1. Core Principle: Does S3 Auto-Update Live Gameplay?
 
 ### The Question
 > *"If I update `chapter_xx.json` in S3 in the right track with the right schema, does the application automatically load tables, update content, and deliver to players?"*
 
 ### The Answer
-**No, not simply by dropping the file into S3.**
+**No, not simply by uploading the file into S3.**
 
 Updating content is an intentional **2-Step Process**:
-1. **Step 1:** Upload your updated `chapter_xx.json` to the designated S3 bucket and track prefix.
-2. **Step 2:** **Trigger Ingestion** via the Web Admin Console (one click) or via a single CLI command.
+1. **Step 1:** Upload your updated `chapter_xx.json` to the correct **Tracks Bucket** and folder in Supabase Storage / S3.
+2. **Step 2:** **Trigger Ingestion** via the Web Admin Console (one click) or via CLI command.
+
+### Why is a Trigger Step Required?
+- **Atomic Release Protection**: If you upload multiple chapter files, a passive watcher could trigger mid-upload, causing players to encounter broken or half-updated chapters. The manual trigger ensures all chapters are validated together and activated atomically.
+- **Sub-2ms Gameplay Latency**: Combat turns query PostgreSQL (`OB_questions`) and the cluster RAM/Redis cache (`SharedTrackCacheManager`), avoiding 100–300ms S3 network latency on every turn.
+- **S3 API Cost Elimination**: Prevents millions of redundant S3 `GET` requests during active battles.
+- **Cluster Worker Cache Sync**: Ingestion purges the cache across all Gunicorn workers simultaneously (`shared_track_cache.invalidate_track()`) with zero downtime.
 
 ---
 
-### Why is a Trigger Step Required? (Architectural Rationale)
+## 2. Storage Topology: Tracks Buckets vs. Bosses Buckets
 
-| Concern | Why Passive S3 Auto-Detection is Bad | How the Ingestion Trigger Protects Production |
-|---|---|---|
-| **Partial Upload Protection** | If you upload 5 updated chapter files, a passive watcher could trigger mid-upload, causing players to see incomplete or broken tracks. | The trigger ensures an **Atomic Release**: all chapters are read and validated together before activating. |
-| **Gameplay Latency** | Checking S3 on every player combat action adds **100–300ms network lag** to every turn. | Content is served from **PostgreSQL (`OB_questions`)** and an in-memory/Redis **`SharedTrackCacheManager`** with **<2ms response times**. |
-| **API Costs** | Querying S3 on every turn generates millions of S3 `GET` request fees. | S3 is read only during the one-time ingestion process. |
-| **Zero-Downtime Cache Sync** | Modifying S3 does not automatically notify running Gunicorn worker processes to clear their local RAM caches. | The ingestion trigger executes `shared_track_cache.invalidate_track()`, notifying all worker processes simultaneously. |
+Based on your Supabase Storage configuration, the application strictly separates **JSON Question Banks** from **Boss Image Assets** across **6 distinct public buckets**:
 
----
+```text
+Supabase S3 Storage Root
+├── TRACKS BUCKETS (JSON Question Banks & Curriculum Structure)
+│   ├── DefaultTracks/            <-- Root-level chapter_*.json files
+│   ├── AdvancedTracks/           <-- Subfolders for each Advanced track topic
+│   └── FoundationalTracks/       <-- Subfolders for each Foundational track topic
+│
+└── BOSSES BUCKETS (PNG Image Assets Only - Flat Root Level)
+    ├── DefaultBosses/            <-- Flat PNG files (e.g., orbital_ogre.png)
+    ├── AdvancedBosses/           <-- Flat PNG files (e.g., 1-3-diaxial-dreadnought.png)
+    └── FoundationalBosses/       <-- Flat PNG files (e.g., resonance-reaper.png)
+```
 
-## 2. Storage Mapping: Where Do Files Live in S3?
+### Bucket Reference Matrix
 
-The application resolves S3 paths dynamically via [app/infrastructure/storage/s3_reader.py](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/app/infrastructure/storage/s3_reader.py):
-
-| Track ID | Track Name | S3 Bucket | Target S3 Key / Prefix |
+| Bucket Name | Content Type | Public URL / CDN Base | Internal Structure |
 |---|---|---|---|
-| `default` | Standard Organic Chemistry | `DefaultBosses` (or `S3_DEFAULT_BOSSES_BUCKET`) | `tracks/default/chapter_01.json`<br/>`...`<br/>`tracks/default/chapter_27.json` |
-| `advanced` | Advanced Track | `AdvancedBosses` (or `S3_ADVANCED_BOSSES_BUCKET`) | `tracks/advanced/chapter_01.json`<br/>`...`<br/>`tracks/advanced/chapter_27.json` |
-| `foundational` | Foundational Track | `FoundationalBosses` (or `S3_FOUNDATIONAL_BOSSES_BUCKET`) | `tracks/foundational/chapter_01.json`<br/>`...`<br/>`tracks/foundational/chapter_27.json` |
+| **`DefaultTracks`** | Question Bank JSON | `.../storage/v1/object/public/DefaultTracks` | Flat root: `chapter_01.json` ... `chapter_27.json` |
+| **`AdvancedTracks`** | Question Bank JSON | `.../storage/v1/object/public/AdvancedTracks` | **Subfolders by topic**: `<TrackFolder>/chapter_01.json` ... |
+| **`FoundationalTracks`** | Question Bank JSON | `.../storage/v1/object/public/FoundationalTracks` | **Subfolders by topic**: `<TrackFolder>/chapter_01.json` ... |
+| **`DefaultBosses`** | Boss Portrait PNGs | `.../storage/v1/object/public/DefaultBosses` | Flat root: `orbital_ogre.png`, `lewis-lion.png`, etc. |
+| **`AdvancedBosses`** | Boss Portrait PNGs | `.../storage/v1/object/public/AdvancedBosses` | Flat root: `1-3-diaxial-dreadnought.png`, `aldol-alchemist.png`, etc. |
+| **`FoundationalBosses`** | Boss Portrait PNGs | `.../storage/v1/object/public/FoundationalBosses` | Flat root: `resonance-reaper.png`, `alkane-ape.png`, etc. |
 
 ---
 
-## 3. Step-by-Step Instructions to Update S3 Content
+## 3. Internal Folder Structure for Tracks Buckets
 
-### Step 1: Format & Validate `chapter_xx.json`
+### 3.1 `AdvancedTracks` Internal Structure
+Inside the **`AdvancedTracks`** bucket, chapter JSON files are nested inside specific track topic folders:
 
-Ensure your JSON file adheres to the expected schema:
+```text
+AdvancedTracks/
+├── LabTechniquesGreenExpansionData/
+│   ├── chapter_01.json
+│   ├── chapter_02.json
+│   └── ... (chapter_01.json through chapter_27.json)
+├── MechanismsIntermediatesData/
+│   ├── chapter_01.json
+│   └── ...
+├── MedicinalBioorganicExpansionData/
+│   ├── chapter_01.json
+│   └── ...
+├── MultiStepSynthesisData/
+│   ├── chapter_01.json
+│   └── ...
+├── OrbitalPericyclicExpandedData/
+│   ├── chapter_01.json
+│   └── ...
+├── ReactionOutcomeTypesData/
+│   ├── chapter_01.json
+│   └── ...
+├── RelativePropertyRankingsData/
+│   ├── chapter_01.json
+│   └── ...
+├── SkillBuilderMasteryExpandedData/
+│   ├── chapter_01.json
+│   └── ...
+├── SpectroscopyElucidationData/
+│   ├── chapter_01.json
+│   └── ...
+├── StereochemistryStructureData/
+│   ├── chapter_01.json
+│   └── ...
+├── ThermodynamicsKineticsExpandedData/
+│   ├── chapter_01.json
+│   └── ...
+└── VocabularyConceptsData/
+    ├── chapter_01.json
+    ├── chapter_02.json
+    └── ... (chapter_01.json through chapter_27.json)
+```
+
+### 3.2 `FoundationalTracks` Internal Structure
+Inside the **`FoundationalTracks`** bucket, chapter JSON files follow a parallel topic folder organization:
+```text
+FoundationalTracks/
+├── VocabularyConceptsData/
+│   └── chapter_01.json ...
+├── ReactionOutComeTypesData/
+│   └── chapter_01.json ...
+├── MechanismsIntermediatesData/
+│   └── chapter_01.json ...
+├── StereochemistryStructureData/
+│   └── chapter_01.json ...
+├── RelativePropertyRankingsData/
+│   └── chapter_01.json ...
+├── SpectroscopyElucidationData/
+│   └── chapter_01.json ...
+└── MultiStepSynthesisData/
+    └── chapter_01.json ...
+```
+
+### 3.3 `DefaultTracks` Internal Structure
+Inside the **`DefaultTracks`** bucket, chapter files reside directly at the bucket root:
+```text
+DefaultTracks/
+├── chapter_01.json
+├── chapter_02.json
+├── ...
+└── chapter_27.json
+```
+
+---
+
+## 4. Internal Structure of Bosses Buckets
+
+Unlike Tracks buckets, **Bosses buckets do NOT have chapter subfolders**. All boss portrait images must be placed **directly at the root of the Bosses bucket**:
+
+```text
+AdvancedBosses/
+├── 1-3-diaxial-dreadnought.png
+├── 1-4-addition-anomaly.png
+├── acetal-aegis.png
+├── acetylide-assassin.png
+├── acid-chloride-assassin.png
+├── acyl-transfer-sovereign.png
+├── aldol-alchemist.png
+├── aldose-apparition.png
+├── alkoxy-ape.png
+└── allylic-radical-archer.png
+```
+
+> **CRITICAL RULE FOR IMAGES:**  
+> In `chapter_xx.json`, the `"images"` field (e.g. `["1-3-diaxial-dreadnought.png"]`) must match the exact filename stored at the root of the corresponding Bosses bucket. Do **not** upload boss PNGs into the Tracks buckets.
+
+---
+
+## 5. End-to-End Content Update Walkthrough
+
+### Step 1: Prepare and Validate `chapter_xx.json`
+Verify the chapter payload adheres to the required schema:
 
 ```json
 {
   "schema_version": "2.0",
   "chapter": 1,
-  "chapter_title": "Structure and Bonding",
-  "assigned_boss": "Orbital Ogre",
+  "chapter_title": "A Review of General Chemistry: Electrons, Bonds, and Molecular Properties",
+  "assigned_boss": "1-3-Diaxial Dreadnought",
   "question_count": 50,
   "questions": [
     {
       "id": "ch01_q001",
       "chapter": 1,
-      "chapter_title": "Structure and Bonding",
-      "boss": "Orbital Ogre",
-      "topic": "pi bond",
+      "chapter_title": "A Review of General Chemistry",
+      "boss": "1-3-Diaxial Dreadnought",
+      "topic": "chair conformations",
       "difficulty": "easy",
       "question_type": "term_to_definition",
-      "question": "Which statement most accurately describes “pi bond”?",
+      "question": "Which statement best describes 1,3-diaxial interactions?",
       "options": [
-        { "label": "A", "text": "A measure of how strongly an atom attracts electrons." },
-        { "label": "B", "text": "A bond produced by sideways overlap of parallel p orbitals." },
-        { "label": "C", "text": "A bookkeeping formal charge." },
-        { "label": "D", "text": "A covalent bond where electrons are shared unequally." }
+        { "label": "A", "text": "Steric strain between axial substituents on a cyclohexane ring." },
+        { "label": "B", "text": "Torsional strain between adjacent equatorial bonds." },
+        { "label": "C", "text": "Angle strain in a planar cyclopentane ring." },
+        { "label": "D", "text": "Electrostatic repulsion in an anti-periplanar conformation." }
       ],
-      "correct_option": "B",
-      "correct_answer": "A bond produced by sideways overlap of parallel p orbitals.",
-      "explanation": "A bond produced by sideways overlap of parallel p orbitals.",
+      "correct_option": "A",
+      "correct_answer": "Steric strain between axial substituents on a cyclohexane ring.",
+      "explanation": "1,3-diaxial strain occurs between axial substituents on carbons 1, 3, and 5 of cyclohexane.",
       "spells": [20, 30, 45],
       "health": [100],
-      "images": ["orbital_ogre.png"]
+      "images": ["1-3-diaxial-dreadnought.png"]
     }
   ]
 }
 ```
 
-#### Validation Rules:
-- **Options**: Minimum 2 options. Each option must have `"label"` (`A`, `B`, etc.) and `"text"`.
-- **Answers**: `"correct_option"` must be a valid option label, and `"correct_answer"` must match that option's text verbatim.
-- **Spells**: Array of integers for damage tiers (e.g. `[20, 30, 45]`).
-- **Health**: Boss HP integer array (e.g. `[100]`).
-- **Images**: Array of boss image filename(s) (e.g. `["orbital_ogre.png"]`).
+---
+
+### Step 2: Upload to S3 / Supabase Storage
+
+#### If Updating an Advanced Track Chapter:
+Target Bucket: **`AdvancedTracks`**  
+Target Path: `<TrackFolder>/chapter_xx.json`
+
+- **Via Supabase Dashboard**:
+  1. Go to **Storage** $\rightarrow$ **Buckets** $\rightarrow$ **`AdvancedTracks`**.
+  2. Click into the target folder (e.g., `VocabularyConceptsData` or `MechanismsIntermediatesData`).
+  3. Click **Upload files** or drag-and-drop your updated `chapter_01.json`.
+- **Via AWS S3 CLI**:
+  ```bash
+  aws s3 cp chapter_01.json s3://AdvancedTracks/VocabularyConceptsData/chapter_01.json \
+    --endpoint-url https://<PROJECT_REF>.storage.supabase.co/storage/v1/s3
+  ```
+
+#### If Updating a Default Track Chapter:
+Target Bucket: **`DefaultTracks`**  
+Target Path: `chapter_xx.json` (root level)
+
+- **Via Supabase Dashboard**:
+  1. Go to **Storage** $\rightarrow$ **Buckets** $\rightarrow$ **`DefaultTracks`**.
+  2. Upload `chapter_01.json` directly to the bucket root.
+- **Via AWS S3 CLI**:
+  ```bash
+  aws s3 cp chapter_01.json s3://DefaultTracks/chapter_01.json \
+    --endpoint-url https://<PROJECT_REF>.storage.supabase.co/storage/v1/s3
+  ```
+
+#### If You Added a New Boss in the Chapter:
+Target Bucket: **`AdvancedBosses`**, **`FoundationalBosses`**, or **`DefaultBosses`**  
+Target Path: Root directory of the bucket.
+- Upload the companion PNG (e.g. `1-3-diaxial-dreadnought.png`) to the root of the Bosses bucket.
 
 ---
 
-### Step 2: Upload the Updated File to S3
+### Step 3: Trigger Ingestion to Update Database & Cache
 
-You can upload using any of the following tools:
+Once the file is uploaded to S3, trigger ingestion through one of two methods:
 
-#### Option A: Using AWS CLI / Supabase S3 Compatible CLI
-```bash
-aws s3 cp chapter_01.json s3://DefaultBosses/tracks/default/chapter_01.json \
-  --endpoint-url https://<YOUR-PROJECT-ID>.storage.supabase.co/storage/v1/s3
-```
-
-#### Option B: Using the Supabase Storage Dashboard (Web Browser)
-1. Open your Supabase Project Dashboard.
-2. Navigate to **Storage** $\rightarrow$ **Buckets**.
-3. Select bucket (e.g., `DefaultBosses`).
-4. Browse to folder `tracks/default/`.
-5. Upload or drag-and-drop the updated `chapter_01.json` (overwriting the existing file).
-
----
-
-### Step 3: Trigger Ingestion (Activate the Content)
-
-Once the file is uploaded to S3, choose one of two methods to trigger ingestion:
-
-#### Method 1: Via the Web Admin Console (Recommended — No Terminal Needed)
-1. Navigate to the Admin Portal: `http://localhost:8000/admin` (or click the **ADMIN** button on the bottom navigation bar).
-2. Authenticate with your administrator credentials.
+#### Method A: One-Click Web Admin Console (Recommended)
+1. Open your browser to `http://localhost:8000/admin` (or click **ADMIN** in the game UI).
+2. Authenticate with admin credentials.
 3. Locate the **DATA LOADS // BATCH INGESTION** card.
-4. From the **Target Track** dropdown, select the track you updated (e.g., `Default Track`).
-5. Keep **Batch Size** at `1000`.
-6. Click **START BATCH INGESTION**.
-7. In a few seconds, the indicator turns green:
+4. Select the target track from the dropdown (e.g., `Vocabulary & Core Concepts` or `Default Track`).
+5. Click **START BATCH INGESTION**.
+6. The status changes to:
    ```text
    ✓ Ingested 1350 questions across 1 track(s)!
    ```
 
-#### Method 2: Via Terminal / SSH Command
-Run the ingestion script with `--source s3`:
-```bash
-uv run python scripts/ingest_questions_to_postgres.py --track default --source s3
-```
+#### Method B: Terminal / CLI Command
+Execute the ingestion script targeting S3:
 
-*(If credentials are in `.env`, you can also run with `--source auto`, which automatically queries S3 first and falls back to local files if S3 is unavailable).*
+```bash
+# Ingest specific track from S3:
+uv run python scripts/ingest_questions_to_postgres.py --track adv-vocab --source s3
+
+# Ingest default track from S3:
+uv run python scripts/ingest_questions_to_postgres.py --track default --source s3
+
+# Auto-detect all tracks from S3:
+uv run python scripts/ingest_questions_to_postgres.py --source s3
+```
 
 ---
 
-## 4. Under the Hood: What Happens Automatically
+## 6. What the Application Does Under the Hood
 
-When you trigger ingestion from S3, the system executes the following pipeline **in a single transaction**:
+When ingestion is triggered, the system performs the following actions in a single atomic transaction:
 
 ```mermaid
-sequenceDiagram
-    autonumber
-    actor Admin
-    participant AdminUI as Admin Console / CLI
-    participant Ingest as Ingestion Pipeline
-    participant S3 as S3 / Supabase Bucket
-    participant DB as PostgreSQL Database
-    participant Cache as Shared Track Cache
-    participant Workers as Gunicorn Workers
-    actor Players as Live Players
-
-    Admin->>S3: 1. Upload updated chapter_01.json
-    Admin->>AdminUI: 2. Click "START BATCH INGESTION"
-    AdminUI->>Ingest: Trigger ingestion (source=s3, track=default)
-    Ingest->>S3: Fetch track chapter JSONs
-    S3-->>Ingest: Return chapter JSON payloads
-    Ingest->>Ingest: Validate schemas, options, spells, images
-    Ingest->>DB: Create DRAFT release in OB_content_releases
-    Ingest->>DB: Bulk insert questions into OB_questions (release_id = draft.id)
-    Ingest->>DB: Sync OB_bosses and OB_boss_question_assignments
-    Ingest->>DB: Publish release (status='published', archive previous)
-    Ingest->>Cache: Invalidate cluster cache (shared_track_cache.invalidate_track)
-    Cache-->>Workers: Cluster-wide memory cache purged
-    Workers-->>Players: Instantly serve updated questions on next combat turn!
+flowchart TD
+    A[Admin uploads chapter_xx.json to S3 Tracks Bucket] --> B[Admin clicks START BATCH INGESTION]
+    B --> C[s3_reader.py streams chapter JSONs from S3]
+    C --> D[validate_question_payload checks choices, answers, spells, images]
+    D --> E[Create DRAFT release in OB_content_releases]
+    E --> F[Bulk insert questions into OB_questions with release_id]
+    F --> G[Synchronize OB_bosses and OB_boss_question_assignments]
+    G --> H[Atomically flip release to status = 'published']
+    H --> I[Purge cluster memory & Redis cache: shared_track_cache.invalidate_track]
+    I --> J[Gunicorn workers immediately serve new questions to live players]
 ```
 
-### Affected Database Tables (Zero Schema Changes):
-1. **`OB_content_releases`**: A new release record is created and atomically set to `status = 'published'`.
-2. **`OB_questions`**: Questions are inserted linked to the new `release_id` with exact sequential `order_index`.
-3. **`OB_bosses` & `OB_boss_question_assignments`**: Automatically synchronized to register any new bosses and map them to chapters.
-4. **`OB_tracks`**: Updated with the new total questions and chapters count.
-5. **`OB_audit_log`**: An immutable audit entry `INGEST_QUESTIONS` is recorded with admin metadata.
+### Database Tables Updated (Zero Schema Changes):
+1. **`OB_content_releases`**: Creates a new release record and flips it to `published`. Prior releases are marked `archived`.
+2. **`OB_questions`**: All questions for the track are populated with the new `release_id` and strict sequential `order_index`.
+3. **`OB_bosses` & `OB_boss_question_assignments`**: Any new boss names declared in the chapter JSON are automatically inserted and mapped to chapters.
+4. **`OB_tracks`**: Question and chapter counters are synchronized.
+5. **`OB_audit_log`**: Logs the administrative ingestion event.
 
 ---
 
-## 5. Verification & Health Checks
+## 7. Verification & Troubleshooting
 
-After triggering the ingestion:
-
-1. **Check Admin Releases Tab**:
-   - Under the **Releases** tab in `/admin`, confirm that the new release version is listed with status `published`.
-2. **Pre-Warm Cache (Zero Latency)**:
-   - Click **WARM CACHE** in the Admin Console or run:
-     ```bash
-     uv run python scripts/warm_cache.py
-     ```
-   - This pre-loads all track bundles into worker RAM so the first player to battle encounters zero database query delay.
-3. **Rollback if Needed**:
-   - If an error was made in the S3 JSON (e.g. bad distractor), you do **not** need to panic. Simply go to the **Releases** tab in the Admin Console and click **Rollback** on the previous release. The server will instantly revert to the prior question set in under 1 millisecond.
+1. **Verify Ingestion Status**:
+   - Check the **Releases** tab in `/admin` to verify that the latest release version is marked `published`.
+2. **Pre-Warm Cache**:
+   - In the Admin Console, click **WARM CACHE** (or run `uv run python scripts/warm_cache.py`) so worker memory is preloaded with the new bundle.
+3. **Instant Rollback**:
+   - If an error was present in the updated S3 file, navigate to the **Releases** tab in the Admin Console and click **Rollback** on the prior version. The system will revert in under 2ms without touching S3 or altering tables.
 
 ---
 
-## 6. Summary Checklist for S3 Updates
+## 8. Summary Checklist
 
-- [x] **Upload `chapter_xx.json` to S3** at `tracks/<track_id>/chapter_xx.json`.
-- [x] **Trigger Ingestion**: Click **START BATCH INGESTION** in `/admin` (or run `uv run python scripts/ingest_questions_to_postgres.py --track <id> --source s3`).
-- [x] **Zero Schema Migrations**: No database DDL or Alembic migrations are required.
-- [x] **Zero Server Restarts**: Gunicorn workers automatically refresh cache and serve new content with zero player disruption.
+- [x] **Question JSONs go to Tracks Buckets**: `DefaultTracks/`, `AdvancedTracks/<FolderName>/`, `FoundationalTracks/<FolderName>/`.
+- [x] **Boss PNGs go to Bosses Buckets**: `DefaultBosses/`, `AdvancedBosses/`, `FoundationalBosses/` (flat at the root).
+- [x] **Always Trigger Ingestion**: Uploading to S3 does not auto-update live gameplay until you click **START BATCH INGESTION** or run `ingest_questions_to_postgres.py --source s3`.
+- [x] **Zero Schema Migrations**: All table updates are purely relational data inserts linked to atomic releases.
+- [x] **Zero Server Restarts**: All Gunicorn workers reload content dynamically via cluster cache invalidation.
