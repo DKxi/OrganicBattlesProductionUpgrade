@@ -630,13 +630,24 @@ Detailed standalone guides have been established to ensure safe production datab
 ### 10.3 S3 / Object Storage Content Update Workflow
 *Reference Document: [QuestionsContentUpdateS3.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/QuestionsContentUpdateS3.md)*
 
-- **Passive S3 Drops Do Not Auto-Update Live Gameplay**: Uploading a `chapter_xx.json` file to S3 does not auto-update live gameplay on its own. Content is served from PostgreSQL and RAM caches for sub-2ms combat latency and S3 cost control.
+- **Distinct Tracks Buckets vs. Bosses Buckets**: The Supabase S3 storage topology strictly separates JSON questions from PNG image assets across 6 distinct public buckets:
+  - **Tracks Buckets (JSON Questions & Curricula)**:
+    - `AdvancedTracks`: Grouped into topic subfolders (`VocabularyConceptsData/`, `MechanismsIntermediatesData/`, `LabTechniquesGreenExpansionData/`, `ReactionOutcomeTypesData/`, etc.), each containing `chapter_01.json` through `chapter_27.json`.
+    - `FoundationalTracks`: Grouped into topic subfolders (`VocabularyConceptsData/`, `ReactionOutComeTypesData/`, etc.).
+    - `DefaultTracks`: Flat root-level `chapter_01.json` through `chapter_27.json`.
+  - **Bosses Buckets (PNG Image Assets Only)**:
+    - `DefaultBosses`, `AdvancedBosses`, `FoundationalBosses`: Flat root directory containing all boss portrait `.png` files (e.g. `1-3-diaxial-dreadnought.png`, `aldol-alchemist.png`, `orbital_ogre.png`). No chapter subfolders exist in Bosses buckets.
+- **Passive S3 Drops Do Not Auto-Update Live Gameplay**: Uploading a `chapter_xx.json` file to S3 does not auto-update live gameplay on its own. Live combat queries PostgreSQL and cluster RAM caches for sub-2ms combat latency and S3 cost control.
 - **The Intentional 2-Step Workflow**:
-  1. **Upload to S3**: Place the file at `s3://<bucket>/tracks/<track_id>/chapter_xx.json` (via AWS CLI, Supabase Storage dashboard, or script).
+  1. **Upload to S3**:
+     - For Advanced Tracks: `s3://AdvancedTracks/<TrackFolder>/chapter_xx.json` (e.g. `VocabularyConceptsData/chapter_01.json`).
+     - For Default Track: `s3://DefaultTracks/chapter_xx.json`.
+     - For New Bosses: Upload the companion `.png` directly to the root of `AdvancedBosses/` (or `DefaultBosses/`).
   2. **Trigger Ingestion**: Click **START BATCH INGESTION** in the Admin Console (or run `uv run python scripts/ingest_questions_to_postgres.py --track <id> --source s3`).
 - **Architectural Protections**:
-  - *Partial Upload Guard*: Prevents players from seeing half-uploaded or incomplete chapters.
+  - *Partial Upload Guard*: Prevents players from seeing half-uploaded or incomplete chapters while uploads are in flight.
   - *Cluster Cache Invalidation*: Triggering ingestion executes `shared_track_cache.invalidate_track()`, notifying all Gunicorn workers simultaneously with zero downtime.
+
 
 ### 10.4 Architecture Scalability Scorecard & Roadmap Status
 *Reference Document: [todo.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/todo.md) & [walkthroughchange-09152026.md](file:///Users/nkoneru/Downloads/AIApps/OrganicBattles/walkthroughchange-09152026.md)*
